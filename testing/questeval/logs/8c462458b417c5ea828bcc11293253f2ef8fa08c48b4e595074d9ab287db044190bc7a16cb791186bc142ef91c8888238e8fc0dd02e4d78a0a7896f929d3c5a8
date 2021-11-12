@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Leukotriene B4 stimulates c-fos c-jun and NF kappa B gene transcription and AP-1 binding activity in human monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Leukotriene B4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulates c-fos c-jun and NF kapp"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Leukotriene B4",
+        "c-fos c-jun",
+        "NF kappa B gene transcription",
+        "AP-1 binding activity",
+        "human monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulates c-fos c-jun and NF kapp",
+          "What gene transcription is stimulated by leukotriene B4?",
+          "What does leukotriene B4 stimulate?",
+          "What does leukotriene B4 stimulate in human monocytes?",
+          "Where does leukotriene B4 stimulate transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the enzyme that stimulates c-fos and c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Leukotriene B4",
+        "answerability": 0.9423155784606934,
+        "ground_truth": {
+          "Leukotriene B4": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does leukotriene B4 stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos c-jun and NF kappa B gene",
+        "answerability": 0.9179990887641907,
+        "ground_truth": {
+          "c-fos and c-jun gene transcription": {
+            "bertscore": 0.8582122921943665,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does leukotriene B4 stimulate in human monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos c-jun and NF kappa B gene",
+        "answerability": 0.9493149518966675,
+        "ground_truth": {
+          "AP-1 binding activity": {
+            "bertscore": 0.7435126304626465,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does leukotriene B4 stimulate c-fos and c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3455384373664856,
+        "ground_truth": {
+          "human monocytes": {
+            "bertscore": 0.6539060473442078,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

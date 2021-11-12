@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "We have identified a novel gene GR6 located within the leukemia breakpoint region of 3q13 that is normally expressed in early fetal development but not in adult peripheral blood.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3q13"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the leukemia breakpoint region?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a novel gene",
+        "the leukemia breakpoint region",
+        "early fetal development",
+        "adult peripheral blood"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is normally expressed in early fetal development but not in adult peripheral blood?",
+          "What is GR6?",
+          "Where is GR6 located?",
+          "Where is GR6 normally expressed?",
+          "Where is GR6 normally expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the leukemia breakpoint region?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3q13",
+        "answerability": 0.9897095561027527,
+        "ground_truth": {
+          "3q21": {
+            "bertscore": 0.9464453458786011,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is normally expressed in early fetal development but not in adult peripheral blood?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GR6",
+        "answerability": 0.9910648465156555,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6473503708839417,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is GR6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5898735523223877,
+        "ground_truth": {
+          "a novel gene": {
+            "bertscore": 0.6627821326255798,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is GR6 located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "within the leukemia breakpoint region of 3q13",
+        "answerability": 0.9624603390693665,
+        "ground_truth": {
+          "the leukemia breakpoint region": {
+            "bertscore": 0.8869710564613342,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where is GR6 normally expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early fetal development",
+        "answerability": 0.9763679504394531,
+        "ground_truth": {
+          "early fetal development": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          },
+          "adult peripheral blood": {
+            "bertscore": 0.7862773537635803,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

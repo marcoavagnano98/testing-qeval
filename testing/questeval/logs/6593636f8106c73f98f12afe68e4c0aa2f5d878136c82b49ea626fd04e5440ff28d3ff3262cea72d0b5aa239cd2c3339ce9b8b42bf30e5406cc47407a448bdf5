@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Electrophoretic mobility shift assays (EMSAs) showed that unstimulated monocytes predominantly expressed p50 NF-kappa B. \u2047 nStimulation with LPS or IFN-gamma resulted in the expression of p50 and p65 subunits\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "IFN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to stimulate monocytes?",
+          "What is the other type of stimulation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(EMSAs",
+        "unstimulated monocytes",
+        "p50 NF-kappa B. \u2047 nStimulation",
+        "LPS",
+        "IFN-gamma",
+        "the expression",
+        "p50 and p65 subunits"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the term for Electrophoretic mobility shift assays?",
+          "What type of monocytes expressed p65?",
+          "What did unstimulated monocytes predominantly express?",
+          "What was used to stimulate monocytes?",
+          "What is the other type of stimulation?",
+          "What did stimulation with LPS or IFN-gamma result in?",
+          "What did stimulation with LPS or IFN-gamma result in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed that the p50 subunit was constitutively expressed in monocytes and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Electrophoretic mobility shift assays",
+        "answerability": 0.6278478503227234,
+        "ground_truth": {
+          "Immunoblot analysis": {
+            "bertscore": 0.7704124450683594,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was constitutively expressed in monocytes and MDMs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32706618309020996,
+        "ground_truth": {
+          "the p50 subunit": {
+            "bertscore": 0.61232590675354,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the p50 subunit constitutively expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11708009243011475,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6662786602973938,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells expressed p50?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unstimulated monocytes",
+        "answerability": 0.608485758304596,
+        "ground_truth": {
+          "MDMs": {
+            "bertscore": 0.7262926697731018,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "Ligand activation of c-ErbB induced the tyrosine phosphorylation DNA-damaging and reporter gene transcription of Stat 5b in erythroblasts.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ligand",
+        "gene transcription",
+        "5b"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activation of c-ErbB induced the tyrosine",
+          "What is Stat 5b's reporter?",
+          "What is the name of Stat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ligand activation",
+        "c-ErbB",
+        "the tyrosine phosphorylation DNA-damaging and reporter gene transcription",
+        "Stat 5b",
+        "erythroblasts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced the tyrosine phosphorylation DNA-damaging and reporter",
+          "What ligand activation induced the tyrosine phosphorylation DNA",
+          "What did ligand activation of c-ErbB induce in erythro",
+          "What gene was damaged by c-ErbB?",
+          "Where did ligand activation of c-ErbB cause damage?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What activation of c-ErbB induced the tyrosine": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ligand",
+        "answerability": 0.9126055240631104,
+        "ground_truth": {
+          "Ligand": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did c-ErbB induce in erythroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation DNA-damaging and reporter gene transcription",
+        "answerability": 0.9068581461906433,
+        "ground_truth": {
+          "gene transcription": {
+            "bertscore": 0.7643250226974487,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What is the name of Stat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stat",
+        "answerability": 0.5339569449424744,
+        "ground_truth": {
+          "5b": {
+            "bertscore": 0.7025737166404724,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induced the tyrosine phosphorylation DNA-binding and reporter": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4221752882003784,
+        "ground_truth": {
+          "Ligand activation": {
+            "bertscore": 0.6676820516586304,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What ligand activation induced the tyrosine phosphorylation DNA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-ErbB",
+        "answerability": 0.8453443050384521,
+        "ground_truth": {
+          "c-ErbB": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did ligand activation of c-ErbB induce in erythro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation DNA-damaging and reporter gene transcription",
+        "answerability": 0.843326210975647,
+        "ground_truth": {
+          "the tyrosine phosphorylation DNA-binding and reporter gene transcription": {
+            "bertscore": 0.932754397392273,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What gene was induced by ligand activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation DNA-damaging and reporter gene transcription",
+        "answerability": 0.8059916496276855,
+        "ground_truth": {
+          "Stat 5b": {
+            "bertscore": 0.5857626795768738,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is Stat 5b found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroblasts",
+        "answerability": 0.9355775713920593,
+        "ground_truth": {
+          "erythroblasts": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

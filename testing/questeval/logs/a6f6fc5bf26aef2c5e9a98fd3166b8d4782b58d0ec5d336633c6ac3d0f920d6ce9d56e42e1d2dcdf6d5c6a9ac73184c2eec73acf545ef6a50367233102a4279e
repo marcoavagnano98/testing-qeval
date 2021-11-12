@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "Endothelial cell migration is essential to angiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Endothelial cell migration",
+        "angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is essential to angiogenesis?",
+          "What is endothelial cell migration essential to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is essential to angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cell migration",
+        "answerability": 0.9572468400001526,
+        "ground_truth": {
+          "Endothelial cell proliferation": {
+            "bertscore": 0.920612633228302,
+            "f1": 0.6666666666666666
+          },
+          "migration": {
+            "bertscore": 0.7277550101280212,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is endothelial cell proliferation and migration essential to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2880658507347107,
+        "ground_truth": {
+          "angiogenesis": {
+            "bertscore": 0.6869294047355652,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of NF-kappaB activity and promotion of IkappaBalpha degradation. Fas (APO-1/CD95) and Fas ligand (FasL) expression were examined in the differentiated progeny of transduced stem cells in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha",
+        "APO-1",
+        "Fas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What degradation was promoted by the NF-kappaB?",
+          "What is the name of the kinase that inhibits NF-kapp",
+          "What is the name of the ligand that is involved in the degradation of Ikapp"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "NF-kappaB activity",
+        "promotion",
+        "IkappaBalpha degradation",
+        "Fas",
+        "(APO-1/CD95",
+        "Fas ligand",
+        "(FasL) expression",
+        "the differentiated progeny",
+        "transduced stem cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of NF-kappaB activity?",
+          "What is inhibited in the rat?",
+          "What is the main effect of IkappaBalpha degradation?",
+          "What is promoted by NF-kappaB activity?",
+          "What is the name of the ligand that is involved in the degradation of Ikapp",
+          "What is the name of the molecule that inhibits NF-kappaB activity",
+          "What is FasL?",
+          "What is the name of the Fas ligand?",
+          "Where was the expression of Fas and FasL examined?",
+          "What type of cells were examined in vitro?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the name of the protein that was tested?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15718936920166016,
+        "ground_truth": {
+          "Fas": {
+            "bertscore": 0.6837171316146851,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to evaluate Fas and FasL protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the differentiated progeny of transduced stem cells",
+        "answerability": 0.87158203125,
+        "ground_truth": {
+          "Western blot": {
+            "bertscore": 0.6328319311141968,
+            "f1": 0
+          },
+          "immunohistochemical assays": {
+            "bertscore": 0.6765899062156677,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was evaluated by Western blot and immunohistochemical assays?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015405058860778809,
+        "ground_truth": {
+          "Fas and FasL protein expression": {
+            "bertscore": 0.6107386350631714,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

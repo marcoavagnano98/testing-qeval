@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "In contrast VEGF121 an upstream VEGF substrate did not bind to NRP1.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "VEGF121",
+        "an upstream VEGF substrate",
+        "NRP1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of VEGF121 on NRP1?",
+          "What did not bind to NRP1?",
+          "What did VEGF121 not bind to?",
+          "What did VEGF121 not bind to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein did not support complex formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0871737003326416,
+        "ground_truth": {
+          "contrast VEGF121": {
+            "bertscore": 0.6430943012237549,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein does VEGF121 not bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NRP1",
+        "answerability": 0.944114089012146,
+        "ground_truth": {
+          "NRP1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did VEGF121 not support?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5313063263893127,
+        "ground_truth": {
+          "complex formation": {
+            "bertscore": 0.7037703394889832,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

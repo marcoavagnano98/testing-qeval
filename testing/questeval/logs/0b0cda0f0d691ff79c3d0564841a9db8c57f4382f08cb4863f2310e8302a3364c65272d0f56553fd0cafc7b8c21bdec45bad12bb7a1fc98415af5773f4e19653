@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Jurkat T cells stably expressing tax contained elevated levels of NF-kappa B that directly bound to the LT-kappa B site.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Jurkat T cells",
+        "tax contained elevated levels",
+        "NF-kappa B",
+        "the LT-kappa B site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells stably expressing tax contained elevated levels of NF-kappa B",
+          "What was the effect of expressing a stably expressing Jurkat T cells?",
+          "What protein was found in Jurkat T cells that stably expressed tax?",
+          "What did stably expressing tax contain elevated levels of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cells stably expressing tax contained elevated levels of NF-kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat T cells",
+        "answerability": 0.7428679466247559,
+        "ground_truth": {
+          "Jurkat T cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of expressing a stably expressing Jurkat T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "elevated levels of NF-kappa B",
+        "answerability": 0.777159571647644,
+        "ground_truth": {
+          "tax contained elevated levels": {
+            "bertscore": 0.6680505871772766,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What protein was found in Jurkat T cells that stably expressed tax?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9160187244415283,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did stably expressing tax contain elevated levels of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.8413273096084595,
+        "ground_truth": {
+          "the LT-kappa B site": {
+            "bertscore": 0.8036662340164185,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

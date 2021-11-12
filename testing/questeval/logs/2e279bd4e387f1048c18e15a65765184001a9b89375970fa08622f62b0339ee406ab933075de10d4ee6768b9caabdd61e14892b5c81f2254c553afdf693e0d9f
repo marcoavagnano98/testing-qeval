@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Aggregation was likely caused by the up-regulation of the surface expression of adhesion molecules including integrin alpha L-selectin ICAM-3 and H-CAM.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H-CAM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one of the adhesion molecules that is likely to cause aggregation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Aggregation",
+        "the up-regulation",
+        "the surface expression",
+        "adhesion molecules",
+        "integrin alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was likely caused by the up-regulation of the surface expression of adhesion molecules?",
+          "What was the cause of the aggregation?",
+          "What was likely to cause the accumulation of adipose tissue?",
+          "What was likely to cause the aggregation?",
+          "What is the name of the adhesion molecules that are up-regulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one of the adhesion molecules that is likely to cause aggregation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "integrin alpha L-selectin ICAM-3",
+        "answerability": 0.8191112279891968,
+        "ground_truth": {
+          "H-CAM": {
+            "bertscore": 0.6908180713653564,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was likely caused by the up-regulated surface expression of adhesion molecules?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Aggregation",
+        "answerability": 0.9997844099998474,
+        "ground_truth": {
+          "Aggregation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the cause of the aggregation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "up-regulation of the surface expression of adhesion molecules",
+        "answerability": 0.949730396270752,
+        "ground_truth": {
+          "the up-regulated surface expression": {
+            "bertscore": 0.8125618100166321,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is integrin alpha L-selectin ICAM-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adhesion molecules",
+        "answerability": 0.5932308435440063,
+        "ground_truth": {
+          "adhesion molecules": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the adhesion molecules that are up-regulated on the surface?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43603235483169556,
+        "ground_truth": {
+          "integrin alpha": {
+            "bertscore": 0.6807963252067566,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

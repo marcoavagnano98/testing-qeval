@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "Knockdown of PLCbeta3 in HUVEC cells affects IP3 production actin repression migration and proliferation; whereas migration is inhibited proliferation is enhanced.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Knockdown",
+        "HUVEC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of PLCbeta3 on IP3 production?",
+          "What type of cells are affected by knockdown of PLCbeta3?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Knockdown",
+        "PLCbeta3",
+        "HUVEC cells",
+        "IP3 production actin repression migration",
+        "proliferation",
+        "migration",
+        "proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of PLCbeta3 on IP3 production?",
+          "What protein is knocked down in HUVEC cells?",
+          "What cells are affected by knockdown of PLCbeta3?",
+          "Knockdown of PLCbeta3 in HUVEC cells affects what?",
+          "What is enhanced by knockdown of PLCbeta3?",
+          "What is inhibited in HUVEC cells?",
+          "What is enhanced by knockdown of PLCbeta3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of PLCbeta3 on IP3 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "migration is inhibited proliferation is enhanced",
+        "answerability": 0.9125871062278748,
+        "ground_truth": {
+          "Knockdown": {
+            "bertscore": 0.6506797671318054,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are affected by knockdown of PLCbeta3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HUVEC cells",
+        "answerability": 0.9908930659294128,
+        "ground_truth": {
+          "HUVEC": {
+            "bertscore": 0.9074347615242004,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein is knocked down in HUVEC cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PLCbeta3",
+        "answerability": 0.9936010837554932,
+        "ground_truth": {
+          "PLCbeta3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Knockdown of PLCbeta3 in what cells affects IP3 production act": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HUVEC cells",
+        "answerability": 0.5482238531112671,
+        "ground_truth": {
+          "HUVEC cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Knockdown of PLCbeta3 in HUVEC cells affects what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IP3 production actin repression",
+        "answerability": 0.9962857365608215,
+        "ground_truth": {
+          "IP3 production actin reorganization migration": {
+            "bertscore": 0.9206937551498413,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    },
+    "What is enhanced by knockdown of PLCbeta3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "migration",
+        "answerability": 0.6370044946670532,
+        "ground_truth": {
+          "proliferation": {
+            "bertscore": 0.7740761637687683,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is inhibited in HUVEC cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "migration",
+        "answerability": 0.6241129636764526,
+        "ground_truth": {
+          "migration": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

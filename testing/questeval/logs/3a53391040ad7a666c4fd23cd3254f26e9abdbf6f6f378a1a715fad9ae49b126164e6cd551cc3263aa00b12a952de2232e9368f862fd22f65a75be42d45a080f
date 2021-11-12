@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "In a rapid processing step the Mr 105000 precursor is glycosylated to a protein of Mr 150000 (gp150) which contains only endoglycosidase H-sensitive sugar linkages.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Mr 105000",
+        "Mr 150000",
+        "gp150"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the precursor of the peptide gp150?",
+          "What is the protein that is glycosylated to in a rapid processing step?",
+          "What is the protein that is Mr 150000?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a rapid processing step",
+        "the Mr 105000 precursor",
+        "a protein",
+        "Mr",
+        "(gp150",
+        "only endoglycosidase H-sensitive sugar linkages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the step in which the Mr 105000 precursor is glycosylated to",
+          "What is glycosylated to a protein of Mr 150000?",
+          "What is Mr 150000?",
+          "What is the protein that is glycosylated to?",
+          "What is the protein of Mr 150000?",
+          "What does Mr 150000 contain?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the enzymatically active form of gp150?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13138920068740845,
+        "ground_truth": {
+          "gp150": {
+            "bertscore": 0.6545743346214294,
+            "f1": 0
+          },
+          "The glycosylated part": {
+            "bertscore": 0.646264910697937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the glycosylated part of gp150 identified as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mr 150000",
+        "answerability": 0.6364256143569946,
+        "ground_truth": {
+          "a glycosylated precursor": {
+            "bertscore": 0.6120836138725281,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the precursor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47594398260116577,
+        "ground_truth": {
+          "the enzymatically active form gp150": {
+            "bertscore": 0.5979390740394592,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

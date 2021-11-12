@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "deletion of this sequence abolishes the capacity of CD40 to induce expression of CD23 ICAM-1 and lymphotoxin-alpha genes in B cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "deletion",
+        "this sequence",
+        "the capacity",
+        "CD40",
+        "expression",
+        "CD23 ICAM-1 and lymphotoxin-alpha genes",
+        "B cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the sequence of the CD40 gene do?",
+          "What deletion of CD40 abolishes the capacity of CD23 ICAM-1 and lympho",
+          "What does deletion of the CD40 sequence abolish?",
+          "What gene is unable to induce expression of CD23 ICAM-1?",
+          "What does deletion of the CD40 sequence inhibit?",
+          "What does deletion of the CD40 sequence abolish?",
+          "What type of cells does deletion of the CD40 sequence inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process that causes CD40 to be able to induce expression of lymphot": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "deletion",
+        "answerability": 0.7734664082527161,
+        "ground_truth": {
+          "Deletion": {
+            "bertscore": 0.787523627281189,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only sequence that can be removed from CD40?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014550983905792236,
+        "ground_truth": {
+          "this sequence": {
+            "bertscore": 0.6956586837768555,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does deletion of the CD40 sequence abolish?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the capacity of CD40 to induce expression of CD23 ICAM-1 and lymphotoxi",
+        "answerability": 0.552543044090271,
+        "ground_truth": {
+          "the capacity": {
+            "bertscore": 0.6247134208679199,
+            "f1": 0.16666666666666669
+          },
+          "CD23 ICAM-1 and lymphotoxin-alpha genes": {
+            "bertscore": 0.8394880294799805,
+            "f1": 0.37499999999999994
+          }
+        }
+      }
+    },
+    "What gene is able to induce expression of CD23 ICAM-1 and lymphotoxi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD40",
+        "answerability": 0.5481138229370117,
+        "ground_truth": {
+          "CD40": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does deletion of the CD40 sequence inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43584030866622925,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272053360939026,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells can be affected by the deletion of the CD40 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cells",
+        "answerability": 0.8236641883850098,
+        "ground_truth": {
+          "B cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

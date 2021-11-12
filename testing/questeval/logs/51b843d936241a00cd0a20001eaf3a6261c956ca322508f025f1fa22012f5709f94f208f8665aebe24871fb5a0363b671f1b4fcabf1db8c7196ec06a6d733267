@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Tobacco smoke promotes lung tumorigenesis by triggering IKKbeta- and JNK1-mediated inflammation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tobacco smoke",
+        "lung tumorigenesis",
+        "IKKbeta-",
+        "inflammation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What triggers inflammation in the lung?",
+          "What does tobacco smoke promote?",
+          "What is the name of the protein that causes inflammation in the lung?",
+          "What does tobacco smoke promote?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What triggers inflammation in the lung?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tobacco smoke",
+        "answerability": 0.9458264112472534,
+        "ground_truth": {
+          "Tobacco smoke": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does tobacco smoke promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lung tumorigenesis",
+        "answerability": 0.9990378618240356,
+        "ground_truth": {
+          "lung tumorigenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of inflammation is triggered by smoking?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IKKbeta- and JNK1",
+        "answerability": 0.8577415943145752,
+        "ground_truth": {
+          "IKKbeta-": {
+            "bertscore": 0.8283364176750183,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the main cause of lung tumorigenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tobacco smoke",
+        "answerability": 0.9888792037963867,
+        "ground_truth": {
+          "JNK1-dependent inflammation": {
+            "bertscore": 0.6714807152748108,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

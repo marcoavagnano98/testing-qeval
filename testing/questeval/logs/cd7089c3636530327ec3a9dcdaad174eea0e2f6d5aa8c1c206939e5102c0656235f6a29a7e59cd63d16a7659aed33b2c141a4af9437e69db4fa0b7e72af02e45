@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Genes most significantly represented in this program are those with roles in growth and apoptosis>protein synthesis\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Genes",
+        "this program",
+        "roles",
+        "growth",
+        "apoptosis",
+        "protein synthesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is most significantly represented in the apoptosis program?",
+          "What is the most significant gene in the apoptosis program?",
+          "What are the genes most significantly represented in the program?",
+          "What is the most significant role of genes in the apoptosis program?",
+          "What is the most significant role of genes in cell growth?",
+          "What is the most significant role of genes in growth and apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is most significantly represented in the RNA-MS program?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Genes",
+        "answerability": 0.93886798620224,
+        "ground_truth": {
+          "Genes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the most significant role of genes in cell growth and proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "those with roles in growth and apoptosis>protein synthesis>protein",
+        "answerability": 0.9912326335906982,
+        "ground_truth": {
+          "this program": {
+            "bertscore": 0.6758774518966675,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the genes most significantly represented in the program?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "those with roles in growth and apoptosis>protein synthesis>",
+        "answerability": 0.9997793436050415,
+        "ground_truth": {
+          "roles": {
+            "bertscore": 0.6116850972175598,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What is the most significant role of genes in the RNA-MS program?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "growth and apoptosis",
+        "answerability": 0.9949358105659485,
+        "ground_truth": {
+          "cell growth": {
+            "bertscore": 0.7985003590583801,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the most significant role of genes in cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "those with roles in growth and apoptosis>protein synthesis>protein",
+        "answerability": 0.9833580255508423,
+        "ground_truth": {
+          "proliferation": {
+            "bertscore": 0.6604385375976562,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the most significant roles in cell growth and proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "those with roles in growth and apoptosis>protein synthesis>protein",
+        "answerability": 0.9434563517570496,
+        "ground_truth": {
+          ">protein synthesis": {
+            "bertscore": 0.771818220615387,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

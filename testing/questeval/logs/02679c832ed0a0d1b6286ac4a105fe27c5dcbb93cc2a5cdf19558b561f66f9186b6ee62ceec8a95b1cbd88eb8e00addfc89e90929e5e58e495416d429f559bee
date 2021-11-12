@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "An evaluation of low molecular weight heparin and hyperbaric oxygen treatment in the prevention of intra-abdominal adhesions and wound healing.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An evaluation",
+        "low molecular weight heparin",
+        "hyperbaric oxygen treatment",
+        "the prevention",
+        "intra-abdominal adhesions",
+        "wound healing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the purpose of the study?",
+          "What is the name of the treatment that is used to prevent intra-abdominal adh",
+          "What is the name of the treatment that is used to prevent intra-abdominal adh",
+          "What is the purpose of heparin and oxygen?",
+          "What is hyperbaric oxygen treatment used to prevent?",
+          "What is the main benefit of heparin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the purpose of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15328675508499146,
+        "ground_truth": {
+          "An evaluation": {
+            "bertscore": 0.6555936336517334,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the treatment that is used to prevent intra-abdominal adh": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4932202100753784,
+        "ground_truth": {
+          "low molecular weight heparin": {
+            "bertscore": 0.6570312976837158,
+            "f1": 0
+          },
+          "hyperbaric oxygen treatment": {
+            "bertscore": 0.6416921615600586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the purpose of heparin and oxygen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "prevention of intra-abdominal adhesions and wound healing",
+        "answerability": 0.9368753433227539,
+        "ground_truth": {
+          "the prevention": {
+            "bertscore": 0.6932651400566101,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is hyperbaric oxygen treatment used to prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "intra-abdominal adhesions",
+        "answerability": 0.9065386056900024,
+        "ground_truth": {
+          "intra-abdominal adhesions": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main benefit of heparin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23344141244888306,
+        "ground_truth": {
+          "wound healing": {
+            "bertscore": 0.7063300013542175,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

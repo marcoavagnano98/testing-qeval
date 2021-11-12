@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Add-back experiments with either cytokines (IL-6 or IL-8) LTB4 or conditioned media failed to restore the proliferative response in the presence of tepoxalin.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Add-back experiments",
+        "either cytokines (IL-6 or IL-8) LTB4",
+        "conditioned media",
+        "the proliferative response",
+        "the presence",
+        "tepoxalin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What failed to restore the proliferative response in the presence of tepo",
+          "What did add-back experiments fail to restore the proliferative response in the presence of",
+          "What did add-back experiments fail to restore the proliferative response in?",
+          "What did add-back experiments fail to restore in the presence of tepox",
+          "What did add-back experiments fail to restore the proliferative response in?",
+          "What did add-back experiments fail to restore the proliferative response in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What failed to restore the proliferative response in the presence of tepo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Add-back experiments with either cytokines (IL-6 or IL-8)",
+        "answerability": 0.8222691416740417,
+        "ground_truth": {
+          "Add-back experiments": {
+            "bertscore": 0.8012132048606873,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did add-back experiments fail to restore the proliferative response in the presence of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44911760091781616,
+        "ground_truth": {
+          "either cytokines": {
+            "bertscore": 0.6425747871398926,
+            "f1": 0
+          },
+          "conditioned media": {
+            "bertscore": 0.7310203909873962,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cytokines failed to restore the proliferative response in the presence of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5909378528594971,
+        "ground_truth": {
+          "LTB4": {
+            "bertscore": 0.6737951040267944,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did add-back experiments fail to restore in the presence of tepox": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22742539644241333,
+        "ground_truth": {
+          "the proliferative response": {
+            "bertscore": 0.6674202680587769,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did add-back experiments fail to restore the proliferative response in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6147220134735107,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024360299110413,
+            "f1": 0
+          },
+          "tepoxalin": {
+            "bertscore": 0.6146305799484253,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

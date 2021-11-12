@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "In both cell types the cellular levels of IkappaBalpha mRNA and protein were evaluated by DEX treatment.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mRNA and protein of the chromosome that is analyzed by"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "both cell types",
+        "the cellular levels",
+        "IkappaBalpha mRNA",
+        "protein",
+        "DEX treatment"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what types of cells was DEX treatment used?",
+          "What was evaluated by DEX treatment?",
+          "What was evaluated by DEX treatment?",
+          "What is IkappaBalpha mRNA and what else evaluated by DEX",
+          "What was used to evaluate the levels of IkappaBalpha mRNA and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mRNA and protein of the chromosome that is analyzed by": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.692715048789978,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 0.6275320649147034,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what types of cells was DEX treatment used?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both",
+        "answerability": 0.8094137907028198,
+        "ground_truth": {
+          "both cell types": {
+            "bertscore": 0.7782958149909973,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was evaluated by DEX treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cellular levels of IkappaBalpha mRNA and protein",
+        "answerability": 0.9755343198776245,
+        "ground_truth": {
+          "the cellular levels": {
+            "bertscore": 0.7396743893623352,
+            "f1": 0.4444444444444445
+          },
+          "IkappaBalpha mRNA": {
+            "bertscore": 0.8477593660354614,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What is IkappaBalpha mRNA and what else evaluated by DEX": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein",
+        "answerability": 0.980967104434967,
+        "ground_truth": {
+          "protein": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was used to evaluate the levels of IkappaBalpha mRNA and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DEX treatment",
+        "answerability": 0.9962484240531921,
+        "ground_truth": {
+          "DEX treatment": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

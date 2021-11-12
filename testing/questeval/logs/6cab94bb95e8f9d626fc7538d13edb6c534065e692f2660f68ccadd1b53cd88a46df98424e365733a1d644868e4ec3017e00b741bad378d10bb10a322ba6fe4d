@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Activation of NF-kappa B is regulated by multiple phosphorylations and dephosphorylation events.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "NF-kappa B",
+        "multiple phosphorylations",
+        "dephosphorylation events"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is NF-kappa B regulated by?",
+          "What is regulated by multiple phosphorylations and dephosphorylation events?",
+          "What is the activation of NF-kappa B regulated by?",
+          "What is the second major event that regulates activation of NF-kappa B"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what way is NF-kappa B activated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylations and dephosphorylation events",
+        "answerability": 0.9388089179992676,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.607176661491394,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF-kappa B regulated by multiple phosphorylations?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation",
+        "answerability": 0.9886282682418823,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is activated in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2073262333869934,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.644961416721344,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the activation of NF-kappa B regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "multiple phosphorylations and dephosphorylation events",
+        "answerability": 0.9921069741249084,
+        "ground_truth": {
+          "multiple phosphorylations": {
+            "bertscore": 0.9084413051605225,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

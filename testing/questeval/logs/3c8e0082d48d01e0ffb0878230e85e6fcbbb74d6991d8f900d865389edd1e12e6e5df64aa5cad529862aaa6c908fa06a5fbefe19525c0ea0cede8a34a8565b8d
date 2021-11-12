@@ -1,0 +1,102 @@
+{
+  "type": "ref",
+  "text": "Furthermore CHIP promoted ubiquitination and proteasomal degradation of iNOS by associating with iNOS.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CHIP",
+        "ubiquitination",
+        "proteasomal degradation",
+        "iNOS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein promoted ubiquitination and proteasomal degradation of iNOS",
+          "What did CHIP promote?",
+          "What did CHIP promote in iNOS?",
+          "What did CHIP associate with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does CHIP interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "iNOS",
+        "answerability": 0.6314587593078613,
+        "ground_truth": {
+          "iNOS": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does CHIP promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ubiquitination and proteasomal degradation",
+        "answerability": 0.9303950667381287,
+        "ground_truth": {
+          "its ubiquitination": {
+            "bertscore": 0.7999669909477234,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What does CHIP promote by the proteasome?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37349021434783936,
+        "ground_truth": {
+          "degradation": {
+            "bertscore": 0.7194916009902954,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does CHIP promote ubiquitination and degradation by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "associating with iNOS",
+        "answerability": 0.8046609163284302,
+        "ground_truth": {
+          "the proteasome": {
+            "bertscore": 0.6798976063728333,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does CHIP promote to the aggresome?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1799028515815735,
+        "ground_truth": {
+          "its sequestration": {
+            "bertscore": 0.6945452690124512,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does CHIP sequester?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011117875576019287,
+        "ground_truth": {
+          "the aggresome": {
+            "bertscore": 0.6520765423774719,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

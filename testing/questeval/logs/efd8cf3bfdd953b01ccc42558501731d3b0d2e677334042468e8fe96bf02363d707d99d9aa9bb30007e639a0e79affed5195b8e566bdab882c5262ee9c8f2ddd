@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "We then investigated if HCMV binding also resulted in the expression of cytokines and chemokines.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the expression",
+        "cytokines",
+        "chemokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we investigate if HCMV binding also resulted in the expression of",
+          "What did HCMV binding result in?",
+          "What did HCMV binding result in?",
+          "What did HCMV binding result in the expression of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the researchers investigate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "if HCMV binding also resulted in the expression of cytokines and",
+        "answerability": 0.8873745203018188,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.555072009563446,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did HCMV binding result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of cytokines and chemokines",
+        "answerability": 0.9656162261962891,
+        "ground_truth": {
+          "the translation": {
+            "bertscore": 0.6547684073448181,
+            "f1": 0
+          },
+          "secretion": {
+            "bertscore": 0.6811045408248901,
+            "f1": 0
+          },
+          "cytokines": {
+            "bertscore": 0.8219746947288513,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

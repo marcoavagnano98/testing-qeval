@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "In nonlymphoma cells the epidermal growth factor receptor displayed increased tyrosine phosphorylation within seconds of UV irradiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "seconds"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did it take for the tyrosine phosphorylation to occur in"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the epidermal growth factor receptor",
+        "increased tyrosine phosphorylation",
+        "seconds",
+        "UV irradiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the receptor that displays increased tyrosine phosphorylation",
+          "What did the epidermal growth factor receptor display within seconds of UV irradiation",
+          "How long did it take for the tyrosine phosphorylation to occur in",
+          "What caused the tyrosine phosphorylation of the epidermal growth factor"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did it take for the egyptema to show increased": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2930145859718323,
+        "ground_truth": {
+          "seconds": {
+            "bertscore": 0.6651121377944946,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells showed increased tyrosine phosphorylation within seconds of UV": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nonlymphoma cells",
+        "answerability": 0.6014484763145447,
+        "ground_truth": {
+          "nonlymphoid cells": {
+            "bertscore": 0.9358643293380737,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the receptor that displays increased tyrosine phosphorylation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "epidermal growth factor receptor",
+        "answerability": 0.8488208055496216,
+        "ground_truth": {
+          "the epidermal growth factor receptor": {
+            "bertscore": 0.9545199275016785,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the epidermal growth factor receptor display within seconds of UV irradiation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased tyrosine phosphorylation",
+        "answerability": 0.6755708456039429,
+        "ground_truth": {
+          "increased tyrosine phosphorylation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What caused the tyrosine phosphorylation of the epidermal growth factor": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4361119270324707,
+        "ground_truth": {
+          "UV irradiation": {
+            "bertscore": 0.6968640089035034,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

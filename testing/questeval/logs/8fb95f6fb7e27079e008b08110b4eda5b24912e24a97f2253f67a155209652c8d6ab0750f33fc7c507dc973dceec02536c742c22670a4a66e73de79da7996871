@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "beta I beta II and mu; and RelB suggesting that these components/pathways are important for DC differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RelB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that is responsible for determining the chromosome of"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "beta",
+        "I",
+        "II",
+        "mu",
+        "RelB",
+        "these components/pathways",
+        "DC differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the two components that are important for DC differentiation?",
+          "What is the name of the two components that are important for DC differentiation?",
+          "What is the name of the two components that are important for DC differentiation?",
+          "What is the name of the two components that are important for DC differentiation?",
+          "What is the name of the gene that is responsible for determining the chromosome of",
+          "What is important for DC differentiation?",
+          "What is the main function of the adipose tissue?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that is responsible for determining the chromosome of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2550671696662903,
+        "ground_truth": {
+          "RelB": {
+            "bertscore": 0.6570121049880981,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the two components that are important for DC differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta I beta II and mu",
+        "answerability": 0.7140506505966187,
+        "ground_truth": {
+          "beta": {
+            "bertscore": 0.7694993615150452,
+            "f1": 0.2857142857142857
+          },
+          "I": {
+            "bertscore": 0.6712204813957214,
+            "f1": 0.2857142857142857
+          },
+          "II": {
+            "bertscore": 0.677605390548706,
+            "f1": 0.2857142857142857
+          },
+          "mu": {
+            "bertscore": 0.669032096862793,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is important for DC differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta I beta II and mu",
+        "answerability": 0.6800299882888794,
+        "ground_truth": {
+          "these components/pathways": {
+            "bertscore": 0.6725203394889832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main function of the adipose tissue?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01483142375946045,
+        "ground_truth": {
+          "DC differentiation": {
+            "bertscore": 0.6992012858390808,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Eosinophils express mRNA for GATA-1 GATA-3 and GATA-4 and each of them has a potential to bind to the consensus (A/\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Eosinophils express"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of mRNA does each of the two have the potential to bind to the"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GATA-1 GATA-3",
+        "GATA-4",
+        "them",
+        "a potential",
+        "the consensus",
+        "A/"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mRNA for?",
+          "What is the mRNA for GATA-3?",
+          "What two genes can bind to the consensus?",
+          "What is the potential of each of the two mRNAs to bind to the consensus",
+          "What does each of the mRNAs for GATA-1 GATA-3 and GATA",
+          "What is the mRNA for GATA-1 GATA-3 and GATA-4?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of mRNA does the eukaryotic cell line have?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10381770133972168,
+        "ground_truth": {
+          "Eosinophils express": {
+            "bertscore": 0.6614464521408081,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does eosinophils express for GATA-1 GATA-2 and G": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA",
+        "answerability": 0.5923683643341064,
+        "ground_truth": {
+          "Eosinophils express mRNA": {
+            "bertscore": 0.7718462944030762,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What two genes do eosinophils express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-1 GATA-3 and GATA-4",
+        "answerability": 0.9768555760383606,
+        "ground_truth": {
+          "GATA-1 GATA-2": {
+            "bertscore": 0.9216920137405396,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is the mRNA for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-1 GATA-3 and GATA-4",
+        "answerability": 0.7840073704719543,
+        "ground_truth": {
+          "GATA-3": {
+            "bertscore": 0.8552384972572327,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

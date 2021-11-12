@@ -1,0 +1,104 @@
+{
+  "type": "ref",
+  "text": "BPDE treatment caused induction of both AP-1 and NF-kappaB activity as determined by luciferase reporter assay and only NF-kappaB induction in response to BPDE was significantly attenuated by TSC phenolic fraction whereas AP-1 induction remains unaltered.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TSC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phenolic fraction significantly attenuated NF-kappaB activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BPDE treatment",
+        "induction",
+        "both AP-1 and NF-kappaB activity",
+        "luciferase reporter assay",
+        "only NF-kappaB induction",
+        "response",
+        "BPDE",
+        "TSC phenolic fraction",
+        "AP-1 induction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused induction of both AP-1 and NF-kappaB activity?",
+          "What did BPDE cause?",
+          "What did BPDE cause induction of?",
+          "What method determined AP-1 and NF-kappaB activity?",
+          "What was significantly attenuated by TSC phenolic fraction?",
+          "What is the only significant change in NF-kappaB activity in response to",
+          "What treatment caused induction of both AP-1 and NF-kappaB activity",
+          "What was the only treatment that reduced NF-kappaB activity?",
+          "What activity is not altered by BPDE?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What activity was not altered by staurosporine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.8278887271881104,
+        "ground_truth": {
+          "mTOR": {
+            "bertscore": 0.736643373966217,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the inhibitor staurosporine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00014472007751464844,
+        "ground_truth": {
+          "PKC": {
+            "bertscore": 0.7171090245246887,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did staurosporine not alter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.5149848461151123,
+        "ground_truth": {
+          "mTOR activity": {
+            "bertscore": 0.7113237977027893,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only inhibitor that altered mTOR activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019734323024749756,
+        "ground_truth": {
+          "the PKC inhibitor staurosporine": {
+            "bertscore": 0.6061576008796692,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did staurosporine suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00016677379608154297,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6715853214263916,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "IL-1beta transcription was abrogated; in contrast TGF-beta1 mRNA synthesis was steroid resistant.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TGF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mRNA synthesis of IL-1beta?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-1beta transcription",
+        "contrast",
+        "TGF-beta1 mRNA synthesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was abrogated?",
+          "What was the effect of TGF-beta1 mRNA synthesis on",
+          "What was steroid resistant?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mRNA synthesis of IL-1beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03368717432022095,
+        "ground_truth": {
+          "TGF": {
+            "bertscore": 0.6778273582458496,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was abrogated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-1beta transcription",
+        "answerability": 0.6638562679290771,
+        "ground_truth": {
+          "IL-1beta transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of TGF-beta1 mRNA synthesis on": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "steroid resistant",
+        "answerability": 0.6755306720733643,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7602609395980835,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was steroid resistant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta1 mRNA",
+        "answerability": 0.8130829334259033,
+        "ground_truth": {
+          "TGF-beta1 mRNA synthesis": {
+            "bertscore": 0.9557023048400879,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

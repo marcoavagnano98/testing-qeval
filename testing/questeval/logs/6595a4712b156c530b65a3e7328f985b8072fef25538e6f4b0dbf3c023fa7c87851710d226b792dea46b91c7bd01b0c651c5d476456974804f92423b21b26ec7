@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Genetic epistasis analyses the phosphorylation of Pkc1 by Pkh2 in vitro and reduced Pkc1 activity in the pkh1(D398G) pathways is essential for the Pkc1 activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Pkc1 by Pkh2",
+        "Pkc1",
+        "Pkc1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is essential for Pkc1 activity?",
+          "What protein is essential for the phosphorylation of?",
+          "What protein is essential for the phosphorylation of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Genetic epistasis",
+        "the phosphorylation",
+        "Pkc1",
+        "Pkh2",
+        "Pkc1 activity",
+        "the pkh1(D398G",
+        "pathways",
+        "the Pkc1 activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What analyzes the phosphorylation of Pkc1 by Pkh2 in",
+          "What is essential for Pkc1 activity?",
+          "What protein is essential for the phosphorylation of?",
+          "What is essential for Pkc1 activity?",
+          "What is essential for the phosphorylation of Pkh2?",
+          "What pathways are essential for Pkc1 activity?",
+          "What is essential for Pkc1 activity?",
+          "What is the phosphorylation of Pkh2 essential for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is essential for Pkh2 phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16650044918060303,
+        "ground_truth": {
+          "Pkc1": {
+            "bertscore": 0.6419468522071838,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is essential for Pkc1 function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation",
+        "answerability": 0.7889705896377563,
+        "ground_truth": {
+          "The Pkh2 phosphorylation site": {
+            "bertscore": 0.8178468346595764,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the Pkh2 phosphorylation site in Pkc1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18116718530654907,
+        "ground_truth": {
+          "part": {
+            "bertscore": 0.7089893221855164,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the Pkh2 phosphorylation site in Pkc1 essential for": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pkh2",
+        "answerability": 0.5662689805030823,
+        "ground_truth": {
+          "a conserved PDK1 target motif": {
+            "bertscore": 0.6546619534492493,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the Pkh2 phosphorylation site essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.28513604402542114,
+        "ground_truth": {
+          "Pkc1 function": {
+            "bertscore": 0.6118112206459045,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

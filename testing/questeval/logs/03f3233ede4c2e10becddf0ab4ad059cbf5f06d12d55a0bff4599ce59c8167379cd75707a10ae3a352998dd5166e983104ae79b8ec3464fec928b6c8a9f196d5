@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Overexpressed TRAF2 or TRAF6 activate JNK p38 or IkappaB kinase (IKK) and NF-kappaB\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "JNK",
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What kinase is activated when TRAF2 or TRAF6 is over",
+          "What kinase is activated when TRAF2 or TRAF6 is over"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TRAF6",
+        "JNK p38",
+        "IkappaB kinase",
+        "(IKK",
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the kinase that activates JNK p38",
+          "What kinase is activated when TRAF2 or TRAF6 is over",
+          "What does IKK stand for?",
+          "What is the name of the kinase that activates JNK p38",
+          "What kinase is activated when TRAF2 or TRAF6 is over"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does overexpressed TRAF2 or TRAF6 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JNK p38 or IkappaB kinase (IKK",
+        "answerability": 0.907465934753418,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.714736819267273,
+            "f1": 0.2857142857142857
+          },
+          "JNK p38": {
+            "bertscore": 0.7554261684417725,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What two genes activate JNK p38 or IKK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TRAF2 or TRAF6",
+        "answerability": 0.9690114855766296,
+        "ground_truth": {
+          "TRAF6": {
+            "bertscore": 0.850812554359436,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is activated when TRAF2 or TRAF6": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6114871501922607,
+        "ground_truth": {
+          "IKK": {
+            "bertscore": 0.6602891683578491,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

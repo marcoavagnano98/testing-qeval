@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "(but not the DQB-W region or the DQB Y-box) upstream of -141 in aDRA reporter plasmid rescued expression to nearly wild-type levels.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "aDRA",
+        "plasmid"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What reporter plasmid rescued expression to nearly wild-type levels?",
+          "What rescued expression to nearly wild-type levels?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(but not the DQB-W region or the DQB Y-box) upstream",
+        "-141",
+        "aDRA reporter plasmid rescued expression",
+        "nearly wild-type levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What region of -141 was rescued?",
+          "What is the name of the plasmid that rescued expression?",
+          "What did the plasmid rescue to nearly wild-type levels?",
+          "What did the aDRA reporter plasmid rescue expression to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What reporter plasmid rescued expression to nearly wild-type levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "aDRA",
+        "answerability": 0.9286904335021973,
+        "ground_truth": {
+          "DRA": {
+            "bertscore": 0.7894045114517212,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What region of -141 was rescued?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6138162612915039,
+        "ground_truth": {
+          "(but not the DQB-W region or the DQB Y-box) upstream": {
+            "bertscore": 0.6143879294395447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the plasmid that rescued expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "aDRA",
+        "answerability": 0.5173572301864624,
+        "ground_truth": {
+          "-141": {
+            "bertscore": 0.6605165600776672,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the result of a PCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05498981475830078,
+        "ground_truth": {
+          "a DRA reporter plasmid rescued expression": {
+            "bertscore": 0.6536425948143005,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the DRA reporter plasmid rescue expression to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10953789949417114,
+        "ground_truth": {
+          "nearly wild-type levels": {
+            "bertscore": 0.6733819842338562,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

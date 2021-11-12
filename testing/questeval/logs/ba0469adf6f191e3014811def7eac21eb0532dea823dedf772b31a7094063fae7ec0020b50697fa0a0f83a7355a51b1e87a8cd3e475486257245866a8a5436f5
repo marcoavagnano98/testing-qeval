@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "TLR2 is required for NF-kappa B activation in response to TLR2 and TLR4 signaling.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TLR2",
+        "NF-kappa B activation",
+        "response",
+        "TLR2",
+        "TLR4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for NF-kappa B activation?",
+          "What is TLR2 required for?",
+          "What is TLR2 required for?",
+          "What is required for NF-kappa B activation?",
+          "What signaling is required for NF-kappa B activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the toll-like receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007673501968383789,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.6837682723999023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the authors show about toll-like receptor 2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00045353174209594727,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for NTHi-induced NF-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TLR2",
+        "answerability": 0.8702541589736938,
+        "ground_truth": {
+          "toll-like receptor": {
+            "bertscore": 0.6975190043449402,
+            "f1": 0
+          },
+          "(TLR2": {
+            "bertscore": 0.8704406023025513,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is toll-like receptor 2 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B activation",
+        "answerability": 0.7142399549484253,
+        "ground_truth": {
+          "NTHi-induced NF-kappa B activation": {
+            "bertscore": 0.8834340572357178,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

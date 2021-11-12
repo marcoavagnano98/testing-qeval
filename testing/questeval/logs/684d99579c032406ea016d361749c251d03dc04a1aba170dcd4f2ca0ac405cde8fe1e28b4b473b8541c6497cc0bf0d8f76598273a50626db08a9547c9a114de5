@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "mRNA levels and a decrease in c-myc mRNA levels in pre-B (Hyon) and T (DND-44) cell lines as well as in freshly isolated normal human thymocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Hyon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the pre-B cell line?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "mRNA levels",
+        "a decrease",
+        "c-myc mRNA levels",
+        "pre-B (Hyon",
+        "(DND-44",
+        "freshly isolated normal human thymocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the decrease in c-myc mean?",
+          "What is the effect of c-myc mRNA levels on c-my",
+          "What does the decrease in c-myc mRNA mean?",
+          "What is the most common cell line to have a decrease in c-myc?",
+          "What is the name of the T cell line that has a decrease in c-my",
+          "What type of cells have a decrease in c-myc mRNA levels?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the pre-B cell line?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hyon",
+        "answerability": 0.9568261504173279,
+        "ground_truth": {
+          "Hyon": {
+            "bertscore": 1.0000009536743164,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the decrease in c-myc mean?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08087706565856934,
+        "ground_truth": {
+          "mRNA levels": {
+            "bertscore": 0.6672642827033997,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of c-myc mRNA levels on c-my": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decrease",
+        "answerability": 0.9820069074630737,
+        "ground_truth": {
+          "a decrease": {
+            "bertscore": 0.8762444853782654,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the decrease in c-myc mRNA mean?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.043217480182647705,
+        "ground_truth": {
+          "c-myc mRNA levels": {
+            "bertscore": 0.6204740405082703,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common cell line to have a decrease in c-myc?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03703266382217407,
+        "ground_truth": {
+          "pre-B (Hyon": {
+            "bertscore": 0.657194972038269,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells have a decrease in c-myc mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pre-B (Hyon) and T (DND-44) cell lines",
+        "answerability": 0.8423714637756348,
+        "ground_truth": {
+          "T (DND-41) cell lines": {
+            "bertscore": 0.8622477054595947,
+            "f1": 0.5454545454545454
+          },
+          "freshly isolated normal human thymocytes": {
+            "bertscore": 0.6506302356719971,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

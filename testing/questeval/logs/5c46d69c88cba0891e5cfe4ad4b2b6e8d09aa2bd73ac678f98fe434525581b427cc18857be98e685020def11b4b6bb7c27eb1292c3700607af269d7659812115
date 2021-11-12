@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Moreover intramuscular p75(NTR) gene delivery impairs neovascularization and blood vessel growth in a mouse model of limb ischemia.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "intramuscular p75(NTR",
+        "gene delivery impairs neovascularization",
+        "blood vessel growth",
+        "a mouse model",
+        "limb ischemia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene delivery impairs neovascularization and blood vessel growth in a",
+          "What is the effect of intramuscular p75(NTR) on blood vessel growth",
+          "What does intramuscular p75(NTR) gene delivery impair?",
+          "In what animal is p75(NTR) gene delivery impairing ne",
+          "What is the mouse model of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene delivery impairs neovascularization and blood flow recovery in a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75(NTR)",
+        "answerability": 0.7491576075553894,
+        "ground_truth": {
+          "intramuscular p75(NTR": {
+            "bertscore": 0.7911829948425293,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the effect of intramuscular p75(NTR) on blood flow recovery": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30570948123931885,
+        "ground_truth": {
+          "gene delivery impairs neovascularization": {
+            "bertscore": 0.6589371562004089,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does intramuscular p75(NTR) gene delivery impair?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neovascularization and blood vessel growth",
+        "answerability": 0.9750036597251892,
+        "ground_truth": {
+          "blood flow recovery": {
+            "bertscore": 0.7933663129806519,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "In what animal is p75(NTR) gene delivery impairing ne": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mouse",
+        "answerability": 0.9858087301254272,
+        "ground_truth": {
+          "a mouse model": {
+            "bertscore": 0.8157792687416077,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the mouse model of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "limb ischemia",
+        "answerability": 0.9914860129356384,
+        "ground_truth": {
+          "limb ischemia": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

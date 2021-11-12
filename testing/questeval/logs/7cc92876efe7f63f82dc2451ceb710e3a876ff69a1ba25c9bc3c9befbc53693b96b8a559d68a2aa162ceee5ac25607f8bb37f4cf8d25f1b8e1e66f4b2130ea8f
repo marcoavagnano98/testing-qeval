@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "Activation of NF-kappaB in human mononuclear cells by inflammatory stimuli.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "NF-kappaB",
+        "human mononuclear cells",
+        "inflammatory stimuli"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main function of NF-kappaB?",
+          "What is activated in human mononuclear cells?",
+          "What is activated by inflammatory stimuli?",
+          "What is the main cause of NF-kappaB activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What pathway is activated by inflammatory stimuli in human neutrophils?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.5542126893997192,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the NF-kappaB pathway": {
+            "bertscore": 0.760192334651947,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.061217546463012695,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.72251957654953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB pathway activated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inflammatory stimuli",
+        "answerability": 0.8713796734809875,
+        "ground_truth": {
+          "inflammatory stimuli": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "human neutrophils": {
+            "bertscore": 0.7294747829437256,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

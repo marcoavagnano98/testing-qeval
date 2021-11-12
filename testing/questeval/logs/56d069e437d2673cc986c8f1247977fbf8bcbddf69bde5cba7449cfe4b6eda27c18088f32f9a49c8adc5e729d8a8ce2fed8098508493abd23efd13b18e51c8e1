@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "Thirty-eight Wistar albino rats underwent laparotomy to cause intra-abdominal adhesions by mechanical abrasion of the cediranib implant on 15 days. Thirty-eight Wistar albino rats underwent laparotomy to cause intra-abdominal adhesions by mechanical abrasion of the cecum and ethanol application.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Thirty-eight",
+        "Wistar",
+        "15 days",
+        "Thirty-eight",
+        "Wistar"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many rats underwent laparotomy?",
+          "What was the name of the rat that underwent laparotomy?",
+          "How long did the laparotomy take?",
+          "How many rats underwent laparotomy?",
+          "What was the name of the rat that underwent laparotomy?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Thirty-eight Wistar albino rats",
+        "laparotomy",
+        "intra-abdominal adhesions",
+        "mechanical abrasion",
+        "15 days",
+        "Thirty-eight Wistar albino rats",
+        "laparotomy",
+        "intra-abdominal adhesions",
+        "mechanical abrasion",
+        "the cecum and ethanol application"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many rats underwent laparotomy?",
+          "What procedure did the rats undergo?",
+          "What did the laparotomy cause?",
+          "How was the cediranib implant reacted to?",
+          "How long did the laparotomy take?",
+          "How many rats underwent laparotomy?",
+          "What procedure did the rats undergo?",
+          "What did the laparotomy cause?",
+          "How was the cediranib implant reacted to?",
+          "What did the rats undergo to cause intra-abdominal adhesions?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many rats underwent laparotomy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Thirty-eight",
+        "answerability": 0.997362494468689,
+        "ground_truth": {
+          "Thirty-eight": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "Thirty-eight Wistar albino rats": {
+            "bertscore": 0.7994150519371033,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the name of the albino rats that underwent laparotomy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Wistar",
+        "answerability": 0.9922792315483093,
+        "ground_truth": {
+          "Wistar": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What procedure was used to cause intra-abdominal adhesions?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "laparotomy",
+        "answerability": 0.7975900173187256,
+        "ground_truth": {
+          "laparotomy": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the laparotomy cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "intra-abdominal adhesions",
+        "answerability": 0.9851265549659729,
+        "ground_truth": {
+          "intra-abdominal adhesions": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the process used to cause intra-abdominal adhesions?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mechanical abrasion of the cediranib implant",
+        "answerability": 0.8469710350036621,
+        "ground_truth": {
+          "mechanical abrasion": {
+            "bertscore": 0.8074803352355957,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What was the cause of the intra-abdominal adhesions?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mechanical abrasion of the cediranib implant",
+        "answerability": 0.9437997937202454,
+        "ground_truth": {
+          "the cecum and ethanol application": {
+            "bertscore": 0.7057232856750488,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "Vif inhibits the A3G promoter activity by directly binding to the viral promoter region suggesting that HIV-1 proteins also interact with this promoter region.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "A3",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter does Vif inhibit?",
+          "What type of protein is involved in the A3G promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Vif",
+        "the A3G promoter activity",
+        "the viral promoter region",
+        "HIV-1 proteins",
+        "this promoter region"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the A3G promoter activity?",
+          "What does Vif inhibit?",
+          "What does Vif directly interact with?",
+          "What does Vif inhibit the A3G promoter activity by directly binding to?",
+          "What does Vif inhibit the A3G promoter activity by binding to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main molecule that is regulated by vif?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 proteins",
+        "answerability": 0.8481497168540955,
+        "ground_truth": {
+          "A3": {
+            "bertscore": 0.6547094583511353,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does vif inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the A3G promoter activity",
+        "answerability": 0.9924780130386353,
+        "ground_truth": {
+          "A3G": {
+            "bertscore": 0.7168111801147461,
+            "f1": 0.5
+          },
+          "A3G activity": {
+            "bertscore": 0.8574649691581726,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the number of mechanisms by which Vif inhibits A3G activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008984625339508057,
+        "ground_truth": {
+          "8 37-43": {
+            "bertscore": 0.6132105588912964,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits A3G activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Vif",
+        "answerability": 0.9486701488494873,
+        "ground_truth": {
+          "Vif": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does vif induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00310671329498291,
+        "ground_truth": {
+          "proteasomal degradation": {
+            "bertscore": 0.6317992210388184,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How does Vif inhibit A3G activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "directly binding to the viral promoter region",
+        "answerability": 0.9982480406761169,
+        "ground_truth": {
+          "further mechanisms": {
+            "bertscore": 0.7563017010688782,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

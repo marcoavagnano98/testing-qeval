@@ -1,0 +1,108 @@
+{
+  "type": "ref",
+  "text": "The immunosuppressant drug cyclosporin A blocks a calcium-dependent signal from the T-cell receptor (TCR) that normally leads to T-cell activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does cyclosporin A block?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The immunosuppressant drug cyclosporin",
+        "a calcium-dependent signal",
+        "the T-cell receptor",
+        "TCR",
+        "T-cell activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blockades a calcium-dependent signal from the TCR?",
+          "What does cyclosporin A block?",
+          "What does cyclosporin A block a calcium-dependent signal from?",
+          "What does cyclosporin A block?",
+          "What does cyclosporin A block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the receptor that is responsible for the activation of T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCR",
+        "answerability": 0.9989166855812073,
+        "ground_truth": {
+          "TCR": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What blockers the TCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclosporin A",
+        "answerability": 0.7249736189842224,
+        "ground_truth": {
+          "The calcium-dependent phosphatase cyclosporin": {
+            "bertscore": 0.8139173984527588,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does cyclosporin do to the calcium-dependent signal from the TCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "blocks",
+        "answerability": 0.9788846969604492,
+        "ground_truth": {
+          "A blocks": {
+            "bertscore": 0.8839942812919617,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does cyclosporin A block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a calcium-dependent signal from the T-cell receptor",
+        "answerability": 0.9759299755096436,
+        "ground_truth": {
+          "a calcium-dependent signal": {
+            "bertscore": 0.8922468423843384,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What does TCR stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell receptor",
+        "answerability": 0.9822981953620911,
+        "ground_truth": {
+          "the T-cell receptor": {
+            "bertscore": 0.9367530345916748,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the calcium-dependent phosphatase cyclosporin A block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0754651427268982,
+        "ground_truth": {
+          "T-cell activation": {
+            "bertscore": 0.6565662622451782,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

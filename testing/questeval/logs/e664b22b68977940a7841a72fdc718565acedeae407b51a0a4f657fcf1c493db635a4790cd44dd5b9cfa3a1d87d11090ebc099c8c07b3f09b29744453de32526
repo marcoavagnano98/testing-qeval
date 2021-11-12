@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Role of AP-1- and octamer-binding proteins in control of IL3 gene expression.NF-kappa B is a transcriptional activator that binds to sequences in the interleukin 3 (IL3) promoter and is thought to be largely responsible for the T cell-specific inducibility of IL3 expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Role",
+        "AP-1-",
+        "octamer-binding proteins",
+        "control",
+        "IL3 gene expression",
+        "NF-kappa B",
+        "a transcriptional activator",
+        "sequences",
+        "the interleukin 3 (IL3) promoter",
+        "the T cell-specific inducibility",
+        "IL3 expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of AP-1 and octamer-binding proteins",
+          "What is the name of the octamer-binding protein that controls",
+          "What is the role of AP-1 and octamer-binding proteins",
+          "What is the role of AP-1 and octamer-binding proteins",
+          "What is NF-kappa B responsible for?",
+          "What transcriptional activator binds to IL3 promoters?",
+          "What is NF-kappa B?",
+          "What does NF-kappa B bind to?",
+          "What sequence does NF-kappa B bind to?",
+          "What is NF-kappa B thought to be largely responsible for?",
+          "What gene is NF-kappa B responsible for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the role of AP-1 and octamer-binding proteins": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in control of IL3 gene expression",
+        "answerability": 0.9631731510162354,
+        "ground_truth": {
+          "Role": {
+            "bertscore": 0.6275250315666199,
+            "f1": 0
+          },
+          "control": {
+            "bertscore": 0.6660764813423157,
+            "f1": 0.2857142857142857
+          },
+          "IL3 gene expression": {
+            "bertscore": 0.8891634941101074,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the name of the octamer-binding protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22030121088027954,
+        "ground_truth": {
+          "AP-1-": {
+            "bertscore": 0.6530256867408752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of AP-1 and IL3 in regulation of gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "octamer-binding proteins",
+        "answerability": 0.9667417407035828,
+        "ground_truth": {
+          "octamer-binding proteins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

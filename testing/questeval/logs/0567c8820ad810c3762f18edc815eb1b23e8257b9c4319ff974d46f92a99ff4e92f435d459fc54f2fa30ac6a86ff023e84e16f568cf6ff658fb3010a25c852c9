@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "To gain a better understanding of the mechanism of binding to the human mineralocorticoid receptor (hMR) we developed a new monoclonal antibody (mAb) raised against the hormone-binding domain (HBD). This antibody recognized both the denatured and native MR forms as well as the hetero-oligomeric MR form and the transformed MR state.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HBD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that is binds to the human mineralocortic"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a better understanding",
+        "the mechanism",
+        "the human mineralocorticoid receptor",
+        "hMR",
+        "we",
+        "mAb",
+        "the hormone-binding domain",
+        "HBD",
+        "This antibody",
+        "both the denatured and native MR forms",
+        "the hetero-oligomeric MR form",
+        "the transformed MR state"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the new antibody do to gain?",
+          "What did the new antibody help us understand?",
+          "What does hMR stand for?",
+          "What is the human mineralocorticoid receptor?",
+          "What did the researchers develop to better understand the binding to the hMR?",
+          "What was the name of the antibody developed to better understand the binding to the human mineralocor",
+          "What does HBD stand for?",
+          "What is the name of the protein that is binds to the human mineralocortic",
+          "What was developed to better understand the binding to the hMR?",
+          "What did the new antibody recognize?",
+          "What type of MR did the new antibody recognize?",
+          "What is the other state that the antibody recognized?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What antibody recognized both the denatured and native MR forms?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mAb",
+        "answerability": 0.6669551134109497,
+        "ground_truth": {
+          "This antibody": {
+            "bertscore": 0.6602786779403687,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the antibody recognize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both the denatured and native MR forms as well as the hetero-oligomeric",
+        "answerability": 0.9637988209724426,
+        "ground_truth": {
+          "both the denatured and native MR forms": {
+            "bertscore": 0.8753668069839478,
+            "f1": 0.7499999999999999
+          },
+          "the hetero-oligomeric MR form": {
+            "bertscore": 0.849082887172699,
+            "f1": 0.30769230769230765
+          }
+        }
+      }
+    },
+    "What was the other state of the MR form?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transformed",
+        "answerability": 0.8108522295951843,
+        "ground_truth": {
+          "the transformed MR state": {
+            "bertscore": 0.75103759765625,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

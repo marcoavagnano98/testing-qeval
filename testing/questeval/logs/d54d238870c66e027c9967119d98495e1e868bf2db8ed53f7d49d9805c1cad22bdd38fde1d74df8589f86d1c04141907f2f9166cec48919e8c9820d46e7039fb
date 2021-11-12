@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Human IL4 promoter-mediated transcription is downregulated in Jurkat cells stimulated with the NF-kappa B-activating cytoplasmic inhibitor I kappa B alpha and suppressed in RelA-overexpressing cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jurkat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells are stimulated with NF-kappa B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human IL4 promoter-mediated transcription",
+        "Jurkat cells",
+        "the NF-kappa B-activating cytoplasmic inhibitor",
+        "I",
+        "kappa B alpha",
+        "RelA-overexpressing cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is downregulated in Jurkat cells?",
+          "What cells are stimulated with NF-kappa B-activating cytoplasm",
+          "What is I kappa B alpha?",
+          "What is the name of the NF-kappa B-activating cytoplasm",
+          "What is the cytoplasmic inhibitor that inhibits human IL4 promoter-mediated",
+          "What type of cells are suppressed by IL4 promoter-mediated transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells are stimulated with NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat cells",
+        "answerability": 0.8394250273704529,
+        "ground_truth": {
+          "Jurkat": {
+            "bertscore": 0.8724261522293091,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is downregulated in Jurkat cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL4 promoter-mediated transcription",
+        "answerability": 0.9361748099327087,
+        "ground_truth": {
+          "Human IL4 promoter-mediated transcription": {
+            "bertscore": 0.9644664525985718,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What cells are stimulated with NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat cells",
+        "answerability": 0.7781126499176025,
+        "ground_truth": {
+          "Jurkat cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the IL4 promoter-mediated transcription downregulated in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat cells",
+        "answerability": 0.9732655882835388,
+        "ground_truth": {
+          "the NF-kappa B-activating cytokine tumor necrosis factor alpha": {
+            "bertscore": 0.6173315048217773,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are suppressed by IL4 promoter-mediated transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17244547605514526,
+        "ground_truth": {
+          "RelA-overexpressing cells": {
+            "bertscore": 0.6335679292678833,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

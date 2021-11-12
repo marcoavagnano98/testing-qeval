@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "These results add a different perspective to the molecular interactions through which LMP1 TRADD and RIP participate in B-lymphocyte activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TRADD",
+        "RIP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the LMP1 protein that participates in B-lymphocyte",
+          "What is the other gene that is involved in B-lymphocyte activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "a different perspective",
+        "the molecular interactions",
+        "B-lymphocyte activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What adds a different perspective to the molecular interactions through which LMP1 TR",
+          "What do these results add to the molecular interactions through which LMP1 TRADD and",
+          "What do the results of the RIP and LMP1 TRADD add a different perspective",
+          "What do the results of the RIP and LMP1 TRADD study?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the LMP1 protein that is involved in B-lymphocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4689534306526184,
+        "ground_truth": {
+          "TRADD": {
+            "bertscore": 0.6649786233901978,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is involved in B-lymphocyte activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1 TRADD",
+        "answerability": 0.8099578022956848,
+        "ground_truth": {
+          "RIP": {
+            "bertscore": 0.7593241333961487,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What adds a different perspective to the molecular interactions through which LMP1 TR": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These results",
+        "answerability": 0.7732516527175903,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do the results of the RIP and LMP1 TRADD add to the mole": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a different perspective",
+        "answerability": 0.9125000238418579,
+        "ground_truth": {
+          "a different perspective": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do the results of the RIP and LMP1 TRADD add a different perspective": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "molecular interactions",
+        "answerability": 0.8073927164077759,
+        "ground_truth": {
+          "the molecular interactions": {
+            "bertscore": 0.9052152633666992,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein is involved in B-lymphocyte activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1 TRADD",
+        "answerability": 0.974044680595398,
+        "ground_truth": {
+          "LMP1 TRADD": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do the results of the RIP and LMP1 TRADD study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.608962893486023,
+        "ground_truth": {
+          "B-lymphocyte activation": {
+            "bertscore": 0.6026831269264221,
+            "f1": 0
+          },
+          "growth": {
+            "bertscore": 0.7230673432350159,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

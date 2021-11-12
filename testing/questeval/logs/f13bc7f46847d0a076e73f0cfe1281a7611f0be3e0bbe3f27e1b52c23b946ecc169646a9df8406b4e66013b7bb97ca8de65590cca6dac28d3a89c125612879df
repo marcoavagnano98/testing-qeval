@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Northern (RNA) blots of various adult mouse tissues revealed that the levels of expression of both genes were most prominent in the thymus.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(RNA",
+        "various adult mouse tissues",
+        "the levels",
+        "expression",
+        "both genes",
+        "the thymus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of blots revealed that the expression of the thymus and",
+          "What was used to determine the expression of the thymus genes?",
+          "What was most prominent in the thymus?",
+          "What gene was most prominent in the thymus?",
+          "What genes were most prominent in the thymus?",
+          "Where did Northern blots of mouse tissues reveal the highest levels of expression of the two"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of blots revealed that the expression of the thymus and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Northern (RNA) blots",
+        "answerability": 0.9795719385147095,
+        "ground_truth": {
+          "(RNA": {
+            "bertscore": 0.7291005253791809,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was used to determine the expression of the thymus genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Northern (RNA) blots",
+        "answerability": 0.9749690294265747,
+        "ground_truth": {
+          "various adult mouse tissues": {
+            "bertscore": 0.6814790368080139,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was most prominent in the thymus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both genes",
+        "answerability": 0.9659375548362732,
+        "ground_truth": {
+          "the levels": {
+            "bertscore": 0.822099506855011,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was most prominent in the thymus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6277800798416138,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272055745124817,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What genes were most prominent in the thymus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both genes",
+        "answerability": 0.634642481803894,
+        "ground_truth": {
+          "both genes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where did Northern blots of mouse tissues reveal the highest levels of expression of the two": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the thymus",
+        "answerability": 0.9475057721138,
+        "ground_truth": {
+          "the thymus": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

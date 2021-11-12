@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "In the present study we investigated the signaling role of the Syk tyrosine kinase.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Syk"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What tyrosine kinase is investigated in the present study?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the present study",
+        "we",
+        "the signaling role",
+        "the Syk tyrosine kinase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study investigated the signaling role of the Syk tyrosine kina",
+          "What was the purpose of the present study?",
+          "What did the present study investigate?",
+          "What signaling role was investigated in the present study?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the tyrosine kinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Syk",
+        "answerability": 0.9269369840621948,
+        "ground_truth": {
+          "Syk": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of Syk tyrosine kinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signaling",
+        "answerability": 0.9909541606903076,
+        "ground_truth": {
+          "A possible signaling role": {
+            "bertscore": 0.809291660785675,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is a possible signaling role for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Syk tyrosine kinase",
+        "answerability": 0.9382292032241821,
+        "ground_truth": {
+          "the Syk tyrosine kinase": {
+            "bertscore": 0.9269384145736694,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

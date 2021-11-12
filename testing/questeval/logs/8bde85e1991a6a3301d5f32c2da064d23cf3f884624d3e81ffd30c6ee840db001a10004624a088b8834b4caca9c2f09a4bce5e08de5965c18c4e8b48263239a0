@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Angiopoietin-1 prevents VEGF-induced endothelial cell proliferation by sequestering Src through mDia.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Angiopoietin-1",
+        "VEGF-induced endothelial cell proliferation",
+        "Src",
+        "mDia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevents VEGF-induced endothelial cell proliferation?",
+          "What does angiopoietin-1 prevent?",
+          "What does mDia sequester?",
+          "What is the name of the enzyme that sequesters Src?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What could inhibit VEGF-induced endothelial cell proliferation and migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Angiopoietin-1",
+        "answerability": 0.9235010743141174,
+        "ground_truth": {
+          "GSE": {
+            "bertscore": 0.6753054261207581,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What ring of the aorta could be blocked by GSE?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009267330169677734,
+        "ground_truth": {
+          "aorta": {
+            "bertscore": 0.7060524225234985,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What could GSE inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00796055793762207,
+        "ground_truth": {
+          "a result": {
+            "bertscore": 0.6626076102256775,
+            "f1": 0
+          },
+          "VEGF-induced endothelial cell proliferation": {
+            "bertscore": 0.5719735026359558,
+            "f1": 0
+          },
+          "migration": {
+            "bertscore": 0.6764301061630249,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What could GSE inhibit from the aorta ring?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001521766185760498,
+        "ground_truth": {
+          "sprout formation": {
+            "bertscore": 0.6976137161254883,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does GSE cause endothelial cell proliferation and migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007200837135314941,
+        "ground_truth": {
+          "aorta ring": {
+            "bertscore": 0.6999061703681946,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

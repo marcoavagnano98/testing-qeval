@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "The primary RNA transcript of the gene is subject to alternative splicing to yield different variants which can either activate or repress gene expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the primary transcript of the gene subject to alternative splicing?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The primary RNA transcript",
+        "the gene",
+        "alternative splicing",
+        "different variants"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is subject to alternative splicing to yield different variants?",
+          "What is subject to alternative splicing?",
+          "What is the primary RNA transcript subject to?",
+          "What can be produced by alternative splicing?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the primary transcript of the gene subject to alternative splicing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RNA",
+        "answerability": 0.9852898120880127,
+        "ground_truth": {
+          "RNA": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is subject to alternative splicing to yield different variants?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The primary RNA transcript",
+        "answerability": 0.9909641146659851,
+        "ground_truth": {
+          "The primary RNA transcript": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is subject to alternative splicing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The primary RNA transcript",
+        "answerability": 0.9690335988998413,
+        "ground_truth": {
+          "the gene": {
+            "bertscore": 0.7654632925987244,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the primary RNA transcript subject to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "alternative splicing",
+        "answerability": 0.9991738796234131,
+        "ground_truth": {
+          "alternative splicing": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can be produced by alternative splicing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "different variants",
+        "answerability": 0.9366370439529419,
+        "ground_truth": {
+          "different variants": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

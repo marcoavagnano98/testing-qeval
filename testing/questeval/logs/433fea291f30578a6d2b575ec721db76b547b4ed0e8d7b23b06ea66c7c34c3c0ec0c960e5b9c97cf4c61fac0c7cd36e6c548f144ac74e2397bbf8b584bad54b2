@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Stable expression of Tax in CTLL-2 transformed cell growth from being IL-2 dependent to IL-2 independent.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did Stable expression of Tax transform cell growth from being dependent on to?",
+          "What did Stable expression of Tax transform cell growth from being dependent on to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stable expression",
+        "Tax",
+        "CTLL-2",
+        "cell growth"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What changed cell growth from being dependent to being independent?",
+          "What gene transformed cell growth from being dependent to being independent?",
+          "What gene transformed cell growth from being dependent to being independent?",
+          "What did Stable expression of Tax transform?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did Stable expression of Tax transform cell growth from being dependent on to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2655424475669861,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What changed cell growth from being dependent to being independent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stable expression of Tax",
+        "answerability": 0.9207308888435364,
+        "ground_truth": {
+          "Stable expression": {
+            "bertscore": 0.8786616325378418,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What gene transformed cell growth from being dependent to being independent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stable expression of Tax",
+        "answerability": 0.8212907314300537,
+        "ground_truth": {
+          "Tax": {
+            "bertscore": 0.738817572593689,
+            "f1": 0.4
+          },
+          "CTLL-2": {
+            "bertscore": 0.6848468780517578,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Stable expression of Tax transform?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell growth",
+        "answerability": 0.9893324971199036,
+        "ground_truth": {
+          "cell growth": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

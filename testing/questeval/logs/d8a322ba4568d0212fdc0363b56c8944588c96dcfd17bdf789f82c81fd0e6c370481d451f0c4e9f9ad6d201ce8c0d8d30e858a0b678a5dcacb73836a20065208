@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "Moreover other genes involved in cell movement mimic FN1 expression induced by Snail1 or TSC1 treatment and recruit p65NF-kappaB and Snail1 to their promoters.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Snail1",
+        "Snail1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What other gene mimics FN1 expression?",
+          "What other gene mimics FN1 expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Moreover other genes",
+        "cell movement mimic FN1 expression",
+        "Snail1 or TSC1 treatment",
+        "recruit p65NF-kappaB",
+        "Snail1",
+        "their promoters"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What other genes mimic FN1 expression induced by Snail1 or TSC",
+          "What do other genes do that are induced by Snail1 or TSC1",
+          "What two treatments induce FN1 expression?",
+          "What do other genes do to mimic FN1 expression?",
+          "What other gene mimics FN1 expression?",
+          "What do other genes recruit to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What other gene mimics FN1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TSC1",
+        "answerability": 0.9444273114204407,
+        "ground_truth": {
+          "Snail1": {
+            "bertscore": 0.7958980798721313,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the treatment that mimics FN1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Snail1 or TSC1 treatment",
+        "answerability": 0.8873340487480164,
+        "ground_truth": {
+          "TGF-beta1": {
+            "bertscore": 0.7434707283973694,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What other genes mimic FN1 expression induced by Snail1 or TGF": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.516688346862793,
+        "ground_truth": {
+          "Moreover other genes": {
+            "bertscore": 0.6563182473182678,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do other genes do that are induced by Snail1 or TGF-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mimic FN1 expression",
+        "answerability": 0.8720343112945557,
+        "ground_truth": {
+          "cell movement mimic FN1 expression": {
+            "bertscore": 0.9302380084991455,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What are two ways that other genes mimic FN1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Snail1 or TSC1 treatment",
+        "answerability": 0.8945690989494324,
+        "ground_truth": {
+          "Snail1 or TGF-beta1 treatment": {
+            "bertscore": 0.9134496450424194,
+            "f1": 0.75
+          }
+        }
+      }
+    },
+    "What do other genes do to mimic FN1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "recruit p65NF-kappaB and Snail1 to their promote",
+        "answerability": 0.8288711905479431,
+        "ground_truth": {
+          "recruit p65NF-kappaB": {
+            "bertscore": 0.8145211935043335,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What do other genes recruit to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65NF-kappaB and Snail1 to their promoter",
+        "answerability": 0.9045877456665039,
+        "ground_truth": {
+          "their promoters": {
+            "bertscore": 0.6403378248214722,
+            "f1": 0.25
+          }
+        }
+      }
+    }
+  }
+}

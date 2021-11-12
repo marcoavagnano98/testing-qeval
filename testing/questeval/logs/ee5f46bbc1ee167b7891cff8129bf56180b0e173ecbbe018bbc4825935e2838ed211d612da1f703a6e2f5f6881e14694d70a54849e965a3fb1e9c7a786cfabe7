@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "This resulted in a 31-43% reduction of luciferase activity in the presence of Sp3- or Sp3-specific siRNA\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "31-43%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the reduction of luciferase activity in the presence of Sp3-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a 31-43% reduction",
+        "luciferase activity",
+        "the presence",
+        "Sp3-",
+        "Sp3-specific"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of the luciferase inhibitors on activity?",
+          "What did the recombinant splicing of a splice",
+          "What reduced luciferase activity?",
+          "What siRNA was used to reduce luciferase activity?",
+          "What type of siRNA was used to reduce luciferase activity?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the reduction of luciferase activity in the presence of Sp1-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02792876958847046,
+        "ground_truth": {
+          "31-43%": {
+            "bertscore": 0.5920186638832092,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How much did the presence of Sp1- or Sp3-specific siRNA reduce luci": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20611751079559326,
+        "ground_truth": {
+          "a 31-43% reduction": {
+            "bertscore": 0.6051727533340454,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the recombinant RNA result in a reduction of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "luciferase activity",
+        "answerability": 0.6218971014022827,
+        "ground_truth": {
+          "luciferase activity": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What reduced luciferase activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6839864253997803,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024357914924622,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of siRNA was used to reduce luciferase activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp3- or Sp3-specific siRNA",
+        "answerability": 0.8476537466049194,
+        "ground_truth": {
+          "Sp3-specific": {
+            "bertscore": 0.8348888158798218,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Licochalcone A significantly inhibited LPS-induced NF-kappaB transcriptional activation; however it had no effect on not only the phosphorylation and degradation of IkappaBalpha but also nuclear translocation and DNA binding activity of NF-kappaB p65.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein did LPS inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "significantly inhibited LPS-induced NF-kappaB transcriptional activation",
+        "it",
+        "no effect",
+        "IkappaBalpha",
+        "NF-kappaB p65"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did licochalcone A do?",
+          "What did Licochalcone A do to IkappaBalpha?",
+          "What did Licochalcone A have on IkappaBalpha?",
+          "What protein did LPS inhibit?",
+          "What transcriptional activation was not inhibited by licochalcone A"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein inhibits LPS signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Licochalcone A",
+        "answerability": 0.5634543895721436,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.6504005193710327,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What significantly suppresses the LPS signaling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Licochalcone A",
+        "answerability": 0.9083400368690491,
+        "ground_truth": {
+          "Licochalcone A": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What signaling pathway is significantly suppressed by licochalcone A?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activation",
+        "answerability": 0.9863386154174805,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.6986520886421204,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling pathway does ligcochalcone A suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activation",
+        "answerability": 0.8839663863182068,
+        "ground_truth": {
+          "pathway": {
+            "bertscore": 0.8086009621620178,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main effect of licochalcone A on the LPS signal": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6808220148086548,
+        "ground_truth": {
+          "the inhibition": {
+            "bertscore": 0.7077796459197998,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does licochalcone A inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activation",
+        "answerability": 0.9187902808189392,
+        "ground_truth": {
+          "NF-kappaB p65 phosphorylation": {
+            "bertscore": 0.7088690996170044,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the second most important serine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009937882423400879,
+        "ground_truth": {
+          "serine": {
+            "bertscore": 0.7189225554466248,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

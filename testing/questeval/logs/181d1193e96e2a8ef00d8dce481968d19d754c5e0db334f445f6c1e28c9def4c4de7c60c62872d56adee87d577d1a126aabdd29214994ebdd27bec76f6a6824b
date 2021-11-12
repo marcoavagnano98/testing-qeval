@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "The level of transcripts obtained by RT-PCR of the flagellar genes fliM salK (BAB2_0124) and salR (BAB2_1103) were increased also in the piglets.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RT-PCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What method was used to determine the level of flagellar genes in piglets?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The level",
+        "transcripts",
+        "RT-PCR",
+        "the flagellar genes",
+        "fliM salK (BAB2_0124",
+        "the piglets"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was increased in piglets after RT-PCR?",
+          "What was increased in piglets?",
+          "What method was used to determine the level of flagellar genes in piglets?",
+          "What genes were increased in pigs?",
+          "What flagellar genes were increased in piglets?",
+          "Where were the levels of flagellar genes increased?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was extracted from salKR to confirm its predicted transcripts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06237673759460449,
+        "ground_truth": {
+          "RNA": {
+            "bertscore": 0.6859531402587891,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the RNA extracted from salKR confirm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02104860544204712,
+        "ground_truth": {
+          "the predicted transcripts": {
+            "bertscore": 0.6435705423355103,
+            "f1": 0
+          },
+          "the flanking genes": {
+            "bertscore": 0.6819123029708862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the flanking gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.054739534854888916,
+        "ground_truth": {
+          "salKR": {
+            "bertscore": 0.6436722278594971,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

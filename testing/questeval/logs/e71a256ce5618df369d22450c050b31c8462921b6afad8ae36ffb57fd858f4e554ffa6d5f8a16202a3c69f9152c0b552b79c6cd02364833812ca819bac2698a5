@@ -1,0 +1,110 @@
+{
+  "type": "ref",
+  "text": "However the experimentally derived B-lymphoblastoid cell line clone 13 expresses high levels of HLADQ in the absence of HLA-DR and HLA-DP despite its mapping by complementation analysis to this group.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "13",
+        "HLADQ",
+        "HLA-DR",
+        "HLA-DP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the B-lymphoblastoid cell line?",
+          "What does the clone 13 express in the absence of HLA-DR and H",
+          "What is the only other cell line that expresses high levels of HLADQ?",
+          "What is the only other cell line that expresses high levels of HLADQ?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the experimentally derived B-lymphoblastoid cell line",
+        "high levels",
+        "HLADQ",
+        "the absence",
+        "HLA-DR",
+        "HLA-DP",
+        "its mapping",
+        "complementation analysis",
+        "this group"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the clone 13 of?",
+          "What does the clone 13 express?",
+          "What does the clone 13 express in the absence of HLA-DR and H",
+          "In what condition does the clone 13 express high levels of HLADQ?",
+          "What is the only other cell line that expresses high levels of HLADQ?",
+          "What is the only other cell line that expresses high levels of HLADQ?",
+          "What is the reason for the lack of HLA-DP?",
+          "What method was used to map the clone 13 to the B-lympho",
+          "What group does clone 13 express high levels of HLADQ?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Clone-13 express in the absence of HLA-DR and -DP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HLADQ",
+        "answerability": 0.8279285430908203,
+        "ground_truth": {
+          "HLA-DQ": {
+            "bertscore": 0.8942093253135681,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Clone-13 lack?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42694610357284546,
+        "ground_truth": {
+          "HLA-DR": {
+            "bertscore": 0.6684451699256897,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the mutant B lymphoblastoid cell line Clone-13": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.029337525367736816,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054113507270813,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what condition does Clone-13 express HLA-DR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "absence",
+        "answerability": 0.6538491249084473,
+        "ground_truth": {
+          "the absence": {
+            "bertscore": 0.8575444221496582,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only other protein that is present in Clone-13?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4156426787376404,
+        "ground_truth": {
+          "-DP": {
+            "bertscore": 0.7080215215682983,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

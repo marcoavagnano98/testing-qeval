@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Furthermore studies carried out using H7 a protein kinase A/protein kinase C inhibitor blocked c-fos induction whereas no effect was observed with bisindolylmaleimide a specific protein kinase C inhibitor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H7"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein kinase A/protein kinas"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "studies",
+        "H7",
+        "A/protein kinase C inhibitor",
+        "c-fos induction",
+        "no effect",
+        "bisindolylmaleimide a specific protein kinase C inhibitor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did H7 block?",
+          "What is the name of the protein kinase A/protein kinas",
+          "What is H7?",
+          "What did studies using H7 block?",
+          "What was observed with H7?",
+          "What did studies using H7 show no effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the only inhibitor of IL-2R alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011728227138519287,
+        "ground_truth": {
+          "TG": {
+            "bertscore": 0.6876041889190674,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the PKC inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01993405818939209,
+        "ground_truth": {
+          "H7": {
+            "bertscore": 0.6814532279968262,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is inhibited by the PKC inhibitor H7?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos induction",
+        "answerability": 0.8859157562255859,
+        "ground_truth": {
+          "not TG-induced IL-2R alpha": {
+            "bertscore": 0.6563594937324524,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits IL-2R alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006925702095031738,
+        "ground_truth": {
+          "the PKC inhibitor H7": {
+            "bertscore": 0.6010306477546692,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

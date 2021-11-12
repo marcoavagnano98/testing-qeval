@@ -1,0 +1,58 @@
+{
+  "type": "hyp",
+  "text": "These findings strongly suggest that the mechanism for previously described upregulated thromboxane receptors after acute myocardial infarction is increased thromboxane receptor gene transcription in platelet-like K562 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These findings",
+        "the mechanism",
+        "previously described upregulated thromboxane receptors",
+        "acute myocardial infarction",
+        "thromboxane receptor gene transcription",
+        "platelet-like K562 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that the mechanism for upregulated thromboxane receptors is increased",
+          "What do the findings suggest is the cause of the upregulation of thromboxane",
+          "What do the findings suggest is the mechanism for?",
+          "What is the mechanism for upregulated thromboxane receptors?",
+          "What is the mechanism for upregulated thromboxane receptors after acute myo",
+          "What is the source of the upregulated thromboxane receptor gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is upregulated after acute myocardial infarction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "thromboxane receptors",
+        "answerability": 0.9935325980186462,
+        "ground_truth": {
+          "Platelet thromboxane receptors": {
+            "bertscore": 0.9220079779624939,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the cause of the upregulation of platelet thromboxane receptors": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6307483911514282,
+        "ground_truth": {
+          "acute myocardial infarction": {
+            "bertscore": 0.6263915300369263,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "type": "ref",
+  "text": "Inhibition of the mammalian target of rapamycin (mTOR) by rapamycin increases chemosensitivity of CaSki cells to paclitaxel.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CaSki"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cell type is rapamycin inhibited by?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "the mammalian target",
+        "rapamycin",
+        "mTOR",
+        "rapamycin",
+        "chemosensitivity",
+        "CaSki cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of rapamycin on mTOR?",
+          "What does mTOR stand for?",
+          "What increases chemosensitivity of CaSki cells to paclitaxel?",
+          "What is the mammalian target of rapamycin called?",
+          "What increases chemosensitivity of CaSki cells to paclitaxel?",
+          "What does rapamycin increase in CaSki cells?",
+          "What cells are more sensitive to rapamycin than other cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main effect of rapamycin on mTOR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Inhibition",
+        "answerability": 0.9702061414718628,
+        "ground_truth": {
+          "Inhibition": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does rapamycin inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mTOR",
+        "answerability": 0.897383987903595,
+        "ground_truth": {
+          "the mammalian target": {
+            "bertscore": 0.6500881314277649,
+            "f1": 0
+          },
+          "mTOR": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the drug that inhibits mTOR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3953631520271301,
+        "ground_truth": {
+          "rapamycin": {
+            "bertscore": 0.6158517599105835,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does rapamycin increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chemosensitivity",
+        "answerability": 0.9569302201271057,
+        "ground_truth": {
+          "mTOR levels": {
+            "bertscore": 0.6910713315010071,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does rapamycin accelerate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chemosensitivity",
+        "answerability": 0.7517877817153931,
+        "ground_truth": {
+          "cell death": {
+            "bertscore": 0.7241572737693787,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

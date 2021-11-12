@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Separation of oxidant-initiated and redox-regulated steps in the NF-kappa B signal transduction process.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Separation",
+        "oxidant-initiated and redox-regulated steps",
+        "the NF-kappa B signal transduction process"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that is regulated by oxidant-initiated steps",
+          "What steps are involved in the NF-kappa B signal transduction process?",
+          "What is the oxidant-initiated step in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process called that is a step in the NF-kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06226927042007446,
+        "ground_truth": {
+          "Separation": {
+            "bertscore": 0.700785219669342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What steps in the NF-kappa B signal transduction pathway are separated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oxidant-initiated and redox-regulated steps",
+        "answerability": 0.9633541703224182,
+        "ground_truth": {
+          "oxidant-initiated and redox-regulated steps": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What pathway is oxidant-initiated and redox-regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2876390814781189,
+        "ground_truth": {
+          "the NF-kappa B signal transduction pathway": {
+            "bertscore": 0.5870413184165955,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

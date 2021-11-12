@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "p53 up-regulation and p53-mediated proliferation arrest and apoptosis were substantiated using immunohistochemistry with activation of both thep53- and p53-dependent apoptotic pathways.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p53-dependent"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the apoptotic pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "up-regulation",
+        "apoptosis",
+        "immunohistochemistry",
+        "activation",
+        "both thep53-",
+        "p53-dependent apoptotic pathways"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is p53 responsible for?",
+          "What is the result of immunohistochemistry?",
+          "What method was used to determine the p53 up-regulation and proliferation arrest?",
+          "What was the main mechanism of apoptosis?",
+          "What two pathways were activated in the apoptosis study?",
+          "What two pathways were activated in the rat?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is p53 involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proliferation arrest and apoptosis",
+        "answerability": 0.8366605043411255,
+        "ground_truth": {
+          "up-regulation": {
+            "bertscore": 0.7036848068237305,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of p53-mediated proliferation arrest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9915663599967957,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What method was used to determine the p53 up-regulation and apoptos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "immunohistochemistry",
+        "answerability": 0.9903964400291443,
+        "ground_truth": {
+          "immunohistochemistry": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the main mechanism of p53 up-regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20313972234725952,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6694929003715515,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two pathways were activated by immunohistochemistry?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53- and p53-dependent apoptosis",
+        "answerability": 0.7986819744110107,
+        "ground_truth": {
+          "both the intrinsic": {
+            "bertscore": 0.5891165137290955,
+            "f1": 0
+          },
+          "the extrinsic apoptotic pathways": {
+            "bertscore": 0.7431716322898865,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

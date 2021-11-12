@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Tumor necrosis factor-alpha (TNF-alpha) is one of the most important inflammatory mediators in human inflammatory and immunoregulatory diseases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one of the most important inflammatory mediators in human inflammatory and immunoregul"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tumor necrosis factor-alpha",
+        "(TNF-alpha",
+        "the most important inflammatory mediators",
+        "immunoregulatory diseases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one of the most important inflammatory mediators in human inflammatory and immunoregul",
+          "What is the name of the inflammatory mediator in human immunoregulatory diseases?",
+          "What is tumor necrosis factor-alpha?",
+          "What is the main inflammatory mediator in humans?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the key mediator of septic shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03146505355834961,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is an important mediator of septic shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022952795028686523,
+        "ground_truth": {
+          "TNF-alpha": {
+            "bertscore": 0.610000729560852,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tumor necrosis factor",
+        "answerability": 0.997334897518158,
+        "ground_truth": {
+          "an important mediator": {
+            "bertscore": 0.6640316843986511,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of death in a septic system?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00022643804550170898,
+        "ground_truth": {
+          "septic shock": {
+            "bertscore": 0.6786140203475952,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

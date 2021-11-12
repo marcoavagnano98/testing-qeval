@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "HTLV-I (HTLV-I) long terminal repeat (LTR) is essential to dissecting the mechanisms involved in viral transcription that may be pertinent to the oncogenic and neuropathogenic processes associated with HTLV-I infection in both the immune and nervous systems.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "I",
+        "(LTR",
+        "the mechanisms",
+        "viral transcription",
+        "the oncogenic and neuropathogenic processes",
+        "HTLV-I infection",
+        "both the immune and nervous systems"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the HTLV-I long terminal repeat?",
+          "What is the term for the long terminal repeat?",
+          "What is HTLV-I essential to dissecting?",
+          "What is HTLV-I essential to dissecting?",
+          "What are the two processes associated with HTLV-I infection?",
+          "What is the LTR essential to dissecting?",
+          "What systems are affected by HTLV-I infection?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the long terminal repeat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LTR",
+        "answerability": 0.7514368295669556,
+        "ground_truth": {
+          "(HTLV-I": {
+            "bertscore": 0.7483050227165222,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is essential to dissecting the mechanisms involved in viral transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "long terminal repeat",
+        "answerability": 0.9959156513214111,
+        "ground_truth": {
+          "long terminal repeat": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          },
+          "(LTR": {
+            "bertscore": 0.6637689471244812,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the LTR essential to dissecting?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mechanisms involved in viral transcription",
+        "answerability": 0.9768168926239014,
+        "ground_truth": {
+          "the mechanisms": {
+            "bertscore": 0.7662224769592285,
+            "f1": 0.33333333333333337
+          },
+          "viral transcription": {
+            "bertscore": 0.8526694774627686,
+            "f1": 0.5714285714285715
+          },
+          "HTLV-I infection": {
+            "bertscore": 0.6906524896621704,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two processes associated with HTLV-I infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oncogenic and neuropathogenic",
+        "answerability": 0.976746141910553,
+        "ground_truth": {
+          "the oncogenic and neuropathogenic processes": {
+            "bertscore": 0.9091170430183411,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What systems are involved in viral transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "immune and nervous",
+        "answerability": 0.9314333200454712,
+        "ground_truth": {
+          "both the immune and nervous systems": {
+            "bertscore": 0.8371040225028992,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

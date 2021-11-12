@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Taken together our results demonstrate that NTHi activates NF-kappa B via TLR2-TAK1-dependent NIK--\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "our results",
+        "NTHi",
+        "NF-kappa B",
+        "TLR2-TAK1-dependent NIK--"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that NTHi activates NF-kappa B via TLR2-",
+          "What activates NF-kappa B via TLR2-TAK1-dependent",
+          "What does NTHi activate?",
+          "What does NTHi activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that NTHi activates NF-kappa B via TLR2-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "our results",
+        "answerability": 0.9114676713943481,
+        "ground_truth": {
+          "our results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What activates NF-kappa B via TLR2-TAK1-dependent": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5023795366287231,
+        "ground_truth": {
+          "NTHi": {
+            "bertscore": 0.6921637058258057,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does NTHi activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9676614999771118,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "TLR2-TAK1-dependent NIK--": {
+            "bertscore": 0.6501100659370422,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

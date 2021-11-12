@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "In extracts of induced Il-2 secreting El4 cells three individual proteins bind to TCEd DNA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "three"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many individual proteins bind to TCEd DNA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "extracts",
+        "induced Il-2",
+        "El4 cells",
+        "three individual proteins",
+        "TCEd DNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that binds to TCEd DNA?",
+          "What secreting El4 cells bind to TCEd DNA?",
+          "What type of cells secrete Il-2?",
+          "How many proteins bind to TCEd DNA?",
+          "What do three individual proteins bind to in induced Il-2 secreting El4 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many individual protein factors bind to TCEd DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "three",
+        "answerability": 0.9536275267601013,
+        "ground_truth": {
+          "three": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that binds to TCEd DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003687441349029541,
+        "ground_truth": {
+          "extracts": {
+            "bertscore": 0.6898524761199951,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What secreting El4 cells bind to TCEd DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Il-2",
+        "answerability": 0.6578469276428223,
+        "ground_truth": {
+          "induced Il-2": {
+            "bertscore": 0.8001481890678406,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of cells secrete Il-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "El4 cells",
+        "answerability": 0.7809533476829529,
+        "ground_truth": {
+          "El4 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How many proteins bind to TCEd DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "three",
+        "answerability": 0.9619846343994141,
+        "ground_truth": {
+          "three individual protein factors": {
+            "bertscore": 0.7129070162773132,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What do three individual protein factors bind to in induced Il-2 secreting El4 cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4033076763153076,
+        "ground_truth": {
+          "TCEd DNA": {
+            "bertscore": 0.6522915959358215,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

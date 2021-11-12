@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "Interestingly inhibition of Erg expression in quiescent EC results in increased NF-kappaB-dependent ICAM-1 expression indicating that Erg represses basal NF-kappaB activity and enhances tumor progression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC",
+        "Erg"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of tumor does inhibition of Erg result in increased ICAM-1 expression?",
+          "What represses basal NF-kappaB activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Interestingly inhibition",
+        "Erg expression",
+        "quiescent EC results",
+        "increased NF-kappaB-dependent ICAM-1 expression",
+        "Erg",
+        "NF-kappaB activity",
+        "tumor progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What results in increased NF-kappaB-dependent ICAM-1 expression?",
+          "What is a factor that can be inhibited in quiescent EC?",
+          "What is an interesting result of Erg expression?",
+          "What does inhibition of Erg expression in quiescent EC result in?",
+          "What represses basal NF-kappaB activity?",
+          "What does Erg repress?",
+          "What does Erg repress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what type of cell does inhibition of Erg result in increased ICAM-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "quiescent EC",
+        "answerability": 0.9985973834991455,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.8119473457336426,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What represses basal NF-kappaB activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Erg",
+        "answerability": 0.9952901005744934,
+        "ground_truth": {
+          "Erg": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What results in increased NF-kappaB-dependent ICAM-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of Erg expression",
+        "answerability": 0.997639536857605,
+        "ground_truth": {
+          "Interestingly inhibition": {
+            "bertscore": 0.7554121613502502,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is a key factor in the regulation of ICAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Erg expression",
+        "answerability": 0.7257592678070068,
+        "ground_truth": {
+          "Erg expression": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is an interesting result of Erg inhibition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased NF-kappaB-dependent ICAM-1 expression",
+        "answerability": 0.9947763681411743,
+        "ground_truth": {
+          "quiescent EC results": {
+            "bertscore": 0.6756154894828796,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does inhibition of Erg expression in quiescent EC result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased NF-kappaB-dependent ICAM-1 expression",
+        "answerability": 0.9807071089744568,
+        "ground_truth": {
+          "increased NF-kappaB-dependent ICAM-1 expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "NF-kappaB activity": {
+            "bertscore": 0.8394292593002319,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

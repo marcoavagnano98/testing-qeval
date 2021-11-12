@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of ST3 correlated with the progression of NIH3T3 cell invasion.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "ST3",
+        "the progression",
+        "NIH3T3 cell invasion"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the cause of the NIH3T3 cell invasion?",
+          "What gene was associated with the progression of NIH3T3 cell invasion?",
+          "What did overexpression of ST3 correlate with?",
+          "What did overexpression of ST3 correlate with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the cause of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009921073913574219,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191470861434937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was associated with the progression of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ST3",
+        "answerability": 0.7471528053283691,
+        "ground_truth": {
+          "ST3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did overexpression of ST3 correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the progression of NIH3T3 cell invasion",
+        "answerability": 0.9769463539123535,
+        "ground_truth": {
+          "the progression": {
+            "bertscore": 0.6821473836898804,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What did ST3 correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NIH3T3 cell invasion",
+        "answerability": 0.7621526718139648,
+        "ground_truth": {
+          "human colorectal tumors": {
+            "bertscore": 0.7266894578933716,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the progression of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0227736234664917,
+        "ground_truth": {
+          "local invasion": {
+            "bertscore": 0.7331953644752502,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer that can be caused by ST3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0030953288078308105,
+        "ground_truth": {
+          "liver metastasis": {
+            "bertscore": 0.6541842222213745,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

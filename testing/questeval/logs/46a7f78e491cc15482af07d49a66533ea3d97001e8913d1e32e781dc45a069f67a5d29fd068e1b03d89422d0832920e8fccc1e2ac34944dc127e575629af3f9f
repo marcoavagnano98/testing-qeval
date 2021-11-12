@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "FOXP3 expression decreased once GATA3 expression is high; therefore we hypothesized a potential role for GATA3 in repressing FOXP3.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "FOXP3 expression",
+        "GATA3 expression",
+        "we",
+        "a potential role",
+        "GATA3",
+        "repressing",
+        "FOXP3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did GATA3 decrease when it was high?",
+          "What protein was found to be a potential role in repressing FOXP3",
+          "What did we hypothesize a possible role for GATA3 in repressing",
+          "What did we hypothesize about GATA3 in repressing FOXP3",
+          "What gene was thought to be involved in FOXP3 repression?",
+          "What did we hypothesize GATA3 could do?",
+          "What protein was repressed when GATA3 expression was high?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What might be low enough to induce efficient FOXP3+ iTreg cell": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48002713918685913,
+        "ground_truth": {
+          "GATA3 expression": {
+            "bertscore": 0.6280718445777893,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What might keeping GATA3 expression low be required to induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03935927152633667,
+        "ground_truth": {
+          "efficient FOXP3": {
+            "bertscore": 0.6662395596504211,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of low GATA3 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26556819677352905,
+        "ground_truth": {
+          "iTreg cell generation": {
+            "bertscore": 0.6283217072486877,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

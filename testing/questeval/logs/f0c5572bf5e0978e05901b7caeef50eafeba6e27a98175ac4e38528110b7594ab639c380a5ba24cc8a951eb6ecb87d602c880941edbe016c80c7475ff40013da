@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Additionally overexpression of Vav but not SLP-76 augments CD95 ligand binding and enhances IL-2 promoter activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Vav",
+        "CD95",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is overexpressed but not SLP-76?",
+          "What ligand binding does Vav enhance?",
+          "What promoter activity is enhanced by overexpression of Vav?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Additionally overexpression",
+        "Vav",
+        "promoter activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of Vav on CD95 ligand binding?",
+          "What gene is overexpressed but not SLP-76?",
+          "What does overexpression of Vav enhance?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is overexpressed in the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Vav",
+        "answerability": 0.9544863700866699,
+        "ground_truth": {
+          "Vav": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What leads to enhanced nuclear factor of activated T cells activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01916295289993286,
+        "ground_truth": {
+          "contrast overexpression": {
+            "bertscore": 0.6999741196632385,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does overexpression of Vav lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD95 ligand binding",
+        "answerability": 0.8596017360687256,
+        "ground_truth": {
+          "enhanced nuclear factor": {
+            "bertscore": 0.7335901856422424,
+            "f1": 0
+          },
+          "activated T cells activity": {
+            "bertscore": 0.7510489225387573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does overexpression of Vav not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29336488246917725,
+        "ground_truth": {
+          "AP-1": {
+            "bertscore": 0.6599938869476318,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

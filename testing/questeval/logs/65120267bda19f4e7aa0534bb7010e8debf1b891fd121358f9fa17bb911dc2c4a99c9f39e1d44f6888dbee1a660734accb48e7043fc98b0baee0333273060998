@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "K+ channel blockade by progesterone is specific; other steroid hormones had little or no effect although the progesterone antagonist RU 486 also blocked KV and KCa channels.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "K+",
+        "RU 486"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What channel blockade did RU 486 block?",
+          "What progesterone antagonist blocked KV and KCa channels?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "K+ channel blockade",
+        "progesterone",
+        "other steroid hormones",
+        "little or no effect",
+        "the progesterone antagonist RU",
+        "KV",
+        "KCa channels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did progesterone block?",
+          "What hormone blocked KV and KCa channels?",
+          "What other hormones had little or no effect on KV and KCa?",
+          "What did other steroid hormones have on K+ channels?",
+          "What blockade of KV and KCa channels did steroid hormones have",
+          "What channel did RU 486 block?",
+          "What channel did RU 486 block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What channel blockade did RU 486 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "K+",
+        "answerability": 0.9817988276481628,
+        "ground_truth": {
+          "K+": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What progesterone antagonist blocked KV and KCa channels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RU 486",
+        "answerability": 0.9732053875923157,
+        "ground_truth": {
+          "RU 486": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did progesterone block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "K+ channel",
+        "answerability": 0.9589857459068298,
+        "ground_truth": {
+          "K+ channel blockade": {
+            "bertscore": 0.8883573412895203,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What hormone blocked KV and KCa channels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RU 486",
+        "answerability": 0.8652724623680115,
+        "ground_truth": {
+          "progesterone": {
+            "bertscore": 0.6731079816818237,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What other hormones had little or no effect on KV and KCa?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "steroid hormones",
+        "answerability": 0.7516238689422607,
+        "ground_truth": {
+          "other steroid hormones": {
+            "bertscore": 0.9243806004524231,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did other steroid hormones have on K+ channels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "little or no effect",
+        "answerability": 0.997977614402771,
+        "ground_truth": {
+          "little or no effect": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What blockade of KV and KCa channels did steroid hormones have": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7025176882743835,
+        "ground_truth": {
+          "the progesterone antagonist RU": {
+            "bertscore": 0.6142075657844543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What channel did RU 486 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "K+",
+        "answerability": 0.9829861521720886,
+        "ground_truth": {
+          "KV": {
+            "bertscore": 0.825026273727417,
+            "f1": 0
+          },
+          "KCa channels": {
+            "bertscore": 0.7355595827102661,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

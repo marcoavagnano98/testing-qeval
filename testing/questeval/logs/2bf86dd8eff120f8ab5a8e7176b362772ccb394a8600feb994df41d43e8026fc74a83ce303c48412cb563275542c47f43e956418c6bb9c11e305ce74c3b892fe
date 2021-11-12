@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "Endotoxin (LPS) signal transduction in human monocytes leads to activation of nuclear factor-kappa B (NF-kappaB) and TNF-alpha release.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Endotoxin",
+        "LPS",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does LPS stand for?",
+          "What is the name of the endotoxin that causes TNF-alpha release",
+          "What is the name of the enzyme that releases a protein called a kappa"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(LPS",
+        "human monocytes",
+        "activation",
+        "(NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the term for endotoxin?",
+          "What is the source of endotoxin signal transduction?",
+          "What does endotoxin signal transduction lead to?",
+          "What is the name of the nuclear factor-kappa B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does LPS stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Endotoxin",
+        "answerability": 0.9985172748565674,
+        "ground_truth": {
+          "Endotoxin": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the endotoxin that causes TNF-alpha release": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.28701460361480713,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027959227561951,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that releases a protein called a kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07070225477218628,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789318323135376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the term for endotoxin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS",
+        "answerability": 0.5672217011451721,
+        "ground_truth": {
+          "(LPS": {
+            "bertscore": 0.8451231718063354,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the source of endotoxin signal transduction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.33554261922836304,
+        "ground_truth": {
+          "human monocytes": {
+            "bertscore": 0.6539058089256287,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does endotoxin signal transduction lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation of nuclear factor-kappa B (NF-kappaB) and",
+        "answerability": 0.8156061172485352,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6989648342132568,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the name of the nuclear factor-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.986408531665802,
+        "ground_truth": {
+          "(NF-kappaB": {
+            "bertscore": 0.8902866244316101,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

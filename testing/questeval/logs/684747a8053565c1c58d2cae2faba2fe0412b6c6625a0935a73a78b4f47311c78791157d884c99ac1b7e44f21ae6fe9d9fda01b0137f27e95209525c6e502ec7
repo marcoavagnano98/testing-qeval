@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Tax-mediated transactivation of TNF-alpha is independent of NF-kappaB and occurs only in highly malignant breast cancer cells. CD44 is a target of the NF-kappaB pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "NF-kappaB",
+        "CD44",
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only cytokine that is independent of NF-kappaB",
+          "What pathway is tax-mediated transactivation independent of?",
+          "What is a target of the NF-kappaB pathway?",
+          "What pathway is tax-mediated transactivation independent of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tax-mediated transactivation",
+        "TNF-alpha",
+        "NF-kappaB",
+        "highly malignant breast cancer cells",
+        "CD44",
+        "a target",
+        "the NF-kappaB pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is independent of NF-kappaB?",
+          "What is independent of NF-kappaB?",
+          "What pathway is tax-mediated transactivation independent of?",
+          "What type of cancer is tax-mediated transactivation of TNF-alpha only in",
+          "What is a target of the NF-kappaB pathway?",
+          "What is CD44?",
+          "What is CD44 a target of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is a downstream target of the noncanonical NF-kappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12391304969787598,
+        "ground_truth": {
+          "CD44": {
+            "bertscore": 0.6409916877746582,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway is CD44 a downstream target of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08995610475540161,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.651921272277832,
+            "f1": 0
+          },
+          "noncanonical NF-kappaB pathway": {
+            "bertscore": 0.6175876259803772,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of CD44 in the NF-kappaB pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a target",
+        "answerability": 0.6767967939376831,
+        "ground_truth": {
+          "Identification": {
+            "bertscore": 0.7404084205627441,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is CD44?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11160719394683838,
+        "ground_truth": {
+          "a downstream target": {
+            "bertscore": 0.7116107940673828,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is CD44 a downstream target of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08436596393585205,
+        "ground_truth": {
+          "human T-cell leukemia virus type 1-encoded Tax protein": {
+            "bertscore": 0.588130533695221,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "The effect of platelets on the content of urokinase plasminogen activator (uPA) and plasminogen activator (PAI) was measured in SKOV3 cell conditioned medium and in a PAI-1 cell conditioned medium.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PAI",
+        "PAI-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the urokinase that is activated by plate",
+          "What is the name of the cell conditioned medium used to measure the effect of platelets on"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The effect",
+        "platelets",
+        "the content",
+        "urokinase plasminogen activator",
+        "uPA",
+        "plasminogen activator",
+        "PAI",
+        "SKOV3 cell",
+        "a PAI-1 cell"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was measured in SKOV3 and PAI-1?",
+          "What was measured in SKOV3 and PAI-1?",
+          "What did the platelets affect?",
+          "What is uPA?",
+          "What is the name of the urokinase plasminogen activator",
+          "What is the urokinase that is regulated by platelets?",
+          "What is the name of the urokinase that is activated by plate",
+          "In what cell conditioned medium was the effect of platelets on urokinas",
+          "In what medium was the effect of platelets on urokinase plasm"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was measured using an ELISA assay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006685316562652588,
+        "ground_truth": {
+          "The effect": {
+            "bertscore": 0.6850008368492126,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the urokinase plasminogen activator?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "uPA",
+        "answerability": 0.7731848955154419,
+        "ground_truth": {
+          "platelets": {
+            "bertscore": 0.7447608113288879,
+            "f1": 0
+          },
+          "VEGF": {
+            "bertscore": 0.800231397151947,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the ELISA test determine about uPA and VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013043403625488281,
+        "ground_truth": {
+          "the content": {
+            "bertscore": 0.6473844051361084,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does uPA stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "urokinase plasminogen activator",
+        "answerability": 0.979836642742157,
+        "ground_truth": {
+          "urokinase plasminogen activator": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the urokinase plasminogen activator": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "uPA",
+        "answerability": 0.5810011625289917,
+        "ground_truth": {
+          "uPA": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of medium was used to measure the effect of platelets on uPA and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SKOV3 cell conditioned medium and in a PAI-1 cell conditioned medium",
+        "answerability": 0.9715260863304138,
+        "ground_truth": {
+          "SKOV3 cell": {
+            "bertscore": 0.8051350712776184,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What was used to measure the effect of platelets on urokinase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SKOV3 cell conditioned medium and in a PAI-1 cell conditioned medium",
+        "answerability": 0.5575984716415405,
+        "ground_truth": {
+          "conditioned medium": {
+            "bertscore": 0.7270816564559937,
+            "f1": 0.33333333333333337
+          },
+          "an ELISA assay": {
+            "bertscore": 0.6885517835617065,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

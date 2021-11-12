@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "The wortmannin and LY 294002 inhibitor PI3-K inhibit PI3-K activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "294002"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the LY inhibitor that inhibits PI3-K activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The wortmannin",
+        "LY",
+        "294002 inhibitor",
+        "PI3-K activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the LY 294002 inhibitor?",
+          "What is the name of the inhibitor that inhibits PI3-K activity?",
+          "What is the name of the LY that inhibits PI3-K activity?",
+          "What does wortmannin and LY 294002 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is refractory to concentrations of wortmannin and LY29400": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0525510311126709,
+        "ground_truth": {
+          "The catalytic activity": {
+            "bertscore": 0.6204615235328674,
+            "f1": 0
+          },
+          "PI3-K-C2 alpha": {
+            "bertscore": 0.609825074672699,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is wortmannin and LY294002 refractory to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006533443927764893,
+        "ground_truth": {
+          "concentrations": {
+            "bertscore": 0.7107872366905212,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is LY294002 and PI3-K-C2 alpha": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06903934478759766,
+        "ground_truth": {
+          "wortmannin": {
+            "bertscore": 0.6999531984329224,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is wortmannin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0062531232833862305,
+        "ground_truth": {
+          "LY294002": {
+            "bertscore": 0.619583249092102,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does wortmannin and LY294002 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39399707317352295,
+        "ground_truth": {
+          "the PI3-K activity": {
+            "bertscore": 0.6107043623924255,
+            "f1": 0
+          },
+          "other family members": {
+            "bertscore": 0.7081825137138367,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

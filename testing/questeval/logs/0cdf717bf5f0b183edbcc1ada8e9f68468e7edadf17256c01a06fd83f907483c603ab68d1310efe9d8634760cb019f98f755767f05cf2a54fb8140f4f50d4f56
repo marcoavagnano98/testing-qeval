@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "Expression of MEK1-interfering mutants inhibited the stimulation of IL-2 promoter-driven transcription and blocked the ability of constitutively active Ras and Raf-1 to costimulation with IL-2 promoter-driven transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter-driven transcription was blocked by MEK1-interfering mutants?",
+          "What promoter-driven transcription was blocked by MEK1-interfering mutants?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "MEK1-interfering mutants",
+        "the stimulation",
+        "IL-2 promoter-driven transcription",
+        "the ability",
+        "constitutively active Ras",
+        "IL-2 promoter-driven transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the stimulation of IL-2 promoter-driven transcription?",
+          "What inhibited the stimulation of IL-2 promoter-driven transcription?",
+          "What did MEK1-interfering mutants inhibit?",
+          "What did MEK1-interfering mutants inhibit?",
+          "What did MEK1-interfering mutants block?",
+          "What gene did MEK1 interfere with?",
+          "What did MEK1-interfering mutants inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter-driven transcription was inhibited by MEK1-interfering mutant": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9120526313781738,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the stimulation of IL-2 promoter-driven transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Expression of MEK1-interfering mutants",
+        "answerability": 0.9987932443618774,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7049554586410522,
+            "f1": 0.4
+          },
+          "MEK1-interfering mutants": {
+            "bertscore": 0.900846004486084,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did MEK1-interfering mutants inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the stimulation of IL-2 promoter-driven transcription",
+        "answerability": 0.9850993752479553,
+        "ground_truth": {
+          "the stimulation": {
+            "bertscore": 0.7484471797943115,
+            "f1": 0.33333333333333337
+          },
+          "IL-2 promoter-driven transcription": {
+            "bertscore": 0.8889710903167725,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What did MEK1-interfering mutants block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ras and Raf-1",
+        "answerability": 0.9596124887466431,
+        "ground_truth": {
+          "the ability": {
+            "bertscore": 0.6569517850875854,
+            "f1": 0
+          },
+          "NF-AT activity": {
+            "bertscore": 0.6531355381011963,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein did MEK1 interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.801598072052002,
+        "ground_truth": {
+          "constitutively active Ras": {
+            "bertscore": 0.6214710474014282,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did MEK1-interfering mutants block the ability of Ras and Raf": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3845480680465698,
+        "ground_truth": {
+          "a calcium ionophore": {
+            "bertscore": 0.6401323080062866,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

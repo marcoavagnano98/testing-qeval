@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Trad mRNA was expressed in a variety of tissues and cell types and was detected preferentially in normal thymus lung and submandibular gland.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Trad",
+        "mRNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of mRNA was detected in the thymus lung?",
+          "What was detected in thymus lung and submandibular gland?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Trad mRNA",
+        "a variety",
+        "tissues",
+        "cell types",
+        "normal thymus lung",
+        "submandibular gland"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was detected in thymus lung and submandibular gland?",
+          "How many tissues and cell types were tran mRNA expressed in?",
+          "What was tran mRNA expressed in?",
+          "What was tran mRNA expressed in?",
+          "Where was tran mRNA detected?",
+          "Where was tran mRNA detected?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA is specifically expressed in skeletal muscle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1631370186805725,
+        "ground_truth": {
+          "Trad": {
+            "bertscore": 0.7040088772773743,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is specifically expressed in skeletal muscle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010216176509857178,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.6875343322753906,
+            "f1": 0
+          },
+          "Trad mRNA": {
+            "bertscore": 0.6803855895996094,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is trad mRNA specifically expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24289751052856445,
+        "ground_truth": {
+          "skeletal muscle": {
+            "bertscore": 0.6949082612991333,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

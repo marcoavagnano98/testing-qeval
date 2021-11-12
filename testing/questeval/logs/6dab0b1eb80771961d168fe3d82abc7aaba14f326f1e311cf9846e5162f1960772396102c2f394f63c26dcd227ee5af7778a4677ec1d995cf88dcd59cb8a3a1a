@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "As reported previously (Namba et al. 1985; Namba 1985) fibroblasts transformed into immortal cells with abnormal karyotypes were transformed.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Namba",
+        "1985",
+        "Namba 1985"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the name of the study that reported the transformation of immortal cells?",
+          "When did Namba and his colleagues report that immortal cells were transformed into immortal cells?",
+          "What was the name of the study that reported the transformation of immortal cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Namba 1985) fibroblasts",
+        "immortal cells",
+        "abnormal karyotypes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transformed into immortal cells with abnormal karyotypes?",
+          "What did Namba and his colleagues report about fibroblasts?",
+          "What did Namba and his colleagues report about immortal cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the name of the study that reported the transformation of normal human fibroblasts into": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Namba et al. 1985",
+        "answerability": 0.860823392868042,
+        "ground_truth": {
+          "Namba": {
+            "bertscore": 0.7112792134284973,
+            "f1": 0.4
+          },
+          "Namba 1985": {
+            "bertscore": 0.7559807896614075,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "When did Namba and his colleagues report that normal human fibroblasts were transformed into immortal": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "1985",
+        "answerability": 0.9467762112617493,
+        "ground_truth": {
+          "1985": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What were transformed into immortal cells with abnormal karyotypes by Co-60 gam": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fibroblasts",
+        "answerability": 0.9268300533294678,
+        "ground_truth": {
+          "normal human fibroblasts": {
+            "bertscore": 0.8845146298408508,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did Namba and colleagues report about normal human fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21829837560653687,
+        "ground_truth": {
+          "immortal cells": {
+            "bertscore": 0.6936292052268982,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the Co-60 gamma-ray irradiation produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.034405291080474854,
+        "ground_truth": {
+          "abnormal karyotypes": {
+            "bertscore": 0.6517519354820251,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to transform normal human fibroblasts into immortal cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019397079944610596,
+        "ground_truth": {
+          "Co-60 gamma-ray irradiation": {
+            "bertscore": 0.6435192227363586,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "The two nuclear proteins NF-kappa B (consisting of subunits p50 and p65) and the DNA-binding subunit of NF-kappa B (p50) by itself also called KBF1 are constitutively expressed and localized in the nucleus of the human T-cell line IARC 301.5. The absence of slow migrating forms of I kappa B beta following stimulation suggests that the phosphorylation does not necessarily constitute the signal-induced phosphorylation event.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two",
+        "301.5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many nuclear proteins are present in the human T-cell line IARC 301.5?",
+          "What is the name of the human T cell line?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The two nuclear proteins",
+        "NF-kappa B",
+        "subunits p50",
+        "p65",
+        "the DNA-binding subunit",
+        "NF-kappa B",
+        "p50",
+        "itself",
+        "the nucleus",
+        "the human T-cell line IARC",
+        "The absence",
+        "slow migrating forms",
+        "I",
+        "kappa B beta following stimulation",
+        "the phosphorylation",
+        "the signal-induced phosphorylation event"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is NF-kappa B?",
+          "What is the name of the nuclear protein that is composed of subunits p50 and",
+          "What is the name of the two nuclear proteins NF-kappa B?",
+          "What is the subunit of NF-kappa B called?",
+          "What is KBF1?",
+          "What is the name of the nuclear protein that is composed of subunits p50 and",
+          "What is the name of the DNA-binding subunit of NF-kappa",
+          "What is the DNA-binding subunit of NF-kappa B called?",
+          "Where are the two nuclear proteins localized?",
+          "Where are the two nuclear proteins located?",
+          "What suggests that signal-induced phosphorylation is not necessary?",
+          "What does the absence of a signal-induced phosphorylation event suggest?",
+          "What is the name of the protein that is localized in the nucleus of the human",
+          "What does the absence of slow migrating forms of I do suggest?",
+          "What does not necessarily constitute the signal-induced phosphorylation event?",
+          "What does the absence of slow migrating forms of I kappa B beta suggest"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggests that the phosphorylation does not constitute the signal-induced event?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "absence of slow migrating forms of I kappa B beta following stimulation",
+        "answerability": 0.9872671365737915,
+        "ground_truth": {
+          "The absence": {
+            "bertscore": 0.6496378183364868,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    },
+    "What is absent from I kappa B beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "slow migrating forms",
+        "answerability": 0.8224906921386719,
+        "ground_truth": {
+          "slow migrating forms": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What kappa B beta is absent after stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "slow migrating forms",
+        "answerability": 0.9829022288322449,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.6931353211402893,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the absence of slow migrating forms of I do suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5976244807243347,
+        "ground_truth": {
+          "kappa B beta following stimulation": {
+            "bertscore": 0.6102352142333984,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the absence of slow migrating forms of I kappa B beta suggest": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation",
+        "answerability": 0.8250572681427002,
+        "ground_truth": {
+          "the phosphorylation": {
+            "bertscore": 0.938073456287384,
+            "f1": 1.0
+          },
+          "the signal-induced event": {
+            "bertscore": 0.6919237971305847,
+            "f1": 0
+          },
+          "the molecule": {
+            "bertscore": 0.6509284973144531,
+            "f1": 0
+          },
+          "proteolysis": {
+            "bertscore": 0.7545750737190247,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

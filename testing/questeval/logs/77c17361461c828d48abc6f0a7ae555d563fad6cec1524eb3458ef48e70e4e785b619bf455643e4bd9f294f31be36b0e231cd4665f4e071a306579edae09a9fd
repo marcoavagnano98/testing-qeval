@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Our results demonstrate that in resting and PMA-activated human PBL I(kappa)B(alpha) is present in the nucleus in an apparently inactive form unable to disrupt NF-kappaB binding from DNA. In this case I(kappa)B(alpha) has been detected in the nucleus of cell lines and when overexpressed by transient transfection.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our results",
+        "resting",
+        "PMA-activated human PBL I(kappa)B(alpha",
+        "the nucleus",
+        "an apparently inactive form",
+        "DNA",
+        "this case",
+        "I(kappa)B(alpha",
+        "the nucleus",
+        "cell lines",
+        "transient transfection"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that I(kappa)B(alpha) is present in the nu",
+          "What type of human PBL is activated by PMA?",
+          "What is present in the nucleus in an apparently inactive form?",
+          "Where is I(kappa)B(alpha) present in human PBL?",
+          "What is I(kappa)B(alpha) present in the nucleus",
+          "What does I(kappa)B(alpha) not bind to?",
+          "In what case has I(kappa)B(alpha) been detected in the",
+          "What is present in the nucleus of human PBL?",
+          "Where is I(kappa)B(alpha) present in human PBL?",
+          "What is I(kappa)B(alpha) detected in the nucleus",
+          "What is the only way I(kappa)B(alpha) can be detected"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been detected in the nucleus of cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I(kappa)B(alpha)",
+        "answerability": 0.9440779089927673,
+        "ground_truth": {
+          "However I(kappa)B(alpha": {
+            "bertscore": 0.9045160412788391,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where has I(kappa)B(alpha) been detected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the nucleus of cell lines",
+        "answerability": 0.891125500202179,
+        "ground_truth": {
+          "the nucleus": {
+            "bertscore": 0.7917936444282532,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What has I(kappa)B(alpha) been detected in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the nucleus of cell lines",
+        "answerability": 0.8795008659362793,
+        "ground_truth": {
+          "cell lines": {
+            "bertscore": 0.8008034229278564,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the most common way to detect I(kappa)B(alpha)": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11450040340423584,
+        "ground_truth": {
+          "transient transfection": {
+            "bertscore": 0.6755272150039673,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

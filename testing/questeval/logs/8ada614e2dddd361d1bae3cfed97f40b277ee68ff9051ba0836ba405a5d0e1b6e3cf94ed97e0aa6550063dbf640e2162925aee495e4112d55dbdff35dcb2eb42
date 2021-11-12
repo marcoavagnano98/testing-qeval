@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Intriguingly surface expression of LT-alpha1beta2 is up-regulated on a T cell line acutely infected with HIV-1 suggesting a positive feedback loop between HIV-1 infection NF-kappaB activation and HIV-1 replication.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LT-alpha1beta2",
+        "HIV-1",
+        "HIV-1",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is up-regulated on a T cell line acutely infected with HIV-1",
+          "What is the NF-kappaB involved in?",
+          "What is the NF-kappaB involved in?",
+          "What is the NF-kappaB involved in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "expression",
+        "LT-alpha1beta2",
+        "a T cell line",
+        "HIV-1",
+        "a positive feedback loop",
+        "HIV-1 infection NF-kappaB activation",
+        "HIV-1 replication"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is up-regulated on a T cell line acutely infected with HIV-1",
+          "What is up-regulated on a T cell line acutely infected with HIV-1",
+          "What is LT-alpha1beta2 up-regulated on?",
+          "What is the NF-kappaB involved in?",
+          "What does the surface expression of LT-alpha1beta2 suggest?",
+          "What is the positive feedback loop between?",
+          "What is the result of surface expression of LT-alpha1beta2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is up-regulated on a T cell line acutely infected with HIV-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LT-alpha1beta2",
+        "answerability": 0.8834656476974487,
+        "ground_truth": {
+          "LT-alpha1beta2": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "expression": {
+            "bertscore": 0.6612114906311035,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the LT-alpha1beta2 up-regulated on a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "surface expression",
+        "answerability": 0.8494873642921448,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.7378145456314087,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is up-regulated on surface expression of LT-alpha1beta2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2829436659812927,
+        "ground_truth": {
+          "a T cell line": {
+            "bertscore": 0.6776968836784363,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the up-regulation of LT-alpha1beta2 suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "positive feedback loop",
+        "answerability": 0.998194694519043,
+        "ground_truth": {
+          "a positive feedback loop": {
+            "bertscore": 0.9325390458106995,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the positive feedback loop between?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 infection NF-kappaB activation and HIV-1 replication",
+        "answerability": 0.9892975091934204,
+        "ground_truth": {
+          "HIV-1 infection LT-alpha1beta2 expression and HIV-1 replication": {
+            "bertscore": 0.9103463292121887,
+            "f1": 0.7142857142857143
+          }
+        }
+      }
+    }
+  }
+}

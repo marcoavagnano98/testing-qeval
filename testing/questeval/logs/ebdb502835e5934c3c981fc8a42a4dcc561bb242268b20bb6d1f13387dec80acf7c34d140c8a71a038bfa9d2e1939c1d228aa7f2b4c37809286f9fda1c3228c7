@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "The sites and their corresponding nuclear binding factors include: NF kappa B AP-1 AP-3 OCT-1 and NF-AT. Other factors are induced by T-cell activators and/or antigen receptors.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The sites",
+        "their corresponding nuclear binding factors",
+        "NF kappa B",
+        "NF-AT",
+        "Other factors",
+        "T-cell activators",
+        "antigen receptors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are the nuclear binding factors?",
+          "What are the sites of NF-AT?",
+          "What is the name of the binding factor that is involved in the synthesis of a protein",
+          "What is the name of the kinase binding factor that is induced by T",
+          "What is induced by T-cell activators and/or antigen receptors?",
+          "What is one way that NF-AT is induced?",
+          "What is another factor that is induced by T-cell activators?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is induced by phorbol esters and other T-cell activators?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008405506610870361,
+        "ground_truth": {
+          "NF kappa B TCF-1 activity": {
+            "bertscore": 0.5936288833618164,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that induces TCF-1 activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02656477689743042,
+        "ground_truth": {
+          "phorbol esters": {
+            "bertscore": 0.6186597347259521,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF kappa B TCF-1 activity induced by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006083428859710693,
+        "ground_truth": {
+          "other T-cell activators": {
+            "bertscore": 0.6214282512664795,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

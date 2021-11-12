@@ -1,0 +1,216 @@
+{
+  "type": "ref",
+  "text": "ovary fibroblasts (CHO-CD14 cells) and human peripheral blood monocytes.\\nLPS core- and O-side chain-specific mAbs inhibited mCD14-mediated LPS uptake by both cell types in the presence of serum.\\nO-side chain-specific mAb concurrently enhanced complement-dependent LPS uptake by monocytes through complement receptor-1 (CR1) and uptake by CHO-CD14 cells involving another heat-labile serum factor(s) and cell-associated recognition molecule(s).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "mAb",
+        "LPS",
+        "CHO-CD14"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did mCD14 inhibit?",
+          "What inhibited mCD14-mediated LPS uptake by both cell types?",
+          "What did mCD14 inhibit?",
+          "What are ovary fibroblasts called?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "ovary fibroblasts",
+        "CHO-CD14 cells",
+        "human peripheral blood",
+        "core- and O-side",
+        "chain-specific mAbs",
+        "both cell types",
+        "the presence",
+        "monocytes",
+        "complement receptor-1",
+        "CR1",
+        "CHO-CD14 cells",
+        "cell-associated recognition"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are CHO-CD14 cells?",
+          "What are ovary fibroblasts?",
+          "What type of monocytes were inhibited by LPS core- and O-side",
+          "What two types of mAbs inhibited mCD14-mediated LPS",
+          "What inhibited mCD14-mediated LPS uptake by both cell types?",
+          "What did LPS core- and O-side chain-specific mAbs inhibit?",
+          "In what condition did LPS core- and O-side chain-specific mAbs",
+          "What type of cells were able to absorb LPS?",
+          "What does CR1 stand for?",
+          "What is the name of the complement receptor-1?",
+          "What are ovary fibroblasts?",
+          "What molecule did mAbs inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does nLPS inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mCD14-mediated LPS uptake",
+        "answerability": 0.7005530595779419,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7417112588882446,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What inhibited mCD14-mediated LPS uptake by both cell types?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mAbs",
+        "answerability": 0.9331452250480652,
+        "ground_truth": {
+          "mAb": {
+            "bertscore": 0.9302119016647339,
+            "f1": 0
+          },
+          "chain-specific mAbs": {
+            "bertscore": 0.8269062042236328,
+            "f1": 0.6666666666666666
+          },
+          "\u2047 nO-side chain-specific mAb": {
+            "bertscore": 0.7674906849861145,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are ovary fibroblasts called?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CHO-CD14 cells",
+        "answerability": 0.9924792647361755,
+        "ground_truth": {
+          "CHO-CD14": {
+            "bertscore": 0.8718398213386536,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What are CHO-CD14 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ovary fibroblasts",
+        "answerability": 0.9980120062828064,
+        "ground_truth": {
+          "ovary fibroblasts": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are ovary fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CHO-CD14 cells",
+        "answerability": 0.9929819703102112,
+        "ground_truth": {
+          "CHO-CD14 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What other cell type was inhibited by nLPS core- and O-side": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5407074689865112,
+        "ground_truth": {
+          "human peripheral blood monocytes": {
+            "bertscore": 0.6220038533210754,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two mAbs inhibited mCD14-mediated LPS uptake": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17363280057907104,
+        "ground_truth": {
+          "\u2047 nLPS core- and O-side": {
+            "bertscore": 0.6290730237960815,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did nLPS core- and O-side chain-specific mAbs": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited mCD14-mediated LPS uptake by both cell types in the",
+        "answerability": 0.5839177370071411,
+        "ground_truth": {
+          "both cell types": {
+            "bertscore": 0.6989445090293884,
+            "f1": 0.5
+          },
+          "the presence": {
+            "bertscore": 0.6355040669441223,
+            "f1": 0
+          },
+          "serum": {
+            "bertscore": 0.5734624266624451,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were able to absorb LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49651241302490234,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6662788391113281,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does CR1 stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "complement receptor-1",
+        "answerability": 0.7975866794586182,
+        "ground_truth": {
+          "complement receptor-1": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the complement receptor-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CR1",
+        "answerability": 0.9542571306228638,
+        "ground_truth": {
+          "CR1": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What molecule did nLPS inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5400805473327637,
+        "ground_truth": {
+          "cell-associated recognition": {
+            "bertscore": 0.6722045540809631,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "We have previously mapped phosphorylation sites near the carboxy terminus of the E1B-55kDa protein at Ser-491 and Ser-494 which lie within casein kinase II consensus sequences.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "phosphorylation sites",
+        "the carboxy terminus",
+        "the E1B-55kDa protein",
+        "casein kinase II consensus sequences"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been previously mapped?",
+          "What did we map at Ser-491 and Ser-494?",
+          "Where are the phosphorylation sites located?",
+          "What protein has phosphorylation sites at Ser-491 and Ser-494?",
+          "What sequences are located at Ser-491 and Ser-494 of the E1B-"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been previously mapped?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation sites near the carboxy terminus of the E1B-55k",
+        "answerability": 0.957603394985199,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5302819609642029,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we map at Ser-490 and Ser-491?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation sites near the carboxy terminus of the E1B-55k",
+        "answerability": 0.5437320470809937,
+        "ground_truth": {
+          "phosphorylation sites": {
+            "bertscore": 0.8247072696685791,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "Where are the phosphorylation sites located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "near the carboxy terminus of the E1B-55kDa protein",
+        "answerability": 0.9478747248649597,
+        "ground_truth": {
+          "the carboxy terminus": {
+            "bertscore": 0.772780179977417,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein has phosphorylation sites at Ser-490 and Ser-491?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4740413427352905,
+        "ground_truth": {
+          "the E1B-55kDa protein": {
+            "bertscore": 0.603142261505127,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What sequences are located at Ser-490 and Ser-491 of the E1B-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23699593544006348,
+        "ground_truth": {
+          "casein kinase II consensus sequences": {
+            "bertscore": 0.636466920375824,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

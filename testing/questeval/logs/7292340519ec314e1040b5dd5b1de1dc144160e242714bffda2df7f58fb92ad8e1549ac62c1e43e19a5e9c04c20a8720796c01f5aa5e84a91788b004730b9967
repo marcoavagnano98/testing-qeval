@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Intriguingly surface expression of LT-alpha1beta2 is up-regulated on a T cell line acutely infected with HIV-1 suggesting a positive feedback loop between HIV-1 infection LT-alpha1beta2 expression and HIV-1 genome expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LT-alpha1beta2",
+        "HIV-1",
+        "HIV-1",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is up-regulated on a T cell line acutely infected with HIV-1",
+          "What is the LT-alpha1beta2 up-regulated on a",
+          "What is the LT-alpha1beta2 up-regulated on a",
+          "What is the LT-alpha1beta2 up-regulated on a"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "expression",
+        "LT-alpha1beta2",
+        "a T cell line",
+        "HIV-1",
+        "a positive feedback loop",
+        "HIV-1 infection LT-alpha1beta2 expression and HIV-1 genome expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is up-regulated on a T cell line acutely infected with HIV-1",
+          "What is up-regulated on a T cell line acutely infected with HIV-1",
+          "What is up-regulated on surface expression of LT-alpha1beta2",
+          "What is the LT-alpha1beta2 up-regulated on a",
+          "What does the up-regulation of LT-alpha1beta2 suggest?",
+          "What is the positive feedback loop between?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is up-regulated on a T cell line acutely infected with HIV-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LT-alpha1beta2",
+        "answerability": 0.9295902848243713,
+        "ground_truth": {
+          "LT-alpha1beta2": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "expression": {
+            "bertscore": 0.6612114906311035,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the LT-alpha1beta2 up-regulated on a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell line acutely infected with HIV-1",
+        "answerability": 0.907135009765625,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.8157373666763306,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is up-regulated on surface expression of LT-alpha1beta2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29019010066986084,
+        "ground_truth": {
+          "a T cell line": {
+            "bertscore": 0.6776968836784363,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the up-regulation of LT-alpha1beta2 suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "positive feedback loop",
+        "answerability": 0.9986542463302612,
+        "ground_truth": {
+          "a positive feedback loop": {
+            "bertscore": 0.9325390458106995,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the positive feedback loop between?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 infection LT-alpha1beta2 expression and HIV-1 genome expression",
+        "answerability": 0.9878976941108704,
+        "ground_truth": {
+          "HIV-1 infection LT-alpha1beta2 expression and HIV-1 replication": {
+            "bertscore": 0.9634911417961121,
+            "f1": 0.7999999999999999
+          }
+        }
+      }
+    }
+  }
+}

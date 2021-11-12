@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Angiogenesis new blood vessel formation is a multistep process precisely regulated by pro-angiogenic cytokines which stimulate endothelial cells to migrate proliferate and differentiate to form new capillaries.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Angiogenesis new blood vessel formation",
+        "a multistep process",
+        "pro-angiogenic cytokines",
+        "endothelial cells",
+        "proliferate",
+        "new capillaries"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a multistep process regulated by pro-angiogenic cytokines",
+          "How is angiogenesis new blood vessel formation regulated?",
+          "What is the process called that regulates angiogenesis new blood vessel formation?",
+          "What cells migrate to form new blood vessels?",
+          "What do endothelial cells do to form new capillaries?",
+          "What do pro-angiogenic cytokines form?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is a multistep process regulated by pro-angiogenic cytokines": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Angiogenesis",
+        "answerability": 0.9101747274398804,
+        "ground_truth": {
+          "Angiogenesis new blood vessel formation": {
+            "bertscore": 0.8502118587493896,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "How is angiogenesis new blood vessel formation regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pro-angiogenic cytokines",
+        "answerability": 0.984870433807373,
+        "ground_truth": {
+          "a multistep process": {
+            "bertscore": 0.6821227073669434,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process called that regulates angiogenesis new blood vessel formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pro-angiogenic cytokines",
+        "answerability": 0.7458400130271912,
+        "ground_truth": {
+          "pro-angiogenic cytokines": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells migrate to form new capillary microvessels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cells",
+        "answerability": 0.7986159324645996,
+        "ground_truth": {
+          "endothelial cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do endothelial cells do to form new capillary microvessels": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6297064423561096,
+        "ground_truth": {
+          "proliferate": {
+            "bertscore": 0.7247862219810486,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do pro-angiogenic cytokines form?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "capillaries",
+        "answerability": 0.7490798234939575,
+        "ground_truth": {
+          "new capillary microvessels": {
+            "bertscore": 0.7894402742385864,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

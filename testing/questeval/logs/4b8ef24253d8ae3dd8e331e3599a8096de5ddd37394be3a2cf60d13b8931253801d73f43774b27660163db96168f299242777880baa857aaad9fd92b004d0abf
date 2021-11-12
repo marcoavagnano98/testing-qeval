@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Merlin protein might contribute to the  metastasis of NSCLC.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NSCLC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cancer is Merlin protein associated with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Merlin protein",
+        "the  metastasis",
+        "NSCLC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein might contribute to the metastasis of NSCLC?",
+          "What might Merlin protein contribute to?",
+          "What type of cancer is Merlin protein associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cancer is Merlin protein associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2886173725128174,
+        "ground_truth": {
+          "NSCLC": {
+            "bertscore": 0.6961129307746887,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein might contribute to the initiation of metastasis of NSCLC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Merlin",
+        "answerability": 0.9968794584274292,
+        "ground_truth": {
+          "Merlin protein": {
+            "bertscore": 0.8349426984786987,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What might Merlin protein contribute to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the metastasis of NSCLC",
+        "answerability": 0.9738891124725342,
+        "ground_truth": {
+          "the initiation": {
+            "bertscore": 0.6742498278617859,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What might Merlin protein contribute to the initiation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01353156566619873,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.7011741995811462,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

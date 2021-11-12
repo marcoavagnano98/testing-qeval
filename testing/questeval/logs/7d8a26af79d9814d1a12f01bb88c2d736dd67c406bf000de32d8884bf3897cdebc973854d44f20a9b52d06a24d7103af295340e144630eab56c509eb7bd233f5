@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "A region of antisense RNA from human cDNA with high homology to mouse p120 cDNA inhibits NIH 3T3 cell proliferation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RNA",
+        "NIH",
+        "3T3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the antisense part of human cDNA?",
+          "What organization is responsible for the 3T3 cell proliferation?",
+          "What NIH cell proliferation is inhibited?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A region",
+        "antisense",
+        "RNA",
+        "high homology",
+        "NIH 3T3 cell proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the region of antisense RNA from human cDNA that",
+          "What type of RNA is found in human cDNA?",
+          "What is the antisense part of human cDNA?",
+          "What is the difference in NIH 3T3 cell proliferation?",
+          "What does a region of antisense RNA from human cDNA with high homo"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What portions of the NIH 3T3 did not affect cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004119277000427246,
+        "ground_truth": {
+          "5 and 3 antisense": {
+            "bertscore": 0.6886133551597595,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What organization was not affected by the antisense portion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012494325637817383,
+        "ground_truth": {
+          "NIH": {
+            "bertscore": 0.6401558518409729,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not affect NIH 3T3 cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004743337631225586,
+        "ground_truth": {
+          "the 5 and 3 antisense portions": {
+            "bertscore": 0.6642597913742065,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the 5 and 3 antisense portions not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004138350486755371,
+        "ground_truth": {
+          "NIH 3T3 cell proliferation": {
+            "bertscore": 0.6032959222793579,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

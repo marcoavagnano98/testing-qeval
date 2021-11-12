@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "We previously demonstrated that both synthetic (Exosurf) and modified natural surfactant (Survanta) downregulated\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Exosurf",
+        "Survanta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What synthetic surfactant was previously shown to downregulated?",
+          "What is the name of the surfactant that was previously shown to have downregulated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "(Exosurf",
+        "natural surfactant",
+        "Survanta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the name of the surfactant that was previously shown to down regulate?",
+          "What synthetic surfactant was previously shown to downregulated?",
+          "What type of surfactant was previously shown to be downregulated?",
+          "What is the name of the surfactant that was previously shown to have downregulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What synthetic surfactant was previously shown to downregulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Exosurf",
+        "answerability": 0.986584484577179,
+        "ground_truth": {
+          "Exosurf": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "(Exosurf": {
+            "bertscore": 0.8737666606903076,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the surfactant that was previously shown to have downregulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Survanta",
+        "answerability": 0.9074434041976929,
+        "ground_truth": {
+          "Survanta": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the name of the surfactant that was previously shown to down regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Survanta",
+        "answerability": 0.8602830767631531,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6226481795310974,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of surfactant was previously shown to be downregulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synthetic",
+        "answerability": 0.710903525352478,
+        "ground_truth": {
+          "natural surfactant": {
+            "bertscore": 0.7733472585678101,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

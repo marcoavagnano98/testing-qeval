@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "In humans mutation of the XPB or XPD genes impairs NER resulting in hyper-sensitivity to sunlight and greatly increased skin tumor formation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "XPB",
+        "XPD",
+        "NER"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene in humans impairs NER?",
+          "What gene in humans impairs NER?",
+          "What does a mutation of the XPB or XPD genes impair?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the XPB or XPD genes",
+        "NER",
+        "hyper-sensitivity",
+        "sunlight",
+        "skin tumor formation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What genes in humans impair NER?",
+          "What does a mutation of the XPB or XPD genes impair?",
+          "What is the result of a mutation of the XPB or XPD genes?",
+          "What does NER have a hypersensitivity to?",
+          "What is the result of a mutation of the XPB or XPD genes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene in humans impairs NER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutation of the XPB or XPD genes",
+        "answerability": 0.9901386499404907,
+        "ground_truth": {
+          "XPB": {
+            "bertscore": 0.7104995846748352,
+            "f1": 0.2857142857142857
+          },
+          "XPD": {
+            "bertscore": 0.6988376379013062,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does a mutation of the XPB or XPD gene impair?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NER",
+        "answerability": 0.9766377210617065,
+        "ground_truth": {
+          "NER": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene impairs NER in humans?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutation of the XPB or XPD genes",
+        "answerability": 0.9768151640892029,
+        "ground_truth": {
+          "the XPB or XPD gene": {
+            "bertscore": 0.9050338864326477,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What is the result of a mutation of the XPB or XPD gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "impairs NER",
+        "answerability": 0.9923016428947449,
+        "ground_truth": {
+          "hyper-sensitivity": {
+            "bertscore": 0.656991720199585,
+            "f1": 0
+          },
+          "skin tumor formation": {
+            "bertscore": 0.6695355176925659,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does NER have a hypersensitivity to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sunlight",
+        "answerability": 0.995206356048584,
+        "ground_truth": {
+          "sunlight": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

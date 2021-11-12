@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "By using run-on assays ACLA was shown to induce an enhancement of the transcription of hematopoietic genes including gamma-globin PBGD erythropoietin receptor and GATA-1 transcription factor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ACLA",
+        "PBGD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was shown to increase transcription of hematopoietic genes?",
+          "What is the name of the hematopoietic gene that ACLA induces"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "run-on assays ACLA",
+        "an enhancement",
+        "the transcription",
+        "hematopoietic genes",
+        "gamma-globin PBGD erythropoietin receptor",
+        "GATA-1 transcription factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to determine the effect of ACLA on transcription?",
+          "What did ACLA induce?",
+          "What did ACLA induce an enhancement of?",
+          "What did ACLA induce an enhancement of?",
+          "What is one hematopoietic gene that ACLA induces?",
+          "What is one hematopoietic gene that ACLA induces?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was shown to increase transcription of erythroid genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3696005940437317,
+        "ground_truth": {
+          "ACLA": {
+            "bertscore": 0.6842164993286133,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the erythropoietin receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.228523850440979,
+        "ground_truth": {
+          "PBGD": {
+            "bertscore": 0.662494421005249,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to determine the effect of ACLA on erythroid genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "run-on assays",
+        "answerability": 0.956227719783783,
+        "ground_truth": {
+          "run-on assays ACLA": {
+            "bertscore": 0.9298699498176575,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did ACLA induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription of hematopoietic genes",
+        "answerability": 0.9594597220420837,
+        "ground_truth": {
+          "an enhancement": {
+            "bertscore": 0.6486003398895264,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did ACLA induce an enhancement of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription of hematopoietic genes",
+        "answerability": 0.9794138669967651,
+        "ground_truth": {
+          "the transcription": {
+            "bertscore": 0.7212873101234436,
+            "f1": 0.4
+          },
+          "erythroid genes": {
+            "bertscore": 0.801862895488739,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is one erythroid gene that ACLA induces?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "gamma-globin PBGD",
+        "answerability": 0.6210939884185791,
+        "ground_truth": {
+          "gamma-globin PBGD erythropoietin receptor": {
+            "bertscore": 0.8913078904151917,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is one of the genes that ACLA induces?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "gamma-globin PBGD erythropoietin",
+        "answerability": 0.8375902771949768,
+        "ground_truth": {
+          "GATA-1 transcription factor": {
+            "bertscore": 0.7229111194610596,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

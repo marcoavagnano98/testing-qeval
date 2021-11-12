@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Angiotensin II exerts mitogenic effects on cultured endothelial cells and this effect is abrogated by Zac1 knockdown.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Angiotensin II",
+        "Zac1 knockdown"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enzyme exerts mitogenic effects on cultured endothelial cells?",
+          "What is the process that robs angiotensin II of its effect on end"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Angiotensin II exerts mitogenic effects",
+        "cultured endothelial cells",
+        "this effect",
+        "Zac1 knockdown"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of Zac1 on cultured endothelial cells?",
+          "What does Zac1 knockdown do?",
+          "What is abrogated by Zac1 knockdown?",
+          "What is the process that robs angiotensin II of its effect on end"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What receptor exerts mitogenic effects on endothelial cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Angiotensin II",
+        "answerability": 0.9581184387207031,
+        "ground_truth": {
+          "angiotensin II": {
+            "bertscore": 0.9638850688934326,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the key regulator of blood pressure and body fluid homeostasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004603683948516846,
+        "ground_truth": {
+          "Angiotensin II": {
+            "bertscore": 0.6060509085655212,
+            "f1": 0
+          },
+          "angiotensin II receptors": {
+            "bertscore": 0.6110154390335083,
+            "f1": 0
+          },
+          "(ANG II": {
+            "bertscore": 0.6507403254508972,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of angiotensin II in angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05260014533996582,
+        "ground_truth": {
+          "Differential regulation": {
+            "bertscore": 0.694348931312561,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of angiotensin II in blood pressure and body fluid homeost": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.026488125324249268,
+        "ground_truth": {
+          "vivo angiogenesis": {
+            "bertscore": 0.6582668423652649,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is angiotensin II a key regulator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16752880811691284,
+        "ground_truth": {
+          "blood pressure": {
+            "bertscore": 0.6930187344551086,
+            "f1": 0
+          },
+          "body fluid homeostasis exerts": {
+            "bertscore": 0.6633473634719849,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does ANG II exert mitogenic effects on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cells",
+        "answerability": 0.9477877616882324,
+        "ground_truth": {
+          "endothelial cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

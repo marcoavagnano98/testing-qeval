@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "Together these results show that ICBP90 expression is altered in cancer cell lines and is upregulated by E2F-1 overexpression with an efficiency depending on the cancer status of the cell line.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E2F-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that affects ICBP90 expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these results",
+        "ICBP90 expression",
+        "cancer cell lines",
+        "E2F-1 overexpression",
+        "an efficiency",
+        "the cancer status",
+        "the cell line"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that ICBP90 expression is altered in cancer cell lines?",
+          "What is altered in cancer cell lines?",
+          "What type of cell line is ICBP90 altered in?",
+          "What is the main factor that affects ICBP90 expression?",
+          "What is the effect of E2F-1 overexpression on ICBP90?",
+          "What is the efficiency of E2F-1 overexpression?",
+          "What is the efficiency of the E2F-1 overexpression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is more efficient on ICBP90?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F-1",
+        "answerability": 0.8546781539916992,
+        "ground_truth": {
+          "E2F-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "The effect": {
+            "bertscore": 0.6965979933738708,
+            "f1": 0
+          },
+          "overexpression": {
+            "bertscore": 0.6839792728424072,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of overexpression of E2F-1 more efficient on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ICBP90",
+        "answerability": 0.8517683744430542,
+        "ground_truth": {
+          "ICBP90": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

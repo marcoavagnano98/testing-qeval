@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "the expression of c-fos c-jun and c-myc genes is regulated by heat shock in human lymphoid cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the expression",
+        "c-fos c-jun and c-myc genes",
+        "heat shock",
+        "human lymphoid cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is regulated by heat shock in human lymphoid cells?",
+          "What genes are regulated by heat shock in human lymphoid cells?",
+          "What is the expression of c-fos c-jun and c-",
+          "Where is the expression of c-fos c-jun regulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is regulated by heat shock in human lymphoid cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of c-fos c-jun and c-myc genes",
+        "answerability": 0.9943660497665405,
+        "ground_truth": {
+          "The expression": {
+            "bertscore": 0.6603672504425049,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What genes are regulated by heat shock in human lymphoid cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos c-jun and c-myc genes",
+        "answerability": 0.9651355147361755,
+        "ground_truth": {
+          "c-fos c-jun and c-myc genes": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the expression of c-fos c-jun and c-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6494971513748169,
+        "ground_truth": {
+          "heat shock": {
+            "bertscore": 0.6965193748474121,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is the expression of c-fos c-jun regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "heat shock in human lymphoid cells",
+        "answerability": 0.8730060458183289,
+        "ground_truth": {
+          "human lymphoid cells": {
+            "bertscore": 0.8905881643295288,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

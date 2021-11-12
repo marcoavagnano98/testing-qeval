@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "Cross-linking CD19 on early human B lineage cells induces the formation of a CD19/Vav/phosphatidylinositol-3 kinase complex tyrosine phosphorylation of CD19 and Vav and activation of the Ras pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD19",
+        "Vav",
+        "Ras"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the kinase complex that forms on early human B lineage cells?",
+          "What is the kinase that activates the Ras pathway?",
+          "What pathway is activated by cross-linking CD19?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cross-linking CD19",
+        "early human B lineage cells",
+        "the formation",
+        "a CD19/Vav/phosphatidylinositol-3 kinase complex tyrosine phosphorylation",
+        "CD19",
+        "Vav",
+        "activation",
+        "the Ras pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What causes the formation of a complex?",
+          "Where does cross-linking CD19 occur?",
+          "What does cross-linking CD19 on early human B lineage cells induce?",
+          "What does cross-linking CD19 on early human B lineage cells induce?",
+          "What is the kinase complex that forms on early human B lineage cells?",
+          "What is the kinase that activates the Ras pathway?",
+          "What is the Ras pathway?",
+          "What pathway is activated by cross-linking CD19?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the kinase complex that forms on early human B lineage cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD19/Vav/phosphatidylinositol-3",
+        "answerability": 0.9779589772224426,
+        "ground_truth": {
+          "CD19": {
+            "bertscore": 0.6071619391441345,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the kinase that activates the Ras pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphatidylinositol-3",
+        "answerability": 0.6269347667694092,
+        "ground_truth": {
+          "Vav": {
+            "bertscore": 0.5560347437858582,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway is activated by cross-linking CD19?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ras",
+        "answerability": 0.9904099702835083,
+        "ground_truth": {
+          "Ras": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the Ras pathway": {
+            "bertscore": 0.7482893466949463,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What causes the formation of a complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cross-linking CD19 on early human B lineage cells",
+        "answerability": 0.9442852735519409,
+        "ground_truth": {
+          "Cross-linking CD19": {
+            "bertscore": 0.8213927745819092,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "Where does cross-linking CD19 occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early human B lineage cells",
+        "answerability": 0.9930943250656128,
+        "ground_truth": {
+          "early human B lineage cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does cross-linking CD19 on early human B lineage cells induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "formation of a CD19/Vav/phosphatidylinosi",
+        "answerability": 0.9636971950531006,
+        "ground_truth": {
+          "the formation": {
+            "bertscore": 0.6172736883163452,
+            "f1": 0.5
+          },
+          "a CD19/Vav/phosphatidylinositol-3 kinase complex tyrosine phosphorylation": {
+            "bertscore": 0.8477396368980408,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the Ras pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11757510900497437,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.669492781162262,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

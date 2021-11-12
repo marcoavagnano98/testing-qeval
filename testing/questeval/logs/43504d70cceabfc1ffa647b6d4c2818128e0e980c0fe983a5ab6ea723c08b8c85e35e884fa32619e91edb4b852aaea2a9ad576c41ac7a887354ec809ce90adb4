@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "Rats that were irradiated twice (single fractions at 0 and 24 hours after implantation) did not show a significant decrease in the neovascularization of the irradiated implant compared with the contralateral control implant.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "0 and 24 hours"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two days after implantation did rats show a decrease in neovascularization"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Rats",
+        "implantation",
+        "a significant decrease",
+        "the neovascularization",
+        "the irradiated implant",
+        "the contralateral control"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What animal was irradiated twice?",
+          "What was the rat's first irradiation?",
+          "What did rats that were irradiated twice not show?",
+          "What did rats that were irradiated twice not show a significant decrease in?",
+          "What did rats that were irradiated twice show no decrease in neo",
+          "What type of implant did rats that were irradiated twice show a significant decrease"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What were the two fractions of a rat that was irradiated twice": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3320598006248474,
+        "ground_truth": {
+          "0 and 24 hours": {
+            "bertscore": 0.6631572842597961,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the group of rats that were irradiated twice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "single fractions",
+        "answerability": 0.596814751625061,
+        "ground_truth": {
+          "Group": {
+            "bertscore": 0.7428866028785706,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was considered to be irradiated twice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rats",
+        "answerability": 0.948029100894928,
+        "ground_truth": {
+          "Rats": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the first step in the development of a rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04813027381896973,
+        "ground_truth": {
+          "implantation": {
+            "bertscore": 0.6969070434570312,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

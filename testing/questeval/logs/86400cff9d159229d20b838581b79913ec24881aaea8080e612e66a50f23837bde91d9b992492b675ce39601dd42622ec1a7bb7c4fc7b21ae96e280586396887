@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "(CPT-cAMP) showed that Ser-499 phosphorylation alone resulted in Ca(2+)/CaM-independent eEF-2K activity in vitro suggesting that this site could be phosphorylated by protein kinase C.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CPT",
+        "eEF-2K"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cAMP-cAMP site?",
+          "What activity was found in vitro in the presence of Ser-499?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CPT-cAMP",
+        "Ser-499 phosphorylation",
+        "Ca(2+)/CaM-independent eEF-2K activity",
+        "this site",
+        "protein kinase C."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein kinase that is responsible for eEF",
+          "What did CPT-cAMP show resulted in Ca(2+)/C",
+          "What did CPT-cAMP show in vitro?",
+          "What could be phosphorylated by protein kinase C?",
+          "What protein could be involved in the phosphorylation of Ser-499?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the cAMP-cPT-cAMP system?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.053417742252349854,
+        "ground_truth": {
+          "CPT": {
+            "bertscore": 0.7008699178695679,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What activity was induced by Ser-499 phosphorylation alone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eEF-2K",
+        "answerability": 0.8511533737182617,
+        "ground_truth": {
+          "eEF-2K": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that phosphorylates Ser-499?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30033910274505615,
+        "ground_truth": {
+          "CPT-cAMP": {
+            "bertscore": 0.6546052098274231,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did CPT-cAMP show was responsible for Ca(2+)/Ca": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ser-499 phosphorylation",
+        "answerability": 0.9394041299819946,
+        "ground_truth": {
+          "Ser-499 phosphorylation": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did CPT-cAMP show?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ser-499 phosphorylation alone resulted in Ca(2+)/C",
+        "answerability": 0.9511236548423767,
+        "ground_truth": {
+          "Ca(2+)/CaM-independent eEF-2K activity": {
+            "bertscore": 0.7545325756072998,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did CPT-cAMP show that Ser-499 phosphorylation alone induced": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ca(2+)/CaM-independent eEF-2K activity",
+        "answerability": 0.7085958123207092,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6255998611450195,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

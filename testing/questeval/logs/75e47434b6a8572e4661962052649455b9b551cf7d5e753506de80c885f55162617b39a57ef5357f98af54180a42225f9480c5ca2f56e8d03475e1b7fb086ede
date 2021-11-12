@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "In contrast a selective COX-II inhibitor SC-560 had no effect on serum progesterone concentrations.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "COX"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the inhibitor that did not have an effect on serum progesterone"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "a selective COX-II inhibitor",
+        "no effect",
+        "serum progesterone concentrations"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of the selective COX-II inhibitor SC-560 on serum pro",
+          "What did the EPA find to be ineffective?",
+          "What effect did the selective COX-II inhibitor SC-560 have on serum proge",
+          "What did the selective COX-II inhibitor SC-560 not have an effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the inhibitor that does not have an effect on serum progesterone": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SC-560",
+        "answerability": 0.7657054662704468,
+        "ground_truth": {
+          "COX": {
+            "bertscore": 0.7814001441001892,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of the selective COX-I inhibitor SC-560 on serum proge": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1772887110710144,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094627618789673,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did SC-560 have no effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "serum progesterone concentrations",
+        "answerability": 0.9476022720336914,
+        "ground_truth": {
+          "a selective COX-I inhibitor": {
+            "bertscore": 0.6917623281478882,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect did the selective COX-I inhibitor SC-560 have on serum progester": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11888313293457031,
+        "ground_truth": {
+          "no effect": {
+            "bertscore": 0.7436091899871826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the selective COX-I inhibitor SC-560 have no effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "serum progesterone concentrations",
+        "answerability": 0.9212256669998169,
+        "ground_truth": {
+          "serum progesterone concentrations": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "Insulin dose-dependently increased the PI-345-P3 production but YM268 had no significant effect on the insulin-dependent and -independent PI 3-kinase activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "YM268"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did insulin-dependent PI 3-kinase activation not have an effect on"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Insulin dose",
+        "the PI-345-P3 production",
+        "YM268",
+        "no significant effect",
+        "the insulin-dependent and -independent PI 3-kinase activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the main factor that induced the increase in PI-345-P3 production",
+          "What did insulin dose-dependently increase?",
+          "What did insulin-dependent PI 3-kinase activation not have an effect on",
+          "What effect did YM268 have on insulin-dependent and-independent PI",
+          "What did YM268 not have a significant effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug did not have a significant effect on insulin-dependent PI 3-kinas": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "YM268",
+        "answerability": 0.9323203563690186,
+        "ground_truth": {
+          "YM268": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What drug did YM268 and YM268 dose-dependently increase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44575172662734985,
+        "ground_truth": {
+          "pioglitazone": {
+            "bertscore": 0.6397611498832703,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did YM268 and pioglitazone do that was not significant": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17161023616790771,
+        "ground_truth": {
+          "the PI-345-P3 production": {
+            "bertscore": 0.623814046382904,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect did YM268 have on insulin-dependent and-independent PI": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37608349323272705,
+        "ground_truth": {
+          "no significant effect": {
+            "bertscore": 0.7435682415962219,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did YM268 not have an effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI 3-kinase activation",
+        "answerability": 0.9636794328689575,
+        "ground_truth": {
+          "the insulin-dependent and -independent PI 3-kinase production": {
+            "bertscore": 0.8592691421508789,
+            "f1": 0.4444444444444444
+          }
+        }
+      }
+    }
+  }
+}

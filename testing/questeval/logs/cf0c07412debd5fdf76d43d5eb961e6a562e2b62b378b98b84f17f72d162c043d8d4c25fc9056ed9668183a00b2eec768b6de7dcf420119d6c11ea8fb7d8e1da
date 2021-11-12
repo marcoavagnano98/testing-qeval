@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "IE2-86 also prevented the emergence of presumably ubiquitinated species of p53.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IE2-86",
+        "the emergence",
+        "presumably ubiquitinated species",
+        "p53"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevented the emergence of ubiquitinated species of p53?",
+          "What did IE2-86 prevent?",
+          "What did IE2-86 prevent the emergence of?",
+          "What ubiquitinated species did IE2-86 prevent the emergence of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What prevented the emergence of ubiquitinated species of p53?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IE2-86",
+        "answerability": 0.8261862397193909,
+        "ground_truth": {
+          "IE2-86": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IE2-86 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42570632696151733,
+        "ground_truth": {
+          "the emergence": {
+            "bertscore": 0.7083134651184082,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IE2-86 prevent the emergence of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "presumably ubiquitinated species of p53",
+        "answerability": 0.5706295967102051,
+        "ground_truth": {
+          "presumably ubiquitinated species": {
+            "bertscore": 0.9035062193870544,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What ubiquitinated species did IE2-86 prevent the emergence of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53",
+        "answerability": 0.6862225532531738,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

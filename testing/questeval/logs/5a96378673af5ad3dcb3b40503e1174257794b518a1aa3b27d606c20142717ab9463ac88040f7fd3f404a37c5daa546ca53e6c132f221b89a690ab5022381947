@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "To continue our investigation of the cellular events that occur following human CMV (HCMV) infection we focused on the regulation of cellular activation following viral binding to human monocytes. We then investigated if HCMV binding also resulted in the translation and secretion of cytokines.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "our investigation",
+        "the cellular events",
+        "human CMV (HCMV) infection",
+        "we",
+        "the regulation",
+        "cellular activation",
+        "human monocytes",
+        "We",
+        "the translation",
+        "secretion",
+        "cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we focus on to continue?",
+          "What did we focus on to continue our investigation of?",
+          "What did we study to determine the regulation of cellular activation?",
+          "What did the researchers do to investigate the regulation of cellular activation?",
+          "What did we focus on to investigate the cellular activation after viral binding to human monocyte",
+          "What did we focus on to investigate the regulation of?",
+          "What did we focus on to investigate the regulation of cellular activation?",
+          "What did the researchers study?",
+          "What did the study investigate if HCMV binding also resulted in?",
+          "What did we investigate if HCMV binding also resulted in the translation of",
+          "What did we investigate if HCMV binding resulted in the translation and secreti"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the researchers investigate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "if HCMV binding also resulted in the translation and secretion of",
+        "answerability": 0.5999252200126648,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.561726987361908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did HCMV binding result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "translation and secretion of cytokines",
+        "answerability": 0.9880034923553467,
+        "ground_truth": {
+          "the translation": {
+            "bertscore": 0.6807293891906738,
+            "f1": 0.33333333333333337
+          },
+          "secretion": {
+            "bertscore": 0.7129247188568115,
+            "f1": 0.33333333333333337
+          },
+          "cytokines": {
+            "bertscore": 0.8260015845298767,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

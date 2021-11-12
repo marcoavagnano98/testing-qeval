@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "(Fos/Jun) complex in response to phorbol myristate acetate TNF-alpha or immobilized antibodies toCD3 were monitored.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fos/Jun",
+        "phorbol myristate",
+        "TNF",
+        "toCD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What complex was monitored in response to phorbol myristate acetate TNF",
+          "What was the reaction to the acetate TNF-alpha?",
+          "What is the phorbol myristate acetate?",
+          "What antibody was used to monitor the phorbol myristate acetate TNF"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(Fos/Jun) complex",
+        "response",
+        "myristate acetate",
+        "TNF-alpha or immobilized antibodies",
+        "toCD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the reaction to phorbol myristate acetate?",
+          "What was the phorbol myristate acetate TNF-alpha?",
+          "What was used to monitor the response of the phorbol complex?",
+          "What was the response of the phorbol myristate acetate to CD3",
+          "What antibody was used to monitor the phorbol myristate acetate TNF"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What complex was monitored in response to phorbol myristate acetate TNF": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "(Fos/Jun)",
+        "answerability": 0.6251615285873413,
+        "ground_truth": {
+          "Fos/Jun": {
+            "bertscore": 0.8353763222694397,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the reaction to the acetate TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2820817828178406,
+        "ground_truth": {
+          "phorbol myristate": {
+            "bertscore": 0.6150122880935669,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the phorbol myristate acetate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4498409628868103,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the reaction to phorbol myristate acetate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha or immobilized antibodies toCD3",
+        "answerability": 0.6280157566070557,
+        "ground_truth": {
+          "(Fos/Jun) complex": {
+            "bertscore": 0.6312410235404968,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the phorbol myristate acetate TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01890641450881958,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7024294137954712,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to monitor the response of the phorbol complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23208171129226685,
+        "ground_truth": {
+          "myristate acetate": {
+            "bertscore": 0.5991895794868469,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the response of the phorbol myristate acetate complex to CD": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3934835195541382,
+        "ground_truth": {
+          "TNF-alpha or immobilized antibodies": {
+            "bertscore": 0.6499608755111694,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was tested for TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16480326652526855,
+        "ground_truth": {
+          "CD3": {
+            "bertscore": 0.6555173993110657,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Here we report that CD28 engagement however exerts opposite effects on the transcription factor AP-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD28"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor has opposite effects on AP-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "CD28 engagement",
+        "the transcription factor",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of CD28 on AP-1?",
+          "What exerts opposite effects on the transcription factor AP-1?",
+          "What does CD28 engagement exert opposite effects on?",
+          "What transcription factor does CD28 have a negative effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor has opposite effects on AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28",
+        "answerability": 0.9962206482887268,
+        "ground_truth": {
+          "CD28": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of CD28 on AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "opposite effects",
+        "answerability": 0.9518821835517883,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7577780485153198,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What exerts opposite effects on the transcription factor AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28 engagement",
+        "answerability": 0.988740861415863,
+        "ground_truth": {
+          "CD28 engagement": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does CD28 engagement exert opposite effects on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.9554961919784546,
+        "ground_truth": {
+          "the transcription factor": {
+            "bertscore": 0.6964836120605469,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor does CD28 have a negative effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.9689664244651794,
+        "ground_truth": {
+          "AP-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

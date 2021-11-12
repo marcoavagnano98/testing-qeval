@@ -1,0 +1,72 @@
+{
+  "type": "ref",
+  "text": "Protor-1 is a novel Rictor-binding subunit of mTORC2 but further work is required to establish its role.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mTORC2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the Rictor-binding subunit of mTORC2"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Protor-1",
+        "a novel Rictor-binding subunit",
+        "mTORC2",
+        "further work",
+        "its role"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the Rictor-binding subunit of mTORC2",
+          "What is Protor-1?",
+          "What is the name of the Rictor-binding subunit of mTORC2",
+          "What is required to establish its role?",
+          "What is the role of Protor-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is Protor-1 a novel Rictor-binding component of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mTORC2",
+        "answerability": 0.9924201369285583,
+        "ground_truth": {
+          "mTORC2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the purpose of the mTORC2 molecule?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0038046836853027344,
+        "ground_truth": {
+          "Identification": {
+            "bertscore": 0.6873464584350586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Protor-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a novel Rictor-binding subunit of mTORC2",
+        "answerability": 0.9795007705688477,
+        "ground_truth": {
+          "a novel Rictor-binding component": {
+            "bertscore": 0.8751550316810608,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

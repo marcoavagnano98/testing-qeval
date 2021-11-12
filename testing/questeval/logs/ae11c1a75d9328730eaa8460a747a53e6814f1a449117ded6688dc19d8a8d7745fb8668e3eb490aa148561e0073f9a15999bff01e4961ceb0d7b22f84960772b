@@ -1,0 +1,68 @@
+{
+  "type": "ref",
+  "text": "DNA triplex formation selectively inhibits granulocyte-macrophage colony-stimulating factor gene expression in human T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DNA triplex formation",
+        "granulocyte-macrophage colony-stimulating factor gene expression",
+        "human T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits granulocyte-macrophage colony-stimulating",
+          "What does DNA triplex formation selectively inhibit in human T cells?",
+          "What type of cells is targeted by DNA triplex formation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits expression of the granulocyte-macrophage colony-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA triplex formation",
+        "answerability": 0.9250373840332031,
+        "ground_truth": {
+          "Cyclosporin A": {
+            "bertscore": 0.6721236705780029,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does cyclosporin A inhibit in human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00018483400344848633,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272055745124817,
+            "f1": 0
+          },
+          "the granulocyte-macrophage colony-stimulating factor gene": {
+            "bertscore": 0.5569176077842712,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells does cyclosporin A inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004680156707763672,
+        "ground_truth": {
+          "human T cells": {
+            "bertscore": 0.6446219086647034,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

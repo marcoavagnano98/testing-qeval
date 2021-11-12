@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "The intracellular parasite Theileria parva secures its propagation and spreads through the infected animal by infecting and transforming T cells inducing their continuous proliferation and rendering them metastatic.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Theileria"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the parasite that infects and transforms T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Theileria",
+        "its propagation",
+        "the infected animal",
+        "T cells",
+        "their continuous proliferation",
+        "them"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the parasite that infects and transforms T cells?",
+          "What does Theileria parva secure?",
+          "Where does Theileria parva spread?",
+          "What does Theileria parva infect and transform?",
+          "What does Theileria parva do to T cells?",
+          "What does Theileria parva do to the T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the parasite that infects and transforms T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Theileria parva",
+        "answerability": 0.9879860281944275,
+        "ground_truth": {
+          "Theileria": {
+            "bertscore": 0.8472281694412231,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does Theileria parva secure?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "propagation",
+        "answerability": 0.9961268901824951,
+        "ground_truth": {
+          "its propagation": {
+            "bertscore": 0.861674964427948,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where does Theileria parva spread?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "through the infected animal",
+        "answerability": 0.9955971837043762,
+        "ground_truth": {
+          "the infected animal": {
+            "bertscore": 0.8993973731994629,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does Theileria parva infect and transform?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.9980230331420898,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Theileria parva do to T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "infecting and transforming",
+        "answerability": 0.8503170013427734,
+        "ground_truth": {
+          "their continuous proliferation": {
+            "bertscore": 0.700299859046936,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Theileria parva do to the T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "infecting and transforming",
+        "answerability": 0.853587806224823,
+        "ground_truth": {
+          "them": {
+            "bertscore": 0.7296245694160461,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

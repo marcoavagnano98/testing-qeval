@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "The proapoptotic gene SIVA is a direct transcriptional target for the tumor suppressors p53 and apoptosis genes indicating that it functions in a broad spectrum of cell types.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SIVA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the proapoptotic gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The proapoptotic gene SIVA",
+        "a direct transcriptional target",
+        "the tumor suppressors p53 and apoptosis genes",
+        "it",
+        "a broad spectrum",
+        "cell types"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a direct transcriptional target for the tumor suppressors p53 and",
+          "What is the proapoptotic gene SIVA?",
+          "What is the SIVA a direct transcriptional target for?",
+          "What does SIVA function in a broad spectrum of cell types?",
+          "SIVA functions in what kind of cell types?",
+          "SIVA functions in a broad spectrum of what?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the proapoptotic gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SIVA",
+        "answerability": 0.9922911524772644,
+        "ground_truth": {
+          "SIVA": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is a direct transcriptional target for the tumor suppressors p53 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The proapoptotic gene SIVA",
+        "answerability": 0.9503757357597351,
+        "ground_truth": {
+          "The proapoptotic gene SIVA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the proapoptotic gene SIVA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a direct transcriptional target for the tumor suppressors p53 and apop",
+        "answerability": 0.9723917841911316,
+        "ground_truth": {
+          "a direct transcriptional target": {
+            "bertscore": 0.7996947765350342,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the SIVA a direct transcriptional target for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor suppressors p53 and apoptosis genes",
+        "answerability": 0.9857774972915649,
+        "ground_truth": {
+          "the tumor suppressors p53": {
+            "bertscore": 0.8881765007972717,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "type": "hyp",
+  "text": "It was found that lipopolysaccharide induced strongly both c-fos and c-jun expression as well as AP1.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "It",
+        "both c-fos and c-jun expression",
+        "AP1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of lipopolysaccharide on c-jun and",
+          "What did lipopolysaccharide induce?",
+          "What protein was found to be a strong factor in c-jun and c-"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did lipopolysaccharide induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos and c-jun expression",
+        "answerability": 0.9444169402122498,
+        "ground_truth": {
+          "It": {
+            "bertscore": 0.5744674205780029,
+            "f1": 0
+          },
+          "both c-fos and c-jun expression": {
+            "bertscore": 0.9534568190574646,
+            "f1": 0.888888888888889
+          },
+          "AP1 formation": {
+            "bertscore": 0.7393054366111755,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

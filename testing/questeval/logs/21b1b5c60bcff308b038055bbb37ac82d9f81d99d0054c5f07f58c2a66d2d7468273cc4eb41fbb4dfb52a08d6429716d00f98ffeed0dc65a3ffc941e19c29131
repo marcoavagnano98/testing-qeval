@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "The interleukin 2 receptor alpha-chain (IL-2R alpha) gene is rapidly and potently induced in T cells in response to a variety of mitogenic stimuli.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the IL-2R alpha-chain?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The interleukin 2 receptor alpha-chain",
+        "(IL-2R alpha) gene",
+        "T cells",
+        "response",
+        "a variety",
+        "mitogenic stimuli"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IL-2R alpha?",
+          "What is the interleukin 2 receptor alpha-chain?",
+          "What type of cells is the IL-2R alpha-chain gene induced in?",
+          "What is the IL-2R alpha-chain gene induced in?",
+          "What is the IL-2R alpha-chain gene induced in response to?",
+          "What is the IL-2R alpha-chain induced by?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the IL-2R alpha-chain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin 2 receptor alpha",
+        "answerability": 0.9076738357543945,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.5824836492538452,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is IL-2R alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin 2 receptor alpha-chain",
+        "answerability": 0.9036305546760559,
+        "ground_truth": {
+          "The interleukin 2 receptor alpha-chain": {
+            "bertscore": 0.9455092549324036,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the interleukin 2 receptor alpha-chain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2R alpha",
+        "answerability": 0.9861326217651367,
+        "ground_truth": {
+          "(IL-2R alpha) gene": {
+            "bertscore": 0.8358767628669739,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of cells responds to IL-2R alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.9319505095481873,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the IL-2R alpha-chain gene induced in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.9961809515953064,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7366744875907898,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the IL-2R alpha-chain induced by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a variety of mitogenic stimuli",
+        "answerability": 0.968342125415802,
+        "ground_truth": {
+          "mitogenic stimuli": {
+            "bertscore": 0.90779709815979,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

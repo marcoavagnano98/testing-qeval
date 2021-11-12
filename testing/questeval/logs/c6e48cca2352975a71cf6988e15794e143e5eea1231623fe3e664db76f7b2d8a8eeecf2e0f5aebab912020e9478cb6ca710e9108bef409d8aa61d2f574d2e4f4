@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Stimulation of T cells with BW 828 induced an increase in intracellular Ca2+ but did not lead to detectable activation of the protein kinases p56(lck) and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BW 828"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulated T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stimulation",
+        "T cells",
+        "BW",
+        "an increase",
+        "intracellular Ca2",
+        "+",
+        "detectable activation",
+        "the protein kinases p56(lck"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did BW 828 do to T cells?",
+          "What cells were stimulated with BW 828?",
+          "What stimulates T cells?",
+          "What did stimulation of T cells with BW 828 induce?",
+          "What did BW 828 induce?",
+          "What did BW 828 induce?",
+          "What did stimulation of T cells with BW 828 not lead to?",
+          "What did BW 828 not activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stimulated T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BW 828",
+        "answerability": 0.9044727683067322,
+        "ground_truth": {
+          "BW 828": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          },
+          "BW": {
+            "bertscore": 0.872922420501709,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did BW 828 do to T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induced an increase in intracellular Ca2+",
+        "answerability": 0.9650330543518066,
+        "ground_truth": {
+          "Stimulation": {
+            "bertscore": 0.6306107640266418,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were stimulated with BW 828?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.9814393520355225,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did stimulation of T cells with BW 828 induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an increase in intracellular Ca2+",
+        "answerability": 0.9909400343894958,
+        "ground_truth": {
+          "an increase": {
+            "bertscore": 0.6795808672904968,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did BW 828 induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an increase in intracellular Ca2+",
+        "answerability": 0.9612323641777039,
+        "ground_truth": {
+          "intracellular Ca2": {
+            "bertscore": 0.8555870056152344,
+            "f1": 0.6666666666666666
+          },
+          "+": {
+            "bertscore": 0.6190043687820435,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did BW 828 not lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5416198968887329,
+        "ground_truth": {
+          "detectable activation": {
+            "bertscore": 0.7381436228752136,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did BW 828 not activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p56(lck) and lck",
+        "answerability": 0.8611006736755371,
+        "ground_truth": {
+          "the protein kinases p56(lck": {
+            "bertscore": 0.7529752850532532,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    }
+  }
+}

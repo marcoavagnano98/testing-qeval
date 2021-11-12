@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "However binding of SHP2 to SIT is not required for inhibition of NF-AT induction suggesting that SIT not only regulates NF-AT activity but also controls NF-AT unrelated pathways of T cell activation involving SHP 2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SHP 2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is not required for inhibition of NF-AT induction?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "SHP2",
+        "SIT",
+        "inhibition",
+        "NF-AT induction",
+        "SIT",
+        "NF-AT activity",
+        "NF-AT unrelated pathways",
+        "T cell activation",
+        "SHP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is not required for inhibition of NF-AT induction?",
+          "What does SHP2 not require for inhibition of NF-AT induction?",
+          "What is binding of SHP2 to SIT not required for?",
+          "What is not required for binding of SHP2 to SIT?",
+          "What does SHP2 not require for inhibition of NF-AT induction?",
+          "What does SIT regulate?",
+          "What does SIT control?",
+          "What does SIT control?",
+          "What does SIT not require to inhibit NF-AT induction?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is not required for inhibition of NF-AT induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SHP2",
+        "answerability": 0.9932292699813843,
+        "ground_truth": {
+          "SHP2": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does SHP2 not require for inhibition of NF-AT induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binding",
+        "answerability": 0.9961115717887878,
+        "ground_truth": {
+          "SIT": {
+            "bertscore": 0.7570217847824097,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is binding of SHP2 to SIT not required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of NF-AT induction",
+        "answerability": 0.9998959898948669,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.7741904258728027,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is not required for binding of SHP2 to SIT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of NF-AT induction",
+        "answerability": 0.9992915391921997,
+        "ground_truth": {
+          "NF-AT induction": {
+            "bertscore": 0.8710201978683472,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does SIT regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-AT activity",
+        "answerability": 0.9723189473152161,
+        "ground_truth": {
+          "NF-AT activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does SIT control?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-AT",
+        "answerability": 0.8885840177536011,
+        "ground_truth": {
+          "NF-AT unrelated pathways": {
+            "bertscore": 0.7837517857551575,
+            "f1": 0.5
+          },
+          "T cell activation": {
+            "bertscore": 0.7407727241516113,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

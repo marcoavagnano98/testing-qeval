@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "The inhibitory effect of CaM-CaM-K II on IL-2 promoter was associated with decreased transcription of its AP-1\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CaM",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the inhibitory effect of CaM-CaM-K II",
+          "What promoter was affected by CaM-CaM-K II?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The inhibitory effect",
+        "CaM-CaM-K II",
+        "IL-2 promoter",
+        "decreased transcription",
+        "its AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was associated with decreased transcription of IL-2?",
+          "What inhibited the transcription of IL-2?",
+          "What gene was affected by CaM-CaM-K II?",
+          "What was the inhibitory effect of CaM-CaM-K II on IL",
+          "What gene was decreased by CaM-CaM-K II?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited the transcription of IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CaM-CaM-K II",
+        "answerability": 0.7895203828811646,
+        "ground_truth": {
+          "CaM-K II": {
+            "bertscore": 0.9319766759872437,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What promoter was affected by CaM-K II?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9544425010681152,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was associated with decreased transcription of IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibitory effect of CaM-CaM-K II on IL-2 promoter",
+        "answerability": 0.781484067440033,
+        "ground_truth": {
+          "The inhibitory effect": {
+            "bertscore": 0.7246352434158325,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What gene was affected by CaM-K II?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.8790390491485596,
+        "ground_truth": {
+          "IL-2 promoter": {
+            "bertscore": 0.8115411996841431,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the inhibitory effect of CaM-K II on IL-2 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased transcription of its AP-1 promoter",
+        "answerability": 0.9973493218421936,
+        "ground_truth": {
+          "decreased transcription": {
+            "bertscore": 0.7957285046577454,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What gene was decreased by CaM-K II?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.8972160220146179,
+        "ground_truth": {
+          "its AP-1": {
+            "bertscore": 0.8799421787261963,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

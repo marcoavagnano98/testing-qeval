@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Stat3 is a member of the STAT family of transcription factors and is associated with CD40 and CD80 activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "STAT",
+        "CD80"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family of transcription factors is Stat3 a member of?",
+          "Stat3 is associated with activation of what transcription factor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stat3",
+        "a member",
+        "the STAT family",
+        "transcription factors",
+        "CD40 and CD80 activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a member of the STAT family of transcription factors?",
+          "What is Stat3 a part of?",
+          "What family of transcription factors is Stat3 a member of?",
+          "What family of factors is Stat3 a member of?",
+          "What is Stat3 associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is critical for CD40 induction in B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stat3",
+        "answerability": 0.5174585580825806,
+        "ground_truth": {
+          "Jak3": {
+            "bertscore": 0.8249375820159912,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Jak3 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000513911247253418,
+        "ground_truth": {
+          "CD40": {
+            "bertscore": 0.6441234946250916,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Jak3 critical for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00023680925369262695,
+        "ground_truth": {
+          "CD40 induction": {
+            "bertscore": 0.6565310955047607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Jak3 critical for inducing in B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 8.881092071533203e-05,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.6905692219734192,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are involved in the induction of gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0053435564041137695,
+        "ground_truth": {
+          "B cells": {
+            "bertscore": 0.673241913318634,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

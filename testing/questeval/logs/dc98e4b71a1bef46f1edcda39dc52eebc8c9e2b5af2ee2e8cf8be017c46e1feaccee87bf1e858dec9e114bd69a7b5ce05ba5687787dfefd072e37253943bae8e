@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "These findings point out the involvement of NF-kappa B/Rel family proteins in growth signaling pathways by either regulating proteins involved in the IL-2 signaling or by functionally interfering with the cell cycle progression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These findings",
+        "the involvement",
+        "growth",
+        "pathways",
+        "either regulating proteins",
+        "the cell cycle progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What points out the involvement of NF-kappa B/Rel family proteins in",
+          "What do the findings point out about NF-kappa B/Rel family proteins",
+          "What signaling pathway does the NF-kappa B/Rel family proteins regulate",
+          "What do the findings point out the involvement of NF-kappa B/Rel",
+          "How do the NF-kappa B/Rel family proteins participate in growth signal",
+          "What do the NF-kappa B/Rel family proteins interfere with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What points out the involvement of NF-kappa B/Rel family proteins in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These findings",
+        "answerability": 0.9926899671554565,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.8136880993843079,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What do the results of the cytokine-mediated cytokine-mediated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20157480239868164,
+        "ground_truth": {
+          "the involvement": {
+            "bertscore": 0.6966479420661926,
+            "f1": 0
+          },
+          "pathways": {
+            "bertscore": 0.7018512487411499,
+            "f1": 0
+          },
+          "the cell cycle progression": {
+            "bertscore": 0.6461749076843262,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling pathway does the NF-kappa B/Rel family proteins regulate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "growth",
+        "answerability": 0.9602298140525818,
+        "ground_truth": {
+          "growth": {
+            "bertscore": 0.9999996423721313,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How do the NF-kappa B/Rel family proteins participate in growth signal": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating proteins involved in the IL-2 signaling or by functionally interfering with",
+        "answerability": 0.9609954357147217,
+        "ground_truth": {
+          "either regulating proteins": {
+            "bertscore": 0.7717888355255127,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    }
+  }
+}

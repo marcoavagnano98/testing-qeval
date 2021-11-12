@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "Thirty-eight Wistar albino rats underwent laparotomy to cause intra-abdominal adhesions by mechanical abrasion of the cediranib implanted into the BALB/c nude mice. Thirty-eight Wistar albino rats underwent laparotomy to cause intra-abdominal adhesions by mechanical abrasion of the cecum and ethanol application.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Thirty-eight",
+        "Wistar",
+        "BALB",
+        "Thirty-eight",
+        "Wistar"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many rats underwent laparotomy?",
+          "What was the name of the rat that had a laparotomy?",
+          "What type of mice were implanted into the mice?",
+          "How many rats underwent laparotomy?",
+          "What was the name of the rat that had a laparotomy?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Thirty-eight Wistar albino rats",
+        "laparotomy",
+        "intra-abdominal adhesions",
+        "mechanical abrasion",
+        "the cediranib",
+        "the BALB",
+        "Thirty-eight Wistar albino rats",
+        "laparotomy",
+        "intra-abdominal adhesions",
+        "mechanical abrasion",
+        "the cecum and ethanol application"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many rats underwent laparotomy?",
+          "What procedure was used to remove the adenocarcinoma?",
+          "What did the laparotomy cause?",
+          "What was the procedure used to cause intra-abdominal adhesions?",
+          "What was implanted into the BALB/c nude mice?",
+          "What type of mice were the laparotomy done on?",
+          "How many rats underwent laparotomy?",
+          "What procedure was used to remove the adenocarcinoma?",
+          "What did the laparotomy cause?",
+          "What was the procedure used to cause intra-abdominal adhesions?",
+          "What did the laparotomy do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many rats underwent laparotomy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Thirty-eight",
+        "answerability": 0.9964983463287354,
+        "ground_truth": {
+          "Thirty-eight": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          },
+          "Thirty-eight Wistar albino rats": {
+            "bertscore": 0.7994154691696167,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the name of the albino rats that underwent laparotomy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Wistar",
+        "answerability": 0.9958012104034424,
+        "ground_truth": {
+          "Wistar": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What procedure was used to cause intra-abdominal adhesions?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "laparotomy",
+        "answerability": 0.7640864849090576,
+        "ground_truth": {
+          "laparotomy": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the laparotomy cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "intra-abdominal adhesions",
+        "answerability": 0.9782021641731262,
+        "ground_truth": {
+          "intra-abdominal adhesions": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the process used to cause intra-abdominal adhesions?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "laparotomy",
+        "answerability": 0.7835347652435303,
+        "ground_truth": {
+          "mechanical abrasion": {
+            "bertscore": 0.7395466566085815,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the cause of the intra-abdominal adhesions?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mechanical abrasion of the cediranib implanted into the BALB/",
+        "answerability": 0.8172523975372314,
+        "ground_truth": {
+          "the cecum and ethanol application": {
+            "bertscore": 0.6860741376876831,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

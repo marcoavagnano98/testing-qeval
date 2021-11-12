@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "We previously demonstrated increased HTLV-1 transcription following CD2 but not CD3 receptor cross-linking.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "increased HTLV-1 transcription",
+        "CD2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we previously demonstrate increased HTLV-1 transcription following?",
+          "What did we previously demonstrate?",
+          "What receptor did we previously show increased transcription following?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we previously demonstrate increased HTLV-1 transcription following?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD2",
+        "answerability": 0.9974477291107178,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.646988570690155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we previously demonstrate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased HTLV-1 transcription",
+        "answerability": 0.9303716421127319,
+        "ground_truth": {
+          "increased HTLV-1 transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What receptor did we previously show increased transcription following?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD2",
+        "answerability": 0.9926225543022156,
+        "ground_truth": {
+          "CD3": {
+            "bertscore": 0.9696970582008362,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor cross-linking has previously been demonstrated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD3",
+        "answerability": 0.9423565864562988,
+        "ground_truth": {
+          "not CD2": {
+            "bertscore": 0.7823120951652527,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Regulation of jun and fos gene expression in human monocytes by the macrophage colony-stimulating factor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that regulates the expression of monocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Regulation",
+        "jun",
+        "fos",
+        "gene expression",
+        "human monocytes",
+        "the macrophage colony-stimulating factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of jun and fos in gene expression?",
+          "What is the name of the gene that regulates the expression of monocytes?",
+          "What is the name of the gene that regulates jun?",
+          "What is the macrophage colony-stimulating factor?",
+          "What is the macrophage colony-stimulating factor?",
+          "What is the main factor in the regulation of jun and fos gene expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that regulates the expression of monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "jun",
+        "answerability": 0.9310928583145142,
+        "ground_truth": {
+          "jun": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of jun and fos in gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Regulation",
+        "answerability": 0.9838622808456421,
+        "ground_truth": {
+          "Regulation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that regulates jun?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fos",
+        "answerability": 0.7710654735565186,
+        "ground_truth": {
+          "fos": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the macrophage colony-stimulating factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.016339004039764404,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.6905691027641296,
+            "f1": 0
+          },
+          "human monocytes": {
+            "bertscore": 0.6539060473442078,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor in the regulation of jun and fos gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "macrophage colony-stimulating factor",
+        "answerability": 0.9934689402580261,
+        "ground_truth": {
+          "the macrophage colony-stimulating factor": {
+            "bertscore": 0.9491866230964661,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

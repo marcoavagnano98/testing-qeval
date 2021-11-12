@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Signaling through the lymphothelial-beta receptor stimulates HIV-1 replication alone and in cooperation with soluble or membrane-bound TNF-alpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What virus is stimulated by the lymphothelial-beta receptor?",
+          "What receptor stimulates HIV-1 replication alone?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the lymphothelial-beta receptor",
+        "HIV-1 replication",
+        "cooperation",
+        "soluble or membrane-bound TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main signaling mechanism of HIV-1 replication?",
+          "What does the lymphothelial-beta receptor stimulate?",
+          "What is the best way to stimulate HIV-1 replication?",
+          "What is the only thing that stimulates HIV-1 replication?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What virus is stimulated by the lymphotoxin-beta receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.9895231127738953,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only signaling that stimulates HIV-1 replication?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphothelial-beta receptor",
+        "answerability": 0.7838433980941772,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6507640480995178,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor stimulates HIV-1 replication?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphothelial-beta receptor",
+        "answerability": 0.9945544004440308,
+        "ground_truth": {
+          "the lymphotoxin-beta receptor": {
+            "bertscore": 0.8958371877670288,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the lymphotoxin-beta receptor stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 replication",
+        "answerability": 0.6937276124954224,
+        "ground_truth": {
+          "HIV-1 replication": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the best way to stimulate HIV-1 replication?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24998217821121216,
+        "ground_truth": {
+          "cooperation": {
+            "bertscore": 0.6902410984039307,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only thing that stimulates HIV-1 replication?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2649082541465759,
+        "ground_truth": {
+          "soluble or membrane-bound TNF-alpha": {
+            "bertscore": 0.6421067714691162,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

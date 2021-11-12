@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "Exposure to LPS or TNF led to differential patterns of IkappaB-alpha and IkappaB-epsilon disappearance from and reassembly with the signalsome whereas IKK-alpha IKK-beta and NIK remained complex-associated networks.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "TNF",
+        "NIK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another name for TNF?",
+          "What is another name for LPS?",
+          "What is the name of the complex-associated network that remains complex-associated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Exposure",
+        "LPS",
+        "TNF",
+        "differential patterns",
+        "IkappaB-alpha and IkappaB-epsilon disappearance",
+        "IKK-alpha IKK-beta",
+        "NIK",
+        "complex-associated networks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What led to the disappearance of IkappaB-epsilon?",
+          "What is another name for TNF?",
+          "What is another name for LPS?",
+          "What did exposure to LPS or TNF lead to?",
+          "What patterns did exposure to LPS or TNF lead to?",
+          "What two groups of kappaB-epsilons remain complex-",
+          "What is the name of the complex-associated network that remains complex-associated?",
+          "What did exposure to LPS or TNF lead to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the TNF or LPS that causes IkappaB-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10572463274002075,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027957439422607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another name for LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF",
+        "answerability": 0.608533501625061,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the complex-associated protein that remains complex-associated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2581722140312195,
+        "ground_truth": {
+          "NIK": {
+            "bertscore": 0.6958736777305603,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What led to the disappearance of IkappaB-alpha and Ikapp": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Exposure to LPS or TNF",
+        "answerability": 0.9581888914108276,
+        "ground_truth": {
+          "Exposure": {
+            "bertscore": 0.7721714377403259,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What did exposure to LPS or TNF lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differential patterns",
+        "answerability": 0.8311142921447754,
+        "ground_truth": {
+          "differential patterns": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What patterns did exposure to LPS or TNF lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB-alpha and IkappaB-epsil",
+        "answerability": 0.8959826231002808,
+        "ground_truth": {
+          "IkappaB-alpha and IkappaB-epsilon disappearance": {
+            "bertscore": 0.9204772710800171,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What two genes remain complex-associated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IKK-alpha IKK-beta and NIK",
+        "answerability": 0.8731012940406799,
+        "ground_truth": {
+          "IKK-alpha IKK-beta": {
+            "bertscore": 0.8993469476699829,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

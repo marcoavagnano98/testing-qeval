@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "The activation of NFAT was also impaired by expression of the Itk mutant.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NFAT",
+        "Itk"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was also affected by the expression of the Itk mutant?",
+          "What mutant of NFAT was found to inhibit the activation of NFAT?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The activation",
+        "NFAT",
+        "expression",
+        "the Itk mutant"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was impaired by expression of the Itk mutant?",
+          "What protein was also affected by the expression of the Itk mutant?",
+          "What was the Itk mutant able to do?",
+          "What mutant was also involved in the activation of NFAT?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not sufficient for IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005473792552947998,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 0.6752849817276001,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What promoter is not activated by NFAT and AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022503256797790527,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is insufficient for IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011641383171081543,
+        "ground_truth": {
+          "Therefore activation": {
+            "bertscore": 0.6667201519012451,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main function of NFAT and AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018780827522277832,
+        "ground_truth": {
+          "IL-2 promoter activation": {
+            "bertscore": 0.6304110288619995,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

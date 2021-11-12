@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "In brief HilD binds directly to sites upstream of hilA and invFD and acts as an activator (141636).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "141636"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the number of sites that HilD binds to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "brief HilD binds",
+        "an activator"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the binding mechanism that HilD uses to activate sites upstream of",
+          "What does HilD act as?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the number of sites that HilD binds to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3478177785873413,
+        "ground_truth": {
+          "141636": {
+            "bertscore": 0.6568135619163513,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the binding mechanism that HilD uses to activate sites upstream of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11902177333831787,
+        "ground_truth": {
+          "brief HilD binds": {
+            "bertscore": 0.6870944499969482,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HilD act as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an activator",
+        "answerability": 0.9530736804008484,
+        "ground_truth": {
+          "an activator": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

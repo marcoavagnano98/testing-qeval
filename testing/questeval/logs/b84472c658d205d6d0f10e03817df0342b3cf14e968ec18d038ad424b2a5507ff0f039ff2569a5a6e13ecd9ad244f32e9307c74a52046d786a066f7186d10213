@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Expression of Bcl-xL Bax and p53 in normal human melanoma cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bcl-xL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that is involved in the development of melanoma"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "Bcl-xL Bax",
+        "p53",
+        "normal human melanoma cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the difference between Bcl-xL Bax and p53?",
+          "What is the name of the protein that is expressed in normal human melanoma cells",
+          "What protein is involved in the development of melanoma cells?",
+          "Where is Bcl-xL Bax expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is expressed in primary tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19258981943130493,
+        "ground_truth": {
+          "Bcl-xL": {
+            "bertscore": 0.6495962142944336,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Bcl-xL Bax and p53?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Expression",
+        "answerability": 0.9076104760169983,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is expressed in primary tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.054256975650787354,
+        "ground_truth": {
+          "Bcl-xL Bax": {
+            "bertscore": 0.6401403546333313,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that controls the expression of Bcl-xL Bax?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0477566123008728,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 0.6259340643882751,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cancer is Bcl-xL Bax expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44614100456237793,
+        "ground_truth": {
+          "primary tumors": {
+            "bertscore": 0.6889125108718872,
+            "f1": 0
+          },
+          "oral squamous cell carcinoma": {
+            "bertscore": 0.6439468860626221,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

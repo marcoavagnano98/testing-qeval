@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "Co-culture of NK cells and transfected EC enhanced E-selectin IL-8 and NF-kappaB-dependent promoter activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were transfected with NK cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Co-culture",
+        "NK cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did NK cells and EC do to increase IL-8 and NF-k",
+          "What type of cells were co-cultured with EC?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells were NK cells co-cultured with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4508967995643616,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.7138954997062683,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were co-cultured with EC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NK cells",
+        "answerability": 0.988478422164917,
+        "ground_truth": {
+          "NK cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

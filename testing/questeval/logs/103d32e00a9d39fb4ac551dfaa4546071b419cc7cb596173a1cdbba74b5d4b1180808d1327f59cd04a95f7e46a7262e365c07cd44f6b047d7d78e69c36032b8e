@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Antioxidants inhibit monocyte adhesion by suppressing nuclear factor-kappa B mobilization and induction of vascular cell adhesion molecule-1 in endothelial cells stimulated to generate radicals.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Antioxidants",
+        "monocyte adhesion",
+        "nuclear factor-kappa B mobilization",
+        "induction",
+        "vascular cell adhesion",
+        "molecule-1",
+        "endothelial cells",
+        "radicals"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits monocyte adhesion?",
+          "What do antioxidants inhibit?",
+          "What do antioxidants suppress?",
+          "What is the effect of vascular cell adhesion molecule-1?",
+          "What do antioxidants inhibit in endothelial cells?",
+          "What is the vascular cell adhesion molecule?",
+          "What cells are stimulated to generate radicals?",
+          "What do endothelial cells generate when they are stimulated to generate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits monocytic cell adhesion to endothelial cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Antioxidants",
+        "answerability": 0.9816996455192566,
+        "ground_truth": {
+          "alpha-Tocopheryl": {
+            "bertscore": 0.6431583166122437,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does alpha-Tocopheryl succinate inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001801908016204834,
+        "ground_truth": {
+          "monocytic cell adhesion": {
+            "bertscore": 0.6599377393722534,
+            "f1": 0
+          },
+          "endothelial cells": {
+            "bertscore": 0.6344273090362549,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does alpha-Tocopheryl succinate suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010303258895874023,
+        "ground_truth": {
+          "NF-kappa B mobilization": {
+            "bertscore": 0.6514334678649902,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

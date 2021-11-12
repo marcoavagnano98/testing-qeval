@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "and glucocorticoid-induced cytotoxicity was potently inhibited. Overexpression of protein kinase C-zeta stimulates leukemic cell differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "glucocorticoid-induced cytotoxicity",
+        "Overexpression",
+        "protein kinase C-zeta",
+        "leukemic cell differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inhibited by overexpression of protein kinase C-zet",
+          "What is the cause of leukemic cell differentiation?",
+          "What is the key to preventing leukemic cell differentiation?",
+          "What does overexpression of protein kinase C-zeta stimulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of leukemic cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of protein kinase C-zeta",
+        "answerability": 0.8950337767601013,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7513566613197327,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What stimulates leukemic cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of protein kinase C-zeta",
+        "answerability": 0.9723646640777588,
+        "ground_truth": {
+          "protein kinase C-zeta": {
+            "bertscore": 0.8911135196685791,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What does overexpression of protein kinase C-zeta stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukemic cell differentiation",
+        "answerability": 0.9868682026863098,
+        "ground_truth": {
+          "leukemic cell differentiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

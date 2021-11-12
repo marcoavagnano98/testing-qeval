@@ -1,0 +1,148 @@
+{
+  "type": "hyp",
+  "text": "When single-chain mutation was introduced to each GC box EBS and GT box in PFP9a20 at least 3-fold less CAT activity was observed in CTLL-R8 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GC",
+        "CAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What box was single-chain mutation introduced to?",
+          "What activity was reduced when single-chain mutation was introduced to each GC box EBS and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "single-chain mutation",
+        "each GC",
+        "box",
+        "EBS",
+        "GT box",
+        "PFP9a20",
+        "CAT activity",
+        "CTLL-R8 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was introduced to each GC box EBS and GT box in PFP9a20",
+          "What box was single-chain mutation introduced to?",
+          "What is the GC box?",
+          "What is the GC box?",
+          "What is the other box that is affected by single-chain mutation?",
+          "In what gene was CAT activity reduced?",
+          "What was reduced by single-chain mutation in CTLL-R8 cells?",
+          "What cells had a 3-fold decrease in CAT activity when single-chain mutation was introduced"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What box was a single-point mutation introduced to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07794737815856934,
+        "ground_truth": {
+          "GC": {
+            "bertscore": 0.6709781289100647,
+            "f1": 0
+          },
+          "each GC": {
+            "bertscore": 0.6940632462501526,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What activity was reduced when single-point mutation was introduced to each GC box EBS and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44368577003479004,
+        "ground_truth": {
+          "CAT": {
+            "bertscore": 0.6815909147262573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was introduced to each GC box EBS and GT box in PFP9a20": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "single-chain mutation",
+        "answerability": 0.7823674082756042,
+        "ground_truth": {
+          "single-point mutation": {
+            "bertscore": 0.9414064884185791,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the GC box?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2549095153808594,
+        "ground_truth": {
+          "box": {
+            "bertscore": 0.7061469554901123,
+            "f1": 0
+          },
+          "EBS": {
+            "bertscore": 0.6714884042739868,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other box with a single-point mutation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41750824451446533,
+        "ground_truth": {
+          "GT box": {
+            "bertscore": 0.7098546624183655,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what gene was CAT activity reduced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CTLL-R8",
+        "answerability": 0.799726665019989,
+        "ground_truth": {
+          "PFP9a20": {
+            "bertscore": 0.7514882683753967,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was reduced by single-point mutation in CTLL-R8 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CAT activity",
+        "answerability": 0.6128580570220947,
+        "ground_truth": {
+          "CAT activity": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells had a 3-fold decrease in CAT activity when a single-point mutation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CTLL-R8 cells",
+        "answerability": 0.6070313453674316,
+        "ground_truth": {
+          "CTLL-R8 cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

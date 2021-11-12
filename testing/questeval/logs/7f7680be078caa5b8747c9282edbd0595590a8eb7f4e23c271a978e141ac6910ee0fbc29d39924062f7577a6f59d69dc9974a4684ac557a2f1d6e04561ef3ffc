@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "TNFalpha treatment in culture supernatants resulted in increased gene mutations gene amplification micronuclei formation and chromosomal instability.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNFalpha treatment",
+        "culture supernatants",
+        "increased gene mutations gene amplification micronuclei formation",
+        "chromosomal instability"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused increased gene mutations gene amplification micronuclei formation and chro",
+          "Where did TNFalpha occur?",
+          "What did TNFalpha treatment result in?",
+          "What is the result of TNFalpha treatment?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused increased gene mutations gene amplification micronuclei formation and chro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNFalpha treatment",
+        "answerability": 0.9549488425254822,
+        "ground_truth": {
+          "TNFalpha treatment": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were treated with TNFalpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.030934274196624756,
+        "ground_truth": {
+          "cultured cells": {
+            "bertscore": 0.6979380249977112,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TNFalpha treatment result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased gene mutations",
+        "answerability": 0.9962775111198425,
+        "ground_truth": {
+          "increased gene mutations gene amplification micronuclei formation": {
+            "bertscore": 0.8258323073387146,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What is the result of TNFalpha treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased gene mutations",
+        "answerability": 0.99901282787323,
+        "ground_truth": {
+          "chromosomal instability": {
+            "bertscore": 0.73549485206604,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "Reduced PTEN expression was inversely correlated to the expression of proliferating cell nuclear antigen and to the activation of Erg2 but not of Akt.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTEN",
+        "Akt"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inversely correlated with the expression of proliferating cell nuclear antigen",
+          "What protein was not correlated with reduced PTEN expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Reduced PTEN expression",
+        "the expression",
+        "cell nuclear antigen",
+        "the activation",
+        "Erg2",
+        "Akt"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inversely correlated to the expression of proliferating cell nuclear antigen",
+          "What was inversely correlated with PTEN?",
+          "What was reduced PTEN expression correlated to?",
+          "What was inversely correlated with reduced PTEN expression?",
+          "What was inversely correlated with reduced PTEN expression?",
+          "What protein was not correlated with reduced PTEN expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was inversely correlated with the expression of proliferating cell nuclear antigen": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Reduced PTEN expression",
+        "answerability": 0.9909535050392151,
+        "ground_truth": {
+          "PTEN": {
+            "bertscore": 0.7278649210929871,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the only cytokine that is not correlated with reduced PTEN expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4771527647972107,
+        "ground_truth": {
+          "Erk12": {
+            "bertscore": 0.6841649413108826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not correlated with reduced PTEN expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt",
+        "answerability": 0.8598904609680176,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was inversely correlated to the expression of proliferating cell nuclear antigen": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Reduced PTEN expression",
+        "answerability": 0.9900698661804199,
+        "ground_truth": {
+          "Reduced PTEN expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was inversely correlated with PTEN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41622358560562134,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.68230801820755,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was reduced PTEN expression correlated to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proliferating cell nuclear antigen",
+        "answerability": 0.9754731059074402,
+        "ground_truth": {
+          "cell nuclear antigen": {
+            "bertscore": 0.8911656141281128,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What was inversely correlated with reduced PTEN expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proliferating cell nuclear antigen",
+        "answerability": 0.9407891631126404,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.708911120891571,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

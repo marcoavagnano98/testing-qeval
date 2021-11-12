@@ -1,0 +1,60 @@
+{
+  "type": "hyp",
+  "text": "Activation-dependent transcriptional regulation of the Fas promoter requires NF-kappaB p50-p65 recruitment.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter is required for activation-dependent transcriptional regulation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation-dependent transcriptional regulation",
+        "the Fas promoter",
+        "NF-kappaB p50-p65 recruitment"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What requires NF-kappaB recruitment?",
+          "What requires NF-kappaB recruitment?",
+          "What does activation-dependent transcriptional regulation of the Fas promoter require?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What requires NF-kappaB recruitment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation-dependent transcriptional regulation",
+        "answerability": 0.8660045266151428,
+        "ground_truth": {
+          "Activation-dependent transcriptional regulation": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "the human Fas promoter": {
+            "bertscore": 0.6758617758750916,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does activation-dependent transcriptional regulation of the human Fas promoter require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4891536235809326,
+        "ground_truth": {
+          "NF-kappaB p50-p65 recruitment": {
+            "bertscore": 0.6379407048225403,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

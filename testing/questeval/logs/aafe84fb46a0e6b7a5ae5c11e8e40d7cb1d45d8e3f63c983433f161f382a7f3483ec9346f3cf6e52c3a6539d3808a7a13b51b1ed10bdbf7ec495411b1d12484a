@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The increase in promoter activity was greater upon cotransfection of RUNX3 compared with RUNX3.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The increase",
+        "promoter activity",
+        "cotransfection",
+        "RUNX3",
+        "RUNX3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was greater upon cotransfection of RUNX3 compared with RUNX3",
+          "What increased upon cotransfection of RUNX3?",
+          "What was the increase in promoter activity greater upon?",
+          "What gene was more active when cotransfected with RUNX3?",
+          "What gene was more active when cotransfected with RUNX3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was greater upon cotransfection of RUNX3 compared with RUNX1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The increase in promoter activity",
+        "answerability": 0.9511855840682983,
+        "ground_truth": {
+          "The increase": {
+            "bertscore": 0.7920212745666504,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What increased upon cotransfection of RUNX3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "promoter activity",
+        "answerability": 0.9970332384109497,
+        "ground_truth": {
+          "promoter activity": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the increase in promoter activity greater upon?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cotransfection",
+        "answerability": 0.8705121278762817,
+        "ground_truth": {
+          "cotransfection": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene was more active when cotransfected with RUNX1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05708599090576172,
+        "ground_truth": {
+          "RUNX3": {
+            "bertscore": 0.6717779636383057,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was more active when cotransfected with RUNX3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "promoter",
+        "answerability": 0.9652844667434692,
+        "ground_truth": {
+          "RUNX1": {
+            "bertscore": 0.7231817841529846,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

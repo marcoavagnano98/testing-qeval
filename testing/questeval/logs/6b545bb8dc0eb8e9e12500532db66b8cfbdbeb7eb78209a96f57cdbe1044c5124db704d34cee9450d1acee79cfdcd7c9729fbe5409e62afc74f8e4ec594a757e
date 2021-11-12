@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Furthermore cyclosporin A which blocked TNF alpha production induced by PKC strongly inhibited IL-2R alpha and NF.kappa B activation. In this manuscript we have investigated the molecular mechanisms by which T cell lines stimulated with phorbol 12-myristate 13-acetate (PMA) and phytohemagglutin (PHA) display significantly higher levels of NF-kappa B1 encoding transcripts than did IL-2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "13-acetate",
+        "PMA",
+        "PHA",
+        "B1",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was blocked by cyclosporin A?",
+          "What is the name of the phorbol 12-myristate?",
+          "What is the name of the drug that inhibits IL-2R alpha and NF",
+          "What inhibited IL-2R alpha and NF.kappa B activ",
+          "What encoding transcripts did cyclosporin A block?",
+          "What protein is induced by PKC?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF alpha production",
+        "PKC",
+        "IL-2R alpha and NF.kappa B activation",
+        "this manuscript",
+        "we",
+        "the molecular mechanisms",
+        "T cell lines",
+        "phorbol",
+        "12-myristate 13-acetate (PMA",
+        "phytohemagglutin",
+        "(PHA",
+        "significantly higher levels",
+        "NF-kappa B1 encoding transcripts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did cyclosporin A block?",
+          "What induced TNF alpha production?",
+          "What did cyclosporin A inhibit?",
+          "What is the name of the study that investigated the molecular mechanisms by which T cell lines",
+          "What did the authors find about cyclosporin A?",
+          "What did the authors investigate?",
+          "What cells were stimulated with phorbol 12-myristate 13-acetate and",
+          "What is the name of the compound that inhibits NF.kappa B activation",
+          "What is the name of the phorbol that inhibits IL-2R alpha and",
+          "What is the chemical that inhibits NF-kappa B activation?",
+          "What is phytohemagglutin?",
+          "What did cyclosporin A show?",
+          "What did cyclosporin A block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug blocked the synergistic induction of IL-8 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07848906517028809,
+        "ground_truth": {
+          "cyclosporin A": {
+            "bertscore": 0.6043254137039185,
+            "f1": 0
+          },
+          "not rapamycin": {
+            "bertscore": 0.6436270475387573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did cyclosporin A block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF alpha production",
+        "answerability": 0.9709113240242004,
+        "ground_truth": {
+          "the synergistic induction": {
+            "bertscore": 0.6634164452552795,
+            "f1": 0
+          },
+          "anti-CD3 and anti-CD28 costimulation": {
+            "bertscore": 0.7017359733581543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did rapamycin block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010507702827453613,
+        "ground_truth": {
+          "IL-8 expression": {
+            "bertscore": 0.6406468749046326,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

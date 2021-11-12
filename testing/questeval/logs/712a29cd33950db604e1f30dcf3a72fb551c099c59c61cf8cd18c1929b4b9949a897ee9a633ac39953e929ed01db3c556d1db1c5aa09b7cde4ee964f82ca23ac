@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "In human colon carcinoma Colo205 and HT29 xenografts grown in human endosialin-transgenic mice endosialin expression was largely confined to NG2-expressing perivascular cells and not CD31+ endothelial cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "human endosialin-transgenic mice endosialin expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was confined to NG2-expressing perivascular cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "human colon carcinoma Colo205",
+        "HT29 xenografts",
+        "human endosialin-transgenic mice endosialin expression",
+        "perivascular cells",
+        "not CD31",
+        "endothelial cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the most common type of cancer?",
+          "What type of colon carcinoma was grown in human endosialin-transgenic mice",
+          "What was confined to NG2-expressing perivascular cells?",
+          "What type of cells were most affected by endosialin expression?",
+          "What type of endothelial cells were mainly affected by the HT29",
+          "What type of cells were not affected by the HT29 xenografts"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was confined to NG2-expressing perivascular cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endosialin expression",
+        "answerability": 0.9272986650466919,
+        "ground_truth": {
+          "human endosialin-transgenic mice endosialin expression": {
+            "bertscore": 0.8363091349601746,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009812116622924805,
+        "ground_truth": {
+          "human colon carcinoma Colo205": {
+            "bertscore": 0.5977096557617188,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of colon carcinoma was grown in human endosialin-transgenic mice": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5038492679595947,
+        "ground_truth": {
+          "HT29 xenografts": {
+            "bertscore": 0.6477392315864563,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was endosialin confined to in human colon carcinoma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NG2-expressing perivascular cells",
+        "answerability": 0.9691446423530579,
+        "ground_truth": {
+          "NG2-expressing perivascular cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the only cell type that was able to express endosialin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NG2-expressing perivascular cells",
+        "answerability": 0.5952702760696411,
+        "ground_truth": {
+          "not CD31-positive endothelial cells": {
+            "bertscore": 0.7537570595741272,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    }
+  }
+}

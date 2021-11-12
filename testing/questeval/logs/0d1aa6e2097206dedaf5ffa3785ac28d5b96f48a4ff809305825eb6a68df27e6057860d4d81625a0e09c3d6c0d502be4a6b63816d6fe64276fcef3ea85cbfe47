@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "UV irradiation and H2O2 treatment of T lymphocytes induce protein tyrosine phosphorylation and Ca(2+)-dependent cell proliferation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "UV irradiation",
+        "H2O2 treatment",
+        "protein tyrosine phosphorylation",
+        "Ca(2+)-dependent",
+        "cell proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one way that T lymphocytes can be treated?",
+          "What is the main cause of T lymphocytes to become phosphorylated?",
+          "What does UV irradiation and H2O2 treatment of T lymphocytes",
+          "What is the cell proliferation of T lymphocytes?",
+          "What does UV irradiation and H2O2 treatment of T lymphocytes"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one way that T lymphocytes are treated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "UV irradiation",
+        "answerability": 0.8658690452575684,
+        "ground_truth": {
+          "UV irradiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main cause of T lymphocytes' protein tyrosine phospho": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "UV irradiation",
+        "answerability": 0.7912254929542542,
+        "ground_truth": {
+          "H2O2 treatment": {
+            "bertscore": 0.709801435470581,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does UV irradiation and H2O2 treatment of T lymphocytes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37737178802490234,
+        "ground_truth": {
+          "protein tyrosine phosphorylation": {
+            "bertscore": 0.5888161063194275,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

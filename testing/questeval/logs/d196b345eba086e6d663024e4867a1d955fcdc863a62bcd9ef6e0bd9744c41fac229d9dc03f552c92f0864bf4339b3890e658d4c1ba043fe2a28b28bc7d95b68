@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "These results indicate that DNA binding by VD receptor is necessary but not sufficient to mediate IL-2 repression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VD",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor is necessary to mediate IL-2 repression?",
+          "What is the main factor that is involved in the repression of IL-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "VD receptor",
+        "IL-2 repression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that DNA binding by VD receptor is necessary but not sufficient to mediate",
+          "What is necessary to mediate IL-2 repression?",
+          "What does the cytokine receptor not mediate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is necessary to mediate IL-2 repression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43164801597595215,
+        "ground_truth": {
+          "VDR": {
+            "bertscore": 0.6968003511428833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main repression of IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA binding by VD receptor",
+        "answerability": 0.579834520816803,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.708084762096405,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What indicates that DNA binding by VDR is necessary but not sufficient to mediate IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2709900140762329,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.6313727498054504,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the results of the cytokine test show is not sufficient to mediate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3877241015434265,
+        "ground_truth": {
+          "IL-2 repression": {
+            "bertscore": 0.6673253178596497,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

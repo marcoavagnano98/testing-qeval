@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of c-Ski inhibited TGF-beta signaling in OCUM-2MLN cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "c-Ski",
+        "TGF-beta",
+        "OCUM-2MLN cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited TGF-beta signaling in OCUM-2MLN",
+          "What inhibited TGF-beta signaling in OCUM-2MLN",
+          "What signaling was inhibited in OCUM-2MLN cells?",
+          "What cells were affected by overexpression of c-Ski?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited TGF-beta signaling in OCUM-2MLN": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of c-Ski",
+        "answerability": 0.9608862996101379,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.8193942308425903,
+            "f1": 0.5
+          },
+          "c-Ski": {
+            "bertscore": 0.7616121172904968,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What signaling was inhibited in OCUM-2MLN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta",
+        "answerability": 0.9695531129837036,
+        "ground_truth": {
+          "TGF-beta": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells were affected by overexpression of c-Ski?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "OCUM-2MLN",
+        "answerability": 0.8645064830780029,
+        "ground_truth": {
+          "OCUM-2MLN cells": {
+            "bertscore": 0.9214511513710022,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

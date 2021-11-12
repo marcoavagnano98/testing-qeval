@@ -1,0 +1,162 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of cJun or JunD but not JunB also eliminates the requirement for PMA indicating that many but not all Jun- and Fos-related proteins functionally activate NF-AT-dependent transcription in the presence of the cytoplasmic component.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "cJun",
+        "JunD",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is overexpressed?",
+          "What is the only protein that does not require PMA?",
+          "What does overexpression of cJun or JunD eliminate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "cJun",
+        "JunD",
+        "not JunB",
+        "the requirement",
+        "PMA",
+        "many but not all Jun- and Fos-related proteins",
+        "NF-AT-dependent transcription",
+        "the presence",
+        "the cytoplasmic component"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What eliminates the requirement for PMA?",
+          "What protein is overexpressed?",
+          "What is the only protein that does not require PMA?",
+          "What protein does overexpression of cJun or JunD eliminate the requirement for PMA",
+          "What does overexpression of cJun or JunD eliminate?",
+          "What does overexpression of cJun or JunD eliminate?",
+          "What does the overexpression of cJun or JunD eliminate the requirement for PMA",
+          "What does the presence of the cytoplasmic component of Jun and Fos indicate?",
+          "In what way does the cytoplasmic component of Jun- and Fos-related proteins",
+          "What does overexpression of cJun or JunD eliminate the requirement for PMA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is overexpressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cJun or JunD",
+        "answerability": 0.8216292262077332,
+        "ground_truth": {
+          "cJun": {
+            "bertscore": 0.8688768744468689,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the only protein that does not require PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JunB",
+        "answerability": 0.8630741834640503,
+        "ground_truth": {
+          "JunD": {
+            "bertscore": 0.9291497468948364,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does overexpression of cJun or JunD eliminate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the requirement for PMA",
+        "answerability": 0.9590010643005371,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.7913706302642822,
+            "f1": 0.5
+          },
+          "the requirement": {
+            "bertscore": 0.8127387166023254,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What eliminates the requirement for PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of cJun or JunD but not JunB",
+        "answerability": 0.8220051527023315,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7313968539237976,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What protein does overexpression of cJun or JunD eliminate the requirement for PMA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JunB",
+        "answerability": 0.7744100093841553,
+        "ground_truth": {
+          "not JunB": {
+            "bertscore": 0.8331722021102905,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the overexpression of cJun or JunD eliminate the requirement for PMA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16362184286117554,
+        "ground_truth": {
+          "many but not all Jun- and Fos-related proteins": {
+            "bertscore": 0.591335117816925,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the presence of the cytoplasmic component of Jun and Fos indicate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29366105794906616,
+        "ground_truth": {
+          "NF-AT-dependent transcription": {
+            "bertscore": 0.6166517734527588,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what way does the cytoplasmic component of Jun- and Fos-related proteins": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14658880233764648,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024357914924622,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does overexpression of cJun or JunD eliminate the requirement for PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11890822649002075,
+        "ground_truth": {
+          "the cytoplasmic component": {
+            "bertscore": 0.6191191077232361,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

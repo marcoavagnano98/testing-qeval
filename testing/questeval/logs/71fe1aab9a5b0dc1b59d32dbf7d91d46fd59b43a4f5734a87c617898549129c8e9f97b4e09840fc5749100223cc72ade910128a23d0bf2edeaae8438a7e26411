@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Additionally it suppressed the production of LTB4 (IC50 = 0.5 microM) and the cytokines IL-2 IL-6 and TNF alpha (IC50 = 10-12 microM).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IC50",
+        "0.5 microM",
+        "IL-2",
+        "TNF",
+        "IC50",
+        "10-12"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the IC50 value of TNF alpha?",
+          "What was the IC50 of LTB4?",
+          "What cytokines did IL-6 suppress?",
+          "What cytokine was suppressed by IL-2 IL-6?",
+          "What was the IC50 value of TNF alpha?",
+          "What is the IC50 of TNF alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "it",
+        "the production",
+        "LTB4",
+        "IC50 = 0.5 microM",
+        "the cytokines",
+        "(IC50 = 10-12 microM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did acetate suppress the production of?",
+          "What did a cytokine like IL-2 IL-6 suppress?",
+          "What did a cytokine like IL-2 IL-6 suppress?",
+          "What is the IC50 value of LTB4?",
+          "What did IL-2 IL-6 suppress?",
+          "What is the IC50 value of TNF alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppressed IL-5 production by human CD4+ cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004836082458496094,
+        "ground_truth": {
+          "GC": {
+            "bertscore": 0.6709781289100647,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show about GC suppressing IL-5 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002194702625274658,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 0.6937651634216309,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did GC suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LTB4",
+        "answerability": 0.8308031558990479,
+        "ground_truth": {
+          "IL-5 production": {
+            "bertscore": 0.7242733240127563,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did GC suppress IL-5 production by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002134263515472412,
+        "ground_truth": {
+          "human CD4": {
+            "bertscore": 0.6335197687149048,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

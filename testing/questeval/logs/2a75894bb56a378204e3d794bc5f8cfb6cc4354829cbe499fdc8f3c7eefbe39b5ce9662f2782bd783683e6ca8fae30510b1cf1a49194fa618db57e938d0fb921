@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Overexpressed TRAF2 or TRAF6 activate JNK p38 or IkappaBalpha in a dose-dependent manner.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "JNK",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does overexpressed TRAF2 or TRAF6 activate?",
+          "What does overexpressed TRAF2 or TRAF6 activate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TRAF6",
+        "JNK p38",
+        "IkappaBalpha",
+        "a dose-dependent manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the enzyme that activates JNK p38?",
+          "What does overexpressed TRAF2 or TRAF6 activate?",
+          "What does overexpressed TRAF2 or TRAF6 activate?",
+          "How does overexpressed TRAF2 or TRAF6 activate JNK p38 or"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does overexpressed TRAF2 or TRAF6 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JNK p38 or IkappaBalpha",
+        "answerability": 0.9548892974853516,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.7256762385368347,
+            "f1": 0.4
+          },
+          "JNK p38": {
+            "bertscore": 0.8087987303733826,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What two genes activate JNK p38 or IKK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TRAF2 or TRAF6",
+        "answerability": 0.7580193877220154,
+        "ground_truth": {
+          "TRAF6": {
+            "bertscore": 0.8508124351501465,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is activated when TRAF2 or TRAF6": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38759732246398926,
+        "ground_truth": {
+          "IKK": {
+            "bertscore": 0.6602891683578491,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

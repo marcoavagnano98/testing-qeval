@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"Isolation of a candidate repressor/activator NF-E1 (YY-1 delta) that binds to the immunoglobulin kappa 3 enhancer and the immunoglobulin heavy- chain mu E1 site.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "\"Isolation",
+        "a candidate repressor/activator NF-E1",
+        "(YY-1 delta",
+        "the immunoglobulin kappa 3 enhancer",
+        "the immunoglobulin heavy- chain mu E1 site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the purpose of the study?",
+          "What is YY-1 delta?",
+          "What is the name of the candidate repressor/activator that binds to",
+          "What does YY-1 delta bind to?",
+          "What is the kinase 3 enhancer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006107807159423828,
+        "ground_truth": {
+          "\"Isolation": {
+            "bertscore": 0.6838610172271729,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is YY-1 delta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "candidate repressor/activator NF-E1",
+        "answerability": 0.9676392078399658,
+        "ground_truth": {
+          "a candidate repressor/activator NF-E1": {
+            "bertscore": 0.9677110910415649,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the candidate repressor/activator that binds to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-E1",
+        "answerability": 0.8610426187515259,
+        "ground_truth": {
+          "(YY-1 delta": {
+            "bertscore": 0.7278161644935608,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does YY-1 delta bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "immunoglobulin kappa 3 enhancer and the immunoglobulin heavy-",
+        "answerability": 0.9882491230964661,
+        "ground_truth": {
+          "the immunoglobulin kappa 3 enhancer": {
+            "bertscore": 0.9110788702964783,
+            "f1": 0.7272727272727273
+          },
+          "the immunoglobulin heavy-chain mu E1 site": {
+            "bertscore": 0.8050661683082581,
+            "f1": 0.16666666666666666
+          }
+        }
+      }
+    }
+  }
+}

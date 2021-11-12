@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Functional studies showed that Sema7A stimulates cytoskeletal reorganization in human melanomas resulting in adhesion and dendrite formation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Functional studies",
+        "Sema7A",
+        "cytoskeletal reorganization",
+        "human melanomas",
+        "adhesion",
+        "formation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that Sema7A stimulates cytoskeletal reorganization in human",
+          "What protein stimulates cytoskeletal reorganization in human melanomas?",
+          "What does Sema7A stimulate in human melanomas?",
+          "What does Sema7A stimulate cytoskeletal reorganization in?",
+          "What is the result of the reorganization of the cytoskeletal system?",
+          "What is the result of the reorganization of the cytoskeletal system?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed that Sema7A stimulates cytoskeletal reorganization in human": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Functional studies",
+        "answerability": 0.9921751618385315,
+        "ground_truth": {
+          "Functional studies": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein stimulates cytoskeletal reorganization in human melanocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sema7A",
+        "answerability": 0.99726802110672,
+        "ground_truth": {
+          "Sema7A": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Sema7A stimulate in human melanocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoskeletal reorganization",
+        "answerability": 0.9813031554222107,
+        "ground_truth": {
+          "cytoskeletal reorganization": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "adhesion": {
+            "bertscore": 0.6939146518707275,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Sema7A stimulate cytoskeletal reorganization in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human melanomas",
+        "answerability": 0.9697631597518921,
+        "ground_truth": {
+          "human melanocytes": {
+            "bertscore": 0.9426184296607971,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does Sema7A do to human melanocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5173799991607666,
+        "ground_truth": {
+          "formation": {
+            "bertscore": 0.7218900918960571,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

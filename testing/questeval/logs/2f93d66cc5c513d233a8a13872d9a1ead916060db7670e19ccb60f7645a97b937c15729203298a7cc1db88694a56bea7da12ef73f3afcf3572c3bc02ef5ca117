@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Upon activation of Met a chemokine receptor associated with Met was detected and correlated with tumor progression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "activation",
+        "Met",
+        "a chemokine receptor",
+        "Met",
+        "tumor progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the chemokine receptor associated with Met?",
+          "What chemokine receptor was detected and correlated with tumor progression?",
+          "What was detected and correlated with tumor progression?",
+          "What chemokine receptor was detected and correlated with tumor progression?",
+          "What was the chemokine receptor associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What validates a role for Met activation in melanoma tumor progression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chemokine receptor",
+        "answerability": 0.8961504101753235,
+        "ground_truth": {
+          "This study": {
+            "bertscore": 0.656937301158905,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does this study validate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002357661724090576,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6715851426124573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of Cdkn2a in melanoma tumor progression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.400280237197876,
+        "ground_truth": {
+          "Met activation": {
+            "bertscore": 0.6782121062278748,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does this study validate a role for Met activation in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor progression",
+        "answerability": 0.8981097936630249,
+        "ground_truth": {
+          "melanoma tumor progression": {
+            "bertscore": 0.8806578516960144,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the role of Met activation in melanoma tumor progression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "correlated with tumor progression",
+        "answerability": 0.9874630570411682,
+        "ground_truth": {
+          "the context": {
+            "bertscore": 0.7256702184677124,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of the melanoma tumor progression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17643553018569946,
+        "ground_truth": {
+          "Cdkn2a deficiency": {
+            "bertscore": 0.5722646713256836,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

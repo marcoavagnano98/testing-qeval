@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "The expression of thehematopoietic transcription factors GATA-1 GATA-2 and GATA-3 was studied in eosinophils and basophils.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression",
+        "thehematopoietic transcription factors",
+        "GATA-1 GATA-2",
+        "GATA-3",
+        "eosinophils",
+        "basophils"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was studied in eosinophils and basophils?",
+          "What is GATA-1?",
+          "What transcription factors were studied in eosinophils and basophils?",
+          "What transcription factor was studied in eosinophils and basophils?",
+          "In what organism was the expression of the hematopoietic transcription factors studied?",
+          "In what cell type was the expression of the hematopoietic transcription factors studied"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was studied in eosinophils and basophils?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of thehematopoietic transcription factors GATA-1 GATA-2 and G",
+        "answerability": 0.979752779006958,
+        "ground_truth": {
+          "The expression": {
+            "bertscore": 0.635848343372345,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What is GATA-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4529966115951538,
+        "ground_truth": {
+          "the hematopoietic transcription factors": {
+            "bertscore": 0.5842791795730591,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factors were studied in eosinophils and basophils?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-1 GATA-2 and GATA-3",
+        "answerability": 0.89534991979599,
+        "ground_truth": {
+          "GATA-1 GATA-2": {
+            "bertscore": 0.9286138415336609,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What transcription factor was studied in eosinophils and basophils?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-1 GATA-2 and GATA-3",
+        "answerability": 0.8154739141464233,
+        "ground_truth": {
+          "GATA-3": {
+            "bertscore": 0.8585759401321411,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "In what organism was the expression of the hematopoietic transcription factors studied?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eosinophils and basophils",
+        "answerability": 0.9706061482429504,
+        "ground_truth": {
+          "eosinophils": {
+            "bertscore": 0.8786796927452087,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "In what cell type was the expression of the hematopoietic transcription factors studied": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eosinophils and basophils",
+        "answerability": 0.88789963722229,
+        "ground_truth": {
+          "basophils": {
+            "bertscore": 0.8185927867889404,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

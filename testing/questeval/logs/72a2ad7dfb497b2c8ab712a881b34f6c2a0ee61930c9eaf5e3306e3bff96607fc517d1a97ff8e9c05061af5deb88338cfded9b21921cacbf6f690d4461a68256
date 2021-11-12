@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "We show that SMN interacts with the snRNP proteins suggesting that this domain contains a zinc finger domain and interacts with snRNP proteins.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SMN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the domain that contains a zinc finger domain?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the snRNP proteins",
+        "this domain",
+        "a zinc finger domain",
+        "proteins"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does SMN interact with?",
+          "What does SMN interact with?",
+          "What contains a zinc finger domain?",
+          "What does the SMN domain contain?",
+          "What does SMN interact with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is critical for snRNP assembly in the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3540801405906677,
+        "ground_truth": {
+          "SMN": {
+            "bertscore": 0.6625568866729736,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SMN interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "snRNP proteins",
+        "answerability": 0.9960542917251587,
+        "ground_truth": {
+          "spliceosomal snRNP proteins": {
+            "bertscore": 0.9145276546478271,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is SMN critical for in the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.023773014545440674,
+        "ground_truth": {
+          "assembly": {
+            "bertscore": 0.6754724979400635,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does SMN interact with spliceosomal snRNP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SMN interacts with spliceosomal snRNP proteins",
+        "answerability": 0.9126426577568054,
+        "ground_truth": {
+          "the cytoplasm": {
+            "bertscore": 0.6711870431900024,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

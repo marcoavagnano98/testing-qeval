@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "However I(kappa)B(alpha) has also been detected in the nucleus of cell lines and when overexpressed by transient transfection.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "However I(kappa)B(alpha",
+        "the nucleus",
+        "cell lines",
+        "transient transfection"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been detected in the nucleus of cell lines?",
+          "Where has I(kappa)B(alpha) been detected?",
+          "What has I(kappa)B(alpha) been detected in?",
+          "What is the most common way to detect I(kappa)B(alpha)"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been detected in the nucleus of cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I(kappa)B(alpha)",
+        "answerability": 0.9339714050292969,
+        "ground_truth": {
+          "However I(kappa)B(alpha": {
+            "bertscore": 0.9045160412788391,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where has I(kappa)B(alpha) been detected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the nucleus of cell lines",
+        "answerability": 0.9607844352722168,
+        "ground_truth": {
+          "the nucleus": {
+            "bertscore": 0.7917936444282532,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What has I(kappa)B(alpha) been detected in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the nucleus of cell lines",
+        "answerability": 0.9487143158912659,
+        "ground_truth": {
+          "cell lines": {
+            "bertscore": 0.8008034229278564,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the most common way to detect I(kappa)B(alpha)": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08190304040908813,
+        "ground_truth": {
+          "transient transfection": {
+            "bertscore": 0.6755272150039673,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

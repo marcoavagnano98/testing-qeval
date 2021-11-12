@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "IFN-gamma secretion was assessed using fluorescent bead-based technology.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IFN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the gamma secretion measured using fluorescent bead-based technology"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IFN-gamma secretion",
+        "fluorescent bead-based technology"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was assessed using fluorescent bead-based technology?",
+          "What was used to assess IFN-gamma secretion?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was assessed using fluorescent bead-based technology?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-gamma secretion",
+        "answerability": 0.9808759093284607,
+        "ground_truth": {
+          "IL-4 IL-5 IL-6 IL-10 IL-13 IL-17 and IFN-gamma secretion": {
+            "bertscore": 0.7831442356109619,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What was used to assess the levels of IL-4, IL-5, IL-6": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1446492075920105,
+        "ground_truth": {
+          "fluorescent bead-based technology": {
+            "bertscore": 0.6753576397895813,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

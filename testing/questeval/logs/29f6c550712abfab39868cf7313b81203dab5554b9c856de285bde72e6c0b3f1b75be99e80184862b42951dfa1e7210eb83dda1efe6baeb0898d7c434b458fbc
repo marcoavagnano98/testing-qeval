@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": " wortmannin (a PI3-K inhibitor) PD 98059 (an ERK inhibitor)\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PD 98059"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the ERK inhibitor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        " wortmannin",
+        "a PI3-K inhibitor",
+        "PD",
+        "an ERK inhibitor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the PI3-K inhibitor?",
+          "What is wortmannin?",
+          "What is the name of the ERK inhibitor?",
+          "What is wortmannin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was suppressed by wortmannin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06674140691757202,
+        "ground_truth": {
+          "The irradiation-induced decrease": {
+            "bertscore": 0.6459257006645203,
+            "f1": 0
+          },
+          "Cdc25 activity": {
+            "bertscore": 0.617868185043335,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enzyme was wortmannin an inhibitor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI3-K",
+        "answerability": 0.9860727190971375,
+        "ground_truth": {
+          "PI3-kinase": {
+            "bertscore": 0.8738752603530884,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the decrease in Cdc25 dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005095005035400391,
+        "ground_truth": {
+          "the function": {
+            "bertscore": 0.6194843649864197,
+            "f1": 0
+          },
+          "the gene": {
+            "bertscore": 0.6676146984100342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is mutated in the swine flu?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008966326713562012,
+        "ground_truth": {
+          "ataxia telangiectasia": {
+            "bertscore": 0.6344533562660217,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

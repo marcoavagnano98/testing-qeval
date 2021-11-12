@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "Significantly prolonged phosphorylation of Syk correlated with reduced ubiquitination of Syk indicating that Cbl-b negatively regulates BCR signaling by targeting Syk for ubiquitination.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BCR",
+        "Syk"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling does Cbl-b negatively regulate?",
+          "What protein was reduced in the phosphorylation of Cbl-b?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Significantly prolonged phosphorylation",
+        "Syk",
+        "reduced ubiquitination",
+        "Syk",
+        "Cbl-b",
+        "BCR",
+        "Syk",
+        "ubiquitination"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What correlated with reduced ubiquitination of Syk?",
+          "What protein was reduced in the phosphorylation of Cbl-b?",
+          "What did significantly prolonged phosphorylation of Syk correlate with?",
+          "What protein was reduced in the phosphorylation of Cbl-b?",
+          "What negatively regulates BCR signaling?",
+          "What signaling does Cbl-b negatively regulate?",
+          "What protein was reduced in the phosphorylation of Cbl-b?",
+          "What did Cbl-b negatively regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling does Cbl-b negatively regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BCR",
+        "answerability": 0.989621102809906,
+        "ground_truth": {
+          "BCR": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was reduced in the phosphorylation of Cbl-b?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3297608494758606,
+        "ground_truth": {
+          "Syk": {
+            "bertscore": 0.6767531037330627,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What correlated with reduced ubiquitination of Syk?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "prolonged phosphorylation",
+        "answerability": 0.9994378089904785,
+        "ground_truth": {
+          "Significantly prolonged phosphorylation": {
+            "bertscore": 0.9250925779342651,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did significantly prolonged phosphorylation of Syk correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reduced ubiquitination",
+        "answerability": 0.9995020627975464,
+        "ground_truth": {
+          "reduced ubiquitination": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What negatively regulates BCR signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cbl-b",
+        "answerability": 0.556682825088501,
+        "ground_truth": {
+          "Cbl-b": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did Cbl-b negatively regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BCR signaling",
+        "answerability": 0.933247447013855,
+        "ground_truth": {
+          "ubiquitination": {
+            "bertscore": 0.7317885160446167,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

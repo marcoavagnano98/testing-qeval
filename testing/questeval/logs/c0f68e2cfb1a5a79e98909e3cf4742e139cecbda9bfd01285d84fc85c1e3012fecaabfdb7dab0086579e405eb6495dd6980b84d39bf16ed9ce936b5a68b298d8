@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": "In the present study we examined the ability of PtdIns 3-kinase to initiate the Rac-1 signaling pathways important for T cell activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PtdIns",
+        "Rac-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the 3-kinase that initiates the Rac-1 signaling pathways?",
+          "What signaling pathway is important for T cell activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the present study",
+        "we",
+        "the ability",
+        "the Rac-1 signaling pathways",
+        "T cell activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study examined the ability of PtdIns 3-kinase to initiate the",
+          "What did the present study examine?",
+          "What did the present study examine?",
+          "What is important for T cell activation?",
+          "What is the main function of PtdIns 3-kinase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is important for T cell development and activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rac-1 signaling pathways",
+        "answerability": 0.6376700401306152,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.7159215807914734,
+            "f1": 0
+          },
+          "this lipid kinase": {
+            "bertscore": 0.7555766105651855,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is lipid kinase able to induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010922133922576904,
+        "ground_truth": {
+          "critical Rac-1 signaling pathways": {
+            "bertscore": 0.6363817453384399,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is lipid kinase important for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004915416240692139,
+        "ground_truth": {
+          "T cell development": {
+            "bertscore": 0.6638211607933044,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is important for T cell development?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rac-1 signaling pathways",
+        "answerability": 0.5497677326202393,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.7009506225585938,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

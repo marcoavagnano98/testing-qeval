@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Expression of Merlin protein in non-small cell lung carcinoma and the clinical significance.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Merlin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is expressed in non-small cell lung carcinoma?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "Merlin protein",
+        "non-small cell lung carcinoma",
+        "the clinical significance"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is Merlin protein?",
+          "What protein is expressed in non-small cell lung carcinoma?",
+          "What type of cancer is Merlin protein found in?",
+          "What is the significance of Merlin protein in non-small cell lung carcinoma?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is used to determine the clinical significance of NSCLC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Merlin",
+        "answerability": 0.975173830986023,
+        "ground_truth": {
+          "Merlin": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the purpose of this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0028137564659118652,
+        "ground_truth": {
+          "NSCLC": {
+            "bertscore": 0.6961129307746887,
+            "f1": 0
+          },
+          "Expression": {
+            "bertscore": 0.710929811000824,
+            "f1": 0
+          },
+          "non-small cell lung carcinoma": {
+            "bertscore": 0.6514477729797363,
+            "f1": 0
+          },
+          "the clinical significance": {
+            "bertscore": 0.6365862488746643,
+            "f1": 0
+          },
+          "the expression": {
+            "bertscore": 0.68230801820755,
+            "f1": 0
+          },
+          "clinical significance": {
+            "bertscore": 0.6362109184265137,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main component of the cytokine that is involved in lung cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Merlin protein",
+        "answerability": 0.7875367403030396,
+        "ground_truth": {
+          "Merlin protein": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Merlin protein used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06735444068908691,
+        "ground_truth": {
+          "non-small cell lung cancer": {
+            "bertscore": 0.6619235873222351,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

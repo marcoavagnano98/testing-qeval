@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Phosphorylation of p27Kip1 regulates assembly and activation of cyclin D1-Cdk4. p27 mediates Cdk2 inhibition and is also found in cyclin D1-Cdk4 complexes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Phosphorylation",
+        "p27Kip1",
+        "assembly",
+        "activation",
+        "cyclin",
+        "p27",
+        "Cdk2 inhibition",
+        "cyclin D1-Cdk4 complexes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is p27Kip1 involved in?",
+          "What regulates assembly and activation of cyclin D1-Cdk4?",
+          "What does p27Kip1 regulate?",
+          "What does p27Kip1 regulate?",
+          "What is p27Kip1 found in?",
+          "What mediates Cdk2 inhibition?",
+          "What does p27 mediate?",
+          "Where is p27Kip1 found?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein phosphorylated p27?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p27Kip1",
+        "answerability": 0.8430888056755066,
+        "ground_truth": {
+          "PKB": {
+            "bertscore": 0.6926523447036743,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did p27 phosphorylation by PKB produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.039042532444000244,
+        "ground_truth": {
+          "Cdk4": {
+            "bertscore": 0.6375665068626404,
+            "f1": 0
+          },
+          "inactive Cdk4": {
+            "bertscore": 0.6787842512130737,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What increased p27-cyclin D1-Cdk4 assembly in vitro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.40855640172958374,
+        "ground_truth": {
+          "p27 phosphorylation": {
+            "bertscore": 0.6114170551300049,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did p27 phosphorylation by PKB increase in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002402961254119873,
+        "ground_truth": {
+          "p27-cyclin D1-Cdk4 assembly": {
+            "bertscore": 0.6068703532218933,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

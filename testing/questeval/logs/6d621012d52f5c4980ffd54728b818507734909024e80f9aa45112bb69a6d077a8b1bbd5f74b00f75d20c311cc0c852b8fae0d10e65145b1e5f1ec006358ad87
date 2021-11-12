@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Human CD3-CD16+ natural killer cells express the Sp1 transcription factor and an unrearranged NF-kappa B site.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "natural killer cells",
+        "the Sp1 transcription factor",
+        "an unrearranged NF-kappa B site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells express Sp1?",
+          "What do human CD3-CD16+ natural killer cells express?",
+          "What does Sp1 have in common with other natural killer cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells lack NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04312121868133545,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.6607831716537476,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do T cells lack?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001240372657775879,
+        "ground_truth": {
+          "active NF-kappa B": {
+            "bertscore": 0.6161075234413147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does T cells express as expected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.018475592136383057,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 0.6904803514480591,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

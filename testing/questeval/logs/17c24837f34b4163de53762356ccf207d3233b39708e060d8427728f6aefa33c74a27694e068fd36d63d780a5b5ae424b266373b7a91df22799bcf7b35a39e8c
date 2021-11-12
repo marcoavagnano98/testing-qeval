@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "The expression of endothelial cell (EC) adhesion molecules involved in leukocyte-vessel wall interactions is suppressed in malignant tumors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the term for the cell type that is involved in leukocyte-vessel interactions"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression",
+        "endothelial cell",
+        "(EC) adhesion molecules",
+        "leukocyte-vessel wall interactions",
+        "malignant tumors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is suppressed in malignant tumors?",
+          "What is the term for the EC?",
+          "What is suppressed in malignant tumors?",
+          "What is the expression of endothelial cell adhesion molecules involved in in mal",
+          "What type of tumors are ECs suppressed in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the term for the cell type that is involved in leukocyte-vessel interactions": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29538559913635254,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.7138954997062683,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is suppressed in malignancies?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of endothelial cell (EC) adhesion molecules",
+        "answerability": 0.9775826334953308,
+        "ground_truth": {
+          "The expression": {
+            "bertscore": 0.6489075422286987,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the term for the EC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cell",
+        "answerability": 0.9397761225700378,
+        "ground_truth": {
+          "endothelial cell": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is involved in leukocyte-vessel interactions?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cell (EC) adhesion molecules",
+        "answerability": 0.8293524384498596,
+        "ground_truth": {
+          "(EC) adhesion molecules": {
+            "bertscore": 0.8314727544784546,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the expression of endothelial cell adhesion molecules involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukocyte-vessel wall interactions",
+        "answerability": 0.9511889219284058,
+        "ground_truth": {
+          "leukocyte-vessel wall interactions": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cancer is EC suppressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "malignant tumors",
+        "answerability": 0.9616371393203735,
+        "ground_truth": {
+          "malignancies": {
+            "bertscore": 0.8334963321685791,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

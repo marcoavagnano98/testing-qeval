@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Regulation of jun and fos gene expression in human monocytes by the macrophage transcription factor AP-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that regulates the expression of human monocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Regulation",
+        "jun",
+        "fos",
+        "gene expression",
+        "human monocytes",
+        "the macrophage transcription factor",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of jun and fos gene expression?",
+          "What is the name of the gene that regulates the expression of human monocytes?",
+          "What is the name of the gene that regulates jun?",
+          "What is the macrophage transcription factor AP-1 responsible for?",
+          "What is the macrophage transcription factor AP-1 located in?",
+          "What is the AP-1 gene regulated by?",
+          "What transcription factor regulates jun and fos gene expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that regulates the expression of monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "jun",
+        "answerability": 0.9073492288589478,
+        "ground_truth": {
+          "jun": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of jun and fos in gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Regulation",
+        "answerability": 0.9670608639717102,
+        "ground_truth": {
+          "Regulation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that regulates jun?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.8993442058563232,
+        "ground_truth": {
+          "fos": {
+            "bertscore": 0.6931792497634888,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the macrophage colony-stimulating factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07061094045639038,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.6905691027641296,
+            "f1": 0
+          },
+          "human monocytes": {
+            "bertscore": 0.6539060473442078,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor in the regulation of jun and fos gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "macrophage transcription factor AP-1",
+        "answerability": 0.928183913230896,
+        "ground_truth": {
+          "the macrophage colony-stimulating factor": {
+            "bertscore": 0.8194059133529663,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

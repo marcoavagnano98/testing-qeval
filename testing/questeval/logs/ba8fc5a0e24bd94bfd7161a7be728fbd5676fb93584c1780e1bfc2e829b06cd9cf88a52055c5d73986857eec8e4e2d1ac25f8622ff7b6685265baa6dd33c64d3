@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "We conclude that the MAP kinase signal transduction pathway consisting of Raf-1 MEK1 and ERK1 and ERK2) functions in the stimulation IL-2 gene transcription in activated T lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MAP",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What kinase signal transduction pathway functions in the stimulation of IL-2 gene",
+          "What gene transcription is stimulated by MAP kinase signal transduction pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the MAP kinase signal transduction pathway",
+        "Raf-1 MEK1",
+        "ERK1",
+        "ERK2",
+        "the stimulation",
+        "activated T lymphocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the MAP kinase signal transduction pathway?",
+          "What is the name of the pathway that functions in the stimulation of IL-2 gene transcription?",
+          "What is the MAP kinase signal transduction pathway composed of?",
+          "What is the name of the MAP kinase signal transduction pathway?",
+          "What is the name of the MAP kinase signal transduction pathway?",
+          "What does the MAP kinase signal transduction pathway function in?",
+          "What does the MAP kinase signal transduction pathway function in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What kinase signal transduction pathway functions in the stimulation of IL-2 gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MAP",
+        "answerability": 0.971929669380188,
+        "ground_truth": {
+          "MAP": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the MAP kinase signal transduction pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5112670660018921,
+        "ground_truth": {
+          "ERK1": {
+            "bertscore": 0.6503549814224243,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene transcription is stimulated by Raf-1 MEK1 and ERK2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9824868440628052,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the MAP kinase signal transduction pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Raf-1 MEK1 and ERK1 and ERK2",
+        "answerability": 0.9528612494468689,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5646288990974426,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the MAP kinase signal transduction pathway composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Raf-1 MEK1 and ERK1 and ERK2",
+        "answerability": 0.985580325126648,
+        "ground_truth": {
+          "Raf-1 MEK1": {
+            "bertscore": 0.8770758509635925,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What two functions are involved in the stimulation of IL-2 gene transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Raf-1 MEK1 and ERK1 and ERK2",
+        "answerability": 0.7792422771453857,
+        "ground_truth": {
+          "ERK1 and ERK2 functions": {
+            "bertscore": 0.8589088320732117,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What does the MAP kinase signal transduction pathway function in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the stimulation IL-2 gene transcription in activated T lymphocytes",
+        "answerability": 0.9841348528862,
+        "ground_truth": {
+          "the stimulation": {
+            "bertscore": 0.7261784076690674,
+            "f1": 0.2222222222222222
+          },
+          "gene transcription": {
+            "bertscore": 0.7124851942062378,
+            "f1": 0.4
+          },
+          "activated T lymphocytes": {
+            "bertscore": 0.8469926118850708,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "The EGFR-GEP100-Arf6-AMAP1 signaling pathway specific to breast cancer invasion and metastasis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The EGFR-GEP100-Arf6-AMAP1",
+        "pathway",
+        "breast cancer invasion",
+        "metastasis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling pathway is specific to breast cancer invasion and metastasis?",
+          "What signaling pathway is specific to breast cancer invasion and metastasis?",
+          "What is the EGFR-GEP100-Arf6-AMAP1",
+          "What is the signaling pathway specific to breast cancer invasion?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathway is specific to breast cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EGFR-GEP100-Arf6-AMAP1",
+        "answerability": 0.9401527047157288,
+        "ground_truth": {
+          "The EGFR-GEP100-Arf6-AMAP1": {
+            "bertscore": 0.957730233669281,
+            "f1": 1.0
+          },
+          "pathway": {
+            "bertscore": 0.6523559093475342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the signaling pathway specific to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "breast cancer invasion and metastasis",
+        "answerability": 0.9917682409286499,
+        "ground_truth": {
+          "breast cancer invasion": {
+            "bertscore": 0.8832296133041382,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the specific pathway for breast cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The EGFR-GEP100-Arf6-AMAP1 signaling",
+        "answerability": 0.9565749764442444,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.6463545560836792,
+            "f1": 0
+          },
+          "invasion": {
+            "bertscore": 0.632581353187561,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are tissue-specific diseases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006530880928039551,
+        "ground_truth": {
+          "Tumors": {
+            "bertscore": 0.6690206527709961,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004853546619415283,
+        "ground_truth": {
+          "tissue-specific diseases": {
+            "bertscore": 0.6627093553543091,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is highly diverse about tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002791285514831543,
+        "ground_truth": {
+          "their mechanisms": {
+            "bertscore": 0.6206596493721008,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

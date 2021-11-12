@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Expression of the Bcl-3 proto-oncogene suppresses p53 activation and inhibits p53-induced apoptosis through a mechanism that is at least partly dependent on the up-regulation of Hdm2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Hdm2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that suppresses p53 activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "the Bcl-3 proto-oncogene",
+        "p53 activation",
+        "p53-induced apoptosis",
+        "a mechanism",
+        "the up-regulation",
+        "Hdm2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppresses p53 activation?",
+          "What suppresses p53 activation and inhibits apoptosis?",
+          "What does the Bcl-3 proto-oncogene suppress?",
+          "What does the Bcl-3 proto-oncogene inhibit?",
+          "How does the Bcl-3 proto-oncogene suppress p53 activation",
+          "What is Hdm2 dependent on?",
+          "What is the main factor that suppresses p53 activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppresses p53 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Bcl-3 proto-oncogene",
+        "answerability": 0.983176052570343,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.6716333627700806,
+            "f1": 0
+          },
+          "the Bcl-3 proto-oncogene": {
+            "bertscore": 0.9505404829978943,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the Bcl-3 proto-oncogene suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53 activation",
+        "answerability": 0.9946445226669312,
+        "ground_truth": {
+          "p53 activation": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

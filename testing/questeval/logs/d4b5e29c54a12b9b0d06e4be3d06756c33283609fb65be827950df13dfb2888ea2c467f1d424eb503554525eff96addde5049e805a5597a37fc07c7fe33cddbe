@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "PTTG-induced galectin-1 transactivation and expression were mediated by c-Myc and both inductions were suppressed by c-Myc RNAi cotranfection.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "c-Myc",
+        "c-Myc RNAi"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What RNAi mediated galectin-1 transactivation and expression?",
+          "What suppressed both inductions?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTTG-induced galectin-1 transactivation",
+        "expression",
+        "c-Myc",
+        "both inductions",
+        "c-Myc RNAi cotranfection"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of the mutagenesis of apoptosis?",
+          "What was mediated by c-Myc?",
+          "What RNAi mediated galectin-1 transactivation and expression?",
+          "What was suppressed by c-Myc RNAi?",
+          "What suppressed both inductions?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What RNAi mediated galectin-1 transactivation and expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Myc",
+        "answerability": 0.7401455640792847,
+        "ground_truth": {
+          "c-Myc": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What suppressed both inductions?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Myc RNAi",
+        "answerability": 0.9342633485794067,
+        "ground_truth": {
+          "c-Myc RNAi": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "c-Myc RNAi cotranfection": {
+            "bertscore": 0.8639605045318604,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the main cause of the mutagenesis of apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0044814348220825195,
+        "ground_truth": {
+          "PTTG-induced galectin-1 transactivation": {
+            "bertscore": 0.5534451603889465,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was mediated by c-Myc?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTTG-induced galectin-1 transactivation and expression",
+        "answerability": 0.931769073009491,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.6371433138847351,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What was suppressed by c-Myc RNAi?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both inductions",
+        "answerability": 0.6746535301208496,
+        "ground_truth": {
+          "both inductions": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

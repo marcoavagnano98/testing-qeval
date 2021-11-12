@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Specific inhibitors of p38alpha MAPk blocked LPS-induced adhesion nuclear factor-kappa B (NF-kappaB) activation and synthesis of tumor necrosis factor-a (TNF-alpha).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the tumor necrosis factor-a?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Specific inhibitors",
+        "p38alpha",
+        "MAPk",
+        "LPS-induced adhesion nuclear factor-kappa B (NF-kappaB) activation",
+        "synthesis",
+        "tumor necrosis factor",
+        "a (TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blockade LPS-induced adhesion nuclear factor-kappa B?",
+          "What is the name of the MAPk protein?",
+          "What blockade LPS-induced adhesion?",
+          "What did specific inhibitors of p38alpha MAPk block?",
+          "What did p38alpha block?",
+          "What does TNF-alpha stand for?",
+          "What is the name of the tumor necrosis factor?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the molecule that blocks LPS-induced adhesion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p38alpha MAPk",
+        "answerability": 0.7175178527832031,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7352935075759888,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockade LPS-induced adhesion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibitors of p38alpha MAPk",
+        "answerability": 0.946567952632904,
+        "ground_truth": {
+          "Specific inhibitors": {
+            "bertscore": 0.7413495779037476,
+            "f1": 0.3333333333333333
+          },
+          "MAPk": {
+            "bertscore": 0.7412515878677368,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the name of the MAPk protein that blocks LPS-induced adhesion": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p38alpha",
+        "answerability": 0.7504158616065979,
+        "ground_truth": {
+          "p38alpha": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did specific inhibitors of p38alpha MAPk block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS-induced adhesion nuclear factor-kappa B",
+        "answerability": 0.7846823334693909,
+        "ground_truth": {
+          "LPS-induced adhesion nuclear factor-kappa B (NF-kappaB) activation": {
+            "bertscore": 0.8833290338516235,
+            "f1": 0.8333333333333333
+          }
+        }
+      }
+    },
+    "What did p38alpha block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46020758152008057,
+        "ground_truth": {
+          "synthesis": {
+            "bertscore": 0.6831985116004944,
+            "f1": 0
+          },
+          "tumor necrosis factor-alpha": {
+            "bertscore": 0.591293215751648,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the tumor necrosis factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12592917680740356,
+        "ground_truth": {
+          "(TNF-alpha": {
+            "bertscore": 0.6426272392272949,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

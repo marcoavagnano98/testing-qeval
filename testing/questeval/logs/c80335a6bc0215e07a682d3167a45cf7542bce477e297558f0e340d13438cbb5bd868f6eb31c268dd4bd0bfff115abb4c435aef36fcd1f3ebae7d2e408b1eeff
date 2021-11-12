@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "Adenovirus 5 early region 1A (E1A) has been shown to exhibit high tumor suppressor activity and gene therapy using E1A has been tested in clinical trials.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5",
+        "1A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the Adenovirus that has been shown to have a high",
+          "What is the name of the early region of Adenovirus 5?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Adenovirus",
+        "E1A",
+        "high tumor suppressor activity",
+        "gene therapy",
+        "E1A",
+        "clinical trials"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the virus that has been shown to have a high tumor suppressor",
+          "What is the name of the region that is used to treat TB?",
+          "What is the effect of Adenovirus 5 early region 1A?",
+          "What is used to treat the TB?",
+          "What is the name of the region that is used to treat TB?",
+          "What type of testing has been done to test the effect of Adenovirus 5 early region"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What region of Evi-1 is important for tumor suppressor activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E1A",
+        "answerability": 0.7956016659736633,
+        "ground_truth": {
+          "1A": {
+            "bertscore": 0.8513666391372681,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What region of the cytokine is important for tumor suppressor activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Adenovirus 5 early region 1A",
+        "answerability": 0.8876355886459351,
+        "ground_truth": {
+          "Evi-1": {
+            "bertscore": 0.6728744506835938,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that early region 1A of Evi-1 may be important for its tumorigenic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6618679165840149,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.6313728094100952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is early region 1A of Evi-1 important for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "high tumor suppressor activity",
+        "answerability": 0.9754176735877991,
+        "ground_truth": {
+          "tumor suppressor activity": {
+            "bertscore": 0.9394321441650391,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What is early region 1A important for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "high tumor suppressor activity",
+        "answerability": 0.9732685089111328,
+        "ground_truth": {
+          "its tumorigenicity": {
+            "bertscore": 0.7238880395889282,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

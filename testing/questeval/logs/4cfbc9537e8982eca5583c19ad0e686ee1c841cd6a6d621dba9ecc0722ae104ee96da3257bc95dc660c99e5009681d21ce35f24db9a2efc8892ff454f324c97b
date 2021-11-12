@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "mRNA levels we observed within 30 min of monocyte adherence would result from NF-kappa B-dependent transcriptional stimulation of the I kappa B\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mRNA",
+        "30 min"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we observe within 30 min of monocyte adherence?",
+          "How long after monocyte adherence did we observe mRNA levels?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "mRNA levels",
+        "we",
+        "30 min",
+        "monocyte adherence",
+        "NF-kappa B-dependent transcriptional stimulation",
+        "the I kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we observe within 30 min of monocyte adherence?",
+          "What was the cause of the mRNA levels observed within 30 min of monocyte adherence",
+          "How long after monocyte adherence did we observe mRNA levels?",
+          "What is the NF-kappa B-dependent transcriptional stimulation?",
+          "What is the cause of the mRNA levels observed within 30 min of monocyte adherence",
+          "What transcriptional factor is responsible for the mRNA levels observed within 30 min of monocyte"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the NF-kappa B-dependent transcriptional stimulation of the I": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels we observed within 30 min of monocyte adherence would result from NF",
+        "answerability": 0.7463541030883789,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.7036688327789307,
+            "f1": 0.13333333333333333
+          },
+          "mRNA levels": {
+            "bertscore": 0.748969316482544,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "How long did it take for the mRNA levels to be observed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "30 min",
+        "answerability": 0.9719371199607849,
+        "ground_truth": {
+          "30 min": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene is involved in the mRNA levels observed within 30 min of monocyte adherence": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B-dependent transcriptional stimulation of the I kappa",
+        "answerability": 0.7358626127243042,
+        "ground_truth": {
+          "MAD-3": {
+            "bertscore": 0.6564611196517944,
+            "f1": 0
+          },
+          "the I kappa B alpha/MAD-3 gene": {
+            "bertscore": 0.7553180456161499,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What was the cause of the mRNA levels observed within 30 min of monocyte adherence": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B-dependent transcriptional stimulation of the I kappa",
+        "answerability": 0.8557164669036865,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.5975324511528015,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the result of NF-kappa B-dependent transcriptional stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels",
+        "answerability": 0.7512019872665405,
+        "ground_truth": {
+          "monocyte adherence": {
+            "bertscore": 0.7017189860343933,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of the mRNA levels observed within 30 min of monocyte adherence": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B-dependent transcriptional stimulation of the I kappa",
+        "answerability": 0.8375411629676819,
+        "ground_truth": {
+          "NF-kappa B-dependent transcriptional stimulation": {
+            "bertscore": 0.9136701822280884,
+            "f1": 0.7272727272727273
+          }
+        }
+      }
+    }
+  }
+}

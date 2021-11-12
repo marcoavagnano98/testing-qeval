@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Mechanistically E2F6-mediated repression correlated with CpG hypermethylation locking target promoters in an inactive state.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CpG"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the key to preventing repression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mechanistically E2F6-mediated repression",
+        "CpG hypermethylation",
+        "target promoters",
+        "an inactive state"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What correlated with CpG hypermethylation locking target promoters in an inactive",
+          "What mechanism locked target promoters in an inactive state?",
+          "What did E2F6-mediated repression correlate with?",
+          "In what state did E2F6-mediated repression correlate with CpG hyper"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is involved in repression of a protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F6",
+        "answerability": 0.8110204935073853,
+        "ground_truth": {
+          "CpG": {
+            "bertscore": 0.7562673091888428,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What involves CpG hypermethylation locking target promoters in an inactive state?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F6-mediated repression",
+        "answerability": 0.9327415227890015,
+        "ground_truth": {
+          "Mechanistically E2F6-mediated repression": {
+            "bertscore": 0.8913671970367432,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What lockes target promoters in an inactive state?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CpG hypermethylation",
+        "answerability": 0.9299668073654175,
+        "ground_truth": {
+          "CpG hypermethylation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does E2F6-mediated repression lock in an inactive state?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5124087333679199,
+        "ground_truth": {
+          "target promoters": {
+            "bertscore": 0.6789758205413818,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What state does E2F6-mediated repression involve?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inactive",
+        "answerability": 0.8366321325302124,
+        "ground_truth": {
+          "an inactive state": {
+            "bertscore": 0.8241047859191895,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Cell-type-specific bifunctional role of Jun oncogene family members on glucocorticoid receptor-dependent transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What oncogene family members play a role in glucocorticoi"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cell-type-specific bifunctional role",
+        "Jun oncogene family members",
+        "glucocorticoid receptor-dependent transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of Jun oncogene family members on glucocortico",
+          "What is the role of glucocorticoid receptors?",
+          "What is the Jun oncogene family involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What oncogene family members play a role in glucocorticoi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun",
+        "answerability": 0.9841459393501282,
+        "ground_truth": {
+          "Jun": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of Jun oncogene family members on glucocortico": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3130781650543213,
+        "ground_truth": {
+          "Cell-specific bifunctional role": {
+            "bertscore": 0.6508841514587402,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cell-specific bifunctional role of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun oncogene family members",
+        "answerability": 0.9949685335159302,
+        "ground_truth": {
+          "Jun oncogene family members": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the Jun oncogene family involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46121692657470703,
+        "ground_truth": {
+          "glucocorticoid receptor-dependent transcription": {
+            "bertscore": 0.5954408049583435,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

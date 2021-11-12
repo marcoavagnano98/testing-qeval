@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Whereas anti-CD28 together with PMA increased the DNA binding and trans-activation activity of NF-kappa B PMA-induced activation of AP-1 was significantly suppressed.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug induced AP-1 activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Whereas anti-CD28",
+        "PMA",
+        "the DNA binding and trans-activation activity",
+        "NF-kappa B",
+        "PMA-induced activation",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did anti-CD28 and PMA do?",
+          "What drug induced AP-1 activation?",
+          "What did anti-CD28 and PMA increase?",
+          "What protein was suppressed by anti-CD28 and PMA?",
+          "What was suppressed by anti-CD28 and PMA?",
+          "What protein was suppressed by anti-CD28 and PMA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the CLE0 sequence related to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005110502243041992,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.7000216245651245,
+            "f1": 0
+          },
+          "a PMA-induced AP-1": {
+            "bertscore": 0.6275278925895691,
+            "f1": 0
+          },
+          "a PMA/A23187-induced NF-AT": {
+            "bertscore": 0.5870094299316406,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the CLE0 sequence interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012538433074951172,
+        "ground_truth": {
+          "factors": {
+            "bertscore": 0.6932956576347351,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

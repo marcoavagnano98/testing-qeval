@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "Together these studies demonstrate that HTLV-1 Tax exploits a distal part of the proinflammatory cytokine signaling pathway leading to NF-kappaB activation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these studies",
+        "HTLV-1 Tax",
+        "a distal part",
+        "the proinflammatory cytokine",
+        "pathway",
+        "NF-kappaB activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that HTLV-1 Tax exploits a distal part of the proinflammatory",
+          "What exploits a distal part of the proinflammatory cytokine signaling pathway",
+          "What part of the proinflammatory cytokine signaling pathway does HTLV-1 Tax",
+          "What signaling pathway does HTLV-1 Tax exploit?",
+          "What is HTLV-1 Tax involved in?",
+          "What does HTLV-1 Tax exploit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that HTLV-1 Tax exploits a distal part of the proinflammatory": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "these studies",
+        "answerability": 0.9064685702323914,
+        "ground_truth": {
+          "these studies": {
+            "bertscore": 0.9999992847442627,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What exploits a distal part of the proinflammatory cytokine signaling cas": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HTLV-1 Tax",
+        "answerability": 0.579069197177887,
+        "ground_truth": {
+          "HTLV-1 Tax": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What part of the proinflammatory cytokine signaling cascade does HTLV-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "distal",
+        "answerability": 0.9893450736999512,
+        "ground_truth": {
+          "a distal part": {
+            "bertscore": 0.8129066228866577,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What signaling cascade does HTLV-1 Tax exploit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a distal part of the proinflammatory cytokine signaling pathway",
+        "answerability": 0.9813088178634644,
+        "ground_truth": {
+          "the proinflammatory cytokine": {
+            "bertscore": 0.8647947311401367,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What is HTLV-1 Tax able to exploit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a distal part of the proinflammatory cytokine signaling pathway",
+        "answerability": 0.9921985268592834,
+        "ground_truth": {
+          "cascade": {
+            "bertscore": 0.5863437056541443,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HTLV-1 Tax lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activation",
+        "answerability": 0.9529019594192505,
+        "ground_truth": {
+          "induction": {
+            "bertscore": 0.6404936909675598,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HTLV-1 Tax induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.638772189617157,
+        "ground_truth": {
+          "NF-kappaB.": {
+            "bertscore": 0.9048104882240295,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

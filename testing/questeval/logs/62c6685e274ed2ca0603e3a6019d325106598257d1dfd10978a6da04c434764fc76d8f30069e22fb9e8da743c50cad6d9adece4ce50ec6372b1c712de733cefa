@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "Immunodepletion studies show that PTF beta is required for transcription of both classes of snRNA genes in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of protein is required for transcription of both classes of snRNA genes in vitr"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Immunodepletion studies",
+        "PTF beta",
+        "transcription",
+        "both classes",
+        "snRNA genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that PTF beta is required for transcription of both classes of snRNA genes",
+          "What is required for transcription of both classes of snRNA genes in vitro?",
+          "What is PTF beta required for in vitro?",
+          "What classes of snRNA genes are required by PTF beta?",
+          "What type of genes are required for transcription in vitro?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is essential for transcription of snRNA genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTF beta",
+        "answerability": 0.9729313254356384,
+        "ground_truth": {
+          "III-transcribed mammalian small nuclear": {
+            "bertscore": 0.6501078605651855,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is essential for transcription of mammalian genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTF beta",
+        "answerability": 0.892060399055481,
+        "ground_truth": {
+          "RNA": {
+            "bertscore": 0.721460223197937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is essential for their transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTF beta",
+        "answerability": 0.9668934941291809,
+        "ground_truth": {
+          "III-transcribed mammalian small nuclear RNA (snRNA) genes": {
+            "bertscore": 0.6262170672416687,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is essential for RNA genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36517202854156494,
+        "ground_truth": {
+          "their transcription": {
+            "bertscore": 0.6757341027259827,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

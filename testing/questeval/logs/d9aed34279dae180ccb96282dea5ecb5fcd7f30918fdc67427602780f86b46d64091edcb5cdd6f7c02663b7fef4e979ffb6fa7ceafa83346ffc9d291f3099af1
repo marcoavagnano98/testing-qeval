@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "A conserved MST-FOXO motif is required for all oxidative-stress responses and amino acid responses.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MST"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the conserved motif for all oxidative stress responses?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A conserved MST-FOXO motif",
+        "all oxidative-stress responses",
+        "amino acid responses"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for all oxidative stress responses?",
+          "What is a conserved MST-FOXO motif required for?",
+          "What is a conserved MST-FOXO motif required for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathway mediates oxidative stress responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3273223042488098,
+        "ground_truth": {
+          "MST-FOXO": {
+            "bertscore": 0.6589815020561218,
+            "f1": 0
+          },
+          "A conserved MST-FOXO": {
+            "bertscore": 0.6520169377326965,
+            "f1": 0
+          },
+          "pathway": {
+            "bertscore": 0.6902822852134705,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MST-FOXO mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.033638179302215576,
+        "ground_truth": {
+          "oxidative-stress responses": {
+            "bertscore": 0.6608824133872986,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MST-FOXO prolong?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0014187097549438477,
+        "ground_truth": {
+          "life span": {
+            "bertscore": 0.7260249853134155,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

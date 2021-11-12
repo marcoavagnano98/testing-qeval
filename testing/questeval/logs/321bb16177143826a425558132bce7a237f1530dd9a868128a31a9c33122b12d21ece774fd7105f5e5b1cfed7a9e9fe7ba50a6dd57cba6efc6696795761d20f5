@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "The human p19(SKP1)/p45(SKP2)/CUL-1 complex is likely to function as an E3 ligase to selectively target cyclin E and p21 for the ubiquitin-dependent protein degradation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p19(SKP1)/p45(SKP2)/CUL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the human complex?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The human p19(SKP1)/p45(SKP2)/CUL-1 complex",
+        "an E3 ligase",
+        "cyclin E",
+        "p21",
+        "the ubiquitin-dependent protein degradation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is likely to function as an E3 ligase?",
+          "What is the human p19(SKP1)/p45(SKP2)/",
+          "What is the target of the human p19(SKP1)/p45(SK",
+          "What is the ubiquitin-dependent protein degradation?",
+          "What is the purpose of the human p19(SKP1)/p45(SK"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is cyclin E regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.029423773288726807,
+        "ground_truth": {
+          "degradation": {
+            "bertscore": 0.7194915413856506,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is regulated by ubiquitination and proteasomal action?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004706919193267822,
+        "ground_truth": {
+          "cyclin E": {
+            "bertscore": 0.6415973901748657,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main mechanism of degradation of cyclin E?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15783149003982544,
+        "ground_truth": {
+          "ubiquitination": {
+            "bertscore": 0.6691908836364746,
+            "f1": 0
+          },
+          "proteasomal action": {
+            "bertscore": 0.6303044557571411,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is little known about the biogenesis of cyclin E?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004982948303222656,
+        "ground_truth": {
+          "posttranscriptional aspects": {
+            "bertscore": 0.6708042025566101,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is little known about posttranscriptional aspects of cyclin E?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009696483612060547,
+        "ground_truth": {
+          "its biogenesis": {
+            "bertscore": 0.6509977579116821,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

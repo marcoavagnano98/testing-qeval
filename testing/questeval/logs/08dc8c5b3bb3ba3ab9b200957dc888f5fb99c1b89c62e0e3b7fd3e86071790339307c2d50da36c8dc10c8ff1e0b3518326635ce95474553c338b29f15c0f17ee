@@ -1,0 +1,66 @@
+{
+  "type": "ref",
+  "text": "p53 hot-spot mutants increase tumor vascularization via ROS-mediated activation of the HIF1/VEGF-A pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p53 hot-spot mutants",
+        "tumor vascularization",
+        "ROS-mediated activation",
+        "the HIF1/VEGF-A pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases tumor vascularization via ROS-mediated activation of the HIF1/VE",
+          "What do p53 hot-spot mutants increase?",
+          "What is the mechanism by which p53 hot-spot mutants increase tumor vascular",
+          "What do p53 hot-spot mutants activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases tumor vascularization via ROS-mediated the HIF1/VEGF-A": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53 hot-spot mutants",
+        "answerability": 0.64612877368927,
+        "ground_truth": {
+          "p53 hot-spot mutants": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do p53 hot-spot mutants increase via ROS-mediated the H": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor vascularization",
+        "answerability": 0.9244167804718018,
+        "ground_truth": {
+          "tumor vascularization": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p53 hot-spot mutants increase tumor vascularization via?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ROS-mediated activation of the HIF1/VEGF-A pathway",
+        "answerability": 0.9879911541938782,
+        "ground_truth": {
+          "ROS-mediated the HIF1/VEGF-A pathway": {
+            "bertscore": 0.9642913341522217,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

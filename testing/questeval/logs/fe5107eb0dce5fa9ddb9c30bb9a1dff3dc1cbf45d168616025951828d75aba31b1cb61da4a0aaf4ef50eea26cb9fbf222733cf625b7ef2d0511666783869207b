@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "I (HTLV-I) is a potent transcriptional activator that both stimulates viral gene expression and activates an array of cellular genes involved in T-cell growth. IL-3 is expressed primarily in activated T cells and its expression is regulated at the transcriptional level.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytokine that activates T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "I",
+        "HTLV-I",
+        "a potent transcriptional activator",
+        "viral gene expression",
+        "an array",
+        "cellular genes",
+        "T-cell growth",
+        "IL-3",
+        "activated T cells",
+        "its expression",
+        "the transcriptional level"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the HTLV-I gene?",
+          "What is the name of the cytokine that activates T cells?",
+          "What is HTLV-I?",
+          "What does HTLV-I stimulate?",
+          "What type of cellular genes are activated by HTLV-I?",
+          "What does HTLV-I activate?",
+          "What is IL-3 involved in?",
+          "What is the name of the cytokine that activates T cells?",
+          "Where is IL-3 expressed?",
+          "What is regulated at the transcriptional level?",
+          "Where is IL-3 expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13685232400894165,
+        "ground_truth": {
+          "a cytokine": {
+            "bertscore": 0.6300880312919617,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells is IL-3 expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activated T cells",
+        "answerability": 0.9640137553215027,
+        "ground_truth": {
+          "activated T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Anti-TNF-alpha antibody but not anti-IL-1 beta antibody strongly inhibited both the induction of HIV-1-LTR-driven transcription and the induction of NF-kappa B by Fc gamma R cross-linking.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Anti-TNF",
+        "anti-IL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What antibody inhibited both HIV-1-LTR-driven transcription and NF-k",
+          "What antibody inhibited both HIV-1-LTR-driven transcription and NF-k"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Anti-TNF-alpha antibody",
+        "beta antibody",
+        "both the induction",
+        "HIV-1-LTR-driven transcription",
+        "the induction",
+        "NF-kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What antibody inhibited both HIV-1-LTR-driven transcription and NF-k",
+          "What antibody inhibited both HIV-1-LTR-driven transcription and NF-k",
+          "What did anti-TNF-alpha antibody inhibit?",
+          "What did anti-TNF-alpha antibody inhibit?",
+          "What did anti-TNF-alpha antibody inhibit?",
+          "What protein was inhibited by anti-TNF-alpha but not anti-IL"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What antibody inhibited both HIV-1-LTR-driven transcription and NF-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30291813611984253,
+        "ground_truth": {
+          "Anti-TNF": {
+            "bertscore": 0.6372136473655701,
+            "f1": 0
+          },
+          "anti-IL-1": {
+            "bertscore": 0.6008839011192322,
+            "f1": 0
+          },
+          "Anti-TNF-alpha antibody": {
+            "bertscore": 0.606014609336853,
+            "f1": 0
+          },
+          "beta antibody": {
+            "bertscore": 0.670418381690979,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did anti-TNF-alpha antibody inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1-LTR-driven transcription",
+        "answerability": 0.9681301712989807,
+        "ground_truth": {
+          "both the induction": {
+            "bertscore": 0.6162781715393066,
+            "f1": 0
+          },
+          "HIV-1-LTR-driven transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the induction": {
+            "bertscore": 0.6352748274803162,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was inhibited by anti-TNF-alpha but not anti-IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4839934706687927,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.644961416721344,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

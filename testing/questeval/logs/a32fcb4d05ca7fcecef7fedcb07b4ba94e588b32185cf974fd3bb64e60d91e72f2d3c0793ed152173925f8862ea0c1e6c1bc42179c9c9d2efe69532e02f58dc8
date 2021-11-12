@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "On the other hand exoR the lipoproteins (BAB1_2147 BAB1_0589 BAB1_0358) were among the less expressed genes (Table 1).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the table of the RNA expression of the lipoproteins?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the other hand",
+        "the lipoproteins",
+        "the less expressed genes",
+        "Table"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "On what hand were the lipoproteins less expressed?",
+          "What genes were less expressed?",
+          "What were the lipoproteins among?",
+          "What is the name of the table that shows the expression of the lipoproteins?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many transcriptional regulators were affected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0020251870155334473,
+        "ground_truth": {
+          "seven": {
+            "bertscore": 0.7163195013999939,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is one of the transcriptional regulators that was less expressed in the bvr": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49044615030288696,
+        "ground_truth": {
+          "VjbR ExoR": {
+            "bertscore": 0.6442016363143921,
+            "f1": 0
+          },
+          "OmpR": {
+            "bertscore": 0.6684904098510742,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many regulators were affected by the bvrR mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0027520060539245605,
+        "ground_truth": {
+          "seven transcriptional regulators": {
+            "bertscore": 0.6473485827445984,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Which mutant was less expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "exoR",
+        "answerability": 0.7120947241783142,
+        "ground_truth": {
+          "the bvrR mutant": {
+            "bertscore": 0.7375672459602356,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

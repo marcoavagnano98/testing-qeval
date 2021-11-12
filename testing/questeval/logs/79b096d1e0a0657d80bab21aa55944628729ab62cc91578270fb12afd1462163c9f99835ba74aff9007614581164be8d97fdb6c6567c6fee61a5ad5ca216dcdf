@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "These events are followed by RPS3 association with importin-alpha followed by nuclear translocation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RPS3 association"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the association with importin-alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These events",
+        "RPS3 association",
+        "importin-alpha",
+        "nuclear translocation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is followed by nuclear translocation?",
+          "What is the name of the association with importin-alpha?",
+          "What is the second event followed by nuclear translocation?",
+          "What is the result of the association with importin-alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required to cause RPS3 association with importin-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear translocation",
+        "answerability": 0.8814536929130554,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 0.6585151553153992,
+            "f1": 0
+          },
+          "IkappaBalpha phosphorylation": {
+            "bertscore": 0.6930528283119202,
+            "f1": 0
+          },
+          "degradation": {
+            "bertscore": 0.8061301708221436,
+            "f1": 0
+          },
+          "itself": {
+            "bertscore": 0.7396098375320435,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not enough to cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00024336576461791992,
+        "ground_truth": {
+          "RPS3 association": {
+            "bertscore": 0.6468274593353271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of RPS3 association?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "importin-alpha",
+        "answerability": 0.8509069681167603,
+        "ground_truth": {
+          "importin-alpha": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the second step in the phosphorylation and degradation of IkappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11809426546096802,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 0.7173126935958862,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

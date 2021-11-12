@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Three of these namely exoR ompR and vjbR are down regulated and have been previously implicated in Brucella virulence.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Three",
+        "vjbR",
+        "Brucella"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many genes are down regulated?",
+          "What is the name of the exoR that is down regulated?",
+          "What is the name of the virulence of a bacterial strain?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these namely exoR ompR",
+        "vjbR",
+        "Brucella virulence"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is down regulated?",
+          "What is the name of the exoR that is down regulated?",
+          "What is the name of the disease that is caused by the virulence of a"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many genes are down regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Three",
+        "answerability": 0.9856341481208801,
+        "ground_truth": {
+          "Three": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the exoR that is down regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46325498819351196,
+        "ground_truth": {
+          "vjbR": {
+            "bertscore": 0.6842260360717773,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the virulence of a bacterial strain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Brucella",
+        "answerability": 0.8579327464103699,
+        "ground_truth": {
+          "Brucella": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is down regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30980950593948364,
+        "ground_truth": {
+          "these namely exoR ompR": {
+            "bertscore": 0.6005240678787231,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the disease that is caused by the virulence of a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Brucella",
+        "answerability": 0.8164849877357483,
+        "ground_truth": {
+          "Brucella virulence": {
+            "bertscore": 0.8165011405944824,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

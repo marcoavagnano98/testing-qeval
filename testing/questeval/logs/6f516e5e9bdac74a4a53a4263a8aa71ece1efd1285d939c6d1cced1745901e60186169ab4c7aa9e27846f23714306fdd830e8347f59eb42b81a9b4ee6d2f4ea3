@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "These findings suggest that the nuclear accumulation of NFAT4 promoted by calcineurin is opposed by the JNK signal transduction pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "JNK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signal transduction pathway opposes the nuclear accumulation of NFAT4 promoted by"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These findings",
+        "the nuclear accumulation",
+        "NFAT4",
+        "calcineurin",
+        "the JNK signal transduction pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that the nuclear accumulation of NFAT4 promoted by calcineurin is",
+          "What does the JNK signal transduction pathway oppose?",
+          "What is the nuclear accumulation of?",
+          "What is the JNK signal transduction pathway?",
+          "What pathway is opposed to the nuclear accumulation of NFAT4 promoted by calcineur"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signal transduction pathway opposes the nuclear accumulation of NFAT4 promoted by": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JNK",
+        "answerability": 0.8677306771278381,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What shows that the nuclear accumulation of NFAT4 promoted by calcineurin is": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23755323886871338,
+        "ground_truth": {
+          "These findings": {
+            "bertscore": 0.6293959617614746,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NFAT4 opposed by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5249953269958496,
+        "ground_truth": {
+          "the nuclear accumulation": {
+            "bertscore": 0.6784624457359314,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the nuclear accumulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT4",
+        "answerability": 0.8679834008216858,
+        "ground_truth": {
+          "NFAT4": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the JNK signal transduction pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04132866859436035,
+        "ground_truth": {
+          "calcineurin": {
+            "bertscore": 0.667729914188385,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway opposes the nuclear accumulation of NFAT4 promoted by calcineur": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JNK signal transduction pathway",
+        "answerability": 0.9041306972503662,
+        "ground_truth": {
+          "the JNK signal transduction pathway": {
+            "bertscore": 0.9501978754997253,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "\"For example the expression of tcdA1 and tccC2 encoding subunits of the insecticidal toxin complexes and the production of mcf2 encoding the \"\"Makes caterpillar floppy\"\" toxin was identified to be luxS dependent.\"\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "example",
+        "the expression",
+        "tcdA1 and tccC2 encoding subunits",
+        "the insecticidal toxin complexes",
+        "the production",
+        "mcf2",
+        "\" toxin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is an example of luxS dependent toxin production?",
+          "What is luxS dependent?",
+          "What is luxS dependent?",
+          "What is luxS dependent?",
+          "What is luxS dependent?",
+          "What is the name of the toxin that makes caterpillars floppy?",
+          "What is luxS dependent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is an example of luxS dependent toxin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Makes caterpillar floppy",
+        "answerability": 0.7642608284950256,
+        "ground_truth": {
+          "example": {
+            "bertscore": 0.5972545146942139,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is luxS dependent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.370647668838501,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          },
+          "tcdA1 and tccC1 encoding subunits": {
+            "bertscore": 0.6022941470146179,
+            "f1": 0
+          },
+          "the production": {
+            "bertscore": 0.6583799719810486,
+            "f1": 0
+          },
+          "\" toxin": {
+            "bertscore": 0.681199312210083,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do tcdA1 and tccC1 encode?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14510399103164673,
+        "ground_truth": {
+          "the insecticidal toxin complexes": {
+            "bertscore": 0.6207262873649597,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the toxin that makes caterpillars floppy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "luxS",
+        "answerability": 0.5952271223068237,
+        "ground_truth": {
+          "mcf2": {
+            "bertscore": 0.779588520526886,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

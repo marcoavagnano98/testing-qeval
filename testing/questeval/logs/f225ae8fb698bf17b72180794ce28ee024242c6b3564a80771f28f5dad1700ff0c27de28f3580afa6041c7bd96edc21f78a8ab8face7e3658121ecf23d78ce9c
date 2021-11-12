@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "We evaluated an investigational prostate cancer methylation specific polymerase chain reaction assay that detects aberrant methylation in 3 markers (GSTP1 RARbeta2 and APC)\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3",
+        "GSTP1 RARbeta2",
+        "APC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many markers were tested?",
+          "What is the name of the three markers that are tested?",
+          "What is the name of the three markers that are tested?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "an investigational prostate cancer methylation specific polymerase chain reaction assay",
+        "aberrant methylation",
+        "3 markers",
+        "GSTP1 RARbeta2",
+        "APC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the purpose of the study?",
+          "What did the researchers evaluate?",
+          "What does the assay detect?",
+          "How many markers were tested?",
+          "What is the name of the three markers that are tested?",
+          "What is the name of the three markers that are tested?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was used to analyze the methylation patterns of the AR FMR1 and GPC": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.399602472782135,
+        "ground_truth": {
+          "Bisulfite": {
+            "bertscore": 0.6535287499427795,
+            "f1": 0
+          },
+          "Bisulfite genomic sequencing": {
+            "bertscore": 0.6285493969917297,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was methylated by bisulfite genomic sequencing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10870712995529175,
+        "ground_truth": {
+          "the AR FMR1": {
+            "bertscore": 0.6443074941635132,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was analyzed by a bisulfite genomic sequencing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.058533549308776855,
+        "ground_truth": {
+          "GPC3": {
+            "bertscore": 0.642218291759491,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the purpose of the sequencing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21868878602981567,
+        "ground_truth": {
+          "the methylation patterns": {
+            "bertscore": 0.6517446041107178,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to analyze the methylation patterns?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "polymerase chain reaction assay",
+        "answerability": 0.6951947212219238,
+        "ground_truth": {
+          "the AR FMR1 and GPC3 genes": {
+            "bertscore": 0.619738757610321,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "LYL1 encodes a basic helix-loop-helix (bHLH) protein highly related to TAL-1 whose activation is also associated with TFIIIB.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TAL-1",
+        "TFIIIB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is TFIIIB highly related to?",
+          "What is TAL-1's activation associated with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "LYL1",
+        "a basic helix-loop-helix (bHLH) protein",
+        "TAL-1",
+        "whose activation",
+        "TFIIIB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What encodes a basic helix-loop-helix protein?",
+          "What does LYL1 encode?",
+          "What is TFIIIB highly related to?",
+          "What is TFIIIB associated with?",
+          "What is TAL-1's activation associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is LYL1 highly related to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TAL-1",
+        "answerability": 0.9929154515266418,
+        "ground_truth": {
+          "TAL-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What encodes a basic helix-loop-helix protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LYL1",
+        "answerability": 0.9297806024551392,
+        "ground_truth": {
+          "LYL1": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does LYL1 encode?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a basic helix-loop-helix (bHLH) protein",
+        "answerability": 0.9900259971618652,
+        "ground_truth": {
+          "a basic helix-loop-helix (bHLH) protein": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is associated with a high proportion of human T-ALLs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04098045825958252,
+        "ground_truth": {
+          "whose activation": {
+            "bertscore": 0.7010037302970886,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is activation associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TFIIIB",
+        "answerability": 0.8117830753326416,
+        "ground_truth": {
+          "a high proportion": {
+            "bertscore": 0.6620512008666992,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is LYL1 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TAL-1",
+        "answerability": 0.9270269870758057,
+        "ground_truth": {
+          "human T-ALLs": {
+            "bertscore": 0.7296645641326904,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

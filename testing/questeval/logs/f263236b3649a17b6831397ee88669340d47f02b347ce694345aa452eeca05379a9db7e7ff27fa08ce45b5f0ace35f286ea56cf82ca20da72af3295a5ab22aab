@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "An immunohistochemistry analysis reveals that the microphthalmia-associated transcription factor is enriched in lymph node and thymus and that its expression is regulated at the transcriptional level.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An immunohistochemistry analysis",
+        "the microphthalmia-associated transcription factor",
+        "lymph node",
+        "thymus",
+        "its expression",
+        "the transcriptional level"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What reveals that the microphthalmia-associated transcription factor is enriched in lymph",
+          "What is enriched in lymph node and thymus?",
+          "Where is the microphthalmia-associated transcription factor enriched?",
+          "What part of the body is enriched with microphthalmia-associated transcription factor?",
+          "What is regulated at the transcriptional level?",
+          "Where is the expression of microphthalmia-associated transcription factor regulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of the study of the isoform of microphthalmia-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.038361430168151855,
+        "ground_truth": {
+          "Identification": {
+            "bertscore": 0.6873464584350586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is enriched in retinal pigment epithelium?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003619194030761719,
+        "ground_truth": {
+          "a novel isoform": {
+            "bertscore": 0.6576171517372131,
+            "f1": 0
+          },
+          "microphthalmia-associated transcription factor": {
+            "bertscore": 0.603406548500061,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is the microphthalmia-associated transcription factor enriched?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymph node and thymus",
+        "answerability": 0.9997297525405884,
+        "ground_truth": {
+          "retinal pigment epithelium": {
+            "bertscore": 0.7342240810394287,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

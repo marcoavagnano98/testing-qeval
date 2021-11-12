@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "The expression of many genes for which products are involved in inflammation is controlled by the transcriptional regulator nuclear factor (NF)-kappa B.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF)-kappa B.\n"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the transcriptional regulator of many genes for which products are involved in inflammation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression",
+        "many genes",
+        "products",
+        "inflammation",
+        "the transcriptional regulator nuclear factor",
+        "NF)-kappa B."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is controlled by the transcriptional regulator nuclear factor?",
+          "What is the transcriptional regulator of?",
+          "What is involved in inflammation?",
+          "What is the transcriptional regulator of the nuclear factor?",
+          "What is the expression of many genes for which products are involved in inflammation controlled by?",
+          "What is the transcriptional regulator of many genes for which products are involved in inflammation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcriptional regulator controls the expression of many genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor (NF)-kappa B",
+        "answerability": 0.9095559120178223,
+        "ground_truth": {
+          "NF)-kappa": {
+            "bertscore": 0.7513227462768555,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the transcriptional regulator of many genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor (NF)-kappa B",
+        "answerability": 0.7541150450706482,
+        "ground_truth": {
+          "The expression": {
+            "bertscore": 0.6392244100570679,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the transcriptional regulator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor (NF)-kappa B",
+        "answerability": 0.7783223986625671,
+        "ground_truth": {
+          "many genes": {
+            "bertscore": 0.6855207681655884,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in inflammation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49750542640686035,
+        "ground_truth": {
+          "products": {
+            "bertscore": 0.6707587242126465,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the transcriptional regulator of the nuclear factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4170650839805603,
+        "ground_truth": {
+          "inflammation": {
+            "bertscore": 0.7025617957115173,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the expression of many genes for which products are involved in inflammation controlled by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor (NF)-kappa B",
+        "answerability": 0.9110777378082275,
+        "ground_truth": {
+          "the transcriptional regulator nuclear factor": {
+            "bertscore": 0.7240988612174988,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the transcriptional regulator of many genes for which products are involved in inflammation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor (NF)-kappa B",
+        "answerability": 0.9625959396362305,
+        "ground_truth": {
+          "NF)-kappa B.\\nBecause surfactant protein": {
+            "bertscore": 0.7403897643089294,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the name of the surfactant protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009438395500183105,
+        "ground_truth": {
+          "SP": {
+            "bertscore": 0.6979726552963257,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

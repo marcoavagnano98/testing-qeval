@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Overexpressed TRAF2 inhibits NF-kappaB-dependent gene expression by interfering with a novel TNF-induced and RIP- or TRAF2-mediated pathway that is different from the NIK-IkappaB kinase pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB-dependent",
+        "TNF",
+        "NIK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of gene expression is inhibited by overexpressed TRAF2?",
+          "What is involved in the RIP- or TRAF2 pathway?",
+          "What is the name of the kinase that is involved in the NF-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-kappaB-dependent gene expression",
+        "TRAF2-mediated pathway",
+        "the NIK-IkappaB kinase pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does overexpressed TRAF2 inhibit?",
+          "What is the name of the pathway that inhibits NF-kappaB-dependent",
+          "What is the RIP-mediated pathway different from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does overexpressed TRAF2 or TRAF6 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02072465419769287,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.676149845123291,
+            "f1": 0
+          },
+          "JNK p38": {
+            "bertscore": 0.6450098752975464,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two genes activate JNK p38 or IKK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006478428840637207,
+        "ground_truth": {
+          "TRAF6": {
+            "bertscore": 0.664340615272522,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is activated when TRAF2 or TRAF6": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06620240211486816,
+        "ground_truth": {
+          "IKK": {
+            "bertscore": 0.6602892875671387,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

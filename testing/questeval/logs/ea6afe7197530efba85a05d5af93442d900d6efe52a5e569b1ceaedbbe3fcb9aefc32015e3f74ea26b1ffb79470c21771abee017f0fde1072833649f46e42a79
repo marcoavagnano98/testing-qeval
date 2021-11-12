@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Remarkably these data suggest that S209 phosphorylation is critical for the NF-kappaB activation-dependent RPS3 function without affecting the tyrosine phosphorylation of RPS3.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "S209",
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylation is critical for the NF-kappaB activation-",
+          "What is S209 phosphorylation critical for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these data",
+        "S209 phosphorylation",
+        "the NF-kappaB activation-dependent RPS3 function",
+        "the tyrosine phosphorylation",
+        "RPS3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that S209 phosphorylation is critical for the NF-kapp",
+          "What is critical for the NF-kappaB activation-dependent RPS3",
+          "What does the data suggest that S209 phosphorylation is critical for?",
+          "What does the S209 phosphorylation of RPS3 not affect?",
+          "What is S209 phosphorylated critical for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we not detect in RPS3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1332988739013672,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we not detect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006774008274078369,
+        "ground_truth": {
+          "tyrosine- or threonine-phosphorylation": {
+            "bertscore": 0.5943582057952881,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not detected in the cytosolic model?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0071623921394348145,
+        "ground_truth": {
+          "RPS3": {
+            "bertscore": 0.6660844087600708,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the phosphorylation of RPS3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine",
+        "answerability": 0.6482119560241699,
+        "ground_truth": {
+          "(Fig": {
+            "bertscore": 0.6275256276130676,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

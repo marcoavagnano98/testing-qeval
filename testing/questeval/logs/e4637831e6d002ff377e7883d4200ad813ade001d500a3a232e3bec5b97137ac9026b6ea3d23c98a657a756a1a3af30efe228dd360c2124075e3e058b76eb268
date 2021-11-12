@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "The induction of immediate-early (IE) response genes such as egr-1 c-jun and c-fos occurs rapidly after the activation of T lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The induction",
+        "immediate-early (IE) response genes",
+        "egr-1 c-jun",
+        "c-fos",
+        "the activation",
+        "T lymphocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What happens quickly after the activation of T lymphocytes?",
+          "What is egr-1 c-jun and c-fos?",
+          "What is an example of a IE response gene?",
+          "What is the name of the immediate-early response gene?",
+          "What is the first step in the induction of IE genes?",
+          "What is the first response gene to IE?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What happens quickly after the activation of T lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of immediate-early (IE) response genes",
+        "answerability": 0.9466406106948853,
+        "ground_truth": {
+          "The induction": {
+            "bertscore": 0.6673733592033386,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is egr-1 c-fos and c-jun?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "immediate-early (IE) response genes",
+        "answerability": 0.9925395250320435,
+        "ground_truth": {
+          "immediate-early (IE) response genes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is an example of a IE response gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "egr-1 c-jun",
+        "answerability": 0.9269328713417053,
+        "ground_truth": {
+          "egr-1 c-fos": {
+            "bertscore": 0.873048722743988,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the immediate-early response gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IE",
+        "answerability": 0.8141336441040039,
+        "ground_truth": {
+          "c-jun": {
+            "bertscore": 0.7280662059783936,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the first step in the induction of IE genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation of T lymphocytes",
+        "answerability": 0.8100825548171997,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6859062314033508,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the first response gene that is induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3987853527069092,
+        "ground_truth": {
+          "T lymphocytes": {
+            "bertscore": 0.6172375082969666,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

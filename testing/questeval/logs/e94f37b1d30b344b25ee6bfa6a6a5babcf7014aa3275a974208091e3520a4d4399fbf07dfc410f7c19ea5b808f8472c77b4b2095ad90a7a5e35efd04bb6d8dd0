@@ -1,0 +1,166 @@
+{
+  "type": "hyp",
+  "text": "In contrast when 200 micrograms U-995 was injected i.p. into mice it suppressed sarcoma-180 cell growth and B16-F10 mouse melanoma cell metastasis in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "200",
+        "i.p.",
+        "sarcoma-180",
+        "B16-F10 mouse melanoma",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many micrograms of U-995 were injected into mice?",
+          "What was U-995 injected with?",
+          "What type of cell growth was suppressed by U-995 injections?",
+          "What did U-995 suppress in vivo?",
+          "In what way did U-995 suppress sarcoma-180 cell growth?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "200 micrograms",
+        "i.p.",
+        "mice",
+        "it",
+        "sarcoma-180 cell growth",
+        "B16-F10 mouse melanoma cell metastasis",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of U-995 on sarcoma-180 cell growth?",
+          "How much U-995 was injected into mice?",
+          "What was U-995 injected with?",
+          "What animal did U-995 suppress cell growth?",
+          "What did U-995 suppress in vivo?",
+          "What did U-995 suppress in mice?",
+          "What did U-995 suppress in vivo?",
+          "In what way did U-995 suppress sarcoma-180 cell growth?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many micrograms of U-995 were injected into mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "200",
+        "answerability": 0.9954086542129517,
+        "ground_truth": {
+          "200": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was U-995 injected with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "200 micrograms",
+        "answerability": 0.8052210211753845,
+        "ground_truth": {
+          "i.p.": {
+            "bertscore": 0.5518544316291809,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cell growth was suppressed by U-995?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sarcoma-180",
+        "answerability": 0.8877849578857422,
+        "ground_truth": {
+          "sarcoma-180": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did U-995 suppress in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sarcoma-180 cell growth and B16-F10 mouse mela",
+        "answerability": 0.6416349411010742,
+        "ground_truth": {
+          "B16-F10 mouse melanoma": {
+            "bertscore": 0.8191126585006714,
+            "f1": 0.4
+          },
+          "B16-F10 mouse melanoma cell metastasis": {
+            "bertscore": 0.8088036179542542,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "In what way did U-995 suppress sarcoma-180 cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "injected i.p. into mice",
+        "answerability": 0.7488982677459717,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.6329332590103149,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of U-995 on sarcoma-180 cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppressed",
+        "answerability": 0.998974621295929,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.7609362602233887,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How much U-995 was injected into mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "200 micrograms",
+        "answerability": 0.9943702220916748,
+        "ground_truth": {
+          "200 micrograms": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What animals did U-995 suppress cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mice",
+        "answerability": 0.9935186505317688,
+        "ground_truth": {
+          "mice": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did U-995 suppress in mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sarcoma-180 cell growth",
+        "answerability": 0.9474067687988281,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.5657625794410706,
+            "f1": 0
+          },
+          "sarcoma-180 cell growth": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

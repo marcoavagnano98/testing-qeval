@@ -1,0 +1,132 @@
+{
+  "type": "ref",
+  "text": "Relative to its expression in naive T cells perforin (Prf1 ) mRNA expression did not increase appreciably at day 2 but showed a reproducible decrease at day 4 followed by robust reexpression between days 4 and 8\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Prf1",
+        "day 2",
+        "day 4",
+        "between days 4 and 8"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mRNA expression of naive T cells called?",
+          "When did mRNA expression decrease?",
+          "When did mRNA expression decrease?",
+          "When did mRNA expression decrease?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "its expression",
+        "naive T cells perforin",
+        "(Prf1 ) mRNA expression",
+        "day",
+        "a reproducible decrease",
+        "day",
+        "robust reexpression",
+        "days"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did mRNA expression decrease at day 2?",
+          "What is Prf1 a member of?",
+          "What did not increase at day 2?",
+          "When did mRNA expression decrease?",
+          "What was the effect of the mRNA expression on the naive T cells?",
+          "When did mRNA expression decrease?",
+          "What was the result of the decrease in mRNA expression between days 4 and 8?",
+          "How long did it take for mRNA to increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the reexpression of a gene show at day 2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.039994895458221436,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.6875344514846802,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "When did mRNA expression decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4",
+        "answerability": 0.999058723449707,
+        "ground_truth": {
+          "day 2": {
+            "bertscore": 0.7411057353019714,
+            "f1": 0
+          },
+          "day 4": {
+            "bertscore": 0.7842928171157837,
+            "f1": 0.6666666666666666
+          },
+          "between days 4 and 8": {
+            "bertscore": 0.692769467830658,
+            "f1": 0.33333333333333337
+          },
+          "day": {
+            "bertscore": 0.7422476410865784,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not increase at day 2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA expression",
+        "answerability": 0.9663800001144409,
+        "ground_truth": {
+          "mRNA expression": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of mRNA expression on the chromosome at day 4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a reproducible decrease",
+        "answerability": 0.802784264087677,
+        "ground_truth": {
+          "a reproducible decrease": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the result of the decrease in mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "robust reexpression",
+        "answerability": 0.9496972560882568,
+        "ground_truth": {
+          "robust reexpression": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How long did it take for mRNA expression to increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.059558749198913574,
+        "ground_truth": {
+          "days": {
+            "bertscore": 0.692965030670166,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

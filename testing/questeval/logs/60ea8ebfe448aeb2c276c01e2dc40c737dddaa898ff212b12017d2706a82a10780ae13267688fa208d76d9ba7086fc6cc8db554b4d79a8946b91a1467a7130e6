@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "In the present study the role of IL-2R signaling in the growth of CD8+ T cell prolymphocytic leukemia (T-PLL) cells has been investigated.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the present study",
+        "the role",
+        "IL-2R",
+        "the growth",
+        "CD8",
+        "T cell prolymphocytic leukemia",
+        "T-PLL) cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study investigated the role of IL-2R signaling in the growth of T-PL",
+          "What has been investigated in the present study?",
+          "What signaling is involved in the growth of T-cell prolymphocytic le",
+          "What is the role of IL-2R signaling in?",
+          "What type of T cell prolymphocytic leukemia cells are IL-2",
+          "What is the term for T-PLL?",
+          "What is the name of the cell type that is a target of IL-2R?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What study examined the role of IL-2R signaling in the growth of CD8+": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "In the present study the role of IL-2R signaling in the growth of CD8",
+        "answerability": 0.8799758553504944,
+        "ground_truth": {
+          "the present study": {
+            "bertscore": 0.7206483483314514,
+            "f1": 0.3076923076923077
+          }
+        }
+      }
+    },
+    "What is IL-2R signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2003139853477478,
+        "ground_truth": {
+          "the role": {
+            "bertscore": 0.6975818276405334,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling is involved in the growth of CD8+ T cell prolymphocy": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2R",
+        "answerability": 0.9592776894569397,
+        "ground_truth": {
+          "IL-2R": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of IL-2R signaling in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the growth of CD8+ T cell prolymphocytic leukemia",
+        "answerability": 0.9537013173103333,
+        "ground_truth": {
+          "the growth": {
+            "bertscore": 0.6804922223091125,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the role of IL-2R signaling in the growth of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD8+ T cell prolymphocytic leukemia",
+        "answerability": 0.9417107105255127,
+        "ground_truth": {
+          "CD8+ T cell prolymphocytic leukemia": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

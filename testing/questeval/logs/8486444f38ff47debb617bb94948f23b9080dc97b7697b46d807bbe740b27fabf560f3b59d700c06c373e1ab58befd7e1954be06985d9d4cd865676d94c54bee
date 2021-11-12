@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "For this expression pattern the first 280 bp upstream of the major transcriptional start site seems sufficient.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "first",
+        "280"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the 280 bp upstream of the major transcriptional start site?",
+          "How many bp upstream of the major transcriptional start site is sufficient?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this expression pattern",
+        "the major transcriptional start site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the first 280 bp upstream of the major transcriptional start site?",
+          "What is the first 280 bp upstream of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the 280 bp upstream of the major transcriptional start site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22185033559799194,
+        "ground_truth": {
+          "first": {
+            "bertscore": 0.7270119190216064,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many bp upstream of the major transcriptional start site is sufficient?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "280",
+        "answerability": 0.9943791627883911,
+        "ground_truth": {
+          "280": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the first 280 bp upstream of the major transcriptional start site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30427223443984985,
+        "ground_truth": {
+          "this expression pattern": {
+            "bertscore": 0.6970785856246948,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the first 280 bp upstream of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the major transcriptional start site",
+        "answerability": 0.990668535232544,
+        "ground_truth": {
+          "the major transcriptional start site": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

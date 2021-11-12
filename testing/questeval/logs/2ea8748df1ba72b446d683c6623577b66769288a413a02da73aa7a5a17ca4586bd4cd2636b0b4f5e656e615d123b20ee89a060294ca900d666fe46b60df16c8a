@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "mRNA induction by PMA does not correlate with NF-kappa B binding activity displayed by different T and B cell lines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not correlate with NF-kappa B binding activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "mRNA induction",
+        "PMA",
+        "NF-kappa B binding activity",
+        "different T and B cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does PMA not correlate with?",
+          "What does not correlate with NF-kappa B binding activity?",
+          "What does PMA not correlate with?",
+          "What does PMA not correlate with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does not correlate with NF-kappa B binding activities?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA induction by PMA",
+        "answerability": 0.9668447375297546,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.7768533229827881,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does PMA not correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B binding activity",
+        "answerability": 0.8984673023223877,
+        "ground_truth": {
+          "mRNA induction": {
+            "bertscore": 0.736204981803894,
+            "f1": 0
+          },
+          "NF-kappa B binding activities": {
+            "bertscore": 0.9868655800819397,
+            "f1": 0.75
+          },
+          "different T and B cell lines": {
+            "bertscore": 0.7020490765571594,
+            "f1": 0.2
+          }
+        }
+      }
+    }
+  }
+}

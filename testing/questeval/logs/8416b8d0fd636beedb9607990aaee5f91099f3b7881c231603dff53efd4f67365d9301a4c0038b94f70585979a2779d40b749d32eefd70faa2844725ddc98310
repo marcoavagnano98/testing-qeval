@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "The biological properties of CCN proteins include stimulation of cell proliferation migration and adhesion as well as angiogenesis and tumorigenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CCN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of protein is involved in cell proliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The biological properties",
+        "CCN proteins",
+        "stimulation",
+        "cell proliferation migration",
+        "adhesion",
+        "angiogenesis",
+        "tumorigenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are the properties of CCN proteins?",
+          "What is the name of the protein that is responsible for cell proliferation migration?",
+          "What is one of the biological properties of CCN proteins?",
+          "What is one of the biological properties of CCN proteins?",
+          "What is one of the biological properties of CCN proteins?",
+          "What is one of the biological properties of CCN proteins?",
+          "What is one of the biological properties of CCN proteins?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of protein is involved in cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CCN proteins",
+        "answerability": 0.9563772678375244,
+        "ground_truth": {
+          "CCN": {
+            "bertscore": 0.8285340666770935,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What are the properties of CCN proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulation of cell proliferation migration and adhesion as well as angiogenesis and tumorigenesis",
+        "answerability": 0.9758390784263611,
+        "ground_truth": {
+          "The biological properties": {
+            "bertscore": 0.6180790662765503,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is responsible for cell proliferation migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CCN proteins",
+        "answerability": 0.9336150884628296,
+        "ground_truth": {
+          "CCN proteins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is one of the biological properties of CCN proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulation of cell proliferation",
+        "answerability": 0.9917999505996704,
+        "ground_truth": {
+          "stimulation": {
+            "bertscore": 0.803742527961731,
+            "f1": 0.4
+          },
+          "cell proliferation migration": {
+            "bertscore": 0.859298050403595,
+            "f1": 0.5714285714285715
+          },
+          "adhesion": {
+            "bertscore": 0.6951329708099365,
+            "f1": 0
+          },
+          "angiogenesis": {
+            "bertscore": 0.70234614610672,
+            "f1": 0
+          },
+          "tumorigenesis": {
+            "bertscore": 0.7215476036071777,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

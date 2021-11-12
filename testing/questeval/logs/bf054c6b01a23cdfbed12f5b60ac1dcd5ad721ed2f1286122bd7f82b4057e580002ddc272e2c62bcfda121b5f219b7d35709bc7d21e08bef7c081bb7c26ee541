@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "The GR DNA-binding domain of the receptor is required for its function as an activator.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the DNA-binding domain of the receptor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The GR DNA-binding domain",
+        "the receptor",
+        "its function",
+        "an activator"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for the function of the receptor?",
+          "What is the GR DNA-binding domain of?",
+          "What is the GR DNA-binding domain required for?",
+          "What is the GR DNA-binding domain of the receptor required for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What required an intact GR DNA-binding domain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activator",
+        "answerability": 0.8288062810897827,
+        "ground_truth": {
+          "Synergism": {
+            "bertscore": 0.710132360458374,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did synergism require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013021230697631836,
+        "ground_truth": {
+          "an intact GR DNA-binding domain": {
+            "bertscore": 0.6261423826217651,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was dispensable in synergism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 6.222724914550781e-05,
+        "ground_truth": {
+          "whereas amino- or carboxyl-terminal domains": {
+            "bertscore": 0.5748364329338074,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "DNA binding activity of repressor nuclear factor-kappaB p50/p50 depends on phosphorylation of Ser337 by the protein kinase A catalytic subunit.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the repressor nuclear factor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DNA binding activity",
+        "repressor nuclear factor-kappaB p50/p50",
+        "phosphorylation",
+        "A catalytic subunit"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the repressor nuclear factor-kappaB depend on?",
+          "What is the DNA binding activity of?",
+          "What is the DNA binding activity of the nuclear factor-kappaB dependent on?",
+          "What is the kinase that phosphorylates Ser337?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the repressor nuclear factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24886494874954224,
+        "ground_truth": {
+          "kappaB": {
+            "bertscore": 0.6656471490859985,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is dependent on Ser337 phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA binding activity",
+        "answerability": 0.9851890206336975,
+        "ground_truth": {
+          "DNA binding": {
+            "bertscore": 0.9105978608131409,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the DNA binding of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "repressor nuclear factor-kappaB p50/p50",
+        "answerability": 0.9088757634162903,
+        "ground_truth": {
+          "repressor nuclear factor-kappaB p50/p50": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main factor that binds the repressor nuclear factor-kapp": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA",
+        "answerability": 0.718847930431366,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.6579753160476685,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the kinase that phosphorylates Ser337?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein kinase A catalytic subunit",
+        "answerability": 0.7636613845825195,
+        "ground_truth": {
+          "A catalytic subunit": {
+            "bertscore": 0.8472757339477539,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

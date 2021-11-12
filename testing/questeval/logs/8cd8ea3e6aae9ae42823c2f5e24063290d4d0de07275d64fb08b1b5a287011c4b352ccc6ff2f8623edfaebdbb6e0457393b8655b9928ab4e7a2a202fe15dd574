@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "Cell activation resulted in a delayed induction of STAT DNA-binding activity which was sustained for several days was composed predominantly of Stat1 and Stat3 and was blocked by cycloheximide and actinomycin D.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "several days"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did the STAT DNA binding activity last?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cell activation",
+        "a delayed induction",
+        "STAT DNA-binding activity",
+        "several days",
+        "cycloheximide",
+        "actinomycin",
+        "D."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What resulted in a delayed induction of STAT DNA binding activity?",
+          "What was the effect of cell activation on STAT DNA binding?",
+          "What did cell activation result in?",
+          "How long did the STAT DNA binding activity last?",
+          "What blockade STAT DNA binding?",
+          "What blockade was used to block STAT DNA binding?",
+          "What is actinomycin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did the STAT DNA binding activity last?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "several days",
+        "answerability": 0.9820259809494019,
+        "ground_truth": {
+          "several days": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What resulted in a delayed induction of STAT DNA binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cell activation",
+        "answerability": 0.9941793084144592,
+        "ground_truth": {
+          "Cell activation": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of cell activation on STAT DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "delayed",
+        "answerability": 0.999714732170105,
+        "ground_truth": {
+          "a delayed induction": {
+            "bertscore": 0.7835584282875061,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did cell activation result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "delayed induction of STAT DNA-binding activity",
+        "answerability": 0.9789968729019165,
+        "ground_truth": {
+          "STAT DNA-binding activity": {
+            "bertscore": 0.892636239528656,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What blockade STAT DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cycloheximide and actinomycin D",
+        "answerability": 0.8640058636665344,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.8765345811843872,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What blockade was used to block STAT DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cycloheximide",
+        "answerability": 0.8873882293701172,
+        "ground_truth": {
+          "actinomycin": {
+            "bertscore": 0.7390619516372681,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is actinomycin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006375312805175781,
+        "ground_truth": {
+          "D.": {
+            "bertscore": 0.6653213500976562,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

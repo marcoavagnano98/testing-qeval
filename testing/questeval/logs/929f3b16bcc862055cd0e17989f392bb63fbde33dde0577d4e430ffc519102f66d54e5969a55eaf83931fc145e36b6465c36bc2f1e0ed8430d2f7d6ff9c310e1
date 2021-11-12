@@ -1,0 +1,66 @@
+{
+  "type": "ref",
+  "text": "Unlike wild-type optineurin the H486R mutant did not inhibit tumour necrosis factor alpha (TNFalpha)-induced NF-kappaB activation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "wild-type optineurin",
+        "the H486R mutant",
+        "tumour necrosis factor alpha",
+        "(TNFalpha)-induced NF-kappaB activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the H486R mutant not inhibit?",
+          "What did not inhibit NF-kappaB activation?",
+          "What does the H486R mutant not inhibit?",
+          "What did the H486R mutant not inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the effect of H486R on NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5476274490356445,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628810882568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not inhibit NF-kappaB activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H486R mutant",
+        "answerability": 0.7472625970840454,
+        "ground_truth": {
+          "H486R": {
+            "bertscore": 0.8882445693016052,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did H486R and H486R not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2943192720413208,
+        "ground_truth": {
+          "NF-kappaB activation": {
+            "bertscore": 0.6047104001045227,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

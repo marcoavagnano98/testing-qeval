@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The expression of genes vjbR malF norC pckA fumB BAB1_0017 (fatty acids metabolism) and BAB1_1821 (LPS glycosyl transferase) were induced intracellularly.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vjbR malF",
+        "fumB BAB1_0017",
+        "BAB1_1821",
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What genes were induced intracellularly?",
+          "What is the name of the gene that regulates fatty acids metabolism?",
+          "What is the name of the LPS glycosyl transferase?",
+          "What is the name of the glycosyl transferase?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression",
+        "genes",
+        "vjbR malF norC pckA fumB BAB1_0017",
+        "(fatty acids metabolism",
+        "BAB1_1821",
+        "(LPS glycosyl transferase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What genes were induced intracellularly?",
+          "What is BAB1_1821?",
+          "What genes were induced intracellularly?",
+          "What is the main function of BAB1_0017?",
+          "What is the name of the LPS glycosyl transferase?",
+          "What is BAB1_1821?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the enzyme that induces glycosyl transferase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.020453274250030518,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.702795684337616,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is BAB1_1620?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018281936645507812,
+        "ground_truth": {
+          "(fatty acids metabolism": {
+            "bertscore": 0.6220825910568237,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the LPS glycosyl transferase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BAB1_1821",
+        "answerability": 0.8504977226257324,
+        "ground_truth": {
+          "BAB1_1620": {
+            "bertscore": 0.9591940641403198,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that is involved in fatty acids metabolism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08479470014572144,
+        "ground_truth": {
+          "LPS glycosyl transferase": {
+            "bertscore": 0.6115651726722717,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

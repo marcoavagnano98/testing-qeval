@@ -1,0 +1,80 @@
+{
+  "type": "ref",
+  "text": "Recombinant ISGF3 gamma like the natural protein interacted with HeLa cell ISGF3 alpha to form the mature ISGF3 DNA-binding complex.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Recombinant ISGF3 gamma",
+        "the natural protein",
+        "HeLa cell",
+        "ISGF3 alpha",
+        "the mature ISGF3 DNA-binding complex"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of protein interacted with HeLa cell ISGF3 alpha?",
+          "What is ISGF3 gamma like?",
+          "What cell did ISGF3 alpha interact with?",
+          "What is the recombinant ISGF3 gamma interacted with to",
+          "What did recombinant ISGF3 gamma form?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells did ISGF3 alpha interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HeLa cells",
+        "answerability": 0.8988662362098694,
+        "ground_truth": {
+          "HeLa": {
+            "bertscore": 0.8576239943504333,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein interacted with ISGF3 gamma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05841320753097534,
+        "ground_truth": {
+          "ISGF3 alpha": {
+            "bertscore": 0.6462605595588684,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did ISGF3 alpha interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26121997833251953,
+        "ground_truth": {
+          "ISGF3 gamma": {
+            "bertscore": 0.637542724609375,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where did ISGF3 alpha interact with ISGF3 gamma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49515628814697266,
+        "ground_truth": {
+          "HeLa cells": {
+            "bertscore": 0.6180076599121094,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

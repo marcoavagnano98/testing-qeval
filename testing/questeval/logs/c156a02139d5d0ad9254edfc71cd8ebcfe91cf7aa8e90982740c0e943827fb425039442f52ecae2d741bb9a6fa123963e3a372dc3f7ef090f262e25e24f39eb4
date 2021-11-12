@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "When cells were stimulated with insulin-like growth factor-1 (IGF-1) an enhanced interaction between hBVR and PKCdelta was detected by FRET-fluorescence lifetime imaging microscopy.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PKCdelta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was stimulated with IGF-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "cells",
+        "insulin-like growth factor-1",
+        "IGF-1",
+        "an enhanced interaction",
+        "hBVR",
+        "PKCdelta",
+        "FRET-fluorescence lifetime"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was stimulated with IGF-1?",
+          "What is IGF-1?",
+          "What is the name of the growth factor that stimulates hBVR?",
+          "What was detected by FRET-fluorescence lifetime imaging microscopy?",
+          "What protein was stimulated with IGF-1?",
+          "What protein was stimulated with IGF-1?",
+          "What imaging technique detected the interaction between hBVR and PKCdelta?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was stimulated with IGF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26918143033981323,
+        "ground_truth": {
+          "PKCdelta": {
+            "bertscore": 0.662477433681488,
+            "f1": 0
+          },
+          "hBVR": {
+            "bertscore": 0.684467613697052,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did FRET-fluorescence microscopy show was stimulated with IGF-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26921820640563965,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147345542908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IGF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin-like growth factor-1",
+        "answerability": 0.903731644153595,
+        "ground_truth": {
+          "insulin-like growth factor-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the growth factor that stimulates hBVR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IGF-1",
+        "answerability": 0.7655386328697205,
+        "ground_truth": {
+          "IGF-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was detected by FRET-fluorescence lifetime imaging microscopy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an enhanced interaction between hBVR and PKCdelta",
+        "answerability": 0.8786722421646118,
+        "ground_truth": {
+          "an increased interaction": {
+            "bertscore": 0.7521291375160217,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What imaging technique detected the interaction between hBVR and PKCdelta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FRET-fluorescence lifetime imaging",
+        "answerability": 0.9690280556678772,
+        "ground_truth": {
+          "FRET-fluorescence lifetime": {
+            "bertscore": 0.9370699524879456,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

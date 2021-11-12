@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "When 18C7 was incubated with MR before aldosterone or progesterone the antibody inhibited 75-80% of the binding. This antibody recognized both the denatured and native MR forms as well as the hetero-oligomeric MR form and the transformed MR state.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "18C7",
+        "75-80%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What antibody was incubated with MR before aldosterone or progester",
+          "What percentage of binding did 18C7 inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "MR",
+        "aldosterone",
+        "the antibody",
+        "75-80%",
+        "the binding",
+        "This antibody",
+        "both the denatured and native MR forms",
+        "the hetero-oligomeric MR form",
+        "the transformed MR state"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was 18C7 incubated with before aldosterone or progester",
+          "What drug did 18C7 incubate with before?",
+          "What inhibited 75-80% of the binding of 18C7?",
+          "What percentage of binding did 18C7 inhibit?",
+          "What did 18C7 inhibit when incubated with MR before aldosterone",
+          "What antibody inhibited 75-80% of the binding of 18C7?",
+          "What did the antibody recognize?",
+          "What did the antibody recognize?",
+          "What was the most important state of the antibody?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What antibody recognized both the denatured and native MR forms?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "18C7",
+        "answerability": 0.7511018514633179,
+        "ground_truth": {
+          "This antibody": {
+            "bertscore": 0.6445509195327759,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the antibody recognize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both the denatured and native MR forms as well as the hetero-oligomeric",
+        "answerability": 0.9246644973754883,
+        "ground_truth": {
+          "both the denatured and native MR forms": {
+            "bertscore": 0.8753668069839478,
+            "f1": 0.7499999999999999
+          },
+          "the hetero-oligomeric MR form": {
+            "bertscore": 0.849082887172699,
+            "f1": 0.30769230769230765
+          }
+        }
+      }
+    },
+    "What was the other state of the MR form?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hetero-oligomeric",
+        "answerability": 0.8209814429283142,
+        "ground_truth": {
+          "the transformed MR state": {
+            "bertscore": 0.6762632727622986,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

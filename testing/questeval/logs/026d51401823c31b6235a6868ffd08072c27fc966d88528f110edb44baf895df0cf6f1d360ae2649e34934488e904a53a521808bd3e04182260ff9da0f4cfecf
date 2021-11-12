@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "suppressed the phosphorylation of S6K1 and 4E-BP1 at their rapamycin-sensitive phosphorylation sites and reciprocally overexpression of S6K1 or 4E-BP1 suppressed phosphorylation of PRAS40 (Ser(183)) and its binding to raptor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "S6K1",
+        "4E",
+        "S6K1",
+        "4E"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed the phosphorylation of PRAS40?",
+          "What suppressed the phosphorylation of S6K1 and what?",
+          "What suppressed the phosphorylation of PRAS40?",
+          "What suppressed the phosphorylation of S6K1 and what?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the phosphorylation",
+        "S6K1",
+        "their rapamycin-sensitive phosphorylation sites",
+        "S6K1",
+        "4E-BP1",
+        "suppressed phosphorylation",
+        "PRAS40 (Ser(183",
+        "its binding",
+        "raptor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did overexpression of S6K1 and 4E-BP1 suppress?",
+          "What suppressed the phosphorylation of PRAS40?",
+          "What did overexpression of S6K1 and 4E-BP1 do?",
+          "What suppressed the phosphorylation of PRAS40?",
+          "What suppressed the phosphorylation of S6K1 and what?",
+          "What did overexpression of S6K1 and 4E-BP1 do?",
+          "What did overexpression of S6K1 and 4E-BP1 do?",
+          "What did overexpression of S6K1 and 4E-BP1 do to rap",
+          "What did overexpression of S6K1 and 4E-BP1 suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did mutation of PRAS40 inhibit binding to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3362083435058594,
+        "ground_truth": {
+          "raptor": {
+            "bertscore": 0.6973466277122498,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the binding of raptors to the protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12002593278884888,
+        "ground_truth": {
+          "mutation": {
+            "bertscore": 0.7167500853538513,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was mutated to inhibit binding to raptors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010087430477142334,
+        "ground_truth": {
+          "PRAS40": {
+            "bertscore": 0.6720724105834961,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "type": "ref",
+  "text": "NF-kappa B is a DNA-binding regulatory factor able to control transcription of a number of genes including human immunodeficiency virus (HIV) genes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-kappa B",
+        "a DNA-binding regulatory factor",
+        "transcription",
+        "a number",
+        "genes",
+        "human immunodeficiency virus (HIV) genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the DNA-binding regulatory factor that controls transcription of a number",
+          "What is NF-kappa B?",
+          "What does NF-kappa B control?",
+          "How many genes can NF-kappa B control?",
+          "What does NF-kappa B control?",
+          "What is NF-kappa B able to control transcription of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor is important for T-cell activation B-cell maturation and human immuno": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29125821590423584,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.651921272277832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is important for T-cell activation B-cell maturation and human immunodefic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0672682523727417,
+        "ground_truth": {
+          "The transcription factor NF-kappaB": {
+            "bertscore": 0.5918002128601074,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the transcription factor NF-kappaB important for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "control transcription",
+        "answerability": 0.9004082083702087,
+        "ground_truth": {
+          "T-cell activation B-cell maturation and human immunodeficiency virus (HIV) genes": {
+            "bertscore": 0.6910585165023804,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

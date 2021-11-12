@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "We conclude from these studies that a different set of proteins recognize IL-2 and IL-4 genes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "these studies",
+        "a different set",
+        "proteins"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study conclude about the IL-2 and IL-4 genes?",
+          "What did the authors conclude about the recognition of IL-2 and IL-4 genes?",
+          "What type of proteins recognize IL-2 and IL-4 genes?",
+          "What sets of genes recognize IL-2 and IL-4?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the authors conclude about the IL-2 and IL-4 genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a different set of proteins recognize IL-2 and IL-4 genes",
+        "answerability": 0.882834792137146,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5365994572639465,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of proteins recognize IL-2 and IL-4 genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "different set",
+        "answerability": 0.9570379853248596,
+        "ground_truth": {
+          "a different set": {
+            "bertscore": 0.8998324871063232,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What sets of proteins recognize IL-2 and IL-4 genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "different set of proteins",
+        "answerability": 0.8886417746543884,
+        "ground_truth": {
+          "proteins": {
+            "bertscore": 0.8177449107170105,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

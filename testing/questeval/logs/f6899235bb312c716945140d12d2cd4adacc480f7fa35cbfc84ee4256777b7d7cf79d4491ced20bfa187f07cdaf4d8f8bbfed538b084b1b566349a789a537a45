@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "We examined the methylation status of hMLH1 and MGMT in 50 gastric carcinomas and 10 intestinal metaplastic mucosa samples by methylation-specific polymerase chain reaction (PCR).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "50",
+        "10"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many gastric carcinomas were examined?",
+          "How many intestinal metaplastic mucosa samples were examined?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the methylation status",
+        "hMLH1",
+        "MGMT",
+        "50 gastric carcinomas",
+        "10 intestinal metaplastic mucosa samples",
+        "methylation-specific polymerase chain reaction",
+        "PCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the method used to examine the methylation status of hMLH1 and",
+          "What did the PCR test determine about hMLH1 and MGMT?",
+          "What gene was methylated in 50 gastric carcinomas?",
+          "What is the methylation status of hMLH1?",
+          "How many samples of a patient had MGMT and hMLH1 methyl",
+          "What was used to examine the methylation status of hMLH1 and MG",
+          "What is PCR?",
+          "What is the name of the process used to examine the methylation status of hML"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the purpose of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6102854013442993,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the PCR and DNA sequencing analyses reveal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08500492572784424,
+        "ground_truth": {
+          "the methylation status": {
+            "bertscore": 0.6555972695350647,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the methylation status of MGMT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09387028217315674,
+        "ground_truth": {
+          "hMLH1": {
+            "bertscore": 0.6486145853996277,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is methylated by hMLH1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MGMT",
+        "answerability": 0.5379035472869873,
+        "ground_truth": {
+          "MGMT": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was used to analyze the methylation status of hMLH1 and MG": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "methylation-specific polymerase chain reaction",
+        "answerability": 0.736832320690155,
+        "ground_truth": {
+          "methylation-specific polymerase chain reaction": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "DNA sequencing analysis": {
+            "bertscore": 0.6966835260391235,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

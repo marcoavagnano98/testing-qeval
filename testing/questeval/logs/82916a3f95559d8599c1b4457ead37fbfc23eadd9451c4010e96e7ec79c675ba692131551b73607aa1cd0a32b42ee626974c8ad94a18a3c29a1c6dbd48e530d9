@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Moreover IL-4 costimulation with IL-2 or IL-12 does not alter their own preferential GATA-like DNA binding patterns when C epsilon-\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-12"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only other molecule that can alter the GATA-like DNA binding patterns?",
+          "What is the only other molecule that can alter the GATA-like DNA binding patterns?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-4 costimulation",
+        "their own preferential GATA-like DNA binding patterns"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not alter their own preferential GATA-like DNA binding patterns?",
+          "What does IL-4 costimulation with IL-2 or IL-12 not alter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the only other molecule that can be used to modify the GAS binding patterns?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3353719115257263,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only other molecule that does not alter their own preferential GAS binding patterns": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38613492250442505,
+        "ground_truth": {
+          "IL-12": {
+            "bertscore": 0.6712610721588135,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not alter their own preferential GAS-like DNA binding patterns?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42013877630233765,
+        "ground_truth": {
+          "IL-4 costimulation": {
+            "bertscore": 0.6505928039550781,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 costimulation not alter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "their own preferential GATA-like DNA binding patterns",
+        "answerability": 0.8893846869468689,
+        "ground_truth": {
+          "their own preferential GAS-like DNA binding patterns": {
+            "bertscore": 0.9870609641075134,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

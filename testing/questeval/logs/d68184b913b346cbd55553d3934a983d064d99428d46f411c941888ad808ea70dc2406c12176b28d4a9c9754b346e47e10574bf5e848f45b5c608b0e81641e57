@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "Binding of PRAS40 (14-3-3) a cytoplasmic anchor protein is inhibited by TSC1/2 (negative regulators of mTORC1) and stimulated by Rheb in a rapamycin-sensitive manner.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "14-3-3",
+        "mTORC1",
+        "Rheb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cytoplasmic anchor protein PRAS40?",
+          "What is the name of the regulator that inhibits binding of PRAS40?",
+          "What stimulates the binding of PRAS40?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a cytoplasmic anchor protein",
+        "TSC1/2",
+        "(negative regulators",
+        "mTORC1",
+        "Rheb",
+        "a rapamycin-sensitive manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PRAS40?",
+          "What is the negative regulator of mTORC1?",
+          "What is TSC1/2?",
+          "What is the name of the regulator that inhibits binding of PRAS40?",
+          "What stimulates the binding of PRAS40?",
+          "How is the binding of PRAS40 inhibited?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is PRAS40 bound to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasmic anchor protein",
+        "answerability": 0.9370823502540588,
+        "ground_truth": {
+          "14-3-3": {
+            "bertscore": 0.5635368824005127,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the negative regulator of PRAS40?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.646778404712677,
+        "ground_truth": {
+          "mTORC1": {
+            "bertscore": 0.6308735013008118,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulates the binding of PRAS40 to 14-3-3 proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rheb",
+        "answerability": 0.8456270098686218,
+        "ground_truth": {
+          "Rheb": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the binding of to 14-3-3 proteins inhibited by TSC1/2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5233352184295654,
+        "ground_truth": {
+          "PRAS40": {
+            "bertscore": 0.6720725297927856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TSC1/2 inhibit binding of PRAS40 to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a cytoplasmic anchor protein",
+        "answerability": 0.9734244346618652,
+        "ground_truth": {
+          "14-3-3 proteins": {
+            "bertscore": 0.7048879861831665,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the negative regulator of mTORC1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TSC1/2",
+        "answerability": 0.9675978422164917,
+        "ground_truth": {
+          "TSC1/2": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is TSC1/2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "negative regulators of mTORC1",
+        "answerability": 0.9797520637512207,
+        "ground_truth": {
+          "(negative regulators": {
+            "bertscore": 0.747275173664093,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "How is Rheb used to stimulate binding of PRAS40 to 14-3-3 proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rapamycin-sensitive",
+        "answerability": 0.9050232768058777,
+        "ground_truth": {
+          "a rapamycin-sensitive manner": {
+            "bertscore": 0.8828402161598206,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

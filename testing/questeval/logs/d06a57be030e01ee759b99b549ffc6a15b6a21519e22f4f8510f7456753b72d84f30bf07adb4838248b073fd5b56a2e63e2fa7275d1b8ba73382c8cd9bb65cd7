@@ -1,0 +1,150 @@
+{
+  "type": "hyp",
+  "text": "In contrast SCL mRNA levels did not decrease significantly between day 7 and day 14 cells suggesting that posttranscriptional mechanisms are largely responsible for the decrease in SCL protein observed.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SCL",
+        "between day 7 and day 14"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein did not decrease significantly between day 7 and day 14?",
+          "When did SCL mRNA levels not decrease significantly?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "SCL mRNA levels",
+        "day",
+        "day 14 cells",
+        "posttranscriptional mechanisms",
+        "the decrease",
+        "SCL protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the reason for the decrease in SCL protein?",
+          "What did not decrease significantly between day 7 and day 14 cells?",
+          "What day did SCL mRNA levels decrease significantly?",
+          "What day did SCL mRNA levels not decrease significantly between?",
+          "What is largely responsible for the decrease in SCL protein?",
+          "What is posttranscriptional mechanisms responsible for?",
+          "What did the decrease in SCL mRNA show?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein did not decrease significantly between day 7 and day 14?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SCL mRNA levels",
+        "answerability": 0.9853002429008484,
+        "ground_truth": {
+          "SCL": {
+            "bertscore": 0.770387589931488,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "When did SCL mRNA levels not decrease significantly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "between day 7 and day 14 cells",
+        "answerability": 0.9941052794456482,
+        "ground_truth": {
+          "between day 7 and day 14": {
+            "bertscore": 0.9313304424285889,
+            "f1": 0.923076923076923
+          }
+        }
+      }
+    },
+    "What is the reason for the decrease in SCL protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "posttranscriptional mechanisms",
+        "answerability": 0.9989601373672485,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6949931383132935,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not decrease significantly between day 7 and day 14 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SCL mRNA levels",
+        "answerability": 0.9960023760795593,
+        "ground_truth": {
+          "SCL mRNA levels": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What day did SCL mRNA levels decrease significantly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5406220555305481,
+        "ground_truth": {
+          "day": {
+            "bertscore": 0.7034224271774292,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What day did SCL mRNA levels not decrease significantly between?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "7",
+        "answerability": 0.9984608888626099,
+        "ground_truth": {
+          "day 14 cells": {
+            "bertscore": 0.6371740102767944,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is largely responsible for the decrease in SCL protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "posttranscriptional mechanisms",
+        "answerability": 0.9993037581443787,
+        "ground_truth": {
+          "posttranscriptional mechanisms": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is posttranscriptional mechanisms responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the decrease in SCL protein",
+        "answerability": 0.6928747296333313,
+        "ground_truth": {
+          "the decrease": {
+            "bertscore": 0.7419129610061646,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did the decrease in SCL mRNA show?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "posttranscriptional mechanisms",
+        "answerability": 0.9229614734649658,
+        "ground_truth": {
+          "SCL protein": {
+            "bertscore": 0.7295402884483337,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

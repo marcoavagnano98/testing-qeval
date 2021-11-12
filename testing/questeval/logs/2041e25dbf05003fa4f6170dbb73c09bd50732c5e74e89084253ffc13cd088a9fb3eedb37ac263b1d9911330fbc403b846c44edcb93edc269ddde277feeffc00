@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "IL-10 preincubation resulted in the inhibition of gene expression for several IFN-induced genes such as IP-10 ISG54 and intercellular adhesion molecule-1. LPS-induced decreases in IkappaB-alpha levels and attenuates NF-kappaB activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IP-10"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the ISG54 gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-10 preincubation",
+        "the inhibition",
+        "gene expression",
+        "several IFN-induced genes",
+        "IP-10 ISG54",
+        "intercellular adhesion",
+        "molecule-1",
+        "LPS-induced decreases",
+        "IkappaB-alpha levels",
+        "attenuates",
+        "NF-kappaB activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits gene expression for IP-10 ISG54?",
+          "What did IL-10 preincubation result in?",
+          "What did IL-10 preincubation inhibit?",
+          "What did IL-10 preincubation result in the inhibition of gene expression for?",
+          "What is an example of an IFN-induced gene?",
+          "What is the name of the molecule-1 that is inhibited by IL-10?",
+          "What intercellular adhesion is inhibited by IL-10?",
+          "What is the effect of IL-10 on IkappaB-alpha levels?",
+          "What does LPS-induced decrease in?",
+          "What does LPS do to NF-kappaB activation?",
+          "What does LPS-induced decreases in IkappaB-alpha levels do"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug did IL-10 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.057635724544525146,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027958035469055,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What DNA binding was reduced by IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32554203271865845,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.6519213318824768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-10 do for IkappaB-alpha protein levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreases",
+        "answerability": 0.883875846862793,
+        "ground_truth": {
+          "IL-10 pretreatment prevented LPS-induced decreases": {
+            "bertscore": 0.702674925327301,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What did IL-10 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3766178488731384,
+        "ground_truth": {
+          "IkappaB-alpha protein levels": {
+            "bertscore": 0.5950702428817749,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

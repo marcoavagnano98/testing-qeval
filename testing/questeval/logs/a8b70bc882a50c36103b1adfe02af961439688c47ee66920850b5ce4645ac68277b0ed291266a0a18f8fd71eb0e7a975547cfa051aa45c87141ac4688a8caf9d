@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Avidin was deglycosylated through endoglycosydase-H using acetyltransferase-H digestion.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Avidin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was deglycosylated through endoglydase-H digestion?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Avidin",
+        "endoglycosydase-H",
+        "acetyltransferase-H digestion"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was deglycosylated through endoglydase-H digestion?",
+          "What enzyme deglycosylates avidin?",
+          "What is the process that deglycosylates avidin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was deglycosylated through endoglycosydase-H digestion": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Avidin",
+        "answerability": 0.9604292511940002,
+        "ground_truth": {
+          "Avidin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What process was used to deglycosylate avidin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endoglycosydase-H",
+        "answerability": 0.9589493870735168,
+        "ground_truth": {
+          "endoglycosydase-H digestion": {
+            "bertscore": 0.9176008701324463,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What process neutralized avidin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21666842699050903,
+        "ground_truth": {
+          "acetylation": {
+            "bertscore": 0.624028205871582,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was acetylated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0027391910552978516,
+        "ground_truth": {
+          "its lysine amino acids": {
+            "bertscore": 0.6135470867156982,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to neutralize avidin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2827564477920532,
+        "ground_truth": {
+          "acetic acid N-hydroxysuccinimide ester": {
+            "bertscore": 0.5722070932388306,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

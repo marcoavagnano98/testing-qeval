@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "In response to secondary pathogen infections or antigenic challenge cytokine gene expression is rapidly induced enhanced and sustained over prolonged periods in HIV-1-infected myeloid cells compared with uninfected cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "response",
+        "secondary pathogen infections",
+        "antigenic challenge cytokine gene expression",
+        "prolonged periods",
+        "HIV-1-infected myeloid cells",
+        "uninfected cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cytokine gene induced to enhance and sustain over prolonged periods in HIV",
+          "What is the cause of the rapid increase in cytokine gene expression in HIV-1-",
+          "What is induced in response to secondary pathogen infections?",
+          "How long does it take for cytokine gene expression to sustain in HIV-1-in",
+          "What type of cells are able to sustain cytokine gene expression?",
+          "What type of cells are more likely to be infected with HIV-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cytokine gene induced to enhance and sustain over prolonged periods in HIV": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6389288306236267,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7024294137954712,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of the rapid increase in cytokine gene expression in HIV-1-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "secondary pathogen infections or antigenic challenge",
+        "answerability": 0.8919795751571655,
+        "ground_truth": {
+          "secondary pathogenic infections": {
+            "bertscore": 0.8880833387374878,
+            "f1": 0.4444444444444444
+          }
+        }
+      }
+    },
+    "What is induced in response to secondary pathogenic infections?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced",
+        "answerability": 0.9877833127975464,
+        "ground_truth": {
+          "antigenic challenge cytokine gene expression": {
+            "bertscore": 0.6466284990310669,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How long does it take for cytokine gene expression to sustain in HIV-1-in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5017517805099487,
+        "ground_truth": {
+          "prolonged periods": {
+            "bertscore": 0.7306966185569763,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are able to sustain cytokine gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5134067535400391,
+        "ground_truth": {
+          "HIV-1-infected myeloid cells": {
+            "bertscore": 0.6248710751533508,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are more likely to be infected with HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid cells",
+        "answerability": 0.7710403203964233,
+        "ground_truth": {
+          "uninfected cells": {
+            "bertscore": 0.7884203195571899,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"Characterization of 5 end of human thromboxane receptor gene.\"\" Organizational analysis and mapping of protein kinase C-responsive elements regulating expression in platelets.\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "\"Characterization of 5 end of human thromboxane receptor gene."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the study?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "\"Characterization",
+        "5 end",
+        "human thromboxane receptor gene",
+        "\" Organizational analysis",
+        "mapping",
+        "protein kinase C-responsive elements",
+        "expression",
+        "platelets"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the purpose of this study?",
+          "What part of the human thromboxane receptor gene is chartered?",
+          "What is the 5 end of?",
+          "What is the purpose of this study?",
+          "What is the purpose of this study?",
+          "What regulating expression in platelets?",
+          "What does the protein kinase C-responsive elements regulate in platelets?",
+          "What is the kinase C-responsive element that regulates expression in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Organizational analysis and mapping of protein kinase C-responsive elements regulating expression",
+        "answerability": 0.6024202108383179,
+        "ground_truth": {
+          "Organizational analysis": {
+            "bertscore": 0.7411459684371948,
+            "f1": 0.3076923076923077
+          },
+          "mapping": {
+            "bertscore": 0.6466919779777527,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What is the name of the protein that regulates expression in platelets?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.302509069442749,
+        "ground_truth": {
+          "protein kinase C": {
+            "bertscore": 0.5907847285270691,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the protein kinase C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2781585454940796,
+        "ground_truth": {
+          "responsive elements": {
+            "bertscore": 0.7052847743034363,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do platelets regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression",
+        "answerability": 0.5870179533958435,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.9999996423721313,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the key to regulating expression of kinase C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0892801284790039,
+        "ground_truth": {
+          "platelets": {
+            "bertscore": 0.6862093210220337,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

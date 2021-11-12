@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Preincubation of IKKbeta with NleH1 reduced IKKbeta-mediated RPS3 phosphorylation i.e. the CK2 kinase specificity but not IkappaBalpha phosphorylation i.e. the IKK kinase specificity (\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IKKbeta",
+        "NleH1",
+        "IKKbeta",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did NleH1 reduce?",
+          "What reduced IKKbeta-mediated RPS3 phosphorylation?",
+          "What did NleH1 reduce?",
+          "What did preincubation of IKKbeta with NleH1 reduce?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Preincubation",
+        "IKKbeta",
+        "NleH1 reduced IKKbeta-mediated RPS3 phosphorylation",
+        "i.e. the CK2 kinase specificity",
+        "not IkappaBalpha phosphorylation",
+        "i.e. the IKK kinase specificity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What reduced IKKbeta-mediated RPS3 phosphorylation?",
+          "What did NleH1 reduce?",
+          "What did preincubation of IKKbeta with NleH1 do?",
+          "What does the preincubation of IKKbeta with NleH1 reduce",
+          "What did preincubation of IKKbeta with NleH1 reduce?",
+          "What did preincubation of IKKbeta with NleH1 reduce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed no phosphorylation of GST-IkappaBalpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05256706476211548,
+        "ground_truth": {
+          "Control experiments": {
+            "bertscore": 0.6806974411010742,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the control experiments show?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003238379955291748,
+        "ground_truth": {
+          "no NleH1-mediated phosphorylation": {
+            "bertscore": 0.6026316285133362,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the control experiments show about GST-IkappaBalpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005133628845214844,
+        "ground_truth": {
+          "autophosphorylation": {
+            "bertscore": 0.6263496279716492,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not phosphorylated in the control experiment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaBalpha",
+        "answerability": 0.8721159100532532,
+        "ground_truth": {
+          "RPS3": {
+            "bertscore": 0.6723037958145142,
+            "f1": 0
+          },
+          "GST-IkappaBalpha": {
+            "bertscore": 0.8887723088264465,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

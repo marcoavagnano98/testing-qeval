@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "Modulating metastasis by a nuclear hormone receptor.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "metastasis",
+        "a nuclear hormone receptor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of a nuclear hormone receptor on cancer cells?",
+          "What is the mechanism that causes metastasis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main cause of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006605982780456543,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.7011743187904358,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism that modifies metastasis in prostate cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear hormone receptor",
+        "answerability": 0.9879151582717896,
+        "ground_truth": {
+          "a lymphangiogenic switch": {
+            "bertscore": 0.7031499743461609,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer that can be treated with a lymphangiogenic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002586185932159424,
+        "ground_truth": {
+          "prostate cancer": {
+            "bertscore": 0.6679660677909851,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

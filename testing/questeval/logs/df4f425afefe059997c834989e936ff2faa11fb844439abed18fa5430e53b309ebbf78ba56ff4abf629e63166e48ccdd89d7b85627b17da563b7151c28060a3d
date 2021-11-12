@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "Whereas anti-CD28 together with PMA increased the DNA binding and trans-activation activity of NF-kappa B PMA-induced activation of AP-1 was significantly suppressed. These results suggest that the two transcription factors are independently regulated and may perform different functions during T-cell activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What other factor induced AP-1 to be activated?",
+          "How many transcription factors are independently regulated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Whereas anti-CD28",
+        "PMA",
+        "the DNA binding and trans-activation activity",
+        "NF-kappa B",
+        "PMA-induced activation",
+        "AP-1",
+        "These results",
+        "the two transcription factors",
+        "different functions",
+        "T-cell activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two factors increased the DNA binding and trans-activation activity of NF-kapp",
+          "What other factor induced AP-1 to be activated?",
+          "What did anti-CD28 and PMA increase?",
+          "What transcription factor was suppressed by anti-CD28 and PMA?",
+          "What was suppressed by anti-CD28 and PMA?",
+          "What transcription factor was suppressed by anti-CD28 and PMA?",
+          "What suggests that the two transcription factors are independently regulated and may perform different functions during T-",
+          "What are independently regulated and may perform different functions during T-cell activation?",
+          "What do the results suggest about the two transcription factors?",
+          "What is the main function of AP-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many transcription factors are independently regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.9137987494468689,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two factors are independently regulated and may perform different functions during T-cell activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18335187435150146,
+        "ground_truth": {
+          "the two transcription factors": {
+            "bertscore": 0.6232861280441284,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do the two transcription factors perform?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5234234929084778,
+        "ground_truth": {
+          "different functions": {
+            "bertscore": 0.7083956003189087,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main function of the cytokine and cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012958049774169922,
+        "ground_truth": {
+          "T-cell activation": {
+            "bertscore": 0.6565662622451782,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

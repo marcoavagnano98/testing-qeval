@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "The induction of these genes is associated with interleukin-2 (IL-2)-induced T-cell proliferation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The induction",
+        "these genes",
+        "interleukin-2",
+        "IL-2)-induced T-cell proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with interleukin-2-induced T-cell proliferation?",
+          "What is associated with interleukin-2-induced T-cell proliferation?",
+          "What is IL-2?",
+          "What is the induction of these genes associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is associated with interleukin-2-induced T-cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of these genes",
+        "answerability": 0.9808292388916016,
+        "ground_truth": {
+          "The induction": {
+            "bertscore": 0.7381667494773865,
+            "f1": 0.4
+          },
+          "these genes": {
+            "bertscore": 0.8428540825843811,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-2",
+        "answerability": 0.8893136382102966,
+        "ground_truth": {
+          "interleukin-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the induction of these genes associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-2 (IL-2)-induced T-cell proliferation",
+        "answerability": 0.9680068492889404,
+        "ground_truth": {
+          "IL-2)-induced T-cell proliferation": {
+            "bertscore": 0.901753842830658,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

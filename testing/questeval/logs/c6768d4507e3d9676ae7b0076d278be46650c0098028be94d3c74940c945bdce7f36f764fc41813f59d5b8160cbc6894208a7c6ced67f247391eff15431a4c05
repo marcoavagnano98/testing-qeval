@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Human cyclins A and B are located on the long arm of chromosome 5.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "On which chromosome are human cyclins A and B located?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human cyclins",
+        "A",
+        "B",
+        "the long arm",
+        "chromosome"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is located on the long arm of chromosome 5?",
+          "Which two cyclins are located on the long arm of chromosome 5?",
+          "What is the name of the cyclin located on the long arm of chromosome",
+          "Where are human cyclins A and B located on chromosome 5?",
+          "Where are human cyclins A and B located?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the human cyclin that is located in the cell?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34480029344558716,
+        "ground_truth": {
+          "B1": {
+            "bertscore": 0.6938652992248535,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the two cyclins that are located in the cell?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A and B",
+        "answerability": 0.9045016169548035,
+        "ground_truth": {
+          "Human cyclins": {
+            "bertscore": 0.6608796119689941,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two cyclins in a human cell called?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A and B",
+        "answerability": 0.7610273361206055,
+        "ground_truth": {
+          "A": {
+            "bertscore": 0.8215066194534302,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where are human cyclins A and B1 located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22500520944595337,
+        "ground_truth": {
+          "the cell": {
+            "bertscore": 0.6916270852088928,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of transport are cyclins A and B1 involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005486488342285156,
+        "ground_truth": {
+          "cell cycle-dependent nuclear transport": {
+            "bertscore": 0.6538868546485901,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "We have demonstrated that lipoarabinomannan (LAM) from the mycobacterial cell wall which was virtually devoid of lipopolysaccharide (LPS) stimulated mononuclear phagocytes to release IL-6 in a dose-response manner. LPS is one of the potent inducers of IL-6 gene expression in human monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-6",
+        "LPS",
+        "IL-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene does LPS induce in human monocytes?",
+          "What is one of the potent inducers of IL-6 gene expression in human mon",
+          "What gene does LPS induce in human monocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "lipoarabinomannan",
+        "the mycobacterial cell wall",
+        "lipopolysaccharide",
+        "LPS",
+        "mononuclear phagocytes",
+        "a dose-response manner",
+        "LPS",
+        "the potent inducers",
+        "IL-6 gene expression",
+        "human monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study show about LAM?",
+          "What is the name of the substance that stimulates phagocytes to release IL-6",
+          "Where is LAM derived from?",
+          "What does LPS stand for?",
+          "What is one of the potent inducers of IL-6 gene expression in human mon",
+          "What did LAM stimulate to release IL-6?",
+          "How did LAM stimulate phagocytes to release IL-6?",
+          "What is one of the potent inducers of IL-6 gene expression in human mon",
+          "What is LPS?",
+          "What does LPS induce in human monocytes?",
+          "What is LPS one of the potent inducers of IL-6 gene expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the molecule that induces IL-6 gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipoarabinomannan",
+        "answerability": 0.9037131071090698,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.6753289103507996,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene did LAM and LPS induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.902132511138916,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that induces IL-6 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3104251027107239,
+        "ground_truth": {
+          "LAM": {
+            "bertscore": 0.6693657040596008,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of LAM and LPS on IL-6 gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulated mononuclear phagocytes to release IL-6",
+        "answerability": 0.7067567110061646,
+        "ground_truth": {
+          "potent inducers": {
+            "bertscore": 0.681533932685852,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did LAM and LPS induce in peripheral blood monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3547489643096924,
+        "ground_truth": {
+          "IL-6 gene expression": {
+            "bertscore": 0.6126598119735718,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the target of LAM and LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.7835807800292969,
+        "ground_truth": {
+          "peripheral blood monocytes": {
+            "bertscore": 0.6562644839286804,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

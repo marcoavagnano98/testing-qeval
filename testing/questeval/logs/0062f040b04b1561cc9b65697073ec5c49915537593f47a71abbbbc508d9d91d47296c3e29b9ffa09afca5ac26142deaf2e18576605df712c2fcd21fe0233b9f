@@ -1,0 +1,78 @@
+{
+  "type": "ref",
+  "text": "However our data do not support the hypothesis that increased IL-1beta production in CF subjects is due to an intrinsic increase in NF-kappaB activity through loss of CFTR function.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CFTR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What function does the NF-kappaB lose?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "our data",
+        "the hypothesis",
+        "IL-1beta production",
+        "CF subjects",
+        "an intrinsic increase",
+        "NF-kappaB activity",
+        "loss",
+        "CFTR function"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not support the hypothesis that increased IL-1beta production is due to an",
+          "What do the data not support?",
+          "What does the data not support the hypothesis that increased NF-kappaB activity is",
+          "What does the data not support the hypothesis that increased IL-1beta production is due",
+          "What does the data not support the hypothesis that increased IL-1beta production is due",
+          "What does the study not support the hypothesis that increased IL-1beta production is due",
+          "What is the reason for the increase in IL-1beta production?",
+          "What does the study not support the hypothesis that increased IL-1beta production is due"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What may be the reason for the increase in IL-1beta levels in patients with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1750476360321045,
+        "ground_truth": {
+          "the increased IL-1beta production": {
+            "bertscore": 0.6072243452072144,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Who has CF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010564923286437988,
+        "ground_truth": {
+          "patients": {
+            "bertscore": 0.6632164120674133,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of the increased IL-1beta production in patients with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "intrinsic increase in NF-kappaB activity",
+        "answerability": 0.7636551260948181,
+        "ground_truth": {
+          "CF": {
+            "bertscore": 0.5811893343925476,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

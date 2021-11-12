@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "An antibody directed against PDGF receptor beta enhances the antitumor and the anti-angiogenic activities of an anti-VEGF receptor 2 antibody.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PDGF",
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor does an antibody directed against enhance the antitumor and anti-angiogenic",
+          "What receptor does an antibody directed against PDGF receptor beta enhance?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An antibody",
+        "PDGF receptor beta",
+        "the antitumor",
+        "the anti-angiogenic activities",
+        "an anti-VEGF receptor",
+        "2 antibody"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhances the antitumor and anti-angiogenic activities of an anti-",
+          "What antibody enhances antitumor and antiangiogenic activities?",
+          "What does an antibody directed against PDGF receptor beta enhance?",
+          "What does an antibody directed against PDGF receptor beta enhance?",
+          "What does an antibody directed against PDGF receptor beta enhance the antitumor and anti",
+          "What antibody does PDGF receptor beta enhance?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What receptor does an antibody directed against enhance the antitumor and anti-angiogenic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PDGF receptor beta",
+        "answerability": 0.7000198364257812,
+        "ground_truth": {
+          "PDGF": {
+            "bertscore": 0.7765353322029114,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What receptor does an antibody directed against PDGF receptor beta enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43724769353866577,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.6837682723999023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enhances the antitumor and anti-angiogenic activities of an anti-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5373694896697998,
+        "ground_truth": {
+          "An antibody": {
+            "bertscore": 0.6523025631904602,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antibody enhances antitumor and antiangiogenic activities?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3695027828216553,
+        "ground_truth": {
+          "PDGF receptor beta": {
+            "bertscore": 0.5917819142341614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does an antibody directed against PDGF receptor beta enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antitumor and the anti-angiogenic activities",
+        "answerability": 0.9587932825088501,
+        "ground_truth": {
+          "the antitumor": {
+            "bertscore": 0.7629885077476501,
+            "f1": 0.4
+          },
+          "the anti-angiogenic activities": {
+            "bertscore": 0.9137594699859619,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does an antibody directed against PDGF receptor beta enhance the antitumor and anti": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38970696926116943,
+        "ground_truth": {
+          "an anti-VEGF receptor": {
+            "bertscore": 0.6157511472702026,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antibody does PDGF receptor beta enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-VEGF receptor 2 antibody",
+        "answerability": 0.6930908560752869,
+        "ground_truth": {
+          "2 antibody": {
+            "bertscore": 0.7910997867584229,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Specifically Foxp3 physically interacts with RORgammat and this interaction correlates with RORgammat function\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RORgammat",
+        "RORgammat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 interact with?",
+          "What does Foxp3 interact with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RORgammat",
+        "this interaction",
+        "RORgammat function"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 interact with?",
+          "What correlates with RORgammat function?",
+          "What does Foxp3 interact with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Foxp3 physically interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RORgammat",
+        "answerability": 0.9949653148651123,
+        "ground_truth": {
+          "RORgammat": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibits RORgammat function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003942608833312988,
+        "ground_truth": {
+          "this interaction": {
+            "bertscore": 0.7102835774421692,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Foxp3 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002481222152709961,
+        "ground_truth": {
+          "RORgammat function": {
+            "bertscore": 0.6074567437171936,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "type": "ref",
+  "text": "\"Two groups of U937 promonocytic cells were obtained by limiting dilution cloning which differed strikingly in their ability to support human immunodeficiency virus 1 (HIV-1) replication. \"\"Plus\"\" clones replicated the virus efficiently whereas \"\"minus\"\" clones did not.\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Two",
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many groups of U937 promonocytic cells were obtained by limiting d",
+          "What did the clones that were limiting dilution cloning not"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Two groups",
+        "U937 promonocytic cells",
+        "dilution",
+        "their ability",
+        "human immunodeficiency virus 1 (HIV-1) replication",
+        "\"\" clones",
+        "the virus",
+        "\"\"minus\"\" clones"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many groups of U937 promonocytic cells were obtained by limiting d",
+          "What type of cells were obtained by limiting dilution cloning?",
+          "What was the main factor in cloning the two groups of U937 promonoc",
+          "What was the difference in the two groups of U937 promonocytic cells?",
+          "What did the clones that were obtained by limiting dilution do?",
+          "What did the clones that were obtained by limiting dilution clon",
+          "What did plus and minus clones replicate efficiently?",
+          "What type of clones did not replicate the virus efficiently?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many groups of U937 promonocytic cells were obtained by limiting d": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Two groups",
+        "answerability": 0.9831670522689819,
+        "ground_truth": {
+          "Two": {
+            "bertscore": 0.8327558636665344,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the clones that were obtained by limiting dilution clon": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "\"Plus\"\" clones replicated the virus efficiently whereas \"\"minus\"\"",
+        "answerability": 0.8150826692581177,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.6390145421028137,
+            "f1": 0
+          },
+          "human immunodeficiency virus 1 (HIV-1) replication": {
+            "bertscore": 0.641505777835846,
+            "f1": 0.15384615384615383
+          },
+          "\"\" clones": {
+            "bertscore": 0.733504056930542,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "How many groups of U937 promonocytic cells were obtained?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Two",
+        "answerability": 0.9992692470550537,
+        "ground_truth": {
+          "Two groups": {
+            "bertscore": 0.8327558636665344,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of cells were obtained by limiting dilution cloning?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Two groups of U937 promonocytic cells",
+        "answerability": 0.9249852299690247,
+        "ground_truth": {
+          "U937 promonocytic cells": {
+            "bertscore": 0.9119316935539246,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the limiting factor of cloning?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dilution",
+        "answerability": 0.9568032026290894,
+        "ground_truth": {
+          "dilution": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the difference in the two groups of U937 promonocytic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "their ability to support human immunodeficiency virus 1 (HIV-1) replication",
+        "answerability": 0.9673691987991333,
+        "ground_truth": {
+          "their ability": {
+            "bertscore": 0.6814208030700684,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What did the plus and minus clones replicate efficiently?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17008328437805176,
+        "ground_truth": {
+          "the virus": {
+            "bertscore": 0.6766196489334106,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of clones did not replicate the virus efficiently?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.584611713886261,
+        "ground_truth": {
+          "\"\"minus\"\" clones": {
+            "bertscore": 0.6681296229362488,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

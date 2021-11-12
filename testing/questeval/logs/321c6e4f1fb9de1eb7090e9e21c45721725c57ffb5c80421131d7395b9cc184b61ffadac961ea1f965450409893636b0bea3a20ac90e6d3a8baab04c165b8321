@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "DNA-protein crosslinking studies have revealed that the more rapidly migrating B2 complex contains both p100 and p55 while the more slowly migrating B1 complex is composed of p50 p55 p75 and p85.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p100",
+        "B1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the most rapidly migrating B2 complex?",
+          "What is the slower migrating complex of p75 and p85?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DNA-protein crosslinking studies",
+        "B2 complex",
+        "both p100",
+        "p55",
+        "the more slowly migrating B1 complex",
+        "p50 p55 p75",
+        "p85"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has revealed that the B2 complex contains both p100 and p55?",
+          "What is the most rapidly migrating complex?",
+          "What does the B2 complex contain?",
+          "What is the most rapidly migrating B2 complex composed of?",
+          "What is the more rapidly migrating B2 complex composed of?",
+          "What is the B1 complex composed of?",
+          "What is the slowest migrating B1 complex?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the slower migrating B1 complex composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75 p55 p75 and p85",
+        "answerability": 0.659421443939209,
+        "ground_truth": {
+          "B1": {
+            "bertscore": 0.6503888368606567,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has revealed that the more rapidly migrating B2 complex contains both p50 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA-protein crosslinking studies",
+        "answerability": 0.8634054064750671,
+        "ground_truth": {
+          "DNA-protein crosslinking studies": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the most rapidly migrating complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B2 complex",
+        "answerability": 0.720835268497467,
+        "ground_truth": {
+          "B2 complex": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the B2 complex contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p100 and p55",
+        "answerability": 0.9383040070533752,
+        "ground_truth": {
+          "both p50": {
+            "bertscore": 0.8056455254554749,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most rapidly migrating B2 complex composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p100 and p55",
+        "answerability": 0.9268556237220764,
+        "ground_truth": {
+          "p55": {
+            "bertscore": 0.803266704082489,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the B2 complex composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p100 and p55",
+        "answerability": 0.8948861360549927,
+        "ground_truth": {
+          "the more slowly migrating B1 complex": {
+            "bertscore": 0.6270365715026855,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the B1 complex composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p50 p55 p75 and p85",
+        "answerability": 0.8938800096511841,
+        "ground_truth": {
+          "p50 p55 p75": {
+            "bertscore": 0.9266112446784973,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the slowest migrating B1 complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75 p55",
+        "answerability": 0.6852225065231323,
+        "ground_truth": {
+          "p85": {
+            "bertscore": 0.8106240630149841,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

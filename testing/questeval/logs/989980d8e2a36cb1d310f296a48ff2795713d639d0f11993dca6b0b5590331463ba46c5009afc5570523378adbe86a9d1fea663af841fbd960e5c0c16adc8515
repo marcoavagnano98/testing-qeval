@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Authentic NF-kappaB and Sp1 targets did not compete for the META(D+) binding factor(s).\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Authentic NF-kappaB",
+        "Sp1",
+        "targets",
+        "the META(D+"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the only target that competed for the META(D+) binding factor?",
+          "What was the only NF-kappaB target that competed for the META",
+          "What did not compete for the META(D+) binding factor?",
+          "What binding factor did NF-kappaB and Sp1 not compete for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the only target that competed for the META(D+) binding factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3573976159095764,
+        "ground_truth": {
+          "Authentic NFAT": {
+            "bertscore": 0.6699057817459106,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not compete for the META(D+) binding factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Authentic NF-kappaB and Sp1 targets",
+        "answerability": 0.9955970644950867,
+        "ground_truth": {
+          "NF-kappaB targets": {
+            "bertscore": 0.8588253259658813,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What binding factor did Authentic NFAT and NF-kappaB not compete": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "META(D+) binding factor(s).",
+        "answerability": 0.8787473440170288,
+        "ground_truth": {
+          "the META(D+": {
+            "bertscore": 0.7312796711921692,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

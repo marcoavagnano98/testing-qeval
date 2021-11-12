@@ -1,0 +1,88 @@
+{
+  "type": "ref",
+  "text": "BNIP3alpha interacts with viral antiapoptosis protein E1B-19K and cellular antiapoptosis proteins BCL-2 and BCL-xL. Overexpression of BNIP3alpha in transfected cells results in apoptosis and suppresses the antiapoptosis activity of E1B-19K and BCL-xL.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BCL-2",
+        "BCL-xL. Overexpression",
+        "BCL-xL."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cellular antiapoptosis protein?",
+          "What protein is apoptosis caused by?",
+          "What is the name of the cellular antiapoptosis protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BNIP3alpha",
+        "viral antiapoptosis protein",
+        "K and cellular antiapoptosis proteins",
+        "BCL-2",
+        "BCL-xL. Overexpression",
+        "BNIP3alpha",
+        "apoptosis",
+        "the antiapoptosis activity",
+        "E1B-19K and BCL-xL."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein interacts with E1B-19K and BCL-2?",
+          "What does BNIP3alpha interact with?",
+          "What does BNIP3alpha interact with?",
+          "What is the cellular antiapoptosis protein?",
+          "What protein is apoptosis caused by?",
+          "What protein interacts with E1B-19K and BCL-2?",
+          "What does overexpression of BNIP3alpha result in?",
+          "What does BNIP3alpha suppress?",
+          "What two proteins does BNIP3alpha interact with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the antiapoptosis protein that interacts with E1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BNIP3alpha",
+        "answerability": 0.8831114768981934,
+        "ground_truth": {
+          "BCL-2": {
+            "bertscore": 0.7381106615066528,
+            "f1": 0
+          },
+          "BCL-xL.": {
+            "bertscore": 0.6979672908782959,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein interacts with BCL-2 and BCL-xL?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BNIP3alpha",
+        "answerability": 0.9216063618659973,
+        "ground_truth": {
+          "The antiapoptosis protein": {
+            "bertscore": 0.6559463739395142,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does E1B-19K interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0365753173828125,
+        "ground_truth": {
+          "the antiapoptosis proteins": {
+            "bertscore": 0.6006516814231873,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

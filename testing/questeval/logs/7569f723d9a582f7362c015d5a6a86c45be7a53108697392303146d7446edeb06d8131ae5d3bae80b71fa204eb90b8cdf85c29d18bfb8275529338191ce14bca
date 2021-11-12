@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "Phosphorylation of Ser78 is thus likely to link insulin and mTOR signaling to the control of eEF2 phosphorylation and chain elongation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mTOR",
+        "eEF2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling is linked to insulin?",
+          "What is phosphorylation of Ser78 linked to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Phosphorylation",
+        "Ser78",
+        "insulin",
+        "mTOR",
+        "the control",
+        "eEF2 phosphorylation and chain elongation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the link between insulin and mTOR?",
+          "What protein is likely to link insulin and mTOR signaling?",
+          "What hormone is likely to link Ser78 to?",
+          "What signaling is linked to insulin?",
+          "What is phosphorylation of Ser78 likely to link insulin and mTOR signaling",
+          "What is phosphorylation of Ser78 likely to link insulin and mTOR signaling"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling is linked to insulin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mTOR",
+        "answerability": 0.907747745513916,
+        "ground_truth": {
+          "mTOR": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is phosphorylation of Ser78 linked to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin and mTOR signaling",
+        "answerability": 0.9875719547271729,
+        "ground_truth": {
+          "eEF2": {
+            "bertscore": 0.7032050490379333,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the link between insulin and mTOR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Phosphorylation of Ser78",
+        "answerability": 0.9431718587875366,
+        "ground_truth": {
+          "Phosphorylation": {
+            "bertscore": 0.8570338487625122,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein is likely to link insulin and mTOR signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ser78",
+        "answerability": 0.8774413466453552,
+        "ground_truth": {
+          "Ser78": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What hormone is likely to link Ser78 to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin",
+        "answerability": 0.8321400880813599,
+        "ground_truth": {
+          "insulin": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is phosphorylation of Ser78 likely to link insulin and mTOR signaling": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5859439373016357,
+        "ground_truth": {
+          "the control": {
+            "bertscore": 0.6757352948188782,
+            "f1": 0
+          },
+          "eEF2 phosphorylation and chain elongation": {
+            "bertscore": 0.5910559892654419,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

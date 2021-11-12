@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "These conflicting observations may be due to different effects of anti-inflammatory agents on adhesion molecule and Hsp expression in EC respectively.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the molecule that is responsible for the differences in the cytokine response?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These conflicting observations",
+        "different effects",
+        "anti-inflammatory agents",
+        "adhesion molecule",
+        "Hsp expression",
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may be due to different effects of anti-inflammatory agents on adhesion molecule and",
+          "What may be the reason for the differences in the EC?",
+          "What may be the reason for the differences in the effects of different drugs on the adhesion",
+          "What is the main component of the EC protein that is affected by anti-inflammatory agents?",
+          "What is the main factor that may be a cause of the differences in the EC?",
+          "What is the molecule that is responsible for the differences in the cytokine response?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the molecule that is responsible for the differences in the cytokine response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5399416089057922,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.7138954997062683,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may be due to different effects of anti-inflammatory agents on adhesion molecule and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These conflicting observations",
+        "answerability": 0.9788032174110413,
+        "ground_truth": {
+          "These conflicting observations": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may be the reason for the differences in the EC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effects of anti-inflammatory agents",
+        "answerability": 0.9635962247848511,
+        "ground_truth": {
+          "different effects": {
+            "bertscore": 0.7355711460113525,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What may be the reason for the differences in the effects of different drugs on the adhesion": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7381084561347961,
+        "ground_truth": {
+          "anti-inflammatory agents": {
+            "bertscore": 0.6251124739646912,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main component of the EC protein that is affected by anti-inflammatory agents?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adhesion molecule",
+        "answerability": 0.9437349438667297,
+        "ground_truth": {
+          "adhesion molecule": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main factor that may be a cause of the differences in the EC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-inflammatory agents",
+        "answerability": 0.9355658292770386,
+        "ground_truth": {
+          "Hsp expression": {
+            "bertscore": 0.643465518951416,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

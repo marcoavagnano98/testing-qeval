@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Finally IL-4 induced tyrosine phosphorylation of JAK-1 and JAK3 while IL-12 induced phosphorylation of JAK2 and TYK2 in both preactivated primary NK and NK3.3 cells. STAT6 activation by IL-4 is completely abolished by IL-4 in addition to inhibiting the tyrosine phosphorylation of STAT1.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Finally IL-4 induced tyrosine phosphorylation",
+        "JAK-1",
+        "JAK3",
+        "while IL-12 induced phosphorylation",
+        "JAK2",
+        "TYK2",
+        "both preactivated primary NK and NK3.3 cells",
+        "STAT6 activation",
+        "addition",
+        "the tyrosine phosphorylation",
+        "STAT1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did IL-4 do to JAK-1 and JAK3?",
+          "What phosphorylation of STAT6 is inhibited by IL-4?",
+          "What phosphorylation of STAT6 is inhibited by IL-12?",
+          "What did IL-4 do to TYK2 and JAK1?",
+          "What phosphorylation of STAT6 is inhibited by IL-12?",
+          "What protein was phosphorylated by IL-12?",
+          "Where did IL-12 induce phosphorylation of TYK2 and JAK-1",
+          "What is completely abolished by IL-4?",
+          "What inhibits STAT6 activation?",
+          "What did IL-4 inhibit?",
+          "What protein was phosphorylated by IL-12?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what type of cells is STAT6 activation completely abolished?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49875694513320923,
+        "ground_truth": {
+          "JAK-1-deficient HeLa cells": {
+            "bertscore": 0.6053153872489929,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is completely abolished in STAT6 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation by IL-4",
+        "answerability": 0.7823431491851807,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.7505379319190979,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

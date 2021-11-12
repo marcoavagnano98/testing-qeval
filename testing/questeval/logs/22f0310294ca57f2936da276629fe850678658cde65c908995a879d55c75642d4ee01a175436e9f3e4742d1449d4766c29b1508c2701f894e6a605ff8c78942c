@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "We investigated the molecular mechanisms by which estrogen receptor (ER) inhibits regulation of erythroid-specific genes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the molecular mechanisms",
+        "estrogen receptor",
+        "(ER",
+        "regulation",
+        "erythroid-specific genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the researchers study?",
+          "What did the study examine that inhibits regulation of erythroid-specific genes?",
+          "What inhibits regulation of erythroid-specific genes?",
+          "What receptor inhibits regulation of erythroid-specific genes?",
+          "What does estrogen receptor inhibit?",
+          "What does estrogen receptor inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mechanism by which the ER inhibits regulation of these genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "molecular mechanisms",
+        "answerability": 0.9950859546661377,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.652611255645752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which the ER inhibits regulation of GATA-1 and CACC": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6693650484085083,
+        "ground_truth": {
+          "interference": {
+            "bertscore": 0.7302556037902832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the ER inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulation of erythroid-specific genes",
+        "answerability": 0.9951082468032837,
+        "ground_truth": {
+          "DNA-binding activities": {
+            "bertscore": 0.7767534852027893,
+            "f1": 0
+          },
+          "regulation": {
+            "bertscore": 0.7348495125770569,
+            "f1": 0.4
+          },
+          "these genes": {
+            "bertscore": 0.7501869797706604,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is involved in DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014307737350463867,
+        "ground_truth": {
+          "GATA-1": {
+            "bertscore": 0.6772187352180481,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other protein that is involved in the regulation of GATA-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0016162395477294922,
+        "ground_truth": {
+          "CACCC-binding proteins": {
+            "bertscore": 0.6327337622642517,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the ER believe interferes with the regulation of GATA-1 and CACCC": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "estrogen receptor",
+        "answerability": 0.857629656791687,
+        "ground_truth": {
+          "the mechanism": {
+            "bertscore": 0.7264477610588074,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which the GATA-1 and CACCC-binding proteins are": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06370079517364502,
+        "ground_truth": {
+          "the ER": {
+            "bertscore": 0.6819428205490112,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

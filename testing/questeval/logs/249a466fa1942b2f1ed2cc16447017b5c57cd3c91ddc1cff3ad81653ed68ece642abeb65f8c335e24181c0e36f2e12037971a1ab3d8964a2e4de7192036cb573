@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "protein-1 cognate DNA sequences significantly attenuated phase-2 response suggesting a role for this DNA-binding protein in phosphorylation of CREB.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "protein-1",
+        "CREB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that phosphorylates CREB?",
+          "What protein phosphorylates phase-2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DNA sequences",
+        "phase-2 response",
+        "a role",
+        "this DNA-binding protein",
+        "phosphorylation",
+        "CREB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What attenuated phase-2 response?",
+          "What did protein-1 cognate DNA sequences significantly attenuate?",
+          "What did the evidence suggest about CREB's phosphorylation?",
+          "What is the role of protein-1 in phosphorylation of CREB?",
+          "What is CREB involved in?",
+          "What protein phosphorylates phase-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cognate DNA sequences significantly attenuated phase-2 response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein-1",
+        "answerability": 0.9933828115463257,
+        "ground_truth": {
+          "protein-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What attenuated phase-2 response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein-1 cognate DNA sequences",
+        "answerability": 0.9331303834915161,
+        "ground_truth": {
+          "DNA sequences": {
+            "bertscore": 0.8166038393974304,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did cognate DNA sequences significantly attenuate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phase-2 response",
+        "answerability": 0.9898765683174133,
+        "ground_truth": {
+          "phase-2 response": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the evidence suggest about the role of de novo macromolecule synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0031530261039733887,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6715851426124573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the amplification of phase-2 suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.309360146522522,
+        "ground_truth": {
+          "de novo macromolecule synthesis": {
+            "bertscore": 0.5984702706336975,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

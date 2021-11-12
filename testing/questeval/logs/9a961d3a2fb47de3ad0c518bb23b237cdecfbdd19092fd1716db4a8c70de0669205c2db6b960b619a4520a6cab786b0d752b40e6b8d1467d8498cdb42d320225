@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Dexamethasone prevented IL-8 and tumor necrosis factor-alpha secretion in ventilated macrophages.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Dexamethasone",
+        "tumor necrosis factor-alpha secretion",
+        "ventilated macrophages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug prevented IL-8 and tumor necrosis factor-alpha secretion in",
+          "What did dexamethasone prevent in ventilated macrophages?",
+          "Where did Dexamethasone prevent IL-8 and tumor necrosis factor-"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug prevented IL-8 and tumor necrosis factor-alpha secretion in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Dexamethasone",
+        "answerability": 0.9900742173194885,
+        "ground_truth": {
+          "Dexamethasone": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did dexamethasone prevent in ventilated macrophages?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-8 and tumor necrosis factor-alpha",
+        "answerability": 0.9727739691734314,
+        "ground_truth": {
+          "tumor necrosis factor-alpha secretion": {
+            "bertscore": 0.8706627488136292,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    },
+    "Where did Dexamethasone prevent IL-8 and tumor necrosis factor-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ventilated macrophages",
+        "answerability": 0.7393935918807983,
+        "ground_truth": {
+          "ventilated macrophages": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

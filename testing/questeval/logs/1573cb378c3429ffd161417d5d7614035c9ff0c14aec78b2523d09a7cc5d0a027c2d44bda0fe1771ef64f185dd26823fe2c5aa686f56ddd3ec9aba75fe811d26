@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "IL-2 gene transcription in T cells requires both TCR and costimulatory signals. IL-2 promoter activation in Jurkat T cells stimulated with superantigen presented by Raji B cells requires CD28 activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "Jurkat",
+        "Raji B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene transcription requires both TCR and costimulatory signals?",
+          "What type of T cells are stimulated with Raji B cells?",
+          "What type of cells stimulated with IL-2 require both TCR and costimulatory"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-2 gene transcription",
+        "T cells",
+        "both TCR and costimulatory signals",
+        "IL-2 promoter activation",
+        "Jurkat T cells",
+        "superantigen",
+        "Raji B cells",
+        "CD28 activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What requires both TCR and costimulatory signals?",
+          "What type of cells require both TCR and costimulatory signals?",
+          "What does IL-2 gene transcription require?",
+          "What requires both TCR and costimulatory signals?",
+          "What type of cells require both TCR and costimulatory signals?",
+          "What stimulates IL-2 gene transcription?",
+          "What cells stimulated with IL-2 require both TCR and costimulatory signals?",
+          "What does IL-2 gene transcription require?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for CD28 up-regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009429216384887695,
+        "ground_truth": {
+          "RE": {
+            "bertscore": 0.6601905822753906,
+            "f1": 0
+          },
+          "RE/AP": {
+            "bertscore": 0.6811256408691406,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What promoter is required for IL-2 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28",
+        "answerability": 0.873389720916748,
+        "ground_truth": {
+          "AP": {
+            "bertscore": 0.6996869444847107,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not sufficient for IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011216342449188232,
+        "ground_truth": {
+          "Nuclear factor": {
+            "bertscore": 0.6976814866065979,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only factor that is required for IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012538492679595947,
+        "ground_truth": {
+          "activated T cells": {
+            "bertscore": 0.6327276229858398,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for CD28 up-regulation of RE/AP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00291520357131958,
+        "ground_truth": {
+          "IL-2 promoter activation": {
+            "bertscore": 0.63041090965271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCR and costimulatory signals",
+        "answerability": 0.8333353400230408,
+        "ground_truth": {
+          "CD28 up-regulation": {
+            "bertscore": 0.7222457528114319,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

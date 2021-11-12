@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Control of NFATx1 nuclear translocation by a soluble form of calcineurin.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Control",
+        "NFATx1 nuclear translocation",
+        "a soluble form",
+        "calcineurin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of calcineurin in nuclear translocation?",
+          "What is controlled by a soluble form of calcineurin?",
+          "What is the control of NFATx1 nuclear translocation by?",
+          "What is the soluble form of NFATx1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the role of calcineurin in NFATx1 nuclear translocation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control",
+        "answerability": 0.596704363822937,
+        "ground_truth": {
+          "Control": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is controlled by a calcineurin-regulated inhibitory domain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13917577266693115,
+        "ground_truth": {
+          "NFATx1 nuclear translocation": {
+            "bertscore": 0.6356282234191895,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What controls NFATx1 nuclear translocation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "calcineurin",
+        "answerability": 0.9442608952522278,
+        "ground_truth": {
+          "a calcineurin-regulated inhibitory domain": {
+            "bertscore": 0.7389580607414246,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

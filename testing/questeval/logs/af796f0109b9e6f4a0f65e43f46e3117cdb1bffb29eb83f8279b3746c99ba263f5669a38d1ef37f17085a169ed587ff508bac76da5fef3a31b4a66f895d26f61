@@ -1,0 +1,102 @@
+{
+  "type": "ref",
+  "text": "Using small interfering RNA technology we have shown that down-regulation of Claspin expression inhibits Chk1 activation in response to replication stress.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RNA",
+        "Chk1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What technology has shown that down-regulation of Claspin expression inhibits Chk1 activ",
+          "What protein is inhibited by down-regulation of Claspin expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "small interfering RNA technology",
+        "we",
+        "down-regulation",
+        "Claspin expression",
+        "Chk1 activation",
+        "response",
+        "replication stress"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has shown that down-regulation of Claspin expression inhibits Chk1 activation",
+          "What did we find that inhibits Chk1 activation?",
+          "What inhibits Chk1 activation?",
+          "What inhibits Chk1 activation?",
+          "What does down-regulation of Claspin expression inhibit?",
+          "What does down-regulation of Claspin expression inhibit?",
+          "What does the down-regulation of Claspin expression inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is phosphorylated in response to stress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004392087459564209,
+        "ground_truth": {
+          "Claspin": {
+            "bertscore": 0.6566230654716492,
+            "f1": 0
+          },
+          "Chk1": {
+            "bertscore": 0.6380688548088074,
+            "f1": 0
+          },
+          "its association": {
+            "bertscore": 0.6554357409477234,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the reason for the phosphorylation of Claspin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001046299934387207,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.737889289855957,
+            "f1": 0
+          },
+          "replication stress": {
+            "bertscore": 0.6796826124191284,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the reason for phosphorylation of Claspin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012898445129394531,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7024293541908264,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for its association with Chk1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004674673080444336,
+        "ground_truth": {
+          "this phosphorylation": {
+            "bertscore": 0.6247129440307617,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

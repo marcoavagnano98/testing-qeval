@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "The methylation status of the c-H-ras-1 insulin and retinoblastoma genes was determined in human sperm hydatidiform mole fetal tissues adult lymphocytes and adult kidney. The sperm-specific methylation patterns in all three genes could represent imprinting of the parental chromosomes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "all three"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What genes could represent imprinting of the parental chromosomes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The methylation status",
+        "the c-H-ras-1 insulin and retinoblastoma genes",
+        "human sperm hydatidiform mole fetal tissues adult lymphocytes",
+        "adult kidney",
+        "The sperm-specific methylation patterns",
+        "all three genes",
+        "imprinting",
+        "the parental chromosomes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was determined in human sperm hydatidiform mole",
+          "What genes were methylated in human sperm?",
+          "Where was the methylation status of the c-H-ras-1 insulin",
+          "What is another example of a sperm-specific methylation pattern?",
+          "What could represent imprinting of the parental chromosomes?",
+          "What could represent imprinting of the parental chromosomes?",
+          "What could the methylation status of the c-H-ras-1 insulin",
+          "What could the sperm-specific methylation patterns in all three genes represent imprint"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene was highly methylated in all tissues examined?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-H-ras-1 insulin",
+        "answerability": 0.5292007923126221,
+        "ground_truth": {
+          "The retinoblastoma gene": {
+            "bertscore": 0.6520255208015442,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what tissues was the retinoblastoma gene highly methylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adult lymphocytes and adult kidney",
+        "answerability": 0.9825230836868286,
+        "ground_truth": {
+          "all tissues": {
+            "bertscore": 0.7106357216835022,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only site that was under-methylated in sperm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004711151123046875,
+        "ground_truth": {
+          "the exception": {
+            "bertscore": 0.7091480493545532,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was under-methylated in sperm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00894707441329956,
+        "ground_truth": {
+          "a single site": {
+            "bertscore": 0.6973544955253601,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only tissue examined that had a single site that was under-methylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13938581943511963,
+        "ground_truth": {
+          "sperm": {
+            "bertscore": 0.6856107115745544,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

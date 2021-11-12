@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "The leukocyte-specific cytoskeleton-binding pp52 (LSP-1 WP-34) protein is widely expressed in various cell types throughout the body including B and T lymphocytes granulocytes and macrophages.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The leukocyte-specific cytoskeleton-binding pp52 (LSP-1 WP-34) protein",
+        "various cell types",
+        "the body",
+        "B and T lymphocytes granulocytes",
+        "macrophages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is widely expressed in various cell types throughout the body?",
+          "Where is the pp52 protein widely expressed?",
+          "Where is the pp52 protein widely expressed?",
+          "What are some cell types that are expressed in the body?",
+          "What is the most common cell type that is a target of pp52?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is widely expressed in multiple leukocyte lineages?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pp52",
+        "answerability": 0.7825979590415955,
+        "ground_truth": {
+          "The leukocyte-specific cytoskeleton-binding pp52 (LSP-1 WP-34) protein": {
+            "bertscore": 0.5589956641197205,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "Where is the pp52 protein widely expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "various cell types throughout the body including B and T lymphocytes granulocytes and",
+        "answerability": 0.9596044421195984,
+        "ground_truth": {
+          "multiple leukocyte lineages": {
+            "bertscore": 0.735992431640625,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are two types of leukocytes that are expressed in pp52?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B and T lymphocytes",
+        "answerability": 0.6436408758163452,
+        "ground_truth": {
+          "B and T lymphocytes granulocytes": {
+            "bertscore": 0.9481978416442871,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What is the other leukocyte lineage that is expressed in pp52?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "macrophages",
+        "answerability": 0.6434832811355591,
+        "ground_truth": {
+          "macrophages": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

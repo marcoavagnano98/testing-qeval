@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "In contrast the RelA(p65) subunit was barely detectable in monocytes but its level increased markedly in MDMs.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "the RelA(p65) subunit",
+        "monocytes",
+        "its level",
+        "MDMs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the level of the RelA(p65) subunit in MDMs",
+          "What was barely detectable in monocytes?",
+          "Where was the RelA(p65) subunit barely detectable?",
+          "What increased markedly in MDMs?",
+          "Where did the RelA(p65) subunit increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the level of the RelA(p65) subunit in MDMs": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "its level increased markedly in MDMs",
+        "answerability": 0.802803099155426,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6590132117271423,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was barely detectable in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RelA(p65)",
+        "answerability": 0.980449914932251,
+        "ground_truth": {
+          "the RelA(p65) subunit": {
+            "bertscore": 0.8357827663421631,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where was the RelA(p65) subunit barely detectable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocytes",
+        "answerability": 0.9935907125473022,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What increased markedly in MDMs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RelA(p65)",
+        "answerability": 0.9609803557395935,
+        "ground_truth": {
+          "its level": {
+            "bertscore": 0.6287816166877747,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where did the RelA(p65) subunit increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MDMs",
+        "answerability": 0.9848083257675171,
+        "ground_truth": {
+          "MDMs": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

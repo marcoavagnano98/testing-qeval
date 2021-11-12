@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the hemin-induced accumulation of globin known as a marker of erythroid differentiation is decreased in cells overexpressing HSF2-beta.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the hemin-induced accumulation",
+        "globin",
+        "a marker",
+        "erythroid differentiation",
+        "cells",
+        "HSF2-beta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a marker of erythroid differentiation?",
+          "What is a marker of erythroid differentiation?",
+          "What is the accumulation of globin in cells overexpressing HSF2-beta?",
+          "What is the accumulation of globin known as?",
+          "What is decreased in cells overexpressing HSF2-beta?",
+          "What is a marker of erythroid differentiation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is a marker of erythroid differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "globin",
+        "answerability": 0.903313398361206,
+        "ground_truth": {
+          "the hemin-induced accumulation": {
+            "bertscore": 0.7368208765983582,
+            "f1": 0
+          },
+          "globin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "HSF2-beta": {
+            "bertscore": 0.738838255405426,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the accumulation of globin in cells overexpressing HSF2-beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased",
+        "answerability": 0.9662646651268005,
+        "ground_truth": {
+          "a marker": {
+            "bertscore": 0.7033216953277588,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the accumulation of globin known as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "marker of erythroid differentiation",
+        "answerability": 0.9666973352432251,
+        "ground_truth": {
+          "erythroid differentiation": {
+            "bertscore": 0.9168666005134583,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is decreased in cells overexpressing HSF2-beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "globin",
+        "answerability": 0.9702431559562683,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.7266561985015869,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

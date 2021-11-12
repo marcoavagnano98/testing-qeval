@@ -1,0 +1,80 @@
+{
+  "type": "ref",
+  "text": "NF-IL6 mRNA was found in human Jurkat T cells and in the mouse Th2 clone D10 but not in Th1 clone 29. rNF-IL6 expressed in bacteria was shown to specifically bind to PRE-I.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jurkat T",
+        "29"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were NF-IL6 found in?",
+          "What is the only clone of NF-IL6 found in bacteria?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-IL6 mRNA",
+        "human Jurkat T cells",
+        "the mouse Th2 clone D10",
+        "rNF-IL6",
+        "bacteria",
+        "PRE-I."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was found in human Jurkat T cells?",
+          "What was NF-IL6 found in?",
+          "What is the only clone of NF-IL6 found in human Jurkat",
+          "What mRNA was found in human Jurkat T cells?",
+          "What type of bacteria has rNF-IL6 mRNA?",
+          "What is the name of the protein that binds to NF-IL6?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that binds to rNF-IL6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017067551612854004,
+        "ground_truth": {
+          "PRE-I. PRE\n": {
+            "bertscore": 0.6335969567298889,
+            "f1": 0
+          },
+          "PRE-I. PRE": {
+            "bertscore": 0.6335969567298889,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein binds to PRE-I?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rNF-IL6",
+        "answerability": 0.8362731337547302,
+        "ground_truth": {
+          "rNF-IL6": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of organism has rNF-IL6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2874904274940491,
+        "ground_truth": {
+          "bacteria": {
+            "bertscore": 0.6620874404907227,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

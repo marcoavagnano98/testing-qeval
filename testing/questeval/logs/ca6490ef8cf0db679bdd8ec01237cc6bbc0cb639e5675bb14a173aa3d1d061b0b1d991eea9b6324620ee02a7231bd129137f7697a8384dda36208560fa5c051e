@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Taken together Notch1 signaling sensitizes TRAIL-induced apoptosis in HCC cells by inhibiting Akt/Hdm2-mediated p53 degradation and up-regulating p53-dependent DR5 expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Notch1",
+        "HCC",
+        "Akt"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling sensitizes TRAIL-induced apoptosis?",
+          "What type of cells does Notch1 signaling sensitize to TRAIL-induced",
+          "What protein is involved in p53 degradation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Notch1",
+        "signaling sensitizes TRAIL-induced apoptosis",
+        "HCC cells",
+        "Akt/Hdm2-mediated p53 degradation",
+        "up-regulating p53-dependent DR5 expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling sensitizes TRAIL-induced apoptosis?",
+          "What does Notch1 signaling do?",
+          "What cells does Notch1 signaling sensitize to TRAIL-induced a",
+          "What does Notch1 signaling inhibit?",
+          "What does Notch1 signaling do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathway is involved in the apoptosis-inducing": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Notch1 signaling",
+        "answerability": 0.9744263887405396,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 0.6617808938026428,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling sensitizes tumor necrosis factor-related apoptos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Notch1",
+        "answerability": 0.9137378931045532,
+        "ground_truth": {
+          "Notch1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Notch1 signaling do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sensitizes TRAIL-induced apoptosis",
+        "answerability": 0.6457490921020508,
+        "ground_truth": {
+          "sensitizes tumor necrosis factor-related apoptosis-inducing ligand-induced apoptosis": {
+            "bertscore": 0.8394374847412109,
+            "f1": 0.4
+          },
+          "up-regulating p53-dependent DR5 expression": {
+            "bertscore": 0.7583380341529846,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells does Notch1 signaling affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HCC cells",
+        "answerability": 0.9268069863319397,
+        "ground_truth": {
+          "human hepatocellular carcinoma cells": {
+            "bertscore": 0.7155205607414246,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What does Notch1 signaling inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt/Hdm2-mediated p53 degradation",
+        "answerability": 0.9570826888084412,
+        "ground_truth": {
+          "Akt/Hdm2-mediated p53 degradation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

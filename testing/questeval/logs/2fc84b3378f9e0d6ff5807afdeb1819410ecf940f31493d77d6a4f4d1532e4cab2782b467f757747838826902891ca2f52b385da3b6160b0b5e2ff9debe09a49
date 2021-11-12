@@ -1,0 +1,80 @@
+{
+  "type": "ref",
+  "text": "Synergism required an intact GR DNA-binding domain whereas amino- or carboxyl-terminal domains were dispensable.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Synergism",
+        "an intact GR DNA-binding domain",
+        "whereas amino- or carboxyl-terminal domains"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What required an intact GR DNA-binding domain?",
+          "What did synergism require?",
+          "What was dispensable in synergism?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the DNA-binding domain of the receptor required for optimal transcription in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05230337381362915,
+        "ground_truth": {
+          "GR": {
+            "bertscore": 0.6718540787696838,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for optimal GR-dependent transcription in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31284236907958984,
+        "ground_truth": {
+          "The GR DNA-binding domain": {
+            "bertscore": 0.6315974593162537,
+            "f1": 0
+          },
+          "the receptor": {
+            "bertscore": 0.6820310354232788,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the GR DNA-binding domain of the receptor required for in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Synergism",
+        "answerability": 0.738060712814331,
+        "ground_truth": {
+          "optimal GR-dependent transcription": {
+            "bertscore": 0.692974328994751,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells need the GR DNA-binding domain for optimal transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Synergism",
+        "answerability": 0.7560470104217529,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.7617895603179932,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

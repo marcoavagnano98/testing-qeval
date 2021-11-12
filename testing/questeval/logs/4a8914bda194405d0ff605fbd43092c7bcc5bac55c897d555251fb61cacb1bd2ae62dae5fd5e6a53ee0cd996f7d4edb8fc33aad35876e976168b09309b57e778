@@ -1,0 +1,142 @@
+{
+  "type": "ref",
+  "text": "The kinetics of expression of the two genes were also slightly different with c-fos mRNA reaching a peak at 15 min after stimulation and c-jun at 30 min.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two",
+        "15 min",
+        "30 min"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many genes were expressed in the same way?",
+          "What was the peak of c-fos mRNA after stimulation?",
+          "What was the peak of c-jun mRNA after stimulation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The kinetics",
+        "expression",
+        "the two genes",
+        "a peak",
+        "15 min",
+        "stimulation",
+        "c-jun",
+        "30 min"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the mRNA of c-jun different from?",
+          "What kinetics of the two genes were slightly different?",
+          "What two genes were slightly different in the kinetics of expression?",
+          "What did c-fos mRNA reach at 15 min after stimulation?",
+          "What was the peak of c-fos mRNA after stimulation?",
+          "What was the peak of c-jun mRNA at 15 min after?",
+          "What gene reached its peak at 30 min after stimulation?",
+          "What was the peak of c-jun mRNA after stimulation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused an increase in c-fos and c-jun mRNA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulation",
+        "answerability": 0.8152510523796082,
+        "ground_truth": {
+          "Heat shock": {
+            "bertscore": 0.7526171803474426,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did heat shock cause in c-fos and c-jun m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22856420278549194,
+        "ground_truth": {
+          "an increase": {
+            "bertscore": 0.6852482557296753,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did heat shock cause an increase in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2937443256378174,
+        "ground_truth": {
+          "c-fos and c-jun mRNA expression": {
+            "bertscore": 0.5772473216056824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did heat shock cause in c-myc mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009448528289794922,
+        "ground_truth": {
+          "a decrease": {
+            "bertscore": 0.7245710492134094,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did heat shock cause a decrease in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.020903170108795166,
+        "ground_truth": {
+          "c-myc mRNA expression": {
+            "bertscore": 0.6148179173469543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cell line was affected by heat shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009902715682983398,
+        "ground_truth": {
+          "pre-B (Hyon": {
+            "bertscore": 0.6571950912475586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were affected by heat shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00026482343673706055,
+        "ground_truth": {
+          "T (DND-41) cell lines": {
+            "bertscore": 0.6388116478919983,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were affected by heat shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00016486644744873047,
+        "ground_truth": {
+          "freshly isolated normal human thymocytes": {
+            "bertscore": 0.6444512009620667,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

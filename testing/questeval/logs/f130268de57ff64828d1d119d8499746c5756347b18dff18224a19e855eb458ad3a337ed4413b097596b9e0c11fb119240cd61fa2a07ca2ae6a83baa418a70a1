@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Protein kinase C and calcineurin synergize to activate NF-kappaB to achieve IL-6-dependent activation of the human IkappaBalpha gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is activated by NF-kappaB?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Protein",
+        "C and calcineurin synergize",
+        "NF-kappaB",
+        "IL-6-dependent activation",
+        "the human IkappaBalpha gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of kinase C is involved in the NF-kappa",
+          "What is the process that activates NF-kappaB?",
+          "What does calcineurin and protein kinase C activate?",
+          "What does NF-kappaB achieve?",
+          "What does NF-kappaB activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What kinase is activated by calcineurin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.7283517718315125,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of kinase C is activated by calcineurin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Protein",
+        "answerability": 0.9467708468437195,
+        "ground_truth": {
+          "Protein": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which protein kinase is activated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5330777168273926,
+        "ground_truth": {
+          "C and calcineurin synergize": {
+            "bertscore": 0.6070974469184875,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does calcineurin activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.7279492020606995,
+        "ground_truth": {
+          "IkappaB kinase": {
+            "bertscore": 0.6992263197898865,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are activated by kinase C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04472273588180542,
+        "ground_truth": {
+          "T lymphocytes": {
+            "bertscore": 0.6172374486923218,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

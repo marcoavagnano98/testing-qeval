@@ -1,0 +1,154 @@
+{
+  "type": "ref",
+  "text": "NSC 47147 was shown to decrease levels of p-FADD and NF-kappaB activity such that combination therapy leads to greater induction of apoptosis and enhanced tumor control than either agent alone.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NSC",
+        "47147"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug was shown to decrease p-FADD and NF-kappaB",
+          "What is the name of the NSC that decreases levels of p-FADD and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NSC",
+        "levels",
+        "p-FADD",
+        "NF-kappaB activity",
+        "combination therapy",
+        "greater induction",
+        "apoptosis",
+        "tumor control",
+        "either agent"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug was shown to decrease p-FADD and NF-kappaB",
+          "What did NSC 47147 decrease in p-FADD and NF-kapp",
+          "What protein was decreased by NSC 47147?",
+          "What did NSC 47147 decrease?",
+          "What type of therapy leads to greater induction of apoptosis?",
+          "What is the effect of combination therapy on apoptosis?",
+          "What does combination therapy lead to?",
+          "What is the benefit of combination therapy?",
+          "What does combination therapy lead to greater induction of apoptosis and enhanced tumor"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug was shown to decrease NF-kappaB activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47038209438323975,
+        "ground_truth": {
+          "NSC": {
+            "bertscore": 0.707587480545044,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the NSC that decreases NF-kappaB activity": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NSC 47147",
+        "answerability": 0.942022979259491,
+        "ground_truth": {
+          "47147": {
+            "bertscore": 0.8381423354148865,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did NSC 47147 decrease in NF-kappaB activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p-FADD",
+        "answerability": 0.8158186674118042,
+        "ground_truth": {
+          "levels": {
+            "bertscore": 0.6740267872810364,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did NSC 47147 decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p-FADD and NF-kappaB",
+        "answerability": 0.9773262739181519,
+        "ground_truth": {
+          "NF-kappaB activity": {
+            "bertscore": 0.8340560793876648,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What type of therapy leads to greater induction of apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "combination therapy",
+        "answerability": 0.9840516448020935,
+        "ground_truth": {
+          "combination therapy": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of combination therapy on apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "greater induction",
+        "answerability": 0.9823622703552246,
+        "ground_truth": {
+          "greater induction": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does combination therapy lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "greater induction of apoptosis and enhanced tumor control",
+        "answerability": 0.9588803052902222,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.7765869498252869,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What is the benefit of combination therapy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced tumor control",
+        "answerability": 0.9687129259109497,
+        "ground_truth": {
+          "tumor control": {
+            "bertscore": 0.9076100587844849,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does combination therapy lead to greater induction of apoptosis and enhanced tumor": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3856593370437622,
+        "ground_truth": {
+          "either agent": {
+            "bertscore": 0.7464405298233032,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Fetal and neonatal lymphocytes are relatively resistant to activation and cytokine production when stimulated either via their T-helper cell programs or lectins.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Fetal and neonatal lymphocytes",
+        "activation",
+        "cytokine production",
+        "their T-helper cell programs",
+        "lectins"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What types of cells are resistant to activation and cytokine production?",
+          "What are fetal and neonatal lymphocytes resistant to?",
+          "What is the main factor that makes a fetal lymphocyte resistant to activation?",
+          "What are the two main ways that lymphocytes are resistant to activation?",
+          "What is the other way that fetal lymphocytes are stimulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What types of cells are resistant to activation and cytokine production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fetal and neonatal lymphocytes",
+        "answerability": 0.9429919719696045,
+        "ground_truth": {
+          "Fetal and neonatal lymphocytes": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are fetal and neonatal lymphocytes resistant to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation and cytokine production",
+        "answerability": 0.9788775444030762,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.7965810298919678,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the main mechanism of resistance in fetal lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulated either via their T-helper cell programs or lectins",
+        "answerability": 0.9680433869361877,
+        "ground_truth": {
+          "cytokine production": {
+            "bertscore": 0.6798812747001648,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two main ways that fetal and neonatal lymphocytes are resistant": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation and cytokine production",
+        "answerability": 0.9330518841743469,
+        "ground_truth": {
+          "their T-cell antigen receptors": {
+            "bertscore": 0.755588173866272,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other way that T-cell antigen receptors are stimulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4660183787345886,
+        "ground_truth": {
+          "lectins": {
+            "bertscore": 0.7080311179161072,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

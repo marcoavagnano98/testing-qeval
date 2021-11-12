@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "When both mutants were used in combination galectin-3 mRNA induction was associated with inhibition of IL-2 promoter activity. delta CaM-AI inhibited the induction of promoters but had no effect on the mutants used.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "CaM-AI"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter activity was inhibited when both mutants were used in combination?",
+          "What did delta have no effect on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "both mutants",
+        "combination galectin-3 mRNA induction",
+        "inhibition",
+        "IL-2 promoter activity",
+        "delta CaM-AI",
+        "the induction",
+        "promoters",
+        "no effect",
+        "the mutants"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used in combination?",
+          "What was associated with inhibition of IL-2 promoter activity?",
+          "What was the effect of delta CaM-AI on IL-2 promoter activity?",
+          "What did delta CaM-AI inhibit?",
+          "What inhibited the induction of promoters?",
+          "What did delta CaM-AI inhibit?",
+          "What did delta CaM-AI inhibit?",
+          "What effect did delta CaM-AI have on the mutants used in combination?",
+          "What did delta CaM-AI not inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter did delta CaM-AI inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.943230152130127,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the induction of the IL-2 promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "delta CaM-AI",
+        "answerability": 0.9856085777282715,
+        "ground_truth": {
+          "CaM-AI": {
+            "bertscore": 0.9347370862960815,
+            "f1": 0.6666666666666666
+          },
+          "delta CaM-AI": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What mutants were used in combination?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "galectin-3 mRNA",
+        "answerability": 0.7942783832550049,
+        "ground_truth": {
+          "both mutants": {
+            "bertscore": 0.6007765531539917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the induction of the IL-2 promoter by delta CaM-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45723795890808105,
+        "ground_truth": {
+          "combination gamma": {
+            "bertscore": 0.6966607570648193,
+            "f1": 0
+          },
+          "B*CaM-K": {
+            "bertscore": 0.6482697129249573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did gamma B*CaM-K inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0034233927726745605,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.697335422039032,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did delta CaM-AI inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of promoters",
+        "answerability": 0.9871028661727905,
+        "ground_truth": {
+          "the IL-2 promoter": {
+            "bertscore": 0.7984855771064758,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

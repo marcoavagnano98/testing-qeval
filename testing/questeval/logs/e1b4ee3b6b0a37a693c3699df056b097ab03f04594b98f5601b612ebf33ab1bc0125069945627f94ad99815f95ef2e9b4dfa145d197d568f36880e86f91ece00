@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "PU.1 (Spi-1) autoregulates its expression in myeloid cells. PU.1 (Spi-1) is a hematopoietic-specific Ets family transcription factor that is expressed in myeloid cells and placental trophoblasts.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "its expression",
+        "myeloid cells",
+        "PU.1",
+        "a hematopoietic-specific Ets family transcription factor",
+        "myeloid cells",
+        "placental trophoblasts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does PU.1 autoregulate in myeloid cells?",
+          "Where is PU.1 expressed?",
+          "What transcription factor is expressed in myeloid cells?",
+          "What is PU.1?",
+          "Where is PU.1 expressed?",
+          "Where is PU.1 expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor family is PU.1 a member of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ets family",
+        "answerability": 0.9998101592063904,
+        "ground_truth": {
+          "Ets": {
+            "bertscore": 0.8121278882026672,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the Ets transcription factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PU.1",
+        "answerability": 0.8064785599708557,
+        "ground_truth": {
+          "PU.1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is PU.1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a hematopoietic-specific Ets family transcription factor",
+        "answerability": 0.9913613200187683,
+        "ground_truth": {
+          "a member": {
+            "bertscore": 0.6013291478157043,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is PU.1 a member of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ets family",
+        "answerability": 0.9982551336288452,
+        "ground_truth": {
+          "the Ets transcription factor family": {
+            "bertscore": 0.7864648699760437,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of cells are PU.1 most expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid",
+        "answerability": 0.7566710114479065,
+        "ground_truth": {
+          "myeloid": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

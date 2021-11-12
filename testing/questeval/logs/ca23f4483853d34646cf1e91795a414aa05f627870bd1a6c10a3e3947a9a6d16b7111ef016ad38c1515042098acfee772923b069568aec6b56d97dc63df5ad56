@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Modulating metastasis by adeno-associated virus-mediated gene transfer of IKK gamma/NEMO inhibitors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NEMO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the inhibitor that modulates metastasis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "metastasis",
+        "adeno-associated virus-mediated gene transfer",
+        "/NEMO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of adeno-associated virus-mediated gene transfer?",
+          "What is the mechanism of action of IKK gamma/NEMO inhibitors?",
+          "What is the name of the inhibitor that modulates metastasis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main cause of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006225705146789551,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.7011743187904358,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism that modifies metastasis in prostate cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adeno-associated virus-mediated gene transfer",
+        "answerability": 0.8207486271858215,
+        "ground_truth": {
+          "a lymphangiogenic switch": {
+            "bertscore": 0.6904593110084534,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer that can be treated with a lymphangiogenic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011149048805236816,
+        "ground_truth": {
+          "prostate cancer": {
+            "bertscore": 0.6679661273956299,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

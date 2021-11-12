@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "CHIP bound to iNOS and promoted its ubiquitination and degradation by the proteasome as well as its sequestration to the aggresome.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CHIP",
+        "iNOS",
+        "its ubiquitination",
+        "degradation",
+        "the proteasome",
+        "its sequestration",
+        "the aggresome"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein bound to iNOS?",
+          "What did CHIP bound to?",
+          "What did CHIP promote?",
+          "What did CHIP promote by the proteasome?",
+          "What enzymes bind to iNOS?",
+          "What did CHIP promote to the aggresome?",
+          "Where did CHIP sequester iNOS?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein promoted ubiquitination and proteasomal degradation of iNOS": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CHIP",
+        "answerability": 0.8214360475540161,
+        "ground_truth": {
+          "CHIP": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did CHIP promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ubiquitination and degradation",
+        "answerability": 0.9426636099815369,
+        "ground_truth": {
+          "ubiquitination": {
+            "bertscore": 0.8506074547767639,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did CHIP promote in iNOS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ubiquitination and degradation",
+        "answerability": 0.9452623724937439,
+        "ground_truth": {
+          "proteasomal degradation": {
+            "bertscore": 0.8194923996925354,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did CHIP associate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "iNOS",
+        "answerability": 0.9778383374214172,
+        "ground_truth": {
+          "iNOS": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

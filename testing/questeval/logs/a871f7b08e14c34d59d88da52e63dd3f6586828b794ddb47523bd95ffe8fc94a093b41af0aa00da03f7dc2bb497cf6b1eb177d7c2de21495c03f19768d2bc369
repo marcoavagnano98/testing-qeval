@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "p-XSC also inhibits AR expression as well as Akt/PKB activity in both cell lines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AR",
+        "Akt/PKB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does p-XSC inhibit?",
+          "What activity does p-XSC inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p-XSC",
+        "AR expression",
+        "Akt/PKB activity",
+        "both cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits AR expression?",
+          "What does p-XSC inhibit?",
+          "What does p-XSC inhibit?",
+          "In what cell lines does p-XSC inhibit AR expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene does p-XSC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR expression",
+        "answerability": 0.8801308870315552,
+        "ground_truth": {
+          "AR": {
+            "bertscore": 0.8351314663887024,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What inhibits AR expression and transcriptional activity in both cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p-XSC",
+        "answerability": 0.9478235244750977,
+        "ground_truth": {
+          "p-XSC": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p-XSC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR expression",
+        "answerability": 0.8077854514122009,
+        "ground_truth": {
+          "AR expression": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p-XSC inhibit in both cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR expression as well as Akt/PKB activity",
+        "answerability": 0.8378980755805969,
+        "ground_truth": {
+          "transcriptional activity": {
+            "bertscore": 0.7575743794441223,
+            "f1": 0.22222222222222224
+          }
+        }
+      }
+    },
+    "What cell lines does p-XSC inhibit AR expression and transcriptional activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06436026096343994,
+        "ground_truth": {
+          "both cell lines": {
+            "bertscore": 0.7145273685455322,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

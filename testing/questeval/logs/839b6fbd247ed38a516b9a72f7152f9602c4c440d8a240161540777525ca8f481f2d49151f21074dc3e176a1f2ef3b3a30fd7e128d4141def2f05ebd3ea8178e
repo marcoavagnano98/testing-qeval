@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of NF-kappaB activity and promotion of IkappaBalpha degradation. Fas (APO-1/CD95) and Fas ligand (FasL) expression were examined in the differentiated neuroblastoma cell lines in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha",
+        "APO-1",
+        "Fas",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What degradation was promoted by the NF-kappaB activity?",
+          "What is the name of the kinase that inhibits NF-kapp",
+          "What is the name of the ligand that is involved in the degradation of Ikapp",
+          "In what way was the expression of Fas and FasL examined?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "NF-kappaB activity",
+        "promotion",
+        "IkappaBalpha degradation",
+        "Fas",
+        "(APO-1/CD95",
+        "Fas ligand",
+        "(FasL) expression",
+        "the differentiated neuroblastoma cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of NF-kappaB activity?",
+          "What is inhibited in a mouse model of a swine flu?",
+          "What is the main effect of IkappaBalpha degradation?",
+          "What is promoted by NF-kappaB activity?",
+          "What is the name of the ligand that is involved in the degradation of Ikapp",
+          "What is the name of the NF-kappaB protein?",
+          "What is FasL?",
+          "What is the name of the Fas ligand?",
+          "Where was the expression of Fas and FasL examined?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the name of the protein that was tested?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08961033821105957,
+        "ground_truth": {
+          "Fas": {
+            "bertscore": 0.6837170720100403,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to evaluate Fas and FasL protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiated neuroblastoma cell lines",
+        "answerability": 0.915403425693512,
+        "ground_truth": {
+          "Western blot": {
+            "bertscore": 0.6964101791381836,
+            "f1": 0
+          },
+          "immunohistochemical assays": {
+            "bertscore": 0.7401707172393799,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was evaluated by Western blot and immunohistochemical assays?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014308154582977295,
+        "ground_truth": {
+          "Fas and FasL protein expression": {
+            "bertscore": 0.6107386350631714,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

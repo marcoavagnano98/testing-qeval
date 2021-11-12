@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "Additional grafted rats treated with spironolactone (n =\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Additional grafted rats",
+        "spironolactone"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Who was treated with spironolactone?",
+          "What was used to treat a rat that was grafted on to a"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Who was treated with spironolactone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rats",
+        "answerability": 0.7226322889328003,
+        "ground_truth": {
+          "Additional grafted rats": {
+            "bertscore": 0.8197829723358154,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was used to treat a rat that was grafted on to a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4796826243400574,
+        "ground_truth": {
+          "spironolactone": {
+            "bertscore": 0.603493332862854,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

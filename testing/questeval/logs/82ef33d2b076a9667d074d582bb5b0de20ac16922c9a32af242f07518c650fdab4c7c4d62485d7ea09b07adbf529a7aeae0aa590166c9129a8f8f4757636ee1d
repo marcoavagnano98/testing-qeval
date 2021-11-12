@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "Activation protein 1-dependent transcriptional activation of interleukin IV/Gr.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation protein 1-dependent transcriptional activation",
+        "interleukin IV/Gr"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that is involved in the transcription of interleukin IV",
+          "What is the activation protein 1-dependent transcriptional activation of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is involved in the transcription of interleukin IV": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation protein 1-dependent",
+        "answerability": 0.5827013254165649,
+        "ground_truth": {
+          "Activation protein 1-dependent transcriptional activation": {
+            "bertscore": 0.9131955504417419,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the activation protein 1-dependent transcriptional activation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin IV/Gr",
+        "answerability": 0.9643744230270386,
+        "ground_truth": {
+          "interleukin IV/Gr": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

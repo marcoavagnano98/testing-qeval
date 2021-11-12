@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "and surface protein expression and the upregulation of transcripts for the chemokines monocyte (Bcl-2 Bcl-xL ICAM-1 and MCP-1 by TNF-alpha).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MCP-1",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the chemokines monocyte?",
+          "What is the main factor that controls the expression of monocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "and surface protein expression",
+        "the upregulation",
+        "transcripts",
+        "the chemokines monocyte",
+        "Bcl-2",
+        "Bcl-xL ICAM-1",
+        "MCP-1",
+        "TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main effect of TNF-alpha on the chemokines monocyte",
+          "What is the effect of TNF-alpha on monocytes?",
+          "What is upregulated for the chemokines monocyte?",
+          "What is the upregulation of transcripts for?",
+          "What is the name of the chemokines monocyte?",
+          "What is the name of the two chemokines monocytes are regulated by?",
+          "What is the name of the chemokines monocyte?",
+          "What is the main factor that controls the expression of monocytes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main factor that causes the upregulation of transcripts for chemokines mon": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.7181941866874695,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main effect of TNF-alpha on the chemokines monocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "upregulation of transcripts",
+        "answerability": 0.7492567896842957,
+        "ground_truth": {
+          "and surface protein expression": {
+            "bertscore": 0.7226271629333496,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of TNF-alpha on surface protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "upregulation of transcripts",
+        "answerability": 0.9314415454864502,
+        "ground_truth": {
+          "the upregulation": {
+            "bertscore": 0.8112624883651733,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is upregulated by TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcripts for the chemokines monocyte (Bcl-2 Bcl-",
+        "answerability": 0.7280042171478271,
+        "ground_truth": {
+          "transcripts": {
+            "bertscore": 0.7265321612358093,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is GRO-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006159543991088867,
+        "ground_truth": {
+          "the chemokines monocyte": {
+            "bertscore": 0.6201872229576111,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the chemokines monocyte?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Bcl-2 Bcl-xL ICAM-1 and MCP-1",
+        "answerability": 0.6311782598495483,
+        "ground_truth": {
+          "GRO-alpha": {
+            "bertscore": 0.7629041075706482,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that causes the upregulation of surface protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.7799031734466553,
+        "ground_truth": {
+          "TNF-alpha": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

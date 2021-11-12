@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Third the ER-E2F1 trans-activation of the cyclin D3 promoter is essential for the growth checkpoint response.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Third",
+        "D3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Which of the three is essential for the growth checkpoint response?",
+          "What promoter is essential for the growth checkpoint response?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the ER-E2F1 trans-activation",
+        "the cyclin D3 promoter",
+        "the growth checkpoint response"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is essential for the growth checkpoint response?",
+          "What is essential for the growth checkpoint response?",
+          "What is the ER-E2F1 trans-activation essential for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What happens even in the presence of the protein synthesis inhibitor cycloheximide": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004487335681915283,
+        "ground_truth": {
+          "Furthermore trans-activation": {
+            "bertscore": 0.6775768995285034,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is trans-activated by ER-E2F1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclin D3 promoter",
+        "answerability": 0.9537371397018433,
+        "ground_truth": {
+          "cyclin D3": {
+            "bertscore": 0.9064052104949951,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the main factor that causes trans-activation of cyclin D3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11604392528533936,
+        "ground_truth": {
+          "ER-E2F1": {
+            "bertscore": 0.6186696290969849,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what condition does trans-activation of cyclin D3 occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.050554513931274414,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024357914924622,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only thing that can cause trans-activation of cyclin D3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0016129016876220703,
+        "ground_truth": {
+          "the protein synthesis inhibitor cycloheximide": {
+            "bertscore": 0.5968940854072571,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Phosphorylation of the IkappaB cytoplasmic inhibitorsIkappaBalpha IkappaBbeta and IkappaBepsilon by these kinases triggers proteolytic degradation and the release of NF-kappaB/Rel proteins into the nucleus.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBepsilon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the kinase that releases NF-kappa"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Phosphorylation",
+        "the IkappaB cytoplasmic inhibitorsIkappaBalpha IkappaBbeta",
+        "IkappaBepsilon",
+        "these kinases",
+        "proteolytic degradation",
+        "the release",
+        "the nucleus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What triggers proteolytic degradation?",
+          "What triggers proteolytic degradation?",
+          "What is the name of the kinase that releases NF-kappa",
+          "What triggers proteolytic degradation?",
+          "What is the result of phosphorylation of IkappaB cytoplasmic",
+          "What happens when NF-kappaB/Rel proteins are released into the nu",
+          "Where do NF-kappaB/Rel proteins go?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the cytoplasmic inhibitor that triggers proteolytic degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB",
+        "answerability": 0.8955310583114624,
+        "ground_truth": {
+          "IkappaBalpha IkappaBbeta": {
+            "bertscore": 0.7887001633644104,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the kinase that releases NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09941428899765015,
+        "ground_truth": {
+          "IkappaBepsilon": {
+            "bertscore": 0.6074889302253723,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What triggers proteolytic degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Phosphorylation of the IkappaB cytoplasmic inhibitorsI",
+        "answerability": 0.9592925906181335,
+        "ground_truth": {
+          "Phosphorylation": {
+            "bertscore": 0.7650512456893921,
+            "f1": 0.33333333333333337
+          },
+          "the IkappaB cytoplasmic inhibitors": {
+            "bertscore": 0.8891379237174988,
+            "f1": 0.5
+          },
+          "these kinases": {
+            "bertscore": 0.6565494537353516,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of phosphorylation of IkappaB cytoplasmic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42062830924987793,
+        "ground_truth": {
+          "proteolytic degradation": {
+            "bertscore": 0.6362004280090332,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens to NF-kappaB/Rel proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4131099581718445,
+        "ground_truth": {
+          "the release": {
+            "bertscore": 0.6969391703605652,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where do NF-kappaB/Rel proteins go?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "into the nucleus",
+        "answerability": 0.9389247298240662,
+        "ground_truth": {
+          "the nucleus": {
+            "bertscore": 0.8775951266288757,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

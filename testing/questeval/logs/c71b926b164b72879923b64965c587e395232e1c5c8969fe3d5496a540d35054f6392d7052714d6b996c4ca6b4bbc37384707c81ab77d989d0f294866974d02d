@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "HEC1A/VEGF-C cells were inoculated into the back of C81-66-45 cells and cell proliferation was evaluated by MTT assay; apoptosis was examined by DNA ladder Hoechst33258 staining and flow-cytometric assays.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HEC1A/VEGF-C",
+        "C81-66-45",
+        "MTT",
+        "Hoechst33258"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were inoculated into the back of C81-66-45",
+          "What cells were inoculated into the back of?",
+          "What was the method used to evaluate cell proliferation?",
+          "What was the name of the stain used to determine apoptosis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HEC1A/VEGF-C cells",
+        "the back",
+        "C81-66-45 cells",
+        "cell proliferation",
+        "MTT assay",
+        "apoptosis",
+        "DNA ladder Hoechst33258 staining and flow-cytometric assays"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were inoculated into the back of C81-66-45",
+          "Where were HEC1A/VEGF-C cells inoculated into?",
+          "What were the HEC1A/VEGF-C cells inoculated into?",
+          "What was evaluated by MTT assay?",
+          "What was used to evaluate cell proliferation?",
+          "What was examined by DNA ladder Hoechst33258 staining?",
+          "What was used to examine apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was observed within tumors when HEC1A/VEGF-C cells were in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02442699670791626,
+        "ground_truth": {
+          "Augmented lymphangiogenesis": {
+            "bertscore": 0.6352387070655823,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was augmented lymphangiogenesis observed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000607609748840332,
+        "ground_truth": {
+          "tumors": {
+            "bertscore": 0.7087292671203613,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was inoculated with a tumor to increase lymphangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012284696102142334,
+        "ground_truth": {
+          "HEC1A/ VEGF-C cells": {
+            "bertscore": 0.5742413997650146,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

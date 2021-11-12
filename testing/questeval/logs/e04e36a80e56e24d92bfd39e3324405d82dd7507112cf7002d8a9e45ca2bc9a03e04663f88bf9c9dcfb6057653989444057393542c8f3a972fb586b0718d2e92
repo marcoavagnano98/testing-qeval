@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "At the most proximal P0 site NFAT2-containing complexes devoid of NFAT2 were readily inducible in the Th1 clones but hardly or not in the Th2 clones.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NFAT2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was not readily inducible in the Th1 clones?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the most proximal P0 site NFAT2-containing complexes",
+        "NFAT2",
+        "the Th1 clones",
+        "the Th2 clones"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where were NFAT2 containing complexes readily inducible in the Th1",
+          "What was not readily inducible in the Th1 clones?",
+          "In what clones were NFAT2-containing complexes readily inducible?",
+          "In what clones were NFAT2-containing complexes readily inducible?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was not readily inducible in the Th1 clones?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12033623456954956,
+        "ground_truth": {
+          "NFAT2": {
+            "bertscore": 0.5909032821655273,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where were NFAT-containing complexes readily inducible in the Th1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "At the most proximal P0 site",
+        "answerability": 0.9527184367179871,
+        "ground_truth": {
+          "the most proximal P0 site": {
+            "bertscore": 0.9425001740455627,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What was readily inducible at the most proximal P0 site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT2-containing complexes devoid of NFAT2",
+        "answerability": 0.9181630611419678,
+        "ground_truth": {
+          "NFAT-containing complexes": {
+            "bertscore": 0.8769018054008484,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "In what clones were NFAT-containing complexes readily inducible?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th1",
+        "answerability": 0.9798699617385864,
+        "ground_truth": {
+          "the Th1 clones": {
+            "bertscore": 0.7778392434120178,
+            "f1": 0.6666666666666666
+          },
+          "the Th2 clones": {
+            "bertscore": 0.7675777673721313,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

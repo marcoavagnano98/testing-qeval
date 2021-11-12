@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "These results indicate that LTB4 may regulate the production of different cellular transcription factors by modulating the yield and/or the function of transcription factors such as AP-1-binding proto-oncogene products.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "LTB4",
+        "the production",
+        "different cellular transcription factors",
+        "the yield",
+        "the function",
+        "transcription factors",
+        "proto-oncogene products"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that LTB4 may regulate the production of different cellular transcription factors?",
+          "What may regulate the production of different cellular transcription factors?",
+          "What does LTB4 regulate?",
+          "What does LTB4 regulate?",
+          "What does LTB4 modulate?",
+          "What does LTB4 regulate?",
+          "What does LTB4 regulate the production of?",
+          "What does LTB4 regulate the production of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What indicates that LTB4 may regulate the production of different cytokines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000878751277923584,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.63137286901474,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may regulate the production of different cytokines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0529634952545166,
+        "ground_truth": {
+          "LTB4": {
+            "bertscore": 0.6737949848175049,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does LTB4 regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "production of different cellular transcription factors",
+        "answerability": 0.993133008480072,
+        "ground_truth": {
+          "the production": {
+            "bertscore": 0.612055778503418,
+            "f1": 0.2857142857142857
+          },
+          "the function": {
+            "bertscore": 0.6126109957695007,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does LTB4 regulate the production of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "different cellular transcription factors",
+        "answerability": 0.9721372127532959,
+        "ground_truth": {
+          "different cytokines": {
+            "bertscore": 0.797803521156311,
+            "f1": 0.3333333333333333
+          },
+          "proto-oncogene products": {
+            "bertscore": 0.7807738780975342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does LTB4 modulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the yield and/or the function of transcription factors",
+        "answerability": 0.9584200382232666,
+        "ground_truth": {
+          "the yield": {
+            "bertscore": 0.7241764664649963,
+            "f1": 0.2857142857142857
+          },
+          "transcription factors": {
+            "bertscore": 0.7632973790168762,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

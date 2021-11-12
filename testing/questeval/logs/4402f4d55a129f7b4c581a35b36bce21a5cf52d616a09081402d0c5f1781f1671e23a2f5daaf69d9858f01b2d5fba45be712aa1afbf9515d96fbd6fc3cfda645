@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Both nuclear run-on and actinomycin D pulse experiments strongly indicate that HU regulates c-jun mRNA expression by increasing the rate of synthesis as well as stabilizing the c-jun mRNA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HU"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulates c-jun mRNA expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Both nuclear run-on and actinomycin D pulse experiments",
+        "HU",
+        "c-jun mRNA expression",
+        "the rate",
+        "synthesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two experiments strongly indicate that HU regulates c-jun mRNA expression?",
+          "What regulates c-jun mRNA expression?",
+          "What does HU regulate?",
+          "What does HU increase in c-jun mRNA synthesis?",
+          "What does HU increase the rate of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What regulates c-jun mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HU",
+        "answerability": 0.5829488039016724,
+        "ground_truth": {
+          "HU": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two experiments strongly indicate that HU regulates c-jun mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear run-on and actinomycin D pulse",
+        "answerability": 0.9934326410293579,
+        "ground_truth": {
+          "Both nuclear run-on and actinomycin D pulse experiments": {
+            "bertscore": 0.9007041454315186,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does HU regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-jun mRNA",
+        "answerability": 0.9892433285713196,
+        "ground_truth": {
+          "c-jun mRNA expression": {
+            "bertscore": 0.9368504285812378,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does HU increase in c-jun mRNA synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rate",
+        "answerability": 0.811636745929718,
+        "ground_truth": {
+          "the rate": {
+            "bertscore": 0.8959231972694397,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does HU increase the rate of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synthesis",
+        "answerability": 0.9950475692749023,
+        "ground_truth": {
+          "synthesis": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

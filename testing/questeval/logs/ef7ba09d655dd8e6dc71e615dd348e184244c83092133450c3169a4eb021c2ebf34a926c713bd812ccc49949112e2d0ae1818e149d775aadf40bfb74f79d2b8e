@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "The differentiation of naive T-helper (Th) cells into cytokine-secreting effector Th cells requires exposure to exogenous cytokines.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The differentiation",
+        "naive T-helper (Th) cells",
+        "cytokine-secreting effector Th cells",
+        "exposure",
+        "exogenous cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What process does the T-helper cells undergo?",
+          "What type of cells are cytokine-secreting effector Th cells?",
+          "What do naive T-helper cells differentiate into?",
+          "What is required to differentiate naive T-helper cells into Th cells?",
+          "What does differentiation of naive T-helper cells require?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What process of T-helper cells requires exposure to multiple signals?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiation",
+        "answerability": 0.987372875213623,
+        "ground_truth": {
+          "The differentiation": {
+            "bertscore": 0.8871188163757324,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are required to differentiate into Th cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "naive",
+        "answerability": 0.9313234090805054,
+        "ground_truth": {
+          "naive T-helper (Th) cells": {
+            "bertscore": 0.7125067710876465,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What do naive T-helper cells become?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine-secreting effector Th cells",
+        "answerability": 0.9867358803749084,
+        "ground_truth": {
+          "cytokine-secreting effector Th cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is required to differentiate naive T-helper cells into Th cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "exposure to exogenous cytokines",
+        "answerability": 0.9956048727035522,
+        "ground_truth": {
+          "exposure": {
+            "bertscore": 0.7353720664978027,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does differentiation of naive T-helper cells require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "exposure to exogenous cytokines",
+        "answerability": 0.9987287521362305,
+        "ground_truth": {
+          "multiple signals": {
+            "bertscore": 0.7238240838050842,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signals are required for differentiation of naive T-helper cells into cyto": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "exposure to exogenous cytokines",
+        "answerability": 0.8353667259216309,
+        "ground_truth": {
+          "exogenous cytokines": {
+            "bertscore": 0.9215558767318726,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

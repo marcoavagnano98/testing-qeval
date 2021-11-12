@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "However RANKL mRNA expression was unchanged in day 7 cells and decreased progressively from day 7 to day 14 of culture.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "day 7",
+        "from day 7 to day 14"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "When was RANKL mRNA expression unchanged?",
+          "When did RANKL mRNA expression decrease?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RANKL mRNA expression",
+        "day",
+        "7 cells",
+        "day",
+        "day",
+        "culture"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was unchanged in day 7 cells?",
+          "When was RANKL mRNA expression unchanged?",
+          "In what day of culture was RANKL mRNA expression unchanged?",
+          "When was RANKL mRNA expression unchanged?",
+          "When was RANKL mRNA expression unchanged?",
+          "What was the RANKL mRNA expression unchanged in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the stromal and osteoblastic cells do to induce RANKL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019594788551330566,
+        "ground_truth": {
+          "co-culture": {
+            "bertscore": 0.6970745325088501,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005515217781066895,
+        "ground_truth": {
+          "stromal or osteoblastic cells": {
+            "bertscore": 0.6166945695877075,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008451938629150391,
+        "ground_truth": {
+          "RANKL mRNA expression": {
+            "bertscore": 0.6138904094696045,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10331463813781738,
+        "ground_truth": {
+          "OPG mRNA expression": {
+            "bertscore": 0.6336473226547241,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

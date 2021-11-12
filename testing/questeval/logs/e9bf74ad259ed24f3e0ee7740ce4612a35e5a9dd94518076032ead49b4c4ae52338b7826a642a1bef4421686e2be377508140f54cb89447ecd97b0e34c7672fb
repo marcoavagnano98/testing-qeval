@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "The p65 protein was coimmunoprecipitated with IkappaB-alpha (1:200) and was halved in Tat-positive cells where Tat coimmunoprecipitated with IkappaB-alpha (Figure 4D lanes 1 and 4) indicating that Tat competed the IkappaB-alpha binding to p65 in a dose-dependent manner (Figure 4E lanes 4 and 4).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1:200",
+        "Tat-positive",
+        "4D",
+        "1",
+        "4",
+        "Tat",
+        "4E",
+        "4",
+        "4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the ratio of p65 protein to IkappaB-alpha?",
+          "What type of cells showed a halved p65 protein?",
+          "What is the lanes 1 and 4 of the figure?",
+          "What is the dose-dependent manner in which Tat competes with IkappaB-",
+          "What is the lanes 1 and 4 of the Figure 4D?",
+          "What protein coimmunoprecipitated with IkappaB-al",
+          "What is the lanes 4 and 4 of the Figure 4D?",
+          "What is the lanes 1 and 4 of the Figure 4D?",
+          "What is the lanes 1 and 4 of the Figure 4D?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The p65 protein",
+        "IkappaB-alpha",
+        "Tat-positive cells",
+        "Tat",
+        "IkappaB-alpha",
+        "Figure 4D",
+        "Tat",
+        "a dose-dependent manner",
+        "Figure 4E"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was coimmunoprecipitated with IkappaB-al",
+          "What protein was p65 coimmunoprecipitated with?",
+          "What type of cells showed a halved p65 protein?",
+          "What protein coimmunoprecipitated with IkappaB-al",
+          "What protein was p65 coimmunoprecipitated with?",
+          "What is the lanes 1 and 4 of the figure showing that Tat competed with Ik",
+          "What protein coimmunoprecipitated with IkappaB-al",
+          "How did Tat compete with IkappaB-alpha binding to p65?",
+          "What is the lanes 4 and 4 of the figure?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main component of the NF-kappaB activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0016040205955505371,
+        "ground_truth": {
+          "Tat": {
+            "bertscore": 0.6546971797943115,
+            "f1": 0
+          },
+          "newly synthesized IkappaB-alpha": {
+            "bertscore": 0.6264451742172241,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that causes Tat to be able to sustain NF-kapp": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04049801826477051,
+        "ground_truth": {
+          "presence": {
+            "bertscore": 0.7271952033042908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is used to synthesize Tat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14051079750061035,
+        "ground_truth": {
+          "IkappaB-alpha": {
+            "bertscore": 0.6390498876571655,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is coimmunoprecipitated with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65",
+        "answerability": 0.9008709788322449,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "(NF)-kappa B AP-1 NFAT and STAT1 in Jurkat T cells might mediate the inducible expression of this gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jurkat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells may mediate the inducible expression of NF-kapp"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(NF)-kappa B AP-1 NFAT",
+        "STAT1",
+        "Jurkat T cells",
+        "the inducible expression",
+        "this gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What genes are involved in the inducible expression of a gene?",
+          "What genes might mediate the inducible expression of NF-kappa B",
+          "What cells might mediate the inducible expression of NF-kappa B",
+          "What might the NF-kappa B gene mediate?",
+          "What gene might be expressed in Jurkat T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the NF-kappa gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09547531604766846,
+        "ground_truth": {
+          "B Egr-1 AP-1": {
+            "bertscore": 0.6505200266838074,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that may mediate the inducible expression of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF)-kappa B AP-1 NFAT and STAT1",
+        "answerability": 0.754614531993866,
+        "ground_truth": {
+          "(NF-kappa B Egr-1 AP-1": {
+            "bertscore": 0.7929295897483826,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What might NF-kappa B Egr-1 mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009082138538360596,
+        "ground_truth": {
+          "the inducible expression": {
+            "bertscore": 0.6646654009819031,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappa B Egr-1 AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.045456886291503906,
+        "ground_truth": {
+          "this gene": {
+            "bertscore": 0.6866748929023743,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

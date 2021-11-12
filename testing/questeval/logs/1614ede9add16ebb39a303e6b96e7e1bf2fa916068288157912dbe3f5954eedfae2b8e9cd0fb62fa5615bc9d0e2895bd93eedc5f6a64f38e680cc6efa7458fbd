@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "In the adult bone marrow we found expression of runt polypeptides in differentiating myeloid cells and in B lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the adult bone marrow",
+        "we",
+        "expression",
+        "runt polypeptides",
+        "myeloid cells",
+        "B lymphocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where did we find expression of runt polypeptides?",
+          "What did we find in the adult bone marrow?",
+          "What did we find in the adult bone marrow?",
+          "What did we find in the adult bone marrow?",
+          "What type of cells were found to express runt polypeptides?",
+          "In addition to myeloid cells, what other cell type is expressed in the bone m"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Where did we find expression of runt polypeptides?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bone marrow",
+        "answerability": 0.9880914092063904,
+        "ground_truth": {
+          "the adult bone marrow": {
+            "bertscore": 0.8411521911621094,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did we find in the adult bone marrow?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "runt polypeptides",
+        "answerability": 0.9787846207618713,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.570600152015686,
+            "f1": 0
+          },
+          "expression": {
+            "bertscore": 0.623274564743042,
+            "f1": 0
+          },
+          "runt polypeptides": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were found to express runt polypeptides?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid cells",
+        "answerability": 0.8302315473556519,
+        "ground_truth": {
+          "myeloid cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In addition to myeloid cells, what other cell type is expressed in the bone m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B lymphocytes",
+        "answerability": 0.7781041264533997,
+        "ground_truth": {
+          "B lymphocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

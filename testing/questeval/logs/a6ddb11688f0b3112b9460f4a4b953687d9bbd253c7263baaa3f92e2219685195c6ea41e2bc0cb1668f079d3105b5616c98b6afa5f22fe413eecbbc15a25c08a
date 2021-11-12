@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Our results also suggest that ubiquitin is transferred directly from the Ubc to phospho-I kappa B alpha in a MCF-7 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our results",
+        "ubiquitin",
+        "the Ubc",
+        "phospho",
+        "a MCF-7 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that ubiquitin is transferred directly from Ubc to phospho-I",
+          "What is transferred directly from Ubc to phospho-I kappa B al",
+          "What is ubiquitin transferred from to phospho-I kappa B al",
+          "What is the kappa B alpha of MCF-7 cells?",
+          "Where is ubiquitin transferred from Ubc to phospho-I kapp"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggests that ubiquitin is transferred directly from Ubc to phospho-I": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Our results",
+        "answerability": 0.6422560214996338,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is transferred directly from Ubc to phospho-I kappa B al": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ubiquitin",
+        "answerability": 0.7686063647270203,
+        "ground_truth": {
+          "ubiquitin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is ubiquitin transferred from to phospho-I kappa B al": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3818865418434143,
+        "ground_truth": {
+          "the Ubc": {
+            "bertscore": 0.6755492091178894,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the kappa B alpha of ubiquitin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phospho-I",
+        "answerability": 0.5747191309928894,
+        "ground_truth": {
+          "phospho": {
+            "bertscore": 0.8682517409324646,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process that transfers ubiquitin from Ubc to phospho-I": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2636929750442505,
+        "ground_truth": {
+          "a SCF beta-TRCP dependent reaction": {
+            "bertscore": 0.6046505570411682,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

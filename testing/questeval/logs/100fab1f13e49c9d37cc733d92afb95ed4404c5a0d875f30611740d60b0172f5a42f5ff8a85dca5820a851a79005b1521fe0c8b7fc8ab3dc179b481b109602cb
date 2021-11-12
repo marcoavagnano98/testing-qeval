@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "We wished to determine if this developmentally related interaction is a consequence of myeloid differentiation or an intrinsic differentiating stimulus.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "this developmentally related interaction",
+        "a consequence",
+        "myeloid differentiation",
+        "an intrinsic differentiating stimulus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the researchers want to determine about the interaction between myeloid differentiation and myeloid",
+          "What was the result of myeloid differentiation?",
+          "What did the study want to determine about the developmentally related interaction?",
+          "What is the cause of the recurrent synapse?",
+          "What did the researchers want to determine about the developmentally related interaction?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the researchers want to determine about the development of myeloid differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a consequence",
+        "answerability": 0.8998799324035645,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6202133297920227,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the result of myeloid differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5575517416000366,
+        "ground_truth": {
+          "this developmentally related interaction": {
+            "bertscore": 0.6620252132415771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study want to determine about the developmentally related interaction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a consequence of myeloid differentiation or an intrinsic differentiation stimulus",
+        "answerability": 0.9694542288780212,
+        "ground_truth": {
+          "a consequence": {
+            "bertscore": 0.6467596292495728,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What did the researchers want to determine if the developmentally related interaction is a consequence of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid differentiation",
+        "answerability": 0.9037399291992188,
+        "ground_truth": {
+          "myeloid differentiation": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          },
+          "the selection procedure": {
+            "bertscore": 0.7405761480331421,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the result of the selection procedure?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0038632750511169434,
+        "ground_truth": {
+          "an artifact": {
+            "bertscore": 0.6577402949333191,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

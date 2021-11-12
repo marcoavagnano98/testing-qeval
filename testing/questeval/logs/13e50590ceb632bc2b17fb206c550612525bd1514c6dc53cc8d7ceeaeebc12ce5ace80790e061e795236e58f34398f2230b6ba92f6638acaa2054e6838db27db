@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Mutation of the Oct and/or Sp1 site results in a lesser decrease of promoter activity in myeloid cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mutation",
+        "the Oct and/or Sp1 site results",
+        "a lesser decrease",
+        "promoter activity",
+        "myeloid cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What results in a lesser decrease of promoter activity in myeloid cells?",
+          "What causes a lesser decrease in promoter activity in myeloid cells?",
+          "What happens to the promoter activity in myeloid cells when mutated?",
+          "What decreases in myeloid cells when mutated?",
+          "What type of cells are affected by the mutation of Oct and Sp1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What results in a lesser decrease of promoter activity in myeloid cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutation of the Oct and/or Sp1 site",
+        "answerability": 0.9996521472930908,
+        "ground_truth": {
+          "Mutation": {
+            "bertscore": 0.7206120491027832,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What causes a lesser decrease in promoter activity in myeloid cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutation of the Oct and/or Sp1 site",
+        "answerability": 0.9986119270324707,
+        "ground_truth": {
+          "the Oct and/or Sp1 site results": {
+            "bertscore": 0.8854318857192993,
+            "f1": 0.7272727272727272
+          }
+        }
+      }
+    },
+    "What happens to the promoter activity in myeloid cells when mutated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decrease",
+        "answerability": 0.987428605556488,
+        "ground_truth": {
+          "a lesser decrease": {
+            "bertscore": 0.8250833749771118,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What decreases in myeloid cells when mutated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "promoter activity",
+        "answerability": 0.9800161123275757,
+        "ground_truth": {
+          "promoter activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are affected by the mutation of Oct and Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid",
+        "answerability": 0.983292281627655,
+        "ground_truth": {
+          "myeloid cells": {
+            "bertscore": 0.8811802864074707,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

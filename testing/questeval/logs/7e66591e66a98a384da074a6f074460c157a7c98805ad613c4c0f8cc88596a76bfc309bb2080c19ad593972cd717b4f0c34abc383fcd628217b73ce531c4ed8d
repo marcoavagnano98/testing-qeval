@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Soluble tumor necrosis factor receptors inhibit phorbol myristate acetate and cytokine-induced HIV-1 expression chronically infected U1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "phorbol myristate",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does cytokine-induced HIV-1 expression inhibit?",
+          "What type of virus is chronically infected U1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Soluble tumor necrosis factor receptors",
+        "phorbol myristate acetate",
+        "cytokine-induced HIV-1 expression",
+        "chronically infected U1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits phorbol myristate acetate and cytokine-",
+          "What does the soluble tumor necrosis factor receptors inhibit?",
+          "What do soluble tumor necrosis factor receptors inhibit?",
+          "What is the most common type of HIV-1 infection?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does cytokine-induced HIV-1 expression inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017439544200897217,
+        "ground_truth": {
+          "phorbol myristate": {
+            "bertscore": 0.6150121092796326,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of virus is cytokine-induced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.992641806602478,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are infected with HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12465864419937134,
+        "ground_truth": {
+          "U1": {
+            "bertscore": 0.6922974586486816,
+            "f1": 0
+          },
+          "U1 cells": {
+            "bertscore": 0.6370437145233154,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits phorbol myristate acetate and cytokine-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7076274752616882,
+        "ground_truth": {
+          "Soluble tumor necrosis factor receptors": {
+            "bertscore": 0.6185725331306458,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the soluble tumor necrosis factor receptors inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol myristate acetate and cytokine-induced HIV-1",
+        "answerability": 0.9432230591773987,
+        "ground_truth": {
+          "phorbol myristate acetate": {
+            "bertscore": 0.8330034017562866,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What do soluble tumor necrosis factor receptors inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol myristate acetate and cytokine-induced HIV-1",
+        "answerability": 0.9398899078369141,
+        "ground_truth": {
+          "cytokine-induced HIV-1 expression": {
+            "bertscore": 0.843746542930603,
+            "f1": 0.4444444444444444
+          }
+        }
+      }
+    }
+  }
+}

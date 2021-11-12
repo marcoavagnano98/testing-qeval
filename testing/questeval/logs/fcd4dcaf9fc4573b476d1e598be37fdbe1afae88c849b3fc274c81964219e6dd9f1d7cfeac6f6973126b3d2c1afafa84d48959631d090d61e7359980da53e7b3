@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "Granulocyte-macrophage colony-stimulating factor (GM-CSF) and interleukin-2 (IL-2) are produced by stimulation with phorbol-12-myristate acetate (PMA) and calcium ionophore (A23187) in human T cell leukemia Jurkat cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GM-CSF",
+        "IL-2",
+        "PMA",
+        "A23187"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the colony-stimulating factor produced by stimulation with phor",
+          "What is the name of the interleukin that is produced by stimulation with phorbol",
+          "What is the name of the phorbol-12-myristate acetate?",
+          "What is the name of the calcium ionophore used in human T cell le"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Granulocyte-macrophage colony-stimulating factor",
+        "GM-CSF",
+        "interleukin-2",
+        "stimulation",
+        "phorbol-12-myristate acetate",
+        "PMA",
+        "calcium ionophore",
+        "A23187",
+        "human T cell leukemia Jurkat cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does GM-CSF stand for?",
+          "What is the name of the colony-stimulating factor produced by stimulation with phor",
+          "What does IL-2 stand for?",
+          "What is the process of producing GM-CSF and IL-2?",
+          "What is PMA?",
+          "What is the name of the phorbol-12-myristate acetate?",
+          "What is A23187?",
+          "What is the name of the calcium ionophore used in human T cell le",
+          "What type of cells are stimulated with phorbol-12-myristate a"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is produced by T helper type 1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008724331855773926,
+        "ground_truth": {
+          "interleukin 2": {
+            "bertscore": 0.615416407585144,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of protein is IL-2 produced by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulation with phorbol-12-myristate acetate (PMA) and",
+        "answerability": 0.595744252204895,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.5455960631370544,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the preferred type of IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02846503257751465,
+        "ground_truth": {
+          "interleukin": {
+            "bertscore": 0.6550241708755493,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of protein produces interleukin 2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06626147031784058,
+        "ground_truth": {
+          "T helper type": {
+            "bertscore": 0.6842457056045532,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

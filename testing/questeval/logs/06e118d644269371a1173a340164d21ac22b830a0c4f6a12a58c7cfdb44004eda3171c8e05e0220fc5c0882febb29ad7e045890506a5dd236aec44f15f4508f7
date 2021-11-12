@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "YM268 increases the glucose uptake cell differentiation and mRNA expression of glucose transporter in 3T3-L1 adipocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "YM268"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases the glucose uptake cell differentiation and mRNA expression of glucose transporter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "YM268",
+        "the glucose uptake cell differentiation",
+        "mRNA expression",
+        "glucose transporter",
+        "3T3-L1 adipocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases the glucose uptake cell differentiation and mRNA expression of glucose transporter?",
+          "What does YM268 increase?",
+          "What does YM268 increase in 3T3-L1 adipocyte",
+          "What does YM268 increase in 3T3-L1 adipocyte",
+          "Where does YM268 increase glucose uptake cell differentiation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases the glucose uptake cell differentiation and mRNA expression of glucose transporter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "YM268",
+        "answerability": 0.9817138910293579,
+        "ground_truth": {
+          "YM268": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does YM268 increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glucose uptake cell differentiation and mRNA expression of glucose transporter",
+        "answerability": 0.998651385307312,
+        "ground_truth": {
+          "the glucose uptake cell differentiation": {
+            "bertscore": 0.8822320699691772,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What does YM268 increase in 3T3-L1 adipocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glucose transporter",
+        "answerability": 0.995392918586731,
+        "ground_truth": {
+          "mRNA expression": {
+            "bertscore": 0.8120619654655457,
+            "f1": 0
+          },
+          "glucose transporter": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where does YM268 increase glucose uptake cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3T3-L1 adipocytes",
+        "answerability": 0.9294472932815552,
+        "ground_truth": {
+          "3T3-L1 adipocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

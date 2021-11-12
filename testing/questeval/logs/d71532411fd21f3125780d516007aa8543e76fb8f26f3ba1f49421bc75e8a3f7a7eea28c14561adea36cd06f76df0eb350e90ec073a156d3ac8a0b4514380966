@@ -1,0 +1,78 @@
+{
+  "type": "ref",
+  "text": "In T-cell ALL with t(10;14) translocation the HOX 11 gene is deregulated.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HOX 11"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is deregulated in T-cell ALL?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "t(10;14",
+        "the HOX 11 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What translocation of HOX 11 causes the HOX 11 gene to be deregulated",
+          "What is deregulated in T-cell ALL with t(10;14) translocation"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the leukemia with t(10;14) translocation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04709571599960327,
+        "ground_truth": {
+          "AML": {
+            "bertscore": 0.6989296078681946,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is rearranged in AML?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00022798776626586914,
+        "ground_truth": {
+          "the HOX A9 gene": {
+            "bertscore": 0.6044913530349731,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the type of leukemia that has a t(10": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06063598394393921,
+        "ground_truth": {
+          "(AML": {
+            "bertscore": 0.6721893548965454,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What translocation of HOX A9 causes the HOX A9 gene to be": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07728111743927002,
+        "ground_truth": {
+          "t(10;14": {
+            "bertscore": 0.6305176019668579,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "The persistence of TGF-beta1-transcribing macrophages despite paralysis of T cell function may provide an explanation for the chronicity of the disease and may identify a novel therapeutic target in this inflammatory autoimmune disorder.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TGF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is responsible for the persistence of T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The persistence",
+        "TGF-beta1-transcribing macrophages",
+        "paralysis",
+        "T cell function",
+        "an explanation",
+        "the chronicity",
+        "the disease",
+        "a novel therapeutic target",
+        "this inflammatory autoimmune disorder"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may explain the chronicity of the disease?",
+          "What may explain the chronicity of the disease?",
+          "What is the main cause of T cell dysfunction?",
+          "What is paralyzed by TGF-beta1?",
+          "What may the persistence of TGF-beta1-transcribing macrophag",
+          "What may persistence of TGF-beta1-transcribing macrophage",
+          "What may persistence of TGF-beta1-transcribing macrophage",
+          "What may the persistence of TGF-beta1-transcribing macrophag",
+          "What may the persistence of TGF-beta1-transcribing macrophag"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is involved in the persistence of T cell function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta1",
+        "answerability": 0.6038509607315063,
+        "ground_truth": {
+          "TGF": {
+            "bertscore": 0.737826943397522,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may explain the chronicity of the disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "persistence of TGF-beta1-transcribing macrophages",
+        "answerability": 0.996723473072052,
+        "ground_truth": {
+          "The persistence": {
+            "bertscore": 0.6633809804916382,
+            "f1": 0.4
+          },
+          "TGF-beta1-transcribing macrophages": {
+            "bertscore": 0.9035786390304565,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the underlying cause of T cell dysfunction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20835351943969727,
+        "ground_truth": {
+          "paralysis": {
+            "bertscore": 0.7233111262321472,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is paralyzed by TGF-beta1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell function",
+        "answerability": 0.916449785232544,
+        "ground_truth": {
+          "T cell function": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may the persistence of TGF-beta1-transcribing macrophag": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "may provide an explanation for the chronicity of the disease",
+        "answerability": 0.7732206583023071,
+        "ground_truth": {
+          "an explanation": {
+            "bertscore": 0.7227771878242493,
+            "f1": 0.25
+          },
+          "the chronicity": {
+            "bertscore": 0.7456660866737366,
+            "f1": 0.25
+          },
+          "the disease": {
+            "bertscore": 0.7524012327194214,
+            "f1": 0.25
+          },
+          "a novel therapeutic target": {
+            "bertscore": 0.6976159811019897,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the potential therapeutic target for TB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta1",
+        "answerability": 0.7572143077850342,
+        "ground_truth": {
+          "this inflammatory vasculopathy": {
+            "bertscore": 0.6304518580436707,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

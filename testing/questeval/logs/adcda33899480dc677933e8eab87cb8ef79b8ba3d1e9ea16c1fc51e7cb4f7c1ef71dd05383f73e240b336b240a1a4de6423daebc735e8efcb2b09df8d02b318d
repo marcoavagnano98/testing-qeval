@@ -1,0 +1,92 @@
+{
+  "type": "ref",
+  "text": "In six of seven patients examined inhibition of the VLA-4/VCAM-1 pathway resulted in greater than 50% inhibition of transendothelial migration of T-cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "six",
+        "seven",
+        "VLA-4",
+        "greater than 50%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many patients examined the inhibition of the VLA-4/VCAM-1 pathway?",
+          "How many patients examined the inhibition of the VLA-4/VCAM-1 pathway?",
+          "What pathway was found to inhibit transendothelial migration of T cells?",
+          "How much inhibition of the VLA-4/VCAM-1 pathway did patients have?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "six of seven patients",
+        "inhibition",
+        "the VLA-4/VCAM-1 pathway",
+        "greater than 50% inhibition",
+        "transendothelial migration",
+        "T-cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many patients examined inhibition of the VLA-4/VCAM-1 pathway?",
+          "What resulted in greater than 50% of transendothelial migration of T-",
+          "What pathway was found to inhibit T-cell migration?",
+          "What was the effect of inhibition of the VLA-4/VCAM-1 pathway on transend",
+          "What did inhibition of the VLA-4/VCAM-1 pathway result in?",
+          "What type of cells were inhibited in six of seven patients?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was inhibited by an antibody to PECAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005620121955871582,
+        "ground_truth": {
+          "The transendothelial migration": {
+            "bertscore": 0.6024144291877747,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were inhibited by an antibody to PECAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003303050994873047,
+        "ground_truth": {
+          "T-cells": {
+            "bertscore": 0.6641595959663391,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the transendothelial migration of T-cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VLA-4/VCAM-1",
+        "answerability": 0.8793627619743347,
+        "ground_truth": {
+          "an antibody": {
+            "bertscore": 0.6311169266700745,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antibody inhibited the transendothelial migration of T-cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1550392508506775,
+        "ground_truth": {
+          "PECAM-1": {
+            "bertscore": 0.6543973684310913,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

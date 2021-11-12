@@ -1,0 +1,44 @@
+{
+  "type": "hyp",
+  "text": "Suppressing PTTG overexpression by siRNA decreased cell motility in both PTTG-HA/EC9706 and KYSE150 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTTG-HA/EC9706"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were affected by siRNA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Suppressing PTTG overexpression",
+        "decreased cell motility",
+        "both PTTG-HA/EC9706 and KYSE150 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What decreased cell motility in PTTG-HA/EC9706 and KYSE150",
+          "What did siRNA do to PTTG-HA/EC9706 and KYSE150",
+          "What cells did siRNA inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promotes apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0026382803916931152,
+        "ground_truth": {
+          "PTTG overexpression": {
+            "bertscore": 0.6822603940963745,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

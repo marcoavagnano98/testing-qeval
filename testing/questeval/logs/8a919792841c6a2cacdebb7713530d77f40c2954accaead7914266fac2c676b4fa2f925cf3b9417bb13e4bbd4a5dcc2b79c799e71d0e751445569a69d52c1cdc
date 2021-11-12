@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "PGN caused concentration- and time-dependent increases in IL-6 PGE(2) and cAMP production.NF-kappaB activation was inhibited by NS398 AH6809 AH23848 KT5720 a protein kinase C inhibitor (Ro31-8220) and a p38 MAPK inhibitor (SB203580).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PGN",
+        "IL-6",
+        "NS398",
+        "SB203580"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused concentration- and time-dependent increases in IL-6 PGE(2) and c",
+          "What protein is involved in cAMP production?",
+          "What inhibited NF-kappaB activation?",
+          "What is the name of the p38 MAPK inhibitor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PGN",
+        "concentration- and time-dependent increases",
+        "IL-6 PGE(2",
+        "cAMP production",
+        "NF-kappaB activation",
+        "a protein kinase C inhibitor",
+        "a p38 MAPK inhibitor",
+        "SB203580"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused concentration- and time-dependent increases in IL-6 PGE(2) and c",
+          "What did PGN cause in IL-6 PGE(2) and cAMP production?",
+          "What protein is involved in cAMP production?",
+          "What did IL-6 PGE(2) and KT5720 cause?",
+          "What was inhibited by NS398 AH6809 AH23848",
+          "What is KT5720?",
+          "What is SB203580?",
+          "What is the name of the p38 MAPK inhibitor?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused concentration- and time-dependent increases in IL-6 PGE(2) and c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PGN",
+        "answerability": 0.6521952152252197,
+        "ground_truth": {
+          "PGN": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein is cAMP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022710084915161133,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 0.6727325320243835,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did PGN cause in IL-6 PGE(2) and cAMP production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "concentration- and time-dependent increases",
+        "answerability": 0.9985187649726868,
+        "ground_truth": {
+          "concentration- and time-dependent increases": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the cAMP produced by PGN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16213464736938477,
+        "ground_truth": {
+          "IL-6 PGE(2": {
+            "bertscore": 0.6395348906517029,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of PGN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08570259809494019,
+        "ground_truth": {
+          "cAMP production": {
+            "bertscore": 0.6297324895858765,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

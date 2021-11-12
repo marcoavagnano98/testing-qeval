@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "The data show that unstimulated human peripheral B cells express mRNA of the RA receptor beta gamma and granulocyte-macrophage colony-stimulating factor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor does unstimulated human peripheral B cells express?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The data",
+        "unstimulated human peripheral B cells",
+        "mRNA",
+        "the RA receptor beta gamma",
+        "granulocyte-macrophage colony-stimulating factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that unstimulated human peripheral B cells express mRNA of the RA",
+          "What cells express mRNA of the RA receptor beta gamma?",
+          "What do unstimulated human peripheral B cells express?",
+          "What do unstimulated human peripheral B cells express mRNA of?",
+          "What do unstimulated human peripheral B cells express?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What receptor does the mRNA of unstimulated human peripheral B cells express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RA receptor beta gamma",
+        "answerability": 0.9864654541015625,
+        "ground_truth": {
+          "RA": {
+            "bertscore": 0.7255833745002747,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What shows that unstimulated human peripheral B cells express mRNA of the RA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6058711409568787,
+        "ground_truth": {
+          "The data": {
+            "bertscore": 0.6840075254440308,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells express mRNA of the RA receptor alpha beta and gamma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3229532241821289,
+        "ground_truth": {
+          "unstimulated human peripheral B cells": {
+            "bertscore": 0.6530649662017822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do unstimulated human peripheral B cells express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA of the RA receptor beta gamma and granulocyte-",
+        "answerability": 0.9925653338432312,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.7229529619216919,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What do unstimulated human peripheral B cells express mRNA of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RA receptor beta gamma and granulocyte-macrophage",
+        "answerability": 0.9879553318023682,
+        "ground_truth": {
+          "the RA receptor alpha beta": {
+            "bertscore": 0.7759265899658203,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What receptor does the RA receptor alpha beta and what other receptor share?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11347818374633789,
+        "ground_truth": {
+          "gamma": {
+            "bertscore": 0.6778934597969055,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

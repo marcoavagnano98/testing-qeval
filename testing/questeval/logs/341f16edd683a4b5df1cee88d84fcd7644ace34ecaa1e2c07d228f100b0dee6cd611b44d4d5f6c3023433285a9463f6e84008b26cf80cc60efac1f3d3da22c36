@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Purified E2F8 a member of the E2F family that lacks transactivation domains but contains specific suppressor domains inhibits E2F-binding activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E2F"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family does E2F8 belong to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Purified E2F8",
+        "a member",
+        "the E2F family",
+        "transactivation domains",
+        "specific suppressor domains",
+        "E2F-binding activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits E2F-binding activity?",
+          "What is E2F8?",
+          "What family is E2F8 a member of?",
+          "What does purified E2F8 lack?",
+          "What does purified E2F8 contain?",
+          "What does purified E2F8 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits E2F-driven promoters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12585192918777466,
+        "ground_truth": {
+          "E2F8": {
+            "bertscore": 0.6671004891395569,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the transcriptional repressor that inhibits E2F-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27349185943603516,
+        "ground_truth": {
+          "E2F7": {
+            "bertscore": 0.6611698269844055,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does E2F8 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F-binding activity",
+        "answerability": 0.9462653398513794,
+        "ground_truth": {
+          "E2F-driven promoters": {
+            "bertscore": 0.8129384517669678,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is E2F8 like?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a member of the E2F family",
+        "answerability": 0.8395411968231201,
+        "ground_truth": {
+          "transcriptional repressor": {
+            "bertscore": 0.6882694363594055,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

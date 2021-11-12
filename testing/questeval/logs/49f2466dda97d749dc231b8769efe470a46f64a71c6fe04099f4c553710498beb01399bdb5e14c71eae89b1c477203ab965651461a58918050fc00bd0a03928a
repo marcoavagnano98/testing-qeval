@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "When stably introduced into primary erythroblasts or conditionally transformed erythroblasts exogenous GATA-2/ER promoted proliferation and inhibited terminal differentiation in an estrogen-dependent manner.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "primary erythroblasts",
+        "erythroblasts",
+        "exogenous GATA-2/ER",
+        "proliferation",
+        "terminal differentiation",
+        "an estrogen-dependent manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where was GATA-2/ER stably introduced into?",
+          "What did GATA-2/ER promote proliferation and inhibit terminal differentiation?",
+          "What inhibited terminal differentiation in an estrogen-dependent manner?",
+          "What did GATA-2/ER inhibit?",
+          "What did GATA-2/ER inhibit?",
+          "How did GATA-2/ER inhibit terminal differentiation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Where was GATA-2/ER stably introduced into?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "primary erythroblasts",
+        "answerability": 0.9778220653533936,
+        "ground_truth": {
+          "primary erythroblasts": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were treated with GATA-2/ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "primary erythroblasts",
+        "answerability": 0.7116953730583191,
+        "ground_truth": {
+          "erythroid progenitors": {
+            "bertscore": 0.8034254908561707,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited terminal differentiation in an estrogen-dependent manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-2/ER",
+        "answerability": 0.8034543991088867,
+        "ground_truth": {
+          "exogenous GATA-2/ER": {
+            "bertscore": 0.8667231202125549,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did GATA-2/ER inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "terminal differentiation",
+        "answerability": 0.9641604423522949,
+        "ground_truth": {
+          "proliferation": {
+            "bertscore": 0.8115816712379456,
+            "f1": 0
+          },
+          "terminal differentiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How did GATA-2/ER inhibit terminal differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "estrogen-dependent",
+        "answerability": 0.8904061913490295,
+        "ground_truth": {
+          "an estrogen-dependent manner": {
+            "bertscore": 0.8599341511726379,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "HOIP-deficient mice were sensitized to TNFalpha-induced apoptosis and cell death was implicated as a factor in the CD40 signaling pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNFalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was involved in apoptosis in mice?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HOIP-deficient mice",
+        "TNFalpha-induced apoptosis",
+        "cell death",
+        "a factor",
+        "the CD40",
+        "pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mice were sensitized to TNFalpha-induced apoptosis",
+          "What was the HOIP-deficient mice sensitized to?",
+          "What was implicated as a factor in the CD40 signaling pathway?",
+          "What was cell death implicated as in the CD40 signaling pathway?",
+          "What signaling pathway was involved in HOIP-deficient mice?",
+          "What did HOIP-deficient mice cause cell death to be a factor in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is defective in CD40-stimulated HOIP-deficient cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.121707022190094,
+        "ground_truth": {
+          "GLepsilon transcription": {
+            "bertscore": 0.6035726070404053,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are GLepsilon transcription defective in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004222989082336426,
+        "ground_truth": {
+          "CD40-stimulated HOIP-deficient cells": {
+            "bertscore": 0.5929635167121887,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

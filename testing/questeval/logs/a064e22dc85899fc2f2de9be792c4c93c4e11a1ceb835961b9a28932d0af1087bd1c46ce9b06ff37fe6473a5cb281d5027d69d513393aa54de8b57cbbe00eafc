@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "The CMAT protein appears to be a novel inducible protein involved in the regulation of c-myb expression during T-cell activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CMAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the inducible protein involved in the regulation of c-my"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The CMAT protein",
+        "a novel inducible protein",
+        "the regulation",
+        "c-myb expression",
+        "T-cell activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a novel inducible protein involved in the regulation of c-myb",
+          "What does the CMAT protein appear to be?",
+          "What is the CMAT protein involved in?",
+          "What is the CMAT protein involved in?",
+          "What is the CMAT protein involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013420581817626953,
+        "ground_truth": {
+          "Identification": {
+            "bertscore": 0.6873464584350586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of c-myb in T cell activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47081464529037476,
+        "ground_truth": {
+          "an inducible regulator": {
+            "bertscore": 0.6783575415611267,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the inducible regulator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-myb expression",
+        "answerability": 0.8440360426902771,
+        "ground_truth": {
+          "c-myb expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the inducible regulator of c-myb expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CMAT protein",
+        "answerability": 0.9906693696975708,
+        "ground_truth": {
+          "T-cell activation": {
+            "bertscore": 0.7722060084342957,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

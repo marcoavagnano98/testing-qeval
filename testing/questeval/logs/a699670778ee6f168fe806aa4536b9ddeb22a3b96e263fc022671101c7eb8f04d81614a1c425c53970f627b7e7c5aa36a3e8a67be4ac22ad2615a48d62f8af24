@@ -1,0 +1,110 @@
+{
+  "type": "ref",
+  "text": "overexpressing human (h)IRAK to evaluate the role of this kinase in IL-1 signaling.\\nOverexpression of hIRAK enhanced IL-1-stimulated activation of the transcription factor NFkappaB whereas a truncated form (N-IRAK) specifically inhibited IL-1-dependent NFkappaB activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-1 signaling.\\nOverexpression",
+        "NFkappaB",
+        "NFkappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the kinase hIRAK enhance?",
+          "What transcription factor was enhanced by hIRAK?",
+          "What transcription factor was enhanced by hIRAK?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "human",
+        "the role",
+        "this kinase",
+        "IL-1 signaling.\\nOverexpression of hIRAK enhanced IL-1-stimulated activation",
+        "the transcription factor",
+        "a truncated form",
+        "N-IRAK",
+        "NFkappaB activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is hIRAK?",
+          "What did the study examine about hIRAK?",
+          "What did the study examine the role of?",
+          "What did the hIRAK kinase do?",
+          "What does hIRAK enhance?",
+          "What is N-IRAK?",
+          "What kinase was truncated to inhibit IL-1-dependent",
+          "What transcription factor was inhibited by a truncated form of h"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the kinase that is involved in signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-1",
+        "answerability": 0.9796252250671387,
+        "ground_truth": {
+          "IL-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the kinase that is overexpressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hIRAK",
+        "answerability": 0.9616672396659851,
+        "ground_truth": {
+          "human": {
+            "bertscore": 0.7465944886207581,
+            "f1": 0
+          },
+          "hIRAK": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the purpose of this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "to evaluate the role of this kinase in IL-1 signaling",
+        "answerability": 0.7556616067886353,
+        "ground_truth": {
+          "the role": {
+            "bertscore": 0.6249263882637024,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What is the role of IL-1 signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4722498059272766,
+        "ground_truth": {
+          "this kinase": {
+            "bertscore": 0.693606436252594,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the kinase that is involved in IL-1 signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "h)IRAK",
+        "answerability": 0.9441049695014954,
+        "ground_truth": {
+          "\u2047 nOverexpression": {
+            "bertscore": 0.6382437348365784,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

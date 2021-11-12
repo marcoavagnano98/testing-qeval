@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Stimulation of interferon beta promoter transcription in vitro by purified NF-kappa B and a novel TH protein.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stimulation",
+        "interferon beta promoter transcription",
+        "NF-kappa B",
+        "a novel TH protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the purpose of NF-kappa B?",
+          "What is stimulated by purified NF-kappa B and a novel",
+          "What is the TH protein?",
+          "What is used to stimulate interferon beta promoter transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stimulation of interferon beta promoter transcription",
+        "answerability": 0.9196860790252686,
+        "ground_truth": {
+          "Stimulation": {
+            "bertscore": 0.7465484142303467,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is stimulated by purified NF-kappa B and a novel": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7138324975967407,
+        "ground_truth": {
+          "interferon beta gene transcription": {
+            "bertscore": 0.6211037039756775,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the TH protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2923327088356018,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.644961416721344,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is used to stimulate interferon beta gene transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B and a novel TH protein",
+        "answerability": 0.7183013558387756,
+        "ground_truth": {
+          "a novel TH protein": {
+            "bertscore": 0.8662984371185303,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

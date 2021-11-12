@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Role of cellular tumor necrosis factor receptor-associated factors in NF-kappaB activation and lymphocyte transformation by herpesvirus Saimiri STP.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "herpesvirus Saimiri STP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in NF-kappaB activation and lymphocyte transformation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "cellular tumor necrosis factor",
+        "NF-kappaB activation and lymphocyte transformation",
+        "herpesvirus Saimiri STP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor-associated factors are involved in NF-kappaB activation and lymph",
+          "What is the role of cellular tumor necrosis factor receptor-associated factors in?",
+          "What is involved in NF-kappaB activation and lymphocyte transformation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is involved in NF-kappaB activation and lymphocyte transformation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cellular tumor necrosis factor receptor-associated factors",
+        "answerability": 0.7840597629547119,
+        "ground_truth": {
+          "herpesvirus Saimiri STP": {
+            "bertscore": 0.6727970838546753,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor-associated factors are involved in NF-kappaB activation and lymph": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cellular tumor necrosis factor",
+        "answerability": 0.8380491733551025,
+        "ground_truth": {
+          "cellular tumor necrosis factor": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of cellular tumor necrosis factor receptor-associated factors in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activation and lymphocyte transformation",
+        "answerability": 0.9873836040496826,
+        "ground_truth": {
+          "NF-kappaB activation and lymphocyte transformation": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Costimulation results in the activation of a signaling pathway that leads to the simultaneous induction of the two transcription factors AP-1 and NF-kappa B.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many transcription factors are involved in costimulation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Costimulation results",
+        "the activation",
+        "a signaling pathway",
+        "the simultaneous induction",
+        "the two transcription factors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that leads to the simultaneous induction of AP-1 and NF",
+          "What does costimulation result in?",
+          "What does costimulation result in the activation of?",
+          "What does costimulation lead to?",
+          "What does costimulation lead to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many transcription factors are involved in costimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.9450407028198242,
+        "ground_truth": {
+          "two": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process called that leads to the simultaneous induction of AP-1 and AP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Costimulation",
+        "answerability": 0.9146934151649475,
+        "ground_truth": {
+          "Costimulation results": {
+            "bertscore": 0.9018455147743225,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does costimulation result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation of a signaling pathway",
+        "answerability": 0.9854409098625183,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.7690489292144775,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does costimulation result in the activation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a signaling pathway",
+        "answerability": 0.9881250262260437,
+        "ground_truth": {
+          "a signaling pathway": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does costimulation lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "simultaneous induction of the two transcription factors AP-1 and NF-kappa B",
+        "answerability": 0.9402877688407898,
+        "ground_truth": {
+          "the simultaneous induction": {
+            "bertscore": 0.7140183448791504,
+            "f1": 0.33333333333333337
+          },
+          "the two transcription factors": {
+            "bertscore": 0.7692005634307861,
+            "f1": 0.4615384615384615
+          }
+        }
+      }
+    }
+  }
+}

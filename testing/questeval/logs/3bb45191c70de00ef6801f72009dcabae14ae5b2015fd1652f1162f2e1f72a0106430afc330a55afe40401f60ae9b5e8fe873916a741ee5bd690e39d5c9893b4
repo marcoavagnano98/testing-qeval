@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Furthermore PDTC differentially targeted both NFATp and NFATc family members inhibiting the transactivation functions of NFATp and mRNA induction of NFATx.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PDTC",
+        "both NFATp",
+        "NFATc family members",
+        "the transactivation functions",
+        "NFATp",
+        "mRNA induction",
+        "NFATx"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What targeted both NFATp and NFATc family members?",
+          "What family members did PDTC target?",
+          "What did PDTC target?",
+          "What did PDTC inhibit?",
+          "What family member did PDTC target?",
+          "What did PDTC inhibit in NFATx?",
+          "What family member did PDTC target?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What targeted both NFATp and mRNA induction of NFATc?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.28560906648635864,
+        "ground_truth": {
+          "PDTC": {
+            "bertscore": 0.689059853553772,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What family members did PDTC target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFATp and NFATc",
+        "answerability": 0.8393402099609375,
+        "ground_truth": {
+          "both NFATp": {
+            "bertscore": 0.8411605358123779,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did PDTC target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFATp and NFATc",
+        "answerability": 0.7720413208007812,
+        "ground_truth": {
+          "NFATc family members": {
+            "bertscore": 0.8198171257972717,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What did PDTC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6113792657852173,
+        "ground_truth": {
+          "the transactivation functions": {
+            "bertscore": 0.6373928189277649,
+            "f1": 0
+          },
+          "mRNA induction": {
+            "bertscore": 0.6725096702575684,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What family member did PDTC target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFATp",
+        "answerability": 0.8537560105323792,
+        "ground_truth": {
+          "NFATp": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "NFATc": {
+            "bertscore": 0.9595495462417603,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

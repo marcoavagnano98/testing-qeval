@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Moreover we have identified MSK1 as a nuclear kinase that phosphorylates the p65 subunit at Ser276.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "MSK1",
+        "a nuclear kinase",
+        "the p65 subunit"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find about MSK1?",
+          "What is the name of the nuclear kinase that phosphorylates the",
+          "What is MSK1?",
+          "What does MSK1 phosphorylate at Ser276?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we identify as a nuclear kinase for p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MSK1",
+        "answerability": 0.9817203283309937,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7257387638092041,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the nuclear kinase for p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MSK1",
+        "answerability": 0.9078143239021301,
+        "ground_truth": {
+          "MSK1": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did we identify MSK1 as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a nuclear kinase",
+        "answerability": 0.9403669238090515,
+        "ground_truth": {
+          "a nuclear kinase": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MSK1 associate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear kinase",
+        "answerability": 0.5256536602973938,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.6187196373939514,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How does MSK1 associate with p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylates",
+        "answerability": 0.783308744430542,
+        "ground_truth": {
+          "a stimulus-dependent way": {
+            "bertscore": 0.6534020900726318,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

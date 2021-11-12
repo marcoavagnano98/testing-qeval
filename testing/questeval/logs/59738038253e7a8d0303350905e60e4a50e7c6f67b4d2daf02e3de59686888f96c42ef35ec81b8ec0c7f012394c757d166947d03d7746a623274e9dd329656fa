@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "These studies indicate that iNO produced by murine macrophage-like cells RAW264.7 can inhibit cytokine-induced iNOS expression in macrophages.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These studies",
+        "murine macrophage-like cells RAW264.7",
+        "cytokine-induced iNOS expression",
+        "macrophages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that iNO produced by murine macrophage-like cells can inhibit",
+          "What can inhibit cytokine-induced iNOS expression in macrophages",
+          "What can iNO produced by murine macrophage-like cells inhibit?",
+          "What does iNO produced by RAW264.7 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the study find about iNO produced by murine macrophage-like cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RAW264.7",
+        "answerability": 0.6996033191680908,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5968101620674133,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is iNO produced by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "murine macrophage-like cells",
+        "answerability": 0.9881468415260315,
+        "ground_truth": {
+          "murine macrophage-like cells RAW264.7": {
+            "bertscore": 0.8925532102584839,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does iNO inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine-induced iNOS expression",
+        "answerability": 0.8626304268836975,
+        "ground_truth": {
+          "cytokine-induced endothelial cell activation": {
+            "bertscore": 0.867800235748291,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "Where can iNO inhibit cytokine-induced endothelial cell activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42161810398101807,
+        "ground_truth": {
+          "a separated and mixed endothelial-RAW264.7 coculture system": {
+            "bertscore": 0.6006379127502441,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

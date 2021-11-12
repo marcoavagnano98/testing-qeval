@@ -1,0 +1,146 @@
+{
+  "type": "hyp",
+  "text": "Thus competition between two general transcriptional activators RelB and NF-ATp mediates the inhibitory effect of protein kinase C stimulation on IL4 expression and may contribute to differential gene expression in TH cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many general transcriptional activators mediate the inhibitory effect of protein kina"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "competition",
+        "two general transcriptional activators RelB",
+        "NF-ATp",
+        "the inhibitory effect",
+        "protein kinase C stimulation",
+        "IL4 expression",
+        "differential gene expression",
+        "TH cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mediates the inhibitory effect of protein kinase C stimulation?",
+          "What is the competition between?",
+          "What transcriptional activator mediates the inhibitory effect of protein kinase C",
+          "What does competition between RelB and NF-ATp mediate?",
+          "What is the inhibitory effect of IL4?",
+          "What does the competition between RelB and NF-ATp mediate?",
+          "What may competition between RelB and NF-ATp contribute to in TH cells",
+          "What type of cells may be affected by the inhibition of protein kinase C?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many general transcriptional activators mediate the inhibitory effect of protein kina": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two general transcriptional activators",
+        "answerability": 0.647248387336731,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.7004714012145996,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What mediates the inhibitory effect of protein kinase C stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "competition between two general transcriptional activators RelB and NF-ATp",
+        "answerability": 0.9776721596717834,
+        "ground_truth": {
+          "competition": {
+            "bertscore": 0.6534183025360107,
+            "f1": 0.19999999999999998
+          },
+          "two general transcriptional activators": {
+            "bertscore": 0.8199952244758606,
+            "f1": 0.6153846153846153
+          }
+        }
+      }
+    },
+    "What transcriptional activator mediates the inhibitory effect of protein kinase C": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RelB and NF-ATp",
+        "answerability": 0.8845697641372681,
+        "ground_truth": {
+          "RelA": {
+            "bertscore": 0.7977655529975891,
+            "f1": 0
+          },
+          "NF-ATp": {
+            "bertscore": 0.8542099595069885,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does competition between RelA and NF-ATp mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005805671215057373,
+        "ground_truth": {
+          "the inhibitory effect": {
+            "bertscore": 0.661713719367981,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the inhibitory effect of IL4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5067163109779358,
+        "ground_truth": {
+          "protein kinase C stimulation": {
+            "bertscore": 0.6176053881645203,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the competition between RelA and NF-ATp mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01033550500869751,
+        "ground_truth": {
+          "IL4 expression": {
+            "bertscore": 0.6295449733734131,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may competition between RelA and NF-ATp contribute to in TH cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differential gene expression",
+        "answerability": 0.7821229100227356,
+        "ground_truth": {
+          "differential gene expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells may be affected by the inhibition of protein kinase C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TH cells",
+        "answerability": 0.9545115232467651,
+        "ground_truth": {
+          "TH cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Phenylarsine oxide inhibits cytokine-induced HIV-1 expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does phenylarsine oxide inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Phenylarsine oxide",
+        "cytokine-induced HIV-1 expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits cytokine-induced HIV-1 expression?",
+          "What does phenylarsine oxide inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does cytokine-induced HIV-1 expression inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Phenylarsine oxide",
+        "answerability": 0.7905129194259644,
+        "ground_truth": {
+          "phorbol myristate": {
+            "bertscore": 0.6770849823951721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of virus is cytokine-induced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.9271265268325806,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are infected with HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0014611482620239258,
+        "ground_truth": {
+          "U1": {
+            "bertscore": 0.6922973990440369,
+            "f1": 0
+          },
+          "U1 cells": {
+            "bertscore": 0.6370437145233154,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits phorbol myristate acetate and cytokine-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31821906566619873,
+        "ground_truth": {
+          "Soluble tumor necrosis factor receptors": {
+            "bertscore": 0.6185723543167114,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the soluble tumor necrosis factor receptors inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006659626960754395,
+        "ground_truth": {
+          "phorbol myristate acetate": {
+            "bertscore": 0.5987716317176819,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do soluble tumor necrosis factor receptors inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00023883581161499023,
+        "ground_truth": {
+          "cytokine-induced HIV-1 expression": {
+            "bertscore": 0.6035033464431763,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

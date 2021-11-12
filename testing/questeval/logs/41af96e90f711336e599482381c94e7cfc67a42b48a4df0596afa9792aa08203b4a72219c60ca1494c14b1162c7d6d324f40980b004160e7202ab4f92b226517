@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "The calcium-dependent activation of an NF-kappaB reporter by cyclosporin A may be abrogated by the inhibition of transcription by cyclosporin A.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What reporter is inhibited by cyclosporin A?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The calcium-dependent activation",
+        "an NF-kappaB reporter",
+        "cyclosporin A",
+        "the inhibition",
+        "transcription",
+        "cyclosporin A."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of cyclosporin A on transcription?",
+          "What is inhibited by cyclosporin A?",
+          "What inhibits transcription of NF-kappaB?",
+          "What may abrogate the calcium-dependent activation of an NF-kappa",
+          "What is inhibited by cyclosporin A?",
+          "What inhibits transcription of NF-kappaB?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does cyclosporin A block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription",
+        "answerability": 0.7762331366539001,
+        "ground_truth": {
+          "TCR": {
+            "bertscore": 0.7350803017616272,
+            "f1": 0
+          },
+          "a calcium-dependent signal": {
+            "bertscore": 0.7344205975532532,
+            "f1": 0
+          },
+          "T-cell activation": {
+            "bertscore": 0.7921530604362488,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockades a calcium-dependent signal from the TCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3434368371963501,
+        "ground_truth": {
+          "The immunosuppressant drug cyclosporin": {
+            "bertscore": 0.588922917842865,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does cyclosporin A block a calcium-dependent signal from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37605607509613037,
+        "ground_truth": {
+          "the T-cell receptor": {
+            "bertscore": 0.6162655353546143,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "Additionally glutathione depletion and extracellular signal-regulated kinase (ERK) inactivation was observed in EPOX-treated cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Additionally glutathione depletion and extracellular signal-regulated kinase (ERK) inactivation",
+        "EPOX-treated cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was observed in EPOX-treated cells?",
+          "What type of cells were found to have a glutathione depletion?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was observed in EPOX-treated cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glutathione depletion and extracellular signal-regulated kinase (",
+        "answerability": 0.8693609237670898,
+        "ground_truth": {
+          "Additionally glutathione depletion and extracellular signal-regulated kinase (ERK) inactivation": {
+            "bertscore": 0.869289755821228,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of cells were found to have a glutathione depletion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EPOX",
+        "answerability": 0.9118782877922058,
+        "ground_truth": {
+          "EPOX-treated cells": {
+            "bertscore": 0.7973937392234802,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "In the HT29 tumor model treatment response to vandetanib (50 mg/kg/d) was greatest in xenografts derived from the highest VEGF-expressing cell clones.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "50 mg/kg/d"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the dose of vandetanib in the HT29 tumor model?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the HT29 tumor model treatment response",
+        "vandetanib",
+        "50 mg/kg/d",
+        "xenografts",
+        "the highest VEGF-expressing cell clones"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the most effective treatment of vandetanib?",
+          "What drug was most effective in the HT29 tumor model?",
+          "What is the dose of vandetanib in the HT29 tumor model?",
+          "What type of tumors showed the greatest response to vandetanib?",
+          "What was the most effective treatment for HT29 tumors?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the daily dose of vandetanib?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "50 mg/kg/d",
+        "answerability": 0.9871492981910706,
+        "ground_truth": {
+          "50 mg/kg/day": {
+            "bertscore": 0.9426029920578003,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "When was the treatment response greatest in HT29 tumor models?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "xenografts derived from the highest VEGF-expressing cell",
+        "answerability": 0.9907229542732239,
+        "ground_truth": {
+          "Monday-Friday": {
+            "bertscore": 0.5502791404724121,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How long did vandetanib last?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29607057571411133,
+        "ground_truth": {
+          "2 weeks": {
+            "bertscore": 0.6353532671928406,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the most effective treatment of vandetanib?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "50 mg/kg/d",
+        "answerability": 0.7073909044265747,
+        "ground_truth": {
+          "the HT29 tumor model treatment response": {
+            "bertscore": 0.6143804788589478,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug was most effective in the HT29 tumor model?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vandetanib",
+        "answerability": 0.9948853254318237,
+        "ground_truth": {
+          "vandetanib": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of tumors showed the greatest response to vandetanib?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "xenografts derived from the highest VEGF-expressing cell",
+        "answerability": 0.9319642186164856,
+        "ground_truth": {
+          "xenografts": {
+            "bertscore": 0.7653701305389404,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What was the most effective treatment for HT29 tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vandetanib",
+        "answerability": 0.9469492435455322,
+        "ground_truth": {
+          "the highest VEGF-expressing cell clones": {
+            "bertscore": 0.6219635605812073,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

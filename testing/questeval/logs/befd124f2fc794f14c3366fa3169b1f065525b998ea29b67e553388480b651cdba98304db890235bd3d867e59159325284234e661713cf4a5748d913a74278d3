@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Immunosuppressant PG490 (triptolide) inhibits T-cell interleukin-2 expression at the level of purine-box/nucleolar factor of activated T-cells and NF-kappaB transcriptional activation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Immunosuppressant",
+        "PG490",
+        "(triptolide",
+        "T-cell interleukin-2 expression",
+        "the level",
+        "purine-box/nucleolar factor",
+        "activated T-cells",
+        "NF-kappaB transcriptional activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PG490?",
+          "What is the name of the immunosuppressant that inhibits T-cell interle",
+          "What is the name of the immunosuppressant that inhibits T-cell interle",
+          "What does PG490 inhibit?",
+          "At what level does PG490 inhibit T-cell interleukin-2 expression?",
+          "What level of T-cell interleukin-2 expression does PG490 inhibit?",
+          "What does PG490 inhibit?",
+          "What does PG490 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is PG490?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "triptolide",
+        "answerability": 0.8605018258094788,
+        "ground_truth": {
+          "Immunosuppressant": {
+            "bertscore": 0.6483773589134216,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the immunosuppressant that inhibits T-cell interle": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PG490",
+        "answerability": 0.9147068858146667,
+        "ground_truth": {
+          "PG490": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "(triptolide": {
+            "bertscore": 0.6332076787948608,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does PG490 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell interleukin-2 expression",
+        "answerability": 0.9722782373428345,
+        "ground_truth": {
+          "T-cell interleukin-2 expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "activated T-cells": {
+            "bertscore": 0.7993228435516357,
+            "f1": 0
+          },
+          "NF-kappaB transcriptional activation": {
+            "bertscore": 0.769020676612854,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "At what level does PG490 inhibit T-cell interleukin-2 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "purine-box/nucleolar factor",
+        "answerability": 0.9958900213241577,
+        "ground_truth": {
+          "the level": {
+            "bertscore": 0.6521478295326233,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What level of T-cell interleukin-2 expression does PG490 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "purine-box/nucleolar factor",
+        "answerability": 0.9809770584106445,
+        "ground_truth": {
+          "purine-box/nuclear factor": {
+            "bertscore": 0.9448280334472656,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

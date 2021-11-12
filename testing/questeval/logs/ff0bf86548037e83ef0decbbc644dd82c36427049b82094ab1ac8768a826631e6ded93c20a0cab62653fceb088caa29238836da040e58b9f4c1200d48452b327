@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "The results showed that betulin a naturally abundant compound triggers apoptosis in human cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The results",
+        "that betulin",
+        "a naturally abundant compound triggers apoptosis",
+        "human cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that betulin triggers apoptosis in human cancer cells?",
+          "What is the compound that triggers apoptosis in human cancer cells?",
+          "What did the study show about betulin?",
+          "What does betulin trigger apoptosis in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What evidence shows that betulin triggers apoptosis of human cancer cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The results",
+        "answerability": 0.9169746041297913,
+        "ground_truth": {
+          "the lines": {
+            "bertscore": 0.7318965792655945,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study show about the mechanism by which betulin is used to trigger a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.6929896473884583,
+        "ground_truth": {
+          "evidence": {
+            "bertscore": 0.7550962567329407,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the intrinsic apoptotic pathway of betulin trigger?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00933307409286499,
+        "ground_truth": {
+          "human cancer cells": {
+            "bertscore": 0.6485544443130493,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does betulin trigger in human cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9927846789360046,
+        "ground_truth": {
+          "the intrinsic apoptotic pathway": {
+            "bertscore": 0.7741252779960632,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

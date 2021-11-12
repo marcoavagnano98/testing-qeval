@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Expression of the Bcl-3 proto-oncogene on human chromosome 14q32.1 is associated with transcriptional activation of Bcl-2 and Bcl-xL but is independent of p53.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bcl-xL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the transcriptional activation of Bcl-2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "the Bcl-3 proto-oncogene",
+        "human chromosome 14q32.1",
+        "transcriptional activation",
+        "Bcl-2 and Bcl-xL",
+        "p53"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is independent of p53?",
+          "What is expressed on human chromosome 14q32.1?",
+          "Where is the Bcl-3 proto-oncogene found?",
+          "What is the expression of the Bcl-3 proto-oncogene associated with?",
+          "What two genes are involved in transcriptional activation?",
+          "What is the Bcl-3 proto-oncogene independent of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppresses p53 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004108428955078125,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7109297513961792,
+            "f1": 0
+          },
+          "the Bcl-3 proto-oncogene": {
+            "bertscore": 0.5985134840011597,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the Bcl-3 proto-oncogene suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003154277801513672,
+        "ground_truth": {
+          "p53 activation": {
+            "bertscore": 0.6179963946342468,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

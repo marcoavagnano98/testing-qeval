@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "This resulted in beta tumor cell metastases in distant organs and local lymph nodes demonstrating a role of pericytes in limiting tumor cell metastasis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "distant organs",
+        "local lymph nodes",
+        "a role",
+        "pericytes",
+        "tumor cell metastasis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where did the beta tumor cells spread?",
+          "What is one area where the tumors can be spread?",
+          "What did the study show about pericytes?",
+          "What is the role of limiting tumor cell metastases?",
+          "What did the recombination of the bile ducts cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Where did the beta tumor cells spread?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "distant organs and local lymph nodes",
+        "answerability": 0.9735186696052551,
+        "ground_truth": {
+          "distant organs": {
+            "bertscore": 0.8340814709663391,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is one area where pericytes can help limit tumor cell metastases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymph nodes",
+        "answerability": 0.9711582660675049,
+        "ground_truth": {
+          "local lymph nodes": {
+            "bertscore": 0.9492433071136475,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did the study show about pericytes in limiting tumor cell metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a role",
+        "answerability": 0.9250183701515198,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of limiting tumor cell metastases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25260597467422485,
+        "ground_truth": {
+          "pericytes": {
+            "bertscore": 0.6284366846084595,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the recombination of the bile ducts cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0017539262771606445,
+        "ground_truth": {
+          "tumor cell metastasis": {
+            "bertscore": 0.6585373878479004,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

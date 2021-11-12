@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Trx interaction with the ASK1 promoter is dependent on p65\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ASK1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter is Trx dependent on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Trx interaction",
+        "the ASK1 promoter",
+        "p65"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is dependent on p65?",
+          "What is Trx interaction dependent on?",
+          "What is Trx interaction dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the interaction between Trx and?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ASK1 promoter",
+        "answerability": 0.7673186659812927,
+        "ground_truth": {
+          "ASK1": {
+            "bertscore": 0.8641982674598694,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is highly dependent on the redox status of Trx?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32145804166793823,
+        "ground_truth": {
+          "The interaction": {
+            "bertscore": 0.658797025680542,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the redox status of ASK1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009515881538391113,
+        "ground_truth": {
+          "Trx": {
+            "bertscore": 0.6984151601791382,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the interaction between Trx and ASK1 highly dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65",
+        "answerability": 0.9825193285942078,
+        "ground_truth": {
+          "the redox status": {
+            "bertscore": 0.6386605501174927,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

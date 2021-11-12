@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "The Sharpin null mutation disrupts the ubiquitylation process and abrogates the TNFalpha-induced NF-kappaB signalling pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Sharpin",
+        "TNFalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mutation disrupts the ubiquitylation process?",
+          "What is the NF-kappaB signalling pathway mediated by Sharpin nu"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the ubiquitylation process",
+        "the TNFalpha-induced NF-kappaB",
+        "pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the Sharpin null mutation disrupt?",
+          "What signalling pathway is abrogated by the Sharpin null mutation?",
+          "What signalling pathway does Sharpin null disrupt?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mutation disrupts the ubiquitylation process?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sharpin null mutation",
+        "answerability": 0.9787901639938354,
+        "ground_truth": {
+          "Sharpin": {
+            "bertscore": 0.8281716704368591,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB signaling pathway mediated by Sharpin nu": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05167829990386963,
+        "ground_truth": {
+          "TNFalpha": {
+            "bertscore": 0.6184501647949219,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the Sharpin null mutation disrupt?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the ubiquitylation process",
+        "answerability": 0.994681179523468,
+        "ground_truth": {
+          "the ubiquitylation process": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What signaling pathway is abrogated by the Sharpin null mutation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNFalpha",
+        "answerability": 0.8967730402946472,
+        "ground_truth": {
+          "the TNFalpha-induced NF-kappaB": {
+            "bertscore": 0.7853540778160095,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling pathway does Sharpin null disrupt?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ubiquitylation",
+        "answerability": 0.7844971418380737,
+        "ground_truth": {
+          "pathway": {
+            "bertscore": 0.7994927763938904,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

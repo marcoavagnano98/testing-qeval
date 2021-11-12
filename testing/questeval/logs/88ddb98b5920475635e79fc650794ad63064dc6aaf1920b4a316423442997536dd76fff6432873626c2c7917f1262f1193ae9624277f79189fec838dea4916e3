@@ -1,0 +1,70 @@
+{
+  "type": "ref",
+  "text": "Moreover we identified MSK1 as a nuclear kinase for p65 since MSK1 associates with p65 in a stimulus-dependent way and phosphorylates p65 at Ser276.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "MSK1",
+        "a nuclear kinase",
+        "p65",
+        "p65",
+        "a stimulus-dependent way"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we identify as a nuclear kinase for p65?",
+          "What is the nuclear kinase for p65?",
+          "What did we identify MSK1 as?",
+          "What does MSK1 associate with?",
+          "What does MSK1 associate with?",
+          "How does MSK1 associate with p65?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we identify as a nuclear kinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MSK1",
+        "answerability": 0.9975165128707886,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7257387638092041,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What phosphorylates p65 at Ser276?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MSK1",
+        "answerability": 0.9977774620056152,
+        "ground_truth": {
+          "MSK1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MSK1 phosphorylate at Ser276?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65",
+        "answerability": 0.5576627254486084,
+        "ground_truth": {
+          "a nuclear kinase": {
+            "bertscore": 0.6264016628265381,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

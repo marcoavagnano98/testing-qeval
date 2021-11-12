@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Moreover the effects of IFN-gamma and LPS could be reproduced by priming whereas IFN-beta and IL-4 were required simultaneously with GC.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "IFN",
+        "GC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another name for IL-4?",
+          "What is the name of the molecule that can be used to reproduce the effects of GC",
+          "What was used to reproduce the effects of IFN-gamma and LPS?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the effects",
+        "IFN-gamma",
+        "LPS",
+        "IFN-beta",
+        "GC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was reproduced by priming?",
+          "What is the name of the molecule that can be used to reproduce the effects of GC",
+          "What is another name for IL-4?",
+          "What is the only drug that can be used to reproduce the effects of IL-4 and I",
+          "What was used to reproduce the effects of IFN-gamma and LPS?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is another name for IL-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012154161930084229,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027957439422607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the molecule that can be used to reproduce the effects of GC": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06836378574371338,
+        "ground_truth": {
+          "IFN": {
+            "bertscore": 0.698520302772522,
+            "f1": 0
+          },
+          "IFN-gamma": {
+            "bertscore": 0.6533436179161072,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to reproduce the effects of IFN-gamma and LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "priming",
+        "answerability": 0.9933381676673889,
+        "ground_truth": {
+          "GC": {
+            "bertscore": 0.780105471611023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was reproduced by priming?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-gamma and LPS",
+        "answerability": 0.8237692713737488,
+        "ground_truth": {
+          "the effects": {
+            "bertscore": 0.6608062386512756,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only drug that can be used to reproduce the effects of IL-4 and I": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.055158913135528564,
+        "ground_truth": {
+          "IFN-beta": {
+            "bertscore": 0.6575337052345276,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

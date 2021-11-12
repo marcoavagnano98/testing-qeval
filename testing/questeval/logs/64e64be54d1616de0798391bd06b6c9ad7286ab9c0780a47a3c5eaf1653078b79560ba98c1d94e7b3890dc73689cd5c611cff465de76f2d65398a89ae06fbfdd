@@ -1,0 +1,88 @@
+{
+  "type": "ref",
+  "text": "junB. Thus the binding of V3 loop of gp120 to the cell surface molecule(s) appears to affect intracellular IL-2 signaling which leads to the suppression of IL-2-induced T cell growth.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "gp120",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the V3 loop of?",
+          "What does the binding of V3 loop of gp120 affect?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "junB.",
+        "the binding",
+        "V3 loop",
+        "gp120",
+        "the suppression",
+        "IL-2-induced T cell growth"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the binding of V3 loop of gp120 to the cell surface molecule",
+          "What affects intracellular IL-2 signaling?",
+          "What is the binding of gp120 to the cell surface molecule?",
+          "What is the V3 loop of?",
+          "What does the binding of V3 loop of gp120 lead to?",
+          "What does the binding of V3 loop of gp120 cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the V3 loop of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "gp120",
+        "answerability": 0.9086629152297974,
+        "ground_truth": {
+          "gp120": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the gp120 viral envelope?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019331276416778564,
+        "ground_truth": {
+          "the binding": {
+            "bertscore": 0.7001460790634155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the binding of to the V3 loop of gp120?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2317296266555786,
+        "ground_truth": {
+          "the gp120 viral envelope": {
+            "bertscore": 0.6194316744804382,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What part of gp120 is responsible for the binding of the gp120 viral": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2945147752761841,
+        "ground_truth": {
+          "the V3 loop": {
+            "bertscore": 0.6670590043067932,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

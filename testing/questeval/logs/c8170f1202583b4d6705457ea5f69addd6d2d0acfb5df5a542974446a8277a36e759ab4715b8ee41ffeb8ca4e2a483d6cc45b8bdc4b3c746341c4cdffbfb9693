@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Hamsters were followed up at 1 week and returned to baseline after 3 weeks treatment only after 3 weeks.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1 week",
+        "3 weeks",
+        "only after 3 weeks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did it take for hamsters to return to baseline?",
+          "How long did it take for hamsters to return to baseline?",
+          "How long did it take for hamsters to return to baseline?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Hamsters",
+        "1 week",
+        "3 weeks treatment",
+        "3 weeks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What animal was treated at 1 week?",
+          "How long did it take for hamsters to return to baseline?",
+          "How long did it take for hamsters to return to baseline?",
+          "How long did it take for hamsters to return to baseline?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What animals were treated with radiation DMBA + DMBA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.044084370136260986,
+        "ground_truth": {
+          "Hamsters": {
+            "bertscore": 0.6471366286277771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5566864013671875,
+        "ground_truth": {
+          "either radiation DMBA radiation": {
+            "bertscore": 0.6543393731117249,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters treated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03448820114135742,
+        "ground_truth": {
+          "DMBA": {
+            "bertscore": 0.6770347952842712,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the other option for hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23448598384857178,
+        "ground_truth": {
+          "no treatment": {
+            "bertscore": 0.7193210124969482,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

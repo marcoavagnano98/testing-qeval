@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "However when we attempted to determine whether Foxp3 could physically interact with the coactivator protein p53 we found that p300 immunoprecipitated Foxp3 when both proteins were overexpressed in HEK 293T cells (Figure 7D).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HEK",
+        "293",
+        "7D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were p300 immunoprecipitated in?",
+          "What type of cells were HEK cells?",
+          "What is the diagram of the interaction between Foxp3 and p53?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "the coactivator protein p53",
+        "we",
+        "p300",
+        "both proteins",
+        "HEK 293T cells",
+        "Figure 7D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did p300 immunoprecipitate Foxp3 when both proteins were overexpressed",
+          "What protein did p300 immunoprecipitate when both proteins were overexpressed?",
+          "What did p300 immunoprecipitate Foxp3 when both proteins were overexpressed",
+          "What protein was found to interact with Foxp3 when both proteins were overexpressed?",
+          "What proteins were overexpressed in HEK 293T cells?",
+          "What cells were p300 immunoprecipitated in when both proteins were overexpressed",
+          "What is the p300 immunoprecipitated Foxp3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells were able to overexpress Foxp3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HEK 293T cells",
+        "answerability": 0.791582465171814,
+        "ground_truth": {
+          "HEK": {
+            "bertscore": 0.7987695336341858,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What type of cells were HEK cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15463930368423462,
+        "ground_truth": {
+          "293": {
+            "bertscore": 0.6121217608451843,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the corresponding figure of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5920605063438416,
+        "ground_truth": {
+          "7D": {
+            "bertscore": 0.6836938261985779,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we find when we tried to determine if Foxp3 could physically interact with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5300860404968262,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What coactivator protein did Foxp3 interact with when both proteins were overexpressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53",
+        "answerability": 0.9928604960441589,
+        "ground_truth": {
+          "p300": {
+            "bertscore": 0.8223727941513062,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What proteins were overexpressed in HEK 293T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3757251501083374,
+        "ground_truth": {
+          "both proteins": {
+            "bertscore": 0.7014090418815613,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were tested for Foxp3's interaction with p300?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HEK 293T cells",
+        "answerability": 0.8370088338851929,
+        "ground_truth": {
+          "HEK 293T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the p300-Foxp3 interaction shown in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Figure 7D",
+        "answerability": 0.9271401762962341,
+        "ground_truth": {
+          "Figure 7D": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "Northern blot analysis showed that the cDNA probe hybridized with a 4.5 kb transcript which is highly inducible in murine T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "4.5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the cDNA probe's kb transcript?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Northern blot analysis",
+        "the cDNA probe",
+        "a 4.5 kb transcript",
+        "murine T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that the cDNA probe hybridized with a 4.5 kb transcript",
+          "What hybridized with a 4.5 kb transcript?",
+          "What did the cDNA probe hybridize with?",
+          "What type of cells is the 4.5 kb transcript highly inducible in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the cDNA probe's kb transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4.5",
+        "answerability": 0.8737053871154785,
+        "ground_truth": {
+          "4.5": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What showed that the cDNA probe hybridized with the 4.5 kb transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Northern blot analysis",
+        "answerability": 0.995806097984314,
+        "ground_truth": {
+          "Northern blot analysis": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What hybridized with the 4.5 kb transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cDNA probe",
+        "answerability": 0.9375763535499573,
+        "ground_truth": {
+          "the cDNA probe": {
+            "bertscore": 0.9298118352890015,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the Northern Blot analysis show hybridized with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4.5 kb transcript",
+        "answerability": 0.8873320817947388,
+        "ground_truth": {
+          "the 4.5 kb transcript": {
+            "bertscore": 0.9228651523590088,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

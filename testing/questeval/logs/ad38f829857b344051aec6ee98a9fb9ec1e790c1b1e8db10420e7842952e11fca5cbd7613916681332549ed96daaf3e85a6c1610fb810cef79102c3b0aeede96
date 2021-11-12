@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "FM-MSC or BM-MSC obtained from Lewis rats were injected into a MHC-mismatched August-Copenhagen-Irish rat model of hind limb ischemia.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BM-MSC",
+        "Lewis",
+        "MHC",
+        "August",
+        "Irish"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the other drug used to test for ischemia?",
+          "What rat model was used to test for ischemia?",
+          "What was the injected dose of FM-MSC or BM-MSC?",
+          "What month was the rat model of ischemia?",
+          "What was the rat model of ischemia?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "FM-MSC",
+        "BM-MSC",
+        "Lewis rats",
+        "a MHC-mismatched August-Copenhagen-Irish rat model",
+        "hind limb ischemia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was injected into a mismatched August-Copenhagen-Irish",
+          "What was the other drug used to test for ischemia?",
+          "What animal was the MHC obtained from?",
+          "What was the injected FM-MSC or BM-MSC in?",
+          "What was the rat model of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What rat was the source of FM-MSC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Lewis rats",
+        "answerability": 0.9881062507629395,
+        "ground_truth": {
+          "Lewis": {
+            "bertscore": 0.8236030340194702,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the surface antigen of the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05003964900970459,
+        "ground_truth": {
+          "BM-MSC": {
+            "bertscore": 0.682463526725769,
+            "f1": 0
+          },
+          "FM-MSC": {
+            "bertscore": 0.6567209959030151,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where were FM-MSC obtained from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Lewis rats",
+        "answerability": 0.9835676550865173,
+        "ground_truth": {
+          "Lewis rats": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the main difference between FM-MSC and BM-MSC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004743993282318115,
+        "ground_truth": {
+          "surface antigen expression": {
+            "bertscore": 0.6703445911407471,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the surface antigen expression of FM-MSC similar to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005194604396820068,
+        "ground_truth": {
+          "multipotent potential": {
+            "bertscore": 0.7087030410766602,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

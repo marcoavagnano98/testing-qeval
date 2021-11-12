@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "p53-independent upregulation of KILLER/DR5 TRAIL receptor expression by glucocorticoids and interferon-gamma.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "KILLER",
+        "TRAIL",
+        "glucocorticoids",
+        "interferon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor is upregulated by p53?",
+          "What receptor is upregulated by glucocorticoids and interferon-gamm",
+          "What is the main component of the KILLER/DR5 TRAIL receptor upregulation",
+          "What hormone is involved in the KILLER/DR5 TRAIL receptor upregulation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p53-independent upregulation",
+        "KILLER/DR5 TRAIL receptor expression",
+        "glucocorticoids",
+        "interferon-gamma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of glucocorticoids and interferon-gamma",
+          "What is upregulated by glucocorticoids and interferon-gamma",
+          "What is the main component of the KILLER/DR5 TRAIL receptor upregulation",
+          "What is the main component of the KILLER/DR5 TRAIL receptor upregulation"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What receptor is upregulated by p53?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KILLER/DR5 TRAIL",
+        "answerability": 0.9009143710136414,
+        "ground_truth": {
+          "KILLER": {
+            "bertscore": 0.8452767729759216,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor is upregulated by glucocorticoids and interferon-gamm": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KILLER/DR5 TRAIL",
+        "answerability": 0.9773879051208496,
+        "ground_truth": {
+          "TRAIL": {
+            "bertscore": 0.8558310866355896,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the main component of the KILLER/DR5 TRAIL receptor upregulation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3654709458351135,
+        "ground_truth": {
+          "glucocorticoids": {
+            "bertscore": 0.6132760643959045,
+            "f1": 0
+          },
+          "interferon-gamma": {
+            "bertscore": 0.641518235206604,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What hormone is involved in the KILLER/DR5 TRAIL receptor upregulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53",
+        "answerability": 0.7874346971511841,
+        "ground_truth": {
+          "interferon": {
+            "bertscore": 0.6160102486610413,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of glucocorticoids and interferon-gamma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53-independent upregulation of KILLER/DR5 TRAIL receptor",
+        "answerability": 0.6906360983848572,
+        "ground_truth": {
+          "p53-independent upregulation": {
+            "bertscore": 0.8331388831138611,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is upregulated by glucocorticoids and interferon-gamma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KILLER/DR5 TRAIL receptor expression",
+        "answerability": 0.939441442489624,
+        "ground_truth": {
+          "KILLER/DR5 TRAIL receptor expression": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

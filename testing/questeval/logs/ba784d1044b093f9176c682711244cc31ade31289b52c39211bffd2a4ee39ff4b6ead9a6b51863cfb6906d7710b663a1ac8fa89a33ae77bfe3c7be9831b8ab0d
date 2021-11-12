@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "We found that suppression of NF-kappaB activation by nimbolide was caused by inhibition of IkappaB kinase (IKK) which led to suppression of IkappaBalpha phosphorylation and degradation nuclear translocation DNA binding and gene transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IKK",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the kinase that causes NF-kappa",
+          "What phosphorylation was inhibited by nimbolide?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "suppression",
+        "NF-kappaB activation",
+        "nimbolide",
+        "inhibition",
+        "IkappaB kinase",
+        "(IKK",
+        "suppression",
+        "IkappaBalpha phosphorylation and degradation nuclear translocation DNA binding and gene transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study find about nimbolide?",
+          "What was the effect of nimbolide on NF-kappaB activ",
+          "What did nimbolide cause?",
+          "What was found to cause NF-kappaB activation?",
+          "What was the cause of NF-kappaB activation?",
+          "What is IKK?",
+          "What is the name of the kinase that causes NF-kappa",
+          "What was the effect of nimbolide on NF-kappaB activ",
+          "What did nimbolide cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the point of convergence for most stimuli?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 8.857250213623047e-05,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.6519213318824768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the point of convergence for most NF-kappaB-activating stimul": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006015360355377197,
+        "ground_truth": {
+          "stimuli": {
+            "bertscore": 0.6879276633262634,
+            "f1": 0
+          },
+          "The multisubunit": {
+            "bertscore": 0.6450413465499878,
+            "f1": 0
+          },
+          "IkappaB kinase": {
+            "bertscore": 0.5862864851951599,
+            "f1": 0
+          },
+          "the point": {
+            "bertscore": 0.6729726791381836,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the multisubunit IkappaB kinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IKK",
+        "answerability": 0.522704005241394,
+        "ground_truth": {
+          "(IKK": {
+            "bertscore": 0.7864697575569153,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the IKK responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppression of NF-kappaB activation",
+        "answerability": 0.8748380541801453,
+        "ground_truth": {
+          "inducible IkappaB phosphorylation": {
+            "bertscore": 0.7241799235343933,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the point of most NF-kappaB-activating stimuli?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007304549217224121,
+        "ground_truth": {
+          "convergence": {
+            "bertscore": 0.7265352606773376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the point of convergence for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00022166967391967773,
+        "ground_truth": {
+          "most NF-kappaB-activating stimuli": {
+            "bertscore": 0.6125423908233643,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

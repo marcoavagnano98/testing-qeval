@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "This pathway involves the Rac1 and Cdc42 GTPases two enzymes which are not required for NF-kappa B activation. This signal provides a second signal critical for T cell activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rac1",
+        "two",
+        "second"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the two enzymes involved in the NF-kappa B",
+          "How many enzymes are required for NF-kappa B activation?",
+          "What is the second signal critical for T cell activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This pathway",
+        "the Rac1 and Cdc42 GTPases two enzymes",
+        "NF-kappa B activation",
+        "This signal",
+        "T cell activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the second signal critical for T cell activation?",
+          "What two enzymes are involved in the NF-kappa B pathway?",
+          "What is the second signal critical for T cell activation?",
+          "What provides a second signal critical for T cell activation?",
+          "What is the second signal critical for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the second signal that the costimulatory molecule B7.1 provides?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0027968883514404297,
+        "ground_truth": {
+          "second": {
+            "bertscore": 0.7024955153465271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the second signal critical for T cell activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rac1 and Cdc42 GTPases",
+        "answerability": 0.9403380155563354,
+        "ground_truth": {
+          "B7.1": {
+            "bertscore": 0.6415063738822937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the second signal critical for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell activation",
+        "answerability": 0.9876447916030884,
+        "ground_truth": {
+          "T cell activation": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

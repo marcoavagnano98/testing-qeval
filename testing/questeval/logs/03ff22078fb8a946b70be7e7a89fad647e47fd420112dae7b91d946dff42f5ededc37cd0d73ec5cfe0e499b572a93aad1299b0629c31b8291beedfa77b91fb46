@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "We have found that two members of the NSAIDs sodium salicylate and sulindac repress the IL1B promoter to similar degree to heat shock or HSF1 overexpression. paclitaxel-induced apoptosis is associated with inhibition of nuclear factor kappa B (NF-kappa B).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two",
+        "kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many members of the NSAIDs sodium salicylate and sulindac",
+          "What is the name of the nuclear factor that causes apoptosis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "two members",
+        "the NSAIDs sodium salicylate",
+        "sulindac repress",
+        "the IL1B promoter",
+        "similar degree",
+        "shock or HSF1 overexpression",
+        "paclitaxel-induced apoptosis",
+        "inhibition",
+        "nuclear factor kappa B",
+        "(NF-kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the NF-kappa B promoter?",
+          "How many members of the NSAIDs sodium salicylate and sulindac",
+          "What is the name of the NSAID that represses the IL1",
+          "What is the name of the NSAID that represses the IL1",
+          "What do sodium salicylate and sulindac repress?",
+          "How much do the two NSAIDs sodium salicylate and sulindac",
+          "What are two NSAIDs that repress the IL1B promoter similar",
+          "What is associated with inhibition of nuclear factor kappa B?",
+          "What is paclitaxel associated with?",
+          "What is paclitaxel associated with?",
+          "What is the name of the nuclear factor that causes apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of Bcl-2 overexpression on apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.039888083934783936,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of paclitaxel-induced apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of nuclear factor kappa B",
+        "answerability": 0.9929378628730774,
+        "ground_truth": {
+          "Bcl-2 overexpression": {
+            "bertscore": 0.6831719875335693,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Bcl-2 overexpression lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0069501399993896484,
+        "ground_truth": {
+          "the prevention": {
+            "bertscore": 0.6540053486824036,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Bcl-2 overexpression prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006112873554229736,
+        "ground_truth": {
+          "chemotherapy": {
+            "bertscore": 0.635409951210022,
+            "f1": 0
+          },
+          "FasL and blocks paclitaxel-induced apoptosis": {
+            "bertscore": 0.6004441380500793,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Bcl-2 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006801962852478027,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272056341171265,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

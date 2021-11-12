@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "Here we have shown that depletion of Rab5a decreased VEGFR2 Y1175 phosphorylation but increased p42/44 (pERK1/2) MAPK phosphorylation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Y1175"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylation did depletion of Rab5a decrease?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "depletion",
+        "Rab5a",
+        "VEGFR2 Y1175 phosphorylation",
+        "(pERK1/2) MAPK phosphorylation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study show about Rab5a?",
+          "What did the study show decreased VEGFR2 Y1175 phosphorylation?",
+          "What protein decreased VEGFR2 Y1175 phosphorylation?",
+          "What did depletion of Rab5a decrease?",
+          "What does depletion of Rab5a increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was increased by Rab5a depletion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p42/44 (pERK1/2) MAPK",
+        "answerability": 0.9218125939369202,
+        "ground_truth": {
+          "Endothelial cell migration": {
+            "bertscore": 0.6271199584007263,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What increased endothelial cell migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02325618267059326,
+        "ground_truth": {
+          "Rab5a depletion": {
+            "bertscore": 0.6542391180992126,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What caused endothelial cell migration to decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06903809309005737,
+        "ground_truth": {
+          "Rab7a depletion": {
+            "bertscore": 0.6548804640769958,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

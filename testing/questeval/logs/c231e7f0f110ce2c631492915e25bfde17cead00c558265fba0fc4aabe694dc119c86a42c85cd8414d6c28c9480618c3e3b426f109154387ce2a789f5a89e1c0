@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Coordination changes and auto-hydroxylation of FIH-1: uncoupled O2-activation in a human hypoxia sensor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "FIH-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is hydroxylated by a molecule?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Coordination changes",
+        "auto-hydroxylation",
+        "FIH-1",
+        "uncoupled O2-activation",
+        "a human hypoxia sensor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the result of the auto-hydroxylation of FIH-1?",
+          "What is the mechanism that causes FIH-1 to be uncoupled?",
+          "What protein is hydroxylated by a molecule?",
+          "What is the mechanism of action of FIH-1 in a human hypoxia sensor?",
+          "What is the mechanism of uncoupled O2-activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is hydroxylated by a molecule?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13613033294677734,
+        "ground_truth": {
+          "FIH-1": {
+            "bertscore": 0.6919050216674805,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of the auto-hydroxylation of FIH-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "uncoupled O2-activation",
+        "answerability": 0.07022970914840698,
+        "ground_truth": {
+          "Coordination changes": {
+            "bertscore": 0.6886826157569885,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism that causes FIH-1 to be uncoupled?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1345728635787964,
+        "ground_truth": {
+          "auto-hydroxylation": {
+            "bertscore": 0.6726306676864624,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism of action of FIH-1 in a human hypoxia sensor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "uncoupled O2-activation",
+        "answerability": 0.05619114637374878,
+        "ground_truth": {
+          "uncoupled O2-activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism of uncoupled O2-activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0188901424407959,
+        "ground_truth": {
+          "a human hypoxia sensor": {
+            "bertscore": 0.6280226111412048,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

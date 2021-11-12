@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Similarly the induction of KILLER/DR5 mRNA by the cytokine TNF-alpha was also reduced in cell lines with mutated STAT1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "KILLER",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA was reduced in cell lines with mutated STAT1?",
+          "What cytokine reduced KILLER/DR5 mRNA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Similarly the induction",
+        "the cytokine TNF-alpha",
+        "cell lines",
+        "mutated STAT1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was reduced in cell lines with mutated STAT1?",
+          "What reduced KILLER/DR5 mRNA?",
+          "What type of cells had mutated STAT1?",
+          "What reduced the induction of KILLER/DR5 mRNA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA was delayed in cell lines with mutated STAT1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KILLER/DR5",
+        "answerability": 0.8463004231452942,
+        "ground_truth": {
+          "KILLER": {
+            "bertscore": 0.882935106754303,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cytokine delayed the induction of KILLER/DR5 mRNA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.6063562631607056,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was delayed in cell lines with mutated STAT1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of KILLER/DR5 mRNA",
+        "answerability": 0.8810280561447144,
+        "ground_truth": {
+          "Similarly the induction": {
+            "bertscore": 0.5747892260551453,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What was the induction of KILLER/DR5 mRNA delayed by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5980913043022156,
+        "ground_truth": {
+          "the cytokine TNF-alpha": {
+            "bertscore": 0.5840161442756653,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells had mutated STAT1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2778659462928772,
+        "ground_truth": {
+          "cell lines": {
+            "bertscore": 0.7052152156829834,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cell line was also delayed in the induction of KILLER/DR5 m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49447083473205566,
+        "ground_truth": {
+          "mutated STAT1": {
+            "bertscore": 0.6962251663208008,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

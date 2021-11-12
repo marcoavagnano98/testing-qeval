@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "However the mechanism by which IFNs mediate this inhibition has not been defined.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the mechanism",
+        "IFNs",
+        "this inhibition"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has not been defined?",
+          "What mediates the inhibition of eukaryotes?",
+          "What is the mechanism by which IFNs mediate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has not been defined?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the mechanism by which IFNs mediate this inhibition",
+        "answerability": 0.8692487478256226,
+        "ground_truth": {
+          "the mechanism": {
+            "bertscore": 0.7014274001121521,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What mediates the inhibition of eukaryotes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFNs",
+        "answerability": 0.8217591643333435,
+        "ground_truth": {
+          "IFNs": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which IFNs mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.9262487292289734,
+        "ground_truth": {
+          "this inhibition": {
+            "bertscore": 0.8989649415016174,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

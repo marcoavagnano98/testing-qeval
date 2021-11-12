@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Since SV40 Tag was expressed and tyrosinase was enzymatically active we examined theTag expression in SV40 Tag-transfected hematopoietic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SV40 Tag",
+        "SV40 Tag-transfected"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was expressed and tyrosinase was active?",
+          "What type of cells were tested for SV40 Tag expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "SV40 Tag",
+        "tyrosinase",
+        "we",
+        "theTag expression",
+        "SV40 Tag-transfected hematopoietic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was expressed and tyrosinase was active?",
+          "What enzyme was enzymatically active in SV40 Tag-transfected",
+          "What did we do to determine the expression of SV40 Tag?",
+          "What did we examine in SV40 Tag-transfected hematopoi",
+          "Where was the SV40 Tag expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enzyme was enzymatically active?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosinase",
+        "answerability": 0.9964844584465027,
+        "ground_truth": {
+          "spleen tyrosinase": {
+            "bertscore": 0.9098405838012695,
+            "f1": 0.6666666666666666
+          },
+          "tyrosinase": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the spleen tyrosinase that": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13654321432113647,
+        "ground_truth": {
+          "SV40 Tag": {
+            "bertscore": 0.6631349921226501,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

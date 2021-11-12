@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "We found a decrease in corneal neovascularization in spironolactone-treated animals compared with the PBS-treated group although the difference was not statistically significant.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PBS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What treatment did the animals receive?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a decrease",
+        "corneal neovascularization",
+        "spironolactone-treated animals",
+        "the PBS-treated group",
+        "the difference"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the researchers find about the spironolactone-treated animals?",
+          "What was found in spironolactone-treated animals?",
+          "What did the spironolactone-treated animals have a decrease in?",
+          "What group of animals had a decrease in corneal neovascularization?",
+          "What group of animals had a decrease in corneal neovascularization?",
+          "What was not statistically significant?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What treatment did spironolactone-treated rats receive?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4015135169029236,
+        "ground_truth": {
+          "PBS": {
+            "bertscore": 0.6260367631912231,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the difference in neovascularization in spironolactone": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decrease",
+        "answerability": 0.9196009635925293,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6625155806541443,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found in spironolactone-treated rats?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11848163604736328,
+        "ground_truth": {
+          "a decrease": {
+            "bertscore": 0.7245710492134094,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the spironolactone-treated rats have a decrease in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "corneal neovascularization",
+        "answerability": 0.9912540316581726,
+        "ground_truth": {
+          "corneal neovascularization": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What group of rats had a decrease in corneal neovascularization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4996848702430725,
+        "ground_truth": {
+          "spironolactone-treated rats": {
+            "bertscore": 0.6338040232658386,
+            "f1": 0
+          },
+          "the PBS-treated group": {
+            "bertscore": 0.6493776440620422,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not statistically significant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decrease in corneal neovascularization",
+        "answerability": 0.8962976336479187,
+        "ground_truth": {
+          "the difference": {
+            "bertscore": 0.6421529054641724,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

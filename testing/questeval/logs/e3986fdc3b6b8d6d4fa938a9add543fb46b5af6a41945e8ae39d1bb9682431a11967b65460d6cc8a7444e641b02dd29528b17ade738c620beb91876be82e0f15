@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Moreover the effects of BHA and LPS could be reproduced by priming whereas IFN-beta and IL-4 were required simultaneously with GC.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BHA",
+        "LPS",
+        "IFN",
+        "GC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main component of a cytokine?",
+          "What is another name for BHA?",
+          "What is the name of the molecule that can be used to reproduce the effects of GC",
+          "What was used to reproduce the effects of BHA and LPS?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the effects",
+        "BHA",
+        "LPS",
+        "IFN-beta",
+        "GC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was reproduced by priming?",
+          "What is the main component of a cytokine?",
+          "What is another name for BHA?",
+          "What is required to reproduce the effects of GC?",
+          "What was used to reproduce the effects of BHA and LPS?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is another name for IL-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03431999683380127,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027957439422607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the molecule that can be used to reproduce the effects of GC": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05098998546600342,
+        "ground_truth": {
+          "IFN": {
+            "bertscore": 0.698520302772522,
+            "f1": 0
+          },
+          "IFN-gamma": {
+            "bertscore": 0.6533436179161072,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to reproduce the effects of IFN-gamma and LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14309203624725342,
+        "ground_truth": {
+          "GC": {
+            "bertscore": 0.6709780693054199,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was reproduced by priming?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effects of BHA and LPS",
+        "answerability": 0.7978130578994751,
+        "ground_truth": {
+          "the effects": {
+            "bertscore": 0.7073166370391846,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the only drug that can be used to reproduce the effects of IL-4 and I": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04966270923614502,
+        "ground_truth": {
+          "IFN-beta": {
+            "bertscore": 0.6575337052345276,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

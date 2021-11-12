@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "The ability of FGF-2 to inhibit angiogenesis may contribute to its efficacy as a chemopreventive agent.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The ability",
+        "FGF-2",
+        "angiogenesis",
+        "its efficacy",
+        "a chemopreventive agent"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may contribute to its efficacy as a chemopreventive agent?",
+          "What may help to prevent angiogenesis?",
+          "What does FGF-2 inhibit?",
+          "What may the ability of FGF-2 to inhibit angiogenesis contribute to?",
+          "What is the efficacy of FGF-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of FGF-2 on the cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27447986602783203,
+        "ground_truth": {
+          "/M accumulation": {
+            "bertscore": 0.6716582775115967,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What causes delayed cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013672709465026855,
+        "ground_truth": {
+          "FGF-2-treated cells": {
+            "bertscore": 0.6251053810119629,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of FGF-2 on the cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibit angiogenesis",
+        "answerability": 0.9713020920753479,
+        "ground_truth": {
+          "delayed cell death": {
+            "bertscore": 0.6980135440826416,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

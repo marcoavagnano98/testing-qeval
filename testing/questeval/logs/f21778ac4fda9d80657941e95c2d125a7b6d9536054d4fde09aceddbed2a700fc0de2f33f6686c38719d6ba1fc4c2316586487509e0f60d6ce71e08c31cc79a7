@@ -1,0 +1,138 @@
+{
+  "type": "ref",
+  "text": "\"\"\"To identify potential effectors of Cdc42Hs we incubated lysates from NIH 3T3 fibroblasts or PC12 cells with immobilized glutathione S-transferase (GST)-Cdc42Hs fusion proteins bound to different guanine nucleotides and observed a specific association between the 85-kDa subunit (p85) of phosphatidylinositol 3-kinase (PI 3-kinase) and GTP gamma S (guanosine 5-3-O-(thio)triphosphate)-bound GST-Cdc42Hs.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cdc42Hs",
+        "NIH",
+        "PC12",
+        "85-kDa",
+        "phosphatidylinositol 3-kinase",
+        "GTP",
+        "5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that is a potential effector of a molecule",
+          "What organization was responsible for the study?",
+          "What type of cells were used to incubate lysates?",
+          "What subunit of PI 3-kinase is associated with GTP gamm",
+          "What is PI 3-kinase?",
+          "What is the name of the gamma S fusion protein?",
+          "What is the guanine nucleotide bound to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "potential effectors",
+        "Cdc42Hs",
+        "we",
+        "lysates",
+        "NIH 3T3 fibroblasts",
+        "PC12 cells",
+        "immobilized glutathione S-transferase (GST)-Cdc42Hs fusion proteins",
+        "different guanine nucleotides",
+        "a specific association",
+        "the 85-kDa subunit",
+        "p85",
+        "phosphatidylinositol",
+        "GTP gamma S",
+        "(guanosine 5-3-O-(thio)triphosphate)-bound GST-Cdc42Hs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the lysates from NIH 3T3 fibroblasts or",
+          "What is the name of the protein that is a potential effector of a molecule",
+          "What was the effect of the fusion proteins on the phosphorylation of Cdc",
+          "What was used to identify potential effectors of Cdc42Hs?",
+          "What was used to incubate lysates?",
+          "What type of cells were used to incubate lysates?",
+          "What was used to incubate lysates from NIH 3T3",
+          "What did the fusion proteins bound to?",
+          "What did the lysates of NIH 3T3 fibroblasts or",
+          "What is p85?",
+          "What is the name of the 85-kDa subunit of PI 3-kina",
+          "What is the name of the 3-kinase that is bound to guanine",
+          "What is the name of the fusion protein that is bound to guanine nucle",
+          "What is the GTP gamma S?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the association between PI 3-kinase and a GTPas": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a specific association between the 85-kDa subunit (p85) of",
+        "answerability": 0.8951504230499268,
+        "ground_truth": {
+          "Cdc42Hs": {
+            "bertscore": 0.6188017129898071,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the association between PI 3-kinase and Cdc42Hs": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a specific association between the 85-kDa subunit (p85) of",
+        "answerability": 0.9350450038909912,
+        "ground_truth": {
+          "phosphatidylinositol 3-kinase": {
+            "bertscore": 0.602567195892334,
+            "f1": 0
+          },
+          "GTPase GTPase-Cdc42Hs": {
+            "bertscore": 0.6240214705467224,
+            "f1": 0
+          },
+          "we": {
+            "bertscore": 0.601595938205719,
+            "f1": 0
+          },
+          "a GTPase GTPase-Cdc42Hs": {
+            "bertscore": 0.6368851065635681,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study examine to identify?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "potential effectors of Cdc42Hs",
+        "answerability": 0.9671215415000916,
+        "ground_truth": {
+          "potential effectors": {
+            "bertscore": 0.7608630657196045,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What has been examined to identify potential effectors of Cdc42Hs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lysates from NIH 3T3 fibroblasts or PC12 cells",
+        "answerability": 0.9774448275566101,
+        "ground_truth": {
+          "the association": {
+            "bertscore": 0.5847129225730896,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the kinase that is associated with Cdc42": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI 3-kinase",
+        "answerability": 0.8545403480529785,
+        "ground_truth": {
+          "phosphatidylinositol": {
+            "bertscore": 0.670150637626648,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

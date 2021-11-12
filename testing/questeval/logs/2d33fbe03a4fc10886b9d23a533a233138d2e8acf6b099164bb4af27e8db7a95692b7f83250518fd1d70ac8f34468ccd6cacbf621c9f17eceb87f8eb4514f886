@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "In contrast to anti-CD3/IL-2-activated LN cells adoptive transfer of freshly isolated tumor-draining LN T cells has little therapeutic activity.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "anti-CD3/IL-2-activated LN cells",
+        "transfer",
+        "freshly isolated tumor-draining LN T cells",
+        "little therapeutic activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of freshly isolated LN cells on therapeutic activity?",
+          "What type of cells have little therapeutic activity?",
+          "What is the most effective way to treat TB?",
+          "What does anti-CD3/IL-2-activated LN cells have little therapeutic activity?",
+          "What is the effect of freshly isolated LN cells on the tumor?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of freshly isolated LN cells on the therapeutic activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "little",
+        "answerability": 0.9851600527763367,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.8064717650413513,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells have no therapeutic activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17602860927581787,
+        "ground_truth": {
+          "anti-CD3/IL-2-activated LN cells": {
+            "bertscore": 0.5713942646980286,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only therapeutic activity of freshly isolated LN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04998046159744263,
+        "ground_truth": {
+          "transfer": {
+            "bertscore": 0.701844334602356,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does anti-CD3/IL-2-activated LN cells do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.036647796630859375,
+        "ground_truth": {
+          "freshly isolated tumor-draining LN T cells": {
+            "bertscore": 0.6298544406890869,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of anti-CD3/IL-2-activated LN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "little therapeutic activity",
+        "answerability": 0.9797933101654053,
+        "ground_truth": {
+          "no therapeutic activity": {
+            "bertscore": 0.9663981199264526,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "We further demonstrate that the p95vav-induced NFAT activation is not mimicked by Ras activation though its function is dependent upon Ras and Raf.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the p95vav-induced NFAT activation",
+        "Ras activation",
+        "its function",
+        "Ras",
+        "Raf"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the p95vav-induced NFAT activation not mimic?",
+          "What is not mimicked by Ras activation?",
+          "What does p95vav not mimic?",
+          "What is dependent upon Ras and Raf?",
+          "What does p95vav not mimic?",
+          "What is the function of p95vav dependent upon?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is blocked by FK506?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0014856457710266113,
+        "ground_truth": {
+          "p95vav": {
+            "bertscore": 0.6380766034126282,
+            "f1": 0
+          },
+          "the activating function": {
+            "bertscore": 0.6681169271469116,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockades the activating function of p95vav?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ras",
+        "answerability": 0.5697876214981079,
+        "ground_truth": {
+          "FK506": {
+            "bertscore": 0.7260086536407471,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does FK506 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001788020133972168,
+        "ground_truth": {
+          "its activity": {
+            "bertscore": 0.6033464670181274,
+            "f1": 0
+          },
+          "calcineurin": {
+            "bertscore": 0.667729914188385,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

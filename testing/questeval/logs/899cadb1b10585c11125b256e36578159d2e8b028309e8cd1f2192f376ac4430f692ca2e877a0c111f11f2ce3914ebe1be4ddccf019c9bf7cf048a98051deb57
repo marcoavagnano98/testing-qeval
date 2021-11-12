@@ -1,0 +1,68 @@
+{
+  "type": "ref",
+  "text": "Moreover GM-CSF was able to induce JAK2 and p93fes catalytic activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GM-CSF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was able to induce JAK2 and p93fes catalytic"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GM-CSF",
+        "JAK2",
+        "p93fes catalytic activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was able to induce JAK2 and p93fes catalytic",
+          "What is the catalytic activity of GM-CSF?",
+          "What did GM-CSF induce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was able to induce JAK2 and STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19363188743591309,
+        "ground_truth": {
+          "GM-CSF": {
+            "bertscore": 0.6749244928359985,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is STAT6 able to induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010104775428771973,
+        "ground_truth": {
+          "JAK2": {
+            "bertscore": 0.6645318269729614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is able to induce JAK2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GM-CSF",
+        "answerability": 0.8100289106369019,
+        "ground_truth": {
+          "STAT6": {
+            "bertscore": 0.7842747569084167,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

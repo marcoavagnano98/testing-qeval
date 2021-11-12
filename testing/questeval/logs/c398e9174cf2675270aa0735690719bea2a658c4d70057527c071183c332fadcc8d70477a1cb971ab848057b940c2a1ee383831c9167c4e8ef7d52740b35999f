@@ -1,0 +1,104 @@
+{
+  "type": "ref",
+  "text": "We hypothesize that interference in DNA-binding activities of GATA-1 and CACCC-binding proteins is the mechanism by which the ER inhibits regulation of these genes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "interference",
+        "DNA-binding activities",
+        "GATA-1",
+        "CACCC-binding proteins",
+        "the mechanism",
+        "the ER",
+        "regulation",
+        "these genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mechanism by which the ER inhibits regulation of these genes?",
+          "What is the mechanism by which the ER inhibits regulation of GATA-1 and CACC",
+          "What does the ER inhibit?",
+          "What is the name of the protein that is involved in DNA binding?",
+          "What is the other protein that is involved in the regulation of GATA-1?",
+          "What does the ER believe interferes with the regulation of GATA-1 and CACCC",
+          "What is the mechanism by which the GATA-1 and CACCC-binding proteins are",
+          "What does the ER inhibit?",
+          "What does the ER inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the researchers study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.024227499961853027,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.605411171913147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study examine that inhibits regulation of erythroid-specific genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interference in DNA-binding activities of GATA-1 and CACCC-binding proteins",
+        "answerability": 0.7761392593383789,
+        "ground_truth": {
+          "the molecular mechanisms": {
+            "bertscore": 0.6876443028450012,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits regulation of erythroid-specific genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7609983682632446,
+        "ground_truth": {
+          "estrogen receptor": {
+            "bertscore": 0.6573835015296936,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor inhibits regulation of erythroid-specific genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ER",
+        "answerability": 0.8488839268684387,
+        "ground_truth": {
+          "(ER": {
+            "bertscore": 0.8272587060928345,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does estrogen receptor inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2136959433555603,
+        "ground_truth": {
+          "regulation": {
+            "bertscore": 0.721572756767273,
+            "f1": 0
+          },
+          "erythroid-specific genes": {
+            "bertscore": 0.6412515044212341,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

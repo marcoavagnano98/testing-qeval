@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The displacement of Mad2p in M2-phase cells was correlated with activation of the spindle checkpoint.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The displacement",
+        "Mad2p",
+        "M2-phase cells",
+        "activation",
+        "the spindle checkpoint"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was correlated with activation of the spindle checkpoint?",
+          "What was correlated with the activation of the spindle checkpoint?",
+          "In what phase was the displacement of Mad2p correlated with activation of the spind",
+          "What was the spindle checkpoint correlated with?",
+          "What was the displacement of Mad2p correlated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was correlated with activation of the spindle checkpoint?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "displacement of Mad2p",
+        "answerability": 0.9992341995239258,
+        "ground_truth": {
+          "The displacement": {
+            "bertscore": 0.7091411352157593,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was correlated with the activation of the spindle checkpoint?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "displacement of Mad2p",
+        "answerability": 0.9994052052497864,
+        "ground_truth": {
+          "Mad2p": {
+            "bertscore": 0.8160579800605774,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "In what phase was displacement of Mad2p correlated with activation of the spindle": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "M2-phase cells",
+        "answerability": 0.973098874092102,
+        "ground_truth": {
+          "M-phase cells": {
+            "bertscore": 0.933911919593811,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was the spindle checkpoint correlated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "displacement of Mad2p",
+        "answerability": 0.6499292850494385,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.663451611995697,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "The displacement of Mad2p in M-phase cells was correlated with activation of what": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spindle checkpoint",
+        "answerability": 0.9340053796768188,
+        "ground_truth": {
+          "the spindle checkpoint": {
+            "bertscore": 0.9246858954429626,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

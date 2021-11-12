@@ -1,0 +1,122 @@
+{
+  "type": "ref",
+  "text": "As expected lack of STAT6 abrogated both IL-4 and IL-10 production by T cells developed with IL-4 or with low antigen dose (Figures 2B and 2C).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2C"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the most recent figure showing that IL-10 production was halted by IL"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "lack",
+        "STAT6",
+        "both IL-4",
+        "IL-10 production",
+        "T cells",
+        "low antigen dose",
+        "(Figures 2B",
+        "2C"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the reason for the abrogation of IL-4 and IL-10 production by",
+          "What abrogated both IL-4 and IL-10 production by T cells developed with",
+          "What did lack of STAT6 abrogate?",
+          "What did lack of STAT6 abrogate by T cells developed with IL-4 or",
+          "What cells produced IL-4 and IL-10?",
+          "What was the other way T cells developed with IL-4?",
+          "What shows that lack of STAT6 abrogated both IL-4 and IL-10",
+          "What is the most recent figure showing that IL-10 production was halted by IL"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the result of the lack of STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "abrogated both IL-4 and IL-10 production by T cells developed with IL",
+        "answerability": 0.9857342839241028,
+        "ground_truth": {
+          "2D": {
+            "bertscore": 0.6259699463844299,
+            "f1": 0
+          },
+          "(Figure 2D": {
+            "bertscore": 0.604969322681427,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the main reason for the lack of STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3085063099861145,
+        "ground_truth": {
+          "The lack": {
+            "bertscore": 0.7238780856132507,
+            "f1": 0
+          },
+          "a lack": {
+            "bertscore": 0.7165042757987976,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein did not impair differentiation of IL-10-producing Th1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3713191747665405,
+        "ground_truth": {
+          "STAT6": {
+            "bertscore": 0.6612184047698975,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the lack of STAT6 not impair?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0168992280960083,
+        "ground_truth": {
+          "the differentiation": {
+            "bertscore": 0.6921314001083374,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells did STAT6 not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.5426617860794067,
+        "ground_truth": {
+          "Th1 cells": {
+            "bertscore": 0.8387261629104614,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein did STAT6 lack?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13765966892242432,
+        "ground_truth": {
+          "IFN-gamma": {
+            "bertscore": 0.6533433198928833,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

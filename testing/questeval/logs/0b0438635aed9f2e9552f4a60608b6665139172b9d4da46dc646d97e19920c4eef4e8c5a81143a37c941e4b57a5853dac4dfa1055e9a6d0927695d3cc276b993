@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Nuclear Rel-A and c -Rel protein complexes are differentially distributed within human granulocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Nuclear Rel-A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein complex that is distributed in human granulocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Nuclear Rel-A and c -Rel protein complexes",
+        "human granulocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are differentially distributed within human granulocytes?",
+          "Nuclear Rel-A and c-Rel protein complexes are differentially distributed"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein complex that is distributed in human thymocytes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.578967809677124,
+        "ground_truth": {
+          "Nuclear Rel-A": {
+            "bertscore": 0.6567071080207825,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are differentially distributed within human thymocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.016538619995117188,
+        "ground_truth": {
+          "Nuclear Rel-A and c -Rel protein complexes": {
+            "bertscore": 0.6061354279518127,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Nuclear Rel-A and c-Rel protein complexes are differentially distributed": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09020406007766724,
+        "ground_truth": {
+          "human thymocytes": {
+            "bertscore": 0.6257879734039307,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

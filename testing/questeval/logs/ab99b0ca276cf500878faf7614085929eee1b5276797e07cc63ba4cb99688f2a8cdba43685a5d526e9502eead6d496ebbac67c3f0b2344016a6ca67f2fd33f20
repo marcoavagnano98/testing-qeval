@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Specifically we asked whether Runx3 which was necessary for Eomes induction then cooperate with Eomes to regulate transcription of the effector CTL markers perforin IFN-gamma and granzyme B.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CTL",
+        "granzyme B.\n"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What effector markers did Runx3 cooperate with?",
+          "What is the other marker that is required for Eomes induction?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "Runx3",
+        "Eomes induction",
+        "Eomes",
+        "transcription",
+        "the effector CTL markers perforin IFN-gamma",
+        "granzyme B."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors ask if Runx3 cooperated with Eomes to regulate transcription",
+          "What is necessary for Eomes induction?",
+          "What is Runx3 necessary for?",
+          "What gene is required for Runx3 to regulate transcription?",
+          "What does Runx3 regulate?",
+          "What does Runx3 regulate?",
+          "What is the other marker that is required for Eomes induction?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What effector markers did Runx3 cooperate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "perforin IFN-gamma and granzyme B",
+        "answerability": 0.7555978894233704,
+        "ground_truth": {
+          "CTL": {
+            "bertscore": 0.6115966439247131,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other marker that is required for Eomes induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2831215262413025,
+        "ground_truth": {
+          "granzyme B.\n": {
+            "bertscore": 0.6287177801132202,
+            "f1": 0
+          },
+          "granzyme B.": {
+            "bertscore": 0.6287177801132202,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we ask if Runx3 cooperated with Eomes to regulate transcription of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5531628131866455,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.674835205078125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was necessary for Eomes induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Runx3",
+        "answerability": 0.9576508402824402,
+        "ground_truth": {
+          "Runx3": {
+            "bertscore": 0.9999996423721313,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Runx3 necessary for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Eomes induction",
+        "answerability": 0.993628740310669,
+        "ground_truth": {
+          "Eomes induction": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene did Runx3 cooperate with to regulate transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Eomes",
+        "answerability": 0.7281631827354431,
+        "ground_truth": {
+          "Eomes": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did Runx3 regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription of the effector CTL markers perforin IFN-gamma and",
+        "answerability": 0.8851574063301086,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6973927617073059,
+            "f1": 0.2222222222222222
+          },
+          "the effector CTL markers perforin IFN-gamma": {
+            "bertscore": 0.9274095892906189,
+            "f1": 0.7692307692307693
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "In contrast overexpression of Vav leads to enhanced nuclear factor of activated T cells activity without affecting AP-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Vav"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is overexpressed in the rat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast overexpression",
+        "Vav",
+        "enhanced nuclear factor",
+        "activated T cells activity",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What leads to enhanced nuclear factor of activated T cells activity?",
+          "What gene is overexpressed in the rat?",
+          "What does overexpression of Vav lead to?",
+          "What does overexpression of Vav lead to?",
+          "What does overexpression of Vav not affect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is overexpressed in the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Vav",
+        "answerability": 0.9499824047088623,
+        "ground_truth": {
+          "Vav": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What leads to enhanced nuclear factor of activated T cells activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Vav",
+        "answerability": 0.8234604001045227,
+        "ground_truth": {
+          "contrast overexpression": {
+            "bertscore": 0.7012054920196533,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does overexpression of Vav lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced nuclear factor of activated T cells activity",
+        "answerability": 0.9013322591781616,
+        "ground_truth": {
+          "enhanced nuclear factor": {
+            "bertscore": 0.8462769389152527,
+            "f1": 0.5454545454545454
+          },
+          "activated T cells activity": {
+            "bertscore": 0.8888785243034363,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does overexpression of Vav not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.8256195187568665,
+        "ground_truth": {
+          "AP-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

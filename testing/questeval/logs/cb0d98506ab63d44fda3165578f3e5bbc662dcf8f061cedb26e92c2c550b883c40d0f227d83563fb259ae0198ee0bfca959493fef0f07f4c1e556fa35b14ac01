@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "(IL3) gene expression in primary human T lymphocytes following CD3 and CD2 receptor stimulation or activation by phytohemagglutinin plus phorbol 12-myristate 13-acetate.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "phorbol",
+        "13-acetate"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the compound that activates the IL3 gene?",
+          "What is the name of the compound that activates IL3 gene expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(IL3) gene expression",
+        "CD3 and CD2 receptor stimulation",
+        "activation",
+        "phytohemagglutinin",
+        "phorbol"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that is expressed in primary human T lymphocytes?",
+          "What is the process that causes IL3 gene expression to increase?",
+          "What is the process called that results in the expression of IL3?",
+          "What is the name of the active ingredient that stimulates IL3 gene expression?",
+          "What is the name of the compound that activates the IL3 gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What indicates that phytohemagglutinin and phorbol 12-myristate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02047067880630493,
+        "ground_truth": {
+          "The data": {
+            "bertscore": 0.6840074062347412,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does phytohemagglutinin and phorbol do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05526137351989746,
+        "ground_truth": {
+          "12-myristate 13-acetate stimulation augment T cell IL3 gene expression": {
+            "bertscore": 0.5626969337463379,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do the data indicate augments T cell IL3 gene expression through?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46286970376968384,
+        "ground_truth": {
+          "the same cis- and trans-activating signals": {
+            "bertscore": 0.6258885860443115,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

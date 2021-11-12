@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "Consistent with the role of NF-kappaB in mediating dopamine responsiveness the proteasome inhibitor MG132 abolished dopamine-induced transcriptional activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "MG132"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein mediates dopamine responsiveness?",
+          "What is the name of the proteasome inhibitor that abolished dopamine-induced"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the role",
+        "NF-kappaB",
+        "dopamine responsiveness",
+        "the proteasome inhibitor MG132",
+        "dopamine-induced transcriptional activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did MG132 do?",
+          "What protein mediates dopamine responsiveness?",
+          "What does MG132 abolish?",
+          "What was the name of the drug that abolished dopamine-induced transcriptional activ",
+          "What did MG132 abolish?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the name of the proteasome inhibitor that abolished dopamine-induced": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MG132",
+        "answerability": 0.9799651503562927,
+        "ground_truth": {
+          "MG132": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the name of the drug that was used to block dopamine-induced transcriptional": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MG132",
+        "answerability": 0.8011847734451294,
+        "ground_truth": {
+          "Pyrrolidinedithiocarbamate": {
+            "bertscore": 0.5808492302894592,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the pyrrolidinedithiocarbamate and dopamine-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013594090938568115,
+        "ground_truth": {
+          "the proteasome inhibitor MG132": {
+            "bertscore": 0.5931712985038757,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did MG132 and pyrrolidinedithiocarbamate abolish?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18172311782836914,
+        "ground_truth": {
+          "dopamine-induced transcriptional activation": {
+            "bertscore": 0.621933102607727,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

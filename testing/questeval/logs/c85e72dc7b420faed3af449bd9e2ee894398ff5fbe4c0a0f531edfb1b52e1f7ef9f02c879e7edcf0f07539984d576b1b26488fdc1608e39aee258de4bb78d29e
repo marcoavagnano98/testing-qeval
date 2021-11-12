@@ -1,0 +1,136 @@
+{
+  "type": "ref",
+  "text": "A third mutation involved a single base pair (adenine) deletion in codon 3 of H-ras which causes a frame shift resulting in a termination signal at codon 19.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "third",
+        "3",
+        "codon 19"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the third mutation of H-ras?",
+          "What is the first base pair of H-ras?",
+          "Where does a frame shift occur?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A third mutation",
+        "a single base pair (adenine) deletion",
+        "codon",
+        "H-ras",
+        "a frame shift",
+        "a termination signal",
+        "codon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the third mutation that causes a frame shift?",
+          "What caused a frame shift at codon 19?",
+          "Where is the third mutation?",
+          "What is the name of the protein that causes a frame shift?",
+          "What does a single base pair deletion in codon 3 of H-ras cause",
+          "What does a single base pair deletion in codon 3 of H-ras result",
+          "Where is the third mutation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the third mutation that resulted in a frame shift?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a single base pair (adenine) deletion",
+        "answerability": 0.9914699196815491,
+        "ground_truth": {
+          "third": {
+            "bertscore": 0.5789198279380798,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the first base pair of a silencer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018949508666992188,
+        "ground_truth": {
+          "19": {
+            "bertscore": 0.6030882596969604,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where did a third mutation occur in a silencer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "codon 3",
+        "answerability": 0.6275402307510376,
+        "ground_truth": {
+          "codon 19": {
+            "bertscore": 0.9263145327568054,
+            "f1": 0.5
+          },
+          "codon": {
+            "bertscore": 0.8678383231163025,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the result of a single base pair deletion in codon 19 of a silence": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25960981845855713,
+        "ground_truth": {
+          "A third mutation": {
+            "bertscore": 0.6866454482078552,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What caused a frame shift at codon 19?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a single base pair (adenine) deletion",
+        "answerability": 0.8781057596206665,
+        "ground_truth": {
+          "a single base pair (adenine) deletion": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did a third mutation result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a single base pair (adenine) deletion",
+        "answerability": 0.79505455493927,
+        "ground_truth": {
+          "a silencer": {
+            "bertscore": 0.7019643783569336,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the third mutation result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a termination signal at codon 19",
+        "answerability": 0.8512430787086487,
+        "ground_truth": {
+          "a frame shift": {
+            "bertscore": 0.7496872544288635,
+            "f1": 0
+          },
+          "a termination signal": {
+            "bertscore": 0.8434236645698547,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

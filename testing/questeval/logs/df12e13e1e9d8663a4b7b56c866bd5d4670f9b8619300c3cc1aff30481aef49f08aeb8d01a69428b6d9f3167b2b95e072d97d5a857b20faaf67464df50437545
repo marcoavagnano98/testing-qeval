@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Combined therapy with p18 and  Men1 to suppress neuroendocrine organ tumors.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Combined therapy",
+        "p18",
+        "Men1",
+        "neuroendocrine organ tumors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the best way to treat a neuroendocrine tumor?",
+          "What drug is used to treat neuroendocrine organ tumors?",
+          "What is the name of the drug that is used to treat neuroendocrine organ tumors",
+          "What is p18 used to suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene does not work with Men1 to suppress neuroendocrine organ tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02532339096069336,
+        "ground_truth": {
+          "p27Kip1": {
+            "bertscore": 0.6326156854629517,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene does p27Kip1 work with to suppress neuroendocrine organ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4204937815666199,
+        "ground_truth": {
+          "Men1": {
+            "bertscore": 0.6906753778457642,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is involved in the suppression of neuroendocrine organ tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p18",
+        "answerability": 0.8961538076400757,
+        "ground_truth": {
+          "p18Ink4c": {
+            "bertscore": 0.7263765335083008,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does p27Kip1 suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01206749677658081,
+        "ground_truth": {
+          "neuroendocrine organ tumors": {
+            "bertscore": 0.6453248262405396,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "HIV-1 long terminal repeat-directed transcription is downregulated in Jurkat cells stimulated with the NF-kappa B-activating cytokine tumor necrosis factor alpha and suppressed in RelA-overexpressing cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jurkat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells are stimulated with NF-kappa B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV-1 long terminal repeat-directed transcription",
+        "Jurkat cells",
+        "the NF-kappa B-activating cytokine tumor necrosis factor alpha",
+        "RelA-overexpressing cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is downregulated in Jurkat cells?",
+          "What cells are stimulated with NF-kappa B-activating cytokin",
+          "What is HIV-1 long terminal repeat-directed transcription downregulated in?",
+          "What type of cells are suppressed by HIV-1 long terminal repeat-directed transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the virus that is a potent activator of long terminal repeat": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.7927069067955017,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is a potent activator of long terminal repeat-directed transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3170182704925537,
+        "ground_truth": {
+          "(HIV-1": {
+            "bertscore": 0.6555032730102539,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44774627685546875,
+        "ground_truth": {
+          "a potent activator": {
+            "bertscore": 0.6910008788108826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is HIV-1 a potent activator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.030441641807556152,
+        "ground_truth": {
+          "long terminal repeat-directed transcription": {
+            "bertscore": 0.6515224575996399,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

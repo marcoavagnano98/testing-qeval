@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "In contrast TPCK and TLCK failed to block induction of an immediate-early gene encoding the transcription factor Egr-1.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast TPCK",
+        "TLCK",
+        "induction",
+        "an immediate-early gene",
+        "the transcription factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did TLCK and TPCK fail to block induction of?",
+          "What did TPCK block induction of?",
+          "What did TPCK and TLCK fail to block?",
+          "What did TPCK and TLCK fail to block?",
+          "What did TPCK and TLCK fail to block induction of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did TPCK block induction of an immediate-early gene encoding the": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36360859870910645,
+        "ground_truth": {
+          "TLCK": {
+            "bertscore": 0.6836535334587097,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TLCK and TPCK not block induction of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an immediate-early gene encoding the transcription factor Egr-1",
+        "answerability": 0.9710149168968201,
+        "ground_truth": {
+          "contrast TPCK": {
+            "bertscore": 0.6362563967704773,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TPCK and TLCK not block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of an immediate-early gene encoding the transcription factor Egr-1",
+        "answerability": 0.9321678876876831,
+        "ground_truth": {
+          "induction": {
+            "bertscore": 0.6579185724258423,
+            "f1": 0.2222222222222222
+          },
+          "an immediate-early gene": {
+            "bertscore": 0.7955476641654968,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does TPCK block induction of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3231866955757141,
+        "ground_truth": {
+          "the transcription factor": {
+            "bertscore": 0.6422823071479797,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

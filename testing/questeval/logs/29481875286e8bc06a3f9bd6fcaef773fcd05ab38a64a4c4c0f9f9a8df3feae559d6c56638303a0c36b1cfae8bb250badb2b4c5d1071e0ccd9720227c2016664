@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "All such events were abrogated by treatment with LY294002 a specific inhibitor of PI3-kinase.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "All such events",
+        "treatment",
+        "LY294002",
+        "a specific inhibitor",
+        "PI3-kinase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was abrogated by treatment with LY294002?",
+          "What was the only way to prevent the relapse of a swine flu",
+          "What was the name of the drug that was used to treat PI3-kinas",
+          "What was LY294002?",
+          "What enzyme was LY294002 specifically designed to inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was abrogated by treatment with LY294002?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "events",
+        "answerability": 0.8418682217597961,
+        "ground_truth": {
+          "All such events": {
+            "bertscore": 0.800079345703125,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was the only way to prevent the relapse of a swine flu": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27947884798049927,
+        "ground_truth": {
+          "treatment": {
+            "bertscore": 0.6978262066841125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the name of the drug that was used to treat PI3-kinas": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LY294002",
+        "answerability": 0.5913768410682678,
+        "ground_truth": {
+          "LY294002": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was LY294002?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a specific inhibitor of PI3-kinase",
+        "answerability": 0.9930341243743896,
+        "ground_truth": {
+          "a specific inhibitor": {
+            "bertscore": 0.798596978187561,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What enzyme was LY294002 specifically designed to inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI3-kinase",
+        "answerability": 0.9980006814002991,
+        "ground_truth": {
+          "PI3-kinase": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

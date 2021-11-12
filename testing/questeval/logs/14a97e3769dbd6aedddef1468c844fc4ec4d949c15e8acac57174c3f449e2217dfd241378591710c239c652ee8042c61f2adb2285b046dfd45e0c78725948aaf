@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "carcinoforms were poorly differentiated hormone receptor-negative neoplasms with a high proliferation rate.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "carcinoforms",
+        "poorly differentiated hormone receptor-negative neoplasms",
+        "a high proliferation rate"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of neoplasms were poorly differentiated?",
+          "What type of carcinoforms have a high proliferation rate?",
+          "What was the main problem with carcinoforms?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of neoplasms were poorly differentiated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "carcinoforms",
+        "answerability": 0.8534252643585205,
+        "ground_truth": {
+          "carcinomas": {
+            "bertscore": 0.8419948220252991,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cancers are carcinomas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.030388355255126953,
+        "ground_truth": {
+          "poorly differentiated hormone receptor-negative neoplasms": {
+            "bertscore": 0.641371488571167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the main problem with a neoplasm that was poorly differentiated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "high proliferation rate",
+        "answerability": 0.8194332718849182,
+        "ground_truth": {
+          "a high proliferation rate": {
+            "bertscore": 0.9519085884094238,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

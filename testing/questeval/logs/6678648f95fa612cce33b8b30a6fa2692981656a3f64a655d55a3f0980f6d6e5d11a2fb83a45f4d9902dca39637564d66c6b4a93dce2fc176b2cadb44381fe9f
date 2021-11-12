@@ -1,0 +1,148 @@
+{
+  "type": "hyp",
+  "text": "(TNF-alpha)-induced degradation of IkappaB-alpha and suppressed the upregulation of vascular cell adhesion molecule 1 (VCAM-1) intercellular adhesion molecule-1 (ICAM-1) and E-selectin\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that causes IkappaB-alpha to be",
+          "What vascular cell adhesion molecule is suppressed by TNF-alpha"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(TNF-alpha)-induced degradation",
+        "IkappaB-alpha",
+        "the upregulation",
+        "vascular cell adhesion molecule",
+        "(VCAM-1",
+        "intercellular adhesion molecule-1",
+        "(ICAM-1",
+        "E-selectin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused IkappaB-alpha to be degraded?",
+          "What protein was induced to degrade?",
+          "What did TNF-alpha suppress?",
+          "What did TNF-alpha suppress the upregulation of?",
+          "What is the name of the vascular cell adhesion molecule-1?",
+          "What does VCAM-1 stand for?",
+          "What intercellular adhesion molecule is suppressed by TNF-alpha?",
+          "What protein was suppressed by TNF-alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that causes IkappaB-alpha to be": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16083407402038574,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What caused IkappaB-alpha to be degraded?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.64644455909729,
+        "ground_truth": {
+          "(TNF-alpha)-induced degradation": {
+            "bertscore": 0.7993562817573547,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was induced to degrade?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB-alpha",
+        "answerability": 0.936381459236145,
+        "ground_truth": {
+          "IkappaB-alpha": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did TNF-alpha suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the upregulation of vascular cell adhesion molecule 1",
+        "answerability": 0.9085624814033508,
+        "ground_truth": {
+          "the upregulation": {
+            "bertscore": 0.7648600339889526,
+            "f1": 0.25
+          },
+          "vascular cell adhesion": {
+            "bertscore": 0.8202520608901978,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What does VCAM-1 stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vascular cell adhesion molecule 1",
+        "answerability": 0.9974625110626221,
+        "ground_truth": {
+          "molecule-1": {
+            "bertscore": 0.7658205628395081,
+            "f1": 0
+          },
+          "intercellular adhesion molecule-1": {
+            "bertscore": 0.8998486399650574,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the name of the vascular cell adhesion molecule-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VCAM-1",
+        "answerability": 0.9102149605751038,
+        "ground_truth": {
+          "(VCAM-1": {
+            "bertscore": 0.8960718512535095,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the intercellular adhesion molecule-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ICAM-1",
+        "answerability": 0.9742346405982971,
+        "ground_truth": {
+          "(ICAM-1": {
+            "bertscore": 0.8889696002006531,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is involved in the upregulation of ICAM-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19492822885513306,
+        "ground_truth": {
+          "E-selectin": {
+            "bertscore": 0.6366221904754639,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

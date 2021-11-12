@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "BHRF1 protected these cells from monocyte-mediated killing but failed to protect them from killing mediated by lymphokine-activated killer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BHRF1",
+        "these cells",
+        "monocyte-mediated killing",
+        "them",
+        "lymphokine-activated killer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did BHRF1 fail to protect against?",
+          "What did BHRF1 not protect?",
+          "What did BHRF1 fail to protect against?",
+          "What did BHRF1 not protect?",
+          "What did BHRF1 fail to protect against?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did BHRF1 fail to do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protect them from killing mediated by lymphokine-activated killer cells",
+        "answerability": 0.7864324450492859,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.6044566035270691,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did BHRF1 fail to protect against?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "killing mediated by lymphokine-activated killer cells",
+        "answerability": 0.7771041989326477,
+        "ground_truth": {
+          "BHRF1": {
+            "bertscore": 0.6301190853118896,
+            "f1": 0
+          },
+          "monocyte-mediated killing": {
+            "bertscore": 0.7469927072525024,
+            "f1": 0.25
+          },
+          "lymphokine-activated killer cells": {
+            "bertscore": 0.886324942111969,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did BHRF1 not protect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphokine-activated killer cells",
+        "answerability": 0.6735413670539856,
+        "ground_truth": {
+          "these cells": {
+            "bertscore": 0.6809316277503967,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did BHRF1 fail to protect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphokine-activated killer cells",
+        "answerability": 0.574106752872467,
+        "ground_truth": {
+          "them": {
+            "bertscore": 0.6179109811782837,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

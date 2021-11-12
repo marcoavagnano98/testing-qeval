@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "IL-5 is fundamentally involved in eosinophilic inflammation. Control of IL-5 production may be effective for the management of allergic diseases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the key component of eosinophilic inflammation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-5",
+        "eosinophilic inflammation",
+        "Control",
+        "IL-5 production",
+        "the management",
+        "allergic diseases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the key component of eosinophilic inflammation?",
+          "What is IL-5 fundamentally involved in?",
+          "What is the main function of IL-5 production?",
+          "What is the key to controlling allergic diseases?",
+          "Control of IL-5 production may be effective for what?",
+          "What is IL-5 used for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the best way to manage allergic diseases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control of IL-5 production",
+        "answerability": 0.9159144163131714,
+        "ground_truth": {
+          "Control": {
+            "bertscore": 0.7297771573066711,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What may be effective for the management of allergic diseases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control of IL-5 production",
+        "answerability": 0.9719836115837097,
+        "ground_truth": {
+          "IL-5 production": {
+            "bertscore": 0.7969432473182678,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Control of IL-5 production may be effective for what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the management of allergic diseases",
+        "answerability": 0.9512527585029602,
+        "ground_truth": {
+          "the management": {
+            "bertscore": 0.7554785013198853,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is IL-5 used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0315932035446167,
+        "ground_truth": {
+          "allergic diseases": {
+            "bertscore": 0.656865656375885,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

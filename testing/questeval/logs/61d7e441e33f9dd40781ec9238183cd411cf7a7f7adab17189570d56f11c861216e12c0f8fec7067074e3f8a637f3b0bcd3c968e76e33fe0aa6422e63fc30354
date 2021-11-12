@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Consecutive IL-1beta- IL-8- and TNF-alpha-mRNA were elevated (up to 1.9 +/- 0.58-fold).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-1beta-",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the IL-8-mRNA that is elevated?",
+          "What is the mRNA that is elevated in a mouse?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Consecutive IL-1beta-",
+        "TNF-alpha-mRNA",
+        "0.58-fold"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the IL-8-mRNA?",
+          "What is the other major mRNA that was elevated?",
+          "How much did the IL-8- and TNF-alpha-mRNA increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the IL-6-mRNA that is elevated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011059820652008057,
+        "ground_truth": {
+          "IL-1beta-": {
+            "bertscore": 0.6015873551368713,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mRNA that is elevated in a mouse?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-1beta- IL-8- and TNF-alpha-m",
+        "answerability": 0.7763311266899109,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.660707950592041,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the IL-6-mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0023055672645568848,
+        "ground_truth": {
+          "Consecutive IL-1beta-": {
+            "bertscore": 0.652384340763092,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most important mRNA in the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07280343770980835,
+        "ground_truth": {
+          "TNF-alpha-mRNA": {
+            "bertscore": 0.611150324344635,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How much did the IL-6 and TNF-alpha-mRNA increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03875863552093506,
+        "ground_truth": {
+          "0.58-fold": {
+            "bertscore": 0.6543684005737305,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

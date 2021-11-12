@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "I kappa B beta pools. I kappa B alpha is efficiently resynthesized whereas I kappa B beta levels stay low for a prolonged time.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "I",
+        "kappa B beta pools",
+        "I",
+        "kappa B alpha",
+        "I",
+        "kappa B beta levels",
+        "a prolonged time"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is efficiently resynthesized?",
+          "What is efficiently resynthesized?",
+          "What is efficiently resynthesized?",
+          "What is efficiently resynthesized?",
+          "What is efficiently resynthesized?",
+          "What is efficiently resynthesized?",
+          "How long do I kappa B beta levels stay low?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the most efficient resynthesized kappa?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I kappa B alpha",
+        "answerability": 0.8200157880783081,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.7119000554084778,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is efficiently resynthesized?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I kappa B alpha",
+        "answerability": 0.8456836938858032,
+        "ground_truth": {
+          "kappa B alpha": {
+            "bertscore": 0.9044240117073059,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What is the most important factor that is resynthesized?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17559540271759033,
+        "ground_truth": {
+          "kappa B beta levels": {
+            "bertscore": 0.6053824424743652,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How long do I kappa B beta levels stay low?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "prolonged",
+        "answerability": 0.6882299184799194,
+        "ground_truth": {
+          "a prolonged time": {
+            "bertscore": 0.8141424059867859,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Cotransfection with C/EBPbeta and GATA-1 expression vectors produced a 5-fold increase compared with cotransfection with the C/EBPbeta or GATA-1 expression vectors individually.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5-fold"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How much did cotransfection with the two vectors produce?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cotransfection",
+        "C/EBPbeta and GATA-1 expression vectors",
+        "a 5-fold increase",
+        "cotransfection",
+        "the C/EBPbeta or GATA-1 expression vectors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What produced a 5-fold increase compared to individual vectors?",
+          "What two vectors produced a 5-fold increase in bacterial virulence?",
+          "How much did cotransfection with the two vectors produce?",
+          "What produced a 5-fold increase compared to the individual vectors?",
+          "What two vectors produced a 5-fold increase in bacterial virulence?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How much did cotransfection with the two vectors produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "5-fold increase",
+        "answerability": 0.9926229119300842,
+        "ground_truth": {
+          "5-fold": {
+            "bertscore": 0.8874476552009583,
+            "f1": 0.6666666666666666
+          },
+          "a 5-fold increase": {
+            "bertscore": 0.9358602166175842,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What produced a 5-fold increase compared to individual vectors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cotransfection with C/EBPbeta and GATA-1 expression vectors",
+        "answerability": 0.8440264463424683,
+        "ground_truth": {
+          "Cotransfection": {
+            "bertscore": 0.7535037398338318,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What two vectors produced a 5-fold increase in bacterial virulence?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4922558665275574,
+        "ground_truth": {
+          "C/EBPbeta and GATA-1 expression vectors": {
+            "bertscore": 0.6174170970916748,
+            "f1": 0
+          },
+          "the C/EBPbeta or GATA-1 expression vectors": {
+            "bertscore": 0.5967288017272949,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What produced a 5-fold increase compared to the individual vectors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cotransfection with C/EBPbeta and GATA-1 expression vectors",
+        "answerability": 0.8800902366638184,
+        "ground_truth": {
+          "cotransfection": {
+            "bertscore": 0.7390575408935547,
+            "f1": 0.25
+          }
+        }
+      }
+    }
+  }
+}

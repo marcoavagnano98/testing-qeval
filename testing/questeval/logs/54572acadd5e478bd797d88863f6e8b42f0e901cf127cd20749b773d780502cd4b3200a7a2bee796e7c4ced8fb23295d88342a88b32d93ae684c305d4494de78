@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "expression impairs the survival proliferation migration and adhesion capacities of cultured ECs and endothelial progenitor cells (EPCs) and inhibits angiogenesis in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ECs",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells are unable to survive in vitro?",
+          "In what way does EG expression inhibit angiogenesis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "expression",
+        "the survival proliferation migration and adhesion capacities",
+        "cultured ECs",
+        "endothelial progenitor cells",
+        "EPCs",
+        "angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What impairs the survival proliferation migration and adhesion capacities of cultured ECs",
+          "What does expression of a protein impair?",
+          "What does expression of a protein impair the survival of?",
+          "What are EPCs?",
+          "What is another term for endothelial progenitor cells?",
+          "What process does EG expression inhibit in vitro?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cells are unable to survive in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11117911338806152,
+        "ground_truth": {
+          "ECs": {
+            "bertscore": 0.7125301361083984,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what way does EG expression inhibit angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32841646671295166,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.7021188735961914,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What impairs the survival proliferation migration and adhesion capacities of cultured ECs": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression",
+        "answerability": 0.9839520454406738,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.9999996423721313,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does expression of a protein impair?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the survival proliferation migration and adhesion capacities of cultured ECs and endot",
+        "answerability": 0.860099196434021,
+        "ground_truth": {
+          "the survival proliferation migration and adhesion capacities": {
+            "bertscore": 0.9079556465148926,
+            "f1": 0.7058823529411764
+          }
+        }
+      }
+    },
+    "What does expression of a protein impair the survival of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ECs and endothelial progenitor cells",
+        "answerability": 0.7495754957199097,
+        "ground_truth": {
+          "cultured ECs": {
+            "bertscore": 0.7487586736679077,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What are EPCs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial progenitor cells",
+        "answerability": 0.9884741306304932,
+        "ground_truth": {
+          "endothelial progenitor cells": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is another term for endothelial progenitor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EPCs",
+        "answerability": 0.987815260887146,
+        "ground_truth": {
+          "EPCs": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What process does EG expression inhibit in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "angiogenesis",
+        "answerability": 0.972497820854187,
+        "ground_truth": {
+          "angiogenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

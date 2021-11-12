@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "This lack of effect by rapamycin confirmed the lack of activated p-mTOR levels (Figure 6B).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the p-mTOR level of rapamycin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This lack",
+        "effect",
+        "rapamycin",
+        "the lack",
+        "activated p-mTOR levels",
+        "Figure 6B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What confirmed the lack of p-mTOR levels by rapamycin?",
+          "What did rapamycin not have on p-mTOR levels?",
+          "What drug did not have an effect on p-mTOR levels?",
+          "What did the lack of rapamycin confirm?",
+          "What did the lack of rapamycin confirm?",
+          "What is the p-mTOR level of rapamycin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the p-mTOR level of rapamycin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.021474123001098633,
+        "ground_truth": {
+          "6B": {
+            "bertscore": 0.6820815801620483,
+            "f1": 0
+          },
+          "Figure 6B": {
+            "bertscore": 0.6523299813270569,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What confirmed the absence of p-mTOR levels by rapamycin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2095475196838379,
+        "ground_truth": {
+          "This lack": {
+            "bertscore": 0.692245364189148,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did rapamycin not have on p-mTOR levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25440293550491333,
+        "ground_truth": {
+          "effect": {
+            "bertscore": 0.7262182831764221,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug did not have an effect on p-mTOR levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rapamycin",
+        "answerability": 0.9673550128936768,
+        "ground_truth": {
+          "rapamycin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the lack of rapamycin confirm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.573710560798645,
+        "ground_truth": {
+          "the absence": {
+            "bertscore": 0.6903125643730164,
+            "f1": 0
+          },
+          "activated p-mTOR levels": {
+            "bertscore": 0.5800387263298035,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

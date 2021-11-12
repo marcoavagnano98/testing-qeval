@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "While IL-4 does not activate STAT5 it induces expression of STAT5-regulated genes in CTLL-2 i.e. beta-casein a cytokine-inducible SH2-containing protein (CIS) and oncostatin M (OSM) suggesting that STAT5 activated by IL-4 substitutes for the function of STAT5 in T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CIS",
+        "OSM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the SH2-containing protein in CTLL-2?",
+          "What is the name of the oncostatin M protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-4",
+        "it",
+        "expression",
+        "STAT5-regulated genes",
+        "CTLL-2 i.e. beta-casein",
+        "a cytokine-inducible SH2-containing protein",
+        "(CIS",
+        "oncostatin M",
+        "(OSM",
+        "IL-4 substitutes",
+        "the function",
+        "STAT5",
+        "T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not activate STAT5?",
+          "What does IL-4 do to STAT5?",
+          "What does IL-4 induce in CTLL-2?",
+          "What does IL-4 induce expression of in CTLL-2?",
+          "What is the name of the cytokine-inducible SH2-containing protein?",
+          "What is CIS?",
+          "What is the name of the SH2-containing protein in CTLL-2?",
+          "What is the acronym for OSM?",
+          "What is the name of the oncostatin M protein?",
+          "What does IL-4 do to activate STAT5?",
+          "What does IL-4 substitute for in T cells?",
+          "What does IL-4 not activate?",
+          "What does IL-4 not activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of IL-4 on NK and T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.018482744693756104,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094627022743225,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 induce in both T and NK cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31849539279937744,
+        "ground_truth": {
+          "different C epsilon GAS DNA-protein binding complexes": {
+            "bertscore": 0.6258409023284912,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does IL-4 induce different C epsilon GAS DNA-protein": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CTLL-2",
+        "answerability": 0.733288049697876,
+        "ground_truth": {
+          "both T and NK cells": {
+            "bertscore": 0.6472299098968506,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

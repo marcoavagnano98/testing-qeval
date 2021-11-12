@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Moreover we identified MSK1 as a nuclear kinase that phosphorylates p65 at Ser276.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "MSK1",
+        "a nuclear kinase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we identify as a nuclear kinase?",
+          "What phosphorylates p65 at Ser276?",
+          "What does MSK1 phosphorylate at Ser276?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we identify as a nuclear kinase for p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MSK1",
+        "answerability": 0.9806331992149353,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7257387638092041,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the nuclear kinase for p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MSK1",
+        "answerability": 0.9276387691497803,
+        "ground_truth": {
+          "MSK1": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did we identify MSK1 as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a nuclear kinase",
+        "answerability": 0.9320263266563416,
+        "ground_truth": {
+          "a nuclear kinase": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MSK1 associate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43029725551605225,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.6236464381217957,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How does MSK1 associate with p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylates",
+        "answerability": 0.7551827430725098,
+        "ground_truth": {
+          "a stimulus-dependent way": {
+            "bertscore": 0.6534020900726318,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

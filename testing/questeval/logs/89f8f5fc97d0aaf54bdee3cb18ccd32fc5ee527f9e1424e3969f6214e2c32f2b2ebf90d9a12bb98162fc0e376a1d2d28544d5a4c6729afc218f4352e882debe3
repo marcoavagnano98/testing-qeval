@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "The effect of platelets on the content of urokinase plasminogen activator (uPA) and plasminogen activator (PAI) was measured in SKOV3 cell conditioned medium and cell lysates.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PAI"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the urokinase that is activated by plate"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The effect",
+        "platelets",
+        "the content",
+        "urokinase plasminogen activator",
+        "uPA",
+        "plasminogen activator",
+        "PAI",
+        "SKOV3 cell",
+        "medium and cell lysates"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was measured in SKOV3 cell conditioned medium?",
+          "What was measured in SKOV3 cell conditioned medium?",
+          "What did platelets affect?",
+          "What does uPA stand for?",
+          "What is the name of the urokinase plasminogen activator",
+          "What is PAI?",
+          "What is the name of the urokinase that is activated by plate",
+          "What type of cell was conditioned with platelets?",
+          "What was used to measure the effect of platelets on urokinase"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was measured using an ELISA assay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01580601930618286,
+        "ground_truth": {
+          "The effect": {
+            "bertscore": 0.6850010752677917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the urokinase plasminogen activator?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "uPA",
+        "answerability": 0.8406955003738403,
+        "ground_truth": {
+          "platelets": {
+            "bertscore": 0.7447606921195984,
+            "f1": 0
+          },
+          "VEGF": {
+            "bertscore": 0.8002312779426575,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the ELISA test determine about uPA and VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.029151558876037598,
+        "ground_truth": {
+          "the content": {
+            "bertscore": 0.6473844051361084,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does uPA stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "urokinase plasminogen activator",
+        "answerability": 0.9799841046333313,
+        "ground_truth": {
+          "urokinase plasminogen activator": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the urokinase plasminogen activator": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "uPA",
+        "answerability": 0.6202676892280579,
+        "ground_truth": {
+          "uPA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of medium was used to measure the effect of platelets on uPA and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SKOV3 cell conditioned medium and cell lysates",
+        "answerability": 0.9528798460960388,
+        "ground_truth": {
+          "SKOV3 cell": {
+            "bertscore": 0.8540151715278625,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What was used to measure the effect of platelets on urokinase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SKOV3 cell conditioned medium and cell lysates",
+        "answerability": 0.7587587833404541,
+        "ground_truth": {
+          "conditioned medium": {
+            "bertscore": 0.7730473279953003,
+            "f1": 0.4444444444444445
+          },
+          "an ELISA assay": {
+            "bertscore": 0.6995872259140015,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of glucose metabolism enhanced killing of myocardial carcinoma HeLa cervical carcinoma HeLa and breast carcinoma\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "glucose",
+        "metabolism",
+        "myocardial carcinoma",
+        "HeLa cervical carcinoma HeLa",
+        "breast carcinoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of glucose metabolism on myocardial carcinoma?",
+          "What metabolic process is inhibited in myocardial carcinoma?",
+          "What is the main mechanism that causes myocardial carcinoma?",
+          "What type of cancer is a result of glucose metabolism?",
+          "What is the most common type of cancer?",
+          "What is another cancer that is a result of the inhibition of glucose metabolism?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of glucose metabolism on myeloid leukemia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16342103481292725,
+        "ground_truth": {
+          "Inhibition": {
+            "bertscore": 0.7073809504508972,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What metabolic process is inhibited in the treatment of myeloid leukemia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glucose metabolism",
+        "answerability": 0.9753491282463074,
+        "ground_truth": {
+          "glucose": {
+            "bertscore": 0.9058390259742737,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the main mechanism that causes myeloid leukemia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4617800712585449,
+        "ground_truth": {
+          "metabolism": {
+            "bertscore": 0.6765255928039551,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer that can be prevented by glucose metabolism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2272619605064392,
+        "ground_truth": {
+          "myeloid leukemia U937 cervical carcinoma HeLa": {
+            "bertscore": 0.5611576437950134,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011899113655090332,
+        "ground_truth": {
+          "breast carcinoma": {
+            "bertscore": 0.6576197147369385,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

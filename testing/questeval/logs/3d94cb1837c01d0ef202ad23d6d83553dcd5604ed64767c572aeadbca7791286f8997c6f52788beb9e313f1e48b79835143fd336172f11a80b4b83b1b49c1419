@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Bacterial lipopolysaccharide (LPS) induces the synthesis of cytosolic phospholipase A2 and activation of NF-kappaB.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "A2",
+        "NF-kappaB."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enzyme is synthesised by lipopolysaccharide?",
+          "What is activated by lipopolysaccharide?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Bacterial lipopolysaccharide",
+        "LPS",
+        "the synthesis",
+        "cytosolic phospholipase A2",
+        "activation",
+        "NF-kappaB."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is LPS?",
+          "What is the name of the enzyme that induces cytosolic phospholipas",
+          "What does LPS induce?",
+          "What does LPS induce?",
+          "What is the main effect of NF-kappaB?",
+          "What is activated by lipopolysaccharide?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the phospholipase that is synthesised in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47118669748306274,
+        "ground_truth": {
+          "A2": {
+            "bertscore": 0.7130159139633179,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cell is the lipopolysaccharide produced in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0159761905670166,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6662787795066833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does lipopolysaccharide induce in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03804957866668701,
+        "ground_truth": {
+          "synthesis": {
+            "bertscore": 0.6831985116004944,
+            "f1": 0
+          },
+          "activity": {
+            "bertscore": 0.6991471648216248,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enzyme is synthesised by lipopolysaccharide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytosolic phospholipase A2",
+        "answerability": 0.7340302467346191,
+        "ground_truth": {
+          "the 85-kDa cytosolic phospholipase A2": {
+            "bertscore": 0.8996919989585876,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

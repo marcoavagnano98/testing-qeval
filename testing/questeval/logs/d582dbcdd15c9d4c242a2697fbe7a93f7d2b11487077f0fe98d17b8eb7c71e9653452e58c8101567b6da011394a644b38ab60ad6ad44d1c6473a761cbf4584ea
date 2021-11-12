@@ -1,0 +1,126 @@
+{
+  "type": "ref",
+  "text": "IL-6 release was completely inhibited by NAI following PMA exposure indicating regulation through NF-kappaB since IL-6 expression was significantly increased in response to HK E. coli than PMA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NAI",
+        "PMA",
+        "HK E.",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited IL-6 release after exposure to PMA?",
+          "What was the first molecule to cause IL-6 release to be completely inhibited by",
+          "What bacteria was IL-6 significantly increased in response to?",
+          "What was the first molecule to cause IL-6 release to be completely inhibited by"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "release",
+        "NAI",
+        "PMA exposure",
+        "regulation",
+        "NF-kappaB",
+        "IL-6 expression",
+        "response",
+        "HK E. coli",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was completely inhibited by NAI after exposure to HK E. coli?",
+          "What inhibited IL-6 release after exposure to PMA?",
+          "What was the cause of IL-6 release?",
+          "What did the NF-kappaB signal indicate?",
+          "What did the IL-6 release of HK E. coli result in?",
+          "What was significantly increased in response to HK E. coli?",
+          "What was IL-6 expression significantly increased in?",
+          "What organism was IL-6 significantly increased in response to?",
+          "What was the first molecule to cause IL-6 release to be completely inhibited by"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did specific PKC inhibition not have an effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00517040491104126,
+        "ground_truth": {
+          "Bis": {
+            "bertscore": 0.6954624652862549,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did nonspecific protein kinase inhibition inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31149041652679443,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 0.6727325320243835,
+            "f1": 0
+          },
+          "IL-6 release": {
+            "bertscore": 0.6518436670303345,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited IL-6 release?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NAI",
+        "answerability": 0.9815801382064819,
+        "ground_truth": {
+          "Nonspecific protein kinase inhibition": {
+            "bertscore": 0.646499752998352,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the Bis-induced IL-6 release not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012546777725219727,
+        "ground_truth": {
+          "specific PKC inhibition": {
+            "bertscore": 0.6590666770935059,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect did specific PKC inhibition have on LPS-induced IL-6 release?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02870035171508789,
+        "ground_truth": {
+          "no effect": {
+            "bertscore": 0.7436091303825378,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did PKC inhibition with Bis not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006292998790740967,
+        "ground_truth": {
+          "LPS-induced IL-6 release": {
+            "bertscore": 0.6150844693183899,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

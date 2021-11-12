@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "However many human carcinomas overexpress TGFbeta1 and this is associated with poor patient prognosis and increased frequency of metastases.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "many human carcinomas overexpress TGFbeta1",
+        "poor patient prognosis",
+        "increased frequency",
+        "metastases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with poor patient prognosis and increased frequency of metastases?",
+          "What is the result of overexpressing TGFbeta1?",
+          "What is the result of overexpressing TGFbeta1?",
+          "What is an increase in the frequency of in human carcinomas?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is associated with poor patient prognosis and increased frequency of metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGFbeta1",
+        "answerability": 0.9431407451629639,
+        "ground_truth": {
+          "many human carcinomas overexpress TGFbeta1": {
+            "bertscore": 0.8238123655319214,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the result of overexpressing TGFbeta1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "poor patient prognosis and increased frequency of metastases",
+        "answerability": 0.9732514023780823,
+        "ground_truth": {
+          "poor patient prognosis": {
+            "bertscore": 0.8357211947441101,
+            "f1": 0.5454545454545454
+          },
+          "increased frequency": {
+            "bertscore": 0.711200475692749,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is an increased frequency of in human carcinomas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metastases",
+        "answerability": 0.6825585961341858,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.9516907930374146,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

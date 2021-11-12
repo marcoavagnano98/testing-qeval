@@ -1,0 +1,224 @@
+{
+  "type": "hyp",
+  "text": "IFN-gamma were found: (1) multiple inactivating nucleotide substitutions in the enhancer element that has been shown to regulate LPS/IFN-gamma induced expression of the mouse iNOS gene; and (2) and absence of one or more nuclear factors in human macrophages (e.g. an LPS-inducible nuclear factor-kappa B/Rel complex) that is (are) required for maximal expression of the gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IFN",
+        "1",
+        "LPS/IFN",
+        "2",
+        "one",
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the regulator of the mouse iNOS gene?",
+          "What is the effect of multiple inactivating nucleotide substitutions in the enhance",
+          "What is the enhancer element that regulates the expression of the mouse iNOS gene",
+          "How many nuclear factors are required for maximal expression of the gene?",
+          "How many nuclear factors are required for maximal expression of the gene?",
+          "What is the enhancer element that regulates the expression of the mouse iNOS gene"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IFN-gamma",
+        "(1) multiple inactivating",
+        "nucleotide substitutions",
+        "the enhancer element",
+        "LPS/IFN-gamma induced expression",
+        "the mouse iNOS gene",
+        "absence",
+        "one or more nuclear factors",
+        "human macrophages",
+        "e.g. an LPS-inducible nuclear factor-kappa B/Rel complex",
+        "maximal expression",
+        "the gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the enhancer element that regulates the expression of the mouse iNOS gene",
+          "What is the effect of the enhancer element on the expression of the mouse iNOS",
+          "What is required for maximal expression of the gene?",
+          "What element is involved in the regulation of the mouse iNOS gene?",
+          "What is the mouse iNOS gene regulated by?",
+          "What gene is induced by LPS/IFN-gamma?",
+          "What is required for maximal expression of the gene?",
+          "What is required for maximal expression of the gene?",
+          "What is required for maximal expression of the gene?",
+          "What is required for maximal expression of the gene?",
+          "What is the function of the LPS/IFN-gamma complex in human macro",
+          "What is the expression of the mouse iNOS?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the enhancer element that regulates the expression of the mouse iNOS gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-gamma",
+        "answerability": 0.9456242322921753,
+        "ground_truth": {
+          "IFN": {
+            "bertscore": 0.8021156191825867,
+            "f1": 0
+          },
+          "LPS/IFN": {
+            "bertscore": 0.8017387986183167,
+            "f1": 0
+          },
+          "LPS": {
+            "bertscore": 0.7478705048561096,
+            "f1": 0
+          },
+          "IFN-gamma": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of multiple inactivating nucleotide substitutions in the human": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13583558797836304,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.7022401690483093,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many nuclear factors are required for maximal expression of the gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5247592329978943,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.6837683320045471,
+            "f1": 0
+          },
+          "one": {
+            "bertscore": 0.7306548357009888,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of the human counterpart of the enhancer element on the mouse iNO": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3021697402000427,
+        "ground_truth": {
+          "(1) multiple inactivating": {
+            "bertscore": 0.6483736038208008,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for maximal expression of the gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "absence of one or more nuclear factors in human macrophages",
+        "answerability": 0.8978944420814514,
+        "ground_truth": {
+          "nucleotide substitutions": {
+            "bertscore": 0.7062332630157471,
+            "f1": 0
+          },
+          "absence": {
+            "bertscore": 0.6344439387321472,
+            "f1": 0.18181818181818182
+          },
+          "one or more nuclear factors": {
+            "bertscore": 0.8064366579055786,
+            "f1": 0.6666666666666666
+          },
+          "human macrophages": {
+            "bertscore": 0.8004697561264038,
+            "f1": 0.33333333333333337
+          },
+          "e.g. an LPS-inducible nuclear factor-kappa B/Rel complex": {
+            "bertscore": 0.6454781293869019,
+            "f1": 0.125
+          }
+        }
+      }
+    },
+    "What enhancer element is involved in the regulation of iNOS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-gamma",
+        "answerability": 0.9542441964149475,
+        "ground_truth": {
+          "the human counterpart": {
+            "bertscore": 0.6905783414840698,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the human counterpart of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014043211936950684,
+        "ground_truth": {
+          "the enhancer element": {
+            "bertscore": 0.664116621017456,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mouse iNOS gene regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-gamma",
+        "answerability": 0.9443723559379578,
+        "ground_truth": {
+          "LPS/IFN-gamma induced expression": {
+            "bertscore": 0.8134148716926575,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is induced by LPS/IFN-gamma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mouse iNOS",
+        "answerability": 0.9883220195770264,
+        "ground_truth": {
+          "the mouse iNOS gene": {
+            "bertscore": 0.8375232815742493,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the function of the LPS-inducible nuclear factor-kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03625214099884033,
+        "ground_truth": {
+          "maximal expression": {
+            "bertscore": 0.7342130541801453,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mouse iNOS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.043994903564453125,
+        "ground_truth": {
+          "the gene": {
+            "bertscore": 0.6676146984100342,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

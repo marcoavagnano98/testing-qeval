@@ -1,0 +1,186 @@
+{
+  "type": "hyp",
+  "text": "(5) Cells genetically deficient in SREBP-acting protein S1P or S2P phenotypically exhibited impaired migration; (6) SREBP inhibition in ECs suppressed the activity of small GTPase Cdc42 a key molecule for ECs motility.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5",
+        "6",
+        "ECs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many ECs were affected by SREBP inhibition?",
+          "How many ECs were affected by SREBP inhibition?",
+          "What type of cell was affected by SREBP inhibition?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(5) Cells",
+        "SREBP-acting protein",
+        "S1P",
+        "impaired migration",
+        "(6) SREBP inhibition",
+        "ECs",
+        "the activity",
+        "small GTPase Cdc42",
+        "a key molecule",
+        "ECs motility"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were deficient in SREBP-acting protein S1P or",
+          "What protein is S1P?",
+          "What is the name of the SREBP-acting protein?",
+          "What did cells with SREBP-acting protein S1P or S2P exhibit",
+          "What suppressed the activity of small GTPase Cdc42?",
+          "What type of cell was affected by SREBP inhibition?",
+          "What did SREBP inhibition suppress in ECs?",
+          "What molecule is important for ECs motility?",
+          "What is Cdc42?",
+          "What is the key molecule for ECs?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many ECs were affected by SREBP inhibition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "(6)",
+        "answerability": 0.7256824970245361,
+        "ground_truth": {
+          "5": {
+            "bertscore": 0.7557401657104492,
+            "f1": 0
+          },
+          "6": {
+            "bertscore": 0.800173282623291,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cell was affected by SREBP inhibition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ECs",
+        "answerability": 0.8560528755187988,
+        "ground_truth": {
+          "ECs": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were deficient in SREBP-acting protein S1P or": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "(5)",
+        "answerability": 0.8574939966201782,
+        "ground_truth": {
+          "(5) Cells": {
+            "bertscore": 0.7944667339324951,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein is S1P?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SREBP",
+        "answerability": 0.7327314615249634,
+        "ground_truth": {
+          "SREBP-acting protein": {
+            "bertscore": 0.7948176264762878,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the SREBP-acting protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "S1P or S2P",
+        "answerability": 0.9353811144828796,
+        "ground_truth": {
+          "S1P": {
+            "bertscore": 0.8583760857582092,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did cells with SREBP-acting protein S1P or S2P exhibit": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "impaired migration",
+        "answerability": 0.9575613737106323,
+        "ground_truth": {
+          "impaired migration": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What suppressed the activity of small GTPase Cdc42?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SREBP inhibition",
+        "answerability": 0.995327353477478,
+        "ground_truth": {
+          "(6) SREBP inhibition": {
+            "bertscore": 0.8852623701095581,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did SREBP inhibition suppress in ECs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "small GTPase Cdc42",
+        "answerability": 0.9866278767585754,
+        "ground_truth": {
+          "the activity": {
+            "bertscore": 0.6107254028320312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What molecule is important for ECs motility?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "small GTPase Cdc42",
+        "answerability": 0.9676423668861389,
+        "ground_truth": {
+          "small GTPase Cdc42": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Cdc42?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "small GTPase",
+        "answerability": 0.9727892875671387,
+        "ground_truth": {
+          "a key molecule": {
+            "bertscore": 0.7192749381065369,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the key molecule for ECs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "small GTPase Cdc42",
+        "answerability": 0.8779773116111755,
+        "ground_truth": {
+          "ECs motility": {
+            "bertscore": 0.6914702653884888,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

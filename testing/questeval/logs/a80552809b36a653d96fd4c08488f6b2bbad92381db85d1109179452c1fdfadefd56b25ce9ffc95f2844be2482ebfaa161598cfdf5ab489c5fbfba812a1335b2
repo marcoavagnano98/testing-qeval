@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "Production of IL15 and IFNgamma has been associated with induction of cytotoxic effector responses in cells latently infected with EBV 3334.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IFNgamma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IL15 associated with induction of cytotoxic effector responses in cells la"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Production",
+        "IL15",
+        "IFNgamma",
+        "induction",
+        "cytotoxic effector responses",
+        "cells",
+        "EBV"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with induction of cytotoxic effector responses in cells latently in",
+          "What is associated with induction of cytotoxic effector responses in cells latently in",
+          "What is IL15 associated with induction of cytotoxic effector responses in cells la",
+          "What is the effect of IL15 and IFNgamma on cytotoxic effect",
+          "What has the production of IL15 and IFNgamma been associated with in cells",
+          "What type of cells are infected with EBV 3334?",
+          "What is 3334?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL15 associated with induction of cytotoxic effector responses in cells la": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5331196784973145,
+        "ground_truth": {
+          "IFNgamma": {
+            "bertscore": 0.6805921792984009,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is associated with induction of cytotoxic effector responses in cells latently in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Production of IL15 and IFNgamma",
+        "answerability": 0.9133138060569763,
+        "ground_truth": {
+          "Production": {
+            "bertscore": 0.6392815709114075,
+            "f1": 0.33333333333333337
+          },
+          "IL15": {
+            "bertscore": 0.788884162902832,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the effect of IL15 and IFNgamma on cytotoxic effect": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of cytotoxic effector responses",
+        "answerability": 0.7785153388977051,
+        "ground_truth": {
+          "induction": {
+            "bertscore": 0.723483145236969,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What has the production of IL15 and IFNgamma been associated with in cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of cytotoxic effector responses",
+        "answerability": 0.9505228996276855,
+        "ground_truth": {
+          "cytotoxic effector responses": {
+            "bertscore": 0.9195404648780823,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What type of cells are infected with EBV 3334?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16826152801513672,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147345542908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is 3334?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014564335346221924,
+        "ground_truth": {
+          "EBV": {
+            "bertscore": 0.689450740814209,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

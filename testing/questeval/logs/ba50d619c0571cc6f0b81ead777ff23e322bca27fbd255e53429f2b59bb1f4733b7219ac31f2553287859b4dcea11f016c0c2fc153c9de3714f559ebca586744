@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Extracts of mitotic cells had lower concentrations of p130 compared to those of interphase cells suggesting that a proportion of p130 might be degraded during mitosis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Extracts",
+        "mitotic cells",
+        "lower concentrations",
+        "p130",
+        "interphase cells",
+        "a proportion",
+        "p130",
+        "mitosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells had lower concentrations of p130?",
+          "What type of cells had lower concentrations of p130?",
+          "What was the effect of extracts of mitotic cells on p130?",
+          "What chemical is present in the extracts of mitotic cells?",
+          "What type of cells had lower concentrations of p130?",
+          "What might be degraded during mitosis?",
+          "What chemical is present in the extracts of mitotic cells?",
+          "What process is p130 degraded during?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells had lower concentrations of p130?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitotic cells",
+        "answerability": 0.9983145594596863,
+        "ground_truth": {
+          "Extracts": {
+            "bertscore": 0.7238276600837708,
+            "f1": 0
+          },
+          "mitotic cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "interphase cells": {
+            "bertscore": 0.8955769538879395,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was the effect of extracts of mitotic cells on p130?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lower concentrations",
+        "answerability": 0.9775357246398926,
+        "ground_truth": {
+          "lower concentrations": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What chemical is present in the extracts of mitotic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p130",
+        "answerability": 0.91875159740448,
+        "ground_truth": {
+          "p130": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What might be degraded during mitosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p130",
+        "answerability": 0.9463428258895874,
+        "ground_truth": {
+          "a proportion": {
+            "bertscore": 0.6219543218612671,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What process is p130 degraded during?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitosis",
+        "answerability": 0.96152663230896,
+        "ground_truth": {
+          "mitosis": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

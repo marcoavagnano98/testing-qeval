@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "I kappa B gamma-1 is found in both the cytoplasm and nuclei whereas I kappa B gamma-2 is predominantly nuclear.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappa B gamma-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is found in both the cytoplasm and nuclei?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "I",
+        "kappa B gamma-1",
+        "both the cytoplasm",
+        "nuclei",
+        "I",
+        "kappa B gamma-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of kappa is found in both the cytoplasm and nuclei",
+          "What is found in both the cytoplasm and nuclei?",
+          "Where is I kappa B gamma-1 found?",
+          "What part of the body is I kappa B gamma-2 predominantly found",
+          "What type of kappa is found in both the cytoplasm and nuclei",
+          "What is found in both the cytoplasm and nuclei?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is found in both the cytoplasm and nucleus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5048765540122986,
+        "ground_truth": {
+          "kappa B gamma-1": {
+            "bertscore": 0.6153563261032104,
+            "f1": 0
+          },
+          "kappa B gamma-2": {
+            "bertscore": 0.6178790926933289,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of kappa is found in both the cytoplasm and nucleus": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44815218448638916,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.679896354675293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is I kappa B gamma-1 found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasm and nuclei",
+        "answerability": 0.9543135762214661,
+        "ground_truth": {
+          "both the cytoplasm": {
+            "bertscore": 0.8547446131706238,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What part of the body is I kappa B gamma-2 located in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3172435164451599,
+        "ground_truth": {
+          "nucleus": {
+            "bertscore": 0.6965104341506958,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

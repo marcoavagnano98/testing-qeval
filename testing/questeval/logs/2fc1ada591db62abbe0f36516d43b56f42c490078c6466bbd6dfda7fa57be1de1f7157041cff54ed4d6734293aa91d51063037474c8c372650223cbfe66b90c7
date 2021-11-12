@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Activation of NF-kappaB by inflammatory stimuli involves the phosphorylation and subsequent degradation of its inhibitor\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "NF-kappaB",
+        "inflammatory stimuli",
+        "the phosphorylation and subsequent degradation",
+        "its inhibitor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the phosphorylation and subsequent degradation of NF-kappaB?",
+          "What is activated by inflammatory stimuli?",
+          "What is the process of activating NF-kappaB?",
+          "What is the process of activating NF-kappaB?",
+          "What is phosphorylated and subsequently degraded by inflammatory stimuli?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What pathway is activated by inflammatory stimuli in human neutrophils?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9259480237960815,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the NF-kappaB pathway": {
+            "bertscore": 0.760192334651947,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1257653832435608,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.72251957654953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB pathway activated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inflammatory stimuli",
+        "answerability": 0.9907291531562805,
+        "ground_truth": {
+          "inflammatory stimuli": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "human neutrophils": {
+            "bertscore": 0.7294747829437256,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

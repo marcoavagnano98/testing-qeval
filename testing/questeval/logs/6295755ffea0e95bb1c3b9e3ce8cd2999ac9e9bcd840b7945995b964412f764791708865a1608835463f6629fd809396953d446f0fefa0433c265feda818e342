@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "The authors demonstrate that resection of the primary osteosarcoma tumor enhances progression of pulmonary metastasis in animal osteosarcoma models.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The authors",
+        "resection",
+        "the primary osteosarcoma tumor",
+        "progression",
+        "pulmonary metastasis",
+        "animal osteosarcoma models"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Who demonstrated that resection of the primary osteosarcoma tumor enhances progression of",
+          "What does the study show enhances progression of pulmonary metastasis?",
+          "What does resection of the tumor enhance?",
+          "What does resection of the primary osteosarcoma tumor enhance?",
+          "What does resection of the primary osteosarcoma tumor enhance?",
+          "What type of tumors are shown to be more likely to develop pulmonary metastasis"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Who showed that resection of the primary osteosarcoma tumor enhances progression of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The authors",
+        "answerability": 0.8130140900611877,
+        "ground_truth": {
+          "The authors": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the study show enhances progression of pulmonary metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "resection of the primary osteosarcoma tumor",
+        "answerability": 0.913675844669342,
+        "ground_truth": {
+          "resection": {
+            "bertscore": 0.7182861566543579,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What tumor is resection shown to enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pulmonary metastasis",
+        "answerability": 0.8853868246078491,
+        "ground_truth": {
+          "the primary osteosarcoma tumor": {
+            "bertscore": 0.7234058380126953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does resection of the primary osteosarcoma tumor enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "progression of pulmonary metastasis",
+        "answerability": 0.9732257723808289,
+        "ground_truth": {
+          "progression": {
+            "bertscore": 0.7095486521720886,
+            "f1": 0.4
+          },
+          "pulmonary metastasis": {
+            "bertscore": 0.91147780418396,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of tumors are shown to increase pulmonary metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "primary osteosarcoma",
+        "answerability": 0.9432510137557983,
+        "ground_truth": {
+          "animal osteosarcoma models": {
+            "bertscore": 0.8906450867652893,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

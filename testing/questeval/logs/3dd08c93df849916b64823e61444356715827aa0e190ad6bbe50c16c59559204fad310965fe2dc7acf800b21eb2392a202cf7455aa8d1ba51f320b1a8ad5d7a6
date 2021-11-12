@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "In a normal cell cycle the presence of this protein is restricted to G1 partly because the CDC6 protein is ubiquitinated in vivo. The Cdc6p protein is ubiquitinated in vivo and degraded by a Cdc4-dependent mechanism.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way is the CDC6 protein ubiquitinated?",
+          "In what way is the CDC6 protein ubiquitinated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a normal cell cycle",
+        "the presence",
+        "this protein",
+        "the CDC6 protein",
+        "vivo",
+        "The Cdc6p protein",
+        "vivo",
+        "a Cdc4-dependent mechanism"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what cell cycle is the presence of CDC6 restricted to G1?",
+          "What is restricted to G1 in a normal cell cycle?",
+          "What is restricted to G1 in a normal cell cycle?",
+          "What is ubiquitinated in vivo?",
+          "In what way is the CDC6 protein ubiquitinated?",
+          "What is ubiquitinated in vivo and degraded by a C",
+          "In what way is the CDC6 protein ubiquitinated?",
+          "How is the Cdc6p protein degraded?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is degraded in a Cdc4-dependent manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cdc6p",
+        "answerability": 0.879978597164154,
+        "ground_truth": {
+          "Cdc6": {
+            "bertscore": 0.9097827672958374,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the report say about the degradation of the Cdc6p protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0989755392074585,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is degraded in a Cdc4-dependent manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The Cdc6p protein",
+        "answerability": 0.7557845115661621,
+        "ground_truth": {
+          "the Cdc6p protein": {
+            "bertscore": 0.9726735353469849,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How is the Cdc6p protein degraded?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cdc4-dependent",
+        "answerability": 0.6568994522094727,
+        "ground_truth": {
+          "a Cdc4-dependent manner": {
+            "bertscore": 0.8792195320129395,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What mechanism recognizes Cdc6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06622153520584106,
+        "ground_truth": {
+          "the ubiquitin-mediated proteolysis machinery": {
+            "bertscore": 0.6014332175254822,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

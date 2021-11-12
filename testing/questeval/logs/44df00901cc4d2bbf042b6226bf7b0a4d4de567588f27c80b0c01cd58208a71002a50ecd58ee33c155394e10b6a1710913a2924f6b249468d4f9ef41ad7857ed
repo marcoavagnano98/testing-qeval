@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Bcl-2 protein inhibits bufalin-induced apoptosis through inhibition of mitogen-activated protein kinase activation in human leukemic T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "protein",
+        "bufalin-induced apoptosis",
+        "inhibition",
+        "mitogen-activated protein kinase activation",
+        "human leukemic T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is Bcl-2?",
+          "What does Bcl-2 inhibit?",
+          "What does Bcl-2 do to human leukemic T cells?",
+          "What does Bcl-2 inhibit in human leukemic T cells?",
+          "What type of cells does Bcl-2 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is Bcl-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05923992395401001,
+        "ground_truth": {
+          "protein": {
+            "bertscore": 0.6816306710243225,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Bcl-2 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bufalin-induced apoptosis",
+        "answerability": 0.9017750024795532,
+        "ground_truth": {
+          "bufalin-induced apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main effect of Bcl-2 protein on apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of mitogen-activated protein kinase activation",
+        "answerability": 0.9979245066642761,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.7266645431518555,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does Bcl-2 inhibit in human leukemia U937 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03300124406814575,
+        "ground_truth": {
+          "mitogen-activated protein kinase activation": {
+            "bertscore": 0.5899640321731567,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells does Bcl-2 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukemic T cells",
+        "answerability": 0.6496976613998413,
+        "ground_truth": {
+          "human leukemia U937 cells": {
+            "bertscore": 0.8077074289321899,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    }
+  }
+}

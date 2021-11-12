@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "Thus we report that ODC inhibition activates the NF-kappa B transcription factor which may mediate the altered physiological state of intestinal cells that occurs following polyamine depletion.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ODC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the NF-kappa B transcription factor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "ODC inhibition",
+        "the NF-kappa B transcription factor",
+        "the altered physiological state",
+        "intestinal cells",
+        "polyamine depletion"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors report that ODC inhibition activates the NF-kappa B",
+          "What is the name of the process that activates the NF-kappa B transcription",
+          "What does ODC inhibition activate?",
+          "What does the NF-kappa B transcription factor mediate?",
+          "What is the physiological state of?",
+          "What is the cause of the altered physiological state of intestinal cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ODC inhibition",
+        "answerability": 0.91305011510849,
+        "ground_truth": {
+          "ODC": {
+            "bertscore": 0.8358873128890991,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What activates NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ODC inhibition",
+        "answerability": 0.9797568321228027,
+        "ground_truth": {
+          "ODC inhibition": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does ODC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41657787561416626,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.644961416721344,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does ODC inhibition target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B transcription factor",
+        "answerability": 0.9498312473297119,
+        "ground_truth": {
+          "the inhibitory molecule": {
+            "bertscore": 0.640262246131897,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What molecule does ODC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14805883169174194,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.679896354675293,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

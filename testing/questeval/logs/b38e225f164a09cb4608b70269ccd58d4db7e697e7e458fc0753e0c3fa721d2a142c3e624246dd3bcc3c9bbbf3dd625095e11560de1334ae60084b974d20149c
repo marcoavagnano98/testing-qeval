@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Therefore the slo and the scpC genes were reduced in the severe invasive GAS greater in extent than those in the non-invasive GAS.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the slo",
+        "the scpC genes",
+        "the severe invasive GAS",
+        "extent",
+        "the non-invasive GAS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was reduced in severe invasive GAS?",
+          "What gene was reduced in severe invasive GAS?",
+          "What is the most severe form of GAS?",
+          "What was the extent of the slo and scpC genes reduced in",
+          "What type of GAS was more severe?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What reduced the expression levels of slo and scpC genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "severe invasive GAS",
+        "answerability": 0.9814512133598328,
+        "ground_truth": {
+          "The csrS-introduced severe invasive GAS": {
+            "bertscore": 0.8676660060882568,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What did the csrS-introduced severe invasive GAS reduce": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "slo and the scpC genes",
+        "answerability": 0.6828690767288208,
+        "ground_truth": {
+          "the expression levels": {
+            "bertscore": 0.735431432723999,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was reduced by csrS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5196771025657654,
+        "ground_truth": {
+          "the slo": {
+            "bertscore": 0.7004838585853577,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What genes were reduced by csrS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "slo and the scpC genes",
+        "answerability": 0.6499233245849609,
+        "ground_truth": {
+          "the scpC genes": {
+            "bertscore": 0.9220888018608093,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What gene was reduced in the slo and scpC genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "severe invasive GAS",
+        "answerability": 0.6365225911140442,
+        "ground_truth": {
+          "the non-invasive GAS": {
+            "bertscore": 0.8924729228019714,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

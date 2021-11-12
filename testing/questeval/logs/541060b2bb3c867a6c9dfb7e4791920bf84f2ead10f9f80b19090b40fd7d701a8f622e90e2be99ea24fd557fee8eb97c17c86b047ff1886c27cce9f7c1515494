@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Tobacco smoke promotes lung tumorigenesis by triggering IKKbeta- and JNK1.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tobacco smoke",
+        "lung tumorigenesis",
+        "IKKbeta-",
+        "JNK1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What triggers IKKbeta- and JNK1?",
+          "What does tobacco smoke promote?",
+          "What is the name of the protein that causes lung tumorigenesis?",
+          "What is the name of the protein that is involved in lung cancer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What triggers inflammation in the lung?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5205175876617432,
+        "ground_truth": {
+          "Tobacco smoke": {
+            "bertscore": 0.691552460193634,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does tobacco smoke promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lung tumorigenesis",
+        "answerability": 0.9994317293167114,
+        "ground_truth": {
+          "lung tumorigenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of inflammation is triggered by smoking?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4508957862854004,
+        "ground_truth": {
+          "IKKbeta-": {
+            "bertscore": 0.6574172377586365,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of lung tumorigenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tobacco smoke",
+        "answerability": 0.9763089418411255,
+        "ground_truth": {
+          "JNK1-dependent inflammation": {
+            "bertscore": 0.6714807152748108,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

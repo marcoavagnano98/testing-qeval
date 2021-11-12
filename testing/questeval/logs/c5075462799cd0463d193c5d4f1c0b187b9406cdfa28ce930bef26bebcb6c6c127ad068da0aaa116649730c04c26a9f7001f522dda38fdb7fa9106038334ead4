@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "c-jun mRNA levels were superinduced in cells treated with both okadaic acid and cyclohexamethylene bisacetamide whereas inhibition of protein synthesis had little if any effect on okadaic acid-induced c-jun transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "c-jun mRNA levels",
+        "cells",
+        "both okadaic acid",
+        "cyclohexamethylene",
+        "inhibition",
+        "protein synthesis",
+        "any effect",
+        "okadaic acid-induced c-jun transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was superinduced in cells treated with okadaic acid and cyclo",
+          "What was superinduced in cells treated with okadaic acid and cyclo",
+          "What was used to superinduce c-jun mRNA levels?",
+          "What was the other drug used to superinduce c-jun mRNA levels?",
+          "What was the main effect of okadaic acid on c-jun transcription",
+          "What did inhibition of c-jun mRNA have little effect on?",
+          "What did inhibition of protein synthesis have little of?",
+          "What did inhibition of protein synthesis have little effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was superinduced in cells treated with okadaic acid and cyclo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels",
+        "answerability": 0.9782143235206604,
+        "ground_truth": {
+          "c-jun mRNA levels": {
+            "bertscore": 0.847054660320282,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What cells were treated with okadaic acid and cycloheximi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3462110161781311,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847143173217773,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only treatment for c-jun mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10777264833450317,
+        "ground_truth": {
+          "both okadaic acid": {
+            "bertscore": 0.6479983329772949,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to superinduce c-jun mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "okadaic acid and cyclohexamethylene bisacetamide",
+        "answerability": 0.9887763857841492,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.7704790830612183,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the main effect of okadaic acid on c-jun transcription": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of protein synthesis",
+        "answerability": 0.9977818727493286,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.813022255897522,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did inhibition of c-jun mRNA have little effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26400965452194214,
+        "ground_truth": {
+          "protein synthesis": {
+            "bertscore": 0.680105984210968,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did inhibition of protein synthesis have little of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "okadaic acid-induced c-jun transcription",
+        "answerability": 0.9473744630813599,
+        "ground_truth": {
+          "any effect": {
+            "bertscore": 0.6093994379043579,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did inhibition of protein synthesis have little effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "okadaic acid-induced c-jun transcription",
+        "answerability": 0.9708720445632935,
+        "ground_truth": {
+          "okadaic acid-induced c-jun transcription": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

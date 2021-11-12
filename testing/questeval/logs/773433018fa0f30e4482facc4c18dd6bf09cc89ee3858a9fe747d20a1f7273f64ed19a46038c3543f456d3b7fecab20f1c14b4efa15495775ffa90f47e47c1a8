@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "M-CSF recruits mononuclear phagocytes which regulate processes such as angiogenesis and metastases in tumors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "M-CSF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What recruits mononuclear phagocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "M-CSF",
+        "mononuclear phagocytes",
+        "processes",
+        "angiogenesis",
+        "metastases",
+        "tumors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What recruits mononuclear phagocytes?",
+          "What does M-CSF recruit?",
+          "What do phagocytes regulate in tumors?",
+          "What is one of the processes that M-CSF regulates?",
+          "What is one of the processes that M-CSF regulates in tumors?",
+          "What type of cells do M-CSF recruit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What recruits mononuclear phagocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "M-CSF",
+        "answerability": 0.9655959010124207,
+        "ground_truth": {
+          "M-CSF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does M-CSF recruit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mononuclear phagocytes",
+        "answerability": 0.9643411636352539,
+        "ground_truth": {
+          "mononuclear phagocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do phagocytes regulate in tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "angiogenesis and metastases",
+        "answerability": 0.9038975238800049,
+        "ground_truth": {
+          "processes": {
+            "bertscore": 0.7442010045051575,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is one of the processes that M-CSF regulates?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "angiogenesis",
+        "answerability": 0.958153486251831,
+        "ground_truth": {
+          "angiogenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is one of the processes that M-CSF regulates in tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "angiogenesis",
+        "answerability": 0.9824888110160828,
+        "ground_truth": {
+          "metastases": {
+            "bertscore": 0.8047629594802856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells do M-CSF recruit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mononuclear phagocytes",
+        "answerability": 0.981703519821167,
+        "ground_truth": {
+          "tumors": {
+            "bertscore": 0.7106884121894836,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

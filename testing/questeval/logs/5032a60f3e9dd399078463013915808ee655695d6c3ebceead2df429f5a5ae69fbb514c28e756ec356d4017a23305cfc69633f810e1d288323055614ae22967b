@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "A regulatory element in the human interleukin 2 gene promoter is a binding site for the zinc finger proteins Sp1 and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the regulatory element in the human interleukin gene promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A regulatory element",
+        "the human interleukin 2 gene promoter",
+        "a binding site",
+        "the zinc finger",
+        "Sp1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the binding site for the zinc finger proteins Sp1 and Sp2?",
+          "What is a regulatory element?",
+          "What is a regulatory element in the human interleukin 2 gene promoter?",
+          "What protein is Sp1 a binding site for?",
+          "What is the binding site for zinc finger proteins?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the regulatory element in the human interleukin gene promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a binding site for the zinc finger proteins Sp1 and Sp2",
+        "answerability": 0.7984245419502258,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.5816231369972229,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the binding site for the zinc finger proteins Sp1 and Sp2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human interleukin 2 gene promoter",
+        "answerability": 0.9622086882591248,
+        "ground_truth": {
+          "A regulatory element": {
+            "bertscore": 0.6845566630363464,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a regulatory element?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a binding site for the zinc finger proteins Sp1 and Sp2",
+        "answerability": 0.7769759297370911,
+        "ground_truth": {
+          "the human interleukin 2 gene promoter": {
+            "bertscore": 0.7258845567703247,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a regulatory element in the human interleukin 2 gene promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a binding site for the zinc finger proteins Sp1 and Sp2",
+        "answerability": 0.9855139851570129,
+        "ground_truth": {
+          "a binding site": {
+            "bertscore": 0.7621873617172241,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What protein is Sp1 a binding site for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5522501468658447,
+        "ground_truth": {
+          "the zinc finger": {
+            "bertscore": 0.6678722500801086,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the binding site for zinc finger proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human interleukin 2 gene promoter",
+        "answerability": 0.6971877217292786,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 0.6589232683181763,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

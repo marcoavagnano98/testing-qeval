@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Activation of NF-kappaB in human monocytes by inflammatory stimuli selectively initiates intracellular signal transduction via sequential phosphorylation of IkappaB-alpha.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "NF-kappaB",
+        "human monocytes",
+        "inflammatory stimuli",
+        "intracellular signal transduction",
+        "sequential phosphorylation",
+        "IkappaB-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that initiates intracellular signal transduction?",
+          "What activates intracellular signal transduction?",
+          "What is activated by inflammatory stimuli?",
+          "What triggers intracellular signal transduction?",
+          "What does NF-kappaB activate in human monocytes?",
+          "How does NF-kappaB activated monocytes?",
+          "What is phosphorylated in human monocytes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What pathway is activated by inflammatory stimuli in human neutrophils?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.025918126106262207,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.651921272277832,
+            "f1": 0
+          },
+          "the NF-kappaB pathway": {
+            "bertscore": 0.6027004718780518,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010179400444030762,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.72251957654953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB pathway activated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inflammatory stimuli",
+        "answerability": 0.9617859125137329,
+        "ground_truth": {
+          "inflammatory stimuli": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "human neutrophils": {
+            "bertscore": 0.7294747829437256,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

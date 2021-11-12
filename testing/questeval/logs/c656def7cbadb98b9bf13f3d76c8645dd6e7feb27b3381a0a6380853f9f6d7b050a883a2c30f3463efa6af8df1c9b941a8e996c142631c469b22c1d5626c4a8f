@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "TLR2 activates the transcription factor NF-kappaB in response to pro-inflammatory mediators such as IL-1beta TNF-alpha and IL-6 and also activates the transcription of a variety of pro-inflammatory mediators including IL-2 IL-6 IL-8 and granulocyte macrophage-CSF.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "TNF",
+        "IL-6",
+        "IL-2 IL-6 IL-8"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor does TLR2 activate?",
+          "What does TLR2 activate in response to?",
+          "What is the pro-inflammatory mediator that TLR2 activates?",
+          "What is the transcription factor NF-kappaB?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TLR2",
+        "the transcription factor",
+        "NF-kappaB",
+        "response",
+        "pro-inflammatory mediators",
+        "IL-1beta TNF-alpha",
+        "the transcription",
+        "a variety",
+        "pro-inflammatory mediators",
+        "IL-2 IL-6 IL-8 and granulocyte macrophage-CSF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activates the transcription factor NF-kappaB?",
+          "What does TLR2 activate?",
+          "What transcription factor does TLR2 activate?",
+          "What does TLR2 do to the transcription factor NF-kappaB?",
+          "What does TLR2 activate in response to?",
+          "What is the pro-inflammatory mediator that TLR2 activates?",
+          "What does TLR2 activate?",
+          "What does TLR2 activate?",
+          "What does TLR2 activate in response to?",
+          "What does TLR2 activate in response to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does TLR2 respond to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pro-inflammatory mediators",
+        "answerability": 0.9563608169555664,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.6486852765083313,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the signaling receptor that responds to LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01206982135772705,
+        "ground_truth": {
+          "TLR2": {
+            "bertscore": 0.6572215557098389,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TLR2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43994778394699097,
+        "ground_truth": {
+          "a signaling receptor": {
+            "bertscore": 0.6617146134376526,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

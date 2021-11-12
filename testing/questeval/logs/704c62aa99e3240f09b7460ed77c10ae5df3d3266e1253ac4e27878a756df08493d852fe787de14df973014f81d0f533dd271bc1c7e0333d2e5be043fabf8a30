@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "When cells were stimulated with insulin-like growth factor-1 (IGF-1) an epidermal growth factor receptor (ER) agonist blocked hBVR/PKCdelta interaction.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "hBVR/PKCdelta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What interaction did IGF-1 block?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "cells",
+        "insulin-like growth factor-1",
+        "IGF-1",
+        "an epidermal growth factor receptor (ER) agonist",
+        "hBVR/PKCdelta interaction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did IGF-1 block?",
+          "What is IGF-1?",
+          "What is the name of the ER agonist that blocks hBVR/PKC",
+          "What blockade hBVR/PKCdelta interaction?",
+          "What did IGF-1 block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was stimulated with IGF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19527751207351685,
+        "ground_truth": {
+          "PKCdelta": {
+            "bertscore": 0.662477433681488,
+            "f1": 0
+          },
+          "hBVR": {
+            "bertscore": 0.684467613697052,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did FRET-fluorescence microscopy show was stimulated with IGF-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18142461776733398,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147941589355,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IGF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin-like growth factor-1",
+        "answerability": 0.8382743000984192,
+        "ground_truth": {
+          "insulin-like growth factor-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the growth factor that stimulates hBVR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.278078556060791,
+        "ground_truth": {
+          "IGF-1": {
+            "bertscore": 0.664171040058136,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was detected by FRET-fluorescence lifetime imaging microscopy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00020688772201538086,
+        "ground_truth": {
+          "an increased interaction": {
+            "bertscore": 0.6837648749351501,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What imaging technique detected the interaction between hBVR and PKCdelta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004936397075653076,
+        "ground_truth": {
+          "FRET-fluorescence lifetime": {
+            "bertscore": 0.630031168460846,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

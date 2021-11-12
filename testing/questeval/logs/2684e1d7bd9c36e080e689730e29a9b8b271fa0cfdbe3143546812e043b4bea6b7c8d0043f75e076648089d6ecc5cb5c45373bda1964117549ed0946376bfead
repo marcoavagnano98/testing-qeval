@@ -1,0 +1,146 @@
+{
+  "type": "hyp",
+  "text": "In contrast p21ras signals are unable to induce Akt/PKB activity in T cell nor is Ras function required for Akt/PKBactivation in response to the TCR.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Akt/PKB",
+        "Akt/PKBactivation",
+        "TCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activity is not required for Ras function in response to TCR?",
+          "What is Ras function required for in response to the TCR?",
+          "What is Ras function required for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "p21ras signals",
+        "Akt/PKB activity",
+        "T cell",
+        "Ras function",
+        "Akt/PKBactivation",
+        "response",
+        "the TCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the difference between p21ras and Ras?",
+          "What is not required for Akt/PKBactivation in response to the TCR?",
+          "What is Ras function not required for?",
+          "What cell is Ras not required for?",
+          "What is not required for Akt/PKBactivation in response to the TCR?",
+          "What is Ras function required for in response to the TCR?",
+          "What is Ras function required for?",
+          "What does Ras function not respond to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is Ras function required for in response to the TCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt/PKBactivation",
+        "answerability": 0.7711774110794067,
+        "ground_truth": {
+          "Akt/PKB": {
+            "bertscore": 0.8275696039199829,
+            "f1": 0
+          },
+          "Akt/PKB activation": {
+            "bertscore": 0.8996706008911133,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the difference between p21ras and Ras?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unable to induce Akt/PKB activity in T cell",
+        "answerability": 0.8962457776069641,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6405994892120361,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signal is unable to induce Akt/PKB activity in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p21ras",
+        "answerability": 0.9814347624778748,
+        "ground_truth": {
+          "p21ras signals": {
+            "bertscore": 0.9037765860557556,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is Ras function not required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt/PKBactivation",
+        "answerability": 0.6895294189453125,
+        "ground_truth": {
+          "Akt/PKB activity": {
+            "bertscore": 0.9005849361419678,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cell is Ras not required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell",
+        "answerability": 0.9256136417388916,
+        "ground_truth": {
+          "T cell": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is not required for Akt/PKB activation in response to the TCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ras function",
+        "answerability": 0.9917946457862854,
+        "ground_truth": {
+          "Ras function": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Ras function required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt/PKBactivation",
+        "answerability": 0.6142902374267578,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.6661609411239624,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does p21ras signal not induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt/PKB activity",
+        "answerability": 0.9932097792625427,
+        "ground_truth": {
+          "the TCR": {
+            "bertscore": 0.6998418569564819,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

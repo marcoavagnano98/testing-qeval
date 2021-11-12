@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "MST1 phosphorylates FOXO proteins at a conserved site within the forkhead domain that disrupts their interaction with 14-3-3 proteins promotes FOXO nuclear translocation and thereby induces cell death in neurons.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MST1",
+        "FOXO",
+        "14-3-3",
+        "FOXO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylates FOXO proteins at a conserved site within the fork",
+          "What protein is phosphorylated by MST1?",
+          "What protein does MST1 phosphorylate?",
+          "What protein is phosphorylated by MST1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "MST1",
+        "FOXO proteins",
+        "a conserved site",
+        "the forkhead domain",
+        "their interaction",
+        "FOXO nuclear translocation",
+        "cell death",
+        "neurons"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylates FOXO proteins at a conserved site within the fork",
+          "What does MST1 phosphorylate?",
+          "Where does MST1 phosphorylate FOXO proteins?",
+          "Where does MST1 phosphorylate FOXO proteins?",
+          "What does MST1 disrupt?",
+          "What does MST1 promote?",
+          "What does MST1 do to neurons?",
+          "What type of cell death is caused by MST1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the only inhibitor of cell death that inhibits cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07446110248565674,
+        "ground_truth": {
+          "TRAMP": {
+            "bertscore": 0.6675705909729004,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only thing that inhibits cell death in TRAMP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010578036308288574,
+        "ground_truth": {
+          "ICE": {
+            "bertscore": 0.6399561762809753,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is inhibited by an inhibitor of ICE-like proteases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004922151565551758,
+        "ground_truth": {
+          "TRAMP-induced cell death": {
+            "bertscore": 0.6346696615219116,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TRAMP-induced cell death inhibited by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007083415985107422,
+        "ground_truth": {
+          "an inhibitor": {
+            "bertscore": 0.6485446095466614,
+            "f1": 0
+          },
+          "ICE-like proteases": {
+            "bertscore": 0.6334835290908813,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

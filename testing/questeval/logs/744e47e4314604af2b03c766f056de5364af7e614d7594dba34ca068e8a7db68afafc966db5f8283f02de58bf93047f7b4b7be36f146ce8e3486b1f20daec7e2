@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Here we report the effects of overexpression of bcl-2 in U937 cells on the signaling pathway of apoptosis that is induced by bufalin.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "the effects",
+        "overexpression",
+        "U937 cells",
+        "the signaling pathway",
+        "apoptosis",
+        "bufalin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of bcl-2 on apoptosis?",
+          "What do we report about the overexpression of bcl-2 in U937 cells",
+          "What is the effect of bcl-2 on apoptosis?",
+          "What cells are affected by the apoptosis induced by bufalin",
+          "What does bcl-2 have an effect on?",
+          "What is induced by bufalin?",
+          "What drug is used to induce apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of overexpression of bcl-2 in U937 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "on the signaling pathway of apoptosis that is induced by buf",
+        "answerability": 0.9570227861404419,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6123991012573242,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do we report about the overexpression of bcl-2 in U937 cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7222954630851746,
+        "ground_truth": {
+          "the effect": {
+            "bertscore": 0.6859598159790039,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of bcl-2 on the signaling pathway of apop": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induced by bufalin",
+        "answerability": 0.8147721290588379,
+        "ground_truth": {
+          "overexpression": {
+            "bertscore": 0.6770768761634827,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells are affected by the apoptosis induced by bufalin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "U937 cells",
+        "answerability": 0.7032661437988281,
+        "ground_truth": {
+          "U937 cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does bcl-2 have an effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the signaling pathway of apoptosis",
+        "answerability": 0.8807526230812073,
+        "ground_truth": {
+          "the signaling pathway": {
+            "bertscore": 0.8753976225852966,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is induced by bufalin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.8300178647041321,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What drug is involved in apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bufalin",
+        "answerability": 0.9743513464927673,
+        "ground_truth": {
+          "bufalin": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

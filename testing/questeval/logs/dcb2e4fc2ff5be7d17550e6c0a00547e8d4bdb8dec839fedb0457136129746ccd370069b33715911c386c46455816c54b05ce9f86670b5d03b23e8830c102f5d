@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Inhibitory effect of citral on NO production by suppression of iNOS expression and NF-kappa B activation in Rheumatoid arthritis fibroblast-like synoviocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rheumatoid"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of arthritis is iNOS a major factor in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibitory effect",
+        "citral",
+        "NO production",
+        "suppression",
+        "iNOS expression",
+        "NF-kappa B activation",
+        "Rheumatoid arthritis fibroblast-like synoviocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of citral on NO production?",
+          "What inhibits NO production?",
+          "What does citral inhibit?",
+          "What is the effect of citral on iNOS expression?",
+          "What is the main effect of citral on NO production?",
+          "What is the main effect of citral on NO production?",
+          "What type of cells are affected by the effect of citral on NO production?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of citral on NO production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibiting",
+        "answerability": 0.9970126748085022,
+        "ground_truth": {
+          "Inhibitory effect": {
+            "bertscore": 0.8387113809585571,
+            "f1": 0
+          },
+          "suppression": {
+            "bertscore": 0.7109659910202026,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits NO production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "citral",
+        "answerability": 0.9490698575973511,
+        "ground_truth": {
+          "citral": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does citral inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NO production",
+        "answerability": 0.9953615665435791,
+        "ground_truth": {
+          "NO production": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main effect of citral on NO production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Inhibitory effect",
+        "answerability": 0.9800848364830017,
+        "ground_truth": {
+          "iNOS expression": {
+            "bertscore": 0.6997870206832886,
+            "f1": 0
+          },
+          "NF-kappa B activation": {
+            "bertscore": 0.6838074922561646,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were affected by the effect of citral on NO production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synoviocytes",
+        "answerability": 0.9295308589935303,
+        "ground_truth": {
+          "RAW264.7 cells": {
+            "bertscore": 0.6178639531135559,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

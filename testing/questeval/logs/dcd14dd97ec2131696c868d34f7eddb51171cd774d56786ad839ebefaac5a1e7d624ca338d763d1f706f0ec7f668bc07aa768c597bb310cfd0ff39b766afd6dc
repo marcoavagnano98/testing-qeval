@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "To validate the method we made use of earlier receptor binding studies indicating that normal human monocytes and activated but not restimulated lymphocytes expressed the VDR.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VDR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did earlier studies show normal human monocytes expressed?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the method",
+        "we",
+        "use",
+        "earlier receptor binding studies",
+        "that normal human monocytes",
+        "lymphocytes",
+        "the VDR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study validate?",
+          "What did the researchers use to validate the method?",
+          "What did the study do to validate the method?",
+          "What did we use to validate the method?",
+          "What did earlier studies show?",
+          "What type of cells expressed the VDR?",
+          "What did earlier studies show normal human monocytes expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did earlier studies show normal human monocytes expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5238561034202576,
+        "ground_truth": {
+          "VDR": {
+            "bertscore": 0.6968004107475281,
+            "f1": 0
+          },
+          "the VDR": {
+            "bertscore": 0.6685958504676819,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study validate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1943759322166443,
+        "ground_truth": {
+          "the method": {
+            "bertscore": 0.6896568536758423,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the researchers use to validate the method?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "earlier receptor binding studies",
+        "answerability": 0.9752675890922546,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6759824752807617,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study do to validate the method?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "receptor binding studies",
+        "answerability": 0.9228730797767639,
+        "ground_truth": {
+          "use": {
+            "bertscore": 0.7517634630203247,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we use to validate the method?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "earlier receptor binding studies",
+        "answerability": 0.9815264344215393,
+        "ground_truth": {
+          "earlier receptor binding studies": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did earlier studies show?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "normal human monocytes and activated but not restimulated lymphocytes expressed the",
+        "answerability": 0.5471957921981812,
+        "ground_truth": {
+          "that normal human monocytes": {
+            "bertscore": 0.8033629059791565,
+            "f1": 0.4285714285714285
+          }
+        }
+      }
+    },
+    "What type of cells expressed the VDR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3732789158821106,
+        "ground_truth": {
+          "lymphocytes": {
+            "bertscore": 0.6273002624511719,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

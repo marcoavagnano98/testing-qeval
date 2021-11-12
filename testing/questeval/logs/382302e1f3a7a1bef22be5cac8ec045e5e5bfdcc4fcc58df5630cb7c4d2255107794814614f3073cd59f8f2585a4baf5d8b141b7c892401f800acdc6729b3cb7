@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "ATF1 and CREB trans-activate a cell cycle regulated histone\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CREB trans"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the enzyme that activates a cell cycle regulated histone?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "ATF1",
+        "CREB",
+        "a cell cycle",
+        "histone"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that trans-activates a cell cycle regulated his",
+          "What is the name of the protein that trans-activates a cell cycle regulated his",
+          "What do ATF1 and CREB trans-activate?",
+          "ATF1 and CREB trans-activate what cell cycle regulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the transactivation of ATF1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006014764308929443,
+        "ground_truth": {
+          "CREB trans": {
+            "bertscore": 0.6572306156158447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "ATF1 and CREB trans-activate a cell cycle regulated histone": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ATF1 and CREB trans-activate a cell cycle regulated histone",
+        "answerability": 0.6712194085121155,
+        "ground_truth": {
+          "H4": {
+            "bertscore": 0.6729221343994141,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that trans-activates a cell cycle regulated his": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ATF1 and CREB trans-activate a cell cycle regulated histone",
+        "answerability": 0.9023523926734924,
+        "ground_truth": {
+          "ATF1": {
+            "bertscore": 0.7233059406280518,
+            "f1": 0.2222222222222222
+          },
+          "CREB": {
+            "bertscore": 0.6769419312477112,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What does ATF1 and CREB trans-activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a cell cycle regulated histone",
+        "answerability": 0.9377562999725342,
+        "ground_truth": {
+          "a cell cycle": {
+            "bertscore": 0.7834607362747192,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "ATF1 and CREB trans-activate what gene at a distal nuclear": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a cell cycle regulated histone",
+        "answerability": 0.6194969415664673,
+        "ground_truth": {
+          "histone H4 gene": {
+            "bertscore": 0.7454102039337158,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "Where does ATF1 and CREB trans-activate a cell cycle regulated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.568610668182373,
+        "ground_truth": {
+          "a distal nuclear matrix associated promoter element": {
+            "bertscore": 0.6507071256637573,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

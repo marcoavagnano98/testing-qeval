@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "Western blot analysis showed that N-acetyl-cysteine reduced the accumulation of the 47-kD mature glycoprotein in LPS-treated cells a finding consistent with the results of the immunofluorescence studies.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "N-acetyl"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What reduced the accumulation of the 47-kD mature glycoprotein in LPS-treated cells"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Western blot analysis",
+        "N-acetyl-cysteine",
+        "the accumulation",
+        "the 47-kD mature glycoprotein",
+        "LPS-treated cells",
+        "a finding",
+        "the results",
+        "the immunofluorescence studies"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that N-acetyl-cysteine reduced the accumulation of the",
+          "What reduced the accumulation of the 47-kD mature glycoprotein in LPS-treated cells",
+          "What did N-acetyl-cysteine reduce in LPS-treated",
+          "What did N-acetyl-cysteine reduce the accumulation of in L",
+          "What type of cells were treated with N-acetyl-cysteine?",
+          "What was consistent with the results of immunofluorescence studies?",
+          "What was the result of the immunofluorescence studies?",
+          "What results did the Western blot analysis confirm?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What reduced the accumulation of the 47-kD mature glycoprotein in LPS-treated cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "N-acetyl-cysteine",
+        "answerability": 0.9123188853263855,
+        "ground_truth": {
+          "N-acetyl": {
+            "bertscore": 0.8708502054214478,
+            "f1": 0
+          },
+          "N-acetyl-cysteine": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What showed that N-acetyl-cysteine reduced the accumulation of the": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Western blot analysis",
+        "answerability": 0.9800013899803162,
+        "ground_truth": {
+          "Western blot analysis": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did N-acetyl-cysteine reduce in LPS-treated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "accumulation of the 47-kD mature glycoprotein",
+        "answerability": 0.893731415271759,
+        "ground_truth": {
+          "the accumulation": {
+            "bertscore": 0.7110252380371094,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What did N-acetyl-cysteine reduce the accumulation of in L": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6504133343696594,
+        "ground_truth": {
+          "the 47-kD mature glycoprotein": {
+            "bertscore": 0.5837237238883972,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were treated with N-acetyl-cysteine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS",
+        "answerability": 0.7590034008026123,
+        "ground_truth": {
+          "LPS-treated cells": {
+            "bertscore": 0.7855986952781677,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was consistent with the results of immunofluorescence studies?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5255724787712097,
+        "ground_truth": {
+          "a finding": {
+            "bertscore": 0.7144062519073486,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the result of the immunofluorescence studies?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20302551984786987,
+        "ground_truth": {
+          "the results": {
+            "bertscore": 0.6694766283035278,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What results did the Western blot analysis confirm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5672089457511902,
+        "ground_truth": {
+          "the immunofluorescence studies": {
+            "bertscore": 0.6097293496131897,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

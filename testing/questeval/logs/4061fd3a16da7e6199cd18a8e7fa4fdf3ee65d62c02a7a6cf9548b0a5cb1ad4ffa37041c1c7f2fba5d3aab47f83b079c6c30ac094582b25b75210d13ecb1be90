@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Stat3 is a member of the STAT family of transcription factors and is associated with CD40 signaling.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "STAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family of transcription factors is Stat3 a member of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stat3",
+        "a member",
+        "the STAT family",
+        "transcription factors",
+        "CD40"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a member of the STAT family of transcription factors?",
+          "What is Stat3 a part of?",
+          "What family of transcription factors is Stat3 a member of?",
+          "What does Stat3 belong to?",
+          "What signaling is Stat3 associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is critical for CD40 induction in B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3744858503341675,
+        "ground_truth": {
+          "Jak3": {
+            "bertscore": 0.6508775353431702,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Jak3 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00021308660507202148,
+        "ground_truth": {
+          "CD40": {
+            "bertscore": 0.6441234946250916,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Jak3 critical for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00014460086822509766,
+        "ground_truth": {
+          "CD40 induction": {
+            "bertscore": 0.6565310955047607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Jak3 critical for inducing in B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 8.058547973632812e-05,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.6905692219734192,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are involved in the induction of gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003333091735839844,
+        "ground_truth": {
+          "B cells": {
+            "bertscore": 0.673241913318634,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

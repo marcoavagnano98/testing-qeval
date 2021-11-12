@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Electrophoretic mobility shift assay revealed that iNO attenuated the iNOS-induced NF-kappa B DNA binding activity and nuclear factor-kappa B activation in U937 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Electrophoretic mobility shift assay",
+        "the iNOS-induced NF-kappa B DNA binding activity",
+        "nuclear factor-kappa B activation",
+        "U937 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed that iNO attenuated the iNOS-induced NF",
+          "What did iNO attenuate in U937 cells?",
+          "What did the iNOS-induced NF-kappa B DNA binding activity",
+          "What cells did iNO attenuate the NF-kappa B binding"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What revealed that iNO inhibited the activation of nuclear factor-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Electrophoretic mobility shift assay",
+        "answerability": 0.8263752460479736,
+        "ground_truth": {
+          "Immunofluorescence studies": {
+            "bertscore": 0.7480654120445251,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antibody was used to study the effect of iNO on nuclear factor-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24865436553955078,
+        "ground_truth": {
+          "an Ab": {
+            "bertscore": 0.6743819713592529,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What subunit of nuclear factor-kappa B was studied by immunofluorescence?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008928656578063965,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.62364661693573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did immunofluorescence studies show iNO inhibited?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03652787208557129,
+        "ground_truth": {
+          "nuclear factor-kappa B": {
+            "bertscore": 0.6262170672416687,
+            "f1": 0
+          },
+          "the activation": {
+            "bertscore": 0.6892382502555847,
+            "f1": 0
+          },
+          "nuclear factor-kappa B.": {
+            "bertscore": 0.5706420540809631,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

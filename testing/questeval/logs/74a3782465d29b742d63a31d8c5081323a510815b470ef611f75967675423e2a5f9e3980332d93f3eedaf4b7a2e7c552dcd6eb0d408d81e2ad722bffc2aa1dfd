@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "In Jurkat T cells induction of PIF DNA binding activity was rapidly induced required de novo protein synthesis and was sustained at a high level for at least 23 h.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "at least 23"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did it take for PIF DNA binding activity to be sustained?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Jurkat T cells induction",
+        "PIF DNA binding activity",
+        "required de novo protein synthesis",
+        "a high level",
+        "at least 23 h."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was required for rapid protein synthesis?",
+          "What was rapidly induced in Jurkat T cells?",
+          "How was induction of PIF DNA binding activity induced?",
+          "How long did it take for the PIF DNA binding activity to be sustained?",
+          "How long did it take for PIF DNA binding activity to be sustained?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did it take for PIF DNA binding activity to be sustained?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "at least 23 h",
+        "answerability": 0.929406464099884,
+        "ground_truth": {
+          "at least 23": {
+            "bertscore": 0.8729282021522522,
+            "f1": 0.8571428571428571
+          },
+          "at least 23 h.": {
+            "bertscore": 0.9160816669464111,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was required for rapid protein synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PIF DNA binding",
+        "answerability": 0.842255175113678,
+        "ground_truth": {
+          "Jurkat T cells induction": {
+            "bertscore": 0.7333564162254333,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was rapidly induced in Jurkat T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PIF DNA binding activity",
+        "answerability": 0.9725715517997742,
+        "ground_truth": {
+          "PIF DNA binding activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How was induction of PIF DNA binding activity induced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "de novo protein synthesis",
+        "answerability": 0.9925552010536194,
+        "ground_truth": {
+          "required de novo protein synthesis": {
+            "bertscore": 0.9046934247016907,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "How long did it take for the PIF DNA binding activity to be sustained?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "at least 23 h",
+        "answerability": 0.9433737397193909,
+        "ground_truth": {
+          "a high level": {
+            "bertscore": 0.6953726410865784,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

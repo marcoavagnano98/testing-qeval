@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "(TNF-alpha) is an important mediator of septic shock.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the key mediator of septic shock?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF-alpha",
+        "an important mediator",
+        "septic shock"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is an important mediator of septic shock?",
+          "What is TNF-alpha?",
+          "What is the main cause of death in a septic system?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one of the most important inflammatory mediators in human inflammatory and immunological diseases": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38048017024993896,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          },
+          "Tumor necrosis factor-alpha": {
+            "bertscore": 0.6010870933532715,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the inflammatory mediator in human immunology?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009449899196624756,
+        "ground_truth": {
+          "(TNF-alpha": {
+            "bertscore": 0.6426272392272949,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is tumor necrosis factor-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03242135047912598,
+        "ground_truth": {
+          "the most important inflammatory mediators": {
+            "bertscore": 0.6142427921295166,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is tumor necrosis factor-alpha one of the most important inflammatory mediators": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019852936267852783,
+        "ground_truth": {
+          "human inflammatory and immunological diseases": {
+            "bertscore": 0.6049676537513733,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

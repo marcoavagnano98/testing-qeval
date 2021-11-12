@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "HIV1 infection of human monocytes and macrophages promotes induction or translocation of NF-KB-related factors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-KB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of factors are involved in the induction of HIV?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV1 infection",
+        "human monocytes",
+        "macrophages",
+        "induction",
+        "translocation",
+        "NF-KB-related factors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promotes induction or translocation of NF-KB-related factors?",
+          "What promotes induction or translocation of NF-KB-related factors?",
+          "What is a human monocyte and what is a macrophage?",
+          "What does HIV1 infection promote?",
+          "What does HIV1 promote?",
+          "What does HIV infection promote induction of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of factors are involved in the induction of HIV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36252957582473755,
+        "ground_truth": {
+          "NF-KB": {
+            "bertscore": 0.6983245611190796,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What promotes induction or translocation of NF-KB-related factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV1 infection",
+        "answerability": 0.9962353706359863,
+        "ground_truth": {
+          "HIV1 infection": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "human monocytes": {
+            "bertscore": 0.7285880446434021,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a human monocyte and what is a macrophage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14503037929534912,
+        "ground_truth": {
+          "macrophages": {
+            "bertscore": 0.6406634449958801,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HIV1 infection promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction or translocation of NF-KB-related factors",
+        "answerability": 0.9437234401702881,
+        "ground_truth": {
+          "induction": {
+            "bertscore": 0.693905234336853,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does HIV1 promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction or translocation of NF-KB-related factors",
+        "answerability": 0.8395267724990845,
+        "ground_truth": {
+          "translocation": {
+            "bertscore": 0.721154510974884,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does HIV infection promote induction of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-KB",
+        "answerability": 0.9239054918289185,
+        "ground_truth": {
+          "NF-KB-related factors": {
+            "bertscore": 0.7879316210746765,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

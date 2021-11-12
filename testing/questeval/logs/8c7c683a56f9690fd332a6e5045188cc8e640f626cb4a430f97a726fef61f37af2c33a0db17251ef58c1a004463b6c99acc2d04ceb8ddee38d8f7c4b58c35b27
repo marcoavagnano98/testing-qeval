@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Mice lacking Rel are defective in mitogenic activation of B and T lymphocytes and display impaired humoral immunity.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mice",
+        "Rel",
+        "mitogenic activation",
+        "B and T lymphocytes",
+        "impaired humoral immunity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of animal has a defect in mitogenic activation of B and T lymphocyte",
+          "What type of immune system is lacking in mice?",
+          "What is the function of B and T lymphocytes in mice lacking Rel?",
+          "What are mice lacking Rel deficient in?",
+          "What does a mouse lacking Rel display?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of animal has a defect in mitogenic activation of B and T lymphocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mice lacking Rel",
+        "answerability": 0.9985150098800659,
+        "ground_truth": {
+          "Mice": {
+            "bertscore": 0.7700121998786926,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What type of immune system is lacking in mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "humoral",
+        "answerability": 0.9600717425346375,
+        "ground_truth": {
+          "Rel": {
+            "bertscore": 0.7636383771896362,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the function of B and T lymphocytes in mice lacking Rel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitogenic activation",
+        "answerability": 0.9624123573303223,
+        "ground_truth": {
+          "mitogenic activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are mice lacking Rel deficient in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitogenic activation of B and T lymphocytes",
+        "answerability": 0.9234246611595154,
+        "ground_truth": {
+          "B and T lymphocytes": {
+            "bertscore": 0.8974312543869019,
+            "f1": 0.7272727272727273
+          }
+        }
+      }
+    },
+    "What does a mouse lacking Rel display?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "impaired humoral immunity",
+        "answerability": 0.9627472162246704,
+        "ground_truth": {
+          "impaired humoral immunity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

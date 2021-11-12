@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "TG plus phorbol myristate acetate (PMA) treatment depletes intracellular Ca2+ stores and induces a sustained Ca2+ influx without altering phosphatidyl inositol levels.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TG",
+        "phorbol myristate acetate",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the treatment that depletes intracellular Ca2+ stores?",
+          "What is PMA?",
+          "What is the name of the treatment that depletes intracellular Ca2+ stores?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TG plus phorbol myristate acetate",
+        "PMA) treatment",
+        "intracellular Ca2",
+        "stores",
+        "a sustained Ca2",
+        "influx",
+        "phosphatidyl inositol levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PMA?",
+          "What is the name of the treatment that depletes intracellular Ca2+ stores?",
+          "What does PMA deplete?",
+          "What does PMA deplete?",
+          "What does PMA induce?",
+          "What does PMA induce?",
+          "What does PMA not alter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the inhibitor of Ca(2+)-ATPase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0024443864822387695,
+        "ground_truth": {
+          "TG": {
+            "bertscore": 0.6876041889190674,
+            "f1": 0
+          },
+          "Thapsigargin": {
+            "bertscore": 0.654335081577301,
+            "f1": 0
+          },
+          "(TG": {
+            "bertscore": 0.6821529269218445,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TG?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005243897438049316,
+        "ground_truth": {
+          "an inhibitor": {
+            "bertscore": 0.6485446095466614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TG an inhibitor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009981930255889893,
+        "ground_truth": {
+          "Ca(2+)-ATPase depletes intracellular Ca2": {
+            "bertscore": 0.6239691972732544,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TG deplete?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "intracellular Ca2+ stores",
+        "answerability": 0.97325199842453,
+        "ground_truth": {
+          "stores": {
+            "bertscore": 0.6478241086006165,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does TG induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sustained Ca2+ influx",
+        "answerability": 0.9468268752098083,
+        "ground_truth": {
+          "a sustained Ca2": {
+            "bertscore": 0.7890847325325012,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does TG induce without altering phosphatidyl inosito": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sustained Ca2+ influx",
+        "answerability": 0.9197728633880615,
+        "ground_truth": {
+          "influx": {
+            "bertscore": 0.8006414175033569,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does TG not alter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphatidyl inositol levels",
+        "answerability": 0.896018385887146,
+        "ground_truth": {
+          "phosphatidyl inositol levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

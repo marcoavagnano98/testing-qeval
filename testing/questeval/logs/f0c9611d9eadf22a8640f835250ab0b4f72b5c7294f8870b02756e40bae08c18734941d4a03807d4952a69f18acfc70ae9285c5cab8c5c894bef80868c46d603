@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "In vivo ethanol exposure caused decreased angiogenesis and resulted in a prolonged increase in wound healing.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "vivo ethanol exposure",
+        "angiogenesis",
+        "a prolonged increase",
+        "wound healing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused decreased angiogenesis?",
+          "What did ethanol exposure decrease?",
+          "What did ethanol exposure cause in vivo?",
+          "What did ethanol cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused decreased angiogenesis and increased hypoxia in wounds?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ethanol exposure",
+        "answerability": 0.958881139755249,
+        "ground_truth": {
+          "vivo ethanol exposure": {
+            "bertscore": 0.9439570903778076,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased angiogenesis",
+        "answerability": 0.9998787045478821,
+        "ground_truth": {
+          "both decreased angiogenesis": {
+            "bertscore": 0.9442685842514038,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause in wounds?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased angiogenesis",
+        "answerability": 0.9982025623321533,
+        "ground_truth": {
+          "increased hypoxia": {
+            "bertscore": 0.8447651267051697,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause hypoxia and decreased angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014917850494384766,
+        "ground_truth": {
+          "wounds": {
+            "bertscore": 0.731674075126648,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "type": "hyp",
+  "text": "Endothelial cell migration is essential in vasculogenesis and angiogenesis in which receptor tyrosine kinases play a pivotal role.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Endothelial cell migration",
+        "vasculogenesis",
+        "angiogenesis",
+        "receptor tyrosine kinases",
+        "a pivotal role"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is essential in vasculogenesis and angiogenesis?",
+          "What is endothelial cell migration essential for?",
+          "What is the most important process in the development of cells?",
+          "What plays a pivotal role in vasculogenesis and angiogenesis?",
+          "What role do receptor tyrosine kinases play in vasculo"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is essential to angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cell migration",
+        "answerability": 0.5753050446510315,
+        "ground_truth": {
+          "Endothelial cell proliferation": {
+            "bertscore": 0.920612633228302,
+            "f1": 0.6666666666666666
+          },
+          "migration": {
+            "bertscore": 0.7277550101280212,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is endothelial cell proliferation and migration essential to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1565353274345398,
+        "ground_truth": {
+          "angiogenesis": {
+            "bertscore": 0.6869294047355652,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

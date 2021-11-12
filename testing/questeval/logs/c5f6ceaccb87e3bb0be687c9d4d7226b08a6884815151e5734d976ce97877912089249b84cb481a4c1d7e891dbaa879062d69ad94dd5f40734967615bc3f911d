@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Decreased transcriptional activation by N-terminal deletions of CIITA is correlated directly with their reduced binding to TAFIID.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CIITA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is correlated with reduced binding to TAFIID?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Decreased transcriptional activation",
+        "N-terminal deletions",
+        "CIITA",
+        "their reduced binding",
+        "TAFIID"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is correlated with reduced binding to TAFIID?",
+          "What is correlated with reduced binding to TAFIID?",
+          "What is correlated with reduced binding to TAFIID?",
+          "What is correlated with decreased transcriptional activation by N-terminal deletions of",
+          "What is reduced transcriptional activation by N-terminal deletions of CIITA"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is correlated with reduced binding to TAFII32?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19174236059188843,
+        "ground_truth": {
+          "CIITA": {
+            "bertscore": 0.6723489761352539,
+            "f1": 0
+          },
+          "Decreased transcriptional activation": {
+            "bertscore": 0.6797358989715576,
+            "f1": 0
+          },
+          "N-terminal deletions": {
+            "bertscore": 0.6832670569419861,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is correlated with reduced transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CIITA",
+        "answerability": 0.7606921792030334,
+        "ground_truth": {
+          "TAFII32": {
+            "bertscore": 0.7934767603874207,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

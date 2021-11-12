@@ -1,0 +1,150 @@
+{
+  "type": "ref",
+  "text": "IL-4 did not exert significant influence on the induction of expression of IL-1-RA or various CSFs by IL-2 IL-3 and GM-CSF.\\n(ABSTRACT TRUNCATED AT 250 WORDS)\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2 IL-3",
+        "GM",
+        "250"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did IL-4 not exert significant influence on?",
+          "What is the name of the CSF that is able to induct IL-1-",
+          "How many words were used to describe the IL-4 gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-4",
+        "significant influence",
+        "the induction",
+        "expression",
+        "IL-1-RA",
+        "various CSFs",
+        "IL-2 IL-3 and GM-CSF.\\n(ABSTRACT",
+        "250 WORDS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not exert significant influence on the induction of expression of IL-1-RA?",
+          "What did IL-4 not exert on the induction of expression of IL-1-RA",
+          "What did IL-4 not exert significant influence on?",
+          "What did IL-4 not exert significant influence on?",
+          "What did IL-4 not exert significant influence on?",
+          "What did IL-4 not exert significant influence on?",
+          "What two molecules did not exert significant influence on the expression of IL-1-RA?",
+          "How many words were analyzed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did IL-4 not exert significant influence on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of expression of IL-1-RA or various CSFs",
+        "answerability": 0.9943677186965942,
+        "ground_truth": {
+          "IL-2 IL-3": {
+            "bertscore": 0.6727262139320374,
+            "f1": 0
+          },
+          "GM-CSF": {
+            "bertscore": 0.6806030869483948,
+            "f1": 0
+          },
+          "the induction": {
+            "bertscore": 0.6734305024147034,
+            "f1": 0.2222222222222222
+          },
+          "expression": {
+            "bertscore": 0.6726022958755493,
+            "f1": 0.2222222222222222
+          },
+          "IL-1-RA": {
+            "bertscore": 0.7383259534835815,
+            "f1": 0.2222222222222222
+          },
+          "various CSFs": {
+            "bertscore": 0.7398799657821655,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "How many words were used to describe the IL-4 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23999160528182983,
+        "ground_truth": {
+          "250": {
+            "bertscore": 0.6461529731750488,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not exert significant influence on the induction of expression of IL-1-RA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4",
+        "answerability": 0.9566901326179504,
+        "ground_truth": {
+          "IL-4": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IL-4 not exert?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "significant influence",
+        "answerability": 0.990876317024231,
+        "ground_truth": {
+          "significant influence": {
+            "bertscore": 0.9999995231628418,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two factors did not exert significant influence on the expression of IL-1-RA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 IL-3 and GM-CSF",
+        "answerability": 0.5036461353302002,
+        "ground_truth": {
+          "IL-2 IL-3 and GM-CSF": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the molecule that is used to determine the amount of IL-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03880107402801514,
+        "ground_truth": {
+          "\u2047 n(ABSTRACT TRUNCATED": {
+            "bertscore": 0.5857946872711182,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many words are in the IL-4 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04430109262466431,
+        "ground_truth": {
+          "AT 250 WORDS": {
+            "bertscore": 0.6320918798446655,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

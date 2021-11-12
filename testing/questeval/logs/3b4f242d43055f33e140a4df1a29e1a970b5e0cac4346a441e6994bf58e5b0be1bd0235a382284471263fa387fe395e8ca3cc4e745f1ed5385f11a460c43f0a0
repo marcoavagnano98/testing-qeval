@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "The costimulatory molecule B7.1 provides a second signal critical for T cell activation. The distribution of this integral membrane protein is restricted to certain tissues where its level of expression is modulated by multiple exogenous stimuli.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "second"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the second signal provided by the costimulatory molecule B7.1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "B7.1",
+        "T cell activation",
+        "The distribution",
+        "this integral membrane protein",
+        "certain tissues",
+        "its level",
+        "expression",
+        "multiple exogenous stimuli"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the costimulatory molecule that provides a second signal critical for T cell",
+          "What is the second signal critical for?",
+          "What is restricted to certain tissues?",
+          "What is restricted to certain tissues?",
+          "Where is the distribution of B7.1 restricted?",
+          "What is modulated by multiple exogenous stimuli?",
+          "What is modulated by multiple exogenous stimuli?",
+          "How is the level of expression of B7.1 modulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is restricted to certain tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The distribution of this integral membrane protein",
+        "answerability": 0.8568071126937866,
+        "ground_truth": {
+          "The distribution": {
+            "bertscore": 0.7837772965431213,
+            "f1": 0.2857142857142857
+          },
+          "this integral membrane protein": {
+            "bertscore": 0.8727779388427734,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "Where is the distribution of the integral membrane protein restricted?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "certain tissues",
+        "answerability": 0.99388587474823,
+        "ground_truth": {
+          "certain tissues": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is modulated by multiple exogenous stimuli?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "level of expression",
+        "answerability": 0.9490535855293274,
+        "ground_truth": {
+          "its level": {
+            "bertscore": 0.756477415561676,
+            "f1": 0.4
+          },
+          "expression": {
+            "bertscore": 0.8387400507926941,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the level of expression of the ribosome?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001145482063293457,
+        "ground_truth": {
+          "multiple exogenous stimuli": {
+            "bertscore": 0.6475304961204529,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Taken together these data indicated that inhibiting nuclear translocation of c-Rel/p65 heterodimers prevented LPS induction of TF gene transcription in monocytic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "TF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did inhibiting nuclear translocation of c-Rel/p65 heterodi",
+          "What gene transcription was prevented by inhibiting nuclear translocation of c-Rel/p"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these data",
+        "nuclear translocation",
+        "c-Rel/p65 heterodimers",
+        "LPS induction",
+        "TF gene transcription",
+        "monocytic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that inhibiting nuclear translocation of c-Rel/p65 heterod",
+          "What did the data indicate inhibited in monocytic cells?",
+          "What prevented LPS induction of TF gene transcription?",
+          "What did inhibiting nuclear translocation of c-Rel/p65 heterodi",
+          "What did inhibiting nuclear translocation of c-Rel/p65 heterodi",
+          "What type of cells did LPS inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did inhibiting nuclear translocation of c-Rel/p65 heterodi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29137980937957764,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027959227561951,
+            "f1": 0
+          },
+          "LPS induction": {
+            "bertscore": 0.6739325523376465,
+            "f1": 0
+          },
+          "TF gene transcription": {
+            "bertscore": 0.6394913792610168,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene transcription was prevented by inhibiting nuclear translocation of c-Rel/p": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF gene transcription",
+        "answerability": 0.6966357231140137,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 0.785337507724762,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What showed that inhibiting nuclear translocation of c-Rel/p65 heterod": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.582979142665863,
+        "ground_truth": {
+          "these data": {
+            "bertscore": 0.6930164694786072,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the data indicate inhibited in monocytic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear translocation of c-Rel/p65 heterodimers",
+        "answerability": 0.8614894151687622,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 0.7624080777168274,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What prevented LPS induction of TF gene transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibiting nuclear translocation of c-Rel/p65 heterodimers",
+        "answerability": 0.7748997211456299,
+        "ground_truth": {
+          "c-Rel/p65 heterodimers": {
+            "bertscore": 0.8375356197357178,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What type of cells did LPS inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocytic cells",
+        "answerability": 0.9507659673690796,
+        "ground_truth": {
+          "monocytic cells": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

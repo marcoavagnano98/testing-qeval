@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Interestingly all those early and late events but not the immediate ones were inhibited by a neutralizing anti-tumour necrosis factor alpha (TNF-alpha) monoclonal antibody.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the antibody that inhibits the early and late events of cancer?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "all those early and late events",
+        "not the immediate ones",
+        "a neutralizing anti-tumour necrosis factor alpha",
+        "(TNF-alpha",
+        "monoclonal antibody"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inhibited by a monoclonal antibody?",
+          "What was inhibited by a neutralizing antibody?",
+          "What was the antibody that inhibited the early and late events of the TB disease?",
+          "What is the name of the antibody that inhibits the early and late events of TNF?",
+          "What inhibited all early and late events?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the antibody that inhibits tumor necrosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.8409914970397949,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          },
+          "(TNF-alpha": {
+            "bertscore": 0.887832522392273,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was inhibited by a monoclonal antibody?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "all those early and late events",
+        "answerability": 0.674894392490387,
+        "ground_truth": {
+          "all those early and late events": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "not the immediate ones": {
+            "bertscore": 0.7509039044380188,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the antibody that inhibited all early and late events of the disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.8673526644706726,
+        "ground_truth": {
+          "a neutralizing anti-tumor necrosis factor alpha": {
+            "bertscore": 0.705470085144043,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited all early and late events?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3684011697769165,
+        "ground_truth": {
+          "monoclonal antibody": {
+            "bertscore": 0.6599296927452087,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

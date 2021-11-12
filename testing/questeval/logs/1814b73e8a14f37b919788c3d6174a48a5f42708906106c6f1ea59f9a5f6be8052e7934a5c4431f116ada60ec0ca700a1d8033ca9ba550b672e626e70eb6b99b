@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Triplex formation by GM3 blocked recombinant and nuclear NF-kappaB proteins binding to the GM-CSF element.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blockade recombinant and nuclear NF-kappaB proteins"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Triplex formation",
+        "GM3",
+        "recombinant and nuclear NF-kappaB proteins",
+        "the GM-CSF element"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blockade recombinant and nuclear NF-kappaB proteins",
+          "What block recombinant and nuclear NF-kappaB proteins binding to",
+          "What did triplex formation by GM3 block?",
+          "What did triplex formation by GM3 block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What blockade recombinant and nuclear NF-kappaB proteins": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Triplex formation by GM3",
+        "answerability": 0.9859673976898193,
+        "ground_truth": {
+          "GM": {
+            "bertscore": 0.6851573586463928,
+            "f1": 0
+          },
+          "Triplex formation": {
+            "bertscore": 0.853743851184845,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What block recombinant and nuclear NF-kappaB proteins binding to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Triplex formation by GM3",
+        "answerability": 0.9927077889442444,
+        "ground_truth": {
+          "GM3": {
+            "bertscore": 0.7930341362953186,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did triplex formation by GM3 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "recombinant and nuclear NF-kappaB proteins",
+        "answerability": 0.9620546698570251,
+        "ground_truth": {
+          "recombinant and nuclear NF-kappaB proteins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the GM-CSF element": {
+            "bertscore": 0.6989453434944153,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

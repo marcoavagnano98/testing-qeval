@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "Moreover endogenous E2F-1 upregulates PAC1 and suppresses ERK activity leading to cell death in response to 4-HPR.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E2F-1",
+        "ERK",
+        "4-HPR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is responsible for the suppression of ERK activity?",
+          "What activity does E2F-1 suppress?",
+          "What is the main cause of cell death?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "E2F-1 upregulates PAC1",
+        "ERK activity",
+        "cell death",
+        "response"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of E2F-1 on ERK?",
+          "What does endogenous E2F-1 suppress?",
+          "What does endogenous E2F-1 do?",
+          "What does endogenous E2F-1 suppress ERK activity in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the enzyme that regulates PAC1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12253934144973755,
+        "ground_truth": {
+          "E2F-1": {
+            "bertscore": 0.6551926136016846,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is upregulated by E2F-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PAC1",
+        "answerability": 0.972579300403595,
+        "ground_truth": {
+          "PAC1": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does E2F-1 induce in breast cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018773674964904785,
+        "ground_truth": {
+          "its expression": {
+            "bertscore": 0.6619740724563599,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does E2F-1 induce expression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1132318377494812,
+        "ground_truth": {
+          "breast cancer cells": {
+            "bertscore": 0.660940408706665,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

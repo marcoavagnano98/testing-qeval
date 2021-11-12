@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Inhibition studies indicate that specific tyrosine phosphorylation following PTK activation is involved in the mobilization of the transcription factor NF-kappa B and VCAM-1 mRNA expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTK",
+        "mRNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor is activated by phosphorylation?",
+          "What does the PTK activated tyrosine phosphorylation cause to be"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition studies",
+        "specific tyrosine phosphorylation",
+        "PTK activation",
+        "the mobilization",
+        "the transcription factor",
+        "NF-kappa B",
+        "VCAM-1 mRNA expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that specific tyrosine phosphorylation is involved in the mobilization",
+          "What is involved in the mobilization of the transcription factor NF-kappa B and",
+          "What is involved in the mobilization of NF-kappa B and VCAM-1",
+          "What is specific tyrosine phosphorylation involved in?",
+          "What is NF-kappa B?",
+          "What transcription factor is involved in the mobilization of VCAM-1?",
+          "What is involved in the mobilization of NF-kappa B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits monocytic cell adhesion to endothelial cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012734174728393555,
+        "ground_truth": {
+          "alpha-Tocopheryl": {
+            "bertscore": 0.5854271054267883,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does alpha-Tocopheryl succinate inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00018519163131713867,
+        "ground_truth": {
+          "monocytic cell adhesion": {
+            "bertscore": 0.6599377393722534,
+            "f1": 0
+          },
+          "endothelial cells": {
+            "bertscore": 0.6344273090362549,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does alpha-Tocopheryl succinate suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000118255615234375,
+        "ground_truth": {
+          "NF-kappa B mobilization": {
+            "bertscore": 0.6514334678649902,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "(Ser(183)) was inhibited reversibly by withdrawal of all or of only the branched chain amino acids; this inhibition was reversed by overexpression of the tuberous sclerosis complex heterodimer.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(Ser(183",
+        "withdrawal",
+        "only the branched chain amino acids",
+        "this inhibition",
+        "overexpression",
+        "the tuberous sclerosis complex heterodimer"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that is inhibited by the withdrawal of all or only",
+          "What was the first step in the inhibition of Ser(183)?",
+          "What was removed from Ser(183)?",
+          "What was reversed by overexpression of the tuberous sclerosis complex heterodimer",
+          "What was the result of the suppression of the tuberous sclerosis complex heterodimer",
+          "What was overexpression of the sclerosis complex?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is phosphorylated in intact cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000425875186920166,
+        "ground_truth": {
+          "(Ser(183": {
+            "bertscore": 0.6390559077262878,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was Ser(183) phosphorylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011242032051086426,
+        "ground_truth": {
+          "intact cells": {
+            "bertscore": 0.6935880780220032,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was inhibited by rapamycin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0015038251876831055,
+        "ground_truth": {
+          "this phosphorylation": {
+            "bertscore": 0.6247130036354065,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the phosphorylation of Ser(183)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "withdrawal of all or of only the branched chain amino acids",
+        "answerability": 0.58162522315979,
+        "ground_truth": {
+          "rapamycin": {
+            "bertscore": 0.6172202825546265,
+            "f1": 0
+          },
+          "overexpression": {
+            "bertscore": 0.6281600594520569,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was overexpressed in intact cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004906654357910156,
+        "ground_truth": {
+          "the tuberous sclerosis complex heterodimer": {
+            "bertscore": 0.6210558414459229,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

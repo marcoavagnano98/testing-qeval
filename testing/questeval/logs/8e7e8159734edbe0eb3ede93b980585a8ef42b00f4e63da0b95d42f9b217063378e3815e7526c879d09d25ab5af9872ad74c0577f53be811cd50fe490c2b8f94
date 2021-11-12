@@ -1,0 +1,78 @@
+{
+  "type": "ref",
+  "text": "Transactivation by ETS1 NFkappaB and AP1 is synergistic and mutation of the individual binding sites reveals that the transcriptional activities of these factors are interdependent.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NFkappaB",
+        "AP1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the binding site of ETS1?",
+          "What is the name of the transcriptional factor that is interdependent?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Transactivation",
+        "ETS1 NFkappaB",
+        "AP1",
+        "mutation",
+        "the individual binding sites",
+        "the transcriptional activities",
+        "these factors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is synergistic between ETS1 NFkappaB and AP",
+          "What is the transcriptional activity of AP1 and ETS1 NFkappa",
+          "What is the name of the transcriptional factor that is interdependent?",
+          "What is the result of the interaction between the binding sites?",
+          "What reveals that the transcriptional activities of these factors are interdependent?",
+          "What does mutation of the individual binding sites reveal?",
+          "What transcriptional activities are interdependent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What reveals that the transcriptional activities of these factors are interdependent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutation of the individual binding sites",
+        "answerability": 0.9997619390487671,
+        "ground_truth": {
+          "Functional analysis": {
+            "bertscore": 0.6747731566429138,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is interdependent between the transcription factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activities",
+        "answerability": 0.7387433052062988,
+        "ground_truth": {
+          "the transcriptional activities": {
+            "bertscore": 0.9322257041931152,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are transcriptional activities interdependent of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43004947900772095,
+        "ground_truth": {
+          "these factors": {
+            "bertscore": 0.6666616201400757,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

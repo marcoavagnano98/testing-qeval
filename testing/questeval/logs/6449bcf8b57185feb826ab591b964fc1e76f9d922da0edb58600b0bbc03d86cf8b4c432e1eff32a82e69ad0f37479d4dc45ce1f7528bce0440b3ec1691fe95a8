@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Remethylation occurred most rapidly in the p16 PAX-6 and c-ABL genes shown to be transcribed prior to drug therapy.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PAX-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the most rapidly remethylated gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Remethylation",
+        "the p16",
+        "PAX-6",
+        "c-ABL genes",
+        "drug therapy"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What occurred most rapidly in the p16 PAX-6 and c-ABL genes",
+          "What PAX-6 gene was remethylated most rapidly?",
+          "What is the most rapidly remethylated gene?",
+          "What other gene was transcribed before drug therapy?",
+          "What was the first step in remethylation of p16 PAX-6?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the most rapidly remethylated gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p16 PAX-6",
+        "answerability": 0.9565820097923279,
+        "ground_truth": {
+          "PAX-6": {
+            "bertscore": 0.9095852375030518,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What occurred most rapidly in the p16 PAX-6 and c-ABL genes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Remethylation",
+        "answerability": 0.9450068473815918,
+        "ground_truth": {
+          "Remethylation": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What PAX-6 gene was remethylated most rapidly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p16",
+        "answerability": 0.9467381834983826,
+        "ground_truth": {
+          "the p16": {
+            "bertscore": 0.8176053166389465,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What genes were transcribed prior to drug treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p16 PAX-6 and c-ABL genes",
+        "answerability": 0.93863445520401,
+        "ground_truth": {
+          "c-ABL genes": {
+            "bertscore": 0.8456211686134338,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What was the first step in remethylation of p16 PAX-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15196210145950317,
+        "ground_truth": {
+          "drug treatment": {
+            "bertscore": 0.7005237340927124,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

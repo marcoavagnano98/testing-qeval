@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "Cyclin D1 is deregulated and over expressed in the small t-antigen positive mammary gland epithelial cells (ME-cells) and in the breast tumor cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cyclin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is over expressed in the small t-antigen positive mammary gland epit"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cyclin D1",
+        "the small t-antigen positive mammary gland epithelial cells",
+        "ME-cells",
+        "the breast tumor cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is over expressed in the small t-antigen positive mammary gland epit",
+          "Where is Cyclin D1 over expressed?",
+          "What is the name of the cell that is over expressed in the breast tumor cells?",
+          "Where is Cyclin D1 over expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is deregulated in Rb-deficient MEFs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48252373933792114,
+        "ground_truth": {
+          "Cyclin": {
+            "bertscore": 0.6381353735923767,
+            "f1": 0
+          },
+          "Cyclin D1": {
+            "bertscore": 0.5521188378334045,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of MEFs have a deregulated cytoclin D1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "small t-antigen positive mammary gland epithelial cells (ME-",
+        "answerability": 0.9139516353607178,
+        "ground_truth": {
+          "Rb-deficient": {
+            "bertscore": 0.6025295853614807,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are deregulated by cytoclin D1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mammary gland epithelial cells",
+        "answerability": 0.9434018731117249,
+        "ground_truth": {
+          "Rb-deficient MEFs fibroblasts": {
+            "bertscore": 0.7043227553367615,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are deregulated in Rb-deficient MEFs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.039634764194488525,
+        "ground_truth": {
+          "epithelial cells": {
+            "bertscore": 0.6360582113265991,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

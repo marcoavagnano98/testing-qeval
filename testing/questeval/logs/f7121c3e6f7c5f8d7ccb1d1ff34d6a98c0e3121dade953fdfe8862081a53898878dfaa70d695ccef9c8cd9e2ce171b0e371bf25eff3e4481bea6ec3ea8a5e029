@@ -1,0 +1,56 @@
+{
+  "type": "hyp",
+  "text": "Lymphocyte-specific regulation of the Fas promoter requires NF-kappaB p50-p65 recruitment.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Lymphocyte-specific regulation",
+        "the Fas promoter",
+        "NF-kappaB p50-p65 recruitment"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What requires NF-kappaB recruitment?",
+          "What is required for lymphocyte-specific regulation?",
+          "What does Lymphocyte-specific regulation of the Fas promoter require?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What requires NF-kappaB recruitment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Lymphocyte-specific regulation of the Fas promoter",
+        "answerability": 0.9529619216918945,
+        "ground_truth": {
+          "Activation-dependent transcriptional regulation": {
+            "bertscore": 0.7660817503929138,
+            "f1": 0.25
+          },
+          "the human Fas promoter": {
+            "bertscore": 0.7620115280151367,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does activation-dependent transcriptional regulation of the human Fas promoter require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1252639889717102,
+        "ground_truth": {
+          "NF-kappaB p50-p65 recruitment": {
+            "bertscore": 0.6379407048225403,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

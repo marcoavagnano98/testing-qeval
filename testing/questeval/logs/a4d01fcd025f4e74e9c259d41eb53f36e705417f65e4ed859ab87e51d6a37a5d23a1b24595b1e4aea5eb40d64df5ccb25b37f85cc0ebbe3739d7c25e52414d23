@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Hemoglobin concentration and gamma-globin and erythroid mRNA levels were significantly increased in M-TAT/EPO cells than in M-TAT/GM-CSF cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Hemoglobin concentration",
+        "gamma-globin",
+        "mRNA levels",
+        "M-TAT/EPO cells",
+        "M-TAT/GM-CSF cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was significantly increased in M-TAT/EPO cells?",
+          "What was significantly increased in M-TAT/EPO cells?",
+          "What was significantly increased in M-TAT/EPO cells?",
+          "What type of cells had a significantly higher hemoglobin concentration?",
+          "What type of cells had a significantly higher hemoglobin concentration?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was significantly higher in M-TAT/EPO cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hemoglobin concentration and gamma-globin and erythroid",
+        "answerability": 0.9594122171401978,
+        "ground_truth": {
+          "Hemoglobin concentration": {
+            "bertscore": 0.8501021862030029,
+            "f1": 0.5
+          },
+          "mRNA levels": {
+            "bertscore": 0.7185589075088501,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the hemoglobin and erythroid mRNA levels higher in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "M-TAT/GM-CSF cells",
+        "answerability": 0.6470839381217957,
+        "ground_truth": {
+          "gamma-globin": {
+            "bertscore": 0.693604052066803,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells had higher levels of hemoglobin and erythroid": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "M-TAT/EPO cells",
+        "answerability": 0.9457293748855591,
+        "ground_truth": {
+          "M-TAT/EPO cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells had higher levels of hemoglobin and erythroid mRNA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "M-TAT/EPO cells",
+        "answerability": 0.9253280758857727,
+        "ground_truth": {
+          "M-TAT/GM-CSF cells": {
+            "bertscore": 0.9259150624275208,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

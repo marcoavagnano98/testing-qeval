@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "PTHrP is also able to inhibit the CXCR4 PI3K/Akt ERK and NF-kappaB-dependent pathway in microglia.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTHrP",
+        "Akt ERK",
+        "microglia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the CXCR4 PI3K/Akt ERK and",
+          "What is the CXCR4 PI3K/NF-kappaB-",
+          "Where does PTHrP inhibit the CXCR4 PI3K/Akt"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTHrP",
+        "the CXCR4",
+        "/Akt ERK and NF-kappaB-dependent pathway",
+        "microglia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the CXCR4 PI3K/Akt ERK and",
+          "What PI3K/Akt ERK pathway does PTHrP inhibit?",
+          "What does PTHrP inhibit in microglia?",
+          "Where does PTHrP inhibit the CXCR4 PI3K/Akt"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the CXCR4 PI3K/?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt ERK",
+        "answerability": 0.6507778167724609,
+        "ground_truth": {
+          "Akt ERK": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where does SDF-1alpha up-regulate interleukin-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 8.928775787353516e-05,
+        "ground_truth": {
+          "microglia": {
+            "bertscore": 0.7005928754806519,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SDF-1alpha do through CXCR4 PI3K/Akt": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004465937614440918,
+        "ground_truth": {
+          "SDF-1alpha up-regulates interleukin-6": {
+            "bertscore": 0.5857287645339966,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SDF-1alpha up-regulate in microglia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 7.140636444091797e-05,
+        "ground_truth": {
+          "CXCR4 PI3K/Akt ERK and NF-kappaB-dependent pathway": {
+            "bertscore": 0.5490759611129761,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

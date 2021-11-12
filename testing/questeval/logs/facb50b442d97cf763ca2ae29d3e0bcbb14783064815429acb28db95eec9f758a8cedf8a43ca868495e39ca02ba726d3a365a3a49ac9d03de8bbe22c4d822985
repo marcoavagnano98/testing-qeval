@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "Adhesion of human umbilical vein endothelial cells to oleate was reduced concomitantly.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Adhesion",
+        "human umbilical vein endothelial cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was reduced concomitantly with the oleate of human umbilical",
+          "What was reduced concomitantly with the oleate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was reduced concomitantly with the treatment of endothelial cells with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Adhesion",
+        "answerability": 0.9134330153465271,
+        "ground_truth": {
+          "Adhesion": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was reduced concomitantly with LPS treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37777233123779297,
+        "ground_truth": {
+          "monocytoid U937 cells": {
+            "bertscore": 0.6024857759475708,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What reduced adhesion of monocytoid U937 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03371948003768921,
+        "ground_truth": {
+          "LPS-treated endothelial cells": {
+            "bertscore": 0.6149731874465942,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "type": "ref",
+  "text": "Site-directed mutagenesis demonstrated that this HS-40 enhancer-zeta 2 globin promoter interaction is mediated by the two GATA-1 factor binding motifs located at -230 and -104 respectively.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HS-40",
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhancer-zeta 2 globin promoter interaction is mediated by?",
+          "How many GATA-1 motifs are present in the HS-40 enhancer-zet"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Site-directed mutagenesis",
+        "this HS-40 enhancer-zeta 2 globin promoter interaction",
+        "the two GATA-1 factor binding motifs",
+        "-230",
+        "-104"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What demonstrated that the HS-40 enhancer-zeta 2 globin promoter",
+          "What is mediated by the two GATA-1 factor binding motifs located at -230",
+          "What is the HS-40 enhancer-zeta 2 globin promoter interaction",
+          "What is the location of the HS-40 enhancer-zeta 2 globin",
+          "What is the zeta 2 globin promoter located at?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many GATA-1 motifs are present in the mutagenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.6941287517547607,
+        "ground_truth": {
+          "two": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What demonstrated that the interaction is mediated by the two GATA-1 factor binding motifs located": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Site-directed mutagenesis",
+        "answerability": 0.7180877923965454,
+        "ground_truth": {
+          "Site-directed mutagenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is mediated by the two GATA-1 factor binding motifs located at -230": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HS-40 enhancer-zeta 2 globin promoter interaction",
+        "answerability": 0.6451297998428345,
+        "ground_truth": {
+          "this interaction": {
+            "bertscore": 0.6749910116195679,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the interaction between the two GATA-1 motifs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.40880846977233887,
+        "ground_truth": {
+          "the two GATA-1 factor binding motifs": {
+            "bertscore": 0.585198163986206,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the location of the GATA-1 factor binding motifs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "-230 and -104",
+        "answerability": 0.9897939562797546,
+        "ground_truth": {
+          "-230": {
+            "bertscore": 0.7975969314575195,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the binding mutagenesis site of the GATA-1 factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "-230",
+        "answerability": 0.8170453310012817,
+        "ground_truth": {
+          "-104": {
+            "bertscore": 0.9121983647346497,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

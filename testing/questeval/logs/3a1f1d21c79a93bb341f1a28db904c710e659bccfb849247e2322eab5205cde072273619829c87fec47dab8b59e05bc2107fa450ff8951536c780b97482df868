@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "gamma B*CaM-K inhibits the transcriptional activation of AP-1 in response to transfection with a constitutively active mutant of PKC or stimulation with PMA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "B*CaM-K",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the transcriptional activation of AP-1?",
+          "What is the only other stimulant that inhibits the transcription of AP-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "gamma B*CaM-K",
+        "the transcriptional activation",
+        "AP-1",
+        "response",
+        "transfection",
+        "a constitutively active mutant",
+        "PKC",
+        "stimulation",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the transcriptional activation of AP-1 in response to transfection with",
+          "What does gamma B*CaM-K inhibit?",
+          "What does gamma B*CaM-K inhibit?",
+          "What does gamma B*CaM-K inhibit the transcriptional activation",
+          "What is the only way that gamma B*CaM-K inhibits",
+          "What does gamma B*CaM-K inhibit the transcriptional activation",
+          "What is the gamma B*CaM-K a mutant of?",
+          "What is the other way that gamma B*CaM-K inhibits",
+          "What is the only other stimulant that inhibits the transcription of AP-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does AP-1 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01878225803375244,
+        "ground_truth": {
+          "abolishes": {
+            "bertscore": 0.7385303378105164,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does a molecule that is a molecule that is a molecule that": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29253894090652466,
+        "ground_truth": {
+          "PMA-induced AP-1 transcriptional activation": {
+            "bertscore": 0.61478590965271,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

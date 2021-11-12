@@ -1,0 +1,58 @@
+{
+  "type": "ref",
+  "text": "\"\"\"X11L2 a new member of the X11 protein family interacts with Alzheimers beta-amyloid precursor protein.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "X11"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein family does X11L2 belong to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a new member",
+        "Alzheimers beta-amyloid precursor protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is X11L2?",
+          "What does X11L2 interact with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is characterized by frequent Alzheimer's disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005995035171508789,
+        "ground_truth": {
+          "The Alzheimers": {
+            "bertscore": 0.6571690440177917,
+            "f1": 0
+          },
+          "The Alzheimers disease": {
+            "bertscore": 0.6628425121307373,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the hallmark of Alzheimer's?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02056443691253662,
+        "ground_truth": {
+          "frequent Alzheimers disease": {
+            "bertscore": 0.6958510875701904,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

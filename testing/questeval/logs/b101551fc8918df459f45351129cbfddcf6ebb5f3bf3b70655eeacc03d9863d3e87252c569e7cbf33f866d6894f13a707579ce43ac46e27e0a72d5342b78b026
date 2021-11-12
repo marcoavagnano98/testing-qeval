@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "This lack of effect by rapamycin confirmed the fact that activated p-mTOR was not increased in LMP1 transgenic lymphocytes or lymphoma cells indicating that activation of p-mTOR is not required for lymphoma development (Figure 6B).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the smallest figure of the study?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This lack",
+        "effect",
+        "rapamycin",
+        "the fact",
+        "activated p-mTOR",
+        "LMP1 transgenic lymphocytes",
+        "lymphoma cells",
+        "activation",
+        "p-mTOR",
+        "lymphoma development",
+        "Figure 6B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What confirmed the fact that rapamycin did not increase p-mTOR in L",
+          "What did rapamycin not show?",
+          "What drug did not increase p-mTOR in LMP1 transgenic lymphocytes",
+          "What did the lack of rapamycin confirm?",
+          "What was not increased in LMP1 transgenic lymphocytes or lymphoma cells",
+          "What type of cells did not show an increase in p-mTOR?",
+          "What type of cells did not show an increase in p-mTOR?",
+          "What is not required for lymphoma development?",
+          "What is not required for lymphoma development?",
+          "What is not required for rapamycin?",
+          "What is the result of the lack of effect of rapamycin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the p-mTOR level of rapamycin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007691860198974609,
+        "ground_truth": {
+          "6B": {
+            "bertscore": 0.6820816993713379,
+            "f1": 0
+          },
+          "Figure 6B": {
+            "bertscore": 0.6523301005363464,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What confirmed the absence of p-mTOR levels by rapamycin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08579438924789429,
+        "ground_truth": {
+          "This lack": {
+            "bertscore": 0.6922455430030823,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did rapamycin not have on p-mTOR levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21491509675979614,
+        "ground_truth": {
+          "effect": {
+            "bertscore": 0.7262178063392639,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug did not have an effect on p-mTOR levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rapamycin",
+        "answerability": 0.9926496744155884,
+        "ground_truth": {
+          "rapamycin": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the lack of rapamycin confirm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activated p-mTOR was not increased in LMP1 transgenic lymphocytes",
+        "answerability": 0.923383355140686,
+        "ground_truth": {
+          "the absence": {
+            "bertscore": 0.5958709716796875,
+            "f1": 0
+          },
+          "activated p-mTOR levels": {
+            "bertscore": 0.825093686580658,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    }
+  }
+}

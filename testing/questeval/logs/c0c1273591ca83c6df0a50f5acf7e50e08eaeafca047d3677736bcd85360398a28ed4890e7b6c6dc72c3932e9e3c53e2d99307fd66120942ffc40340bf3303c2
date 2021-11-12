@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "kappa B alpha prevented I kappa B alpha degradation and NF-kappa B binding.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappa B alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevented degradation of I kappa B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "kappa B alpha",
+        "I",
+        "kappa B alpha degradation",
+        "NF-kappa B binding"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevented degradation of I kappa B?",
+          "What enzyme was prevented from deteriorating?",
+          "What did kappa B prevent?",
+          "What did kappa B prevent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What prevented degradation of I kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappa B alpha",
+        "answerability": 0.7397136688232422,
+        "ground_truth": {
+          "kappa B alpha": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What enzyme was prevented from deteriorating?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I kappa B alpha",
+        "answerability": 0.7006672024726868,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.7119000554084778,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did kappa B prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7039519548416138,
+        "ground_truth": {
+          "kappa B alpha degradation": {
+            "bertscore": 0.6316747665405273,
+            "f1": 0
+          },
+          "NF-kappa B binding": {
+            "bertscore": 0.614199697971344,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

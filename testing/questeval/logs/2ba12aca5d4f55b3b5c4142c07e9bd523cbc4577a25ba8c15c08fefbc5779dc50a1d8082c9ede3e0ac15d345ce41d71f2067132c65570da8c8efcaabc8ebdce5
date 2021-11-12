@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "A family of serine proteases expressed exclusively in myelo-monocytic cells specifically processes the nuclear factor-kappa B subunit p65 in vitro and may impair human immunodeficiency virus replication in this cell line.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A family",
+        "serine proteases",
+        "myelo-monocytic cells",
+        "the nuclear factor-kappa B subunit p65",
+        "human immunodeficiency virus replication",
+        "this cell line"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of proteases processes the nuclear factor-kappa B subunit p",
+          "What family of proteins processes the nuclear factor-kappa B subunit p65?",
+          "Where are serine proteases expressed?",
+          "What does the family of serine proteases process in vitro?",
+          "What does the p65 subunit impair?",
+          "What cell line is p65 expressed in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of proteases processes the nuclear factor-kappa B subunit p": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A family of serine proteases",
+        "answerability": 0.9641469717025757,
+        "ground_truth": {
+          "A family": {
+            "bertscore": 0.7343057990074158,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What family of proteins processes the nuclear factor-kappa B subunit p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A family of serine proteases",
+        "answerability": 0.9777473211288452,
+        "ground_truth": {
+          "serine proteases": {
+            "bertscore": 0.8590791821479797,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where are serine proteases expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "exclusively in myelo-monocytic cells",
+        "answerability": 0.9249236583709717,
+        "ground_truth": {
+          "myelo-monocytic cells": {
+            "bertscore": 0.9042019248008728,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does a family of serine proteases specifically process in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor-kappa B subunit p65",
+        "answerability": 0.9934927225112915,
+        "ground_truth": {
+          "the nuclear factor-kappa B subunit p65": {
+            "bertscore": 0.966509997844696,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the p65 subunit impair?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3423779606819153,
+        "ground_truth": {
+          "human immunodeficiency virus replication": {
+            "bertscore": 0.6086055040359497,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are myelo-monocytic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009728610515594482,
+        "ground_truth": {
+          "these cells": {
+            "bertscore": 0.6778948307037354,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

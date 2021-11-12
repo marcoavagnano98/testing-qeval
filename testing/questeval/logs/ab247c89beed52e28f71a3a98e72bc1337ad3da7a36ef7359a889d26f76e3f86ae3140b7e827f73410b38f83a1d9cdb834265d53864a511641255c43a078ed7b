@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "K562 cells express endogenous WT1 which is downregulated as a response to induced differentiation along the erythroid or megakaryocytic pathways.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "cells express",
+        "WT1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does K562 cells express?",
+          "What is downregulated as a response to induced differentiation along the erythroid or"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "K562 cells",
+        "endogenous WT1",
+        "a response",
+        "induced differentiation",
+        "megakaryocytic pathways"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells express endogenous WT1?",
+          "What do K562 cells express?",
+          "What is the mechanism by which endogenous WT1 is downregulated?",
+          "What is the response of endogenous WT1?",
+          "What is the erythroid or what other pathway?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does K562 cells express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endogenous WT1",
+        "answerability": 0.9777346849441528,
+        "ground_truth": {
+          "cells express": {
+            "bertscore": 0.6925636529922485,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is downregulated in K562 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "WT1",
+        "answerability": 0.9558152556419373,
+        "ground_truth": {
+          "WT1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells express endogenous WT1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "K562 cells",
+        "answerability": 0.9808368682861328,
+        "ground_truth": {
+          "K562 cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do K562 cells express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endogenous WT1",
+        "answerability": 0.9793194532394409,
+        "ground_truth": {
+          "endogenous WT1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which endogenous WT1 is downregulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "response to induced differentiation",
+        "answerability": 0.9988989233970642,
+        "ground_truth": {
+          "a response": {
+            "bertscore": 0.7334909439086914,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the response of K562 cells to WT1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "downregulated",
+        "answerability": 0.9788506627082825,
+        "ground_truth": {
+          "induced differentiation": {
+            "bertscore": 0.7527801990509033,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the erythroid and what other pathways?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "megakaryocytic",
+        "answerability": 0.7098672389984131,
+        "ground_truth": {
+          "megakaryocytic pathways": {
+            "bertscore": 0.9006091952323914,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

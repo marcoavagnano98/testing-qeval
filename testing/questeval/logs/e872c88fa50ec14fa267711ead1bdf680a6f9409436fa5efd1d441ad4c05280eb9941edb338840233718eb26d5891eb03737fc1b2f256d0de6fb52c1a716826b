@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Collagen-poly glycolic acid hybrid matrix with basic fibroblast growth factor accelerated angiogenesis and granulation tissue formation in diabetically-treated mice.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Collagen-poly glycolic acid hybrid matrix",
+        "basic fibroblast growth factor",
+        "angiogenesis and granulation tissue formation",
+        "diabetically-treated mice"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of matrix was used in diabetic mice?",
+          "What compound accelerated angiogenesis and granulation tissue formation in diabetically treated mice?",
+          "What did the combination of collagen-poly glycolic acid hybrid matrix and basic fibroblast",
+          "What type of mice had a higher rate of angiogenesis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of matrix was used in diabetic mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Collagen-poly glycolic acid hybrid",
+        "answerability": 0.9445837140083313,
+        "ground_truth": {
+          "Collagen-poly glycolic acid hybrid matrix": {
+            "bertscore": 0.9686059355735779,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What compound accelerated angiogenesis and granulation tissue formation in diabetic mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Collagen-poly glycolic acid hybrid matrix",
+        "answerability": 0.719627857208252,
+        "ground_truth": {
+          "basic fibroblast growth factor": {
+            "bertscore": 0.7142535448074341,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the combination of collagen-poly glycolic acid hybrid matrix and basic fibroblast": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "accelerated angiogenesis and granulation tissue formation",
+        "answerability": 0.932780921459198,
+        "ground_truth": {
+          "angiogenesis and granulation tissue formation": {
+            "bertscore": 0.9367203712463379,
+            "f1": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "What type of mice had a higher rate of angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "diabetically-treated mice",
+        "answerability": 0.9396407604217529,
+        "ground_truth": {
+          "diabetic mice": {
+            "bertscore": 0.8801537156105042,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

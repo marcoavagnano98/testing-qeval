@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "The enhanced anti-angiogenic effect of cRGD-HL was confirmed in Matrigel assay by showing the significant inhibition of bFGF-driven angiogenesis and blood vessel formation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Matrigel"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What assay confirmed the anti-angiogenic effect of cRGD-HL?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The enhanced anti-angiogenic effect",
+        "cRGD-HL",
+        "Matrigel",
+        "the significant inhibition",
+        "bFGF-driven angiogenesis",
+        "blood vessel formation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was confirmed by the Matrigel assay?",
+          "What drug inhibits bFGF-driven angiogenesis?",
+          "What assay confirmed the anti-angiogenic effect of cRGD-HL?",
+          "What was the effect of cRGD-HL on bFGF-driven an",
+          "What is cRGD-HL able to inhibit?",
+          "What is bFGF-driven angiogenesis a cause of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What assay confirmed the antiangiogenic effect of cRGD-HL?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Matrigel",
+        "answerability": 0.9990048408508301,
+        "ground_truth": {
+          "Matrigel": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was confirmed by the Matrigel assay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5344947576522827,
+        "ground_truth": {
+          "The enhanced antiangiogenic effect": {
+            "bertscore": 0.6276930570602417,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug inhibits bFGF-driven angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cRGD-HL",
+        "answerability": 0.8937211632728577,
+        "ground_truth": {
+          "cRGD-HL": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of cRGD-HL on bFGF-driven an": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46402597427368164,
+        "ground_truth": {
+          "the significant inhibition": {
+            "bertscore": 0.6947938203811646,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is cRGD-HL able to inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bFGF",
+        "answerability": 0.8820059299468994,
+        "ground_truth": {
+          "bFGF-driven angiogenesis": {
+            "bertscore": 0.7778643369674683,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is bFGF-driven angiogenesis a major factor in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0019041895866394043,
+        "ground_truth": {
+          "blood vessel formation": {
+            "bertscore": 0.6853184103965759,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

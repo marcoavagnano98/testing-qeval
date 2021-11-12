@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Lipopolysaccharide (LPS) (HIV-1-LTR) CAT constructs transfected into monocyte/macrophage cell lines but not a T cell line.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Lipopolysaccharide",
+        "(LPS",
+        "CAT constructs",
+        "monocyte/macrophage cell lines",
+        "not a T cell line"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the acronym for LPS?",
+          "What is the acronym for a linotype of virus?",
+          "What is the name of the type of virus that is transfected into monocyte/m",
+          "What type of cells are HSV-1-LTR transfected into?",
+          "What type of cell line is HSV-1-LTR?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the acronym for LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Lipopolysaccharide",
+        "answerability": 0.9537867307662964,
+        "ground_truth": {
+          "Lipopolysaccharide": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the acronym for a linotype of a virus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05388420820236206,
+        "ground_truth": {
+          "(LPS": {
+            "bertscore": 0.6541221737861633,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the type of cell line that is transfected with HIV-1-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24436450004577637,
+        "ground_truth": {
+          "CAT constructs": {
+            "bertscore": 0.6881420612335205,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cell line is HSV-1-LTR transfected into?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22126710414886475,
+        "ground_truth": {
+          "monocyte/macrophage-like cell lines": {
+            "bertscore": 0.6297416090965271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cell line is HSV-1-LTR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.026502549648284912,
+        "ground_truth": {
+          "not a T cell line": {
+            "bertscore": 0.6908085942268372,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

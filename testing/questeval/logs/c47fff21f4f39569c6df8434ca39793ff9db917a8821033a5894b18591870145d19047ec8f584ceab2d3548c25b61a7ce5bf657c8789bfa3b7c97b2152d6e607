@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "In agreement with this decrease in the insulin mRNA and insulin content was observed in the glycation-induced cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "agreement",
+        "this decrease",
+        "the insulin mRNA and insulin content",
+        "the glycation-induced cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the result of the decrease in insulin mRNA and insulin content?",
+          "What was observed in the glycation-induced cells?",
+          "What did the glycation-induced cells decrease?",
+          "Where was the decrease in insulin mRNA and insulin content observed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the result of the decrease in insulin mRNA and insulin content?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glycation-induced cells",
+        "answerability": 0.723852276802063,
+        "ground_truth": {
+          "agreement": {
+            "bertscore": 0.6664850115776062,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was observed in the glycation-induced cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decrease in the insulin mRNA and insulin content",
+        "answerability": 0.947100043296814,
+        "ground_truth": {
+          "this decrease": {
+            "bertscore": 0.6813461184501648,
+            "f1": 0.22222222222222224
+          }
+        }
+      }
+    },
+    "What did the glycation-induced cells decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin mRNA and insulin content",
+        "answerability": 0.9867013692855835,
+        "ground_truth": {
+          "the insulin mRNA and insulin content": {
+            "bertscore": 0.9514130353927612,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where was the decrease in insulin mRNA and insulin content observed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glycation-induced cells",
+        "answerability": 0.9647349119186401,
+        "ground_truth": {
+          "the glycation-induced cells": {
+            "bertscore": 0.9469758868217468,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Expression of WT-PKCalpha did not effect the phosphorylation of either site with or without M-CSF stimulation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "WT-PKCalpha",
+        "M-CSF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein did not affect the phosphorylation of either site with or without M-C",
+          "What did WT-PKCalpha not affect phosphorylation of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "WT-PKCalpha",
+        "the phosphorylation",
+        "either site",
+        "M-CSF stimulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not affect the phosphorylation of either site with or without M-CSF",
+          "What protein did not affect the phosphorylation of either site with or without M-C",
+          "What did expression of WT-PKCalpha not affect?",
+          "What did expression of WT-PKCalpha not affect?",
+          "What did WT-PKCalpha not effect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein did not affect the phosphorylation of residues with or without M-C": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "WT-PKCalpha",
+        "answerability": 0.8932401537895203,
+        "ground_truth": {
+          "WT-PKCalpha": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did WT-PKCalpha not effect phosphorylation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "either site",
+        "answerability": 0.6804383993148804,
+        "ground_truth": {
+          "M-CSF": {
+            "bertscore": 0.6586933135986328,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not affect the phosphorylation of residues with or without M-CSF": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Expression of WT-PKCalpha",
+        "answerability": 0.9744212627410889,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7285537123680115,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did expression of WT-PKCalpha not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation",
+        "answerability": 0.9982313513755798,
+        "ground_truth": {
+          "the phosphorylation": {
+            "bertscore": 0.9380730986595154,
+            "f1": 1.0
+          },
+          "either residue": {
+            "bertscore": 0.6599618196487427,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did WT-PKCalpha not effect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation",
+        "answerability": 0.9965909719467163,
+        "ground_truth": {
+          "M-CSF stimulation": {
+            "bertscore": 0.71817946434021,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

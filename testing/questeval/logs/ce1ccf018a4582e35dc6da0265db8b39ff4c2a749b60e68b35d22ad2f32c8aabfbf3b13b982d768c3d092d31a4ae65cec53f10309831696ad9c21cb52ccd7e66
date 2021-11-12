@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "The B3 factor is detectable in the cytosol only when cells are HIV1-infected.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The B3 factor",
+        "the cytosol",
+        "cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is detectable in the cytosol when cells are HIV1-infected?",
+          "Where is the B3 factor detectable?",
+          "What is the B3 factor detectable in the cytosol when HIV1 is inf"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was easily detectable in infected monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0256040096282959,
+        "ground_truth": {
+          "The B3 factor": {
+            "bertscore": 0.6560930013656616,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the B3 factor detected in uninfected cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09732240438461304,
+        "ground_truth": {
+          "nuclei": {
+            "bertscore": 0.6970386505126953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the B3 factor detected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the cytosol",
+        "answerability": 0.968012273311615,
+        "ground_truth": {
+          "uninfected cells": {
+            "bertscore": 0.6519641280174255,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the B3 factor easily detectable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the cytosol",
+        "answerability": 0.7248120307922363,
+        "ground_truth": {
+          "infected monocytes": {
+            "bertscore": 0.7009636163711548,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

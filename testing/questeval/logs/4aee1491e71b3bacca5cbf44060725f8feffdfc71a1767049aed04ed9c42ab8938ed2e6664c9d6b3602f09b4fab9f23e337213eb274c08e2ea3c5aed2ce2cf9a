@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "In this study we show that HNF-3alpha -3beta -3gamma -4gamma and -6 are expressed in pancreatic beta-cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this study",
+        "we",
+        "HNF-3alpha",
+        "pancreatic beta-cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study showed that HNF-3alpha -3beta -4gamma",
+          "What is the name of the study that shows that HNF-3alpha -3bet",
+          "What is expressed in pancreatic beta-cells?",
+          "Where are HNF-3alpha -3beta -4gamma and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What study showed that HNF-3alpha -3beta -4gamma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.718822717666626,
+        "ground_truth": {
+          "this study": {
+            "bertscore": 0.6876574158668518,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the study that shows that HNF-3alpha -3bet": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35580939054489136,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.674835205078125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is expressed in pancreatic beta-cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HNF-3alpha -3beta -3gamma -4gamm",
+        "answerability": 0.9757550954818726,
+        "ground_truth": {
+          "HNF-3alpha": {
+            "bertscore": 0.7945555448532104,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "Where are HNF-3alpha -3beta -4gamma and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pancreatic beta-cells",
+        "answerability": 0.9530707597732544,
+        "ground_truth": {
+          "pancreatic beta-cells": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

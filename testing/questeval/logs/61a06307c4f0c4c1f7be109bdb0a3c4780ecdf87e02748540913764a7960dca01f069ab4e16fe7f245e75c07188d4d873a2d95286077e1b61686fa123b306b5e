@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Third an estrogen receptor-E2F1 binding site in the cyclin D3 promoter is necessary for its trans-activation by ER-E2F1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Third",
+        "D3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the third binding site for estrogen receptor-E2F1?",
+          "What promoter is necessary for trans-activation by ER-E2F1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Third an estrogen receptor-E2F1 binding site",
+        "the cyclin D3 promoter",
+        "its trans-activation",
+        "ER-E2F1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is necessary for its trans-activation by ER-E2F1?",
+          "Where is the estrogen receptor-E2F1 binding site located?",
+          "What is the third binding site necessary for?",
+          "What receptor binding site is necessary for trans-activation of estrogen receptor-E2F1"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What happens even in the presence of the protein synthesis inhibitor cycloheximide": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.026401102542877197,
+        "ground_truth": {
+          "Furthermore trans-activation": {
+            "bertscore": 0.6775769591331482,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is trans-activated by ER-E2F1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "estrogen receptor-E2F1 binding site in the cyclin D3 promoter",
+        "answerability": 0.9629363417625427,
+        "ground_truth": {
+          "cyclin D3": {
+            "bertscore": 0.7775360345840454,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the main factor that causes trans-activation of cyclin D3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an estrogen receptor-E2F1 binding site",
+        "answerability": 0.9245218634605408,
+        "ground_truth": {
+          "ER-E2F1": {
+            "bertscore": 0.7843369841575623,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what condition does trans-activation of cyclin D3 occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.036647915840148926,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024360299110413,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only thing that can cause trans-activation of cyclin D3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22425532341003418,
+        "ground_truth": {
+          "the protein synthesis inhibitor cycloheximide": {
+            "bertscore": 0.5968941450119019,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

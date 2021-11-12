@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Furthermore rv3614c-rv3616c were reported to be transiently upregulated in the phagosome and under acidic stress 38.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "38"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the number of times that rv3614c-rv3616c"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "rv3614c-rv3616c",
+        "the phagosome",
+        "acidic stress"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is transiently upregulated in the phagosome and under acidic stress?",
+          "Where were rv3614c-rv3616c transiently upregulated",
+          "What was the cause of the upregulation of rv3614c-rv36"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the number of times that rv3614c-rv3616c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09861451387405396,
+        "ground_truth": {
+          "38": {
+            "bertscore": 0.580344557762146,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is transiently upregulated in the phagosome and under acidic stress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rv3614c-rv3616c",
+        "answerability": 0.8086462020874023,
+        "ground_truth": {
+          "rv3614c-rv3616c": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where were rv3614c-rv3616c transiently upregulated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the phagosome",
+        "answerability": 0.7789722681045532,
+        "ground_truth": {
+          "the phagosome": {
+            "bertscore": 0.9201139211654663,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the cause of the upregulation of rv3614c-rv36": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03202790021896362,
+        "ground_truth": {
+          "acidic stress": {
+            "bertscore": 0.7272878289222717,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

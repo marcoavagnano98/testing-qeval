@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Chromatin immunoprecipitations show that Rb targets histone H3 methylation and HP1 to promoters.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rb",
+        "H3",
+        "HP1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that targets histone H3 methylation?",
+          "What histone does Rb target?",
+          "What promoter does Rb target?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Chromatin immunoprecipitations",
+        "Rb",
+        "histone H3 methylation",
+        "HP1",
+        "promoters"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that Rb targets histone H3 methylation and HP1 to promoter",
+          "What is the name of the protein that targets histone H3 methylation?",
+          "What does chromatin immunoprecipitation show Rb targets?",
+          "What promoter does Rb target?",
+          "What does chromatin immunoprecipitation show Rb targets?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What histone does Rb target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H3 methylation",
+        "answerability": 0.9330430030822754,
+        "ground_truth": {
+          "H3": {
+            "bertscore": 0.7755219340324402,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the target of Rb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H3 methylation",
+        "answerability": 0.7341114282608032,
+        "ground_truth": {
+          "HP1": {
+            "bertscore": 0.6846243739128113,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What targets histone H3 methylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5055980682373047,
+        "ground_truth": {
+          "Rb": {
+            "bertscore": 0.6811807751655579,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Rb target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H3 methylation and HP1",
+        "answerability": 0.7097290754318237,
+        "ground_truth": {
+          "histone H3 methylation": {
+            "bertscore": 0.9353077411651611,
+            "f1": 0.7499999999999999
+          },
+          "promoters": {
+            "bertscore": 0.6704480648040771,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

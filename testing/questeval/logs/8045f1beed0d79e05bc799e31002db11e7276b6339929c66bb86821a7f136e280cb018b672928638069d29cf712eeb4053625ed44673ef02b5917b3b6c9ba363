@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "p-XSC also inhibits AR expression as well as Akt/PKB activity in Xenopus oocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AR",
+        "Akt/PKB",
+        "Xenopus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does p-XSC inhibit?",
+          "What activity does p-XSC inhibit in Xenopus oocytes",
+          "In what oocytes does p-XSC inhibit AR expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p-XSC",
+        "AR expression",
+        "Akt/PKB activity",
+        "Xenopus oocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits AR expression?",
+          "What does p-XSC inhibit?",
+          "What does p-XSC inhibit in Xenopus oocytes?",
+          "Where does p-XSC inhibit AR expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene does p-XSC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR expression",
+        "answerability": 0.8657255172729492,
+        "ground_truth": {
+          "AR": {
+            "bertscore": 0.8351314663887024,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What inhibits AR expression and transcriptional activity in both cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p-XSC",
+        "answerability": 0.9029200077056885,
+        "ground_truth": {
+          "p-XSC": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p-XSC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR expression",
+        "answerability": 0.7704306244850159,
+        "ground_truth": {
+          "AR expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p-XSC inhibit in both cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5288312435150146,
+        "ground_truth": {
+          "transcriptional activity": {
+            "bertscore": 0.6930360198020935,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cell lines does p-XSC inhibit AR expression and transcriptional activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Xenopus oocytes",
+        "answerability": 0.881657600402832,
+        "ground_truth": {
+          "both cell lines": {
+            "bertscore": 0.6407591700553894,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

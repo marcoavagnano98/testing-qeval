@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "PTEN acts through its lipid phosphatase activity inhibiting the PI3K/Akt/mTOR/S6K pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTEN",
+        "Akt"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the PI3K/Akt/mTOR/S6K pathway?",
+          "What pathway does PTEN inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTEN",
+        "its lipid phosphatase activity",
+        "the PI3K/Akt/mTOR/S6K pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the PI3K/Akt/mTOR/S6K pathway?",
+          "What does PTEN do to inhibit the PI3K/Akt/mTOR/S",
+          "What does PTEN inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits the PI3K/Akt/mTOR/S6K pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTEN",
+        "answerability": 0.9950922131538391,
+        "ground_truth": {
+          "PTEN": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What pathway does PTEN inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI3K/Akt/mTOR/S6K",
+        "answerability": 0.9835787415504456,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 0.6990500688552856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does PTEN do to inhibit the PI3K/Akt/mTOR/S": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipid phosphatase",
+        "answerability": 0.9445224404335022,
+        "ground_truth": {
+          "its lipid phosphatase activity": {
+            "bertscore": 0.8826466202735901,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does PTEN inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI3K/Akt/mTOR/S6K",
+        "answerability": 0.9685166478157043,
+        "ground_truth": {
+          "the PI3K/Akt/mTOR/S6K pathway": {
+            "bertscore": 0.859913170337677,
+            "f1": 0.6666666666666666
+          },
+          "transcription": {
+            "bertscore": 0.6717793941497803,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

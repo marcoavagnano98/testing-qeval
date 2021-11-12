@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "As a functional consequence adhesion of U937 monocytes to TNF-stimulated HUVECs was markedly reduced by aspirin due to suppression of VCAM-1 and E-selectin upregulation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulates adhesion of U937 monocytes to HUVECs?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a functional consequence adhesion",
+        "U937 monocytes",
+        "TNF-stimulated HUVECs",
+        "aspirin",
+        "suppression",
+        "VCAM-1",
+        "E-selectin upregulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was reduced by aspirin?",
+          "What was reduced by aspirin?",
+          "What did aspirin reduce adhesion of U937 monocytes to?",
+          "What reduced adhesion of U937 monocytes to TNF-stimulated",
+          "What was the effect of aspirin on the adhesion of U937 monocyte",
+          "What protein was suppressed by aspirin?",
+          "What was the cause of the reduction in adhesion of U937 monocytes to"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stimulates adhesion of U937 monocytes to HUVECs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF",
+        "answerability": 0.5895017981529236,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was reduced by aspirin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adhesion",
+        "answerability": 0.9832236170768738,
+        "ground_truth": {
+          "a functional consequence adhesion": {
+            "bertscore": 0.8163455128669739,
+            "f1": 0.5
+          },
+          "U937 monocytes": {
+            "bertscore": 0.6514516472816467,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did aspirin reduce adhesion of U937 monocytes to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-stimulated HUVECs",
+        "answerability": 0.9603321552276611,
+        "ground_truth": {
+          "TNF-stimulated HUVECs": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What reduced adhesion of U937 monocytes to TNF-stimulated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "aspirin",
+        "answerability": 0.7957119941711426,
+        "ground_truth": {
+          "aspirin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of aspirin on the adhesion of U937 monocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7521311640739441,
+        "ground_truth": {
+          "suppression": {
+            "bertscore": 0.6839435696601868,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was suppressed by aspirin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VCAM-1",
+        "answerability": 0.9173775911331177,
+        "ground_truth": {
+          "VCAM-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the cause of the reduction in adhesion of U937 monocytes to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppression of VCAM-1 and E-selectin upregulation",
+        "answerability": 0.9587690830230713,
+        "ground_truth": {
+          "E-selectin upregulation": {
+            "bertscore": 0.8552526235580444,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

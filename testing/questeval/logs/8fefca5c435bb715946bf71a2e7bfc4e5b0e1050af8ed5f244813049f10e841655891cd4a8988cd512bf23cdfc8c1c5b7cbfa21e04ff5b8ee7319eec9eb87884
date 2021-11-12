@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Hamsters greater than 35 mm3 treated with DMBA only underwent a long proliferative lag before resuming proliferation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "35",
+        "DMBA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the maximum size of a hamster treated with DMBA?",
+          "What treatment did hamsters that were larger than 35mm3 undergo?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Hamsters",
+        "greater than 35 mm3",
+        "DMBA",
+        "a long proliferative lag",
+        "proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What species had a long proliferative lag before resuming proliferation?",
+          "What size of hamsters were treated with DMBA?",
+          "What treatment did hamsters that were larger than 35mm3 undergo?",
+          "What did hamsters that were treated with DMBA have before resuming",
+          "What did hamsters treated with DMBA have a long lag before"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What animals were treated with radiation DMBA + DMBA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hamsters",
+        "answerability": 0.6917810440063477,
+        "ground_truth": {
+          "Hamsters": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DMBA",
+        "answerability": 0.8569172024726868,
+        "ground_truth": {
+          "either radiation DMBA radiation": {
+            "bertscore": 0.814949631690979,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters treated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DMBA",
+        "answerability": 0.9578797221183777,
+        "ground_truth": {
+          "DMBA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the other option for hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29188013076782227,
+        "ground_truth": {
+          "no treatment": {
+            "bertscore": 0.7193210124969482,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

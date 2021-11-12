@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Removal of N-glycans at either Asn566 or Asn566 of E-cadherin was accompanied with the activation of the extracellular signal-regulated protein kinase signaling pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Removal",
+        "N-glycans",
+        "E-cadherin",
+        "the activation",
+        "the extracellular signal-regulated protein kinase",
+        "pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was accompanied by the activation of the extracellular signal-regulated protein kina",
+          "What was removed from E-cadherin?",
+          "What protein was activated by the removal of N-glycans?",
+          "What was the result of the removal of N-glycans at Asn566",
+          "What signaling pathway was activated by the removal of N-glycans at As",
+          "What pathway was activated by the removal of N-glycans?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was accompanied by the activation of the extracellular signal-regulated protein kina": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Removal of N-glycans at either Asn566 or Asn566",
+        "answerability": 0.9567622542381287,
+        "ground_truth": {
+          "Removal": {
+            "bertscore": 0.6684548258781433,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What was removed from E-cadherin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "N-glycans",
+        "answerability": 0.9720357656478882,
+        "ground_truth": {
+          "N-glycans": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was activated by the removal of N-glycans?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6707170009613037,
+        "ground_truth": {
+          "E-cadherin": {
+            "bertscore": 0.6653369665145874,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the result of the removal of N-glycans at Asn554": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04212123155593872,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6892382502555847,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling pathway was activated by the removal of N-glycans at As": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "extracellular signal-regulated protein kinase",
+        "answerability": 0.801424503326416,
+        "ground_truth": {
+          "the extracellular signal-regulated protein kinase": {
+            "bertscore": 0.9634400010108948,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What pathway was activated by the removal of N-glycans at Asn55": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34882187843322754,
+        "ground_truth": {
+          "pathway": {
+            "bertscore": 0.6902821660041809,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

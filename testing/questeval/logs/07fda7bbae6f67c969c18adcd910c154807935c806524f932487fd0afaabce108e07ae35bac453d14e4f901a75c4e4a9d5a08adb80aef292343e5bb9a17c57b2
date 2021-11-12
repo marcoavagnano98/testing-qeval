@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Examination of checkpoint pathway activation upstream of Cdc25a revealed Erbb2 activation did not alter Ataxia Telangiectasia and Rad3-related/Ataxia Telangiectasia Mutated activity but increased inhibitory phosphorylation of Chk1-Ser(280). In vitro it is shown that Erbb2 directly phosphorylates Chk1 at Ser(280).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cdc25a",
+        "Erbb2",
+        "Ataxia Telangiectasia",
+        "Ataxia Telangiectasia",
+        "Chk1-Ser(280",
+        "Chk1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the checkpoint pathway upstream of?",
+          "What protein phosphorylates Chk1 at Ser(280)?",
+          "What did Erbb2 activation not alter?",
+          "What did Erbb2 activation not alter?",
+          "What protein does Erbb2 phosphorylate?",
+          "What protein does Erbb2 phosphorylate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Examination",
+        "checkpoint pathway activation upstream",
+        "Cdc25a",
+        "Erbb2 activation",
+        "Ataxia Telangiectasia",
+        "Rad3-related",
+        "Ataxia Telangiectasia Mutated activity",
+        "increased inhibitory phosphorylation",
+        "Chk1-Ser(280",
+        "it",
+        "Ser(280"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed that Erbb2 activation did not alter Ataxia Telangiec",
+          "What did Erbb2 activation do?",
+          "What is the checkpoint pathway upstream of?",
+          "What did not alter Ataxia Telangiectasia and Rad3-related activity",
+          "What did Erbb2 activation not alter?",
+          "What is the name of the gene that causes Ataxia Telangiectasia Mut",
+          "What did Erbb2 activation not alter?",
+          "What did Erbb2 activation do to Chk1-Ser(280)",
+          "What protein does Erbb2 phosphorylate?",
+          "What is the effect of Erbb2 activation on the activity of Ataxia Tel",
+          "What Chk1 is phosphorylated at?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylates Chk1-Ser(280)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Erbb2",
+        "answerability": 0.9913809895515442,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 0.6984366178512573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that phosphorylates Chk1-Ser(": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Erbb2",
+        "answerability": 0.8858876824378967,
+        "ground_truth": {
+          "Erbb2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Akt phosphorylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004079937934875488,
+        "ground_truth": {
+          "Chk1-Ser(280": {
+            "bertscore": 0.6429572105407715,
+            "f1": 0
+          },
+          "phosphatidyl inositol-3-kinase": {
+            "bertscore": 0.562673032283783,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

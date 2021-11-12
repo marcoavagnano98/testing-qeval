@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "CTLA-4-mediated inhibition of IL-2 secretion and T cell proliferation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that causes T cell proliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CTLA-4-mediated inhibition",
+        "IL-2 secretion",
+        "T cell proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mechanism of action of IL-2 secretion and T cell proliferation?",
+          "What is inhibited by CTLA-4?",
+          "What is inhibited by CTLA-4?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mechanism of action of T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11169511079788208,
+        "ground_truth": {
+          "CTLA-4-Mediated inhibition": {
+            "bertscore": 0.6217774152755737,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does CTLA-4 mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of IL-2 secretion and T cell proliferation",
+        "answerability": 0.9911105632781982,
+        "ground_truth": {
+          "early events": {
+            "bertscore": 0.6651591658592224,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of CTLA-4 in the inhibition of early events?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06340181827545166,
+        "ground_truth": {
+          "T cell proliferation": {
+            "bertscore": 0.6500073671340942,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

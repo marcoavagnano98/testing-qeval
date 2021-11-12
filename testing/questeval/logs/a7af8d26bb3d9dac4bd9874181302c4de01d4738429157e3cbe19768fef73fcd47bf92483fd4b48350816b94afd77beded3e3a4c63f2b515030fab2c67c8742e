@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "The human T-cell leukemia viruses HTLV- (T-cell lymphomas and leukemia).\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The human T-cell leukemia viruses",
+        "HTLV-",
+        "(T-cell lymphomas",
+        "leukemia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is HTLV-?",
+          "What is the name of the virus that causes T-cell lymphomas and leukemia",
+          "What is the acronym for HTLV-?",
+          "What is the name of the disease that is caused by HTLV-?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is HTLV-?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell lymphomas and leukemia viruses",
+        "answerability": 0.6838173866271973,
+        "ground_truth": {
+          "The human T-cell leukemia viruses": {
+            "bertscore": 0.8760003447532654,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    },
+    "What is the name of the virus that causes T-cell lymphomas and leukemia": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HTLV-",
+        "answerability": 0.8340704441070557,
+        "ground_truth": {
+          "HTLV-": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the acronym for HTLV-?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.464530885219574,
+        "ground_truth": {
+          "(T-cell lymphomas": {
+            "bertscore": 0.6193480491638184,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the disease that is caused by HTLV-?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5549408197402954,
+        "ground_truth": {
+          "leukemia": {
+            "bertscore": 0.668056309223175,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

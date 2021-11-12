@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "In a xenograft model metronomic CPT-11 but not 5-FU and L-OHP markedly inhibits HT-29 tumor growth and microvessel density in the absence of toxicity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5-FU",
+        "HT-29"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits HT-29 tumor growth and microvessel density in a x",
+          "What tumor does metronomic CPT-11 inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a xenograft model metronomic",
+        "L-OHP",
+        "tumor growth",
+        "microvessel density",
+        "the absence",
+        "toxicity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what model does CPT-11 inhibit HT-29 tumor growth?",
+          "What inhibits HT-29 tumor growth and microvessel density in a x",
+          "What does CPT-11 inhibit in a xenograft model?",
+          "What does L-OHP inhibit in a xenograft model?",
+          "In what condition does metronomic CPT-11 inhibit HT-29 tumor growth?",
+          "What is the main concern with HT-29 tumor growth?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits HT-29 tumor growth and microvessel density in a x": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5942503213882446,
+        "ground_truth": {
+          "5-FU": {
+            "bertscore": 0.7021404504776001,
+            "f1": 0
+          },
+          "L-OHP": {
+            "bertscore": 0.6547812223434448,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What tumor does metronomic CPT-11 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HT-29",
+        "answerability": 0.9455865621566772,
+        "ground_truth": {
+          "HT-29": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what model does CPT-11 inhibit HT-29 tumor growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "xenograft model",
+        "answerability": 0.9802838563919067,
+        "ground_truth": {
+          "a xenograft model metronomic": {
+            "bertscore": 0.8592510223388672,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does CPT-11 inhibit in a xenograft model?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HT-29 tumor growth and microvessel density",
+        "answerability": 0.9497648477554321,
+        "ground_truth": {
+          "tumor growth": {
+            "bertscore": 0.7901501655578613,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does HT-29 tumor growth inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.248399555683136,
+        "ground_truth": {
+          "microvessel density": {
+            "bertscore": 0.692704439163208,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what condition does metronomic CPT-11 significantly inhibit HT-29 tumor growth and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "absence of toxicity",
+        "answerability": 0.750970721244812,
+        "ground_truth": {
+          "the absence": {
+            "bertscore": 0.7249927520751953,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the main factor that inhibits HT-29 tumor growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42145997285842896,
+        "ground_truth": {
+          "toxicity": {
+            "bertscore": 0.7297959923744202,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

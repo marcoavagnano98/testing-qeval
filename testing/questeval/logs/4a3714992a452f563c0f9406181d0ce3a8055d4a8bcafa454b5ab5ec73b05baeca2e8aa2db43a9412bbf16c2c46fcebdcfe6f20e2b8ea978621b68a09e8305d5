@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "The NF-kappa B/Rel family of transcription factors regulates many genes involved in the immune or inflammatory response at the transcriptional level.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The NF-kappa B/Rel family",
+        "transcription factors",
+        "many genes",
+        "the immune or inflammatory response",
+        "the transcriptional level"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family of transcription factors regulates many genes involved in the immune response?",
+          "What is the NF-kappa family?",
+          "What does the NF-kappa B/Rel family regulate?",
+          "What are the genes involved in?",
+          "Where do many genes involved in the immune response occur?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What family of transcription factors regulates the expression of many genes involved in the immune response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B/Rel family",
+        "answerability": 0.9786223769187927,
+        "ground_truth": {
+          "The NF-kappa B/Rel family": {
+            "bertscore": 0.9377956986427307,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the NF-kappa family?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07294708490371704,
+        "ground_truth": {
+          "transcription factors": {
+            "bertscore": 0.6282791495323181,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the NF-kappa B/Rel family regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "many genes involved in the immune or inflammatory response",
+        "answerability": 0.9961981177330017,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6635771989822388,
+            "f1": 0
+          },
+          "many genes": {
+            "bertscore": 0.7678888440132141,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the NF-kappa B/Rel family of transcription factors involved in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the immune or inflammatory response",
+        "answerability": 0.8411074876785278,
+        "ground_truth": {
+          "the immune or inflammatory response": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where does the NF-kappa B/Rel family regulate the expression of many": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factors",
+        "answerability": 0.9685421586036682,
+        "ground_truth": {
+          "the transcriptional level": {
+            "bertscore": 0.782623827457428,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Finally the cytokines IFN-beta IFN-gamma IL-4 and LPS although unable to induce sialoadhesin expression by themselves were able to enhance GC-mediated induction of sialoadhesin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cytokines were able to enhance GC-mediated induction of sia"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the cytokines IFN-beta IFN-gamma",
+        "sialoadhesin expression",
+        "themselves",
+        "GC-mediated induction",
+        "sialoadhesin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two cytokines were able to enhance GC-mediated induction of si",
+          "What did the cytokines IFN-beta IFN-gamma",
+          "What did the cytokines IFN-beta IFN-gamma",
+          "What did the cytokines IFN-beta IFN-gamma",
+          "What did the cytokines IFN-beta IFN-gamma"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cytokine was able to enhance GC-mediated induction of sia": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-beta IFN-gamma IL-4",
+        "answerability": 0.6466861367225647,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.6516538262367249,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the two molecules that can enhance GC-mediated induction of si": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6134976148605347,
+        "ground_truth": {
+          "cytokines": {
+            "bertscore": 0.6414093375205994,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cytokines were able to enhance GC-mediated induction of sia": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-beta IFN-gamma IL-4 and LPS",
+        "answerability": 0.7698033452033997,
+        "ground_truth": {
+          "IFN-beta IFN-gamma IL-4 and LPS": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the cytokines IFN-beta IFN-gamma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3839074969291687,
+        "ground_truth": {
+          "sialoadhesin expression": {
+            "bertscore": 0.60823655128479,
+            "f1": 0
+          },
+          "GC-mediated induction": {
+            "bertscore": 0.6639249920845032,
+            "f1": 0
+          },
+          "sialoadhesin": {
+            "bertscore": 0.6168362498283386,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the cytokines IL-4 and LPS unable to induce by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sialoadhesin expression",
+        "answerability": 0.9084584712982178,
+        "ground_truth": {
+          "themselves": {
+            "bertscore": 0.6813172698020935,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

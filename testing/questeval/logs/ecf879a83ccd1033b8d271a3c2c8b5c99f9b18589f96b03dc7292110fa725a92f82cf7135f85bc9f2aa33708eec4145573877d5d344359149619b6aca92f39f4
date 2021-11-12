@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "Much higher concentrations of other antioxidants--including aspirin trolox alpha-tocopherol butylated hydroxytoluene and the 5-lipoxygenase inhibitor zileuton--did not affect the production of these cytokines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "zileuton"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the 5-lipoxygenase inhibitor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Much higher concentrations",
+        "other antioxidants",
+        "aspirin trolox alpha-tocopherol butylated hydroxytoluene",
+        "the 5-lipoxygenase inhibitor zileuton",
+        "the production",
+        "these cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did aspirin trolox alpha-tocopherol butylated",
+          "What did aspirin trolox alpha-tocopherol butylated",
+          "What other antioxidants did not affect the production of cytokines?",
+          "What is the name of the antioxidant that did not affect the production of cytokines?",
+          "What did aspirin trolox alpha-tocopherol butylated",
+          "What did aspirin trolox alpha-tocopherol butylated"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the 5-lipoxygenase inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1523471474647522,
+        "ground_truth": {
+          "zileuton": {
+            "bertscore": 0.7042805552482605,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not affect the production of cytokines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "higher concentrations of other antioxidants",
+        "answerability": 0.8239402174949646,
+        "ground_truth": {
+          "Much higher concentrations": {
+            "bertscore": 0.7662975192070007,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did ascorbic acid trolox alpha-tocopherol butylated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.051015615463256836,
+        "ground_truth": {
+          "other antioxidants": {
+            "bertscore": 0.6344215869903564,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antioxidants did not affect the production of cytokines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5045038461685181,
+        "ground_truth": {
+          "ascorbic acid trolox alpha-tocopherol butylated hydroxytoluene": {
+            "bertscore": 0.568647563457489,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the antioxidant that did not affect the production of cytokines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10503971576690674,
+        "ground_truth": {
+          "the 5-lipoxygenase inhibitor zileuton": {
+            "bertscore": 0.6011974215507507,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did higher concentrations of ascorbic acid trolox alpha-tocopherol": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008865773677825928,
+        "ground_truth": {
+          "the production": {
+            "bertscore": 0.6583799719810486,
+            "f1": 0
+          },
+          "these cytokines": {
+            "bertscore": 0.5934848189353943,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

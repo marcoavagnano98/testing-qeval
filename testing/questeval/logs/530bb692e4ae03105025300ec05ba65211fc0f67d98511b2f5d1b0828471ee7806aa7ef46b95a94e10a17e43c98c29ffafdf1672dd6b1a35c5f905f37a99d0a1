@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "The present study shows that a mutant with an LMP1 site-specific mutation at TES2 LMP1(TRADD) initially stimulates cell growth and significantly extends the life span of MCF-7 breast cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TES2 LMP1(TRADD",
+        "MCF-7"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What site-specific mutation stimulates cell growth?",
+          "What type of breast cancer cells are significantly extended by a mutant with an LMP1 site"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The present study",
+        "a mutant",
+        "an LMP1 site-specific mutation",
+        "TES2 LMP1(TRADD",
+        "cell growth",
+        "the life span",
+        "MCF-7 breast cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that a mutant with an LMP1 site-specific mutation at TES2",
+          "What is shown to stimulate cell growth and significantly extend the life span of MCF-7 breast cancer",
+          "What mutation in the TES2 LMP1(TRADD) mutant stimulates cell growth",
+          "What site-specific mutation stimulates cell growth?",
+          "What does a mutation at TES2 LMP1(TRADD) initially stimulate?",
+          "What does a mutation at TES2 LMP1(TRADD) significantly extend?",
+          "What does the mutation at TES2 LMP1(TRADD) significantly extend the life"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What site-specific mutation stimulates cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1",
+        "answerability": 0.9876887202262878,
+        "ground_truth": {
+          "TES2 LMP1(TRADD": {
+            "bertscore": 0.8409191966056824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What shows that a mutant with an LMP1 site-specific mutation at TES2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The present study",
+        "answerability": 0.9448580145835876,
+        "ground_truth": {
+          "The present study": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is shown to stimulate cell growth and significantly extend the life span of MEF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45776599645614624,
+        "ground_truth": {
+          "a mutant": {
+            "bertscore": 0.7101038694381714,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mutation at TES2 LMP1(TRADD) stimulates cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an LMP1 site-specific mutation",
+        "answerability": 0.9956921339035034,
+        "ground_truth": {
+          "an LMP1 site-specific mutation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does a mutation at TES2 LMP1(TRADD) initially stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell growth",
+        "answerability": 0.9993468523025513,
+        "ground_truth": {
+          "cell growth": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does a mutation at TES2 LMP1(TRADD) significantly extend?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the life span of MCF-7 breast cancer cells",
+        "answerability": 0.9971304535865784,
+        "ground_truth": {
+          "the life span": {
+            "bertscore": 0.7439460158348083,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    }
+  }
+}

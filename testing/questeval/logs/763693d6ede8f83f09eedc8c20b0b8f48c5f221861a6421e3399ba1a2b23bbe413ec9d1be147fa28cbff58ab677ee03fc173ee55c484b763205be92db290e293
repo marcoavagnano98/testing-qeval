@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Some antioxidants including butylated hydroxyanisole (BHA) tetrahydropapaveroline (THP) nordihydroguiauretic acid and 1011-dihydroxyaporphine (DHA) were found to be potent inhibitors of the production of tumor necrosis factor (TNF)-alpha IL-1 beta and IL-6 by human peripheral blood mononuclear cells (PBMC) stimulated by lipopolysaccharide (LPS) (IC50s in the low micromolar range).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BHA",
+        "IL-1",
+        "IL-6",
+        "mononuclear",
+        "IC50s"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the antioxidant that inhibits the production of TNF-alpha?",
+          "What type of IL-6 is a potent inhibitor of?",
+          "What is the name of the anti-tumor factor that is produced by PBMC",
+          "What type of cells are PBMCs?",
+          "What is the micromolar range of lipopolysaccharide?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Some antioxidants",
+        "butylated hydroxyanisole (BHA) tetrahydropapaveroline (THP) nordihydroguiauretic acid",
+        "(DHA",
+        "potent inhibitors",
+        "the production",
+        "tumor necrosis factor",
+        "TNF)-alpha IL-1 beta",
+        "human peripheral blood mononuclear cells",
+        "PBMC",
+        "lipopolysaccharide",
+        "(LPS",
+        "(IC50s",
+        "the low micromolar range"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a potent inhibitor of the production of TNF-alpha?",
+          "What is one antioxidant that is potent in inhibiting the production of TNF-alpha",
+          "What is the name of the antioxidant that inhibits the production of TNF-alpha?",
+          "What is the effect of DHA on the production of TNF-alpha?",
+          "What do antioxidants inhibit?",
+          "What does TNF-alpha stand for?",
+          "What is the name of the tumor necrosis factor?",
+          "What is PBMC?",
+          "What type of cells are stimulated by lipopolysaccharide?",
+          "What is LPS?",
+          "What is the name of the lipopolysaccharide?",
+          "What is the micromolar range of lipopolysaccharide?",
+          "What is the IC50 range of a PBMC?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.021121501922607422,
+        "ground_truth": {
+          "TNF LPS-induced": {
+            "bertscore": 0.6449751257896423,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main component of the immune system that is induced by TNF LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012791037559509277,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 0.6727325320243835,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of TNF LPS on IL-6 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16641074419021606,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.7378892302513123,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What other factors were induced by the IL-6 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02676975727081299,
+        "ground_truth": {
+          "TNF LPS-induced IL-6 and spontaneous IL-1ra production": {
+            "bertscore": 0.6003677248954773,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Angiostatin and thalidomide inhibit tumor growth angiogenesis and induce agiogenesis in this xenograft model of cervical cancer.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Angiostatin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits tumor growth angiogenesis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Angiostatin and thalidomide inhibit",
+        "tumor growth angiogenesis",
+        "agiogenesis",
+        "this xenograft model",
+        "cervical cancer"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of angiostatin and thalidomide on tumor growth?",
+          "What does angiostatin and thalidomide inhibit?",
+          "What does angiostatin and thalidomide induce in a xen",
+          "In what model of cervical cancer does angiostatin and thalidomide inhibit tumor",
+          "What type of cancer is angiostatin and thalidomide used to treat?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits tumor growth angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Angiostatin and thalidomide",
+        "answerability": 0.9934896230697632,
+        "ground_truth": {
+          "Angiostatin": {
+            "bertscore": 0.82406085729599,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the effect of angiogenesis on tumor growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibit",
+        "answerability": 0.9948574304580688,
+        "ground_truth": {
+          "Angiostatin and thalidomide inhibit": {
+            "bertscore": 0.7635318040847778,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does angiostatin and thalidomide inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor growth angiogenesis",
+        "answerability": 0.9986653923988342,
+        "ground_truth": {
+          "tumor growth angiogenesis": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does angiostatin and thalidomide induce in this model of cervical cancer": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "agiogenesis",
+        "answerability": 0.6219911575317383,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.7736667394638062,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what model of cervical cancer does angiostatin and thalidomide inhibit tumor": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "xenograft model",
+        "answerability": 0.8998175859451294,
+        "ground_truth": {
+          "this xenograft model": {
+            "bertscore": 0.9174739122390747,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of cancer is angiostatin and thalidomide used to treat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cervical cancer",
+        "answerability": 0.8405490517616272,
+        "ground_truth": {
+          "cervical cancer": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

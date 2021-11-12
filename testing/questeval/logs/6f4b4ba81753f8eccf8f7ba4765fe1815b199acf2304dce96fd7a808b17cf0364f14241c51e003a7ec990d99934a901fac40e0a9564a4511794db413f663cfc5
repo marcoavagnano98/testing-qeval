@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "Inhibition of transcription factors belonging to the rel/NF-kappa B family by a transdominant negative mutant.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "rel/NF-kappa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family of transcription factors is inhibited by a transdominant negative mutant?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "transcription factors",
+        "the rel/NF-kappa B family",
+        "a transdominant negative mutant"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of a transdominant negative mutant on transcription factors?",
+          "What is inhibited by a transdominant negative mutant?",
+          "What transcription factors are inhibited by a transdominant negative mutant?",
+          "What is the name of the mutant that inhibits transcription factors belonging to the rel/NF-"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of a transdominant negative mutant of the NF-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Inhibition",
+        "answerability": 0.7464123964309692,
+        "ground_truth": {
+          "Inhibition": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is inhibited by a transdominant negative mutant of the NF-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factors belonging to the rel/NF-kappa B family",
+        "answerability": 0.8650929927825928,
+        "ground_truth": {
+          "transcription factors": {
+            "bertscore": 0.7807149887084961,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What is the NF-kappa B/Rel family?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4820604920387268,
+        "ground_truth": {
+          "a transdominant negative mutant": {
+            "bertscore": 0.6710005402565002,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What family of transcription factors is inhibited by a transdominant negative mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rel/NF-kappa B",
+        "answerability": 0.9951361417770386,
+        "ground_truth": {
+          "the NF-kappa B/Rel family": {
+            "bertscore": 0.8299437165260315,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

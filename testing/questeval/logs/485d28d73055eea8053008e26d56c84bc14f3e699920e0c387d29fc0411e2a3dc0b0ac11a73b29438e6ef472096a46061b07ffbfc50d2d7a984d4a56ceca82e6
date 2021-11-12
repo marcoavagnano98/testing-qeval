@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "In contrast we found that the adherence parameter has no effect on the IL-2-induced NF-kappaB/AP-1 activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the adherence parameter have no effect on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "we",
+        "the adherence parameter",
+        "no effect",
+        "/AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of the adherence parameter on IL-2-induced NF-k",
+          "What did the adherence parameter have no effect on?",
+          "What has no effect on the IL-2-induced NF-kappaB/",
+          "What effect does the adherence parameter have on the IL-2-induced NF-k",
+          "What NF-kappaB activation is not affected by the adherence parameter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of the adherence parameter on monocyte surface markers?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3096749782562256,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628214836121,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has no effect on the IL-10-induced modulation of monocyte surface markers?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0576663613319397,
+        "ground_truth": {
+          "the adherence parameter": {
+            "bertscore": 0.6468165516853333,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Does the adherence parameter have any effect on the IL-10-induced modulation of mon": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20770084857940674,
+        "ground_truth": {
+          "no effect": {
+            "bertscore": 0.7436097264289856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the adherence parameter have no effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2-induced NF-kappaB/AP-1 activation",
+        "answerability": 0.9789679646492004,
+        "ground_truth": {
+          "the IL-10-induced modulation": {
+            "bertscore": 0.8316701650619507,
+            "f1": 0
+          },
+          "some monocyte surface markers": {
+            "bertscore": 0.6825410723686218,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

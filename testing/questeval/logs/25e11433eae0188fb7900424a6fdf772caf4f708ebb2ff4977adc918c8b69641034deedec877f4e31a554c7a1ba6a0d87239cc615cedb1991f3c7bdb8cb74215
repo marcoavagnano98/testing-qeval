@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Induction of cytokine expression in leukocytes by binding of thrombin-stimulated platelets. \u2047 nBACKGROUND: Mitogen-activated protein (MAP) kinases (or extracellular signal regulated kinases; Erks) and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MAP",
+        "Erks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the kinase that is activated by throm",
+          "What is the name of the kinase that is involved in the cytokin"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Induction",
+        "cytokine expression",
+        "leukocytes",
+        "thrombin-stimulated platelets",
+        "Mitogen-activated protein (MAP) kinases",
+        "extracellular signal regulated kinases",
+        "Erks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that causes cytokine expression in leukocytes?",
+          "What is the main function of thrombin-stimulated platelets?",
+          "What is the target of cytokine expression?",
+          "What is binding to cytokine?",
+          "What are the two main kinases?",
+          "What is another name for Erks?",
+          "What is the name of the kinase that is involved in the cytokin"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process called that causes cytokine expression in leukocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binding of thrombin-stimulated platelets",
+        "answerability": 0.9203454852104187,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.6480164527893066,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main effect of thrombin-stimulated platelets on leuk": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Induction of cytokine expression in leukocytes",
+        "answerability": 0.9803789258003235,
+        "ground_truth": {
+          "cytokine expression": {
+            "bertscore": 0.8401185870170593,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the target of cytokine expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31865519285202026,
+        "ground_truth": {
+          "leukocytes": {
+            "bertscore": 0.6373589634895325,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism of action of cytokine in leukocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Induction of cytokine expression",
+        "answerability": 0.9459233283996582,
+        "ground_truth": {
+          "thrombin-stimulated platelets.\\nBACKGROUND": {
+            "bertscore": 0.6646679043769836,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

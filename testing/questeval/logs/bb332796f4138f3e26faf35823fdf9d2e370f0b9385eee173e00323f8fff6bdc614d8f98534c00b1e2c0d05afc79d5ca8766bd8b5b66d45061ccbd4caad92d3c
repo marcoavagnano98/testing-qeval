@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "In contrast to prior in vitro studies at least a fraction of the phosphorylated form of I kappa B alpha remains physically associated with the NF-kappa B complex in vivo promoting the nuclear translocation of the active NF-kappa B complex.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way does the phosphorylated form of I kappa B alpha"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "vitro studies",
+        "at least a fraction",
+        "the phosphorylated form",
+        "I kappa B alpha",
+        "the NF-kappa B complex",
+        "vivo",
+        "the nuclear translocation",
+        "the active NF-kappa B complex"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of the phosphorylation on the nuclear translocation of the NF",
+          "What is the only way to determine if the phosphorylated form of I k",
+          "How much of the phosphorylated form of I kappa B alpha remains",
+          "What is I kappa B alpha physically associated with?",
+          "What is phosphorylated in vivo?",
+          "What does the phosphorylated form of I kappa B alpha remain physically",
+          "In what way does the phosphorylated form of I kappa B alpha",
+          "What does the phosphorylated form of I kappa B alpha promote?",
+          "What does the phosphorylated form of I kappa B alpha promote in"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What remains physically associated with the NF-kappa B complex in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I kappa B alpha",
+        "answerability": 0.8022575974464417,
+        "ground_truth": {
+          "kappa B alpha": {
+            "bertscore": 0.9044240117073059,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "In what way does kappa B alpha remain physically associated with the NF-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylated form",
+        "answerability": 0.7378553748130798,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.6615830063819885,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does kappa B alpha remain physically associated with in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5120601058006287,
+        "ground_truth": {
+          "the NF-kappa B complex": {
+            "bertscore": 0.6057753562927246,
+            "f1": 0
+          },
+          "the active NF-kappa B complex": {
+            "bertscore": 0.5992312431335449,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is kappa B alpha subject to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1281411051750183,
+        "ground_truth": {
+          "rapid degradation": {
+            "bertscore": 0.7204641699790955,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does rapid degradation promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02377176284790039,
+        "ground_truth": {
+          "the nuclear translocation": {
+            "bertscore": 0.6830012202262878,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

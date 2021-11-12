@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "This process requires calcium-dependent dephosphorylation of NFAT caused by the phosphatase calcineurin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NFAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for the synthesis of phospholipids?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This process",
+        "calcium-dependent dephosphorylation",
+        "NFAT",
+        "the phosphatase calcineurin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that requires calcium-dependent dephosphorylation of NFAT?",
+          "What does the process of NFAT require?",
+          "What is required for the synthesis of phospholipids?",
+          "What is the cause of NFAT dephosphorylation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for the synthesis of phospholipids?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003897547721862793,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 0.6752849221229553,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process called that requires calcium-dependent dephosphorylation of NFAT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4498583674430847,
+        "ground_truth": {
+          "This process": {
+            "bertscore": 0.6877828240394592,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the process of NFAT require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "calcium-dependent dephosphorylation",
+        "answerability": 0.9120482802391052,
+        "ground_truth": {
+          "calcium-dependent dephosphorylation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the cause of NFAT dephosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "calcium",
+        "answerability": 0.9858412146568298,
+        "ground_truth": {
+          "the phosphatase calcineurin": {
+            "bertscore": 0.6601818799972534,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

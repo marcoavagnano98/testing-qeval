@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "We report here that the signaling cascade triggered by interleukin-4 (IL-4) or anti-CD40 monoclonal antibody (mAb) participates in NF-kappaB activation responsible for germline C epsilon transcription in a human Burkitt lymphoma B cell line DND39.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Burkitt"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What lymphoma cell line is DND39 from?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the signaling cascade",
+        "mAb",
+        "NF-kappaB activation",
+        "germline C epsilon transcription",
+        "a human Burkitt lymphoma B cell line"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the signaling cascade triggered by?",
+          "What is involved in NF-kappaB activation?",
+          "What is the name of the anti-CD40 monoclonal antibody?",
+          "What is the signaling cascade responsible for germline C epsilon transcription",
+          "What is the signaling cascade responsible for?",
+          "What is DND39?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What lymphoma cell line is DND39 from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21781420707702637,
+        "ground_truth": {
+          "Burkitt": {
+            "bertscore": 0.6583375930786133,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the signaling cascade triggered by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-4 (IL-4) or anti-CD40 monoclonal antibody",
+        "answerability": 0.9825681447982788,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5182510018348694,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in germline C epsilon transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9833413362503052,
+        "ground_truth": {
+          "the signaling cascade": {
+            "bertscore": 0.6837272644042969,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the anti-CD40 monoclonal antibody?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mAb",
+        "answerability": 0.9939640760421753,
+        "ground_truth": {
+          "mAb": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is responsible for germline C epsilon transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9819015860557556,
+        "ground_truth": {
+          "NF-kappa B activation": {
+            "bertscore": 0.7983866930007935,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the signaling cascade responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "germline C epsilon transcription",
+        "answerability": 0.9380329847335815,
+        "ground_truth": {
+          "germline C epsilon transcription": {
+            "bertscore": 0.9999997019767761,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is DND39?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Burkitt lymphoma B cell line",
+        "answerability": 0.6313406229019165,
+        "ground_truth": {
+          "a human Burkitt lymphoma B cell line": {
+            "bertscore": 0.9391602873802185,
+            "f1": 0.9090909090909091
+          }
+        }
+      }
+    }
+  }
+}

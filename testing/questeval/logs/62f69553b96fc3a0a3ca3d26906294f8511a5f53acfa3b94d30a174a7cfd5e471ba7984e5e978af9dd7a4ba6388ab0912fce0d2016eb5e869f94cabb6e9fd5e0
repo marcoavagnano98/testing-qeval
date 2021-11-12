@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "Stimulation by RA resulted in increased RAR beta/RXR DNA binding activated RARE-dependent transcription and increased expression of RAR-beta. VitD3 inhibited the RA-stimulated formation of RAR beta/RXR heterodimers favoring VDR/RXR binding to the RARE. By contrast neither the RA-stimulated RARE-mediated transcription nor the induced RAR-beta expression was suppressed by VitD3.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RA",
+        "VitD3",
+        "RA",
+        "VDR/RXR",
+        "RARE",
+        "RA",
+        "VitD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulator induced the formation of RAR beta/RXR heterodimers",
+          "What inhibited the formation of RAR beta/RXR heterodimers?",
+          "What stimulator induced the formation of RAR beta/RXR heterodimers",
+          "What binding did VitD3 inhibit?",
+          "What gene did VitD3 inhibit?",
+          "What stimulator induced the formation of RAR beta/RXR heterodimers",
+          "What inhibited the formation of RAR beta/RXR heterodimers?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stimulation",
+        "RA",
+        "increased RAR beta/RXR DNA binding activated RARE-dependent transcription",
+        "increased expression",
+        "RAR-beta",
+        "VitD3",
+        "the RA-stimulated formation",
+        "RAR beta/RXR heterodimers",
+        "the RARE",
+        "contrast",
+        "neither the RA-stimulated RARE-mediated transcription",
+        "the induced RAR-beta expression",
+        "VitD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused the increase in RAR beta/RXR DNA binding?",
+          "What stimulator induced the formation of RAR beta/RXR heterodimers",
+          "What did RA-stimulated formation of heterodimers do?",
+          "What did VitD3 inhibit?",
+          "What did VitD3 inhibit?",
+          "What inhibited the formation of RAR beta/RXR heterodimers?",
+          "What did VitD3 inhibit?",
+          "What did VitD3 inhibit?",
+          "What did VitD3 inhibit?",
+          "What did VitD3 inhibit?",
+          "What was not suppressed by VitD3?",
+          "What was not suppressed by VitD3?",
+          "What inhibited the formation of RAR beta/RXR heterodimers?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stimulated RARE-mediated transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RA",
+        "answerability": 0.8053913116455078,
+        "ground_truth": {
+          "RA": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the RAR-beta expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3",
+        "answerability": 0.9896533489227295,
+        "ground_truth": {
+          "VitD3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did VitD3 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RA-stimulated formation of RAR beta/RXR heterodimers",
+        "answerability": 0.9455622434616089,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.64146488904953,
+            "f1": 0
+          },
+          "the retinoid-induced differentiation program": {
+            "bertscore": 0.7072606086730957,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was suppressed by VitD3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2951965928077698,
+        "ground_truth": {
+          "neither the RA-stimulated RARE-mediated transcription": {
+            "bertscore": 0.6055521368980408,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not suppressed by VitD3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45337629318237305,
+        "ground_truth": {
+          "the induced RAR-beta expression": {
+            "bertscore": 0.6058059930801392,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

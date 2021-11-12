@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Treatment with 25 mg/kg cyclopamine significantly attenuated BrdU incorporation in tumor cells threefold (\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "25 mg/kg"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the dose of cyclopamine used to reduce BrdU incorporation in"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Treatment",
+        "25 mg/kg cyclopamine",
+        "BrdU incorporation",
+        "tumor cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What significantly reduced BrdU incorporation in tumor cells?",
+          "What treatment significantly reduced BrdU incorporation in tumor cells?",
+          "What did treatment with cyclopamine significantly attenuate in tumor cells?",
+          "What did treatment with cyclopamine reduce BrdU incorporation in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the effect of cyclopamine on vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "attenuated BrdU incorporation",
+        "answerability": 0.7999929785728455,
+        "ground_truth": {
+          "2.5": {
+            "bertscore": 0.6409841775894165,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What significantly reduced vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2188720703125,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.7012162804603577,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment significantly reduced vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17825216054916382,
+        "ground_truth": {
+          "cyclopamine": {
+            "bertscore": 0.6110585331916809,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did treatment with cyclopamine significantly attenuate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BrdU incorporation",
+        "answerability": 0.9877346754074097,
+        "ground_truth": {
+          "vascular formation": {
+            "bertscore": 0.7083308696746826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How much did cyclopamine reduce vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4406646490097046,
+        "ground_truth": {
+          "a factor": {
+            "bertscore": 0.7014163732528687,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

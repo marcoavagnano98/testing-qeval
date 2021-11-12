@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Circulating endothelial cells in malignant disease. Circulating endothelial cells (ECs) plays an important role in the development of new blood vessels and has been shown to be an important regulator of cancer progression. Cancer is a disease largely dependent on neoangiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "endothelial cells",
+        "malignant disease",
+        "endothelial cells",
+        "ECs",
+        "an important role",
+        "the development",
+        "new blood vessels",
+        "an important regulator",
+        "cancer progression",
+        "Cancer",
+        "a disease",
+        "neoangiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cell that regulates the development of new blood vessels?",
+          "What type of cancer is ECs an important regulator of?",
+          "What is the name of the cell that regulates the development of new blood vessels?",
+          "What is an important regulator of cancer progression?",
+          "What role do ECs play in the development of new blood vessels?",
+          "What is an important role for ECs in cancer?",
+          "What does ECs play an important role in the development of?",
+          "What is the role of ECs in cancer progression?",
+          "What is the role of ECs in the development of new blood vessels?",
+          "What is a disease largely dependent on neoangiogenesis?",
+          "What is cancer largely dependent on?",
+          "What is cancer largely dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells are involved in cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Circulating endothelial cells",
+        "answerability": 0.7203654050827026,
+        "ground_truth": {
+          "endothelial cells": {
+            "bertscore": 0.8984059691429138,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of cancer is largely dependent on neoangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cancer",
+        "answerability": 0.9714086651802063,
+        "ground_truth": {
+          "malignant disease": {
+            "bertscore": 0.7271952629089355,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a disease dependent on neoangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cancer",
+        "answerability": 0.9993523955345154,
+        "ground_truth": {
+          "Cancer": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is cancer largely dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neoangiogenesis",
+        "answerability": 0.5838456153869629,
+        "ground_truth": {
+          "a disease": {
+            "bertscore": 0.6608402132987976,
+            "f1": 0
+          },
+          "neoangiogenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "type": "hyp",
+  "text": "the possible involvement of these intracellular messengers in c-Fos and c-jun induction was tested.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the possible involvement",
+        "these intracellular messengers",
+        "c-Fos and c-jun induction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was tested in the c-jun induction?",
+          "What was tested in the c-jun induction?",
+          "What is the possible involvement of these intracellular messengers in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was tested in the c-Fos and c-Jun induction": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the possible involvement of these intracellular messengers",
+        "answerability": 0.9024580121040344,
+        "ground_truth": {
+          "the possible involvement": {
+            "bertscore": 0.7721746563911438,
+            "f1": 0.5
+          },
+          "these intracellular messengers": {
+            "bertscore": 0.9041188955307007,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the possible involvement of these intracellular messengers in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Fos and c-jun induction",
+        "answerability": 0.9908417463302612,
+        "ground_truth": {
+          "c-Fos and c-Jun induction": {
+            "bertscore": 0.9530352354049683,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

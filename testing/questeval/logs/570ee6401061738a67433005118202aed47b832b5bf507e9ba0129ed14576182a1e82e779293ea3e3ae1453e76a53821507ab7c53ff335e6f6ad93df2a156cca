@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Several mammalian responses to UV irradiation including the activation of NF-kappa B are believed to involve tethering by PtdIns 3-kinase.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PtdIns"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What 3-kinase is involved in the activation of NF-kappa"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Several mammalian responses",
+        "to UV irradiation",
+        "the activation",
+        "NF-kappa B",
+        "PtdIns"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the activation of NF-kappa B believed to involve?",
+          "What are some responses of mammals to UV radiation?",
+          "What is the NF-kappa B?",
+          "What is the name of the kinase that binds to UV i",
+          "What 3-kinase is involved in the activation of NF-kappa"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the activation of NF-kappa B believed to involve?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tethering by PtdIns 3-kinase",
+        "answerability": 0.9572973847389221,
+        "ground_truth": {
+          "Several mammalian responses": {
+            "bertscore": 0.6785120964050293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are some responses of mammals to UV radiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tethering by PtdIns 3-kinase",
+        "answerability": 0.7519538402557373,
+        "ground_truth": {
+          "to UV irradiation": {
+            "bertscore": 0.6922315955162048,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the tyrosine phosphorylation of NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.027297794818878174,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6892382502555847,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the cell that is activated by UV irradiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.7216168642044067,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the activation of NF-kappa B thought to involve?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tethering",
+        "answerability": 0.9679092764854431,
+        "ground_truth": {
+          "tyrosine phosphorylation": {
+            "bertscore": 0.693810224533081,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

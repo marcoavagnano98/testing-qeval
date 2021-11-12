@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "For TNF and IL-2 the requirement for Runx3 subsides by day 6\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "IL-2",
+        "day 6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only drug that requires Runx3?",
+          "What is the only other type of immune system molecule that is required for runx3?",
+          "When does the requirement for Runx3 subside?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF",
+        "IL-2 the requirement",
+        "Runx3 subsides",
+        "day"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only drug that requires Runx3?",
+          "What is runx3?",
+          "What happens to the requirement for TNF and IL-2 by day 6?",
+          "When does the requirement for Runx3 subside?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the only drug that requires Runx3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30019980669021606,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only other type of immune system molecule that is required for runx3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6062425374984741,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "When does the requirement for Runx3 subside?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "day 6",
+        "answerability": 0.9159101247787476,
+        "ground_truth": {
+          "day 6": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          },
+          "day": {
+            "bertscore": 0.8218599557876587,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is runx3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00628817081451416,
+        "ground_truth": {
+          "IL-2 the requirement": {
+            "bertscore": 0.6493851542472839,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens to the requirement for TNF and IL-2 by day 6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46082067489624023,
+        "ground_truth": {
+          "Runx3 subsides": {
+            "bertscore": 0.6637687683105469,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

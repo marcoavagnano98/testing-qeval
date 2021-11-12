@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "However the inhibition of the T cell activation signals by PGE2 is selective. PGE2 enhanced the complex formation between the NF-AT and AP-1 sequences when the cells were activated by either anti-CD3 mAb or PMA/A23187 stimulation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PGE2",
+        "PGE2",
+        "mAb",
+        "PMA/A23187"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the T cell activation signals?",
+          "What inhibited the T cell activation signals?",
+          "What is the only way to inhibit T cell activation signals?",
+          "What stimulation was used to inhibit the T cell activation signals?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the inhibition",
+        "the T cell activation signals",
+        "PGE2",
+        "PGE2",
+        "the complex formation",
+        "the NF-AT",
+        "AP-1 sequences",
+        "the cells",
+        "either anti-CD3 mAb or PMA/A23187 stimulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is selective about the T cell activation signals?",
+          "What is PGE2 selectively able to inhibit?",
+          "What inhibited the T cell activation signals?",
+          "What inhibited the T cell activation signals?",
+          "What did PGE2 enhance between the NF-AT and AP-1 sequences?",
+          "What is the complex formation between AP-1 and NF-AT?",
+          "PGE2 enhanced the complex formation between the NF-AT and what sequence?",
+          "What was activated by anti-CD3 mAb?",
+          "What is the only way that PGE2 can inhibit T cell activation signals?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited the complex formation with NF-AT AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09555244445800781,
+        "ground_truth": {
+          "PGE2": {
+            "bertscore": 0.652291476726532,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is selective about the T cell activation signals?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.9587304592132568,
+        "ground_truth": {
+          "the inhibition": {
+            "bertscore": 0.9081977009773254,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is PGE2 selectively inhibiting?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell activation signals",
+        "answerability": 0.9709171056747437,
+        "ground_truth": {
+          "the T cell activation signals": {
+            "bertscore": 0.9246282577514648,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did PGE2 enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "complex formation between the NF-AT and AP-1 sequences",
+        "answerability": 0.9694750905036926,
+        "ground_truth": {
+          "the complex formation": {
+            "bertscore": 0.725387454032898,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What is the AP-1 inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.031110644340515137,
+        "ground_truth": {
+          "NF-AT": {
+            "bertscore": 0.701069176197052,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

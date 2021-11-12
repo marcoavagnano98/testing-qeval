@@ -1,0 +1,128 @@
+{
+  "type": "ref",
+  "text": "The M-CSF gene was expressed in 6 cases and the FMS and the EGR-1 genes were expressed in 2 of the latter cases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "M-CSF",
+        "6",
+        "FMS",
+        "EGR-1",
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was expressed in 6 of the cases of TB?",
+          "How many cases of the M-CSF gene were found?",
+          "What gene was expressed in 2 of the 6 cases?",
+          "What gene was expressed in 2 of the 6 cases?",
+          "How many of the cases of the M-CSF gene were expressed?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The M-CSF gene",
+        "6 cases",
+        "the FMS",
+        "the EGR-1 genes",
+        "the latter cases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was expressed in 6 of the cases of TB?",
+          "How many cases of the M-CSF gene were found?",
+          "What gene was expressed in 2 of the 6 cases?",
+          "What gene was expressed in 2 of the 6 cases?",
+          "In what cases was the FMS gene expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many patients had M-CSF and FMS genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "6",
+        "answerability": 0.9484280347824097,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.8813430666923523,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene did the cells in the 2 patients have?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25122547149658203,
+        "ground_truth": {
+          "the M-CSF": {
+            "bertscore": 0.6600258946418762,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of growth could be hypothesized for the 2 patients whose cells expressed both the": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01513582468032837,
+        "ground_truth": {
+          "An autocrine mechanism": {
+            "bertscore": 0.6172642111778259,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mechanism was hypothesized for the 2 patients with both the M-CSF and F": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04703766107559204,
+        "ground_truth": {
+          "growth": {
+            "bertscore": 0.7230673432350159,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many patients had autocrine growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00535893440246582,
+        "ground_truth": {
+          "the 2 patients": {
+            "bertscore": 0.6636878848075867,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two genes did the patients have?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5494817495346069,
+        "ground_truth": {
+          "whose cells": {
+            "bertscore": 0.6740301251411438,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two genes were expressed in the 2 patients?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FMS and the EGR-1 genes",
+        "answerability": 0.5406709909439087,
+        "ground_truth": {
+          "both the M-CSF and FMS genes": {
+            "bertscore": 0.8336346745491028,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    }
+  }
+}

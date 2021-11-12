@@ -1,0 +1,184 @@
+{
+  "type": "ref",
+  "text": "Our results showed that MTX administration increased the MDA and MPO activities and collagen content and decreased GSH levels in all tissues while these alterations were reversed in L-Car-treated group.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MTX",
+        "MDA",
+        "MPO",
+        "L-Car"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug increased MDA and MPO activities?",
+          "What activity was increased in the L-Car group?",
+          "What activity was increased in the L-Car group?",
+          "What group of mice had a lower GSH level?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our results",
+        "MTX administration",
+        "the MDA and MPO activities",
+        "collagen content",
+        "GSH levels",
+        "all tissues",
+        "these alterations",
+        "L-Car-treated group"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that MTX increased MDA and MPO activities and decreased GSH levels in",
+          "What did the study show increased MDA and MPO activities?",
+          "What did MTX increase?",
+          "What did MTX increase in the L-Car group?",
+          "What did MTX decrease in the L-Car-treated group?",
+          "What did MTX administration increase MDA and MPO activities and decrease GSH levels in",
+          "What were reversed in the L-Car-treated group?",
+          "What group had a lower GSH level?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug decreased MDA and MPO activities?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11807507276535034,
+        "ground_truth": {
+          "MTX": {
+            "bertscore": 0.6844635009765625,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What activity was decreased in the L-Car group?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GSH",
+        "answerability": 0.7129526734352112,
+        "ground_truth": {
+          "MDA": {
+            "bertscore": 0.8413528800010681,
+            "f1": 0
+          },
+          "MPO": {
+            "bertscore": 0.7319167852401733,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What group of mice had a lower GSH level?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "L-Car-treated group",
+        "answerability": 0.922558069229126,
+        "ground_truth": {
+          "L-Car": {
+            "bertscore": 0.7912194728851318,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What showed that MTX administration decreased MDA and MPO activities and collagen content?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.036662518978118896,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 0.6937651634216309,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show decreased MDA and MPO activities?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25520557165145874,
+        "ground_truth": {
+          "MTX administration": {
+            "bertscore": 0.6781854033470154,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did MTX administration decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GSH levels",
+        "answerability": 0.9700518846511841,
+        "ground_truth": {
+          "the MDA and MPO activities": {
+            "bertscore": 0.7170485258102417,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did MTX decrease in the L-Car group?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GSH levels",
+        "answerability": 0.8748094439506531,
+        "ground_truth": {
+          "collagen content": {
+            "bertscore": 0.8187063336372375,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did MTX decrease in all tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GSH levels",
+        "answerability": 0.9697002172470093,
+        "ground_truth": {
+          "GSH levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did MTX administration decrease MDA and MPO activities and GSH levels in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "all tissues",
+        "answerability": 0.9599902033805847,
+        "ground_truth": {
+          "all tissues": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What were reversed in the L-Car-treated group?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased GSH levels",
+        "answerability": 0.8341701626777649,
+        "ground_truth": {
+          "these alterations": {
+            "bertscore": 0.700348973274231,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What group had a lower GSH level?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "L-Car-treated group",
+        "answerability": 0.9525559544563293,
+        "ground_truth": {
+          "L-Car-treated group": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

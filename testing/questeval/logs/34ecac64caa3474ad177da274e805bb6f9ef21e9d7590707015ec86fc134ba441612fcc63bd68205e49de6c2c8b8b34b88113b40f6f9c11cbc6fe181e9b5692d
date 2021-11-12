@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "The Cdc6 protein is ubiquitinated in vivo for proteolysis in Saccharomyces cerevisiae.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cdc6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is ubiquitinated in vivo for proteolysis in Sacchar"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The Cdc6 protein",
+        "vivo",
+        "proteolysis",
+        "Saccharomyces cerevisiae"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is ubiquitinated in vivo for proteolysis in Saccharo",
+          "In what way is the Cdc6 protein ubiquitinated?",
+          "What is the Cdc6 protein ubiquitinated for?",
+          "What organism requires the Cdc6 protein to be ubiquitinated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is ubiquitinated in both vivo and in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4309360384941101,
+        "ground_truth": {
+          "Cdc6": {
+            "bertscore": 0.6112744808197021,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what way is Cdc6 ubiquitinated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in vivo",
+        "answerability": 0.6611363291740417,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.8416681885719299,
+            "f1": 0.6666666666666666
+          },
+          "vitro": {
+            "bertscore": 0.7323023676872253,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has been found to be ubiquitinated in both vivo and in vitr": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3732256293296814,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748355031013489,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

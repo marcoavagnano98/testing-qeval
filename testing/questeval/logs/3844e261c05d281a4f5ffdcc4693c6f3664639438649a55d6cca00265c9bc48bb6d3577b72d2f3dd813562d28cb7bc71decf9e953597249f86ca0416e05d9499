@@ -1,0 +1,156 @@
+{
+  "type": "hyp",
+  "text": "Freshly isolated monocytes treated with the protein phosphatase inhibitor okadaic acid secreted high levels of IL-6 protein which coincident with enhanced binding activity of NF-kappa B as well as with phosphorylation and activation of the ERK1/2 and JNK proteins.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-6",
+        "NF-kappa",
+        "JNK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was secreted by fresh isolated monocytes treated with okada",
+          "What protein binding activity was enhanced by okadaic acid?",
+          "What protein was activated by ERK1/2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "monocytes",
+        "the protein phosphatase inhibitor okadaic acid",
+        "high levels",
+        "IL-6 protein",
+        "enhanced binding activity",
+        "NF-kappa B",
+        "the ERK1/2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells were treated with okadaic acid?",
+          "What was used to treat monocytes?",
+          "What did fresh isolated monocytes secrete?",
+          "What protein was secreted by fresh isolated monocytes treated with okada",
+          "What did the phosphorylation of NF-kappa B do?",
+          "What protein binding activity was enhanced by okadaic acid?",
+          "What protein was activated by phosphorylation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was secreted by fresh monocytes treated with okadaic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.9331479072570801,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein binding activity was enhanced by okadaic acid?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9931645393371582,
+        "ground_truth": {
+          "NF-kappa": {
+            "bertscore": 0.9201600551605225,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein was activated by phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ERK1/2",
+        "answerability": 0.8802621364593506,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.715562641620636,
+            "f1": 0
+          },
+          "the ERK1/2": {
+            "bertscore": 0.9422897696495056,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were treated with okadaic acid?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocytes",
+        "answerability": 0.9761745929718018,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was used to treat monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "okadaic acid",
+        "answerability": 0.9660506248474121,
+        "ground_truth": {
+          "the protein phosphatase inhibitor okadaic acid": {
+            "bertscore": 0.7909243702888489,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did fresh isolated monocytes secrete?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.9308165907859802,
+        "ground_truth": {
+          "high levels": {
+            "bertscore": 0.7381170392036438,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was secreted by fresh isolated monocytes treated with okada": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.9498534202575684,
+        "ground_truth": {
+          "IL-6 protein": {
+            "bertscore": 0.8033022284507751,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the IL-6 protein do to NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced binding",
+        "answerability": 0.997853696346283,
+        "ground_truth": {
+          "enhanced binding activity": {
+            "bertscore": 0.9227644205093384,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What protein was induced by okadaic acid?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.7455348372459412,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.7398361563682556,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

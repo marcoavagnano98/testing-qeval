@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Thirdly an estrogen receptor-E2F1 binding site is required for the trans-activation of cyclin D3 by ER-E2F1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Thirdly"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the third binding site for cyclin D3?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "an estrogen receptor-E2F1 binding site",
+        "the trans-activation",
+        "cyclin D3",
+        "ER-E2F1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for the trans-activation of cyclin D3 by ER-",
+          "What is the third requirement for cyclin D3?",
+          "What is required for trans-activation by ER-E2F1?",
+          "What binding site is required for the trans-activation of cyclin D3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What happens even in the presence of the protein synthesis inhibitor cycloheximide": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01260751485824585,
+        "ground_truth": {
+          "Furthermore trans-activation": {
+            "bertscore": 0.6775768995285034,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is trans-activated by ER-E2F1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclin D3",
+        "answerability": 0.9257549047470093,
+        "ground_truth": {
+          "cyclin D3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main factor that causes trans-activation of cyclin D3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an estrogen receptor-E2F1 binding site",
+        "answerability": 0.8867669701576233,
+        "ground_truth": {
+          "ER-E2F1": {
+            "bertscore": 0.7843369841575623,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what condition does trans-activation of cyclin D3 occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.027147412300109863,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024357914924622,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only thing that can cause trans-activation of cyclin D3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022234976291656494,
+        "ground_truth": {
+          "the protein synthesis inhibitor cycloheximide": {
+            "bertscore": 0.5968940854072571,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

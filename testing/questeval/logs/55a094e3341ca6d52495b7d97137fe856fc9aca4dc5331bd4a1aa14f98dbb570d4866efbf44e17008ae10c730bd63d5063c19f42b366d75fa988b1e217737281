@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "In cardiac fibroblasts stimulation with cytokines or bacterial toxins induces AT(1)R up-regulation through NAD(P)H kinase-dependent ROS production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AT(1)R",
+        "NAD(P)H"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is up-regulated in cardiac fibroblasts?",
+          "What kinase-dependent ROS production induces AT(1)R up-regulation"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "cardiac fibroblasts stimulation",
+        "cytokines",
+        "bacterial toxins",
+        "up-regulation",
+        "NAD(P)H kinase-dependent ROS production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induces AT(1)R up-regulation?",
+          "What stimulates AT(1)R up-regulation?",
+          "What stimulates AT(1)R up-regulation?",
+          "What does stimulation with cytokines or bacteria induce?",
+          "What is the mechanism that causes AT(1)R up-regulation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is up-regulated in cardiac fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AT(1)R",
+        "answerability": 0.8676992058753967,
+        "ground_truth": {
+          "AT(1)R": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What induces AT(1)R up-regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulation with cytokines or bacterial toxins",
+        "answerability": 0.6743608713150024,
+        "ground_truth": {
+          "cardiac fibroblasts stimulation": {
+            "bertscore": 0.7786157131195068,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What stimulates AT(1)R up-regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokines or bacterial toxins",
+        "answerability": 0.7422698736190796,
+        "ground_truth": {
+          "cytokines": {
+            "bertscore": 0.8609477281570435,
+            "f1": 0.4
+          },
+          "bacterial toxins": {
+            "bertscore": 0.8897857666015625,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does stimulation with cytokines or bacteria induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AT(1)R up-regulation",
+        "answerability": 0.5739446878433228,
+        "ground_truth": {
+          "up-regulation": {
+            "bertscore": 0.7786998748779297,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the mechanism that causes AT(1)R up-regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NAD(P)H kinase-dependent ROS production",
+        "answerability": 0.9354364275932312,
+        "ground_truth": {
+          "NADPH oxidase-dependent ROS production": {
+            "bertscore": 0.8391090035438538,
+            "f1": 0.75
+          }
+        }
+      }
+    }
+  }
+}

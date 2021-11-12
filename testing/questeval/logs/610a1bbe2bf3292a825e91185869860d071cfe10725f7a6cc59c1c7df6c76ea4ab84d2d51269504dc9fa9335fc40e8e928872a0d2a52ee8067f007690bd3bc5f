@@ -1,0 +1,160 @@
+{
+  "type": "hyp",
+  "text": "or TNF-induced. BHA was found to suppress not only PMA- or TNF-induced but also constitutive HIV-enhancer activity concomitant to an inhibition of NF-kappa B binding activity in both lymphoblastoid T (J.Jhan) and monocytic (U937) cell lines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "BHA",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that BHA is found to suppress?",
+          "What was found to suppress constitutive HIV-enhancer activity?",
+          "What is the main factor that BHA is found to suppress?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BHA",
+        "HIV-enhancer activity",
+        "an inhibition",
+        "NF-kappa B binding activity",
+        "both lymphoblastoid T",
+        "J.Jhan",
+        "(U937) cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was found to suppress constitutive HIV-enhancer activity?",
+          "What is BHA found to suppress?",
+          "What is the effect of BHA on NF-kappa B binding?",
+          "What is BHA found to suppress?",
+          "What type of cell lines did BHA suppress?",
+          "What is the name of the lymphoblastoid T cell line?",
+          "What type of cell line was BHA found to suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits the activity of the cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03233671188354492,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suppresses the function of PMA and TNF-induced cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BHA",
+        "answerability": 0.9130078554153442,
+        "ground_truth": {
+          "BHA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What blocks the functions depending on NF-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08106184005737305,
+        "ground_truth": {
+          "TNF-stimulated cells": {
+            "bertscore": 0.599524199962616,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does BHA block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1519494652748108,
+        "ground_truth": {
+          "the functions": {
+            "bertscore": 0.6281369924545288,
+            "f1": 0
+          },
+          "NF-kappa B activation": {
+            "bertscore": 0.6154857873916626,
+            "f1": 0
+          },
+          "NF-kappa B binding activity": {
+            "bertscore": 0.6128354668617249,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does BHA suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10460931062698364,
+        "ground_truth": {
+          "HIV-enhancer activity": {
+            "bertscore": 0.6744440793991089,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of BHA on the NF-kappa B binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.9544622302055359,
+        "ground_truth": {
+          "an inhibition": {
+            "bertscore": 0.8946595788002014,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cell line does J.Jhan block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphoblastoid T",
+        "answerability": 0.5598030090332031,
+        "ground_truth": {
+          "both lymphoblastoid T": {
+            "bertscore": 0.9280895590782166,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is another name for lymphoblastoid T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "J.Jhan",
+        "answerability": 0.936401903629303,
+        "ground_truth": {
+          "J.Jhan": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are monocytic?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0477789044380188,
+        "ground_truth": {
+          "(U937) cell lines": {
+            "bertscore": 0.6418197751045227,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

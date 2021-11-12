@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "In addition we found that the EBNA-1 gene in infected thymocytes was transcribed from the Fp promoter rather than from the Cp/Wp promoter which is used in latently infected B cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fp",
+        "the Cp/Wp"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where was the EBNA-1 gene transcribed from?",
+          "Where was the EBNA-1 gene transcribed from?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "we",
+        "the EBNA-1 gene",
+        "infected thymocytes",
+        "the Fp promoter",
+        "the Cp/Wp promoter",
+        "latently infected B cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study find about the EBNA-1 gene?",
+          "What did we find about the EBNA-1 gene?",
+          "What gene was transcribed from the Fp promoter?",
+          "Where was the EBNA-1 gene transcribed from?",
+          "Where was the EBNA-1 gene transcribed from?",
+          "Where was the EBNA-1 gene transcribed from?",
+          "Where is the EBNA-1 gene transcribed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Where was the EBNA-1 gene transcribed from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the Fp promoter",
+        "answerability": 0.9252493977546692,
+        "ground_truth": {
+          "Fp": {
+            "bertscore": 0.7566331028938293,
+            "f1": 0.6666666666666666
+          },
+          "infected thymocytes": {
+            "bertscore": 0.6624770164489746,
+            "f1": 0
+          },
+          "the Fp promoter": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          },
+          "the Cp/Wp promoter": {
+            "bertscore": 0.9034580588340759,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "Where is the EBNA-1 gene transcribed from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the Fp promoter",
+        "answerability": 0.9240907430648804,
+        "ground_truth": {
+          "the Cp/Wp": {
+            "bertscore": 0.792100191116333,
+            "f1": 0
+          },
+          "latently infected B cells": {
+            "bertscore": 0.6926364302635193,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show about the EBNA-1 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcribed from the Fp promoter rather than from the Cp/Wp promote",
+        "answerability": 0.865609884262085,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.6354076862335205,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we demonstrate about the EBNA-1 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcribed from the Fp promoter rather than from the Cp/Wp promote",
+        "answerability": 0.8580146431922913,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6043635606765747,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was transcribed from the Fp promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EBNA-1",
+        "answerability": 0.9307710528373718,
+        "ground_truth": {
+          "the EBNA-1 gene": {
+            "bertscore": 0.8045638799667358,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

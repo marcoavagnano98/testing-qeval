@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "The SV40 core sequence competed for META(D+) binding factors but META(D+) failed to compete for the complexes obtained with the SV40 probe.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The SV40 core sequence",
+        "META(D+",
+        "binding factors",
+        "META(D+",
+        "the complexes",
+        "the SV40 probe"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What competed for META(D+) binding factors?",
+          "What binding factors did the SV40 core compete for?",
+          "What did the SV40 core compete for?",
+          "What binding factors did the SV40 core compete for?",
+          "What did the SV40 core sequence fail to compete for?",
+          "What did the SV40 core sequence compete for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the SV40 core sequence compete for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "META(D+) binding factors",
+        "answerability": 0.9699801206588745,
+        "ground_truth": {
+          "The SV40 core sequence": {
+            "bertscore": 0.7253026962280273,
+            "f1": 0
+          },
+          "binding factors": {
+            "bertscore": 0.8129789233207703,
+            "f1": 0.8
+          },
+          "the SV40 core sequence": {
+            "bertscore": 0.7193329334259033,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the SV40 core compete for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binding factors",
+        "answerability": 0.9699581861495972,
+        "ground_truth": {
+          "META(D+": {
+            "bertscore": 0.6641140580177307,
+            "f1": 0
+          },
+          ") binding factors": {
+            "bertscore": 0.9042864441871643,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the SV40 core sequence fail to compete for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5502475500106812,
+        "ground_truth": {
+          "the META(D+": {
+            "bertscore": 0.6531574726104736,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

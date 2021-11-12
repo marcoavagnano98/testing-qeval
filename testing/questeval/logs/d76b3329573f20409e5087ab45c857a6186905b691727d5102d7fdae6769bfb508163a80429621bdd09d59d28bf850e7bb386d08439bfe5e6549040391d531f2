@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of SEMA3B and SEMA3F reduced focal adhesion kinase phosphorylation and matrix metalloproteinase-2 and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "matrix metalloproteinase-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was reduced by SEMA3B and SEMA3F?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "SEMA3B",
+        "SEMA3F",
+        "focal adhesion kinase phosphorylation",
+        "matrix metalloproteinase-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What reduced focal adhesion kinase phosphorylation?",
+          "What two genes were overexpressed?",
+          "What two genes were overexpressed?",
+          "What did overexpression of SEMA3B and SEMA3F reduce?",
+          "What protein was reduced by SEMA3B and SEMA3F?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was reduced by SEMA3B and SEMA3F?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "focal adhesion kinase",
+        "answerability": 0.8264380097389221,
+        "ground_truth": {
+          "matrix metalloproteinase-2": {
+            "bertscore": 0.7513640522956848,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What reduced focal adhesion kinase phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SEMA3B and SEMA3F",
+        "answerability": 0.9725348949432373,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.6447567343711853,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two genes were overexpressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SEMA3B and SEMA3F",
+        "answerability": 0.9562171101570129,
+        "ground_truth": {
+          "SEMA3B": {
+            "bertscore": 0.8676443099975586,
+            "f1": 0.5
+          },
+          "SEMA3F": {
+            "bertscore": 0.862907350063324,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did overexpression of SEMA3B and SEMA3F reduce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "focal adhesion kinase phosphorylation",
+        "answerability": 0.9869316220283508,
+        "ground_truth": {
+          "focal adhesion kinase phosphorylation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

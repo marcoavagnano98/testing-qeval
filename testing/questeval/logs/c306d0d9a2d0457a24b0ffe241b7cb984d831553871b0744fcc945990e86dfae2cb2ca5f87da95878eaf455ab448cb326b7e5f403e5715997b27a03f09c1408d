@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "TEMF therapy provided a safe means for retarding tumour vascularization growth and metastasis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TEMF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What therapy was used to treat vascularization and metastasis of tumours?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TEMF therapy",
+        "a safe means",
+        "tumour vascularization growth",
+        "metastasis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the safest way to treat cancer?",
+          "What did TEMF therapy provide for preventing tumour vascularization?",
+          "What did TEMF therapy help to slow?",
+          "What did TEMF therapy help prevent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What therapy was used to treat tumor vascularization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TEMF therapy",
+        "answerability": 0.9377474188804626,
+        "ground_truth": {
+          "TEMF": {
+            "bertscore": 0.8744513392448425,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the safest way to treat tumor vascularization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TEMF therapy",
+        "answerability": 0.853421151638031,
+        "ground_truth": {
+          "TEMF therapy": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did TEMF therapy provide for preventing tumor vascularization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14421433210372925,
+        "ground_truth": {
+          "a safe means": {
+            "bertscore": 0.6934950351715088,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TEMF therapy help to retard?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumour vascularization growth",
+        "answerability": 0.9913904666900635,
+        "ground_truth": {
+          "tumor vascularization growth": {
+            "bertscore": 0.9113579392433167,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did TEMF therapy help prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumour vascularization growth and metastasis",
+        "answerability": 0.7788362503051758,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.8045760989189148,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

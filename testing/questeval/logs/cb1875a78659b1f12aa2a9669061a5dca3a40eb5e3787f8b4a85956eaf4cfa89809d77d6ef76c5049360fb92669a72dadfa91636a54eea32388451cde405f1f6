@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "graft survival was significantly prolonged in animals receiving spironolactone (14.9 +/-\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "graft survival"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was significantly prolonged in animals receiving spironolactone?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "graft survival",
+        "animals",
+        "spironolactone"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was significantly prolonged in animals receiving spironolactone?",
+          "What animals received spironolactone?",
+          "What drug significantly prolonged graft survival in mice?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was significantly prolonged in animals receiving spironolactone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "graft survival",
+        "answerability": 0.9928731918334961,
+        "ground_truth": {
+          "graft survival": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What animals received spironolactone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005652010440826416,
+        "ground_truth": {
+          "animals": {
+            "bertscore": 0.721032977104187,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug significantly prolonged graft survival in mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spironolactone",
+        "answerability": 0.9521121382713318,
+        "ground_truth": {
+          "spironolactone": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

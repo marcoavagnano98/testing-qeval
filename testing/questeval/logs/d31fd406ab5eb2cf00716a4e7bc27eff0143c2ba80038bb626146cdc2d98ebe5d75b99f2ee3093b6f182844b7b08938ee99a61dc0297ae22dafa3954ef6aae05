@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "The cytokine profile revealed an up-regulation of the chemokine CXCL8 and the pro-inflammatory cytokines TNF IL-2 and IL-6 following treatment with both PMA and HK E. coli while the levels of the anti-inflammatory cytokine IL-10 were not affected by IL-10.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "IL-6",
+        "PMA",
+        "HK E.",
+        "IL-10",
+        "IL-10"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What pro-inflammatory cytokines were not affected by PMA?",
+          "What pro-inflammatory cytokine was not affected by PMA?",
+          "What was used to treat HK E. coli?",
+          "What bacteria was treated with PMA?",
+          "What anti-inflammatory cytokine was not affected by PMA?",
+          "What anti-inflammatory cytokine was not affected by PMA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The cytokine profile",
+        "an up-regulation",
+        "the chemokine CXCL8",
+        "the pro-inflammatory cytokines TNF",
+        "treatment",
+        "both PMA and HK E. coli",
+        "the levels",
+        "the anti-inflammatory cytokine"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed an up-regulation of the chemokine CXCL8?",
+          "What did the cytokine profile reveal?",
+          "What was up-regulated after treatment with PMA?",
+          "What did the cytokine profile reveal about IL-2 and IL-6?",
+          "What did the cytokine profile show?",
+          "What two bacteria were treated with IL-10?",
+          "What was not affected by the treatment with PMA?",
+          "What was not affected by the treatment with PMA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not affected by IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-inflammatory cytokine",
+        "answerability": 0.9272454977035522,
+        "ground_truth": {
+          "Several other transcription factors": {
+            "bertscore": 0.6741123795509338,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

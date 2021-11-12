@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Increased NF-kappa B binding to DNA in synovial T cells was observed relative to peripheral T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DNA",
+        "synovial T cells",
+        "peripheral T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did NF-kappa B binding increase in synovial T cells?",
+          "What type of cells had more NF-kappa B binding to DNA?",
+          "What type of cells were more likely to have NF-kappa B binding to DNA"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What were the p50/p65 homodimers?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009131431579589844,
+        "ground_truth": {
+          "The complexes": {
+            "bertscore": 0.6737040281295776,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What were the complexes of a cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008598566055297852,
+        "ground_truth": {
+          "p50/p50 homodimers": {
+            "bertscore": 0.6278873085975647,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What were the two main components of the NF-kappa B complexes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006667971611022949,
+        "ground_truth": {
+          "p50/p65 heterodimers": {
+            "bertscore": 0.6015925407409668,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did NF-kappa B binding increase in synovial T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA",
+        "answerability": 0.9439023733139038,
+        "ground_truth": {
+          "DNA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were more likely to have NF-kappa B binding to DNA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synovial T cells",
+        "answerability": 0.9890985488891602,
+        "ground_truth": {
+          "synovial T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "peripheral T cells": {
+            "bertscore": 0.8745525479316711,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

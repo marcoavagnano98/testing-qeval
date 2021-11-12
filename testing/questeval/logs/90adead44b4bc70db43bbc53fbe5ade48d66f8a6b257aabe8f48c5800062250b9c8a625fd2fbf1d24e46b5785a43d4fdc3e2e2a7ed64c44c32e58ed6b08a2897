@@ -1,0 +1,88 @@
+{
+  "type": "ref",
+  "text": "The update information testifies about protumoral activity of neutrophils: they migrate to a tumor and promote angiogenesis and metastasis at late stages of the tumor.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The update information",
+        "protumoral activity",
+        "neutrophils",
+        "they",
+        "a tumor",
+        "angiogenesis",
+        "metastasis",
+        "late stages",
+        "the tumor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What testifies about protumoral activity of neutrophils?",
+          "What does the update information testify about of neutrophils?",
+          "What is the protumoral activity of?",
+          "What is the protumoral activity of neutrophils?",
+          "Where do neutrophils migrate to?",
+          "What do neutrophils promote?",
+          "What do neutrophils promote at late stages of a tumor?",
+          "When do neutrophils migrate to a tumor?",
+          "What do neutrophils migrate to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is associated with tumor angiogenesis metastasis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neutrophils",
+        "answerability": 0.5571560859680176,
+        "ground_truth": {
+          "CXCL8": {
+            "bertscore": 0.6418209671974182,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is CXCL8 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 4.172325134277344e-05,
+        "ground_truth": {
+          "tumor angiogenesis metastasis": {
+            "bertscore": 0.6496985554695129,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main concern with CXCL8?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 4.1604042053222656e-05,
+        "ground_truth": {
+          "poor prognosis": {
+            "bertscore": 0.6863805651664734,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cancer is CXCL8 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 2.0742416381835938e-05,
+        "ground_truth": {
+          "breast cancer": {
+            "bertscore": 0.6923032402992249,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

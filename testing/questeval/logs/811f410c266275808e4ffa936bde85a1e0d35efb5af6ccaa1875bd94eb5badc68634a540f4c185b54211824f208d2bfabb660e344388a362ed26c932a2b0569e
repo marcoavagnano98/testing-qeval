@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "The Rho family of small GTP-binding proteins is involved in the regulation of cytoskeletal structure gene transcription specific cell fate development and transformation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rho",
+        "GTP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family of proteins is involved in the regulation of cytoskeletal structure?",
+          "What is the Rho family of proteins?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The Rho family",
+        "small GTP-binding proteins",
+        "the regulation",
+        "cytoskeletal structure gene transcription specific cell fate development",
+        "transformation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family of small GTP-binding proteins is involved in the regulation of cytoskeletal",
+          "What is the Rho family?",
+          "What is the Rho family involved in?",
+          "What is the Rho family involved in?",
+          "What is the Rho family involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What family of proteins is involved in the regulation of cytoskeletal structure?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rho",
+        "answerability": 0.9902486205101013,
+        "ground_truth": {
+          "Rho": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the Rho family of proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "small GTP-binding proteins",
+        "answerability": 0.9653509855270386,
+        "ground_truth": {
+          "GTP": {
+            "bertscore": 0.6880434155464172,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What family of small GTP-binding proteins is involved in the regulation of cytoskeletal": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rho family",
+        "answerability": 0.9873837232589722,
+        "ground_truth": {
+          "The Rho family": {
+            "bertscore": 0.9386914372444153,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the Rho family?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "small GTP-binding proteins",
+        "answerability": 0.998313844203949,
+        "ground_truth": {
+          "small GTP-binding proteins": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the Rho family involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the regulation of cytoskeletal structure gene transcription specific cell fate development and transformation",
+        "answerability": 0.9926135540008545,
+        "ground_truth": {
+          "the regulation": {
+            "bertscore": 0.6981682181358337,
+            "f1": 0.15384615384615385
+          },
+          "cytoskeletal structure gene transcription specific cell fate development": {
+            "bertscore": 0.9278736114501953,
+            "f1": 0.8
+          },
+          "transformation": {
+            "bertscore": 0.6214888691902161,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    }
+  }
+}

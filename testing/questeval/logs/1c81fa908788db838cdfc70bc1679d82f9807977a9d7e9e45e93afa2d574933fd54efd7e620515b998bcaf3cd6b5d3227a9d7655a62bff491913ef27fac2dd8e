@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "Runx3-/- T cells also had no detectable Eomes expression; in contrast T-bet expression was unimpaired (Fig. 3 A).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the Fig. 3 A of the recombinant phenotype"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Runx3-/- T cells",
+        "no detectable Eomes expression",
+        "contrast",
+        "T-bet expression",
+        "(Fig",
+        "3 A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells had no detectable Eomes expression?",
+          "What was the effect of T cells on Eomes?",
+          "What was the effect of T-bet expression on Eomes?",
+          "What was unimpaired in Runx3-/- T cells?",
+          "What is the result of the absence of Eomes expression in T cells?",
+          "What is the Fig. 3 of the amplification of T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the mRNA level of Eomes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013939857482910156,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628214836121,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was low or undetectable at both the mRNA and mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014680981636047363,
+        "ground_truth": {
+          "Eomes expression": {
+            "bertscore": 0.665831983089447,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "However the activation of other mitogen-inducible transcription factors such as Fos and Jun was unaffected.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fos",
+        "Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one mitogen-inducible transcription factor that was not affected?",
+          "What transcription factor was not affected by the apoptosis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the activation",
+        "other mitogen-inducible transcription factors",
+        "Fos",
+        "Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was not affected by the amplification of a cytokine?",
+          "What was not affected by the apoptosis?",
+          "What is one mitogen-inducible transcription factor that was not affected?",
+          "What transcription factor was not affected by the apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one mitogen-inducible transcription factor that was not affected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun",
+        "answerability": 0.988455057144165,
+        "ground_truth": {
+          "Fos": {
+            "bertscore": 0.7239288687705994,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor was not affected by the apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2895236015319824,
+        "ground_truth": {
+          "Jun": {
+            "bertscore": 0.6295307874679565,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by the amplification of a cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6204607486724854,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6892382502555847,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by the apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24918150901794434,
+        "ground_truth": {
+          "other mitogen-inducible transcription factors": {
+            "bertscore": 0.6092806458473206,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

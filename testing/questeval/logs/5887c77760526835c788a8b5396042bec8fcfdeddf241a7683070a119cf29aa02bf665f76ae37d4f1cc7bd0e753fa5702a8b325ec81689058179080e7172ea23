@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "These were pigmented and maintained expression of tyrosinase TRP-1 cytokeratin and SV40 Tag. Tag was expressed in the epithelium of the UCSD-AML1 cell line and in a epithelial cell line (U9-IIIB).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Tag",
+        "UCSD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was expressed in the epithelium of the UCSD-AML1 cell",
+          "What cell line was SV40 Tag expressed in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "expression",
+        "tyrosinase TRP-1 cytokeratin",
+        "SV40 Tag",
+        "Tag",
+        "the epithelium",
+        "the UCSD-AML1 cell line",
+        "a epithelial cell line",
+        "U9-IIIB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the UCSD-AML1 cell line maintain?",
+          "What protein was expressed in the UCSD-AML1 cell line?",
+          "What protein was expressed in the epithelium of the UCSD-AML1",
+          "What was expressed in the epithelium of the UCSD-AML1 cell",
+          "Where was SV40 Tag expressed?",
+          "What was the epithelium of the UCSD-AML1 cell line?",
+          "What type of cell line was U9-IIIB?",
+          "What is the name of the cell line that was expressed in the UCSD-AML"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enzyme was enzymatically active?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19919121265411377,
+        "ground_truth": {
+          "spleen tyrosinase": {
+            "bertscore": 0.6345322728157043,
+            "f1": 0
+          },
+          "tyrosinase": {
+            "bertscore": 0.6450710892677307,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the spleen tyrosinase that": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13364917039871216,
+        "ground_truth": {
+          "SV40 Tag": {
+            "bertscore": 0.6631349921226501,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

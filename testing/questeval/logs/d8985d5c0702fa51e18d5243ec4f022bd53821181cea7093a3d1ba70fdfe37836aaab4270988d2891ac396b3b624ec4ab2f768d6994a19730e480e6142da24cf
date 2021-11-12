@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Taken together our results suggest that IFN-alpha IL-2 IL-12 and IL-15 have overlapping activities on human T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2 IL-12",
+        "IL-15"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two molecules have overlapping activities on human T cells?",
+          "What two molecules have overlapping activities on human T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "our results",
+        "IFN-alpha",
+        "overlapping activities",
+        "human T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that IFN-alpha IL-2 IL-12 and IL-15 have",
+          "What is the name of the protein that binds to human T cells?",
+          "What do the results suggest about IFN-alpha IL-2 IL-12 and",
+          "What do the results suggest IFN-alpha IL-2 IL-12 and IL"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What two molecules have overlapping activities on human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-alpha IL-2 IL-12 and IL-15",
+        "answerability": 0.9266535639762878,
+        "ground_truth": {
+          "IL-2 IL-12": {
+            "bertscore": 0.8095478415489197,
+            "f1": 0.5714285714285715
+          },
+          "IL-15": {
+            "bertscore": 0.7774941921234131,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What suggests that IFN-alpha IL-2 IL-12 and IL-15 have": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "our results",
+        "answerability": 0.8162622451782227,
+        "ground_truth": {
+          "our results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that binds to human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22594761848449707,
+        "ground_truth": {
+          "IFN-alpha": {
+            "bertscore": 0.6578435301780701,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do the results suggest about IFN-alpha IL-2 IL-12 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-15",
+        "answerability": 0.623999297618866,
+        "ground_truth": {
+          "overlapping activities": {
+            "bertscore": 0.691840410232544,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do the results suggest IFN-alpha IL-2 IL-12 and IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5322776436805725,
+        "ground_truth": {
+          "human T cells": {
+            "bertscore": 0.6446219682693481,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

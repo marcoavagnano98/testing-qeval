@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "55-kDa E1A proteins (E1A55kDa55kDa) cooperate with E1A gene products to induce cell transformation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "55-kDa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the size of E1A proteins?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "55-kDa E1A proteins",
+        "E1A gene products",
+        "cell transformation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is E1A55kDa?",
+          "What do 55-kDa E1A proteins cooperate with to induce cell transformation?",
+          "What do 55-kDa E1A proteins induce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that cooperates with E1A gene products?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E1A55kDa55kDa",
+        "answerability": 0.9917459487915039,
+        "ground_truth": {
+          "55-kDa E1B protein": {
+            "bertscore": 0.7281574606895447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the E1B protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018527507781982422,
+        "ground_truth": {
+          "E1B-55kDa": {
+            "bertscore": 0.6397368311882019,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the 55-kDa E1B protein cooperate with to induce cell transformation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005774080753326416,
+        "ground_truth": {
+          "E1A gene products": {
+            "bertscore": 0.6289670467376709,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the 55-kDa E1B protein induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012593865394592285,
+        "ground_truth": {
+          "cell transformation": {
+            "bertscore": 0.6928433775901794,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

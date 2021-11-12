@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "In addition ADP-activated platelets induced MCP-1 and ICAM-1 promoter-dependent transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ADP",
+        "MCP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activated platelets induced MCP-1 and ICAM-1 promoter-dependent transcription",
+          "What promoter-dependent transcription is induced by ADP-activated platelets?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "ADP-activated platelets",
+        "MCP-1",
+        "ICAM-1 promoter-dependent transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did ADP-activated platelets induce?",
+          "What induced MCP-1 and ICAM-1 promoter-dependent transcription?",
+          "What promoter-dependent transcription is induced by ADP-activated platelets?",
+          "What transcriptional changes were induced by ADP-activated platelets?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What activated platelets induced MCP-1 and ICAM-1 promoter-dependent transcription": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ADP",
+        "answerability": 0.8938159942626953,
+        "ground_truth": {
+          "ADP": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What promoter-dependent transcription is induced by ADP-activated platelets?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MCP-1 and ICAM-1",
+        "answerability": 0.9697948694229126,
+        "ground_truth": {
+          "MCP-1": {
+            "bertscore": 0.9078987836837769,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did ADP-activated platelets induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MCP-1 and ICAM-1 promoter-dependent transcription",
+        "answerability": 0.854453444480896,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.6417030692100525,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induced MCP-1 and ICAM-1 promoter-dependent transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ADP-activated platelets",
+        "answerability": 0.9665579199790955,
+        "ground_truth": {
+          "ADP-activated platelets": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What transcriptional changes were induced by ADP-activated platelets?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MCP-1 and ICAM-1",
+        "answerability": 0.8238011002540588,
+        "ground_truth": {
+          "ICAM-1 promoter-dependent transcription": {
+            "bertscore": 0.7977246046066284,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    }
+  }
+}

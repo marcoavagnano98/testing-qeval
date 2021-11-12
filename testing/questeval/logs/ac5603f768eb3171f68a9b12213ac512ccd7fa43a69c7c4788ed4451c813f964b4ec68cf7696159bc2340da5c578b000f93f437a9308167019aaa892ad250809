@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Injection of VEGF-neutralizing antibodies over a 2-week period completely blocked alinidine-stimulated angiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2-week"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did the injection of VEGF-neutralizing antibodies last?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Injection",
+        "VEGF-neutralizing antibodies",
+        "a 2-week period",
+        "completely blocked alinidine-stimulated angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the VEGF-neutralizing antibodies do?",
+          "What did the study show blocked alinidine-stimulated angiogenesis?",
+          "How long did it take for VEGF-neutralizing antibodies to block alinidine-",
+          "What did injection of VEGF-neutralizing antibodies do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did the injection of VEGF-neutralizing antibodies last?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "2-week",
+        "answerability": 0.9816230535507202,
+        "ground_truth": {
+          "2-week": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the VEGF-neutralizing antibodies do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "blocked alinidine-stimulated angiogenesis",
+        "answerability": 0.9963605999946594,
+        "ground_truth": {
+          "Injection": {
+            "bertscore": 0.6631804704666138,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show blocked alinidine-stimulated angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Injection of VEGF-neutralizing antibodies",
+        "answerability": 0.9071540832519531,
+        "ground_truth": {
+          "VEGF-neutralizing antibodies": {
+            "bertscore": 0.8976318836212158,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "How long did it take for VEGF-neutralizing antibodies to block alinidine-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "2-week",
+        "answerability": 0.7274922728538513,
+        "ground_truth": {
+          "a 2-week period": {
+            "bertscore": 0.8197270631790161,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did injection of VEGF-neutralizing antibodies do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "blocked alinidine-stimulated angiogenesis",
+        "answerability": 0.9975850582122803,
+        "ground_truth": {
+          "completely blocked alinidine-stimulated angiogenesis": {
+            "bertscore": 0.9780272841453552,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

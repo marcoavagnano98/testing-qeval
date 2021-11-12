@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "However the inhibition of the T cell activation signals by PGE2 is selective. PGE2 enhanced the complex formation with AP-1 and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PGE2",
+        "PGE2",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the complex formation with AP-1?",
+          "What inhibited the complex formation with AP-1?",
+          "What protein inhibits T cell activation signals?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the inhibition",
+        "the T cell activation signals",
+        "PGE2",
+        "PGE2",
+        "the complex formation",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is selective about the T cell activation signals?",
+          "What is PGE2 selectively inhibiting?",
+          "What inhibited the complex formation with AP-1?",
+          "What inhibited the complex formation with AP-1?",
+          "What did PGE2 enhance with AP-1?",
+          "What protein inhibits T cell activation signals?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited the complex formation with NF-AT AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.031088590621948242,
+        "ground_truth": {
+          "PGE2": {
+            "bertscore": 0.6522913575172424,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is selective about the T cell activation signals?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.955009400844574,
+        "ground_truth": {
+          "the inhibition": {
+            "bertscore": 0.9081977009773254,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is PGE2 selectively inhibiting?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell activation signals",
+        "answerability": 0.9694380760192871,
+        "ground_truth": {
+          "the T cell activation signals": {
+            "bertscore": 0.9246283769607544,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did PGE2 enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the complex formation with AP-1",
+        "answerability": 0.8605152368545532,
+        "ground_truth": {
+          "the complex formation": {
+            "bertscore": 0.8127192258834839,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the AP-1 inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013666689395904541,
+        "ground_truth": {
+          "NF-AT": {
+            "bertscore": 0.701069176197052,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

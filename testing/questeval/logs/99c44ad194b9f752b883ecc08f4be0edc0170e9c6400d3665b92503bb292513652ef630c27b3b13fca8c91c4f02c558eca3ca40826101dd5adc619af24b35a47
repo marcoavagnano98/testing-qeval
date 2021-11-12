@@ -1,0 +1,66 @@
+{
+  "type": "ref",
+  "text": "Wnt stabilizes cytosolic beta-catenin which then binds to TCF and activates gene transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Wnt",
+        "cytosolic beta-catenin",
+        "TCF",
+        "gene transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stabilizes cytosolic beta-catenin?",
+          "What does Wnt stabilize?",
+          "What does Wnt bind to?",
+          "What does Wnt activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stabilizes beta-catenin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19527846574783325,
+        "ground_truth": {
+          "Wnt": {
+            "bertscore": 0.674863874912262,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Wnt stabilize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytosolic beta-catenin",
+        "answerability": 0.8888346552848816,
+        "ground_truth": {
+          "a major downstream target": {
+            "bertscore": 0.6421068906784058,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main downstream target of GSK-3beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011099457740783691,
+        "ground_truth": {
+          "GSK-3beta": {
+            "bertscore": 0.6510744690895081,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

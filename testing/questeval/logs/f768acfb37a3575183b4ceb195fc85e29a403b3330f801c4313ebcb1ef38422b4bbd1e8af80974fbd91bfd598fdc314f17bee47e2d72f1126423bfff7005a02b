@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "The SV40 core sequence competed with META(D+) binding factors for optimal SV40 promoter activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SV40 promoter activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the SV40 core sequence compete with for optimal?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The SV40 core sequence",
+        "META(D+",
+        "binding factors",
+        "optimal SV40 promoter activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What competed with META(D+) binding factors for optimal SV40 promoter",
+          "What binding factors did the SV40 core compete with?",
+          "What did the SV40 core sequence compete with for optimal SV40 promoter activity?",
+          "What did the SV40 core sequence compete with META(D+) binding factors for"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What competed for META(D+) binding factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The SV40 core sequence",
+        "answerability": 0.9696564674377441,
+        "ground_truth": {
+          "The SV40 core sequence": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What binding factors did the SV40 core compete for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "META(D+)",
+        "answerability": 0.9957778453826904,
+        "ground_truth": {
+          "META(D+": {
+            "bertscore": 0.9257424473762512,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the SV40 core compete for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "META(D+) binding factors",
+        "answerability": 0.973774254322052,
+        "ground_truth": {
+          "binding factors": {
+            "bertscore": 0.8129789233207703,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did the SV40 core sequence fail to compete for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00028258562088012695,
+        "ground_truth": {
+          "the complexes": {
+            "bertscore": 0.6961222290992737,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the SV40 core sequence compete for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "optimal SV40 promoter activity",
+        "answerability": 0.9765071868896484,
+        "ground_truth": {
+          "the SV40 probe": {
+            "bertscore": 0.8073078989982605,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    }
+  }
+}

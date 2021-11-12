@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "Nor did addition of FP subsequent to anti-CD3/CD28 nuclear translocation affect GATA-3 nuclear residency (Figure 5C) suggesting that activated GR does not enhance GATA-3 nuclear export.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "FP",
+        "5C",
+        "GR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did addition of FP after anti-CD3/CD28 nuclear translocation not affect?",
+          "What is the result of the study?",
+          "What does FP not affect GATA-3 nuclear export?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "FP",
+        "anti-CD3/CD28 nuclear translocation",
+        "GATA-3 nuclear residency",
+        "Figure 5C",
+        "activated GR",
+        "GATA-3 nuclear export"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did FP do not affect GATA-3 nuclear residency?",
+          "What did addition of FP after anti-CD3/CD28 nuclear translocation not affect?",
+          "What did addition of FP after?",
+          "What did addition of FP after anti-CD3/CD28 nuclear translocation not affect?",
+          "What is the result of the study?",
+          "What did the addition of FP after anti-CD3/CD28 nuclear translocation not affect",
+          "What did addition of FP after anti-CD3/CD28 nuclear translocation not affect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not affected by nuclear localization and retention of GATA-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2950781583786011,
+        "ground_truth": {
+          "FP": {
+            "bertscore": 0.6975426077842712,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not affected by FP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-3 nuclear residency",
+        "answerability": 0.5784345865249634,
+        "ground_truth": {
+          "Nuclear localization": {
+            "bertscore": 0.7886945009231567,
+            "f1": 0.4
+          },
+          "retention": {
+            "bertscore": 0.7257620692253113,
+            "f1": 0
+          },
+          "GATA-3": {
+            "bertscore": 0.8764793872833252,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

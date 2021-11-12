@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of WT1 in some myeloid cell lines confers resistance against differentiation induction.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "WT1",
+        "some myeloid cell lines",
+        "resistance",
+        "differentiation induction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of resistance to differentiation induction?",
+          "What gene is overexpressed in some myeloid cell lines?",
+          "What type of cell lines have resistance to differentiation induction?",
+          "What does overexpression of WT1 confer?",
+          "What does overexpression of WT1 confer resistance against?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of resistance to differentiation induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of WT1",
+        "answerability": 0.9967008233070374,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.8145846724510193,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What gene is overexpressed in some myeloid cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "WT1",
+        "answerability": 0.9970217347145081,
+        "ground_truth": {
+          "WT1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cell lines have resistance to differentiation induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid",
+        "answerability": 0.9754272699356079,
+        "ground_truth": {
+          "some myeloid cell lines": {
+            "bertscore": 0.8439477682113647,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does overexpression of WT1 confer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "resistance against differentiation induction",
+        "answerability": 0.9874865412712097,
+        "ground_truth": {
+          "resistance": {
+            "bertscore": 0.7425876259803772,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does overexpression of WT1 confer resistance to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiation induction",
+        "answerability": 0.9984672665596008,
+        "ground_truth": {
+          "differentiation induction": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

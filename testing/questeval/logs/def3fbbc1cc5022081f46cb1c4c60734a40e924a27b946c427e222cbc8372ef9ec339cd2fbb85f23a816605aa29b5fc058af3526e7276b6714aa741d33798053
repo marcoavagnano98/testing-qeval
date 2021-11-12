@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "As described for the human cells TGF-beta increased Foxp3 in the DO11.10 littermate control mice.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TGF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene increased Foxp3 in DO11.10 littermates?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the human cells",
+        "TGF-beta",
+        "the DO11.10 littermate control mice"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did TGF-beta increase Foxp3 in the DO11.10 littermate",
+          "What increased Foxp3 in DO11.10 littermates?",
+          "What mice had increased Foxp3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What treatment increased the number of Foxp3+ cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta",
+        "answerability": 0.9018890857696533,
+        "ground_truth": {
+          "TGF": {
+            "bertscore": 0.8094041347503662,
+            "f1": 0
+          },
+          "retinoic acid": {
+            "bertscore": 0.7137354612350464,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of mice had an increased number of Foxp3+ cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3015933036804199,
+        "ground_truth": {
+          "CbfbF/+": {
+            "bertscore": 0.6315560340881348,
+            "f1": 0
+          },
+          "CbfbF/+ CD4-cre mice": {
+            "bertscore": 0.5887370705604553,
+            "f1": 0
+          },
+          "CbfbF/F CD4-cre mice": {
+            "bertscore": 0.5776736736297607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the difference between TGF-beta and retinoic acid?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0016133785247802734,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we observe with retinoic acid and TGF-beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010535478591918945,
+        "ground_truth": {
+          "an increased number": {
+            "bertscore": 0.6917102336883545,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we observe increased by retinoic acid and TGF-beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Foxp3",
+        "answerability": 0.983399510383606,
+        "ground_truth": {
+          "Foxp3+ cells": {
+            "bertscore": 0.8306853175163269,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What treatment increased Foxp3+ cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta",
+        "answerability": 0.7873127460479736,
+        "ground_truth": {
+          "TGF-beta": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What treatment alone did we observe an increase in Foxp3+ cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta",
+        "answerability": 0.6889074444770813,
+        "ground_truth": {
+          "TGF-beta treatment": {
+            "bertscore": 0.9362131357192993,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

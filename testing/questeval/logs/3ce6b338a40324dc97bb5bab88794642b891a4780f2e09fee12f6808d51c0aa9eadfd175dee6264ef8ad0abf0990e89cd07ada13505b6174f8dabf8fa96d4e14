@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "However when we attempted to determine whether Foxp3 could physically associate with the coactivator protein p300 we found that p300 immunoprecipitated Foxp3 when both proteins were overexpressed in HEK 293T cells (Figure 7D).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HEK",
+        "293",
+        "7D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were Foxp3 and p300 overexpressed in?",
+          "What type of cells were HEK cells?",
+          "What is the corresponding figure of the study?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "we",
+        "p300",
+        "both proteins",
+        "HEK 293T cells",
+        "Figure 7D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find when we tried to determine if Foxp3 could physically associate with",
+          "What did we find when we tried to determine if Foxp3 could physically associate with",
+          "What protein was found to be the coactivator of Foxp3?",
+          "What proteins were overexpressed in HEK 293T cells?",
+          "What cells were able to overexpress Foxp3?",
+          "What is the corresponding figure of the study?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells were able to overexpress Foxp3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HEK 293T cells",
+        "answerability": 0.7405681610107422,
+        "ground_truth": {
+          "HEK": {
+            "bertscore": 0.7987695336341858,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What type of cells were HEK cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12087112665176392,
+        "ground_truth": {
+          "293": {
+            "bertscore": 0.6121217608451843,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the corresponding figure of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5749657154083252,
+        "ground_truth": {
+          "7D": {
+            "bertscore": 0.6836938261985779,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we find when we tried to determine if Foxp3 could physically interact with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p300",
+        "answerability": 0.6517084240913391,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6965347528457642,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What coactivator protein did Foxp3 interact with when both proteins were overexpressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p300",
+        "answerability": 0.9945133328437805,
+        "ground_truth": {
+          "p300": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What proteins were overexpressed in HEK 293T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3344225287437439,
+        "ground_truth": {
+          "both proteins": {
+            "bertscore": 0.7014090418815613,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were tested for Foxp3's interaction with p300?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HEK 293T cells",
+        "answerability": 0.95660799741745,
+        "ground_truth": {
+          "HEK 293T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the p300-Foxp3 interaction shown in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Figure 7D",
+        "answerability": 0.9151759743690491,
+        "ground_truth": {
+          "Figure 7D": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "The major putative downstream site for E2F located in the first exon serves as a target for E2-F-1 complex binding in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E2F",
+        "first",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What complex binding is found in the first exon?",
+          "Where is the major downstream site for E2F located?",
+          "In what way does E2F-1 complex binding occur?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The major putative downstream site",
+        "E2F",
+        "the first exon",
+        "a target"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What serves as a target for E2-F-1 complex binding in vitro?",
+          "What complex binding is found in the first exon?",
+          "Where is the major downstream site for E2F located?",
+          "What does the downstream site for E2F serve as?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What complex binding is found in the first exon?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2-F-1",
+        "answerability": 0.9384605884552002,
+        "ground_truth": {
+          "E2F": {
+            "bertscore": 0.7913869619369507,
+            "f1": 0
+          },
+          "E2F-1/DP1": {
+            "bertscore": 0.8589898347854614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is the major downstream site for E2F located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the first exon",
+        "answerability": 0.9863589406013489,
+        "ground_truth": {
+          "first": {
+            "bertscore": 0.8026363849639893,
+            "f1": 0.6666666666666666
+          },
+          "the first exon": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What serves as a target for E2F-1/DP1 complex binding in vitro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The major putative downstream site for E2F located in the first exon",
+        "answerability": 0.7063403725624084,
+        "ground_truth": {
+          "The major putative downstream site": {
+            "bertscore": 0.8703843355178833,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What does the downstream site for E2F serve as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a target for E2-F-1 complex binding in vitro",
+        "answerability": 0.7262587547302246,
+        "ground_truth": {
+          "a target": {
+            "bertscore": 0.6598193645477295,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What does the first exon serve as a target for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2-F-1 complex binding",
+        "answerability": 0.8980072140693665,
+        "ground_truth": {
+          "E2F-1/DP1 complex binding": {
+            "bertscore": 0.9074742794036865,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

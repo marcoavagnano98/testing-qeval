@@ -1,0 +1,72 @@
+{
+  "type": "ref",
+  "text": "In the budding yeast Saccharomyces cerevisiae the G(2)-to-M transition requires activation of Clb-bound forms of the protein kinase Cdc28.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the budding yeast Saccharomyces",
+        "the G(2)-to-M transition",
+        "activation",
+        "Clb-bound forms",
+        "the protein kinase Cdc28"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what yeast does the G(2)-to-M transition require activation of Clb-",
+          "What requires activation of Clb-bound forms of the protein kinase C",
+          "What is required for the G(2)-to-M transition in the budding yeast Sacchar",
+          "What is required for the G(2)-to-M transition in the budding yeast Sacchar",
+          "What is required for the G(2)-to-M transition?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the G(2)-bound kinase defective in phosphorylation of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02404075860977173,
+        "ground_truth": {
+          "Far1": {
+            "bertscore": 0.6739052534103394,
+            "f1": 0
+          },
+          "the budding yeast Saccharomyces": {
+            "bertscore": 0.6017460227012634,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is defective in phosphorylation of Far1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005098581314086914,
+        "ground_truth": {
+          "the G(2)-bound kinase Cdc28": {
+            "bertscore": 0.5844528079032898,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is defective in the G(2)-bound kinase Cdc28?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0019805431365966797,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.6180735230445862,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

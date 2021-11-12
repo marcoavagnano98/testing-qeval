@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Membrane-associated lymphotoxin on natural killer cells activates endothelial cells via an NF-kappaB-dependent signaling pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling pathway is involved in the activation of endothelial cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Membrane-associated lymphotoxin",
+        "natural killer cells",
+        "endothelial cells",
+        "an NF-kappaB-dependent signaling pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activates endothelial cells via an NF-kappaB-",
+          "What does membrane-associated lymphotoxin activate?",
+          "What does membrane-associated lymphotoxin activate?",
+          "What does the cytokine do to endothelial cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the pathway that activates endothelial cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9693745970726013,
+        "ground_truth": {
+          "NF-kappaB-dependent": {
+            "bertscore": 0.8444083333015442,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What activates endothelial cells via an NF-kappaB-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0752716064453125,
+        "ground_truth": {
+          "Membrane-associated lymphotoxin": {
+            "bertscore": 0.588233232498169,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does membrane-associated lymphotoxin activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cells",
+        "answerability": 0.9893888831138611,
+        "ground_truth": {
+          "natural killer cells": {
+            "bertscore": 0.8040928244590759,
+            "f1": 0.4
+          },
+          "endothelial cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How does endothelial cells respond to a molecule?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19612836837768555,
+        "ground_truth": {
+          "an NF-kappaB-dependent pathway": {
+            "bertscore": 0.5958907604217529,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

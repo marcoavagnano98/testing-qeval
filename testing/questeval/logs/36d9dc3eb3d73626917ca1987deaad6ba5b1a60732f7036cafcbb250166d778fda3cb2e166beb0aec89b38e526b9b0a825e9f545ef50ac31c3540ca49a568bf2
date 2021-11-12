@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Separation of oxidant-initiated and redox-regulated steps in the NF-kappa B signal transduction pathways.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Separation",
+        "oxidant-initiated and redox-regulated steps",
+        "the NF-kappa B signal transduction pathways"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that is involved in the oxidant-induced and redox",
+          "What two steps are involved in the NF-kappa B signal transduction pathways?",
+          "What pathway is oxidant-initiated and redox-regulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process called that is a step in the NF-kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08883160352706909,
+        "ground_truth": {
+          "Separation": {
+            "bertscore": 0.7007852792739868,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What steps in the NF-kappa B signal transduction pathway are separated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oxidant-initiated and redox-regulated",
+        "answerability": 0.969855546951294,
+        "ground_truth": {
+          "oxidant-initiated and redox-regulated steps": {
+            "bertscore": 0.9388022422790527,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What pathway is oxidant-initiated and redox-regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11432123184204102,
+        "ground_truth": {
+          "the NF-kappa B signal transduction pathway": {
+            "bertscore": 0.5870413184165955,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Actinomycin-D but not Actinomycin B also blocks progestin-dependent induction of TSP-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TSP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Actinomycin-D block?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Actinomycin-D",
+        "not Actinomycin B",
+        "progestin-dependent induction",
+        "TSP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug blocks progestin-dependent induction of TSP-1?",
+          "What block progestin-dependent induction of TSP-1?",
+          "What does Actinomycin-D block?",
+          "What does Actinomycin-D block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is blocked by puromycin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004675507545471191,
+        "ground_truth": {
+          "TSP-1": {
+            "bertscore": 0.6560807228088379,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blocker blocks progestin-dependent induction of TSP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Actinomycin-D",
+        "answerability": 0.7319808006286621,
+        "ground_truth": {
+          "Actinomycin-D": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does puromycin block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0028014183044433594,
+        "ground_truth": {
+          "progestin-dependent induction": {
+            "bertscore": 0.6337569952011108,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

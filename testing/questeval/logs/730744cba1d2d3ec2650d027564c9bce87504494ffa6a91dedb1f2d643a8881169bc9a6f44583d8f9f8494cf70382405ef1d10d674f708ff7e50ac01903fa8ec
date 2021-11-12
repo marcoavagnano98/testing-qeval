@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "These initial changes are followed by the eventual loss of TCR zeta chain and p56(lck) and a marked decrease in cytotoxic function.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These initial changes",
+        "the eventual loss",
+        "TCR zeta chain",
+        "p56(lck",
+        "a marked decrease",
+        "cytotoxic function"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are followed by a loss of TCR zeta chain and p56",
+          "What happens to TCR zeta chain?",
+          "What is lost after the initial changes?",
+          "What is the cytotoxic function of a protein that is not regulated by TCR",
+          "What happens to cytotoxic function after a recombination?",
+          "What does the recombinant chromosomes show a decrease in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What are followed by a loss of TCR zeta chain and p56": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "initial changes",
+        "answerability": 0.9641462564468384,
+        "ground_truth": {
+          "These initial changes": {
+            "bertscore": 0.8242647647857666,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What happens to TCR zeta chain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "loss",
+        "answerability": 0.6886998414993286,
+        "ground_truth": {
+          "the eventual loss": {
+            "bertscore": 0.7826682925224304,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is lost after the initial changes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCR zeta chain and p56(lck)",
+        "answerability": 0.9699629545211792,
+        "ground_truth": {
+          "TCR zeta chain": {
+            "bertscore": 0.8458308577537537,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the cytotoxic function of a protein that is not regulated by TCR": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1297798752784729,
+        "ground_truth": {
+          "p56(lck": {
+            "bertscore": 0.6245650053024292,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens to cytotoxic function after a recombination?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23688608407974243,
+        "ground_truth": {
+          "a marked decrease": {
+            "bertscore": 0.7122555375099182,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the recombinant chromosomes show a decrease in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.023755550384521484,
+        "ground_truth": {
+          "cytotoxic function": {
+            "bertscore": 0.6253449320793152,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

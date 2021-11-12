@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Impaired silencing of gammac expression identifies EKLF as the first transcription factor participating quantitatively in the gamma-globin to beta-globin switch.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "first"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor is identified by a silencing defect?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Impaired silencing",
+        "gammac expression",
+        "EKLF",
+        "the first transcription factor",
+        "the gamma-globin",
+        "beta-globin switch"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of the gamma-globin to beta-globin switch",
+          "What is the first transcription factor to participate quantitatively in the gamma-globin",
+          "What is the first transcription factor to participate quantitatively in the gamma-globin",
+          "What is EKLF?",
+          "What is the first transcription factor to participate quantitatively in?",
+          "What is the first transcription factor to participate quantitatively in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor is identified by the silencing of gamma-glob": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EKLF",
+        "answerability": 0.7553308010101318,
+        "ground_truth": {
+          "first": {
+            "bertscore": 0.6936991810798645,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of the EKLF mutation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14059382677078247,
+        "ground_truth": {
+          "Impaired silencing": {
+            "bertscore": 0.7056607007980347,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the first transcription factor to participate quantitatively in the gamma-globin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EKLF",
+        "answerability": 0.9555522799491882,
+        "ground_truth": {
+          "gamma-globin expression": {
+            "bertscore": 0.6459529995918274,
+            "f1": 0
+          },
+          "EKLF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is EKLF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31763893365859985,
+        "ground_truth": {
+          "the first transcription factor": {
+            "bertscore": 0.6511877179145813,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the first transcription factor to participate quantitatively in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EKLF",
+        "answerability": 0.9511420130729675,
+        "ground_truth": {
+          "the gamma-globin": {
+            "bertscore": 0.6389893293380737,
+            "f1": 0
+          },
+          "beta-globin switch": {
+            "bertscore": 0.6667300462722778,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

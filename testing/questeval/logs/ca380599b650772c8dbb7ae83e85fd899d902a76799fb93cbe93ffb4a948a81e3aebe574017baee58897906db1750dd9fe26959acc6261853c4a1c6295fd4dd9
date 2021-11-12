@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "This suggests that FOXO3a is a potential suppressor of carcinogenesis in LAC.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LAC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is FOXO3a a potential suppressor of carcinogenesis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a potential suppressor",
+        "carcinogenesis",
+        "LAC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the study suggest about FOXO3a?",
+          "What is FOXO3a a potential suppressor of?",
+          "What is FOXO3a a potential suppressor of carcinogenesis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is FOXO3a a potential suppressor of carcinogenic damage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0034758448600769043,
+        "ground_truth": {
+          "LAC": {
+            "bertscore": 0.6982011795043945,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study suggest about FOXO3a?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "potential suppressor of carcinogenesis",
+        "answerability": 0.9775431752204895,
+        "ground_truth": {
+          "a potential suppressor": {
+            "bertscore": 0.800915002822876,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is FOXO3a a potential suppressor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "carcinogenesis",
+        "answerability": 0.9730559587478638,
+        "ground_truth": {
+          "carcinogenic damage": {
+            "bertscore": 0.8533756732940674,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

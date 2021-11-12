@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "During the course of serious bacterial infections lipopolysaccharide (LPS) is believed to interact with macrophage receptors by causing monocyte aggregation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "monocyte aggregation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of lipopolysaccharide on macrophage receptors"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the course",
+        "serious bacterial infections",
+        "(LPS",
+        "macrophage receptors",
+        "monocyte aggregation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process of causing monocyte aggregation?",
+          "What is the cause of lipopolysaccharide interaction with macrophage receptor",
+          "What is the name of the protein that interacts with macrophage receptors?",
+          "What does lipopolysaccharide interact with?",
+          "What is the effect of lipopolysaccharide on macrophage receptors"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process of bacterial infection called?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.025412261486053467,
+        "ground_truth": {
+          "the course": {
+            "bertscore": 0.7014780044555664,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of the interaction of lipopolysaccharide with macrophag": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocyte aggregation",
+        "answerability": 0.9232944250106812,
+        "ground_truth": {
+          "serious bacterial infections": {
+            "bertscore": 0.6973671913146973,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the molecule that interacts with macrophage receptors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipopolysaccharide",
+        "answerability": 0.9428600668907166,
+        "ground_truth": {
+          "(LPS": {
+            "bertscore": 0.5744557976722717,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does LPS interact with during serious bacterial infections?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "macrophage receptors",
+        "answerability": 0.9946820139884949,
+        "ground_truth": {
+          "macrophage receptors": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the result of lipopolysaccharide interaction with macrophage receptor": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocyte aggregation",
+        "answerability": 0.9636227488517761,
+        "ground_truth": {
+          "the generation": {
+            "bertscore": 0.704544723033905,
+            "f1": 0
+          },
+          "inflammatory mediators": {
+            "bertscore": 0.708633542060852,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is hemodynamic instability and shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 6.473064422607422e-05,
+        "ground_truth": {
+          "systemic symptoms": {
+            "bertscore": 0.6769688129425049,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is one of the symptoms of LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3987088203430176,
+        "ground_truth": {
+          "hemodynamic instability": {
+            "bertscore": 0.6652252674102783,
+            "f1": 0
+          },
+          "shock": {
+            "bertscore": 0.6597766876220703,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

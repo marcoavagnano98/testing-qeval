@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Cell-specific bifunctional role of Jun oncogene family members on steroid-dependent transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What oncogene family members play a role in steroid-dependent transcription?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cell-specific bifunctional role",
+        "Jun oncogene family members",
+        "steroid-dependent transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of Jun oncogene family members on steroid-dependent transcription",
+          "What is the bifunctional role of steroid-dependent transcription?",
+          "What is the role of Jun oncogene family members on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What oncogene family members play a role in glucocorticoi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun",
+        "answerability": 0.7911401391029358,
+        "ground_truth": {
+          "Jun": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of Jun oncogene family members on glucocortico": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1778584122657776,
+        "ground_truth": {
+          "Cell-specific bifunctional role": {
+            "bertscore": 0.6508842706680298,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cell-specific bifunctional role of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun oncogene family members",
+        "answerability": 0.9993731379508972,
+        "ground_truth": {
+          "Jun oncogene family members": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the Jun oncogene family involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "steroid-dependent transcription",
+        "answerability": 0.7711772918701172,
+        "ground_truth": {
+          "glucocorticoid receptor-dependent transcription": {
+            "bertscore": 0.8250609040260315,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

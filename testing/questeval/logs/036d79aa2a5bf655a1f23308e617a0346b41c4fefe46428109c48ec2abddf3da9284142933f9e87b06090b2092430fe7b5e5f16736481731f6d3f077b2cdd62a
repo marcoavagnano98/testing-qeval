@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Expression of E1B-19K did not interfere with anti-Fas killing.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "anti-Fas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What kind of killing did E1B-19K not interfere with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "K",
+        "anti-Fas killing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not interfere with anti-Fas killing?",
+          "What gene did not interfere with anti-Fas killing?",
+          "What did the expression of E1B-19K not interfere with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein did not interfere with anti-Fas killing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E1B-19K",
+        "answerability": 0.9891774654388428,
+        "ground_truth": {
+          "Bcl-xL": {
+            "bertscore": 0.7523819208145142,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene did not interfere with anti-Fas killing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E1B-19K",
+        "answerability": 0.9956235885620117,
+        "ground_truth": {
+          "19": {
+            "bertscore": 0.6244853734970093,
+            "f1": 0
+          },
+          "19K": {
+            "bertscore": 0.8095473647117615,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What kind of killing did Bcl-xL and 19K not interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08157122135162354,
+        "ground_truth": {
+          "anti-Fas": {
+            "bertscore": 0.688766598701477,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Bcl-xL and 19K not interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005012035369873047,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.710929811000824,
+            "f1": 0
+          },
+          "anti-Fas killing": {
+            "bertscore": 0.6715227961540222,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

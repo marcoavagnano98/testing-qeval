@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "PTEN acts through its lipid phosphatase activity inhibiting the PI3K/Akt/mTOR/S6K pathway through stabilization of mTOR.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTEN",
+        "Akt",
+        "mTOR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the PI3K/Akt/mTOR/S6K pathway?",
+          "What is the main pathway of PI3K?",
+          "What is the main pathway of PI3K/Akt/S6K?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTEN",
+        "its lipid phosphatase activity",
+        "the PI3K/Akt/mTOR/S6K pathway",
+        "stabilization"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the PI3K/Akt/mTOR/S6K pathway?",
+          "What does PTEN inhibit?",
+          "What does PTEN inhibit?",
+          "What does PTEN do to mTOR?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits the PI3K/Akt/mTOR/S6K pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTEN",
+        "answerability": 0.9741910099983215,
+        "ground_truth": {
+          "PTEN": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What pathway does PTEN inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI3K/Akt/mTOR/S6K",
+        "answerability": 0.982028603553772,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 0.6990500688552856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does PTEN do to inhibit the PI3K/Akt/mTOR/S": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipid phosphatase",
+        "answerability": 0.8769024610519409,
+        "ground_truth": {
+          "its lipid phosphatase activity": {
+            "bertscore": 0.8826466202735901,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does PTEN inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI3K/Akt/mTOR/S6K",
+        "answerability": 0.9740251302719116,
+        "ground_truth": {
+          "the PI3K/Akt/mTOR/S6K pathway": {
+            "bertscore": 0.859913170337677,
+            "f1": 0.6666666666666666
+          },
+          "transcription": {
+            "bertscore": 0.6717793941497803,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

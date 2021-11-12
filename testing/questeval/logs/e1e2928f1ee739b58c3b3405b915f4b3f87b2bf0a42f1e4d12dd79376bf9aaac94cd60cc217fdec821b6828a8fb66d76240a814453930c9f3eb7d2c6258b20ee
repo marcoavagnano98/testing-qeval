@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Ovarian cancers overexpress the antimouse hCAP-18 and its derivative LL-37 increases ovarian cancer cell proliferation and invasion.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "hCAP-18",
+        "LL-37"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What antimouse does ovarian cancer overexpress?",
+          "What is the name of the antimouse that increases ovarian cancer cell proliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ovarian cancers",
+        "the antimouse",
+        "its derivative LL-37 increases ovarian cancer cell proliferation",
+        "invasion"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cancers overexpress hCAP-18?",
+          "What does hCAP-18 do?",
+          "What is the effect of hCAP-18 on ovarian cancer?",
+          "What does hCAP-18 increase in ovarian cancer cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the antimicrobial protein that hCAP-18 is a derivative": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LL-37",
+        "answerability": 0.8146315217018127,
+        "ground_truth": {
+          "LL-37": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cancers overexpress the antimicrobial protein hCAP-18?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.322904109954834,
+        "ground_truth": {
+          "Ovarian cancers": {
+            "bertscore": 0.6734611392021179,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does hCAP-18 increase in ovarian cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell proliferation and invasion",
+        "answerability": 0.6684994697570801,
+        "ground_truth": {
+          "the antimicrobial protein": {
+            "bertscore": 0.6956484913825989,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of hCAP-18 on ovarian cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increases ovarian cancer cell proliferation and invasion",
+        "answerability": 0.8677738904953003,
+        "ground_truth": {
+          "its derivative LL-37 increases ovarian cancer cell proliferation": {
+            "bertscore": 0.8467435240745544,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does hCAP-18 increase in ovarian cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2563769817352295,
+        "ground_truth": {
+          "invasion": {
+            "bertscore": 0.7266252636909485,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

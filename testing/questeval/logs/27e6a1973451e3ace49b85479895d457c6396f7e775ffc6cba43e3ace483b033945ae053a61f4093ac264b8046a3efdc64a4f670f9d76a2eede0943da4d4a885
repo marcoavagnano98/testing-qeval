@@ -1,0 +1,60 @@
+{
+  "type": "ref",
+  "text": "Interestingly the MnlI-AluI fragment could suppress the basal-level activity of the conalbumin promoter in both Jurkat and HeLa cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jurkat",
+        "HeLa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cell was able to suppress the basal-level activity of the conalbum",
+          "What cell type has a similar effect on conalbumin promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the MnlI-AluI fragment",
+        "the basal-level activity",
+        "the conalbumin promoter",
+        "both Jurkat and HeLa cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What could suppress the basal-level activity of the conalbumin promoter in both Jur",
+          "What did the MnlI-AluI fragment suppress?",
+          "What did the MnlI-AluI fragment suppress?",
+          "Where did the MnlI-AluI fragment suppress the basal-level"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was sufficient to suppress the conalbumin promoter activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MnlI-AluI fragment",
+        "answerability": 0.7887426614761353,
+        "ground_truth": {
+          "the MnlI-AluI fragment": {
+            "bertscore": 0.9314647316932678,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the MnlI-AluI fragment suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the basal-level activity of the conalbumin promoter",
+        "answerability": 0.7483039498329163,
+        "ground_truth": {
+          "the conalbumin promoter activity": {
+            "bertscore": 0.8550600409507751,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

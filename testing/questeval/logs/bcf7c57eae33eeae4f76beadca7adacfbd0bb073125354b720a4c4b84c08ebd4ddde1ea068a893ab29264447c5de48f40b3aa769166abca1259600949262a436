@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "Activated primed CD4 T cells contain more NFAT1 and support greater NFAT-directed transcription than unprimed CD4 T cells while activator protein 1 binding and activator protein 1-mediated transcription by both cell types is similar.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What binding is similar between primed and unprimed CD4 T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activated primed CD4 T cells",
+        "more NFAT1",
+        "greater NFAT-directed transcription",
+        "unprimed CD4 T cells",
+        "activator protein 1 binding and activator protein 1-mediated transcription",
+        "both cell types"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of CD4 T cells contain more NFAT1?",
+          "What do activated primed CD4 T cells contain?",
+          "What do activated primed CD4 T cells support?",
+          "What type of CD4 T cells contain more NFAT1?",
+          "What two factors are similar in both types of CD4 T cells?",
+          "What two types of cells are similar in activating primed CD4 T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What binding is similar between primed and unprimed CD4 T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activator protein 1",
+        "answerability": 0.9773040413856506,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.6100696921348572,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What type of CD4 T cells contain more NFAT1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activated primed CD4 T cells",
+        "answerability": 0.993309497833252,
+        "ground_truth": {
+          "Activated primed CD4 T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "unprimed CD4 T cells": {
+            "bertscore": 0.9028770923614502,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    },
+    "What do activated primed CD4 T cells contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT1",
+        "answerability": 0.972844660282135,
+        "ground_truth": {
+          "more NFAT1": {
+            "bertscore": 0.905880331993103,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What do activated primed CD4 T cells support?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT1",
+        "answerability": 0.8179730176925659,
+        "ground_truth": {
+          "greater NFAT-directed transcription": {
+            "bertscore": 0.7557658553123474,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two factors are similar in both types of CD4 T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activator protein 1 binding and activator protein 1-mediated transcription",
+        "answerability": 0.6681538820266724,
+        "ground_truth": {
+          "activator protein 1 binding and activator protein 1-mediated transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two types of cells are similar in activating primed CD4 T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21002697944641113,
+        "ground_truth": {
+          "both cell types": {
+            "bertscore": 0.6924740076065063,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

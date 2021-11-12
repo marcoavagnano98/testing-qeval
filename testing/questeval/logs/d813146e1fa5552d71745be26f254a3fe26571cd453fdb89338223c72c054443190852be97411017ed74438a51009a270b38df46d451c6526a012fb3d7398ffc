@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "PU.1 seems to be required for early development of multiple hematopoietic lineages but its expression in mature cells is preferentially observed in cells of the B-cell-and monocyte/macrophage-differentiation lineage.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "monocyte/macrophage"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What differentiation lineage is PU.1 expressed in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PU.1",
+        "early development",
+        "multiple hematopoietic lineages",
+        "its expression",
+        "mature cells",
+        "cells",
+        "the B-cell-and monocyte/macrophage-differentiation lineage"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is required for early development of multiple hematopoietic lineages?",
+          "What is PU.1 required for?",
+          "What does PU.1 seem to be required for early development of?",
+          "What is PU.1 required for early development of multiple hematopoietic",
+          "Where is PU.1 expressed?",
+          "What type of cells are most likely to express PU.1?",
+          "Where is PU.1 expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for development of some lymphoid and myeloid lineages?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PU.1",
+        "answerability": 0.5406092405319214,
+        "ground_truth": {
+          "PU.1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is PU.1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22781074047088623,
+        "ground_truth": {
+          "a hematopoietic-specific Ets family transcription factor": {
+            "bertscore": 0.5663244724273682,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is PU.1 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early development",
+        "answerability": 0.9990519285202026,
+        "ground_truth": {
+          "development": {
+            "bertscore": 0.8733903765678406,
+            "f1": 0.6666666666666666
+          },
+          "some lymphoid and myeloid lineages": {
+            "bertscore": 0.6983495354652405,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

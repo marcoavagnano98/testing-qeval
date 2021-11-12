@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "Human cyclins A and B1 are differentially located in the cell and undergo cell cycle-dependent nuclear transport.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "B1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the human cyclin that is located in the cell?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human cyclins",
+        "A",
+        "B1",
+        "the cell",
+        "cell cycle-dependent nuclear transport"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the two cyclins that are located in the cell?",
+          "What are the two cyclins in a human cell called?",
+          "What is the name of the human cyclin that is located in the cell?",
+          "Where are human cyclins A and B1 located?",
+          "What type of transport are cyclins A and B1 involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the two cyclins that are located in the cell?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A and B1",
+        "answerability": 0.847087025642395,
+        "ground_truth": {
+          "Human cyclins": {
+            "bertscore": 0.6717016100883484,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two cyclins in a human cell?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A and B1",
+        "answerability": 0.9614623785018921,
+        "ground_truth": {
+          "A": {
+            "bertscore": 0.8120453357696533,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the human cyclin that is located in the cell?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A",
+        "answerability": 0.573424220085144,
+        "ground_truth": {
+          "B": {
+            "bertscore": 0.9071643948554993,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where are human cyclins A and B located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the cell",
+        "answerability": 0.757046103477478,
+        "ground_truth": {
+          "the cell": {
+            "bertscore": 0.8772942423820496,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of transport are cyclins A and B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5365422964096069,
+        "ground_truth": {
+          "cell cycle-dependent nuclear transport": {
+            "bertscore": 0.6538868546485901,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

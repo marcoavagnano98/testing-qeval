@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "The anti-angiogenic effect of L-NAME after systemic administration was studied in a renal subcapsular CC531 adenocarcinoma model in rats.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CC531"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of adenocarcinoma was studied in rats?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The anti-angiogenic effect",
+        "L-NAME",
+        "systemic administration",
+        "a renal subcapsular CC531 adenocarcinoma model",
+        "rats"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of L-NAME on rats?",
+          "What anti-angiogenic drug was studied in rats?",
+          "What is the anti-angiogenic effect of L-NAME after?",
+          "In what animal was the anti-angiogenic effect of L-NAME studied?",
+          "In what animal was the anti-angiogenic effect of L-NAME studied?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of adenocarcinoma was studied in rats?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "renal subcapsular CC531",
+        "answerability": 0.9234832525253296,
+        "ground_truth": {
+          "CC531": {
+            "bertscore": 0.8147896528244019,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was the effect of L-NAME on rats?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-angiogenic",
+        "answerability": 0.9750128984451294,
+        "ground_truth": {
+          "The anti-tumour effect": {
+            "bertscore": 0.7534659504890442,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What anti-tumour drug was studied in rats?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "L-NAME",
+        "answerability": 0.6543436050415039,
+        "ground_truth": {
+          "L-NAME": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the anti-tumour effect of L-NAME after?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06934589147567749,
+        "ground_truth": {
+          "systemic administration": {
+            "bertscore": 0.6964026093482971,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what animal was the anti-tumour effect of L-NAME studied?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rats",
+        "answerability": 0.8443392515182495,
+        "ground_truth": {
+          "a renal subcapsular CC531 adenocarcinoma model": {
+            "bertscore": 0.6520185470581055,
+            "f1": 0
+          },
+          "rats": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

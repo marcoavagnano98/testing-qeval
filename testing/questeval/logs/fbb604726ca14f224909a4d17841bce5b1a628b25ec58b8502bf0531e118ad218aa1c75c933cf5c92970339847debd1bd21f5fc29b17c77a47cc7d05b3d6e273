@@ -1,0 +1,156 @@
+{
+  "type": "hyp",
+  "text": "These results demonstrate that c-Rel can trigger the Notch signaling pathway in neighboring cells by inducing jak kinases expression and suggest a role for Jak1 in B-cell activation differentiation or function.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Notch",
+        "Jak1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling pathway can c-Rel trigger?",
+          "What kinases do the results show can trigger the Notch signaling pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "c-Rel",
+        "the Notch",
+        "pathway",
+        "neighboring cells",
+        "jak kinases expression",
+        "a role",
+        "Jak1",
+        "B-cell activation differentiation",
+        "function"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests a role for Jak1 in B-cell activation differentiation?",
+          "What can trigger the Notch signaling pathway in neighboring cells?",
+          "What signaling pathway can c-Rel trigger?",
+          "What signaling pathway does c-Rel trigger?",
+          "Where does c-Rel trigger the Notch signaling pathway?",
+          "What does c-Rel induce in neighboring cells?",
+          "What does the results suggest about Jak1?",
+          "What kinases do the results show can trigger the Notch signaling pathway?",
+          "What does the c-Rel results suggest is involved in?",
+          "What does the c-Rel signaling pathway in neighboring cells trigger?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathway can c-Rel trigger in neighboring cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Notch",
+        "answerability": 0.9982100129127502,
+        "ground_truth": {
+          "Notch": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the Notch": {
+            "bertscore": 0.8856843113899231,
+            "f1": 1.0
+          },
+          "pathway": {
+            "bertscore": 0.7352324724197388,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests a role for Jagged1 in B-cell activation differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010204613208770752,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.6313728094100952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene can trigger the Notch signaling pathway in neighboring cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Rel",
+        "answerability": 0.9808253645896912,
+        "ground_truth": {
+          "c-Rel": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where does c-Rel trigger the Notch signaling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neighboring cells",
+        "answerability": 0.9981314539909363,
+        "ground_truth": {
+          "neighboring cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does c-Rel induce in neighboring cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "jak kinases expression",
+        "answerability": 0.9973704218864441,
+        "ground_truth": {
+          "jagged1 gene expression": {
+            "bertscore": 0.7689220309257507,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What does the results suggest about Jagged1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22853398323059082,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.671585202217102,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene expression is induced by c-Rel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "jak kinases",
+        "answerability": 0.9965077638626099,
+        "ground_truth": {
+          "Jagged1": {
+            "bertscore": 0.7164838314056396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the c-Rel gene expression in neighboring cells suggest a role for": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jak1",
+        "answerability": 0.8780645728111267,
+        "ground_truth": {
+          "B-cell activation differentiation": {
+            "bertscore": 0.6554692983627319,
+            "f1": 0
+          },
+          "function": {
+            "bertscore": 0.6375146508216858,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

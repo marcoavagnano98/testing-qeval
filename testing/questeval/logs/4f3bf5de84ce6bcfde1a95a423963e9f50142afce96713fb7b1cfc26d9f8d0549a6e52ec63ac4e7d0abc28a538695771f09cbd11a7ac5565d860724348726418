@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "CD19 signaling the current study examined whether phosphorylation of Elk-1 activation of activator protein-1 (AP-1) or activation of nuclear factor-kappaB (NF-kappaB) transcription factors occurred following CD19 cross-linking.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD19",
+        "activator protein-1",
+        "CD19"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling did the current study examine?",
+          "What does AP-1 stand for?",
+          "What signaling did the current study examine?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CD19",
+        "the current study",
+        "phosphorylation",
+        "activation",
+        "activator protein-1",
+        "activation",
+        "nuclear factor-kappaB (NF-kappaB) transcription factors",
+        "CD19 cross-linking"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling did the current study examine?",
+          "What study examined whether phosphorylation of Elk-1 activation of activator protein-1",
+          "What did the current study examine after CD19 cross-linking?",
+          "What did the current study examine after CD19 cross-linking?",
+          "What does AP-1 stand for?",
+          "What did the current study examine after CD19 cross-linking?",
+          "What did the current study examine?",
+          "What is the cause of the phosphorylation of Elk-1 activation of activator"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling did the current study examine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD19",
+        "answerability": 0.8058511018753052,
+        "ground_truth": {
+          "CD19": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does AP-1 stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activator protein-1",
+        "answerability": 0.9937229752540588,
+        "ground_truth": {
+          "activator protein-1": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What study examined whether phosphorylation of Elk-1 activation of activator protein-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "current study",
+        "answerability": 0.8638194799423218,
+        "ground_truth": {
+          "the current study": {
+            "bertscore": 0.8972970843315125,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the current study examine after CD19 cross-linking?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "whether phosphorylation of Elk-1 activation of activator protein-1 (AP-",
+        "answerability": 0.9219715595245361,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.7363832592964172,
+            "f1": 0.19999999999999998
+          },
+          "activation": {
+            "bertscore": 0.6395412087440491,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What did the current study examine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "whether phosphorylation of Elk-1 activation of activator protein-1 (AP-",
+        "answerability": 0.5859077572822571,
+        "ground_truth": {
+          "nuclear factor-kappaB (NF-kappaB) transcription factors": {
+            "bertscore": 0.690197229385376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of the phosphorylation of Elk-1 activation of activator": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36654752492904663,
+        "ground_truth": {
+          "CD19 cross-linking": {
+            "bertscore": 0.6763961315155029,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

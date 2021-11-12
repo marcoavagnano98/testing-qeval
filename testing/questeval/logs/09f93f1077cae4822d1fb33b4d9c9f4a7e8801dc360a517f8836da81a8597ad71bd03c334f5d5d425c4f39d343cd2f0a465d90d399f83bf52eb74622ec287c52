@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Expression of the Bcl-3 proto-oncogene suppresses p53 activation and inhibits apoptosis through a mechanism that is at least partly dependent on the up-regulation of Hdm2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Hdm2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main regulator of p53 activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "the Bcl-3 proto-oncogene",
+        "p53 activation",
+        "apoptosis",
+        "a mechanism",
+        "the up-regulation",
+        "Hdm2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppresses p53 activation?",
+          "What suppresses p53 activation?",
+          "What does the Bcl-3 proto-oncogene suppress?",
+          "What does the Bcl-3 proto-oncogene inhibit?",
+          "How does the Bcl-3 proto-oncogene suppress p53 activation",
+          "What is Hdm2 dependent on?",
+          "What is the main regulator of p53 activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppresses p53 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Bcl-3 proto-oncogene",
+        "answerability": 0.9810794591903687,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.6716333627700806,
+            "f1": 0
+          },
+          "the Bcl-3 proto-oncogene": {
+            "bertscore": 0.9505404829978943,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the Bcl-3 proto-oncogene suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53 activation",
+        "answerability": 0.9926329255104065,
+        "ground_truth": {
+          "p53 activation": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "In conclusion it is noteworthy that TGF-beta signalling in early and mature B cells induces both Id2 and Id3 expression 3637 but not Id1 (data not shown).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TGF",
+        "expression 3637"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signalling in early and mature B cells induces both Id2 and Id3",
+          "What does TGF-beta signalling in early and mature B cells induce?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "conclusion",
+        "it",
+        "TGF-beta",
+        "early and mature B cells",
+        "both Id2 and Id3 expression",
+        "data"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the conclusion of the study?",
+          "What does TGF-beta signalling in early and mature B cells do?",
+          "What signalling in early and mature B cells induces both Id2 and Id3",
+          "Where does TGF-beta signalling occur?",
+          "What does TGF-beta signalling in early and mature B cells induce?",
+          "What is not shown?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signalling in early and mature B cells induces both Id2 and Id3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta",
+        "answerability": 0.968754768371582,
+        "ground_truth": {
+          "TGF": {
+            "bertscore": 0.8094041347503662,
+            "f1": 0
+          },
+          "TGF-beta": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does TGF-beta signalling in early and mature B cells induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Id2 and Id3 expression",
+        "answerability": 0.9924918413162231,
+        "ground_truth": {
+          "expression 3637": {
+            "bertscore": 0.6835609078407288,
+            "f1": 0.3333333333333333
+          },
+          "both Id2 and Id3 expression": {
+            "bertscore": 0.9573225975036621,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "In what respect is it noteworthy that TGF-beta signalling induces both I": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "conclusion",
+        "answerability": 0.9145851731300354,
+        "ground_truth": {
+          "that respect": {
+            "bertscore": 0.6915680170059204,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TGF-beta signalling in early and mature B cells do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induces both Id2 and Id3 expression",
+        "answerability": 0.9986711144447327,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.5275959968566895,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does TGF-beta signalling occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early and mature B cells",
+        "answerability": 0.9572352170944214,
+        "ground_truth": {
+          "early and mature B cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is not shown?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20893466472625732,
+        "ground_truth": {
+          "data": {
+            "bertscore": 0.7281907796859741,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

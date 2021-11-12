@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "The inhibition correlated with a decrease in steady state levels of E-selectin mRNA and cell surface expression of E-selectin which is consistent with the ability of a monoclonal antibody to E-selectin to inhibit monocytic cell adhesion in this system. PPARgamma activators inhibited TNF-alpha- or PMA-induced VCAM-1 expression in U1 cells but not in ACH-2 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "PMA",
+        "U1",
+        "ACH-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was inhibited in ACH-2 cells?",
+          "What protein inhibited VCAM-1 expression?",
+          "In what cell type did PPARgamma activators inhibit VCAM-1 expression?",
+          "What type of cells did PPARgamma activate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The inhibition",
+        "a decrease",
+        "steady state levels",
+        "E-selectin mRNA and cell surface expression",
+        "E-selectin",
+        "the ability",
+        "a monoclonal antibody",
+        "E-selectin",
+        "monocytic cell adhesion",
+        "this system",
+        "PPARgamma activators",
+        "TNF-alpha- or PMA-induced VCAM-1 expression",
+        "U1 cells",
+        "ACH-2 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was associated with a decrease in steady state levels of E-selectin",
+          "What was the effect of the inhibition on steady state levels of E-selectin",
+          "What did the inhibition of E-selectin mRNA and cell surface expression of",
+          "What did the inhibition of PPARgamma correlate with?",
+          "What mRNA was decreased in the ACH-2 cells?",
+          "What is the effect of a monoclonal antibody to E-selectin",
+          "What is consistent with the ability of E-selectin to inhibit monocytic",
+          "What mRNA was decreased in the ACH-2 cells?",
+          "What did PPARgamma inhibit?",
+          "What system does PPARgamma inhibit?",
+          "What inhibited TNF-alpha- or PMA-induced VCAM-1 expression",
+          "What did PPARgamma activators inhibit in U1 cells?",
+          "In what cells did PPARgamma activators inhibit VCAM-1 expression?",
+          "What type of cells did PPARgamma activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was induced by a pretreatment of human ECs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0036092400550842285,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited VCAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PPARgamma activators",
+        "answerability": 0.6866447925567627,
+        "ground_truth": {
+          "Pretreatment": {
+            "bertscore": 0.6810164451599121,
+            "f1": 0
+          },
+          "PPARgamma activators": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited TNF-alpha-induced VCAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PPARgamma activators",
+        "answerability": 0.5789064168930054,
+        "ground_truth": {
+          "cultured human ECs": {
+            "bertscore": 0.7064318060874939,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the treatment of cultured human ECs with fenofibrate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0175819993019104,
+        "ground_truth": {
+          "WY14643 inhibited TNF-alpha-induced VCAM-1": {
+            "bertscore": 0.5896516442298889,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How did the treatment of human ECs with PPARalpha activated VCAM": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05962371826171875,
+        "ground_truth": {
+          "a time- and concentration-dependent manner": {
+            "bertscore": 0.6224399209022522,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": " stabilizes beta-catenin thereby increasing its half-life.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "half"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the half life of beta-catenin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "beta-catenin",
+        "its half-life"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stabilizes and increases half life of a protein?",
+          "What does beta-catenin increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stabilizes cytosolic beta-catenin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004070401191711426,
+        "ground_truth": {
+          "Wnt": {
+            "bertscore": 0.674863874912262,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Wnt stabilize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00046563148498535156,
+        "ground_truth": {
+          "cytosolic beta-catenin": {
+            "bertscore": 0.5980479121208191,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Wnt bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00015401840209960938,
+        "ground_truth": {
+          "TCF": {
+            "bertscore": 0.6845880150794983,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Wnt activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00023168325424194336,
+        "ground_truth": {
+          "gene transcription": {
+            "bertscore": 0.6639035940170288,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

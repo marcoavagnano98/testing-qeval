@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "We have introduced a small deletion within beta-catenin (Delta19) that disrupts binding to LEF-1 E-cadherin and APC but not axin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LEF-1 E-cadherin",
+        "APC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What binding site does Delta19 disrupt?",
+          "What protein does Delta19 disrupt?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a small deletion",
+        "beta-catenin",
+        "LEF-1 E-cadherin",
+        "APC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the deletion that disrupts binding to LEF-1 E-cadherin?",
+          "What is the deletion called that disrupts binding to LEF-1 E-cadherin",
+          "What is Delta19?",
+          "What binding site does Delta19 disrupt?",
+          "What protein does Delta19 disrupt?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein does axin disrupt?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0023425817489624023,
+        "ground_truth": {
+          "LEF-1 E-cadherin": {
+            "bertscore": 0.6453044414520264,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is not able to be binded to LEF-1 E-ca": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3878992795944214,
+        "ground_truth": {
+          "APC": {
+            "bertscore": 0.7005522847175598,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of a peptide on binding to LEF-1 E-ca": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07919228076934814,
+        "ground_truth": {
+          "that disrupts": {
+            "bertscore": 0.7296074628829956,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "This removal occurred by activation of the constitutive Sp1 factor whose increased binding activity and phosphorylation were mediated by IFN-beta.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This removal",
+        "activation",
+        "the constitutive Sp1 factor",
+        "whose increased binding activity",
+        "phosphorylation",
+        "IFN-beta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of IFN-beta on the phosphorylation of I",
+          "What was the process that removed the phosphorylation from the cytokine?",
+          "What was the main factor that removed the cytokine?",
+          "What was the effect of IFN-beta on the phosphorylation of I",
+          "What is the main mechanism of removal of a protein from the body?",
+          "What was the main factor that mediated the removal of apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the effect of IFN-gamma on the phosphorylation of I": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06416624784469604,
+        "ground_truth": {
+          "This removal": {
+            "bertscore": 0.6876503825187683,
+            "f1": 0
+          },
+          "whose increased binding activity": {
+            "bertscore": 0.660193681716919,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the process that removed the phosphorylation from the cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5311552882194519,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6694929003715515,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the main factor that removed the cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1 factor",
+        "answerability": 0.8283971548080444,
+        "ground_truth": {
+          "the constitutive Sp1 factor": {
+            "bertscore": 0.8340837955474854,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the main mechanism of the removal of a protein from the body?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation of the constitutive Sp1 factor",
+        "answerability": 0.9296948909759521,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.6586907505989075,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the main factor that removed the phosphorylation of a protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-beta",
+        "answerability": 0.832131564617157,
+        "ground_truth": {
+          "IFN-gamma": {
+            "bertscore": 0.9607387781143188,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

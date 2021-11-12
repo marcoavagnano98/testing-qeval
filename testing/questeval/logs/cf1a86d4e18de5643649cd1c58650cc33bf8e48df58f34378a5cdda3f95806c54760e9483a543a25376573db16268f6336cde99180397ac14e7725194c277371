@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "Activation protein 1-mediated transcriptional activation of interleukin IV/Gr.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation protein 1-mediated transcriptional activation",
+        "interleukin IV/Gr"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that activates interleukin IV/Gr?",
+          "What is the key to the regulation of cellular differentiation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is involved in the transcription of interleukin IV": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation protein 1-mediated",
+        "answerability": 0.5722520351409912,
+        "ground_truth": {
+          "Activation protein 1-dependent transcriptional activation": {
+            "bertscore": 0.8698628544807434,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the activation protein 1-dependent transcriptional activation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30038559436798096,
+        "ground_truth": {
+          "interleukin IV/Gr": {
+            "bertscore": 0.6095993518829346,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

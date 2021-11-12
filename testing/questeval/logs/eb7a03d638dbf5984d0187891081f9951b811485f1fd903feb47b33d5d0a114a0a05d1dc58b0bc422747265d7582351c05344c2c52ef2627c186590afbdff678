@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "Here we report that cross-linking of Fc gamma RI or Fc activates HIV-1 gene expression in the human monocytic cell line BF24 and increased HIV RNA expression in monocytes from HIV infected patients as assayed by reverse transcription-PCR.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fc activates HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of Fc gamma RI on HIV-1 gene expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "cross-linking of Fc gamma RI",
+        "Fc",
+        "HIV-1 gene expression",
+        "the human monocytic cell line BF24",
+        "HIV RNA expression",
+        "monocytes",
+        "HIV infected patients",
+        "reverse transcription-PCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors find about the effect of Fc gamma RI?",
+          "What is the name of the process that activates HIV-1 gene expression?",
+          "What is the name of the gamma RI that activates HIV-1 gene expression",
+          "What does cross-linking of Fc gamma RI or Fc activate",
+          "What does cross-linking of Fc gamma RI or Fc activate",
+          "What does reverse transcription-PCR do to HIV infected patients?",
+          "What cells in HIV infected patients are affected by the RNA-activated fusion",
+          "What is the effect of Fc gamma RI on HIV-1 gene expression?",
+          "What is used to determine the effect of Fc gamma RI on HIV-1"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the gamma RI?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fc",
+        "answerability": 0.5316189527511597,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7380815744400024,
+            "f1": 0
+          },
+          "Fc": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do we report here?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44107669591903687,
+        "ground_truth": {
+          "that cross-linking of Fc gamma RI": {
+            "bertscore": 0.6279691457748413,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

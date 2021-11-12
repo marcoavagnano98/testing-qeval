@@ -1,0 +1,146 @@
+{
+  "type": "hyp",
+  "text": "Unlike ligation of CD3 stimulation with anti-CD28 mAb or CHO cells expressing the CD28 ligands CD80 or CD86 did not lead to tyrosine phosphorylation of HS1 in Jurkat T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD28",
+        "ligands CD80",
+        "CD86",
+        "Jurkat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What ligand did not lead to tyrosine phosphorylation of",
+          "What did CHO cells not express?",
+          "What ligand did not lead to tyrosine phosphorylation of",
+          "What type of T cells did not show tyrosine phosphorylation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "ligation",
+        "CD3 stimulation",
+        "anti-CD28 mAb or CHO cells",
+        "the CD28",
+        "CD80",
+        "CD86",
+        "tyrosine phosphorylation",
+        "HS1",
+        "Jurkat T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not lead to tyrosine phosphorylation of HS1?",
+          "What did not lead to tyrosine phosphorylation of HS1?",
+          "What did not lead to tyrosine phosphorylation of HS1?",
+          "What ligand did not lead to tyrosine phosphorylation of",
+          "What ligand did not lead to tyrosine phosphorylation of",
+          "What ligand did not lead to tyrosine phosphorylation of",
+          "What did ligation of CD3 not lead to in Jurkat T cells?",
+          "What did not lead to tyrosine phosphorylation in Jurkat T cells",
+          "What did not lead to tyrosine phosphorylation of HS1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What ligand did not lead to tyrosine phosphorylation of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD80 or CD86",
+        "answerability": 0.6200299859046936,
+        "ground_truth": {
+          "CD28": {
+            "bertscore": 0.7930774092674255,
+            "f1": 0
+          },
+          "CD86": {
+            "bertscore": 0.851085364818573,
+            "f1": 0.5
+          },
+          "the CD28": {
+            "bertscore": 0.7699341177940369,
+            "f1": 0
+          },
+          "CD80": {
+            "bertscore": 0.8542734980583191,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did CHO cells not express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01589125394821167,
+        "ground_truth": {
+          "ligands CD80": {
+            "bertscore": 0.6525379419326782,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of T cells did not show tyrosine phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37527167797088623,
+        "ground_truth": {
+          "Jurkat": {
+            "bertscore": 0.6695128679275513,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not lead to tyrosine phosphorylation of HS1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD3 stimulation",
+        "answerability": 0.9669809937477112,
+        "ground_truth": {
+          "ligation": {
+            "bertscore": 0.7390015721321106,
+            "f1": 0
+          },
+          "CD3 stimulation": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "anti-CD28 mAb or CHO cells": {
+            "bertscore": 0.7300503849983215,
+            "f1": 0
+          },
+          "Jurkat T cells": {
+            "bertscore": 0.7094037532806396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did ligation of CD3 not lead to in Jurkat T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation of HS1",
+        "answerability": 0.8198424577713013,
+        "ground_truth": {
+          "tyrosine phosphorylation": {
+            "bertscore": 0.908182680606842,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did not lead to tyrosine phosphorylation in Jurkat T cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ligation of CD3 stimulation with anti-CD28 mAb",
+        "answerability": 0.6561603546142578,
+        "ground_truth": {
+          "HS1": {
+            "bertscore": 0.6476560831069946,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "In addition these mAECA stimulated the nuclear translocation of the NF-kappaB transcription factor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor was stimulated by mAECA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "these mAECA",
+        "the nuclear translocation",
+        "the NF-kappaB transcription factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did mAECA do to the NF-kappaB transcription factor?",
+          "What stimulated the nuclear translocation of the NF-kappaB transcription factor?",
+          "What did mAECA stimulate?",
+          "What did mAECA stimulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did mAECA stimulate before enhancing HIV expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09152328968048096,
+        "ground_truth": {
+          "RNA": {
+            "bertscore": 0.6859530806541443,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did mAECA do to HIV RNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008968353271484375,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.7378893494606018,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did mAECA stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the nuclear translocation of the NF-kappaB transcription factor",
+        "answerability": 0.9097442030906677,
+        "ground_truth": {
+          "NF-kappaB nuclear translocation": {
+            "bertscore": 0.853047251701355,
+            "f1": 0.6666666666666666
+          },
+          "HIV RNA expression": {
+            "bertscore": 0.7395665049552917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did mAECA stimulate in HIV RNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.025785982608795166,
+        "ground_truth": {
+          "enhancement": {
+            "bertscore": 0.7344620227813721,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

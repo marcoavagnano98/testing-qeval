@@ -1,0 +1,64 @@
+{
+  "type": "ref",
+  "text": "An AhR-activation by 10nM TCDD and HIF-1alpha activation by 5% oxygen induced activation of NFATc1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "10nM",
+        "TCDD",
+        "5%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the concentration of TCDD?",
+          "What is the name of the catalyst that causes the activation of NFATc1?",
+          "What is the oxygen content of NFATc1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An AhR-activation",
+        "10nM TCDD",
+        "HIF-1alpha activation",
+        "5%",
+        "oxygen induced activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of 10nM TCDD on NFATc1?",
+          "What is the simplest way to activate AhR?",
+          "What is the inverse of a 5% oxygen induced activation of NFAT",
+          "What is the oxygen content of NFATc1?",
+          "What is the main cause of the HIF-1alpha activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what way did LxVPc1 block NFATc1 phosphorylation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.032580554485321045,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.7332586646080017,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did exogenous LxVPc1 block in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000991523265838623,
+        "ground_truth": {
+          "NFATc1 phosphorylation and nuclear translocation": {
+            "bertscore": 0.5673381686210632,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

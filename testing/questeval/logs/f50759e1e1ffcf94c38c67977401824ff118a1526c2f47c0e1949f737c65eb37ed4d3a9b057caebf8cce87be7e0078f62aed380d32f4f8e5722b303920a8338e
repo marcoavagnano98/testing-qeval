@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "However V3-BH10 enhanced IL-2-induced mRNA expression of c-fos but not c-myc or jun.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "mRNA expression",
+        "c-fos",
+        "c-myc",
+        "jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did V3-BH10 enhance?",
+          "What gene did V3-BH10 not enhance?",
+          "What gene did V3-BH10 not enhance?",
+          "What gene did V3-BH10 not enhance?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did V3-BH10 enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2-induced mRNA expression",
+        "answerability": 0.9829549193382263,
+        "ground_truth": {
+          "mRNA expression": {
+            "bertscore": 0.8549712300300598,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What gene did V3-BH10 not enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-myc",
+        "answerability": 0.8875895738601685,
+        "ground_truth": {
+          "c-fos": {
+            "bertscore": 0.8044896721839905,
+            "f1": 0
+          },
+          "c-myc": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "junB.": {
+            "bertscore": 0.6182171106338501,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

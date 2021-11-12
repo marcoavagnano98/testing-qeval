@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Mutations in multiple NF-kappa B and AP-1 binding sites eliminated these responses.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mutations",
+        "multiple NF-kappa B",
+        "AP-1 binding sites",
+        "these responses"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What eliminated the responses of NF-kappa B and AP-1?",
+          "What mutations eliminated the NF-kappa response?",
+          "Mutations in multiple NF-kappa B and what eliminated these responses?",
+          "Mutations in multiple NF-kappa B and AP-1 binding sites eliminated what"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What eliminated the responses of NF-kappa B and AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutations",
+        "answerability": 0.9997656345367432,
+        "ground_truth": {
+          "Mutations": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two binding sites eliminated the NF-kappa responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3819963335990906,
+        "ground_truth": {
+          "the relevant NF-kappa B": {
+            "bertscore": 0.6193698644638062,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What NF-kappa B mutation eliminated the NF-kappa B response": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutations in multiple NF-kappa B and AP-1 binding sites",
+        "answerability": 0.9815448522567749,
+        "ground_truth": {
+          "AP-1 binding sites": {
+            "bertscore": 0.8499472737312317,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "Mutations in the relevant NF-kappa B and AP-1 binding sites eliminated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutations in the relevant NF-kappa B and AP-1 binding sites",
+        "answerability": 0.5699259042739868,
+        "ground_truth": {
+          "these responses": {
+            "bertscore": 0.6230795979499817,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

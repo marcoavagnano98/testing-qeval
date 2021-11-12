@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "The IL-3 gene displays both T cell specific and inducible expression: it is only expressed in CD4+ T cells after antigenic or mitogenic stimulation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is expressed in CD4+ T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The IL-3 gene",
+        "both T cell specific and inducible expression",
+        "it",
+        "CD4",
+        "T cells",
+        "antigenic or mitogenic stimulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is expressed in CD4+ T cells?",
+          "What does the IL-3 gene display?",
+          "What is the IL-3 gene only expressed in CD4+ T cells after antigenic or",
+          "What type of T cells are IL-3 expressed in?",
+          "What type of cells does the IL-3 gene express?",
+          "What is the only way the IL-3 gene is expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49356234073638916,
+        "ground_truth": {
+          "a cytokine": {
+            "bertscore": 0.6300880312919617,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells is IL-3 expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD4+ T cells",
+        "answerability": 0.9778207540512085,
+        "ground_truth": {
+          "activated T cells": {
+            "bertscore": 0.8252255320549011,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

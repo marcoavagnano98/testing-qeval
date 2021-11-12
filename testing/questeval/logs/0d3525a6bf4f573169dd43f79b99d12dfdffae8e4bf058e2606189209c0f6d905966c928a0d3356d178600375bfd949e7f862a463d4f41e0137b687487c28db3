@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "This detection suggested a preferential activation of p50/c-Rel in medullary thymocytes whereas p65/p50 was present in both cortical and medullary regions of human thymus lobules.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p50/c-Rel",
+        "medullary",
+        "p65/p50"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was found in human thymus lobules?",
+          "In what region of the thymocytes was p65/p50 present",
+          "What was present in both cortical and medullary thymocytes"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This detection",
+        "a preferential activation",
+        "p50/c-Rel",
+        "medullary thymocytes",
+        "p65/p50",
+        "both cortical and medullary regions",
+        "human thymus lobules"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggested a preferential activation of p50/c-Rel in me",
+          "What did the detection of p50/c-Rel suggest?",
+          "What protein was found in human thymus lobules?",
+          "Where was p65/p50 present in both cortical and medullary",
+          "What was present in both cortical and medullary thymocytes",
+          "Where was p65/p50 present in human thymus lobule",
+          "Where was p65/p50 present?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was detected in human thymus lobules?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22195518016815186,
+        "ground_truth": {
+          "p50/c-Rel": {
+            "bertscore": 0.6397230625152588,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what region of the thymocytes was p50/p65 present": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cortical",
+        "answerability": 0.7334606647491455,
+        "ground_truth": {
+          "medullary": {
+            "bertscore": 0.7994406223297119,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was present in both cortical and medullary regions of human thy": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65/p50",
+        "answerability": 0.8305681347846985,
+        "ground_truth": {
+          "p50/p65": {
+            "bertscore": 0.952126681804657,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggested a preferential activation of p50/c-Rel in me": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "This detection",
+        "answerability": 0.9501294493675232,
+        "ground_truth": {
+          "This detection": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the detection of p50/c-Rel suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "preferential activation",
+        "answerability": 0.8938436508178711,
+        "ground_truth": {
+          "a preferential activation": {
+            "bertscore": 0.9290565848350525,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where was p50/p65 present in human thymus lobule": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32301247119903564,
+        "ground_truth": {
+          "medullary thymocytes": {
+            "bertscore": 0.623943567276001,
+            "f1": 0
+          },
+          "both cortical and medullary regions": {
+            "bertscore": 0.6240424513816833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was p50/p65 present?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14132696390151978,
+        "ground_truth": {
+          "human thymus lobules": {
+            "bertscore": 0.644565224647522,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

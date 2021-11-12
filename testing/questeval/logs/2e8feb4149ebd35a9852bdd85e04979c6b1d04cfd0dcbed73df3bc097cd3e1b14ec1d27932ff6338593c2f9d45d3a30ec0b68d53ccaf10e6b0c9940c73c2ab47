@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "IL-17R activation of human periodontal ligament fibroblasts induces IL-23 p19 production:\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-17R"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that causes IL-23 p19 production?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-17R activation",
+        "human periodontal ligament fibroblasts",
+        "p19 production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that causes IL-23 p19 production?",
+          "What is IL-17R activation?",
+          "What does IL-17R induce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that causes IL-23 p19 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-17R",
+        "answerability": 0.6549546122550964,
+        "ground_truth": {
+          "IL-17R": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that causes IL-23 p19 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-17R activation",
+        "answerability": 0.923636257648468,
+        "ground_truth": {
+          "IL-17R activation": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is IL-17R activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08499503135681152,
+        "ground_truth": {
+          "human periodontal ligament fibroblasts": {
+            "bertscore": 0.6408224701881409,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-17R induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2912684679031372,
+        "ground_truth": {
+          "p19 production": {
+            "bertscore": 0.6476278305053711,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

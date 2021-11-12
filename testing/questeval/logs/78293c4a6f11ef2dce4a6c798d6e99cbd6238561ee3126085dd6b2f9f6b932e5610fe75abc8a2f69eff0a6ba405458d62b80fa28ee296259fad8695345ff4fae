@@ -1,0 +1,58 @@
+{
+  "type": "hyp",
+  "text": "Finally we demonstrated that direct inhibition of key enzymes to glycogen metabolism and pentose phosphate pathways reduced HUVEC tube formation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "direct inhibition",
+        "key enzymes",
+        "glycogen metabolism",
+        "pentose phosphate pathways",
+        "HUVEC tube formation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study show about HUVEC tube formation?",
+          "What did the study show reduced HUVEC tube formation?",
+          "What did the study show was inhibited?",
+          "What enzymes were inhibited in the study?",
+          "What enzymes were inhibited in HUVEC tube formation?",
+          "What did the study show was reduced by direct inhibition of key enzymes to glycogen metabolism and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppressed HUVEC tube formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of key enzymes to glycogen metabolism and pentose phosphate pathways",
+        "answerability": 0.9500668048858643,
+        "ground_truth": {
+          "Moreover TKI-31": {
+            "bertscore": 0.5761341452598572,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TKI-31 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010558366775512695,
+        "ground_truth": {
+          "dose-dependently suppressed HUVEC tube formation": {
+            "bertscore": 0.6312207579612732,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

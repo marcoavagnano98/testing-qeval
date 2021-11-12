@@ -1,0 +1,158 @@
+{
+  "type": "hyp",
+  "text": "Additionally bolus (3h) doxorubicin incubation led to phosphorylation of p53 at serine 392 induction of p21 G2 arrest and increase of proapoptotic protein\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3h",
+        "392"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did doxorubicin incubate?",
+          "What serine did doxorubicin incubate to induce p21"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Additionally bolus",
+        "3h",
+        "incubation",
+        "phosphorylation",
+        "p53",
+        "serine 392 induction",
+        "p21 G2 arrest",
+        "increase",
+        "proapoptotic protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the duration of the doxorubicin incubation?",
+          "How long did doxorubicin incubate?",
+          "What process led to phosphorylation of p53 at serine 392?",
+          "What did doxorubicin incubation lead to?",
+          "What protein was phosphorylated at serine 392?",
+          "What is the location of p21 G2 arrest?",
+          "What is the result of doxorubicin incubation?",
+          "What did doxorubicin incubation lead to?",
+          "What protein was increased by doxorubicin incubation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did doxorubicin incubate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3h",
+        "answerability": 0.6142886877059937,
+        "ground_truth": {
+          "3h": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What serine did doxorubicin incubate to induce p21": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5465662479400635,
+        "ground_truth": {
+          "392": {
+            "bertscore": 0.6420332193374634,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the duration of the doxorubicin incubation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3h",
+        "answerability": 0.8661316633224487,
+        "ground_truth": {
+          "Additionally bolus": {
+            "bertscore": 0.7195326089859009,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What process led to phosphorylation of p53 at serine 392?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "doxorubicin incubation",
+        "answerability": 0.9569373726844788,
+        "ground_truth": {
+          "incubation": {
+            "bertscore": 0.8072100877761841,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did doxorubicin incubation lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of p53 at serine 392 induction of p21",
+        "answerability": 0.8281933069229126,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.7915452718734741,
+            "f1": 0.19999999999999998
+          },
+          "increase": {
+            "bertscore": 0.5791219472885132,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was phosphorylated at serine 392?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53",
+        "answerability": 0.9085244536399841,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the location of p21 G2 arrest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45272618532180786,
+        "ground_truth": {
+          "serine 392 induction": {
+            "bertscore": 0.6715060472488403,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of doxorubicin incubation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of p53 at serine 392 induction of p21",
+        "answerability": 0.9235916137695312,
+        "ground_truth": {
+          "p21 G2 arrest": {
+            "bertscore": 0.7088225483894348,
+            "f1": 0.16666666666666666
+          }
+        }
+      }
+    },
+    "What protein was increased by doxorubicin incubation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proapoptotic",
+        "answerability": 0.9444652199745178,
+        "ground_truth": {
+          "proapoptotic protein": {
+            "bertscore": 0.9210557341575623,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Upon treatment of cells with the liposome/PNA mixture the cellular uptake of PNA (approximately 5-fold compared with the control) was increased.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "treatment",
+        "cells",
+        "the liposome/PNA mixture",
+        "the cellular uptake",
+        "PNA",
+        "the control"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of the liposome/PNA mixture on the cellular uptake",
+          "What did the liposome/PNA mixture increase the cellular uptake of?",
+          "What did the treatment of the cells increase the cellular uptake of PNA?",
+          "What was increased after treatment with liposome/PNA mixture?",
+          "What was absorbed by the cells after liposome/PNA mixture?",
+          "What was the cellular uptake of PNA increased by 5 fold compared to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the result of the treatment of cells with liposome/PNA mixture?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased",
+        "answerability": 0.9963242411613464,
+        "ground_truth": {
+          "treatment": {
+            "bertscore": 0.7859628796577454,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the liposome/PNA mixture stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cellular uptake of PNA",
+        "answerability": 0.8650264739990234,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.7053509950637817,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the treatment of cells with PNA produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2895563840866089,
+        "ground_truth": {
+          "the liposome/PNA mixture": {
+            "bertscore": 0.6147696375846863,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the liposome/PNA mixture increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cellular uptake of PNA",
+        "answerability": 0.984476625919342,
+        "ground_truth": {
+          "cellular uptake": {
+            "bertscore": 0.8543251156806946,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the liposome/PNA mixture used to increase cellular uptake of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PNA",
+        "answerability": 0.9745464324951172,
+        "ground_truth": {
+          "PNA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the only cell that had a 5-fold increase in cellular uptake of P": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04507333040237427,
+        "ground_truth": {
+          "control": {
+            "bertscore": 0.6847507953643799,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

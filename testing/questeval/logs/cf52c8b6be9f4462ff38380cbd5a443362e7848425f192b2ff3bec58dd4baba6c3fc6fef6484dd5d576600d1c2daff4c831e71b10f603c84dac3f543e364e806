@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "In THP-1 cells Fc gamma R cross-linking induced NF-kappa B which is known to bind to the regulatory region of the long terminal repeat (LTR) of HIV-1 and to activate HIV-1 transcription. This inhibition was not mediated through Nef phosphorylation on Thr-15 or GTP-binding activity because mutations in critical sites did not alter this inhibition.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "THP-1",
+        "HIV-1",
+        "HIV-1",
+        "Nef",
+        "Thr-15",
+        "GTP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells did Fc gamma R cross-link?",
+          "What transcription factor is known to bind to the regulatory region of the long terminal repeat?",
+          "What transcription factor is known to bind to the regulatory region of the long terminal repeat?",
+          "What phosphorylation on Thr-15 did not alter the inhibition of HIV-1 transcription?",
+          "What is the name of the gene that binds to the regulatory region of the LTR",
+          "What binding activity was not mediated by Nef phosphorylation on Thr-15?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "THP-1 cells",
+        "Fc gamma R cross-linking induced NF-kappa B",
+        "the regulatory region",
+        "the long terminal repeat",
+        "(LTR",
+        "HIV-1",
+        "HIV-1 transcription",
+        "This inhibition",
+        "Nef phosphorylation",
+        "Thr-15",
+        "GTP-binding activity",
+        "mutations",
+        "critical sites",
+        "this inhibition"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells did Fc gamma R cross-linking induced",
+          "What is known to bind to the regulatory region of the long terminal repeat of HIV-1?",
+          "What part of the LTR does NF-kappa B bind to?",
+          "What is the regulatory region of HIV-1?",
+          "What is the regulatory region of HIV-1?",
+          "What transcription factor is known to bind to the regulatory region of the long terminal repeat?",
+          "What does NF-kappa B activate?",
+          "What was not mediated through Nef phosphorylation on Thr-15 or GTP",
+          "What was not mediated by Thr-15?",
+          "What is the name of the gene that binds to the regulatory region of the LTR",
+          "What activity of Thr-15 did not inhibit the NF-kappa B activity?",
+          "What did not alter the activity of NF-kappa B?",
+          "What did not alter the inhibition of NF-kappa B?",
+          "What was not mediated through Nef phosphorylation on Thr-15 or GTP"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What antibody inhibited both HIV-1-LTR-driven transcription and NF-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3649129271507263,
+        "ground_truth": {
+          "Anti-TNF": {
+            "bertscore": 0.6372137069702148,
+            "f1": 0
+          },
+          "anti-IL-1": {
+            "bertscore": 0.6008839011192322,
+            "f1": 0
+          },
+          "Anti-TNF-alpha antibody": {
+            "bertscore": 0.6060146689414978,
+            "f1": 0
+          },
+          "beta antibody": {
+            "bertscore": 0.670418381690979,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did anti-TNF-alpha antibody inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0019835233688354492,
+        "ground_truth": {
+          "both the induction": {
+            "bertscore": 0.6820738911628723,
+            "f1": 0
+          },
+          "HIV-1-LTR-driven transcription": {
+            "bertscore": 0.6001012325286865,
+            "f1": 0
+          },
+          "the induction": {
+            "bertscore": 0.697335422039032,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was inhibited by anti-TNF-alpha but not anti-IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.044996678829193115,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.644961416721344,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

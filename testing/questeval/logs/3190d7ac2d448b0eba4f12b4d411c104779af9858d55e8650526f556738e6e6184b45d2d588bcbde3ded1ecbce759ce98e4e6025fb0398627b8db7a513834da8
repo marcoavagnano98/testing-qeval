@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "In Th17 cells that expressed IL-17a as well as IL-10 mRNA (Figure 6C) T-bet and GATA-3 mRNA were undetectable (data not shown) whereas that of ROR-gammat was high (Figure 6C)\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Th17",
+        "mRNA",
+        "6C",
+        "6C"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells expressed IL-17a?",
+          "What did the cells that expressed IL-17a and IL-10 not detect?",
+          "What is the result of the analysis of T-bet and GATA-3 mRNA",
+          "What is the result of the analysis of T-bet and GATA-3 mRNA"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Th17 cells",
+        "IL-17a",
+        "IL-10 mRNA (Figure 6C",
+        "T-bet",
+        "GATA-3 mRNA",
+        "data",
+        "ROR-gammat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells expressed IL-17a?",
+          "What mRNA did Th17 cells express?",
+          "What did Th17 cells express?",
+          "What is the name of the mRNA that is undetectable in Th17 cells?",
+          "What was undetectable in Th17 cells?",
+          "What was not shown in Figure 6C?",
+          "What is the name of the protein that is high in IL-10 mRNA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA was inhibited by dexamethasone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03628277778625488,
+        "ground_truth": {
+          "IL-5": {
+            "bertscore": 0.6641817688941956,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was completely inhibited by dexamethasone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001717209815979004,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.7021175622940063,
+            "f1": 0
+          },
+          "IL-2R stimulation": {
+            "bertscore": 0.6014373302459717,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that inhibits the induction of IL-5 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009469211101531982,
+        "ground_truth": {
+          "TCR": {
+            "bertscore": 0.6891100406646729,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug inhibited the induction of IL-5 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004028379917144775,
+        "ground_truth": {
+          "dexamethasone": {
+            "bertscore": 0.6318903565406799,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

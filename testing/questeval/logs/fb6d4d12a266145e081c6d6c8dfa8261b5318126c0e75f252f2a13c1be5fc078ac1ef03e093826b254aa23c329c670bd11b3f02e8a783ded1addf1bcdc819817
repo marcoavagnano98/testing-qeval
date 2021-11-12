@@ -1,0 +1,144 @@
+{
+  "type": "hyp",
+  "text": "BMT inhibits nuclear translocation of both HIV-1 transactivator (TAT) and the cellular transcriptional nuclear factor-KB (NF-kappa B) resulting in the suppression of HIV-1 replication.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BMT",
+        "HIV-1",
+        "TAT",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits nuclear translocation of both TAT and NF-kappa B?",
+          "What does BMT inhibit?",
+          "What is the name of the HIV-1 transactivator?",
+          "What does BMT inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BMT",
+        "nuclear translocation",
+        "both HIV-1 transactivator",
+        "(TAT",
+        "the cellular transcriptional nuclear factor-KB",
+        "(NF-kappa B",
+        "the suppression",
+        "HIV-1 replication"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits nuclear translocation of both TAT and NF-kappa B?",
+          "What does BMT inhibit?",
+          "What does BMT inhibit?",
+          "What is the name of the HIV-1 transactivator?",
+          "What does NF-kappa B stand for?",
+          "What is the cellular transcriptional nuclear factor-KB?",
+          "What does BMT do to HIV-1 replication?",
+          "What does BMT suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits nuclear translocation of both TAT and NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BMT",
+        "answerability": 0.9980027675628662,
+        "ground_truth": {
+          "BMT": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does BMT inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear translocation",
+        "answerability": 0.964338481426239,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.7051466703414917,
+            "f1": 0
+          },
+          "nuclear translocation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "both HIV-1 transactivator": {
+            "bertscore": 0.7328859567642212,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the HIV-1 transactivator?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TAT",
+        "answerability": 0.9906077980995178,
+        "ground_truth": {
+          "TAT": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          },
+          "(TAT": {
+            "bertscore": 0.8481624722480774,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does NF-kappa B stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cellular transcriptional nuclear factor-KB",
+        "answerability": 0.9221178889274597,
+        "ground_truth": {
+          "the cellular transcriptional nuclear factor-KB": {
+            "bertscore": 0.9524703621864319,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the cellular transcriptional nuclear factor-KB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9772157669067383,
+        "ground_truth": {
+          "(NF-kappa B": {
+            "bertscore": 0.89778733253479,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does BMT do to HIV-1 replication?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibits nuclear translocation",
+        "answerability": 0.9802222847938538,
+        "ground_truth": {
+          "the suppression": {
+            "bertscore": 0.6632950305938721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does BMT suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 replication",
+        "answerability": 0.9649601578712463,
+        "ground_truth": {
+          "HIV-1 replication": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

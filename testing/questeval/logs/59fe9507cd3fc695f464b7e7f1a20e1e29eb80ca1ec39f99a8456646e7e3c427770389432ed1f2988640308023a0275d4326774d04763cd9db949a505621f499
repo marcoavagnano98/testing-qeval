@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "NIK cannot phosphorylate IkappaB-alpha directly but it appears to be a functionally important subunit because mutated NIK inhibited stimulus-induced kappaB-dependent transcription more effectively than mutated IRF-alpha or -beta.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NIK",
+        "NIK",
+        "kappaB-dependent"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the subunit that can inhibit kappaB-dependent transcription?",
+          "What is the subunit that can inhibit kappaB-dependent transcription?",
+          "What transcription does NIK inhibit more effectively than IRF-alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NIK",
+        "IkappaB-alpha",
+        "it",
+        "a functionally important subunit",
+        "mutated NIK",
+        "stimulus-induced kappaB-dependent transcription",
+        "mutated IRF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the subunit that can inhibit kappaB-dependent transcription?",
+          "What subunit of kappaB is mutated?",
+          "What is the subunit of IkappaB-alpha that is functionally important",
+          "What does NIK appear to be?",
+          "What inhibits kappaB-dependent transcription more effectively than IRF-alpha",
+          "What does mutated NIK inhibit more effectively than IRF-alpha?",
+          "What inhibits kappaB-dependent transcription more effectively?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the subunit that can inhibit kappaB-dependent transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NIK",
+        "answerability": 0.7544764280319214,
+        "ground_truth": {
+          "NIK": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of transcription does NIK inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappaB-dependent transcription",
+        "answerability": 0.7795699238777161,
+        "ground_truth": {
+          "kappaB-dependent": {
+            "bertscore": 0.9125327467918396,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What subunit of the kappaB is mutated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IRF-alpha or -beta",
+        "answerability": 0.7251004576683044,
+        "ground_truth": {
+          "IkappaB-alpha": {
+            "bertscore": 0.7870298027992249,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the subunit of IkappaB-alpha that is functionally important": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NIK",
+        "answerability": 0.5490813255310059,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6659177541732788,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does NIK appear to be?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a functionally important subunit",
+        "answerability": 0.9840637445449829,
+        "ground_truth": {
+          "a functionally important subunit": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibits kappaB-dependent transcription more effectively?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutated NIK",
+        "answerability": 0.8230874538421631,
+        "ground_truth": {
+          "mutated NIK": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          },
+          "mutated IKK-alpha": {
+            "bertscore": 0.8699030876159668,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does mutated NIK inhibit more effectively than mutated IKK-al": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2330927848815918,
+        "ground_truth": {
+          "stimulus-induced kappaB-dependent transcription": {
+            "bertscore": 0.5984663963317871,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

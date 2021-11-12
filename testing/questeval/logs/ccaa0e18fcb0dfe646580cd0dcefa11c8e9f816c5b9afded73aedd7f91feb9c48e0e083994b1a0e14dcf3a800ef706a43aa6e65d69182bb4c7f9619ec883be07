@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "We conclude that ATRA as well as VD efficiently increases the nuclear abundance of VD receptor (VDR) and promotes monocytic differentiation. We conclude that VDR polymorphism does not affect the abundance of the VDR mRNA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ATRA",
+        "VD",
+        "VD",
+        "VDR",
+        "VDR",
+        "VDR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases the nuclear abundance of VD receptor?",
+          "What does ATRA and VD do to increase the nuclear abundance of VDR receptor?",
+          "What does ATRA and VD do to increase the nuclear abundance of VDR receptor?",
+          "What does ATRA and VD efficiently increase the nuclear abundance of?",
+          "What does ATRA and VD efficiently increase the nuclear abundance of?",
+          "What does ATRA and VD efficiently increase the nuclear abundance of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "ATRA",
+        "VD",
+        "the nuclear abundance",
+        "VD receptor",
+        "VDR",
+        "monocytic differentiation",
+        "We",
+        "VDR polymorphism",
+        "the abundance"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors conclude about the effect of ATRA and VD on the VDR?",
+          "What increases the nuclear abundance of VD receptor?",
+          "What does ATRA and VD do to increase the nuclear abundance of VDR receptor?",
+          "What does ATRA and VD increase?",
+          "What does VDR stand for?",
+          "What does ATRA and VD efficiently increase the nuclear abundance of?",
+          "What does ATRA and VD promote?",
+          "What did the authors conclude about the effect of ATRA and VD on the VDR?",
+          "What does not affect the abundance of VDR mRNA?",
+          "What does VDR polymorphism not affect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does VDR polymorphism not affect the abundance of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VDR mRNA",
+        "answerability": 0.7679529786109924,
+        "ground_truth": {
+          "VDR": {
+            "bertscore": 0.8159856200218201,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the authors conclude about VDR polymorphism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "does not affect the abundance of the VDR mRNA",
+        "answerability": 0.548330545425415,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5503181219100952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not affect the abundance of the VDR mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VDR polymorphism",
+        "answerability": 0.9964785575866699,
+        "ground_truth": {
+          "VDR polymorphism": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does VDR polymorphism not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4873913526535034,
+        "ground_truth": {
+          "the abundance": {
+            "bertscore": 0.6589813232421875,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

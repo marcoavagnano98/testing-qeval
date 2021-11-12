@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "MAZ a zinc finger protein binds to c-MYC and C2 gene sequences regulating transcription initiation and termination.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a zinc finger protein binds",
+        "c-MYC and C2 gene sequences",
+        "transcription initiation",
+        "termination"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is MAZ?",
+          "What does MAZ bind to?",
+          "What does MAZ regulate?",
+          "What is the main function of MAZ?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What may encode a transcription factor with dual roles in transcription initiation and termination?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29463446140289307,
+        "ground_truth": {
+          "MAZ": {
+            "bertscore": 0.6693167090415955,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MAZ encode?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0887824296951294,
+        "ground_truth": {
+          "a transcription factor": {
+            "bertscore": 0.6595960259437561,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of MAZ in transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating transcription initiation and termination",
+        "answerability": 0.9892057776451111,
+        "ground_truth": {
+          "dual roles": {
+            "bertscore": 0.6509448885917664,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating transcription initiation and termination",
+        "answerability": 0.9884093999862671,
+        "ground_truth": {
+          "transcription initiation": {
+            "bertscore": 0.8228281736373901,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is the second role of MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating transcription initiation and termination",
+        "answerability": 0.9382652640342712,
+        "ground_truth": {
+          "termination": {
+            "bertscore": 0.7643206715583801,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the activating function of p95vav is blocked by FK506 in T cells in which calcineurin is part of the substrate binding complex.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p95vav",
+        "FK506"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is blocked by FK506 in T cells?",
+          "What blocker is present in T cells that have calcineurin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the activating function",
+        "p95vav",
+        "FK506",
+        "T cells",
+        "calcineurin",
+        "part",
+        "the substrate binding complex"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is blocked by FK506 in T cells?",
+          "What is blocked by FK506 in T cells?",
+          "What blocker is present in T cells that have calcineurin?",
+          "In what type of cells is calcineurin a part of the substrate binding complex",
+          "What is part of the substrate binding complex?",
+          "What is calcineurin in T cells?",
+          "What is calcineurin part of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is blocked by FK506?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activating function of p95vav",
+        "answerability": 0.9289178848266602,
+        "ground_truth": {
+          "p95vav": {
+            "bertscore": 0.811024010181427,
+            "f1": 0.4
+          },
+          "the activating function": {
+            "bertscore": 0.8285751342773438,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What blockades the activating function of p95vav?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FK506",
+        "answerability": 0.9848820567131042,
+        "ground_truth": {
+          "FK506": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does FK506 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activating function of p95vav",
+        "answerability": 0.8437888622283936,
+        "ground_truth": {
+          "its activity": {
+            "bertscore": 0.6162586808204651,
+            "f1": 0
+          },
+          "calcineurin": {
+            "bertscore": 0.6440536975860596,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

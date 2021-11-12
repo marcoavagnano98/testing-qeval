@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Intercellular adhesion molecule 1 (ICAM-1) is an important molecule in modulating polymorphonuclear neutrophil transendothelial migration during inflammation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1",
+        "neutrophil"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the molecule that modulates polymorphonuclear neutrophil transendo",
+          "What type of cell is involved in transendothelial migration?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(ICAM-1",
+        "an important molecule",
+        "polymorphonuclear neutrophil transendothelial migration",
+        "inflammation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the molecule that modulates polymorphonuclear neutrophil transendo",
+          "What is the role of ICAM-1 in modulating polymorphonuclear neutrophil",
+          "What is the ICAM-1 important for?",
+          "What is the main cause of cell death?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the molecule that promotes polymorphonuclear neutrophil transendo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ICAM-1",
+        "answerability": 0.6858171224594116,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.7195162177085876,
+            "f1": 0
+          },
+          "(ICAM-1": {
+            "bertscore": 0.888970136642456,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cell is induced by ICAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.055773138999938965,
+        "ground_truth": {
+          "neutrophil": {
+            "bertscore": 0.6602747440338135,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of ICAM-1 in the promotion of polymorphonuclear neutr": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18024104833602905,
+        "ground_truth": {
+          "an important molecule": {
+            "bertscore": 0.661971390247345,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of ICAM-1 in the formation of polymorphonuclear neutr": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1801488995552063,
+        "ground_truth": {
+          "promotion": {
+            "bertscore": 0.6647112369537354,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the ICAM-1 important for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "modulating polymorphonuclear neutrophil transendothelial migration",
+        "answerability": 0.9421908855438232,
+        "ground_truth": {
+          "polymorphonuclear neutrophil transendothelial migration": {
+            "bertscore": 0.9597858786582947,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What is the main cause of cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00012755393981933594,
+        "ground_truth": {
+          "inflammation": {
+            "bertscore": 0.702562153339386,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

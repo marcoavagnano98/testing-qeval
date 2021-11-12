@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Thus IkappaBalpha phosphorylation was required to protect RPS3 from nuclear translocation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was required to protect RPS3 from nuclear translocation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IkappaBalpha phosphorylation",
+        "RPS3",
+        "nuclear translocation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was required to protect RPS3 from nuclear translocation?",
+          "What protein was required to protect from nuclear translocation?",
+          "What did IkappaBalpha phosphorylation protect RPS3 from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required to cause RPS3 association with importin-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05482548475265503,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 0.6275320053100586,
+            "f1": 0
+          },
+          "IkappaBalpha phosphorylation": {
+            "bertscore": 0.5785697102546692,
+            "f1": 0
+          },
+          "degradation": {
+            "bertscore": 0.7194914817810059,
+            "f1": 0
+          },
+          "itself": {
+            "bertscore": 0.7354585528373718,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not enough to cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003508329391479492,
+        "ground_truth": {
+          "RPS3 association": {
+            "bertscore": 0.6468274593353271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of RPS3 association?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009867429733276367,
+        "ground_truth": {
+          "importin-alpha": {
+            "bertscore": 0.645880401134491,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the second step in the phosphorylation and degradation of IkappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.026966869831085205,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 0.7173126935958862,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

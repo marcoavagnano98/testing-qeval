@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "Foxp3 contains a proline-rich amino-terminal domain reported to function as a nuclear factor of activated T cells (NF-AT) and nuclear factor-kappaB (NF-kappaB) binding domain a central region containing a zinc finger and leucine zipper potentially important for protein-protein interactions and a carboxyl-terminal forkhead (FKH) domain required for nuclear localization and DNA-binding activity 14-16.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "leucine zipper",
+        "FKH",
+        "14"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the central region of Foxp3 containing?",
+          "What is the carboxyl-terminal forkhead domain called?",
+          "What is the NF-kappaB binding domain?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a proline-rich amino-terminal domain",
+        "a nuclear factor",
+        "activated T cells",
+        "(NF-AT",
+        "nuclear factor-kappaB",
+        "(NF-kappaB",
+        "binding domain",
+        "a central region",
+        "a zinc finger",
+        "leucine zipper",
+        "protein-protein interactions",
+        "a carboxyl-terminal forkhead (FKH) domain",
+        "nuclear localization",
+        "DNA-binding activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 contain?",
+          "What does Foxp3 function as?",
+          "What is NF-AT?",
+          "What is the name of the T cell that Foxp3 functions as?",
+          "What is another name for NF-kappaB?",
+          "What is another name for nuclear factor-kappaB?",
+          "What does Foxp3 have?",
+          "What part of Foxp3 contains a zinc finger and leucine zipper?",
+          "What is the central region of Foxp3 containing?",
+          "What is the central region of Foxp3 containing?",
+          "What is the central region of Foxp3 important for?",
+          "What is required for nuclear localization and DNA-binding activity?",
+          "What is Foxp3 required for?",
+          "What is Foxp3 required for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the leucine zipper?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1335710883140564,
+        "ground_truth": {
+          "A region": {
+            "bertscore": 0.6553195714950562,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the leucine zipper important for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein-protein interactions",
+        "answerability": 0.5802032947540283,
+        "ground_truth": {
+          "respect": {
+            "bertscore": 0.637174665927887,
+            "f1": 0
+          },
+          "Foxp3 function": {
+            "bertscore": 0.6291715502738953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What region is important for Foxp3 function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45064884424209595,
+        "ground_truth": {
+          "the leucine zipper": {
+            "bertscore": 0.6263507008552551,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

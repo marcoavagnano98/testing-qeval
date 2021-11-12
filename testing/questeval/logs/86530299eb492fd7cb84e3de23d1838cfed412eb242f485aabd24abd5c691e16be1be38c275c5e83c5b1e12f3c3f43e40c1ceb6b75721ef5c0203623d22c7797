@@ -1,0 +1,92 @@
+{
+  "type": "ref",
+  "text": "(LTR) activated transcription from the HIV promoter in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way did LTR activate transcription?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(LTR",
+        "transcription",
+        "the HIV promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activated transcription from the HIV promoter in vitro?",
+          "What did LTR activate?",
+          "What did LTR activate in vitro?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein activated transcription from the HIV promoter in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LTR",
+        "answerability": 0.9306821823120117,
+        "ground_truth": {
+          "HIV-TF1": {
+            "bertscore": 0.7146472930908203,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the acronym LTR stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01898270845413208,
+        "ground_truth": {
+          "the HIV long terminal repeat": {
+            "bertscore": 0.6275867223739624,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the long terminal repeat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0019361376762390137,
+        "ground_truth": {
+          "(LTR": {
+            "bertscore": 0.6555623412132263,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the binding of HIV-TF1 to the HIV long terminal repeat activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32905811071395874,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6925773024559021,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the binding of HIV-TF1 to the HIV long terminal repeat activate transcription from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06457406282424927,
+        "ground_truth": {
+          "the HIV promoter": {
+            "bertscore": 0.6393582224845886,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

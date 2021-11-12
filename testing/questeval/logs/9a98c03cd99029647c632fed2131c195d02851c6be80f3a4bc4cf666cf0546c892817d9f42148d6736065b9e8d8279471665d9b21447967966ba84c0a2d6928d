@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "Ran GTPase regulates Mad2 localization to the nuclear pore complex through a conserved threonine residue.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ran GTPase",
+        "Mad2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulates Mad2 localization to the nuclear pore complex?",
+          "What does Ran GTPase regulate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ran GTPase",
+        "Mad2 localization",
+        "a conserved threonine residue"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulates Mad2 localization to the nuclear pore complex?",
+          "What does Ran GTPase regulate?",
+          "What is the main mechanism by which Ran GTPase regulates Mad2 localization"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What regulates Mad2 localization to the nuclear pore complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ran GTPase",
+        "answerability": 0.9728571176528931,
+        "ground_truth": {
+          "Ran GTPase": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Ran GTPase regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mad2 localization to the nuclear pore complex",
+        "answerability": 0.6939874887466431,
+        "ground_truth": {
+          "Mad2": {
+            "bertscore": 0.7292866706848145,
+            "f1": 0.2857142857142857
+          },
+          "Mad2 localization": {
+            "bertscore": 0.8306096792221069,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

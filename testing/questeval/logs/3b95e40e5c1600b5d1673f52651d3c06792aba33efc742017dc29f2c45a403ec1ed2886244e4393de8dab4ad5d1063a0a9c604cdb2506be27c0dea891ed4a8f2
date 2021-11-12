@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Our data suggest that interferon-alpha /beta-induced phosphorylation increases the stability of a preexisting latent STAT1-STAT2 signaling complex.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our data",
+        "interferon-alpha /beta-induced phosphorylation",
+        "the stability",
+        "a preexisting latent STAT1-STAT2",
+        "complex"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that interferon-alpha /beta-induced phosphoryl",
+          "What increases the stability of a preexisting latent STAT1-STAT2",
+          "What does interferon-alpha /beta-induced phosphorylation",
+          "What does interferon-alpha /beta-induced phosphorylation",
+          "What signaling complex does interferon-alpha/beta-induced phospho"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggests that interferon-alpha /beta-induced ty": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.166673481464386,
+        "ground_truth": {
+          "Our data": {
+            "bertscore": 0.6909900903701782,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What increases the stability of a preexisting latent STAT1-STAT2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interferon-alpha /beta-induced phosphorylation",
+        "answerability": 0.7401595115661621,
+        "ground_truth": {
+          "interferon-alpha /beta-induced tyrosine phosphorylation": {
+            "bertscore": 0.9682459831237793,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does interferon-alpha/beta-induced tyrosine": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00935351848602295,
+        "ground_truth": {
+          "the stability": {
+            "bertscore": 0.6825103759765625,
+            "f1": 0
+          },
+          "a preexisting latent STAT1-STAT2": {
+            "bertscore": 0.6510041952133179,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling complex does interferon-alpha/beta-induced t": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.043590664863586426,
+        "ground_truth": {
+          "complex": {
+            "bertscore": 0.7077184915542603,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

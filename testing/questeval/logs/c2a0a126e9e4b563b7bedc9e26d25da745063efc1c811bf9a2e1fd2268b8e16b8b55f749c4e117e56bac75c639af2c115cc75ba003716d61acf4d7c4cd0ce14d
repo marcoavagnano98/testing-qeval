@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "The use of juice peel and oil have also been shown to possess anticancer activities including interference with tumor cell proliferation cell cycle invasion and angiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The use",
+        "juice peel",
+        "oil",
+        "anticancer activities",
+        "interference",
+        "tumor cell proliferation cell cycle invasion",
+        "angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been shown to have anticancer activities?",
+          "What is one of the anticancer agents that is used in the treatment of cancer?",
+          "What is another ingredient that has been shown to inhibit cancer?",
+          "What are the effects of juice peel and oil?",
+          "What is one of the anticancer effects of juice peel and oil?",
+          "What is an example of an anticancer activity that juice peel and oil can interfere with?",
+          "What is one of the anticancer activities of juice peel and oil?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been shown to have anticancer activities?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "juice peel and oil",
+        "answerability": 0.9461524486541748,
+        "ground_truth": {
+          "The use": {
+            "bertscore": 0.6842253804206848,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is one of the anticancer agents that is used in the treatment of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4070627689361572,
+        "ground_truth": {
+          "juice peel": {
+            "bertscore": 0.6590285897254944,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another ingredient that has been shown to inhibit cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oil",
+        "answerability": 0.9705309867858887,
+        "ground_truth": {
+          "oil": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are the effects of juice peel and oil?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anticancer activities",
+        "answerability": 0.9906122088432312,
+        "ground_truth": {
+          "anticancer activities": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is one of the anticancer effects of juice peel and oil?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interference with tumor cell cycle invasion",
+        "answerability": 0.9971674680709839,
+        "ground_truth": {
+          "interference": {
+            "bertscore": 0.7656610608100891,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is an example of an anticancer activity that juice peel and oil can interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor cell proliferation",
+        "answerability": 0.9989994764328003,
+        "ground_truth": {
+          "tumor cell proliferation cell cycle invasion": {
+            "bertscore": 0.9268659949302673,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is one of the anticancer activities of juice peel and oil?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interference with tumor cell cycle invasion",
+        "answerability": 0.9977219700813293,
+        "ground_truth": {
+          "angiogenesis": {
+            "bertscore": 0.7133764624595642,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

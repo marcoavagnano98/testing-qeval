@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "In contrast while the cxcl6 levels were suppressed by the same treatments the levels remained elevated above basal level.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "cxcl6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was suppressed by the same treatments?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "the cxcl6 levels",
+        "the same treatments",
+        "the levels",
+        "basal level"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of the treatment on cxcl6 levels?",
+          "What was suppressed by the same treatments?",
+          "What was used to suppress cxcl6 levels?",
+          "What was suppressed by the same treatments?",
+          "What level of cxcl6 levels were suppressed by the same treatments?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was suppressed by the same treatments?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cxcl6 levels",
+        "answerability": 0.8806097507476807,
+        "ground_truth": {
+          "cxcl8": {
+            "bertscore": 0.8719866275787354,
+            "f1": 0
+          },
+          "the cxcl8 levels": {
+            "bertscore": 0.9151278734207153,
+            "f1": 0.5
+          },
+          "the levels": {
+            "bertscore": 0.7507914900779724,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the effect of the treatment on cxcl8 levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005186796188354492,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094627618789673,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to suppress cxcl8 levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006287693977355957,
+        "ground_truth": {
+          "the same treatments": {
+            "bertscore": 0.6802512407302856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What level of cxcl8 was suppressed by the same treatments?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0213167667388916,
+        "ground_truth": {
+          "basal level": {
+            "bertscore": 0.7211910486221313,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

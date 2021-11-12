@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "PDT preserves vision in patients with CNV associated with PM.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PDT",
+        "CNV"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevents the onset of CNV?",
+          "What is the name of the disease that can be prevented by PDT?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PDT",
+        "vision",
+        "patients",
+        "CNV",
+        "PM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevents the onset of CNV?",
+          "What does PDT preserve in patients with CNV?",
+          "Who does PDT preserve vision in?",
+          "What is the name of the disease that can be prevented by PDT?",
+          "What is the name of the disease that causes CNV?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is more likely to benefit older patients and eyes with higher refractive error?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16946136951446533,
+        "ground_truth": {
+          "PDT": {
+            "bertscore": 0.701328456401825,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Who has a higher refractive error?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001163184642791748,
+        "ground_truth": {
+          "Younger patients": {
+            "bertscore": 0.6854455471038818,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What part of the body has higher refractive error?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00018483400344848633,
+        "ground_truth": {
+          "eyes": {
+            "bertscore": 0.6802381873130798,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main benefit of PDT for younger patients?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3110828399658203,
+        "ground_truth": {
+          "higher refractive error": {
+            "bertscore": 0.6836122870445251,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

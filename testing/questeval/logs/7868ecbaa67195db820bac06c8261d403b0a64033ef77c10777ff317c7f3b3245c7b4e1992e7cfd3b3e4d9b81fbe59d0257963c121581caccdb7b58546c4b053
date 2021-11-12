@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "The angiopoietin/Tie2 system has been identified as the second vascular-specific receptor tyrosinase system controlling vessel assembly maturation and quiescence.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "angiopoietin/Tie2",
+        "second"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the second vascular-specific receptor tyrosinase system?",
+          "What is the second vascular-specific receptor tyrosinase system?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The angiopoietin/Tie2 system",
+        "the second vascular-specific receptor tyrosinase system",
+        "vessel assembly maturation",
+        "quiescence"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the second vascular-specific receptor tyrosinase system?",
+          "What is the angiopoietin/Tie2 system?",
+          "What does the angiopoietin/Tie2 system control?",
+          "What is the second vascular-specific receptor tyrosinase system responsible"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the second vascular-specific receptor tyrosine kinase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5241979360580444,
+        "ground_truth": {
+          "angiopoietin/Tie2": {
+            "bertscore": 0.6334325075149536,
+            "f1": 0
+          },
+          "second": {
+            "bertscore": 0.7024955153465271,
+            "f1": 0
+          },
+          "The angiopoietin/Tie2 system": {
+            "bertscore": 0.6040742993354797,
+            "f1": 0
+          },
+          "quiescence": {
+            "bertscore": 0.711829423904419,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the angiopoietin/Tie2 system?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "second vascular-specific receptor tyrosinase",
+        "answerability": 0.9862895011901855,
+        "ground_truth": {
+          "the second vascular-specific receptor tyrosine kinase system": {
+            "bertscore": 0.8895347714424133,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What does the angiopoietin/Tie2 system control?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vessel assembly maturation and quiescence",
+        "answerability": 0.9997384548187256,
+        "ground_truth": {
+          "vessel assembly maturation": {
+            "bertscore": 0.8956394791603088,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

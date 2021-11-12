@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Targeting TNF for Treatment of cancer and other diseases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the target of the CDC's study?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF",
+        "Treatment",
+        "cancer",
+        "other diseases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the target of the CDC's study?",
+          "What is TNF used for?",
+          "What is the main target of TNF?",
+          "What is TNF targeted for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the target of the CDC's study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3329138159751892,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TNF used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Treatment",
+        "answerability": 0.7258124351501465,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main target of TNF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cancer",
+        "answerability": 0.9838150143623352,
+        "ground_truth": {
+          "Cancer": {
+            "bertscore": 0.87851881980896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the other cancer treatment that is targeted by TNF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15019792318344116,
+        "ground_truth": {
+          "Autoimmunity": {
+            "bertscore": 0.6998602151870728,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

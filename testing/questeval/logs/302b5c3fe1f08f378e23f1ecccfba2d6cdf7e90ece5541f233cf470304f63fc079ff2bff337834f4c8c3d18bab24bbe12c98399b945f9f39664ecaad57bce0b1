@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Silencing of ADAM-9 in melanoma cells decreases cell adhesion to fibronectin.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Silencing",
+        "ADAM-9",
+        "melanoma cells",
+        "cell adhesion",
+        "fibronectin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What decreases cell adhesion to fibronectin?",
+          "What decreases cell adhesion to fibronectin?",
+          "What type of cells are affected by the loss of ADAM-9?",
+          "What does melanoma cells decrease by reducing ADAM-9?",
+          "What does melanoma cells decrease cell adhesion to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What reduced cell adhesion to fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4503587484359741,
+        "ground_truth": {
+          "Silencing": {
+            "bertscore": 0.7026150226593018,
+            "f1": 0
+          },
+          "ADAM-9": {
+            "bertscore": 0.6657664179801941,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells had ADAM-9 reduced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "melanoma cells",
+        "answerability": 0.9139922857284546,
+        "ground_truth": {
+          "melanoma cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the melanoma cell lineage reduce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell adhesion to fibronectin",
+        "answerability": 0.7840294241905212,
+        "ground_truth": {
+          "cell adhesion": {
+            "bertscore": 0.8312035202980042,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the melanoma cell lineage reduce cell adhesion to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fibronectin",
+        "answerability": 0.97538161277771,
+        "ground_truth": {
+          "fibroblasts": {
+            "bertscore": 0.7786504626274109,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

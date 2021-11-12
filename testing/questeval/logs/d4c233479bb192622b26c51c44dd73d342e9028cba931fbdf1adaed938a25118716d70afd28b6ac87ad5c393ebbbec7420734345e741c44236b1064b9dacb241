@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "It is possible that particular serine proteases may have a role in inhibiting HIV-1 replication in monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What virus may be inhibited by serine proteases?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "It",
+        "particular serine proteases",
+        "a role",
+        "HIV-1 replication",
+        "monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may inhibit HIV-1 replication in monocytes?",
+          "What may inhibit HIV-1 replication in monocytes?",
+          "What may serine proteases have in inhibiting HIV-1 replication?",
+          "What may particular serine proteases inhibit?",
+          "What may serine proteases inhibit HIV-1 replication?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What virus may certain serine proteases inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.9983304142951965,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may certain serine proteases have on the replication of HIV-1 in myel": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3438798189163208,
+        "ground_truth": {
+          "It": {
+            "bertscore": 0.628028929233551,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may inhibit the replication of HIV-1 in myelo-monocytic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "serine proteases",
+        "answerability": 0.9851885437965393,
+        "ground_truth": {
+          "particular serine proteases": {
+            "bertscore": 0.9418139457702637,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What may serine proteases have on HIV-1 replication?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibiting",
+        "answerability": 0.9130980968475342,
+        "ground_truth": {
+          "effects": {
+            "bertscore": 0.7930355072021484,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may particular serine proteases inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 replication",
+        "answerability": 0.9873394966125488,
+        "ground_truth": {
+          "the replication": {
+            "bertscore": 0.8014525771141052,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of cells may have inhibiting effects on replication of HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocytes",
+        "answerability": 0.990763783454895,
+        "ground_truth": {
+          "myelo-monocytic cells": {
+            "bertscore": 0.7696318626403809,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

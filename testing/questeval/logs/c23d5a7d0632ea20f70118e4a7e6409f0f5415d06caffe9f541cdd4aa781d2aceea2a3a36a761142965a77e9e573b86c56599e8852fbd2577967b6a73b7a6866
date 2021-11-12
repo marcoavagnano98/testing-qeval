@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "LP T cells exhibit enhanced IL-2 secretion when activated through the CD2 pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What secretion do LP T cells exhibit when activated through the CD2 pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-2 secretion",
+        "the CD2 pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What do LP T cells exhibit when activated through the CD2 pathway?",
+          "What pathway is activated by LP T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What secretion was increased in the presence of anti-CD28 MoAb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20051920413970947,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was increased in the presence of anti-CD28 MoAb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06020766496658325,
+        "ground_truth": {
+          "IL-2 secretion": {
+            "bertscore": 0.648952305316925,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What increased IL-2 secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LP T cells",
+        "answerability": 0.9017789363861084,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.6986864805221558,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the cause of the increase in IL-2 secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD2 pathway",
+        "answerability": 0.9329715371131897,
+        "ground_truth": {
+          "anti-CD28 MoAb neonatal T cell": {
+            "bertscore": 0.7601550817489624,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

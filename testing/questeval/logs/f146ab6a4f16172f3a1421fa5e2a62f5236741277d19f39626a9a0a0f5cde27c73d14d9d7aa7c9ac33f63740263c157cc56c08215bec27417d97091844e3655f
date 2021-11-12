@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Increased levels of replication of the HIV type 1 are observed after the activation of infected T cells through the TCR. HIV type 1 infection is associated with increased levels of nuclear factor-kappa B (NF-kappa B) activity in the nuclei.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1",
+        "TCR",
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of infection is associated with increased levels of nuclear factor-kappa B activity?",
+          "What is the process that causes HIV type 1 to become more active?",
+          "What type of infection is associated with increased levels of nuclear factor-kappa B activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Increased levels",
+        "replication",
+        "the HIV type",
+        "the activation",
+        "infected T cells",
+        "the TCR",
+        "HIV type 1 infection",
+        "increased levels",
+        "NF-kappa B",
+        "the nuclei"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of HIV type 1 infection on the nuclei?",
+          "What is increased in HIV type 1 cells after activation of infected T cells?",
+          "What is associated with increased levels of replication?",
+          "What is the process that causes increased levels of replication of HIV type 1?",
+          "What is the TCR?",
+          "What is the process that causes the HIV type 1 virus to become more active?",
+          "What is associated with increased levels of NF-kappa B activity in the nucle",
+          "What is HIV type 1 associated with?",
+          "What is the name of the protein that causes HIV type 1 infection?",
+          "What part of the body is affected by HIV type 1 infection?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of infection induces NF-KB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV type 1",
+        "answerability": 0.6074700355529785,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.7054737210273743,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the process called that occurs when HIV type 1 is infected with a virus": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1736254096031189,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.7021175622940063,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is produced during monocyte differentiation by HIV type 1 infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022709190845489502,
+        "ground_truth": {
+          "NF-KB": {
+            "bertscore": 0.6983245611190796,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process that causes NF-KB to be inactivated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012146830558776855,
+        "ground_truth": {
+          "monocyte differentiation": {
+            "bertscore": 0.6754576563835144,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of NF-KB induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008336901664733887,
+        "ground_truth": {
+          "HIV type 1 infection": {
+            "bertscore": 0.6441636681556702,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

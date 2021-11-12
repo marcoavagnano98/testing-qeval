@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "PPARalpha activators suppress cytokine-induced vascular cell adhesion molecule-1 expression in human endothelial cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PPARalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the activator that suppresses cytokine-induced"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "cytokine-induced vascular cell adhesion molecule-1 expression",
+        "human endothelial cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What do PPARalpha activators suppress?",
+          "What does PPARalpha suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits cytokine-induced vascular cell adhesion molecule-1 expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PPARalpha activators",
+        "answerability": 0.9476841688156128,
+        "ground_truth": {
+          "PPARalpha activators": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do PPARalpha activators inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine-induced vascular cell adhesion molecule-1",
+        "answerability": 0.8899192214012146,
+        "ground_truth": {
+          "cytokine-induced vascular cell adhesion molecule-1 expression": {
+            "bertscore": 0.9570844173431396,
+            "f1": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "Where do PPARalpha activators inhibit cytokine-induced vascular cell": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human endothelial cells",
+        "answerability": 0.6522419452667236,
+        "ground_truth": {
+          "human endothelial cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "The p38 activators MKK6 and MKK6 were present in both the nucleus and the cytoplasm consistent with a role in activating p38 in the nucleus.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MKK6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the p38 activator?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The p38 activators",
+        "MKK6",
+        "MKK6",
+        "both the nucleus",
+        "the cytoplasm",
+        "a role",
+        "p38",
+        "the nucleus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is MKK6?",
+          "What is the name of the p38 activator?",
+          "What is the name of the p38 activator?",
+          "Where were the p38 activators MKK6 and MKK6 present?",
+          "Where were the p38 activators present?",
+          "What did the presence of MKK6 and MKK6 in the cytoplasm suggest?",
+          "What is MKK6 responsible for activating?",
+          "Where were the p38 activators MKK6 and MKK6 present?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the p38 activator?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MKK6",
+        "answerability": 0.8912587761878967,
+        "ground_truth": {
+          "MKK6": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two p38 activators were present in both the nucleus and cytoplasm": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MKK6 and MKK6",
+        "answerability": 0.9357820153236389,
+        "ground_truth": {
+          "The p38 activators MKK3": {
+            "bertscore": 0.7589720487594604,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where were the p38 activators present?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both the nucleus and the cytoplasm",
+        "answerability": 0.9855915307998657,
+        "ground_truth": {
+          "both the nucleus": {
+            "bertscore": 0.8264802098274231,
+            "f1": 0.6666666666666666
+          },
+          "the cytoplasm": {
+            "bertscore": 0.8941065073013306,
+            "f1": 0.4
+          },
+          "the nucleus": {
+            "bertscore": 0.7601288557052612,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did the presence of MKK3 and MKK6 in the cytoplasm suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.030110061168670654,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6715853214263916,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main activator of p38?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MKK6",
+        "answerability": 0.8464788794517517,
+        "ground_truth": {
+          "p38": {
+            "bertscore": 0.6893840432167053,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

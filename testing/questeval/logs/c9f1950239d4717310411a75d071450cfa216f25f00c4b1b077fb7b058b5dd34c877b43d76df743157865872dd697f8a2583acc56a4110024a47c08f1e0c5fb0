@@ -1,0 +1,54 @@
+{
+  "type": "ref",
+  "text": "Curcumin also significantly decreased (P < 0.05)\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Curcumin",
+        "0.05"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What substance decreased in the urine?",
+          "What was the P value of the effect of curcumin on the body?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Curcumin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What substance decreased in the urine?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What substance decreased in the urine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Curcumin",
+        "answerability": 0.6675742864608765,
+        "ground_truth": {
+          "Curcumin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the percentage of cured nut that decreased?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.027955293655395508,
+        "ground_truth": {
+          "0.05": {
+            "bertscore": 0.6670178771018982,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

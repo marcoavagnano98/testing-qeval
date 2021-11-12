@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Selenium-mediated inhibition of the HIV-1 LTR promoter by selenium.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the LTR promoter of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Selenium-mediated inhibition",
+        "the HIV-1 LTR promoter",
+        "selenium"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that causes the HIV-1 LTR promoter to be inhibited?",
+          "What is selenium mediated inhibition of?",
+          "What is the main component of the HIV-1 LTR promoter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the LTR promoter of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.9891133308410645,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism of action of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006824195384979248,
+        "ground_truth": {
+          "Selenium-mediated inhibition": {
+            "bertscore": 0.6353896856307983,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the key to preventing HIV-1 from developing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14528310298919678,
+        "ground_truth": {
+          "transcription factor NF-kappa B": {
+            "bertscore": 0.5801749229431152,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappa B inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005539059638977051,
+        "ground_truth": {
+          "HIV-1 LTR promoter activity": {
+            "bertscore": 0.635255753993988,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

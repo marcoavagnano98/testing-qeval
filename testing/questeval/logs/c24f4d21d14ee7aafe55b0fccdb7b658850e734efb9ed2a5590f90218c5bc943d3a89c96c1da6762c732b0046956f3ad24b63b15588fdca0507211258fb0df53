@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Studies with human umbilical vein segments exposed to hypoxia also demonstrated increased IL-8 antigen production in response to ePOX.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Studies",
+        "human umbilical vein segments",
+        "hypoxia",
+        "increased IL-8 antigen production",
+        "response"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed increased IL-8 production in response to hypoxia?",
+          "What was exposed to hypoxia?",
+          "What did studies with human umbilical vein segments expose them to?",
+          "What did studies with human umbilical vein segments show?",
+          "What did studies with human umbilical vein segments show increased IL-8 antigen production in"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed increased elaboration of IL-8 antigen compared with normoxic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2928895354270935,
+        "ground_truth": {
+          "Studies": {
+            "bertscore": 0.6556779146194458,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was exposed to hypoxia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human umbilical vein segments",
+        "answerability": 0.9634708762168884,
+        "ground_truth": {
+          "human umbilical vein segments": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of exposure did studies with human umbilical vein segments show increased elaboration": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hypoxia",
+        "answerability": 0.9763692021369934,
+        "ground_truth": {
+          "hypoxia": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did studies with human umbilical vein segments show about IL-8 antigen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased",
+        "answerability": 0.9797987937927246,
+        "ground_truth": {
+          "increased elaboration": {
+            "bertscore": 0.7740956544876099,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did studies with human umbilical vein segments show increased elaboration of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-8 antigen production",
+        "answerability": 0.7572862505912781,
+        "ground_truth": {
+          "IL-8 antigen": {
+            "bertscore": 0.9349442720413208,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What group of patients had a higher elaboration of IL-8 antigen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human umbilical vein segments",
+        "answerability": 0.5946922302246094,
+        "ground_truth": {
+          "normoxic controls": {
+            "bertscore": 0.7406377792358398,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

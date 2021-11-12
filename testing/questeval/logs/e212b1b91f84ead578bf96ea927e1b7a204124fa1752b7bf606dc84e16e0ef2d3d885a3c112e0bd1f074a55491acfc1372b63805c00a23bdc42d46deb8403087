@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the activating function of p95vav is blocked by FK506 suggesting that its activity also depends on calcineurin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p95vav",
+        "FK506"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is blocked by FK506?",
+          "What blockades the activating function of p95vav?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the activating function",
+        "p95vav",
+        "its activity",
+        "calcineurin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is blocked by FK506?",
+          "What is blocked by FK506?",
+          "What does FK506 block?",
+          "What does FK506 block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is blocked by FK506?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activating function of p95vav",
+        "answerability": 0.9302278757095337,
+        "ground_truth": {
+          "p95vav": {
+            "bertscore": 0.811024010181427,
+            "f1": 0.4
+          },
+          "the activating function": {
+            "bertscore": 0.8285751342773438,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What blockades the activating function of p95vav?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FK506",
+        "answerability": 0.9890589118003845,
+        "ground_truth": {
+          "FK506": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does FK506 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p95vav",
+        "answerability": 0.8747973442077637,
+        "ground_truth": {
+          "its activity": {
+            "bertscore": 0.5563185811042786,
+            "f1": 0
+          },
+          "calcineurin": {
+            "bertscore": 0.6704605221748352,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

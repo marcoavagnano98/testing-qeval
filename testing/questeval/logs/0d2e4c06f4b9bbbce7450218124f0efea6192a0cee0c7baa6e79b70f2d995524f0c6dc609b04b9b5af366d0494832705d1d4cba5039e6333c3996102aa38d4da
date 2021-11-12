@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Vascular endothelial growth factor (VEGF) is an angiogenic stimulator which functions through two endothelial specific tyrosines Flt-1 and Flk-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many tyrosines does VEGF function through?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Vascular endothelial growth factor",
+        "VEGF",
+        "an angiogenic stimulator",
+        "two endothelial specific tyrosines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is VEGF?",
+          "What is the name of the angiogenic stimulator?",
+          "What is VEGF?",
+          "What does VEGF function through?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many endothelial specific kinase receptors does VEGF": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27558815479278564,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.7294577360153198,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an angiogenic stimulator",
+        "answerability": 0.854310154914856,
+        "ground_truth": {
+          "Vascular endothelial growth factor": {
+            "bertscore": 0.7210106253623962,
+            "f1": 0
+          },
+          "an angiogenic stimulator": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the angiogenic stimulator?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38328903913497925,
+        "ground_truth": {
+          "VEGF": {
+            "bertscore": 0.6748837232589722,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does VEGF function through?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two endothelial specific tyrosines",
+        "answerability": 0.6389651298522949,
+        "ground_truth": {
+          "two endothelial specific tyrosine kinase receptors": {
+            "bertscore": 0.9130430221557617,
+            "f1": 0.6
+          }
+        }
+      }
+    }
+  }
+}

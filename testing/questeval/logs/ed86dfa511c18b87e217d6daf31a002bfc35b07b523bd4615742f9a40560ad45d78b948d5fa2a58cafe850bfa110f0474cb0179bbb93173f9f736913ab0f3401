@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "We identified several genes up-regulated by IL-12 namely MIP-1alpha MIP-1beta IL-1RA and IFN regulatory factor-1 (IRF-1).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-12",
+        "IFN",
+        "IRF-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that is up-regulated by IL-1RA?",
+          "What is the name of the regulatory factor that is up-regulated by IL-12?",
+          "What is another name for IFN?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "several genes",
+        "IL-12 namely MIP-1alpha MIP-1beta IL-1RA",
+        "IFN",
+        "regulatory factor-1",
+        "IRF-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What genes were identified as up-regulated by IL-12?",
+          "What did we identify up-regulated by IL-12?",
+          "What genes are up-regulated by IL-12?",
+          "What is the name of the regulatory factor that is up-regulated by IL-12?",
+          "What is IRF-1).",
+          "What is another name for IFN?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that is up-regulated by IL-1RA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MIP-1alpha MIP-1beta",
+        "answerability": 0.6651761531829834,
+        "ground_truth": {
+          "IL-12": {
+            "bertscore": 0.6951431632041931,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the regulatory factor that is up-regulated by IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN regulatory factor-1",
+        "answerability": 0.9615821838378906,
+        "ground_truth": {
+          "IFN": {
+            "bertscore": 0.7295074462890625,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is another name for IFN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN regulatory factor-1",
+        "answerability": 0.8308579921722412,
+        "ground_truth": {
+          "IRF-1": {
+            "bertscore": 0.7894366979598999,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What genes were identified as up-regulated by IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MIP-1alpha MIP-1beta IL-1RA and IFN regulatory",
+        "answerability": 0.9741970896720886,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5382301211357117,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we identify up-regulated by IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "genes",
+        "answerability": 0.9950060844421387,
+        "ground_truth": {
+          "several genes": {
+            "bertscore": 0.8950953483581543,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What genes are up-regulated by IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MIP-1alpha MIP-1beta IL-1RA and IFN regulatory",
+        "answerability": 0.9515807032585144,
+        "ground_truth": {
+          "IL-12 namely MIP-1alpha MIP-1beta IL-1RA": {
+            "bertscore": 0.873932957649231,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What is IRF-1).": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN regulatory factor-1",
+        "answerability": 0.9808367490768433,
+        "ground_truth": {
+          "regulatory factor-1": {
+            "bertscore": 0.9099480509757996,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

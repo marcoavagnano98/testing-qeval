@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "In contrast intact beta2GPI does not bind to AS4.5 or inhibit its antiangiogenic activity.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "intact beta2GPI",
+        "AS4.5",
+        "its antiangiogenic activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of intact beta2GPI on AS4.5?",
+          "What does not bind to AS4.5?",
+          "What does intact beta2GPI not bind to?",
+          "What does intact beta2GPI not inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of intact beta2GPI on AS4.5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "does not bind to AS4.5 or inhibit its antiangiogenic activity",
+        "answerability": 0.9010236263275146,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.5964080095291138,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not inhibit antiangiogenic activity of AS4.5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "intact beta2GPI",
+        "answerability": 0.9375351071357727,
+        "ground_truth": {
+          "intact beta2GPI": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does intact beta2GPI not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antiangiogenic activity",
+        "answerability": 0.6991301774978638,
+        "ground_truth": {
+          "antiangiogenic activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "AS4.5": {
+            "bertscore": 0.6504101753234863,
+            "f1": 0
+          },
+          "its antiangiogenic activity": {
+            "bertscore": 0.9351050853729248,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

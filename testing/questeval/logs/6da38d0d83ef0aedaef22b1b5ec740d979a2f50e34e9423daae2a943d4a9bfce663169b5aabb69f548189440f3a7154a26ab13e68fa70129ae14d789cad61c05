@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "However secretion of IL-2 by anti-CD3-stimulated cord blood mononuclear cells was still blunted compared with control cells from adults.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was secreted by anti-CD3-stimulated cord blood mononu"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "secretion",
+        "anti-CD3-stimulated cord blood mononuclear cells",
+        "control cells",
+        "adults"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was IL-2 blunted by anti-CD3-stimulated cord blood",
+          "What was the only way to blunt IL-2 secretion?",
+          "What cells were used to stimulate IL-2 secretion?",
+          "What group of cells were shown to have a higher secretion of IL-2 than"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was secreted by anti-CD3-stimulated cord blood mononu": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.7898820638656616,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was IL-2 blunted by anti-CD3-stimulated cord blood": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.195778489112854,
+        "ground_truth": {
+          "secretion": {
+            "bertscore": 0.7148057818412781,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only way to blunt IL-2 secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11855500936508179,
+        "ground_truth": {
+          "anti-CD3-stimulated cord blood mononuclear cells": {
+            "bertscore": 0.5685397386550903,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were used to stimulate IL-2 secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cord blood mononuclear cells",
+        "answerability": 0.6888401508331299,
+        "ground_truth": {
+          "control cells": {
+            "bertscore": 0.7584012150764465,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What group of cells were shown to have a higher secretion of IL-2 than": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0651436448097229,
+        "ground_truth": {
+          "adults": {
+            "bertscore": 0.7023347616195679,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

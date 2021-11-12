@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "Furthermore it was found that citral effectively inhibited the transcriptional activity and expression of iNOS and potently suppressed the DNA binding activity and nuclear translocation of NF-kappa B as well as\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "it",
+        "citral",
+        "the transcriptional activity",
+        "expression",
+        "iNOS",
+        "the DNA binding activity",
+        "nuclear translocation",
+        "NF-kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was found to inhibit the transcriptional activity and expression of iNOS?",
+          "What chemical inhibited the transcriptional activity of iNOS?",
+          "What did citral inhibit?",
+          "What did citral inhibit in iNOS?",
+          "What was the main target of the study?",
+          "What did citral inhibit?",
+          "What did citral inhibit in NF-kappa B?",
+          "What protein was found to be inhibited by citral?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was found to inhibit the transcriptional activity and expression of iNOS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "citral",
+        "answerability": 0.9969225525856018,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6892931461334229,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What chemical inhibited the transcriptional activity of iNOS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "citral",
+        "answerability": 0.9956560730934143,
+        "ground_truth": {
+          "citral": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did citral inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activity and expression of iNOS",
+        "answerability": 0.9605922102928162,
+        "ground_truth": {
+          "the transcriptional activity": {
+            "bertscore": 0.7986255288124084,
+            "f1": 0.5
+          },
+          "the DNA binding activity": {
+            "bertscore": 0.7453101277351379,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What did citral inhibit in iNOS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activity and expression",
+        "answerability": 0.9915059804916382,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7949782609939575,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the main target of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03917396068572998,
+        "ground_truth": {
+          "iNOS": {
+            "bertscore": 0.6793323159217834,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did citral inhibit in NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.529759407043457,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 0.7173126935958862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was found to be inhibited by citral?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "iNOS",
+        "answerability": 0.9740172624588013,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.6851682662963867,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

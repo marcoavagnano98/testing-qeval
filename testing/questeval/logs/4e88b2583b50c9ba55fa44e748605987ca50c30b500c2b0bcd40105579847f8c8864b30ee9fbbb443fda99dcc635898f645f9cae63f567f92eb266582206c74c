@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "(HIV-TF1) had a molecular weight of 39000. When purified HIV-TF1 was added to the culture medium in the presence of cycloheximide it inhibited transcription from the HIV promoter in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "39000",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the molecular weight of HIV-TF1?",
+          "What type of cell culture did the addition of HIV-TF1 inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(HIV-TF1",
+        "a molecular weight",
+        "HIV-TF1",
+        "the culture medium",
+        "the presence",
+        "cycloheximide",
+        "it",
+        "transcription",
+        "the HIV promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the molecular weight of 39000?",
+          "What was the molecular weight of HIV-TF1?",
+          "What was added to the culture medium in the presence of cycloheximide?",
+          "What was HIV-TF1 added to?",
+          "What was the molecular weight of HIV-TF1?",
+          "What was added to the culture medium to inhibit transcription?",
+          "What inhibited transcription from the HIV promoter in vitro?",
+          "What did the addition of cycloheximide inhibit?",
+          "What did the addition of cycloheximide inhibit transcription from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what way did LTR activate transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005068778991699219,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.702118456363678,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What activated transcription from the HIV promoter in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0021584033966064453,
+        "ground_truth": {
+          "(LTR": {
+            "bertscore": 0.6555623412132263,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did LTR activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00029462575912475586,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6925772428512573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did LTR activate in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00042814016342163086,
+        "ground_truth": {
+          "the HIV promoter": {
+            "bertscore": 0.6393582224845886,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

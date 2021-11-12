@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "BSAP plays a role in both IL-4-dependent induction and CD40-mediated upregulation of human epsilon germline transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BSAP",
+        "a role",
+        "both IL-4-dependent induction",
+        "CD40-mediated upregulation",
+        "human epsilon germline transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What plays a role in both IL-4-dependent induction and CD40-mediated",
+          "What does BSAP play in IL-4-dependent induction?",
+          "What does BSAP play a role in?",
+          "What is the role of BSAP in human epsilon germline transcription",
+          "What does BSAP play a role in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the role of B-cell-specific activator protein in human eps": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BSAP plays a role in both IL-4-dependent induction and CD40",
+        "answerability": 0.5533324480056763,
+        "ground_truth": {
+          "Regulation": {
+            "bertscore": 0.6404703855514526,
+            "f1": 0
+          },
+          "role": {
+            "bertscore": 0.5930903553962708,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What is the role of B-cell-specific activator protein in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0978778600692749,
+        "ground_truth": {
+          "human epsilon germline transcription": {
+            "bertscore": 0.6284503936767578,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of a protein in the regulation of epsilon germ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BSAP",
+        "answerability": 0.8674044609069824,
+        "ground_truth": {
+          "B-cell-specific activator protein": {
+            "bertscore": 0.6554274559020996,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

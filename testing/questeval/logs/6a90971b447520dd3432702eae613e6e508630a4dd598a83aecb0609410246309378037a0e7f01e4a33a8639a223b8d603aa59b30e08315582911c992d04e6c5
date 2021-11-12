@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "In vitro the lyt-10 protein was shown to bind to kappa B sequences in vitro and in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way was the lyt-10 protein shown to bind to kappa"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the lyt-10 protein",
+        "kappa B sequences",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein binds to kappa B sequences in vitro and in",
+          "What does lyt-10 bind to?",
+          "In what way was the lyt-10 protein shown to bind to kappa"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can bind to kappa B sequences in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lyt-10 protein",
+        "answerability": 0.9887251853942871,
+        "ground_truth": {
+          "The lyt-10 protein": {
+            "bertscore": 0.9395490884780884,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can the lyt-10 protein bind to in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappa B sequences",
+        "answerability": 0.9905479550361633,
+        "ground_truth": {
+          "kappa B sequences": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the difference between NF-kappa B p50 and lyt": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04661041498184204,
+        "ground_truth": {
+          "different specificity": {
+            "bertscore": 0.694229245185852,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the specificity of lyt-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bind to kappa B sequences",
+        "answerability": 0.9118058085441589,
+        "ground_truth": {
+          "NF-kappa B p50": {
+            "bertscore": 0.7436256408691406,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the process that activates DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004774689674377441,
+        "ground_truth": {
+          "removal": {
+            "bertscore": 0.7245888710021973,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is removed from the lyt-10 protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004734992980957031,
+        "ground_truth": {
+          "the ankyrin domain": {
+            "bertscore": 0.6465685367584229,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "type": "hyp",
+  "text": "phosphorylation of CREB occurred through a herbimycin A and Rp-cAMP- sensitive pathway suggesting phosphorylation required antecedent activation of both protein tyrosine kinases (PTK) and protein kinase A (PKA).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CREB",
+        "A and Rp-cAMP-",
+        "PTK",
+        "PKA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was phosphorylated through a herbimycin A and Rp-c",
+          "What two pathways did phosphorylation of CREB occur through?",
+          "What is the name of the protein kinase that is involved in phosphoryl",
+          "What protein kinase is involved in phosphorylation of CREB?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "phosphorylation",
+        "CREB",
+        "a herbimycin",
+        "sensitive pathway",
+        "phosphorylation required antecedent activation",
+        "both protein tyrosine kinases",
+        "PTK",
+        "(PKA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the pathway that required antecedent activation of both PTK and",
+          "What protein was phosphorylated through a herbimycin A and Rp-c",
+          "What is the name of the pathway that phosphorylated CREB?",
+          "What pathway did phosphorylation of CREB occur through?",
+          "What did the herbimycin A and Rp-cAMP-sensitive pathways suggest?",
+          "What did the herbimycin A and Rp-cAMP-sensitive pathways suggest phospho",
+          "What is the name of the protein kinase that is involved in phosphoryl",
+          "What protein kinase is involved in phosphorylation of CREB?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein kinase that is involved in phosphoryl": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4498133659362793,
+        "ground_truth": {
+          "PTK": {
+            "bertscore": 0.7114245295524597,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein kinase is involved in phosphorylation of CREB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein kinase A",
+        "answerability": 0.8805645704269409,
+        "ground_truth": {
+          "PKA": {
+            "bertscore": 0.6790199279785156,
+            "f1": 0
+          },
+          "(PKA": {
+            "bertscore": 0.6338056921958923,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What process did CREB undergo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation",
+        "answerability": 0.794867992401123,
+        "ground_truth": {
+          "Phosphorylation": {
+            "bertscore": 0.9730043411254883,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was phosphorylated through a herbimycin A and Rp-c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CREB",
+        "answerability": 0.813674807548523,
+        "ground_truth": {
+          "CREB": {
+            "bertscore": 0.9999994039535522,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the pathway that phosphorylated CREB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "herbimycin A",
+        "answerability": 0.9963619112968445,
+        "ground_truth": {
+          "a herbimycin": {
+            "bertscore": 0.8900676965713501,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What pathway did phosphorylation of CREB occur through?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "herbimycin A and Rp-cAMP",
+        "answerability": 0.9900326132774353,
+        "ground_truth": {
+          "sensitive pathway": {
+            "bertscore": 0.6880055665969849,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the herbimycin A and Rp-cAMP-sensitive pathways suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation required antecedent activation of both protein tyrosine",
+        "answerability": 0.953438937664032,
+        "ground_truth": {
+          "phosphorylation required antecedent activation": {
+            "bertscore": 0.8969043493270874,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did phosphorylation of CREB require antecedent activation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both protein tyrosine kinases (PTK) and protein kin",
+        "answerability": 0.9910728335380554,
+        "ground_truth": {
+          "both protein tyrosine kinases": {
+            "bertscore": 0.8650305271148682,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "(STAT)1activation induced by type I IFN or IFN-gamma\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "STAT)1activation",
+        "IFN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the term for the activation of IFN?",
+          "What is the name of the type of IFN-gamma?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(STAT)1activation",
+        "type",
+        "I IFN",
+        "IFN-gamma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the process that causes the reactivation of the cytokin",
+          "What is STAT?",
+          "What type of IFN is activated?",
+          "What is the name of the type of IFN that causes STAT?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the type of IFN that activates the cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45516228675842285,
+        "ground_truth": {
+          "STAT)1": {
+            "bertscore": 0.6644719839096069,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of IFN is induced by STAT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN",
+        "answerability": 0.8312329649925232,
+        "ground_truth": {
+          "IFN": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the process that causes the reactivation of the cytokin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3999115228652954,
+        "ground_truth": {
+          "STAT)1 activation": {
+            "bertscore": 0.6467416882514954,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is STAT)1 activation induced by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN or IFN-gamma",
+        "answerability": 0.9725302457809448,
+        "ground_truth": {
+          "type I IFN": {
+            "bertscore": 0.7594172954559326,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is the type of IFN that causes STAT1 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN",
+        "answerability": 0.9559188485145569,
+        "ground_truth": {
+          "IFN-gamma": {
+            "bertscore": 0.8021156787872314,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

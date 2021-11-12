@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "This step is mediated principally by the dephosphorylation of residues threonine 15\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "15"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What residue is threonine?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This step",
+        "the dephosphorylation",
+        "residues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is mediated by the dephosphorylation of residues threonine 15",
+          "What is the main mechanism of thiocyanide depletion?",
+          "What is threonine 15?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What residue is threonine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0646100640296936,
+        "ground_truth": {
+          "14": {
+            "bertscore": 0.6286808252334595,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is mediated by the dephosphorylation of residues threonine 14": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5002814531326294,
+        "ground_truth": {
+          "This step": {
+            "bertscore": 0.6872699856758118,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main mechanism of thiocyanide depletion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dephosphorylation",
+        "answerability": 0.6663298010826111,
+        "ground_truth": {
+          "the dephosphorylation": {
+            "bertscore": 0.9410327672958374,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is threonine 14?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0016502141952514648,
+        "ground_truth": {
+          "residues": {
+            "bertscore": 0.7142971754074097,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

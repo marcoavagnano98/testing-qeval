@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "\"\"\"Here we summarize the importance of the IgH 3LCR and its putative functional role in IgH gene expression and compare it with the 5LCR regulatory region of the human beta-globin locus.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "the IgH 3LCR",
+        "IgH",
+        "5LCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the putative functional role of the IgH gene?",
+          "What gene does the 3LCR regulate?",
+          "What regulatory region of the human beta-globin locus is discussed?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "the importance",
+        "the IgH 3LCR",
+        "its putative functional role",
+        "IgH gene expression",
+        "it",
+        "the 5LCR regulatory region",
+        "the human beta-globin locus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of the 3LCR in IgH gene expression?",
+          "What does the study summarize?",
+          "What is the putative functional role of the IgH gene?",
+          "What is the importance of the 3LCR?",
+          "What is the 3LCR putative functional role in?",
+          "What is the role of the 3LCR in IgH gene expression?",
+          "What is the IgH 3LCR compared to?",
+          "What is the 5LCR regulatory region of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the regulatory region of the human beta-globin locus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "5LCR",
+        "answerability": 0.953440248966217,
+        "ground_truth": {
+          "5LCR": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "the 5LCR": {
+            "bertscore": 0.9215327501296997,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the authors compare the regulatory region of the human beta-globin locus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "5LCR",
+        "answerability": 0.9613801836967468,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6505457162857056,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the human beta-globin locus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5082852840423584,
+        "ground_truth": {
+          "the 5LCR regulatory region": {
+            "bertscore": 0.6258856654167175,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the 5LCR regulatory region of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the human beta-globin locus",
+        "answerability": 0.9102259874343872,
+        "ground_truth": {
+          "the human beta-globin locus": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

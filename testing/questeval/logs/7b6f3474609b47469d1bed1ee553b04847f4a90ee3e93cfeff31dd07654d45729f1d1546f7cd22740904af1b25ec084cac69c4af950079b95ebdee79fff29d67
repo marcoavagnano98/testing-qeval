@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "In the budding yeast Saccharomyces cerevisiae the G(2)-to-M transition requires both Rac1 and Cdc28 bound to bona fide promoters.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rac1",
+        "Cdc28"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only gene required for the G(2)-to-M transition?",
+          "What is the only other protein that can be used in the G(2)-to-M transition"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the budding yeast Saccharomyces",
+        "the G(2)-to-M transition",
+        "both Rac1",
+        "Cdc28",
+        "fide promoters"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Which yeast requires both Rac1 and Cdc28 bound to bona fide promoter",
+          "What requires both Rac1 and Cdc28 bound to bona fide promoters",
+          "What two genes are required for the G(2)-to-M transition?",
+          "What is the only other protein that can be used in the G(2)-to-M transition",
+          "What are both Rac1 and Cdc28 bound to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what yeast does the G(2)-to-M transition require activation of Clb-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Saccharomyces cerevisiae",
+        "answerability": 0.9171356558799744,
+        "ground_truth": {
+          "the budding yeast Saccharomyces": {
+            "bertscore": 0.7634992003440857,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What requires activation of Clb-bound forms of the protein kinase C": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.038858652114868164,
+        "ground_truth": {
+          "the G(2)-to-M transition": {
+            "bertscore": 0.6031345725059509,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for the G(2)-to-M transition in the budding yeast Sacchar": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43878358602523804,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6694929003715515,
+            "f1": 0
+          },
+          "Clb-bound forms": {
+            "bertscore": 0.679652214050293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for the G(2)-to-M transition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rac1 and Cdc28",
+        "answerability": 0.7646903395652771,
+        "ground_truth": {
+          "the protein kinase Cdc28": {
+            "bertscore": 0.7773711681365967,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    }
+  }
+}

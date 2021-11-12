@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "(Mrp2) and bile salt export pump (Bsep) at week 2 (P  \u2047  0.05) unchanged levels of Ntcp Oatp1a1 Oatp1a4 and Mct2 but decreased levels of cytochrome P450 3a2 (Cyp3a2) and p38(Arf) in the cytoplasm.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bsep",
+        "week 2",
+        "0.05",
+        "Ntcp Oatp1a1 Oatp1a4",
+        "Mct2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the bile salt export pump?",
+          "What week did the bile salt export pump and Ntcp levels change?",
+          "What was the P value of the bile salt export pump in week 2?",
+          "What did the bile salt export pump and Mct2 have unchanged levels of?",
+          "What is the cytochrome P450 3a2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(Mrp2",
+        "bile salt export pump",
+        "Bsep",
+        "week",
+        "unchanged levels",
+        "Ntcp Oatp1a1 Oatp1a4",
+        "Mct2",
+        "decreased levels",
+        "(Cyp3a2",
+        "and p38(Arf",
+        "the cytoplasm"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytochrome P450 3a2?",
+          "What does Bsep stand for?",
+          "What is the name of the bile salt export pump?",
+          "What was the week 2 of the bile salt export pump?",
+          "What was the level of cytochrome P450 3a2?",
+          "What did the bile salt export pump and Mct2 have unchanged levels of?",
+          "What is the cytochrome P450 3a2?",
+          "What was the effect of the bile salt export pump on the cytoplasm?",
+          "What cytochrome P450 3a2 is decreased?",
+          "What two cytochrome P450 3a2 molecules were decreased in the cytoplasm",
+          "Where did the levels of p38(Arf) and p38(C"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was exported to the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.056816160678863525,
+        "ground_truth": {
+          "MAPKAP": {
+            "bertscore": 0.6293090581893921,
+            "f1": 0
+          },
+          "MAPKAP kinase-2 nuclear p38": {
+            "bertscore": 0.6045949459075928,
+            "f1": 0
+          },
+          "MAPKAP kinase-2": {
+            "bertscore": 0.6033994555473328,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the process that caused nuclear p38 to be exported to the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03493994474411011,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.6180735230445862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was nuclear p38 exported?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03049558401107788,
+        "ground_truth": {
+          "the cytoplasm": {
+            "bertscore": 0.6099188923835754,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was p38 exported to the cytoplasm in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.030000388622283936,
+        "ground_truth": {
+          "a complex": {
+            "bertscore": 0.6878237724304199,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "ref",
+  "text": "IL-2 induced less STAT1 alpha activation and IFN-alpha induced greater STAT5 activation in NK3.3 cells compared with preactivated primary NK cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-2",
+        "less STAT1 alpha activation",
+        "IFN-alpha",
+        "greater STAT5 activation",
+        "NK3.3 cells",
+        "preactivated primary NK cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced less STAT1 alpha activation?",
+          "What did IL-2 do to NK3.3 cells?",
+          "What induced greater STAT5 activation in NK3.3 cells?",
+          "What did IFN-alpha do in NK3.3 cells?",
+          "What cells did IL-2 and IFN-alpha cause greater STAT5 activation",
+          "What did IL-2 do to NK3.3 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did IL-2 do to JAK1 and JAK3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induced less STAT1 alpha activation",
+        "answerability": 0.8629498481750488,
+        "ground_truth": {
+          "Finally IL-2 induced tyrosine phosphorylation": {
+            "bertscore": 0.7506733536720276,
+            "f1": 0.20000000000000004
+          }
+        }
+      }
+    },
+    "What phosphorylation did IL-12 induce in preactivated primary NK cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011032819747924805,
+        "ground_truth": {
+          "JAK1": {
+            "bertscore": 0.6530584096908569,
+            "f1": 0
+          },
+          "JAK3": {
+            "bertscore": 0.6726170182228088,
+            "f1": 0
+          },
+          "JAK2": {
+            "bertscore": 0.6645318865776062,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How did IL-2 affect TYK2 and JAK3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1011928915977478,
+        "ground_truth": {
+          "while IL-12 induced phosphorylation": {
+            "bertscore": 0.5925663113594055,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was phosphorylated by IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007143616676330566,
+        "ground_truth": {
+          "TYK2": {
+            "bertscore": 0.664983332157135,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where did IL-12 induce phosphorylation of TYK2 and JAK1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04155236482620239,
+        "ground_truth": {
+          "both preactivated primary NK and NK3.3 cells": {
+            "bertscore": 0.6116806268692017,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

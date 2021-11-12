@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "MAZ a zinc finger protein binds to c-MYC and C2 gene sequences regulating transcription and cell survival.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a zinc finger protein binds",
+        "c-MYC and C2 gene sequences",
+        "transcription",
+        "cell survival"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is MAZ?",
+          "What does MAZ bind to?",
+          "What does MAZ regulate?",
+          "What does MAZ regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "zinc finger protein",
+        "answerability": 0.9873675107955933,
+        "ground_truth": {
+          "a zinc finger protein binds": {
+            "bertscore": 0.824812650680542,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does MAZ bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-MYC and C2 gene sequences",
+        "answerability": 0.9925640821456909,
+        "ground_truth": {
+          "c-MYC and C2 gene sequences": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MAZ regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription and cell survival",
+        "answerability": 0.9985947608947754,
+        "ground_truth": {
+          "transcriptional initiation": {
+            "bertscore": 0.8383269309997559,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main function of MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating transcription and cell survival",
+        "answerability": 0.9892663955688477,
+        "ground_truth": {
+          "termination": {
+            "bertscore": 0.6935205459594727,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

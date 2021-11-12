@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Human herpesvirus 6 (HHV-6) can activate the human immunodeficiency virus (HIV) promoter and accelerate cytopathic effects in HIV-1-infected T cells. Immune hyperactivation of HIV-1-infected T cells mediated by Tat and the CD28 pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6",
+        "Tat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the herpesvirus that can activate the HIV promoter?",
+          "What is the CD28 pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human herpesvirus",
+        "the human immunodeficiency virus",
+        "cytopathic effects",
+        "HIV-1-infected T cells",
+        "Immune hyperactivation",
+        "HIV-1-infected T cells",
+        "Tat",
+        "the CD28 pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is HHV-6?",
+          "What does HHV-6 activate?",
+          "What does HHV-6 accelerate in HIV-1-infected T cells?",
+          "What does HHV-6 activate?",
+          "What is the effect of HHV-6 on HIV-1-infected T cells?",
+          "What does HHV-6 activate?",
+          "What is the CD28 pathway?",
+          "What pathway can activate the HIV promoter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the CD28 pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05818265676498413,
+        "ground_truth": {
+          "Tat": {
+            "bertscore": 0.6546972990036011,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of the Tat and CD28 pathway on HIV-1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Immune hyperactivation",
+        "answerability": 0.844000518321991,
+        "ground_truth": {
+          "Immune hyperactivation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the CD28 pathway responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13454890251159668,
+        "ground_truth": {
+          "HIV-1-infected T cells": {
+            "bertscore": 0.6415901780128479,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway is involved in the immune hyperactivation of HIV-1-infected T cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23079395294189453,
+        "ground_truth": {
+          "the CD28 pathway": {
+            "bertscore": 0.6219609379768372,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

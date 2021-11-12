@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "For instance in yeast the mitogen-activated protein (MAP) kinase Hog1 is activated and inactivated within minutes even when the osmotic-stress stimulus is sustained sustained.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MAP",
+        "Hog1",
+        "minutes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the kinase that activates and inactivates Ho",
+          "What is the name of the mitogen-activated protein kinase in yeast",
+          "How long does it take for the MAP kinase to be activated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "instance",
+        "yeast",
+        "the mitogen-activated protein",
+        "(MAP",
+        "Hog1",
+        "minutes",
+        "the osmotic-stress stimulus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is an example of a yeast MAP kinase that is activated",
+          "What organism has a MAP kinase that is activated and inactiv",
+          "What does MAP stand for?",
+          "What is the name of the mitogen-activated protein kinase in yeast",
+          "What is the name of the mitogen-activated protein kinase in yeast",
+          "How long does it take for the MAP kinase to be activated?",
+          "What is sustained?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the kinase that activates and inactivates Ho": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hog1",
+        "answerability": 0.9570279121398926,
+        "ground_truth": {
+          "MAP": {
+            "bertscore": 0.7601190805435181,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the mitogen-activated protein kinase in yeast": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hog1",
+        "answerability": 0.9290788769721985,
+        "ground_truth": {
+          "Hog1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "(MAP": {
+            "bertscore": 0.6871629953384399,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How long does it take for the MAP kinase to be activated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "minutes",
+        "answerability": 0.9922094941139221,
+        "ground_truth": {
+          "minutes": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is an example of a yeast MAP kinase that is activated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hog1",
+        "answerability": 0.880896270275116,
+        "ground_truth": {
+          "instance": {
+            "bertscore": 0.631324291229248,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What organism has a MAP kinase that is activated and inactiv": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "yeast",
+        "answerability": 0.9966632723808289,
+        "ground_truth": {
+          "yeast": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MAP stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitogen-activated protein",
+        "answerability": 0.953607439994812,
+        "ground_truth": {
+          "the mitogen-activated protein": {
+            "bertscore": 0.950203001499176,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is sustained in yeast?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "osmotic-stress stimulus",
+        "answerability": 0.763927161693573,
+        "ground_truth": {
+          "the osmotic-stress stimulus": {
+            "bertscore": 0.938763439655304,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

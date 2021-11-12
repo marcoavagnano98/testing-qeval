@@ -1,0 +1,66 @@
+{
+  "type": "ref",
+  "text": "The binding protein(s ) that recognize the P sequence of the IL-4 gene were identified by DNA-mobility-shift assays.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The binding protein(s",
+        "the P sequence",
+        "the IL-4 gene",
+        "DNA-mobility-shift assays"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was identified by DNA-mobility-shift assays?",
+          "What do DNA-mobility-shift assays identify?",
+          "What protein was identified by DNA-mobility-shift assays?",
+          "What was used to identify the binding proteins that recognize the IL-4 gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the binding protein that recognizes the P sequence?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4 gene",
+        "answerability": 0.633065938949585,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5619871616363525,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has been identified that recognizes the P sequence?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binding protein(s)",
+        "answerability": 0.9938560724258423,
+        "ground_truth": {
+          "a binding protein": {
+            "bertscore": 0.8338030576705933,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the binding protein recognize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the P sequence of the IL-4 gene",
+        "answerability": 0.9825415015220642,
+        "ground_truth": {
+          "the P sequence": {
+            "bertscore": 0.7755984663963318,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

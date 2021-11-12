@@ -1,0 +1,60 @@
+{
+  "type": "ref",
+  "text": "Expression of Bcl-xL Bax and p53 in primary tumors and lymph node metastases in oral squamous cell carcinoma.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bcl-xL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is expressed in primary tumors?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "Bcl-xL Bax",
+        "p53",
+        "primary tumors",
+        "oral squamous cell carcinoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is Bcl-xL Bax and p53?",
+          "What is the name of the protein that is expressed in primary tumors?",
+          "What is the main factor that controls the expression of Bcl-xL Bax?",
+          "What type of cancer is Bcl-xL Bax expressed in?",
+          "What type of cancer is Bcl-xL Bax expressed in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is expressed in the cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005305826663970947,
+        "ground_truth": {
+          "Bcl-xL": {
+            "bertscore": 0.6495962738990784,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main difference between Bcl-xL and Bcl-xL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010021328926086426,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7109297513961792,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "In agreement induced overexpression of VEGF-C in LAPC-9 enhanced tumor lymphangiogenesis leading to the development of metastatic lesions.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "agreement",
+        "induced overexpression",
+        "VEGF-C",
+        "LAPC-9",
+        "tumor lymphangiogenesis",
+        "the development",
+        "metastatic lesions"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the result of the overexpression of VEGF-C in LAPC-9?",
+          "What was the cause of the increased tumor lymphangiogenesis?",
+          "What gene was overexpressed in LAPC-9?",
+          "What gene was found to increase tumor lymphangiogenesis?",
+          "What did the overexpression of VEGF-C in LAPC-9 increase?",
+          "What did the overexpression of VEGF-C in LAPC-9 lead to?",
+          "What did the overexpression of VEGF-C in LAPC-9 lead to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the result of the overexpression of VEGF-C in LAPC-9?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced tumor lymphangiogenesis",
+        "answerability": 0.9947722554206848,
+        "ground_truth": {
+          "agreement": {
+            "bertscore": 0.6535161733627319,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the cause of the increased tumor lymphangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-C",
+        "answerability": 0.9860124588012695,
+        "ground_truth": {
+          "induced overexpression": {
+            "bertscore": 0.6710124611854553,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was overexpressed in LAPC-9?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-C",
+        "answerability": 0.9927226901054382,
+        "ground_truth": {
+          "VEGF-C": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene was found to increase tumor lymphangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-C",
+        "answerability": 0.9815707802772522,
+        "ground_truth": {
+          "LAPC-9": {
+            "bertscore": 0.8052423596382141,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the overexpression of VEGF-C in LAPC-9 increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor lymphangiogenesis",
+        "answerability": 0.9993059635162354,
+        "ground_truth": {
+          "tumor lymphangiogenesis": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the overexpression of VEGF-C in LAPC-9 lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metastatic lesions",
+        "answerability": 0.9647641181945801,
+        "ground_truth": {
+          "the development": {
+            "bertscore": 0.6655850410461426,
+            "f1": 0
+          },
+          "metastatic lesions": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

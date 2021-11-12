@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "In this study we showed that the transcription of human MCM10 and TopBP1 is activated by transcription factors E2F1-3 but not by factors E2F6-7.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this study",
+        "we",
+        "the transcription",
+        "human MCM10",
+        "transcription factors E2F1",
+        "factors",
+        "E2F6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study showed that transcription of MCM10 and TopBP1 is activated by transcription factors",
+          "What did the study show about transcription factors?",
+          "What is activated by factors E2F1-3?",
+          "What transcription factor is not activated by TopBP1?",
+          "What is the transcription of MCM10 and TopBP1 activated by?",
+          "What is the transcription of MCM10 and TopBP1 activated by?",
+          "What transcription factor is not involved in the transcription of MCM10 and TopBP1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What study showed that the transcription of MCM10 and TopBP1 is activated by transcription": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5542184114456177,
+        "ground_truth": {
+          "this study": {
+            "bertscore": 0.6876576542854309,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show about transcription factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13786077499389648,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is activated by factors E2F1-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription of human MCM10 and TopBP1",
+        "answerability": 0.6921379566192627,
+        "ground_truth": {
+          "the transcription": {
+            "bertscore": 0.6757703423500061,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What transcription factor is not activated by TopBP1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31058913469314575,
+        "ground_truth": {
+          "human MCM10": {
+            "bertscore": 0.6379568576812744,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the transcription of MCM10 and TopBP1 activated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factors E2F1-3",
+        "answerability": 0.9873355031013489,
+        "ground_truth": {
+          "transcription factors E2F1": {
+            "bertscore": 0.9506993889808655,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

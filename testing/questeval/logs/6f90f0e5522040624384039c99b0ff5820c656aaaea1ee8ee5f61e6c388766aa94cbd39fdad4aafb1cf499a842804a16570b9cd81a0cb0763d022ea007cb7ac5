@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Initial experiments indicated that a 50% decrease in VCAM-1 expression was associated with a 2-fold increase in cell proliferation and a similar rise in c-myc mRNA expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "50%",
+        "2-fold"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What percentage decrease in VCAM-1 expression was associated with a 2-fold increase in cell proliferation",
+          "How much did the decrease in VCAM-1 expression cause in cell proliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Initial experiments",
+        "a 50% decrease",
+        "VCAM-1 expression",
+        "a 2-fold increase",
+        "cell proliferation",
+        "a similar rise",
+        "c-myc mRNA expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicated that a 50% decrease in VCAM-1 expression was associated with a 2-fold",
+          "What was the initial effect of VCAM-1 on cell proliferation?",
+          "What was associated with a 2-fold increase in cell proliferation?",
+          "What did initial experiments show was associated with a 50% decrease in VCAM-1 expression?",
+          "What did the initial experiments show a 50% decrease in VCAM-1 expression was associated with?",
+          "What was the effect of a 50% decrease in VCAM-1 expression on cell proliferation?",
+          "What did the initial experiments show was associated with a 2fold increase in cell proliferation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did it take for the mRNA to increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.029213011264801025,
+        "ground_truth": {
+          "hours": {
+            "bertscore": 0.7053065299987793,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was observed within hours of the cloning?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006247162818908691,
+        "ground_truth": {
+          "Increased mRNA and surface expression": {
+            "bertscore": 0.6482592225074768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is a part of the cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001439511775970459,
+        "ground_truth": {
+          "E-selectin ICAM-1": {
+            "bertscore": 0.6199488639831543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the E-selectin that is expressed on the surface of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008019208908081055,
+        "ground_truth": {
+          "VCAM-1": {
+            "bertscore": 0.6656227111816406,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

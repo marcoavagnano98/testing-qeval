@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "IE2-86 also prevented the emergence of ubiquitinated species of p53.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IE2-86",
+        "the emergence",
+        "ubiquitinated species",
+        "p53"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevented the emergence of ubiquitinated species of p53?",
+          "What did IE2-86 prevent?",
+          "What did IE2-86 prevent the emergence of?",
+          "What ubiquitinated species was prevented from forming?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What prevented the emergence of ubiquitinated species of p53?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IE2-86",
+        "answerability": 0.847772479057312,
+        "ground_truth": {
+          "IE2-86": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IE2-86 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5309968590736389,
+        "ground_truth": {
+          "the emergence": {
+            "bertscore": 0.7083133459091187,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IE2-86 prevent the emergence of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5017005205154419,
+        "ground_truth": {
+          "presumably ubiquitinated species": {
+            "bertscore": 0.6845312714576721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What ubiquitinated species did IE2-86 prevent the emergence of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53",
+        "answerability": 0.7277424931526184,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

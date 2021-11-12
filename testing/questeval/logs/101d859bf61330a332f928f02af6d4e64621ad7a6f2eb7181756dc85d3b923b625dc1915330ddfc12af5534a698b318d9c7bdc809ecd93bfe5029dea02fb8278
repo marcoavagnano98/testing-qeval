@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the VitD3 induction was blocked by cycloheximide suggesting that the induction was dependent on ongoing protein synthesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VitD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the enzyme that is dependent on protein synthesis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the VitD3 induction",
+        "cycloheximide",
+        "the induction",
+        "ongoing protein synthesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was blocked by cycloheximide?",
+          "What blockade VitD3 induction?",
+          "What was dependent on ongoing protein synthesis?",
+          "What did the cycloheximide block the VitD3 induction?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induction of CD14 mRNA was blocked by cycloheximide": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3",
+        "answerability": 0.6368464231491089,
+        "ground_truth": {
+          "VitD3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What blocked the VitD3 induction of CD14 mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15335893630981445,
+        "ground_truth": {
+          "The addition": {
+            "bertscore": 0.6987271308898926,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockade the VitD3 induction of CD14 mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25136131048202515,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.5792067050933838,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide completely block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3 induction",
+        "answerability": 0.9957345128059387,
+        "ground_truth": {
+          "the VitD3 induction": {
+            "bertscore": 0.9454775452613831,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3 induction",
+        "answerability": 0.9970082640647888,
+        "ground_truth": {
+          "CD14 mRNA expression": {
+            "bertscore": 0.7553247213363647,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was dependent on ongoing protein synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3 induction",
+        "answerability": 0.9946601390838623,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.7585261464118958,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide indicate was dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ongoing protein synthesis",
+        "answerability": 0.9537710547447205,
+        "ground_truth": {
+          "ongoing protein synthesis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

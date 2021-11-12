@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Various stimuli typically those associated with stress or pathogens rapidly inactivate I kappa B-alpha.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Various stimuli",
+        "stress",
+        "I kappa B-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What causes I kappa B-alpha to rapidly inactivate?",
+          "What is one of the stimuli that can quickly inactivate I kappa B",
+          "What does stress and pathogens inactivate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What causes I kappa B-alpha to rapidly inactivate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Various stimuli",
+        "answerability": 0.9861013889312744,
+        "ground_truth": {
+          "Various stimuli": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is one of the stimuli that can quickly inactivate I kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stress",
+        "answerability": 0.7896323800086975,
+        "ground_truth": {
+          "stress": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does stress and pathogens inactivate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26597630977630615,
+        "ground_truth": {
+          "I kappa B-alpha": {
+            "bertscore": 0.6675295829772949,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

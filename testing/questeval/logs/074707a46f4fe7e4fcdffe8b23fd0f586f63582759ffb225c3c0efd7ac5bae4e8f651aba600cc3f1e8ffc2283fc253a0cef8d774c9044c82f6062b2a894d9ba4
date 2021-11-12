@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": "These results imply that at least three signals are required to activate the GM-CSF proximal promoter and that the signals impinge on distinct transcription factors that bind to the hCLEO and NF-kappa B regions of the promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "at least three",
+        "GM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many signals are required to activate the GM-CSF proximal promoter",
+          "What is the proximal promoter of the GM-CSF?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "at least three signals",
+        "the GM-CSF proximal promoter",
+        "the signals",
+        "distinct transcription factors",
+        "the hCLEO and NF-kappa B regions",
+        "the promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What imply that at least three signals are required to activate the GM-CSF",
+          "How many signals are required to activate the GM-CSF proximal promoter",
+          "What do the results suggest three signals are required to activate?",
+          "What impinges on transcription factors that bind to hCLEO and NF",
+          "What do the results suggest the signals impinge on?",
+          "What two regions of the promoter do the signals impinge on?",
+          "What do the results suggest is impinged on transcription factors?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the proximal promoter of the GM-CSF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11013197898864746,
+        "ground_truth": {
+          "GM": {
+            "bertscore": 0.6745765209197998,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What imply that multiple signals are required to activate the GM-CSF proxi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23412001132965088,
+        "ground_truth": {
+          "These findings": {
+            "bertscore": 0.6293959021568298,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required to activate the GM-CSF proximal promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "at least three signals",
+        "answerability": 0.9949371218681335,
+        "ground_truth": {
+          "multiple signals": {
+            "bertscore": 0.8055976033210754,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is required to activate the GM-CSF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "at least three signals",
+        "answerability": 0.9825325608253479,
+        "ground_truth": {
+          "the GM-CSF proximal promoter": {
+            "bertscore": 0.6311482191085815,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

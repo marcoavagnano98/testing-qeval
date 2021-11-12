@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "The cellular mechanism governing the diminished proliferative response of neonatal T lymphocytes to anti-CD2 may therefore be due to decreased NF kappaB induction reduced IL-2 mRNA expression and deficient IL-2 production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappaB",
+        "IL-2",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cellular mechanism that may be responsible for the decreased proliferative response of",
+          "What mRNA is deficient in neonatal T lymphocytes?",
+          "What mRNA is deficient in neonatal T lymphocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The cellular mechanism",
+        "the diminished proliferative response",
+        "neonatal T lymphocytes",
+        "decreased NF kappaB induction",
+        "IL-2 mRNA expression",
+        "IL-2 production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the reason for the decreased proliferative response of neonatal T lymphocyte",
+          "What is the cellular mechanism governing?",
+          "What is the cellular mechanism governing the diminished proliferative response of?",
+          "What is the cellular mechanism governing the diminished proliferative response of neonatal",
+          "What is the cellular mechanism that may be responsible for the decreased proliferative response of",
+          "What is the cellular mechanism that may be responsible for the decreased proliferative response of"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA is deficient in neonatal T lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.8410683870315552,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the reason for the decreased proliferative response of neonatal T lymphocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased NF kappaB induction reduced IL-2 mRNA expression and",
+        "answerability": 0.9082415103912354,
+        "ground_truth": {
+          "The cellular mechanism": {
+            "bertscore": 0.6552774906158447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cellular mechanism governing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "diminished proliferative response",
+        "answerability": 0.9945483207702637,
+        "ground_truth": {
+          "the diminished proliferative response": {
+            "bertscore": 0.9521074891090393,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the cellular mechanism governing the diminished proliferative response of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neonatal T lymphocytes",
+        "answerability": 0.939912736415863,
+        "ground_truth": {
+          "neonatal T lymphocytes": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the cellular mechanism that may be responsible for the decreased proliferative response of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased NF kappaB induction reduced IL-2 mRNA expression and",
+        "answerability": 0.7458028793334961,
+        "ground_truth": {
+          "NF kappa B induction": {
+            "bertscore": 0.7235260605812073,
+            "f1": 0.30769230769230765
+          },
+          "IL-2 production": {
+            "bertscore": 0.6279463171958923,
+            "f1": 0.1818181818181818
+          }
+        }
+      }
+    },
+    "What is the cause of decreased proliferative response of neonatal T lymphocytes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased NF kappaB induction reduced IL-2 mRNA expression and",
+        "answerability": 0.9199045896530151,
+        "ground_truth": {
+          "IL-2 mRNA expression": {
+            "bertscore": 0.8513031005859375,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

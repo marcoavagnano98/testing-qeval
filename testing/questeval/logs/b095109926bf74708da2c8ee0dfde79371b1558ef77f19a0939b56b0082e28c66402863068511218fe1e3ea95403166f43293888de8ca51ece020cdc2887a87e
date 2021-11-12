@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The purpose of this study was to determine whether dexamethasone (Dex) and cyclosporin A (CsA) inhibited LPS-induced NF-kappaB activation and IkappaB-alpha degradation and whether the inhibition was observed by dexamethasone.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The purpose",
+        "this study",
+        "(CsA",
+        "LPS-induced NF-kappaB activation",
+        "IkappaB-alpha degradation",
+        "the inhibition",
+        "dexamethasone"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the purpose of the study?",
+          "What was the purpose of the study?",
+          "What is another name for cyclosporin A?",
+          "What did the study determine was inhibited by dexamethasone?",
+          "What did the study examine?",
+          "What was observed by dexamethasone?",
+          "What drug inhibited LPS activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is produced by IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004301548004150391,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789318919181824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the purpose of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "to determine whether dexamethasone (Dex) and cyclosporin",
+        "answerability": 0.7839169502258301,
+        "ground_truth": {
+          "The purpose": {
+            "bertscore": 0.5795556902885437,
+            "f1": 0
+          },
+          "this study": {
+            "bertscore": 0.6288632154464722,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the purpose of this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "to determine whether dexamethasone (Dex) and cyclosporin",
+        "answerability": 0.8036853075027466,
+        "ground_truth": {
+          "the effect": {
+            "bertscore": 0.6318843364715576,
+            "f1": 0
+          },
+          "IL-10 on lipopolysaccharide (LPS)-induced human monocyte TNF-alpha production NF-kappaB activation": {
+            "bertscore": 0.6510506272315979,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main effect of IL-10 on human monocyte TNF-alpha production": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02206122875213623,
+        "ground_truth": {
+          "IkappaB-alpha degradation": {
+            "bertscore": 0.6085319519042969,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

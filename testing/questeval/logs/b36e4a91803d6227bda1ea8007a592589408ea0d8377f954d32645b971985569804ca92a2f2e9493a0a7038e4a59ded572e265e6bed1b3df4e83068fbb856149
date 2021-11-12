@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "In this study we investigated the effects of spironolactone on the corneal allograft survival in a MHC class I/II mismatch rat corneal transplant model.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MHC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What class of rat was used in this study?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this study",
+        "we",
+        "the effects",
+        "spironolactone",
+        "the corneal allograft survival",
+        "a MHC class I/II mismatch rat corneal transplant model"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study investigated the effects of spironolactone on the corneal allo",
+          "What was the purpose of the study?",
+          "What did the study investigate?",
+          "What drug was used to treat a mismatch rat cornea?",
+          "What did the study investigate the effects of spironolactone on?",
+          "What was the study used to investigate the effects of spironolactone on the"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of spironolactone on corneal allograft": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "survival",
+        "answerability": 0.8073875308036804,
+        "ground_truth": {
+          "Effects": {
+            "bertscore": 0.8229665756225586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug has been shown to improve corneal allograft survival in rats?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spironolactone",
+        "answerability": 0.9781633615493774,
+        "ground_truth": {
+          "spironolactone": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of spironolactone on the cornea of a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5583072900772095,
+        "ground_truth": {
+          "corneal allograft survival": {
+            "bertscore": 0.6841395497322083,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What animal was the study of spironolactone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rat",
+        "answerability": 0.915058434009552,
+        "ground_truth": {
+          "the rat": {
+            "bertscore": 0.8444464206695557,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

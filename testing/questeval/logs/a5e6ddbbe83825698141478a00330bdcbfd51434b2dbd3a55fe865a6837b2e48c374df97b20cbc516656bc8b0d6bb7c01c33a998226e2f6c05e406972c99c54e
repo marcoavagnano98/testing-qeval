@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Functional studies using human endothelial cells demonstrated that overexpression of CBP rescued cAMP inhibition of NF-kappaB-dependent transcriptional activation and transcription mediated by a chimeric protein GAL4-p65(286-551) which contained the GAL4 DNA binding domain fused to the carboxyl-terminal region of p65 (amino acids 286-551).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CBP",
+        "GAL4-p65(286",
+        "286"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein rescued cAMP inhibition?",
+          "What protein rescued cAMP inhibition?",
+          "What is the amino acid sequence of the protein GAL4-p65?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Functional studies",
+        "human endothelial cells",
+        "overexpression",
+        "CBP",
+        "cAMP inhibition",
+        "NF-kappaB-dependent transcriptional activation",
+        "transcription",
+        "the GAL4 DNA binding domain",
+        "the carboxyl-terminal region",
+        "p65"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What demonstrated that overexpression of CBP rescued cAMP inhibition?",
+          "What was used in functional studies?",
+          "What caused cAMP inhibition to be rescued?",
+          "What protein rescued cAMP inhibition?",
+          "What did overexpression of CBP rescue?",
+          "What did the overexpression of CBP rescue?",
+          "What did the chimeric protein GAL4-p65 do?",
+          "What did the chimeric protein GAL4-p65 contain?",
+          "Where was the GAL4 DNA binding domain fused to?",
+          "What is the carboxyl-terminal region of p65?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did not confer transcriptional activation to the GAL4 DNA binding domain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003915905952453613,
+        "ground_truth": {
+          "DCoH": {
+            "bertscore": 0.6888054609298706,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did DCoH not confer to the GAL4 DNA binding domain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003180503845214844,
+        "ground_truth": {
+          "transcriptional activation": {
+            "bertscore": 0.6785926818847656,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did DCoH not confer transcriptional activation to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0031381845474243164,
+        "ground_truth": {
+          "the GAL4 DNA binding domain": {
+            "bertscore": 0.580245316028595,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

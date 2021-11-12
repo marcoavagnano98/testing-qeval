@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Hamsters greater than 35 mm3 treated with DMBA only slightly affected vascular volume and weight.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "35",
+        "DMBA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the maximum mm3 of a hamster treated with DMBA?",
+          "What treatment did hamsters that were larger than 35 mm3 receive?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Hamsters",
+        "greater than 35 mm3",
+        "DMBA",
+        "only slightly affected vascular volume",
+        "weight"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What animals were treated with DMBA?",
+          "What size hamsters were treated with DMBA?",
+          "What treatment did hamsters that were larger than 35 mm3 receive?",
+          "How much did DMBA affect hamsters larger than 35mm3?",
+          "What other factor was only slightly affected by DMBA on hamsters larger than 35"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What animals were treated with radiation DMBA + DMBA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3387777805328369,
+        "ground_truth": {
+          "Hamsters": {
+            "bertscore": 0.6471366286277771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DMBA",
+        "answerability": 0.7626000642776489,
+        "ground_truth": {
+          "either radiation DMBA radiation": {
+            "bertscore": 0.814949631690979,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters treated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DMBA",
+        "answerability": 0.9269461035728455,
+        "ground_truth": {
+          "DMBA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the other option for hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2328309416770935,
+        "ground_truth": {
+          "no treatment": {
+            "bertscore": 0.7193210124969482,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

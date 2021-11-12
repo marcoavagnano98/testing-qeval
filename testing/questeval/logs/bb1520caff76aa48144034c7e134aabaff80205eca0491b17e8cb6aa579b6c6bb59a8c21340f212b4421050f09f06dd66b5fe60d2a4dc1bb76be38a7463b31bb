@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "When this membrane-proximal region was fused to the DNA binding domain it was able to partly displace (20%)\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "20%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What percentage of the membrane-proximal region was able to displace?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this membrane-proximal region",
+        "the DNA binding domain",
+        "it"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was fused to the DNA binding domain?",
+          "What was the membrane-proximal region fused to?",
+          "What percentage of the DNA was displaced when the membrane-proximal region was fuse"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What region of the chromosome is capable of activating transcription from a reporter gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "membrane-proximal region",
+        "answerability": 0.6204137206077576,
+        "ground_truth": {
+          "Its N-terminal region": {
+            "bertscore": 0.7335337400436401,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the N-terminal region capable of activating when fused to a DNA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11972278356552124,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6925773024559021,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the N-terminal region of the chromosome capable of activating transcription": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.049035727977752686,
+        "ground_truth": {
+          "a reporter gene": {
+            "bertscore": 0.6844210624694824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the N-terminal region of a chromosome capable of activating": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04815024137496948,
+        "ground_truth": {
+          "a DNA binding domain": {
+            "bertscore": 0.6579520106315613,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

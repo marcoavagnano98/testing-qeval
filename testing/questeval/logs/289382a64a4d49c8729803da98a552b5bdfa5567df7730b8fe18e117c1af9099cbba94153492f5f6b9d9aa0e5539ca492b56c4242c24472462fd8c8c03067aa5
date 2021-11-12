@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "c-Rel is expressed in a highly cell-specific manner being most abundant in B cells and essentially absent in most of the other cells or tissues tested.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "c-Rel"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is expressed in a highly cell-specific manner?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "c-Rel",
+        "a highly cell-specific manner",
+        "B cells",
+        "the other cells",
+        "tissues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is expressed in a highly cell-specific manner?",
+          "How is c-Rel expressed?",
+          "Where is c-Rel most abundant?",
+          "Where is c-Rel essentially absent?",
+          "Where is c-Rel most abundant?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the NF-kappaB-dependent induction of Jagged1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 2.396106719970703e-05,
+        "ground_truth": {
+          "Rel/": {
+            "bertscore": 0.6638962030410767,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is expressed constitutively in splenic B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Rel",
+        "answerability": 0.6508108377456665,
+        "ground_truth": {
+          "c-Rel": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is c-Rel consistent with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.032716989517211914,
+        "ground_truth": {
+          "its Rel/NF-kappaB-dependent induction Jagged1": {
+            "bertscore": 0.5937694311141968,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is c-Rel expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cells",
+        "answerability": 0.905236005783081,
+        "ground_truth": {
+          "splenic B cells": {
+            "bertscore": 0.8289636969566345,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

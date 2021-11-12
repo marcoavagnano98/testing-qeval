@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Cyclin D1 is deregulated in Rb-deficient MEFs fibroblasts and progenitor cells but its role in cell cycle progression is not known.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cyclin",
+        "Rb-deficient"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is deregulated in Rb-deficient MEFs?",
+          "What type of MEFs have Cyclin D1 deregulated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cyclin D1",
+        "Rb-deficient MEFs fibroblasts",
+        "progenitor cells",
+        "its role",
+        "cell cycle progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is deregulated in Rb-deficient MEFs?",
+          "Where is Cyclin D1 deregulated?",
+          "What is another cell that is deregulated in Rb-deficient MEFs?",
+          "What is not known about cyclin D1?",
+          "What is not known about cyclin D1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is over expressed in the small t-antigen positive mammary gland epit": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cyclin D1",
+        "answerability": 0.5766672492027283,
+        "ground_truth": {
+          "Cyclin": {
+            "bertscore": 0.7988774180412292,
+            "f1": 0.6666666666666666
+          },
+          "Cyclin D1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where is Cyclin D1 over expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02586948871612549,
+        "ground_truth": {
+          "the small t-antigen positive mammary gland epithelial cells": {
+            "bertscore": 0.590813398361206,
+            "f1": 0
+          },
+          "the breast tumor cells": {
+            "bertscore": 0.6256914734840393,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the cell that is over expressed in the breast tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10799401998519897,
+        "ground_truth": {
+          "ME-cells": {
+            "bertscore": 0.6594607830047607,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

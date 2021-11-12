@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "In a xenograft model metronomic CPT-11 but not 5-FU and L-OHP significantly inhibited endothelial cell proliferation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5-FU"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited endothelial cell proliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a xenograft model metronomic",
+        "L-OHP",
+        "endothelial cell proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what model did CPT-11 inhibit endothelial cell proliferation?",
+          "What inhibited endothelial cell proliferation?",
+          "What did CPT-11 inhibit in a xenograft model?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited endothelial cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CPT-11 but not 5-FU and L-OHP",
+        "answerability": 0.8730345964431763,
+        "ground_truth": {
+          "SN-38": {
+            "bertscore": 0.7390567064285278,
+            "f1": 0
+          },
+          "Low concentrations": {
+            "bertscore": 0.6588970422744751,
+            "f1": 0
+          },
+          "L-OHP": {
+            "bertscore": 0.8210576772689819,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is the only SN-38 inhibitor that inhibits endothelial cell proliferation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16959404945373535,
+        "ground_truth": {
+          "5-FU": {
+            "bertscore": 0.7021402716636658,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did low concentrations of SN-38 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012500286102294922,
+        "ground_truth": {
+          "preferentially inhibited endothelial cell proliferation": {
+            "bertscore": 0.6081046462059021,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

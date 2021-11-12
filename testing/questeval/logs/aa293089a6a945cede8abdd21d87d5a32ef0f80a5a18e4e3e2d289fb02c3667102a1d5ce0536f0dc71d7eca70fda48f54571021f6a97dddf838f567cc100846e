@@ -1,0 +1,56 @@
+{
+  "type": "hyp",
+  "text": "Exogenously transfected TAL1 and LMO but not any of them induced\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LMO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the only organism that induced a clone of TAL1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Exogenously transfected TAL1",
+        "LMO",
+        "them"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two genes were not induced?",
+          "What was the only organism that induced a clone of TAL1?",
+          "What was the only thing that induced the relapse of TAL1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the only gene that was induced by TAL1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46071046590805054,
+        "ground_truth": {
+          "LMO": {
+            "bertscore": 0.6950322985649109,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only way to induce a TB infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05400872230529785,
+        "ground_truth": {
+          "Exogenously transfected TAL1": {
+            "bertscore": 0.6567147970199585,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

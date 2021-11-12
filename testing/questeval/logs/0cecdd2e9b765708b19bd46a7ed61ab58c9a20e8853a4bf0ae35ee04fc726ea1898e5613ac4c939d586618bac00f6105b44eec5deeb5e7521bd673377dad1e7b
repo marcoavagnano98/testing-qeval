@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "In contrast the binding activities of NF1 and RelA were not affected by ER.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RelA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What binding activity was not affected by ER?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "the binding activities",
+        "NF1",
+        "RelA",
+        "ER"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of ER on binding activities of NF1 and RelA?",
+          "What was not affected by ER?",
+          "What binding activity was not affected by ER?",
+          "What binding activity was not affected by ER?",
+          "What was not affected by NF1 binding?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of ER on binding activities of NF1 and Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07998484373092651,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628810882568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF1 and RelA",
+        "answerability": 0.9481642842292786,
+        "ground_truth": {
+          "the binding activities": {
+            "bertscore": 0.6872327923774719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What binding activity was not affected by ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF1 and RelA",
+        "answerability": 0.9719297289848328,
+        "ground_truth": {
+          "NF1": {
+            "bertscore": 0.8494862914085388,
+            "f1": 0.5
+          },
+          "Sp1": {
+            "bertscore": 0.7381783723831177,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by NF1 binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18084478378295898,
+        "ground_truth": {
+          "ER": {
+            "bertscore": 0.6925891637802124,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

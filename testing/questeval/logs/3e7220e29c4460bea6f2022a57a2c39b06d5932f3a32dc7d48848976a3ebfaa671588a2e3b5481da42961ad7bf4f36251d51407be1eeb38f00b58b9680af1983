@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "Regulation of GM-CSF gene transcription by core-binding factor. \u2047 nGM-CSF gene activation in T cells is known to involve the transcription factors nuclear factor-kappa B AP1 NFAT and Sp1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the core-binding factor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Regulation",
+        "GM-CSF gene transcription",
+        "core-binding factor",
+        "\u2047 nGM-CSF gene activation",
+        "T cells",
+        "the transcription factors",
+        "nuclear factor-kappa B AP1 NFAT",
+        "Sp1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of core-binding factor in GM-CSF gene transcription?",
+          "What is the core-binding factor responsible for?",
+          "What is involved in the regulation of GM-CSF gene transcription?",
+          "What is involved in T cells?",
+          "What type of cells are involved in GM-CSF gene activation?",
+          "What is involved in GM-CSF gene activation?",
+          "What transcription factors are involved in GM-CSF gene activation?",
+          "What transcription factor is involved in GM-CSF gene activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the core-binding factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.029606223106384277,
+        "ground_truth": {
+          "GM": {
+            "bertscore": 0.6745765209197998,
+            "f1": 0
+          },
+          "factor.\\nGM": {
+            "bertscore": 0.6227973699569702,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor is involved in GM-CSF gene activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor-kappa B AP1 NFAT and Sp1",
+        "answerability": 0.9437369704246521,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 0.7225689888000488,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the role of core-binding factor in GM-CSF gene transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Regulation",
+        "answerability": 0.9991496801376343,
+        "ground_truth": {
+          "Regulation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the core-binding factor responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Regulation of GM-CSF gene transcription",
+        "answerability": 0.982434093952179,
+        "ground_truth": {
+          "GM-CSF gene transcription": {
+            "bertscore": 0.904525876045227,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is involved in regulation of GM-CSF gene transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "core-binding factor",
+        "answerability": 0.9218835830688477,
+        "ground_truth": {
+          "core-binding factor.\\nGM-CSF gene activation": {
+            "bertscore": 0.7909936904907227,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What type of cells are involved in GM-CSF gene activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.9401421546936035,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is involved in GM-CSF gene activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor-kappa B AP1 NFAT and Sp1",
+        "answerability": 0.9211739301681519,
+        "ground_truth": {
+          "the transcription factors nuclear factor-kappa B AP-1 NFAT": {
+            "bertscore": 0.8897345066070557,
+            "f1": 0.7142857142857143
+          }
+        }
+      }
+    }
+  }
+}

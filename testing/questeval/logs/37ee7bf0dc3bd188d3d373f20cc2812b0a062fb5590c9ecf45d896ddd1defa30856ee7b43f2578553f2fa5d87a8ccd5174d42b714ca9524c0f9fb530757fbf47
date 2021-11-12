@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "By interacting with Sp1 HMGA2 interferes with the recruitment of HDAC2 to the hTERT  promoter enhancing localized histone H3-K9 acetylation and thereby stimulating hTERT expression and telomerase activity.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Sp1 HMGA2",
+        "the recruitment",
+        "HDAC2",
+        "the hTERT",
+        "hTERT expression",
+        "telomerase activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What interferes with the recruitment of HDAC2 to the hTERT promoter?",
+          "What does HMGA2 interfere with?",
+          "What does HMGA2 interfere with the recruitment of?",
+          "What promoter does HMGA2 interfere with?",
+          "What does HMGA2 interfere with?",
+          "What does HMGA2 interfere with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What interferes with the recruitment of HDAC2 to the hTERT promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1 HMGA2",
+        "answerability": 0.9909986257553101,
+        "ground_truth": {
+          "Sp1 HMGA2": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does HMGA2 interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the recruitment of HDAC2 to the hTERT promoter",
+        "answerability": 0.8863462805747986,
+        "ground_truth": {
+          "the recruitment": {
+            "bertscore": 0.741757869720459,
+            "f1": 0.2857142857142857
+          },
+          "hTERT expression": {
+            "bertscore": 0.7115998864173889,
+            "f1": 0.25
+          },
+          "telomerase activity": {
+            "bertscore": 0.7010782957077026,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HMGA2 interfere with the recruitment of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HDAC2",
+        "answerability": 0.8888847827911377,
+        "ground_truth": {
+          "HDAC2": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where does HMGA2 interfere with the recruitment of HDAC2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1",
+        "answerability": 0.9804002046585083,
+        "ground_truth": {
+          "the hTERT proximal promoter": {
+            "bertscore": 0.664336085319519,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

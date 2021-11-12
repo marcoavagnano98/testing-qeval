@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "We detected a specific glycosylation pattern of the mOAT1 expressed in a cell line transfected with a trimer of the hOAT1 gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mOAT1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was detected in a cell line transfected with a trimer of the"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a specific glycosylation pattern",
+        "the mOAT1",
+        "a cell line",
+        "a trimer",
+        "the hOAT1 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the specific glycosylation pattern of mOAT1 detected in a",
+          "What did we detect in a cell line transfected with a trimer of the",
+          "What gene was detected in a cell line transfected with a trimer of the",
+          "What was the specific glycosylation pattern of mOAT1 detected in?",
+          "What was used to detect the specific glycosylation pattern of mOAT1?",
+          "What gene was transfected with a trimer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the role of glycosylation in the organic anion transporter OAT1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34245944023132324,
+        "ground_truth": {
+          "Role": {
+            "bertscore": 0.671998143196106,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of OAT1 in the organic anion transporter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008061468601226807,
+        "ground_truth": {
+          "glycosylation": {
+            "bertscore": 0.634846568107605,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of glycosylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01154714822769165,
+        "ground_truth": {
+          "the organic anion transporter OAT1": {
+            "bertscore": 0.6065455079078674,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

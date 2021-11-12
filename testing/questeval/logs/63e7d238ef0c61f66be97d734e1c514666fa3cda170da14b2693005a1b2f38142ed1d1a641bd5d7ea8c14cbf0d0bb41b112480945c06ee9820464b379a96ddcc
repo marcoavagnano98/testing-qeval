@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "MMTV-cre-mediated fur inactivation concomitant with PLAG1 proto-oncogene activation delays salivary gland tumorigenicity in mice.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PLAG1 proto-oncogene activation delays",
+        "salivary gland tumorigenicity",
+        "mice"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of salivary gland tumorigenicity in mice?",
+          "What does MMTV-cre-mediated fur inactivation delay?",
+          "In what animal is MMTV-cre mediated fur inactivation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of salivary gland tumorigenesis in mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.021390438079833984,
+        "ground_truth": {
+          "PLAG1 proto-oncogene activation delays": {
+            "bertscore": 0.6061841249465942,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MMTV-cre-mediated fur inactivation delay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "salivary gland tumorigenicity",
+        "answerability": 0.994343638420105,
+        "ground_truth": {
+          "salivary gland tumorigenesis": {
+            "bertscore": 0.9496743679046631,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "In what animal is MMTV-cre mediated fur inactivation concomitant": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mice",
+        "answerability": 0.9644446969032288,
+        "ground_truth": {
+          "mice": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

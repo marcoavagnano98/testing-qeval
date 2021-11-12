@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Here we showed that Th1 cell differentiation required high-antigen-dose-induced ERK1 and ERK2 phosphorylation and IL-12-induced STAT-4 activation to produce IL-10.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "Th1 cell differentiation",
+        "high-antigen-dose-induced ERK1 and ERK2 phosphorylation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study show about Th1 cell differentiation?",
+          "What did the study show required high-antigen-dose-induced ERK1 and",
+          "What did the study show to produce IL-10?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the study show about Th1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiation",
+        "answerability": 0.7731145620346069,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7264915704727173,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells did the study show required ERK1 and ERK2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th1 cell differentiation",
+        "answerability": 0.9675489664077759,
+        "ground_truth": {
+          "Th1 cells": {
+            "bertscore": 0.8764523267745972,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did the study show Th1 cells needed to produce IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "high-antigen-dose-induced ERK1 and ERK2 phospho",
+        "answerability": 0.9722086787223816,
+        "ground_truth": {
+          "high-antigen-dose-induced ERK1 and ERK2 phosphorylation": {
+            "bertscore": 0.965232253074646,
+            "f1": 0.8000000000000002
+          }
+        }
+      }
+    }
+  }
+}

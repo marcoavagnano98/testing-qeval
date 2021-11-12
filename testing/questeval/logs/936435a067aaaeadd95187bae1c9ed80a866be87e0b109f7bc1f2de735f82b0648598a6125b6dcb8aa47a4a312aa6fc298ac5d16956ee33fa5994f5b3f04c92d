@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "gamma B*CaM-K also downregulated the transcriptional activation mediated by PMA/A23187 and was abrogated by mutations at the NF-kappa B2 site.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "gamma B*CaM-K",
+        "PMA/A23187"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What downregulated the transcriptional activation mediated by PMA/A23187?",
+          "What transcriptional activation was downregulated by gamma B*CaM-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "K",
+        "the transcriptional activation",
+        "PMA/A23187",
+        "mutations",
+        "the NF-kappa B2 site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene downregulated the transcriptional activation mediated by PMA/A23187?",
+          "What did gamma B*CaM-K down regulate?",
+          "What transcriptional activation was downregulated by gamma B*CaM-",
+          "What did NF-kappa B2 do?",
+          "Where was the transcriptional activation mediated by PMA/A23187 abrogated"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does AP-1 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007358193397521973,
+        "ground_truth": {
+          "abolishes": {
+            "bertscore": 0.7385303378105164,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does a molecule that is a molecule that is a molecule that": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15976345539093018,
+        "ground_truth": {
+          "PMA-induced AP-1 transcriptional activation": {
+            "bertscore": 0.61478590965271,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

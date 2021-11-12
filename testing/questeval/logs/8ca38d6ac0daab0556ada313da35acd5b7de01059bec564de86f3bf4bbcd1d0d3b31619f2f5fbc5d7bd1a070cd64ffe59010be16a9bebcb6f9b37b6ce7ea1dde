@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Increased Stat5 and Stat3 mRNA and protein levels were detected respectively 4 and 24 h after activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "4",
+        "24"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many hours after activation were the stat5 and stat3 levels detected?",
+          "How many hours after activation did the rat have increased stat5 and stat3 levels?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Increased Stat5 and Stat3 mRNA and protein levels",
+        "activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was detected 4 and 24 h after activation?",
+          "What was the first step in the RNA and protein levels of rat chromosome"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many hours after activation were increased Stat1 and Stat3 levels detected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4 and 24",
+        "answerability": 0.8625897765159607,
+        "ground_truth": {
+          "4": {
+            "bertscore": 0.8243319988250732,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "How many hours after activation were the Stat1 and Stat3 levels detected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4 and 24",
+        "answerability": 0.6273254156112671,
+        "ground_truth": {
+          "24": {
+            "bertscore": 0.8268241882324219,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was detected 4 and 24 h after activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Increased Stat5 and Stat3 mRNA and protein levels",
+        "answerability": 0.9952465891838074,
+        "ground_truth": {
+          "Increased Stat1 and Stat3 mRNA and protein levels": {
+            "bertscore": 0.9790456891059875,
+            "f1": 0.875
+          }
+        }
+      }
+    },
+    "What was the first step in the RNA and protein levels of rat chromosome": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10857278108596802,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6694929003715515,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

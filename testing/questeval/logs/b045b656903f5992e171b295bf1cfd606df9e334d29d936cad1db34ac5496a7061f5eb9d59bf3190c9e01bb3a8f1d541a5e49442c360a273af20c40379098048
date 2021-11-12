@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "In contrast to IL-10 no up-regulation of IRF-1 was found in IL-4-stimulated cells and IL-4 did not block IL-12-dependent up-regulation of IRF-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IRF-1",
+        "IRF-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was not upregulated in IL-4-stimulated cells?",
+          "What protein was not upregulated in IL-4-stimulated cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "IL-10 no up-regulation",
+        "IRF-1",
+        "IL-4-stimulated cells",
+        "IL-4",
+        "IL-12-dependent",
+        "up-regulation",
+        "IRF-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of IL-4 on IRF-1?",
+          "What was found in IL-4-stimulated cells?",
+          "What protein was not upregulated in IL-4-stimulated cells?",
+          "What did IL-10 not block?",
+          "What did not block IL-12-dependent up-regulation of IRF-1?",
+          "What type of up-regulation of IRF-1 was not blocked by IL-4?",
+          "What did IL-4 not block?",
+          "What protein was not upregulated in IL-4-stimulated cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was not upregulated in IL-4-stimulated cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IRF-1",
+        "answerability": 0.947615385055542,
+        "ground_truth": {
+          "IRF-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of IL-4 on IRF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "no up-regulation",
+        "answerability": 0.9258546829223633,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7005269527435303,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found in IL-4-stimulated cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4649757146835327,
+        "ground_truth": {
+          "IL-12 no up-regulation": {
+            "bertscore": 0.6707361936569214,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-4 not block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-12-dependent up-regulation of IRF-1",
+        "answerability": 0.7602232694625854,
+        "ground_truth": {
+          "IL-4-stimulated cells": {
+            "bertscore": 0.8120825290679932,
+            "f1": 0
+          },
+          "up-regulation": {
+            "bertscore": 0.7122051119804382,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did not block IRF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4",
+        "answerability": 0.7575134038925171,
+        "ground_truth": {
+          "IL-4": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of up-regulation of IRF-1 was not found in IL-4-sti": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-10",
+        "answerability": 0.5896111130714417,
+        "ground_truth": {
+          "IL-12-dependent": {
+            "bertscore": 0.7752043008804321,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

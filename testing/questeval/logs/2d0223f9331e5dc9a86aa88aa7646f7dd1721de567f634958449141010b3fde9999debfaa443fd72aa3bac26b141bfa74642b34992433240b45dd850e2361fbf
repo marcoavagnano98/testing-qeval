@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "In both activated peripheral blood T lymphocytes and activated tumorigenic T cell lines IL-2 gene expression was blocked at the transcriptional level by okadaic acid.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene expression was blocked at the transcriptional level in both activated peripheral blood T lymphocyte"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "activated tumorigenic T cell lines",
+        "IL-2 gene expression",
+        "the transcriptional level",
+        "okadaic acid"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were blocked by okadaic acid?",
+          "What was blocked at the transcriptional level in both activated peripheral blood T lymphocytes and",
+          "Where was IL-2 gene expression blocked?",
+          "What blockade of IL-2 gene expression was found in both activated peripheral blood T"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene expression was blocked at the transcriptional level in both activated peripheral blood T lymphocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.914024293422699,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were blocked by okadaic acid?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "peripheral blood T lymphocytes and activated tumorigenic T cell lines",
+        "answerability": 0.8744672536849976,
+        "ground_truth": {
+          "activated tumorigenic T cell lines": {
+            "bertscore": 0.8611180186271667,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was blocked at the transcriptional level in both activated peripheral blood T lymphocytes and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 gene expression",
+        "answerability": 0.9013434052467346,
+        "ground_truth": {
+          "IL-2 gene expression": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where was IL-2 gene expression blocked?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.647567868232727,
+        "ground_truth": {
+          "the transcriptional level": {
+            "bertscore": 0.6592608690261841,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockade of IL-2 gene expression was found in both activated peripheral blood T": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "okadaic acid",
+        "answerability": 0.9286244511604309,
+        "ground_truth": {
+          "okadaic acid": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

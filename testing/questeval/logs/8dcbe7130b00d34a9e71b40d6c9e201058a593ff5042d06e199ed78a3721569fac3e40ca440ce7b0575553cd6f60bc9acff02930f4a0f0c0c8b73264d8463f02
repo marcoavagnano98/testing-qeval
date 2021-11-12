@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "The yeast Cryptococcus flavus secretes a glycosylation alpha-amylase (Amy1)\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cryptococcus",
+        "Amy1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What yeast secretes a glycosylation alpha-amylase?",
+          "What is the name of the glycosylation alpha-amylase?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The yeast",
+        "Cryptococcus flavus",
+        "a glycosylation alpha-amylase",
+        "Amy1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What organism secretes a glycosylation alpha-amylase?",
+          "What yeast secretes a glycosylation alpha-amylase?",
+          "What does Cryptococcus flavus secrete?",
+          "What is the name of the glycosylation alpha-amylase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the alpha-amylase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Amy1",
+        "answerability": 0.624621570110321,
+        "ground_truth": {
+          "Amy1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the yeast Cryptococcus flavus": {
+            "bertscore": 0.646966814994812,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What yeast has a beta-amylase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005230844020843506,
+        "ground_truth": {
+          "Cryptococcus": {
+            "bertscore": 0.6129989624023438,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of N-glycosylation on the biochemical properties of Amy1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022158145904541016,
+        "ground_truth": {
+          "The influence": {
+            "bertscore": 0.6775267124176025,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that is responsible for the biochemical properties of Amy1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4167022705078125,
+        "ground_truth": {
+          "N-glycosylation": {
+            "bertscore": 0.6172822117805481,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does N-glycosylation influence?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0001442432403564453,
+        "ground_truth": {
+          "biochemical properties": {
+            "bertscore": 0.6541637182235718,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

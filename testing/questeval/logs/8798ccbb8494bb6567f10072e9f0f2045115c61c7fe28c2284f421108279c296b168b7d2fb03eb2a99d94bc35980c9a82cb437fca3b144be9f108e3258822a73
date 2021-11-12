@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "In contrast integrin ligation with antibodies induces tyrosine phosphorylation of Syk but not of FAK or palindrome suggesting that these components/pathways are important for DC differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "FAK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What component of the DC differentiation is not phosphorylated by integrin ligation"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast integrin ligation",
+        "antibodies",
+        "tyrosine phosphorylation",
+        "Syk",
+        "FAK",
+        "palindrome",
+        "these components/pathways",
+        "DC differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only way to induce tyrosine phosphorylation of Syk",
+          "What induces tyrosine phosphorylation of Syk?",
+          "What does integrin ligation with antibodies induce?",
+          "What component of DC differentiation is not phosphorylated by antibodies?",
+          "What component of the DC differentiation is not phosphorylated by integrin ligation",
+          "What component of the DC differentiation is not phosphorylated by integrin ligation",
+          "What is important for DC differentiation?",
+          "What is FAK important for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is not phosphorylated by integrin ligation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FAK",
+        "answerability": 0.8941183090209961,
+        "ground_truth": {
+          "FAK": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "paxillin": {
+            "bertscore": 0.6686796545982361,
+            "f1": 0
+          },
+          "Syk": {
+            "bertscore": 0.7770049571990967,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induces tyrosine phosphorylation of Syk?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "integrin ligation with antibodies",
+        "answerability": 0.9487083554267883,
+        "ground_truth": {
+          "contrast integrin ligation": {
+            "bertscore": 0.84371018409729,
+            "f1": 0.5714285714285715
+          },
+          "antibodies": {
+            "bertscore": 0.8277243971824646,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does integrin ligation with antibodies induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation",
+        "answerability": 0.9333055019378662,
+        "ground_truth": {
+          "tyrosine phosphorylation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

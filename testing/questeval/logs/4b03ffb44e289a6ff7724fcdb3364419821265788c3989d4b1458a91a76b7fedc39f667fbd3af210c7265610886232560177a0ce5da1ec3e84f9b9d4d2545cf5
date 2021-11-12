@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Point mutations within the eed gene that are responsible for severe embryonic development abnormalities abolished the transcriptional repression functions of Eed.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Eed"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was abolished by mutations that cause severe embryonic development abnormalities?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Point mutations",
+        "the eed gene",
+        "severe embryonic development abnormalities",
+        "the transcriptional repression functions",
+        "Eed"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What abolished the transcriptional repression functions of Eed?",
+          "What gene is responsible for severe embryonic development abnormalities?",
+          "What are mutations in the eed gene responsible for?",
+          "What did point mutations in the eed gene abolish?",
+          "What gene was abolished by mutations that cause severe embryonic development abnormalities?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene was abolished by mutations?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional repression functions",
+        "answerability": 0.9583197832107544,
+        "ground_truth": {
+          "Eed": {
+            "bertscore": 0.6573821902275085,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was responsible for severe embryonic development abnormalities?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutations within the eed gene",
+        "answerability": 0.9702370762825012,
+        "ground_truth": {
+          "Point mutations": {
+            "bertscore": 0.7288464307785034,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What gene is responsible for severe embryonic development abnormalities?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutations within the eed gene",
+        "answerability": 0.8561009168624878,
+        "ground_truth": {
+          "the eed gene": {
+            "bertscore": 0.8594098687171936,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the cause of mutations in the eed gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "severe embryonic development abnormalities",
+        "answerability": 0.902493417263031,
+        "ground_truth": {
+          "severe embryonic development abnormalities": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did point mutations within the eed gene abolish?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional repression functions",
+        "answerability": 0.9888074994087219,
+        "ground_truth": {
+          "the transcriptional repressor activity": {
+            "bertscore": 0.87209153175354,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    }
+  }
+}

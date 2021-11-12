@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "Our results suggest that the JAK pathway may regulate NF-kappa B-mediated gene transcription through its phosphorylation and activation of c-Jun.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "JAK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What pathway may regulate NF-kappa B-mediated gene transcription?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our results",
+        "the JAK pathway",
+        "NF-kappa B-mediated gene transcription",
+        "its phosphorylation",
+        "activation",
+        "c-Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that the JAK pathway may regulate NF-kappa B-mediated gene",
+          "What may regulate NF-kappa B-mediated gene transcription?",
+          "What does the JAK pathway regulate?",
+          "What is the JAK pathway known for?",
+          "What is the c-Jun pathway known for?",
+          "What pathway may regulate NF-kappa B-mediated gene transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What pathway may regulate NF-kappa B-mediated gene transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JAK pathway",
+        "answerability": 0.9867368936538696,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.7395020127296448,
+            "f1": 0
+          },
+          "c-Jun": {
+            "bertscore": 0.6714856028556824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that the JNK pathway may regulate NF-kappa B-mediated gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2113855481147766,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 0.6937652826309204,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may regulate NF-kappa B-mediated gene transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the JAK pathway",
+        "answerability": 0.989564836025238,
+        "ground_truth": {
+          "the JNK pathway": {
+            "bertscore": 0.9400616884231567,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the JNK pathway regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07521265745162964,
+        "ground_truth": {
+          "NF-kappa B-mediated gene transcription": {
+            "bertscore": 0.599403440952301,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the JNK pathway known to regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12973898649215698,
+        "ground_truth": {
+          "its phosphorylation": {
+            "bertscore": 0.599615216255188,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the JNK pathway known for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013421595096588135,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6694929003715515,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

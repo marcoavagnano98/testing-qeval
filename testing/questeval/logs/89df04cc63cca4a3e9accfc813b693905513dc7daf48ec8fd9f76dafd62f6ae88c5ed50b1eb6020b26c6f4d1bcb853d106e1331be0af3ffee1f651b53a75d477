@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "TNF-alpha did not mediate the translocation of NF-kappa B p50/p65 induced by triggering of complement receptors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not mediate the translocation of NF-kappa B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF-alpha",
+        "the translocation",
+        "NF-kappa B p50/p65",
+        "complement receptors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not mediate the translocation of NF-kappa B p",
+          "What did TNF-alpha not mediate?",
+          "What did TNF-alpha not mediate?",
+          "What did TNF-alpha not mediate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did not mediate the translocation of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.9581022262573242,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not mediate the translocation of NF-kappa B p": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.8079526424407959,
+        "ground_truth": {
+          "TNF-alpha": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did TNF-alpha not mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "translocation of NF-kappa B p50/p65 induced by",
+        "answerability": 0.9851024150848389,
+        "ground_truth": {
+          "the translocation": {
+            "bertscore": 0.7097271680831909,
+            "f1": 0.25
+          },
+          "NF-kappa B p50/p65": {
+            "bertscore": 0.7991057634353638,
+            "f1": 0.6
+          },
+          "complement receptors": {
+            "bertscore": 0.6565427780151367,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

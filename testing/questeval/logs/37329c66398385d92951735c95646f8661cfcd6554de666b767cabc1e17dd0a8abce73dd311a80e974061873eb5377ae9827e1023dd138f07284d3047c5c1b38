@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "A nondegradable mutant of I kappa B blocked both FasL expression and apoptosis induced by DNA damage but not Fas ligation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A nondegradable mutant",
+        "I",
+        "kappa B",
+        "both FasL expression",
+        "apoptosis",
+        "DNA damage",
+        "Fas ligation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blockade FasL expression?",
+          "What kappa B mutant blocked both FasL expression and apoptos",
+          "What mutant blocked FasL expression?",
+          "What did a nondegradable mutant of I kappa B block?",
+          "What did the nondegradable mutant of I kappa B block?",
+          "What caused the apoptosis to occur?",
+          "What did the nondegradable mutant of I kappa B block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What blockade FasL expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48782044649124146,
+        "ground_truth": {
+          "A nondegradable mutant": {
+            "bertscore": 0.7112476825714111,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What kappa B mutant blocked both FasL expression and apoptos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43943363428115845,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.679896354675293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mutant blocked FasL expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I kappa B",
+        "answerability": 0.6808500289916992,
+        "ground_truth": {
+          "kappa B": {
+            "bertscore": 0.8878493309020996,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did a nondegradable mutant of I kappa B block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FasL expression and apoptosis",
+        "answerability": 0.9907729625701904,
+        "ground_truth": {
+          "both FasL expression": {
+            "bertscore": 0.8018037676811218,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did the nondegradable mutant of I kappa B block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FasL expression and apoptosis",
+        "answerability": 0.9930818676948547,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.8067654371261597,
+            "f1": 0.4
+          },
+          "Fas ligation": {
+            "bertscore": 0.7631209492683411,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What caused the apoptosis to occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA damage",
+        "answerability": 0.954542875289917,
+        "ground_truth": {
+          "DNA damage": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

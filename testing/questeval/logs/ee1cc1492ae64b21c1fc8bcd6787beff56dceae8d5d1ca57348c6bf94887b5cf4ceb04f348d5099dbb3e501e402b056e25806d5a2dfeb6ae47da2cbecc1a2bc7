@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Mice with EC-specific deletion of Dicer a key enzyme in generating miRNAs display defective postnatal angiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of deletion of Dicer is required for the generation of miRNAs?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mice",
+        "EC-specific deletion",
+        "Dicer",
+        "miRNAs display defective postnatal angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of mice have EC-specific deletion of Dicer?",
+          "What is the name of the enzyme that generates miRNAs?",
+          "What enzyme is a key factor in generating miRNAs?",
+          "What happens to mice with EC-specific deletion of Dicer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of deletion of Dicer is required for generating miRNAs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EC-specific deletion",
+        "answerability": 0.9350512623786926,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.7483143210411072,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of mice have EC-specific deletion of Dicer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mice",
+        "answerability": 0.7193458080291748,
+        "ground_truth": {
+          "Mice": {
+            "bertscore": 0.8357062339782715,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that is responsible for generating miRNAs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Dicer",
+        "answerability": 0.9900553822517395,
+        "ground_truth": {
+          "EC-specific deletion": {
+            "bertscore": 0.6959243416786194,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enzyme is a key factor in generating miRNAs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Dicer",
+        "answerability": 0.9915185570716858,
+        "ground_truth": {
+          "Dicer": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What happens to mice with EC-specific deletion of Dicer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "defective postnatal angiogenesis",
+        "answerability": 0.9532948732376099,
+        "ground_truth": {
+          "miRNAs display defective postnatal angiogenesis": {
+            "bertscore": 0.9037684202194214,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

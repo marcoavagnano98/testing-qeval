@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "Similar to HilC and HilD RtsA activates the expression of SPI1 genes by binding upstream of the master regulatory gene hilA to induce its expression (9).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "9"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many genes are activated by hilA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HilC",
+        "HilD RtsA",
+        "the expression",
+        "SPI1 genes",
+        "binding upstream",
+        "the master regulatory gene",
+        "its expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that activates the expression of SPI1 genes?",
+          "What is the name of the gene that activates the expression of SPI1 genes?",
+          "What does HilC and HilD RtsA do?",
+          "What does HilC and HilD RtsA activate?",
+          "How does HilC and HilD RtsA activate the expression of SPI1 genes",
+          "What does hilA binding upstream of activate the expression of SPI1 genes?",
+          "What does HilC and HilD RtsA do to activate SPI1 genes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the number of genes that activate the expression of SPI1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25164151191711426,
+        "ground_truth": {
+          "917": {
+            "bertscore": 0.6701061725616455,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that activates the expression of SPI1 genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HilC",
+        "answerability": 0.9420737028121948,
+        "ground_truth": {
+          "HilC": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "HilD RtsA": {
+            "bertscore": 0.7618227601051331,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HilC and HilD RtsA do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activates the expression of SPI1 genes",
+        "answerability": 0.9134464859962463,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6382852792739868,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What does HilC and HilD RtsA activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the expression of SPI1 genes",
+        "answerability": 0.982593834400177,
+        "ground_truth": {
+          "SPI1 genes": {
+            "bertscore": 0.8898906707763672,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "How does HilC and HilD RtsA activate the expression of SPI1 genes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "by binding upstream of the master regulatory gene hilA",
+        "answerability": 0.7609010934829712,
+        "ground_truth": {
+          "binding upstream": {
+            "bertscore": 0.7476521730422974,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does hilA binding upstream of activate the expression of SPI1 genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31764882802963257,
+        "ground_truth": {
+          "the master regulatory gene": {
+            "bertscore": 0.6547034978866577,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HilC and HilD RtsA do to activate SPI1 genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binding upstream of the master regulatory gene hilA",
+        "answerability": 0.9861959218978882,
+        "ground_truth": {
+          "its expression": {
+            "bertscore": 0.6440858840942383,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

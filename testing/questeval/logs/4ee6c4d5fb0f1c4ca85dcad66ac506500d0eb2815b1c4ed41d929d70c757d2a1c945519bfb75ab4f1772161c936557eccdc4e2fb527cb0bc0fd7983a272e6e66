@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "The addition of cycloheximide completely blocked the VitD3 induction of CD14 mRNA expression indicating that the induction was dependent on ongoing protein synthesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VitD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induction of CD14 mRNA was blocked by cycloheximide"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The addition",
+        "cycloheximide",
+        "the VitD3 induction",
+        "CD14 mRNA expression",
+        "the induction",
+        "ongoing protein synthesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blocked the VitD3 induction of CD14 mRNA expression?",
+          "What blockade the VitD3 induction of CD14 mRNA expression?",
+          "What did the addition of cycloheximide completely block?",
+          "What did the addition of cycloheximide block?",
+          "What was dependent on ongoing protein synthesis?",
+          "What did the addition of cycloheximide indicate was dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induction of CD14 mRNA was blocked by cycloheximide": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3",
+        "answerability": 0.9819726943969727,
+        "ground_truth": {
+          "VitD3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What blocked the VitD3 induction of CD14 mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "addition of cycloheximide",
+        "answerability": 0.9678862690925598,
+        "ground_truth": {
+          "The addition": {
+            "bertscore": 0.6286539435386658,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What blockade the VitD3 induction of CD14 mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "addition of cycloheximide",
+        "answerability": 0.9684321284294128,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.8934928774833679,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide completely block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3 induction of CD14 mRNA",
+        "answerability": 0.9888808131217957,
+        "ground_truth": {
+          "the VitD3 induction": {
+            "bertscore": 0.8416690230369568,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3 induction of CD14 mRNA",
+        "answerability": 0.975939154624939,
+        "ground_truth": {
+          "CD14 mRNA expression": {
+            "bertscore": 0.8512222766876221,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was dependent on ongoing protein synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3 induction",
+        "answerability": 0.8895961046218872,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.7585261464118958,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide indicate was dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ongoing protein synthesis",
+        "answerability": 0.9935818910598755,
+        "ground_truth": {
+          "ongoing protein synthesis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

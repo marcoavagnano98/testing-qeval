@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "All the malignancies except those expressing B16F10 melanomas grew slower in Ang-2-deficient mice.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "B16F10 melanomas",
+        "Ang-2-deficient"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of malignancies did Ang-2-deficient mice not have?",
+          "What type of mice had a slower growth rate than normal?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "All the malignancies",
+        "B16F10 melanomas",
+        "Ang-2-deficient mice"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did Ang-2-deficient mice show a slower growth rate in?",
+          "What type of malignancies did Ang-2-deficient mice not have?",
+          "What type of mice had a slower growth rate than normal?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cancers grew slower in Ang-2-deficient mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4445940852165222,
+        "ground_truth": {
+          "Lewis lung": {
+            "bertscore": 0.6895812153816223,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two tumors grew slower in Ang-2-deficient mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04808014631271362,
+        "ground_truth": {
+          "Lewis lung carcinomas MT-ret melanomas and B16F10 melanomas": {
+            "bertscore": 0.5838585495948792,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of mice had a slower growth rate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ang-2-deficient mice",
+        "answerability": 0.8812218904495239,
+        "ground_truth": {
+          "Ang-2-deficient mice": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

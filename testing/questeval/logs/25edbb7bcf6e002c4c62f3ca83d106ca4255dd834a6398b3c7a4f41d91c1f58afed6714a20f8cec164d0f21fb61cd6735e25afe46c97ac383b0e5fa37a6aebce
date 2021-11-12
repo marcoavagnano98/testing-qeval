@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"A 3 --> 5 XPB helicase defect in repair/transcription factor TFIIH of xeroderma pigmentosum group B affects both DNA repair and transcription.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3",
+        "5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the number of helicase defects in xeroderma pigmentosum group",
+          "How many XPB helicase defects are there?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "repair/transcription factor TFIIH",
+        "xeroderma pigmentosum group B",
+        "both DNA repair",
+        "transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the helicase defect of xeroderma pigmentosum group B?",
+          "What group of bacteria is affected by a 3 --> 5 XPB heli",
+          "What does the 3 --> 5 XPB helicase defect affect?",
+          "What does the defect in TFIIH affect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the number of helicase defects in xeroderma pigmentosum group": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5116126537322998,
+        "ground_truth": {
+          "3": {
+            "bertscore": 0.6802684664726257,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many XPB helicase defects are there?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3 --> 5",
+        "answerability": 0.8715231418609619,
+        "ground_truth": {
+          "5": {
+            "bertscore": 0.7886895537376404,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the helicase defect of xeroderma pigmentosum group B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TFIIH",
+        "answerability": 0.6497978568077087,
+        "ground_truth": {
+          "repair/transcription factor TFIIH": {
+            "bertscore": 0.811096727848053,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What group of bacteria is affected by a 3 --> 5 XPB heli": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7072346210479736,
+        "ground_truth": {
+          "xeroderma pigmentosum group B": {
+            "bertscore": 0.6032543778419495,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the 3 --> 5 XPB helicase defect affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5450725555419922,
+        "ground_truth": {
+          "both DNA repair": {
+            "bertscore": 0.6736533045768738,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the defect in TFIIH affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA repair and transcription",
+        "answerability": 0.9750145077705383,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.8017070293426514,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

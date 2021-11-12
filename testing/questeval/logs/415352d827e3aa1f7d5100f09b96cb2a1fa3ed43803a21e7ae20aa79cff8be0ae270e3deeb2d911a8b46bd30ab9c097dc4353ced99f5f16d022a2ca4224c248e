@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "We found that ubiquitination and degradation of TRB3 were mediated through the ubiquitin-proteasome pathway and that the loss of TRB3 expression was dependent on the ubiquitin-proteasome pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "ubiquitination",
+        "degradation",
+        "TRB3",
+        "the ubiquitin-proteasome pathway",
+        "the loss",
+        "TRB3 expression",
+        "the ubiquitin-proteasome pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What pathway did we find that mediated ubiquitination and degradation of TRB3",
+          "What is the main mechanism of degradation of TRB3?",
+          "What is the main mechanism of ubiquitination?",
+          "What protein was found to be mediated through the ubiquitin-proteasome",
+          "What pathway mediated ubiquitination and degradation of TRB3?",
+          "What was the loss of TRB3 expression dependent on?",
+          "What was the loss of?",
+          "What pathway mediated ubiquitination and degradation of TRB3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mediates ubiquitination and degradation of TRB3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ubiquitin-proteasome",
+        "answerability": 0.985612154006958,
+        "ground_truth": {
+          "E3 ubiquitin ligase SIAH1": {
+            "bertscore": 0.7851935029029846,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SIAH1 mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004112124443054199,
+        "ground_truth": {
+          "ubiquitination": {
+            "bertscore": 0.6691908240318298,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SIAH1 mediate in regards to TRB3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001855015754699707,
+        "ground_truth": {
+          "degradation": {
+            "bertscore": 0.7194916009902954,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is ubiquitinated and degradationd by SIAH1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11431640386581421,
+        "ground_truth": {
+          "TRB3": {
+            "bertscore": 0.6661219000816345,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

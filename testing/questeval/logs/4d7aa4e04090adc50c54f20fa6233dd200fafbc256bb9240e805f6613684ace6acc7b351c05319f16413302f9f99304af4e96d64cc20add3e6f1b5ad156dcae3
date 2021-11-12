@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "Mutations in beta- myosin S2 that cause familial hypertrophic cardiomyopathy (FHC) abolish the interaction with the regulatory domain of myosin-binding protein\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "FHC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the condition that occurs when beta- myosin S2 is"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mutations",
+        "familial hypertrophic cardiomyopathy",
+        "(FHC",
+        "the interaction",
+        "the regulatory domain",
+        "myosin-binding protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What causes FHC?",
+          "What is the name of the condition that occurs when a mutation in beta- myos",
+          "What is the name of the condition that occurs when beta-myosin S2 is",
+          "What does mutations in beta-myosin S2 abolish?",
+          "What does mutations in beta- myosin S2 abolish?",
+          "What regulatory domain does FHC have?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the condition that occurs when beta-myosin S2 is": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "familial hypertrophic cardiomyopathy",
+        "answerability": 0.9286811351776123,
+        "ground_truth": {
+          "FHC": {
+            "bertscore": 0.6548153162002563,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What causes FHC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutations in beta- myosin S2",
+        "answerability": 0.9692871570587158,
+        "ground_truth": {
+          "Mutations": {
+            "bertscore": 0.6877481341362,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What protein is mutated that causes FHC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta- myosin S2",
+        "answerability": 0.9738612771034241,
+        "ground_truth": {
+          "beta-myosin S2": {
+            "bertscore": 1.0,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the name of the condition that occurs when a mutation in beta-myos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "familial hypertrophic cardiomyopathy",
+        "answerability": 0.9366833567619324,
+        "ground_truth": {
+          "familial hypertrophic cardiomyopathy": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "(FHC": {
+            "bertscore": 0.6155474781990051,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does mutations in beta-myosin S2 abolish?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the interaction with the regulatory domain of myosin-binding protein",
+        "answerability": 0.9148651361465454,
+        "ground_truth": {
+          "the interaction": {
+            "bertscore": 0.6996760368347168,
+            "f1": 0.25
+          },
+          "the regulatory domain": {
+            "bertscore": 0.7620993852615356,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What does FHC entail?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08348387479782104,
+        "ground_truth": {
+          "myosin-binding protein": {
+            "bertscore": 0.6139447689056396,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

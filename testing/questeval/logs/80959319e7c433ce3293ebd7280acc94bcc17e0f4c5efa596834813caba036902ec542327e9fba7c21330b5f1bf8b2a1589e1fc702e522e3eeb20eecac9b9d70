@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "Activated GSK-3beta phosphorylates GCM1 on Ser322 which in turn recruits the F-box protein FBW2 leading to GCM1 ubiquitination and degradation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GCM1",
+        "Ser322",
+        "the F-box protein FBW2",
+        "GCM1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What ubiquitination and degradation occurs when GSK-3beta is activated",
+          "What is the F-box protein FBW2?",
+          "What does GSK-3beta recruit?",
+          "What ubiquitination and degradation occurs when GSK-3beta is activated"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activated GSK-3beta",
+        "GCM1",
+        "turn",
+        "the F-box protein FBW2",
+        "GCM1 ubiquitination",
+        "degradation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylates GCM1 on Ser322?",
+          "What ubiquitination and degradation occurs when GSK-3beta is activated",
+          "What happens to GCM1 on Ser322?",
+          "What does GSK-3beta recruit?",
+          "What does GSK-3beta do to the F-box protein?",
+          "What does GSK-3beta do to GCM1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What ubiquitination and degradation occurs when GSK-3beta is activated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GCM1",
+        "answerability": 0.9421110153198242,
+        "ground_truth": {
+          "GCM1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the F-box protein FBW2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009792864322662354,
+        "ground_truth": {
+          "Ser322": {
+            "bertscore": 0.6702192425727844,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does GSK-3beta recruit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6583634614944458,
+        "ground_truth": {
+          "the F-box protein FBW2": {
+            "bertscore": 0.6042860150337219,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What phosphorylates GCM1 on Ser322?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activated GSK-3beta",
+        "answerability": 0.983622670173645,
+        "ground_truth": {
+          "Activated GSK-3beta": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What happens to GCM1 on Ser322?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylates",
+        "answerability": 0.8273083567619324,
+        "ground_truth": {
+          "turn": {
+            "bertscore": 0.6445242762565613,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does GSK-3beta do to the F-box protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47542881965637207,
+        "ground_truth": {
+          "GCM1 ubiquitination": {
+            "bertscore": 0.612281858921051,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does GSK-3beta do to GCM1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylates",
+        "answerability": 0.9355003833770752,
+        "ground_truth": {
+          "degradation": {
+            "bertscore": 0.7330301403999329,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

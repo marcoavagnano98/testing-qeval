@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "c-jun mRNA levels were superinduced in cells treated with both okadaic acid and cycloheximide whereas inhibition of protein synthesis had little i.e. no effect on okadaic acid-induced c-jun transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "c-jun mRNA levels",
+        "cells",
+        "both okadaic acid",
+        "cycloheximide",
+        "inhibition",
+        "protein synthesis",
+        "little i.e. no effect",
+        "okadaic acid-induced c-jun transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was superinduced in cells treated with okadaic acid and cyclo",
+          "What cells were treated with okadaic acid and cycloheximi",
+          "What was the only treatment that had a significant effect on c-jun transcription?",
+          "What was the only treatment that had a significant effect on c-jun transcription?",
+          "What did cycloheximide and okadaic acid have little",
+          "What did okadaic acid and cycloheximide inhibit?",
+          "What effect did inhibition of protein synthesis have on c-jun transcription?",
+          "What did inhibition of protein synthesis have little effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was superinduced in cells treated with okadaic acid and cyclo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels",
+        "answerability": 0.9748249053955078,
+        "ground_truth": {
+          "c-jun mRNA levels": {
+            "bertscore": 0.8470544815063477,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What cells were treated with okadaic acid and cycloheximi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-jun mRNA levels",
+        "answerability": 0.5824025869369507,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.7069782614707947,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only treatment for c-jun mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2629384994506836,
+        "ground_truth": {
+          "both okadaic acid": {
+            "bertscore": 0.6479985117912292,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to superinduce c-jun mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "okadaic acid and cycloheximide",
+        "answerability": 0.988572895526886,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.8586097955703735,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the main effect of okadaic acid on c-jun transcription": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of protein synthesis",
+        "answerability": 0.9930604696273804,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.8130226135253906,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did inhibition of c-jun mRNA have little effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38131916522979736,
+        "ground_truth": {
+          "protein synthesis": {
+            "bertscore": 0.6801061034202576,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did inhibition of protein synthesis have little of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "no effect on okadaic acid-induced c-jun transcription",
+        "answerability": 0.934512734413147,
+        "ground_truth": {
+          "any effect": {
+            "bertscore": 0.6290056109428406,
+            "f1": 0.22222222222222224
+          }
+        }
+      }
+    },
+    "What did inhibition of protein synthesis have little effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-jun mRNA levels",
+        "answerability": 0.9604377746582031,
+        "ground_truth": {
+          "okadaic acid-induced c-jun transcription": {
+            "bertscore": 0.8167149424552917,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    }
+  }
+}

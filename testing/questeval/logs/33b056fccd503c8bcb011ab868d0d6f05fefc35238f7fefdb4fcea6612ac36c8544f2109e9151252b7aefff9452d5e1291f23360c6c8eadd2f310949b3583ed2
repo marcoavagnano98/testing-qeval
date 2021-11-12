@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "In fact p75(NTR) depresses the vascular endothelial growth factor (VEGF)-A secretion pathway and additionally reduces the mRNA levels of ITGB1 PTTG1 (securin) and VEZF1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mRNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does p75(NTR) reduce?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "fact",
+        "p75(NTR",
+        "the vascular endothelial growth factor",
+        "VEGF)-A secretion pathway",
+        "the mRNA levels",
+        "ITGB1 PTTG1",
+        "securin",
+        "VEZF1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the reason why p75(NTR) depresses the VE",
+          "What is the name of the protein that depresses the VEGF-A secret",
+          "What does p75(NTR) depress?",
+          "What does p75(NTR) depress?",
+          "What does p75(NTR) reduce?",
+          "What is the mRNA level of securin?",
+          "What is another name for ITGB1 PTTG1?",
+          "What is the name of the protein that binds to the vascular endotheli"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does p75(NTR) reduce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels",
+        "answerability": 0.9333495497703552,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.881926417350769,
+            "f1": 0.6666666666666666
+          },
+          "the mRNA levels": {
+            "bertscore": 0.9021313786506653,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the reason why p75(NTR) depresses the VE": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5430103540420532,
+        "ground_truth": {
+          "fact": {
+            "bertscore": 0.711483359336853,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that depresses the VEGF-A/": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75(NTR)",
+        "answerability": 0.8558449745178223,
+        "ground_truth": {
+          "p75(NTR": {
+            "bertscore": 0.928922712802887,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What pathway does p75(NTR) depress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vascular endothelial growth factor (VEGF)-A secretion pathway",
+        "answerability": 0.9846587777137756,
+        "ground_truth": {
+          "VEGF-A": {
+            "bertscore": 0.7113022804260254,
+            "f1": 0.25
+          },
+          "Akt": {
+            "bertscore": 0.5470448732376099,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

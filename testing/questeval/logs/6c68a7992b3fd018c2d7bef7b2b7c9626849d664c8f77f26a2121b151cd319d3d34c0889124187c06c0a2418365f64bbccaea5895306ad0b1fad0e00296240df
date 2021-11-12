@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "However high amounts of IL-12p40 mRNA expression were only observed under Th1 cell differentiation conditions (low-dose antigen) (Figure 6B) and this expression was markedly downregulated by both increasing antigen dose and coculture in IL-12 (Figure 6B).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6B",
+        "IL-12",
+        "6B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the corresponding figure for the expression of IL-12p40 mRNA?",
+          "What is the mRNA that is expressed in Th1 cells?",
+          "What is the corresponding figure for the expression of IL-12p40 mRNA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "However high amounts",
+        "mRNA expression",
+        "Th1 cell differentiation conditions",
+        "low-dose antigen",
+        "Figure 6B",
+        "this expression",
+        "both increasing antigen dose",
+        "coculture",
+        "IL-12 (Figure 6B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was observed under low-dose antigen conditions?",
+          "What was downregulated by increasing antigen dose and coculture?",
+          "What is the term for low-dose antigen?",
+          "What is the term for Th1 cell differentiation conditions?",
+          "What is the mRNA expression of IL-12p40 in Th1 cell differentiation conditions",
+          "What was markedly downregulated by increasing antigen dose and coculture in IL-12?",
+          "What was the reason for the downregulation of IL-12p40 expression?",
+          "What was the second step in the downregulation of IL-12p40 expression?",
+          "What was significantly downregulated by increasing antigen dose and coculture?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the effect of IL-12p40 on mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "markedly downregulated",
+        "answerability": 0.9952443838119507,
+        "ground_truth": {
+          "the down-regulation": {
+            "bertscore": 0.7598474621772766,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was downregulated in the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3543359041213989,
+        "ground_truth": {
+          "IL-12p40 mRNA expression": {
+            "bertscore": 0.5751954913139343,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

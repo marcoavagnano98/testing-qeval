@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Augmented expression of VCAM-1 led to decreased SS RBC adhesion inhibitable by a VCAM-1 antibody.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Augmented expression",
+        "VCAM-1",
+        "a VCAM-1 antibody"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What led to decreased SS RBC adhesion?",
+          "What antibody inhibited SS RBC adhesion?",
+          "What inhibited SS RBC adhesion?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What led to increased SS RBC adhesion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008537769317626953,
+        "ground_truth": {
+          "Augmented expression": {
+            "bertscore": 0.7263146042823792,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antibody inhibited SS RBC adhesion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VCAM-1",
+        "answerability": 0.7437068223953247,
+        "ground_truth": {
+          "VCAM-1": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited SS RBC adhesion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VCAM-1 antibody",
+        "answerability": 0.8247158527374268,
+        "ground_truth": {
+          "a VCAM-1 antibody": {
+            "bertscore": 0.9338943958282471,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

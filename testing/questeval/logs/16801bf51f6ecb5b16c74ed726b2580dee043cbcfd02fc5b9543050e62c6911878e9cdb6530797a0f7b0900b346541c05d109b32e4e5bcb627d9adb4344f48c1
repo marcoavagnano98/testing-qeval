@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "In addition BHRF1 protected these cells from monocyte-mediated killing but failed to protect them from killing mediated by lymphokine-activated killer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "BHRF1",
+        "these cells",
+        "monocyte-mediated killing",
+        "them",
+        "lymphokine-activated killer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did BHRF1 fail to do?",
+          "What did BHRF1 fail to protect against?",
+          "What did BHRF1 not protect?",
+          "What did BHRF1 fail to protect against?",
+          "What did BHRF1 fail to protect?",
+          "What did BHRF1 fail to protect against?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did BHRF1 fail to do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protect them from killing mediated by lymphokine-activated killer cells",
+        "answerability": 0.6702030897140503,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.6044566035270691,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did BHRF1 fail to protect against?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "killing mediated by lymphokine-activated killer cells",
+        "answerability": 0.7286950945854187,
+        "ground_truth": {
+          "BHRF1": {
+            "bertscore": 0.6301190853118896,
+            "f1": 0
+          },
+          "monocyte-mediated killing": {
+            "bertscore": 0.7469927072525024,
+            "f1": 0.25
+          },
+          "lymphokine-activated killer cells": {
+            "bertscore": 0.886324942111969,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did BHRF1 not protect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5553311705589294,
+        "ground_truth": {
+          "these cells": {
+            "bertscore": 0.6778948307037354,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did BHRF1 fail to protect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4407743811607361,
+        "ground_truth": {
+          "them": {
+            "bertscore": 0.7212826609611511,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

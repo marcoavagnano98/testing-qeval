@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "We showed that IL-12 had a direct effect on IRF-1 an effect not mediated indirectly by the induction of IFN-gamma production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-12",
+        "IRF-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What chemical has a direct effect on IRF-1?",
+          "What did IL-12 have a direct effect on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a direct effect",
+        "IRF-1",
+        "an effect",
+        "the induction",
+        "IFN-gamma production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study show about IL-12?",
+          "What did the study show about IL-12?",
+          "What did IL-12 have a direct effect on?",
+          "What did the study show about IL-12?",
+          "What did we show was not mediated indirectly by IFN-gamma production?",
+          "What did IL-12 not directly affect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was not blocked by polymyxin B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003306746482849121,
+        "ground_truth": {
+          "IRF-1": {
+            "bertscore": 0.6722444295883179,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect was not blocked by polymyxin B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006210267543792725,
+        "ground_truth": {
+          "The IL-12 effect": {
+            "bertscore": 0.6423534750938416,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein did not block the IL-12 effect on IRF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4635876417160034,
+        "ground_truth": {
+          "polymyxin B.": {
+            "bertscore": 0.6218613982200623,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

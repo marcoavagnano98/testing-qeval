@@ -1,0 +1,62 @@
+{
+  "type": "ref",
+  "text": "Indeed erythroid gene expression was demonstrated to be regulated transcriptionally by ACLA and mainly posttranscriptionally by DOX.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ACLA",
+        "DOX"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main regulator of erythroid gene expression?",
+          "What is the main regulator of erythroid gene expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "erythroid gene expression",
+        "ACLA",
+        "DOX"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was shown to be regulated transcriptionally by ACLA?",
+          "What is the main regulator of erythroid gene expression?",
+          "What is the main regulator of erythroid gene expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main regulator of erythroid gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3549668788909912,
+        "ground_truth": {
+          "ACLA": {
+            "bertscore": 0.6842164993286133,
+            "f1": 0
+          },
+          "DOX": {
+            "bertscore": 0.6954864859580994,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was shown to be regulated posttranscriptionally by ACLA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1416681408882141,
+        "ground_truth": {
+          "erythroid gene expression": {
+            "bertscore": 0.6421717405319214,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

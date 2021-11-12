@@ -1,0 +1,56 @@
+{
+  "type": "hyp",
+  "text": "Expression of the Bcl-3 proto-oncogene on human chromosome 14q32.1.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "the Bcl-3 proto-oncogene",
+        "human chromosome 14q32.1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the Bcl-3 proto-oncogene?",
+          "What gene is expressed on human chromosome 14q32.1?",
+          "Where is the Bcl-3 proto-oncogene found?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppresses p53 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007739067077636719,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7109297513961792,
+            "f1": 0
+          },
+          "the Bcl-3 proto-oncogene": {
+            "bertscore": 0.5985134840011597,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the Bcl-3 proto-oncogene suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002421736717224121,
+        "ground_truth": {
+          "p53 activation": {
+            "bertscore": 0.6179963946342468,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

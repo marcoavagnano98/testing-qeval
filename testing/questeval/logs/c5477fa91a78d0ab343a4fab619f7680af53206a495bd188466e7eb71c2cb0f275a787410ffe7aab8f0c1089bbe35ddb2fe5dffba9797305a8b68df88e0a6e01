@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The inducible factors NK-kappa B beta E1 CD28RC and AP-1 are not expressed in resting cells and are twofold lower in anergized as compared with activated cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The inducible factors",
+        "NK-kappa B beta E1 CD28RC",
+        "AP-1",
+        "cells",
+        "activated cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is not expressed in resting cells?",
+          "What is the inducible factor in anergized cells?",
+          "What is the inducible factor that is not expressed in resting cells?",
+          "What type of cells are not expressed in resting cells?",
+          "What type of cells are more prone to relapse than resting cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not expressed in resting cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inducible factors",
+        "answerability": 0.9615907669067383,
+        "ground_truth": {
+          "The inducible factors": {
+            "bertscore": 0.8967928290367126,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the inducible factor in anergized cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NK-kappa B beta E1 CD28RC",
+        "answerability": 0.5491403937339783,
+        "ground_truth": {
+          "NK-kappa B beta E2 CD28RC": {
+            "bertscore": 0.9921544790267944,
+            "f1": 0.8000000000000002
+          }
+        }
+      }
+    },
+    "What is the inducible factor that is not expressed in resting cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NK-kappa B beta E1 CD28RC",
+        "answerability": 0.9803580045700073,
+        "ground_truth": {
+          "AP-1": {
+            "bertscore": 0.6860238313674927,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are not expressed in resting cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inducible factors",
+        "answerability": 0.7382922172546387,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.7288263440132141,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are more prone to relapse than resting cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03494149446487427,
+        "ground_truth": {
+          "activated cells": {
+            "bertscore": 0.6520793437957764,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

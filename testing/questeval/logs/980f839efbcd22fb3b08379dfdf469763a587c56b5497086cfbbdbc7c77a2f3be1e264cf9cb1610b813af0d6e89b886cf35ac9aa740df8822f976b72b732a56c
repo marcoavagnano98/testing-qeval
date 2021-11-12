@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "This biochemical defect correlated with a specific block to Oct-2 gene expression at the level of transcription whereas the expression of Oct-1 was unaffected.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This biochemical defect",
+        "a specific block",
+        "Oct-2 gene expression",
+        "the level",
+        "transcription",
+        "the expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused the block to Oct-2 gene expression?",
+          "What did the mutation in the chromosome of a rat correlate with?",
+          "What gene was not affected by the amplification defect?",
+          "At what level of transcription was Oct-2 gene expression not affected?",
+          "What was the level of Oct-2 gene expression that was not affected by the mutation?",
+          "What was unaffected by the Oct-2 gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused the block to Oct-2 gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "biochemical defect",
+        "answerability": 0.9983525276184082,
+        "ground_truth": {
+          "This biochemical defect": {
+            "bertscore": 0.8440987467765808,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did the mutation in the chromosome of a rat correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a specific block to Oct-2 gene expression at the level of transcription",
+        "answerability": 0.9740392565727234,
+        "ground_truth": {
+          "a specific block": {
+            "bertscore": 0.7129144668579102,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What gene was not affected by the amplification defect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Oct-1",
+        "answerability": 0.8038078546524048,
+        "ground_truth": {
+          "Oct-2 gene expression": {
+            "bertscore": 0.7567843198776245,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "At what level of transcription was Oct-2 gene expression not affected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4573819637298584,
+        "ground_truth": {
+          "the level": {
+            "bertscore": 0.6972553133964539,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the level of Oct-2 gene expression that was not affected by the mutation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6107894778251648,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6925774216651917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was unaffected by the Oct-2 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35791313648223877,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

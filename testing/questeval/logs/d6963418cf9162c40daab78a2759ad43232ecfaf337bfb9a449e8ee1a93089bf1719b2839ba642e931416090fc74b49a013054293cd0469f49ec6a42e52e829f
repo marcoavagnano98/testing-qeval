@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Here we identify residues in the checkpoint protein Mad3p that are subject to negative regulation by Mad3p phosphorylation. Ipl1p-dependent phosphorylation of Mad3p is required for the spindle checkpoint response to lack of tension at kinetochores.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "residues",
+        "the checkpoint protein Mad3p",
+        "negative regulation",
+        "Mad3p phosphorylation",
+        "Ipl1p-dependent phosphorylation",
+        "Mad3p",
+        "the spindle checkpoint response",
+        "lack",
+        "tension",
+        "kinetochores"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of ipl1p-dependent phosphorylation of Mad",
+          "What is subject to negative regulation by Mad3p?",
+          "What is the residue that is subject to negative regulation?",
+          "What is the mechanism by which Mad3p is phosphorylated?",
+          "What is required for the spindle checkpoint response to lack of tension at kinet",
+          "What is required for the spindle checkpoint response to lack of tension at kinet",
+          "What protein is required for the spindle checkpoint response to lack of tension?",
+          "What is ipl1p-dependent phosphorylation required for?",
+          "What is the spindle checkpoint response to?",
+          "What is the spindle checkpoint response to?",
+          "What is the spindle checkpoint response to lack of tension?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for the spindle checkpoint response to lack of tension at kinet": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ipl1p-dependent phosphorylation of Mad3p",
+        "answerability": 0.864616870880127,
+        "ground_truth": {
+          "Ipl1p-dependent phosphorylation": {
+            "bertscore": 0.9290915727615356,
+            "f1": 0.6666666666666666
+          },
+          "Mad3p": {
+            "bertscore": 0.6712711453437805,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is phosphorylation of Mad3p required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spindle checkpoint response",
+        "answerability": 0.9156789779663086,
+        "ground_truth": {
+          "the spindle checkpoint response": {
+            "bertscore": 0.9277606010437012,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the reason for the spindle checkpoint response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lack of tension",
+        "answerability": 0.9739145636558533,
+        "ground_truth": {
+          "lack": {
+            "bertscore": 0.8418443202972412,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is required for the spindle checkpoint response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ipl1p-dependent phosphorylation",
+        "answerability": 0.6865778565406799,
+        "ground_truth": {
+          "tension": {
+            "bertscore": 0.5737903118133545,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the spindle checkpoint response to lack of tension?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27590787410736084,
+        "ground_truth": {
+          "kinetochores": {
+            "bertscore": 0.663383960723877,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

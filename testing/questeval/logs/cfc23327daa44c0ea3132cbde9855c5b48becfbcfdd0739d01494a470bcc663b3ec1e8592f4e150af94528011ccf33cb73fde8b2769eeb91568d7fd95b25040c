@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "The IL-12 effect on c-fos expression was not blocked by polymyxin B. Using the tyrosine kinase inhibitor genistein (10 microM) a complete inhibition of IL-10 induced c-fos expression was observed.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "B. Using",
+        "microM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was not blocked by polymyxin?",
+          "What was the concentration of genistein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The IL-12 effect",
+        "c-fos expression",
+        "the tyrosine kinase inhibitor genistein",
+        "(10 microM",
+        "a complete inhibition",
+        "IL-10 induced c-fos expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was not blocked by polymyxin B?",
+          "What did polymyxin B not block?",
+          "What was used to block IL-12?",
+          "What is the dosage of genistein?",
+          "What was observed with genistein?",
+          "What was not blocked by polymyxin B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was not blocked by polymyxin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3955816626548767,
+        "ground_truth": {
+          "B. Using": {
+            "bertscore": 0.6718035340309143,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the concentration of genistein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "10 microM",
+        "answerability": 0.9790540337562561,
+        "ground_truth": {
+          "microM": {
+            "bertscore": 0.8691428899765015,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was not blocked by polymyxin B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-12 effect",
+        "answerability": 0.9544488787651062,
+        "ground_truth": {
+          "The IL-10 effect": {
+            "bertscore": 0.9338914155960083,
+            "f1": 0.5
+          },
+          "IL-10 induced c-fos expression": {
+            "bertscore": 0.8319430947303772,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did polymyxin B not block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-12",
+        "answerability": 0.9096460342407227,
+        "ground_truth": {
+          "c-fos expression": {
+            "bertscore": 0.6769105195999146,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to block IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4792588949203491,
+        "ground_truth": {
+          "the tyrosine kinase inhibitor genistein": {
+            "bertscore": 0.5978869199752808,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the dosage of genistein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "10 microM",
+        "answerability": 0.97681725025177,
+        "ground_truth": {
+          "(10 microM": {
+            "bertscore": 0.896952211856842,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was observed with genistein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a complete inhibition of IL-10 induced c-fos expression",
+        "answerability": 0.7202802896499634,
+        "ground_truth": {
+          "a complete inhibition": {
+            "bertscore": 0.7771485447883606,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    }
+  }
+}

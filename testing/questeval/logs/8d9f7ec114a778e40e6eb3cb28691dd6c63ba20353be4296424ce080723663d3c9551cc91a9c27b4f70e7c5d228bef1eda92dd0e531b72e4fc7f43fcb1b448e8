@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "The GR DNA-binding domain of the receptor is required for transcriptional activation by LMP-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GR",
+        "LMP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the DNA-binding domain of the receptor?",
+          "What is the GR DNA-binding domain of the receptor required for transcriptional activation"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The GR DNA-binding domain",
+        "the receptor",
+        "transcriptional activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for transcriptional activation by LMP-1?",
+          "What is the GR DNA-binding domain of?",
+          "What is the GR DNA-binding domain required for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What required an intact GR DNA-binding domain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activation",
+        "answerability": 0.9860057830810547,
+        "ground_truth": {
+          "Synergism": {
+            "bertscore": 0.7279074192047119,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did synergism require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003298819065093994,
+        "ground_truth": {
+          "an intact GR DNA-binding domain": {
+            "bertscore": 0.6261423826217651,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was dispensable in synergism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 6.711483001708984e-05,
+        "ground_truth": {
+          "whereas amino- or carboxyl-terminal domains": {
+            "bertscore": 0.5748364329338074,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

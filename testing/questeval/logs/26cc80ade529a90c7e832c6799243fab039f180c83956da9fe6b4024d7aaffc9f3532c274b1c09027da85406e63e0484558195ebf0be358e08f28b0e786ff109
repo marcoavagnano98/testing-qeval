@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "In the DRA X2-box which binds the transcription factor NF-X2 it is present in the cytoplasm of non-transformed B cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "DRA",
+        "NF-X2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is present in the cytoplasm of non-transformed B cells?",
+          "What transcription factor is present in the cytoplasm of non-transformed B cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the DRA X2-box",
+        "the transcription factor",
+        "NF-X2",
+        "it",
+        "the cytoplasm",
+        "non-transformed B cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What binds the transcription factor NF-X2?",
+          "What does the DRA X2-box bind?",
+          "What transcription factor is present in the cytoplasm of non-transformed B cells?",
+          "What is present in the cytoplasm of non-transformed B cells?",
+          "Where is the DRA X2-box present?",
+          "Where is the DRA X2-box present?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the activator protein of NF-X2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DRA X2-box",
+        "answerability": 0.5650490522384644,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.6877767443656921,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the activator protein 1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003252267837524414,
+        "ground_truth": {
+          "NF-X2": {
+            "bertscore": 0.6564735770225525,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the binding site of NF-X2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DRA X2-box",
+        "answerability": 0.9897785782814026,
+        "ground_truth": {
+          "the DRA X2-box": {
+            "bertscore": 0.9458979368209839,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is NF-X2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factor",
+        "answerability": 0.9042959213256836,
+        "ground_truth": {
+          "activator protein": {
+            "bertscore": 0.8478932976722717,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "H2A and H4 and bovine myelin basic protein were methylated by Hsl7p whereas histones H1 H2B and H3 and bovine cytochrome c were not.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H4",
+        "myelin",
+        "Hsl7p",
+        "H1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What histones were not methylated by Hsl7p?",
+          "What basic protein was not methylated by Hsl7p?",
+          "What methylation was used to methylate H2A and H4?",
+          "What histones were not methylated by Hsl7p?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "H4",
+        "bovine",
+        "myelin basic protein",
+        "Hsl7p",
+        "whereas histones",
+        "H1 H2B",
+        "H3",
+        "bovine cytochrome c"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What histones were not methylated by Hsl7p?",
+          "What animal's cytochrome c was not methylated by Hsl",
+          "What protein was not methylated by Hsl7p?",
+          "What methylation was used to methylate H2A and H4?",
+          "What is the difference between H1 H2B and H3?",
+          "What histones were not methylated by Hsl7p?",
+          "What histones were not methylated by Hsl7p?",
+          "What histones were not methylated by Hsl7p?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what type of organism was cytochrome c not methylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02306896448135376,
+        "ground_truth": {
+          "drosophila": {
+            "bertscore": 0.679768443107605,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not methylated in drosophila lysates?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11917579174041748,
+        "ground_truth": {
+          "drosophila cytochrome c": {
+            "bertscore": 0.6159554719924927,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was cytochrome c protein methylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08165848255157471,
+        "ground_truth": {
+          "drosophila lysates": {
+            "bertscore": 0.6433840990066528,
+            "f1": 0
+          },
+          "drosophila melanogaster": {
+            "bertscore": 0.6251955628395081,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was methylated in drosophila lysates?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.024530649185180664,
+        "ground_truth": {
+          "the cytochrome c protein": {
+            "bertscore": 0.6000950336456299,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

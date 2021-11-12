@@ -1,0 +1,104 @@
+{
+  "type": "ref",
+  "text": "The two lines also expressed comparable levels of Epo-R mRNA while the number of Epo-binding sites on UT-7 the number of UT-7 cells (2400 +/-\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two",
+        "UT-7",
+        "2400"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many UT-7 cells were present in the same amount of mRNA?",
+          "What cell line had the highest levels of Epo-R?",
+          "How many UT-7 cells were present in the rat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The two lines",
+        "comparable levels",
+        "Epo-R mRNA",
+        "the number",
+        "Epo-binding sites",
+        "the number",
+        "UT-7 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many UT-7 cells were present in the rat?",
+          "How much Epo-R mRNA did the two lines express?",
+          "What did the two lines express similar levels of?",
+          "What was the number of Epo-binding sites on UT-7?",
+          "What did the two lines have in common?",
+          "What was the number of Epo-binding sites on UT-7?",
+          "What did the two lines have a similar amount of Epo-R mRNA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA was similar to the number of Epo-binding sites on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Epo-R",
+        "answerability": 0.8147523999214172,
+        "ground_truth": {
+          "UT-7": {
+            "bertscore": 0.80852872133255,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the number of Epo-binding sites on UT-7 mRNA comparable": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3654663562774658,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628810882568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the amount of epo-binding sites on UT-7 m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.28112125396728516,
+        "ground_truth": {
+          "the number": {
+            "bertscore": 0.6659790873527527,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the number of mRNA that is expressed on UT-7?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27450311183929443,
+        "ground_truth": {
+          "Epo-binding sites": {
+            "bertscore": 0.6482298374176025,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mRNA was similar to the number of Epo-binding sites on UT": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.40561699867248535,
+        "ground_truth": {
+          "UT-7 mRNA": {
+            "bertscore": 0.6309872269630432,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

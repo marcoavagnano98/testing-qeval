@@ -1,0 +1,130 @@
+{
+  "type": "ref",
+  "text": "B lymphocytes in the peripheral circulation are maintained in a non-proliferative state. Antigen recognition stimulates limited proliferation whereas infection with Epstein-Barr virus (EBV) results in continual proliferation and the outgrowth of immortal cell lines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Epstein-Barr"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What virus causes the proliferation of immortal cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the peripheral circulation",
+        "a non-proliferative state",
+        "Antigen recognition",
+        "limited proliferation",
+        "infection",
+        "Epstein-Barr virus",
+        "(EBV",
+        "continual proliferation",
+        "the outgrowth",
+        "immortal cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where are B lymphocytes kept in a non-proliferative state?",
+          "What state are B lymphocytes maintained in?",
+          "What stimulates limited proliferation?",
+          "What does antigen recognition stimulate?",
+          "What is the result of Epstein-Barr virus?",
+          "What virus causes the proliferation of immortal cells?",
+          "What virus causes the proliferation of immortal cells?",
+          "What happens when an Epstein-Barr virus infection is detected?",
+          "What happens when an Epstein-Barr virus infection is detected?",
+          "What type of cells are produced when an Epstein-Barr virus is infected?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What virus causes the outgrowth of immortal cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Epstein-Barr virus",
+        "answerability": 0.9760044813156128,
+        "ground_truth": {
+          "Epstein-Barr": {
+            "bertscore": 0.8667200207710266,
+            "f1": 0.6666666666666666
+          },
+          "Epstein-Barr virus": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "(EBV": {
+            "bertscore": 0.6184936165809631,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulates limited proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Antigen recognition",
+        "answerability": 0.9987188577651978,
+        "ground_truth": {
+          "Antigen recognition": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does gene recognition stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006342530250549316,
+        "ground_truth": {
+          "limited proliferation": {
+            "bertscore": 0.7167975306510925,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of Epstein-Barr virus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "continual proliferation",
+        "answerability": 0.8845677375793457,
+        "ground_truth": {
+          "infection": {
+            "bertscore": 0.7179064154624939,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does infection with Epstein-Barr virus result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "continual proliferation and the outgrowth of immortal cell lines",
+        "answerability": 0.8746337890625,
+        "ground_truth": {
+          "continual proliferation": {
+            "bertscore": 0.8368380069732666,
+            "f1": 0.4
+          },
+          "immortal cell lines": {
+            "bertscore": 0.8039183616638184,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What is the result of infection with Epstein-Barr virus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "continual proliferation",
+        "answerability": 0.9435778260231018,
+        "ground_truth": {
+          "the outgrowth": {
+            "bertscore": 0.7069151401519775,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "This amplification of IL-1beta secretion was shown by priming THP-1 monocytes and PBMCs with heat-killed P. aeruginosa or LPS prior to stimulation with live P. aeruginosa.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "THP-1",
+        "LPS",
+        "live P. aeruginosa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What monocytes were priming with P. aeruginosa?",
+          "What was used to kill P. aeruginosa?",
+          "What was used to kill the IL-1beta?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This amplification",
+        "IL-1beta secretion",
+        "THP-1 monocytes",
+        "PBMCs",
+        "heat-killed P. aeruginosa",
+        "LPS",
+        "stimulation",
+        "live P. aeruginosa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was shown by priming THP-1 monocytes and PBMCs with heat",
+          "What was amplification shown by priming THP-1 monocytes and PBMC",
+          "What cells were injected with P. aeruginosa?",
+          "What was used to kill P. aeruginosa?",
+          "What was used to stimulate THP-1 monocytes and PBMCs?",
+          "What was used to kill P. aeruginosa?",
+          "What was the first step in amplification of IL-1beta secretion",
+          "What was used to kill the IL-1beta?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was enhanced in LPS-stimulated CF cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14706534147262573,
+        "ground_truth": {
+          "This amplification": {
+            "bertscore": 0.6516000628471375,
+            "f1": 0
+          },
+          "IL-1beta secretion": {
+            "bertscore": 0.633888840675354,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was IL-1beta secretion enhanced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "THP-1 monocytes and PBMCs",
+        "answerability": 0.8139923810958862,
+        "ground_truth": {
+          "LPS-stimulated CF cells": {
+            "bertscore": 0.7167080640792847,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

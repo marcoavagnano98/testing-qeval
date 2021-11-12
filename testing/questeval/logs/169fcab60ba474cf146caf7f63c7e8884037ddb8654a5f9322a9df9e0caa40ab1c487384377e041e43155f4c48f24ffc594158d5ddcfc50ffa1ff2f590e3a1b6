@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "(NF-kappa B Egr-1 AP-1) which might mediate the inducible expression of this cell surface antigen.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "B Egr-1 AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the NF-kappa that might mediate the inducible expression"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(NF-kappa B Egr-1 AP-1",
+        "the inducible expression",
+        "this cell surface antigen"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that may mediate the inducible expression of",
+          "What might NF-kappa B Egr-1 AP-1 mediate",
+          "What might mediate the inducible expression of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the NF-kappa gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1390281319618225,
+        "ground_truth": {
+          "B Egr-1 AP-1": {
+            "bertscore": 0.650519847869873,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that may mediate the inducible expression of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B Egr-1 AP-1",
+        "answerability": 0.8524655699729919,
+        "ground_truth": {
+          "(NF-kappa B Egr-1 AP-1": {
+            "bertscore": 0.9373727440834045,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What might NF-kappa B Egr-1 mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inducible expression",
+        "answerability": 0.8815708160400391,
+        "ground_truth": {
+          "the inducible expression": {
+            "bertscore": 0.8937196731567383,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the NF-kappa B Egr-1 AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07911384105682373,
+        "ground_truth": {
+          "this gene": {
+            "bertscore": 0.6866745352745056,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

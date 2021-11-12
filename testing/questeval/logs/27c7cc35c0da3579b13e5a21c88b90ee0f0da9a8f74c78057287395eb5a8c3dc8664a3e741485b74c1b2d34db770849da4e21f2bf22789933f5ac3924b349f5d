@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "CD14-induced NF-kappaB is a heterodimer composed of p65/p50 subunits.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a heterodimer composed of p65/p50 subunits"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CD14-induced NF-kappaB",
+        "a heterodimer",
+        "p65/p50 subunits"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a heterodimer composed of p65/p50 subunits",
+          "What is CD14-induced NF-kappaB?",
+          "What is CD14-induced NF-kappaB composed of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is a heterodimer composed of p65/p50 subunits": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.8788987994194031,
+        "ground_truth": {
+          "CD23-induced NF-kappaB": {
+            "bertscore": 0.7520982623100281,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is CD23-induced NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000956118106842041,
+        "ground_truth": {
+          "a heterodimer": {
+            "bertscore": 0.6820446848869324,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is CD23-induced NF-kappaB composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011508464813232422,
+        "ground_truth": {
+          "p65/p50 subunits": {
+            "bertscore": 0.6310717463493347,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

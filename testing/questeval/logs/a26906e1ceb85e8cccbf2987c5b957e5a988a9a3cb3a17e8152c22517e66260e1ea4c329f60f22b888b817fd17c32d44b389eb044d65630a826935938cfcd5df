@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "A previously unrecognized element located downstream of the start site of transcription in the first exon of the DR alpha gene enhances promoter activity by up to eightfold in a position-dependent manner.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "first",
+        "DR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where is the DR alpha gene located?",
+          "What gene has an element that increases promoter activity by up to eightfold?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A previously unrecognized element",
+        "the start site",
+        "transcription",
+        "the first exon",
+        "the DR alpha gene",
+        "promoter activity",
+        "a position-dependent manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhances promoter activity by up to eightfold?",
+          "Where is the element located that increases promoter activity?",
+          "What is the first exon of the DR alpha gene involved in?",
+          "Where is the DR alpha gene located?",
+          "What is the first exon of?",
+          "What does a previously unrecognized element enhance?",
+          "How does a previously unrecognized element enhance promoter activity?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Where is the DR alpha gene located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6254425644874573,
+        "ground_truth": {
+          "first": {
+            "bertscore": 0.7270119190216064,
+            "f1": 0
+          },
+          "the first exon": {
+            "bertscore": 0.6810473799705505,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene has a previously unrecognized element that enhances promoter activity": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DR alpha",
+        "answerability": 0.8494800329208374,
+        "ground_truth": {
+          "DR": {
+            "bertscore": 0.7774197459220886,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What has been defined that enhances promoter activity up to eightfold in a position-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.452104389667511,
+        "ground_truth": {
+          "A previously unrecognized element": {
+            "bertscore": 0.6865854263305664,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is the element located that enhances promoter activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "downstream of the start site of transcription",
+        "answerability": 0.9933140873908997,
+        "ground_truth": {
+          "the start site": {
+            "bertscore": 0.7799056172370911,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the element downstream of the start site of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription",
+        "answerability": 0.933428168296814,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the first exon of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DR alpha gene",
+        "answerability": 0.9622393846511841,
+        "ground_truth": {
+          "the DR alpha gene": {
+            "bertscore": 0.9225516319274902,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the element DR enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "promoter activity",
+        "answerability": 0.9759379029273987,
+        "ground_truth": {
+          "promoter activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How does the element that is located downstream of the start site of transcription enhance promoter activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "position-dependent",
+        "answerability": 0.9919906258583069,
+        "ground_truth": {
+          "a position-dependent manner": {
+            "bertscore": 0.8580430746078491,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

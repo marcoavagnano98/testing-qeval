@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "In a transient transfection assay using LNCaP cells methylation of the GSTP1 promoter-driven luciferase reporter vector (GSTP1) resulted in a >20-fold inhibition of transcription and this repression was not relieved by the presence of a histone deacetylase inhibitor trichostatin A (TSA).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LNCaP",
+        "GSTP1",
+        "20-fold"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were used in the transient transfection assay?",
+          "What promoter-driven luciferase reporter vector was methylated?",
+          "How much did the GSTP1 promoter-driven luciferase reporter vector"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a transient transfection assay",
+        "LNCaP cells methylation",
+        "the GSTP1 promoter-driven luciferase reporter vector",
+        "(GSTP1",
+        "a >20-fold inhibition",
+        "transcription",
+        "this repression",
+        "the presence",
+        "(TSA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to determine the effect of GSTP1 on transcription?",
+          "What caused a 20-fold inhibition of transcription?",
+          "What does GSTP1 stand for?",
+          "What promoter-driven luciferase reporter vector was used in the study?",
+          "What was the effect of GSTP1 on transcription?",
+          "What did GSTP1 inhibit?",
+          "What was not relieved by the presence of trichostatin A?",
+          "What did the methylation of GSTP1 not relieve?",
+          "What is the name of the histone deacetylase inhibitor?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene promoter was found to be completely methylated in the LNCaP prostate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GSTP1",
+        "answerability": 0.9170092344284058,
+        "ground_truth": {
+          "GSTP1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only prostate cancer cell line that has GSTP1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012497901916503906,
+        "ground_truth": {
+          "LNCaP": {
+            "bertscore": 0.6546734571456909,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found in the LNCaP prostate cancer cell line?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002356231212615967,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is completely methylated in the LNCaP prostate cancer cell line?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21432769298553467,
+        "ground_truth": {
+          "the GSTP1 gene promoter": {
+            "bertscore": 0.5831308960914612,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is GSTP1 gene promoter completely methylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0031318068504333496,
+        "ground_truth": {
+          "the LNCaP prostate cancer cell line": {
+            "bertscore": 0.6036587953567505,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene promoter is completely methylated in the LNCaP prostate cancer cell line": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GSTP1",
+        "answerability": 0.8938389420509338,
+        "ground_truth": {
+          "this gene": {
+            "bertscore": 0.6926132440567017,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Analysis of the IL-2 promoter revealed that the NF-kappaB element which binds the transcription factor NF-kappaB was stimulated by dopamine in Jurkat cells and in HeLa cells but not in T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "NF-kappaB",
+        "NF-kappaB",
+        "Jurkat",
+        "HeLa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter was found to be stimulated by dopamine?",
+          "What transcription factor is binded to IL-2?",
+          "What transcription factor is binded to IL-2?",
+          "What type of cells were stimulated by dopamine?",
+          "What type of cells were stimulated by dopamine?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Analysis",
+        "the IL-2 promoter",
+        "the NF-kappaB element",
+        "the transcription factor NF-kappaB",
+        "dopamine",
+        "Jurkat cells",
+        "HeLa cells",
+        "T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed that the IL-2 promoter was stimulated by dopamine?",
+          "What was found to be stimulated by dopamine?",
+          "What binds the transcription factor NF-kappaB?",
+          "What does IL-2 bind?",
+          "What stimulates the NF-kappaB element?",
+          "What cells were stimulated by dopamine?",
+          "What type of cells were stimulated by dopamine?",
+          "What type of cells did not have a dopamine-binding NF-k"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What element in the long terminal repeat stimulates transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32479023933410645,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.6519213914871216,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What revealed that dopamine stimulated transcription through the NF-kappaB element": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Analysis of the IL-2 promoter",
+        "answerability": 0.7575187683105469,
+        "ground_truth": {
+          "Our transient expression data": {
+            "bertscore": 0.6952894330024719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulates transcription through the NF-kappaB element?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dopamine",
+        "answerability": 0.899047315120697,
+        "ground_truth": {
+          "dopamine": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the dopamine stimulate transcription through?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19316715002059937,
+        "ground_truth": {
+          "the NF-kappaB element": {
+            "bertscore": 0.6258055567741394,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What part of the brain does dopamine stimulate transcription through?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07141441106796265,
+        "ground_truth": {
+          "the long terminal repeat": {
+            "bertscore": 0.6550536751747131,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "DN constructs of myeloid differentiation protein IRAK TNF receptor-associated factor 6 and NF-kappaB-inducing kinase when coexpressed with TLR2 abrogate TLR2-mediated NF-kappaB activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor-associated factor 6 and NF-kappaB-inducing",
+          "What is the IRAK TNF receptor-associated factor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DN constructs",
+        "myeloid differentiation protein IRAK TNF receptor-associated factor",
+        "NF-kappaB-inducing kinase",
+        "TLR2 abrogate TLR2-mediated NF-kappaB activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What abrogates TLR2-mediated NF-kappaB activ",
+          "What is the name of the DN construct that abrogates TLR2 activ",
+          "What is the name of the protein that is able to abrogate TLR2",
+          "What is the effect of IRAK TNF receptor-associated factor 6 on the kin"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What receptor-associated factor 6 and NF-kappaB-inducing": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IRAK TNF receptor-associated factor 6",
+        "answerability": 0.7816966772079468,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7242258191108704,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the IRAK TNF receptor-associated factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.352276086807251,
+        "ground_truth": {
+          "6": {
+            "bertscore": 0.6620547771453857,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What abrogates TLR2-mediated NF-kappaB activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DN constructs of myeloid differentiation protein IRAK TNF receptor-associated factor",
+        "answerability": 0.865754246711731,
+        "ground_truth": {
+          "DN constructs": {
+            "bertscore": 0.7355971336364746,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the name of the DN construct that abrogates TLR2 activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DN constructs",
+        "answerability": 0.7156397104263306,
+        "ground_truth": {
+          "myeloid differentiation protein IRAK TNF receptor-associated factor": {
+            "bertscore": 0.6427779197692871,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is able to abrogate TLR2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IRAK",
+        "answerability": 0.5343132615089417,
+        "ground_truth": {
+          "NF-kappaB-inducing kinase": {
+            "bertscore": 0.6580122709274292,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of IRAK TNF receptor-associated factor 6 on the kin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4372819662094116,
+        "ground_truth": {
+          "TLR2 abrogate TLR2-mediated NF-kappaB activation": {
+            "bertscore": 0.572907567024231,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

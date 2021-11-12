@@ -1,0 +1,132 @@
+{
+  "type": "ref",
+  "text": "CsA similarly mediated a reduction of up to 65% in GM-CSF mRNA and protein expression in activated endothelial cells. CsA also suppressed E-selectin but not vascular cell adhesion molecule-1 (VCAM-1) expression in endothelial cells even though the E-selectin promoter is activated by NF-kappa B rather than NFAT.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "up to 65%",
+        "GM",
+        "CsA",
+        "NFAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How much did CsA reduce GM-CSF mRNA and protein expression?",
+          "What type of GM-CSF mRNA and protein expression was reduced by Cs",
+          "What suppressed E-selectin but not VCAM-1?",
+          "What is the promoter of E-selectin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CsA",
+        "a reduction",
+        "up to 65%",
+        "GM-CSF mRNA and protein expression",
+        "activated endothelial cells",
+        "CsA",
+        "E-selectin",
+        "not vascular cell adhesion molecule-1 (VCAM-1) expression",
+        "endothelial cells",
+        "the E-selectin promoter",
+        "NF-kappa B",
+        "NFAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed E-selectin but not VCAM-1?",
+          "What did CsA mediate in GM-CSF mRNA and protein",
+          "How much did CsA reduce GM-CSF mRNA and protein expression?",
+          "What did CsA suppress?",
+          "Where did CsA suppress GM-CSF mRNA and protein expression?",
+          "What suppressed E-selectin but not VCAM-1?",
+          "What promoter is activated by NF-kappa B?",
+          "What did CsA suppress in endothelial cells?",
+          "What type of cells did CsA suppress?",
+          "What is activated by NF-kappa B?",
+          "What is the promoter of E-selectin?",
+          "What is the promoter of E-selectin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppressed E-selectin but not VCAM-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CsA",
+        "answerability": 0.9635981917381287,
+        "ground_truth": {
+          "CsA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the promoter of E-selectin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1447124481201172,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 0.6752848029136658,
+            "f1": 0
+          },
+          "NF-kappa B": {
+            "bertscore": 0.6449613571166992,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What promoter is activated by NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E-selectin",
+        "answerability": 0.7540866732597351,
+        "ground_truth": {
+          "E-selectin": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did CsA suppress in endothelial cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E-selectin",
+        "answerability": 0.9150774478912354,
+        "ground_truth": {
+          "not vascular cell adhesion molecule-1 (VCAM-1) expression": {
+            "bertscore": 0.6169651746749878,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where did CsA suppress E-selectin but not VCAM-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cells",
+        "answerability": 0.984490156173706,
+        "ground_truth": {
+          "endothelial cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is activated by NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23039907217025757,
+        "ground_truth": {
+          "the E-selectin promoter": {
+            "bertscore": 0.6074713468551636,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "PRAS40 binding to raptor was severely blocked by mutation of PRAS40\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "raptor",
+        "mutation",
+        "PRAS40"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the binding to PRAS40 blocked by?",
+          "What blocked binding to raptors?",
+          "What protein was mutated to block binding to raptors?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did mutation of PRAS40 inhibit binding to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "raptor",
+        "answerability": 0.9255163073539734,
+        "ground_truth": {
+          "raptor": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the binding of raptors to the protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutation of PRAS40",
+        "answerability": 0.9889184236526489,
+        "ground_truth": {
+          "mutation": {
+            "bertscore": 0.7302250266075134,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein was mutated to inhibit binding to raptors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PRAS40",
+        "answerability": 0.9273378849029541,
+        "ground_truth": {
+          "PRAS40": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

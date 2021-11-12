@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "LYL1 encodes a basic helix-loop-helix (bHLH) protein highly related to TAL-1 whose activation is also associated with a high proportion of human T-ALLs.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TAL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is LYL1 highly related to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "LYL1",
+        "a basic helix-loop-helix (bHLH) protein",
+        "TAL-1",
+        "whose activation",
+        "a high proportion",
+        "human T-ALLs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What encodes a basic helix-loop-helix protein?",
+          "What does LYL1 encode?",
+          "What is LYL1 highly related to?",
+          "What is associated with a high proportion of human T-ALLs?",
+          "What is activation associated with?",
+          "What is LYL1 associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is LYL1 highly related to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TAL-1",
+        "answerability": 0.9935671091079712,
+        "ground_truth": {
+          "TAL-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What encodes a basic helix-loop-helix protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LYL1",
+        "answerability": 0.9453397989273071,
+        "ground_truth": {
+          "LYL1": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does LYL1 encode?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a basic helix-loop-helix (bHLH) protein",
+        "answerability": 0.9879807233810425,
+        "ground_truth": {
+          "a basic helix-loop-helix (bHLH) protein": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is associated with erythroid differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003482222557067871,
+        "ground_truth": {
+          "whose activation": {
+            "bertscore": 0.7010037302970886,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is activation associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a high proportion of human T-ALLs",
+        "answerability": 0.8222907781600952,
+        "ground_truth": {
+          "erythroid differentiation": {
+            "bertscore": 0.6929794549942017,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

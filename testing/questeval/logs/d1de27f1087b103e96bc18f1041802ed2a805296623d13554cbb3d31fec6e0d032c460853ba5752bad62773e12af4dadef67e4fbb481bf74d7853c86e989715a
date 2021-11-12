@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Mechanical regulation of the proangiogenic factor CCN1/CYR61 gene requires the combined activities of MRTF-A and CREB-binding protein histone acetyltransferase.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mechanical regulation",
+        "the proangiogenic factor",
+        "CCN1/CYR61 gene",
+        "the combined activities",
+        "MRTF-A and CREB-binding protein histone acetyltransferase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main function of the CCN1/CYR61 gene?",
+          "What is the CCN1/CYR61 gene regulated by?",
+          "What is the proangiogenic factor?",
+          "What does mechanical regulation of the CCN1/CYR61 gene require?",
+          "What two proteins are required for mechanical regulation of the CCN1/CYR61 gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene requires the combined activities of MRTF-A and CREB-binding": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CCN1/CYR61",
+        "answerability": 0.7587598562240601,
+        "ground_truth": {
+          "CCN1/CYR61": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What requires the combined activities of MRTF-A and CREB-binding protein": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mechanical regulation of the proangiogenic factor CCN1/CYR61 gene",
+        "answerability": 0.8409059643745422,
+        "ground_truth": {
+          "CCN1/CYR61 gene": {
+            "bertscore": 0.8743261694908142,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What does the CCN1/CYR61 gene require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MRTF-A and CREB-binding protein histone acety",
+        "answerability": 0.858078122138977,
+        "ground_truth": {
+          "the combined activities": {
+            "bertscore": 0.6080629825592041,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two proteins are required for the CCN1/CYR61 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MRTF-A and CREB",
+        "answerability": 0.9453690648078918,
+        "ground_truth": {
+          "MRTF-A and CREB-binding protein histone acetyltransferase": {
+            "bertscore": 0.8297627568244934,
+            "f1": 0.4444444444444444
+          }
+        }
+      }
+    }
+  }
+}

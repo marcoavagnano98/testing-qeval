@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "This suggests that FOXO3a is a potential suppressor of carcinogenic damage in LAPC.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a potential suppressor",
+        "carcinogenic damage",
+        "LAPC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the study suggest about FOXO3a?",
+          "What is FOXO3a a potential suppressor of?",
+          "What is FOXO3a a potential suppressor of carcinogenic damage?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is FOXO3a a potential suppressor of carcinogenic damage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LAPC",
+        "answerability": 0.6539349555969238,
+        "ground_truth": {
+          "LAC": {
+            "bertscore": 0.9378113746643066,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study suggest about FOXO3a?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "potential suppressor of carcinogenic damage in LAPC",
+        "answerability": 0.9832043647766113,
+        "ground_truth": {
+          "a potential suppressor": {
+            "bertscore": 0.7618429064750671,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What is FOXO3a a potential suppressor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "carcinogenic damage",
+        "answerability": 0.956828773021698,
+        "ground_truth": {
+          "carcinogenic damage": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

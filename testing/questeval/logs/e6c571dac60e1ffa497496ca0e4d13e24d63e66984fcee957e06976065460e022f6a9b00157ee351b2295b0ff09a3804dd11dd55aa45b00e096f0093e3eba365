@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "was dose-dependently reduced by aspirin over the same range while induction of intercellular adhesion molecule-1 (ICAM-1) was hardly affected.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "aspirin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug reduced the amount of ICAM-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "aspirin",
+        "the same range",
+        "induction",
+        "intercellular adhesion",
+        "(ICAM-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug reduced the amount of ICAM-1?",
+          "Over what range was induction of ICAM-1 hardly affected?",
+          "What was hardly affected by aspirin?",
+          "What molecule-1 was not affected by aspirin?",
+          "What is the name of the intercellular adhesion molecule?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA expression is partially reduced by LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0023960471153259277,
+        "ground_truth": {
+          "Induction of TF": {
+            "bertscore": 0.6704354286193848,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What lysophospholipid reduced TF mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4955800175666809,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.702795684337616,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mRNA expression is reduced by LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010809898376464844,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 0.6967030167579651,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What reduced the expression of TF mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "aspirin",
+        "answerability": 0.5985560417175293,
+        "ground_truth": {
+          "the lysophospholipid": {
+            "bertscore": 0.678309440612793,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

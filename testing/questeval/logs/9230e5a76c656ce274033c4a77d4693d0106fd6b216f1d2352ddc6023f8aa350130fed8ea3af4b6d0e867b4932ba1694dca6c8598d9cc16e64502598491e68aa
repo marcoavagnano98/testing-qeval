@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "p53 appears to be a nuclear transcription factor that plays a role in the control of cell proliferation and apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p53",
+        "a nuclear transcription factor",
+        "a role",
+        "the control",
+        "cell proliferation",
+        "apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the transcription factor that controls cell proliferation and apoptosis",
+          "What does p53 appear to be?",
+          "What does p53 play in the control of cell proliferation and apoptosis",
+          "What does p53 play a role in?",
+          "What does p53 play a role in?",
+          "What is p53 a transcription factor that controls?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the transcription factor that controls cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53",
+        "answerability": 0.897724449634552,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p53 appear to be?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a nuclear transcription factor",
+        "answerability": 0.9919975996017456,
+        "ground_truth": {
+          "a nuclear transcription factor": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p53 play in the control of cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear transcription factor",
+        "answerability": 0.9586354494094849,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6503634452819824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does p53 play a role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell proliferation and apoptosis",
+        "answerability": 0.9901486039161682,
+        "ground_truth": {
+          "the control": {
+            "bertscore": 0.6872506141662598,
+            "f1": 0
+          },
+          "cell proliferation apoptosis": {
+            "bertscore": 0.9231587052345276,
+            "f1": 0.8571428571428571
+          },
+          "the maintenance": {
+            "bertscore": 0.6751935482025146,
+            "f1": 0
+          },
+          "genetic stability": {
+            "bertscore": 0.7620276808738708,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

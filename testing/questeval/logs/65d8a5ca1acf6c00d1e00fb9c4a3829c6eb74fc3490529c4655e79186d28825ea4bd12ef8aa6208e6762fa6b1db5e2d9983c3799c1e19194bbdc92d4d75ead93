@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "Various gene products from other viruses (HTLV-1 HBV EBV CMV HBV and HHV-6) can also enhance HIV-1 long terminal repeat (LTR)-driven reporter gene activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HBV",
+        "HHV-6",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the most common HIV-1 gene product?",
+          "What is one of the two viruses that can enhance HIV-1 long terminal repeat?",
+          "What type of virus is a reporter gene that can enhance LTR activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Various gene products",
+        "other viruses",
+        "HTLV-1 HBV EBV CMV HBV",
+        "HHV-6",
+        "HIV-1 long terminal repeat",
+        "LTR)-driven reporter gene activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can enhance HIV-1 long terminal repeat?",
+          "What can enhance HIV-1 long terminal repeat?",
+          "What are two examples of other viruses that can enhance HIV-1 long terminal repeat activity?",
+          "What is one of the two viruses that can enhance HIV-1 long terminal repeat?",
+          "What is the LTR?",
+          "What does the HHV-6) gene products enhance?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the virus that can enhance HIV-1 long terminal repeat activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4824257493019104,
+        "ground_truth": {
+          "HBV": {
+            "bertscore": 0.6823738813400269,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is one of the two viruses that can enhance HIV-1 long terminal repeat activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4982364773750305,
+        "ground_truth": {
+          "HHV-6": {
+            "bertscore": 0.6609353423118591,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of virus is a reporter gene that can enhance LTR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 long terminal repeat",
+        "answerability": 0.9915933609008789,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.8688321113586426,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What can enhance HIV-1 long terminal repeat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Various gene products from other viruses",
+        "answerability": 0.9921073913574219,
+        "ground_truth": {
+          "Various gene products": {
+            "bertscore": 0.896835446357727,
+            "f1": 0.6666666666666666
+          },
+          "other viruses": {
+            "bertscore": 0.8759866952896118,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is one example of a virus that can enhance HIV-1 long terminal repeat activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HHV-6",
+        "answerability": 0.9193957448005676,
+        "ground_truth": {
+          "HTLV-1 HSV EBV CMV HBV": {
+            "bertscore": 0.8067719340324402,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the LTR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "long terminal repeat",
+        "answerability": 0.9718602299690247,
+        "ground_truth": {
+          "HIV-1 long terminal repeat": {
+            "bertscore": 0.8868216276168823,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does the HHV-6) gene products enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 long terminal repeat",
+        "answerability": 0.9146404266357422,
+        "ground_truth": {
+          "LTR)-driven reporter gene activity": {
+            "bertscore": 0.7105015516281128,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

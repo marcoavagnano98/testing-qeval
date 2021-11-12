@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Furthermore PTX attenuated LPS-induced TNF-alpha production (297+/-54; p  \u2047  .001 versus LPS alone).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "297+/-54"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did PTX attenuate?",
+          "What was the p?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTX",
+        "LPS-induced TNF-alpha production",
+        "p",
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What attenuated LPS-induced TNF-alpha production?",
+          "What did PTX attenuate?",
+          "What was the p value of the effect of PTX on TNF-alpha",
+          "What did PTX attenuate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited the NF-kappaB DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16709977388381958,
+        "ground_truth": {
+          "PTK": {
+            "bertscore": 0.711424708366394,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited both LPS-induced NF-kappaB DNA binding and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTX",
+        "answerability": 0.7216553092002869,
+        "ground_truth": {
+          "Gen": {
+            "bertscore": 0.778741180896759,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was inhibited by Gen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07520002126693726,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Gen do to the NF-kappaB DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005549788475036621,
+        "ground_truth": {
+          "PTK inhibition": {
+            "bertscore": 0.6644964814186096,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did PTK inhibition with Gen attenuate in human monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04680663347244263,
+        "ground_truth": {
+          "both LPS-induced NF-kappaB DNA binding and TNF-alpha production": {
+            "bertscore": 0.5780443549156189,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Gen inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.055818915367126465,
+        "ground_truth": {
+          "human monocytes": {
+            "bertscore": 0.6539059281349182,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

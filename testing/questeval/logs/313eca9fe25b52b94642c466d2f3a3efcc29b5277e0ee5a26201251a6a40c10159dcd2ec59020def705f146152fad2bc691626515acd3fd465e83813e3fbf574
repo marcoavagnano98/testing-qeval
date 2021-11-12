@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "Further Vpr suppresses expression of IL-2 IL-10 IL-13 TNF alpha and IL-4 all of which are NF-kappa B-dependent.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IL-4 dependent on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Further Vpr",
+        "expression",
+        "IL-2 IL-10 IL-13 TNF alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppresses expression of IL-2 IL-10 IL-13 TNF alpha",
+          "What does Vpr suppress?",
+          "What does Vpr suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL-4 dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3496817350387573,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789318323135376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suppresses expression of IL-2 IL-10 IL-12 TNF alpha": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4872973561286926,
+        "ground_truth": {
+          "Further Vpr": {
+            "bertscore": 0.7089047431945801,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Vpr suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of IL-2 IL-10 IL-13 TNF alpha and IL-4",
+        "answerability": 0.9528478384017944,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.6510199904441833,
+            "f1": 0.19999999999999998
+          },
+          "IL-2 IL-10 IL-12 TNF alpha": {
+            "bertscore": 0.8491382002830505,
+            "f1": 0.5714285714285714
+          }
+        }
+      }
+    }
+  }
+}

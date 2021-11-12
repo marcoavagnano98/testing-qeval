@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Conversely inhibition of p21 induction by cycloheximide or by p21 gene deletion prevents DAP-induced inhibition of Cdk4 and Cdk2 activities.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Conversely inhibition",
+        "p21 induction",
+        "cycloheximide",
+        "DAP-induced inhibition",
+        "Cdk4 and Cdk2 activities"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevents DAP-induced inhibition of Cdk4 and Cdk2 activities",
+          "What does cycloheximide prevent?",
+          "What prevents p21 induction?",
+          "What does cycloheximide prevent?",
+          "What does p21 prevent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What prevents DAP-induced inhibition of Cdk4 and Cdk2 activities": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of p21 induction by cycloheximide or by p",
+        "answerability": 0.9758658409118652,
+        "ground_truth": {
+          "Conversely inhibition": {
+            "bertscore": 0.673011839389801,
+            "f1": 0.1818181818181818
+          }
+        }
+      }
+    },
+    "What does cycloheximide prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2214697003364563,
+        "ground_truth": {
+          "p21 induction": {
+            "bertscore": 0.6663327217102051,
+            "f1": 0
+          },
+          "DAP-induced inhibition": {
+            "bertscore": 0.6543529629707336,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What prevents p21 induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cycloheximide or by p21 gene deletion",
+        "answerability": 0.7720488905906677,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.8232408165931702,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does p21 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15343964099884033,
+        "ground_truth": {
+          "Cdk4 and Cdk2 activities": {
+            "bertscore": 0.5974444150924683,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

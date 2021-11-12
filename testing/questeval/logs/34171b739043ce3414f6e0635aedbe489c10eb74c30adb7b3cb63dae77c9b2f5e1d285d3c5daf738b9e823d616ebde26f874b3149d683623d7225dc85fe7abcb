@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Analysis of VPF/VEGF expression demonstrated a 3-fold increase in VPF/VEGF sensitivity in LoVo-mycANS cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VPF",
+        "VPF",
+        "LoVo-mycANS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is able to be expressed in LoVo-mycANS cells?",
+          "What protein is able to be expressed in LoVo-mycANS cells?",
+          "What type of cells showed a 3-fold increase in sensitivity to VPF/VEGF"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Analysis",
+        "VPF/VEGF expression",
+        "a 3-fold increase",
+        "VPF/VEGF sensitivity",
+        "LoVo-mycANS cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed a 3-fold increase in sensitivity in LoVo-mycANS cells",
+          "What did analysis of LoVo-mycANS cells show a 3-fold increase in",
+          "How much did analysis of VPF/VEGF sensitivity show?",
+          "What did analysis of LoVo-mycANS cells show a 3-fold increase in",
+          "What cells showed a 3-fold increase in sensitivity to VPF/VEGF?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells showed a 3-fold increase in VLB sensitivity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25501328706741333,
+        "ground_truth": {
+          "LoVo-mycANS": {
+            "bertscore": 0.6385725736618042,
+            "f1": 0
+          },
+          "LoVo-mycANS cells": {
+            "bertscore": 0.6062568426132202,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What showed a 3-fold increase in VLB cytotoxicity in LoVo-my": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Analysis of VPF/VEGF expression",
+        "answerability": 0.7040835618972778,
+        "ground_truth": {
+          "Analysis": {
+            "bertscore": 0.71014004945755,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What showed a 3-fold increase in VLB sensitivity in LoVo-myc": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Analysis of VPF/VEGF expression",
+        "answerability": 0.8911389708518982,
+        "ground_truth": {
+          "VLB cytotoxicity": {
+            "bertscore": 0.7348677515983582,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How much did the analysis of VLB cytotoxicity show?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002206087112426758,
+        "ground_truth": {
+          "a 3-fold increase": {
+            "bertscore": 0.6514250636100769,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did analysis of VLB cytotoxicity show a 3-fold increase in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013088583946228027,
+        "ground_truth": {
+          "VLB sensitivity": {
+            "bertscore": 0.6619388461112976,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

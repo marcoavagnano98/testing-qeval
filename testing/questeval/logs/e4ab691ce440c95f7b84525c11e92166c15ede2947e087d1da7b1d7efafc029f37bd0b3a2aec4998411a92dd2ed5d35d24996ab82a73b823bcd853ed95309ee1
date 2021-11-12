@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Rho co-immunoprecipitated with the 68-kDa PIP5K from Swiss 3T3 lysates demonstrating that endogenous Rho also interacts with PIP5K. ADP-ribosylation of Rho with C3 exoenzyme enhanced PIP5K binding by approximately eightfold consistent with the ADP-ribosylation status of Rho.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Swiss",
+        "3T3",
+        "Rho",
+        "ADP",
+        "C3",
+        "ADP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What country's 3T3 lysates showed that Rho co-imm",
+          "What lysates showed that Rho co-immunoprecipitated",
+          "What protein co-immunoprecipitated with PIP5K?",
+          "What is the ribosylation status of Rho?",
+          "What exoenzyme did Rho co-immunoprecipitate with",
+          "What is the ribosylation status of Rho?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Rho",
+        "Swiss 3T3 lysates",
+        "endogenous Rho",
+        "PIP5K. ADP-ribosylation",
+        "Rho",
+        "C3 exoenzyme",
+        "the ADP-ribosylation status",
+        "Rho"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein co-immunoprecipitated with PIP5K?",
+          "What was Rho co-immunoprecipitated with?",
+          "What protein interacts with PIP5K?",
+          "What is the status of Rho?",
+          "What protein co-immunoprecipitated with PIP5K?",
+          "What enzyme enhanced PIP5K binding?",
+          "What is the effect of Rho on PIP5K binding consistent with?",
+          "What protein co-immunoprecipitated with PIP5K?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was independent of whether Rho was in a GTP- or GDP-bound state": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06717425584793091,
+        "ground_truth": {
+          "The binding": {
+            "bertscore": 0.6951485276222229,
+            "f1": 0
+          },
+          "PIP5K": {
+            "bertscore": 0.6388472318649292,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was independent of whether PIP5K was in a GTP- or GDP-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06195271015167236,
+        "ground_truth": {
+          "Rho": {
+            "bertscore": 0.6645551323890686,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was Rho bound to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5174390077590942,
+        "ground_truth": {
+          "a GTP-": {
+            "bertscore": 0.6857486367225647,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the binding of PIP5K independent of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003336608409881592,
+        "ground_truth": {
+          "or GDP-bound state": {
+            "bertscore": 0.646557092666626,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

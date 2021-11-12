@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "The second enhancer interacts with two nuclear binding proteins (85 kD and 27 kD mobility) that appear to be required for optimal enhancer function and activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "second",
+        "two",
+        "85",
+        "27",
+        "kD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhancer interacts with 85 kD and 27 kD mobility?",
+          "How many nuclear binding proteins are required for the second enhancer?",
+          "What is the kD mobility of the second enhancer?",
+          "What is the number of kD mobility of the second enhancer?",
+          "What is the mobility of the second enhancer?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "two nuclear binding proteins",
+        "85 kD",
+        "27 kD mobility",
+        "optimal enhancer function",
+        "activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the second enhancer interact with?",
+          "What is the mobility of the second enhancer?",
+          "What is the other nuclear binding protein required for optimal enhancer function?",
+          "What is the second enhancer required for?",
+          "What is the main function of the second enhancer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What requires both AP-1 sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005649983882904053,
+        "ground_truth": {
+          "The formation": {
+            "bertscore": 0.6827031970024109,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What requires both AP-1 and maximal enhancer activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009777069091796875,
+        "ground_truth": {
+          "this complex": {
+            "bertscore": 0.7163012027740479,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the formation of the complex require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01819920539855957,
+        "ground_truth": {
+          "both AP-1 sites": {
+            "bertscore": 0.6447032690048218,
+            "f1": 0
+          },
+          "maximal enhancer activation": {
+            "bertscore": 0.6959417462348938,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "\"\"\"We now show that a mutant motif that exchanges the terminal 3 C for a G fails to bind the p50 homodimer that is upregulated in LPS toler ant human Mono Mac 6 cells.\"\" The same is true for nuclear extracts taken from the murine P388D1 macrophage cell line when tested with the -516 motif of the murine TNF promoter (GGGGGCTTTCCC).\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "Mono Mac",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the p50 homodimer upregulated in?",
+          "What is the name of the ant cell line that is upregulated by p50 homo",
+          "What promoter is used to bind the p50 homodimer?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a mutant motif",
+        "the terminal 3 C",
+        "a G",
+        "the p50 homodimer",
+        "LPS toler ant human Mono Mac 6 cells",
+        "nuclear extracts",
+        "the murine P388D1 macrophage cell line",
+        "the -516 motif",
+        "the murine TNF promoter",
+        "GGGGGCTTTCCC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors find about the mutant motif?",
+          "What fails to bind the p50 homodimer that is upregulated in L",
+          "What does the mutant motif exchange for a G?",
+          "What does the mutant motif exchange the terminal 3 C for?",
+          "What does the mutant motif fail to bind?",
+          "What is the p50 homodimer upregulated in?",
+          "What is the same as the mutant motif?",
+          "What is the same for nuclear extracts taken from?",
+          "What is the murine TNF promoter?",
+          "What is the -516 motif of?",
+          "What is the name of the TNF promoter that is used to promote p50 homo"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is true for the p50 homodimer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08578592538833618,
+        "ground_truth": {
+          "The -516 motif": {
+            "bertscore": 0.6653656363487244,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the -516 motif true for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear extracts taken from the murine P388D1 macrophage cell line",
+        "answerability": 0.943374752998352,
+        "ground_truth": {
+          "the p50 homodimer": {
+            "bertscore": 0.700186014175415,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

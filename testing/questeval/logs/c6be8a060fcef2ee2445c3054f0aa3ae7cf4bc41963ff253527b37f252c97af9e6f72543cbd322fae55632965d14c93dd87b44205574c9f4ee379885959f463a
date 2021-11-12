@@ -1,0 +1,114 @@
+{
+  "type": "ref",
+  "text": "Recently we have found that vigorous replication of HIV-1 takes place in nonactivated memory T cells after syncytium formation with dendritic cells (DCs).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What virus is found to replicate vigorously in memory T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "vigorous replication",
+        "HIV-1",
+        "place",
+        "nonactivated memory T cells",
+        "syncytium formation",
+        "dendritic cells",
+        "DCs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has recently found that vigorous replication of HIV-1 takes place in nonactivated memory T cells",
+          "What is the process called that occurs in memory T cells after syncytium formation",
+          "What virus is found to replicate vigorously in memory T cells?",
+          "What happens to the replication of HIV-1 in memory T cells?",
+          "What type of cells are involved in the replication of HIV-1?",
+          "What is the process that causes HIV-1 to replicate?",
+          "What does DC stand for?",
+          "What do dendritic cells stand for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the term for dendritic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6392437219619751,
+        "ground_truth": {
+          "DCs": {
+            "bertscore": 0.713099479675293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was observed in the absence of NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00511091947555542,
+        "ground_truth": {
+          "syncytium formation": {
+            "bertscore": 0.6500000953674316,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were not affected by NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015509188175201416,
+        "ground_truth": {
+          "memory T cells": {
+            "bertscore": 0.6412696242332458,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are DCs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dendritic cells",
+        "answerability": 0.9978367686271667,
+        "ground_truth": {
+          "dendritic cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what condition was syncytium formation observed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.027031242847442627,
+        "ground_truth": {
+          "the absence": {
+            "bertscore": 0.6903125047683716,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not present in the brain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0036883950233459473,
+        "ground_truth": {
+          "NF-kappaB.": {
+            "bertscore": 0.6392259001731873,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

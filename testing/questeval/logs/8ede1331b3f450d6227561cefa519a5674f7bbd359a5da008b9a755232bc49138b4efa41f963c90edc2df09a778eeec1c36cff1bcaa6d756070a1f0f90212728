@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Here we report that E2F-1 -2 and -3 but not E2F-4 -5 and -6 associate with and are acetylated by p300 and cAMP-response element-binding proteins.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E2F-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the acetylated group of E2F-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "p300",
+        "cAMP-response element-binding proteins"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the study that reports that E2F-1 -2 and -3",
+          "What is the name of the cAMP-response element-binding",
+          "What is the other major component of the acetylation process?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the acetylated group of E2F-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16478180885314941,
+        "ground_truth": {
+          "E2F-1": {
+            "bertscore": 0.6551926136016846,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the study that reports that E2F-1 -2 and -3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.047000348567962646,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748355031013489,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the acetyltransferase that associates": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2368640899658203,
+        "ground_truth": {
+          "p300": {
+            "bertscore": 0.6746058464050293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other major acetylating factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cAMP",
+        "answerability": 0.535128653049469,
+        "ground_truth": {
+          "cAMP-response element-binding protein acetyltransferases": {
+            "bertscore": 0.7338760495185852,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

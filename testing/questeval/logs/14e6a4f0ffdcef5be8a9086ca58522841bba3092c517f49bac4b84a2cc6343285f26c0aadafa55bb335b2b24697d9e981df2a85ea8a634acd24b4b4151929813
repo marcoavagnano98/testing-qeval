@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "IL-5 production by helper T cells seems to cause the eosinophilic inflammation of both atopic and nonatopic asthma. Control of IL-5 production may be effective for the management of allergic diseases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of eosinophilic inflammation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "production",
+        "helper T cells",
+        "the eosinophilic inflammation",
+        "both atopic and nonatopic asthma",
+        "Control",
+        "IL-5 production",
+        "the management",
+        "allergic diseases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of eosinophilic inflammation?",
+          "What causes eosinophilic inflammation?",
+          "What does IL-5 production by helper T cells cause?",
+          "What type of asthma is eosinophilic inflammation caused by helper T cells",
+          "What may be effective for the management of allergic diseases?",
+          "What is the cause of eosinophilic inflammation?",
+          "What is IL-5 effective for?",
+          "What is IL-5 effective for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the best way to manage allergic diseases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control of IL-5 production by helper T cells",
+        "answerability": 0.8608306646347046,
+        "ground_truth": {
+          "Control": {
+            "bertscore": 0.6712803840637207,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What may be effective for the management of allergic diseases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control of IL-5 production",
+        "answerability": 0.980410099029541,
+        "ground_truth": {
+          "IL-5 production": {
+            "bertscore": 0.7969430685043335,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Control of IL-5 production may be effective for what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the management of allergic diseases",
+        "answerability": 0.8640993237495422,
+        "ground_truth": {
+          "the management": {
+            "bertscore": 0.75547856092453,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is IL-5 used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06200599670410156,
+        "ground_truth": {
+          "allergic diseases": {
+            "bertscore": 0.656865656375885,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

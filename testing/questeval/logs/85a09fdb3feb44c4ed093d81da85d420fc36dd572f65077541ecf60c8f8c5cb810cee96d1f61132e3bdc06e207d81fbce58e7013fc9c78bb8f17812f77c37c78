@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "BMP-4 luciferase assays demonstrate that NF-kappaB confers robust and selective activation of BMP-2 in p65 overexpressing or rhTNF-alpha-stimulated PC cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BMP-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does NF-kappaB confer robust and selective activation of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-kappaB confers",
+        "BMP-2",
+        "p65"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does BMP-4 luciferase assays demonstrate?",
+          "What does NF-kappaB confer robust and selective activation of?",
+          "What type of PC cells are overexpressing NF-kappaB?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does NF-kappaB confer robust and selective activation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BMP-2",
+        "answerability": 0.9841346144676208,
+        "ground_truth": {
+          "BMP-2": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does BMP-4 luciferase assays demonstrate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "that NF-kappaB confers robust and selective activation of BMP-2",
+        "answerability": 0.9218141436576843,
+        "ground_truth": {
+          "NF-kappaB confers": {
+            "bertscore": 0.7397121787071228,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What type of PC cells are overexpressing NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13924288749694824,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.6236465573310852,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

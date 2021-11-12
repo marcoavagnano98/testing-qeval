@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "To detect apoptosis the expression of cleaved caspase-3 a marker of apoptosis was analyzed in the presence or absence of M-CSF and PKC inhibitor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "M-CSF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a marker of apoptosis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "apoptosis",
+        "the expression",
+        "cleaved caspase-3",
+        "a marker",
+        "apoptosis",
+        "the presence",
+        "absence",
+        "M-CSF",
+        "PKC inhibitor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the expression of cleaved caspase-3 a marker of?",
+          "What was analyzed to detect apoptosis?",
+          "What is a marker of apoptosis?",
+          "What is cleaved caspase-3?",
+          "What is the expression of cleaved caspase-3 a marker of?",
+          "In what way was the expression of cleaved caspase-3 analyzed?",
+          "In what condition was the expression of cleaved caspase-3 analyzed?",
+          "What is a marker of apoptosis?",
+          "What is the only known marker of apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is a marker of apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cleaved caspase-3",
+        "answerability": 0.8201706409454346,
+        "ground_truth": {
+          "M-CSF": {
+            "bertscore": 0.6429369449615479,
+            "f1": 0
+          },
+          "cleaved caspase-3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the expression of cleaved caspase-3 a marker of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9962218403816223,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was analyzed to detect apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of cleaved caspase-3",
+        "answerability": 0.7801535129547119,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6327831745147705,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is cleaved caspase-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022524237632751465,
+        "ground_truth": {
+          "a marker": {
+            "bertscore": 0.6694921851158142,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what way was the expression of cleaved caspase-3 analyzed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24226725101470947,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024357914924622,
+            "f1": 0
+          },
+          "absence": {
+            "bertscore": 0.7357305288314819,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the expression of cleaved caspase-3 analyzed in the presence": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22198504209518433,
+        "ground_truth": {
+          "M-CSF and PKC inhibitors": {
+            "bertscore": 0.5970643758773804,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Purified recombinant Jun and Fos proteins failed to bind directly to the NFAT motif.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jun",
+        "Fos",
+        "NFAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What recombinant protein failed to bind directly to the NFAT motif?",
+          "What is the name of the recombinant protein that failed to bind directly to",
+          "What motif did recombinant Jun and Fos proteins fail to bind to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "recombinant Jun",
+        "Fos proteins",
+        "the NFAT motif"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What proteins failed to bind directly to the NFAT motif?",
+          "What recombinant Jun protein failed to bind directly to the NFAT motif",
+          "What did recombinant Jun and Fos proteins fail to bind directly to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What recombinant protein failed to bind directly to the NFAT motif?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun",
+        "answerability": 0.9993576407432556,
+        "ground_truth": {
+          "Jun": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the recombinant protein that failed to bind directly to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun",
+        "answerability": 0.923393726348877,
+        "ground_truth": {
+          "Fos": {
+            "bertscore": 0.7239288687705994,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What motif did recombinant Jun and Fos proteins fail to bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT",
+        "answerability": 0.9864012002944946,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What proteins failed to bind directly to the NFAT motif?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun and Fos",
+        "answerability": 0.9973692893981934,
+        "ground_truth": {
+          "recombinant Jun": {
+            "bertscore": 0.6820303201675415,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What recombinant Jun protein failed to bind directly to the NFAT motif": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4257943630218506,
+        "ground_truth": {
+          "Fos proteins": {
+            "bertscore": 0.6444909572601318,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did recombinant Jun and Fos proteins fail to bind directly to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT",
+        "answerability": 0.9867789149284363,
+        "ground_truth": {
+          "the NFAT motif": {
+            "bertscore": 0.8334938883781433,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "Although IFN-gamma alone does not induce ISG expression IFN-gamma pretreatment markedly enhanced and hastens ISG expression and transcriptional induction.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IFN-gamma",
+        "ISG expression IFN-gamma pretreatment",
+        "ISG expression",
+        "transcriptional induction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does IFN-gamma pretreatment increase?",
+          "What does IFN-gamma not induce?",
+          "What does IFN-gamma not induce?",
+          "What does IFN-gamma pretreatment accelerate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does IFN-gamma pretreatment increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ISG expression and transcriptional induction",
+        "answerability": 0.9817600846290588,
+        "ground_truth": {
+          "IFN-gamma": {
+            "bertscore": 0.7436103820800781,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IFN-gamma not induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ISG expression",
+        "answerability": 0.9945349097251892,
+        "ground_truth": {
+          "ISG expression IFN-gamma pretreatment": {
+            "bertscore": 0.8535423278808594,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

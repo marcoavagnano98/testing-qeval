@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Because Egr-1 mRNA and protein levels were observed to increase significantly before induction of elk-1 expression we propose that Egr-3 is important for the regulation of elk-1 transcription in differentiating monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Egr-1 mRNA and protein levels",
+        "induction",
+        "expression",
+        "we",
+        "the regulation",
+        "elk-1 transcription",
+        "monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was observed to increase significantly before induction of elk-1 expression?",
+          "What is the first step in the regulation of elk-1 expression?",
+          "What is Egr-3 important for?",
+          "What is the role of Egr-3 in the regulation of elk-1 transcription",
+          "What is Egr-3 important for?",
+          "What is Egr-3 important for?",
+          "What does Egr-3 help differentiate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was observed to increase significantly before induction of elk-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Egr-1 mRNA and protein levels",
+        "answerability": 0.9940201044082642,
+        "ground_truth": {
+          "Egr-1 mRNA and protein levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the first step in the regulation of elk-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Egr-3",
+        "answerability": 0.7417965531349182,
+        "ground_truth": {
+          "induction": {
+            "bertscore": 0.7018792629241943,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Egr-1 important for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0023759007453918457,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272056341171265,
+            "f1": 0
+          },
+          "the regulation": {
+            "bertscore": 0.6894760131835938,
+            "f1": 0
+          },
+          "elk-1 transcription": {
+            "bertscore": 0.6521314978599548,
+            "f1": 0
+          },
+          "monocytes": {
+            "bertscore": 0.6662787795066833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of Egr-1 in the regulation of elk-1 transcription": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12132841348648071,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748355627059937,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

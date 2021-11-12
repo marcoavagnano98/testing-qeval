@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "On the contrary FOXP3 mRNA was significantly decreased in RUNX3- and RUNX3-deficient T reg cells compared with control cells (Figure 7B).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "7B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mRNA of FOXP3 in T reg cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the contrary FOXP3 mRNA",
+        "RUNX3-",
+        "RUNX3-deficient T reg cells",
+        "control cells",
+        "Figure 7B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was significantly decreased in RUNX3- and RUNX3-deficient T",
+          "What type of T reg cells had a significantly decreased FOXP3 mRNA?",
+          "What type of cells had a significantly lower FOXP3 mRNA?",
+          "What type of cells had a significantly lower FOXP3 mRNA?",
+          "What is the mRNA of FOXP3 in RUNX3- and R"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was significantly decreased in RUNX1- and RUNX3-deficient T": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FOXP3 mRNA",
+        "answerability": 0.7695106267929077,
+        "ground_truth": {
+          "the contrary FOXP3 mRNA": {
+            "bertscore": 0.8795985579490662,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of T reg cells had a significantly decreased FOXP3 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RUNX3- and RUNX3-deficient T reg cells",
+        "answerability": 0.9306108355522156,
+        "ground_truth": {
+          "RUNX1-": {
+            "bertscore": 0.7559117078781128,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells had a significantly lower FOXP3 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RUNX3- and RUNX3-deficient T reg cells",
+        "answerability": 0.9097518920898438,
+        "ground_truth": {
+          "RUNX3-deficient T reg cells": {
+            "bertscore": 0.9198238253593445,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of cells had FOXP3 mRNA significantly decreased?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RUNX3- and RUNX3-deficient T reg cells",
+        "answerability": 0.8881102204322815,
+        "ground_truth": {
+          "control cells": {
+            "bertscore": 0.6966802477836609,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the mRNA of FOXP3 in RUNX1- and R": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09029054641723633,
+        "ground_truth": {
+          "Fig": {
+            "bertscore": 0.6844372749328613,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

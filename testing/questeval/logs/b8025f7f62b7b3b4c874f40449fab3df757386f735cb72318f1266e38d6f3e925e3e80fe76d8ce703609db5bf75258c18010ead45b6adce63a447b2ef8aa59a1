@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Peripheral T lymphocytes from women with breast cancer display abnormal protein expression of several signaling molecules.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Peripheral T",
+        "women",
+        "breast cancer display",
+        "abnormal protein expression",
+        "several signaling molecules"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of lymphocytes are abnormally expressed in breast cancer?",
+          "What type of breast cancer has abnormal protein expression?",
+          "What is the abnormal protein expression of peripheral T lymphocytes?",
+          "What do peripheral T lymphocytes from women with breast cancer display?",
+          "What do peripheral T lymphocytes from women with breast cancer display abnormal protein expression"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of lymphocytes are abnormally expressed in breast cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Peripheral T lymphocytes",
+        "answerability": 0.9675125479698181,
+        "ground_truth": {
+          "Peripheral T": {
+            "bertscore": 0.8511870503425598,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of breast cancer cells show abnormal protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Peripheral T lymphocytes",
+        "answerability": 0.9864839315414429,
+        "ground_truth": {
+          "women": {
+            "bertscore": 0.5400417447090149,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do peripheral T lymphocytes from women with what cancer do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "breast cancer",
+        "answerability": 0.9540331363677979,
+        "ground_truth": {
+          "breast cancer exhibit abnormal protein expression": {
+            "bertscore": 0.8046900629997253,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What do peripheral T lymphocytes from women with breast cancer exhibit abnormal protein expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "several signaling molecules",
+        "answerability": 0.8783786296844482,
+        "ground_truth": {
+          "several signaling molecules": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

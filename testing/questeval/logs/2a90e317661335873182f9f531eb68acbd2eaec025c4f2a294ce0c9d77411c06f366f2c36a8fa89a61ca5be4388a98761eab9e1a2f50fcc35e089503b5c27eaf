@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "These data demonstrate that abolishing acute hepatic injury with alpha-tocopherol a free radical scavenger also abolishes the increased NF-kappa B binding activity in TNF-alpha-stimulated cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cell is stimulated by alpha-tocopherol?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These data",
+        "acute hepatic injury",
+        "a free radical scavenger",
+        "the increased NF-kappa B binding activity",
+        "TNF-alpha-stimulated cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that alpha-tocopherol can be used to scavenge",
+          "What does alpha-tocopherol abolish?",
+          "What is alpha-tocopherol?",
+          "What does alpha-tocopherol also abolish?",
+          "What does alpha-tocopherol abolish?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that alpha-tocopherol eliminates NF-kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15831655263900757,
+        "ground_truth": {
+          "These data": {
+            "bertscore": 0.6446335315704346,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show that alpha-tocopherol eliminated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4551279544830322,
+        "ground_truth": {
+          "acute hepatic injury": {
+            "bertscore": 0.657945990562439,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is alpha-tocopherol?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a free radical scavenger",
+        "answerability": 0.9200626015663147,
+        "ground_truth": {
+          "a free radical scavenger": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the use of alpha-tocopherol eliminate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34968996047973633,
+        "ground_truth": {
+          "increased NF-kappa B binding": {
+            "bertscore": 0.5895532965660095,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

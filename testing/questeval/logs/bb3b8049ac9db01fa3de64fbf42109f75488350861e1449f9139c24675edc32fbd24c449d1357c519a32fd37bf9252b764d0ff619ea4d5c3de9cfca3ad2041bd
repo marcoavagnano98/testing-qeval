@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Cotransfection of JAK3 with C/EBPbeta and GATA-1 expression vectors produced a 5-fold increase compared with cotransfection with the C/EBPbeta or GATA-1 expression vectors individually.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5-fold"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How much did cotransfection of JAK3 with C/EBPbeta and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cotransfection",
+        "JAK3",
+        "C/EBPbeta and GATA-1 expression vectors",
+        "a 5-fold increase",
+        "cotransfection",
+        "the C/EBPbeta or GATA-1 expression vectors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What produced a 5-fold increase in cytokine production?",
+          "What gene was cotransfected with C/EBPbeta and GATA-1",
+          "What did cotransfection of JAK3 with produce a 5-fold increase compared to",
+          "How much did cotransfection of JAK3 with C/EBPbeta and",
+          "What produced a 5-fold increase in cytokine production?",
+          "What did cotransfection of JAK3 with produce a 5-fold increase compared to"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How much did cotransfection with the two vectors produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "5-fold increase",
+        "answerability": 0.9900594353675842,
+        "ground_truth": {
+          "5-fold": {
+            "bertscore": 0.8874476552009583,
+            "f1": 0.6666666666666666
+          },
+          "a 5-fold increase": {
+            "bertscore": 0.9358602166175842,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What produced a 5-fold increase compared to individual vectors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cotransfection of JAK3 with C/EBPbeta and GATA-1",
+        "answerability": 0.910370945930481,
+        "ground_truth": {
+          "Cotransfection": {
+            "bertscore": 0.7203015685081482,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What two vectors produced a 5-fold increase in bacterial virulence?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3371472954750061,
+        "ground_truth": {
+          "C/EBPbeta and GATA-1 expression vectors": {
+            "bertscore": 0.6174170970916748,
+            "f1": 0
+          },
+          "the C/EBPbeta or GATA-1 expression vectors": {
+            "bertscore": 0.5967288017272949,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What produced a 5-fold increase compared to the individual vectors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cotransfection of JAK3 with C/EBPbeta and GATA-1",
+        "answerability": 0.931705892086029,
+        "ground_truth": {
+          "cotransfection": {
+            "bertscore": 0.7066207528114319,
+            "f1": 0.25
+          }
+        }
+      }
+    }
+  }
+}

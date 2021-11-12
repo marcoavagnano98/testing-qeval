@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "This was due primarily to restoring polarity: forced proliferation of polarized nonmalignant cells did not induce VEGF expression and EC recruitment whereas disrupting the architecture of growth-arrested reverted cells did.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What recruitment did polarized nonmalignant cells not induce?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "polarity",
+        "proliferation",
+        "polarized nonmalignant cells",
+        "VEGF expression",
+        "EC recruitment",
+        "the architecture",
+        "growth-arrested reverted cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the reverted cells restore?",
+          "What did the polarized nonmalignant cells do that did not induce VEGF expression",
+          "What did the forced proliferation of?",
+          "What did the forced proliferation of nonmalignant cells not induce?",
+          "What did restoring polarity not induce?",
+          "What did restoring polarity disrupt?",
+          "What did disrupting the architecture of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What recruitment did polarized nonmalignant cells not induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF expression",
+        "answerability": 0.9534563422203064,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.7142634391784668,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the reverted cells restore?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "polarity",
+        "answerability": 0.5195455551147461,
+        "ground_truth": {
+          "polarity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the polarized nonmalignant cells do that did not induce VEGF expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35557031631469727,
+        "ground_truth": {
+          "proliferation": {
+            "bertscore": 0.6901830434799194,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the forced proliferation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45528095960617065,
+        "ground_truth": {
+          "polarized nonmalignant cells": {
+            "bertscore": 0.6338626146316528,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the forced proliferation of nonmalignant cells not induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF expression and EC recruitment",
+        "answerability": 0.9832093715667725,
+        "ground_truth": {
+          "VEGF expression": {
+            "bertscore": 0.8660522103309631,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did restoring polarity not induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36926817893981934,
+        "ground_truth": {
+          "EC recruitment": {
+            "bertscore": 0.6884015798568726,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did restoring polarity disrupt?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6932467222213745,
+        "ground_truth": {
+          "the architecture": {
+            "bertscore": 0.6663880348205566,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did disrupting the architecture of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "growth-arrested reverted cells",
+        "answerability": 0.8058151006698608,
+        "ground_truth": {
+          "growth-arrested reverted cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

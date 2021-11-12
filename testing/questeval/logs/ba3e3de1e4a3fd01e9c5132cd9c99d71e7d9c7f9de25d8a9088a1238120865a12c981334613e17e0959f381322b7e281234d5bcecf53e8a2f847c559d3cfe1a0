@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"We show that Twist directly interacts with the beta-amyloid precursor protein X11L2.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Twist"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein interacts with X11L2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "Twist",
+        "the beta-amyloid precursor protein X11L2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the researchers find about Twist?",
+          "What protein interacts with X11L2?",
+          "What does Twist interact with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein family does X11L2 belong to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta-amyloid",
+        "answerability": 0.9720412492752075,
+        "ground_truth": {
+          "X11": {
+            "bertscore": 0.6602508425712585,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is X11L2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta-amyloid precursor protein",
+        "answerability": 0.9183193445205688,
+        "ground_truth": {
+          "a new member": {
+            "bertscore": 0.6132185459136963,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does X11L2 interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.035352885723114014,
+        "ground_truth": {
+          "Alzheimers beta-amyloid precursor protein": {
+            "bertscore": 0.630965530872345,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

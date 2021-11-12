@@ -1,0 +1,152 @@
+{
+  "type": "hyp",
+  "text": "After 20 h of stimulation with 8-bromo-cAMP AR mRNA was upregulated in LNCaP but not in either PC-3 cells or DU-145 cell lines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "20",
+        "LNCaP",
+        "PC-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many h of stimulation did the AR mRNA upregulate in LNC",
+          "What cell line did the DU-145 cells not respond to?",
+          "What cell line did LNCaP not have an effect on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "20 h",
+        "stimulation",
+        "8-bromo-cAMP",
+        "AR mRNA",
+        "LNCaP",
+        "either PC-3 cells",
+        "DU-145 cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did the mRNA upregulate in LNCaP?",
+          "What was the effect of 8-bromo-cAMP AR mRNA on L",
+          "What was the mRNA of AR in LNCaP?",
+          "What was upregulated after 20 h of stimulation?",
+          "What cell line did the DU-145 cells not respond to?",
+          "What cells were not upregulated after 20 h of stimulation?",
+          "What cell line did the mRNA upregulate after 20 h of stimulation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many h of stimulation did the AR mRNA upregulate in LNC": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "20",
+        "answerability": 0.9797930121421814,
+        "ground_truth": {
+          "20": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cell line was upregulated after 20 h of stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LNCaP",
+        "answerability": 0.945613443851471,
+        "ground_truth": {
+          "LNCaP": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cell line did LNCaP not have an effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PC-3 cells or DU-145",
+        "answerability": 0.7383805513381958,
+        "ground_truth": {
+          "PC-3": {
+            "bertscore": 0.8093975186347961,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "How long did the mRNA upregulate in LNCaP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "20 h",
+        "answerability": 0.9899425506591797,
+        "ground_truth": {
+          "20 h": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of 8-bromo-cAMP AR mRNA on L": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "upregulated",
+        "answerability": 0.8530303835868835,
+        "ground_truth": {
+          "stimulation": {
+            "bertscore": 0.7386026978492737,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the mRNA of AR mRNA upregulated in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LNCaP",
+        "answerability": 0.9887892007827759,
+        "ground_truth": {
+          "8-bromo-cAMP": {
+            "bertscore": 0.6643665432929993,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was upregulated after 20 h of stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "8-bromo-cAMP AR mRNA",
+        "answerability": 0.8890917301177979,
+        "ground_truth": {
+          "AR mRNA": {
+            "bertscore": 0.7992144823074341,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What cell line was not upregulated after 20 h of stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PC-3 cells or DU-145",
+        "answerability": 0.885460615158081,
+        "ground_truth": {
+          "either PC-3": {
+            "bertscore": 0.7922217845916748,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What cells did not show upregulation of AR mRNA after 20 h of stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PC-3 cells or DU-145",
+        "answerability": 0.9049850702285767,
+        "ground_truth": {
+          "or DU-145 cell lines": {
+            "bertscore": 0.8737148642539978,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

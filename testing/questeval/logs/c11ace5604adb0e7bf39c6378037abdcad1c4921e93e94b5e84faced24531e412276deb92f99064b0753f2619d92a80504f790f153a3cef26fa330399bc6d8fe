@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "The expression of MMP-2/9 of AGS cells was inhibited by 2.0 microM of GA whereas the expression of MMP-2/9 of AGS cells was suppressed by 2.0 microM of GA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MMP-2/9",
+        "2.0 microM",
+        "GA",
+        "MMP-2/9",
+        "2.0 microM",
+        "GA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inhibited by 2.0 microM of GA?",
+          "What was the amount of GA that inhibited the expression of MMP-2/9?",
+          "What inhibited the expression of MMP-2/9 of AGS cells?",
+          "What was inhibited by 2.0 microM of GA?",
+          "What was the amount of GA that inhibited the expression of MMP-2/9?",
+          "What inhibited the expression of MMP-2/9 of AGS cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression",
+        "MMP-2/9",
+        "AGS cells",
+        "2.0 microM",
+        "GA",
+        "the expression",
+        "MMP-2/9",
+        "AGS cells",
+        "2.0 microM",
+        "GA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inhibited by 2.0 microM of GA?",
+          "What was inhibited by 2.0 microM of GA?",
+          "What was inhibited by 2.0 microM of GA?",
+          "What was the amount of GA that inhibited the expression of MMP-2/9?",
+          "What inhibited the expression of MMP-2/9 of AGS cells?",
+          "What was suppressed by 2.0 microM of GA?",
+          "What was inhibited by 2.0 microM of GA?",
+          "What was inhibited by 2.0 microM of GA?",
+          "What was the amount of GA that inhibited the expression of MMP-2/9?",
+          "What inhibited the expression of MMP-2/9 of AGS cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was inhibited by 2.0 microM of GA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MMP-2/9",
+        "answerability": 0.9782439470291138,
+        "ground_truth": {
+          "MMP-2/9": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the amount of GA that inhibited the expression of MMP-2/9?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "2.0 microM",
+        "answerability": 0.9956203699111938,
+        "ground_truth": {
+          "2.0 microM": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the expression of MMP-2/9 in AGS cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "2.0 microM of GA",
+        "answerability": 0.9925327897071838,
+        "ground_truth": {
+          "GA": {
+            "bertscore": 0.7250970602035522,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was inhibited by 2.0 microM of GA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of MMP-2/9",
+        "answerability": 0.9930018782615662,
+        "ground_truth": {
+          "The expression": {
+            "bertscore": 0.6695371866226196,
+            "f1": 0.5
+          },
+          "AGS cells": {
+            "bertscore": 0.6966893076896667,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

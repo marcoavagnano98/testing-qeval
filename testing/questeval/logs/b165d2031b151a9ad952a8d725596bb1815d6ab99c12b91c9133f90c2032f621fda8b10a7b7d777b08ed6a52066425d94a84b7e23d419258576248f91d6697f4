@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "CsA does not interfere with the synthesis of Rel proteins but prevents the inducible degradation of cytoplasmic NF-kappa B inhibitors\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CsA",
+        "Rel"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevents the inducible degradation of cytoplasmic NF-kappa",
+          "What protein does CsA not interfere with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CsA",
+        "the synthesis",
+        "Rel proteins",
+        "the inducible degradation",
+        "cytoplasmic NF-kappa B inhibitors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevents the inducible degradation of cytoplasmic NF-kappa",
+          "What does CsA not interfere with?",
+          "What does CsA not interfere with the synthesis of?",
+          "What does CsA prevent?",
+          "What does CsA prevent the inducible degradation of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What prevents the inducible degradation of cytosolic NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23432433605194092,
+        "ground_truth": {
+          "CsA": {
+            "bertscore": 0.709443211555481,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein does CsA not interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synthesis of Rel proteins",
+        "answerability": 0.9975510835647583,
+        "ground_truth": {
+          "Rel": {
+            "bertscore": 0.7097058892250061,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does CsA not interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synthesis of Rel proteins",
+        "answerability": 0.9991405010223389,
+        "ground_truth": {
+          "the synthesis": {
+            "bertscore": 0.7208258509635925,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does CsA not interfere with the synthesis of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rel proteins",
+        "answerability": 0.9998914003372192,
+        "ground_truth": {
+          "Rel proteins": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does CsA prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the inducible degradation of cytoplasmic NF-kappa B inhibitors",
+        "answerability": 0.9499815106391907,
+        "ground_truth": {
+          "the inducible degradation": {
+            "bertscore": 0.763622522354126,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What does CsA prevent the inducible degradation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasmic NF-kappa B inhibitors",
+        "answerability": 0.9776585102081299,
+        "ground_truth": {
+          "cytosolic NF-kappa B inhibitors": {
+            "bertscore": 0.9592675566673279,
+            "f1": 0.75
+          }
+        }
+      }
+    }
+  }
+}

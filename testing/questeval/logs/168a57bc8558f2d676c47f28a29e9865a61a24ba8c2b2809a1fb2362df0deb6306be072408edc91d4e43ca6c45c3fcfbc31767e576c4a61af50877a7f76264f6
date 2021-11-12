@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "These results define a role for NF-kappaB in mediating FasL expression in activated T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein mediates FasL expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "a role",
+        "NF-kappaB",
+        "FasL expression",
+        "activated T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What defines a role for NF-kappaB in mediating FasL",
+          "What do the results of the cytokine-mediated repression of NF-",
+          "What protein mediates FasL expression?",
+          "What does NF-kappaB mediate in activated T cells?",
+          "What does NF-kappaB mediate FasL expression in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein mediates FasL expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9648969173431396,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What defines a role for NF-kappaB in mediating FasL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These results",
+        "answerability": 0.807471513748169,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do the results of the cytokine-mediated repression of NF-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07636392116546631,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6715851426124573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does NF-kappaB mediate during T cell activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FasL expression",
+        "answerability": 0.9963459968566895,
+        "ground_truth": {
+          "FasL expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main mechanism of FasL expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.6016981601715088,
+        "ground_truth": {
+          "T cell activation": {
+            "bertscore": 0.6719711422920227,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

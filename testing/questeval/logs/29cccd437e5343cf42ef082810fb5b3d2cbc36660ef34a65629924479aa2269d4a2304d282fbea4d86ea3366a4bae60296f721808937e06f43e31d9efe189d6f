@@ -1,0 +1,150 @@
+{
+  "type": "hyp",
+  "text": "We demonstrated that suppression of NF-kappaB activation by nimbolide was caused by inhibition of IkappaB kinase (IKK) which led to suppression of IkappaBalpha phosphorylation and degradation nuclear translocation DNA binding and gene transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IKK",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the kinase that causes NF-kappa",
+          "What phosphorylation was inhibited by nimbolide?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "suppression",
+        "NF-kappaB activation",
+        "nimbolide",
+        "inhibition",
+        "IkappaB kinase",
+        "(IKK",
+        "suppression",
+        "IkappaBalpha phosphorylation and degradation nuclear translocation DNA binding and gene transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors demonstrate that nimbolide caused?",
+          "What was the effect of nimbolide on NF-kappaB activ",
+          "What did nimbolide cause?",
+          "What was shown to suppress NF-kappaB activation?",
+          "What was the cause of NF-kappaB activation?",
+          "What is IKK?",
+          "What is the name of the kinase that causes NF-kappa",
+          "What was the effect of nimbolide on NF-kappaB activ",
+          "What did nimbolide cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the kinase that causes NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IKK",
+        "answerability": 0.9795047044754028,
+        "ground_truth": {
+          "IKK": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "(IKK": {
+            "bertscore": 0.786469578742981,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What phosphorylation was inhibited by nimbolide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaBalpha",
+        "answerability": 0.9252581000328064,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the study find about nimbolide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppression of NF-kappaB activation",
+        "answerability": 0.7684507369995117,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5407920479774475,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of nimbolide on NF-kappaB activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppression",
+        "answerability": 0.9854804873466492,
+        "ground_truth": {
+          "suppression": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did nimbolide cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppression of NF-kappaB activation",
+        "answerability": 0.9614445567131042,
+        "ground_truth": {
+          "NF-kappaB activation": {
+            "bertscore": 0.9290740489959717,
+            "f1": 0.6666666666666666
+          },
+          "IkappaBalpha phosphorylation and degradation nuclear translocation DNA binding and gene transcription": {
+            "bertscore": 0.685233473777771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found to cause NF-kappaB activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of IkappaB kinase",
+        "answerability": 0.9936776161193848,
+        "ground_truth": {
+          "nimbolide": {
+            "bertscore": 0.664941132068634,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the cause of NF-kappaB activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of IkappaB kinase",
+        "answerability": 0.9970837235450745,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.7306437492370605,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is IKK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB kinase",
+        "answerability": 0.9906105399131775,
+        "ground_truth": {
+          "IkappaB kinase": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

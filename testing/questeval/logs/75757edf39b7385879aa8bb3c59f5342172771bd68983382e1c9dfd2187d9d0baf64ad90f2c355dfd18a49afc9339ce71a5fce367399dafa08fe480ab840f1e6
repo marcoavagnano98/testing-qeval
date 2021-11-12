@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "The effects of the anti-AIM mAb were specific for NF-kappa B since it failed to induce DNA binding of NF-kappa B in the presence of anti-AIM mAb.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The effects",
+        "the anti-AIM mAb",
+        "NF-kappa B",
+        "it",
+        "DNA binding",
+        "NF-kappa B",
+        "the presence"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was specific for NF-kappa B?",
+          "What did the mAb fail to induce DNA binding of?",
+          "What protein did the anti-AIM mAb not induce DNA binding?",
+          "What did the anti-AIM mAb fail to induce DNA binding of?",
+          "What did the anti-AIM mAb fail to induce?",
+          "What protein did the anti-AIM mAb not induce DNA binding?",
+          "What did the anti-AIM mAb fail to induce DNA binding of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did not induce any change in the binding activity of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-AIM mAb",
+        "answerability": 0.8569216728210449,
+        "ground_truth": {
+          "anti-AIM mAb": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "contrast anti-AIM mAb": {
+            "bertscore": 0.9517621994018555,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What transcription factor is regulated by protein kinase C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000609278678894043,
+        "ground_truth": {
+          "NF-kappa": {
+            "bertscore": 0.6883861422538757,
+            "f1": 0
+          },
+          "NF-kappa B": {
+            "bertscore": 0.644961416721344,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did anti-AIM mAb not induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA binding",
+        "answerability": 0.9992132782936096,
+        "ground_truth": {
+          "any change": {
+            "bertscore": 0.7188103199005127,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did anti-AIM mAb not induce any change in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA binding",
+        "answerability": 0.9986118078231812,
+        "ground_truth": {
+          "the binding activity": {
+            "bertscore": 0.7737255692481995,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002413511276245117,
+        "ground_truth": {
+          "a transcription factor": {
+            "bertscore": 0.6595961451530457,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is regulated by protein kinase C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0014066100120544434,
+        "ground_truth": {
+          "whose activity": {
+            "bertscore": 0.6521546244621277,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the activity of NF-kappa B regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08929485082626343,
+        "ground_truth": {
+          "protein kinase C.": {
+            "bertscore": 0.6099202632904053,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

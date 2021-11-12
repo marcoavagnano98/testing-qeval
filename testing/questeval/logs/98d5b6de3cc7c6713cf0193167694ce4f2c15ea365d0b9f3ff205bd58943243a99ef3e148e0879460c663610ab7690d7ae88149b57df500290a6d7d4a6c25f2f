@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Following stimulation T cells were measured in cell supernatants by ELISA NF-kappaB activity by electrophoretic mobility shift assay and IkappaB-alpha levels by Western blot.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "stimulation T cells",
+        "cell supernatants",
+        "ELISA NF-kappaB activity",
+        "electrophoretic mobility shift assay",
+        "IkappaB-alpha levels",
+        "Western blot"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was measured in cell supernatants by ELISA NF-kappa",
+          "Where were T cells measured after stimulation?",
+          "What was used to measure T cells after stimulation?",
+          "What was used to measure T cells after stimulation?",
+          "What was measured by Western blot?",
+          "What method was used to measure IkappaB-alpha levels?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was measured in cell supernatants by electrophoretic mobility shift assay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ELISA NF-kappaB activity",
+        "answerability": 0.9516814351081848,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6816333532333374,
+            "f1": 0
+          },
+          "stimulation TNF-alpha": {
+            "bertscore": 0.7316554188728333,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was TNF-alpha measured?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18078726530075073,
+        "ground_truth": {
+          "cell supernatants": {
+            "bertscore": 0.6849656701087952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to measure TNF-alpha in cell supernatants?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3217037320137024,
+        "ground_truth": {
+          "ELISA NF-kappaB activity": {
+            "bertscore": 0.6165052056312561,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to measure TNF-alpha activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04972505569458008,
+        "ground_truth": {
+          "electrophoretic mobility shift assay": {
+            "bertscore": 0.6640233993530273,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was measured by Western blot?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB-alpha levels",
+        "answerability": 0.5250164270401001,
+        "ground_truth": {
+          "IkappaB-alpha levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What method was used to measure TNF-alpha levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09027183055877686,
+        "ground_truth": {
+          "Western blot": {
+            "bertscore": 0.6729493141174316,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

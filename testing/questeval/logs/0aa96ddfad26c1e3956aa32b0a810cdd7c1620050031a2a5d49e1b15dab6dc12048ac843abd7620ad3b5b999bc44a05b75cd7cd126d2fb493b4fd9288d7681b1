@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": "Activation of human macrophages by mechanical ventilation in vitro. Positive-pressure mechanical ventilation supports gas exchange in patients with respiratory failure but is also responsible for significant lung injury.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "human macrophages",
+        "mechanical ventilation",
+        "Positive-pressure mechanical ventilation",
+        "gas exchange",
+        "patients",
+        "respiratory failure",
+        "significant lung injury"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main function of mechanical ventilation in patients with respiratory failure?",
+          "What is activated by mechanical ventilation in vitro?",
+          "What is responsible for gas exchange in patients with respiratory failure?",
+          "What supports gas exchange in patients with respiratory failure?",
+          "What does mechanical ventilation support in patients with respiratory failure?",
+          "In what patients is mechanical ventilation responsible for gas exchange?",
+          "What type of disease is mechanical ventilation responsible for?",
+          "What is the result of positive-pressure mechanical ventilation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main cause of lung injury?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3889468312263489,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.72251957654953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of lung injury?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation of human macrophages",
+        "answerability": 0.5953807830810547,
+        "ground_truth": {
+          "human macrophages": {
+            "bertscore": 0.8779245615005493,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is responsible for lung injury?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation of human macrophages by mechanical ventilation in vitro",
+        "answerability": 0.5397917628288269,
+        "ground_truth": {
+          "mechanical ventilation": {
+            "bertscore": 0.7551134824752808,
+            "f1": 0.3636363636363636
+          },
+          "Positive-pressure mechanical ventilation": {
+            "bertscore": 0.7332871556282043,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is the cause of pneumatic ventilation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07028472423553467,
+        "ground_truth": {
+          "lung injury": {
+            "bertscore": 0.7119302153587341,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

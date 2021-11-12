@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of TF induction in the presence of high CsA blood concentrations was also observed when stimulation of cells was performed with interferon-gamma or interleukin-3beta.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TF",
+        "the presence",
+        "high CsA blood concentrations",
+        "stimulation",
+        "cells",
+        "interferon-gamma",
+        "interleukin-3beta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was inhibited when high CsA blood concentrations were used?",
+          "In what way was TF induction inhibited?",
+          "What was the cause of TF induction?",
+          "What was performed with high CsA blood concentrations?",
+          "What was stimulated with interferon-gamma?",
+          "What was used to inhibit TF induction?",
+          "What was used to inhibit TF induction?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was used to inhibit TF induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interferon-gamma or interleukin-3beta",
+        "answerability": 0.6999043226242065,
+        "ground_truth": {
+          "interleukin-1beta": {
+            "bertscore": 0.9008740782737732,
+            "f1": 0
+          },
+          "interferon-gamma": {
+            "bertscore": 0.8860229253768921,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What induction was inhibited when high CsA blood concentrations were used?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF",
+        "answerability": 0.9779582619667053,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what way was TF induction inhibited?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.40428537130355835,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024357914924622,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the cause of TF induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.018262088298797607,
+        "ground_truth": {
+          "high CsA blood concentrations": {
+            "bertscore": 0.6301079392433167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was performed with high CsA blood concentrations?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49230265617370605,
+        "ground_truth": {
+          "stimulation": {
+            "bertscore": 0.6708372235298157,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was stimulated with interferon-gamma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47829675674438477,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147345542908,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

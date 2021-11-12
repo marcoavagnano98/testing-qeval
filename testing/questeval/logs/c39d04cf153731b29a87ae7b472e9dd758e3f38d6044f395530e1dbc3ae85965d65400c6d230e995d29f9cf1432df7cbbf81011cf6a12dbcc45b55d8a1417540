@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "The rate of LTR-directed gene expression increased in response to treatment with either a phorbol ester or tumor necrosis factor alpha if either the NFAT-1 or NF kappa B binding sites were deleted but failed to respond to these mitogens if both sequences were absent.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The rate",
+        "LTR-directed gene expression",
+        "response",
+        "treatment",
+        "either a phorbol ester",
+        "tumor necrosis factor alpha",
+        "either the NFAT-1 or NF kappa B binding sites",
+        "these mitogens",
+        "both sequences"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increased in response to treatment with phorbol ester or tumor necrosis factor al",
+          "What increased in response to treatment with phorbol ester or tumor necrosis factor al",
+          "What was the effect of deletion of NFAT-1 or NF kappa B",
+          "What increased the rate of LTR-directed gene expression?",
+          "What was the treatment for LTR-directed gene expression?",
+          "What is the other treatment that can increase LTR-directed gene expression?",
+          "What did the rate of LTR-directed gene expression increase in response to?",
+          "What did the NFAT-1 and NF kappa B binding sites fail to",
+          "What was absent from the NFAT-1 or NF kappa B binding sites"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increased in response to treatment with phorbol ester or tumor necrosis factor al": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The rate of LTR-directed gene expression",
+        "answerability": 0.7558389902114868,
+        "ground_truth": {
+          "The rate": {
+            "bertscore": 0.7137907147407532,
+            "f1": 0.33333333333333337
+          },
+          "LTR-directed gene expression": {
+            "bertscore": 0.8936126232147217,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What was the effect of deletion on the rate of LTR-directed gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased in response to treatment",
+        "answerability": 0.9919869303703308,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.731828510761261,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What increased the rate of LTR-directed gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "if either the NFAT-1 or NF kappa B binding sites were",
+        "answerability": 0.8850204944610596,
+        "ground_truth": {
+          "treatment": {
+            "bertscore": 0.6000218987464905,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment for LTR-directed gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol ester or tumor necrosis factor alpha",
+        "answerability": 0.9065355658531189,
+        "ground_truth": {
+          "either a phorbol ester": {
+            "bertscore": 0.7985796928405762,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the other treatment that can increase LTR-directed gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor necrosis factor alpha",
+        "answerability": 0.9863161444664001,
+        "ground_truth": {
+          "tumor necrosis factor alpha": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the rate of LTR-directed gene expression increase in response to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "treatment with either a phorbol ester or tumor necrosis factor alpha",
+        "answerability": 0.9969526529312134,
+        "ground_truth": {
+          "either the NFAT-1 or NF kappa B binding sites": {
+            "bertscore": 0.7212032079696655,
+            "f1": 0.22222222222222224
+          },
+          "these mitogenic stimuli": {
+            "bertscore": 0.6569367051124573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was absent from the NFAT-1 or NF kappa B binding sites": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3427823781967163,
+        "ground_truth": {
+          "both sequences": {
+            "bertscore": 0.7299892902374268,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

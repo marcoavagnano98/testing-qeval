@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "However co-culture of these cancer cells with stromal or osteoblastic cells induced a significant increase in VEGF secretion and angiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "co-culture",
+        "stromal or osteoblastic cells",
+        "a significant increase",
+        "VEGF secretion",
+        "angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the VEGF secretion and angiogenesis increase?",
+          "What type of cancer cells were co-cultured with?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells cause?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells increase?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the stromal and osteoblastic cells do to induce RANKL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0812024474143982,
+        "ground_truth": {
+          "co-culture": {
+            "bertscore": 0.6970744729042053,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stromal or osteoblastic cells",
+        "answerability": 0.9842069149017334,
+        "ground_truth": {
+          "stromal or osteoblastic cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF secretion and angiogenesis",
+        "answerability": 0.903609037399292,
+        "ground_truth": {
+          "RANKL mRNA expression": {
+            "bertscore": 0.7917169332504272,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005118846893310547,
+        "ground_truth": {
+          "OPG mRNA expression": {
+            "bertscore": 0.6336473226547241,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

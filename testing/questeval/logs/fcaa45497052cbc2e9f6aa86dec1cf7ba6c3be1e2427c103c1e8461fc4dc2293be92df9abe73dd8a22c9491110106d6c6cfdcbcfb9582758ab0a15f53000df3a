@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "T cells (15) but are distinct in two respects: in differentiating Th1 cells T-bet is essential for early IFN-gamma expression and in turn induces Runx3 (15) whereas in differentiating CD8+\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "15",
+        "two",
+        "IFN",
+        "15"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many T cells are there?",
+          "How many ways are T cells different from Th1 cells?",
+          "What is T-bet essential for in differentiating Th1 cells?",
+          "How many T cells are there?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "T cells",
+        "two respects",
+        "Th1 cells T-bet",
+        "early IFN-gamma expression",
+        "turn",
+        "Runx3",
+        "CD8"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells are T-bet essential for early IFN-gamma expression",
+          "How many ways are T cells different from Th1 cells?",
+          "What is essential for early IFN-gamma expression?",
+          "What is T-bet essential for?",
+          "What does T-bet do to induce Runx3?",
+          "What does T-bet induce?",
+          "What type of cells are T cells differentiating from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signals induce T-bet?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.021021544933319092,
+        "ground_truth": {
+          "TCR": {
+            "bertscore": 0.6891100406646729,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the T-bet essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early IFN-gamma expression",
+        "answerability": 0.9966853857040405,
+        "ground_truth": {
+          "IFN": {
+            "bertscore": 0.6635606288909912,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is essential for early IFN-gamma expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-bet",
+        "answerability": 0.9704641699790955,
+        "ground_truth": {
+          "T-bet": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the T-bet induced by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06617653369903564,
+        "ground_truth": {
+          "TCR signals": {
+            "bertscore": 0.6680104732513428,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is T-bet essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early IFN-gamma expression",
+        "answerability": 0.9965430498123169,
+        "ground_truth": {
+          "early IFN-gamma expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

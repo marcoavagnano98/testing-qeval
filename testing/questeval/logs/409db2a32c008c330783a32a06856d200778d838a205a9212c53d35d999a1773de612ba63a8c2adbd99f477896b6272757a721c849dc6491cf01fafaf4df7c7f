@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "Additionally cediranib blocked VEGF-C156S-induced and VEGF-E-induced proliferation survival and migration of lymphatic andblood vascular endothelial cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "cediranib",
+        "VEGF-C156S-induced and VEGF-E-induced proliferation survival",
+        "migration",
+        "lymphatic andblood vascular endothelial cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug blocked VEGF-C156S and VEGF-E-induced proliferation",
+          "What did cediranib block?",
+          "What did cediranib block?",
+          "What did cediranib block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug blocked VEGF-C156S and VEGF-E proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cediranib",
+        "answerability": 0.9760228991508484,
+        "ground_truth": {
+          "cediranib": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did cediranib block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-C156S-induced and VEGF-E-induced proliferation",
+        "answerability": 0.6903603076934814,
+        "ground_truth": {
+          "VEGF-C156S-induced and VEGF-E-induced proliferation survival": {
+            "bertscore": 0.9812668561935425,
+            "f1": 0.888888888888889
+          },
+          "migration": {
+            "bertscore": 0.6025791168212891,
+            "f1": 0
+          },
+          "lymphatic and blood vascular endothelial cells": {
+            "bertscore": 0.6628379821777344,
+            "f1": 0.2
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "This 40-kDa polypeptide is able to interact with the tumor suppressor p16(INK4A). Consequently Tax can activate the signaling pathway that lead to the release of E2F factors into the nucleus.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p16(INK4A",
+        "E2F"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Tax can activate the signaling pathway that lead to the release of E2F factors into the",
+          "Tax can activate the signaling pathway that leads to the release of what?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This 40-kDa polypeptide",
+        "the tumor suppressor",
+        "p16(INK4A",
+        "Tax",
+        "the signaling pathway",
+        "the release",
+        "E2F factors",
+        "the nucleus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is able to interact with the tumor suppressor p16(INK4A",
+          "Tax can interact with what?",
+          "Tax can activate the signaling pathway that lead to the release of E2F factors into the",
+          "What is the name of the polypeptide that can activate the signaling pathway that leads to",
+          "Tax can activate what?",
+          "Tax can activate the signaling pathway that lead to what?",
+          "Tax can activate the signaling pathway that leads to the release of what into the nucleus",
+          "Where does Tax release E2F factors?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can activate the signaling pathway that leads to the release of E2F?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tax",
+        "answerability": 0.9980310201644897,
+        "ground_truth": {
+          "Tax": {
+            "bertscore": 0.9999995827674866,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does tax activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the signaling pathway that lead to the release of E2F factors into the nucleus",
+        "answerability": 0.9707865715026855,
+        "ground_truth": {
+          "the signaling pathway": {
+            "bertscore": 0.8003041744232178,
+            "f1": 0.3076923076923077
+          }
+        }
+      }
+    },
+    "What does tax activate the signaling pathway that leads to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the release of E2F factors into the nucleus",
+        "answerability": 0.9653354287147522,
+        "ground_truth": {
+          "the release": {
+            "bertscore": 0.6804836392402649,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "Tax can activate the signaling pathway that leads to the release of what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F factors",
+        "answerability": 0.9979116320610046,
+        "ground_truth": {
+          "E2F": {
+            "bertscore": 0.7862946391105652,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does tax do to the signaling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activate",
+        "answerability": 0.9589868783950806,
+        "ground_truth": {
+          "turn": {
+            "bertscore": 0.7632801532745361,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does tax induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.368297815322876,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272053360939026,
+            "f1": 0
+          },
+          "cell cycle progression": {
+            "bertscore": 0.6719484925270081,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does tax induce expression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13216668367385864,
+        "ground_truth": {
+          "factors": {
+            "bertscore": 0.6932956576347351,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

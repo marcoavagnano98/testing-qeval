@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Nedd4 bound to phosphoproteins including physiological substrates of enzymes in a phosphorylation-dependent manner. SCF overexpression seems to be a property of activated cells since the ability of the cells to release cytokines from an infectious host is impaired.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Nedd4 bound",
+        "cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the phosphoprotein that is phosphorylated-dependent?",
+          "What does SCF overexpression inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "phosphoproteins",
+        "physiological substrates",
+        "enzymes",
+        "a phosphorylation-dependent manner",
+        "SCF overexpression",
+        "a property",
+        "activated cells",
+        "the ability",
+        "the cells",
+        "cytokines",
+        "an infectious host"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Nedd4 bound to?",
+          "What does Nedd4 bound to in a phosphorylation-dependent manner?",
+          "What does Nedd4 bound to physiological substrates of?",
+          "How does Nedd4 bound to phosphoproteins?",
+          "What is a property of activated cells?",
+          "What is SCF overexpression?",
+          "What is SCF overexpression a property of?",
+          "What is impaired in activated cells?",
+          "What does SCF overexpression seem to be a property of?",
+          "What does SCF overexpression inhibit?",
+          "What does SCF overexpression inhibit the ability of cells to release cytokines from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What may occur due to SCF overexpression at extreme PTH levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ability of the cells to release cytokines from an infectious host is impaired",
+        "answerability": 0.5960685014724731,
+        "ground_truth": {
+          "Mast cells": {
+            "bertscore": 0.6698627471923828,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    },
+    "What may cause mast cells to form at extreme PTH levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00499957799911499,
+        "ground_truth": {
+          "SCF overexpression": {
+            "bertscore": 0.6810280084609985,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of mast cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011511027812957764,
+        "ground_truth": {
+          "extreme PTH levels": {
+            "bertscore": 0.6605811715126038,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

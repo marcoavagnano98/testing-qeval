@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Ethanol exposure resulted in reduced VEGF-induced cord formation on collagen and reduced collagen content on Matrigel in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Matrigel",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cell was exposed to ethanol?",
+          "In what way did ethanol cause a decrease in VEGF-induced"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ethanol exposure",
+        "reduced VEGF-induced cord formation",
+        "collagen",
+        "reduced collagen content",
+        "Matrigel"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What resulted in reduced VEGF-induced cord formation?",
+          "What did ethanol exposure result in on collagen?",
+          "What protein was reduced in vitro by ethanol?",
+          "What did ethanol exposure cause on Matrigel?",
+          "What type of cell was exposed to ethanol?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cell was exposed to ethanol?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5921626687049866,
+        "ground_truth": {
+          "Matrigel": {
+            "bertscore": 0.6661784648895264,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what way did ethanol cause a reduction in VEGF-induced": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5076102018356323,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.7021183967590332,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What resulted in reduced VEGF-induced cord formation on collagen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ethanol exposure",
+        "answerability": 0.9980936646461487,
+        "ground_truth": {
+          "Ethanol exposure": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did ethanol exposure result in on collagen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reduced VEGF-induced cord formation",
+        "answerability": 0.9879475831985474,
+        "ground_truth": {
+          "reduced VEGF-induced cord formation": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cell was reduced by ethanol?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF",
+        "answerability": 0.8829925656318665,
+        "ground_truth": {
+          "collagen": {
+            "bertscore": 0.7191910147666931,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did ethanol cause on Matrigel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reduced VEGF-induced cord formation",
+        "answerability": 0.9536483883857727,
+        "ground_truth": {
+          "capillary network structure": {
+            "bertscore": 0.7436962723731995,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

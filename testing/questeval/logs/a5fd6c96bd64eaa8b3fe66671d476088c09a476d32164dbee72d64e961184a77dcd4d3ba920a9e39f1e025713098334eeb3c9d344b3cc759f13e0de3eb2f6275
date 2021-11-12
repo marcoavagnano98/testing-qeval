@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "Specifically Foxp3 physically interacts with RORgammat and this interaction requires a Th2 signaling (Figure 4D).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RORgammat",
+        "4D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 physically interact with?",
+          "What is the diagram of Foxp3 and RORgammat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RORgammat",
+        "this interaction",
+        "a Th2",
+        "(Figure 4D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 physically interact with?",
+          "What requires Th2 signaling?",
+          "What signaling does Foxp3 need to interact with RORgammat?",
+          "What is the corresponding diagram of Foxp3 and RORgammat?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Foxp3 physically interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RORgammat",
+        "answerability": 0.9884003400802612,
+        "ground_truth": {
+          "RORgammat": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibits RORgammat function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10359472036361694,
+        "ground_truth": {
+          "this interaction": {
+            "bertscore": 0.7102835774421692,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Foxp3 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013428926467895508,
+        "ground_truth": {
+          "RORgammat function": {
+            "bertscore": 0.6074567437171936,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

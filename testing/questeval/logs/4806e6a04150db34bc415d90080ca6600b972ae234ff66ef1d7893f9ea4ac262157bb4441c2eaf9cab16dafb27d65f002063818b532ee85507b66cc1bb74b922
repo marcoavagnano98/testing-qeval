@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Bisulfite genomic sequencing was used to analyze the methylation patterns of the AR FMR1 and NPC genes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bisulfite",
+        "the AR FMR1",
+        "NPC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to analyze the methylation patterns of the AR FMR1 and NPC",
+          "What is the name of the methylation pattern of the NPC gene?",
+          "What gene was analyzed by a bisulfite genomic sequencing?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Bisulfite genomic sequencing",
+        "the methylation patterns",
+        "the AR FMR1 and NPC genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to analyze the methylation patterns of the AR FMR1 and NPC",
+          "What was the purpose of the sequencing?",
+          "What was used to analyze the methylation patterns?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was used to analyze the methylation patterns of the AR FMR1 and GPC": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05102431774139404,
+        "ground_truth": {
+          "Bisulfite": {
+            "bertscore": 0.6535287499427795,
+            "f1": 0
+          },
+          "Bisulfite genomic sequencing": {
+            "bertscore": 0.6285493969917297,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was methylated by bisulfite genomic sequencing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR FMR1",
+        "answerability": 0.8992551565170288,
+        "ground_truth": {
+          "the AR FMR1": {
+            "bertscore": 0.901344358921051,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene was analyzed by a bisulfite genomic sequencing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR FMR1",
+        "answerability": 0.893425703048706,
+        "ground_truth": {
+          "GPC3": {
+            "bertscore": 0.7620338797569275,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the purpose of the sequencing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "to analyze the methylation patterns",
+        "answerability": 0.9559220671653748,
+        "ground_truth": {
+          "the methylation patterns": {
+            "bertscore": 0.8783164024353027,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was used to analyze the methylation patterns?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5685746669769287,
+        "ground_truth": {
+          "the AR FMR1 and GPC3 genes": {
+            "bertscore": 0.5743705034255981,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

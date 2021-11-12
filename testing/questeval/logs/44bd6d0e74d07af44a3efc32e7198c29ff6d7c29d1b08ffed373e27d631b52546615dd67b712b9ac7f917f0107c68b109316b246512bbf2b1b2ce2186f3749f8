@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Three additional smaller regions show homology to the ELK-1 and SAP-1 genes a subgroup of the ets gene family that may interact with the serum response factor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Three",
+        "ELK-1",
+        "SAP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many additional regions show homology to the ELK-1 and SAP-1 genes?",
+          "What is the name of the gene that may interact with the serum response factor?",
+          "What is the name of the gene that may interact with the serum response factor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Three additional smaller regions",
+        "homology",
+        "the ELK-1",
+        "SAP-1",
+        "a subgroup",
+        "the ets gene family",
+        "the serum response factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many regions show homology to the ELK-1 and SAP-1 genes?",
+          "What do the three smaller regions show?",
+          "What is the name of the gene that has homology to the SAP-1 gene?",
+          "What is the name of the gene that may interact with the serum response factor?",
+          "What is the ELK-1 and SAP-1 genes?",
+          "What family of genes are ELK-1 and SAP-1 a subgroup of?",
+          "What may the ELK-1 and SAP-1 genes interact with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What two factors were found to interact with the intronic sequence at +265 and +4": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0365757942199707,
+        "ground_truth": {
+          "the serum response factor": {
+            "bertscore": 0.6412121057510376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the serum response factor interact with at +265 and +448?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011389970779418945,
+        "ground_truth": {
+          "the intronic sequence": {
+            "bertscore": 0.6628174185752869,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the intronic sequence of the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0037118196487426758,
+        "ground_truth": {
+          "+265": {
+            "bertscore": 0.682407557964325,
+            "f1": 0
+          },
+          "+448": {
+            "bertscore": 0.7033081650733948,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

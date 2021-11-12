@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": "ADT (0.1 mM) also inhibited H2O2 induced activation of the transcription factor in the peroxide sensitive human Wurzburg T-cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ADT",
+        "0.1 mM",
+        "H2O2",
+        "Wurzburg"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the H2O2 induced activation of the transcription factor in human",
+          "What was the dose of ADT used to inhibit H2O2 induced activation?",
+          "What induced the activation of the transcription factor in human Wurzburg T cells?",
+          "What type of T cells did ADT inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "ADT",
+        "0.1 mM",
+        "H2O2 induced activation",
+        "the transcription factor",
+        "the peroxide sensitive human Wurzburg T-cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the H2O2 induced activation of the transcription factor in human",
+          "What was the dose of ADT used to inhibit H2O2 induced activation?",
+          "What did ADT inhibit?",
+          "What did ADT inhibit in the peroxide sensitive human Wurzburg T cells?",
+          "What did ADT inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of T cells are peroxide sensitive?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Wurzburg T-cells",
+        "answerability": 0.9454342722892761,
+        "ground_truth": {
+          "Wurzburg": {
+            "bertscore": 0.8360825181007385,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What has previously shown that human Wurzburg T-cells are peroxide-sensitive": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0740659236907959,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112911224365,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells are peroxide-sensitive and sensitive to NF-kappaB activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5414999723434448,
+        "ground_truth": {
+          "human Wurzburg T-cells": {
+            "bertscore": 0.626502275466919,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are human Wurzburg T cells sensitive to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "peroxide",
+        "answerability": 0.9733307957649231,
+        "ground_truth": {
+          "NF-kappaB activation": {
+            "bertscore": 0.6363204717636108,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

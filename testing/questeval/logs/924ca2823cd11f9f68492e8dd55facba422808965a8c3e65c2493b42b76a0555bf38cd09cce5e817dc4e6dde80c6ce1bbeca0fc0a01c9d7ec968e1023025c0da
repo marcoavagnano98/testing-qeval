@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Modulating metastasis by adeno-associated virus-mediated gene transfer of IFI16.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "metastasis",
+        "adeno-associated virus-mediated gene transfer",
+        "IFI16"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of adeno-associated virus-mediated gene transfer on IFI",
+          "What is the mechanism of IFI16?",
+          "What is the name of the adeno-associated virus-mediated gene transfer that mod"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main cause of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008792281150817871,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.7011743187904358,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism that modifies metastasis in prostate cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adeno-associated virus-mediated gene transfer",
+        "answerability": 0.701980710029602,
+        "ground_truth": {
+          "a lymphangiogenic switch": {
+            "bertscore": 0.6904593110084534,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer that can be treated with a lymphangiogenic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0016359686851501465,
+        "ground_truth": {
+          "prostate cancer": {
+            "bertscore": 0.6679661273956299,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

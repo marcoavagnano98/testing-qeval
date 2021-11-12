@@ -1,0 +1,52 @@
+{
+  "type": "ref",
+  "text": "Modulating metastasis by a lymphangiogenic switch in prostate cancer.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "metastasis",
+        "a lymphangiogenic switch",
+        "prostate cancer"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of cancer?",
+          "What is the mechanism that modifies metastasis in prostate cancer?",
+          "What is the most common type of cancer that can be treated with a lymphangiogenic"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of a nuclear hormone receptor on cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006208419799804688,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.7011741995811462,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism that causes metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphangiogenic switch",
+        "answerability": 0.6084587574005127,
+        "ground_truth": {
+          "a nuclear hormone receptor": {
+            "bertscore": 0.690665066242218,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

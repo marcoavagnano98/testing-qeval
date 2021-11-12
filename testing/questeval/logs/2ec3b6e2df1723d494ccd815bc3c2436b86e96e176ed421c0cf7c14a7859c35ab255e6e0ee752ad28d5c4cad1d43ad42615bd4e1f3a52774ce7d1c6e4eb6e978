@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Stimulation of the cAMP signal transduction pathway which skews cytokine production toward a Th2 pattern resulted in the preferential suppression of Stat1 activity.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stimulation",
+        "the cAMP signal transduction pathway",
+        "cytokine production",
+        "a Th2 pattern",
+        "the preferential suppression",
+        "activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused the suppression of Stat1 activity?",
+          "What skews cytokine production toward a Th2 pattern?",
+          "What does the cAMP signal transduction pathway skew toward a Th2 pattern",
+          "What pattern does the cAMP signal transduction pathway skew cytokine production",
+          "What did Stimulation of the cAMP signal transduction pathway result in?",
+          "What did Stimulation of the cAMP signal transduction pathway result in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused the suppression of Stat1 activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stimulation of the cAMP signal transduction pathway",
+        "answerability": 0.9705794453620911,
+        "ground_truth": {
+          "Stimulation": {
+            "bertscore": 0.7591719627380371,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What skews cytokine production toward a Th2 pattern?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cAMP signal transduction pathway",
+        "answerability": 0.9600033760070801,
+        "ground_truth": {
+          "the cAMP signal transduction pathway": {
+            "bertscore": 0.9533637762069702,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the cAMP signal transduction pathway skew toward a Th2 pattern": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine production",
+        "answerability": 0.8780487179756165,
+        "ground_truth": {
+          "cytokine production": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What pattern does the cAMP signal transduction pathway skew cytokine production": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2",
+        "answerability": 0.9729588031768799,
+        "ground_truth": {
+          "a Th2 pattern": {
+            "bertscore": 0.81761634349823,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did Stimulation of the cAMP signal transduction pathway result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppression of Stat1 activity",
+        "answerability": 0.8749873042106628,
+        "ground_truth": {
+          "the preferential suppression": {
+            "bertscore": 0.7101035714149475,
+            "f1": 0.3333333333333333
+          },
+          "activity": {
+            "bertscore": 0.6965699791908264,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Analysis of gene expression revealed increased expression of ANGPT1 ANGPT2 platelets-derived growth factor-B placental growth factor and VEGF mRNA in AdCA5-injected eyes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Analysis",
+        "gene expression",
+        "increased expression",
+        "AdCA5-injected eyes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed increased expression of ANGPT1 ANGPT2 platelets-derived growth factor",
+          "What was studied in AdCA5-injected eyes?",
+          "What did analysis of gene expression reveal?",
+          "What type of injections were found to have increased expression of ANGPT1 ANGPT"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What revealed increased expression of ANGPT1 ANGPT2 platelet-derived growth factor": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Analysis of gene expression",
+        "answerability": 0.9848273396492004,
+        "ground_truth": {
+          "Analysis": {
+            "bertscore": 0.7882177829742432,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was studied in AdCA5-injected eyes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3864089846611023,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.6905693411827087,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did analysis of gene expression reveal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased expression of ANGPT1 ANGPT2 platelets-derived growth factor-B",
+        "answerability": 0.9702895879745483,
+        "ground_truth": {
+          "increased expression": {
+            "bertscore": 0.7301063537597656,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What gene expression was increased in AdCA5-injected eyes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ANGPT1 ANGPT2 platelets-derived growth factor-B placental",
+        "answerability": 0.9680817127227783,
+        "ground_truth": {
+          "ANGPT2 platelet-derived growth factor-B placental growth factor": {
+            "bertscore": 0.9128997921943665,
+            "f1": 0.6153846153846153
+          }
+        }
+      }
+    },
+    "What type of injections were found to have increased expression of ANGPT1 ANGPT": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44883352518081665,
+        "ground_truth": {
+          "AdCA5-injected eyes": {
+            "bertscore": 0.6438666582107544,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

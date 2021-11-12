@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "was MyD88 dependent as confirmed by inhibition of IL-6 TNF-alpha and IL-12 release of MyD88-knockdown JAWS II cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MyD88",
+        "IL-6 TNF",
+        "IL-12",
+        "JAWS II"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the IL-6 TNF-alpha and IL-12 release dependent on?",
+          "What was the IL-12 release of JAWS II cells dependent on?",
+          "What was released by JAWS II cells?",
+          "What type of cells were IL-12 and IL-6 regulated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "MyD88",
+        "inhibition",
+        "IL-6 TNF-alpha",
+        "IL-12 release",
+        "MyD88-knockdown JAWS II cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the IL-6 TNF-alpha and IL-12 release dependent on?",
+          "What was the effect of IL-6 TNF-alpha on MyD88?",
+          "What was the IL-12 release of MyD88 dependent on?",
+          "What was the main factor in the cytokine response?",
+          "What was IL-12 released from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What subunit of integrin was knocked down?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10356467962265015,
+        "ground_truth": {
+          "alpha2": {
+            "bertscore": 0.6782809495925903,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was induced by morpholino-mediated knockdown of the integrin al": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.041992127895355225,
+        "ground_truth": {
+          "a similar vascular phenotype": {
+            "bertscore": 0.6493648290634155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was knocked down to induce a similar vascular phenotype?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12812823057174683,
+        "ground_truth": {
+          "the integrin alpha2 subunit": {
+            "bertscore": 0.6044947504997253,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

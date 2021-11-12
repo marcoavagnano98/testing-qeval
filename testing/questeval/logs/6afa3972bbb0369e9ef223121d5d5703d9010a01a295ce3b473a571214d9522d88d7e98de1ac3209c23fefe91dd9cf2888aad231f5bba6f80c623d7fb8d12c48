@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "Exogenously transfected TAL1 and LMO but not either alone mediated\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LMO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the only gene that mediated the TAL1 infection?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Exogenously transfected TAL1",
+        "LMO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two genes were mediated by LMO?",
+          "What was the only gene that mediated the TAL1 infection?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the only gene that was induced by TAL1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08316677808761597,
+        "ground_truth": {
+          "LMO": {
+            "bertscore": 0.6950322985649109,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only way to induce a TB infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007348597049713135,
+        "ground_truth": {
+          "Exogenously transfected TAL1": {
+            "bertscore": 0.6567147970199585,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

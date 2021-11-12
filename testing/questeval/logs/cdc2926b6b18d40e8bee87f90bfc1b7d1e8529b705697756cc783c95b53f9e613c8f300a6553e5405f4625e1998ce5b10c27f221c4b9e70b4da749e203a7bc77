@@ -1,0 +1,128 @@
+{
+  "type": "ref",
+  "text": "The results showed that the expression of full-length T antigen rendered rat embryo fibroblasts (REF) sensitive to 5-FU-induced apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "REF",
+        "5-FU"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the rat embryo fibroblasts?",
+          "What apoptosis did the expression of full-length T antigen cause?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The results",
+        "the expression",
+        "full-length T antigen",
+        "rat embryo fibroblasts",
+        "REF",
+        "5-FU-induced apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that expression of full-length T antigen rendered rat embryo fibroblasts",
+          "What did the study show about full-length T antigen?",
+          "What did the study show rendered rat embryo fibroblasts sensitive to apopto",
+          "What did the expression of full-length T antigen render sensitive to 5-FU-induced",
+          "What is the name of the rat embryo fibroblasts?",
+          "What did the expression of full-length T antigen render rat embryo fibroblasts"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the term for rat embryo fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "REF",
+        "answerability": 0.9969287514686584,
+        "ground_truth": {
+          "REF": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "(REF": {
+            "bertscore": 0.847377359867096,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What apoptosis did the expression of T antigen cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "5-FU-induced apoptosis",
+        "answerability": 0.5798625946044922,
+        "ground_truth": {
+          "5-FU": {
+            "bertscore": 0.7349632978439331,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What showed that expression of T antigen rendered rat embryo fibroblasts sensitive to 5-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2914949059486389,
+        "ground_truth": {
+          "The results": {
+            "bertscore": 0.651224672794342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the results show about the T antigen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rendered rat embryo fibroblasts (REF) sensitive to 5-FU-induced",
+        "answerability": 0.8832140564918518,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6007142066955566,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show rendered rat embryo fibroblasts sensitive to apopto": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of full-length T antigen",
+        "answerability": 0.9982571601867676,
+        "ground_truth": {
+          "T antigen": {
+            "bertscore": 0.8090706467628479,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did the results of the study show was sensitive to 5-FU-induced apopto": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rat embryo fibroblasts",
+        "answerability": 0.9304495453834534,
+        "ground_truth": {
+          "rat embryo fibroblasts": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the results show about the expression of T antigen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rendered rat embryo fibroblasts (REF) sensitive to 5-FU-induced",
+        "answerability": 0.9903013110160828,
+        "ground_truth": {
+          "5-FU-induced apoptosis": {
+            "bertscore": 0.7694042921066284,
+            "f1": 0.2
+          }
+        }
+      }
+    }
+  }
+}

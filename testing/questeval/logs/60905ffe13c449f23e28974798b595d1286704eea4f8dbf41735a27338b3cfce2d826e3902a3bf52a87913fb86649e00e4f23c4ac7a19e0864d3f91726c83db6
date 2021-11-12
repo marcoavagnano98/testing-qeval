@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "In both cell lines n-acetyl-L-cysteine (NAC) a potent thiol antioxidant inhibited the triggering of the nuclear expression of NF-kappaB by IL-4 and by anti-CD40 monoclonal antibodies.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NAC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the thiol antioxidant that inhibits the nuclear expression of"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "both cell lines",
+        "n-acetyl-L-cysteine",
+        "(NAC",
+        "a potent thiol antioxidant",
+        "the triggering",
+        "the nuclear expression",
+        "NF-kappaB",
+        "anti-CD40 monoclonal antibodies"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what cell lines did NAC inhibit the nuclear expression of NF-kappaB",
+          "What is NAC?",
+          "What is n-acetyl-L-cysteine?",
+          "What is NAC?",
+          "What did NAC inhibit in both cell lines?",
+          "What did n-acetyl-L-cysteine inhibit?",
+          "What gene was inhibited by IL-4?",
+          "What did NAC inhibit in both cell lines?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the thiol antioxidant that inhibits the nuclear expression of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "n-acetyl-L-cysteine",
+        "answerability": 0.6558231115341187,
+        "ground_truth": {
+          "NAC": {
+            "bertscore": 0.5959936380386353,
+            "f1": 0
+          },
+          "n-acetyl-L-cysteine": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what cell lines did NAC inhibit the nuclear expression of NF-kappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both cell lines",
+        "answerability": 0.694173276424408,
+        "ground_truth": {
+          "both cell lines": {
+            "bertscore": 0.9999995827674866,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is n-acetyl-L-cysteine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a potent thiol antioxidant",
+        "answerability": 0.9946701526641846,
+        "ground_truth": {
+          "(NAC": {
+            "bertscore": 0.6259852647781372,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NAC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a potent thiol antioxidant",
+        "answerability": 0.9847642779350281,
+        "ground_truth": {
+          "a potent thiol antioxidant": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did NAC inhibit in both cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "triggering of the nuclear expression of NF-kappaB",
+        "answerability": 0.9688445925712585,
+        "ground_truth": {
+          "the triggering": {
+            "bertscore": 0.714650571346283,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What did n-acetyl-L-cysteine inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the triggering of the nuclear expression of NF-kappaB",
+        "answerability": 0.9705409407615662,
+        "ground_truth": {
+          "the nuclear expression": {
+            "bertscore": 0.7994446158409119,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What gene was inhibited by IL-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.8899231553077698,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did NAC inhibit the nuclear expression of NF-kappaB by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4 and by anti-CD40 monoclonal antibodies",
+        "answerability": 0.9730028510093689,
+        "ground_truth": {
+          "anti-CD40 monoclonal antibody": {
+            "bertscore": 0.8748982548713684,
+            "f1": 0.4444444444444444
+          }
+        }
+      }
+    }
+  }
+}

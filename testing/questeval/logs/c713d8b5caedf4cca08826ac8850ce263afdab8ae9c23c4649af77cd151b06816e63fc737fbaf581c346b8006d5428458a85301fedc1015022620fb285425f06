@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "We detected a specific glycosylation pattern of the mOAT1 expressed in a cell line transfected with a cDNA encoding hOAT1 (mOAT1) from the Raji human B cell line.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mOAT1",
+        "Raji"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cDNA encoding hOAT1?",
+          "What human B cell line was the cDNA encoding mOAT1 from"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a specific glycosylation pattern",
+        "the mOAT1",
+        "a cell line",
+        "a cDNA encoding hOAT1",
+        "(mOAT1",
+        "the Raji human B cell line"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the specific glycosylation pattern of mOAT1 detected in a",
+          "What did the cDNA encoding mOAT1 reveal?",
+          "What is the specific glycosylation pattern of?",
+          "What was the specific glycosylation pattern of mOAT1 detected in?",
+          "What was the mOAT1 transfected with?",
+          "What is the cDNA encoding hOAT1?",
+          "Where was the cDNA encoding mOAT1 from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the role of glycosylation in the organic anion transporter OAT1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6772711277008057,
+        "ground_truth": {
+          "Role": {
+            "bertscore": 0.671998143196106,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of OAT1 in the organic anion transporter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008454382419586182,
+        "ground_truth": {
+          "glycosylation": {
+            "bertscore": 0.634846568107605,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of glycosylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011130332946777344,
+        "ground_truth": {
+          "the organic anion transporter OAT1": {
+            "bertscore": 0.6065455079078674,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

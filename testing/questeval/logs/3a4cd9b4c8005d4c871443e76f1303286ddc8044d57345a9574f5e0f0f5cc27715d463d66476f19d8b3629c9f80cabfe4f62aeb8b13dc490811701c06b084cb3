@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "In contrast the actions of other microtubule-binding drugs such as etoposide vascular endothelial growth factor tumor necrosis factor interleukin-8 and epidermal growth factor were not affected.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "interleukin-8"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the tumor necrosis factor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "the actions",
+        "other microtubule-binding drugs",
+        "etoposide vascular endothelial growth factor tumor necrosis factor interleukin-8 and epidermal growth factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was not affected by the actions of other drugs?",
+          "What was not affected by the etoposide vascular endothelial growth",
+          "What other drugs were not affected?",
+          "What other drugs were not affected by the apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What are the actions of microtubule-binding drugs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03656083345413208,
+        "ground_truth": {
+          "Antivascular": {
+            "bertscore": 0.6766107678413391,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the effects of microtubule-binding drugs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13940417766571045,
+        "ground_truth": {
+          "Antivascular actions": {
+            "bertscore": 0.6823758482933044,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antivascular action is shown in the cytokine response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009503960609436035,
+        "ground_truth": {
+          "microtubule-binding drugs": {
+            "bertscore": 0.6187208890914917,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

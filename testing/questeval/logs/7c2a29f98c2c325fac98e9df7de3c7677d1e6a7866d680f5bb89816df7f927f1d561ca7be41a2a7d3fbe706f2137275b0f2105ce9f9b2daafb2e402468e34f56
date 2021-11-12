@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "BLPs were found to induce apoptosis in THP-1 monocytic cells through human Toll-like receptor-2 (hTLR2). BLPs also initiated apoptosis in an epithelial cell line transfected with hTLR2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "THP-1",
+        "Toll-like",
+        "hTLR2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of monocytic cells were BLPs found to induce apopto",
+          "What is the name of the receptor that initiates apoptosis?",
+          "What is the name of the human toll-like receptor-2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BLPs",
+        "apoptosis",
+        "THP-1 monocytic cells",
+        "human Toll-like receptor-2",
+        "hTLR2",
+        "BLPs",
+        "apoptosis",
+        "an epithelial cell line",
+        "hTLR2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was found to induce apoptosis in THP-1 monocytic",
+          "What did BLPs induce in THP-1 monocytic cells?",
+          "What type of cells did BLPs induce apoptosis in?",
+          "What is hTLR2?",
+          "What is the name of the human toll-like receptor-2?",
+          "What was found to induce apoptosis in THP-1 monocytic",
+          "What did BLPs induce in THP-1 monocytic cells?",
+          "Where did BLPs initiate apoptosis?",
+          "What is the name of the human toll-like receptor-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of hTLR2 was used to induce apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Toll-like receptor-2",
+        "answerability": 0.7879810929298401,
+        "ground_truth": {
+          "BLPs": {
+            "bertscore": 0.681733250617981,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did BLPs initiate in an epithelial cell line transfected with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.933256983757019,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what type of cell did BLPs initiate apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "THP-1 monocytic cells",
+        "answerability": 0.9777864217758179,
+        "ground_truth": {
+          "an epithelial cell line": {
+            "bertscore": 0.7174599170684814,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was used to induce apoptosis in a cell line transf": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7061512470245361,
+        "ground_truth": {
+          "hTLR2": {
+            "bertscore": 0.648289144039154,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

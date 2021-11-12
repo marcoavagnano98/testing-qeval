@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "These results demonstrate the selective role of PKC in the transcriptional regulation of the alpha TCR and provide the foundation for determining the regulation of this alpha TCR gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is PKC responsible for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "the selective role",
+        "PKC",
+        "the transcriptional regulation",
+        "the alpha TCR",
+        "the foundation",
+        "the regulation",
+        "this alpha TCR gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What provides the foundation for determining the regulation of the alpha TCR gene?",
+          "What do the results demonstrate about PKC?",
+          "What gene is involved in the regulation of the alpha TCR gene?",
+          "What does the PKC role in?",
+          "What gene is PKC involved in?",
+          "What do the results provide for determining the regulation of the alpha TCR gene?",
+          "What does the results of the RNAi study provide the foundation for?",
+          "What does the results provide the foundation for determining?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that regulates transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKC",
+        "answerability": 0.88004469871521,
+        "ground_truth": {
+          "TCR": {
+            "bertscore": 0.8500514030456543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the article that discusses the regulation of the T-cell-specific": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009181976318359375,
+        "ground_truth": {
+          "this article transcriptional regulation": {
+            "bertscore": 0.6488515734672546,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is discussed in this article?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14518660306930542,
+        "ground_truth": {
+          "the archetypal T-cell-specific gene alpha TCR": {
+            "bertscore": 0.5856345295906067,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "However co-culture of these cancer cells with stromal or osteoblastic cells induced apoptosis and inhibited their growth.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "However co-culture",
+        "stromal or osteoblastic cells",
+        "apoptosis",
+        "their growth"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the apoptosis of cancer cells do?",
+          "What did co-culture of cancer cells with?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells induce?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the stromal and osteoblastic cells do to induce RANKL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16294550895690918,
+        "ground_truth": {
+          "co-culture": {
+            "bertscore": 0.6970744729042053,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stromal or osteoblastic cells",
+        "answerability": 0.9843884706497192,
+        "ground_truth": {
+          "stromal or osteoblastic cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9844890832901001,
+        "ground_truth": {
+          "RANKL mRNA expression": {
+            "bertscore": 0.7080129384994507,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2586328983306885,
+        "ground_truth": {
+          "OPG mRNA expression": {
+            "bertscore": 0.6336473226547241,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

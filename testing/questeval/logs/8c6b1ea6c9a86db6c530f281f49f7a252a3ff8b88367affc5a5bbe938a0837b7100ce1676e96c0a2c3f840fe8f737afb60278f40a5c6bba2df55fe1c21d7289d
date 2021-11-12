@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "The transfection of LMP1 can increase the expression of MMP-9 in CNE1 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MMP-9"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein can be increased by transfection of LMP1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The transfection",
+        "LMP1",
+        "the expression",
+        "MMP-9",
+        "CNE1 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can increase the expression of MMP-9 in CNE1 cells?",
+          "What gene can increase the expression of MMP-9 in CNE1 cells?",
+          "What can the transfection of LMP1 increase in CNE1 cells?",
+          "What protein can be increased by transfection of LMP1?",
+          "What type of cells can be affected by the transfection of LMP1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein can be increased by transfection of LMP1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MMP-9",
+        "answerability": 0.9963751435279846,
+        "ground_truth": {
+          "MMP-9": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can increase the expression of MMP-9 in CNE1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1",
+        "answerability": 0.8882269859313965,
+        "ground_truth": {
+          "The transfection": {
+            "bertscore": 0.6803611516952515,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene can increase the expression of MMP-9 in CNE1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1",
+        "answerability": 0.9756737351417542,
+        "ground_truth": {
+          "LMP1": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can the transfection of LMP1 increase in CNE1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MMP-9",
+        "answerability": 0.9939530491828918,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6472480297088623,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells can be affected by the transfection of LMP1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CNE1 cells",
+        "answerability": 0.9375537037849426,
+        "ground_truth": {
+          "CNE1 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

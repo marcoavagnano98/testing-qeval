@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "However the signaling pathways responsible for these effects remain unclear.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the signaling pathways",
+        "these effects"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is still unclear about the effects of apoptosis?",
+          "What are the signaling pathways responsible for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is still unclear about the effects of a swine flu?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the signaling pathways responsible for these effects",
+        "answerability": 0.9317455887794495,
+        "ground_truth": {
+          "the signaling events": {
+            "bertscore": 0.8255705237388611,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What are the signaling events responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008496522903442383,
+        "ground_truth": {
+          "these effects": {
+            "bertscore": 0.6884962320327759,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

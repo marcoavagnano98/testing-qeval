@@ -1,0 +1,144 @@
+{
+  "type": "hyp",
+  "text": " channel blockade by progesterone is specific; other steroid hormones had little or no effect although the progesterone antagonist RU 486 also blocked KV and KCa channels.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RU",
+        "486",
+        "KV"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What progesterone antagonist blocked KV and KCa channels?",
+          "What is the name of the progesterone antagonist that blocked KV and KCa",
+          "What channel did RU 486 block?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        " channel blockade",
+        "progesterone",
+        "other steroid hormones",
+        "little or no effect",
+        "the progesterone antagonist RU",
+        "KV",
+        "KCa channels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did progesterone do?",
+          "What hormone blocked KV and KCa channels?",
+          "What other hormones had little or no effect on the KCa channel?",
+          "What did other steroid hormones have on the KCa channel?",
+          "What blockade of KV and KCa channels did steroid hormones have",
+          "What channel did RU 486 block?",
+          "What channel did RU 486 block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What channel blockade did RU 486 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KV and KCa",
+        "answerability": 0.9778240323066711,
+        "ground_truth": {
+          "K+": {
+            "bertscore": 0.7770346999168396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What progesterone antagonist blocked KV and KCa channels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RU 486",
+        "answerability": 0.9796553254127502,
+        "ground_truth": {
+          "RU 486": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did progesterone block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KV and KCa",
+        "answerability": 0.90293288230896,
+        "ground_truth": {
+          "K+ channel blockade": {
+            "bertscore": 0.7261337041854858,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What hormone blocked KV and KCa channels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RU 486",
+        "answerability": 0.891899585723877,
+        "ground_truth": {
+          "progesterone": {
+            "bertscore": 0.6731079816818237,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What other hormones had little or no effect on KV and KCa?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "steroid hormones",
+        "answerability": 0.8135384321212769,
+        "ground_truth": {
+          "other steroid hormones": {
+            "bertscore": 0.9243806004524231,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did other steroid hormones have on K+ channels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "little or no effect",
+        "answerability": 0.7141017913818359,
+        "ground_truth": {
+          "little or no effect": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What blockade of KV and KCa channels did steroid hormones have": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6474447250366211,
+        "ground_truth": {
+          "the progesterone antagonist RU": {
+            "bertscore": 0.6142075657844543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What channel did RU 486 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KV and KCa",
+        "answerability": 0.9880863428115845,
+        "ground_truth": {
+          "KV": {
+            "bertscore": 0.8333143591880798,
+            "f1": 0.5
+          },
+          "KCa channels": {
+            "bertscore": 0.8097692131996155,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

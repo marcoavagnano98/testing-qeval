@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "We observed no change in GATA3 expression in Th2 cells T-bet expression in Th1 cells or RORC2 mRNA expression in Th17 cells in which RUNX1 and RUNX3 were knocked down compared with control cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "no change",
+        "GATA3 expression",
+        "Th2 cells T-bet expression",
+        "Th1 cells",
+        "RORC2 mRNA expression",
+        "Th17 cells",
+        "in which RUNX1",
+        "control cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find no change in GATA3 expression in Th1 cells?",
+          "What did we observe in GATA3 expression in Th1 cells?",
+          "What did we observe no change in in Th2 cells?",
+          "What did we observe no change in GATA3 expression in?",
+          "In what cells did we observe no change in GATA3 expression?",
+          "What did we observe no change in in Th17 cells?",
+          "In what cells did we observe no change in GATA3 expression?",
+          "In what cells were the mRNA expression of RUNX1 and RUNX3",
+          "What cells were knocked down?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we find no change in GATA3 expression in Th1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4844723343849182,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we observe in GATA3 expression in Th1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4871634840965271,
+        "ground_truth": {
+          "no change": {
+            "bertscore": 0.717848002910614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we observe no change in in Th2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA3 expression",
+        "answerability": 0.9810256361961365,
+        "ground_truth": {
+          "GATA3 expression": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did we observe no change in GATA3 expression in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2 cells",
+        "answerability": 0.9993668794631958,
+        "ground_truth": {
+          "Th2 cells T-bet expression": {
+            "bertscore": 0.883090615272522,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "In what cells did we observe no change in GATA3 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2 cells",
+        "answerability": 0.9997700452804565,
+        "ground_truth": {
+          "Th1 cells": {
+            "bertscore": 0.9652388095855713,
+            "f1": 0.5
+          },
+          "Th17 cells": {
+            "bertscore": 0.9486697912216187,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did we observe no change in in Th17 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA3 expression",
+        "answerability": 0.9132651686668396,
+        "ground_truth": {
+          "RORC2 mRNA expression": {
+            "bertscore": 0.8449590802192688,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "In what cells were the mRNA expression of RUNX1 and RUNX3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th1 cells",
+        "answerability": 0.8549743294715881,
+        "ground_truth": {
+          "in which RUNX1": {
+            "bertscore": 0.7041261196136475,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were knocked down?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4136163592338562,
+        "ground_truth": {
+          "control cells": {
+            "bertscore": 0.6794714331626892,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

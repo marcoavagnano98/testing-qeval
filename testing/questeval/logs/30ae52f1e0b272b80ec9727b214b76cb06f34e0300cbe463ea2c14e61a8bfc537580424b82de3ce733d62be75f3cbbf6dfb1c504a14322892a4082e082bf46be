@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "Together this suggests that ligand-activated GR may compete with phospho-GATA-3 for importin-alpha and thereby limit GATA-3 nuclear import.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may compete with phospho-GATA-3 for importin-alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "ligand-activated GR",
+        "phospho-GATA-3",
+        "importin-alpha",
+        "GATA-3 nuclear import"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may compete with phospho-GATA-3 for importin-alpha?",
+          "What does the ligand-activated GR compete with for importin-alpha",
+          "What does ligand-activated GR compete with phospho-GATA-3?",
+          "What could ligand-activated GR limit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What may compete with phospho-GATA-3 for nuclear import?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ligand-activated GR",
+        "answerability": 0.9268995523452759,
+        "ground_truth": {
+          "GR": {
+            "bertscore": 0.6884414553642273,
+            "f1": 0.6666666666666666
+          },
+          "ligand-activated GR": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the ligand-activated GR compete with for nuclear import?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phospho-GATA-3",
+        "answerability": 0.981643795967102,
+        "ground_truth": {
+          "phospho-GATA-3": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does ligand-activated GR compete with phospho-GATA-3 for": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "importin-alpha",
+        "answerability": 0.7510446906089783,
+        "ground_truth": {
+          "nuclear import": {
+            "bertscore": 0.7278692126274109,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

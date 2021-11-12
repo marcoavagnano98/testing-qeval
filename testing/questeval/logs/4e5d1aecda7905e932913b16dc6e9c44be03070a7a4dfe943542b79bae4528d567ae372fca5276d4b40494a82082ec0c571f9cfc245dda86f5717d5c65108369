@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Here we report that cross-linking of Fc gamma RI or Fc gamma RII by adherent human IgG or by specific anti-Fc gamma R mAb\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RII",
+        "IgG"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the mAb that is used to identify a mutated",
+          "What is the mAb used to detect a protein that is not a human?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "that cross-linking of Fc gamma RI or Fc gamma RII",
+        "adherent human IgG",
+        "specific anti-Fc gamma R mAb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the purpose of this study?",
+          "What do we report here?",
+          "What is the mAb used to test for a specific anti-Fc gam",
+          "What is the other way to test for a specific ligand?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the gamma RI?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39515870809555054,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          },
+          "Fc": {
+            "bertscore": 0.693091094493866,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do we report here?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cross-linking of Fc gamma RI or Fc gamm",
+        "answerability": 0.8674367666244507,
+        "ground_truth": {
+          "that cross-linking of Fc gamma RI": {
+            "bertscore": 0.8793973326683044,
+            "f1": 0.7142857142857143
+          }
+        }
+      }
+    }
+  }
+}

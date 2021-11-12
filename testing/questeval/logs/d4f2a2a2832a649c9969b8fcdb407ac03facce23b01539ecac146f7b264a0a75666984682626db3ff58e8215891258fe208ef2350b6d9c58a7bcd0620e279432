@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "In HeLa cells as well as in B cells TNF-alpha rapidly induced nuclear recruitment of NF-kappaB p50-p65 but not NF-kappaB p50.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HeLa",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of cell did TNF-alpha induce nuclear recruitment?",
+          "What protein induced nuclear recruitment in HeLa cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HeLa cells",
+        "B cells TNF-alpha",
+        "nuclear recruitment",
+        "NF-kappaB p50-p65",
+        "not NF-kappaB p50"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of cell did TNF-alpha induce nuclear recruitment?",
+          "What induced nuclear recruitment in HeLa cells?",
+          "What did TNF-alpha induce in HeLa cells?",
+          "What does TNF-alpha induce nuclear recruitment of?",
+          "What is the only protein that is not induced by TNF-alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What requires NF-kappaB recruitment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015016257762908936,
+        "ground_truth": {
+          "Activation-dependent transcriptional regulation": {
+            "bertscore": 0.6421085000038147,
+            "f1": 0
+          },
+          "the human Fas promoter": {
+            "bertscore": 0.6404593586921692,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does activation-dependent transcriptional regulation of the human Fas promoter require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007814168930053711,
+        "ground_truth": {
+          "NF-kappaB p50-p65 recruitment": {
+            "bertscore": 0.6379407048225403,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

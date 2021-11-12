@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "that disrupts binding to LEF-1 E-cadherin or APC but not axin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LEF-1 E-cadherin",
+        "APC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does axin do that is not binding to?",
+          "What is the other name for axin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "that disrupts",
+        "LEF-1 E-cadherin",
+        "APC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of a peptide on the binding to LEF-1 E-",
+          "What does axin do that is not binding to?",
+          "What is the other name for axin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein does axin disrupt?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004611015319824219,
+        "ground_truth": {
+          "LEF-1 E-cadherin": {
+            "bertscore": 0.6453044414520264,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is not able to be binded to LEF-1 E-ca": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42614424228668213,
+        "ground_truth": {
+          "APC": {
+            "bertscore": 0.7005522847175598,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of a peptide on binding to LEF-1 E-ca": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49533480405807495,
+        "ground_truth": {
+          "that disrupts": {
+            "bertscore": 0.7296074628829956,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

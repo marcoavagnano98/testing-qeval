@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Apoptosis induced by DNA damage and other stresses can proceed via expression of Fas ligand (FasL) and ligation of its receptor Fas (CD95). Bcl-2 protein inhibits paclitaxel-induced apoptosis by inhibiting calcineurin activation blocking NFAT nuclear translocation and preventing FasL expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fas",
+        "Fas",
+        "CD95"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What ligand is involved in apoptosis?",
+          "What ligand is involved in apoptosis?",
+          "What is the receptor of Fas?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Apoptosis",
+        "DNA damage",
+        "other stresses",
+        "expression",
+        "Fas ligand",
+        "(FasL",
+        "ligation",
+        "its receptor Fas",
+        "CD95",
+        "protein",
+        "paclitaxel-induced apoptosis",
+        "calcineurin activation",
+        "NFAT nuclear translocation",
+        "FasL expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is induced by DNA damage and other stresses?",
+          "What is the main cause of apoptosis?",
+          "What can apoptosis be induced by?",
+          "What does Bcl-2 inhibit?",
+          "What does FasL stand for?",
+          "What is the name of the ligand that causes apoptosis?",
+          "What is the process that causes apoptosis?",
+          "What is CD95?",
+          "What is the receptor of Fas?",
+          "What is Bcl-2?",
+          "What does Bcl-2 inhibit?",
+          "What does Bcl-2 inhibit?",
+          "What does Bcl-2 block?",
+          "What does Bcl-2 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Bcl-2 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT nuclear translocation",
+        "answerability": 0.7906339764595032,
+        "ground_truth": {
+          "drug-induced apoptosis": {
+            "bertscore": 0.7589973211288452,
+            "f1": 0
+          },
+          "NFAT nuclear translocation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "FasL expression": {
+            "bertscore": 0.7223884463310242,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockades NFAT nuclear translocation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "calcineurin",
+        "answerability": 0.9252462387084961,
+        "ground_truth": {
+          "calcineurin activation": {
+            "bertscore": 0.868830144405365,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

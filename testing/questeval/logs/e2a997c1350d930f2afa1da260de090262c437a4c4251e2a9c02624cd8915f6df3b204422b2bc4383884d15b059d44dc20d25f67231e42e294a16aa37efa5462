@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "In vitro studies the results indicated that DATS induced morphologic changes and induction of apoptosis in CT26 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "DATS",
+        "morphologic",
+        "CT26"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced morphologic changes and induction of apoptosis in CT",
+          "What changes did DATS induce in CT26 cells?",
+          "What type of cells were induced by DATS?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the results",
+        "DATS",
+        "morphologic changes",
+        "induction",
+        "apoptosis",
+        "CT26 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicated that DATS induced morphologic changes and induction of apopto",
+          "What induced morphologic changes and induction of apoptosis in CT",
+          "What did DATS induce in CT26 cells?",
+          "What did DATS induce in CT26 cells?",
+          "What did DATS induce in CT26 cells?",
+          "What did DATS induce morphologic changes and induction of apoptosis"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induced morphological changes and induction of apoptosis in CT": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DATS",
+        "answerability": 0.9880194664001465,
+        "ground_truth": {
+          "DATS": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were induced by DATS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CT26 cells",
+        "answerability": 0.8864809274673462,
+        "ground_truth": {
+          "CT26": {
+            "bertscore": 0.848153293132782,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What indicated that DATS induced morphological changes and induction of apopto": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "In vitro studies",
+        "answerability": 0.9550171494483948,
+        "ground_truth": {
+          "the results": {
+            "bertscore": 0.6923944354057312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did DATS induce in CT26 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "morphologic changes and induction of apoptosis",
+        "answerability": 0.9748836159706116,
+        "ground_truth": {
+          "morphological changes": {
+            "bertscore": 0.8332923054695129,
+            "f1": 0.25
+          },
+          "induction": {
+            "bertscore": 0.6940059661865234,
+            "f1": 0.2857142857142857
+          },
+          "apoptosis": {
+            "bertscore": 0.8163773417472839,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What did DATS induce morphological changes and induction of apoptosis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6039236783981323,
+        "ground_truth": {
+          "CT26 cells": {
+            "bertscore": 0.6209798455238342,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

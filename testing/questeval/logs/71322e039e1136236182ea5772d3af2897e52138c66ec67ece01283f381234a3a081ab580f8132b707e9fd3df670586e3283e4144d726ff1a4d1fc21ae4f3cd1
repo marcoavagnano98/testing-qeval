@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "This lysate was also necessary for ER to diminish the DNA-binding activity of GATA-1.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This lysate",
+        "ER",
+        "the DNA-binding activity",
+        "GATA-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was necessary for ER to diminish the DNA-binding activity of GATA-1?",
+          "What protein was needed to decrease the DNA binding activity of GATA-1?",
+          "What did ER need to decrease?",
+          "What protein was lysed to reduce the DNA binding activity?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was necessary for ER to diminish the DNA-binding activity of GATA-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lysate",
+        "answerability": 0.9949812889099121,
+        "ground_truth": {
+          "This lysate": {
+            "bertscore": 0.8338207006454468,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein was needed to decrease the DNA binding activity of GATA-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ER",
+        "answerability": 0.9703630805015564,
+        "ground_truth": {
+          "ER": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did ER need to decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA-binding activity",
+        "answerability": 0.9429839253425598,
+        "ground_truth": {
+          "the DNA-binding activity": {
+            "bertscore": 0.9311442375183105,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was lysed to reduce the DNA binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ER",
+        "answerability": 0.8720970153808594,
+        "ground_truth": {
+          "GATA-1": {
+            "bertscore": 0.746667206287384,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

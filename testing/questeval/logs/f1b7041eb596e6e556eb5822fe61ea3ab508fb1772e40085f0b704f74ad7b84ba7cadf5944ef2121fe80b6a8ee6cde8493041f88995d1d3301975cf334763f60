@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "We investigated stem cell factor (SCF) production by osteoblasts because mast cells which occur ectopically in hyperparathyroid bone are induced by SCF.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "stem cell factor",
+        "(SCF) production",
+        "osteoblasts",
+        "mast cells",
+        "hyperparathyroid bone",
+        "SCF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the researchers investigate about the production of stem cell factor?",
+          "What is the name for the protein that produces osteoblasts?",
+          "What did we investigate by investigating the production of osteoblasts?",
+          "What is the main source of stem cell factor production?",
+          "What is induced by SCF?",
+          "What type of bone is induced by SCF?",
+          "What is the name of the cell that is produced by osteoblasts?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the stem cell factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3250783085823059,
+        "ground_truth": {
+          "Parathyroid hormone-regulated production": {
+            "bertscore": 0.6292125582695007,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What hormone is produced in human osteoblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stem cell factor",
+        "answerability": 0.9031170010566711,
+        "ground_truth": {
+          "stem cell factor": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are regulated by the production of stem cell factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mast cells",
+        "answerability": 0.8559272289276123,
+        "ground_truth": {
+          "human osteoblasts": {
+            "bertscore": 0.764351487159729,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are regulated by the hormone thyroid?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10641783475875854,
+        "ground_truth": {
+          "osteoblast-like cells": {
+            "bertscore": 0.6080882549285889,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

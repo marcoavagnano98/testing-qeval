@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "A T cell-specific protein Neg-1 and a ubiquitous protein Neg-2 binding to NRE- I and NRE-II respectively were identified.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NRE-II"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that is binding to NRE-I?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A T cell-specific protein",
+        "a ubiquitous protein",
+        "NRE-",
+        "I",
+        "NRE-II"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was identified as Neg-1?",
+          "What is Neg-2?",
+          "What is the name of the protein that is binding to NRE-II?",
+          "What is the binding site of NRE-II?",
+          "What is the name of the protein that is binding to NRE-I?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is binding to NRE-I?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Neg-1",
+        "answerability": 0.9960628747940063,
+        "ground_truth": {
+          "NRE-II": {
+            "bertscore": 0.8437246680259705,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was identified as Neg-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43035441637039185,
+        "ground_truth": {
+          "A T cell-specific protein": {
+            "bertscore": 0.6060323715209961,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Neg-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003141164779663086,
+        "ground_truth": {
+          "a ubiquitous protein": {
+            "bertscore": 0.6703290343284607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is binding to NRE-II?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Neg-1",
+        "answerability": 0.9971977472305298,
+        "ground_truth": {
+          "NRE- I": {
+            "bertscore": 0.8584193587303162,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

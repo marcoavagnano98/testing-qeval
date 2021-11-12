@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Constitutive expression of protein kinase C-zeta stimulates leukemic cell differentiation. Overexpression of protein kinase C-zeta stimulates leukemic cell differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Constitutive expression",
+        "protein kinase C-zeta",
+        "leukemic cell differentiation",
+        "Overexpression",
+        "protein kinase C-zeta",
+        "leukemic cell differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of leukemic cell differentiation?",
+          "What is the key to preventing leukemic cell differentiation?",
+          "What does overexpression of protein kinase C-zeta do?",
+          "What is the cause of leukemic cell differentiation?",
+          "What is the key to preventing leukemic cell differentiation?",
+          "What does overexpression of protein kinase C-zeta do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of leukemic cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42375415563583374,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191470265388489,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulates leukemic cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression",
+        "answerability": 0.9296180605888367,
+        "ground_truth": {
+          "protein kinase C-zeta": {
+            "bertscore": 0.6582635045051575,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does overexpression of protein kinase C-zeta stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukemic cell differentiation",
+        "answerability": 0.9811214208602905,
+        "ground_truth": {
+          "leukemic cell differentiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

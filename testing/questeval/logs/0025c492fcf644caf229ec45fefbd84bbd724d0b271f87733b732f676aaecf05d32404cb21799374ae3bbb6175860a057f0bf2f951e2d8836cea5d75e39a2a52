@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "Short interfering RNA-mediated depletion of IE2-86 restored the ability of HCMV-infected cells to accumulate mdm2 in response to proteasome inhibition.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What interfers with IE2-86?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RNA-mediated depletion",
+        "IE2-86",
+        "the ability",
+        "HCMV-infected cells",
+        "mdm2",
+        "response",
+        "proteasome inhibition"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused HCMV to accumulate mdm2?",
+          "What enzyme was depleted by RNA?",
+          "What did short interfering RNA-mediated depletion of IE2-86 restore",
+          "What cells were able to accumulate mdm2 in response to proteasome inhibition",
+          "What did HCMV-infected cells accumulate in response to proteasome inhibition?",
+          "What did HCMV-infected cells do to accumulate mdm2?",
+          "What caused HCMV to accumulate mdm2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What interfers with IE2-86?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3652040958404541,
+        "ground_truth": {
+          "RNA": {
+            "bertscore": 0.68595290184021,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What caused HCMV to accumulate mdm2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proteasome inhibition",
+        "answerability": 0.616996705532074,
+        "ground_truth": {
+          "RNA-mediated depletion": {
+            "bertscore": 0.7604878544807434,
+            "f1": 0
+          },
+          "proteasome inhibition": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What enzyme was depleted by RNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IE2-86",
+        "answerability": 0.9086312651634216,
+        "ground_truth": {
+          "IE2-86": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did short interfering RNA-mediated depletion of IE2-86 restore": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ability of HCMV-infected cells to accumulate mdm2",
+        "answerability": 0.7264406681060791,
+        "ground_truth": {
+          "the ability": {
+            "bertscore": 0.6655714511871338,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What cells were able to accumulate mdm2 in response to proteasome inhibition": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HCMV-infected cells",
+        "answerability": 0.8854992389678955,
+        "ground_truth": {
+          "HCMV-infected cells": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did HCMV-infected cells accumulate in response to proteasome inhibition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mdm2",
+        "answerability": 0.9721212983131409,
+        "ground_truth": {
+          "mdm2": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did HCMV-infected cells do to accumulate mdm2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11319166421890259,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7024292945861816,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

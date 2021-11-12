@@ -1,0 +1,58 @@
+{
+  "type": "hyp",
+  "text": "Expression of the Bcl-3 proto-oncogene suppresses apoptosis in human T lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "the Bcl-3 proto-oncogene",
+        "apoptosis",
+        "human T lymphocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppresses apoptosis in human T lymphocytes?",
+          "What suppresses apoptosis in human T lymphocytes?",
+          "What does the Bcl-3 proto-oncogene suppress?",
+          "What does the Bcl-3 proto-oncogene suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppresses p53 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019233226776123047,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7109297513961792,
+            "f1": 0
+          },
+          "the Bcl-3 proto-oncogene": {
+            "bertscore": 0.5985134840011597,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the Bcl-3 proto-oncogene suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9806033372879028,
+        "ground_truth": {
+          "p53 activation": {
+            "bertscore": 0.7402319312095642,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

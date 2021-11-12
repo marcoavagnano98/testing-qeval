@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "However the mechanism by which IFNs mediate this inhibition has not been defined. IL-4 activates gene expression by inducing tyrosine phosphorylation homodimerization and nuclear translocation of the latent transcription factor STAT6 (signal transducer and activator of transcription-6).\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the mechanism",
+        "IFNs",
+        "this inhibition",
+        "gene expression",
+        "tyrosine phosphorylation homodimerization",
+        "nuclear translocation",
+        "the latent transcription factor",
+        "(signal transducer",
+        "activator",
+        "transcription-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has not been defined?",
+          "What is the mechanism by which IL-4 mediates this inhibition?",
+          "What is the mechanism by which IFNs mediate?",
+          "What does IL-4 activate?",
+          "What does IL-4 induce?",
+          "What is the mechanism by which IFNs mediate this inhibition?",
+          "What does STAT6 do?",
+          "What is STAT6?",
+          "What is the role of transcription factor STAT6?",
+          "What is STAT6?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does IL-4 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6928082704544067,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.6905693411827087,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 do to activate gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inducing tyrosine phosphorylation homodimerization and nuclear",
+        "answerability": 0.9798406958580017,
+        "ground_truth": {
+          "tyrosine phosphorylation homodimerization": {
+            "bertscore": 0.9206560850143433,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the name of the latent transcription factor STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5013202428817749,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 0.7173126935958862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does STAT6 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transducer and activator of transcription",
+        "answerability": 0.9343756437301636,
+        "ground_truth": {
+          "the latent transcription factor": {
+            "bertscore": 0.7390068769454956,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What is STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transducer and activator of transcription-6",
+        "answerability": 0.9832953214645386,
+        "ground_truth": {
+          "(signal transducer": {
+            "bertscore": 0.7216248512268066,
+            "f1": 0.5
+          },
+          "transcription-6": {
+            "bertscore": 0.8210485577583313,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is the role of transcription-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transducer and activator",
+        "answerability": 0.9630756378173828,
+        "ground_truth": {
+          "activator": {
+            "bertscore": 0.8224523663520813,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

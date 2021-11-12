@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Human herpesvirus 6 (HHV-6) is a lymphotropic herpesvirus and in vitro it can productively infect human CD4+ T cells as HIV-1. HIV-1 HHV-6 and HHV-6 can activate the human immunodeficiency virus (HIV) promoter and accelerate cytopathic effects in HIV-infected T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6",
+        "HIV-1",
+        "HIV-1 HHV-6",
+        "HHV-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the herpesvirus that can infect human CD4+ T",
+          "What is the name of the virus that can infect human CD4+ T cells?",
+          "What is the name of the herpesvirus that can infect human CD4+ T",
+          "What is the name of the herpesvirus that can infect human CD4+ T"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human herpesvirus",
+        "a lymphotropic herpesvirus",
+        "it",
+        "human CD4",
+        "T cells",
+        "HIV-1 HHV-6",
+        "HHV-6",
+        "the human immunodeficiency virus",
+        "cytopathic effects",
+        "HIV-infected T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the herpesvirus that can infect human CD4+ T",
+          "What is HHV-6?",
+          "What is the name of the herpesvirus that can infect human CD4+ T",
+          "What type of T cells can HIV-1 infect?",
+          "What type of cells can HIV-1 infect?",
+          "What is the name of the herpesvirus that can infect human CD4+ T",
+          "What is the name of the herpesvirus that can infect human CD4+ T",
+          "What does HHV-6 activate?",
+          "What does HHV-6 accelerate in HIV-infected T cells?",
+          "What does HHV-6 affect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the virus that can activate the HIV promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5212324857711792,
+        "ground_truth": {
+          "6": {
+            "bertscore": 0.6620547771453857,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is HHV-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.654244601726532,
+        "ground_truth": {
+          "Human herpesvirus": {
+            "bertscore": 0.6344103813171387,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HHV-6 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6725866794586182,
+        "ground_truth": {
+          "the human immunodeficiency virus": {
+            "bertscore": 0.6071332693099976,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HHV-6 accelerate in HIV-infected human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytopathic effects",
+        "answerability": 0.512892484664917,
+        "ground_truth": {
+          "cytopathic effects": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells can be affected by HHV-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD4+ T cells",
+        "answerability": 0.9093225002288818,
+        "ground_truth": {
+          "HIV-infected human T cells": {
+            "bertscore": 0.7893121242523193,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

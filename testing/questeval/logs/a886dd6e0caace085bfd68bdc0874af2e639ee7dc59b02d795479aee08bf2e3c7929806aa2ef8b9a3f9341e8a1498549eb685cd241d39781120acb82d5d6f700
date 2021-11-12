@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Therefore we next examined the effect of DMI on Ca3/7 cells resistant to growth inhibition by the synthetic glucocorticoid fluocinolone acetonide (FA).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "DMI",
+        "FA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the name of the synthetic glucocorticoid?",
+          "What is the name of the synthetic glucocorticoid fluocinol"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "the effect",
+        "DMI",
+        "Ca3/7 cells",
+        "growth inhibition",
+        "the synthetic glucocorticoid"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we do to examine the effect of DMI on Ca3/7 cells?",
+          "What did we examine in the study of Ca3/7 cells?",
+          "What was the name of the synthetic glucocorticoid?",
+          "What cells were resistant to growth inhibition by DMI?",
+          "What is DMI resistant to?",
+          "What is the name of the substance that inhibits growth of Ca3/7 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is suggested to inhibit the growth of Ca3/7 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47931766510009766,
+        "ground_truth": {
+          "DMI": {
+            "bertscore": 0.6886564493179321,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcriptional process is DMI thought to affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4115205407142639,
+        "ground_truth": {
+          "GR": {
+            "bertscore": 0.6718540787696838,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does DMI inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "growth",
+        "answerability": 0.7668814063072205,
+        "ground_truth": {
+          "the growth": {
+            "bertscore": 0.8881710767745972,
+            "f1": 1.0
+          },
+          "Ca3/7 cells": {
+            "bertscore": 0.7153983116149902,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does DMI affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ca3/7 cells resistant to growth inhibition",
+        "answerability": 0.9671595096588135,
+        "ground_truth": {
+          "GR-mediated transcription": {
+            "bertscore": 0.727573812007904,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

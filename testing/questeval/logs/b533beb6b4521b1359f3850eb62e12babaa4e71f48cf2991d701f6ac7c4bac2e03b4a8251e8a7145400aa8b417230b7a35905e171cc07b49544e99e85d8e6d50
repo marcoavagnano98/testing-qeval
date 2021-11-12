@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Regulation of Fas ligand expression and cell death by apoptosis-linked gene 4.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that regulates apoptosis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Regulation",
+        "Fas",
+        "ligand expression",
+        "cell death",
+        "apoptosis-linked gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of apoptosis-linked gene 4 in cell death?",
+          "What ligand is involved in cell death?",
+          "What is the main factor in cell death?",
+          "What is the result of apoptosis-linked gene 4?",
+          "What is the main factor in cell death?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that regulates apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.031286418437957764,
+        "ground_truth": {
+          "4": {
+            "bertscore": 0.6834467649459839,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of apoptosis-linked gene 4 in cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Regulation of Fas ligand expression and cell death",
+        "answerability": 0.9851072430610657,
+        "ground_truth": {
+          "Regulation": {
+            "bertscore": 0.7075226902961731,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What ligand is involved in cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fas",
+        "answerability": 0.90107661485672,
+        "ground_truth": {
+          "Fas": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main factor in cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1959952712059021,
+        "ground_truth": {
+          "ligand expression": {
+            "bertscore": 0.6957038640975952,
+            "f1": 0
+          },
+          "apoptosis-linked gene": {
+            "bertscore": 0.5992281436920166,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of apoptosis-linked gene 4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell death",
+        "answerability": 0.9927001595497131,
+        "ground_truth": {
+          "cell death": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

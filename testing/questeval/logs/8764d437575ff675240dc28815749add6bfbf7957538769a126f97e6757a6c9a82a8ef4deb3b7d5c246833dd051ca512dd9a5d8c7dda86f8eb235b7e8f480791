@@ -1,0 +1,144 @@
+{
+  "type": "hyp",
+  "text": "Although interleukin (IL)-12 was originally purified from an Epstein-Barr (EBV)-transformed B cell line and the high correlation of EBV infection and IL-12 expression has been suggested no study has reported whether EBV infection is directly involved in IL-12 expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Epstein-Barr"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the original name for the EBV-transformed B cell line?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "interleukin",
+        "IL)-12",
+        "an Epstein-Barr (EBV)-transformed B cell line",
+        "the high correlation",
+        "EBV infection",
+        "IL-12 expression",
+        "no study",
+        "EBV infection",
+        "IL-12 expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IL-12?",
+          "What is interleukin?",
+          "What was interleukin originally purified from?",
+          "What has been suggested about EBV infection and IL-12 expression?",
+          "What is the high correlation of interleukin and IL-12?",
+          "What is the correlation between EBV infection and IL-12?",
+          "Is there a correlation between EBV infection and IL-12?",
+          "What is the high correlation of interleukin and IL-12?",
+          "What is the correlation between EBV infection and IL-12?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the original name for the B cell line that contains interleukin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34393250942230225,
+        "ground_truth": {
+          "Epstein-Barr": {
+            "bertscore": 0.6786244511604309,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin",
+        "answerability": 0.985102117061615,
+        "ground_truth": {
+          "interleukin": {
+            "bertscore": 0.9999996423721313,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is interleukin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL",
+        "answerability": 0.8340364694595337,
+        "ground_truth": {
+          "IL)-12": {
+            "bertscore": 0.7862656116485596,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was interleukin originally purified from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an Epstein-Barr (EBV)-transformed B cell line",
+        "answerability": 0.9883183836936951,
+        "ground_truth": {
+          "an Epstein-Barr (EBV)-transformed B cell line": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What has been suggested about EBV infection and IL-12 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "high correlation",
+        "answerability": 0.9079363942146301,
+        "ground_truth": {
+          "the high correlation": {
+            "bertscore": 0.9226869344711304,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the high correlation of IL-12 with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.28137314319610596,
+        "ground_truth": {
+          "EBV infection": {
+            "bertscore": 0.6393148303031921,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the correlation between EBV infection and IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "high",
+        "answerability": 0.9960806965827942,
+        "ground_truth": {
+          "IL-12 expression": {
+            "bertscore": 0.6732814311981201,
+            "f1": 0
+          },
+          "expression": {
+            "bertscore": 0.8513916730880737,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Is there a direct correlation between EBV infection and IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "no study has reported whether EBV infection is directly involved in IL-12 expression",
+        "answerability": 0.9980200529098511,
+        "ground_truth": {
+          "no study": {
+            "bertscore": 0.6726437211036682,
+            "f1": 0.2666666666666667
+          }
+        }
+      }
+    }
+  }
+}

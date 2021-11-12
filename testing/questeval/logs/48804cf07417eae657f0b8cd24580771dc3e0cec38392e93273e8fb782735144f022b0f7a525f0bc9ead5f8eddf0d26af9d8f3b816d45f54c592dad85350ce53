@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "Here we show that the carboxyl terminus of HSP70-interacting protein (CHIP) binds ubiquitinates and promotes the ubiquitin proteasomal degradation of LRRK2.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "the carboxyl terminus",
+        "the ubiquitin proteasomal degradation",
+        "LRRK2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the purpose of this study?",
+          "What binds ubiquitinates?",
+          "What does the carboxyl terminus of HSP70-interacting protein promote?",
+          "What is the carboxyl terminus of HSP70-interacting protein?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05338633060455322,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.674835205078125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the ubiquitination of HSP70-interacting protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11008995771408081,
+        "ground_truth": {
+          "the carboxyl terminus": {
+            "bertscore": 0.6308267116546631,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the carboxyl terminus of HSP70-interacting protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6359896659851074,
+        "ground_truth": {
+          "CHIP": {
+            "bertscore": 0.6945230960845947,
+            "f1": 0
+          },
+          "LRRK2": {
+            "bertscore": 0.6517668962478638,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the carboxyl terminus of HSP70-interacting protein (CHIP)": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binds ubiquitinates and promotes the ubiquitin proteasom",
+        "answerability": 0.9359498620033264,
+        "ground_truth": {
+          "the ubiquitin proteasomal degradation": {
+            "bertscore": 0.8203661441802979,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    }
+  }
+}

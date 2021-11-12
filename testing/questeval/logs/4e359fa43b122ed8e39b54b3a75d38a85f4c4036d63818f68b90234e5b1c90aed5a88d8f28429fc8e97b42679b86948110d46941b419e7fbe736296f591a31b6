@@ -1,0 +1,58 @@
+{
+  "type": "hyp",
+  "text": "Cloning of a human phosphoinositide 3-kinase with a C2 domain that can phosphorylate wortmannin and the identification of a putative human phosphoinositide 3-kinase in a C2 domain. wortmannin-sensitivity is reduced in a murine phosphoinositide 3-kinase-deficient mutant.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a C2 domain",
+        "wortmannin",
+        "the identification",
+        "a C2 domain",
+        "wortmannin-sensitivity",
+        "a murine phosphoinositide 3-kinase-deficient mutant"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the kinase that can phosphorylate wort",
+          "What is a phosphoinositide 3-kinase that can phospho",
+          "What is the purpose of the cloning of a human phosphoinosit",
+          "What is the name of the kinase that can phosphorylate wort",
+          "What is reduced in a murine phosphoinositide 3-kinase",
+          "What is wortmannin-sensitivity reduced in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does a human phosphoinositide 3-kinase have that is": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "wortmannin",
+        "answerability": 0.8077532649040222,
+        "ground_truth": {
+          "a C2 domain": {
+            "bertscore": 0.6725206971168518,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the C2 domain of wortmannin have reduced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sensitivity",
+        "answerability": 0.9366422295570374,
+        "ground_truth": {
+          "sensitivity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

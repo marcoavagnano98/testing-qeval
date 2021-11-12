@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "Furthermore CD40 ligation of a HLA-A2+ MelanA/MART1+ MM cell line enhanced its susceptibility to specific lysis by a HLA-A2-restricted MelanA/MART-1-specific\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cell line was ligated with HLA-A2+ MelanA/M"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Furthermore CD40 ligation",
+        "a HLA-A2+ MelanA/MART1+ MM cell line",
+        "its susceptibility",
+        "specific lysis",
+        "a HLA-A2-restricted MelanA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhanced the susceptibility of a HLA-A2+ MelanA/",
+          "What enhanced the susceptibility to specific lysis?",
+          "What did CD40 ligation of a HLA-A2+ MelanA",
+          "What did CD40 ligation of a HLA-A2+ MelanA",
+          "What lysis did CD40 ligation of a MM cell line increase its sus"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cell type was induced by CD40 ligation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5731160044670105,
+        "ground_truth": {
+          "MM": {
+            "bertscore": 0.682552695274353,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induced growth inhibition and apoptosis in MM?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3443031311035156,
+        "ground_truth": {
+          "CD40 ligation": {
+            "bertscore": 0.6339155435562134,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did CD40 ligation induce in MM?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "specific lysis",
+        "answerability": 0.9196457862854004,
+        "ground_truth": {
+          "growth inhibition": {
+            "bertscore": 0.751737654209137,
+            "f1": 0
+          },
+          "apoptosis": {
+            "bertscore": 0.7318513989448547,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

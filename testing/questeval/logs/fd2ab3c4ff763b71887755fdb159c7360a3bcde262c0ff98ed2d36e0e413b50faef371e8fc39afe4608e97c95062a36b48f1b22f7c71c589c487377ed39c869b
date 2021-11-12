@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "The interaction between Trx and ASK1 was found to be highly dependent on the redox status of Trx.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ASK1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the interaction between Trx and?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The interaction",
+        "Trx",
+        "ASK1",
+        "the redox status",
+        "Trx"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is highly dependent on the redox status of Trx?",
+          "What is the redox status of ASK1?",
+          "What is the interaction between Trx and?",
+          "What is the interaction between Trx and ASK1 highly dependent on?",
+          "What is the redox status of ASK1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the interaction between Trx and?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ASK1",
+        "answerability": 0.9891884326934814,
+        "ground_truth": {
+          "ASK1": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is highly dependent on the redox status of Trx?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The interaction between Trx and ASK1",
+        "answerability": 0.9914518594741821,
+        "ground_truth": {
+          "The interaction": {
+            "bertscore": 0.7256982922554016,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the redox status of ASK1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.020295143127441406,
+        "ground_truth": {
+          "Trx": {
+            "bertscore": 0.6984151601791382,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the interaction between Trx and ASK1 highly dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the redox status",
+        "answerability": 0.9984790086746216,
+        "ground_truth": {
+          "the redox status": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

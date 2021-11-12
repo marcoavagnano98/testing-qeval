@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Trad mRNA is expressed in a highly cell-specific manner being most abundant in B cells and essentially absent in most of the other cells or tissues tested.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Trad",
+        "mRNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA is expressed in highly cell-specific manner?",
+          "What is expressed in highly cell-specific manner?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Trad mRNA",
+        "a highly cell-specific manner",
+        "B cells",
+        "the other cells",
+        "tissues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is expressed in a highly cell-specific manner?",
+          "How is trad mRNA expressed?",
+          "Where is trad mRNA most abundant?",
+          "Where is trad mRNA essentially absent?",
+          "Where is trad mRNA most abundant?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA is specifically expressed in skeletal muscle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0768810510635376,
+        "ground_truth": {
+          "Trad": {
+            "bertscore": 0.7040088772773743,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is specifically expressed in skeletal muscle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006875455379486084,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.6875343322753906,
+            "f1": 0
+          },
+          "Trad mRNA": {
+            "bertscore": 0.6803855895996094,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is trad mRNA specifically expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cells",
+        "answerability": 0.9541159868240356,
+        "ground_truth": {
+          "skeletal muscle": {
+            "bertscore": 0.7525917291641235,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "The p65 sequence revealed four potential GSK-3 phosphorylation sites within its COOH-terminal transactivation domains and recombinant GSK-3alpha phosphorylated glutathione S-transferase (GST)-p65(354-551) but not GST-p65(1-305) in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "four",
+        "551",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many potential GSK-3 phosphorylation sites did the p65 sequence reveal?",
+          "What is the sequence number of GST-p65?",
+          "In what way was GST-p65 not detected?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The p65 sequence",
+        "four potential GSK-3 phosphorylation sites",
+        "its COOH-terminal transactivation domains",
+        "recombinant GSK-3alpha",
+        "glutathione S-transferase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed four potential GSK-3 phosphorylation sites?",
+          "What did the p65 sequence reveal?",
+          "Where did the p65 sequence reveal four potential GSK-3 phosphorylation sites?",
+          "What phosphorylated glutathione S-transferase?",
+          "What is GST?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many potential GSK-3 phosphorylation sites did the p65 sequence reveal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "four",
+        "answerability": 0.999424934387207,
+        "ground_truth": {
+          "four": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the sequence number of GST-p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31283676624298096,
+        "ground_truth": {
+          "551": {
+            "bertscore": 0.6368793845176697,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what way was the p65 sequence not used?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08185034990310669,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.7021183967590332,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What revealed four potential GSK-3 phosphorylation sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The p65 sequence",
+        "answerability": 0.9919960498809814,
+        "ground_truth": {
+          "The p65 sequence": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the p65 sequence reveal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "potential GSK-3 phosphorylation sites",
+        "answerability": 0.9688487648963928,
+        "ground_truth": {
+          "four potential GSK-3 phosphorylation sites": {
+            "bertscore": 0.9707958102226257,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "Where were the four potential GSK-3 phosphorylation sites found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "within its COOH-terminal transactivation domains",
+        "answerability": 0.9876717329025269,
+        "ground_truth": {
+          "its COOH-terminal transactivation domains": {
+            "bertscore": 0.9612388014793396,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What phosphorylated glutathione S-transferase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GSK-3alpha",
+        "answerability": 0.798932671546936,
+        "ground_truth": {
+          "GSK-3beta": {
+            "bertscore": 0.8711144328117371,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the phosphorylation site in GSK-3beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06871408224105835,
+        "ground_truth": {
+          "glutathione S-transferase": {
+            "bertscore": 0.611140787601471,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

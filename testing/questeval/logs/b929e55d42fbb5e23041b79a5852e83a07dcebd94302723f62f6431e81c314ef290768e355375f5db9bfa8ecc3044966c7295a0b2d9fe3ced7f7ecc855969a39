@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "At protein level VEGF-B and C Flt-1 and KDR were not detectable in tissue lysates whereas VEGF-a was increased in stages III and IV.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "KDR",
+        "III",
+        "IV"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only protein that is detectable in tissue lysates?",
+          "In which stage of the disease was VEGF-a increased?",
+          "In what stage was VEGF-a increased?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "protein level VEGF-B",
+        "C",
+        "tissue lysates",
+        "stages III",
+        "IV"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the highest level of VEGF-a?",
+          "What is the highest level of VEGF-B?",
+          "Where were VEGF-B and C Flt-1 and KDR not detectable?",
+          "At what stage was VEGF-a increased?",
+          "In what stage was VEGF-a increased?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the only protein that is detectable in tissue lysates?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11208134889602661,
+        "ground_truth": {
+          "KDR": {
+            "bertscore": 0.6738436818122864,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In which stage of the disease was VEGF-A increased?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "III",
+        "answerability": 0.9990443587303162,
+        "ground_truth": {
+          "III": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what stage was VEGF-A increased?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "III",
+        "answerability": 0.9922246336936951,
+        "ground_truth": {
+          "IV": {
+            "bertscore": 0.9219576716423035,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the highest level of VEGF-A?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24196338653564453,
+        "ground_truth": {
+          "protein level VEGF-B": {
+            "bertscore": 0.6231797933578491,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the highest level of VEGF-B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10149461030960083,
+        "ground_truth": {
+          "C": {
+            "bertscore": 0.6843617558479309,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where were VEGF-B and C Flt-1 and KDR not detectable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tissue lysates",
+        "answerability": 0.9982765913009644,
+        "ground_truth": {
+          "tissue lysates": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was increased in stages III and IV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-a",
+        "answerability": 0.953076183795929,
+        "ground_truth": {
+          "VEGF-A": {
+            "bertscore": 0.9329065084457397,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "At what stage of the cytokine cycle was VEGF-A increased?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "III",
+        "answerability": 0.9879614114761353,
+        "ground_truth": {
+          "stages III": {
+            "bertscore": 0.788322389125824,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

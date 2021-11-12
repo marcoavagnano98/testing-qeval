@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "PMN-triggered angiogenesis is also blocked by both local injection and daily i.p. administration of the Hyp salt in an interleukin-8 knockout mouse model.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "daily",
+        "i.p. administration",
+        "Hyp",
+        "interleukin-8",
+        "knockout mouse"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How often is Hyp salt administered?",
+          "What is the only way to block angiogenesis in a mouse model?",
+          "What salt is used to block angiogenesis in a mouse model?",
+          "What type of mouse is the Hyp salt used in?",
+          "What type of mouse model is blocked by local injection and daily i.p. administration of"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PMN-triggered angiogenesis",
+        "both local injection",
+        "daily i.p. administration",
+        "the Hyp salt",
+        "an interleukin-8 knockout mouse model"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is blocked by local injection and daily i.p. administration of Hyp salt?",
+          "How is PMN-triggered angiogenesis blocked?",
+          "What is the only way to block angiogenesis in a mouse model?",
+          "What blockages angiogenesis in a mouse model?",
+          "In what animal is the PMN-triggered angiogenesis blocked?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How often is Hyp salt administered?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "daily",
+        "answerability": 0.8870705962181091,
+        "ground_truth": {
+          "daily": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only way to block angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010562896728515625,
+        "ground_truth": {
+          "i.p. administration": {
+            "bertscore": 0.6485975980758667,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What salt is used to block angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hyp salt",
+        "answerability": 0.9739877581596375,
+        "ground_truth": {
+          "Hyp": {
+            "bertscore": 0.8573691248893738,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is blocked by local injection and daily i.p. administration of Hyp salt?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMN-triggered angiogenesis",
+        "answerability": 0.9903724193572998,
+        "ground_truth": {
+          "PMN-triggered angiogenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How is PMN-triggered angiogenesis blocked?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "local injection and daily i.p. administration of the Hyp salt",
+        "answerability": 0.8773160576820374,
+        "ground_truth": {
+          "both local injection": {
+            "bertscore": 0.7560391426086426,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is the only way to block angiogenesis in a murine model?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.024564146995544434,
+        "ground_truth": {
+          "daily i.p. administration": {
+            "bertscore": 0.6448987126350403,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockages angiogenesis in a murine model?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hyp salt",
+        "answerability": 0.7971218228340149,
+        "ground_truth": {
+          "the Hyp salt": {
+            "bertscore": 0.8926417827606201,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what model is PMN-triggered angiogenesis blocked?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mouse model",
+        "answerability": 0.8721312284469604,
+        "ground_truth": {
+          "an interleukin-8-induced murine model": {
+            "bertscore": 0.7144930362701416,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

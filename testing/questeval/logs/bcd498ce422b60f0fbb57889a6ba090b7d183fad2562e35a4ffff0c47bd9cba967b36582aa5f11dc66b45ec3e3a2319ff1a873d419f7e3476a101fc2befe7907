@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "A conserved MST-FOXO domain mediates oxidative-stress responses and extends life span.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MST"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What conserved domain mediates oxidative stress responses?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A conserved MST-FOXO domain",
+        "oxidative-stress responses",
+        "life span"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mediates oxidative stress responses?",
+          "What does the conserved MST-FOXO domain mediate?",
+          "What does a conserved MST-FOXO domain extend?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathway mediates oxidative stress responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MST-FOXO domain",
+        "answerability": 0.6808458566665649,
+        "ground_truth": {
+          "MST-FOXO": {
+            "bertscore": 0.8964467644691467,
+            "f1": 0.6666666666666666
+          },
+          "A conserved MST-FOXO": {
+            "bertscore": 0.8515724539756775,
+            "f1": 0.5
+          },
+          "pathway": {
+            "bertscore": 0.7168052792549133,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MST-FOXO mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oxidative-stress responses",
+        "answerability": 0.9639554023742676,
+        "ground_truth": {
+          "oxidative-stress responses": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MST-FOXO prolong?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "life span",
+        "answerability": 0.9562934041023254,
+        "ground_truth": {
+          "life span": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

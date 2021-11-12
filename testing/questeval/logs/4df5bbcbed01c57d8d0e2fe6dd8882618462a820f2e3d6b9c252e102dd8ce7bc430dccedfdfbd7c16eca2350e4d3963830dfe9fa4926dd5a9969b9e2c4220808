@@ -1,0 +1,70 @@
+{
+  "type": "ref",
+  "text": "Hamsters were treated with either radiation DMBA radiation + DMBA or no treatment.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Hamsters",
+        "either radiation DMBA radiation",
+        "DMBA",
+        "no treatment"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What animals were treated with radiation DMBA + DMBA?",
+          "What was the treatment of hamsters?",
+          "What was the treatment of hamsters treated with?",
+          "What was the other option for hamsters?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did it take for hamsters to return to baseline?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0026248693466186523,
+        "ground_truth": {
+          "1 week": {
+            "bertscore": 0.6626719236373901,
+            "f1": 0
+          },
+          "3 weeks treatment": {
+            "bertscore": 0.6362121105194092,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How long did it take for the hamsters to return to baseline?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0028177499771118164,
+        "ground_truth": {
+          "3 weeks": {
+            "bertscore": 0.6374258995056152,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What animal was treated at 1 week?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19060927629470825,
+        "ground_truth": {
+          "Hamsters": {
+            "bertscore": 0.6471365690231323,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

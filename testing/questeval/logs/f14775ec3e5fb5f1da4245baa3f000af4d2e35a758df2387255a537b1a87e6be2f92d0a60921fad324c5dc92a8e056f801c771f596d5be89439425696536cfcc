@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"We show that the Alzheimers beta-amyloid precursor protein (APP) interacts with X11L2 a new member of the X11 family of dipeptides.\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "APP",
+        "X11"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that interacts with X11L2?",
+          "What family of dipeptides does APP interact with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the Alzheimers beta-amyloid precursor protein",
+        "APP",
+        "X11L2",
+        "a new member",
+        "the X11 family",
+        "dipeptides"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the researchers find about APP?",
+          "What does APP stand for?",
+          "What is the name of the protein that interacts with X11L2?",
+          "What new member of the X11 family of dipeptides does APP interact with",
+          "What does X11L2 represent?",
+          "What family of dipeptides does APP interact with?",
+          "What is X11L2 a new member of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein family does X11L2 belong to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "X11",
+        "answerability": 0.9728156328201294,
+        "ground_truth": {
+          "X11": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is X11L2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a new member of the X11 family of dipeptides",
+        "answerability": 0.9617443084716797,
+        "ground_truth": {
+          "a new member": {
+            "bertscore": 0.6821484565734863,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What does X11L2 interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the Alzheimers beta-amyloid precursor protein",
+        "answerability": 0.896485447883606,
+        "ground_truth": {
+          "Alzheimers beta-amyloid precursor protein": {
+            "bertscore": 0.9517621994018555,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "14-3-3 tau is also required for expression and inducibility of E2F1 apoptotic targets such as p73 Apaf-1 and caspases during DNA damage.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "14-3-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the tau level?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "14-3-3 tau",
+        "expression",
+        "inducibility",
+        "E2F1 apoptotic targets",
+        "p73 Apaf-1",
+        "caspases",
+        "DNA damage"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for the expression and inducibility of E2F1 apopt",
+          "What is 14-3-3 tau required for?",
+          "What is 14-3-3 tau required for?",
+          "What is 14-3-3 tau required for?",
+          "What is the name of the apoptotic target that is required for the expression of",
+          "What is required for the expression of p73 Apaf-1?",
+          "What is required for the expression of p73 Apaf-1 and caspases"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the tau level?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42402809858322144,
+        "ground_truth": {
+          "14-3-3": {
+            "bertscore": 0.6692785620689392,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for the expression and induction of E2F1 apoptotic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tau",
+        "answerability": 0.7933972477912903,
+        "ground_truth": {
+          "14-3-3 tau": {
+            "bertscore": 0.746548593044281,
+            "f1": 0.6666666666666666
+          },
+          "DNA damage": {
+            "bertscore": 0.7349410057067871,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is 14-3-3 tau required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression and inducibility",
+        "answerability": 0.9945282340049744,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7959557771682739,
+            "f1": 0.5
+          },
+          "induction": {
+            "bertscore": 0.7703394889831543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is p73 Apaf-1 and caspases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F1 apoptotic targets",
+        "answerability": 0.9835163354873657,
+        "ground_truth": {
+          "E2F1 apoptotic targets": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the apoptotic target that 14-3-3 tau is required": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2751648426055908,
+        "ground_truth": {
+          "p73 Apaf-1": {
+            "bertscore": 0.6240558624267578,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for the expression of p73 Apaf-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "14-3-3 tau",
+        "answerability": 0.554159939289093,
+        "ground_truth": {
+          "caspases": {
+            "bertscore": 0.6742388606071472,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

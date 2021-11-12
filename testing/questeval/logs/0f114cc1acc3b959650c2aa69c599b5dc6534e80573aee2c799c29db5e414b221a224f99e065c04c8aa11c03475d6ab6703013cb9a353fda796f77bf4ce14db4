@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "PU.1 served as a substrate for p300 and was acetylated on lysine residues 170 171 206 and 208.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "170",
+        "171",
+        "206",
+        "208"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What residues of lysine did PU.1 serve as a substrate for",
+          "What residues of lysine did PU.1 serve as a substrate for",
+          "What residues of lysine were used to form p300?",
+          "What residue was PU.1 acetylated on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PU.1",
+        "a substrate",
+        "p300",
+        "lysine residues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used as a substrate for p300?",
+          "What did PU.1 serve as for p300?",
+          "What was PU.1 used as a substrate for?",
+          "What residues were used to form p300?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What residues of lysine did PU.1 serve as a substrate for": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p300",
+        "answerability": 0.70148766040802,
+        "ground_truth": {
+          "170": {
+            "bertscore": 0.6466763615608215,
+            "f1": 0
+          },
+          "171": {
+            "bertscore": 0.6275056004524231,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What residues of lysine were used to form p300?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "170 171 206 and 208",
+        "answerability": 0.891217827796936,
+        "ground_truth": {
+          "206": {
+            "bertscore": 0.75713050365448,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What residue was PU.1 acetylated on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lysine",
+        "answerability": 0.9824520349502563,
+        "ground_truth": {
+          "208": {
+            "bertscore": 0.6269711256027222,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used as a substrate for p300?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PU.1",
+        "answerability": 0.9574452638626099,
+        "ground_truth": {
+          "PU.1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did PU.1 serve as for p300?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "substrate",
+        "answerability": 0.994888961315155,
+        "ground_truth": {
+          "a substrate": {
+            "bertscore": 0.866986095905304,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was PU.1 used as a substrate for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p300",
+        "answerability": 0.933520495891571,
+        "ground_truth": {
+          "p300": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What residues were used to form p300?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lysine residues 170 171 206 and 208",
+        "answerability": 0.8613085746765137,
+        "ground_truth": {
+          "lysine residues": {
+            "bertscore": 0.8328036665916443,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    }
+  }
+}

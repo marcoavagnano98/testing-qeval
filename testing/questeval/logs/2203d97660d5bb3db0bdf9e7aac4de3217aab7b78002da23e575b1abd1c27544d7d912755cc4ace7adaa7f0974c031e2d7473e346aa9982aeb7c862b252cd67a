@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "The 20-HETE agonist markedly increased superoxide formation as reflected by an increase in dihydroethidium staining of EC and this increase was inhibited by PEG-SOD but not by apocynin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "20-HETE",
+        "EC",
+        "PEG-SOD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What agonist increased superoxide formation?",
+          "What substance was inhibited by PEG-SOD?",
+          "What inhibited the increase in superoxide formation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The 20-HETE agonist",
+        "superoxide formation",
+        "an increase",
+        "dihydroethidium staining",
+        "EC",
+        "this increase",
+        "PEG-SOD",
+        "apocynin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What agonist increased superoxide formation?",
+          "What did the 20-HETE agonist significantly increase?",
+          "What was the effect of the 20-HETE agonist on superoxide formation?",
+          "What was the effect of the 20-HETE agonist on superoxide formation?",
+          "What substance was inhibited by PEG-SOD?",
+          "What was inhibited by PEG-SOD?",
+          "What inhibited the increase in superoxide formation?",
+          "What inhibited the formation of superoxide?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What agonist increased superoxide formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "20-HETE",
+        "answerability": 0.9810983538627625,
+        "ground_truth": {
+          "20-HETE": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "The 20-HETE agonist": {
+            "bertscore": 0.7709697484970093,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What substance was inhibited by PEG-SOD?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06213939189910889,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.7138954401016235,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the increase in superoxide formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PEG-SOD",
+        "answerability": 0.9216433763504028,
+        "ground_truth": {
+          "PEG-SOD": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the 20-HETE agonist significantly increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "superoxide formation",
+        "answerability": 0.9997061491012573,
+        "ground_truth": {
+          "superoxide formation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of the 20-HETE agonist on superoxide formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased",
+        "answerability": 0.9993301033973694,
+        "ground_truth": {
+          "an increase": {
+            "bertscore": 0.8616130352020264,
+            "f1": 0
+          },
+          "dihydroethidium staining": {
+            "bertscore": 0.5881080031394958,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was inhibited by PEG-SOD?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07154887914657593,
+        "ground_truth": {
+          "this increase": {
+            "bertscore": 0.7016081809997559,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the formation of superoxide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PEG-SOD",
+        "answerability": 0.5569213628768921,
+        "ground_truth": {
+          "apocynin": {
+            "bertscore": 0.6683515906333923,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

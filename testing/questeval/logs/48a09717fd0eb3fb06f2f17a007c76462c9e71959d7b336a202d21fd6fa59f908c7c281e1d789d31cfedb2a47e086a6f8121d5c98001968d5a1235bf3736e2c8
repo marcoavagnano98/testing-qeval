@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "NF-kappa B is a nuclear protein of the rel oncogene family capable of enhancing transcription of several cytokine genes including IL-2 and the IL-2 receptor and viral genes transcribed from the HIV-1 LTR.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-2",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytokine gene that NF-kappa B",
+          "What is the name of the cytokine gene that NF-kappa B",
+          "What is the LTR of NF-kappa B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-kappa B",
+        "a nuclear protein",
+        "the rel oncogene family",
+        "transcription",
+        "several cytokine genes",
+        "IL-2 and the IL-2 receptor",
+        "viral genes",
+        "the HIV-1 LTR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a nuclear protein of the rel oncogene family?",
+          "What is NF-kappa B?",
+          "What family is NF-kappa B a member of?",
+          "What is NF-kappa B capable of enhancing?",
+          "What is NF-kappa B capable of enhancing transcription of?",
+          "What are two cytokine genes that NF-kappa B can enhance transcription",
+          "What is NF-kappa B capable of enhancing transcription of?",
+          "Where is NF-kappa B transcribed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the DNA-binding regulatory factor that controls transcription of a number": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4380284547805786,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.644961416721344,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a nuclear protein of the rel oncogene family",
+        "answerability": 0.9970017075538635,
+        "ground_truth": {
+          "a DNA-binding regulatory factor": {
+            "bertscore": 0.7113180160522461,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does NF-kappa B control?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription of several cytokine genes",
+        "answerability": 0.9925225973129272,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.7295987606048584,
+            "f1": 0.33333333333333337
+          },
+          "genes": {
+            "bertscore": 0.7278962731361389,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "How many genes can NF-kappa B control?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "several",
+        "answerability": 0.9809289574623108,
+        "ground_truth": {
+          "a number": {
+            "bertscore": 0.7347434163093567,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF-kappa B able to control transcription of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine genes",
+        "answerability": 0.984130322933197,
+        "ground_truth": {
+          "human immunodeficiency virus (HIV) genes": {
+            "bertscore": 0.7272999286651611,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    }
+  }
+}

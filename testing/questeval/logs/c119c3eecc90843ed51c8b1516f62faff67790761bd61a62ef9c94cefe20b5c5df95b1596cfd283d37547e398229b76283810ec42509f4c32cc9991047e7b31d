@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "PKB is activated in response to triggering of the T cell antigen receptor; PtdIns 3-kinase activity is both required and sufficient for this TCR response. PKB is activated in response to the mitogenic stimuli lipopolysaccharide (LPS)-induced phosphorylation of CREB 3536.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PKB",
+        "PtdIns",
+        "PKB",
+        "CREB 3536"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is activated in response to the T cell antigen receptor?",
+          "What is required and sufficient for the TCR response?",
+          "What is activated in response to the T cell antigen receptor?",
+          "What is the phosphorylation of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PKB",
+        "response",
+        "the T cell antigen receptor",
+        "PtdIns 3-kinase activity",
+        "this TCR response",
+        "PKB",
+        "response",
+        "the mitogenic stimuli",
+        "lipopolysaccharide",
+        "CREB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is activated in response to the T cell antigen receptor?",
+          "What is required and sufficient for the TCR?",
+          "What triggers PKB?",
+          "What is required and sufficient for the TCR response?",
+          "What is PtdIns 3-kinase required for?",
+          "What is activated in response to the T cell antigen receptor?",
+          "What is required and sufficient for the TCR?",
+          "What is the PKB activated in response to?",
+          "What is the term for LPS?",
+          "What is the phosphorylation of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is sufficient to induce E2F activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012392997741699219,
+        "ground_truth": {
+          "PKB": {
+            "bertscore": 0.7074435353279114,
+            "f1": 0
+          },
+          "The expression": {
+            "bertscore": 0.6652612686157227,
+            "f1": 0
+          },
+          "an active PKB": {
+            "bertscore": 0.6805201768875122,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the expression of an active PKB induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2790985703468323,
+        "ground_truth": {
+          "E2F activity": {
+            "bertscore": 0.6694279313087463,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "The insulin-conditioned RPE cell media stimulated capillary endothelial cell proliferation an effect that was completely blocked by anti-VEGF neutralizing antibody.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RPE"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cell media stimulated capillary endothelial cell proliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The insulin-conditioned RPE cell media",
+        "capillary endothelial cell proliferation",
+        "an effect",
+        "anti-VEGF neutralizing antibody"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulated capillary endothelial cell proliferation?",
+          "What did insulin-conditioned RPE cells stimulate?",
+          "What was blocked by anti-VEGF neutralizing antibody?",
+          "What was the only thing that blocked the effect of insulin-conditioned RPE cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cell was conditioned for VEGF protein and capillary endot": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16356968879699707,
+        "ground_truth": {
+          "RPE": {
+            "bertscore": 0.7195525169372559,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to test for VEGF protein and capillary endothelial": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09056919813156128,
+        "ground_truth": {
+          "Conditioned media": {
+            "bertscore": 0.7155532836914062,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of media was used to test for VEGF protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18626725673675537,
+        "ground_truth": {
+          "insulin-conditioned RPE cell": {
+            "bertscore": 0.6298868656158447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was found in the media from insulin-conditioned RPE cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.229994535446167,
+        "ground_truth": {
+          "VEGF protein": {
+            "bertscore": 0.6554871797561646,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was measured in the media from insulin-conditioned RPE cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "capillary endothelial cell proliferation",
+        "answerability": 0.7252166271209717,
+        "ground_truth": {
+          "capillary endothelial cell proliferation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

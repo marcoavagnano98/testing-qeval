@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "NF-kappa B is a potent transcriptional activator of HIV expression that both stimulates viral gene expression and activates an array of cellular genes involved in T-cell growth. HIV regulation is dependent on various stimuli that include lipopolysaccharide (LPS) viruses and other cytokines.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-kappa B",
+        "a potent transcriptional activator",
+        "HIV expression",
+        "viral gene expression",
+        "an array",
+        "cellular genes",
+        "T-cell growth",
+        "HIV regulation",
+        "various stimuli",
+        "lipopolysaccharide (LPS) viruses",
+        "other cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a potent transcriptional activator of HIV expression?",
+          "What is NF-kappa B?",
+          "What is NF-kappa B a potent transcriptional activator of?",
+          "What does NF-kappa B stimulate?",
+          "What does NF-kappa B activate?",
+          "What does NF-kappa B activate?",
+          "What is the main function of NF-kappa B?",
+          "What is dependent on various stimuli?",
+          "What is HIV regulation dependent on?",
+          "What is the main factor in HIV regulation?",
+          "What is HIV regulation dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug can have a significant role in HIV regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.7402457594871521,
+        "ground_truth": {
+          "RA": {
+            "bertscore": 0.6935590505599976,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may have a significant role in HIV regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5796531438827515,
+        "ground_truth": {
+          "Endogenous or exogenously administered RA": {
+            "bertscore": 0.6662167310714722,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What role does RA play in HIV regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0050691962242126465,
+        "ground_truth": {
+          "a significant role": {
+            "bertscore": 0.6552832126617432,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may endogenously or exogenously administered RA have a significant role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010415315628051758,
+        "ground_truth": {
+          "HIV regulation": {
+            "bertscore": 0.6834760308265686,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

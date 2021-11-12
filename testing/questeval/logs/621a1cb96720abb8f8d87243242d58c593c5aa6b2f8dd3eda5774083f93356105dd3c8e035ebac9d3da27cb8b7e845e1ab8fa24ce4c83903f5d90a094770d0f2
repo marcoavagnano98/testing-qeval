@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "Following phosphorylation of MAPKAP kinase-2 nuclear p38 was exported to the cytoplasm in a complex with MAPKAP kinase-2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MAPKAP",
+        "MAPKAP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was exported to the cytoplasm?",
+          "What protein was exported to the cytoplasm?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "phosphorylation",
+        "MAPKAP kinase-2 nuclear p38",
+        "the cytoplasm",
+        "a complex",
+        "MAPKAP kinase-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the process that caused nuclear p38 to be exported to the cytoplasm?",
+          "What protein was exported to the cytoplasm?",
+          "Where was nuclear p38 exported?",
+          "What was p38 exported to the cytoplasm in?",
+          "What protein was exported to the cytoplasm?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the type of cells that show that p38 is actively exported out": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008883476257324219,
+        "ground_truth": {
+          "(LMB)-treated cells": {
+            "bertscore": 0.6253849267959595,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is exported out of the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02305072546005249,
+        "ground_truth": {
+          "p38": {
+            "bertscore": 0.6312918663024902,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is p38 exported from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4135715365409851,
+        "ground_truth": {
+          "the cytoplasm": {
+            "bertscore": 0.6099189519882202,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

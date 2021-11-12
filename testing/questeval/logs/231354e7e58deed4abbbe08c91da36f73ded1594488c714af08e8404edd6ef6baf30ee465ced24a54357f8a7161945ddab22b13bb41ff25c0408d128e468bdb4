@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "These results suggest that expression of ScpC and SLO in invasive GAS plays an important role in vivo virulence of GAS infection.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "expression",
+        "ScpC",
+        "SLO",
+        "invasive GAS",
+        "an important role",
+        "vivo virulence",
+        "GAS infection"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that expression of ScpC and SLO plays an important role in vivo",
+          "What plays an important role in vivo virulence of GAS infection?",
+          "What gene is involved in the virulence of GAS infection?",
+          "What gene is involved in the virulence of GAS infection?",
+          "What is the virulence of GAS?",
+          "What role do ScpC and SLO play in vivo virulence of",
+          "What does the expression of ScpC and SLO play an important role in?",
+          "What is the virulence of SLO and ScpC important for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggests that enhanced expression of ScpC and SLO plays an important role in viv": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These results",
+        "answerability": 0.7654646635055542,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the study suggest plays an important role in vivo virulence of G": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of ScpC and SLO",
+        "answerability": 0.9775012135505676,
+        "ground_truth": {
+          "enhanced expression": {
+            "bertscore": 0.733329713344574,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What gene is involved in the virulence of GAS infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ScpC and SLO",
+        "answerability": 0.9662037491798401,
+        "ground_truth": {
+          "ScpC": {
+            "bertscore": 0.885718822479248,
+            "f1": 0.5
+          },
+          "SLO": {
+            "bertscore": 0.8318006992340088,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What type of GAS infection is mediated by increased expression of ScpC and SLO": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4115152359008789,
+        "ground_truth": {
+          "invasive GAS": {
+            "bertscore": 0.6931362748146057,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What role does enhanced expression of ScpC and SLO play in vivo vir": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38240331411361694,
+        "ground_truth": {
+          "an important role": {
+            "bertscore": 0.6543487906455994,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the increased expression of ScpC and SLO play an important role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vivo virulence",
+        "answerability": 0.8747861981391907,
+        "ground_truth": {
+          "vivo virulence": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the virulence of TB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00019758939743041992,
+        "ground_truth": {
+          "GAS infection": {
+            "bertscore": 0.6656640768051147,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

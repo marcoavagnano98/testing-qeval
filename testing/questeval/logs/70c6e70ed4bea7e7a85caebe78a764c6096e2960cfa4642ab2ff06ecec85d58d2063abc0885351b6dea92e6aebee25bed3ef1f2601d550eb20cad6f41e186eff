@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Additionally spironolactone-treated rats showed higher corneal clouding and neovascularization in ear venules than the WT group while spironolactone-treated rats showed only 10 times less corneal clouding and neovascularization.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "WT",
+        "only 10"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What group of rats had less corneal clouding and neovascularization?",
+          "How many times less clouding and neovascularization did spirono"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Additionally spironolactone-treated rats",
+        "higher corneal clouding",
+        "neovascularization",
+        "ear venules",
+        "the WT group",
+        "spironolactone-treated rats",
+        "only 10 times less corneal clouding",
+        "neovascularization"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What group showed more clouding and neovascularization in ear venul",
+          "What did spironolactone-treated rats show?",
+          "What did spironolactone-treated rats show less of?",
+          "What part of the eye did spironolactone-treated rats show more cloud",
+          "What group of rats had less corneal clouding and neovascularization?",
+          "What group showed less clouding and neovascularization in ear venul",
+          "How much less clouding and neovascularization did spironolac",
+          "What did spironolactone-treated rats show less of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Who was treated with spironolactone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rats",
+        "answerability": 0.9972253441810608,
+        "ground_truth": {
+          "Additional grafted rats": {
+            "bertscore": 0.8197829723358154,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was used to treat a rat that was grafted on to a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4515960216522217,
+        "ground_truth": {
+          "spironolactone": {
+            "bertscore": 0.603493332862854,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

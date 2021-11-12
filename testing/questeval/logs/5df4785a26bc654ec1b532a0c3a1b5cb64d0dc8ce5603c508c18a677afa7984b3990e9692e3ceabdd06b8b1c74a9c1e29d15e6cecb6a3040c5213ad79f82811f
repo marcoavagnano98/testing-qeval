@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The c-myc oncoprotein encodes for a transcriptional factor involved in many cellular processes such as proliferation differentiation and apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The c-myc oncoprotein",
+        "a transcriptional factor",
+        "many cellular processes",
+        "proliferation differentiation",
+        "apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What encodes for a transcriptional factor involved in many cellular processes?",
+          "What does the c-myc oncoprotein encode for?",
+          "What is the c-myc oncoprotein involved in?",
+          "What is the c-myc oncoprotein involved in?",
+          "What is a transcriptional factor involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What encodes for a transcriptional factor involved in many cellular processes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-myc oncoprotein",
+        "answerability": 0.9890022277832031,
+        "ground_truth": {
+          "The c-myc oncogene": {
+            "bertscore": 0.834661066532135,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the c-myc oncogene encode for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a transcriptional factor involved in many cellular processes such as proliferation differentiation and apop",
+        "answerability": 0.9344432950019836,
+        "ground_truth": {
+          "a transcriptional factor": {
+            "bertscore": 0.796477198600769,
+            "f1": 0.2666666666666667
+          }
+        }
+      }
+    },
+    "What is the c-myc oncogene involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6357285976409912,
+        "ground_truth": {
+          "many cellular processes": {
+            "bertscore": 0.6790325045585632,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is an example of a transcriptional factor involved in cell cycle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-myc oncoprotein",
+        "answerability": 0.749300479888916,
+        "ground_truth": {
+          "proliferation differentiation": {
+            "bertscore": 0.6480991244316101,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a transcriptional factor involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proliferation differentiation and apoptosis",
+        "answerability": 0.9820953607559204,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.8386700749397278,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

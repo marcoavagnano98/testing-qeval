@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "TEMF therapy provided a safe means for retarding tumor vascularization growth and metastasis. \u2047 nCancer stem cells (CSC) are predicted to be critical drivers of tumor progression due to their self-renewal capacity and limitless proliferative potential.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TEMF",
+        "CSC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What therapy was used to slow tumor vascularization?",
+          "What are cancer stem cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TEMF therapy",
+        "a safe means",
+        "tumor vascularization growth",
+        "metastasis",
+        "\u2047 nCancer stem cells",
+        "CSC",
+        "critical drivers",
+        "tumor progression",
+        "their self-renewal capacity",
+        "limitless proliferative potential"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to slow tumor vascularization?",
+          "What did TEMF provide for preventing tumor vascularization growth?",
+          "What did TEMF therapy help to retard?",
+          "What is a potential side effect of TEMF therapy?",
+          "What is the name of the cell type that is predicted to be the key drivers of tumor progression",
+          "What are cancer stem cells?",
+          "What are cancer stem cells predicted to be?",
+          "What are cancer stem cells predicted to be critical drivers of?",
+          "What is one reason that cancer stem cells are critical drivers of tumor progression?",
+          "What is the advantage of CSC?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What therapy was used to treat tumor vascularization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TEMF",
+        "answerability": 0.9299681186676025,
+        "ground_truth": {
+          "TEMF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the safest way to treat tumor vascularization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TEMF therapy",
+        "answerability": 0.8557280898094177,
+        "ground_truth": {
+          "TEMF therapy": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did TEMF therapy provide for preventing tumor vascularization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1498774290084839,
+        "ground_truth": {
+          "a safe means": {
+            "bertscore": 0.6934950351715088,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TEMF therapy help to retard?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor vascularization growth",
+        "answerability": 0.9984586834907532,
+        "ground_truth": {
+          "tumor vascularization growth": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did TEMF therapy help prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor vascularization growth and metastasis",
+        "answerability": 0.9316359162330627,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.8195427656173706,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

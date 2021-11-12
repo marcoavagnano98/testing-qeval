@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Pyrrolidine dithiocarbamate a NF-kappaB inhibitor upregulates MMP-9 in IL-1beta-stimulated rheumatoid arthritis fibroblast-like synoviocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "MMP-9"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the inhibitor of MMP-9?",
+          "What does pyrrolidine dithiocarbamate upregulate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a NF-kappaB inhibitor upregulates MMP-9",
+        "IL-1beta-stimulated rheumatoid arthritis fibroblast-like synoviocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is pyrrolidine dithiocarbamate?",
+          "What does pyrrolidine dithiocarbamate upregulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the inhibitor of MMP-1 and MMP-13?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0709717869758606,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.651921272277832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is upregulated in IL-1beta-stimulated arthritis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MMP-9",
+        "answerability": 0.8841761946678162,
+        "ground_truth": {
+          "MMP-1": {
+            "bertscore": 0.9691015481948853,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is pyrrolidine dithiocarbamate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB inhibitor",
+        "answerability": 0.960020899772644,
+        "ground_truth": {
+          "a NF-kappaB inhibitor upregulates MMP-1": {
+            "bertscore": 0.8537449240684509,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein is upregulated in IL-1beta-stimulated rhe": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MMP-9",
+        "answerability": 0.7216269373893738,
+        "ground_truth": {
+          "MMP-13": {
+            "bertscore": 0.976466953754425,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does pyrrolidine dithiocarbamate upregulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MMP-9",
+        "answerability": 0.7803459763526917,
+        "ground_truth": {
+          "IL-1beta-stimulated rheumatoid arthritis fibroblast-like synoviocytes": {
+            "bertscore": 0.6550240516662598,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

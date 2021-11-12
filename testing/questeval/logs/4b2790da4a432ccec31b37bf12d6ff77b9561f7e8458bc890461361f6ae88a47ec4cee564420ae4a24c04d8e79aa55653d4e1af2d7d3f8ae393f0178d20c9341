@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "(TLCK) block induction of an immediate-early gene encoding the transcription factor Egr-1.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(TLCK) block",
+        "induction",
+        "an immediate-early gene",
+        "the transcription factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the process that causes the induction of an immediate-early gene",
+          "What does TLCK block?",
+          "What does TLCK block induction of?",
+          "What does TLCK block induction of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did TPCK block induction of an immediate-early gene encoding the": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22779661417007446,
+        "ground_truth": {
+          "TLCK": {
+            "bertscore": 0.6836534738540649,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TLCK and TPCK not block induction of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0029904842376708984,
+        "ground_truth": {
+          "contrast TPCK": {
+            "bertscore": 0.6765697002410889,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TPCK and TLCK not block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003809332847595215,
+        "ground_truth": {
+          "induction": {
+            "bertscore": 0.722252368927002,
+            "f1": 0
+          },
+          "an immediate-early gene": {
+            "bertscore": 0.6896591782569885,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TPCK block induction of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an immediate-early gene encoding the transcription factor Egr-1",
+        "answerability": 0.6542624235153198,
+        "ground_truth": {
+          "the transcription factor": {
+            "bertscore": 0.7635539174079895,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

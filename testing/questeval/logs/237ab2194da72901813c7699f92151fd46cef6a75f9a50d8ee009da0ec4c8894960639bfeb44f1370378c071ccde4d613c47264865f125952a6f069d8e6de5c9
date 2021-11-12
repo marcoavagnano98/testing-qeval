@@ -1,0 +1,56 @@
+{
+  "type": "hyp",
+  "text": "Human neutrophils express GH-N gene transcripts and the pituitary transcription factor pituitary-specific transcription factor Pit-1b.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human neutrophils",
+        "GH-N gene transcripts",
+        "the pituitary transcription factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells express GH-N gene transcripts?",
+          "What do human neutrophils express?",
+          "What transcription factor does human neutrophils express?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells express GH-N gene transcripts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Human neutrophils",
+        "answerability": 0.821178674697876,
+        "ground_truth": {
+          "Human neutrophils": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do human neutrophils express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GH-N gene transcripts and the pituitary transcription factor",
+        "answerability": 0.914844274520874,
+        "ground_truth": {
+          "GH-N gene transcripts": {
+            "bertscore": 0.9018171429634094,
+            "f1": 0.6
+          },
+          "the pituitary transcription factor": {
+            "bertscore": 0.8572695255279541,
+            "f1": 0.6
+          }
+        }
+      }
+    }
+  }
+}

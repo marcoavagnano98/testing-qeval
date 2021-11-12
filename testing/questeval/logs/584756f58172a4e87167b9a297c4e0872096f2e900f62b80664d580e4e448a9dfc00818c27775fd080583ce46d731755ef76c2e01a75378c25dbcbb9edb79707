@@ -1,0 +1,170 @@
+{
+  "type": "hyp",
+  "text": "Both wild-type and mutant PTEN can upregulate the expression of PTEN gene dramatically; however it is wild-type PTEN not phosphatase-inactive Pten that can induce apoptosis and decrease cell migration invasion and proliferation in ovarian cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTEN",
+        "PTEN",
+        "PTEN",
+        "Pten"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene can upregulate dramatically?",
+          "What gene can upregulate dramatically?",
+          "What gene can upregulate dramatically?",
+          "What gene is not phosphatase-inactive?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Both wild-type and mutant PTEN",
+        "the expression",
+        "PTEN gene",
+        "it",
+        "wild-type PTEN",
+        "not phosphatase-inactive Pten",
+        "apoptosis",
+        "decrease",
+        "cell migration invasion",
+        "proliferation",
+        "ovarian cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can upregulate the expression of PTEN gene dramatically?",
+          "What can both wild-type and mutant PTEN upregulate?",
+          "What gene can be upregulated by wild-type and mutant PTEN?",
+          "What is the only gene that can induce apoptosis?",
+          "What type of PTEN can induce apoptosis?",
+          "What is the only gene that can induce apoptosis?",
+          "What can wild-type PTEN induce?",
+          "What can wild-type PTEN do to cell migration?",
+          "What does PTEN decrease in ovarian cancer cells?",
+          "What does PTEN decrease in ovarian cancer cells?",
+          "What type of cancer cells can be affected by PTEN?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene can induce apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45382457971572876,
+        "ground_truth": {
+          "PTEN": {
+            "bertscore": 0.6941335201263428,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can upregulate the expression of PTEN gene dramatically?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "wild-type and mutant PTEN",
+        "answerability": 0.9923044443130493,
+        "ground_truth": {
+          "Both wild-type and mutant PTEN": {
+            "bertscore": 0.9312565922737122,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What can both wild-type and mutant PTEN upregulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the expression of PTEN gene",
+        "answerability": 0.9992908835411072,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.710220456123352,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What gene can be upregulated by wild-type and mutant PTEN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTEN gene",
+        "answerability": 0.9980456829071045,
+        "ground_truth": {
+          "PTEN gene": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only gene that can induce apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3405311107635498,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6361185312271118,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of PTEN can induce apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "wild-type",
+        "answerability": 0.5959330797195435,
+        "ground_truth": {
+          "wild-type PTEN": {
+            "bertscore": 0.8933349847793579,
+            "f1": 0.6666666666666666
+          },
+          "not phosphatase-inactive PTEN": {
+            "bertscore": 0.6587875485420227,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can wild-type PTEN induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.7807842493057251,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does PTEN decrease in ovarian cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell migration invasion and proliferation",
+        "answerability": 0.9591010212898254,
+        "ground_truth": {
+          "cell migration invasion": {
+            "bertscore": 0.8650535345077515,
+            "f1": 0.7499999999999999
+          },
+          "proliferation": {
+            "bertscore": 0.8250262141227722,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What type of cancer cells can be affected by PTEN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ovarian",
+        "answerability": 0.873584508895874,
+        "ground_truth": {
+          "ovarian cancer cells": {
+            "bertscore": 0.7821515798568726,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

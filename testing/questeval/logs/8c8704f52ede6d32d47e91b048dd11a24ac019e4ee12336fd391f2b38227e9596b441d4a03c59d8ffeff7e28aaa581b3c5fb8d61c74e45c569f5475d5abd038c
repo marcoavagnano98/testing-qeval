@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "TLR2 is required for NF-kappa B activation in response to pro-inflammatory mediators such as interleukin-1 (IL-1) lipopolysaccharide (LPS) and lipopolysaccharide (LPS).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "interleukin-1",
+        "IL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IL-1?",
+          "What is the pro-inflammatory mediator that TLR2 is required for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TLR2",
+        "NF-kappa B activation",
+        "response",
+        "pro-inflammatory mediators",
+        "interleukin-1",
+        "lipopolysaccharide",
+        "(LPS",
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for NF-kappa B activation?",
+          "What is TLR2 required for in response to pro-inflammatory mediators?",
+          "What is TLR2 required for for NF-kappa B activation?",
+          "What does TLR2 respond to?",
+          "What is IL-1?",
+          "What is the name of the pro-inflammatory mediator that triggers NF-kappa",
+          "What is the pro-inflammatory mediator that TLR2 is required for?",
+          "What is the name of the pro-inflammatory mediator that triggers NF-kappa"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the toll-like receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0045549869537353516,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.6837682723999023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the authors show about toll-like receptor 2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012029409408569336,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for NTHi-induced NF-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TLR2",
+        "answerability": 0.9193503856658936,
+        "ground_truth": {
+          "toll-like receptor": {
+            "bertscore": 0.6975190043449402,
+            "f1": 0
+          },
+          "(TLR2": {
+            "bertscore": 0.8704406023025513,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is toll-like receptor 2 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B activation",
+        "answerability": 0.927337646484375,
+        "ground_truth": {
+          "NTHi-induced NF-kappa B activation": {
+            "bertscore": 0.8834340572357178,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

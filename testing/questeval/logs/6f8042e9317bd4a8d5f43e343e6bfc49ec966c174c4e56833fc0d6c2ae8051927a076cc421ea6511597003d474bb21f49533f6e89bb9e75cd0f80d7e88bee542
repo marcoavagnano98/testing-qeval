@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "Finally in comparison with native OPN thrombin-cleaved OPN stimulated a greater rate of EC migration in vitro which was additive to the increased migration associated with induction of alpha v beta 3.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "OPN",
+        "OPN",
+        "EC",
+        "3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What thrombin-cleaved OPN stimulated a greater rate of",
+          "What thrombin-cleaved OPN stimulated a greater rate of",
+          "What type of migration was stimulated by thrombin-cleaved OPN",
+          "What is the rate of EC migration associated with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "comparison",
+        "native OPN thrombin-cleaved OPN",
+        "a greater rate",
+        "EC migration",
+        "the increased migration",
+        "induction",
+        "alpha v beta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of thrombin-cleaved OPN on EC",
+          "What stimulated a greater rate of EC migration in vitro?",
+          "What was the effect of thrombin-cleaved OPN on EC",
+          "What did thrombin-cleaved OPN stimulate in vitro?",
+          "What was the effect of thrombin-cleaved OPN on EC",
+          "What is the effect of thrombin-cleaved OPN on alpha",
+          "What is the name of the gene that is involved in the EC migration?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promotes EC migration in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "thrombin-cleaved OPN",
+        "answerability": 0.7247493267059326,
+        "ground_truth": {
+          "OPN": {
+            "bertscore": 0.7237814664840698,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the induction of alphavbeta3 promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12064379453659058,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.7138954997062683,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the molecule that induction of alphavbeta3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04507797956466675,
+        "ground_truth": {
+          "VPF": {
+            "bertscore": 0.695975661277771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was induction of by VPF/VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002024710178375244,
+        "ground_truth": {
+          "alphavbeta3": {
+            "bertscore": 0.6390053629875183,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did VPF/VEGF induction of alphavbeta3 promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06570422649383545,
+        "ground_truth": {
+          "EC migration": {
+            "bertscore": 0.6886043548583984,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was accompanied by increased EC migration toward OPN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of alpha v beta 3",
+        "answerability": 0.8688226938247681,
+        "ground_truth": {
+          "VPF/VEGF induction": {
+            "bertscore": 0.7029885053634644,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What did the induction of alphavbeta3 cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1767359972000122,
+        "ground_truth": {
+          "increased EC migration": {
+            "bertscore": 0.6690715551376343,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

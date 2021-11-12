@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "In contrast cAMP almost completely inhibited the PMA-dependent activation of an endogenous IL-2 gene as well as the transfected IL-2 promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "IL-2",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene did cAMP inhibit?",
+          "What gene did cAMP inhibit?",
+          "What gene did cAMP inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "the PMA-dependent activation",
+        "an endogenous IL-2 gene",
+        "the transfected IL-2 promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of cAMP on the IL-2 promoter?",
+          "What did cAMP almost completely inhibit?",
+          "What did cAMP almost completely inhibit?",
+          "What did cAMP inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene did cAMP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.8712700009346008,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.7714247107505798,
+            "f1": 0
+          },
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of cAMP on the IL-2 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "almost completely inhibited the PMA-dependent activation",
+        "answerability": 0.9939141273498535,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.645708441734314,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did cAMP almost completely inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the PMA-dependent activation of an endogenous IL-2 gene as well as",
+        "answerability": 0.9336776733398438,
+        "ground_truth": {
+          "the PMA-dependent activation": {
+            "bertscore": 0.8421962261199951,
+            "f1": 0.3636363636363636
+          },
+          "the endogenous IL-2 gene": {
+            "bertscore": 0.8811628222465515,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did cAMP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMA-dependent activation of an endogenous IL-2 gene",
+        "answerability": 0.9130603671073914,
+        "ground_truth": {
+          "the transfected IL-2 promoter": {
+            "bertscore": 0.7980502247810364,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    }
+  }
+}

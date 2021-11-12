@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "The binding of natural or synthetic ligands to nuclear receptors is the triggering event leading to gene transcription activation or repression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The binding",
+        "natural or synthetic ligands",
+        "nuclear receptors",
+        "the triggering event",
+        "gene transcription activation",
+        "repression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the triggering event leading to gene transcription activation?",
+          "What is the triggering event leading to gene transcription activation?",
+          "What is the triggering event leading to gene transcription activation?",
+          "What is the binding of natural or synthetic ligands to nuclear receptors?",
+          "What is the triggering event that causes the binding of natural or synthetic ligands to",
+          "What is the triggering event that leads to gene transcription activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the triggering event leading to gene transcription activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The binding of natural or synthetic ligands to nuclear receptors",
+        "answerability": 0.9712740182876587,
+        "ground_truth": {
+          "The binding": {
+            "bertscore": 0.7220335602760315,
+            "f1": 0.19999999999999998
+          },
+          "natural or synthetic ligands": {
+            "bertscore": 0.8418750166893005,
+            "f1": 0.6153846153846153
+          },
+          "nuclear receptors": {
+            "bertscore": 0.7603954076766968,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What is the binding of natural or synthetic ligands to nuclear receptors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "triggering event leading to gene transcription activation or repression",
+        "answerability": 0.9943706393241882,
+        "ground_truth": {
+          "the triggering event": {
+            "bertscore": 0.788743793964386,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What is the triggering event that causes the binding of natural or synthetic ligands to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear receptors",
+        "answerability": 0.9134836196899414,
+        "ground_truth": {
+          "gene transcription activation": {
+            "bertscore": 0.7880197763442993,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the triggering event that leads to gene transcription activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The binding of natural or synthetic ligands to nuclear receptors",
+        "answerability": 0.9776694774627686,
+        "ground_truth": {
+          "repression": {
+            "bertscore": 0.6167202591896057,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

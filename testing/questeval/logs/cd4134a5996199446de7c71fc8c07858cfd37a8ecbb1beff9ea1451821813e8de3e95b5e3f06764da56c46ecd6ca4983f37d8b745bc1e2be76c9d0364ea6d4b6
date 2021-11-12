@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "The M-CSF receptor was detectable in human monocytes but in resting macrophages.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "M-CSF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor was detectable in human monocytes but not in resting macrophages"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The M-CSF receptor",
+        "human monocytes",
+        "macrophages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was detectable in human monocytes but not in resting macrophages?",
+          "Where was the M-CSF receptor detectable?",
+          "Where was the M-CSF receptor detectable in human monocytes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What receptor was first detectable in the myeloid-committed CD34+Thy": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16451811790466309,
+        "ground_truth": {
+          "M-CSF": {
+            "bertscore": 0.6617133021354675,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was first detectable in the myeloid-committed CD34+Thy-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05898177623748779,
+        "ground_truth": {
+          "The M-CSF receptor": {
+            "bertscore": 0.6107430458068848,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the M-CSF receptor first detectable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human monocytes",
+        "answerability": 0.6181397438049316,
+        "ground_truth": {
+          "the myeloid-committed CD34+Thy-l-CD45RA+ subset": {
+            "bertscore": 0.6442245244979858,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

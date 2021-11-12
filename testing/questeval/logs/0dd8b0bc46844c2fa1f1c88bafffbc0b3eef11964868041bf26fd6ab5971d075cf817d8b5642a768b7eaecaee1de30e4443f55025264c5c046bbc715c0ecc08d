@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "The TAK1-NLK-MAPK-related pathway negatively regulates Wnt signalling and the beta-catenin pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Wnt"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signalling is negatively regulated by the TAK1-NLK-MAPK-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The TAK1-NLK-MAPK-related pathway",
+        "Wnt",
+        "the beta-catenin pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What negatively regulates Wnt signalling?",
+          "What signalling is negatively regulated by the TAK1-NLK-MAPK-",
+          "What pathway does the TAK1-NLK-MAPK-related pathway negatively regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signalling pathway is negatively regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Wnt",
+        "answerability": 0.9737100601196289,
+        "ground_truth": {
+          "Wnt": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What negatively regulates the Wnt signalling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TAK1-NLK-MAPK",
+        "answerability": 0.6867290735244751,
+        "ground_truth": {
+          "the TAK1-NLK-MAPK-like pathway": {
+            "bertscore": 0.8458607196807861,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signalling pathway does the TAK1-NLK-MAPK-like pathway negatively": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Wnt signalling",
+        "answerability": 0.8601012229919434,
+        "ground_truth": {
+          "the Wnt": {
+            "bertscore": 0.8179212808609009,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the TAK1-NLK-MAPK-like pathway negatively regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Wnt signalling and the beta-catenin pathway",
+        "answerability": 0.9675635099411011,
+        "ground_truth": {
+          "pathway": {
+            "bertscore": 0.7173783183097839,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

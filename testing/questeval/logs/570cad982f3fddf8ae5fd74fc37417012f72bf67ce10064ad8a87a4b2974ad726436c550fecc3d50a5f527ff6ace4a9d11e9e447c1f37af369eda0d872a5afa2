@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "In fact under low-ionic-strength conditions the TF complex did not migrate with translated p50/RelA dimers but instead comigrated with c-Rel/p65 dimers.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What complex did not migrate with translated p50/RelA dimers?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "fact",
+        "low-ionic-strength conditions",
+        "the TF complex",
+        "translated p50/RelA dimers",
+        "c-Rel/p65 dimers"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the reason for the TF complex to not migrate with translated p50/Re",
+          "Under what conditions did the TF complex migrate?",
+          "What did not migrate with translated p50/RelA dimers?",
+          "What did the TF complex not migrate with?",
+          "What did the TF complex migrate with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What complex did not migrate with translated p50/p65 dimers?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.410430371761322,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 0.6967031359672546,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the TF complex comigrate with under low-ionic-streng": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43853890895843506,
+        "ground_truth": {
+          "fact": {
+            "bertscore": 0.711483359336853,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Under what conditions did the TF complex migrate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low-ionic-strength",
+        "answerability": 0.9510757923126221,
+        "ground_truth": {
+          "low-ionic-strength conditions": {
+            "bertscore": 0.9319307804107666,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did not migrate with translated p50/p65 dimers?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4128342866897583,
+        "ground_truth": {
+          "the TF complex": {
+            "bertscore": 0.6677346229553223,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the TF complex migrate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Rel/p65",
+        "answerability": 0.8050985336303711,
+        "ground_truth": {
+          "translated p50/p65 dimers": {
+            "bertscore": 0.7368800044059753,
+            "f1": 0
+          },
+          "c-Rel/p65 dimers": {
+            "bertscore": 0.9134252667427063,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

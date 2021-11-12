@@ -1,0 +1,114 @@
+{
+  "type": "ref",
+  "text": "Inhibitory effect of growth hormone on TNF-alpha secretion and nuclear factor-kappaB translocation in lipopolysaccharide-stimulated human monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that inhibits growth hormone?",
+          "What translocation is inhibited by growth hormone?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibitory effect",
+        "growth hormone",
+        "TNF-alpha secretion",
+        "nuclear factor-kappaB translocation",
+        "lipopolysaccharide-stimulated human monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of growth hormone on TNF-alpha secretion?",
+          "What hormone inhibits TNF-alpha secretion?",
+          "What secretion is inhibited by growth hormone?",
+          "What is the effect of growth hormone on TNF-alpha secretion?",
+          "What type of cells are affected by growth hormone?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What hormone inhibits TNF-alpha secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "growth hormone",
+        "answerability": 0.9985600709915161,
+        "ground_truth": {
+          "GH": {
+            "bertscore": 0.7238045930862427,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is GH able to inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.6737709641456604,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What translocation is inhibited by GH?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha secretion",
+        "answerability": 0.7364715933799744,
+        "ground_truth": {
+          "kappaB": {
+            "bertscore": 0.6329755187034607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of GH on TNF-alpha secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibitive effect",
+        "answerability": 0.9983652234077454,
+        "ground_truth": {
+          "Inhibitory effect": {
+            "bertscore": 0.8898625373840332,
+            "f1": 0.5
+          },
+          "nuclear factor-kappaB translocation": {
+            "bertscore": 0.6972787976264954,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does GH inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha secretion and nuclear factor-kappaB translocation",
+        "answerability": 0.871315062046051,
+        "ground_truth": {
+          "TNF-alpha secretion": {
+            "bertscore": 0.8789544105529785,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "Where is GH found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.025571882724761963,
+        "ground_truth": {
+          "lipopolysaccharide-stimulated human monocytes": {
+            "bertscore": 0.5823174715042114,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

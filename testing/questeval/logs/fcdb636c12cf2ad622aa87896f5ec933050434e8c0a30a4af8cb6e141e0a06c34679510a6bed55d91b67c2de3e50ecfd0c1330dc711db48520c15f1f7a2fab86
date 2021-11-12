@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "The proapoptotic gene SIVA is a direct transcriptional target for the tumor suppressors p53 and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SIVA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the proapoptotic gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The proapoptotic gene SIVA",
+        "a direct transcriptional target",
+        "the tumor suppressors p53"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a direct transcriptional target for the tumor suppressors p53 and",
+          "What is the proapoptotic gene SIVA?",
+          "What is the SIVA a direct transcriptional target for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the proapoptotic gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SIVA",
+        "answerability": 0.9654892683029175,
+        "ground_truth": {
+          "SIVA": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is a direct transcriptional target for the tumor suppressors p53 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The proapoptotic gene SIVA",
+        "answerability": 0.9356526732444763,
+        "ground_truth": {
+          "The proapoptotic gene SIVA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the proapoptotic gene SIVA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a direct transcriptional target for the tumor suppressors p53 and p53",
+        "answerability": 0.5734381079673767,
+        "ground_truth": {
+          "a direct transcriptional target": {
+            "bertscore": 0.8038457632064819,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the SIVA a direct transcriptional target for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor suppressors p53 and p53",
+        "answerability": 0.8228798508644104,
+        "ground_truth": {
+          "the tumor suppressors p53": {
+            "bertscore": 0.9086045026779175,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

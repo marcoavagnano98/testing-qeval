@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "A conserved MST-FOXO signaling domain mediates oxidative-stress responses and extends life span.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MST"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the signaling domain that mediates oxidative stress responses?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A conserved MST-FOXO",
+        "domain",
+        "oxidative-stress responses",
+        "life span"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling domain mediates oxidative stress responses?",
+          "What signaling domain mediates oxidative stress responses?",
+          "What does the conserved MST-FOXO signaling domain mediate?",
+          "What does a conserved MST-FOXO signaling domain extend?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathway mediates oxidative stress responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MST-FOXO",
+        "answerability": 0.9098239541053772,
+        "ground_truth": {
+          "MST-FOXO": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "A conserved MST-FOXO": {
+            "bertscore": 0.8560320138931274,
+            "f1": 0.6666666666666666
+          },
+          "pathway": {
+            "bertscore": 0.7142940163612366,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MST-FOXO mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oxidative-stress responses",
+        "answerability": 0.9746913313865662,
+        "ground_truth": {
+          "oxidative-stress responses": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MST-FOXO prolong?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "life span",
+        "answerability": 0.9690055847167969,
+        "ground_truth": {
+          "life span": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

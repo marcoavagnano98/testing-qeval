@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "CaMKIV/ Gr signaling is associated with transcriptional activation of c-fos but is independent of p21ras or calcineurin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CaMKIV/ Gr signaling"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with transcriptional activation of c-fos?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CaMKIV/ Gr",
+        "transcriptional activation",
+        "c-fos",
+        "p21ras",
+        "calcineurin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling is associated with transcriptional activation of c-fos?",
+          "What is CaMKIV/Gr signaling associated with?",
+          "What transcriptional activation is CaMKIV/Gr associated with?",
+          "What is CaMKIV/Gr independent of?",
+          "What is CaMKIV/Gr independent of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is associated with transcriptional activation of c-fos?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CaMKIV/ Gr signaling",
+        "answerability": 0.9970694184303284,
+        "ground_truth": {
+          "CaMKIV/ Gr signaling": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What signaling is associated with transcriptional activation of c-fos?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CaMKIV/ Gr",
+        "answerability": 0.982768177986145,
+        "ground_truth": {
+          "CaMKIV/ Gr": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is CaMKIV/Gr signaling associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activation of c-fos",
+        "answerability": 0.9999318718910217,
+        "ground_truth": {
+          "transcriptional activation": {
+            "bertscore": 0.827436089515686,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What transcriptional activation is CaMKIV/Gr associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos",
+        "answerability": 0.9881865382194519,
+        "ground_truth": {
+          "c-fos": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is CaMKIV/Gr independent of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p21ras or calcineurin",
+        "answerability": 0.9846374988555908,
+        "ground_truth": {
+          "p21ras": {
+            "bertscore": 0.8126874566078186,
+            "f1": 0.5
+          },
+          "calcineurin": {
+            "bertscore": 0.8439682722091675,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

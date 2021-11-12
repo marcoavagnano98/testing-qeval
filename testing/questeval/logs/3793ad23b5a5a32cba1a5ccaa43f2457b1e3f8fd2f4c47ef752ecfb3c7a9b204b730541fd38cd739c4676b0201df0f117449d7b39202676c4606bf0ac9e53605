@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "p53 hot-spot mutants increase tumor vascularization via ROS-mediated HIF1/VEGF-A pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p53 hot-spot mutants",
+        "tumor vascularization",
+        "ROS-mediated HIF1/VEGF-A pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases tumor vascularization via ROS-mediated HIF1/VEGF-A pathway",
+          "What do p53 hot-spot mutants increase?",
+          "What does p53 hot-spot mutants increase tumor vascularization via?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases tumor vascularization via ROS-mediated activation of the HIF1/VE": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5117307901382446,
+        "ground_truth": {
+          "p53 hot-spot mutants": {
+            "bertscore": 0.6549481749534607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do p53 hot-spot mutants increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor vascularization",
+        "answerability": 0.9995195269584656,
+        "ground_truth": {
+          "tumor vascularization": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which p53 hot-spot mutants increase tumor vascular": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ROS-mediated",
+        "answerability": 0.9568362236022949,
+        "ground_truth": {
+          "ROS-mediated activation": {
+            "bertscore": 0.9060899019241333,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What do p53 hot-spot mutants activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor vascularization",
+        "answerability": 0.7285335063934326,
+        "ground_truth": {
+          "the HIF1/VEGF-A pathway": {
+            "bertscore": 0.6791529655456543,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

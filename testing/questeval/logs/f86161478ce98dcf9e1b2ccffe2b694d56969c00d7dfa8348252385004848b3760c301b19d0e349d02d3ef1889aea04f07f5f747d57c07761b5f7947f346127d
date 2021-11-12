@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Ascorbate and AZT also had no effect on NF-kappa B activation following TNF-alpha- or PMA-induced stimulation of U1 promonocytic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF-alpha-",
+        "PMA",
+        "U1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the stimulator that did not have an effect on NF-k",
+          "What stimulator did AZT have no effect on NF-kappa B activ",
+          "What type of cells were stimulated with AZT?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ascorbate",
+        "AZT",
+        "no effect",
+        "NF-kappa B activation",
+        "TNF-alpha- or PMA-induced stimulation",
+        "U1 promonocytic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What compound did not have an effect on NF-kappa B activation?",
+          "What compound did not have an effect on NF-kappa B activation?",
+          "What effect did AZT and ascorbate have on NF-kappa",
+          "What did AZT and ascorbate not have an effect on?",
+          "What did AZT and ascorbate not have an effect on NF-k",
+          "What did AZT and ascorbate not have an effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the stimulator that did not have an effect on NF-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ascorbate",
+        "answerability": 0.8549777865409851,
+        "ground_truth": {
+          "TNF-alpha-": {
+            "bertscore": 0.6101808547973633,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulator did AZT have no effect on NF-kappa B activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ascorbate",
+        "answerability": 0.9314646124839783,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.7216370701789856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were stimulated with AZT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4221307039260864,
+        "ground_truth": {
+          "U1": {
+            "bertscore": 0.6922973990440369,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What compound did not have an effect on NF-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ascorbate",
+        "answerability": 0.9934359788894653,
+        "ground_truth": {
+          "Ascorbate": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "AZT": {
+            "bertscore": 0.7597089409828186,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect did AZT and ascorbate have on NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2087664008140564,
+        "ground_truth": {
+          "no effect": {
+            "bertscore": 0.7436091899871826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did AZT and ascorbate not have an effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9711534380912781,
+        "ground_truth": {
+          "NF-kappa B activation": {
+            "bertscore": 0.8183512091636658,
+            "f1": 0.8
+          },
+          "U1 promonocytic cells": {
+            "bertscore": 0.6304258704185486,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did AZT and ascorbate not have an effect on NF-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49165451526641846,
+        "ground_truth": {
+          "TNF-alpha- or PMA-induced stimulation": {
+            "bertscore": 0.5984031558036804,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

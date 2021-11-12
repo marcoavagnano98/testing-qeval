@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Stimulation of plus clones liberated the classical p50-p65 complex from cytoplasmic pools whereas minus clones produced an apparently novel faster-migratory complex as judged by electrophoretic mobility shift assays.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stimulation",
+        "clones",
+        "cytoplasmic pools",
+        "minus clones",
+        "an apparently novel faster-migratory complex"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What liberated the classical p50-p65 complex from cytoplasmic pools?",
+          "What stimulated the p50-p65 complex?",
+          "What did stimulation of plus clones liberate the classical p50-p65 complex",
+          "What produced a novel faster-migratory complex?",
+          "What did minus clones produce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What liberated the classical p50-p65 complex from cytoplasmic pools?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stimulation of plus clones",
+        "answerability": 0.9856520295143127,
+        "ground_truth": {
+          "Stimulation": {
+            "bertscore": 0.8162184953689575,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What stimulated the p50-p65 complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "plus clones",
+        "answerability": 0.8782546520233154,
+        "ground_truth": {
+          "clones": {
+            "bertscore": 0.8754594326019287,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did stimulation of plus clones liberate the classical p50-p65 complex": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48583710193634033,
+        "ground_truth": {
+          "cytoplasmic pools": {
+            "bertscore": 0.6484158039093018,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What produced a faster-migrating complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "minus clones",
+        "answerability": 0.7334470748901367,
+        "ground_truth": {
+          "minus clones": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did minus clones produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an apparently novel faster-migratory complex",
+        "answerability": 0.890296995639801,
+        "ground_truth": {
+          "an apparently novel faster-migrating complex": {
+            "bertscore": 0.9632351398468018,
+            "f1": 0.75
+          }
+        }
+      }
+    }
+  }
+}

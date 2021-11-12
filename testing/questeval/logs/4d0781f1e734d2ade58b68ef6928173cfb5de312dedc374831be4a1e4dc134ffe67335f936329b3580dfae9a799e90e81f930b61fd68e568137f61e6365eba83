@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": "Stimulation of the cAMP signal transduction pathway which skews cytokine production toward a Th2 pattern resulted in the preferential suppression of Stat1 activity. cAMP inhibited the induction of expression of IL-2 receptor components but did not inhibit IL-4\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor component did cAMP inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Stimulation",
+        "the cAMP signal transduction pathway",
+        "cytokine production",
+        "a Th2 pattern",
+        "the preferential suppression",
+        "activity",
+        "cAMP",
+        "the induction",
+        "expression",
+        "IL-2 receptor components"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused the suppression of Stat1 activity?",
+          "What skews cytokine production toward a Th2 pattern?",
+          "What does the cAMP signal transduction pathway skew toward a Th2 pattern",
+          "What pattern does cAMP signal transduction skew cytokine production toward?",
+          "What did Stimulation of the cAMP signal transduction pathway result in?",
+          "What did Stat1 inhibit?",
+          "What signal transduction pathway skews cytokine production toward a Th2",
+          "What did cAMP inhibit?",
+          "What did cAMP inhibit?",
+          "What did cAMP inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited the induction of IL-2 receptor components?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3720211386680603,
+        "ground_truth": {
+          "cAMP": {
+            "bertscore": 0.6877755522727966,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor component did cAMP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.8913201093673706,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did cAMP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of expression of IL-2 receptor components",
+        "answerability": 0.9264153242111206,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.6961144804954529,
+            "f1": 0.25
+          },
+          "expression": {
+            "bertscore": 0.6907373666763306,
+            "f1": 0.25
+          },
+          "IL-2 receptor components": {
+            "bertscore": 0.8648717403411865,
+            "f1": 0.6
+          }
+        }
+      }
+    }
+  }
+}

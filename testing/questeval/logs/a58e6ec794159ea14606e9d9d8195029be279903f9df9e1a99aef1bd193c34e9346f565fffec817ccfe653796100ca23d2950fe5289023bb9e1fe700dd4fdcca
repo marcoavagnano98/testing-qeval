@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "However the mechanism by which IFNs mediate this inhibiting effect is unclear.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the mechanism",
+        "IFNs",
+        "this inhibiting effect"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is unclear about IFNs?",
+          "What is the mechanism by which the cytokine effect is inhibited?",
+          "What is the mechanism by which IFNs mediate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has not been defined?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14613854885101318,
+        "ground_truth": {
+          "the mechanism": {
+            "bertscore": 0.7001519203186035,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mediates the inhibition of eukaryotes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFNs",
+        "answerability": 0.7847939133644104,
+        "ground_truth": {
+          "IFNs": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which IFNs mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibiting effect",
+        "answerability": 0.8668031692504883,
+        "ground_truth": {
+          "this inhibition": {
+            "bertscore": 0.7781283855438232,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

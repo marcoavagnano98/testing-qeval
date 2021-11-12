@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "We demonstrate that Elf-1 is constitutively localized in the nucleus which is dependent on the presence of amino acids 86-265.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "86"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What amino acid is required to localize Elf-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "Elf-1",
+        "the nucleus",
+        "the presence",
+        "amino acids"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the study show about Elf-1?",
+          "What is localized in the nucleus?",
+          "Where is Elf-1 localized?",
+          "What is the nucleus of Elf-1 dependent on?",
+          "What is Elf-1 dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What amino acid is Elf-1 dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "86-265",
+        "answerability": 0.6700130701065063,
+        "ground_truth": {
+          "86": {
+            "bertscore": 0.7882487177848816,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What shows that Elf-1 is localized in the nucleus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "amino acids 86-265",
+        "answerability": 0.6658159494400024,
+        "ground_truth": {
+          "These data": {
+            "bertscore": 0.6386167407035828,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is localized in the nucleus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Elf-1",
+        "answerability": 0.9770117402076721,
+        "ground_truth": {
+          "Elf-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where is Elf-1 localized?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the nucleus",
+        "answerability": 0.9691203832626343,
+        "ground_truth": {
+          "the nucleus": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Elf-1 dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "amino acids 86-265",
+        "answerability": 0.9336697459220886,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.6603106260299683,
+            "f1": 0
+          },
+          "amino acids": {
+            "bertscore": 0.7814879417419434,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "This absence of binding was localized to the NF-kappa B region of the HIV-1 enhancer; the 65-kDa plus 50-kDa NF-kappa B heterodimer was preferentially lost.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1",
+        "65-kDa",
+        "50-kDa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhancer was lost due to the absence of binding?",
+          "What was the NF-kappa B heterodimer?",
+          "What was the NF-kappa B heterodimer?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This absence",
+        "binding",
+        "the NF-kappa B region",
+        "the HIV-1 enhancer",
+        "the 65-kDa plus 50-kDa NF-kappa B heterodimer"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of the NF-kappa B binding on the HIV-1 enhance",
+          "What was lost in the absence of the NF-kappa B region?",
+          "Where was the absence of binding localized?",
+          "What region of the HIV-1 gene was the absence of binding localized to?",
+          "What was lost in the absence of binding?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enhancer was lost due to the absence of binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.9065688252449036,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the NF-kappa B heterodimer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0895305871963501,
+        "ground_truth": {
+          "65-kDa": {
+            "bertscore": 0.6607674956321716,
+            "f1": 0
+          },
+          "50-kDa": {
+            "bertscore": 0.6786378026008606,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of the NF-kappa B binding on the HIV-1 enhance": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20892679691314697,
+        "ground_truth": {
+          "This absence": {
+            "bertscore": 0.6975805759429932,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was lost in the absence of the NF-kappa B region?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16078829765319824,
+        "ground_truth": {
+          "binding": {
+            "bertscore": 0.6918073296546936,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the absence of binding localized?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B region",
+        "answerability": 0.9929298162460327,
+        "ground_truth": {
+          "the NF-kappa B region": {
+            "bertscore": 0.9061914682388306,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What region of the HIV-1 gene was the absence of binding localized to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.992688775062561,
+        "ground_truth": {
+          "the HIV-1 enhancer": {
+            "bertscore": 0.6660313010215759,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was lost in the absence of binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6096062660217285,
+        "ground_truth": {
+          "the 65-kDa plus 50-kDa NF-kappa B heterodimer": {
+            "bertscore": 0.5973427295684814,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "HIV-1-infected myeloid cells are often diminished in their ability to participate in chemotaxis phagocytosis and intracellular killing.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV-1-infected myeloid cells",
+        "their ability",
+        "chemotaxis phagocytosis",
+        "intracellular killing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is often diminished in their ability to participate in chemotaxis phagocyto",
+          "What is diminished in HIV-1-infected myeloid cells?",
+          "What is the process called that HIV-1-infected myeloid cells are often diminished",
+          "What is one of the two ways that HIV-1-infected myeloid cells are"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is often diminished in their ability to participate in chemotaxis phagocyto": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1-infected myeloid cells",
+        "answerability": 0.9193427562713623,
+        "ground_truth": {
+          "HIV-1-infected myeloid cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is diminished in HIV-1-infected myeloid cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "their ability to participate in chemotaxis phagocytosis and intracellular",
+        "answerability": 0.9749230146408081,
+        "ground_truth": {
+          "their ability": {
+            "bertscore": 0.7177165150642395,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What is the process called that HIV-1-infected myeloid cells are often diminished": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chemotaxis phagocytosis",
+        "answerability": 0.7720062732696533,
+        "ground_truth": {
+          "chemotaxis phagocytosis": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is one of the two ways that HIV-1-infected myeloid cells are": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20757222175598145,
+        "ground_truth": {
+          "intracellular killing": {
+            "bertscore": 0.7083459496498108,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

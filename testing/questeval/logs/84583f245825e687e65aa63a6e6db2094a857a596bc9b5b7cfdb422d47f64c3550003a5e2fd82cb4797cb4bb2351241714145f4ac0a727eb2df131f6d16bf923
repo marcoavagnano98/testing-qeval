@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "Most hybrids express both KBF1/2 and NF-kappa B in their nuclei but one hybrid expresses only KBF1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "one"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many hybrids express only KBF1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Most hybrids",
+        "both KBF1/2",
+        "NF-kappa B",
+        "their nuclei",
+        "one hybrid",
+        "only KBF1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Which hybrids express both KBF1/2 and NF-kappa B?",
+          "What do most hybrids express in their nuclei?",
+          "What does one hybrid express only?",
+          "Where do most hybrids express KBF1/2 and NF-kappa B?",
+          "How many hybrids express only KBF1?",
+          "What does one hybrid express?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many hybrids express only KBF1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "one hybrid",
+        "answerability": 0.8758029937744141,
+        "ground_truth": {
+          "one": {
+            "bertscore": 0.8799981474876404,
+            "f1": 0.6666666666666666
+          },
+          "one hybrid": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Which hybrids express both KBF1 and NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.059490978717803955,
+        "ground_truth": {
+          "Most hybrids": {
+            "bertscore": 0.7010793089866638,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do most hybrids express in their nuclei?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KBF1/2 and NF-kappa B",
+        "answerability": 0.9786374568939209,
+        "ground_truth": {
+          "both KBF1": {
+            "bertscore": 0.7560639381408691,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does one hybrid express only?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KBF1",
+        "answerability": 0.9329323172569275,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.6987180709838867,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where do most hybrids express KBF1 and NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1910915970802307,
+        "ground_truth": {
+          "their nuclei": {
+            "bertscore": 0.6283836364746094,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does one hybrid express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KBF1",
+        "answerability": 0.898235559463501,
+        "ground_truth": {
+          "only KBF1": {
+            "bertscore": 0.9097760915756226,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

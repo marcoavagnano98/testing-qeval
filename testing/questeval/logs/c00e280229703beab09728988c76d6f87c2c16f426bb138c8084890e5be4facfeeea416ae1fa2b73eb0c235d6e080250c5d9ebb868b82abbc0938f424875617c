@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "Specifically Foxp3 physically interacts with RORgammat and this interaction requires a function in TGF-beta signaling (unpublished data).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RORgammat",
+        "TGF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 physically interact with?",
+          "What does Foxp3 physically interact with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RORgammat",
+        "this interaction",
+        "a function",
+        "TGF-beta signaling",
+        "(unpublished data"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 physically interact with?",
+          "What requires a function in TGF-beta signaling?",
+          "What does the interaction between Foxp3 and RORgammat require?",
+          "What does Foxp3 physically interact with?",
+          "What is the current status of the interaction between Foxp3 and RORgammat?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Foxp3 physically interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RORgammat",
+        "answerability": 0.9741287231445312,
+        "ground_truth": {
+          "RORgammat": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibits RORgammat function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0077980756759643555,
+        "ground_truth": {
+          "this interaction": {
+            "bertscore": 0.7102835774421692,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Foxp3 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007680654525756836,
+        "ground_truth": {
+          "RORgammat function": {
+            "bertscore": 0.6074567437171936,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

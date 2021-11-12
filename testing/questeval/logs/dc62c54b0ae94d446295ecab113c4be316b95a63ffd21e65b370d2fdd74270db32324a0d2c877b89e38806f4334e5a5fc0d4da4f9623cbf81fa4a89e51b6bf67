@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Although negative regulation by dimethyl sulfoxide takes place even when protein synthesis is inhibited by cycloheximide the phorbol myristate acetate effect is blocked to some extent only by cyclohexamethylene bisacetamide.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "negative regulation",
+        "dimethyl sulfoxide",
+        "place",
+        "protein synthesis",
+        "the phorbol myristate",
+        "some extent",
+        "cyclohexamethylene bisacetamide"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does dimethyl sulfoxide cause?",
+          "What is the only thing that blocks the phorbol myristate acetate effect",
+          "What happens when dimethyl sulfoxide is used to inhibit protein synthesis?",
+          "What is inhibited by cycloheximide?",
+          "What is blocked by cycloheximide?",
+          "How much is the phorbol myristate acetate effect blocked by?",
+          "What blocker of phorbol myristate acetate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does dimethyl sulfoxide block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.023178935050964355,
+        "ground_truth": {
+          "negative regulation": {
+            "bertscore": 0.7272577285766602,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only thing that blocks the phorbol myristate acetate effect": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclohexamethylene bisacetamide",
+        "answerability": 0.830838680267334,
+        "ground_truth": {
+          "dimethyl sulfoxide": {
+            "bertscore": 0.7736610770225525,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens when dimethyl sulfoxide is used to inhibit protein synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "negative regulation",
+        "answerability": 0.9525890350341797,
+        "ground_truth": {
+          "place": {
+            "bertscore": 0.7630587220191956,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is inhibited by cycloheximide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein synthesis",
+        "answerability": 0.8803570866584778,
+        "ground_truth": {
+          "protein synthesis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is blocked by cycloheximide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10960274934768677,
+        "ground_truth": {
+          "the phorbol myristate": {
+            "bertscore": 0.6180036067962646,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How is the phorbol myristate acetate effect blocked?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclohexamethylene bisacetamide",
+        "answerability": 0.9710264205932617,
+        "ground_truth": {
+          "some extent": {
+            "bertscore": 0.5492514967918396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits the phorbol myristate acetate effect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclohexamethylene bisacetamide",
+        "answerability": 0.8951162099838257,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.8485259413719177,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

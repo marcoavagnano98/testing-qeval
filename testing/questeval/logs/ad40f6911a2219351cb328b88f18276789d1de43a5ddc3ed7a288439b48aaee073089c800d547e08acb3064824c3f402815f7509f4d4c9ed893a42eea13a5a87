@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "In resting cells IkappaB subunits are responsible for sequestering NF-kappaB subunits in the cytoplasm.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What subunits are responsible for sequestering in the cytoplasm?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "resting cells",
+        "IkappaB subunits",
+        "NF-kappaB subunits",
+        "the cytoplasm"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where are IkappaB subunits responsible for sequestering NF-",
+          "What is responsible for sequestering NF-kappaB subunits in",
+          "What are IkappaB subunits responsible for sequestering in the",
+          "Where do IkappaB subunits sequester?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What subunits are sequestered in the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB",
+        "answerability": 0.9336754083633423,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.7467421293258667,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where are IkappaB proteins responsible for sequestering NF-kapp": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5931862592697144,
+        "ground_truth": {
+          "resting cells": {
+            "bertscore": 0.7101620435714722,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is responsible for sequestering NF-kappaB subunits in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB subunits",
+        "answerability": 0.9542462229728699,
+        "ground_truth": {
+          "IkappaB proteins": {
+            "bertscore": 0.8611948490142822,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What do IkappaB proteins sequester in the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05646175146102905,
+        "ground_truth": {
+          "NF-kappaB subunits": {
+            "bertscore": 0.6328271627426147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where do IkappaB proteins sequester NF-kappaB sub": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the cytoplasm",
+        "answerability": 0.6019707918167114,
+        "ground_truth": {
+          "the cytoplasm": {
+            "bertscore": 0.9353911876678467,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

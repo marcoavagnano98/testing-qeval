@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Expression of PILOT a putative transcription factor requires two signals and is cyclosporin Asensitive in T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many signals does PILOT require?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "PILOT",
+        "a putative transcription factor",
+        "two signals",
+        "cyclosporin Asensitive",
+        "T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PILOT?",
+          "What is cyclosporin Asensitive in T cells?",
+          "What is PILOT?",
+          "How many signals does PILOT require?",
+          "What is the PILOT transcription factor?",
+          "What type of cells are cyclosporin A sensitive to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many signals does PILOT require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.9861599206924438,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          },
+          "two signals": {
+            "bertscore": 0.863840639591217,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is PILOT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "putative transcription factor",
+        "answerability": 0.9913543462753296,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7354679107666016,
+            "f1": 0
+          },
+          "a putative transcription factor": {
+            "bertscore": 0.9331666827201843,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is cyclosporin A sensitive in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PILOT",
+        "answerability": 0.8178238868713379,
+        "ground_truth": {
+          "PILOT": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are PILOT sensitive to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.6866925954818726,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

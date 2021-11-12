@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "IL-10 pretreatment prevented LPS-induced decreases in IkappaB-alpha protein levels and attenuated NF-kappaB DNA binding.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug did IL-10 prevent?",
+          "What DNA binding was reduced by IL-10?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-10 pretreatment prevented LPS-induced decreases",
+        "IkappaB-alpha protein levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did IL-10 do for IkappaB-alpha protein levels?",
+          "What did IL-10 prevent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug did IL-10 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS",
+        "answerability": 0.9014854431152344,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What DNA binding was reduced by IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.967589259147644,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IL-10 do for IkappaB-alpha protein levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "prevented LPS-induced decreases",
+        "answerability": 0.9019878506660461,
+        "ground_truth": {
+          "IL-10 pretreatment prevented LPS-induced decreases": {
+            "bertscore": 0.9027147889137268,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What did IL-10 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS-induced decreases in IkappaB-alpha protein levels",
+        "answerability": 0.9877563118934631,
+        "ground_truth": {
+          "IkappaB-alpha protein levels": {
+            "bertscore": 0.9063833951950073,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

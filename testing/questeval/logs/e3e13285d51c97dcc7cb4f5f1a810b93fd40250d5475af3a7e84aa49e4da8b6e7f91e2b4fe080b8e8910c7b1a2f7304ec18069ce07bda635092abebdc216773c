@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "The results showed that the expression of T antigen rendered rat embryo fibroblasts (REF) sensitive to apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "REF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the term for rat embryo fibroblasts?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The results",
+        "the expression",
+        "T antigen",
+        "rat embryo fibroblasts",
+        "(REF",
+        "apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that expression of T antigen rendered rat embryo fibroblasts sensitive to",
+          "What did the results show about the T antigen?",
+          "What did the study show rendered rat embryo fibroblasts sensitive to apopto",
+          "What did the expression of T antigen make sensitive to apoptosis?",
+          "What is the term for rat embryo fibroblasts?",
+          "What did the expression of T antigen make rat embryo fibroblasts sensitive to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the rat embryo fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "REF",
+        "answerability": 0.9720916748046875,
+        "ground_truth": {
+          "REF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What apoptosis did the expression of full-length T antigen cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01931232213973999,
+        "ground_truth": {
+          "5-FU": {
+            "bertscore": 0.7021405100822449,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What showed that expression of full-length T antigen rendered rat embryo fibroblasts": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4345961809158325,
+        "ground_truth": {
+          "The results": {
+            "bertscore": 0.6512247323989868,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show about full-length T antigen?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11231070756912231,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show rendered rat embryo fibroblasts sensitive to apopto": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of T antigen",
+        "answerability": 0.9889972805976868,
+        "ground_truth": {
+          "full-length T antigen": {
+            "bertscore": 0.8413527607917786,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did the expression of full-length T antigen render sensitive to 5-FU-induced": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12100547552108765,
+        "ground_truth": {
+          "rat embryo fibroblasts": {
+            "bertscore": 0.6504393219947815,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the expression of full-length T antigen render rat embryo fibroblasts": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06159025430679321,
+        "ground_truth": {
+          "5-FU-induced apoptosis": {
+            "bertscore": 0.6093021631240845,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

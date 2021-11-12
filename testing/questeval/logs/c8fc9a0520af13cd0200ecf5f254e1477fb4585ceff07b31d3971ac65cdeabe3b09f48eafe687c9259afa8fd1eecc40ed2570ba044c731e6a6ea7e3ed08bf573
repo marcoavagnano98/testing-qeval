@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "The transcription factor NF-kappaB has been shown to play a role in protecting cells against death triggered by TNF\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor protects cells against death triggered by TNF?",
+          "What is the transcription factor NF-kappaB?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The transcription factor NF-kappaB",
+        "a role",
+        "cells",
+        "death",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the transcription factor that protects cells from death triggered by TNF",
+          "What has the transcription factor NF-kappaB been shown to play in protecting cells",
+          "What does the transcription factor NF-kappaB protect against death?",
+          "What does TNF-kappaB protect cells from?",
+          "What is the transcription factor NF-kappaB?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor protects cells against death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.7900065779685974,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the transcription factor NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01661437749862671,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the transcription factor that protects cells from death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.6546456813812256,
+        "ground_truth": {
+          "The transcription factor NF-kappaB": {
+            "bertscore": 0.783103883266449,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What has the transcription factor NF-kappaB been shown to play in protecting cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6411479711532593,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6715851426124573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the transcription factor NF-kappaB protect against death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cells",
+        "answerability": 0.8711159229278564,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the transcription factor NF-kappaB protect cells from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "death triggered by TNF",
+        "answerability": 0.8871448040008545,
+        "ground_truth": {
+          "death": {
+            "bertscore": 0.6804158091545105,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

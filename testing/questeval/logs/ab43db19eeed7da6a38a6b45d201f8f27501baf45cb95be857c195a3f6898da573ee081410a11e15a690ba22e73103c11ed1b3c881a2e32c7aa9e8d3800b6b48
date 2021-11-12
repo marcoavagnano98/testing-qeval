@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "This protein-protein interaction does not require the simultaneous binding of DNA-binding proteins Oct1 and Oct2 to their respective POU domains suggesting that these proteins displace BOB.1/OBF.1 from its recognition sequence removing transcriptional repression and allowing gene transcription to occur.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Oct1",
+        "Oct2",
+        "BOB.1/OBF.1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the two DNA-binding proteins that are not required to be",
+          "What is the name of the protein that is not required to be bind to DNA?",
+          "What protein is displaced from its recognition sequence?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This protein-protein interaction",
+        "the simultaneous binding",
+        "DNA-binding proteins",
+        "their respective POU domains",
+        "these proteins",
+        "BOB.1/OBF.1",
+        "its recognition sequence",
+        "transcriptional repression",
+        "gene transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not require the simultaneous binding of DNA-binding proteins Oct1 and Oct2 to",
+          "What does the interaction between Oct1 and Oct2 not require?",
+          "What does the interaction between Oct1 and Oct2 not require?",
+          "What do the two proteins not have to be binded simultaneously to?",
+          "What proteins displace BOB.1/OBF.1 from its recognition sequence?",
+          "What protein is displaced from its recognition sequence?",
+          "What does the protein-protein interaction remove from BOB.1/OBF.1?",
+          "What does the protein-protein interaction remove?",
+          "What does this protein-protein interaction allow to occur?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein does the interaction between Oct and DNA not require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5763548016548157,
+        "ground_truth": {
+          "Oct": {
+            "bertscore": 0.665030837059021,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not require the simultaneous binding of Oct proteins to DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6399631500244141,
+        "ground_truth": {
+          "This protein-protein interaction": {
+            "bertscore": 0.5634869337081909,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the interaction between Oct proteins and DNA not require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the simultaneous binding of DNA-binding proteins Oct1 and Oct2 to their respective POU",
+        "answerability": 0.9249546527862549,
+        "ground_truth": {
+          "the simultaneous binding": {
+            "bertscore": 0.7605157494544983,
+            "f1": 0.2857142857142857
+          },
+          "DNA": {
+            "bertscore": 0.6165482997894287,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the protein-protein interaction not require the simultaneous binding of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA-binding proteins Oct1 and Oct2",
+        "answerability": 0.9853078722953796,
+        "ground_truth": {
+          "Oct proteins": {
+            "bertscore": 0.7669364809989929,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    }
+  }
+}

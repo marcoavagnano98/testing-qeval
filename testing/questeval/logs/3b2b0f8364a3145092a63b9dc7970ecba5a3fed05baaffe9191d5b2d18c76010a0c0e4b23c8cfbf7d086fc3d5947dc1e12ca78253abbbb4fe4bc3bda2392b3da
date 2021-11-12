@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Eosinophils express mRNA for GATA-1 GATA-2 and GATA-3.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Eosinophils express"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of mRNA does the eukaryotic cell line have?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Eosinophils express mRNA",
+        "GATA-1 GATA-2",
+        "GATA-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does eosinophils express for GATA-1 GATA-2 and G",
+          "What two genes do eosinophils express?",
+          "What is the mRNA for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of mRNA does the eukaryotic cell line have?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.121734619140625,
+        "ground_truth": {
+          "Eosinophils express": {
+            "bertscore": 0.6614464521408081,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does eosinophils express for GATA-1 GATA-2 and G": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA",
+        "answerability": 0.8944401144981384,
+        "ground_truth": {
+          "Eosinophils express mRNA": {
+            "bertscore": 0.7718462944030762,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What two genes do eosinophils express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-1 GATA-2 and GATA-3",
+        "answerability": 0.9799297451972961,
+        "ground_truth": {
+          "GATA-1 GATA-2": {
+            "bertscore": 0.9286136031150818,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the mRNA for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-1 GATA-2",
+        "answerability": 0.8149257302284241,
+        "ground_truth": {
+          "GATA-3": {
+            "bertscore": 0.8641143441200256,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

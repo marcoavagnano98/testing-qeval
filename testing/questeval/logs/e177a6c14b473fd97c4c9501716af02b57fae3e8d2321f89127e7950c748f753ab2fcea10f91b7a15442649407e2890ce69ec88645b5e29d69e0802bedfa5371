@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "The leukocyte-specific cytoskeleton-binding pp65 (LSP-1 WP-34) protein is widely expressed in multiple leukocyte lineages including B and T lymphocytes granulocytes and macrophages.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LSP-1 WP-34"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the leukocyte-specific cytoskeleton-binding pp65?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The leukocyte-specific cytoskeleton",
+        "pp65",
+        "LSP-1 WP-34) protein",
+        "multiple leukocyte lineages",
+        "B and T lymphocytes granulocytes",
+        "macrophages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the pp65 protein?",
+          "What is the name of the leukocyte-specific cytoskeleton-binding protein",
+          "What is the leukocyte-specific cytoskeleton-binding pp65?",
+          "Where is the pp65 protein widely expressed?",
+          "What are two types of leukocytes that are expressed in pp65?",
+          "What is the other leukocyte lineage that is expressed in pp65?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is widely expressed in multiple leukocyte lineages?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoskeleton-binding pp65 (LSP-1 WP-34) protein",
+        "answerability": 0.9407103657722473,
+        "ground_truth": {
+          "The leukocyte-specific cytoskeleton-binding pp52 (LSP-1 WP-34) protein": {
+            "bertscore": 0.9317635297775269,
+            "f1": 0.7272727272727272
+          }
+        }
+      }
+    },
+    "Where is the pp52 protein widely expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019607603549957275,
+        "ground_truth": {
+          "multiple leukocyte lineages": {
+            "bertscore": 0.6450982093811035,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are two types of leukocytes that are expressed in pp52?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05526435375213623,
+        "ground_truth": {
+          "B and T lymphocytes granulocytes": {
+            "bertscore": 0.5980390310287476,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other leukocyte lineage that is expressed in pp52?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2258470058441162,
+        "ground_truth": {
+          "macrophages": {
+            "bertscore": 0.6406634449958801,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

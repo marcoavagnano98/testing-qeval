@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "In contrast interleukin-1beta-converting enzyme family protease inhibitors Ac-DEVD-CHO and CrmA blocked both Fas-mediated apoptosis and cell death.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "interleukin-1beta",
+        "Ac-DEVD-CHO",
+        "Fas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enzyme block Fas-mediated apoptosis?",
+          "What is the name of the interleukin-1beta-converting enzyme family prote",
+          "What mediated apoptosis did Ac-DEVD-CHO block?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "interleukin-1beta-converting enzyme family protease inhibitors Ac-DEVD-CHO",
+        "CrmA",
+        "both Fas-mediated apoptosis",
+        "cell death"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of the inhibitors on apoptosis and cell death?",
+          "What blockade both Fas-mediated apoptosis and cell death?",
+          "What blockade both Fas-mediated apoptosis and cell death?",
+          "What did the inhibitors Ac-DEVD-CHO and CrmA block?",
+          "What did the inhibitors Ac-DEVD-CHO and CrmA block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enzyme block Fas-mediated apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5384236574172974,
+        "ground_truth": {
+          "interleukin-1beta": {
+            "bertscore": 0.5889829993247986,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the inhibitor that blocked Fas-mediated apoptosis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5478225350379944,
+        "ground_truth": {
+          "Ac-DEVD-CHO": {
+            "bertscore": 0.6401505470275879,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockade apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ac-DEVD-CHO and CrmA",
+        "answerability": 0.649713397026062,
+        "ground_truth": {
+          "CrmA": {
+            "bertscore": 0.800879955291748,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What inhibitors blocked Fas-mediated apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ac-DEVD-CHO and CrmA",
+        "answerability": 0.8210843801498413,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6516594290733337,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the inhibitors Ac-DEVD-CHO and CrmA block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fas-mediated apoptosis and cell death",
+        "answerability": 0.9905219078063965,
+        "ground_truth": {
+          "Fas-mediated apoptosis": {
+            "bertscore": 0.9351580142974854,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

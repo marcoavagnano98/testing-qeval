@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"We have isolated a human cDNA clone encoding a zinc finger protein (NF-E1) that binds to the negative-acting segment of the kappa E3 enhancer.\"\" This protein also binds to the immunoglobulin heavy-chain mu E1 site.\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "clone",
+        "kappa",
+        "E3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the human cDNA used for?",
+          "What is the negative-acting segment of the enhancer?",
+          "What enhancer does the cDNA clone bind to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a human cDNA",
+        "a zinc finger protein",
+        "(NF-E1",
+        "the negative-acting segment",
+        "the kappa E3 enhancer",
+        "This protein",
+        "the immunoglobulin heavy-chain mu E1 site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cDNA clone?",
+          "What has been isolated that binds to the negative-acting segment of the k",
+          "What does NF-E1 encoding?",
+          "What is the name of the zinc finger protein?",
+          "What does NF-E1 bind to?",
+          "What does NF-E1 bind to?",
+          "What binds to the immunoglobulin heavy-chain mu E1 site?",
+          "What does the NF-E1 protein bind to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0021039247512817383,
+        "ground_truth": {
+          "\"Isolation": {
+            "bertscore": 0.6838610768318176,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is YY-1 delta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008880496025085449,
+        "ground_truth": {
+          "a candidate repressor/activator NF-E1": {
+            "bertscore": 0.6247860789299011,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the candidate repressor/activator that binds to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14917737245559692,
+        "ground_truth": {
+          "(YY-1 delta": {
+            "bertscore": 0.6316688060760498,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does YY-1 delta bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011173367500305176,
+        "ground_truth": {
+          "the immunoglobulin kappa 3 enhancer": {
+            "bertscore": 0.5701315999031067,
+            "f1": 0
+          },
+          "the immunoglobulin heavy-chain mu E1 site": {
+            "bertscore": 0.5830592513084412,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

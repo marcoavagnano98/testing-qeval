@@ -1,0 +1,158 @@
+{
+  "type": "ref",
+  "text": "Furthermore when injected with Licochalcone A prior to injection of LPS the serum level of TNFalpha and MCP-1 in C57BL/6 mice was clearly decreased indicating that Licochalcone A has a potent anti-inflammatory effect both in vitro and in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNFalpha",
+        "MCP-1",
+        "C57BL/6",
+        "Licochalcone A",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was significantly reduced in mice when injected with LPS?",
+          "What protein was significantly reduced in mice treated with LPS?",
+          "What type of mice were shown to have a decreased serum level of TNFalpha and",
+          "What drug has a potent anti-inflammatory effect in both in vitro and in",
+          "In what way does LPS work?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Licochalcone A",
+        "injection",
+        "LPS",
+        "the serum level",
+        "TNFalpha",
+        "MCP-1",
+        "C57BL/6 mice",
+        "Licochalcone A",
+        "a potent anti-inflammatory effect",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug has a potent anti-inflammatory effect in both in vitro and in",
+          "What was the first step in the treatment of TB?",
+          "What drug did C57BL/6 mice receive before licochalcone A?",
+          "What was decreased when injected with LPS?",
+          "What protein was significantly reduced in mice when injected with LPS?",
+          "What protein was significantly reduced in mice treated with LPS?",
+          "What type of mice had a decrease in TNFalpha and MCP-1?",
+          "What drug has a potent anti-inflammatory effect in both in vitro and in",
+          "What does the drug have in vitro and in vivo?",
+          "In what way does LPS work?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the anti-inflammatory drug that can be used in combination with LPS": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Licochalcone A",
+        "answerability": 0.9266992211341858,
+        "ground_truth": {
+          "MCP-1": {
+            "bertscore": 0.6676686406135559,
+            "f1": 0
+          },
+          "MCP-2": {
+            "bertscore": 0.6643223166465759,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of mice were injected with LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C57BL/6 mice",
+        "answerability": 0.9515836834907532,
+        "ground_truth": {
+          "C57BL/6": {
+            "bertscore": 0.9034171104431152,
+            "f1": 0.6666666666666666
+          },
+          "C57BL/6 mice": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What drug has a potent anti-inflammatory effect in both in vitro and in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Licochalcone A",
+        "answerability": 0.9761146903038025,
+        "ground_truth": {
+          "Licochalcone A": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what way does LPS work?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-inflammatory",
+        "answerability": 0.512597918510437,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.6657231450080872,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the first step in the treatment of TB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16609054803848267,
+        "ground_truth": {
+          "injection": {
+            "bertscore": 0.7230890989303589,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug did mice receive before licochalcone A?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS",
+        "answerability": 0.7853502035140991,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was decreased when injected with LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNFalpha and MCP-1",
+        "answerability": 0.8458566665649414,
+        "ground_truth": {
+          "the serum level": {
+            "bertscore": 0.6470053195953369,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the drug have in vitro and in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "potent anti-inflammatory effect",
+        "answerability": 0.9749447703361511,
+        "ground_truth": {
+          "a potent anti-inflammatory effect": {
+            "bertscore": 0.9546641707420349,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

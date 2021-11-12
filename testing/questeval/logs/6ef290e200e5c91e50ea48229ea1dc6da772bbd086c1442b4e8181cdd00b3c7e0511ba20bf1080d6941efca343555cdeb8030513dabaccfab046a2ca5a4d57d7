@@ -1,0 +1,118 @@
+{
+  "type": "ref",
+  "text": "mRNA levels we observed within 30 min of monocyte adherence would result from NF-kappa B-dependent transcriptional stimulation of the I kappa B alpha/MAD-3 gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mRNA",
+        "30 min",
+        "MAD-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the NF-kappa B-dependent transcriptional stimulation of the I",
+          "How long did it take for the mRNA levels to be observed?",
+          "What gene is involved in the mRNA levels observed within 30 min of monocyte adherence"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "mRNA levels",
+        "we",
+        "30 min",
+        "monocyte adherence",
+        "NF-kappa B-dependent transcriptional stimulation",
+        "the I kappa B alpha/MAD-3 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the NF-kappa B-dependent transcriptional stimulation of the I",
+          "What was the cause of the mRNA levels observed within 30 min of monocyte adherence",
+          "How long did it take for the mRNA levels to be observed?",
+          "What was the result of NF-kappa B-dependent transcriptional stimulation?",
+          "What is the cause of the mRNA levels observed within 30 min of monocyte adherence",
+          "What gene is involved in the mRNA levels observed within 30 min of monocyte adherence"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we observe within 30 min of monocyte adherence?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels",
+        "answerability": 0.9838613271713257,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.8819262981414795,
+            "f1": 0.6666666666666666
+          },
+          "mRNA levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How long after monocyte adherence did we observe mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "30 min",
+        "answerability": 0.9922118186950684,
+        "ground_truth": {
+          "30 min": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the cause of the mRNA levels observed within 30 min of monocyte adherence": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B-dependent transcriptional stimulation",
+        "answerability": 0.9356048703193665,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6023937463760376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappa B-dependent transcriptional stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19642364978790283,
+        "ground_truth": {
+          "monocyte adherence": {
+            "bertscore": 0.6610167026519775,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of the mRNA levels observed within 30 min of monocyte adherence": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B-dependent transcriptional stimulation",
+        "answerability": 0.9202655553817749,
+        "ground_truth": {
+          "NF-kappa B-dependent transcriptional stimulation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What transcriptional factor is responsible for the mRNA levels observed within 30 min of monocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.8886277079582214,
+        "ground_truth": {
+          "the I kappa B": {
+            "bertscore": 0.8159208297729492,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

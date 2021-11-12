@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "Activation of the NF-kappaB pathway by inflammatory stimuli in human neutrophils.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What pathway is activated by inflammatory stimuli in human neutrophils?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "the NF-kappaB pathway",
+        "inflammatory stimuli",
+        "human neutrophils"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the NF-kappaB pathway?",
+          "What pathway is activated by inflammatory stimuli in human neutrophils?",
+          "What is the NF-kappaB pathway activated by?",
+          "What is the NF-kappaB pathway activated by?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the phosphorylation and subsequent degradation of NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01703578233718872,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.72251957654953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is activated by inflammatory stimuli?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB pathway",
+        "answerability": 0.9927963018417358,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.8190252184867859,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the process of activating NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inflammatory stimuli",
+        "answerability": 0.8179419040679932,
+        "ground_truth": {
+          "inflammatory stimuli": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the phosphorylation and subsequent degradation": {
+            "bertscore": 0.6698841452598572,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is phosphorylated and subsequently degraded by inflammatory stimuli?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10194611549377441,
+        "ground_truth": {
+          "its inhibitor": {
+            "bertscore": 0.6521133780479431,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "In the absence of Wnt stimulation the transcriptional cofactor beta-catenin is destabilized via phosphorylation by protein kinase GSK3beta in complex with Axin family members.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GSK3beta",
+        "Axin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein kinase destabilizes beta-catenin in the absence",
+          "What family member is involved in the destabilization of beta-catenin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the absence",
+        "Wnt stimulation",
+        "the transcriptional cofactor beta-catenin",
+        "phosphorylation",
+        "protein kinase GSK3beta",
+        "complex",
+        "Axin family members"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what condition is the transcriptional cofactor beta-catenin destabilized?",
+          "What is the only way to stabilize beta-catenin?",
+          "What is destabilized in the absence of Wnt stimulation?",
+          "What is the mechanism by which beta-catenin is destabilized?",
+          "What is the cofactor beta-catenin destabilized by?",
+          "What is the Axin family?",
+          "What is the transcriptional cofactor beta-catenin in complex with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What kinase is required for activation of the beta-catenin signal": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30684995651245117,
+        "ground_truth": {
+          "GSK3beta": {
+            "bertscore": 0.6241672039031982,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for activation of the beta-catenin signaling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25401538610458374,
+        "ground_truth": {
+          "Wnt-induced phosphorylation": {
+            "bertscore": 0.5948998332023621,
+            "f1": 0
+          },
+          "the kinase GSK3beta": {
+            "bertscore": 0.579583466053009,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for activation of the signaling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02597421407699585,
+        "ground_truth": {
+          "beta-catenin": {
+            "bertscore": 0.601059079170227,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the kinase GSK3beta required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03226363658905029,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6694929003715515,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

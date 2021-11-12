@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "(TLR2) is a signaling receptor that responds to LPS and activates NF-kappaB.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does TLR2 respond to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TLR2",
+        "a signaling receptor",
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the signaling receptor that responds to LPS?",
+          "What is TLR2?",
+          "What does TLR2 respond to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the NF-kappaB dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01852339506149292,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 0.6275320649147034,
+            "f1": 0
+          },
+          "the phosphorylation": {
+            "bertscore": 0.6286066174507141,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling pathway activates NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TLR2",
+        "answerability": 0.9723044633865356,
+        "ground_truth": {
+          "The TLR2": {
+            "bertscore": 0.8971003293991089,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the TLR2 signaling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17140179872512817,
+        "ground_truth": {
+          "pathway": {
+            "bertscore": 0.6902822852134705,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is dependent on phosphorylation and degradation of IkappaBalpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002898573875427246,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.651921272277832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the phosphorylation and what is the degradation of IkappaBal": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00548475980758667,
+        "ground_truth": {
+          "degradation": {
+            "bertscore": 0.7194915413856506,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

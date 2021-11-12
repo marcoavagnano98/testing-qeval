@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "GTPase-deficient constitutively activated mutant of Galpha(12) (G12V) has been previously shown to induce oncogenic transformation of NIH3T3 cells promoting serum- and anchorage-independent growth.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GTPase-deficient constitutively activated mutant",
+        "Galpha(12",
+        "(G12V",
+        "oncogenic transformation",
+        "NIH3T3 cells",
+        "serum- and anchorage-independent growth"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that induces oncogenic transformation of NIH3",
+          "What is the G12V mutant of?",
+          "What is the name of the GTPase-deficient mutant of Galpha(",
+          "What does the G12V mutant induce?",
+          "What does the G12V mutant induce oncogenic transformation of?",
+          "What does the G12V mutant promote?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the GTPase-deficient mutant of Galpha(": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "G12V",
+        "answerability": 0.8955524563789368,
+        "ground_truth": {
+          "Galpha(12)QL": {
+            "bertscore": 0.6944208741188049,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that induces oncogenic transformation of NIH3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3635413646697998,
+        "ground_truth": {
+          "GTPase-deficient constitutively activated mutant": {
+            "bertscore": 0.5754389762878418,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the GTPase-deficient mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Galpha(12) (G12V)",
+        "answerability": 0.8781828284263611,
+        "ground_truth": {
+          "Galpha(12": {
+            "bertscore": 0.8299245238304138,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is another name for Galpha(12)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "G12V",
+        "answerability": 0.9646919369697571,
+        "ground_truth": {
+          "(Galpha(12)Q229L": {
+            "bertscore": 0.7131790518760681,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the GTPase-deficient mutant of Galpha(12) induce": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oncogenic transformation of NIH3T3 cells",
+        "answerability": 0.6519283652305603,
+        "ground_truth": {
+          "oncogenic transformation": {
+            "bertscore": 0.8216769099235535,
+            "f1": 0.5714285714285715
+          },
+          "NIH3T3 cells": {
+            "bertscore": 0.8749151229858398,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What does the GTPase-deficient mutant of Galpha(12) promote": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31078702211380005,
+        "ground_truth": {
+          "serum- and anchorage-independent growth": {
+            "bertscore": 0.6510066390037537,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

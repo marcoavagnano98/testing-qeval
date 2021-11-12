@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Activation of NF-kappaB in human mononuclear cells by inflammatory stimuli involves the phosphorylation of IkappaBalpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is phosphorylated by inflammatory stimuli?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "NF-kappaB",
+        "human mononuclear cells",
+        "inflammatory stimuli",
+        "the phosphorylation",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the phosphorylation of IkappaBalpha?",
+          "What is activated by inflammatory stimuli?",
+          "What is activated by inflammatory stimuli?",
+          "What triggers phosphorylation of IkappaBalpha?",
+          "What does activation of NF-kappaB involve?",
+          "What protein is phosphorylated by inflammatory stimuli?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What pathway is activated by inflammatory stimuli in human neutrophils?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35338449478149414,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.651921272277832,
+            "f1": 0
+          },
+          "the NF-kappaB pathway": {
+            "bertscore": 0.6027004718780518,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07980519533157349,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.72251957654953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB pathway activated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inflammatory stimuli",
+        "answerability": 0.9549967050552368,
+        "ground_truth": {
+          "inflammatory stimuli": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "human neutrophils": {
+            "bertscore": 0.7294747829437256,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

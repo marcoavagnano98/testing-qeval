@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"These results indicate that the 5-UTR of the gamma-gene contains sequences that may play a role in the developmental regulation of this beta-gene.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "the 5-UTR",
+        "the gamma-gene",
+        "sequences",
+        "a role",
+        "the developmental regulation",
+        "this beta-gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that the 5-UTR of the gamma-gene contains sequences",
+          "What sequence of the gamma-gene is thought to play a role in",
+          "What gene contains sequences that may play a role in the development of the beta-gen",
+          "What does the 5-UTR of the gamma-gene contain?",
+          "What do the results indicate about the 5-UTR of the gamma-gene",
+          "What do the results indicate the 5-UTR of the gamma-gene contains",
+          "What gene is the 5-UTR of the gamma-gene thought to contain"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What indicates that the 5-UTR of the gamma-gene contains sequences": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These results",
+        "answerability": 0.9727407097816467,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the gamma-gene's gamma-gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2451409101486206,
+        "ground_truth": {
+          "the 5-UTR": {
+            "bertscore": 0.6672552227973938,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene contains sequences that may be important for its transcriptional and developmental regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the 5-UTR of the gamma-gene",
+        "answerability": 0.9301324486732483,
+        "ground_truth": {
+          "the gamma-gene": {
+            "bertscore": 0.8722083568572998,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the 5-UTR of the gamma-gene contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sequences that may play a role in the developmental regulation of this beta-gene",
+        "answerability": 0.9987006783485413,
+        "ground_truth": {
+          "sequences": {
+            "bertscore": 0.6721453070640564,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What are the sequences of the 5-UTR of the gamma-gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.379821240901947,
+        "ground_truth": {
+          "its transcriptional and developmental regulation": {
+            "bertscore": 0.5910457372665405,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

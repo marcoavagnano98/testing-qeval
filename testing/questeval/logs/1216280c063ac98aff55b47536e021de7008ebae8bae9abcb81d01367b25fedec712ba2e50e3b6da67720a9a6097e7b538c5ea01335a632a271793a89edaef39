@@ -1,0 +1,66 @@
+{
+  "type": "ref",
+  "text": "At other times both the metastases and the primary tumor may spontaneously regress without treatment.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "other times",
+        "both the metastases",
+        "the primary tumor",
+        "treatment"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "At what time can both the metastases and primary tumor spontaneously regress?",
+          "What may spontaneously regress without treatment?",
+          "What may spontaneously regress without treatment?",
+          "What may spontaneously regress without?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What may present with widespread metastases that are unresponsive to aggressive treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0984569787979126,
+        "ground_truth": {
+          "The tumor": {
+            "bertscore": 0.661379337310791,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of tumor that can be treated with aggressive treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005043089389801025,
+        "ground_truth": {
+          "widespread metastases": {
+            "bertscore": 0.684295654296875,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the treatment of the tumor that is not effective?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003381490707397461,
+        "ground_truth": {
+          "aggressive treatment": {
+            "bertscore": 0.7181467413902283,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

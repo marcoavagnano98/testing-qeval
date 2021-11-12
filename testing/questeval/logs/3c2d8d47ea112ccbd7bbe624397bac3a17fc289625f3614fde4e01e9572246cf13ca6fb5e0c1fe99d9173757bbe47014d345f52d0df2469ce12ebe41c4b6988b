@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "Interestingly inhibition of Erg expression in quiescent EC results in increased NF-kappaB-dependent ICAM-1 expression indicating that Erg represses basal NF-kappaB activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC",
+        "Erg"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of cell does inhibition of Erg result in increased ICAM-1 expression?",
+          "What represses basal NF-kappaB activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Interestingly inhibition",
+        "Erg expression",
+        "quiescent EC results",
+        "increased NF-kappaB-dependent ICAM-1 expression",
+        "Erg",
+        "NF-kappaB activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What results in increased NF-kappaB-dependent ICAM-1 expression?",
+          "What is a key factor in the regulation of ICAM-1?",
+          "What is an interesting result of Erg inhibition?",
+          "What does inhibition of Erg expression in quiescent EC result in?",
+          "What represses basal NF-kappaB activity?",
+          "What does inhibition of Erg expression in quiescent EC result in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor represses stress-activated NF-kappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Erg",
+        "answerability": 0.6635186076164246,
+        "ground_truth": {
+          "Erg": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Erg?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0031968355178833008,
+        "ground_truth": {
+          "The transcription factor": {
+            "bertscore": 0.6242141127586365,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Erg repress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "basal NF-kappaB activity",
+        "answerability": 0.9363501667976379,
+        "ground_truth": {
+          "stress-activated NF-kappaB transcriptional activity": {
+            "bertscore": 0.8936415910720825,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

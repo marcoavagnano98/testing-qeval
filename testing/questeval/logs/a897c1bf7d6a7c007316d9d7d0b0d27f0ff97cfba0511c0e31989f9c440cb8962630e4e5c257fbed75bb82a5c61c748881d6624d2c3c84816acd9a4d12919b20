@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Nuclear run on transcription of the c-jun hck and actin genes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Nuclear run",
+        "transcription",
+        "the c-jun hck and actin genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of c-jun hck and actin genes?",
+          "What is the c-jun hck and actin genes dependent on?",
+          "What transcription factors are involved in the nuclear run?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of c-jun hck and actin genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Nuclear run",
+        "answerability": 0.9837995171546936,
+        "ground_truth": {
+          "Nuclear run": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the c-jun hck and actin genes dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5996533632278442,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6925774216651917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factors are involved in the nuclear run?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-jun hck and actin genes",
+        "answerability": 0.7353350520133972,
+        "ground_truth": {
+          "the c-jun hck and actin genes": {
+            "bertscore": 0.9429657459259033,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

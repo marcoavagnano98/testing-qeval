@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "In the present study we investigated the signaling role of the Syk kinase in T cell activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Syk"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What kinase is involved in T cell activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the present study",
+        "we",
+        "the signaling role",
+        "T cell activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study investigated the signaling role of the Syk kinase in T cell",
+          "What did we study in the present study?",
+          "What did the present study investigate?",
+          "What is the Syk kinase involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the tyrosine kinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.041118085384368896,
+        "ground_truth": {
+          "Syk": {
+            "bertscore": 0.6767531037330627,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of Syk tyrosine kinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48028093576431274,
+        "ground_truth": {
+          "A possible signaling role": {
+            "bertscore": 0.6884753704071045,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a possible signaling role for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Syk kinase",
+        "answerability": 0.9833346009254456,
+        "ground_truth": {
+          "the Syk tyrosine kinase": {
+            "bertscore": 0.8360158801078796,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

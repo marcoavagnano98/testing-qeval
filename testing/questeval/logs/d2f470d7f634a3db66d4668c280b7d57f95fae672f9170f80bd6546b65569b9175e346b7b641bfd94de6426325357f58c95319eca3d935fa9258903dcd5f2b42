@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "This occurs with fast kinetics after stimulation via a CsA-sensitive and Ca(2+)-dependent mechanism that does not require de novo protein synthesis. As shown by reverse transcription-polymerase chain reaction and electrophoretic mobility shift assay respectively the p65 subunit of NF-kappa B is COOH-terminally truncated in response to TNF alpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the p65 subunit of NF-kappa B trun"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "fast kinetics",
+        "stimulation",
+        "a CsA-sensitive and Ca(2+)-dependent mechanism",
+        "de novo protein synthesis",
+        "reverse transcription-polymerase chain reaction",
+        "electrophoretic mobility shift",
+        "the p65 subunit",
+        "NF-kappa B",
+        "response",
+        "TNF alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What happens when TNF alpha is stimulated?",
+          "What is the mechanism that causes a fast kinetics?",
+          "What is the mechanism that causes the p65 subunit to be truncated",
+          "What does the mechanism that causes a rapid kinetics not require?",
+          "What is the name of the enzyme that shows that p65 is truncated",
+          "What is the name of the assay that shows the p65 subunit of NF",
+          "What part of NF-kappa B is COOH-terminally trun",
+          "What is the p65 subunit of?",
+          "What is the p65 subunit of NF-kappa B trun",
+          "What is the p65 subunit of NF-kappa B trun"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was COOH-terminally truncated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65 subunit of NF-kappa B",
+        "answerability": 0.7313374280929565,
+        "ground_truth": {
+          "the p65 subunit": {
+            "bertscore": 0.8093644380569458,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What showed that the p65 subunit was COOH-terminally trunc": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reverse transcription-polymerase chain reaction and electrophoretic mobility shift assay",
+        "answerability": 0.9040816426277161,
+        "ground_truth": {
+          "immunoprecipitation": {
+            "bertscore": 0.6907200217247009,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

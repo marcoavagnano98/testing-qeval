@@ -1,0 +1,154 @@
+{
+  "type": "hyp",
+  "text": "This observation was further confirmed in a rat air pouch model in vivo in which both aspirin and triflusal inhibited PGE2 production (ID50 = 18.9 and 11.4 mg/kg p.o. respectively) but only triflusal-treated animals showed a decrease in COX-2 expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo",
+        "PGE2",
+        "18.9",
+        "11.4 mg/kg p.o.",
+        "COX-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way did aspirin and triflusal inhibit PGE2 production?",
+          "What did aspirin and triflusal inhibit in rat air pouch models?",
+          "What was the ID50 of the rat air pouch model?",
+          "What was the ID50 of the rat air pouch model?",
+          "What did aspirin and triflusal inhibit in rat air pouch models?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This observation",
+        "a rat air pouch model",
+        "vivo",
+        "both aspirin",
+        "triflusal",
+        "PGE2 production",
+        "ID50",
+        "only triflusal-treated animals",
+        "a decrease",
+        "COX-2 expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was confirmed in a rat air pouch model?",
+          "In what animal did aspirin and triflusal inhibit PGE2 production?",
+          "In what way did aspirin and triflusal inhibit PGE2 production?",
+          "What drug inhibited PGE2 production in a rat air pouch model?",
+          "What drug inhibited PGE2 production in rat air pouch models?",
+          "What did aspirin and triflusal inhibit in rat air pouch models?",
+          "What was the value of the PGE2 production in a rat air pouch model?",
+          "What animals showed a decrease in COX-2 expression?",
+          "What did aspirin and triflusal-treated animals show in COX-2 expression",
+          "What did aspirin and triflusal inhibit in rat air pouch models?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enzyme is inhibited by triflusal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PGE2",
+        "answerability": 0.8399439454078674,
+        "ground_truth": {
+          "COX-2": {
+            "bertscore": 0.820734441280365,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of triflusal on the expression of new enzymes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1401609182357788,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.7378893494606018,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does triflusal inhibit at therapeutic concentrations?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26934152841567993,
+        "ground_truth": {
+          "the COX-2 activity": {
+            "bertscore": 0.6312634944915771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What concentration of triflusal inhibits the expression of new enzyme?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15571194887161255,
+        "ground_truth": {
+          "therapeutic concentrations triflusal": {
+            "bertscore": 0.6664173007011414,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does triflusal block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PGE2 production",
+        "answerability": 0.8341225385665894,
+        "ground_truth": {
+          "its metabolite HTB": {
+            "bertscore": 0.6491538882255554,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does triflusal block through its metabolite HTB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012108445167541504,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          },
+          "new enzyme": {
+            "bertscore": 0.6970775127410889,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens when triflusal blocks the expression of new enzyme?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01294851303100586,
+        "ground_truth": {
+          "hence the resumption": {
+            "bertscore": 0.6164326667785645,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enzyme is resumpted by triflusal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004594326019287109,
+        "ground_truth": {
+          "PGE2 synthesis": {
+            "bertscore": 0.6288557052612305,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

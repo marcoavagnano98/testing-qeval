@@ -1,0 +1,146 @@
+{
+  "type": "hyp",
+  "text": "We found that the TCL1 gene was overexpressed in the PBLs of an AT patient carrying a t(14;14) translocation but not in the lymphocytes of the other cases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TCL1",
+        "a t(14;14"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was overexpressed in the PBLs of an AT patient?",
+          "What translocation did the AT patient carry?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the TCL1 gene",
+        "the PBLs",
+        "an AT patient",
+        "a t(14;14) translocation",
+        "the lymphocytes",
+        "the other cases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors find about the TCL1 gene?",
+          "What gene was overexpressed in the PBLs of an AT patient?",
+          "Where was the TCL1 gene overexpressed?",
+          "What patient had a t(14;14) translocation?",
+          "What did the TCL1 gene overexpress in the PBLs of an AT patient",
+          "What part of the body was not affected by the TCL1 gene?",
+          "What other cases of AT were found to have a TCL1 gene overexpressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene was overexpressed in the PBLs of an AT patient?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCL1",
+        "answerability": 0.9922999143600464,
+        "ground_truth": {
+          "TCL1": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "the TCL1 gene": {
+            "bertscore": 0.8437475562095642,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What translocation was found in the PBLs of an AT patient?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "t(14;14)",
+        "answerability": 0.8838582038879395,
+        "ground_truth": {
+          "the t(14;14": {
+            "bertscore": 0.8631924390792847,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the authors find about the TCL1 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "overexpressed",
+        "answerability": 0.9366800785064697,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6413856744766235,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the TCL1 gene overexpressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PBLs",
+        "answerability": 0.9178930521011353,
+        "ground_truth": {
+          "the PBLs": {
+            "bertscore": 0.8661256432533264,
+            "f1": 1.0
+          },
+          "the lymphocytes": {
+            "bertscore": 0.6066463589668274,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What patient had a large clonal T-cell population?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02184194326400757,
+        "ground_truth": {
+          "an AT patient": {
+            "bertscore": 0.6680599451065063,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the AT patient have?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "t(14;14) translocation",
+        "answerability": 0.7055360078811646,
+        "ground_truth": {
+          "a large clonal T-cell population": {
+            "bertscore": 0.6740372180938721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the TCL1 gene overexpress in a patient with a large": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3215927481651306,
+        "ground_truth": {
+          "the t(14;14) translocation": {
+            "bertscore": 0.6472800970077515,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What other cases of TB were not affected by the TCL1 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37165409326553345,
+        "ground_truth": {
+          "the other cases": {
+            "bertscore": 0.6823550462722778,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

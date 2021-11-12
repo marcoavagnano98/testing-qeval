@@ -1,0 +1,154 @@
+{
+  "type": "hyp",
+  "text": "To reconcile these observations we used a hybrid CD8-Nef protein with the human T cell line Jurkat. Expressed in the cytoplasm or on the cell surface the chimera inhibited or activated early signaling events from the T cell antigen receptor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD8-Nef",
+        "Jurkat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was used to reconcile the results of the chimera experiments?",
+          "What was the name of the human T cell line?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these observations",
+        "we",
+        "a hybrid CD8-Nef protein",
+        "the human T cell line Jurkat",
+        "the cytoplasm",
+        "the cell surface",
+        "the chimera",
+        "events",
+        "the T cell antigen receptor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the hybrid CD8-Nef protein reconcile?",
+          "What did the hybrid CD8-Nef protein do?",
+          "What did the chimera use to reconcile these observations?",
+          "What did the hybrid CD8-Nef protein interact with?",
+          "Where was the chimera expressed?",
+          "Where was the chimera expressed?",
+          "What inhibited or activated early signaling events from the T cell antigen receptor?",
+          "What did the chimera inhibit?",
+          "What did the chimera inhibit or activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What hybrid protein was expressed in Jurkat cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD8-Nef",
+        "answerability": 0.9861968159675598,
+        "ground_truth": {
+          "CD8-Nef": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what cell type was the hybrid CD8-Nef protein expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human",
+        "answerability": 0.8694666624069214,
+        "ground_truth": {
+          "Jurkat": {
+            "bertscore": 0.7446855306625366,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the chimera try to reconcile?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "observations",
+        "answerability": 0.6999704837799072,
+        "ground_truth": {
+          "these observations": {
+            "bertscore": 0.8448495864868164,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the chimera do to the T cell antigen receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited or activated early signaling events",
+        "answerability": 0.9212414026260376,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6392765045166016,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the chimera express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16177141666412354,
+        "ground_truth": {
+          "a hybrid CD8-Nef protein": {
+            "bertscore": 0.612176775932312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the hybrid CD8-Nef protein expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the cytoplasm or on the cell surface",
+        "answerability": 0.9781042337417603,
+        "ground_truth": {
+          "Jurkat cells": {
+            "bertscore": 0.6269567608833313,
+            "f1": 0
+          },
+          "the cytoplasm": {
+            "bertscore": 0.840917706489563,
+            "f1": 0.2857142857142857
+          },
+          "the cell surface": {
+            "bertscore": 0.7698850631713867,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What inhibited or activated early signaling events from the T cell antigen receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the chimera",
+        "answerability": 0.8825878500938416,
+        "ground_truth": {
+          "the chimera": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the chimera inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early signaling events",
+        "answerability": 0.8868710398674011,
+        "ground_truth": {
+          "events": {
+            "bertscore": 0.7755765318870544,
+            "f1": 0.5
+          },
+          "the T cell antigen receptor": {
+            "bertscore": 0.7330370545387268,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

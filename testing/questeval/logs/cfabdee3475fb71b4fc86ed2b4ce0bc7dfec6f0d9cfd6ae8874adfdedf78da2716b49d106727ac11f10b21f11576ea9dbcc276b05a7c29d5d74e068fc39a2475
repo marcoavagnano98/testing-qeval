@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Therefore it is important to understand the mechanisms which control the expression of MIP-1 alpha/GOS19.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MIP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that controls the expression of a gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "it",
+        "the mechanisms",
+        "the expression",
+        "MIP-1 alpha/GOS19"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is important to understand the mechanisms that control the expression of MIP-1 alpha/GO",
+          "What is important to understand about the expression of MIP-1 alpha/GOS19?",
+          "What does MIP-1 alpha/GOS19 control?",
+          "What is important to understand the mechanisms that control the expression of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that controls the expression of a gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2174527645111084,
+        "ground_truth": {
+          "MIP-1": {
+            "bertscore": 0.6514366865158081,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is important to understand the mechanisms that control the expression of MIP-1 alpha/GO": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3259885907173157,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6361185312271118,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is important to understand about the expression of MIP-1 alpha/GOS19?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the mechanisms which control the expression",
+        "answerability": 0.9790692925453186,
+        "ground_truth": {
+          "the mechanisms": {
+            "bertscore": 0.8546387553215027,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does MIP-1 alpha/GOS19 control?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1829155683517456,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is important to understand the mechanisms that control the expression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MIP-1 alpha/GOS19",
+        "answerability": 0.8929448127746582,
+        "ground_truth": {
+          "MIP-1 alpha/GOS19": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

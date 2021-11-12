@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "The mechanisms regulating human immunodeficiency virus (HIV) persistence in human monocytes/macrophages are partially understood. Persistent HIV infection of U937 monocytic cells results in NF-kappa B activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "U937 monocytic"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells are involved in NF-kappa B activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The mechanisms",
+        "human immunodeficiency virus (HIV) persistence",
+        "human monocytes",
+        "/macrophages",
+        "Persistent HIV infection",
+        "NF-kappa B activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is partially understood?",
+          "What is the mechanism that controls the infection?",
+          "What is the main source of HIV persistence?",
+          "What are human monocytes?",
+          "What results in NF-kappa B activation?",
+          "What is the result of persistent HIV infection?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells are affected by HIV infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29389166831970215,
+        "ground_truth": {
+          "U937 monocytic": {
+            "bertscore": 0.6299209594726562,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What results in NF-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV infection",
+        "answerability": 0.8622232675552368,
+        "ground_truth": {
+          "Persistent HIV infection": {
+            "bertscore": 0.8864274621009827,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What happens to HIV infection after a period of time?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1980946660041809,
+        "ground_truth": {
+          "NF-kappa B activation": {
+            "bertscore": 0.6154857277870178,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

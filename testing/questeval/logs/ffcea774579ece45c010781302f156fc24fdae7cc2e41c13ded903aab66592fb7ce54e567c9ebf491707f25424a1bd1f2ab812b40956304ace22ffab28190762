@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "At PRMT5 methylated histone H4 H2A and myelin basic protein in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H4 H2A",
+        "myelin",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the methylated histone at PRMT5?",
+          "What basic protein was methylated at PRMT5?",
+          "In what way was the methylated histone H4 H2A analyzed?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PRMT5",
+        "histone H4 H2A",
+        "myelin basic protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What methylated histone H4 H2A and myelin basic protein were",
+          "What is methylated at PRMT5?",
+          "What protein was methylated at PRMT5?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What methylated histone did AtPRMT5 methylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H4 H2A",
+        "answerability": 0.9867634773254395,
+        "ground_truth": {
+          "H4 H2A": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What basic protein was induced by AtPRMT5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myelin",
+        "answerability": 0.9328306317329407,
+        "ground_truth": {
+          "myelin": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what way was the AtPRMT5 methylated histone H4 H2A": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15776240825653076,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.7021183967590332,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did AtPRMT5 methylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H4 H2A and myelin basic protein",
+        "answerability": 0.9806113243103027,
+        "ground_truth": {
+          "histone H4 H2A": {
+            "bertscore": 0.889048159122467,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What protein was analyzed in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2598814368247986,
+        "ground_truth": {
+          "myelin basic protein": {
+            "bertscore": 0.6559774875640869,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

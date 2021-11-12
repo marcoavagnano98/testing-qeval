@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "We show here that Cdc20 which had previously been shown to interact physically with Mad2 and Mad3 associates also with Bub2 and association is up-regulated upon checkpoint activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cdc20",
+        "Mad2",
+        "Mad3",
+        "Bub2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is up-regulated upon checkpoint activation?",
+          "What is the name of the molecule that interacts with Bub2?",
+          "What other molecule has been shown to interact with Cdc20?",
+          "What is the association of Cdc20 with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "Cdc20",
+        "Mad2 and Mad3 associates",
+        "Bub2",
+        "association",
+        "checkpoint activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the study show about Cdc20?",
+          "What is up-regulated upon checkpoint activation?",
+          "What two groups of cells do Cdc20 interact with?",
+          "What is the association of Cdc20 with?",
+          "What is up-regulated upon checkpoint activation?",
+          "What is the mechanism by which Cdc20 interacts with Bub2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is up-regulated upon checkpoint activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cdc20",
+        "answerability": 0.811764121055603,
+        "ground_truth": {
+          "Cdc20": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "Bub3": {
+            "bertscore": 0.798338770866394,
+            "f1": 0
+          },
+          "association": {
+            "bertscore": 0.597424328327179,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the molecule that interacts with Bub3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3380957245826721,
+        "ground_truth": {
+          "Mad2": {
+            "bertscore": 0.6740167737007141,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What other molecule has been shown to interact with Cdc20?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mad3",
+        "answerability": 0.9691546559333801,
+        "ground_truth": {
+          "Mad3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Cdc20 associate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mad2",
+        "answerability": 0.9085622429847717,
+        "ground_truth": {
+          "Bub3 and association": {
+            "bertscore": 0.7520560026168823,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study show about Cdc20?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5333249568939209,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two groups of cells do Cdc20 interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mad2 and Mad3",
+        "answerability": 0.9443269371986389,
+        "ground_truth": {
+          "Mad2 and Mad3 associates": {
+            "bertscore": 0.9014685750007629,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What is the mechanism by which Cdc20 interacts with Bub3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12274086475372314,
+        "ground_truth": {
+          "checkpoint activation": {
+            "bertscore": 0.7041091322898865,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Hamsters were followed up at 1 week by treatment with fluconazole of a mixture of 2-MeOE2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1 week",
+        "2-MeOE2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did the treatment of hamsters last?",
+          "What was the mixture of fluconazole and hamsters treated with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Hamsters",
+        "1 week",
+        "treatment",
+        "fluconazole",
+        "a mixture",
+        "2-MeOE2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What animals were treated with fluconazole?",
+          "How long did the treatment of hamsters last?",
+          "What was the first step in the treatment of hamsters?",
+          "What was used to treat hamsters?",
+          "What was the treatment of hamsters with fluconazole?",
+          "What was the mixture of fluconazole and hamsters treated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What animals were treated with radiation DMBA + DMBA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09115523099899292,
+        "ground_truth": {
+          "Hamsters": {
+            "bertscore": 0.6471366286277771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fluconazole",
+        "answerability": 0.9680927991867065,
+        "ground_truth": {
+          "either radiation DMBA radiation": {
+            "bertscore": 0.6361944675445557,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters treated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fluconazole",
+        "answerability": 0.9901401996612549,
+        "ground_truth": {
+          "DMBA": {
+            "bertscore": 0.7206735014915466,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the other option for hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47329413890838623,
+        "ground_truth": {
+          "no treatment": {
+            "bertscore": 0.7193210124969482,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

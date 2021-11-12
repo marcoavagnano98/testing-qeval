@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Targeting TNF for Treatment of cancer and Autoimmunity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the target of the study?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF",
+        "Treatment",
+        "cancer",
+        "Autoimmunity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the target of the study?",
+          "What is TNF used for?",
+          "What is the main target of TNF?",
+          "What is the other cancer treatment that is targeted by TNF?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the target of the CDC's study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15937167406082153,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TNF used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6090415716171265,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.7012162208557129,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main target of TNF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cancer",
+        "answerability": 0.8943911790847778,
+        "ground_truth": {
+          "Cancer": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the other cancer treatment that is targeted by TNF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Autoimmunity",
+        "answerability": 0.9911000728607178,
+        "ground_truth": {
+          "Autoimmunity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

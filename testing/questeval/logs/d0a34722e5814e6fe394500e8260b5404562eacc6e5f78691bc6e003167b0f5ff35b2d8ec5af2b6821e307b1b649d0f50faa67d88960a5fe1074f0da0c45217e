@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "The TAK1-NLK-MAPK-related pathway antagonizes signalling between beta-catenin and transcription factors TCF.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The TAK1-NLK-MAPK-related pathway antagonizes",
+        "beta-catenin and transcription factors TCF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the TAK1-NLK-MAPK pathway do?",
+          "What two factors are involved in the TAK1-NLK-MAPK pathway?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signalling pathway is negatively regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4149959087371826,
+        "ground_truth": {
+          "Wnt": {
+            "bertscore": 0.674863874912262,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What negatively regulates the Wnt signalling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06578481197357178,
+        "ground_truth": {
+          "the TAK1-NLK-MAPK-like pathway": {
+            "bertscore": 0.5623740553855896,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signalling pathway does the TAK1-NLK-MAPK-like pathway negatively": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24899530410766602,
+        "ground_truth": {
+          "the Wnt": {
+            "bertscore": 0.6817059516906738,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the TAK1-NLK-MAPK-like pathway negatively regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signalling between beta-catenin and transcription factors TCF",
+        "answerability": 0.6222584843635559,
+        "ground_truth": {
+          "pathway": {
+            "bertscore": 0.6845716238021851,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

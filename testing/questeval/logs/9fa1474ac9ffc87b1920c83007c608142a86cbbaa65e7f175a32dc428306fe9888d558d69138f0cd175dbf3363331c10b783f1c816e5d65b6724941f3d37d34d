@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "These results indicate that DNA-binding activities are necessary but not sufficient to mediate IL-2 repression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor in the repression of IL-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "DNA-binding activities",
+        "IL-2 repression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that DNA-binding activities are necessary but not sufficient to mediate IL",
+          "What is necessary but not sufficient to mediate IL-2 repression?",
+          "What does the study show is not sufficient to mediate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is necessary to mediate IL-2 repression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15191209316253662,
+        "ground_truth": {
+          "VDR": {
+            "bertscore": 0.6968003511428833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main repression of IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA-binding activities",
+        "answerability": 0.7050247192382812,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.7281631231307983,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What indicates that DNA binding by VDR is necessary but not sufficient to mediate IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32974350452423096,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.6313728094100952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the results of the cytokine test show is not sufficient to mediate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5767568349838257,
+        "ground_truth": {
+          "IL-2 repression": {
+            "bertscore": 0.6673253178596497,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

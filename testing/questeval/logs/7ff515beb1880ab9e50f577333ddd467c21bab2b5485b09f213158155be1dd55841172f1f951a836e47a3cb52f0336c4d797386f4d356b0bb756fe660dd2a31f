@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "The dependence of PAO1-induced IL-1beta and IL-8 production on NF-kappaB activation was confirmed by treating CF cells with P. aeruginosa with CFTRinh172.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "P. aeruginosa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What bacteria was used to treat CF cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The dependence",
+        "PAO1-induced IL-1beta",
+        "IL-8 production",
+        "NF-kappaB activation",
+        "CF cells",
+        "P. aeruginosa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was confirmed by treating CF cells with P. aeruginosa with",
+          "What is dependent on NF-kappaB activation?",
+          "What is dependent on NF-kappaB activation?",
+          "What did treating CF cells with P. aeruginosa with CFTR",
+          "What type of cells were treated with P. aeruginosa?",
+          "What bacteria was used to treat CF cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cells were used to confirm the dependence of PAO1-induced IL-1bet": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CF cells",
+        "answerability": 0.5695875883102417,
+        "ground_truth": {
+          "THP-1": {
+            "bertscore": 0.7241526246070862,
+            "f1": 0
+          },
+          "THP-1 cells": {
+            "bertscore": 0.8012170791625977,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did we confirm about PAO1-induced IL-1beta and IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dependence",
+        "answerability": 0.7272024154663086,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6691505312919617,
+            "f1": 0
+          },
+          "the dependence": {
+            "bertscore": 0.893530547618866,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is dependent on IL-8 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.5172375440597534,
+        "ground_truth": {
+          "PAO1-induced IL-1beta": {
+            "bertscore": 0.655267059803009,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we confirm the dependence of PAO1-induced IL-1beta and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activation",
+        "answerability": 0.6963855624198914,
+        "ground_truth": {
+          "production": {
+            "bertscore": 0.5146492719650269,
+            "f1": 0
+          },
+          "NF-kappaB activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did THP-1 cells express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002067089080810547,
+        "ground_truth": {
+          "a reporter": {
+            "bertscore": 0.7046938538551331,
+            "f1": 0
+          },
+          "NF-kappaB and AP-1 response elements": {
+            "bertscore": 0.6069789528846741,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

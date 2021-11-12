@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "p53 appears to be a nuclear transcription factor that plays a role in the control of cell proliferation and neoplastic transformation; however the precise molecular mechanisms underlying the regulation of brain tumour growth and angiogenesis remain unresolved.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p53",
+        "a nuclear transcription factor",
+        "a role",
+        "the control",
+        "cell proliferation",
+        "neoplastic transformation",
+        "the precise molecular mechanisms",
+        "the regulation",
+        "brain tumour growth",
+        "angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the transcription factor that controls cell proliferation and neoplastic transformation",
+          "What does p53 appear to be?",
+          "What role does p53 play in the control of cell proliferation and neoplastic",
+          "What does p53 play a role in?",
+          "What does p53 control?",
+          "What does p53 play a role in?",
+          "What remains unresolved?",
+          "What is the molecular mechanism of brain tumour growth and angiogenesis still unresolv",
+          "What is p53 involved in?",
+          "What is the name of the process that controls brain tumour growth?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the transcription factor that controls cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53",
+        "answerability": 0.886741578578949,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p53 appear to be?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a nuclear transcription factor",
+        "answerability": 0.9962449669837952,
+        "ground_truth": {
+          "a nuclear transcription factor": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p53 play in the control of cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear transcription factor",
+        "answerability": 0.9811483025550842,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6503634452819824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does p53 play a role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell proliferation and neoplastic transformation",
+        "answerability": 0.993352472782135,
+        "ground_truth": {
+          "the control": {
+            "bertscore": 0.6909721493721008,
+            "f1": 0
+          },
+          "cell proliferation apoptosis": {
+            "bertscore": 0.8379660844802856,
+            "f1": 0.5
+          },
+          "the maintenance": {
+            "bertscore": 0.6694384217262268,
+            "f1": 0
+          },
+          "genetic stability": {
+            "bertscore": 0.7576714754104614,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

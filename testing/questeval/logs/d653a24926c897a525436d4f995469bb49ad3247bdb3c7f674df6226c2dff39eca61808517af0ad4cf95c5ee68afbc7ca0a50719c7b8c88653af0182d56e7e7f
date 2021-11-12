@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "Early B-cell factor (EBF) was identified previously as a tissue-specific and differentiation stage-specific DNA-binding protein that participates in the regulation of the pre-B and B lymphocyte-specific mb-1 gene.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Early B-cell factor",
+        "EBF",
+        "a tissue-specific and differentiation stage-specific DNA-binding protein",
+        "the regulation",
+        "the pre-B and B lymphocyte-specific mb-1 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that participates in the regulation of the pre-B and",
+          "What is the name of the protein that participates in the regulation of the pre-B and",
+          "What is EBF?",
+          "What does EBF participate in?",
+          "What does EBF participate in the regulation of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that participates in the regulation of the mb-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Early B-cell factor",
+        "answerability": 0.973202645778656,
+        "ground_truth": {
+          "Early B-cell factor": {
+            "bertscore": 1.0000004768371582,
+            "f1": 1.0
+          },
+          "EBF": {
+            "bertscore": 0.6919021010398865,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is EBF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Early B-cell factor",
+        "answerability": 0.9930347204208374,
+        "ground_truth": {
+          "a tissue-specific and differentiation stage-specific DNA-binding protein": {
+            "bertscore": 0.7291978001594543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does EBF participate in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the regulation of the pre-B and B lymphocyte-specific mb-1 gene",
+        "answerability": 0.9147219657897949,
+        "ground_truth": {
+          "the regulation": {
+            "bertscore": 0.6542115807533264,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What does EBF participate in the regulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pre-B and B lymphocyte-specific mb-1 gene",
+        "answerability": 0.9204320311546326,
+        "ground_truth": {
+          "the mb-1 gene": {
+            "bertscore": 0.8331255912780762,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

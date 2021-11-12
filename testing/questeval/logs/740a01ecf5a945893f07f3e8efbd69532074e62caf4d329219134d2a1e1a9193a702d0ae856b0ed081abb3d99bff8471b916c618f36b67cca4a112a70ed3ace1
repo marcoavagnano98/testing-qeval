@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "Phosphatidylinositol 3-kinase couples the interleukin-2 receptor to the cell cycle regulator E2F. \u2047 nCell cycle progression initiated by interleukin-2 (IL-2) in T cells is critical for lymphoproliferation and an immune response to it.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "nCell"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cell cycle that is critical for lymphoproliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Phosphatidylinositol",
+        "the interleukin-2 receptor",
+        "the cell cycle regulator",
+        "E2F. \u2047 nCell cycle progression",
+        "interleukin-2",
+        "(IL-2",
+        "T cells",
+        "lymphoproliferation",
+        "an immune response",
+        "it"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What 3-kinase couples the interleukin-2 receptor to the cell cycle regulator",
+          "What does phospholiphatidylinositol 3-kinas",
+          "What does E2F do?",
+          "What is the cell cycle regulator?",
+          "What is the receptor for E2F?",
+          "What is the key to lymphoproliferation?",
+          "What type of cells are involved in cell cycle progression?",
+          "What is the role of IL-2 in T cells?",
+          "What is the role of IL-2 in T cells?",
+          "What is the immune response to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What 3-kinase couples the interleukin-2 receptor to the cell cycle regulator": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Phosphatidylinositol",
+        "answerability": 0.7711284160614014,
+        "ground_truth": {
+          "Phosphatidylinositol": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does phospholiphatidylinositol 3-kinas": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.293567419052124,
+        "ground_truth": {
+          "the interleukin-2 receptor": {
+            "bertscore": 0.5928425192832947,
+            "f1": 0
+          },
+          "the cell cycle regulator E2F.\\nCell cycle progression": {
+            "bertscore": 0.601297914981842,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor is involved in cell cycle progression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-2",
+        "answerability": 0.9560790657997131,
+        "ground_truth": {
+          "interleukin-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the key to lymphoproliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.88114994764328,
+        "ground_truth": {
+          "(IL-2": {
+            "bertscore": 0.8915993571281433,
+            "f1": 1.0
+          },
+          "an immune response": {
+            "bertscore": 0.6739570498466492,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are involved in cell cycle progression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.8102900385856628,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the key to the development of immune response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3050992488861084,
+        "ground_truth": {
+          "lymphoproliferation": {
+            "bertscore": 0.6352584958076477,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

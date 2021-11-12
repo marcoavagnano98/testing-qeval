@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "We also examined the function of the IL-3 CK-1/CK-2 elements that are present in many cytokine genes and found that they acted as a repressor of basal level expression when cloned upstream of a heterologous promoter but were also inducible by PMA/PHA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA/PHA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cytokine promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the function",
+        "the IL-3 CK-1/CK-2 elements",
+        "many cytokine genes",
+        "they",
+        "a repressor",
+        "basal level expression",
+        "a heterologous promoter",
+        "PMA/PHA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors find about IL-3 CK-1?",
+          "What did the study examine of IL-3 CK-1 and CK-2 elements?",
+          "What did the study examine?",
+          "Where are IL-3 CK-1/CK-2 elements present?",
+          "What is the function of IL-3 CK-1/CK-2 elements?",
+          "What did the IL-3 CK-1/CK-2 elements act as?",
+          "What do IL-3 CK-1/CK-2 elements repress?",
+          "What is the cytokine gene cloned upstream of?",
+          "What is the cytokine promoter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the IL-3 CK-1 and CK-2 elements do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "repressor of basal level expression",
+        "answerability": 0.9902982711791992,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5828792452812195,
+            "f1": 0
+          },
+          "they": {
+            "bertscore": 0.6859440207481384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study find in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011813342571258545,
+        "ground_truth": {
+          "the IL-3 CK-1/CK-2 elements": {
+            "bertscore": 0.6024004817008972,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the IL-3 CK-1/CK-2 elements act as in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a repressor of basal level expression",
+        "answerability": 0.6736513376235962,
+        "ground_truth": {
+          "a repressor": {
+            "bertscore": 0.7937985062599182,
+            "f1": 0.33333333333333337
+          },
+          "basal level expression": {
+            "bertscore": 0.8475531339645386,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What type of cells did the IL-3 CK-1/CK-2 elements act as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine genes",
+        "answerability": 0.8923184871673584,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.7364554405212402,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

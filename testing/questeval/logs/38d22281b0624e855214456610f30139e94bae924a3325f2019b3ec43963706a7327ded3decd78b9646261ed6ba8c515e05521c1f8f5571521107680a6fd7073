@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "HTPB significantly suppresses tumor metastasis partly through inhibition of integrin-beta1/FAK/MMP/RhoA/ F-actin pathways.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MMP/RhoA/ F-actin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What pathways does HTPB inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HTPB",
+        "tumor metastasis",
+        "inhibition",
+        "integrin-beta1/FAK/MMP/RhoA/ F-actin pathways"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppresses tumor metastasis?",
+          "What does HTPB suppress?",
+          "What is the main mechanism of HTPB suppressing tumor metastasis?",
+          "What does HTPB inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What pathways does HTPB inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "integrin-beta1/FAK/MMP/RhoA/",
+        "answerability": 0.9035355448722839,
+        "ground_truth": {
+          "MMP/RhoA/ F-actin": {
+            "bertscore": 0.833368182182312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suppresses tumor metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HTPB",
+        "answerability": 0.9585478901863098,
+        "ground_truth": {
+          "HTPB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does HTPB suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor metastasis",
+        "answerability": 0.9637107253074646,
+        "ground_truth": {
+          "tumor metastasis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main mechanism of HTPB suppressing tumor metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of integrin-beta1/FAK/MMP/Rho",
+        "answerability": 0.9999462962150574,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.6936140060424805,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does HTPB inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "integrin-beta1/FAK/MMP/RhoA/",
+        "answerability": 0.6803795099258423,
+        "ground_truth": {
+          "integrin-beta1/FAK/MMP/RhoA/ F-actin pathways": {
+            "bertscore": 0.8924535512924194,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

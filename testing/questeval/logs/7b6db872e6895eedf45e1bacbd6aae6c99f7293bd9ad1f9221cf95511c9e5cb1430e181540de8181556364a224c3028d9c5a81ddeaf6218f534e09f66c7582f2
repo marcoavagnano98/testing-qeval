@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "This step is mediated principally by the dephosphorylation of residues threonine 14 (Thr14) and tyrosine 15 (Tyr15) on the Cdc2 catalytic subunit.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "14",
+        "15",
+        "Cdc2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the threonine number in Thr14?",
+          "What is the tyrosine number of the Cdc2 catalytic sub",
+          "What catalytic subunit is phosphorylated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This step",
+        "the dephosphorylation",
+        "residues",
+        "(Thr14",
+        "15 (Tyr15",
+        "the Cdc2 catalytic subunit"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is mediated by the dephosphorylation of residues threonine 14",
+          "What is the main mechanism of the phosphorylation of Thr14 and ty",
+          "What is phosphorylated on the Cdc2 catalytic subunit?",
+          "What residue is phosphorylated on the Cdc2 catalytic subunit?",
+          "What residue is phosphorylated on the Cdc2 catalytic subunit?",
+          "Where are threonine 14 and tyrosine 15 located?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What residue is threonine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Thr14",
+        "answerability": 0.5467897057533264,
+        "ground_truth": {
+          "14": {
+            "bertscore": 0.6834695339202881,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is mediated by the dephosphorylation of residues threonine 14": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "This step",
+        "answerability": 0.7476062774658203,
+        "ground_truth": {
+          "This step": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main mechanism of thiocyanide depletion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dephosphorylation",
+        "answerability": 0.757506251335144,
+        "ground_truth": {
+          "the dephosphorylation": {
+            "bertscore": 0.9410327672958374,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is threonine 14?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48580920696258545,
+        "ground_truth": {
+          "residues": {
+            "bertscore": 0.7142971754074097,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

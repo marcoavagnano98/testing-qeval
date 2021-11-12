@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "The HECT-type E3 ubiquitin ligase Nm23B increases the ubiquitination of this protein and promotes its proteasomal degradation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The HECT-type E3 ubiquitin ligase",
+        "the ubiquitination",
+        "this protein",
+        "its proteasomal degradation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases the ubiquitination of a protein?",
+          "What does the HECT-type E3 ubiquitin ligase Nm",
+          "What does the HECT-type E3 ubiquitin ligase Nm",
+          "What does the HECT-type E3 ubiquitin ligase Nm"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the ubiquitination of hPLIC proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.060777366161346436,
+        "ground_truth": {
+          "Nm23B.": {
+            "bertscore": 0.668627917766571,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not ubiquitinated by HERC3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00030410289764404297,
+        "ground_truth": {
+          "hPLIC proteins": {
+            "bertscore": 0.6279658079147339,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein plays an important role in ubiquitination of Nm23B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HECT-type E3 ubiquitin ligase",
+        "answerability": 0.9382114410400391,
+        "ground_truth": {
+          "HERC3 HERC5": {
+            "bertscore": 0.6955041289329529,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What role does HERC5 play in ubiquitination of Nm23B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.171589195728302,
+        "ground_truth": {
+          "an important role": {
+            "bertscore": 0.6543489098548889,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HERC5 play an important role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002449154853820801,
+        "ground_truth": {
+          "ubiquitination": {
+            "bertscore": 0.6691908240318298,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

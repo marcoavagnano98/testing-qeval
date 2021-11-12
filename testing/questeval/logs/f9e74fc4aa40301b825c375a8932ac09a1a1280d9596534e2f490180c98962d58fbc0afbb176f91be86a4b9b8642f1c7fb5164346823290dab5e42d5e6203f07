@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Induction of messenger ribonucleic acid for the chemokines macrophage-inflammatory protein (MIP)-1alpha MIP-1beta and regulated upon activation normal T cell expressed and secreted indicated a strong bias of PIL for type 1 polarization that was supported by the intracellular expression and release of tumor necrosis factor (TNF)-alpha and IL-12. CDK2 and IL-12 promote apoptosis in fibroblasts.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PIL",
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that controls type 1 polarization?",
+          "What type of polarization is indicated by the induction of messenger ribonucle"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Induction",
+        "messenger",
+        "ribonucleic acid",
+        "the chemokines macrophage-inflammatory protein",
+        "activation normal T cell",
+        "a strong bias",
+        "PIL",
+        "type 1 polarization",
+        "the intracellular expression",
+        "release",
+        "tumor necrosis factor",
+        "CDK2",
+        "apoptosis",
+        "fibroblasts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the process that causes the messenger ribonucleic acid to",
+          "What is ribonucleic acid?",
+          "What is the messenger for the chemokines macrophage-inflammatory protein?",
+          "What does MIP-1alpha stand for?",
+          "What is the regulation of MIP-1alpha and MIP-1beta?",
+          "What did the induction of messenger ribonucleic acid for the chemok",
+          "What is the main factor that controls type 1 polarization?",
+          "What did the induction of messenger ribonucleic acid for the chemok",
+          "What supported type 1 polarization?",
+          "What is the main factor that supports type 1 polarization?",
+          "What is the name of the factor that promotes apoptosis in fibro",
+          "What promotes apoptosis in fibroblasts?",
+          "What does CDK2 and IL-12 promote in fibroblasts?",
+          "What type of cells are affected by the release of CDK2 and IL-12?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can promote apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CDK2 and IL-12",
+        "answerability": 0.820584237575531,
+        "ground_truth": {
+          "CDK2": {
+            "bertscore": 0.8072540760040283,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What can CDK2 promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.5457216501235962,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What remains unknown?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00028020143508911133,
+        "ground_truth": {
+          "the mechanisms": {
+            "bertscore": 0.65748530626297,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

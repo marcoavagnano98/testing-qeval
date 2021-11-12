@@ -1,0 +1,64 @@
+{
+  "type": "ref",
+  "text": "Forkhead-related activator 2 (FREAC-2) is a human transcription factor expressed in lung and placenta that binds to cis-elements in several lung-specific genes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the forkhead-related activator?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Forkhead-related activator",
+        "(FREAC-2",
+        "a human transcription factor",
+        "lung",
+        "placenta",
+        "cis-elements",
+        "several lung-specific genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is FREAC-2?",
+          "What is the human transcription factor that binds to cis-elements in",
+          "What is Forkhead-related activator 2?",
+          "Where is Forkhead-related activator 2 expressed?",
+          "Where is Forkhead-related activator 2 expressed?",
+          "What does FREAC-2 bind to?",
+          "Where does FREAC-2 bind to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was found to be expressed naturally in most tissues tested?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017808616161346436,
+        "ground_truth": {
+          "FREAC-2": {
+            "bertscore": 0.6675606966018677,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was FREAC-2 found naturally expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in lung and placenta",
+        "answerability": 0.8543932437896729,
+        "ground_truth": {
+          "most tissues": {
+            "bertscore": 0.734513521194458,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

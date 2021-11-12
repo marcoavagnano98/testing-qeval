@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "The transcription factor NF-kappaB is important for T-cell activation B-cell maturation and human immunodeficiency virus (HIV) genes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor is important for T-cell activation B-cell maturation and human immuno"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The transcription factor NF-kappaB",
+        "T-cell activation B-cell maturation and human immunodeficiency virus (HIV) genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is important for T-cell activation B-cell maturation and human immunodefic",
+          "What is the transcription factor NF-kappaB important for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the DNA-binding regulatory factor that controls transcription of a number": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.5700764656066895,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.9185101985931396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factor",
+        "answerability": 0.9847240447998047,
+        "ground_truth": {
+          "a DNA-binding regulatory factor": {
+            "bertscore": 0.7761420011520386,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does NF-kappa B control?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell activation B-cell maturation and human immunodeficiency virus (",
+        "answerability": 0.5463413596153259,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6932975649833679,
+            "f1": 0
+          },
+          "genes": {
+            "bertscore": 0.6656829118728638,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many genes can NF-kappa B control?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0025907158851623535,
+        "ground_truth": {
+          "a number": {
+            "bertscore": 0.6809766888618469,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF-kappa B able to control transcription of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23087823390960693,
+        "ground_truth": {
+          "human immunodeficiency virus (HIV) genes": {
+            "bertscore": 0.5456332564353943,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

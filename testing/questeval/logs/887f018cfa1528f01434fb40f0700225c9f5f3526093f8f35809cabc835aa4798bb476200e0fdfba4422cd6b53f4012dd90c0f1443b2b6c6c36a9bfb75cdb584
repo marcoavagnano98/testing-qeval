@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Cyclosporin A (CsA) is thought to exert its immunosuppressive effects by inhibiting the expression of a distinct set of lymphokine genes which are induced upon T-cell activation among them the gene coding for interleukin-2 (IL-2) and IL-4 and the leukocyte-specific IL-2 receptor (IL-2R).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-2R"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the gene coding for?",
+          "What is the name of the leukocyte-specific IL-2 receptor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cyclosporin A",
+        "(CsA",
+        "its immunosuppressive effects",
+        "the expression",
+        "a distinct set",
+        "lymphokine genes",
+        "T-cell activation",
+        "them",
+        "the gene",
+        "interleukin-2",
+        "the leukocyte-specific IL-2 receptor",
+        "IL-2R"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is CsA?",
+          "What is the name of the cytosporin A?",
+          "What is cyclosporin A thought to exert?",
+          "What does cyclosporin A inhibit?",
+          "What is the effect of cyclosporin A on the expression of lymphokine",
+          "What does cytosporin A inhibit?",
+          "What is the induced action of cytosporin A?",
+          "What are the two genes that are induced upon T-cell activation?",
+          "What is coding for IL-2 and IL-4?",
+          "What does IL-2 stand for?",
+          "What is the other gene that is induced upon T-cell activation?",
+          "What is the name of the leukocyte-specific IL-2 receptor?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited the induction of IL-2 receptor components?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cyclosporin A",
+        "answerability": 0.7670125961303711,
+        "ground_truth": {
+          "cAMP": {
+            "bertscore": 0.7047040462493896,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor component did cAMP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09513092041015625,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did cAMP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43025946617126465,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.6973354816436768,
+            "f1": 0
+          },
+          "expression": {
+            "bertscore": 0.7272055745124817,
+            "f1": 0
+          },
+          "IL-2 receptor components": {
+            "bertscore": 0.6286128759384155,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "This process requires calcium mobilization activation and proteolytic degradation of the transcription factor NFAT (nuclear factor of activated T cells). calcineurin-dependent dephosphorylation of NFAT catalyzed by PMA and ionomycin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NFAT",
+        "NFAT",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the transcription factor that is required for the synthesis of ATP?",
+          "What is the transcription factor that is required for the synthesis of ATP?",
+          "What is the catalyst for the dephosphorylation of NFAT?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This process",
+        "calcium mobilization activation",
+        "proteolytic degradation",
+        "the transcription factor",
+        "NFAT",
+        "nuclear factor",
+        "activated T cells",
+        "calcineurin-dependent dephosphorylation",
+        "NFAT",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that requires calcium mobilization activation and proteolytic degradation of the",
+          "What is required for the synthesis of a protein?",
+          "What is the process called that requires the activation of calcium?",
+          "What is NFAT?",
+          "What is the transcription factor that is required for the synthesis of ATP?",
+          "What is the transcription factor of activated T cells?",
+          "What is the NFAT?",
+          "What is the process called that requires calcium mobilization activation?",
+          "What is the transcription factor that is required for the synthesis of ATP?",
+          "What is the catalyst for the dephosphorylation of NFAT?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for the synthesis of phospholipids?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00405508279800415,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 0.6752849221229553,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process called that requires calcium-dependent dephosphorylation of NFAT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13314151763916016,
+        "ground_truth": {
+          "This process": {
+            "bertscore": 0.6877828240394592,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the process of NFAT require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "calcium mobilization activation and proteolytic degradation",
+        "answerability": 0.9002553224563599,
+        "ground_truth": {
+          "calcium-dependent dephosphorylation": {
+            "bertscore": 0.7678325176239014,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of NFAT dephosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "calcineurin",
+        "answerability": 0.7160770893096924,
+        "ground_truth": {
+          "the phosphatase calcineurin": {
+            "bertscore": 0.7917304635047913,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

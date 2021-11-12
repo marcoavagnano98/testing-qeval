@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Examination of checkpoint pathway activation upstream of Cdc25a revealed Erbb2 activation did not alter Ataxia Telangiectasia and Rad3-related/Ataxia Telangiectasia Mutated activity but increased inhibitory phosphorylation of Chk1-Ser(280).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cdc25a",
+        "Erbb2",
+        "Ataxia Telangiectasia",
+        "Ataxia Telangiectasia",
+        "Chk1-Ser(280"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What pathway is upstream of Erbb2?",
+          "What protein did not alter Ataxia Telangiectasia activity?",
+          "What did Erbb2 activation not alter?",
+          "What did Erbb2 activation not alter?",
+          "What protein did Erbb2 activation increase inhibitory phosphorylation of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Examination",
+        "checkpoint pathway activation upstream",
+        "Cdc25a",
+        "Erbb2 activation",
+        "Ataxia Telangiectasia",
+        "Rad3-related",
+        "Ataxia Telangiectasia Mutated activity",
+        "increased inhibitory phosphorylation",
+        "Chk1-Ser(280"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed that Erbb2 activation did not alter Ataxia Telangiec",
+          "What did Erbb2 activation not alter?",
+          "What pathway is upstream of Erbb2?",
+          "What did not alter Ataxia Telangiectasia and Rad3-related activity",
+          "What did Erbb2 activation not alter?",
+          "What type of activity did Erbb2 not alter?",
+          "What did Erbb2 activation not alter?",
+          "What did Erbb2 activation do?",
+          "What protein did Erbb2 activation increase inhibitory phosphorylation of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylates Chk1-Ser(280)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15928518772125244,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 0.6996481418609619,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that phosphorylates Chk1-Ser(": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1943821907043457,
+        "ground_truth": {
+          "Erbb2": {
+            "bertscore": 0.6793377995491028,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Akt phosphorylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00674515962600708,
+        "ground_truth": {
+          "Chk1-Ser(280": {
+            "bertscore": 0.6429572105407715,
+            "f1": 0
+          },
+          "phosphatidyl inositol-3-kinase": {
+            "bertscore": 0.562673032283783,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "A member of the Pyrin family IFI16 is a novel BRCA1-associated protein involved in the apoptosis pathway in yeast.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Pyrin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family is IFI16 a member of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A member",
+        "the Pyrin family IFI16",
+        "a novel BRCA1-associated protein",
+        "the apoptosis pathway",
+        "yeast"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IFI16?",
+          "What family is a novel BRCA1-associated protein involved in the apopto",
+          "What is IFI16?",
+          "What is IFI16 involved in in yeast?",
+          "What type of organism is IFI16 associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What family is IFI16 a member of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pyrin",
+        "answerability": 0.9974340200424194,
+        "ground_truth": {
+          "Pyrin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is IFI16?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a novel BRCA1-associated protein",
+        "answerability": 0.9621945023536682,
+        "ground_truth": {
+          "A member": {
+            "bertscore": 0.628645658493042,
+            "f1": 0
+          },
+          "a novel BRCA1-associated protein": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What family is a novel BRCA1-associated protein involved in the p53-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30671924352645874,
+        "ground_truth": {
+          "the Pyrin family IFI16": {
+            "bertscore": 0.6207593679428101,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IFI16 involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9894508719444275,
+        "ground_truth": {
+          "the p53-mediated apoptosis pathway": {
+            "bertscore": 0.7740097045898438,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

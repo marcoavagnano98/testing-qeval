@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "We tested the ability of human TSP 1-chloramphenicol acetyltransferase constructs to respond to serum in stably transfected NIH-3T3 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the ability",
+        "human TSP 1-chloramphenicol acetyltransferase constructs",
+        "serum",
+        "stably transfected NIH-3T3 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the purpose of the study?",
+          "What did the study test?",
+          "What was tested to respond to serum?",
+          "What did the constructs of TSP 1-chloramphenicol acety",
+          "What did we test the ability of human TSP 1-chloramphenicol ace"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What construct responds to serum in stably transfected NIH-3T3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TSP 1-chloramphenicol acetyltransferase",
+        "answerability": 0.8149040937423706,
+        "ground_truth": {
+          "1-chloramphenicol acetyltransferase": {
+            "bertscore": 0.9528115391731262,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that responds to serum in stably transfected": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3022949695587158,
+        "ground_truth": {
+          "1-chloramphenicol acetyltransferase constructs": {
+            "bertscore": 0.5896613001823425,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does 1-chloramphenicol acetyltransferase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22102797031402588,
+        "ground_truth": {
+          "serum": {
+            "bertscore": 0.6874156594276428,
+            "f1": 0
+          },
+          "stably transfected NIH-3T3 cells": {
+            "bertscore": 0.6100536584854126,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

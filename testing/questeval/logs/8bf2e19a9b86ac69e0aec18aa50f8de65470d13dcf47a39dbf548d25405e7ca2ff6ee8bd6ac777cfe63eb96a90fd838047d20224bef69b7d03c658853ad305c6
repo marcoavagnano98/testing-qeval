@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of ST3 correlated with the progression of NIH3T3 cells toward lymphoma.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "ST3",
+        "the progression",
+        "NIH3T3 cells",
+        "lymphoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the cause of the progression of lymphoma?",
+          "What gene was associated with the progression of lymphoma?",
+          "What did overexpression of ST3 correlate with?",
+          "What did overexpression of ST3 correlate with?",
+          "What type of cancer is ST3 associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the cause of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.016449689865112305,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191470861434937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was associated with the progression of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ST3",
+        "answerability": 0.7536280751228333,
+        "ground_truth": {
+          "ST3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did overexpression of ST3 correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the progression of NIH3T3 cells toward lymphoma",
+        "answerability": 0.9807583689689636,
+        "ground_truth": {
+          "the progression": {
+            "bertscore": 0.6602057218551636,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What did ST3 correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the progression of NIH3T3 cells toward lymphoma",
+        "answerability": 0.8198977708816528,
+        "ground_truth": {
+          "human colorectal tumors": {
+            "bertscore": 0.722249448299408,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the progression of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015732944011688232,
+        "ground_truth": {
+          "local invasion": {
+            "bertscore": 0.7331953644752502,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer that can be caused by ST3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35333240032196045,
+        "ground_truth": {
+          "liver metastasis": {
+            "bertscore": 0.6541842222213745,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

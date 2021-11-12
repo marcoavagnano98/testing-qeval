@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "Dimerization of NF-kappaB p50/RelA(p65) regulates DNA binding transcriptional activation and inhibition by an I kappa B-alpha (MAD-3).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MAD-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the I kappa B-alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Dimerization",
+        "NF-kappaB p50/RelA(p65",
+        "DNA binding transcriptional activation",
+        "inhibition",
+        "I",
+        "kappa B-alpha",
+        "(MAD-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the process that regulates DNA binding transcriptional activation?",
+          "What regulates DNA binding transcriptional activation and inhibition?",
+          "What does dimerization of NF-kappaB regulate?",
+          "What is the main effect of dimerization?",
+          "What kappa B-alpha regulates DNA binding transcriptional activation?",
+          "What regulates DNA binding transcriptional activation?",
+          "What is the name of the I kappa B-alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What regulates DNA binding transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Dimerization of NF-kappaB p50/RelA(",
+        "answerability": 0.7384915351867676,
+        "ground_truth": {
+          "RelA(p65": {
+            "bertscore": 0.7767115235328674,
+            "f1": 0
+          },
+          "NF-KB2": {
+            "bertscore": 0.7115254998207092,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the I kappa B-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MAD-3",
+        "answerability": 0.9977986216545105,
+        "ground_truth": {
+          "MAD-3": {
+            "bertscore": 0.9999994039535522,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that regulates DNA binding transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Dimerization",
+        "answerability": 0.9882126450538635,
+        "ground_truth": {
+          "Dimerization": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does dimerization of NF-KB2 with RelA(p65)": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24738460779190063,
+        "ground_truth": {
+          "DNA binding transcriptional activation": {
+            "bertscore": 0.6496782302856445,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MAD-3 do to DNA binding transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6404736638069153,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.7203416228294373,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What kappa B-alpha regulates DNA binding transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I",
+        "answerability": 0.676439106464386,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is MAD-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I kappa B-alpha",
+        "answerability": 0.9826973080635071,
+        "ground_truth": {
+          "kappa B-alpha": {
+            "bertscore": 0.9197739958763123,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the I kappa B-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MAD-3",
+        "answerability": 0.9939336776733398,
+        "ground_truth": {
+          "(MAD-3": {
+            "bertscore": 0.8809710144996643,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

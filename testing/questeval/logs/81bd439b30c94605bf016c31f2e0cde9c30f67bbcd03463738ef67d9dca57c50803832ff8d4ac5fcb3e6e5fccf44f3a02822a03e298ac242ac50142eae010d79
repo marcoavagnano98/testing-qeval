@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "signaling inhibited Stat1 at several different levels including suppression of DNA binding and down-regulation of Stat1 protein and mRNA levels.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "several different levels",
+        "suppression",
+        "down-regulation",
+        "Stat1 protein and mRNA levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How was Stat1 signaling inhibited?",
+          "What was the effect of DNA binding on Stat1?",
+          "What was the effect of Stat1 protein and mRNA levels?",
+          "What was downregulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling inhibited Stat1 at several different levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1556788682937622,
+        "ground_truth": {
+          "cAMP": {
+            "bertscore": 0.6877756118774414,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was downregulated by cAMP signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stat1",
+        "answerability": 0.9963722825050354,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.7725906372070312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How was Stat1 inhibited?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signaling",
+        "answerability": 0.9949799180030823,
+        "ground_truth": {
+          "several different levels": {
+            "bertscore": 0.7103899717330933,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of cAMP signaling on DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppression",
+        "answerability": 0.9896788597106934,
+        "ground_truth": {
+          "suppression": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of cAMP signaling on Stat1 protein and mRNA levels": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited Stat1",
+        "answerability": 0.8377577662467957,
+        "ground_truth": {
+          "down-regulation": {
+            "bertscore": 0.7008400559425354,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did cAMP signaling inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stat1",
+        "answerability": 0.9664190411567688,
+        "ground_truth": {
+          "Stat1 protein and mRNA levels": {
+            "bertscore": 0.7348009347915649,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

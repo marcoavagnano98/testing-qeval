@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "We propose that direct inhibition of K+ channels in T cells by progesterone contributes to progesterone-mediated immunosuppression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "K+"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What channel does progesterone inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "that direct inhibition",
+        "K+ channels",
+        "T cells",
+        "progesterone contributes",
+        "progesterone-mediated immunosuppression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main reason for the inhibition of K+ channels in T cells?",
+          "What do we propose to inhibit K+ channels in T cells?",
+          "What does direct inhibition of T cells do?",
+          "What type of cells are affected by progesterone?",
+          "What is the main cause of immunosuppression?",
+          "What does direct inhibition of K+ channels in T cells contribute to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What channels does the cytokine block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "K+ channels",
+        "answerability": 0.9527726769447327,
+        "ground_truth": {
+          "K+": {
+            "bertscore": 0.8540297746658325,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the mechanism for progesterone-mediated immunosuppression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of K+ channels",
+        "answerability": 0.9946866631507874,
+        "ground_truth": {
+          "A nongenomic mechanism": {
+            "bertscore": 0.6356388926506042,
+            "f1": 0
+          },
+          "inhibition": {
+            "bertscore": 0.7826471328735352,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the nongenomic mechanism for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011662840843200684,
+        "ground_truth": {
+          "progesterone-mediated immunosuppression": {
+            "bertscore": 0.6092163920402527,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the nongenomic mechanism for progesterone-mediated immunosuppression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09913933277130127,
+        "ground_truth": {
+          "K+ channels Ca2": {
+            "bertscore": 0.6429011225700378,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main mechanism of progesterone-mediated immunosuppression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of K+ channels",
+        "answerability": 0.9949340224266052,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.7455825209617615,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the target of progesterone-mediated immunosuppression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "K+ channels",
+        "answerability": 0.6457509398460388,
+        "ground_truth": {
+          "T lymphocytes": {
+            "bertscore": 0.6722444891929626,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

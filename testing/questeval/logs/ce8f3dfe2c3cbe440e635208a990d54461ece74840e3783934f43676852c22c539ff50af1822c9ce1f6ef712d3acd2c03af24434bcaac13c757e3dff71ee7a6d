@@ -1,0 +1,152 @@
+{
+  "type": "hyp",
+  "text": "Previous studies have implicated activation of both protein kinase C (PKC) and protein tyrosine kinases (PTK) in LPS-induced NF-kappaB activation and TNF-alpha production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTK",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein tyrosine kinase that is",
+          "What is the main component of LPS?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Previous studies",
+        "activation",
+        "both protein kinase C",
+        "(PKC",
+        "protein tyrosine kinases",
+        "PTK",
+        "LPS-induced NF-kappaB activation",
+        "TNF-alpha production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What implicated activation of both PKC and PTK in LPS-induced NF",
+          "What has been implicated in LPS-induced NF-kappaB?",
+          "What do previous studies implicate in LPS-induced NF-kappaB",
+          "What is the name of the protein kinase C?",
+          "What is the PTK?",
+          "What is the name of the protein tyrosine kinase that is",
+          "What is the main cause of TNF-alpha production?",
+          "What is the main cause of LPS-induced NF-kappaB activation"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein tyrosine kinase that is": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19811958074569702,
+        "ground_truth": {
+          "PTK": {
+            "bertscore": 0.711424708366394,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main component of LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04125046730041504,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What implicated activation of both PKC and PTK in LPS-induced NF": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Previous studies",
+        "answerability": 0.8329375386238098,
+        "ground_truth": {
+          "Previous studies": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What has been implicated in LPS-induced NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein kinase C (PKC) and protein tyrosine",
+        "answerability": 0.9470184445381165,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6648949384689331,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do previous studies implicate in LPS-induced NF-kappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein kinase C (PKC) and protein tyrosine",
+        "answerability": 0.8579443693161011,
+        "ground_truth": {
+          "both protein kinase C": {
+            "bertscore": 0.7913779616355896,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What is the name of the protein kinase C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKC",
+        "answerability": 0.9501800537109375,
+        "ground_truth": {
+          "(PKC": {
+            "bertscore": 0.8609368801116943,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the PTK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein tyrosine kinases",
+        "answerability": 0.9441004991531372,
+        "ground_truth": {
+          "protein tyrosine kinases": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main cause of TNF-alpha production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12766218185424805,
+        "ground_truth": {
+          "LPS-induced NF-kappaB activation": {
+            "bertscore": 0.5938050746917725,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of LPS-induced NF-kappaB activation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21766477823257446,
+        "ground_truth": {
+          "TNF-alpha production": {
+            "bertscore": 0.5345105528831482,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

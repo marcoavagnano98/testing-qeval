@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Correspondingly transfection of p50 and p65 provided considerable protection from TCR-induced apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Correspondingly transfection",
+        "p50",
+        "p65",
+        "considerable protection",
+        "TCR-induced apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How did p50 and p65 provide considerable protection from TCR-induced a",
+          "What protein was transfected with p65?",
+          "What protein was transfected with p50?",
+          "What did transfection of p50 and p65 provide?",
+          "What did transfection of p50 and p65 provide considerable protection from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What provided considerable protection from TCR-mediated apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transfection of p50 and p65",
+        "answerability": 0.9365600943565369,
+        "ground_truth": {
+          "Correspondingly transfection": {
+            "bertscore": 0.7122920155525208,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What protein was transfected with p65?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27387893199920654,
+        "ground_truth": {
+          "p50": {
+            "bertscore": 0.6552296280860901,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was transfected with p50?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4944877028465271,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.62364661693573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did transfection of p50 and p65 provide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "considerable protection from TCR-induced apoptosis",
+        "answerability": 0.9920242428779602,
+        "ground_truth": {
+          "considerable protection": {
+            "bertscore": 0.7521164417266846,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did transfection of p50 and p65 provide considerable protection from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCR-induced apoptosis",
+        "answerability": 0.9737234115600586,
+        "ground_truth": {
+          "TCR-mediated apoptosis": {
+            "bertscore": 0.9429092407226562,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

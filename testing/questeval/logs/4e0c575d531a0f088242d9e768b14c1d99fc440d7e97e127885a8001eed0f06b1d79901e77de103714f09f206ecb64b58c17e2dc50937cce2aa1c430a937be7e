@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "E2F-1-associated activation of the pPuralpha was inhibited by co-expression of Puralpha pRb and an RNA species with specific binding to E2F-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "pPuralpha",
+        "Puralpha pRb",
+        "RNA",
+        "E2F-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was inhibited by co-expression of Puralpha pRb?",
+          "What inhibited the activation of the pPuralpha?",
+          "What species of protein inhibited the activation of pPuralpha?",
+          "What protein was co-expressed with Puralpha pRb?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "E2F-1-associated activation",
+        "the pPuralpha",
+        "co-expression",
+        "Puralpha pRb",
+        "an RNA species",
+        "E2F-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inhibited by co-expression of Puralpha pRb?",
+          "What protein was inhibited by co-expression of Puralpha pRb?",
+          "What inhibited the activation of pPuralpha?",
+          "What inhibited the activation of the pPuralpha?",
+          "What inhibited the activation of pPuralpha?",
+          "What protein was co-expressed with Puralpha pRb?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was inhibited by co-expression of Puralpha pRb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pPuralpha",
+        "answerability": 0.7827890515327454,
+        "ground_truth": {
+          "pPuralpha": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          },
+          "the pPuralpha": {
+            "bertscore": 0.9255189895629883,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the activation of the pPuralpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "co-expression of Puralpha pRb and an RNA species with specific binding",
+        "answerability": 0.6627881526947021,
+        "ground_truth": {
+          "Puralpha pRb": {
+            "bertscore": 0.7613993883132935,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What species of protein inhibited the activation of pPuralpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5356446504592896,
+        "ground_truth": {
+          "RNA": {
+            "bertscore": 0.68595290184021,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was co-expressed with Puralpha pRb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4567762613296509,
+        "ground_truth": {
+          "E2F-1": {
+            "bertscore": 0.6551927924156189,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was inhibited by co-expression of Puralpha pRb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F-1-associated activation",
+        "answerability": 0.97624671459198,
+        "ground_truth": {
+          "E2F-1-associated activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the activation of pPuralpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "co-expression of Puralpha pRb and an RNA species with specific binding",
+        "answerability": 0.684648871421814,
+        "ground_truth": {
+          "co-expression": {
+            "bertscore": 0.7348033785820007,
+            "f1": 0.18181818181818182
+          },
+          "an RNA species": {
+            "bertscore": 0.7374097108840942,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "This suggests that expression of DR antigens also can be modulated post-transcriptionally.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "DR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What antigen can be modulated post-transcriptionally?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "expression",
+        "DR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can be modulated post-transcriptionally?",
+          "What antigen can be modulated post-transcriptionally?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What antigen can be modulated post-transcriptionally?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DR",
+        "answerability": 0.9227182865142822,
+        "ground_truth": {
+          "DR": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can be modulated post-transcriptionally?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of DR antigens",
+        "answerability": 0.9960399866104126,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7592136263847351,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

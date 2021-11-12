@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "In spleen tyrosinase TRP-1 and SV40 Tag were expressed and tyrosinase was enzymatically active.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "spleen tyrosinase",
+        "SV40 Tag",
+        "tyrosinase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enzyme was enzymatically active?",
+          "What is the name of the spleen tyrosinase that",
+          "What enzyme was enzymatically active?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was expressed and tyrosinase was active?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spleen tyrosinase TRP-1 and SV40",
+        "answerability": 0.8257260322570801,
+        "ground_truth": {
+          "SV40 Tag": {
+            "bertscore": 0.6967876553535461,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What type of cells were tested for SV40 Tag expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spleen",
+        "answerability": 0.8945801854133606,
+        "ground_truth": {
+          "SV40 Tag-transfected": {
+            "bertscore": 0.6931354999542236,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enzyme was enzymatically active in SV40 Tag-transfected": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosinase",
+        "answerability": 0.9457077980041504,
+        "ground_truth": {
+          "tyrosinase": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did we do to determine the expression of SV40 Tag?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06705111265182495,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we examine in SV40 Tag-transfected hematopoi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1836814284324646,
+        "ground_truth": {
+          "theTag expression": {
+            "bertscore": 0.6642612814903259,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the SV40 Tag expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spleen",
+        "answerability": 0.9916797876358032,
+        "ground_truth": {
+          "SV40 Tag-transfected hematopoietic cells": {
+            "bertscore": 0.6441037058830261,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "These data demonstrate that abolishing acute hepatic injury with alpha-tocopherol a free radical scavenger also eliminated increased NF-kappa B binding.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These data",
+        "acute hepatic injury",
+        "a free radical scavenger",
+        "increased NF-kappa B binding"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that alpha-tocopherol eliminates NF-kappa B",
+          "What did the study show that alpha-tocopherol eliminated?",
+          "What is alpha-tocopherol?",
+          "What did the use of alpha-tocopherol eliminate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that alpha-tocopherol eliminates NF-kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20382040739059448,
+        "ground_truth": {
+          "These data": {
+            "bertscore": 0.6446335315704346,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show that alpha-tocopherol eliminated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5570464134216309,
+        "ground_truth": {
+          "acute hepatic injury": {
+            "bertscore": 0.657945990562439,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is alpha-tocopherol?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a free radical scavenger",
+        "answerability": 0.9067572355270386,
+        "ground_truth": {
+          "a free radical scavenger": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the use of alpha-tocopherol eliminate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.494320273399353,
+        "ground_truth": {
+          "increased NF-kappa B binding": {
+            "bertscore": 0.5895532965660095,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

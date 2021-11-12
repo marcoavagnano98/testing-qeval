@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": "Electrophoretic mobility shift assays reveal that both transcription factors are capable of binding to putative consensus sites and luciferase reporter assays reveal that E2F1 and p53 can activate transcription from the SIVA promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SIVA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter can E2F1 and p53 activate transcription from?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "both transcription factors",
+        "putative consensus sites",
+        "E2F1",
+        "p53",
+        "transcription",
+        "the SIVA promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are capable of binding to putative consensus sites?",
+          "What are E2F1 and p53 capable of binding to?",
+          "What transcription factor can activate transcription from the SIVA promoter?",
+          "What is the only transcription factor that can activate transcription from the SIVA promoter?",
+          "What do luciferase reporter assays show E2F1 and",
+          "Where can E2F1 and p53 activate transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is required for transcription in response to DNA damage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014343619346618652,
+        "ground_truth": {
+          "SIVA": {
+            "bertscore": 0.6688046455383301,
+            "f1": 0
+          },
+          "the proapoptotic gene SIVA": {
+            "bertscore": 0.6068985462188721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the SIVA required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006952285766601562,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6925773024559021,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the gene SIVA required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000810086727142334,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7024291753768921,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the proapoptotic gene SIVA required for transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00030517578125,
+        "ground_truth": {
+          "DNA damage": {
+            "bertscore": 0.7112643122673035,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

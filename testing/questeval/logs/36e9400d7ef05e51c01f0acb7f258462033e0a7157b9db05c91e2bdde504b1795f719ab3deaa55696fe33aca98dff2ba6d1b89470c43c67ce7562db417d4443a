@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of NF-kappaB activity and promotion of IkappaBalpha degradation. Fas (APO-1/CD95) and Fas ligand (FasL) expression were examined in various kinds of human and mouse cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha",
+        "APO-1",
+        "Fas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What degradation was promoted by the NF-kappaB?",
+          "What is the name of the kinase that inhibits NF-kapp",
+          "What is the name of the ligand that is involved in the degradation of Ikapp"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "NF-kappaB activity",
+        "promotion",
+        "IkappaBalpha degradation",
+        "Fas",
+        "(APO-1/CD95",
+        "Fas ligand",
+        "(FasL) expression",
+        "various kinds",
+        "human and mouse cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of NF-kappaB activity?",
+          "What is inhibited by the cytokine?",
+          "What is the main effect of IkappaBalpha degradation?",
+          "What is promoted by NF-kappaB activity?",
+          "What is the name of the ligand that is involved in the degradation of Ikapp",
+          "What is the name of the molecule that inhibits NF-kappaB activity",
+          "What is FasL?",
+          "What is the name of the Fas ligand?",
+          "What kind of cells were examined?",
+          "What types of cells were examined for NF-kappaB activity?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the name of the protein that was tested?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08290755748748779,
+        "ground_truth": {
+          "Fas": {
+            "bertscore": 0.6837170720100403,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to evaluate Fas and FasL protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in various kinds of human and mouse cells",
+        "answerability": 0.8629748821258545,
+        "ground_truth": {
+          "Western blot": {
+            "bertscore": 0.649851381778717,
+            "f1": 0
+          },
+          "immunohistochemical assays": {
+            "bertscore": 0.6623963713645935,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was evaluated by Western blot and immunohistochemical assays?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010726511478424072,
+        "ground_truth": {
+          "Fas and FasL protein expression": {
+            "bertscore": 0.6107386350631714,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

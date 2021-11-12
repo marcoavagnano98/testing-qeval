@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "RAW 264.7 cells were transiently transfected with pNF-kappaB-SEAP along with either WT-PKCalpha or the kinase-deficient (KD)-PKCalpha expression vector.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RAW 264.7",
+        "WT-PKCalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells were transiently transfected with pNF-kappaB-",
+          "What was the expression vector for pNF-kappaB-SEAP?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RAW 264.7 cells",
+        "pNF-kappaB-SEAP",
+        "either WT-PKCalpha",
+        "the kinase-deficient (KD)-PKCalpha expression vector"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells were transiently transfected with pNF-kappaB-",
+          "What was the RAW 264.7 cells transfected with?",
+          "What expression vector was used to transfect RAW 264.7 cells?",
+          "What was used to transfect RAW 264.7 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was used to determine equal protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06038028001785278,
+        "ground_truth": {
+          "PKCalpha": {
+            "bertscore": 0.6426600217819214,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to determine equal protein expression for the PKCalpha constructs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11410170793533325,
+        "ground_truth": {
+          "Blots": {
+            "bertscore": 0.6966989040374756,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the purpose of immunoblotting the PKCalpha constructs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017299234867095947,
+        "ground_truth": {
+          "equal protein expression": {
+            "bertscore": 0.6879866123199463,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was immunoblotted to determine equal protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01346045732498169,
+        "ground_truth": {
+          "the PKCalpha constructs": {
+            "bertscore": 0.6392519474029541,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "The erbA/ myb IRES virus exhibited a 5-10-fold higher transformed colony forming efficiency than the erbA\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How much higher transformed colony forming efficiency did the myb IRES virus have?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The erbA/ myb",
+        "virus",
+        "a 5-10-fold higher transformed colony forming efficiency"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What IRES virus showed a 5-10-fold higher transformed colony forming efficiency?",
+          "What type of virus showed a 5-10-fold higher transformed colony forming efficiency?",
+          "What did the myb IRES virus show?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How much higher transformed colony forming efficiency did the IRES virus have?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "5-10-fold",
+        "answerability": 0.9879088401794434,
+        "ground_truth": {
+          "5": {
+            "bertscore": 0.7317540049552917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What IRES virus showed a 5-10-fold higher transformed colony forming efficiency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erbA/ myb",
+        "answerability": 0.867546796798706,
+        "ground_truth": {
+          "The erbA/myb": {
+            "bertscore": 0.9268122315406799,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of virus showed a 5-10-fold higher transformed colony forming efficiency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erbA/ myb IRES",
+        "answerability": 0.8988297581672668,
+        "ground_truth": {
+          "virus": {
+            "bertscore": 0.6702560186386108,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the erbA/myb IRES virus exhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "5-10-fold higher transformed colony forming efficiency",
+        "answerability": 0.9363816380500793,
+        "ground_truth": {
+          "a 5-10-fold higher transformed colony forming efficiency": {
+            "bertscore": 0.9649539589881897,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

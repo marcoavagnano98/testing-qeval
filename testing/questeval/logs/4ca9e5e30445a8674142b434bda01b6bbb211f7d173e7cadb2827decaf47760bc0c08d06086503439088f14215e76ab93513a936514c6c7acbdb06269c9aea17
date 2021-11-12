@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "HIV-1 steady-state mRNA levels and enhance long terminal repeat-directed transcription through activation of the NF-kappa B binding sites suggesting the IL-10 effect occurs at least in part at the transcriptional level.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1",
+        "IL-10"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What virus is IL-10 able to enhance?",
+          "What effect is seen at least partially at the transcriptional level?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV-1 steady-state mRNA levels",
+        "long terminal repeat-directed transcription",
+        "activation",
+        "the NF-kappa B binding sites",
+        "the IL-10 effect",
+        "part",
+        "the transcriptional level"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does IL-10 enhance long terminal repeat-directed transcription?",
+          "What does IL-10 enhance?",
+          "What is the NF-kappa B binding site that increases long terminal repeat-directed",
+          "What does IL-10 activate?",
+          "What is the effect of IL-10 on mRNA levels?",
+          "What part of the IL-10 effect is at least at the transcriptional level?",
+          "Where does the IL-10 effect occur?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the virus that is a potent activator of long terminal repeat": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.7908411622047424,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is a potent activator of long terminal repeat-directed transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9895182847976685,
+        "ground_truth": {
+          "(HIV-1": {
+            "bertscore": 0.7078412771224976,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "steady-state mRNA levels",
+        "answerability": 0.7300533652305603,
+        "ground_truth": {
+          "a potent activator": {
+            "bertscore": 0.7021548748016357,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is HIV-1 a potent activator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels",
+        "answerability": 0.6842048168182373,
+        "ground_truth": {
+          "long terminal repeat-directed transcription": {
+            "bertscore": 0.76059889793396,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

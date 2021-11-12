@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "Exclusive paternal expression of WT1 was also shown in non-cultured peripheral lymphocytes from the latter two individuals.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many individuals were shown to have exclusive paternal expression of WT1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Exclusive paternal expression",
+        "WT1",
+        "non-cultured peripheral lymphocytes",
+        "the latter two individuals"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was found in non-cultured peripheral lymphocytes from the latter two individuals?",
+          "What gene was found in the swine flu?",
+          "Where was the exclusive paternal expression of WT1 found?",
+          "Which two individuals were shown to express WT1 exclusively?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many individuals were shown to have exclusive paternal expression of WT1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.9855082631111145,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was shown in non-cultured peripheral lymphocytes from the latter two individuals?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "paternal expression of WT1",
+        "answerability": 0.9128798246383667,
+        "ground_truth": {
+          "Exclusive paternal expression": {
+            "bertscore": 0.7696815133094788,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What gene was found in the swine flu?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05149358510971069,
+        "ground_truth": {
+          "WT1": {
+            "bertscore": 0.6810696721076965,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was exclusive paternal expression of WT1 shown?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "non-cultured peripheral lymphocytes",
+        "answerability": 0.9599133133888245,
+        "ground_truth": {
+          "non-cultured peripheral lymphocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Which two individuals were shown to express WT1 exclusively?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04424917697906494,
+        "ground_truth": {
+          "the latter two individuals": {
+            "bertscore": 0.6424716114997864,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

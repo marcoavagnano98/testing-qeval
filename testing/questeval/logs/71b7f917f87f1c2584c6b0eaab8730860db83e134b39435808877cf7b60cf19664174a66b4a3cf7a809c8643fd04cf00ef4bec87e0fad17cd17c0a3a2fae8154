@@ -1,0 +1,104 @@
+{
+  "type": "ref",
+  "text": "Either degradation of Far1 or its nuclear export by Msn5 was sufficient for cell growth suggesting that the two mechanisms are redundant for cell viability.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Far1",
+        "Msn5",
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only molecule that is required for cell growth?",
+          "What is the only mechanism that can be used to grow cells?",
+          "How many mechanisms are redundant for cell growth?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Either degradation",
+        "Far1",
+        "its nuclear export",
+        "Msn5",
+        "cell growth",
+        "the two mechanisms",
+        "cell viability"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only mechanism that is redundant for cell growth?",
+          "What is the only molecule that is required for cell growth?",
+          "What mechanism did Msn5 use to grow cells?",
+          "What is the only mechanism that can be used to grow cells?",
+          "What did degradation of Far1 and its nuclear export by Msn5 do?",
+          "What is redundant for cell viability?",
+          "What is the main function of the two mechanisms?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was stabilized by preventing nuclear export?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05590677261352539,
+        "ground_truth": {
+          "Far1": {
+            "bertscore": 0.6739052534103394,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did preventing the cytoplasmic Far1 protein do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02852839231491089,
+        "ground_truth": {
+          "nuclear export": {
+            "bertscore": 0.7065190672874451,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was stabilized by preventing nuclear export?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004504203796386719,
+        "ground_truth": {
+          "conversely cytoplasmic Far1": {
+            "bertscore": 0.630055844783783,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was efficiently phosphorylated in a Cdc28-Cln-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012298166751861572,
+        "ground_truth": {
+          "the protein": {
+            "bertscore": 0.652876079082489,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How was Far1 phosphorylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010301291942596436,
+        "ground_truth": {
+          "a Cdc28-Cln-dependent manner": {
+            "bertscore": 0.583703339099884,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "type": "ref",
+  "text": "and -80 was identified as the minimum sequence for the basal and inducible expression of the IL-9 gene in C5MJ2 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "-80",
+        "IL-9"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the minimum sequence for the basal and inducible expression of the IL-9",
+          "What gene is found in C5MJ2 cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "-80",
+        "the minimum sequence",
+        "the basal",
+        "inducible expression",
+        "the IL-9 gene",
+        "C5MJ2 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the minimum sequence for the basal and inducible expression of the IL-9",
+          "What was the -80 sequence identified as?",
+          "What is the minimum sequence for?",
+          "What is the IL-9 gene known for?",
+          "What gene is regulated by -80 and -90?",
+          "Where was the minimum sequence for the basal and inducible expression of the IL-9"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the CD28 costimulatory pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 8.463859558105469e-05,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.7021175622940063,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the CD28 costimulatory pathway used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 7.712841033935547e-05,
+        "ground_truth": {
+          "IL-9 expression": {
+            "bertscore": 0.6415143609046936,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are involved in the induction of IL-9 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C5MJ2",
+        "answerability": 0.6974315643310547,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.6814166307449341,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway is used to induce IL-9 expression in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01564711332321167,
+        "ground_truth": {
+          "the CD28 costimulatory pathway": {
+            "bertscore": 0.5985971093177795,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

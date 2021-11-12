@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "NF-AT AP-1 and NFkappaB.\\nTACI-induced activation of NF-AT was specifically blocked by a dominant-negative CAML mutant thus implicating CAML as a signaling intermediate.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CAML",
+        "CAML"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the signaling intermediate?",
+          "What is the signaling intermediate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-AT AP-1 and NFkappaB.\\nTACI-induced activation",
+        "NF-AT",
+        "a dominant-negative CAML mutant",
+        "CAML"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was specifically blocked by a dominant-negative CAML mutant?",
+          "What signaling intermediate was blocked by a dominant-negative CAML mutant?",
+          "What blockade NF-AT AP-1 and NFkappaB?",
+          "What is the signaling intermediate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the signaling intermediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CAML",
+        "answerability": 0.8123742341995239,
+        "ground_truth": {
+          "CAML": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What signaling intermediate was blocked by a dominant-negative CAML mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-AT AP-1 and NFkappaB",
+        "answerability": 0.9598536491394043,
+        "ground_truth": {
+          "NF-AT": {
+            "bertscore": 0.839257538318634,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What two genes were specifically blocked by a dominant-negative CAML mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-AT AP-1 and NFkappaB",
+        "answerability": 0.9564112424850464,
+        "ground_truth": {
+          "AP-1 and NFkappaB.": {
+            "bertscore": 0.8816625475883484,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What was specifically blocked by a dominant-negative CAML mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-AT AP-1 and NFkappaB",
+        "answerability": 0.9652742147445679,
+        "ground_truth": {
+          "\u2047 nTACI-induced activation": {
+            "bertscore": 0.6627177596092224,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the cause of the nTACI-induced activation of NF-AT": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6696274280548096,
+        "ground_truth": {
+          "a dominant-negative CAML mutant": {
+            "bertscore": 0.6561307311058044,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

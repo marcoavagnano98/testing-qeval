@@ -1,0 +1,68 @@
+{
+  "type": "ref",
+  "text": "the ability of FVIIa to promote cell survival.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the ability",
+        "FVIIa",
+        "cell survival"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does FVIIa have to promote cell survival?",
+          "What is the name of the protein that promotes cell survival?",
+          "What does FVIIa promote?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did FVIIa-induced cell survival correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002973496913909912,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 0.6996480226516724,
+            "f1": 0
+          },
+          "the activation": {
+            "bertscore": 0.6892382502555847,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What correlated with the activation of Akt?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013718605041503906,
+        "ground_truth": {
+          "FVIIa-induced cell survival": {
+            "bertscore": 0.6165293455123901,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited FVIIa cell survival?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00020772218704223633,
+        "ground_truth": {
+          "the specific PI3-kinase inhibitor LY294002": {
+            "bertscore": 0.5746575593948364,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

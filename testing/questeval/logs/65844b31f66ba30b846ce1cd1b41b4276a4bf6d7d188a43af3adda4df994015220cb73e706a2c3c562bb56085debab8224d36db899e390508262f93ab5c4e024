@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Mutant p27 allele products lacking phosphorylation at T157 and T198 bound poorly to cellular cyclin A and Cdk4.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mutant p27 allele products",
+        "phosphorylation",
+        "T157",
+        "T198",
+        "cellular cyclin A",
+        "Cdk4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What bound poorly to cellular cyclin A and Cdk4?",
+          "What did p27 alleles lacking at T157 and T198 lack?",
+          "What two phosphorylation sites did p27 alleles lack?",
+          "What is the only phosphorylation site of p27 alleles?",
+          "What did p27 alleles lacking phosphorylation bound poorly to?",
+          "What cyclin A did p27 alleles lacking phosphorylation bound poorly"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does not prevent p27 binding to cyclin A?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation",
+        "answerability": 0.7795437574386597,
+        "ground_truth": {
+          "Y88 phosphorylation": {
+            "bertscore": 0.8800879716873169,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does Y88 phosphorylation not prevent binding to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.060432612895965576,
+        "ground_truth": {
+          "p27": {
+            "bertscore": 0.611278235912323,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Y88 phosphorylation not prevent p27 binding to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1910477876663208,
+        "ground_truth": {
+          "cyclin A": {
+            "bertscore": 0.6400135159492493,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cyclin does Y88 phosphorylation not prevent from binding to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.029644131660461426,
+        "ground_truth": {
+          "/Cdk2": {
+            "bertscore": 0.65627521276474,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

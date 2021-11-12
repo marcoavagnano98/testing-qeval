@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "Pretreatment of monocytes by IFN-beta or IFN-gamma but not IL-1 IL-2 macrophage colony-stimulating factor granulocyte/macrophage colony-stimulating factor IL-6 or transforming growth factor beta suppressed activation of STAT6 by IL-4.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-1 IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed activation of STAT6?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Pretreatment",
+        "monocytes",
+        "IFN-beta",
+        "IFN-gamma",
+        "not IL-1 IL-2 macrophage colony-stimulating factor granulocyte/macrophage colony-stimulating factor",
+        "growth factor",
+        "beta",
+        "activation",
+        "STAT6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed activation of STAT6?",
+          "What did IFN-gamma suppress?",
+          "What suppressed STAT6 activation?",
+          "What suppressed activation of STAT6?",
+          "What did IFN-beta and IFN-gamma suppress?",
+          "What suppressed STAT6 activation?",
+          "What is the name of the transforming growth factor that suppressed STAT6 activation",
+          "What did IL-4 suppress?",
+          "What did IL-4 suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did IFN-gamma and IFN-beta not suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1383953094482422,
+        "ground_truth": {
+          "IL-1 IL-2": {
+            "bertscore": 0.6232982277870178,
+            "f1": 0
+          },
+          "monocytes": {
+            "bertscore": 0.6662788391113281,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suppressed activation of STAT6 by IL-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pretreatment of monocytes by IFN-beta or IFN-gamm",
+        "answerability": 0.8374998569488525,
+        "ground_truth": {
+          "Pretreatment": {
+            "bertscore": 0.7284194231033325,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What suppressed STAT6 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24922257661819458,
+        "ground_truth": {
+          "IFN-beta": {
+            "bertscore": 0.657533586025238,
+            "f1": 0
+          },
+          "IFN-gamma": {
+            "bertscore": 0.6533434391021729,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IFN-beta and IFN-gamma suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20379787683486938,
+        "ground_truth": {
+          "not IL-1 IL-2 macrophage colony-stimulating factor granulocyte/macrophage colony-stimulating factor": {
+            "bertscore": 0.5891495943069458,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-4 suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5001668930053711,
+        "ground_truth": {
+          "growth factor": {
+            "bertscore": 0.6819858551025391,
+            "f1": 0
+          },
+          "activation": {
+            "bertscore": 0.669492781162262,
+            "f1": 0
+          },
+          "STAT6": {
+            "bertscore": 0.6612182855606079,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the transforming growth factor that suppressed STAT6 activation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24076324701309204,
+        "ground_truth": {
+          "beta": {
+            "bertscore": 0.6928853988647461,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

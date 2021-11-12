@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "A decrease in the translation rate is observed when the cells are induced to differentiate along the monocytic/macrophage pathway or along the granulocytic pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A decrease",
+        "the translation rate",
+        "the cells",
+        "the monocytic/macrophage pathway",
+        "the granulocytic pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is observed when cells are induced to differentiate along the monocytic/ma",
+          "What decrease is observed when cells are induced to differentiate along the monocytic/m",
+          "What is induced to differentiate along the monocytic/macrophage pathway",
+          "What pathway is the translation rate decreased when cells are induced to differentiate?",
+          "What pathway is the translation rate decreased when cells are induced to differentiate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is observed when cells are induced to differentiate along the monocytic/ma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A decrease in the translation rate",
+        "answerability": 0.8537770509719849,
+        "ground_truth": {
+          "A decrease": {
+            "bertscore": 0.7837298512458801,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What decrease is observed when cells are induced to differentiate along the monocytic/m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A decrease in the translation rate",
+        "answerability": 0.7330974340438843,
+        "ground_truth": {
+          "the translation rate": {
+            "bertscore": 0.8366696238517761,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is induced to differentiate along the monocytic/macrophage pathway": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5174845457077026,
+        "ground_truth": {
+          "the cells": {
+            "bertscore": 0.6629190444946289,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway is the translation rate decreased when cells are induced to differentiate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocytic/macrophage",
+        "answerability": 0.9452577233314514,
+        "ground_truth": {
+          "the monocytic/macrophage pathway": {
+            "bertscore": 0.8776684403419495,
+            "f1": 0.6666666666666666
+          },
+          "the granulocytic pathway": {
+            "bertscore": 0.7230072617530823,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Bax heterodimerizes in vivo with a conserved homolog Bax that accelerates programmed cell death.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bax heterodimerizes",
+        "vivo",
+        "Bax"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What happens in vivo with a conserved homolog Bax?",
+          "In what way does Bax heterodimerize?",
+          "What is the name of the conserved homolog that accelerates programmed cell death?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Bax",
+        "vivo",
+        "a conserved homolog Bax",
+        "cell death"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the conserved homolog that accelerates programmed cell death?",
+          "In what way does Bax heterodimerize?",
+          "What does Bax heterodimerize with?",
+          "What does the conserved homolog Bax accelerate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What happens in vivo with a conserved homolog Bax?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "heterodimerizes",
+        "answerability": 0.8234596848487854,
+        "ground_truth": {
+          "Bcl-2 heterodimerizes": {
+            "bertscore": 0.8423134088516235,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "In what way does Bcl-2 heterodimerize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008083999156951904,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.7332586646080017,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the conserved homolog of Bcl-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11665874719619751,
+        "ground_truth": {
+          "Bax": {
+            "bertscore": 0.690082848072052,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Bcl-2 heterodimerize with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006006896495819092,
+        "ground_truth": {
+          "a conserved homolog Bax": {
+            "bertscore": 0.6842872500419617,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Bcl-2 accelerate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018376708030700684,
+        "ground_truth": {
+          "cell death": {
+            "bertscore": 0.7187827825546265,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "type": "hyp",
+  "text": "Rather TNF and PMA can exert their effects only if cells are in an appropriate redox status because prior modification toward reduction with BHA treatment prevents this activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "PMA",
+        "BHA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only drug that can exert its effects if cells are in an appropriate re",
+          "What is the only drug that can exert its effects if cells are in an appropriate re",
+          "What treatment prevents TNF and PMA from causing their effects?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF",
+        "PMA",
+        "their effects",
+        "cells",
+        "an appropriate redox status",
+        "prior modification",
+        "reduction",
+        "this activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only drug that can exert its effects if cells are in an appropriate re",
+          "What is the only drug that can exert its effects if cells are in an appropriate re",
+          "What can TNF and PMA exert?",
+          "What does TNF and PMA only exert their effects if they are in an appropriate",
+          "What does TNF and PMA only exert their effects if cells are in?",
+          "What prevents TNF and PMA from exerting their effects?",
+          "What is the main effect of BHA?",
+          "What does prior modification with BHA prevent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the only drug that can exert its effect if cells are in an appropriate re": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF and PMA",
+        "answerability": 0.7523336410522461,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.880474865436554,
+            "f1": 0.5
+          },
+          "PMA": {
+            "bertscore": 0.8605360388755798,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What treatment prevents TNF and PMA from causing their effect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BHA",
+        "answerability": 0.7998923659324646,
+        "ground_truth": {
+          "BHA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can TNF and PMA exert only if cells are in an appropriate redox": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22742033004760742,
+        "ground_truth": {
+          "their effect": {
+            "bertscore": 0.6570112705230713,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TNF and PMA only work if they are in an appropriate redox": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1133996844291687,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147941589355,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TNF and PMA only exert their effect if cells are in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an appropriate redox status",
+        "answerability": 0.9723367094993591,
+        "ground_truth": {
+          "an appropriate redox status": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What prevents TNF and PMA from exerting their effect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "prior modification toward reduction with BHA treatment",
+        "answerability": 0.7861068844795227,
+        "ground_truth": {
+          "prior modification": {
+            "bertscore": 0.7673672437667847,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What is the main effect of BHA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09084320068359375,
+        "ground_truth": {
+          "reduction": {
+            "bertscore": 0.708749532699585,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does prior modification to reduction with BHA prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation",
+        "answerability": 0.9023237824440002,
+        "ground_truth": {
+          "this activation": {
+            "bertscore": 0.864960789680481,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

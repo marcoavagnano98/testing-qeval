@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Treatment with 25 mg/kg cyclopamine significantly attenuated VEGF-induced phosphorylation of endogenous substrates whereas 25 mg/kg of cyclopamine decreased this association.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "25 mg/kg",
+        "25 mg/kg"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What dose of cyclopamine reduced VEGF-induced phosphorylation of",
+          "What dose of cyclopamine reduced VEGF-induced phosphorylation of"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Treatment",
+        "25 mg/kg cyclopamine",
+        "significantly attenuated VEGF-induced phosphorylation",
+        "endogenous substrates",
+        "25 mg/kg",
+        "cyclopamine",
+        "this association"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What significantly attenuated VEGF-induced phosphorylation of endogenous",
+          "What treatment significantly reduced VEGF-induced phosphorylation of endogenous substrates",
+          "What was the effect of treatment with cyclopamine on endogenous substrates?",
+          "What did treatment with cyclopamine reduce?",
+          "What dose of cyclopamine reduced VEGF-induced phosphorylation of",
+          "What drug reduced VEGF-induced phosphorylation of endogenous substrates?",
+          "What did treatment with 25 mg/kg of cyclopamine decrease?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the effect of cyclopamine on vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5623182058334351,
+        "ground_truth": {
+          "2.5": {
+            "bertscore": 0.6649394035339355,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What significantly reduced vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0871272087097168,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.7012157440185547,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment significantly reduced vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05337226390838623,
+        "ground_truth": {
+          "cyclopamine": {
+            "bertscore": 0.6110588312149048,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did treatment with cyclopamine significantly attenuate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-induced phosphorylation of endogenous substrates",
+        "answerability": 0.9963024854660034,
+        "ground_truth": {
+          "vascular formation": {
+            "bertscore": 0.7243130207061768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How much did cyclopamine reduce vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1560930609703064,
+        "ground_truth": {
+          "a factor": {
+            "bertscore": 0.7014163136482239,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

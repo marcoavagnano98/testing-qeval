@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "This study demonstrates that RUNX1 and RUNX3 induced by TGF-beta are involved in the development and suppressive function of FOXP3+iT reg cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This study",
+        "RUNX1",
+        "RUNX3",
+        "TGF-beta",
+        "the development",
+        "suppressive function",
+        "FOXP3+iT reg cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What demonstrates that RUNX1 and RUNX3 are involved in the development and",
+          "What is involved in the development and suppressive function of FOXP3+iT reg",
+          "What is involved in the development and suppressive function of FOXP3+iT reg",
+          "What is involved in the development and suppressive function of FOXP3+iT reg",
+          "What are RUNX1 and RUNX3 involved in?",
+          "What is FOXP3+iT reg cells involved in?",
+          "What is the suppressive function of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What reg cells are involved in the development and suppressive function of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FOXP3+iT",
+        "answerability": 0.9758127331733704,
+        "ground_truth": {
+          "Foxp3+iT": {
+            "bertscore": 0.9142553806304932,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What demonstrates that RUNX1 and RUNX3 are involved in the development and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "This study",
+        "answerability": 0.7729126811027527,
+        "ground_truth": {
+          "This study": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is involved in the development and suppressive function of Foxp3+iT reg cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RUNX1 and RUNX3 induced by TGF-beta",
+        "answerability": 0.9422481656074524,
+        "ground_truth": {
+          "RUNX1": {
+            "bertscore": 0.7475366592407227,
+            "f1": 0.2857142857142857
+          },
+          "RUNX3": {
+            "bertscore": 0.7392428517341614,
+            "f1": 0.2857142857142857
+          },
+          "TGF-beta": {
+            "bertscore": 0.8204193711280823,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What are RUNX1 and RUNX3 involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the development and suppressive function of FOXP3+iT reg cells",
+        "answerability": 0.9433123469352722,
+        "ground_truth": {
+          "the development": {
+            "bertscore": 0.6574398279190063,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What is Foxp3+iT reg cells involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1905306577682495,
+        "ground_truth": {
+          "suppressive function": {
+            "bertscore": 0.6677711606025696,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the suppressive function of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FOXP3+iT reg cells",
+        "answerability": 0.8200383186340332,
+        "ground_truth": {
+          "Foxp3+iT reg cells": {
+            "bertscore": 0.9471303820610046,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

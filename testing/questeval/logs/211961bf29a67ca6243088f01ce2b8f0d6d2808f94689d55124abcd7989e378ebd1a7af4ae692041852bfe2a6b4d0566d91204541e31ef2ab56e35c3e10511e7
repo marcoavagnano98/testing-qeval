@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of Bcl-2 in cell lines lacking RelA but not NF-IL-6 inhibited Fas-mediated apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "cell lines",
+        "RelA",
+        "not NF-IL-6",
+        "inhibited Fas-mediated apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited Fas-mediated apoptosis?",
+          "What type of cells lacking RelA did overexpression of Bcl-2 inhibit?",
+          "What gene did overexpression of Bcl-2 in cell lines lacking?",
+          "What inhibited Fas-mediated apoptosis?",
+          "What did overexpression of Bcl-2 do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of the apoptosis that is induced by stimuli": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12446421384811401,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191470861434937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of Bcl-2 overexpression in tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited Fas-mediated apoptosis",
+        "answerability": 0.9634115099906921,
+        "ground_truth": {
+          "tumor cells blocks apoptosis": {
+            "bertscore": 0.7679082751274109,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What causes apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38293343782424927,
+        "ground_truth": {
+          "many stimuli": {
+            "bertscore": 0.6736941933631897,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of Bcl-2 on Fas-mediated killing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited Fas-mediated apoptosis",
+        "answerability": 0.9010492563247681,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.7094343900680542,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not consistently observed in tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01142948865890503,
+        "ground_truth": {
+          "Fas-mediated killing": {
+            "bertscore": 0.6862956881523132,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

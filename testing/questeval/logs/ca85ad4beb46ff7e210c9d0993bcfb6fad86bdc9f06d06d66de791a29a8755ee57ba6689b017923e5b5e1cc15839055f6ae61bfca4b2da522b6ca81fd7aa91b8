@@ -1,0 +1,170 @@
+{
+  "type": "hyp",
+  "text": "A later result of inhibition of this activation pathway by p21(ras) was down-regulation of the activity of the transcription factor AP-1 and subsequent coordinate reductions in IL-2 gene expression and protein production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was reduced by p21(ras)?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A later result",
+        "inhibition",
+        "this activation pathway",
+        "p21(ras",
+        "down-regulation",
+        "the activity",
+        "the transcription factor",
+        "AP-1 and subsequent coordinate reductions",
+        "gene expression",
+        "protein production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the result of inhibition of the activation pathway by p21(ras",
+          "What was the result of p21(ras)?",
+          "What was the result of p21(ras) inhibition?",
+          "What is the name of the transcription factor that inhibits AP-1?",
+          "What was the result of inhibition of the AP-1 pathway?",
+          "What did p21(ras) down-regulate?",
+          "What is AP-1?",
+          "What was the result of inhibition of the IL-2 pathway?",
+          "What did IL-2 decrease in response to p21(ras)?",
+          "What did IL-2 decrease in response to p21(ras)?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene was reduced by p21(ras)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.8490705490112305,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the result of inhibition of the activation pathway by p21(ras": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "down-regulation of the activity of the transcription factor AP-1",
+        "answerability": 0.8592568039894104,
+        "ground_truth": {
+          "A later result": {
+            "bertscore": 0.6278934478759766,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the result of p21(ras)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "down-regulation of the activity of the transcription factor AP-1",
+        "answerability": 0.9502647519111633,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.6743547320365906,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the result of p21(ras) inhibition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "down-regulation of the activity of the transcription factor AP-1",
+        "answerability": 0.989294707775116,
+        "ground_truth": {
+          "this activation pathway": {
+            "bertscore": 0.7172892093658447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the transcription factor that inhibits AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p21(ras)",
+        "answerability": 0.5616179704666138,
+        "ground_truth": {
+          "p21(ras": {
+            "bertscore": 0.9071492552757263,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the result of inhibition of the AP-1 pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "down-regulation of the activity",
+        "answerability": 0.9610065817832947,
+        "ground_truth": {
+          "down-regulation": {
+            "bertscore": 0.8314304947853088,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did p21(ras) down-regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the transcription factor AP-1",
+        "answerability": 0.9113833904266357,
+        "ground_truth": {
+          "the activity": {
+            "bertscore": 0.6672669053077698,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factor",
+        "answerability": 0.989494264125824,
+        "ground_truth": {
+          "the transcription factor": {
+            "bertscore": 0.9016655087471008,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the result of inhibition of the IL-2 pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "down-regulation of the activity of the transcription factor AP-1",
+        "answerability": 0.9128330945968628,
+        "ground_truth": {
+          "AP-1 and subsequent coordinate reductions": {
+            "bertscore": 0.7028042674064636,
+            "f1": 0.16666666666666666
+          }
+        }
+      }
+    },
+    "What did IL-2 decrease in response to p21(ras)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.6896493434906006,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.7128194570541382,
+            "f1": 0
+          },
+          "protein production": {
+            "bertscore": 0.6958045363426208,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

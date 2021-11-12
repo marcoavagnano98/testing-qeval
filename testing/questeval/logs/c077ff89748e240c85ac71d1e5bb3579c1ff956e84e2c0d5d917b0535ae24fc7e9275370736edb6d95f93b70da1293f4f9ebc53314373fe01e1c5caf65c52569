@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Using chromatin immunoprecipitation (ChIP) analysis we found that telomeres were enriched in di- and trimethylated H3-Lys9 but that telomeres of SUV39DN cells had less dimethylated and trimethylated H3-Lys9 but more monomethylated H3-Lys9.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "chromatin immunoprecipitation (ChIP) analysis",
+        "we",
+        "telomeres",
+        "di-",
+        "telomeres",
+        "SUV39DN cells",
+        "H3-Lys9"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What method was used to determine the telomeres of SUV39DN cells?",
+          "What did we find in SUV39DN cells?",
+          "What was enriched in di- and trimethylated H3-Lys9?",
+          "What is the enriched telomere of SUV39DN cells?",
+          "What was enriched in di- and trimethylated H3-Lys9?",
+          "What type of cells had more monomethylated H3-Lys9 than SUV39",
+          "What was found in SUV39DN cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What method was used to determine the telomeres of SUV39DN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chromatin immunoprecipitation (ChIP) analysis",
+        "answerability": 0.9531113505363464,
+        "ground_truth": {
+          "chromatin immunoprecipitation (ChIP) analysis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did we find in SUV39DN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monomethylated H3-Lys9",
+        "answerability": 0.800959050655365,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.5926151275634766,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was enriched in di- and trimethylated H3-Lys9?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "telomeres",
+        "answerability": 0.992026686668396,
+        "ground_truth": {
+          "telomeres": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the enriched telomere of SUV39DN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monomethylated",
+        "answerability": 0.9738178849220276,
+        "ground_truth": {
+          "di-": {
+            "bertscore": 0.6483748555183411,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells had more monomethylated H3-Lys9 than SUV39": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SUV39DN cells",
+        "answerability": 0.8769077658653259,
+        "ground_truth": {
+          "SUV39DN cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was found in SUV39DN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monomethylated H3-Lys9",
+        "answerability": 0.8061155676841736,
+        "ground_truth": {
+          "H3-Lys9": {
+            "bertscore": 0.8355515003204346,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

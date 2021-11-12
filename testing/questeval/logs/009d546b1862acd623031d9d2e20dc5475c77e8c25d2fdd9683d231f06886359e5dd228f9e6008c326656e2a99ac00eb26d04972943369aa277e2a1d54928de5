@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "Furthermore we found that IL-2 protects T cell clones from IL-2 deprivation apoptosis accompanying active proliferation and enhanced expression of P53 Rb and Bcl-xL proteins.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-2",
+        "P53 Rb",
+        "Bcl-xL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protects T cell clones from apoptosis?",
+          "What protects T cell clones from apoptosis?",
+          "What protein is IL-2 able to enhance expression of?",
+          "What protein is IL-2 associated with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "IL-2",
+        "T cell clones",
+        "IL-2 deprivation apoptosis",
+        "active proliferation",
+        "enhanced expression",
+        "P53 Rb",
+        "Bcl-xL proteins"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study find about IL-2?",
+          "What protects T cell clones from apoptosis?",
+          "What does IL-2 protect from apoptosis?",
+          "What does IL-2 protect T cell clones from?",
+          "What does IL-2 protect T cell clones from?",
+          "What does IL-2 do to P53 Rb and Bcl-xL proteins",
+          "What protein is IL-2 able to enhance expression of?",
+          "What protein is IL-2 associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protects T cell clones from apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9566468000411987,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein is IL-2 able to enhance expression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "P53 Rb and Bcl-xL",
+        "answerability": 0.9646444916725159,
+        "ground_truth": {
+          "P53 Rb": {
+            "bertscore": 0.8548292517662048,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein is IL-2 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16094452142715454,
+        "ground_truth": {
+          "Bcl-xL": {
+            "bertscore": 0.6495962738990784,
+            "f1": 0
+          },
+          "Bcl-xL proteins": {
+            "bertscore": 0.6154588460922241,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study find about IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6554422378540039,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-2 protect from apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell clones",
+        "answerability": 0.9674580097198486,
+        "ground_truth": {
+          "T cell clones": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does IL-2 protect T cell clones from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 deprivation apoptosis",
+        "answerability": 0.955830454826355,
+        "ground_truth": {
+          "IL-2 deprivation apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "active proliferation": {
+            "bertscore": 0.6773648858070374,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of IL-2 on P53 Rb and Bcl-x": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced expression",
+        "answerability": 0.8741360306739807,
+        "ground_truth": {
+          "enhanced expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

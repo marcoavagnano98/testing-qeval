@@ -1,0 +1,128 @@
+{
+  "type": "ref",
+  "text": "In fact p75(NTR) depresses the VEGF-A/Akt/eNOS/NO pathway and additionally reduces the mRNA levels of ITGB1\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mRNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does p75(NTR) reduce?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "fact",
+        "p75(NTR",
+        "VEGF-A",
+        "Akt",
+        "the mRNA levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the reason why p75(NTR) depresses the VE",
+          "What is the name of the enzyme that depresses the VEGF-A/",
+          "What pathway does p75(NTR) depress?",
+          "What pathway does p75(NTR) depress?",
+          "What does p75(NTR) reduce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does p75(NTR) reduce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels of ITGB1",
+        "answerability": 0.9255768060684204,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.7597141265869141,
+            "f1": 0.4
+          },
+          "the mRNA levels": {
+            "bertscore": 0.8126522302627563,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the reason why p75(NTR) depresses the VE": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24556118249893188,
+        "ground_truth": {
+          "fact": {
+            "bertscore": 0.711483359336853,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What depresses the VEGF-A/Akt/eNOS/NO": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75(NTR)",
+        "answerability": 0.8558467626571655,
+        "ground_truth": {
+          "p75(NTR": {
+            "bertscore": 0.928922712802887,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What pathway does p75(NTR) depress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-A/Akt/eNOS/NO",
+        "answerability": 0.9939500689506531,
+        "ground_truth": {
+          "VEGF-A": {
+            "bertscore": 0.8435608148574829,
+            "f1": 0
+          },
+          "Akt": {
+            "bertscore": 0.7009705901145935,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mRNA level of securin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003006458282470703,
+        "ground_truth": {
+          "ITGB1 PTTG1": {
+            "bertscore": 0.6164401173591614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another name for ITGB1 PTTG1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011191070079803467,
+        "ground_truth": {
+          "securin": {
+            "bertscore": 0.7092545032501221,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mRNA level of ITGB1 PTTG1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015887558460235596,
+        "ground_truth": {
+          "VEZF1": {
+            "bertscore": 0.6651972532272339,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

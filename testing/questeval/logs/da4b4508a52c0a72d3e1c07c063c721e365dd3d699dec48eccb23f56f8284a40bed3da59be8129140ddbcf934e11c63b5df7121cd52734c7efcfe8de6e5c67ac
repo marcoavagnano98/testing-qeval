@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "We conclude that phosphatidylinositol 3 4-bisphosphate to phosphatidylinositol 345-trisphosphate can convert phosphatidylinositol 3-phosphate to phosphatidylinositol 345-trisphosphate.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the phosphatidylinositol 4-bisphosphate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "that phosphatidylinositol"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors conclude about phosphatidylinositol 3 4-",
+          "What is the main component of phosphatidylinositol?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can convert phosphatidylinositol 3-phosphate to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphatidylinositol 3 4-bisphosphate",
+        "answerability": 0.8502046465873718,
+        "ground_truth": {
+          "these kinases": {
+            "bertscore": 0.6266238689422607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How do kinases convert phosphatidylinositol 3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.311911940574646,
+        "ground_truth": {
+          "a concerted reaction": {
+            "bertscore": 0.7205727696418762,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

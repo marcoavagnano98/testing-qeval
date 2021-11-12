@@ -1,0 +1,118 @@
+{
+  "type": "ref",
+  "text": "Conversely the murine kappa light chain enhancer motif (GGGGACTTTCCG) does not efficiently bind the nuclear p50p50 from tolerant murine P388 macrophages.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "P388"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What macrophages are tolerant of kappa light chain enhancer?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the murine kappa light chain enhancer motif",
+        "GGGGACTTTCCG",
+        "the nuclear p50p50",
+        "tolerant murine P388 macrophages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not efficiently bind the nuclear p50p50 from tolerant murine P",
+          "What is the name of the murine kappa light chain enhancer motif?",
+          "What does the murine kappa light chain enhancer motif not efficiently bind?",
+          "What does the murine kappa light chain enhancer motif not efficiently bind?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the p50 subunit of NF-kappa light chain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05914729833602905,
+        "ground_truth": {
+          "3": {
+            "bertscore": 0.6802684664726257,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a positive regulator of kappa light chain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01076275110244751,
+        "ground_truth": {
+          "TTCCG": {
+            "bertscore": 0.6896228790283203,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What light chain does TTCCG not bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6719417572021484,
+        "ground_truth": {
+          "kappa": {
+            "bertscore": 0.7034947276115417,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TTCCG not bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear p50p50",
+        "answerability": 0.8661457896232605,
+        "ground_truth": {
+          "the 3 G": {
+            "bertscore": 0.7030753493309021,
+            "f1": 0
+          },
+          "kappa light chain": {
+            "bertscore": 0.6855710744857788,
+            "f1": 0
+          },
+          "the p50 subunit": {
+            "bertscore": 0.7827087044715881,
+            "f1": 0
+          },
+          "NF-kappa light chain": {
+            "bertscore": 0.6845636963844299,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the binding of the 3 G?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01077359914779663,
+        "ground_truth": {
+          "a C.": {
+            "bertscore": 0.35426631569862366,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of TTCCG in kappa light chain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhancer motif",
+        "answerability": 0.5864595174789429,
+        "ground_truth": {
+          "a positive regulator": {
+            "bertscore": 0.7528163194656372,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

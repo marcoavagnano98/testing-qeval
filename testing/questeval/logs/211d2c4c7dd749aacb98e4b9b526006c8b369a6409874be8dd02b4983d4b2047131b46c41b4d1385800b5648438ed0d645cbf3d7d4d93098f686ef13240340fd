@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "It is generally accepted that Bcl-2 exerts its antiapoptotic effects mainly by dimerizing with proapoptotic members of the family such as Bax and Bad.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bax"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the proapoptotic member of the Bcl-2 family"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "It",
+        "its antiapoptotic effects",
+        "proapoptotic members",
+        "the family",
+        "Bax",
+        "Bad"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main way that Bcl-2 exerts its antiapoptotic effects",
+          "What does Bcl-2 exert?",
+          "What does Bcl-2 dimerize with?",
+          "What is Bax a member of?",
+          "What is the name of the proapoptotic member of the Bcl-2 family",
+          "What is the name of the proapoptotic member of the Bcl-2 family"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the proapoptotic Bcl-2 family?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02979576587677002,
+        "ground_truth": {
+          "Bax": {
+            "bertscore": 0.6900827884674072,
+            "f1": 0
+          },
+          "Bad": {
+            "bertscore": 0.6744470000267029,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main way that Bcl-2 exerts its antiapoptotic effects": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dimerizing with proapoptotic members of the family",
+        "answerability": 0.993500828742981,
+        "ground_truth": {
+          "It": {
+            "bertscore": 0.5645782351493835,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Bcl-2 exert?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antiapoptotic effects",
+        "answerability": 0.9473767280578613,
+        "ground_truth": {
+          "its antiapoptotic effects": {
+            "bertscore": 0.9331570863723755,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does Bcl-2 dimerize with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proapoptotic members of the family",
+        "answerability": 0.690068244934082,
+        "ground_truth": {
+          "proapoptotic members": {
+            "bertscore": 0.8983839154243469,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What family of proteins is known to have antiapoptotic effects?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Bcl-2",
+        "answerability": 0.8541828393936157,
+        "ground_truth": {
+          "the Bcl-2 family": {
+            "bertscore": 0.8596915006637573,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

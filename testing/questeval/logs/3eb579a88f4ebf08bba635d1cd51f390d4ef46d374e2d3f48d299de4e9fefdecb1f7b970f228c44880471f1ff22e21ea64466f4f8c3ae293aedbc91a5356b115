@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Control of NF-kappa B activity in cell lines treated with the I kappa B beta inhibitor.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Control",
+        "NF-kappa B activity",
+        "cell lines",
+        "the I kappa B beta inhibitor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main function of NF-kappa B?",
+          "What is the main concern of the kappa beta inhibitor?",
+          "What is the NF-kappa B activity controlled in?",
+          "What drug is used to control NF-kappa B activity?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the role of the I kappa B beta inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control of NF-kappa B activity",
+        "answerability": 0.8574410080909729,
+        "ground_truth": {
+          "Control": {
+            "bertscore": 0.670504629611969,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the I kappa B beta inhibitor used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control of NF-kappa B activity",
+        "answerability": 0.8981450796127319,
+        "ground_truth": {
+          "NF-kappa B activity": {
+            "bertscore": 0.9060115218162537,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the main component of the NF-kappa B pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0035309791564941406,
+        "ground_truth": {
+          "the I kappa B beta inhibitor": {
+            "bertscore": 0.600176215171814,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

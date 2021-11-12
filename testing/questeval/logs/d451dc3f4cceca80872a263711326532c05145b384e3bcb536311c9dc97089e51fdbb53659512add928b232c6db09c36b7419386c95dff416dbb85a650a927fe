@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Notably we do not see particularly strong transcription when the immunoglobulin heavy chain enhancer or TATA box is used to activate a kappa gene promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "particularly strong transcription",
+        "the immunoglobulin heavy chain enhancer",
+        "TATA box",
+        "a kappa gene promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the TATA box?",
+          "What is not seen when the immunoglobulin heavy chain enhancer is used to activate",
+          "What is used to activate a kappa gene promoter?",
+          "What is another name for immunoglobulin heavy chain enhancer?",
+          "What does the immunoglobulin heavy chain enhancer activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the immunoglobulin heavy chain enhancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TATA box",
+        "answerability": 0.5736225843429565,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7105734348297119,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not seen when the immunoglobulin kappa enhancer is used?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "particularly strong transcription",
+        "answerability": 0.8631774187088013,
+        "ground_truth": {
+          "particularly strong transcription": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is used to activate a kappa gene promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "immunoglobulin heavy chain enhancer or TATA box",
+        "answerability": 0.8800081610679626,
+        "ground_truth": {
+          "the immunoglobulin kappa enhancer": {
+            "bertscore": 0.8619265556335449,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is another name for the immunoglobulin kappa enhancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TATA box",
+        "answerability": 0.5542342662811279,
+        "ground_truth": {
+          "the immunoglobulin heavy chain enhancer": {
+            "bertscore": 0.6394032835960388,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does immunoglobulin kappa enhancer activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.023907840251922607,
+        "ground_truth": {
+          "a kappa gene promoter": {
+            "bertscore": 0.6334921717643738,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

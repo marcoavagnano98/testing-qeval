@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "We find that human Myt1 phosphorylates and inactivates Cdc2-containing cyclin complexes but not complexes containing Cdk2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Myt1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylates and inactivates cyclin complexes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "Cdk2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Myt1 do to cyclin complexes?",
+          "What cyclin complex does Myt1 not activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylates and inactivates cyclin complexes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Myt1",
+        "answerability": 0.9187783002853394,
+        "ground_truth": {
+          "Myt1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cyclin complex does Myt1 not activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cdk2",
+        "answerability": 0.9546191692352295,
+        "ground_truth": {
+          "Cdk4": {
+            "bertscore": 0.958328127861023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of Myt1 on cyclins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylates and inactivates",
+        "answerability": 0.9890219569206238,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5704150199890137,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cyclin complex does Myt1 not phosphorylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cdk2",
+        "answerability": 0.8720430731773376,
+        "ground_truth": {
+          "Cdk2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

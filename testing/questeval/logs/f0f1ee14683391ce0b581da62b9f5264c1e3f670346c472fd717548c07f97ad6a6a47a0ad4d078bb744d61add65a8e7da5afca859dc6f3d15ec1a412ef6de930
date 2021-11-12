@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Although mutation of the NES did not effect 14-3-3 binding it did cause nuclear accumulation of Cdc25C.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NES",
+        "14-3-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene did mutation of the 14-3-3 cause?",
+          "What binding did mutation of the NES not affect?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "mutation",
+        "the NES",
+        "it",
+        "nuclear accumulation",
+        "Cdc25C."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not affect 14-3-3 binding?",
+          "What did mutation of the NES not affect 14-3-3 binding?",
+          "What did mutation of the NES cause?",
+          "What did mutation of the NES cause?",
+          "What did mutation of the NES cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein binding regulates the localization of Cdc25C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08317077159881592,
+        "ground_truth": {
+          "14-3-3": {
+            "bertscore": 0.6692785620689392,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is regulated by nuclear export and 14-3-3 protein binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00922691822052002,
+        "ground_truth": {
+          "Localization": {
+            "bertscore": 0.6954473853111267,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is localized by nuclear export?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0027827024459838867,
+        "ground_truth": {
+          "human Cdc25C": {
+            "bertscore": 0.6072609424591064,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other way that Cdc25C is regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.034832894802093506,
+        "ground_truth": {
+          "nuclear export": {
+            "bertscore": 0.7065189480781555,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

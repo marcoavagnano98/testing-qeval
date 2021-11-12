@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "BMP-6 induces a rapid phosphorylation of Smad1/5/8 \u2047 nUpon ligand binding the type II receptor transphosphorylates and activates the type I receptor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BMP-6",
+        "Smad1/5/8",
+        "nUpon",
+        "II"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the enzyme that induces rapid phosphorylation of Smad1",
+          "What is the phosphorylation of?",
+          "When does BMP-6 induce a rapid phosphorylation of Smad1/5/8",
+          "What type of receptor is activated by BMP-6?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BMP-6",
+        "a rapid phosphorylation",
+        "Smad1/5/8 \u2047 nUpon ligand",
+        "the type II receptor transphosphorylates",
+        "the type",
+        "I"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the enzyme that induces rapid phosphorylation of Smad1",
+          "What does BMP-6 induce?",
+          "What does BMP-6 phosphorylate?",
+          "What does BMP-6 do to activate the type I receptor?",
+          "What receptor is activated by BMP-6?",
+          "What type of receptor is activated by BMP-6?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein induced a rapid increase in Smad-1/5/8 phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BMP-6",
+        "answerability": 0.8982139825820923,
+        "ground_truth": {
+          "BMP-6": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What phosphorylation did BMP-6 induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Smad1/5/8",
+        "answerability": 0.9514608383178711,
+        "ground_truth": {
+          "Smad-1/5/8": {
+            "bertscore": 0.8914234042167664,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did BMP-6 induced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of Smad1/5/8",
+        "answerability": 0.9681673049926758,
+        "ground_truth": {
+          "a rapid and marked increase": {
+            "bertscore": 0.5868479609489441,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did BMP-6 induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of Smad1/5/8",
+        "answerability": 0.9633931517601013,
+        "ground_truth": {
+          "Smad-1/5/8 phosphorylation": {
+            "bertscore": 0.8699389100074768,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

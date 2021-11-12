@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Bcl-2 protein inhibits Bcl-2-induced apoptosis through inhibition of mitogen-activated protein kinase activation in human leukemia U937 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bcl-2-induced"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of apoptosis does Bcl-2 inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "protein",
+        "Bcl-2-induced apoptosis",
+        "inhibition",
+        "mitogen-activated protein kinase activation",
+        "human leukemia U937 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits Bcl-2-induced apoptosis?",
+          "What does Bcl-2 inhibit?",
+          "What does Bcl-2 protein do to apoptosis?",
+          "What does Bcl-2 inhibit in human leukemia U937 cells?",
+          "What cells does Bcl-2 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is Bcl-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013377487659454346,
+        "ground_truth": {
+          "protein": {
+            "bertscore": 0.6816306710243225,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Bcl-2 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.8949759006500244,
+        "ground_truth": {
+          "bufalin-induced apoptosis": {
+            "bertscore": 0.816078782081604,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the main effect of Bcl-2 protein on apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of mitogen-activated protein kinase activation",
+        "answerability": 0.9974244832992554,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.7266645431518555,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does Bcl-2 inhibit in human leukemia U937 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9457377791404724,
+        "ground_truth": {
+          "mitogen-activated protein kinase activation": {
+            "bertscore": 0.6818644404411316,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells does Bcl-2 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4535207748413086,
+        "ground_truth": {
+          "human leukemia U937 cells": {
+            "bertscore": 0.5996473431587219,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

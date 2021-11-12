@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "We have recently characterised a new factor called IK which is an efficient inhibitor of IFN-gamma induction of MHC class II antigens expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MHC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What class of antigen is IK an efficient inhibitor of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a new factor",
+        "an efficient inhibitor",
+        "IFN-gamma induction",
+        "MHC class II antigens expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has recently been characterised?",
+          "What has been recently characterised?",
+          "What is IK?",
+          "What is IK an efficient inhibitor of?",
+          "What does IK inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What class of antigen is IK an efficient inhibitor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-gamma",
+        "answerability": 0.9469085931777954,
+        "ground_truth": {
+          "MHC": {
+            "bertscore": 0.7218562364578247,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has recently been characterised?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6273099184036255,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.605411171913147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has been recently characterised?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a new factor called IK",
+        "answerability": 0.6297818422317505,
+        "ground_truth": {
+          "a new factor": {
+            "bertscore": 0.8295466899871826,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is IK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an efficient inhibitor of IFN-gamma induction of MHC class II antigen",
+        "answerability": 0.9679763913154602,
+        "ground_truth": {
+          "an efficient inhibitor": {
+            "bertscore": 0.785881757736206,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is IK an efficient inhibitor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-gamma induction",
+        "answerability": 0.9913007616996765,
+        "ground_truth": {
+          "MHC class II antigens expression": {
+            "bertscore": 0.7346295714378357,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

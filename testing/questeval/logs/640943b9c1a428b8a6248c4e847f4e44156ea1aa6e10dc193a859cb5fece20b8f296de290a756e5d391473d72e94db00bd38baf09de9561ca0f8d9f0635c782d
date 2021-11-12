@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Estradiol increases IL-8 secretion of normal human breast tissue and breast cancer in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Estradiol",
+        "IL-8",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases IL-8 secretion of normal human breast tissue?",
+          "What secretion does etradiol increase in breast tissue?",
+          "In what way does etradiol cause breast cancer?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Estradiol",
+        "secretion",
+        "normal human breast tissue and breast cancer",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases IL-8 secretion of normal human breast tissue?",
+          "What does etradiol increase in breast tissue?",
+          "What does etradiol increase IL-8 secretion of?",
+          "In what way does etradiol cause breast cancer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not known to affect IL-8 secretion of normal breast tissue?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011463165283203125,
+        "ground_truth": {
+          "sex steroids": {
+            "bertscore": 0.7024057507514954,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-8 do to normal breast tissue?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07884019613265991,
+        "ground_truth": {
+          "secretion": {
+            "bertscore": 0.7148057222366333,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-8 secretion affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21458286046981812,
+        "ground_truth": {
+          "normal breast tissue": {
+            "bertscore": 0.685802698135376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common cause of death for women who take sex steroids?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014227569103240967,
+        "ground_truth": {
+          "breast cancer": {
+            "bertscore": 0.6923032402992249,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

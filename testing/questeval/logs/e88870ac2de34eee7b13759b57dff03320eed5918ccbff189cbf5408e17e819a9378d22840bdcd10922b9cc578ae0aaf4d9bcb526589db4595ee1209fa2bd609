@@ -1,0 +1,130 @@
+{
+  "type": "ref",
+  "text": "Northern analysis revealed expression of a minor 1.1 kb Id-3L transcript together with the predominant 0.95 kb Id-3 transcript in the majority of adult human tissues analysed.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kb",
+        "0.95",
+        "kb Id-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the Id-3L transcript size in the majority of adult human tissues?",
+          "What was the predominant Id-3 transcript in the majority of adult human tissues?",
+          "What was the predominant transcript in the majority of adult human tissues?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Northern analysis",
+        "expression",
+        "a minor 1.1 kb Id-3L transcript",
+        "the predominant 0.95 kb Id-3 transcript",
+        "the majority",
+        "adult human tissues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed a minor 1.1 kb Id-3L transcript?",
+          "What did Northern analysis reveal?",
+          "What did Northern analysis reveal?",
+          "What was found in the majority of adult human tissues?",
+          "What percentage of adult human tissues were examined for Id-3L?",
+          "What was the most commonly expressed Id-3L transcript?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the Id-3 transcript size in the majority of adult human tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "0.95 kb",
+        "answerability": 0.9304062724113464,
+        "ground_truth": {
+          "1.1 kb": {
+            "bertscore": 0.8791406154632568,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was the predominant Id-3 transcript in the majority of adult human tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "0.95 kb",
+        "answerability": 0.9027168154716492,
+        "ground_truth": {
+          "0.95 kb": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What revealed a minor 1.1 kb Id-3 transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Northern analysis",
+        "answerability": 0.8980797529220581,
+        "ground_truth": {
+          "Northern analysis": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did Northern analysis reveal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a minor 1.1 kb Id-3L transcript together with the predominant 0.95",
+        "answerability": 0.7983472347259521,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.6280333399772644,
+            "f1": 0
+          },
+          "a minor 1.1 kb Id-3 transcript": {
+            "bertscore": 0.8296452164649963,
+            "f1": 0.5714285714285714
+          }
+        }
+      }
+    },
+    "What was found in the majority of adult human tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16556429862976074,
+        "ground_truth": {
+          "the predominant 0.95 kb Id-3 transcript": {
+            "bertscore": 0.6132631301879883,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What percentage of adult human tissues were examined?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41274309158325195,
+        "ground_truth": {
+          "the majority": {
+            "bertscore": 0.693900465965271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the most commonly expressed Id-3 transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "0.95 kb",
+        "answerability": 0.976574718952179,
+        "ground_truth": {
+          "adult human tissues": {
+            "bertscore": 0.674531877040863,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

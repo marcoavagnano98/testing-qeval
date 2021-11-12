@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "The E2F family of transcription factors are downstream effectors of the retinoblastoma protein pRB pathway and are essential for the timely regulation of genes necessary for cell-cycle progression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E2F"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family of transcription factors are essential for the timely regulation of genes necessary for cell cycle progression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The E2F family",
+        "transcription factors",
+        "downstream effectors",
+        "the retinoblastoma protein",
+        "pRB pathway",
+        "the timely regulation",
+        "genes",
+        "cell-cycle progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family of transcription factors are essential for the timely regulation of genes necessary for cell cycle progression?",
+          "What is the E2F family of?",
+          "What is the E2F family of transcription factors?",
+          "The E2F family of transcription factors are downstream effectors of what pathway?",
+          "What is the E2F family of transcription factors essential for?",
+          "What is the E2F family essential for?",
+          "What are the E2F family of transcription factors essential for the timely regulation of?",
+          "What is the E2F family essential for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What family of transcription factors are essential for the timely regulation of genes necessary for cell cycle progression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F",
+        "answerability": 0.9981380701065063,
+        "ground_truth": {
+          "E2F": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "The E2F family": {
+            "bertscore": 0.8381714820861816,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the E2F family of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factors",
+        "answerability": 0.9991335272789001,
+        "ground_truth": {
+          "transcription factors": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the E2F family essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "timely regulation of genes",
+        "answerability": 0.9953547120094299,
+        "ground_truth": {
+          "the timely regulation": {
+            "bertscore": 0.8398662209510803,
+            "f1": 0.6666666666666666
+          },
+          "cell-cycle progression": {
+            "bertscore": 0.7424824237823486,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the E2F family of transcription factors essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "timely regulation of genes",
+        "answerability": 0.9976283311843872,
+        "ground_truth": {
+          "genes": {
+            "bertscore": 0.7943614721298218,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

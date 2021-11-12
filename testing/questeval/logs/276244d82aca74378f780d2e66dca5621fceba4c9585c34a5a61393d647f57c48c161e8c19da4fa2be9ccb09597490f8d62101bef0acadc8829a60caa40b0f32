@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "In a human malignant melanoma study NM23.H1 gene expression was found to be significantly lower in metastases that developed less than 24 months after diagnosis of the primary tumours.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "less than 24 months"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long after diagnosis did NM23.H1 gene expression decrease?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a human malignant melanoma study",
+        "gene expression",
+        "metastases",
+        "less than 24 months",
+        "diagnosis",
+        "the primary tumours"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what study was NM23.H1 gene expression found to be significantly lower in met",
+          "What was found to be significantly lower in metastases that developed less than 24 months after diagnosis",
+          "What type of tumors did the NM23.H1 gene expression decrease in?",
+          "How long after diagnosis did NM23.H1 gene expression decrease?",
+          "What was the primary tumor?",
+          "What was the NM23.H1 gene found to be significantly lower in metastases"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that identifies high malignancy human melano": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NM23.H1",
+        "answerability": 0.7093751430511475,
+        "ground_truth": {
+          "A low NM23.H1 gene expression": {
+            "bertscore": 0.7778578400611877,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does NM23.H1 gene expression identify?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09319406747817993,
+        "ground_truth": {
+          "high malignancy human melanomas": {
+            "bertscore": 0.6429732441902161,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

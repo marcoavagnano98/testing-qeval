@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "Using a genetic screen in yeast we have isolated B cell-derived cDNAs encoding Oct-binding factor 1 (OBF-1) a novel protein that specifically associates with Oct-1 and Oct-2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1",
+        "OBF-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the Oct-binding factor?",
+          "What is the name of the protein that is associated with Oct-1 and Oct-2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a genetic screen",
+        "yeast",
+        "we",
+        "cell-derived cDNAs",
+        "encoding Oct-binding factor",
+        "(OBF-1",
+        "a novel protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we use to isolate cDNAs encoding Oct-binding factor 1",
+          "What organism has been used to isolate cDNAs encoding Oct-binding factor",
+          "What did the cDNAs do?",
+          "What did we isolate in yeast?",
+          "What do cDNAs in yeast contain?",
+          "What is the name of the protein that is associated with Oct-1 and Oct-2?",
+          "What does OBF-1 encode?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the Oct-binding factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "OBF-1",
+        "answerability": 0.5418993234634399,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.7416500449180603,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is associated with Oct-1 and Oct-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Oct-binding factor 1",
+        "answerability": 0.9560895562171936,
+        "ground_truth": {
+          "OBF-1": {
+            "bertscore": 0.6928346753120422,
+            "f1": 0
+          },
+          "(OBF-1": {
+            "bertscore": 0.6481385231018066,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we use to isolate cDNAs encoding Oct-binding factor 1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a genetic screen in yeast",
+        "answerability": 0.9162848591804504,
+        "ground_truth": {
+          "a genetic screen": {
+            "bertscore": 0.8776417970657349,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What organism has been used to isolate cDNAs encoding Oct-binding factor": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "yeast",
+        "answerability": 0.9967219233512878,
+        "ground_truth": {
+          "yeast": {
+            "bertscore": 1.0000004768371582,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the cDNAs do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4118649363517761,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.674835205078125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we isolate in yeast?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cell-derived cDNAs encoding Oct-1 and Oct-2",
+        "answerability": 0.8730822801589966,
+        "ground_truth": {
+          "cell-derived cDNAs": {
+            "bertscore": 0.8329704999923706,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What do cDNAs in yeast contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Oct-binding factor 1",
+        "answerability": 0.6434905529022217,
+        "ground_truth": {
+          "encoding Oct-binding factor": {
+            "bertscore": 0.8768212199211121,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does OBF-1 encode?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Oct-binding factor 1",
+        "answerability": 0.8625190258026123,
+        "ground_truth": {
+          "a novel protein": {
+            "bertscore": 0.7148231863975525,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "type": "ref",
+  "text": "The complexes consisted of p50/p50 homodimers and p50/p65 heterodimers. Increased NF-kappa B binding to DNA in synovial T cells was observed relative to peripheral T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The complexes",
+        "p50/p50 homodimers",
+        "p50/p65 heterodimers",
+        "DNA",
+        "synovial T cells",
+        "peripheral T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What were the p50/p65 homodimers?",
+          "What were the complexes of a cytokine?",
+          "What were the two main components of the NF-kappa B complexes?",
+          "What did NF-kappa B binding increase in synovial T cells?",
+          "What type of cells were more likely to have NF-kappa B binding to DNA",
+          "What type of cells were more likely to have NF-kappa B binding to DNA"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did NF-kappa B binding increase in synovial T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA",
+        "answerability": 0.9822543859481812,
+        "ground_truth": {
+          "DNA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells had more NF-kappa B binding to DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synovial T cells",
+        "answerability": 0.9988417625427246,
+        "ground_truth": {
+          "synovial T cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were more likely to have NF-kappa B binding to DNA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synovial T cells",
+        "answerability": 0.9772084951400757,
+        "ground_truth": {
+          "peripheral T cells": {
+            "bertscore": 0.8745525479316711,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

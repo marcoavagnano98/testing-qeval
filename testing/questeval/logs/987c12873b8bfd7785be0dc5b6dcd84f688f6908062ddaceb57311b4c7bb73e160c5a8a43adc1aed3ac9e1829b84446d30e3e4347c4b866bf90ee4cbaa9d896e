@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "HIV-1-infected individuals and SIV-infected rhesus macaques have on the average decreased plasma cyst(e)ine and intracellular GSH levels and decreased intracellular glutathione levels.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SIV"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of infection is rhesus macaques infected with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV-1-infected individuals",
+        "SIV-infected rhesus macaques",
+        "the average decreased plasma cyst(e)ine and intracellular GSH levels",
+        "intracellular glutathione levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of people have decreased plasma cyst(e)ine and intracellular glutathione",
+          "What type of animals have decreased intracellular glutathione levels?",
+          "What do HIV-1-infected individuals have?",
+          "What does the average decrease in plasma cyst(e)ine and intracellular GSH levels mean"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been detected in the sera of HIV-1-infected individuals?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011573433876037598,
+        "ground_truth": {
+          "Elevated levels": {
+            "bertscore": 0.7230507135391235,
+            "f1": 0
+          },
+          "several inflammatory cytokines": {
+            "bertscore": 0.6113348603248596,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where have elevated levels of inflammatory cytokines been detected in HIV-1-inf": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01626366376876831,
+        "ground_truth": {
+          "the sera": {
+            "bertscore": 0.69074547290802,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the highest level of inflammatory cytokines detected in the sera of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0027565956115722656,
+        "ground_truth": {
+          "HIV-1-infected individuals": {
+            "bertscore": 0.6754761338233948,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

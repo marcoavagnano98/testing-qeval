@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"Binding is however readily detected when the 3 G is replaced by a C.\"\" Binding is however readily detected when the 3 G is replaced by a C.\"\" TTCCG is a positive regulator of kappa light chain and does not bind to the p50 subunit of NF-kappa light chain.\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3",
+        "3",
+        "TTCCG",
+        "kappa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the p50 subunit of NF-kappa light chain?",
+          "What is the p50 subunit of NF-kappa light chain?",
+          "What is a positive regulator of kappa light chain?",
+          "What light chain does TTCCG not bind to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the 3 G",
+        "a C.",
+        "the 3 G",
+        "a C.",
+        "a positive regulator",
+        "kappa light chain",
+        "the p50 subunit",
+        "NF-kappa light chain"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does TTCCG not bind to?",
+          "What is the binding of the 3 G?",
+          "What does TTCCG not bind to?",
+          "What is the binding of the 3 G?",
+          "What is the role of TTCCG in kappa light chain?",
+          "What does TTCCG not bind to?",
+          "What does TTCCG not bind to?",
+          "What does TTCCG not bind to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What macrophages are tolerant of kappa light chain enhancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006766319274902344,
+        "ground_truth": {
+          "P388": {
+            "bertscore": 0.6488766670227051,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not efficiently bind the nuclear p50p50 from tolerant murine P": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4966462254524231,
+        "ground_truth": {
+          "the murine kappa light chain enhancer motif": {
+            "bertscore": 0.6468449234962463,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the murine kappa light chain enhancer motif?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011905431747436523,
+        "ground_truth": {
+          "GGGGACTTTCCG": {
+            "bertscore": 0.6123030185699463,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the murine kappa light chain enhancer motif not efficiently bind?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.058386921882629395,
+        "ground_truth": {
+          "the nuclear p50p50": {
+            "bertscore": 0.6311683058738708,
+            "f1": 0
+          },
+          "tolerant murine P388 macrophages": {
+            "bertscore": 0.6369130611419678,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

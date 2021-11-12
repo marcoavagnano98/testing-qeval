@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Thus IkappaBalpha phosphorylation and degradation itself is required but not sufficient to cause RPS3 association with importin-alpha followed by nuclear translocation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required to cause RPS3 association with importin-alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IkappaBalpha phosphorylation",
+        "degradation",
+        "itself",
+        "RPS3 association",
+        "importin-alpha",
+        "nuclear translocation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required to cause RPS3 association with importin-alpha?",
+          "What is required to cause RPS3 association with importin-alpha?",
+          "What is required to cause RPS3 association with importin-alpha?",
+          "What is not enough to cause?",
+          "What is the main cause of RPS3 association?",
+          "What is the second step in the phosphorylation and degradation of IkappaB"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required to cause RPS3 association with importin-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2715064287185669,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 0.6275320053100586,
+            "f1": 0
+          },
+          "IkappaBalpha phosphorylation": {
+            "bertscore": 0.5785697102546692,
+            "f1": 0
+          },
+          "degradation": {
+            "bertscore": 0.7194914817810059,
+            "f1": 0
+          },
+          "itself": {
+            "bertscore": 0.7354585528373718,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not enough to cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6351122856140137,
+        "ground_truth": {
+          "RPS3 association": {
+            "bertscore": 0.6468274593353271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of RPS3 association?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11045825481414795,
+        "ground_truth": {
+          "importin-alpha": {
+            "bertscore": 0.645880401134491,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the second step in the phosphorylation and degradation of IkappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear translocation",
+        "answerability": 0.6625280380249023,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

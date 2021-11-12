@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "In this study we show that NF-kappaB-3alpha -3beta -3gamma -4gamma and -6 are expressed in pancreatic beta-cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this study",
+        "we",
+        "pancreatic beta-cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study showed that NF-kappaB-3alpha is expressed in pancre",
+          "What is the name of the study that shows that NF-kappaB-3al",
+          "Where are NF-kappaB-3alpha -3beta -4"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What study showed that HNF-3alpha -3beta -4gamma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16026228666305542,
+        "ground_truth": {
+          "this study": {
+            "bertscore": 0.6876576542854309,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the study that shows that HNF-3alpha -3bet": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03295081853866577,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is expressed in pancreatic beta-cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB-3alpha",
+        "answerability": 0.976855993270874,
+        "ground_truth": {
+          "HNF-3alpha": {
+            "bertscore": 0.7932432293891907,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where are HNF-3alpha -3beta -4gamma and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.54723060131073,
+        "ground_truth": {
+          "pancreatic beta-cells": {
+            "bertscore": 0.626226007938385,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

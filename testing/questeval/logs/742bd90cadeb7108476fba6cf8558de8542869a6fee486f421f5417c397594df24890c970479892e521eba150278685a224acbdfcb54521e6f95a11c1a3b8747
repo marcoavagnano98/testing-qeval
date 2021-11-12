@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Decrease in transcriptional activation by N-terminal deletions of CIITA is correlated directly with their reduced binding to TAFII32.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CIITA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is correlated with reduced binding to TAFII32?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Decrease",
+        "transcriptional activation",
+        "N-terminal deletions",
+        "CIITA",
+        "TAFII32"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is correlated with reduced binding to TAFII32?",
+          "What is correlated with reduced binding to TAFII32?",
+          "What is correlated with reduced binding to TAFII32?",
+          "What is correlated with reduced binding to TAFII32?",
+          "What protein is correlated with a decrease in transcriptional activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is correlated with reduced binding to TAFII32?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Decrease in transcriptional activation by N-terminal deletions",
+        "answerability": 0.9494850039482117,
+        "ground_truth": {
+          "CIITA": {
+            "bertscore": 0.6111344695091248,
+            "f1": 0
+          },
+          "Decreased transcriptional activation": {
+            "bertscore": 0.8721581101417542,
+            "f1": 0.4
+          },
+          "N-terminal deletions": {
+            "bertscore": 0.8350468873977661,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What protein is correlated with reduced transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CIITA",
+        "answerability": 0.6690677404403687,
+        "ground_truth": {
+          "TAFII32": {
+            "bertscore": 0.7934767007827759,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

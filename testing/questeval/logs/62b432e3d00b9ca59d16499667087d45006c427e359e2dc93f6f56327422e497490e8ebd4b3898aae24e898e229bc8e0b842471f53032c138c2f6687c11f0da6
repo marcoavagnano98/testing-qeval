@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "We determined the mechanism of NF-kappaB suppression in T cells of RCC patient and determined whether supernatant fluid from RCC explants (RCC-S) induced the same phenotype of NF-kappaB suppression in normal T cells that is observed in patient T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RCC",
+        "RCC-S"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What patient had the same phenotype of NF-kappaB suppression?",
+          "What is the name of the supernatant fluid from RCC explants?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the mechanism",
+        "NF-kappaB suppression",
+        "T cells",
+        "RCC patient",
+        "supernatant fluid",
+        "RCC explants",
+        "(RCC-S",
+        "the same phenotype",
+        "NF-kappaB suppression",
+        "normal T cells",
+        "patient T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study determine about the phenotype of NF-kappaB",
+          "What did the study determine about NF-kappaB suppression in RCC patients?",
+          "What did the study determine in RCC patients?",
+          "What type of cells were affected by the RCC-S?",
+          "What type of patient was the phenotype of NF-kappaB suppression",
+          "What induced the same phenotype of NF-kappaB suppression in",
+          "What is RCC-S?",
+          "What explants were used to determine the phenotype of NF-kapp",
+          "What did the supernatant fluid from RCC explants induce?",
+          "What did the study determine in RCC patients?",
+          "What type of T cells were affected by the RCC-S?",
+          "What is the same as normal T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the study determine about RCC-S?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mechanism of NF-kappaB suppression",
+        "answerability": 0.7507638931274414,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5526038408279419,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induced suppression of NF-kappaB activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "supernatant fluid",
+        "answerability": 0.8500528335571289,
+        "ground_truth": {
+          "RCC-S": {
+            "bertscore": 0.6855946183204651,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did RCC-S induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB suppression",
+        "answerability": 0.818742036819458,
+        "ground_truth": {
+          "suppression": {
+            "bertscore": 0.6951872706413269,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did RCC-S suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9163702726364136,
+        "ground_truth": {
+          "NF-kappaB activity": {
+            "bertscore": 0.8463843464851379,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

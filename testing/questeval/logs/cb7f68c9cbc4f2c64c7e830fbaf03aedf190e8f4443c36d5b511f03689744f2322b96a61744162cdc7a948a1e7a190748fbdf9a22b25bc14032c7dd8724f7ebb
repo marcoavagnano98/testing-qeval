@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "RORgammat expression was hardly affected (Figure 6D).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the smallest number of rORgammats affected by the chromos"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RORgammat expression",
+        "(Figure 6D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was not affected by the apoptosis?",
+          "What is the result of the study?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the smallest number of rORgammats affected by the chromos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15315914154052734,
+        "ground_truth": {
+          "6D": {
+            "bertscore": 0.6800791621208191,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by the apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32347291707992554,
+        "ground_truth": {
+          "RORgammat expression": {
+            "bertscore": 0.6506023406982422,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11677581071853638,
+        "ground_truth": {
+          "(Figure 6D": {
+            "bertscore": 0.6001796722412109,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

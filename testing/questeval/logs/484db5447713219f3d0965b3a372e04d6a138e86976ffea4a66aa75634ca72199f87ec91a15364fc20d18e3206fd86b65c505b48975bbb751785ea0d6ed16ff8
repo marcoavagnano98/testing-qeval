@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Within this region we define a minimal promoter (-62 to +54) that displays cell-specific activity.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this region",
+        "we",
+        "a minimal promoter",
+        "cell-specific activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What region of the genome is characterized by a minimal promoter?",
+          "What is the minimal promoter?",
+          "What does the -62 to +54 region of the RNA-coding gene display?",
+          "What does the minimal promoter display?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many DNA binding sites does the minimal promoter contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "-62 to +54",
+        "answerability": 0.8388499021530151,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.704063355922699,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What region of the genome contains two DNA binding sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0028058290481567383,
+        "ground_truth": {
+          "this region": {
+            "bertscore": 0.7012829184532166,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the minimal promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "(-62 to +54)",
+        "answerability": 0.9842900037765503,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.636566698551178,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the region that displays erythroid-specific activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.049973368644714355,
+        "ground_truth": {
+          "a minimal promoter": {
+            "bertscore": 0.7005656957626343,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the minimal promoter display?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell-specific activity",
+        "answerability": 0.9942808151245117,
+        "ground_truth": {
+          "erythroid-specific activity": {
+            "bertscore": 0.8357291221618652,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the minimal promoter contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell-specific activity",
+        "answerability": 0.8458245992660522,
+        "ground_truth": {
+          "two DNA binding sites": {
+            "bertscore": 0.7660434246063232,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

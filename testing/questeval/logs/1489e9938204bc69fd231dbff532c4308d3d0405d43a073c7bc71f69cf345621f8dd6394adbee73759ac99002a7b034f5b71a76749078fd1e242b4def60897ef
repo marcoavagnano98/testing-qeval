@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "We screened 200 RTK target-based compounds and identified one (TKI-31) that specifically inhibited VEGFR-2 kinase activity (IC50=0.596 microM).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "200",
+        "microM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many RTK target-based compounds were tested?",
+          "What was the IC50 of the target-based compounds?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "200 RTK target-based compounds",
+        "(TKI-31",
+        "VEGFR-2 kinase activity",
+        "IC50=0.596 microM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the IC50 of the target-based compounds?",
+          "How many compounds were tested?",
+          "What was the name of the RTK target-based compound that inhibited VEGFR",
+          "What did the TKI-31 inhibit?",
+          "What was the IC50 of the target-based compounds?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many RTK target-based compounds were tested?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "200",
+        "answerability": 0.9976182579994202,
+        "ground_truth": {
+          "200": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the IC50 of the target-based compounds?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "0.596 microM",
+        "answerability": 0.9121991991996765,
+        "ground_truth": {
+          "microM": {
+            "bertscore": 0.7668046355247498,
+            "f1": 0.6666666666666666
+          },
+          "We": {
+            "bertscore": 0.5846553444862366,
+            "f1": 0
+          },
+          "IC50=0.596 microM": {
+            "bertscore": 0.8743662238121033,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "How many compounds were tested?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "200",
+        "answerability": 0.9900689721107483,
+        "ground_truth": {
+          "200 RTK target-based compounds": {
+            "bertscore": 0.6902872323989868,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the IC50 of the 200 RTK target-based compounds?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "0.596 microM",
+        "answerability": 0.9083166122436523,
+        "ground_truth": {
+          "one (TKI-31) that potently inhibited VEGFR-2 kinase activity": {
+            "bertscore": 0.569820761680603,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

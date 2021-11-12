@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "LPMC exhibited increased IL-2 production in response to CD28 costimulation compared with cells activated through CD2 alone.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPMC",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells showed increased IL-2 production in response to CD28 costimulation?",
+          "What did LPMC produce in response to CD28?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "LPMC",
+        "IL-2 production",
+        "response",
+        "CD28 costimulation",
+        "cells",
+        "CD2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells showed increased IL-2 production in response to CD28 costimulation?",
+          "What did LPMC show increased in response to CD28 costimulation?",
+          "What did LPMC show increased IL-2 production in response to?",
+          "What did LPMC show increased IL-2 production in response to?",
+          "What did LPMC show increased IL-2 production in response to?",
+          "What cell type was activated by IL-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What do airway epithelial cells not significantly contribute to in response to inducible": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003746509552001953,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          },
+          "IL-2 production": {
+            "bertscore": 0.6194487810134888,
+            "f1": 0
+          },
+          "response": {
+            "bertscore": 0.7024294137954712,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not significantly contribute to IL-2 production in response to inducible anti-CD": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017794251441955566,
+        "ground_truth": {
+          "Airway epithelial cells": {
+            "bertscore": 0.625013530254364,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does airway epithelial cells not significantly contribute to IL-2 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00026410818099975586,
+        "ground_truth": {
+          "inducible anti-CD3 stimulation": {
+            "bertscore": 0.6282186508178711,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "The monophosphates of araC and dFdC were shown to be phosphorylated with similar efficiency as dCMP and DMP.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "dFdC",
+        "DMP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the monophosphate of araC?",
+          "What is the same as dCMP?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The monophosphates",
+        "araC",
+        "dFdC",
+        "similar efficiency",
+        "dCMP and DMP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is phosphorylated with the same efficiency as dCMP and DMP?",
+          "What is the monophosphate of dFdC?",
+          "What is the monophosphate of araC?",
+          "How was the phosphorylation of araC and dFdC shown to",
+          "What two compounds were shown to be phosphorylated with similar efficiency?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the monophosphate of araC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.239948570728302,
+        "ground_truth": {
+          "dFdC": {
+            "bertscore": 0.6609262824058533,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the same as dFdC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48878544569015503,
+        "ground_truth": {
+          "CMP": {
+            "bertscore": 0.6863018274307251,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is phosphorylated with the same efficiency as dCMP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monophosphates",
+        "answerability": 0.9594086408615112,
+        "ground_truth": {
+          "The monophosphates": {
+            "bertscore": 0.9020575881004333,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the monophosphate of dFdC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23376882076263428,
+        "ground_truth": {
+          "araC": {
+            "bertscore": 0.678692102432251,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How was the phosphorylation of araC and dFdC shown to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7004660367965698,
+        "ground_truth": {
+          "similar efficiency": {
+            "bertscore": 0.7273333072662354,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

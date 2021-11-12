@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "IL-12 had little or no effect on IRF-1 IRF-3 or NF-kappaB.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-12",
+        "IRF-1 IRF-3",
+        "NF-kappaB."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What chemical had little effect on IRF-1 IRF-3?",
+          "What did IL-12 have little effect on?",
+          "What was the only protein that was not affected by IL-12?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "little or no effect",
+        "IRF-1 IRF-3",
+        "NF-kappaB."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What effect did IL-12 have on IRF-1 IRF-3?",
+          "What did IL-12 have little effect on?",
+          "What was the only protein that was not affected by IL-12?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What chemical has a direct effect on IRF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09917843341827393,
+        "ground_truth": {
+          "IL-12": {
+            "bertscore": 0.6712610721588135,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-12 have a direct effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3645293116569519,
+        "ground_truth": {
+          "IRF-1": {
+            "bertscore": 0.6722445487976074,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show about IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "little or no effect",
+        "answerability": 0.9737180471420288,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5931394100189209,
+            "f1": 0
+          },
+          "a direct effect": {
+            "bertscore": 0.7380564212799072,
+            "f1": 0.3333333333333333
+          },
+          "an effect": {
+            "bertscore": 0.7447494864463806,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did we show was not mediated indirectly by IFN-gamma production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.021800994873046875,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.697335422039032,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-12 not directly affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IRF-1 IRF-3 or NF-kappaB",
+        "answerability": 0.8578563928604126,
+        "ground_truth": {
+          "IFN-gamma production": {
+            "bertscore": 0.7198176383972168,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

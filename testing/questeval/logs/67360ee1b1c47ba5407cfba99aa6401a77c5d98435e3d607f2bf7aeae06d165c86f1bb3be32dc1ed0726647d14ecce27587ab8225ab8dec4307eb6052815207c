@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "The AP-3 deficiency results in increased surface expression of the lysosomal membrane proteins CD63 lamp-1 and lamp-2 but not of nonlysosomes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AP-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What deficiency results in increased surface expression of the lysosome proteins?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The AP-3 deficiency results",
+        "increased surface expression",
+        "CD63 lamp-1",
+        "lamp-2",
+        "nonlysosomes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the result of the AP-3 deficiency?",
+          "What does AP-3 deficiency result in?",
+          "What is the lysosome protein that is not affected by AP-3?",
+          "What is the only lysosome protein that is not affected by AP-3?",
+          "What does AP-3 deficiency result in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What deficiency results in increased surface expression of the lysosomal membrane": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-3",
+        "answerability": 0.8321474194526672,
+        "ground_truth": {
+          "AP-3": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What causes increased surface expression of the lysosomal membrane proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-3 deficiency",
+        "answerability": 0.9609279036521912,
+        "ground_truth": {
+          "The AP-3 deficiency results": {
+            "bertscore": 0.8946069478988647,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does AP-3 deficiency result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased surface expression of the lysosomal membrane proteins CD63 lamp-1 and lamp",
+        "answerability": 0.9944093823432922,
+        "ground_truth": {
+          "increased surface expression": {
+            "bertscore": 0.7752094268798828,
+            "f1": 0.42857142857142855
+          },
+          "nonlysosomal proteins": {
+            "bertscore": 0.75750333070755,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    },
+    "What is the lysosomal membrane protein that is not affected by AP-3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.341170072555542,
+        "ground_truth": {
+          "CD63 lamp-1": {
+            "bertscore": 0.6284375786781311,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only nonlysosomal protein that is not affected by AP-3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21463793516159058,
+        "ground_truth": {
+          "lamp-2": {
+            "bertscore": 0.689824640750885,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

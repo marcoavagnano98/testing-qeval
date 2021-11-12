@@ -1,0 +1,68 @@
+{
+  "type": "ref",
+  "text": "Selenium-mediated inhibition of transcription factor NF-kappa B and HIV-1 LTR promoter activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the LTR promoter of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Selenium-mediated inhibition",
+        "transcription factor NF-kappa B",
+        "HIV-1 LTR promoter activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mechanism of action of NF-kappa B?",
+          "What is the key to preventing HIV-1 from developing?",
+          "What is the NF-kappa B inhibitor?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the LTR promoter of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.7205328941345215,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that is used to inhibit the HIV-1 LTR promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Selenium-mediated inhibition",
+        "answerability": 0.9435526132583618,
+        "ground_truth": {
+          "Selenium-mediated inhibition": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is selenium-mediated inhibition of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factor NF-kappa B and HIV-1 LTR promoter activity",
+        "answerability": 0.9075748324394226,
+        "ground_truth": {
+          "the HIV-1 LTR promoter": {
+            "bertscore": 0.8575758934020996,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

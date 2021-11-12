@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the expression levels of NF-kappaB-regulated metastasis-related molecules such as fibronectin beta1 integrin MMP-1 -2 -9 and -14 and VEGF-C were upregulated in the highly metastatic cells. M2-PK was targeted to the cytoplasmic domain of M2-PK by targeted proteolysis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "beta1",
+        "MMP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulated metastasis-related molecules were upregulated in highly metastatic cells?",
+          "What is the fibronectin?",
+          "What is the name of the NF-kappaB-regulated metastasis"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Furthermore the expression levels",
+        "NF-kappaB-regulated metastasis-related molecules",
+        "fibronectin beta1 integrin MMP-1 -2 -9",
+        "and -14",
+        "VEGF-C",
+        "the highly metastatic cells",
+        "M2-PK",
+        "the cytoplasmic domain",
+        "M2-PK",
+        "targeted proteolysis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was upregulated in highly metastatic cells?",
+          "What did the upregulation of MMP-1 -2 -9 and -14 result in?",
+          "What is one NF-kappaB-regulated metastasis related molecule",
+          "What are the two NF-kappaB-regulated metastasis related molecules",
+          "What is one of the NF-kappaB-regulated metastasis related",
+          "Where were the expression levels of NF-kappaB-regulated metastasis",
+          "What was targeted to the cytoplasmic domain of M2-PK?",
+          "Where was M2-PK targeted?",
+          "What was targeted to the cytoplasmic domain of M2-PK?",
+          "How was M2-PK targeted to the cytoplasmic domain of M2-PK?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we do to target M2-PK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "targeted proteolysis",
+        "answerability": 0.9894925355911255,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6464473605155945,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we use to target M2-PK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "targeted proteolysis",
+        "answerability": 0.8974915146827698,
+        "ground_truth": {
+          "synthetic peptide aptamers": {
+            "bertscore": 0.7449934482574463,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the synthetic peptide aptamers shift?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00044399499893188477,
+        "ground_truth": {
+          "the isoenzyme": {
+            "bertscore": 0.658319890499115,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where did the peptide aptamers shift the isoenzyme?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003621518611907959,
+        "ground_truth": {
+          "its low affinity dimeric conformation": {
+            "bertscore": 0.6354921460151672,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "In stably transformed erythroblasts coexpressing the c-erbA/T3 receptor at an approximately equimolar ratio c-erbA/T3 receptor activity is dominant over v-erbA.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "stably transformed erythroblasts",
+        "the c-erbA/T3 receptor",
+        "an approximately equimolar ratio c-erbA/T3 receptor activity",
+        "v-erbA."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of erythroblasts is c-erbA/T3",
+          "What does stably transformed erythroblasts co-express?",
+          "What is the dominant c-erbA/T3 receptor in stably transformed",
+          "What receptor is dominant in stably transformed erythroblasts?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what type of cells is c-erbA dominant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroblasts",
+        "answerability": 0.8608761429786682,
+        "ground_truth": {
+          "stably transformed erythroblasts": {
+            "bertscore": 0.8920389413833618,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein is dominant in stably transformed erythroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-erbA/T3 receptor",
+        "answerability": 0.6452708840370178,
+        "ground_truth": {
+          "the v-erbA oncoprotein": {
+            "bertscore": 0.8025624752044678,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What oncoprotein is dominant in stably transformed erythroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-erbA/T3 receptor",
+        "answerability": 0.5210742354393005,
+        "ground_truth": {
+          "-erbA": {
+            "bertscore": 0.7324197888374329,
+            "f1": 0
+          },
+          "v-erbA.": {
+            "bertscore": 0.721354603767395,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the dominant cytokine in stably transformed erythroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-erbA/T3 receptor",
+        "answerability": 0.5611680746078491,
+        "ground_truth": {
+          "an approximately equimolar ratio c-erbA activity": {
+            "bertscore": 0.7487072348594666,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

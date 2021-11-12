@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The severe phenotype of females with tiny ring X chromosomes is associated with inability of these chromosomes to respond to TPA in female somatic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The severe phenotype",
+        "females",
+        "tiny ring X chromosomes",
+        "inability",
+        "these chromosomes",
+        "TPA",
+        "female somatic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the phenotype of females with tiny ring X chromos",
+          "What type of chromosomes have tiny ring X chromosomes",
+          "What is the severe phenotype of females with?",
+          "What is the severe phenotype of females with tiny ring X chro",
+          "What is the severe phenotype of females with tiny ring X chro",
+          "What is the phenotype of females with tiny ring X chromos",
+          "What type of cells are unable to respond to TPA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the phenotype of females with tiny ring X chromos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "severe",
+        "answerability": 0.970564603805542,
+        "ground_truth": {
+          "The severe phenotype": {
+            "bertscore": 0.7293310761451721,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of chromosomes have tiny ring X chromosomes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "females with tiny ring X chromosomes",
+        "answerability": 0.6471220254898071,
+        "ground_truth": {
+          "females": {
+            "bertscore": 0.739841639995575,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is the severe phenotype of females with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tiny ring X chromosomes",
+        "answerability": 0.9958663582801819,
+        "ground_truth": {
+          "tiny ring X chromosomes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the severe phenotype of females with tiny ring X chro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inability of these chromosomes to respond to TPA",
+        "answerability": 0.8441833257675171,
+        "ground_truth": {
+          "inability": {
+            "bertscore": 0.7109280228614807,
+            "f1": 0.2222222222222222
+          },
+          "these chromosomes": {
+            "bertscore": 0.7749412655830383,
+            "f1": 0.4
+          },
+          "X inactivation": {
+            "bertscore": 0.6617243885993958,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "By using HIV LTR deletion mutants the NF-kappa B binding sites were found to be critical for response to the pCD41 trans-activation in U937 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV LTR deletion",
+        "the NF-kappa B binding sites",
+        "response",
+        "the pCD41 trans-activation",
+        "U937 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mutants were found to be critical for response to pCD41 trans-activation",
+          "What was found to be critical for response to pCD41 trans-activation?",
+          "What is the NF-kappa B binding sites critical for?",
+          "What did the LTR deletion mutants help to respond to?",
+          "What cells were used to respond to pCD41 trans-activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mutation was used to determine the criticality of NF-kappa B binding sites": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV LTR deletion mutants",
+        "answerability": 0.8992045521736145,
+        "ground_truth": {
+          "HIV LTR deletion": {
+            "bertscore": 0.9442420601844788,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What was found to be critical for response to the pCD41 trans-activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B binding sites",
+        "answerability": 0.9830718040466309,
+        "ground_truth": {
+          "the NF-kappa B binding sites": {
+            "bertscore": 0.9390637278556824,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the NF-kappa B binding sites critical for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "response to the pCD41 trans-activation",
+        "answerability": 0.98451828956604,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.6542521119117737,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did the LTR deletion mutants respond to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21540898084640503,
+        "ground_truth": {
+          "the pCD41 trans-activation": {
+            "bertscore": 0.6043938398361206,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

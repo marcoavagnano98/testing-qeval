@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "TLR2 activates the transcription factor NF-kappaB in response to pro-inflammatory mediators such as IL-1 TNF-alpha and IL-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "IL-1",
+        "IL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor does TLR2 activate?",
+          "What is the pro-inflammatory mediator that TLR2 activates?",
+          "What is the pro-inflammatory mediator that TLR2 activates?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TLR2",
+        "the transcription factor",
+        "NF-kappaB",
+        "response",
+        "pro-inflammatory mediators",
+        "IL-1 TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activates the transcription factor NF-kappaB?",
+          "What does TLR2 activate?",
+          "What transcription factor does TLR2 activate?",
+          "What does TLR2 activate the transcription factor NF-kappaB in response to",
+          "What does TLR2 activate in response to?",
+          "What is the pro-inflammatory mediator that TLR2 activates?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does TLR2 respond to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pro-inflammatory mediators",
+        "answerability": 0.8179072141647339,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.6486852765083313,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the signaling receptor that responds to LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019811630249023438,
+        "ground_truth": {
+          "TLR2": {
+            "bertscore": 0.6572215557098389,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TLR2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.40343034267425537,
+        "ground_truth": {
+          "a signaling receptor": {
+            "bertscore": 0.6617146134376526,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

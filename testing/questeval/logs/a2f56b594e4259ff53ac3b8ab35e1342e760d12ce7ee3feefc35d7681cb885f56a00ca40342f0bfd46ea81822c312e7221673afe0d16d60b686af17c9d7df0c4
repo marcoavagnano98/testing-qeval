@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "YM268 increases the insulin content of 3T3-L1 adipocytes and promotes cell differentiation into mature macrophages.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "YM268"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases the insulin content of 3T3-L1 adipocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "YM268",
+        "the insulin content",
+        "3T3-L1 adipocytes",
+        "cell differentiation",
+        "mature macrophages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases the insulin content of 3T3-L1 adipocytes?",
+          "What does YM268 increase in 3T3-L1 adipocyte",
+          "What does YM268 increase the insulin content of?",
+          "What does YM268 promote?",
+          "What does YM268 promote cell differentiation into?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases the glucose uptake cell differentiation and mRNA expression of glucose transporter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "YM268",
+        "answerability": 0.7090036869049072,
+        "ground_truth": {
+          "YM268": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does YM268 increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin content",
+        "answerability": 0.9957627058029175,
+        "ground_truth": {
+          "the glucose uptake cell differentiation": {
+            "bertscore": 0.7707657217979431,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does YM268 increase in 3T3-L1 adipocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin content",
+        "answerability": 0.9975346326828003,
+        "ground_truth": {
+          "mRNA expression": {
+            "bertscore": 0.8459349870681763,
+            "f1": 0
+          },
+          "glucose transporter": {
+            "bertscore": 0.8258019089698792,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does YM268 increase glucose uptake cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05682945251464844,
+        "ground_truth": {
+          "3T3-L1 adipocytes": {
+            "bertscore": 0.604992687702179,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

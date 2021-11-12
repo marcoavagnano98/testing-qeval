@@ -1,0 +1,108 @@
+{
+  "type": "ref",
+  "text": "Trad mRNA is specifically expressed in skeletal muscle.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Trad",
+        "mRNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA is specifically expressed in skeletal muscle?",
+          "What is specifically expressed in skeletal muscle?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Trad mRNA",
+        "skeletal muscle"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is specifically expressed in skeletal muscle?",
+          "Where is trad mRNA specifically expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA is expressed in highly cell-specific manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Trad",
+        "answerability": 0.7811391353607178,
+        "ground_truth": {
+          "Trad": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is expressed in highly cell-specific manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35340797901153564,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.6875344514846802,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is expressed in a highly cell-specific manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38214462995529175,
+        "ground_truth": {
+          "Trad mRNA": {
+            "bertscore": 0.6803854703903198,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How is trad mRNA expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "skeletal muscle",
+        "answerability": 0.7997991442680359,
+        "ground_truth": {
+          "a highly cell-specific manner": {
+            "bertscore": 0.6808156371116638,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is trad mRNA most abundant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.191087543964386,
+        "ground_truth": {
+          "B cells": {
+            "bertscore": 0.6732418537139893,
+            "f1": 0
+          },
+          "tissues": {
+            "bertscore": 0.6904674768447876,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is trad mRNA essentially absent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010437965393066406,
+        "ground_truth": {
+          "the other cells": {
+            "bertscore": 0.6783477663993835,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

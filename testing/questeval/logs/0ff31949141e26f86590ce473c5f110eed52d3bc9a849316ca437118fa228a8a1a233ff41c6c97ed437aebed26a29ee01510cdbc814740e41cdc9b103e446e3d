@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "(CAT) production by 78% in the wild-type fragment but not in a deletion mutant lacking the 19-bp site.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "78%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How much did CAT production increase in a wild-type fragment?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(CAT) production",
+        "78%",
+        "the wild-type fragment",
+        "a deletion mutant",
+        "the 19-bp site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the CAT production of a mutant with a 19-bp site?",
+          "How much did CAT production increase in a wild-type fragment?",
+          "What mutant had CAT production reduced by 78%?",
+          "What is the only mutant that has the 19-bp site?",
+          "What is the CAT site?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How much did CAT production increase in a wild-type fragment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "78%",
+        "answerability": 0.9044430255889893,
+        "ground_truth": {
+          "75%": {
+            "bertscore": 0.9520997405052185,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the CAT production of a mutant with a 19-bp site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14123570919036865,
+        "ground_truth": {
+          "(CAT) production": {
+            "bertscore": 0.6439834237098694,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mutant did CAT production decrease by 75%?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11486232280731201,
+        "ground_truth": {
+          "the wild-type fragment": {
+            "bertscore": 0.6752976179122925,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only mutant that has the 19-bp site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "deletion mutant",
+        "answerability": 0.8136287331581116,
+        "ground_truth": {
+          "a deletion mutant": {
+            "bertscore": 0.9250827431678772,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the CAT site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29994142055511475,
+        "ground_truth": {
+          "the 19-bp site": {
+            "bertscore": 0.6512196660041809,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Therefore the normal or enhanced function of E2F1 gene would be important in controlling the HBx function in HCC.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HCC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the HBx gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the normal or enhanced function",
+        "E2F1 gene",
+        "the HBx function",
+        "HCC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is important in controlling the HBx function in HCC?",
+          "What gene is important in controlling HBx function?",
+          "What is the normal or enhanced function of E2F1 gene important in controlling?",
+          "What is the name of the HBx gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the HBx gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012663781642913818,
+        "ground_truth": {
+          "HCC": {
+            "bertscore": 0.7022408843040466,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is important in controlling the HBx function in HCC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the normal or enhanced function of E2F1 gene",
+        "answerability": 0.9905393123626709,
+        "ground_truth": {
+          "the normal or enhanced function": {
+            "bertscore": 0.8221519589424133,
+            "f1": 0.7272727272727273
+          }
+        }
+      }
+    },
+    "What gene is important in controlling HBx function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F1 gene",
+        "answerability": 0.9903210997581482,
+        "ground_truth": {
+          "E2F1 gene": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the normal or enhanced function of E2F1 gene important in controlling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the HBx function",
+        "answerability": 0.99509596824646,
+        "ground_truth": {
+          "the HBx function": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

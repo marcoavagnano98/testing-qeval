@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "To test whether DeltavicK infection confers immunity against S. equi infection the seven mice recovered from the subcutaneous DeltavicK infection was reinfected subcutaneously with 1.5 x 108 cfu wild-type S. equi 30 days after the first infection and monitored for 18 days.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "DeltavicK",
+        "S.",
+        "seven",
+        "1.5 x 108",
+        "S. equi 30 days",
+        "first",
+        "18 days"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of infection was tested in mice?",
+          "What type of infection did the mice recover from?",
+          "How many mice were tested for immunity?",
+          "How many cfu were used to test the immunity of the mice?",
+          "How long did it take for the mice to recover from the infection?",
+          "How many days after the first infection were the mice re-infected with S.",
+          "How long were the mice monitored for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DeltavicK infection confers immunity",
+        "S. equi infection",
+        "the seven mice",
+        "the subcutaneous DeltavicK infection",
+        "the first infection",
+        "18 days"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the mice recover from the first infection test?",
+          "What did the mice recover from the DeltavicK infection?",
+          "How many mice were tested for immunity to S. equi infection?",
+          "What was the first infection of the mice?",
+          "How many days after the first infection were the mice re-infected with S.",
+          "How long were the mice monitored for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long after infection did the equi virus re-infect the equi": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3785163164138794,
+        "ground_truth": {
+          "S. equi 30 days": {
+            "bertscore": 0.6360232830047607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the re-infection with wild-type S. equi?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.547265887260437,
+        "ground_truth": {
+          "S. equi infection": {
+            "bertscore": 0.6275523900985718,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the S. equi virus re-infected with 30 days after": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05671948194503784,
+        "ground_truth": {
+          "infection": {
+            "bertscore": 0.6894519329071045,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

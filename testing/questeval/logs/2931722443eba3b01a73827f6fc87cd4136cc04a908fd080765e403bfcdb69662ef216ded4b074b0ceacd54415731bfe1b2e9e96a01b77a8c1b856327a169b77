@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "In vivoL-OHP and 5-FU but not 5-FU and L-OHP significantly inhibited endothelial cell proliferation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivoL-OHP",
+        "5-FU",
+        "5-FU"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited endothelial cell proliferation?",
+          "What inhibited endothelial cell proliferation?",
+          "What inhibited endothelial cell proliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "vivoL-OHP",
+        "L-OHP",
+        "endothelial cell proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited endothelial cell proliferation?",
+          "What inhibited endothelial cell proliferation?",
+          "What did L-OHP and 5-FU significantly inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited endothelial cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5202920436859131,
+        "ground_truth": {
+          "SN-38": {
+            "bertscore": 0.6604704856872559,
+            "f1": 0
+          },
+          "Low concentrations": {
+            "bertscore": 0.7255582213401794,
+            "f1": 0
+          },
+          "L-OHP": {
+            "bertscore": 0.6547811627388,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only SN-38 inhibitor that inhibits endothelial cell proliferation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1593058705329895,
+        "ground_truth": {
+          "5-FU": {
+            "bertscore": 0.7021403312683105,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did low concentrations of SN-38 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00584101676940918,
+        "ground_truth": {
+          "preferentially inhibited endothelial cell proliferation": {
+            "bertscore": 0.6081047654151917,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

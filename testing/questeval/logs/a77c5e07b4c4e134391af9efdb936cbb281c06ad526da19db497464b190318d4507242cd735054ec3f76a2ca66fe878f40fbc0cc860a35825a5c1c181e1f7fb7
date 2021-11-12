@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Analysis of the IL-2 promoter revealed that the NF-kappaB element at -150 bp but not the NF-kappaB site was stimulated by dopamine.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "NF-kappaB",
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter was found to be stimulated by dopamine?",
+          "What element was stimulated by dopamine?",
+          "What element was stimulated by dopamine?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Analysis",
+        "the IL-2 promoter",
+        "-150 bp",
+        "not the NF-kappaB site",
+        "dopamine"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed that the IL-2 promoter was stimulated by dopamine?",
+          "What did analysis of the NF-kappaB element reveal?",
+          "What is the IL-2 promoter?",
+          "What did analysis of the IL-2 promoter reveal was stimulated by dopamine?",
+          "What stimulates the NF-kappaB element at -150 bp"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What element in the long terminal repeat stimulates transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2629031538963318,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.651921272277832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What revealed that dopamine stimulated transcription through the NF-kappaB element": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4153669476509094,
+        "ground_truth": {
+          "Our transient expression data": {
+            "bertscore": 0.6189275979995728,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulates transcription through the NF-kappaB element?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dopamine",
+        "answerability": 0.5942443013191223,
+        "ground_truth": {
+          "dopamine": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the dopamine stimulate transcription through?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.023875832557678223,
+        "ground_truth": {
+          "the NF-kappaB element": {
+            "bertscore": 0.6258055567741394,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What part of the brain does dopamine stimulate transcription through?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15660697221755981,
+        "ground_truth": {
+          "the long terminal repeat": {
+            "bertscore": 0.6550536751747131,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

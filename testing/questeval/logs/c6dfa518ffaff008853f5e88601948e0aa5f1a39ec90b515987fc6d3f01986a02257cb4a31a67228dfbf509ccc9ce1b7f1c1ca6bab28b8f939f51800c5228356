@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "NF-kappa B is a protein complex which functions in concert with the tat-I gene product to stimulate human immunodeficiency virus (HIV) transcription. HIV regulation is dependent on various stimuli that include lipopolysaccharide (LPS) viruses and other cytokines.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-kappa B",
+        "a protein complex",
+        "concert",
+        "the tat-I gene product",
+        "human immunodeficiency virus (HIV) transcription",
+        "HIV regulation",
+        "various stimuli",
+        "lipopolysaccharide (LPS) viruses",
+        "other cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein complex that functions in concert with the tat-I",
+          "What is NF-kappa B?",
+          "How does NF-kappa B function with the tat-I gene product",
+          "What does NF-kappa B function in concert with?",
+          "What does NF-kappa B stimulate?",
+          "What is dependent on various stimuli?",
+          "What is HIV regulation dependent on?",
+          "What is the main factor in HIV regulation?",
+          "What is HIV regulation dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug can have a significant role in HIV regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipopolysaccharide",
+        "answerability": 0.6369936466217041,
+        "ground_truth": {
+          "RA": {
+            "bertscore": 0.5827087759971619,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may have a significant role in HIV regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4838683009147644,
+        "ground_truth": {
+          "Endogenous or exogenously administered RA": {
+            "bertscore": 0.6662167310714722,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What role does RA play in HIV regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.025736331939697266,
+        "ground_truth": {
+          "a significant role": {
+            "bertscore": 0.6552832126617432,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may endogenously or exogenously administered RA have a significant role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009237527847290039,
+        "ground_truth": {
+          "HIV regulation": {
+            "bertscore": 0.6834760308265686,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

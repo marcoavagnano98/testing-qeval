@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "The region of A-MYB responsible for the B cell specific activity was defined to be the N-terminal 218 amino acids containing the DNA binding domain.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "218"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What amino acid is responsible for the B cell specific activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The region",
+        "A-MYB",
+        "the B cell specific activity",
+        "the N-terminal 218 amino acids",
+        "the DNA binding domain"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is responsible for the B cell specific activity?",
+          "What region is responsible for the B cell specific activity?",
+          "What is the region of A-MYB responsible for?",
+          "What is the region of A-MYB responsible for the B cell specific activity?",
+          "What is the region of A-MYB responsible for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is responsible for the B cell specific activity of the A-MYB transcription factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "N-terminal 218 amino acids containing the DNA binding domain",
+        "answerability": 0.9037035703659058,
+        "ground_truth": {
+          "The DNA binding domain": {
+            "bertscore": 0.8275417685508728,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What is responsible for its B cell specific activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A-MYB",
+        "answerability": 0.9656988978385925,
+        "ground_truth": {
+          "the A-MYB transcription factor": {
+            "bertscore": 0.7265284061431885,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the DNA binding domain of the A-MYB transcription factor responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the B cell specific activity",
+        "answerability": 0.9473853707313538,
+        "ground_truth": {
+          "its B cell-specific activity": {
+            "bertscore": 0.9124341607093811,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the A-MYB transcription factor do to a B cell 110-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07707339525222778,
+        "ground_truth": {
+          "binds": {
+            "bertscore": 0.7351589202880859,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the DNA binding domain of the A-MYB bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3917272090911865,
+        "ground_truth": {
+          "a B cell 110-kDa nuclear protein": {
+            "bertscore": 0.6077472567558289,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

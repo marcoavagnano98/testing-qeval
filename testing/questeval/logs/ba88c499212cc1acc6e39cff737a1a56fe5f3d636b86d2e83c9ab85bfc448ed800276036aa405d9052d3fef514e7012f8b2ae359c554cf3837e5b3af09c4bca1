@@ -1,0 +1,78 @@
+{
+  "type": "ref",
+  "text": "During mammalian development krm1 mRNA expression is low in the early stages but gradually and continuously increases with developmental progression and differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "mammalian development krm1 mRNA expression",
+        "the early stages",
+        "developmental progression",
+        "differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is low in the early stages of development?",
+          "When is krm1 mRNA expression low?",
+          "What is the process that causes krm1 mRNA expression to increase?",
+          "What is the main process of krm1 mRNA expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is low in the early stages of a bacterium?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "krm1 mRNA expression",
+        "answerability": 0.594719648361206,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7573837041854858,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "When is expression low?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early stages",
+        "answerability": 0.9973795413970947,
+        "ground_truth": {
+          "the early stages": {
+            "bertscore": 0.9138419032096863,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that causes the expression of chromosomes to increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03335559368133545,
+        "ground_truth": {
+          "developmental progression": {
+            "bertscore": 0.7205294966697693,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that causes the expression of chromosomes to increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02623879909515381,
+        "ground_truth": {
+          "differentiation": {
+            "bertscore": 0.7085909247398376,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

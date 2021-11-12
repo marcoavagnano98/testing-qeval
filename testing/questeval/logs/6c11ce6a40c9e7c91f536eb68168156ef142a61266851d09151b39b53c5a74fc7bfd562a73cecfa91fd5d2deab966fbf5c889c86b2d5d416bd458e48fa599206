@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "We then investigated if HCMV binding also resulted in the translation and secretion of cytokines.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the translation",
+        "secretion",
+        "cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the researchers investigate?",
+          "What did HCMV binding result in?",
+          "What did HCMV binding result in?",
+          "What did HCMV binding result in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the researchers investigate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "if HCMV binding also resulted in the translation and secretion of",
+        "answerability": 0.8638242483139038,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.561726987361908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did HCMV binding result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "translation and secretion of cytokines",
+        "answerability": 0.9941730499267578,
+        "ground_truth": {
+          "the translation": {
+            "bertscore": 0.6807293891906738,
+            "f1": 0.33333333333333337
+          },
+          "secretion": {
+            "bertscore": 0.7129247188568115,
+            "f1": 0.33333333333333337
+          },
+          "cytokines": {
+            "bertscore": 0.8260015845298767,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

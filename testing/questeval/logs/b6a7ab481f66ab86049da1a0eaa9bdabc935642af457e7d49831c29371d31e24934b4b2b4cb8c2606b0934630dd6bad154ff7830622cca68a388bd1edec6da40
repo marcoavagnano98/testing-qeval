@@ -1,0 +1,60 @@
+{
+  "type": "hyp",
+  "text": "Expression of the Bcl-3 proto-oncogene and an unidentified ligand pair p53 with a homolog to Saccharomyces cerevisiae.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "the Bcl-3 proto-oncogene",
+        "an unidentified ligand pair p53",
+        "a homolog",
+        "Saccharomyces cerevisiae"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the Bcl-3 proto-oncogene?",
+          "What is the ligand pair p53 homologous to?",
+          "What is the Bcl-3 proto-oncogene homologous to?",
+          "What is the ligand pair p53 with?",
+          "What is the name of the ligand pair p53 has a homolog to"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppresses p53 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006891131401062012,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7109297513961792,
+            "f1": 0
+          },
+          "the Bcl-3 proto-oncogene": {
+            "bertscore": 0.5985134840011597,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the Bcl-3 proto-oncogene suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00033652782440185547,
+        "ground_truth": {
+          "p53 activation": {
+            "bertscore": 0.6179963946342468,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

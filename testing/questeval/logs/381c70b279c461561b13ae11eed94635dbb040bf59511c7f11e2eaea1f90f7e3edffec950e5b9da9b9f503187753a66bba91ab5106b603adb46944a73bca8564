@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Tobacco smoke promotes lung tumorigenesis by triggering IKKbeta- and JNK1-dependent inflammation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tobacco smoke",
+        "lung tumorigenesis",
+        "IKKbeta-",
+        "JNK1-dependent inflammation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What triggers inflammation in the lung?",
+          "What does tobacco smoke promote?",
+          "What type of inflammation is triggered by smoking?",
+          "What is the main cause of lung tumorigenesis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What triggers inflammation in the lung?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tobacco smoke",
+        "answerability": 0.9125485420227051,
+        "ground_truth": {
+          "Tobacco smoke": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does tobacco smoke promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lung tumorigenesis",
+        "answerability": 0.9986259937286377,
+        "ground_truth": {
+          "lung tumorigenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of inflammation is triggered by smoking?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IKKbeta- and JNK1-dependent inflammation",
+        "answerability": 0.9013904333114624,
+        "ground_truth": {
+          "IKKbeta-": {
+            "bertscore": 0.7202144861221313,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the main cause of lung tumorigenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tobacco smoke",
+        "answerability": 0.9838656783103943,
+        "ground_truth": {
+          "JNK1-dependent inflammation": {
+            "bertscore": 0.6714807748794556,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

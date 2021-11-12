@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "We have examined the effect of mitogenic lectins on c-Fos and c-Jun protein levels as well as on\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the effect",
+        "mitogenic lectins",
+        "c-Fos and c-Jun protein levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been studied on c-Fos and c-Jun protein levels",
+          "What have we examined on c-Fos and c-Jun protein levels",
+          "What has been studied to determine the effect of c-Fos and c-",
+          "What have we examined the effect of mitogenic lectins on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been studied on c-Fos and c-Jun protein levels": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effect of mitogenic lectins",
+        "answerability": 0.9814736843109131,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5662950277328491,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What have we studied on c-Fos and c-Jun protein levels": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effect of mitogenic lectins",
+        "answerability": 0.9804198145866394,
+        "ground_truth": {
+          "the effect": {
+            "bertscore": 0.7154167294502258,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What has been studied to determine the effect of c-Fos and c-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitogenic lectins",
+        "answerability": 0.9426698088645935,
+        "ground_truth": {
+          "mitogenic lectins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What have we studied the effect of mitogenic lectins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Fos and c-Jun protein levels",
+        "answerability": 0.9945361018180847,
+        "ground_truth": {
+          "c-Fos and c-Jun protein levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "PGN caused time- and dose-dependent increases in IL-6 PGE(2) and cAMP production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PGN",
+        "IL-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused time- and dose-dependent increases in IL-6 PGE(2) and c",
+          "What protein is cAMP and PGE(2) dependent on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PGN",
+        "time-",
+        "and dose-dependent increases",
+        "IL-6 PGE(2",
+        "cAMP production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused time- and dose-dependent increases in IL-6 PGE(2) and c",
+          "What is the dose-dependent increase in IL-6 PGE(2)?",
+          "What did PGN cause in IL-6 PGE(2) and cAMP production?",
+          "What is the cAMP produced by PGN?",
+          "What is the main cause of PGN?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused concentration- and time-dependent increases in IL-6 PGE(2) and c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PGN",
+        "answerability": 0.6783860921859741,
+        "ground_truth": {
+          "PGN": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein is cAMP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00798124074935913,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 0.6727325320243835,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did PGN cause in IL-6 PGE(2) and cAMP production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "time- and dose-dependent increases",
+        "answerability": 0.9890927672386169,
+        "ground_truth": {
+          "concentration- and time-dependent increases": {
+            "bertscore": 0.9442126154899597,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the cAMP produced by PGN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6 PGE(2)",
+        "answerability": 0.6016340851783752,
+        "ground_truth": {
+          "IL-6 PGE(2": {
+            "bertscore": 0.9408121109008789,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main cause of PGN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10555404424667358,
+        "ground_truth": {
+          "cAMP production": {
+            "bertscore": 0.6297325491905212,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

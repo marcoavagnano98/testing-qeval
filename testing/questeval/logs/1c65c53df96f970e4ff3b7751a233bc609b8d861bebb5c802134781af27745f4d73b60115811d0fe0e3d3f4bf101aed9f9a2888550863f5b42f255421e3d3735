@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Interferon-gamma modulates the lipopolysaccharide-induced expression of AP-1\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Interferon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the molecule that modulates the expression of AP-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the lipopolysaccharide-induced expression",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does interferon-gamma modulate?",
+          "What protein is induced by interferon-gamma?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the molecule that modulates the expression of AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interferon-gamma",
+        "answerability": 0.9450260400772095,
+        "ground_truth": {
+          "Interferon": {
+            "bertscore": 0.875798225402832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does interferon-gamma modulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the lipopolysaccharide-induced expression of AP-1",
+        "answerability": 0.9688106775283813,
+        "ground_truth": {
+          "the lipopolysaccharide-induced expression": {
+            "bertscore": 0.931006133556366,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein is induced by interferon-gamma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AP-1",
+        "answerability": 0.7421443462371826,
+        "ground_truth": {
+          "AP-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "SLP-76 and Vav function in separate but overlapping pathways to augment interleukin-2 promoter activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Vav"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the overlapping pathway that SLP-76 functions in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "separate but overlapping pathways",
+        "interleukin-2 promoter activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How do SLP-76 and Vav function?",
+          "What do SLP-76 and Vav function in separate but overlapping pathways?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the overlapping pathway that SLP-76 functions in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Vav",
+        "answerability": 0.5434849262237549,
+        "ground_truth": {
+          "Vav": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How do SLP-76 and Vav function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in separate but overlapping pathways",
+        "answerability": 0.9044281244277954,
+        "ground_truth": {
+          "separate but overlapping pathways": {
+            "bertscore": 0.942741870880127,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What do SLP-76 and Vav function in separate but overlapping pathways?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "to augment interleukin-2 promoter activity",
+        "answerability": 0.6771116256713867,
+        "ground_truth": {
+          "interleukin-2 promoter activity": {
+            "bertscore": 0.9113132357597351,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

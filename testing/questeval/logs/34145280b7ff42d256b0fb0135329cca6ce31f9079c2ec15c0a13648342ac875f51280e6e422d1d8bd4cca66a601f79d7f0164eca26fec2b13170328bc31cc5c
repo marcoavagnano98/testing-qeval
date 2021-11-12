@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "The ability of P. gingivalis to initiate a periodontal infection is mainly dependent on the expression of fimbriae (Malek et al. 1994).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "P. gingivalis",
+        "Malek et al."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What bacteria is able to initiate a periodontal infection?",
+          "Who found that the ability of P. gingivalis to initiate a periodontal"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The ability",
+        "P. gingivalis",
+        "a periodontal infection",
+        "the expression",
+        "fimbriae"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main dependent on the expression of fimbriae?",
+          "What bacteria is able to initiate a periodontal infection?",
+          "What does P. gingivalis initiate?",
+          "What is the ability of P. gingivalis to initiate a periodontal infection",
+          "What is the ability of P. gingivalis to initiate a periodontal infection"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What bacteria is able to initiate a periodontal infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "P. gingivalis",
+        "answerability": 0.6199690103530884,
+        "ground_truth": {
+          "P. gingivalis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Who found that the ability of P. gingivalis to initiate a periodontal": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3378133773803711,
+        "ground_truth": {
+          "Malek et al.": {
+            "bertscore": 0.5870628952980042,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main dependent on the expression of fimbriae?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ability of P. gingivalis to initiate a periodontal infection",
+        "answerability": 0.8945287466049194,
+        "ground_truth": {
+          "The ability": {
+            "bertscore": 0.6549153923988342,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What does P. gingivalis initiate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "periodontal infection",
+        "answerability": 0.9770601391792297,
+        "ground_truth": {
+          "a periodontal infection": {
+            "bertscore": 0.9127887487411499,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the ability of P. gingivalis to initiate a periodontal infection": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32482385635375977,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          },
+          "fimbriae": {
+            "bertscore": 0.686262845993042,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

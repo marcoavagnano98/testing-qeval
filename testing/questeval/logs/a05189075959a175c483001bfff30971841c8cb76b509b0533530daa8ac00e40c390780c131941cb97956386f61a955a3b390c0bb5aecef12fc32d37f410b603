@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "Constitutively active NF-kappaB found in most tumor cells was also inhibited.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Constitutively active NF-kappaB",
+        "most tumor cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is found in most tumor cells?",
+          "Where is NF-kappaB found?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is found in most tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.8250401020050049,
+        "ground_truth": {
+          "Constitutively active NF-kappaB": {
+            "bertscore": 0.763820230960846,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "Where is NF-kappaB found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5217516422271729,
+        "ground_truth": {
+          "most tumor cells": {
+            "bertscore": 0.6812641620635986,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

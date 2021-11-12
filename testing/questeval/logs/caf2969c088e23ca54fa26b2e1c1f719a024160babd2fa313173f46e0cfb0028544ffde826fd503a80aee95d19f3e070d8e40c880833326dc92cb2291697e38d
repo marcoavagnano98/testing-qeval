@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Similar inhibition of NFAT-1-directed gene expression was observed in a second cell line which is stably transfected with NFAT-1 regulatory elements linked to the reporter gene for sCD8.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "second"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In which cell line was a similar inhibition of NFAT-1-directed gene expression observed"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Similar inhibition",
+        "NFAT-1-directed gene expression",
+        "a second cell line",
+        "NFAT-1 regulatory elements",
+        "the reporter gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was observed in a second cell line that was stably transfected with",
+          "What was inhibited in a second cell line?",
+          "What was stably transfected with NFAT-1 regulatory elements linked to the reporter",
+          "What is linked to the reporter gene for sCD8?",
+          "What is NFAT-1 regulatory elements linked to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In which cell line was a similar inhibition of NFAT-1-mediated gene expression observed": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a second cell line",
+        "answerability": 0.9077234864234924,
+        "ground_truth": {
+          "second": {
+            "bertscore": 0.731584906578064,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was observed in a second cell line that was stably transfected with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Similar inhibition of NFAT-1-directed gene expression",
+        "answerability": 0.9174834489822388,
+        "ground_truth": {
+          "Similar inhibition": {
+            "bertscore": 0.7767871022224426,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was inhibited in a second cell line?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT-1-directed gene expression",
+        "answerability": 0.9816519618034363,
+        "ground_truth": {
+          "NFAT-1-mediated gene expression": {
+            "bertscore": 0.9528176188468933,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was stably transfected with NFAT-1 regulatory elements linked to the reporter": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a second cell line",
+        "answerability": 0.7389839887619019,
+        "ground_truth": {
+          "a second cell line": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is linked to the reporter gene for sCD8?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT-1 regulatory elements",
+        "answerability": 0.9782615303993225,
+        "ground_truth": {
+          "NFAT-1 regulatory elements": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is NFAT-1 regulatory elements linked to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the reporter gene for sCD8",
+        "answerability": 0.9180358648300171,
+        "ground_truth": {
+          "the reporter gene": {
+            "bertscore": 0.8349727988243103,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

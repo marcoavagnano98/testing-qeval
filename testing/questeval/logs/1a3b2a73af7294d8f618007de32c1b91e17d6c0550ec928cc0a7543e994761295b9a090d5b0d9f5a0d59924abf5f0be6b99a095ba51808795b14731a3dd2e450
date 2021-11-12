@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Identification of residues on Hsc70 and Hsp90 ubiquitinated by the cochaperone CHIP.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CHIP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cochaperone that identifies residues on Hsc70 and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Identification",
+        "residues",
+        "Hsc70",
+        "Hsp90",
+        "the cochaperone CHIP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the purpose of the ubiquitination of Hsc70 and Hs",
+          "What is identified on Hsc70 and Hsp90?",
+          "What is the name of the residue on Hsp90 that is ubiquitinated",
+          "What residue is ubiquitinated by the cochaperone CHIP?",
+          "What is the name of the enzyme that identifies residues on Hsc70 and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cochaperone that identifies residues on Hsp70 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CHIP",
+        "answerability": 0.6158367991447449,
+        "ground_truth": {
+          "CHIP": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the purpose of the ubiquitination of Hsp70 and Hs": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32150799036026,
+        "ground_truth": {
+          "Identification": {
+            "bertscore": 0.6873464584350586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is identified on Hsp70 and Hsp90?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4845839738845825,
+        "ground_truth": {
+          "residues": {
+            "bertscore": 0.7142971754074097,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What residue was identified by the cochaperone CHIP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Hsc70 and Hsp90",
+        "answerability": 0.6324512958526611,
+        "ground_truth": {
+          "Hsp70": {
+            "bertscore": 0.8768324851989746,
+            "f1": 0
+          },
+          "Hsp90": {
+            "bertscore": 0.8808407187461853,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that identifies residues on Hsp70 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18562668561935425,
+        "ground_truth": {
+          "the cochaperone CHIP": {
+            "bertscore": 0.6246691942214966,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

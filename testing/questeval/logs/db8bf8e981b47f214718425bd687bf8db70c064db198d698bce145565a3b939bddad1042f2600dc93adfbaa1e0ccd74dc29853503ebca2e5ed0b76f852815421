@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Active SHP-2 then dephosphorylates VEGFR-2 at Y951 Y996 and y1059 but not Y1175.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Y996",
+        "Y1175"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the first phosphorylation point of VEGFR-2?",
+          "What is the only phosphorylation of VEGFR-2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Active SHP-2",
+        "VEGFR-2",
+        "Y951 Y996",
+        "y1059",
+        "not Y1175"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What dephosphorylates VEGFR-2 at Y951 Y996?",
+          "What does SHP-2 dephosphorylate at Y951 Y996?",
+          "At what two sites does SHP-2 dephosphorylate VEGFR-2?",
+          "What is the only phosphorylation of VEGFR-2?",
+          "What is the only phosphorylation of VEGFR-2 at Y951"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the first phosphorylation point of VEGFR-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Y951",
+        "answerability": 0.7904516458511353,
+        "ground_truth": {
+          "Y996": {
+            "bertscore": 0.9208213686943054,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only phosphorylation of VEGFR-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16535788774490356,
+        "ground_truth": {
+          "Y1059": {
+            "bertscore": 0.6493813395500183,
+            "f1": 0
+          },
+          "Y1175": {
+            "bertscore": 0.6410374045372009,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What dephosphorylates VEGFR-2 at Y951 Y996?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SHP-2",
+        "answerability": 0.9928187131881714,
+        "ground_truth": {
+          "Active SHP-2": {
+            "bertscore": 0.9251012206077576,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does SHP-2 dephosphorylate at Y951 Y996?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGFR-2",
+        "answerability": 0.947677731513977,
+        "ground_truth": {
+          "VEGFR-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "At which two sites does SHP-2 dephosphorylate VEGFR-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Y951 Y996 and y1059",
+        "answerability": 0.9954358339309692,
+        "ground_truth": {
+          "Y951 Y996": {
+            "bertscore": 0.9004926085472107,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

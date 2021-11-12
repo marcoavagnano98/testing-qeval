@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "Inducible nuclear factor binding to the kappa B elements of the human immunodeficiency virus enhancer in T cells can be blocked by cyclosporin A in a signal-dependent manner.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inducible nuclear factor",
+        "the kappa B elements",
+        "the human immunodeficiency virus enhancer",
+        "T cells",
+        "cyclosporin A",
+        "a signal-dependent manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What binding to kappa B elements can be blocked by cyclosporin A",
+          "What does cyclosporin A block?",
+          "What is cyclosporin A used to block?",
+          "What type of cells can be blocked by cyclosporin A?",
+          "What can block inducible nuclear factor binding to kappa B elements?",
+          "How is cyclosporin A used to block inducible nuclear factor binding?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can block inducible nuclear factor binding to kappa B elements?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclosporin A",
+        "answerability": 0.9869974851608276,
+        "ground_truth": {
+          "mAb": {
+            "bertscore": 0.6131755709648132,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What binding to kappa B elements can be blocked by anti-CD3 m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22737419605255127,
+        "ground_truth": {
+          "Inducible nuclear factor": {
+            "bertscore": 0.6744493842124939,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the anti-CD3 mAb block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004395127296447754,
+        "ground_truth": {
+          "the kappa B elements": {
+            "bertscore": 0.6423337459564209,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the kappa B element of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the human immunodeficiency virus enhancer in T cells",
+        "answerability": 0.9183264970779419,
+        "ground_truth": {
+          "the human immunodeficiency virus enhancer": {
+            "bertscore": 0.9443343281745911,
+            "f1": 0.7272727272727273
+          }
+        }
+      }
+    },
+    "What type of cells can be blocked by anti-CD3 mAb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03393310308456421,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.6607831716537476,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

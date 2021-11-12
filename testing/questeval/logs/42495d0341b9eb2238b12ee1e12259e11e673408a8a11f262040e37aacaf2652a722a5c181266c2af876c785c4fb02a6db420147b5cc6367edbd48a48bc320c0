@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "The ability of specific regions and activities to regulate apoptosis is dose- and time-dependent and is not unique to monocytes because cells treated with FGF-2 also had considerable enhanced angiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "FGF-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that controls apoptosis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The ability",
+        "specific regions",
+        "activities",
+        "apoptosis",
+        "monocytes",
+        "cells",
+        "FGF-2",
+        "considerable enhanced angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is dose- and time-dependent?",
+          "What is dose- and time-dependent in order to regulate apoptosis?",
+          "What is the ability of specific regions to regulate apoptosis dependent on?",
+          "What does FGF-2 have a role in?",
+          "What type of cells are not unique to FGF-2?",
+          "What type of cells were treated with FGF-2?",
+          "What is the name of the protein that controls apoptosis?",
+          "What is the effect of FGF-2 on monocytes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of FGF-2 on the cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21512055397033691,
+        "ground_truth": {
+          "/M accumulation": {
+            "bertscore": 0.6716582775115967,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What causes delayed cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008464932441711426,
+        "ground_truth": {
+          "FGF-2-treated cells": {
+            "bertscore": 0.6251053810119629,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of FGF-2 on the cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced angiogenesis",
+        "answerability": 0.9018077254295349,
+        "ground_truth": {
+          "delayed cell death": {
+            "bertscore": 0.7669957876205444,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

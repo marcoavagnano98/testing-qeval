@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "A similar activation profile of NF-kappaB p50/p65 heterodimers was seen in Jurkat T cells treated with soluble Tat protein.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "Jurkat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the same activation profile as p50/p65 in Jurkat T cells",
+          "What type of T cells were treated with soluble Tat protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A similar activation profile",
+        "NF-kappaB p50/p65 heterodimers",
+        "Jurkat T cells",
+        "soluble Tat protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was seen in Jurkat T cells treated with soluble Tat protein?",
+          "What activation profile was seen in Jurkat T cells treated with soluble Tat protein?",
+          "What type of cells were treated with soluble Tat protein?",
+          "What was used to activate NF-kappaB p50/p65 hetero"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What potentiation was observed in Jurkat T cells and HeLa cells treated with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09716522693634033,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          },
+          "TNF effects": {
+            "bertscore": 0.6641185879707336,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was observed in Jurkat T cells and HeLa cells treated with soluble Tat protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21343499422073364,
+        "ground_truth": {
+          "A similar potentiation": {
+            "bertscore": 0.6966447830200195,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were treated with soluble Tat protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat T cells",
+        "answerability": 0.9631252288818359,
+        "ground_truth": {
+          "Jurkat T cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "HeLa cells": {
+            "bertscore": 0.7766211628913879,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was used to treat Jurkat T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "soluble Tat protein",
+        "answerability": 0.9151731729507446,
+        "ground_truth": {
+          "soluble Tat protein": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

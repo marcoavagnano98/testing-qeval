@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of transcription factors by a transdominant negative mutant of the NF-YA subunit.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "transcription factors",
+        "a transdominant negative mutant",
+        "the NF-YA subunit"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of a transdominant negative mutant of the NF-YA",
+          "What is inhibited by a transdominant negative mutant of the NF-",
+          "What is the NF-YA subunit inhibited by?",
+          "What is the name of the transcription factor that is inhibited by a negative mutant?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What family of transcription factors is inhibited by a transdominant negative mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-YA",
+        "answerability": 0.7715350389480591,
+        "ground_truth": {
+          "rel/NF-kappa": {
+            "bertscore": 0.7496502995491028,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of a transdominant negative mutant on transcription factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Inhibition",
+        "answerability": 0.9916011095046997,
+        "ground_truth": {
+          "Inhibition": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is inhibited by a transdominant negative mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factors",
+        "answerability": 0.9986363053321838,
+        "ground_truth": {
+          "transcription factors": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What transcription factors are inhibited by a transdominant negative mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-YA",
+        "answerability": 0.7619816064834595,
+        "ground_truth": {
+          "the rel/NF-kappa B family": {
+            "bertscore": 0.7009469270706177,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the mutant that inhibits transcription factors belonging to the rel/NF-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06951707601547241,
+        "ground_truth": {
+          "a transdominant negative mutant": {
+            "bertscore": 0.6710005402565002,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

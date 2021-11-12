@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "PU.1 (Spi-1) a member of the Ets transcription factor family is predominantly expressed in myeloid (granulocytes monocytes and macrophages) and B cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ets"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor family is PU.1 a member of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PU.1",
+        "a member",
+        "the Ets transcription factor family",
+        "myeloid"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the Ets transcription factor?",
+          "What is PU.1?",
+          "What is PU.1 a member of?",
+          "What type of cells are PU.1 most expressed in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does PU.1 autoregulate in myeloid cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002188265323638916,
+        "ground_truth": {
+          "its expression": {
+            "bertscore": 0.6619742512702942,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is PU.1 expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid (granulocytes monocytes and macrophages) and B",
+        "answerability": 0.8405237197875977,
+        "ground_truth": {
+          "myeloid cells": {
+            "bertscore": 0.738520085811615,
+            "f1": 0.22222222222222224
+          },
+          "placental trophoblasts": {
+            "bertscore": 0.684639036655426,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor is expressed in myeloid cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PU.1",
+        "answerability": 0.9494113922119141,
+        "ground_truth": {
+          "PU.1": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is PU.1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a member of the Ets transcription factor family",
+        "answerability": 0.9972062706947327,
+        "ground_truth": {
+          "a hematopoietic-specific Ets family transcription factor": {
+            "bertscore": 0.7763569951057434,
+            "f1": 0.7272727272727272
+          }
+        }
+      }
+    }
+  }
+}

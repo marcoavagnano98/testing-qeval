@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "In the current study the impact of VEGF expression on the response of tumors to vandetanib was evaluated.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the current study",
+        "the impact",
+        "VEGF expression",
+        "the response",
+        "tumors",
+        "vandetanib"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study evaluated the effect of VEGF expression on the response of tumors to vande",
+          "What was evaluated in the current study?",
+          "What is the main factor that influences the response of tumors to vandetanib?",
+          "What is the impact of VEGF expression on tumors?",
+          "What is the effect of VEGF expression on the response to vandetanib?",
+          "What drug is used to treat TB?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What study evaluated the impact of VEGF expression on the response of tumors to vande": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the current study",
+        "answerability": 0.9161102771759033,
+        "ground_truth": {
+          "the current study": {
+            "bertscore": 0.9999995827674866,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was evaluated in the current study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the impact of VEGF expression on the response of tumors to vandetanib",
+        "answerability": 0.8661230802536011,
+        "ground_truth": {
+          "the impact": {
+            "bertscore": 0.665217936038971,
+            "f1": 0.18181818181818182
+          }
+        }
+      }
+    },
+    "What is the impact of vandetanib on the response of tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF expression",
+        "answerability": 0.9489836692810059,
+        "ground_truth": {
+          "VEGF expression": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the impact of VEGF expression on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "response of tumors",
+        "answerability": 0.9867762327194214,
+        "ground_truth": {
+          "the response": {
+            "bertscore": 0.7526514530181885,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the effect of VEGF expression on the response of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumors",
+        "answerability": 0.9986147284507751,
+        "ground_truth": {
+          "tumors": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the VEGF expression evaluated on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "response of tumors",
+        "answerability": 0.9396599531173706,
+        "ground_truth": {
+          "the VEGFR2 associated tyrosine kinase inhibitor vandetanib": {
+            "bertscore": 0.6481106877326965,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

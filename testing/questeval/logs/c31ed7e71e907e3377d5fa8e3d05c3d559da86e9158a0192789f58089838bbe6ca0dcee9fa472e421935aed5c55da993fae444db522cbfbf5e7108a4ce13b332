@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "In addition mAECA stimulated NF-kappaB nuclear translocation and binding before enhancement of VCAM-1 expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "NF-kappaB nuclear translocation",
+        "enhancement",
+        "VCAM-1 expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did mAECA do to the NF-kappaB?",
+          "What did mAECA stimulate?",
+          "What did mAECA stimulate before?",
+          "What did mAECA stimulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor was stimulated by mAECA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.868731677532196,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did mAECA do to the NF-kappaB transcription factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27394378185272217,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.7378892302513123,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulated the nuclear translocation of the NF-kappaB transcription factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mAECA",
+        "answerability": 0.9242944121360779,
+        "ground_truth": {
+          "these mAECA": {
+            "bertscore": 0.8888174295425415,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did mAECA stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.872635543346405,
+        "ground_truth": {
+          "the nuclear translocation": {
+            "bertscore": 0.6820120215415955,
+            "f1": 0
+          },
+          "the NF-kappaB transcription factor": {
+            "bertscore": 0.7389513850212097,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

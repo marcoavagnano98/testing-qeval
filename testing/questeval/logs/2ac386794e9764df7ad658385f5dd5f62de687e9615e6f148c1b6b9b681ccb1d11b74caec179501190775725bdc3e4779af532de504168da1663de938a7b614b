@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "Cell-type-specific regulation of the human tumor necrosis factor alpha gene in B cells and T cells by NFATp and ATF/CREB factors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ATF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the factor that controls the cell type of human tumor necrosis factor"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cell-type-specific regulation",
+        "the human tumor necrosis factor alpha gene",
+        "B cells",
+        "T cells",
+        "NFATp and ATF/CREB factors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of NFATp and ATF/CREB in the development of",
+          "What is cell type specific regulation of?",
+          "What type of cells are involved in the regulation of the human tumor necrosis factor alpha",
+          "What type of cells are involved in the regulation of the human tumor necrosis factor alpha",
+          "What two factors regulate the human tumor necrosis factor alpha gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is involved in the regulation of human tumor necrosis factor alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFATp",
+        "answerability": 0.9029901623725891,
+        "ground_truth": {
+          "ATF-2": {
+            "bertscore": 0.7917065620422363,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is involved in the regulation of the human tumor necrosis factor alpha gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFATp",
+        "answerability": 0.9278446435928345,
+        "ground_truth": {
+          "JUN": {
+            "bertscore": 0.7772203683853149,
+            "f1": 0
+          },
+          "NFATp": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of NFATp and ATF-2/JUN in the development": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09774863719940186,
+        "ground_truth": {
+          "Cell-type-specific regulation": {
+            "bertscore": 0.629080593585968,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is cell type specific regulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human tumor necrosis factor alpha gene",
+        "answerability": 0.9786661863327026,
+        "ground_truth": {
+          "the human tumor necrosis factor alpha gene": {
+            "bertscore": 0.9390993118286133,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are involved in the regulation of the human tumor necrosis factor alpha": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cells and T cells",
+        "answerability": 0.8464233875274658,
+        "ground_truth": {
+          "B cells": {
+            "bertscore": 0.8988739252090454,
+            "f1": 0.5714285714285715
+          },
+          "T cells": {
+            "bertscore": 0.875603437423706,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is the name of the gene that controls the human tumor necrosis factor alpha gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.33514660596847534,
+        "ground_truth": {
+          "ATF-2/JUN": {
+            "bertscore": 0.6596691608428955,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

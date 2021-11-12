@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "GC efficiently suppressed IL-5 production of T-cell clones activated via either T-cell receptor (TCR) or IL-2 receptor (IL-2R).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TCR",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another name for IL-2?",
+          "What receptor did GC suppress the production of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GC",
+        "IL-5 production",
+        "T-cell clones",
+        "either T-cell receptor",
+        "TCR",
+        "IL-2 receptor",
+        "IL-2R"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed IL-5 production?",
+          "What did GC suppress?",
+          "What did GC suppress IL-5 production of?",
+          "What did GC suppress IL-5 production of?",
+          "What is another name for IL-2?",
+          "What is another name for IL-2R?",
+          "What receptor did GC suppress IL-5 production of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppressed IL-5 production by human CD4+ cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2273416519165039,
+        "ground_truth": {
+          "GC": {
+            "bertscore": 0.6709778308868408,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show about GC suppressing IL-5 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37649595737457275,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 0.6937649846076965,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did GC suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-5 production",
+        "answerability": 0.9770745635032654,
+        "ground_truth": {
+          "IL-5 production": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did GC suppress IL-5 production by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell receptor (TCR) or IL-2 receptor (IL-2R)",
+        "answerability": 0.8388521075248718,
+        "ground_truth": {
+          "human CD4": {
+            "bertscore": 0.6630102396011353,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

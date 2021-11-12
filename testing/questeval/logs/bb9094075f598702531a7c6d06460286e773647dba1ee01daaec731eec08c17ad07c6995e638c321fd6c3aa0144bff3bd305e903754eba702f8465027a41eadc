@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "In this study we determined the effectiveness of vasostatin delivered by recombinant pseudotype adeno-associated virus 2/5\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2/5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effectiveness of vasostatin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this study",
+        "we",
+        "the effectiveness",
+        "vasostatin",
+        "recombinant pseudotype adeno-associated virus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study determined the effectiveness of vasostatin delivered by recombinant pseudo",
+          "What was the effect of vasostatin on the immune system?",
+          "What did the study determine about vasostatin?",
+          "What drug was used to treat TB?",
+          "What was the vasostatin delivered by?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the effectiveness of vasostatin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14154672622680664,
+        "ground_truth": {
+          "2/5": {
+            "bertscore": 0.7002404928207397,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What study determined the effectiveness of vasostatin delivered by recombinant pseudo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "In this study we determined the effectiveness of vasostatin delivered by recombin",
+        "answerability": 0.6624903678894043,
+        "ground_truth": {
+          "this study": {
+            "bertscore": 0.7009217143058777,
+            "f1": 0.3076923076923077
+          }
+        }
+      }
+    },
+    "What was the effect of vasostatin on the immune system?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00820910930633545,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.674835205078125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study determine about vasostatin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effectiveness",
+        "answerability": 0.8922423124313354,
+        "ground_truth": {
+          "the effectiveness": {
+            "bertscore": 0.8793582916259766,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What drug was used to treat TB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30583083629608154,
+        "ground_truth": {
+          "vasostatin": {
+            "bertscore": 0.6155074834823608,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the vasostatin delivered by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "recombinant pseudotype adeno-associated virus",
+        "answerability": 0.5705052614212036,
+        "ground_truth": {
+          "recombinant pseudotype adeno-associated virus": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

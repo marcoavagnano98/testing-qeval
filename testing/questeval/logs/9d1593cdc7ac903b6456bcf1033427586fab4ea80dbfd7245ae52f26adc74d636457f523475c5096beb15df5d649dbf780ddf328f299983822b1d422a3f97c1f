@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "but not TG-induced IL-2R alpha is inhibited by the PKC inhibitor H7 whereas TG- but not PMA-induced IL-2R alpha was inhibited by cholera toxin forskolin and 19-dideoxy forskolin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TG",
+        "H7",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the PKC inhibitor that inhibits IL-2R alpha?",
+          "What is the name of the PKC inhibitor that inhibits TG-induced IL-2",
+          "What is the PKC inhibitor H7?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "not TG-induced IL-2R alpha",
+        "the PKC inhibitor H7",
+        "TG-",
+        "not PMA-induced IL-2R alpha",
+        "cholera toxin forskolin",
+        "19-dideoxy forskolin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is inhibited by the PKC inhibitor H7?",
+          "What inhibits TG-induced IL-2R alpha?",
+          "What is the only inhibitor of IL-2R alpha?",
+          "What is inhibited by the PKC inhibitor H7?",
+          "What inhibits TG-induced IL-2R alpha?",
+          "What is the only inhibitor of TG-induced IL-2R alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was inhibited by the cholera toxin forskolin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3078800439834595,
+        "ground_truth": {
+          "IL-2R alpha": {
+            "bertscore": 0.5845615267753601,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited IL-2R alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4143633246421814,
+        "ground_truth": {
+          "cholera toxin": {
+            "bertscore": 0.6633546352386475,
+            "f1": 0
+          },
+          "cholera toxin forskolin": {
+            "bertscore": 0.6369146108627319,
+            "f1": 0
+          },
+          "19-dideoxy forskolin": {
+            "bertscore": 0.6342401504516602,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

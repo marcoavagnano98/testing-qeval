@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "LPS-stimulated TF mRNA accumulation thereby suggesting a posttranscriptional mechanism for the inhibition.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA accumulation is stimulated by LPS?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "LPS-stimulated TF mRNA accumulation",
+        "a posttranscriptional mechanism",
+        "the inhibition"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests a posttranscriptional mechanism for the inhibition of a gene?",
+          "What does the LPS-stimulated TF mRNA accumulation suggest?",
+          "What mechanism is suggested for the accumulation of TF mRNA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA accumulation is stimulated by LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF",
+        "answerability": 0.9910165667533875,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What suggests a posttranscriptional mechanism for the effect of apoptosis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22918158769607544,
+        "ground_truth": {
+          "LPS-stimulated TF mRNA accumulation": {
+            "bertscore": 0.6082166433334351,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the LPS-stimulated TF mRNA accumulation suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "posttranscriptional mechanism",
+        "answerability": 0.9689120650291443,
+        "ground_truth": {
+          "a posttranscriptional mechanism": {
+            "bertscore": 0.94232177734375,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the posttranscriptional mechanism for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.9297288060188293,
+        "ground_truth": {
+          "the effect": {
+            "bertscore": 0.8100361227989197,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

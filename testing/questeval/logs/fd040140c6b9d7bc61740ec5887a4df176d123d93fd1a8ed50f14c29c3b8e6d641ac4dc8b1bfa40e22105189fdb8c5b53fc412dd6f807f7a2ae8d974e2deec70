@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Using isogenic human mammary epithelial cells (HMEC) at different stages of neoplastic transformation we found that OSM signaling inhibited c-MYC expression and engaged a p16- and p53-independent growth arrest that required STAT3 activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HMEC",
+        "OSM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What isogenic cell was used to study neoplastic transformation?",
+          "What signaling inhibited c-MYC expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "isogenic human mammary epithelial cells",
+        "HMEC",
+        "different stages",
+        "neoplastic transformation",
+        "we",
+        "inhibited c-MYC expression",
+        "p16-",
+        "STAT3 activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is HMEC?",
+          "What isogenic cell was used to study neoplastic transformation?",
+          "What stages of neoplastic transformation did we find that OSM signaling inhibite",
+          "What is the process of c-MYC expression?",
+          "What did we find about HMEC?",
+          "What did OSM signaling do?",
+          "What is the p53- and c-MYC-dependent growth arrest?",
+          "What did the HMEC inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can suppress the growth of normal cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18401169776916504,
+        "ground_truth": {
+          "OSM": {
+            "bertscore": 0.6626634001731873,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can OSM suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-MYC expression",
+        "answerability": 0.8693941235542297,
+        "ground_truth": {
+          "the growth": {
+            "bertscore": 0.6771474480628967,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "OSM can suppress the growth of what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-MYC",
+        "answerability": 0.8526285290718079,
+        "ground_truth": {
+          "normal cells": {
+            "bertscore": 0.7009676694869995,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can OSM suppress the growth of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-MYC",
+        "answerability": 0.6073960065841675,
+        "ground_truth": {
+          "certain tumor-derived cell lines": {
+            "bertscore": 0.639593243598938,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

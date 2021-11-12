@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "\"\"\"When mouse MPC11 plasmacytoma cells in which the IgH 3 enhancer is active are fused with fibroblasts Ig expression is extinguished at the level of transcription.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IgH",
+        "3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhancer is activated when mice are fused with fibroblasts?",
+          "What enhancer is activated when mouse MPC11 is fused with fibroblasts"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "MPC11 plasmacytoma cells",
+        "the IgH 3 enhancer",
+        "fibroblasts",
+        "Ig expression",
+        "the level",
+        "transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells are fused with fibroblasts?",
+          "What is activated in mouse MPC11 plasmacytoma cells?",
+          "What is the IgH 3 enhancer fused with?",
+          "What is extinguished when mouse MPC11 plasmacytoma cells are fused",
+          "What is the level of transcription that is extinguished when mouse MPC11 plasmacyto",
+          "What is extinguished when mouse MPC11 plasmacytoma cells are fused"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of the fibroblasts IFN-gamma production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013686895370483398,
+        "ground_truth": {
+          "When mouse MPC11 plasmacytoma cells": {
+            "bertscore": 0.5886982679367065,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is expressed in mouse MPC11 plasmacytoma cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IgH 3",
+        "answerability": 0.9474260807037354,
+        "ground_truth": {
+          "the bcr-abl protein": {
+            "bertscore": 0.6394507884979248,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is inhibited when mouse MPC11 plasmacytoma cells are fused with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ig expression is extinguished at the level of transcription",
+        "answerability": 0.7373251914978027,
+        "ground_truth": {
+          "fibroblasts IFN-gamma production": {
+            "bertscore": 0.7122970819473267,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

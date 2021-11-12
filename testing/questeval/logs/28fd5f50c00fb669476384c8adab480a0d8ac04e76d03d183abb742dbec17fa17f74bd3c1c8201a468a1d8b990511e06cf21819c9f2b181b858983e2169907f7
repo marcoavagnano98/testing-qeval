@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "The protein synthesis inhibitor cycloheximide did not block the induction of any of these genes and in fact super-induced the transcription of c-jun and hck.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The protein synthesis inhibitor cycloheximide",
+        "the induction",
+        "these genes",
+        "fact",
+        "the transcription",
+        "c-jun",
+        "hck"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not block the induction of any of these genes?",
+          "What did cycloheximide not block?",
+          "What did cycloheximide not block?",
+          "What genes did cycloheximide super-induce?",
+          "What did cycloheximide super-induce?",
+          "What gene did cycloheximide super-induce?",
+          "What gene did cycloheximide super-induce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of c-jun hck and actin genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "super-induced the transcription",
+        "answerability": 0.7173671722412109,
+        "ground_truth": {
+          "Nuclear run": {
+            "bertscore": 0.7304850816726685,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the c-jun hck and actin genes dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01366424560546875,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6925774216651917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factors are involved in the nuclear run?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.061827659606933594,
+        "ground_truth": {
+          "the c-jun hck and actin genes": {
+            "bertscore": 0.5841645002365112,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

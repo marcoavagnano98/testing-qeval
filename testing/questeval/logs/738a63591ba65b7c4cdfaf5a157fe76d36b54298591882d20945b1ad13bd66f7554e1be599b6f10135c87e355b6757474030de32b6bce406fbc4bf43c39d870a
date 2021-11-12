@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "The estrogen receptor (ER) repressed erythroid differentiation and erythroid-specific gene expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The estrogen receptor",
+        "ER",
+        "erythroid differentiation",
+        "erythroid-specific gene expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the ER?",
+          "What receptor repressed erythroid differentiation and erythroid-specific gene expression",
+          "What did the estrogen receptor repress?",
+          "What did the estrogen receptor suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "estrogen receptor",
+        "answerability": 0.9923980832099915,
+        "ground_truth": {
+          "The estrogen receptor": {
+            "bertscore": 0.9089244604110718,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What receptor repressed erythroid differentiation and erythroid-specific gene expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "estrogen receptor",
+        "answerability": 0.9931995272636414,
+        "ground_truth": {
+          "ER": {
+            "bertscore": 0.7000827193260193,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the estrogen receptor repress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid differentiation",
+        "answerability": 0.9969586133956909,
+        "ground_truth": {
+          "erythroid differentiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the estrogen receptor suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid differentiation",
+        "answerability": 0.9969985485076904,
+        "ground_truth": {
+          "erythroid-specific gene expression": {
+            "bertscore": 0.8513569235801697,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

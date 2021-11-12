@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Finally the inhibition of class II gene expression by the glucocorticoid hormone could be attributed to the squelching of CBP by the glucocorticoid receptor.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the inhibition",
+        "class II gene expression",
+        "the glucocorticoid hormone",
+        "the squelching",
+        "CBP",
+        "the glucocorticoid receptor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What could be attributed to the squelching of CBP by the gluco",
+          "What could be attributed to the squelching of CBP by the gluco",
+          "What is the squelching of CBP by?",
+          "What is the mechanism that causes the inhibition of class II gene expression?",
+          "What is the glucocorticoid receptor?",
+          "What hormone inhibits class II gene expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What could be attributed to the squelching of CBP by the gluco": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of class II gene expression",
+        "answerability": 0.9938631653785706,
+        "ground_truth": {
+          "the inhibition": {
+            "bertscore": 0.7341112494468689,
+            "f1": 0.2857142857142857
+          },
+          "class II gene expression": {
+            "bertscore": 0.8622248768806458,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the squelching of CBP by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the glucocorticoid receptor",
+        "answerability": 0.9245477914810181,
+        "ground_truth": {
+          "the glucocorticoid hormone": {
+            "bertscore": 0.9516737461090088,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the mechanism that causes the inhibition of class II gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the glucocorticoid hormone",
+        "answerability": 0.9714971780776978,
+        "ground_truth": {
+          "the squelching": {
+            "bertscore": 0.6495371460914612,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the glucocorticoid receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0024368762969970703,
+        "ground_truth": {
+          "CBP": {
+            "bertscore": 0.6958024501800537,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What hormone inhibits class II gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glucocorticoid",
+        "answerability": 0.8734779953956604,
+        "ground_truth": {
+          "the glucocorticoid receptor": {
+            "bertscore": 0.8970401883125305,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

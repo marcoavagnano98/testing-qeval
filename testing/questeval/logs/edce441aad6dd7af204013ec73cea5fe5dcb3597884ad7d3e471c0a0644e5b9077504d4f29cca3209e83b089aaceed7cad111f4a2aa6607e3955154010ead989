@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "Altered transcription of c-fos and c-myc genes was the primary effect of heat shock.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Altered transcription",
+        "c-fos and c-myc genes",
+        "the primary effect",
+        "heat shock"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the primary effect of heat shock?",
+          "What genes were altered by heat shock?",
+          "What was the primary effect of heat shock?",
+          "What was the primary effect of heat shock?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the primary effect of heat shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Altered transcription of c-fos and c-myc genes",
+        "answerability": 0.8968878388404846,
+        "ground_truth": {
+          "Altered transcription": {
+            "bertscore": 0.7944148182868958,
+            "f1": 0.4444444444444445
+          },
+          "the primary effect": {
+            "bertscore": 0.6695010662078857,
+            "f1": 0
+          },
+          "heat shock": {
+            "bertscore": 0.6483138799667358,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What genes were altered by heat shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos and c-myc genes",
+        "answerability": 0.9691510796546936,
+        "ground_truth": {
+          "c-fos and c-myc genes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

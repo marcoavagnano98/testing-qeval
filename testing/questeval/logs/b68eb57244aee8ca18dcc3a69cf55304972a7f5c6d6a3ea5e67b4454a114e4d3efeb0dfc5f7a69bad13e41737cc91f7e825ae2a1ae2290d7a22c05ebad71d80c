@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Ang1 inhibits the activation ofSrc by VEGF the most upstream component of the pathway linking VEGF receptors to VE-cadherin internalization.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ang1",
+        "the activation",
+        "ofSrc",
+        "VEGF",
+        "the most upstream component",
+        "VEGF receptors",
+        "VE-cadherin internalization"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the activation ofSrc by VEGF?",
+          "What does Ang1 inhibit?",
+          "Ang1 inhibits the activation of what by VEGF?",
+          "What is the most upstream component of the pathway linking VEGF receptors to VE",
+          "What is VEGF?",
+          "What is the most upstream component of the pathway linking?",
+          "What is the most upstream component of the pathway linking VEGF receptors to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the most upstream component of the pathway linking VEGF receptors to VE": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ang1",
+        "answerability": 0.781547486782074,
+        "ground_truth": {
+          "Src": {
+            "bertscore": 0.7322153449058533,
+            "f1": 0
+          },
+          "VEGF": {
+            "bertscore": 0.7189419269561768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits the activation of Src by VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ang1",
+        "answerability": 0.9889422655105591,
+        "ground_truth": {
+          "Ang1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Ang1 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activation ofSrc by VEGF",
+        "answerability": 0.9753563404083252,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.7369855642318726,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0040885210037231445,
+        "ground_truth": {
+          "the most upstream component": {
+            "bertscore": 0.6805084347724915,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most upstream component of the pathway linking?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ang1",
+        "answerability": 0.9249815344810486,
+        "ground_truth": {
+          "VEGF receptors": {
+            "bertscore": 0.6606706380844116,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most upstream component of the pathway linking VEGF receptors to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VE-cadherin",
+        "answerability": 0.9080235362052917,
+        "ground_truth": {
+          "VE-cadherin internalization": {
+            "bertscore": 0.8872612714767456,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

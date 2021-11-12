@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "The addition of rCTLA4Ig which blocks CD28 binding to its ligand to the cultures decreased IL-2 promoter activation by >80%.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "80%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How much did rCTLA4Ig decrease IL-2 promoter activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The addition",
+        "rCTLA4Ig",
+        "its ligand",
+        "the cultures",
+        "IL-2 promoter activation",
+        ">80%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did rCTLA4Ig do to the cultures?",
+          "What blockade CD28 binding to its ligand?",
+          "What does rCTLA4Ig block?",
+          "What did rCTLA4Ig block?",
+          "What did the addition of rCTLA4Ig decrease?",
+          "How much did rCTLA4Ig decrease IL-2 promoter activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How much did rCTLA4Ig decrease IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": ">80%",
+        "answerability": 0.9909104108810425,
+        "ground_truth": {
+          "80%": {
+            "bertscore": 0.8550064563751221,
+            "f1": 1.0
+          },
+          ">80%": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did rCTLA4Ig do to the cultures?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "blocks CD28 binding",
+        "answerability": 0.9940186142921448,
+        "ground_truth": {
+          "The addition": {
+            "bertscore": 0.6837348341941833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockade CD28 binding to its ligand?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rCTLA4Ig",
+        "answerability": 0.9436288475990295,
+        "ground_truth": {
+          "rCTLA4Ig": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does rCTLA4Ig block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28 binding",
+        "answerability": 0.9878078103065491,
+        "ground_truth": {
+          "its ligand": {
+            "bertscore": 0.6793487668037415,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did rCTLA4Ig block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28 binding",
+        "answerability": 0.9843089580535889,
+        "ground_truth": {
+          "the cultures": {
+            "bertscore": 0.6659388542175293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the addition of rCTLA4Ig decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 promoter activation",
+        "answerability": 0.9949516654014587,
+        "ground_truth": {
+          "IL-2 promoter activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

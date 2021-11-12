@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Molecular mechanisms and regulation of iron transport.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Molecular mechanisms",
+        "regulation",
+        "iron transport"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of iron transport in the development of a new cell?",
+          "What is the role of iron transport?",
+          "What is the main component of iron transport?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the role of iron transport in the development of a new cell?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21902680397033691,
+        "ground_truth": {
+          "Molecular mechanisms": {
+            "bertscore": 0.6376362442970276,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of iron transport?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Molecular mechanisms and regulation",
+        "answerability": 0.8360958695411682,
+        "ground_truth": {
+          "regulation": {
+            "bertscore": 0.8005903363227844,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the main component of iron transport?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Molecular mechanisms",
+        "answerability": 0.6071497201919556,
+        "ground_truth": {
+          "iron transport": {
+            "bertscore": 0.777206301689148,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "We have investigated the constitutive and inducible transcriptional activity mediated by five kappa B-related sequence elements in two distinct cell types.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "five",
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many kappa B-related sequence elements are involved in transcription?",
+          "How many different cell types have been studied?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the constitutive and inducible transcriptional activity",
+        "five kappa B-related sequence elements",
+        "two distinct cell types"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What group of cells have been studied to determine the transcriptional activity of kappa B",
+          "What have we investigated?",
+          "What is the constitutive and inducible transcriptional activity mediated by?",
+          "How many different cell types have been studied?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many kappa B-related sequence elements are involved in transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "five",
+        "answerability": 0.9685292840003967,
+        "ground_truth": {
+          "five": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How many different cell types have been studied?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.8890374898910522,
+        "ground_truth": {
+          "two": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "two different cell types": {
+            "bertscore": 0.757664680480957,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What has been investigated in two different cell types?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the constitutive and inducible transcriptional activity mediated by five kappa B",
+        "answerability": 0.8699734210968018,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5360717177391052,
+            "f1": 0
+          },
+          "five kappa B-related sequence elements": {
+            "bertscore": 0.6909311413764954,
+            "f1": 0.26666666666666666
+          }
+        }
+      }
+    },
+    "What have we investigated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the constitutive and inducible transcriptional activity mediated by five kappa B",
+        "answerability": 0.7502816915512085,
+        "ground_truth": {
+          "the constitutive and inducible transcriptional activity": {
+            "bertscore": 0.8905270099639893,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

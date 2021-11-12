@@ -1,0 +1,102 @@
+{
+  "type": "ref",
+  "text": "Importantly a striking increase in the expression of specific PTPases LAR and PTP1B was observed in 3 independently neu transformed cell lines and their derived tumors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTPases",
+        "PTP1B",
+        "3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is LAR and PTP1B?",
+          "What is the name of the PTPase that is involved in the cellular differentiation",
+          "How many cells were derived from the tumors?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Importantly a striking increase",
+        "the expression",
+        "specific PTPases LAR",
+        "PTP1B",
+        "3 independently neu transformed cell lines",
+        "their derived tumors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was observed in the expression of PTPases LAR and PTP1B?",
+          "What did the increase in PTPases LAR and PTP1B show?",
+          "What is the name of the two PTP1B genes that are involved in the development of",
+          "What is the name of the PTPase that is involved in the cellular differentiation",
+          "How many tumors were derived from the same cellular line?",
+          "What was the primary cause of the increase in expression of PTPases?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What expression was not significantly increased in the neu transformed cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010107159614562988,
+        "ground_truth": {
+          "TC-PTP PTPase": {
+            "bertscore": 0.6431615352630615,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not found in the neu transformed cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01231306791305542,
+        "ground_truth": {
+          "CD45 PTPase": {
+            "bertscore": 0.6107169389724731,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was only slightly increased in neu transformed cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.031077563762664795,
+        "ground_truth": {
+          "TC-PTP PTPase expression": {
+            "bertscore": 0.6144192814826965,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what cells was TC-PTP PTPase expression only slightly increased?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01637345552444458,
+        "ground_truth": {
+          "these neu transformed cells": {
+            "bertscore": 0.6144474148750305,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was observed in the neu transformed cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.723752498626709,
+        "ground_truth": {
+          "no expression": {
+            "bertscore": 0.7396343946456909,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

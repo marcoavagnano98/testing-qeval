@@ -1,0 +1,164 @@
+{
+  "type": "hyp",
+  "text": "These results suggested that the bound kinase is involved in the signaling pathway of LPS by inducing the phosphorylation of the C-terminal region of I kappa B alpha and subsequent dissociation of the NF-kappa B.I kappa B alpha complex.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "B.I kappa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What complex is dissociated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "the bound kinase",
+        "the signaling pathway",
+        "LPS",
+        "the phosphorylation",
+        "the C-terminal region",
+        "I",
+        "kappa B alpha",
+        "subsequent dissociation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that the bound kinase is involved in the signaling pathway of L",
+          "What is involved in the signaling pathway of LPS?",
+          "What is bound kinase involved in?",
+          "What signaling pathway is bound kinase involved in?",
+          "What does the bound kinase induce?",
+          "What part of I kappa B alpha is phosphorylated?",
+          "What is the C-terminal region of?",
+          "What complex is involved in the signaling pathway of LPS?",
+          "What is the result of the binding of the NF-kappa B complex?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What complex is dissociated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.6820414066314697,
+        "ground_truth": {
+          "B.I kappa": {
+            "bertscore": 0.7813349962234497,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that the bound kinase is involved in the signaling pathway of L": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31514686346054077,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.6313728094100952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in the signaling pathway of LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bound kinase",
+        "answerability": 0.9179978966712952,
+        "ground_truth": {
+          "the bound kinase": {
+            "bertscore": 0.9385985732078552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is bound kinase involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signaling pathway",
+        "answerability": 0.9364460110664368,
+        "ground_truth": {
+          "the signaling pathway": {
+            "bertscore": 0.918384850025177,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What signaling pathway is bound kinase involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS",
+        "answerability": 0.7691586017608643,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 1.0000004768371582,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the bound kinase induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of the C-terminal region of I kappa B al",
+        "answerability": 0.8605105876922607,
+        "ground_truth": {
+          "the phosphorylation": {
+            "bertscore": 0.7730302214622498,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What part of I kappa B alpha is phosphorylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C-terminal",
+        "answerability": 0.9736910462379456,
+        "ground_truth": {
+          "the C-terminal region": {
+            "bertscore": 0.8441184163093567,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the C-terminal region of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5047051906585693,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.6798965930938721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What complex is involved in the signaling pathway of LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6265921592712402,
+        "ground_truth": {
+          "kappa B alpha": {
+            "bertscore": 0.658153772354126,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of the binding of the NF-kappa B complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07249963283538818,
+        "ground_truth": {
+          "subsequent dissociation": {
+            "bertscore": 0.7289992570877075,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

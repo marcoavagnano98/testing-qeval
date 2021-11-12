@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "p130 is rapidly phosphorylated and degraded in response to a diverse set of NF-kappa B-inducing agents including T-cell mitogens proinflammatory cytokines and viral transactivators such as the Tax protein of human T-cell leukemia virus type 5.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p130",
+        "5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is rapidly phosphorylated and degraded in response to a diverse set",
+          "What is the tax protein of human T-cell leukemia virus type?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p130",
+        "response",
+        "a diverse set",
+        "NF-kappa B-inducing agents",
+        "T-cell mitogens proinflammatory cytokines",
+        "viral transactivators",
+        "the Tax protein",
+        "human T-cell leukemia virus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is rapidly phosphorylated and degraded in response to a diverse set",
+          "What is p130 rapidly phosphorylated and degraded in?",
+          "What is p130 rapidly phosphorylated and degraded in response to?",
+          "What is p130 rapidly phosphorylated and degraded in response to?",
+          "What is p130 phosphorylated and degraded in response to?",
+          "What is the Tax protein of human T-cell leukemia virus type 5?",
+          "What is the name of the protein that is phosphorylated and degraded in response",
+          "What is the Tax protein of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells had lower concentrations of p130?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03112006187438965,
+        "ground_truth": {
+          "Extracts": {
+            "bertscore": 0.682155191898346,
+            "f1": 0
+          },
+          "mitotic cells": {
+            "bertscore": 0.6474846005439758,
+            "f1": 0
+          },
+          "interphase cells": {
+            "bertscore": 0.6807006001472473,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of extracts of mitotic cells on p130?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylated and degraded",
+        "answerability": 0.8239833116531372,
+        "ground_truth": {
+          "lower concentrations": {
+            "bertscore": 0.6768162846565247,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What chemical is present in the extracts of mitotic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012772679328918457,
+        "ground_truth": {
+          "p130": {
+            "bertscore": 0.6391013264656067,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What might be degraded during mitosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1540401577949524,
+        "ground_truth": {
+          "a proportion": {
+            "bertscore": 0.6753743290901184,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What process is p130 degraded during?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylated",
+        "answerability": 0.9457291960716248,
+        "ground_truth": {
+          "mitosis": {
+            "bertscore": 0.7032849192619324,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

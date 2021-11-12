@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "A human IL-5 promoter/enhancer-luciferase gene construct pIL-5(-511)Luc was transcribed on activation of IL-5-producing T-cell clones but not IL-5-nonproducing clones.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A human IL-5 promoter/enhancer-luciferase gene construct",
+        "pIL-5(-511)Luc",
+        "activation",
+        "T-cell clones",
+        "clones"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was transcribed on activation of IL-5-producing T-cell clo",
+          "What was transcribed on activation of IL-5-producing T-cell clo",
+          "What was the pIL-5(-511)Luc transcribed on?",
+          "What did pIL-5(-511)Luc transcribe on?",
+          "What was transcribed on activation of IL-5-producing T-cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was not transcribed in IL-5-nonproducing T cell clones": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35104888677597046,
+        "ground_truth": {
+          "The same gene segment": {
+            "bertscore": 0.6662040948867798,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of clones did not transcribe the same gene segment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-5-nonproducing clones",
+        "answerability": 0.8986726999282837,
+        "ground_truth": {
+          "T cell clones": {
+            "bertscore": 0.7555012702941895,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What gene segment was not transcribed in IL-5-nonproducing T cell": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35848087072372437,
+        "ground_truth": {
+          "human T cell": {
+            "bertscore": 0.6578468680381775,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is regulated at the transcriptional level?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006058216094970703,
+        "ground_truth": {
+          "IL-5 synthesis": {
+            "bertscore": 0.6261069178581238,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is human IL-5 synthesis regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004084885120391846,
+        "ground_truth": {
+          "the transcriptional level": {
+            "bertscore": 0.6592608094215393,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

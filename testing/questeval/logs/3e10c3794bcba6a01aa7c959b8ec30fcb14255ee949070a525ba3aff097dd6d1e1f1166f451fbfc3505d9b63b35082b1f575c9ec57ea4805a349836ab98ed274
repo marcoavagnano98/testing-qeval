@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "Unexpectedly the CD4 silencer is also active in CD4+ CD8int/- cells of the thymus implying that an anti-silencer may be required to resume CD4 expression in this cell population in order to maximize virus production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of silencer is active in the thymus?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the CD4 silencer",
+        "CD4",
+        "CD8int/- cells",
+        "the thymus",
+        "an anti-silencer",
+        "CD4 expression",
+        "this cell population",
+        "order",
+        "virus production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is active in CD4+ CD8int/- cells of the thy",
+          "What type of silencer is active in the thymus?",
+          "What type of cells are the CD4 silencer active in?",
+          "Where are CD4+ CD8int/- cells located?",
+          "What may be required to resume CD4 expression in the thymus?",
+          "What is the silencer required to resume in the thymus?",
+          "What may an anti-silencer be required to resume CD4 expression in order to",
+          "What may be required to resume CD4 expression in the thymus?",
+          "What is the CD4 silencer thought to be required to maximize?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of silencer is active in the thymus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD4",
+        "answerability": 0.9685025215148926,
+        "ground_truth": {
+          "CD4": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is also active in CD4+ CD8int/- cells of the th": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.568016767501831,
+        "ground_truth": {
+          "the CD4 silencer": {
+            "bertscore": 0.6669357419013977,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are the CD4 silencer active in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD4+ CD8int/- cells",
+        "answerability": 0.9812927842140198,
+        "ground_truth": {
+          "CD8int/- cells": {
+            "bertscore": 0.9292401075363159,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "Where are CD4+ CD8int/- cells located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the thymus",
+        "answerability": 0.9971625804901123,
+        "ground_truth": {
+          "the thymus": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may be required to resume CD4 expression in the thymus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an anti-silencer",
+        "answerability": 0.8288525342941284,
+        "ground_truth": {
+          "an anti-silencer": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the silencer in the thymus responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1633741855621338,
+        "ground_truth": {
+          "CD4 expression": {
+            "bertscore": 0.6420720219612122,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may be required to resume CD4 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an anti-silencer",
+        "answerability": 0.8300759196281433,
+        "ground_truth": {
+          "this cell population": {
+            "bertscore": 0.7375261187553406,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

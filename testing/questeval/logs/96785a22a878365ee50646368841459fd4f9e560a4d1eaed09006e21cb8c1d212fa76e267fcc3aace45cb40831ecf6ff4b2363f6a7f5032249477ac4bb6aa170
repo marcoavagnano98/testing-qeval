@@ -1,0 +1,68 @@
+{
+  "type": "ref",
+  "text": "In contrast VEGF121 which does not bind to NRP1 did not support complex formation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast VEGF121",
+        "NRP1",
+        "complex formation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein did not support complex formation?",
+          "What protein does VEGF121 not bind to?",
+          "What did VEGF121 not support?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the difference between VEGF121 and NRP1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7006891965866089,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094627618789673,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not bind to NRP1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF121",
+        "answerability": 0.9723670482635498,
+        "ground_truth": {
+          "VEGF121": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "an upstream VEGF121": {
+            "bertscore": 0.8907997012138367,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does VEGF121 not bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NRP1",
+        "answerability": 0.9617601633071899,
+        "ground_truth": {
+          "NRP1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

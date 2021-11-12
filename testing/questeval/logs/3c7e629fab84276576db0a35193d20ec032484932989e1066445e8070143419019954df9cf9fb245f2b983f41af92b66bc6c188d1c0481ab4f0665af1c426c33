@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Protein kinase C and calcineurin synergize to activate NF-kappaB to achieve cytotoxic effector function.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Protein",
+        "C and calcineurin synergize",
+        "NF-kappaB",
+        "cytotoxic effector function"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of kinase C is activated by calcineurin?",
+          "What is the mechanism by which NF-kappaB is activated?",
+          "What protein kinase C and calcineurin synergize to",
+          "What does NF-kappaB achieve?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What kinase is activated by calcineurin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.5400818586349487,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of kinase C is activated by calcineurin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Protein",
+        "answerability": 0.9380490779876709,
+        "ground_truth": {
+          "Protein": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which protein kinase is activated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synergize",
+        "answerability": 0.5285282135009766,
+        "ground_truth": {
+          "C and calcineurin synergize": {
+            "bertscore": 0.7676321268081665,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does calcineurin activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.6152487993240356,
+        "ground_truth": {
+          "IkappaB kinase": {
+            "bertscore": 0.6992263793945312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are activated by kinase C?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03031402826309204,
+        "ground_truth": {
+          "T lymphocytes": {
+            "bertscore": 0.6172374486923218,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

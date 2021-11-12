@@ -1,0 +1,148 @@
+{
+  "type": "hyp",
+  "text": "Sixty patients (62 eyes) with PM underwent PDT according to the guidelines of the Verteporfin in Photodynamic Therapy Study.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Sixty",
+        "62",
+        "PDT",
+        "Verteporfin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many patients underwent PDT?",
+          "How many eyes were treated with PDT?",
+          "What treatment did 60 patients with PM undergo?",
+          "What is the name of the study that studied PM?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Sixty patients",
+        "62 eyes",
+        "PM underwent PDT",
+        "the guidelines",
+        "the Verteporfin",
+        "Photodynamic Therapy Study"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many patients underwent PDT?",
+          "How many patients underwent PDT?",
+          "What did 60 patients with PM do?",
+          "What did the Verteporfin in Photodynamic Therapy Study follow?",
+          "What study did the patients with PM follow?",
+          "What study did the patients with PM undergo?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many patients underwent PDT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sixty",
+        "answerability": 0.9990795850753784,
+        "ground_truth": {
+          "Sixty-two": {
+            "bertscore": 0.8369141817092896,
+            "f1": 0
+          },
+          "Sixty-two patients": {
+            "bertscore": 0.7278839945793152,
+            "f1": 0
+          },
+          "62 eyes": {
+            "bertscore": 0.7095144987106323,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many eyes were treated with PDT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sixty",
+        "answerability": 0.9898877739906311,
+        "ground_truth": {
+          "62": {
+            "bertscore": 0.6718000769615173,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment did 62 patients with PM undergo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PDT",
+        "answerability": 0.8947969675064087,
+        "ground_truth": {
+          "PDT": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the study that studied PM?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Verteporfin in Photodynamic Therapy Study",
+        "answerability": 0.8432769775390625,
+        "ground_truth": {
+          "Verteporfin": {
+            "bertscore": 0.7865810990333557,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What did the Verteporfin in Photodynamic Therapy Study recommend?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.181227445602417,
+        "ground_truth": {
+          "PM underwent PDT": {
+            "bertscore": 0.6495463252067566,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the Verteporfin in Photodynamic Therapy Study follow?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04537093639373779,
+        "ground_truth": {
+          "the guidelines": {
+            "bertscore": 0.6491245627403259,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What study did the patients follow?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Verteporfin in Photodynamic Therapy Study",
+        "answerability": 0.886984646320343,
+        "ground_truth": {
+          "the Verteporfin": {
+            "bertscore": 0.7507907152175903,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What study did the patients undergo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PDT",
+        "answerability": 0.8822180032730103,
+        "ground_truth": {
+          "Photodynamic Therapy Study": {
+            "bertscore": 0.6739820241928101,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

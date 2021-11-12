@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Activation of p53 is critical in the p53 pathway because the p53 tumor suppressor protein is activated by multiple DNA damage-inducible kinases.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "p53",
+        "the p53 pathway",
+        "the p53 tumor suppressor protein",
+        "multiple DNA damage-inducible kinases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is critical in the p53 pathway?",
+          "What is the tumor suppressor protein?",
+          "What is the p53 tumor suppressor protein involved in?",
+          "What is activated by multiple DNA damage-inducible kinases?",
+          "What is the p53 tumor suppressor protein activated by?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is critical in the p53 pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation of p53",
+        "answerability": 0.9994792938232422,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.781653881072998,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein marks p53 for proteosome-mediated degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001585245132446289,
+        "ground_truth": {
+          "mdm2": {
+            "bertscore": 0.6705610752105713,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway is activation of mdm2 critical in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011157393455505371,
+        "ground_truth": {
+          "the p53 pathway": {
+            "bertscore": 0.6187676191329956,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is mdm2 critical for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00041788816452026367,
+        "ground_truth": {
+          "the mdm2 protein marks p53": {
+            "bertscore": 0.6158889532089233,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does mdm2 mark p53 for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010210275650024414,
+        "ground_truth": {
+          "proteosome-mediated degradation": {
+            "bertscore": 0.6255183219909668,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does mdm2 provide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00018721818923950195,
+        "ground_truth": {
+          "a negative-feedback loop": {
+            "bertscore": 0.6688058972358704,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

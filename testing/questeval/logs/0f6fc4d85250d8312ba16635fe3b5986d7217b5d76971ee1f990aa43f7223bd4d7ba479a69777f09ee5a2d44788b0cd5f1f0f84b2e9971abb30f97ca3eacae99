@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Olomucine concurrently delayed histone H2B phosphorylation histone H3 acetylation and cell transformation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H2B",
+        "H3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylation did olomucine delay?",
+          "What is the acetylation of histone H2B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Olomucine",
+        "histone H2B phosphorylation histone H3 acetylation and cell transformation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enzyme delayed histone H2B phosphorylation?",
+          "What did olomucine delay?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What histone phosphorylation did olomucine delay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H2B",
+        "answerability": 0.9938320517539978,
+        "ground_truth": {
+          "H2B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does olomucine delay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H2B phosphorylation",
+        "answerability": 0.9717572927474976,
+        "ground_truth": {
+          "phosphorylation caspase-3": {
+            "bertscore": 0.8265573382377625,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the name of the molecule that delayed histone H2B phosphorylation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Olomucine",
+        "answerability": 0.921144962310791,
+        "ground_truth": {
+          "Olomucine": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did olomucine delay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H2B phosphorylation",
+        "answerability": 0.9801660180091858,
+        "ground_truth": {
+          "histone H2B phosphorylation caspase-3 activation": {
+            "bertscore": 0.9253775477409363,
+            "f1": 0.7499999999999999
+          },
+          "cell death": {
+            "bertscore": 0.647573709487915,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

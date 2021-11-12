@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "activates gene expression by inducing tyrosine phosphorylation homodimerization and nuclear translocation of the latent transcription factor STAT6 (signal transducer and activators of transcription-6).\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "gene expression",
+        "tyrosine phosphorylation homodimerization",
+        "nuclear translocation",
+        "the latent transcription factor",
+        "(signal transducer",
+        "activators",
+        "transcription-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does STAT6 activate?",
+          "What is the name of the process that activates gene expression?",
+          "What is the name of the latent transcription factor STAT6?",
+          "What is STAT6?",
+          "What is STAT6?",
+          "What is the other name for transcription-6?",
+          "What is the sign transducer and activator of transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does STAT6 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factor",
+        "answerability": 0.8109118938446045,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.8672047853469849,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the process that activates gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2978150248527527,
+        "ground_truth": {
+          "tyrosine phosphorylation homodimerization": {
+            "bertscore": 0.6247437596321106,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the latent transcription factor STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5267701148986816,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 0.7173126935958862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transducer and activators of transcription-6",
+        "answerability": 0.9596669673919678,
+        "ground_truth": {
+          "the latent transcription factor": {
+            "bertscore": 0.7545111179351807,
+            "f1": 0
+          },
+          "(signal transducer": {
+            "bertscore": 0.7214005589485168,
+            "f1": 0.5
+          },
+          "transcription-6": {
+            "bertscore": 0.8250697255134583,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is the role of transcription-6 in gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transducer and activators",
+        "answerability": 0.7789773941040039,
+        "ground_truth": {
+          "activator": {
+            "bertscore": 0.8092071413993835,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

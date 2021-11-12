@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "These results indicate that DNA binding by VDR is necessary but not sufficient to mediate IL-2 repression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VDR",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is necessary to mediate IL-2 repression?",
+          "What is the main repression of IL-2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "VDR",
+        "IL-2 repression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that DNA binding by VDR is necessary but not sufficient to mediate IL",
+          "What is necessary to mediate IL-2 repression?",
+          "What does the results of the cytokine test show is not sufficient to mediate"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is necessary to mediate IL-2 repression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4812662601470947,
+        "ground_truth": {
+          "VDR": {
+            "bertscore": 0.6968003511428833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main repression of IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA binding by VDR",
+        "answerability": 0.5153317451477051,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.7166876196861267,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What indicates that DNA binding by VDR is necessary but not sufficient to mediate IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These results",
+        "answerability": 0.7343756556510925,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the results of the cytokine test show is not sufficient to mediate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39232295751571655,
+        "ground_truth": {
+          "IL-2 repression": {
+            "bertscore": 0.6673253178596497,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

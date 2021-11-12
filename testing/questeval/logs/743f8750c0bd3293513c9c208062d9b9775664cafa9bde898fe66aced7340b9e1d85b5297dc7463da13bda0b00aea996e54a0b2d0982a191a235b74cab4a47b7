@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "Interestingly PA4197 (BfmS) the cognate sensor of PA4101 was found to be phosphorylated following PA4101 phosphorylation after 72 hr of biofilm growth (Table 1).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PA4101",
+        "72",
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cognate sensor of?",
+          "How long did it take for PA4197 to phosphorylate?",
+          "What is the name of the sensor that is phosphorylated after 72 hr of"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PA4197",
+        "(BfmS",
+        "the cognate sensor",
+        "PA4101",
+        "PA4101 phosphorylation",
+        "72 hr",
+        "biofilm growth",
+        "(Table"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cognate sensor of PA4101?",
+          "What is the cognate sensor of PA4197?",
+          "What is PA4197?",
+          "What is the cognate sensor of?",
+          "What is the cognate sensor of PA4197?",
+          "How long did it take for PA4197 to phosphorylate?",
+          "What is the process that causes PA4197 to be phosphorylated?",
+          "What is the name of the study that found that PA4197 was phosphorylated after"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was not detected in the DeltaPA4197 mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0021849870681762695,
+        "ground_truth": {
+          "PA4197 PA4101": {
+            "bertscore": 0.5986775159835815,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only phosphorylation of PA4197?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009600579738616943,
+        "ground_truth": {
+          "GacS": {
+            "bertscore": 0.6551072597503662,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found to not contain phosphorylation of PA4197 PA4101 or Ga": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03591793775558472,
+        "ground_truth": {
+          "DeltaPA4197 mutant biofilm": {
+            "bertscore": 0.6402764916419983,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found in the DeltaPA4197 mutant biofilm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.034068405628204346,
+        "ground_truth": {
+          "No evidence": {
+            "bertscore": 0.7028467655181885,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not detected in the DeltaPA4197 mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008465051651000977,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.6180735230445862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the mutated phosphorylation of PA4197 PA4101 and Ga": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19863981008529663,
+        "ground_truth": {
+          "DeltaPA4197 mutant biofilm phosphorylation patterns": {
+            "bertscore": 0.5770139694213867,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

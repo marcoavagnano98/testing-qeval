@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Conditioned media prepared from colon cells treated with an adenosine analog increased human umbilical vein endothelial cell proliferation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Conditioned media",
+        "colon cells",
+        "an adenosine analog",
+        "increased human umbilical vein endothelial cell proliferation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increased human umbilical vein endothelial cell proliferation?",
+          "What type of media was treated with adenosine?",
+          "What treatment increased human umbilical vein endothelial cell proliferation?",
+          "What did conditioned media from colon cells treated with an adenosine analog"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increased human umbilical vein endothelial cell migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13720577955245972,
+        "ground_truth": {
+          "Conditioned media": {
+            "bertscore": 0.7155534625053406,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of media was treated with adenosine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Conditioned media",
+        "answerability": 0.939806342124939,
+        "ground_truth": {
+          "colon cells": {
+            "bertscore": 0.7438866496086121,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment increased human umbilical vein endothelial cell migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13027429580688477,
+        "ground_truth": {
+          "an adenosine analog": {
+            "bertscore": 0.6471140384674072,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did conditioned media from colon cells treated with an adenosine analog": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased human umbilical vein endothelial cell proliferation",
+        "answerability": 0.6501246094703674,
+        "ground_truth": {
+          "increased human umbilical vein endothelial cell migration": {
+            "bertscore": 0.9679372310638428,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

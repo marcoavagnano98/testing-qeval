@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Moreover IL-4 costimulation with IL-2 or IL-12 does not alter their own preferential GAS-like DNA binding patterns when C epsilon- Fc gamma RI- and GAS motif containing oligonucleotide probes are compared suggesting that induction of GAS-like DNA-protein binding complexes by IL-2 IL-4 and IL-12 is highly selective and represents one important factor in determining specific gene activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-12",
+        "IL-2",
+        "IL-12",
+        "one"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only other cytokine that can be used to induce GAS-like",
+          "What is the only other factor that can affect specific gene activation?",
+          "What is the only other cytokine that can be used to induce GAS-like",
+          "What is the only other factor that can affect specific gene activation?",
+          "How many factors determine specific gene activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-4 costimulation",
+        "their own preferential GAS-like DNA binding patterns",
+        "Fc gamma RI- and GAS motif",
+        "oligonucleotide probes",
+        "induction",
+        "GAS-like DNA-protein binding complexes",
+        "one important factor",
+        "specific gene activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not alter their own preferential GAS-like DNA binding patterns?",
+          "What does IL-4 costimulation with IL-2 or IL-12 not alter?",
+          "What two proteins are compared to determine specific gene activation?",
+          "What does the C epsilon-Fc gamma RI",
+          "What is highly selective?",
+          "What is highly selective?",
+          "What does IL-4 costimulation represent in determining specific gene activation?",
+          "What is the main factor in determining?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the only other molecule that can be used to modify the GAS binding patterns?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4",
+        "answerability": 0.7696839570999146,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.979121208190918,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only other molecule that does not alter their own preferential GAS binding patterns": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4",
+        "answerability": 0.7507098913192749,
+        "ground_truth": {
+          "IL-12": {
+            "bertscore": 0.9597523212432861,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not alter their own preferential GAS-like DNA binding patterns?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4 costimulation with IL-2 or IL-12",
+        "answerability": 0.9976098537445068,
+        "ground_truth": {
+          "IL-4 costimulation": {
+            "bertscore": 0.8747995495796204,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does IL-4 costimulation not alter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "their own preferential GAS-like DNA binding patterns",
+        "answerability": 0.9982113242149353,
+        "ground_truth": {
+          "their own preferential GAS-like DNA binding patterns": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

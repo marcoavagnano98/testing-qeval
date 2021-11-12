@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "PCR primers and conditions for expression analysis of DNMT or MBP (DNMT1 DNMT3ADNMT3B MeCP MBD1 MBD2 and MBD4) were published elsewhere (28).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "DNMT",
+        "MBP",
+        "MBD4",
+        "28"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that is used in PCR?",
+          "What is another name for DNMT?",
+          "What is another name for DNMT?",
+          "How many publications were published on DNMT and MBP?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PCR primers",
+        "conditions",
+        "expression analysis",
+        "DNMT",
+        "MBP",
+        "(DNMT1 DNMT3ADNMT3B MeCP MBD1 MBD2",
+        "MBD4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was published elsewhere?",
+          "What were the primers and what were published elsewhere?",
+          "What is the purpose of PCR?",
+          "What is the name of the protein that is used in PCR?",
+          "What is another name for DNMT?",
+          "What are the two PCR primers and conditions for expression analysis of DNMT and M",
+          "What is another name for DNMT?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is used in PCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNMT1 DNMT3ADNMT3B",
+        "answerability": 0.5458666086196899,
+        "ground_truth": {
+          "DNMT": {
+            "bertscore": 0.7724658846855164,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another name for DNMT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNMT1 DNMT3ADNMT3B",
+        "answerability": 0.8869196772575378,
+        "ground_truth": {
+          "MBP": {
+            "bertscore": 0.6663888692855835,
+            "f1": 0
+          },
+          "MBD4": {
+            "bertscore": 0.7062349915504456,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many publications were published on DNMT and MBP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "28",
+        "answerability": 0.849839448928833,
+        "ground_truth": {
+          "28": {
+            "bertscore": 1.0000005960464478,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was published elsewhere?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "primers and conditions for expression analysis of DNMT or MBP",
+        "answerability": 0.873692512512207,
+        "ground_truth": {
+          "PCR primers": {
+            "bertscore": 0.7317672371864319,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What were the primers and what were published elsewhere?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "conditions for expression analysis of DNMT or MBP",
+        "answerability": 0.9697958827018738,
+        "ground_truth": {
+          "conditions": {
+            "bertscore": 0.6806457042694092,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What is the purpose of PCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression analysis",
+        "answerability": 0.9391818642616272,
+        "ground_truth": {
+          "expression analysis": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are the two PCR primers and conditions for expression analysis of DNMT and M": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.582098662853241,
+        "ground_truth": {
+          "(DNMT1 DNMT3A DNMT3B MeCP MBD1 MBD2": {
+            "bertscore": 0.5883605480194092,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

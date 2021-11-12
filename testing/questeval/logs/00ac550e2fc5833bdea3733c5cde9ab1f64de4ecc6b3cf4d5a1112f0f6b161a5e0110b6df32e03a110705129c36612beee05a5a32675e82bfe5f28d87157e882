@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "PPARalpha activators inhibit cytokine-induced vascular cell adhesion molecule-1 gene expression in human endothelial cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PPARalpha activators",
+        "cytokine-induced vascular cell adhesion molecule-1 gene expression",
+        "human endothelial cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits cytokine-induced vascular cell adhesion molecule-1 gene",
+          "What do PPARalpha activators inhibit?",
+          "What type of cells are affected by PPARalpha activators?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits cytokine-induced vascular cell adhesion molecule-1 expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PPARalpha activators",
+        "answerability": 0.8645718693733215,
+        "ground_truth": {
+          "PPARalpha activators": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do PPARalpha activators inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine-induced vascular cell adhesion molecule-1 gene expression",
+        "answerability": 0.9644922614097595,
+        "ground_truth": {
+          "cytokine-induced vascular cell adhesion molecule-1 expression": {
+            "bertscore": 0.9722458124160767,
+            "f1": 0.923076923076923
+          }
+        }
+      }
+    },
+    "Where do PPARalpha activators inhibit cytokine-induced vascular cell": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human endothelial cells",
+        "answerability": 0.8280639052391052,
+        "ground_truth": {
+          "human endothelial cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

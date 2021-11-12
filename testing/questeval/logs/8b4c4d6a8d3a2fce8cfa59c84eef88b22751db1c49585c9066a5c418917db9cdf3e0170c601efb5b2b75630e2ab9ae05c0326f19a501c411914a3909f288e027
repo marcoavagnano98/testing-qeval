@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "BAG-1L was nucleolar and nucleolar whereas BAG-1S and BAG-1M were cytoplasmic and nucleoplasmic in localisation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BAG-1L",
+        "BAG-1M"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the cytoplasmic localisation of BAG-1S?",
+          "What is the cytoplasmic localisation of BAG-1S?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BAG-1L",
+        "BAG-1S",
+        "BAG-1M",
+        "localisation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the cytoplasmic localisation of BAG-1S?",
+          "What is the cytoplasmic localisation of BAG-1L?",
+          "What is the cytoplasmic localisation of BAG-1S?",
+          "What was the difference between BAG-1L and BAG-1M?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the cytoplasmic localisation of BAG-1S?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.039965689182281494,
+        "ground_truth": {
+          "BAG-1L": {
+            "bertscore": 0.6420469880104065,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cytoplasmic localisation of BAG-1S?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04522871971130371,
+        "ground_truth": {
+          "BAG-1M": {
+            "bertscore": 0.6346796751022339,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cytoplasmic localisation of BAG-1L?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29265642166137695,
+        "ground_truth": {
+          "BAG-1S": {
+            "bertscore": 0.6458979845046997,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was different about BAG-1S and BAG-1M?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasmic",
+        "answerability": 0.7189825773239136,
+        "ground_truth": {
+          "localisation": {
+            "bertscore": 0.6755672097206116,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

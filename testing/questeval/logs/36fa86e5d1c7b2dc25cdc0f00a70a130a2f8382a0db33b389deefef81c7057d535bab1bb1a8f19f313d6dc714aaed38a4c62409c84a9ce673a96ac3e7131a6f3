@@ -1,0 +1,120 @@
+{
+  "type": "ref",
+  "text": "Activation of the LTR in Jurkat cells was strongly enhanced by vanadate and inhibited by catalase implicating H2O2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LTR",
+        "Jurkat",
+        "H2O2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is activated by vanadate?",
+          "What type of cells were inhibited by catalase?",
+          "What chemical is implicated in the activation of the LTR?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "the LTR",
+        "Jurkat cells",
+        "vanadate",
+        "catalase implicating H2O2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was strongly enhanced by vanadate?",
+          "What was activated by vanadate?",
+          "What cells were activated by vanadate?",
+          "What enhanced the activation of the LTR in Jurkat cells?",
+          "What inhibited the activation of the LTR in Jurkat cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is activated by vanadate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5241680145263672,
+        "ground_truth": {
+          "LTR": {
+            "bertscore": 0.6756166815757751,
+            "f1": 0
+          },
+          "the LTR": {
+            "bertscore": 0.6677062511444092,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were inhibited by vanadate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1304836869239807,
+        "ground_truth": {
+          "Jurkat": {
+            "bertscore": 0.6695131063461304,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the catalase that inhibits activation of the LTR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H2O2",
+        "answerability": 0.9754713773727417,
+        "ground_truth": {
+          "H2O2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was inhibited by vanadate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2029309868812561,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.72251957654953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were able to activate the LTR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat cells",
+        "answerability": 0.9566172957420349,
+        "ground_truth": {
+          "Jurkat cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the activation of the LTR in Jurkat cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "catalase",
+        "answerability": 0.9755129814147949,
+        "ground_truth": {
+          "vanadate": {
+            "bertscore": 0.7401405572891235,
+            "f1": 0
+          },
+          "catalase implicating H2O2": {
+            "bertscore": 0.7768601775169373,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

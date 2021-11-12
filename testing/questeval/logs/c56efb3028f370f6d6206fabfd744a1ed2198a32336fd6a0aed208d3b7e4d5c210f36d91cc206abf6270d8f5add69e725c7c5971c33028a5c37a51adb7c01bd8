@@ -1,0 +1,114 @@
+{
+  "type": "ref",
+  "text": "We recently reported that prolonged exposure of human aortic endothelial cells (HAEC) to low shear stress flow patterns is associated with a sustained increase in the activated form of the transcriptional regulator nuclear factor-kappaB (NF-kappaB).\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "prolonged exposure",
+        "human aortic endothelial cells",
+        "HAEC",
+        "low shear stress",
+        "flow patterns",
+        "a sustained increase",
+        "the activated form",
+        "the transcriptional regulator nuclear factor-kappaB",
+        "(NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the transcriptional regulator?",
+          "What is associated with a sustained increase in the activated form of the transcriptional regulator?",
+          "What does HAEC stand for?",
+          "What is the name of the cell that is exposed to low shear stress flow patterns?",
+          "What flow patterns are associated with a sustained increase in the transcriptional regulator nuclear factor-k",
+          "What is associated with a sustained increase in the activated form of the transcriptional regulator nuclear",
+          "What is prolonged exposure of human aortic endothelial cells to low she",
+          "What is the transcriptional regulator NF-kappaB?",
+          "What is activated by low shear stress flow patterns?",
+          "What transcriptional regulator is associated with a sustained increase in the HAEC?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is NF-kappaB required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.33272790908813477,
+        "ground_truth": {
+          "HUVEC": {
+            "bertscore": 0.6617571711540222,
+            "f1": 0
+          },
+          "HUVEC survival": {
+            "bertscore": 0.6530818343162537,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for HUVEC survival?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0026332736015319824,
+        "ground_truth": {
+          "exposure": {
+            "bertscore": 0.7218816876411438,
+            "f1": 0
+          },
+          "flow patterns": {
+            "bertscore": 0.717393159866333,
+            "f1": 0
+          },
+          "NF-kappaB activation": {
+            "bertscore": 0.6047101616859436,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of stress flow patterns did we find required for HUVEC survival?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low shear stress flow patterns",
+        "answerability": 0.9863033890724182,
+        "ground_truth": {
+          "low shear": {
+            "bertscore": 0.8504526019096375,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is the name of the area where NF-kappaB is required for survival": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04734969139099121,
+        "ground_truth": {
+          "HAEC": {
+            "bertscore": 0.6799336075782776,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we find about NF-kappaB activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "prolonged exposure of human aortic endothelial cells (HAEC) to",
+        "answerability": 0.9945330619812012,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.5647485256195068,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

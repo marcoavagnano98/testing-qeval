@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "The ability of specific regions and activities to regulate apoptosis is dose- and time-dependent and is not unique to FGF-2-treated cells because of its ability to induce apoptosis in response to mitogenic stimuli.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The ability",
+        "specific regions",
+        "activities",
+        "apoptosis",
+        "FGF-2-treated cells",
+        "its ability",
+        "apoptosis",
+        "response",
+        "mitogenic stimuli"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is dose- and time-dependent?",
+          "What is dose- and time-dependent in FGF-2-treated cells?",
+          "What is the ability of specific regions and activities to regulate apoptosis dependent on",
+          "What is the ability of specific regions and activities to regulate?",
+          "What type of cells have the ability to regulate apoptosis?",
+          "What is dose- and time-dependent?",
+          "What is the ability of specific regions and activities to regulate?",
+          "What does FGF-2 induce apoptosis in?",
+          "What does FGF-2 respond to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of FGF-2 on the cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17114782333374023,
+        "ground_truth": {
+          "/M accumulation": {
+            "bertscore": 0.6716583967208862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What causes delayed cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015672743320465088,
+        "ground_truth": {
+          "FGF-2-treated cells": {
+            "bertscore": 0.6251054406166077,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of FGF-2 on the cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ability of specific regions and activities to regulate apoptosis",
+        "answerability": 0.8425226807594299,
+        "ground_truth": {
+          "delayed cell death": {
+            "bertscore": 0.6596289873123169,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

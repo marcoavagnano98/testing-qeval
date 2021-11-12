@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Thus we have identified a novel E2F6 family member E2F6 that interacts with EZH2 and may regulate genes required for cell cycle progression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "a novel E2F6 family member E2F6",
+        "EZH2",
+        "genes",
+        "cell cycle progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the family member that interacts with EZH2?",
+          "What has been identified that may regulate genes required for cell cycle progression?",
+          "What gene does E2F6 interact with?",
+          "What does E2F6 regulate?",
+          "What is E2F6 involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the complex that interacts with EZH2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F6",
+        "answerability": 0.8287715315818787,
+        "ground_truth": {
+          "A novel repressive E2F6 complex": {
+            "bertscore": 0.72504061460495,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the E2F6 complex containing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09520918130874634,
+        "ground_truth": {
+          "the polycomb group protein EPC1": {
+            "bertscore": 0.607771635055542,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein interacts with EPC1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0019901394844055176,
+        "ground_truth": {
+          "EZH2": {
+            "bertscore": 0.6445820927619934,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How does the E2F6 complex interact with EZH2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulate genes",
+        "answerability": 0.8957170248031616,
+        "ground_truth": {
+          "a proliferation-specific manner": {
+            "bertscore": 0.7191671133041382,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

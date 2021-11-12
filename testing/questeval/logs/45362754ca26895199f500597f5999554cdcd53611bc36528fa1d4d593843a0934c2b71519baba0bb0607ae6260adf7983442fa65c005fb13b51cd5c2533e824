@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of protein kinase C-zeta stimulates leukemic cell differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "protein kinase C-zeta",
+        "leukemic cell differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of leukemic cell differentiation?",
+          "What stimulates leukemic cell differentiation?",
+          "What does overexpression of protein kinase C-zeta stimulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of leukemic cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of protein kinase C-zeta",
+        "answerability": 0.8935646414756775,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7513566613197327,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What stimulates leukemic cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of protein kinase C-zeta",
+        "answerability": 0.9446114301681519,
+        "ground_truth": {
+          "protein kinase C-zeta": {
+            "bertscore": 0.8911135196685791,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What does overexpression of protein kinase C-zeta stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukemic cell differentiation",
+        "answerability": 0.9851024150848389,
+        "ground_truth": {
+          "leukemic cell differentiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

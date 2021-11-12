@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Furthermore cyclosporin A which blocked TNF production induced by PGE2 strongly inhibited IL-2R alpha and NF.kappa B activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "PGE2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did cyclosporin A block?",
+          "What induced TNF production?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF production",
+        "PGE2",
+        "IL-2R alpha",
+        "NF.kappa B activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did cyclosporin A block?",
+          "What induced TNF production?",
+          "What protein was inhibited by cyclosporin A?",
+          "What did cyclosporin A block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induced a robust production of TNF by monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.021236419677734375,
+        "ground_truth": {
+          "Degraded CGN": {
+            "bertscore": 0.7168402671813965,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is produced by monocytes after CGN is degraded?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0019571781158447266,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did degraded CGN cause in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003031492233276367,
+        "ground_truth": {
+          "a robust production": {
+            "bertscore": 0.7119830846786499,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells produce TNF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.020240724086761475,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6662787795066833,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

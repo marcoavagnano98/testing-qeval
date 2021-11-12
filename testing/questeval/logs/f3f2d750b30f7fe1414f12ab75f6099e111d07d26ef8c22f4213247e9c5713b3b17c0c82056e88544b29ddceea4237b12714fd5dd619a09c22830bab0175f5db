@@ -1,0 +1,72 @@
+{
+  "type": "ref",
+  "text": "Upon ligand binding and cytokine receptor dimerization Stat proteins are phosphorylated on tyrosine residues by Jak kinases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jak"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What kinases phosphorylate Stat proteins?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "ligand binding and cytokine receptor dimerization Stat proteins",
+        "tyrosine residues",
+        "Jak kinases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are phosphorylated on tyrosine residues by Jak kin",
+          "Where are Stat proteins phosphorylated?",
+          "What enzymes phosphorylate Stat proteins?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of the study of a cofactor that regulates dimerization of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14956694841384888,
+        "ground_truth": {
+          "Characterization": {
+            "bertscore": 0.6672126054763794,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What regulates dimerization of a cytokine receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ligand binding",
+        "answerability": 0.8661897778511047,
+        "ground_truth": {
+          "a cofactor": {
+            "bertscore": 0.7305678129196167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does a cofactor regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002874910831451416,
+        "ground_truth": {
+          "dimerization": {
+            "bertscore": 0.676111102104187,
+            "f1": 0
+          },
+          "a cytokine receptor": {
+            "bertscore": 0.6051840782165527,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Ligand-dependent repression by the estrogen receptor of erythropoietin-mediated GATA-1 transcription in a ligand-dependent manner.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ligand"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the repression of GATA-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ligand-dependent repression",
+        "the estrogen receptor",
+        "erythropoietin-mediated GATA-1 transcription",
+        "a ligand-dependent manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the estrogen receptor responsible for?",
+          "What is responsible for repression of GATA-1 transcription?",
+          "What is the estrogen receptor responsible for?",
+          "How is GATA-1 regulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the repression of the erythroid transcription factor GATA-1 dependent on": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ligand-dependent",
+        "answerability": 0.7438190579414368,
+        "ground_truth": {
+          "Ligand": {
+            "bertscore": 0.8242287039756775,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the estrogen receptor known for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ligand-dependent repression",
+        "answerability": 0.8304264545440674,
+        "ground_truth": {
+          "Ligand-dependent repression": {
+            "bertscore": 0.9666198492050171,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the estrogen receptor repress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ligand-dependent repression",
+        "answerability": 0.9493059515953064,
+        "ground_truth": {
+          "the erythroid transcription factor": {
+            "bertscore": 0.7239802479743958,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor is repressed by the estrogen receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythropoietin-mediated GATA-1 transcription",
+        "answerability": 0.9792889356613159,
+        "ground_truth": {
+          "GATA-1": {
+            "bertscore": 0.7124689817428589,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is responsible for repression of the erythroid transcription factor GATA-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "estrogen receptor",
+        "answerability": 0.9593807458877563,
+        "ground_truth": {
+          "the estrogen receptor": {
+            "bertscore": 0.9326316118240356,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

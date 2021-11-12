@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Thus the yeast PDK1 homologs activate Pkc1-mitogen-activated protein kinase pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PDK1 homologs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What yeast gene activates the Pkc1-mitogen-activated protein kin"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the yeast PDK1 homologs",
+        "Pkc1-mitogen-activated protein kinase pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that activates the Pkc1-mitogen-",
+          "What do yeast PDK1 homologs activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that activates the Pkc1-mitogen-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5134605169296265,
+        "ground_truth": {
+          "PDK1 homologs": {
+            "bertscore": 0.6366642713546753,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do PDK1 homologs activate in yeast?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pkc1-mitogen-activated protein kinase pathway",
+        "answerability": 0.8896561861038208,
+        "ground_truth": {
+          "the Pkc1-mitogen-activated protein kinase pathway": {
+            "bertscore": 0.9482397437095642,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What organism has PDK1 homologs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "yeast",
+        "answerability": 0.9991039037704468,
+        "ground_truth": {
+          "yeast": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

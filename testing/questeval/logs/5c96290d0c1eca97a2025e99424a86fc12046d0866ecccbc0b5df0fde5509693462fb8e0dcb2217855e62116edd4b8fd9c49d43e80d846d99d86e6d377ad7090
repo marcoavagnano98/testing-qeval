@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "The p65 subunit of NF-kappaB and PARP1 assist Snail1 in activation of fibronectin transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Snail1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the p65 subunit of NF-kappaB and PARP"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The p65 subunit",
+        "NF-kappaB",
+        "PARP1",
+        "activation",
+        "fibronectin transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in the activation of fibronectin transcription?",
+          "What is the p65 subunit of?",
+          "What is the p65 subunit of NF-kappaB?",
+          "What does the p65 subunit of NF-kappaB and PARP",
+          "What does the p65 subunit of NF-kappaB and PARP"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the p65 subunit of NF-kappaB and PARP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2305765151977539,
+        "ground_truth": {
+          "Snail1": {
+            "bertscore": 0.676788330078125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in activating fibronectin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4158802628517151,
+        "ground_truth": {
+          "The p65 subunit": {
+            "bertscore": 0.6206830739974976,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the p65 subunit of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9851660132408142,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the p65 subunit of NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05023384094238281,
+        "ground_truth": {
+          "PARP1": {
+            "bertscore": 0.6157228946685791,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the p65 subunit of NF-kappaB and PARP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18599975109100342,
+        "ground_truth": {
+          "fibronectin transcription": {
+            "bertscore": 0.5954849123954773,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

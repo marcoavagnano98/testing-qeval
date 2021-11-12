@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "Furthermore overexpression of exogenous c-fos has an inhibitory role in GR-dependent transcription from GRE in T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GRE"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor is involved in the GR-dependent transcription?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Furthermore overexpression",
+        "exogenous c-fos",
+        "an inhibitory role",
+        "GR-dependent transcription",
+        "GRE",
+        "T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the inhibitory role of exogenous c-fos in GR",
+          "What has an inhibitory role in GR-dependent transcription from GRE in T cells?",
+          "What effect does overexpression of c-fos have on GR-dependent transcription",
+          "What does overexpression of c-fos have an inhibitory role in?",
+          "What transcription factor is involved in the GR-dependent transcription?",
+          "What type of cells are affected by overexpression of c-fos?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor is regulated by c-fos?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.061514854431152344,
+        "ground_truth": {
+          "GR": {
+            "bertscore": 0.6718540191650391,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor is involved in the GR-dependent transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos",
+        "answerability": 0.7852723598480225,
+        "ground_truth": {
+          "GRE": {
+            "bertscore": 0.6828345656394958,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of exogenous c-fos on GR-dependent": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibity role",
+        "answerability": 0.8132708072662354,
+        "ground_truth": {
+          "Furthermore overexpression": {
+            "bertscore": 0.7353323698043823,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has an inhibitory effect on GR-dependent transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos",
+        "answerability": 0.9439033269882202,
+        "ground_truth": {
+          "exogenous c-fos": {
+            "bertscore": 0.856745183467865,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What effect does overexpression of c-fos have on GR-dependent transcription": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6278514862060547,
+        "ground_truth": {
+          "an inhibitory effect": {
+            "bertscore": 0.6586447954177856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does overexpression of c-fos have an inhibitory effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GR-dependent transcription",
+        "answerability": 0.7845016121864319,
+        "ground_truth": {
+          "GR-dependent transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are affected by overexpression of c-fos?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4751031994819641,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.6607831716537476,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

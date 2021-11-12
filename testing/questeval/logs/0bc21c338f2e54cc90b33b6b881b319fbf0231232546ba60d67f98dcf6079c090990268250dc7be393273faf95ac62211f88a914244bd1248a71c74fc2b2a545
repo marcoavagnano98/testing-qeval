@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "and surface protein expression and the upregulation of transcripts for the chemokines monocyte (GRO-alpha) by TNF-alpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that causes the upregulation of transcripts for chemokines mon"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "and surface protein expression",
+        "the upregulation",
+        "transcripts",
+        "the chemokines monocyte",
+        "GRO-alpha",
+        "TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main effect of TNF-alpha on the chemokines monocyte",
+          "What is the effect of TNF-alpha on surface protein expression?",
+          "What is upregulated by TNF-alpha?",
+          "What is GRO-alpha?",
+          "What is the name of the chemokines monocyte?",
+          "What is the main factor that causes the upregulation of surface protein expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main factor that causes the upregulation of transcripts for chemokines mon": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.7397657036781311,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main effect of TNF-alpha on the chemokines monocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5081754326820374,
+        "ground_truth": {
+          "and surface protein expression": {
+            "bertscore": 0.6295708417892456,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of TNF-alpha on surface protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "upregulation of transcripts for the chemokines monocyte (GRO-alpha",
+        "answerability": 0.9169101119041443,
+        "ground_truth": {
+          "the upregulation": {
+            "bertscore": 0.7073163390159607,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is upregulated by TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcripts for the chemokines monocyte (GRO-alpha)",
+        "answerability": 0.7908180356025696,
+        "ground_truth": {
+          "transcripts": {
+            "bertscore": 0.7428922653198242,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is GRO-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the upregulation of transcripts for the chemokines monocyte",
+        "answerability": 0.6739813089370728,
+        "ground_truth": {
+          "the chemokines monocyte": {
+            "bertscore": 0.8593276143074036,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the chemokines monocyte?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GRO-alpha",
+        "answerability": 0.6820652484893799,
+        "ground_truth": {
+          "GRO-alpha": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main factor that causes the upregulation of surface protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.7749211192131042,
+        "ground_truth": {
+          "TNF-alpha": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Within this region we define a minimal promoter (-62 to +54) that displays activity only in EBV-positive B cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this region",
+        "we",
+        "a minimal promoter",
+        "EBV-positive B cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What region of the genome is characterized by a minimal promoter?",
+          "What is the minimal promoter?",
+          "What does the -62 to +54 region define?",
+          "What type of cells are the minimal promoter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many DNA binding sites does the minimal promoter contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "-62 to +54",
+        "answerability": 0.757597029209137,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.704063355922699,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What region of the genome contains two DNA binding sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0023643970489501953,
+        "ground_truth": {
+          "this region": {
+            "bertscore": 0.7012830376625061,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the minimal promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "-62 to +54",
+        "answerability": 0.9709779620170593,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6566965579986572,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the region that displays erythroid-specific activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.093844473361969,
+        "ground_truth": {
+          "a minimal promoter": {
+            "bertscore": 0.700565755367279,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the minimal promoter display?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activity only in EBV-positive B cells",
+        "answerability": 0.935381293296814,
+        "ground_truth": {
+          "erythroid-specific activity": {
+            "bertscore": 0.7232610583305359,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What does the minimal promoter contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4255644679069519,
+        "ground_truth": {
+          "two DNA binding sites": {
+            "bertscore": 0.6564618349075317,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

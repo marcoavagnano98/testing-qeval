@@ -1,0 +1,80 @@
+{
+  "type": "ref",
+  "text": "The constitutive NF-kappa B appears to be functionally active since a low level of tumour necrosis factor (TNF) transcript is detectable in monocytes and this level can be increased by blocking transcript degradation using cycloheximide.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytokine that is present in monocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The constitutive NF-kappa B",
+        "a low level",
+        "tumour necrosis factor (TNF) transcript",
+        "monocytes",
+        "this level",
+        "transcript degradation",
+        "cycloheximide"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is functionally active?",
+          "What is the level of TNF-kappa B detected in monocytes?",
+          "What is detectable in monocytes?",
+          "What is a target of NF-kappa B?",
+          "What can be increased by blocking transcript degradation?",
+          "What can be blocked using cycloheximide?",
+          "What is used to block the degradation of TNF-kappa B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not detectable in adult B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0001615285873413086,
+        "ground_truth": {
+          "This level": {
+            "bertscore": 0.6683966517448425,
+            "f1": 0
+          },
+          "NF-kappa B": {
+            "bertscore": 0.644961416721344,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the level of NF-kappa B constitutive in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19934850931167603,
+        "ground_truth": {
+          "mature B cells": {
+            "bertscore": 0.6621800065040588,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF-kappa B not detectable in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00022608041763305664,
+        "ground_truth": {
+          "adult B cells": {
+            "bertscore": 0.6567873954772949,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

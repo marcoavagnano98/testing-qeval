@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "However many human carcinomas overexpress TGFbeta1 and this is associated with poor patient prognosis and increased frequency of astrocytoma.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "many human carcinomas overexpress TGFbeta1",
+        "poor patient prognosis",
+        "increased frequency",
+        "astrocytoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with poor patient prognosis and increased frequency of astrocytom",
+          "What is the result of overexpressing TGFbeta1?",
+          "What is the result of overexpressing TGFbeta1?",
+          "What is an increase in frequency of in humans?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is associated with poor patient prognosis and increased frequency of metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2527691721916199,
+        "ground_truth": {
+          "many human carcinomas overexpress TGFbeta1": {
+            "bertscore": 0.6260256171226501,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of overexpressing TGFbeta1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "poor patient prognosis and increased frequency of astrocytoma",
+        "answerability": 0.9581926465034485,
+        "ground_truth": {
+          "poor patient prognosis": {
+            "bertscore": 0.801660418510437,
+            "f1": 0.5454545454545454
+          },
+          "increased frequency": {
+            "bertscore": 0.6863090991973877,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is an increased frequency of in human carcinomas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "astrocytoma",
+        "answerability": 0.5246506333351135,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.7069793939590454,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

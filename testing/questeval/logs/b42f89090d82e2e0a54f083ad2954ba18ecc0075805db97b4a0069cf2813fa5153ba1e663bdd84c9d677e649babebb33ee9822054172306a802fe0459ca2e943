@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "Activated NF-kappaB plays an important role in the expression of matrix metalloproteinase (MMP)-1 and MMP-13 in rheumatoid synovial tissue.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activated NF-kappaB",
+        "an important role",
+        "the expression",
+        "matrix metalloproteinase",
+        "MMP)-1",
+        "MMP-13",
+        "rheumatoid synovial tissue"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What plays an important role in the expression of MMP-1 and MMP-13?",
+          "What role does NF-kappaB play in the expression of MMP-1 and",
+          "What does NF-kappaB play an important role in?",
+          "What does MMP-1 and MMP-13 represent?",
+          "What is the name of the matrix metalloproteinase?",
+          "What is the name of the protein that is involved in the expression of MMP-1?",
+          "Where does NF-kappaB play an important role in the expression of MMP"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What plays an important role in the expression of MMP-1 and MMP-13?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9955235123634338,
+        "ground_truth": {
+          "Activated NF-kappaB": {
+            "bertscore": 0.8333715796470642,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What role does NF-kappaB play in the expression of MMP-1 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activated NF-kappaB plays an important role in the expression of matrix",
+        "answerability": 0.9260362386703491,
+        "ground_truth": {
+          "an important role": {
+            "bertscore": 0.6399487257003784,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What does NF-kappaB play an important role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of matrix metalloproteinase (MMP)-1 and MMP-13",
+        "answerability": 0.9330445528030396,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.5912629961967468,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What does MMP-1 and MMP-13 represent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "matrix metalloproteinase",
+        "answerability": 0.9923549890518188,
+        "ground_truth": {
+          "matrix metalloproteinase": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the matrix metalloproteinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MMP",
+        "answerability": 0.9107023477554321,
+        "ground_truth": {
+          "MMP)-1": {
+            "bertscore": 0.8195704221725464,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is involved in the expression of MMP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5261415243148804,
+        "ground_truth": {
+          "MMP-13": {
+            "bertscore": 0.6625197529792786,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of arthritis is activated NF-kappaB involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rheumatoid synovial tissue",
+        "answerability": 0.5238951444625854,
+        "ground_truth": {
+          "rheumatoid arthritis": {
+            "bertscore": 0.8423166275024414,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is a common cause of inflammation in the body?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003088712692260742,
+        "ground_truth": {
+          "osteoarthritis": {
+            "bertscore": 0.6461557745933533,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

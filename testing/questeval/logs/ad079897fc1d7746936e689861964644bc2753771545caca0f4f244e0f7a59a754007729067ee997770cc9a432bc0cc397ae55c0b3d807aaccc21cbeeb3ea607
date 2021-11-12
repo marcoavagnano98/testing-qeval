@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Decreased transcriptional activation by N-terminal deletions of CIITA is accompanied by a decrease of TFIID binding to its cognate DNA sequences.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CIITA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is accompanied by a decrease in TFIID binding to its cognate DNA sequence"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Decreased transcriptional activation",
+        "N-terminal deletions",
+        "CIITA",
+        "a decrease",
+        "its cognate DNA sequences"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is accompanied by a decrease in TFIID binding to its cognate DNA sequence",
+          "What is accompanied by a decrease in TFIID binding to its cognate DNA sequence",
+          "What is accompanied by a decrease in TFIID binding to its cognate DNA sequence",
+          "What is the result of TFIID binding?",
+          "What does TFIID binding to decrease?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is correlated with reduced binding to TAFII32?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07917499542236328,
+        "ground_truth": {
+          "CIITA": {
+            "bertscore": 0.6723489761352539,
+            "f1": 0
+          },
+          "Decreased transcriptional activation": {
+            "bertscore": 0.6797358989715576,
+            "f1": 0
+          },
+          "N-terminal deletions": {
+            "bertscore": 0.6832670569419861,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is correlated with reduced transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CIITA",
+        "answerability": 0.9037129878997803,
+        "ground_truth": {
+          "TAFII32": {
+            "bertscore": 0.7934767603874207,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

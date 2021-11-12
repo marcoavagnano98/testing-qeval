@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "The ability of type I and type II IFNs to inhibit IL-4/IL-13-induced STAT6 activity is dose- and time-dependent and is not unique to monocytes because IFNs induce the same effects in fibroblasts.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "II"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of IFNs inhibit STAT6 activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The ability",
+        "type I",
+        "II IFNs",
+        "IL-4/IL-13-induced STAT6 activity",
+        "monocytes",
+        "IFNs",
+        "the same effects",
+        "fibroblasts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is dose- and time-dependent?",
+          "What type of IFNs inhibit STAT6 activity?",
+          "What type of IFNs inhibit STAT6 activity?",
+          "What do IFNs inhibit?",
+          "What type of cells are not unique to IFNs?",
+          "What inhibits STAT6 activity?",
+          "What effect do IFNs have on fibroblasts?",
+          "What type of cells are IFNs able to inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of IFNs inhibit STAT6 activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "type I and type II",
+        "answerability": 0.7980764508247375,
+        "ground_truth": {
+          "II": {
+            "bertscore": 0.7530903816223145,
+            "f1": 0.33333333333333337
+          },
+          "type I": {
+            "bertscore": 0.8443145155906677,
+            "f1": 0.5714285714285715
+          },
+          "II IFNs": {
+            "bertscore": 0.6788107752799988,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What is dose- and time-dependent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ability of type I and type II IFNs to inhibit IL-4/IL-13-",
+        "answerability": 0.9495970606803894,
+        "ground_truth": {
+          "The ability": {
+            "bertscore": 0.646878182888031,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What do IFNs inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4/IL-13-induced STAT6 activity",
+        "answerability": 0.7731082439422607,
+        "ground_truth": {
+          "IL-4/IL-13-induced STAT6 activity": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are not unique to IFNs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocytes",
+        "answerability": 0.9919338226318359,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibits STAT6 activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5538452863693237,
+        "ground_truth": {
+          "IFNs": {
+            "bertscore": 0.7088052034378052,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect do IFNs have on fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibit IL-4/IL-13-induced STAT6 activity",
+        "answerability": 0.586915135383606,
+        "ground_truth": {
+          "the same effects": {
+            "bertscore": 0.5976110100746155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are IFNs able to inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fibroblasts",
+        "answerability": 0.6259527802467346,
+        "ground_truth": {
+          "fibroblasts": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

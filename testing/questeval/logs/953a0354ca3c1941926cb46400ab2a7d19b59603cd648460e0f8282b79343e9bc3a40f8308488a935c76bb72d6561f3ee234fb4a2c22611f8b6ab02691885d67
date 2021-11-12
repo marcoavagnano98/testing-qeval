@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "cAMP signaling inhibited Stat1 at several different levels including suppression of DNA binding and down-regulation of Stat1 protein and mRNA levels.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "cAMP",
+        "mRNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling inhibited Stat1 at several different levels?",
+          "What protein was downregulated by cAMP signaling?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "cAMP",
+        "several different levels",
+        "suppression",
+        "down-regulation",
+        "Stat1 protein and mRNA levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling inhibited Stat1 at several different levels?",
+          "How was Stat1 inhibited?",
+          "What was the effect of cAMP signaling on DNA binding?",
+          "What was the effect of cAMP signaling on Stat1 protein and mRNA levels",
+          "What did cAMP signaling inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How was Stat1 signaling inhibited?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cAMP",
+        "answerability": 0.6878269910812378,
+        "ground_truth": {
+          "several different levels": {
+            "bertscore": 0.6803081035614014,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of DNA binding on Stat1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppression",
+        "answerability": 0.986907958984375,
+        "ground_truth": {
+          "suppression": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of Stat1 protein and mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "down-regulation",
+        "answerability": 0.6999185085296631,
+        "ground_truth": {
+          "down-regulation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was downregulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stat1 protein and mRNA levels",
+        "answerability": 0.9963676929473877,
+        "ground_truth": {
+          "Stat1 protein and mRNA levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

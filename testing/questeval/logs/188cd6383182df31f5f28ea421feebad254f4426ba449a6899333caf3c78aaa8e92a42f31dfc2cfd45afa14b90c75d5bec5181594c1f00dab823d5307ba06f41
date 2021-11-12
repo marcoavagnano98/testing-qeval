@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Wnt stabilizes beta-catenin a major downstream target of GSK-3beta.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Wnt",
+        "a major downstream target",
+        "GSK-3beta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stabilizes beta-catenin?",
+          "What does Wnt stabilize?",
+          "What is the main downstream target of GSK-3beta?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stabilizes cytosolic beta-catenin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0056844353675842285,
+        "ground_truth": {
+          "Wnt": {
+            "bertscore": 0.674863874912262,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Wnt stabilize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta-catenin",
+        "answerability": 0.6523311138153076,
+        "ground_truth": {
+          "cytosolic beta-catenin": {
+            "bertscore": 0.8688708543777466,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does Wnt bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2180212140083313,
+        "ground_truth": {
+          "TCF": {
+            "bertscore": 0.6845880150794983,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Wnt activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.031973838806152344,
+        "ground_truth": {
+          "gene transcription": {
+            "bertscore": 0.6639035940170288,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

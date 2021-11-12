@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "A T cell-specific protein Neg-2 and a ubiquitous protein Neg-3 binding to NRE- I and NRE-II respectively were identified.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NRE-II"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that is binding to NRE-I?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A T cell-specific protein",
+        "a ubiquitous protein",
+        "NRE- I",
+        "NRE-II"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was identified as Neg-2?",
+          "What is Neg-3?",
+          "What is the name of the protein that is binding to NRE-II?",
+          "What is the name of the protein that is binding to NRE-I?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is binding to NRE-I?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Neg-2",
+        "answerability": 0.9900758266448975,
+        "ground_truth": {
+          "NRE-II": {
+            "bertscore": 0.8474456667900085,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was identified as Neg-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007342994213104248,
+        "ground_truth": {
+          "A T cell-specific protein": {
+            "bertscore": 0.6060323715209961,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Neg-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell-specific protein",
+        "answerability": 0.7808666229248047,
+        "ground_truth": {
+          "a ubiquitous protein": {
+            "bertscore": 0.7592864632606506,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is binding to NRE-II?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Neg-2",
+        "answerability": 0.9942283034324646,
+        "ground_truth": {
+          "NRE-": {
+            "bertscore": 0.7892030477523804,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the binding site of NRE-II?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31952327489852905,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.6798964142799377,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

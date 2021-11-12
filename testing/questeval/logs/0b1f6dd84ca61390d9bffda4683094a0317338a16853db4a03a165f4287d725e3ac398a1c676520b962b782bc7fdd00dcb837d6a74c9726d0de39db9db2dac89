@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "MA-induced relaxation in LIMA was nitric oxide prostaglandin and possibly cGMP independent and blocked by hyperpolarity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MA",
+        "LIMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced relaxation in LIMA?",
+          "What is the nitric oxide prostaglandin that is blocked by hyperpolarity"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "MA-induced relaxation",
+        "LIMA",
+        "nitric oxide prostaglandin",
+        "hyperpolarity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was nitric oxide prostaglandin and possibly cGMP independent?",
+          "What is the nitric oxide prostaglandin that is blocked by hyperpolarity",
+          "What was the main cause of LIMA relaxation?",
+          "What blockade in LIMA was nitric oxide prostaglandin and possibly"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induced relaxation in LIMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MA",
+        "answerability": 0.9868014454841614,
+        "ground_truth": {
+          "MA": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the nitric oxide prostaglandin that is blocked by hyperpolarization": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1596771478652954,
+        "ground_truth": {
+          "LIMA": {
+            "bertscore": 0.6749491095542908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was nitric oxide prostaglandin and possibly cGMP independent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MA-induced relaxation",
+        "answerability": 0.7041760087013245,
+        "ground_truth": {
+          "MA-induced relaxation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the main cause of LIMA relaxation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MA",
+        "answerability": 0.7776520848274231,
+        "ground_truth": {
+          "nitric oxide prostaglandin": {
+            "bertscore": 0.6104138493537903,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the cause of the relaxation in LIMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MA",
+        "answerability": 0.8947626948356628,
+        "ground_truth": {
+          "hyperpolarization": {
+            "bertscore": 0.6833420991897583,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

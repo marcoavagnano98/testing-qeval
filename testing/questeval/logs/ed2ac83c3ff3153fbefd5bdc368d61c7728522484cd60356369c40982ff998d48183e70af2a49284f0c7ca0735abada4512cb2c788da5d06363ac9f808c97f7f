@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Coexpression of NF-kappa B and Sp1 occurs in the heterologous DC-T-cell syncytia that are induced by HIV.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Coexpression",
+        "NF-kappa B",
+        "Sp1",
+        "the heterologous DC-T-cell syncytia",
+        "HIV"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What happens in the heterologous DC-T-cell syncytia",
+          "What gene is co-expressed with Sp1?",
+          "What is the coexpression of NF-kappa B and Sp1?",
+          "Where does coexpression of NF-kappa B and Sp1 occur?",
+          "What is the cause of the coexpression of NF-kappa B and Sp1"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of the coexpression of NF-kappa B and Sp1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.629581868648529,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.6515464186668396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What occurs in the heterologous DC-T-cell syncytia": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Coexpression of NF-kappa B and Sp1",
+        "answerability": 0.7153037786483765,
+        "ground_truth": {
+          "Coexpression": {
+            "bertscore": 0.7092532515525818,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What gene is co-expressed with Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9808575510978699,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the coexpression of NF-kappa B and Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "heterologous DC-T-cell syncytia",
+        "answerability": 0.6751049757003784,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 0.6689293384552002,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does coexpression of NF-kappa B and Sp1 occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DC-T-cell syncytia",
+        "answerability": 0.9041553735733032,
+        "ground_truth": {
+          "the heterologous DC-T-cell syncytia": {
+            "bertscore": 0.8879843354225159,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

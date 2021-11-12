@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Control of IL-5 production may be effective for the management of allergic diseases.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Control",
+        "IL-5 production",
+        "the management",
+        "allergic diseases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the best way to manage allergic diseases?",
+          "What may be effective for the management of allergic diseases?",
+          "Control of IL-5 production may be effective for what?",
+          "What is IL-5 used for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the best way to manage allergic diseases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control of IL-5 production",
+        "answerability": 0.9201865196228027,
+        "ground_truth": {
+          "Control": {
+            "bertscore": 0.7297771573066711,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What may be effective for the management of allergic diseases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Control of IL-5 production",
+        "answerability": 0.997556209564209,
+        "ground_truth": {
+          "IL-5 production": {
+            "bertscore": 0.7969432473182678,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Control of IL-5 production may be effective for what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the management of allergic diseases",
+        "answerability": 0.9820905923843384,
+        "ground_truth": {
+          "the management": {
+            "bertscore": 0.7554785013198853,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is IL-5 used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11353737115859985,
+        "ground_truth": {
+          "allergic diseases": {
+            "bertscore": 0.656865656375885,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Over a million FDG-PET studies have unequivocally identified abnormalities in glucose uptake as a hallmark of metastatic cancer in humans.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "a million"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many studies have identified abnormalities in glucose uptake as a hallmark of metastatic cancer"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Over a million FDG-PET studies",
+        "abnormalities",
+        "glucose uptake",
+        "a hallmark",
+        "metastatic cancer",
+        "humans"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many studies have identified abnormalities in glucose uptake as a hallmark of metastatic cancer",
+          "What has been identified in over a million FDG-PET studies?",
+          "What has been identified as a hallmark of metastatic cancer in humans?",
+          "What have over a million studies unequivocally identified abnormalities in glucose uptake as",
+          "What is the term for the abnormal glucose uptake in humans?",
+          "Over a million FDG-PET studies have unequivocally identified abnormalities in"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many studies have identified increased glucose uptake as a hallmark of metastatic cancer in humans": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Over a million",
+        "answerability": 0.8966005444526672,
+        "ground_truth": {
+          "a million": {
+            "bertscore": 0.8503451943397522,
+            "f1": 0.6666666666666666
+          },
+          "Over a million FDG-PET studies": {
+            "bertscore": 0.7529261708259583,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What has increased glucose uptake been attributed to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.025073349475860596,
+        "ground_truth": {
+          "a hallmark": {
+            "bertscore": 0.6889661550521851,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is increased glucose uptake a hallmark of in humans?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metastatic cancer",
+        "answerability": 0.9898304343223572,
+        "ground_truth": {
+          "metastatic cancer": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Over a million FDG-PET studies have unequivocally identified increased glucose up": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.027575314044952393,
+        "ground_truth": {
+          "humans": {
+            "bertscore": 0.7115350961685181,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

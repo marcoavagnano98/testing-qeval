@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "The composite motif binds a multi-protein hematopoietic-specific transcription factor complex which includes GATA-1 SCL/tal-1 E2A Lmo2 and Ldb-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SCL",
+        "E2A Lmo2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the transcription factor complex that binds GATA-1?",
+          "What is the name of the transcription factor complex that binds GATA-1 SCL/"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a multi-protein hematopoietic-specific transcription factor complex",
+        "GATA-1 SCL",
+        "tal-1 E2A Lmo2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the composite motif bind to?",
+          "What is the name of the transcription factor complex that binds to tal-1 E2",
+          "What is the name of the transcription factor complex that binds GATA-1 SCL?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does the TATA box bind?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0057697296142578125,
+        "ground_truth": {
+          "E boxes": {
+            "bertscore": 0.6752111911773682,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the TATA box do to myogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00017458200454711914,
+        "ground_truth": {
+          "blocks": {
+            "bertscore": 0.7165980935096741,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the TATA box block myogenesis through?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000277101993560791,
+        "ground_truth": {
+          "transcriptional repression": {
+            "bertscore": 0.6728653311729431,
+            "f1": 0
+          },
+          "muscle genes": {
+            "bertscore": 0.6640448570251465,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

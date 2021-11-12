@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "In contrast the binding activities of NF1 and Sp1 were not affected by ER.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "the binding activities",
+        "NF1",
+        "Sp1",
+        "ER"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of ER on binding activities of NF1 and Sp1?",
+          "What was not affected by ER?",
+          "What binding activity was not affected by ER?",
+          "What binding activity was not affected by ER?",
+          "What was not affected by NF1 binding?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of ER on binding activities of NF1 and Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44671308994293213,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628810882568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF1 and Sp1",
+        "answerability": 0.958786129951477,
+        "ground_truth": {
+          "the binding activities": {
+            "bertscore": 0.7016610503196716,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What binding activity was not affected by ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF1",
+        "answerability": 0.9823065996170044,
+        "ground_truth": {
+          "NF1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "Sp1": {
+            "bertscore": 0.8545187711715698,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by NF1 binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32203662395477295,
+        "ground_truth": {
+          "ER": {
+            "bertscore": 0.6925891637802124,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

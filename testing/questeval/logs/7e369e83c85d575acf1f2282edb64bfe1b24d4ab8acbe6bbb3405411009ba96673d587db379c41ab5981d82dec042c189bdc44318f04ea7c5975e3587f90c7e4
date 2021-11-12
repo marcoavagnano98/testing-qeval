@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Merlin protein might contribute to the initiation of metastasis of NSCLC.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NSCLC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cancer is Merlin protein associated with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Merlin protein",
+        "the initiation",
+        "metastasis",
+        "NSCLC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein might contribute to the initiation of metastasis of NSCLC?",
+          "What might Merlin protein contribute to?",
+          "What might Merlin protein contribute to the initiation of?",
+          "What type of cancer is Merlin protein associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cancer is Merlin protein associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16598880290985107,
+        "ground_truth": {
+          "NSCLC": {
+            "bertscore": 0.6961129307746887,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein might contribute to the initiation of metastasis of NSCLC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Merlin",
+        "answerability": 0.9994844794273376,
+        "ground_truth": {
+          "Merlin protein": {
+            "bertscore": 0.8349426984786987,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What might Merlin protein contribute to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "initiation of metastasis",
+        "answerability": 0.957300066947937,
+        "ground_truth": {
+          "the initiation": {
+            "bertscore": 0.7883771061897278,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What might Merlin protein contribute to the initiation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metastasis",
+        "answerability": 0.9934008717536926,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

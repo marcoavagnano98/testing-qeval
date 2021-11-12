@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "Authentic NFAT and NF-kappaB targets did not compete for the META(D+) binding factor(s).\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Authentic NFAT",
+        "NF-kappaB targets",
+        "the META(D+"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the only target that competed for the META(D+) binding factor?",
+          "What did not compete for the META(D+) binding factor?",
+          "What binding factor did Authentic NFAT and NF-kappaB not compete"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the only target that competed for the META(D+) binding factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3805478811264038,
+        "ground_truth": {
+          "Authentic NF-kappaB": {
+            "bertscore": 0.6416154503822327,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only NF-kappaB target that competed for the META": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.33488714694976807,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 0.6904803514480591,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not compete for the META(D+) binding factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Authentic NFAT and NF-kappaB targets",
+        "answerability": 0.9957224130630493,
+        "ground_truth": {
+          "targets": {
+            "bertscore": 0.7125805616378784,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What binding factor did NF-kappaB and Sp1 not compete for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "META(D+)",
+        "answerability": 0.647613525390625,
+        "ground_truth": {
+          "the META(D+": {
+            "bertscore": 0.8617794513702393,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

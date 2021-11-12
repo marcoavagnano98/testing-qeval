@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "Very low-dose irradiation (2 x 2 Gy) is a new effective and safe local treatment for follicular lymphoma.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many Gy of irradiation is used for follicular lymphom"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Very low-dose irradiation",
+        "(2 x 2 Gy",
+        "a new effective and safe local treatment",
+        "follicular lymphoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the new treatment for follicular lymphoma?",
+          "What is the dose of irradiation used for follicular lymphom",
+          "What is low dose irradiation?",
+          "What is the new treatment for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the basis for highly effective irradiation treatment in follicular lymph": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low-dose irradiation",
+        "answerability": 0.6389477252960205,
+        "ground_truth": {
+          "vivo p53 response": {
+            "bertscore": 0.7141943573951721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main reason for effective irradiation treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07717841863632202,
+        "ground_truth": {
+          "immune reaction": {
+            "bertscore": 0.696837842464447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the p53 response and immune reaction that underlie?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005759000778198242,
+        "ground_truth": {
+          "highly effective irradiation treatment": {
+            "bertscore": 0.6797324419021606,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cancer is highly effective irradiation treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34966641664505005,
+        "ground_truth": {
+          "follicular lymphoma": {
+            "bertscore": 0.6423134207725525,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

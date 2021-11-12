@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "The ATM-dependent activation of CHK2 by IR was defective in NBS cells but was restored by ectopic expression of wild-type NBS1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NBS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells had defective activation of CHK2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The ATM-dependent activation",
+        "CHK2",
+        "IR",
+        "NBS cells",
+        "ectopic expression",
+        "wild-type NBS1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was defective in NBS cells?",
+          "What protein was defective in NBS cells?",
+          "What was the ATM-dependent activation of CHK2 by?",
+          "What cells were defective in the ATM-dependent activation of CHK2?",
+          "What restored the ATM-dependent activation of CHK2?",
+          "What was the only cell that had the ability to activate CHK2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells had defective activation of CHK2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NBS cells",
+        "answerability": 0.9773540496826172,
+        "ground_truth": {
+          "NBS": {
+            "bertscore": 0.8663482666015625,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was defective in NBS cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ATM-dependent activation of CHK2 by IR",
+        "answerability": 0.9651532769203186,
+        "ground_truth": {
+          "The ATM-dependent activation": {
+            "bertscore": 0.838170051574707,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein was defective in NBS cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CHK2",
+        "answerability": 0.650460422039032,
+        "ground_truth": {
+          "CHK2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the ATM-dependent activation of CHK2 by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IR",
+        "answerability": 0.9890528917312622,
+        "ground_truth": {
+          "IR": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells were defective in the ATM-dependent activation of CHK2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NBS cells",
+        "answerability": 0.9560474157333374,
+        "ground_truth": {
+          "NBS cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What restored the ATM-dependent activation of CHK2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ectopic expression of wild-type NBS1",
+        "answerability": 0.9234589338302612,
+        "ground_truth": {
+          "ectopic expression": {
+            "bertscore": 0.8075972199440002,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What was the only cell that had the ability to activate CHK2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12091535329818726,
+        "ground_truth": {
+          "wild-type NBS1": {
+            "bertscore": 0.666012704372406,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

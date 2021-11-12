@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Recent reports suggest that plasminogen activator inhibitor-1 may contribute to tumour progression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Recent reports",
+        "plasminogen activator inhibitor-1",
+        "tumour progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that plasminogen activator inhibitor-1 may contribute to tumour progression?",
+          "What drug may contribute to tumour progression?",
+          "What do recent reports suggest plasminogen activator inhibitor-1 may contribute to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggests that elevated levels of plasminogen activator inhibitor-1 may contribute to tumour progression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Recent reports",
+        "answerability": 0.9911830425262451,
+        "ground_truth": {
+          "Recent reports": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may contribute to the progression of a tumour?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "plasminogen activator inhibitor-1",
+        "answerability": 0.9431953430175781,
+        "ground_truth": {
+          "elevated levels": {
+            "bertscore": 0.6320223212242126,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is PAI-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4244898557662964,
+        "ground_truth": {
+          "plasminogen activator inhibitor-1": {
+            "bertscore": 0.580619752407074,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the plasminogen activator inhibitor that may contribute to tumour progression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "plasminogen activator inhibitor-1",
+        "answerability": 0.6097403764724731,
+        "ground_truth": {
+          "PAI-1": {
+            "bertscore": 0.6875258684158325,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do recent reports suggest elevated levels of plasminogen activator inhibitor-1 may contribute to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumour progression",
+        "answerability": 0.9743453860282898,
+        "ground_truth": {
+          "tumour progression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

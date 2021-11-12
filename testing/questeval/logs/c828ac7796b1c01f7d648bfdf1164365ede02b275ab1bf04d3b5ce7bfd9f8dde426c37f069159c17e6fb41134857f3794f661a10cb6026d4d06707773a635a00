@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Interferon-alpha activates multiple STAT proteins and upregulates proliferation-associated IL-2Ralpha c-myc and pim-1 genes in normal T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "STAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of proteins are activated by interferon-alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Interferon-alpha",
+        "multiple STAT proteins",
+        "proliferation-associated IL-2Ralpha c-myc",
+        "pim-1 genes",
+        "normal T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activates multiple STAT proteins?",
+          "What does interferon-alpha activate?",
+          "What is the main regulator of STAT proteins?",
+          "What is the other gene that is upregulated by interferon-alpha?",
+          "Where does interferon-alpha activate STAT proteins?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein does interferon-alpha activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "STAT",
+        "answerability": 0.8273444771766663,
+        "ground_truth": {
+          "STAT": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What activates multiple STAT proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interferon-alpha",
+        "answerability": 0.9965716004371643,
+        "ground_truth": {
+          "Interferon-alpha": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does interferon-alpha activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "multiple STAT proteins",
+        "answerability": 0.9961082935333252,
+        "ground_truth": {
+          "multiple STAT proteins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does interferon-alpha upregulate in human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5420524477958679,
+        "ground_truth": {
+          "proliferation-associated IL-2Ralpha c-myc and pim-1 genes": {
+            "bertscore": 0.5599895715713501,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells is interferon-alpha active in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "normal T cells",
+        "answerability": 0.6923938989639282,
+        "ground_truth": {
+          "human T cells": {
+            "bertscore": 0.9325884580612183,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

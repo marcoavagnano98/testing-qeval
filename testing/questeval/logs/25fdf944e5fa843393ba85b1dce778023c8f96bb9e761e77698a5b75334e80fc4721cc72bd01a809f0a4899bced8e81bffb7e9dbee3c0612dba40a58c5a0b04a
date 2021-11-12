@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "The level of transcripts obtained by RT-PCR of the flagellar genes fliM salK (BAB2_0124) were decreased to approximately 1/3 to 2/3 of the control transcripts.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RT-PCR",
+        "approximately 1/3 to 2/3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What method was used to determine the level of the flagellar genes?",
+          "How much of the control transcripts were decreased?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The level",
+        "transcripts",
+        "RT-PCR",
+        "the flagellar genes",
+        "fliM salK (BAB2_0124",
+        "the control transcripts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was decreased by RT-PCR?",
+          "What was decreased by RT-PCR?",
+          "What method was used to determine the level of the flagellar genes?",
+          "What genes were RT-PCR used to determine the level of transcripts?",
+          "What flagellar gene was RT-PCR used to determine?",
+          "What was the level of the flagellar genes RT-PCR decreased to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was extracted from salKR to confirm its predicted transcripts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0027094483375549316,
+        "ground_truth": {
+          "RNA": {
+            "bertscore": 0.6859531402587891,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the RNA extracted from salKR confirm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007411837577819824,
+        "ground_truth": {
+          "the predicted transcripts": {
+            "bertscore": 0.6435705423355103,
+            "f1": 0
+          },
+          "the flanking genes": {
+            "bertscore": 0.6819123029708862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the flanking gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07915085554122925,
+        "ground_truth": {
+          "salKR": {
+            "bertscore": 0.6436722278594971,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Chromatin immunoprecipitation assays with anti-Rb targets histone H3 methylation and HP1 to promoters.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H3",
+        "HP1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What histone methylation does chromatin immunoprecipitation assays",
+          "What is the target of chromatin immunoprecipitation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "anti-Rb targets",
+        "histone H3 methylation",
+        "HP1",
+        "promoters"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does chromatin immunoprecipitation assays use?",
+          "What does chromatin immunoprecipitation assays target?",
+          "What is the target of chromatin immunoprecipitation?",
+          "What does chromatin immunoprecipitation target?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What histone does Rb target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0383760929107666,
+        "ground_truth": {
+          "H3": {
+            "bertscore": 0.6742187142372131,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the target of Rb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.055011630058288574,
+        "ground_truth": {
+          "HP1": {
+            "bertscore": 0.6744916439056396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What targets histone H3 methylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3349451422691345,
+        "ground_truth": {
+          "Rb": {
+            "bertscore": 0.6811808347702026,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Rb target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00900048017501831,
+        "ground_truth": {
+          "histone H3 methylation": {
+            "bertscore": 0.619353175163269,
+            "f1": 0
+          },
+          "promoters": {
+            "bertscore": 0.704927921295166,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

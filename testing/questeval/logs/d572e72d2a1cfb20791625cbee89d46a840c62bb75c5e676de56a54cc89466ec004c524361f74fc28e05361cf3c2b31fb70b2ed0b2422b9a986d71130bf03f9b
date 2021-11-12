@@ -1,0 +1,68 @@
+{
+  "type": "ref",
+  "text": "Nm23B. While hPLIC proteins are not ubiquitinated by HERC3 HERC5 plays an important role in ubiquitination of Nm23B.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Nm23B.",
+        "Nm23B."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the ubiquitination of hPLIC proteins?",
+          "What is the ubiquitination of hPLIC proteins?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "hPLIC proteins",
+        "HERC3 HERC5",
+        "an important role",
+        "ubiquitination"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is not ubiquitinated by HERC3?",
+          "What protein plays an important role in ubiquitination of Nm23B?",
+          "What role does HERC5 play in ubiquitination of Nm23B",
+          "What does HERC5 play an important role in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases the ubiquitination of a protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HERC5",
+        "answerability": 0.8800734877586365,
+        "ground_truth": {
+          "The HECT-type E3 ubiquitin ligase": {
+            "bertscore": 0.7178938388824463,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the HECT-type E3 ubiquitin ligase Nm": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1422768235206604,
+        "ground_truth": {
+          "the ubiquitination": {
+            "bertscore": 0.6471042037010193,
+            "f1": 0
+          },
+          "this protein": {
+            "bertscore": 0.6747967600822449,
+            "f1": 0
+          },
+          "its proteasomal degradation": {
+            "bertscore": 0.585703432559967,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

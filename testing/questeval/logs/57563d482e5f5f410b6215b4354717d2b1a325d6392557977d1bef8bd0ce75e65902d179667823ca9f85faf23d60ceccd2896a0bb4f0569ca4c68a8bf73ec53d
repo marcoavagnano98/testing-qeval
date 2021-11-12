@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Additionally we demonstrate that p105 and I kappa B alpha associate in vivo with a p50-p65 NF-kappa B dimer and that this association is dependent on p50 NF-kappa B dimers.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way do p105 and I kappa B alpha associate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "p105",
+        "I",
+        "vivo",
+        "a p50-p65 NF-kappa B dimer",
+        "this association",
+        "p50 NF-kappa B dimers"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the study show about p105 and I kappa B alpha?",
+          "What is the kinase that binds to I kappa B",
+          "What kappa B alpha is dependent on?",
+          "In what way do p105 and I kappa B alpha associate?",
+          "What do p105 and I kappa B alpha associate with?",
+          "What is dependent on p105 and I kappa B alpha?",
+          "What does p105 and I kappa B alpha associate with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does not necessarily correlate with transformation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002726912498474121,
+        "ground_truth": {
+          "vitro association": {
+            "bertscore": 0.6954088807106018,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does a nontransforming v-Rel mutant associate with in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07530635595321655,
+        "ground_truth": {
+          "p105": {
+            "bertscore": 0.6650344133377075,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mutant can not associate with p105 in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010360479354858398,
+        "ground_truth": {
+          "v-Rel": {
+            "bertscore": 0.6474550366401672,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does in vitro association with p105 not necessarily correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0014551877975463867,
+        "ground_truth": {
+          "transformation": {
+            "bertscore": 0.6985045075416565,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many v-Rel mutants can associate with p105?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.039277851581573486,
+        "ground_truth": {
+          "one nontransforming v-Rel mutant": {
+            "bertscore": 0.6894881129264832,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "In particular chlorambucil upregulated the steady-state mRNA expression of SFN/14-3-3sigma a gene involved in cell cycle progression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "particular chlorambucil",
+        "the steady-state mRNA expression",
+        "a gene",
+        "cell cycle progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What upregulated the steady-state mRNA expression of SFN/14-3-3s",
+          "What did chlorambucil upregulate?",
+          "What is involved in cell cycle progression?",
+          "What is the main function of chlorambucil?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cell cycle is chlorambucil involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05406922101974487,
+        "ground_truth": {
+          "G2/M": {
+            "bertscore": 0.6719781160354614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What upregulated the steady-state mRNA expression of SFN/14-3-3s": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chlorambucil",
+        "answerability": 0.9379755258560181,
+        "ground_truth": {
+          "particular chlorambucil": {
+            "bertscore": 0.9188221096992493,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did chlorambucil upregulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the steady-state mRNA expression of SFN/14-3-3sigma",
+        "answerability": 0.9448656439781189,
+        "ground_truth": {
+          "the steady-state mRNA expression": {
+            "bertscore": 0.8413677215576172,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is involved in G2/M cell cycle arrest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009983181953430176,
+        "ground_truth": {
+          "a gene": {
+            "bertscore": 0.6737379431724548,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the gene involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell cycle progression",
+        "answerability": 0.8697587251663208,
+        "ground_truth": {
+          "G2/M cell cycle arrest": {
+            "bertscore": 0.7597014904022217,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

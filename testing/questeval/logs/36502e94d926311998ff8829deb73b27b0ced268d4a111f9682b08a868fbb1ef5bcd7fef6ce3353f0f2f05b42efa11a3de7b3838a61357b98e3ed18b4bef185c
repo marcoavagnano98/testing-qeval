@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Thus we have identified a novel E2F6 target gene E2F6 is encoded by the same gene as the YY-1 protein which interacts with EZH2 and may regulate genes required for cell cycle progression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "YY-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the same gene as E2F6?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "a novel E2F6 target gene E2F6",
+        "the same gene",
+        "the YY-1 protein",
+        "EZH2",
+        "genes",
+        "cell cycle progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we discover about the E2F6 target gene?",
+          "What has been identified?",
+          "What is the E2F6 target gene encoded by?",
+          "What is the same gene as E2F6?",
+          "What protein does E2F6 interact with?",
+          "What does the YY-1 protein regulate?",
+          "What is the target gene for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the complex that interacts with EZH2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2844315767288208,
+        "ground_truth": {
+          "A novel repressive E2F6 complex": {
+            "bertscore": 0.5792902112007141,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the E2F6 complex containing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19592708349227905,
+        "ground_truth": {
+          "the polycomb group protein EPC1": {
+            "bertscore": 0.607771635055542,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein interacts with EPC1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01626574993133545,
+        "ground_truth": {
+          "EZH2": {
+            "bertscore": 0.6445820927619934,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How does the E2F6 complex interact with EZH2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulate genes required for cell cycle progression",
+        "answerability": 0.7903289198875427,
+        "ground_truth": {
+          "a proliferation-specific manner": {
+            "bertscore": 0.6891347765922546,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Mutations in the relevant NF-kappa B and AP-1binding sites eliminated these responses.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mutations",
+        "the relevant NF-kappa B and AP-1binding sites",
+        "these responses"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What eliminated the responses of NF-kappa B and AP-1?",
+          "What eliminated the responses of the cytokine receptor?",
+          "Mutations in NF-kappa B and AP-1 binding sites eliminated what?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What eliminated the responses of NF-kappa B and AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutations",
+        "answerability": 0.9998804926872253,
+        "ground_truth": {
+          "Mutations": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two binding sites eliminated the NF-kappa responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B and AP-1",
+        "answerability": 0.6891790628433228,
+        "ground_truth": {
+          "the relevant NF-kappa B": {
+            "bertscore": 0.8174264430999756,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What NF-kappa B mutation eliminated the NF-kappa B response": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutations in the relevant NF-kappa B and AP-1binding sites",
+        "answerability": 0.9761349558830261,
+        "ground_truth": {
+          "AP-1 binding sites": {
+            "bertscore": 0.8151775598526001,
+            "f1": 0.18181818181818182
+          }
+        }
+      }
+    },
+    "Mutations in the relevant NF-kappa B and AP-1 binding sites eliminated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39500701427459717,
+        "ground_truth": {
+          "these responses": {
+            "bertscore": 0.6748326420783997,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

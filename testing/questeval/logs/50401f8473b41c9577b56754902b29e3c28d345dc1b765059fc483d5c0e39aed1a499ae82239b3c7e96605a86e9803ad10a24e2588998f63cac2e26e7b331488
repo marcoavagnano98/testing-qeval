@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "Furthermore we found that neutrophils express an alternatively spliced variant of the pituitary transcription factor Pit-1 designated Pit-1b.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "neutrophils express"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the alternatively spliced variant of the pituitary transcription factor"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "neutrophils",
+        "an alternatively spliced variant",
+        "the pituitary transcription factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find that neutrophils express?",
+          "What cells express an alternatively spliced variant of the pituitary transcription",
+          "What do neutrophils express?",
+          "What do neutrophils express?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells express GH-N gene transcripts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2329239845275879,
+        "ground_truth": {
+          "Human neutrophils": {
+            "bertscore": 0.6453163623809814,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do human neutrophils express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.118075430393219,
+        "ground_truth": {
+          "GH-N gene transcripts": {
+            "bertscore": 0.6178920865058899,
+            "f1": 0
+          },
+          "the pituitary transcription factor": {
+            "bertscore": 0.6147722005844116,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

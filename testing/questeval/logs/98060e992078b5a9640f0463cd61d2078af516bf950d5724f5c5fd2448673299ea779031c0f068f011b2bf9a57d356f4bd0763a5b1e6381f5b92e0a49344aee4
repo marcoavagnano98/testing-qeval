@@ -1,0 +1,108 @@
+{
+  "type": "ref",
+  "text": "Two binding proteins are detected in K562 nuclear extracts while only one is found in extracts from HeLa cells. Possible mechanisms by which these proteins may regulate transcription of the epsilon-globin-encoding gene in erythroid and non-erythroid cells are discussed.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Two",
+        "only one",
+        "HeLa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many binding proteins are found in K562 nuclear extracts?",
+          "How many binding proteins are found in extracts from HeLa cells?",
+          "What type of cells contains only one binding protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Two binding proteins",
+        "K562 nuclear extracts",
+        "extracts",
+        "HeLa cells",
+        "Possible mechanisms",
+        "these proteins",
+        "transcription",
+        "the epsilon-globin-encoding gene",
+        "erythroid and non-erythroid cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many binding proteins are found in K562 nuclear extracts?",
+          "Where are two binding proteins detected?",
+          "What is the only protein that has two binding proteins?",
+          "Where is the only binding protein found?",
+          "What is discussed about the two binding proteins in K562 nuclear extracts?",
+          "What may regulate transcription of the epsilon-globin-encoding gene",
+          "What do the proteins in K562 regulate?",
+          "What transcriptional factor is regulated by the K562 protein?",
+          "Where are the two binding proteins found?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What are the possible mechanisms by which these proteins may regulate transcription of the epsil": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4660640358924866,
+        "ground_truth": {
+          "Possible mechanisms": {
+            "bertscore": 0.679538369178772,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may regulate transcription of the epsilon-globin-encoding gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Two binding proteins",
+        "answerability": 0.8749260902404785,
+        "ground_truth": {
+          "these proteins": {
+            "bertscore": 0.8328797221183777,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What do epsilon-globin-encoding genes regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription",
+        "answerability": 0.5398834943771362,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What transcriptional process are the eukaryotic proteins thought to regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription",
+        "answerability": 0.9243499636650085,
+        "ground_truth": {
+          "the epsilon-globin-encoding gene": {
+            "bertscore": 0.6610446572303772,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where are the epsilon-globin-encoding genes found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46836984157562256,
+        "ground_truth": {
+          "erythroid and non-erythroid cells": {
+            "bertscore": 0.6156861186027527,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

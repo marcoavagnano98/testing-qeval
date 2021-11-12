@@ -1,0 +1,60 @@
+{
+  "type": "hyp",
+  "text": "Expression of the Bcl-3 proto-oncogene suppresses p53 activation and suppresses p53-dependent transcriptional activity.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "the Bcl-3 proto-oncogene",
+        "p53 activation",
+        "suppresses",
+        "p53-dependent transcriptional activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppresses p53-dependent transcriptional activity?",
+          "What suppresses p53 activation?",
+          "What does the Bcl-3 proto-oncogene suppress?",
+          "Does the Bcl-3 proto-oncogene suppress or suppress p53 activ",
+          "What does the Bcl-3 proto-oncogene suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppresses p53 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Bcl-3",
+        "answerability": 0.9746515154838562,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.6974593997001648,
+            "f1": 0
+          },
+          "the Bcl-3 proto-oncogene": {
+            "bertscore": 0.7664217352867126,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the Bcl-3 proto-oncogene suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53 activation",
+        "answerability": 0.9899855256080627,
+        "ground_truth": {
+          "p53 activation": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

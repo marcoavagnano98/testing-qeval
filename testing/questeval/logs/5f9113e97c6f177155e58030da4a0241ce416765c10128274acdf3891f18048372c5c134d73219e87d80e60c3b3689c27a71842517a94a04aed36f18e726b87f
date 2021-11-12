@@ -1,0 +1,128 @@
+{
+  "type": "ref",
+  "text": "Here we have analyzed the mechanisms involved in CTLA-4-mediated inhibition of T cell activation of naive CD4+ T cells using Ab cross-linking. CTLA-4 ligation inhibited CD3/CD28-induced IL-2 mRNA accumulation by inhibiting IL-2 transcription which appears to be mediated in part through decreasing NF-AT accumulation in the nuclei.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ab",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cross-linking technique used to analyze the inhibition of T cell",
+          "What transcription factor is involved in the inhibition of T cell activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "the mechanisms",
+        "CTLA-4-mediated inhibition",
+        "T cell activation",
+        "naive CD4",
+        "T cells",
+        "CTLA-4 ligation",
+        "CD3/CD28-induced IL-2 mRNA accumulation",
+        "IL-2 transcription",
+        "part",
+        "NF-AT accumulation",
+        "the nuclei"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors do to study the mechanisms involved in inhibition of T cell activation?",
+          "What did the authors analyze?",
+          "What is the mechanism involved in the activation of T cells?",
+          "What did CTLA-4 inhibit?",
+          "What type of T cells are inhibited by CTLA-4?",
+          "What type of cells are activated by CTLA-4?",
+          "What inhibited IL-2 transcription?",
+          "What did CTLA-4 ligation inhibit?",
+          "What does CTLA-4 inhibit?",
+          "How is IL-2 transcription mediated?",
+          "What is the mechanism that inhibits IL-2 transcription?",
+          "Where does NF-AT accumulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA accumulation was inhibited by CTLA-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.958557665348053,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited CD3/CD28-induced IL-2 mRNA accumulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CTLA-4 ligation",
+        "answerability": 0.9835817217826843,
+        "ground_truth": {
+          "CTLA-4 ligation": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did CTLA-4 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 transcription",
+        "answerability": 0.9603587985038757,
+        "ground_truth": {
+          "CD3/CD28-induced IL-2 mRNA accumulation": {
+            "bertscore": 0.8155356049537659,
+            "f1": 0.3333333333333333
+          },
+          "IL-2 transcription": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How is IL-2 accumulation mediated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "through decreasing NF-AT accumulation in the nuclei",
+        "answerability": 0.7428298592567444,
+        "ground_truth": {
+          "part": {
+            "bertscore": 0.620751678943634,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did CTLA-4 inhibit in the nuclei?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-AT",
+        "answerability": 0.8422651290893555,
+        "ground_truth": {
+          "NF-AT accumulation": {
+            "bertscore": 0.8411264419555664,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where does NF-AT accumulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43405354022979736,
+        "ground_truth": {
+          "the nuclei": {
+            "bertscore": 0.6346561908721924,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

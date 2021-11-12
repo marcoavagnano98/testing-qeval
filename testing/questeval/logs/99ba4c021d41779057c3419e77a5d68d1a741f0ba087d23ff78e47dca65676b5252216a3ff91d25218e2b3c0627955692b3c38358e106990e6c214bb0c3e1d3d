@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "We evaluated the binding activity of the CD28RE/AP-1 sequence to the IL-2 promoter in Jurkat T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "Jurkat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter did the CD28RE/AP-1 sequence bind to?",
+          "What type of T cells were tested for binding activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the binding activity",
+        "the CD28RE/AP-1 sequence",
+        "the IL-2 promoter",
+        "Jurkat T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the binding activity of the CD28RE/AP-1 sequence to the IL-2",
+          "What did we evaluate in Jurkat T cells?",
+          "What was used to evaluate the binding activity of IL-2?",
+          "What did the CD28RE/AP-1 sequence binding activity test?",
+          "What type of cells were tested for binding activity?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter is being studied for binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28RE/AP-1",
+        "answerability": 0.9553436040878296,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.8152089715003967,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is evaluated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binding activity",
+        "answerability": 0.8091791868209839,
+        "ground_truth": {
+          "the current study binding activity": {
+            "bertscore": 0.8536726832389832,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is binding activity evaluated to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 promoter",
+        "answerability": 0.9191266894340515,
+        "ground_truth": {
+          "the CD28RE/AP-1 sequence": {
+            "bertscore": 0.7519039511680603,
+            "f1": 0
+          },
+          "the IL-2 promoter": {
+            "bertscore": 0.9437438249588013,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

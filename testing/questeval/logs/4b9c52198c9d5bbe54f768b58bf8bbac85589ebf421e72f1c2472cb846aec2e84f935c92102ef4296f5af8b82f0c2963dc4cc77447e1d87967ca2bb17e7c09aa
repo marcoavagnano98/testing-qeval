@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the results obtained with TNF alpha proved that NF-kappa B activation was not required for neuroblastoma differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the molecule that was used to test the cytokine response"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the results",
+        "TNF alpha",
+        "NF-kappa B activation",
+        "neuroblastoma differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What proved that NF-kappa B activation was not required for neuroblasto",
+          "What was used to prove that NF-kappa B activation was not required for",
+          "What was not required for neuroblastoma differentiation?",
+          "What did the results obtained with TNF alpha prove not required?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was not required for neuroblastoma cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9365466237068176,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "retinoic acid": {
+            "bertscore": 0.6469433307647705,
+            "f1": 0
+          },
+          "NF-kappa B activation": {
+            "bertscore": 0.8183512687683105,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did retinoic acid not induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015017449855804443,
+        "ground_truth": {
+          "morphological differentiation": {
+            "bertscore": 0.6790771484375,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did retinoic acid not induce morphological differentiation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04583919048309326,
+        "ground_truth": {
+          "all the neuroblastoma cell lines": {
+            "bertscore": 0.6254526376724243,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What study did not require NF-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neuroblastoma differentiation",
+        "answerability": 0.8675827383995056,
+        "ground_truth": {
+          "the present study": {
+            "bertscore": 0.6908845901489258,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the retinoic acid in the present study not require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.026976168155670166,
+        "ground_truth": {
+          "neuroblastoma cell differentiation": {
+            "bertscore": 0.646192729473114,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

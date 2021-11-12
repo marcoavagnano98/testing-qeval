@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": "Specifically Foxp3 physically interacts with RORgammat and this interaction inhibits RORgammat function\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RORgammat",
+        "RORgammat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 physically interact with?",
+          "What does Foxp3 physically interact with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RORgammat",
+        "this interaction",
+        "RORgammat function"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Foxp3 physically interact with?",
+          "What inhibits RORgammat function?",
+          "What does Foxp3 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Foxp3 physically interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RORgammat",
+        "answerability": 0.989297091960907,
+        "ground_truth": {
+          "RORgammat": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "TGF": {
+            "bertscore": 0.7476813793182373,
+            "f1": 0
+          },
+          "TGF-beta signaling": {
+            "bertscore": 0.6865283250808716,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What requires a function in TGF-beta signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0055310726165771484,
+        "ground_truth": {
+          "this interaction": {
+            "bertscore": 0.710283637046814,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the interaction between Foxp3 and RORgammat require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibits RORgammat function",
+        "answerability": 0.8133721351623535,
+        "ground_truth": {
+          "a function": {
+            "bertscore": 0.6216986179351807,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the current status of the interaction between Foxp3 and RORgammat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibits",
+        "answerability": 0.9985579252243042,
+        "ground_truth": {
+          "(unpublished data": {
+            "bertscore": 0.6128883361816406,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

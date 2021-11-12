@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "The latent phases of both HIV-1 and HIV-2 infection have not been shown to be disrupted by T-cell activation a process that requires host cell transcription factors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1",
+        "HIV-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the latent phase of HIV-2 infection?",
+          "What is the name of the process that requires host cell transcription factors?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The latent phases",
+        "both HIV-1 and HIV-2 infection",
+        "T-cell activation",
+        "host cell transcription factors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phases of HIV-1 and HIV-2 infection have not been disrupted by T-cell",
+          "What are the latent phases of?",
+          "What is the process that requires host cell transcription factors?",
+          "What does T-cell activation require?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the latent phase of HIV-2 infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02708423137664795,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.6515464186668396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the second most common type of HIV infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08137357234954834,
+        "ground_truth": {
+          "HIV-2": {
+            "bertscore": 0.6565203070640564,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is disrupted by T-cell activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010681092739105225,
+        "ground_truth": {
+          "The latent phases": {
+            "bertscore": 0.6622390151023865,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the latent phases of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 and HIV-2 infection",
+        "answerability": 0.9763410091400146,
+        "ground_truth": {
+          "both HIV-1 and HIV-2 infection": {
+            "bertscore": 0.9492663741111755,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What is the process that disrupts the latent phases of both HIV-1 and HIV-2 infection": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell activation",
+        "answerability": 0.5381885766983032,
+        "ground_truth": {
+          "T-cell activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does T-cell activation require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "host cell transcription factors",
+        "answerability": 0.866685152053833,
+        "ground_truth": {
+          "host cell transcription factors": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

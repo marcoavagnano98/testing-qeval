@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "However DCs lack Sp1 which may explain the failure of HIV-1 to replicate in purified DCs.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What virus does DCs lack Sp1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DCs",
+        "Sp1",
+        "the failure",
+        "HIV-1",
+        "purified DCs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells do not have Sp1?",
+          "What gene is missing from DCs?",
+          "What may be the reason for HIV-1 not reproducing in purified DCs?",
+          "What virus does DCs lack Sp1?",
+          "What type of cells do DCs lack Sp1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What virus does DCs lack Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.9985969662666321,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells do not have Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DCs",
+        "answerability": 0.9205789566040039,
+        "ground_truth": {
+          "DCs": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene is missing from DCs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1",
+        "answerability": 0.9970235228538513,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may be the reason for HIV-1 not reproducing in purified DCs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1",
+        "answerability": 0.9947333335876465,
+        "ground_truth": {
+          "the failure": {
+            "bertscore": 0.6887489557266235,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells do DCs lack Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03321105241775513,
+        "ground_truth": {
+          "purified DCs": {
+            "bertscore": 0.7009013891220093,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

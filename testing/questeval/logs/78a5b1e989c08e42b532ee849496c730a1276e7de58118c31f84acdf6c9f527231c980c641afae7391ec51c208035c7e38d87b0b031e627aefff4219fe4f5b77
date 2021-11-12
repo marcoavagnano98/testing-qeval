@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Furthermore cyclosporin A which blocked TNF alpha production induced by PKC strongly inhibited IL-2R alpha and NF.kappa B activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was blocked by cyclosporin A?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF alpha production",
+        "PKC",
+        "IL-2R alpha and NF.kappa B activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did cyclosporin A block?",
+          "What inhibited IL-2R alpha and NF.kappa B activ",
+          "What did cyclosporin A inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug blocked the synergistic induction of IL-8 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10280245542526245,
+        "ground_truth": {
+          "cyclosporin A": {
+            "bertscore": 0.6043254137039185,
+            "f1": 0
+          },
+          "not rapamycin": {
+            "bertscore": 0.6436270475387573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did cyclosporin A block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF alpha production",
+        "answerability": 0.9000701308250427,
+        "ground_truth": {
+          "the synergistic induction": {
+            "bertscore": 0.6634164452552795,
+            "f1": 0
+          },
+          "anti-CD3 and anti-CD28 costimulation": {
+            "bertscore": 0.7017359733581543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did rapamycin block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010703206062316895,
+        "ground_truth": {
+          "IL-8 expression": {
+            "bertscore": 0.6406468749046326,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

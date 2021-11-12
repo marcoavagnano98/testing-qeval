@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "We further show that Nmi interacts with all STATs except STAT1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Nmi"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Nmi interact with other than STATs?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "Nmi",
+        "all STATs",
+        "STAT1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the study show about Nmi?",
+          "What does Nmi interact with other than STATs?",
+          "What does Nmi interact with?",
+          "What is the only STAT that Nmi interacts with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Nmi interact with other than Stat2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5499033331871033,
+        "ground_truth": {
+          "Nmi": {
+            "bertscore": 0.7121034264564514,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study show about Nmi?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interacts with all STATs except STAT1",
+        "answerability": 0.6886535882949829,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5413683652877808,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Nmi interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "all STATs except STAT1",
+        "answerability": 0.9133924245834351,
+        "ground_truth": {
+          "all STATs": {
+            "bertscore": 0.8764014840126038,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

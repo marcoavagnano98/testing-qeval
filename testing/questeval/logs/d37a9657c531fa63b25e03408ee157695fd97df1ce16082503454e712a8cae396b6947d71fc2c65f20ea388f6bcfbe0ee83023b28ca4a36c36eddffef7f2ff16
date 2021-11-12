@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "UV irradiation and H2O2 treatment of T lymphocytes induce protein tyrosine phosphorylation and Ca2 \u2047 n mobilization.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "UV irradiation",
+        "H2O2 treatment",
+        "protein tyrosine phosphorylation and Ca2 \u2047 n mobilization"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one way that T lymphocytes are treated?",
+          "What is one way that T lymphocytes are induced to phosphorylate?",
+          "What do UV irradiation and H2O2 treatment of T lymphocytes"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one way that T lymphocytes are treated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "UV irradiation",
+        "answerability": 0.6993896961212158,
+        "ground_truth": {
+          "UV irradiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main cause of T lymphocytes' protein tyrosine phospho": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5553567409515381,
+        "ground_truth": {
+          "H2O2 treatment": {
+            "bertscore": 0.6251619458198547,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does UV irradiation and H2O2 treatment of T lymphocytes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11780065298080444,
+        "ground_truth": {
+          "protein tyrosine phosphorylation": {
+            "bertscore": 0.5888161063194275,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

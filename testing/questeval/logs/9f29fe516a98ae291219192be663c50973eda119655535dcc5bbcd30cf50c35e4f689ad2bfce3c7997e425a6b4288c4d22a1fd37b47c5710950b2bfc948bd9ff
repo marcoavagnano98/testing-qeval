@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Although polyclonal activation of B cells in vitro invariably decreased BCL-6 MRNA expression activated B cells from human germinal centers expressed BCL-6 mRNA at levels comparable to the levels in restingB cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BCL-6 MRNA",
+        "BCL-6 mRNA",
+        "restingB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did polyclonal activation of B cells in vitro decrease?",
+          "What did polyclonal activation of B cells in vitro decrease?",
+          "What type of cells expressed BCL-6 at levels comparable to those in the rat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "polyclonal activation",
+        "B cells",
+        "BCL-6 MRNA expression activated B cells",
+        "human germinal centers",
+        "BCL-6 mRNA",
+        "levels",
+        "the levels",
+        "restingB cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What decreased BCL-6 MRNA expression in vitro?",
+          "What cells expressed BCL-6 at levels comparable to those in restingB cells?",
+          "What did polyclonal activation of B cells in vitro decrease?",
+          "Where did B cells express BCL-6 mRNA?",
+          "What did polyclonal activation of B cells in vitro decrease?",
+          "What did polyclonal activation of B cells in vitro decrease BCL-6 M",
+          "What did B cells from human germinal centers express at levels comparable to?",
+          "What cells expressed BCL-6 at levels comparable to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did polyclonal activation of B cells in vitro decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BCL-6 MRNA expression",
+        "answerability": 0.9982889294624329,
+        "ground_truth": {
+          "BCL-6 MRNA": {
+            "bertscore": 0.8851195573806763,
+            "f1": 0.8
+          },
+          "BCL-6 mRNA": {
+            "bertscore": 0.8901216983795166,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What decreased BCL-6 expression in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "polyclonal activation",
+        "answerability": 0.9496155977249146,
+        "ground_truth": {
+          "polyclonal activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells expressed BCL-6 at levels comparable to those in resting B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cells from human germinal centers",
+        "answerability": 0.7910575866699219,
+        "ground_truth": {
+          "B cells": {
+            "bertscore": 0.8003935217857361,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did polyclonal activation of B cells in vitro invariably decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BCL-6 MRNA expression",
+        "answerability": 0.9986198544502258,
+        "ground_truth": {
+          "BCL-6 MRNA expression activated B cells": {
+            "bertscore": 0.9207332730293274,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where did B cells express BCL-6 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human germinal centers",
+        "answerability": 0.9041718244552612,
+        "ground_truth": {
+          "human germinal centers": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did polyclonal activation of B cells in vitro decrease BCL-6 M": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6195242404937744,
+        "ground_truth": {
+          "levels": {
+            "bertscore": 0.7088971138000488,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did B cells from human germinal centers express at levels comparable to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BCL-6 mRNA",
+        "answerability": 0.9246010780334473,
+        "ground_truth": {
+          "the levels": {
+            "bertscore": 0.6652215123176575,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

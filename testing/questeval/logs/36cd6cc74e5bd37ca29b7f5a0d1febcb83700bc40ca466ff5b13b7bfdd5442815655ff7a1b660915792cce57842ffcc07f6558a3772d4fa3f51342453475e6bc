@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "The interaction caused reduced c-myc expression and dephosphorylation of Rb.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was dephosphorylated by c-myc?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The interaction",
+        "reduced c-myc expression",
+        "dephosphorylation",
+        "Rb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused reduced c-myc expression and dephosphorylation of Rb?",
+          "What did the interaction of c-myc and rb cause?",
+          "What did the interaction cause?",
+          "What protein was dephosphorylated by c-myc?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the human c-myc protooncogene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005144000053405762,
+        "ground_truth": {
+          "Myc": {
+            "bertscore": 0.6602743864059448,
+            "f1": 0
+          },
+          "The product": {
+            "bertscore": 0.6583802700042725,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Myc?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013710498809814453,
+        "ground_truth": {
+          "the human c-myc protooncogene": {
+            "bertscore": 0.6002547740936279,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the product of the human c-myc protooncogene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007473349571228027,
+        "ground_truth": {
+          "a sequence-specific DNA binding protein": {
+            "bertscore": 0.6292746067047119,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

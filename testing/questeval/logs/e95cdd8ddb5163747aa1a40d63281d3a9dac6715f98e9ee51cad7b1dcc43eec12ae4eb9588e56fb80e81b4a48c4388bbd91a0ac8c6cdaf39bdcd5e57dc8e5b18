@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Consistent with reduced levels of Oct-1 DNA binding activity in the Rb-transformed cell lines interleukin 8 expression is higher in these cell lines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transformed cell line has higher levels of interleukin 8?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "reduced levels",
+        "DNA binding activity",
+        "the Rb-transformed cell lines",
+        "8 expression",
+        "these cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of the Oct-1 binding activity on interleukin 8 expression?",
+          "What is higher in the Rb-transformed cell lines?",
+          "What is the highest level of interleukin 8 expression?",
+          "What is higher in the Rb-transformed cell lines?",
+          "What is the highest level of interleukin 8 expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transformed cell line has higher levels of interleukin 8?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rb",
+        "answerability": 0.8861972689628601,
+        "ground_truth": {
+          "Rb": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of the Oct-1 binding activity on interleukin 8 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "higher",
+        "answerability": 0.9807815551757812,
+        "ground_truth": {
+          "reduced levels": {
+            "bertscore": 0.8143763542175293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is higher in the Rb-transformed cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin 8 expression",
+        "answerability": 0.9313557147979736,
+        "ground_truth": {
+          "DNA binding activity": {
+            "bertscore": 0.7437446713447571,
+            "f1": 0
+          },
+          "8 expression": {
+            "bertscore": 0.7463057637214661,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the highest level of interleukin 8 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24485450983047485,
+        "ground_truth": {
+          "the Rb-transformed cell lines": {
+            "bertscore": 0.6143385171890259,
+            "f1": 0
+          },
+          "these cell lines": {
+            "bertscore": 0.6779361367225647,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

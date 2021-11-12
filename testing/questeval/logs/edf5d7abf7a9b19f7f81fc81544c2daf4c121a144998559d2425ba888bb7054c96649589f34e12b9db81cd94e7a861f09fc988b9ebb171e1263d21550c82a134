@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "Within this region we define a minimal promoter (-62 to +54) that displays erythroid-specific activity and contains two DNA binding sites.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many DNA binding sites does the minimal promoter contain?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this region",
+        "we",
+        "a minimal promoter",
+        "erythroid-specific activity",
+        "two DNA binding sites"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What region of the genome contains two DNA binding sites?",
+          "What is the minimal promoter?",
+          "What is the region that displays erythroid-specific activity?",
+          "What does the minimal promoter display?",
+          "What does the minimal promoter contain?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What region of the genome is characterized by a minimal promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid-specific",
+        "answerability": 0.9768858551979065,
+        "ground_truth": {
+          "this region": {
+            "bertscore": 0.7063961625099182,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the minimal promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "-62 to +54",
+        "answerability": 0.9904637336730957,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6566964387893677,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the -62 to +54 region of the RNA-coding gene display?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid-specific activity",
+        "answerability": 0.9585164189338684,
+        "ground_truth": {
+          "a minimal promoter": {
+            "bertscore": 0.7157870531082153,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the minimal promoter display?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid-specific activity",
+        "answerability": 0.9971200227737427,
+        "ground_truth": {
+          "cell-specific activity": {
+            "bertscore": 0.8357289433479309,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

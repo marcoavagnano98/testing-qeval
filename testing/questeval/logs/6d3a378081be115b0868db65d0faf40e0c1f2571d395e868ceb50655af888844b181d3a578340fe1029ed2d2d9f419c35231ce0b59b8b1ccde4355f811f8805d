@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Tumor necrosis factor-alpha (TNF-alpha) is a pleiotropic cytokine that controls inflammatory processes by suppressing the production of proinflammatory cytokines which are known to be transcriptionally controlled by NF-kappaB.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "NF-kappaB."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytokine that controls inflammation?",
+          "What is the transcriptionally controlled part of tumor necrosis factor-alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tumor necrosis factor-alpha",
+        "(TNF-alpha",
+        "a pleiotropic cytokine",
+        "inflammatory processes",
+        "the production",
+        "proinflammatory cytokines",
+        "NF-kappaB."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytokine that controls inflammation?",
+          "What is the pleiotropic cytokine that controls inflammation?",
+          "What is tumor necrosis factor-alpha?",
+          "What does TNF-alpha control?",
+          "What does TNF-alpha suppress?",
+          "What does TNF-alpha suppress?",
+          "What is the transcriptionally controlled part of tumor necrosis factor-alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the key mediator of septic shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005043745040893555,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is an important mediator of septic shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008223652839660645,
+        "ground_truth": {
+          "TNF-alpha": {
+            "bertscore": 0.6100006699562073,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tumor necrosis factor-alpha",
+        "answerability": 0.9870671629905701,
+        "ground_truth": {
+          "an important mediator": {
+            "bertscore": 0.6355488300323486,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of death in a septic system?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00012874603271484375,
+        "ground_truth": {
+          "septic shock": {
+            "bertscore": 0.6786140203475952,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "Finally we demonstrated that cisplatin provoked a time- and dose-dependent decrease of HUVEC tube formation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "cisplatin",
+        "a time- and dose-dependent decrease",
+        "HUVEC tube formation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find about cisplatin?",
+          "What drug caused a time- and dose-dependent decrease in HUVEC tube formation?",
+          "What did the study show about cisplatin?",
+          "What did the study show was decreased by cisplatin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suppressed HUVEC tube formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cisplatin",
+        "answerability": 0.8815821409225464,
+        "ground_truth": {
+          "Moreover TKI-31": {
+            "bertscore": 0.6277432441711426,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TKI-31 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006497502326965332,
+        "ground_truth": {
+          "dose-dependently suppressed HUVEC tube formation": {
+            "bertscore": 0.6312208771705627,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

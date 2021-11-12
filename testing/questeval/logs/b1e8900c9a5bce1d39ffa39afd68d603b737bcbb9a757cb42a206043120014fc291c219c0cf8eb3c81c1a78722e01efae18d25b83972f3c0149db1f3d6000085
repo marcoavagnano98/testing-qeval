@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The effector phase of cytotoxic T cell responses and cytotoxic T cell responses are inhibited even by a partial depletion of the intracellular GSH pool.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The effector phase",
+        "cytotoxic T cell responses",
+        "cytotoxic T cell responses",
+        "a partial depletion",
+        "the intracellular GSH pool"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phase of cytotoxic T cell responses is inhibited even by partial depletion",
+          "What is the effector phase of?",
+          "What is the effector phase of?",
+          "What is the only way to inhibit the effector phase of cytotoxic T cells?",
+          "What is depleted in the effector phase of cytotoxic T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phase of cytotoxic T cell responses is inhibited even by partial depletion": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effector",
+        "answerability": 0.908076286315918,
+        "ground_truth": {
+          "The effector phase": {
+            "bertscore": 0.821731448173523,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the effector phase of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytotoxic T cell responses",
+        "answerability": 0.9913771152496338,
+        "ground_truth": {
+          "cytotoxic T cell responses": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is inhibited even by partial depletion of the intracellular GSH pool?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The effector phase of cytotoxic T cell responses",
+        "answerability": 0.9741231203079224,
+        "ground_truth": {
+          "IL-2-dependent functions": {
+            "bertscore": 0.7170578241348267,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effector phase of cytotoxic T cell responses and IL-2-dependent": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3866899609565735,
+        "ground_truth": {
+          "a partial depletion": {
+            "bertscore": 0.6940790414810181,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is depleted in the effector phase of cytotoxic T cell responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6006324291229248,
+        "ground_truth": {
+          "the intracellular GSH pool": {
+            "bertscore": 0.6372817158699036,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

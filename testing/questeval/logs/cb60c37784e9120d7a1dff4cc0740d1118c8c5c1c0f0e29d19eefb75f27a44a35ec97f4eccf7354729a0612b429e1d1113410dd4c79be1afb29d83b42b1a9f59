@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "The v-Src-transformed MEFs deficient in SWAP-70 were unable to grow in soft agar while those expressing SWAP70 readily formed colonies suggesting that SWAP-70 is required for anchorage independent growth of v-Src transformed MEFs.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "v-Src",
+        "v-Src"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transformed MEFs were unable to grow in soft agar?",
+          "What transformed MEFs were unable to grow in soft agar?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "soft agar",
+        "SWAP70",
+        "readily formed colonies",
+        "anchorage independent growth",
+        "v-Src transformed MEFs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the only medium that allowed v-Src-transformed MEFs",
+          "What is required for anchorage independent growth of v-Src transformed MEFs",
+          "What did the MEFs lacking SWAP-70 have?",
+          "What is SWAP-70 required for?",
+          "What is required for anchorage independent growth of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for oncogenic transformation in mouse embryo fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SWAP-70",
+        "answerability": 0.684867262840271,
+        "ground_truth": {
+          "v-Src": {
+            "bertscore": 0.6513800024986267,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of embryo fibroblasts is SWAP-70 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.028565704822540283,
+        "ground_truth": {
+          "mouse": {
+            "bertscore": 0.6964259743690491,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for oncogenic transformation by v-Src in mouse embryo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SWAP-70",
+        "answerability": 0.8776360750198364,
+        "ground_truth": {
+          "SWAP-70": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is SWAP-70 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anchorage independent growth",
+        "answerability": 0.9650963544845581,
+        "ground_truth": {
+          "oncogenic transformation": {
+            "bertscore": 0.7510167956352234,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is SWAP-70 required for oncogenic transformation by v-Src": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4869082570075989,
+        "ground_truth": {
+          "mouse embryo fibroblasts": {
+            "bertscore": 0.6510852575302124,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

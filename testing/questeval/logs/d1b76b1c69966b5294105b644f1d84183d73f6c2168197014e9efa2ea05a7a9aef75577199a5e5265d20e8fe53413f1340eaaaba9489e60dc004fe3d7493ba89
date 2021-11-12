@@ -1,0 +1,144 @@
+{
+  "type": "ref",
+  "text": "E3 a hematopoietic-specific transcript directly regulated by the retinoic acid receptor alpha.\\nRetinoic acid (RA)-induced maturation mediated by the retinoic acid receptor alpha (RAR alpha) has been implicated in myeloid development.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E3",
+        "alpha.\\nRetinoic",
+        "RA)-induced"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the hematopoietic-specific transcript?",
+          "What is the name of the retinoic acid receptor?",
+          "What is the regulated transcription of retinoic acid?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a hematopoietic-specific transcript",
+        "the retinoic acid receptor",
+        "alpha.\\nRetinoic acid",
+        "(RA)-induced maturation",
+        "the retinoic acid receptor alpha",
+        "RAR alpha",
+        "myeloid development"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is E3?",
+          "What is the regulated transcriptional process of E3?",
+          "What is the name of the retinoic acid receptor?",
+          "What is involved in myeloid development?",
+          "What is the regulated transcript of E3?",
+          "What is the name of the retinoic acid receptor that regulates E3?",
+          "What is the role of retinoic acid in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the hematopoietic-specific transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E3",
+        "answerability": 0.916344940662384,
+        "ground_truth": {
+          "E3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is RA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Retinoic acid",
+        "answerability": 0.7651410698890686,
+        "ground_truth": {
+          "nRetinoic": {
+            "bertscore": 0.6658493876457214,
+            "f1": 0
+          },
+          "\u2047 nRetinoic acid": {
+            "bertscore": 0.8015196919441223,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the regulated transcription of retinoic acid?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hematopoietic",
+        "answerability": 0.6628018021583557,
+        "ground_truth": {
+          "RA)-induced": {
+            "bertscore": 0.6712848544120789,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is E3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a hematopoietic-specific transcript",
+        "answerability": 0.9853046536445618,
+        "ground_truth": {
+          "a hematopoietic-specific transcript": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the regulated transcript of E3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hematopoietic-specific",
+        "answerability": 0.9596982002258301,
+        "ground_truth": {
+          "the retinoic acid receptor alpha": {
+            "bertscore": 0.6598766446113586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is implicated in myeloid development?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RA",
+        "answerability": 0.899419367313385,
+        "ground_truth": {
+          "RA)-induced maturation": {
+            "bertscore": 0.6679160594940186,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the retinoic acid receptor that regulates myeloid development": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6754375100135803,
+        "ground_truth": {
+          "RAR alpha": {
+            "bertscore": 0.6467472910881042,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is RA-induced maturation mediated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "retinoic acid receptor alpha",
+        "answerability": 0.9658350348472595,
+        "ground_truth": {
+          "myeloid development": {
+            "bertscore": 0.7495260238647461,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

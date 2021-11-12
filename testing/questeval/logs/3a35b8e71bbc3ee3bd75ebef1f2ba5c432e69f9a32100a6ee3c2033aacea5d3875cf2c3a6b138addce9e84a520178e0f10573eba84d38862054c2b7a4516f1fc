@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Exposure of SKOV-3 cells to paclitaxel or carboplatin along with 317615 2HCl resulted in cell survival that reflected primarily additivity of the two agents.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "317615",
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the 2HCl compound that was used to treat SKOV-3",
+          "How many agents did SKOV-3 cells receive?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Exposure",
+        "SKOV-3 cells",
+        "cell survival",
+        "primarily additivity",
+        "the two agents"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What resulted in cell survival?",
+          "What cells were exposed to paclitaxel and carboplatin?",
+          "What did exposure to paclitaxel and carboplatin result in?",
+          "What was the effect of paclitaxel and carboplatin on cell survival?",
+          "What did the exposure of SKOV-3 cells to paclitaxel and 3176"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What additivity did SKOV-3 cells have?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0701669454574585,
+        "ground_truth": {
+          "317615": {
+            "bertscore": 0.6578535437583923,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the additivity of paclitaxel and carboplatin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08617132902145386,
+        "ground_truth": {
+          "2HCl": {
+            "bertscore": 0.6252437233924866,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug caused SKOV-3 cells to survive?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "317615 2HCl",
+        "answerability": 0.9350603818893433,
+        "ground_truth": {
+          "carboplatin": {
+            "bertscore": 0.6238539218902588,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What resulted in cell survival that reflected additivity of 317615 x": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42835795879364014,
+        "ground_truth": {
+          "Exposure": {
+            "bertscore": 0.7081220746040344,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were exposed to paclitaxel and carboplatin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SKOV-3 cells",
+        "answerability": 0.9944223165512085,
+        "ground_truth": {
+          "SKOV-3 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did exposure to paclitaxel and carboplatin result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell survival",
+        "answerability": 0.9986463785171509,
+        "ground_truth": {
+          "cell survivals": {
+            "bertscore": 0.9222390651702881,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did the exposure of SKOV-3 cells to paclitaxel and carbo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell survival",
+        "answerability": 0.9833049178123474,
+        "ground_truth": {
+          "additivity": {
+            "bertscore": 0.7681384086608887,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did SKOV-3 cells survive with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "317615 2HCl",
+        "answerability": 0.810615062713623,
+        "ground_truth": {
+          "paclitaxel and greater-than-additive cytotoxicity": {
+            "bertscore": 0.5733747482299805,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

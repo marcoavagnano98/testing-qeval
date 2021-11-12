@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "The p53 tumor suppressor protein is phosphorylated and activated by several DNA damage-inducible kinases such as ATM and is a key effector of the DNA damage response by promoting tumor cell apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ATM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a key effector of the DNA damage response?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The p53 tumor suppressor protein",
+        "several DNA damage-inducible kinases",
+        "ATM",
+        "a key effector",
+        "the DNA damage response",
+        "tumor cell apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a key effector of the DNA damage response?",
+          "What is ATM?",
+          "What is a key effector of the DNA damage response?",
+          "What is the role of p53 in the DNA damage response?",
+          "What is the p53 tumor suppressor protein a key effector of?",
+          "What is the p53 tumor suppressor protein a key effector of the DNA damage"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is a key effector of the DNA damage response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53 tumor suppressor protein",
+        "answerability": 0.8796547651290894,
+        "ground_truth": {
+          "ATM": {
+            "bertscore": 0.6423643231391907,
+            "f1": 0
+          },
+          "The p53 tumor suppressor protein": {
+            "bertscore": 0.9479191899299622,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is ATM?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA damage-inducible kinases",
+        "answerability": 0.9862663745880127,
+        "ground_truth": {
+          "several DNA damage-inducible kinases": {
+            "bertscore": 0.9313169121742249,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What is the role of p53 in the DNA damage response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "promoting tumor cell apoptosis",
+        "answerability": 0.990425705909729,
+        "ground_truth": {
+          "a key effector": {
+            "bertscore": 0.6895287036895752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the p53 tumor suppressor protein a key effector of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA damage response",
+        "answerability": 0.9989482760429382,
+        "ground_truth": {
+          "the DNA damage response": {
+            "bertscore": 0.9155529737472534,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does p53 promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor cell apoptosis",
+        "answerability": 0.9222995042800903,
+        "ground_truth": {
+          "cell cycle arrest": {
+            "bertscore": 0.8023219108581543,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is the key effector of DNA damage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53 tumor suppressor protein",
+        "answerability": 0.7947313189506531,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.666761040687561,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

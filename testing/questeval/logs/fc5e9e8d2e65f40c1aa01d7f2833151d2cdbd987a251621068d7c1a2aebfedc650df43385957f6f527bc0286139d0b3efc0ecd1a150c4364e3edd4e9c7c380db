@@ -1,0 +1,144 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the expression levels of NF-kappaB-regulated metastasis-related molecules such as fibronectin beta1 integrin MMP-1 -2 -3 -4 and -6 and VEGF-C were upregulated in the highly metastatic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "beta1",
+        "MMP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulated metastasis-related molecules were upregulated in highly metastatic cells?",
+          "What is the NF-kappaB-regulated metastasis-related",
+          "What is the name of the NF-kappaB-regulated metastasis"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Furthermore the expression levels",
+        "NF-kappaB-regulated metastasis-related molecules",
+        "fibronectin beta1 integrin MMP-1",
+        "-3 -4",
+        "-6",
+        "VEGF-C",
+        "the highly metastatic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was upregulated in highly metastatic cells?",
+          "What was upregulated in the highly metastatic cells?",
+          "What is one of the NF-kappaB-regulated metastasis related",
+          "What is the expression level of NF-kappaB-regulated metastasis",
+          "What is the name of the VEGF-C-regulated metastasis related molecules",
+          "What is one of the NF-kappaB-regulated metastasis related",
+          "Where were the expression levels of NF-kappaB-regulated metastasis"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What regulated metastasis-related molecules were upregulated in highly metastatic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9951469898223877,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB-regulated metastasis-related": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-C",
+        "answerability": 0.7239354848861694,
+        "ground_truth": {
+          "beta1": {
+            "bertscore": 0.7386481761932373,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the NF-kappaB-regulated metastasis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08320260047912598,
+        "ground_truth": {
+          "MMP-1": {
+            "bertscore": 0.6619727611541748,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was upregulated in highly metastatic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression levels of NF-kappaB-regulated metastasis-related molecules",
+        "answerability": 0.9885708689689636,
+        "ground_truth": {
+          "Furthermore the expression levels": {
+            "bertscore": 0.7291199564933777,
+            "f1": 0.4444444444444444
+          }
+        }
+      }
+    },
+    "What was upregulated in the highly metastatic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression levels of NF-kappaB-regulated metastasis-related molecules",
+        "answerability": 0.9897767901420593,
+        "ground_truth": {
+          "NF-kappaB-regulated metastasis-related molecules": {
+            "bertscore": 0.933190643787384,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is one of the NF-kappaB-regulated metastasis related": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fibronectin beta1 integrin",
+        "answerability": 0.8363777995109558,
+        "ground_truth": {
+          "fibronectin beta1 integrin MMP-1 -2 -9": {
+            "bertscore": 0.8851324915885925,
+            "f1": 0.6666666666666666
+          },
+          "VEGF-C": {
+            "bertscore": 0.6986930966377258,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two NF-kappaB-regulated metastasis related molecules": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-C",
+        "answerability": 0.787580132484436,
+        "ground_truth": {
+          "and -14": {
+            "bertscore": 0.6950594782829285,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where were the expression levels of NF-kappaB-regulated metastasis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6691540479660034,
+        "ground_truth": {
+          "the highly metastatic cells": {
+            "bertscore": 0.6268852949142456,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

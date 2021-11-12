@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "This was associated with a reduction in endothelial MCP-1 secretion and GRO-alpha immobilization.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GRO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of immobilization was reduced in mice?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a reduction",
+        "endothelial MCP-1 secretion",
+        "GRO-alpha immobilization"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was associated with endothelial MCP-1 secretion?",
+          "What was reduced by the apoptosis of the rat?",
+          "What is the result of the reduction in endothelial MCP-1 secretion"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of immobilization was reduced in mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial MCP-1",
+        "answerability": 0.859748899936676,
+        "ground_truth": {
+          "GRO": {
+            "bertscore": 0.6463748812675476,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was associated with endothelial MCP-1 secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06954026222229004,
+        "ground_truth": {
+          "a reduction": {
+            "bertscore": 0.7181575894355774,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was reduced by the apoptosis of the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0036965608596801758,
+        "ground_truth": {
+          "endothelial MCP-1 secretion": {
+            "bertscore": 0.613175630569458,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of the reduction in endothelial MCP-1 secretion": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23207902908325195,
+        "ground_truth": {
+          "GRO-alpha immobilization": {
+            "bertscore": 0.6789430379867554,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "Together these results show that ICBP90 expression is altered in cancer cell lines and is upregulated by E2F-1 overexpression with an effect on E2F-1 DNA binding activity and apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E2F-1",
+        "E2F-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that causes ICBP90 to be upregulated?",
+          "What is the main factor that causes ICBP90 to be upregulated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these results",
+        "ICBP90 expression",
+        "cancer cell lines",
+        "E2F-1 overexpression",
+        "an effect",
+        "E2F-1 DNA binding activity",
+        "apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that ICBP90 expression is altered in cancer cell lines?",
+          "What is altered in cancer cell lines?",
+          "What does the ICBP90 expression alter in?",
+          "What is the cause of ICBP90 expression?",
+          "What is the effect of E2F-1 overexpression on E2F-1 DNA binding activity",
+          "What is ICBP90 upregulated by?",
+          "What is the effect of E2F-1 overexpression on E2F-1 DNA binding activity"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is more efficient on ICBP90?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4044000506401062,
+        "ground_truth": {
+          "E2F-1": {
+            "bertscore": 0.6551926136016846,
+            "f1": 0
+          },
+          "The effect": {
+            "bertscore": 0.685001015663147,
+            "f1": 0
+          },
+          "overexpression": {
+            "bertscore": 0.729675829410553,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of overexpression of E2F-1 more efficient on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.8632091879844666,
+        "ground_truth": {
+          "ICBP90": {
+            "bertscore": 0.6969391107559204,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

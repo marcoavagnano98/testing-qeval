@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Furthermore we found that RASSF1C over-expression enhances T47D cell invasion/migration in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RASSF1C",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene over-expression enhances T47D cell invasion/migration?",
+          "In what way did we find that RASSF1C over-expression enhances T47"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "RASSF1C over-expression",
+        "T47D cell invasion/migration"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find that RASSF1C over-expression enhances T47D cell",
+          "What enhances T47D cell invasion/migration in vitro?",
+          "What does RASSF1C over-expression enhance?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene over-expression enhances T47D cell invasion/migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RASSF1C",
+        "answerability": 0.998081624507904,
+        "ground_truth": {
+          "RASSF1C": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what way did we find that RASSF1C over-expression enhances T47": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in vitro",
+        "answerability": 0.7419830560684204,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.8643985986709595,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did we find that RASSF1C over-expression enhances T47D cell": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.373704195022583,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748355627059937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enhances T47D cell invasion/migration in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RASSF1C over-expression",
+        "answerability": 0.9912745356559753,
+        "ground_truth": {
+          "RASSF1C over-expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does RASSF1C over-expression enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T47D cell invasion/migration",
+        "answerability": 0.9756582379341125,
+        "ground_truth": {
+          "T47D cell invasion/migration": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

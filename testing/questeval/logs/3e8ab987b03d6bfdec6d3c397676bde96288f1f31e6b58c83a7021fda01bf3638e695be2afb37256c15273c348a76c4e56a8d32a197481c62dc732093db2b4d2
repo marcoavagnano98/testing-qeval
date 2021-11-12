@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Betulin (10 microg/mL) induces mitochondrial cytochrome c release associated apoptosis in human cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Betulin",
+        "10 microg/mL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the drug that induces apoptosis in human cancer",
+          "How much betulin is used to induce apoptosis in human cancer cells"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Betulin",
+        "10 microg",
+        "/mL",
+        "mitochondrial cytochrome c release associated apoptosis",
+        "human cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the drug that induces apoptosis in human cancer",
+          "How much betulin is in a mL?",
+          "How much is betulin used for?",
+          "What does betulin induce in human cancer cells?",
+          "What type of cells does betulin induce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What evidence shows that betulin triggers apoptosis of human cancer cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2858150005340576,
+        "ground_truth": {
+          "the lines": {
+            "bertscore": 0.6961533427238464,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study show about the mechanism by which betulin is used to trigger a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.054467201232910156,
+        "ground_truth": {
+          "evidence": {
+            "bertscore": 0.7200905084609985,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the intrinsic apoptotic pathway of betulin trigger?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019897401332855225,
+        "ground_truth": {
+          "human cancer cells": {
+            "bertscore": 0.6485544443130493,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does betulin trigger in human cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitochondrial cytochrome c release",
+        "answerability": 0.9008638262748718,
+        "ground_truth": {
+          "the intrinsic apoptotic pathway": {
+            "bertscore": 0.6910971999168396,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

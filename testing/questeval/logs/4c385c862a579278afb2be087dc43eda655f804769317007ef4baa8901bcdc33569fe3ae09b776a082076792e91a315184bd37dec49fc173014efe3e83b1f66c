@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "FOXP3 was only slightly reduced after RUNX1 silencing.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "FOXP3",
+        "RUNX1 silencing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was reduced slightly after RUNX1 silencing?",
+          "What was the only factor that reduced FOXP3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was reduced slightly after RUNX1 silencing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FOXP3",
+        "answerability": 0.9995423555374146,
+        "ground_truth": {
+          "FOXP3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the only factor that reduced FOXP3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41402530670166016,
+        "ground_truth": {
+          "RUNX1 silencing": {
+            "bertscore": 0.6654450297355652,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

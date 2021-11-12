@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "These studies indicate that iNO produced by murine macrophage-like cells RAW264.7 can inhibit cytokine-induced vascular cell adhesion molecule-1 (VCAM-1) endothelial cell adhesion and T cell proliferation in response to endothelial cell activation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These studies",
+        "murine macrophage-like cells RAW264.7",
+        "cytokine-induced vascular cell adhesion",
+        "(VCAM-1",
+        "T cell proliferation",
+        "response",
+        "endothelial cell activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that iNO produced by murine macrophage-like cells can inhibit?",
+          "What is the iNO produced by?",
+          "What does iNO inhibit?",
+          "What is the molecule that can be inhibited by iNO produced by murine",
+          "What does iNO inhibit in response to endothelial cell activation?",
+          "What does iNO inhibit in response to?",
+          "What does iNO inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the study find about iNO produced by murine macrophage-like cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6268187761306763,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.605411171913147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is iNO produced by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "murine macrophage-like cells",
+        "answerability": 0.9863497018814087,
+        "ground_truth": {
+          "murine macrophage-like cells RAW264.7": {
+            "bertscore": 0.8925531506538391,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does iNO inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine-induced vascular cell adhesion molecule-1",
+        "answerability": 0.8789671659469604,
+        "ground_truth": {
+          "cytokine-induced endothelial cell activation": {
+            "bertscore": 0.8429865837097168,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "Where can iNO inhibit cytokine-induced endothelial cell activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6582225561141968,
+        "ground_truth": {
+          "a separated and mixed endothelial-RAW264.7 coculture system": {
+            "bertscore": 0.6006378531455994,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "The constitutive NF-kappa B appears to be functionally active since a low level of tumour necrosis factor (TNF) transcript is detectable in monocytes and this level can be increased by blocking transcript degradation with cycloheximide.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytokine that is present in monocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The constitutive NF-kappa B",
+        "a low level",
+        "tumour necrosis factor (TNF) transcript",
+        "monocytes",
+        "this level",
+        "transcript degradation",
+        "cycloheximide"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is functionally active?",
+          "What is the level of TNF-kappa B detected in monocytes?",
+          "What is detectable in monocytes?",
+          "What is a target of NF-kappa B?",
+          "What can be increased by blocking transcript degradation?",
+          "What can be blocked with cycloheximide?",
+          "What is used to block the degradation of TNF-kappa B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the cytokine that is present in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.035848379135131836,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is functionally active?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.879813015460968,
+        "ground_truth": {
+          "The constitutive NF-kappa B": {
+            "bertscore": 0.8367832899093628,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the level of TNF-kappa B detected in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low",
+        "answerability": 0.8536891341209412,
+        "ground_truth": {
+          "a low level": {
+            "bertscore": 0.8327285051345825,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is detectable in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low level of tumour necrosis factor",
+        "answerability": 0.7235311269760132,
+        "ground_truth": {
+          "tumour necrosis factor (TNF) transcript": {
+            "bertscore": 0.8114786744117737,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What is a target of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumour necrosis factor",
+        "answerability": 0.5621328949928284,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6806157827377319,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can be increased by blocking transcript degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumour necrosis factor",
+        "answerability": 0.7703976035118103,
+        "ground_truth": {
+          "this level": {
+            "bertscore": 0.6644703149795532,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can be blocked using cycloheximide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09784859418869019,
+        "ground_truth": {
+          "transcript degradation": {
+            "bertscore": 0.6426359415054321,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is used to block the degradation of TNF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18451166152954102,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.5792067050933838,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

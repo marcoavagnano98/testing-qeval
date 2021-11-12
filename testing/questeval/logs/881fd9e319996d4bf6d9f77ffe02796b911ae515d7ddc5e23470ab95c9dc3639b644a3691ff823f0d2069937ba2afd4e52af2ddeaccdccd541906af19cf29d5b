@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "This suggests that FOXO3a may play a role in LAC suppression by eliciting a protective response to carcinogenic stress.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LAC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is FOXO3a thought to suppress?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a role",
+        "LAC suppression",
+        "a protective response",
+        "carcinogenic stress"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may FOXO3a play in LAC suppression?",
+          "What may FOXO3a play a role in?",
+          "What does FOXO3a elicit to carcinogenic stress?",
+          "What does FOXO3a trigger a protective response to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is FOXO3a thought to suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LAC",
+        "answerability": 0.9256826639175415,
+        "ground_truth": {
+          "LAC": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may FOXO3a play in LAC suppression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eliciting a protective response to carcinogenic stress",
+        "answerability": 0.9662325978279114,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6343774199485779,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What may FOXO3a play a role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LAC suppression",
+        "answerability": 0.9952414631843567,
+        "ground_truth": {
+          "LAC suppression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does FOXO3a elicit to carcinogenic stress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protective response",
+        "answerability": 0.9464379549026489,
+        "ground_truth": {
+          "a protective response": {
+            "bertscore": 0.9117656350135803,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does FOXO3a trigger a protective response to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "carcinogenic stress",
+        "answerability": 0.71976637840271,
+        "ground_truth": {
+          "carcinogenic stress": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

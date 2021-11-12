@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "In contrast enhancement of IL-2 mRNA expression in neonates occurred with anti-CD3 alone.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA expression was enhanced in neonates with anti-CD3?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast enhancement",
+        "IL-2 mRNA expression",
+        "neonates"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of anti-CD3 on IL-2 mRNA expression in neon",
+          "What did anti-CD3 enhance in neonates?",
+          "In what group did IL-2 mRNA expression increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA expression was similar to that of adulthood?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25689661502838135,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of IL-2 mRNA expression in neonates?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhancement",
+        "answerability": 0.9785698056221008,
+        "ground_truth": {
+          "contrast enhancement": {
+            "bertscore": 0.8974204063415527,
+            "f1": 0.6666666666666666
+          },
+          "adult levels": {
+            "bertscore": 0.7673808932304382,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did neonates have a similar effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 mRNA",
+        "answerability": 0.8157525062561035,
+        "ground_truth": {
+          "IL-2 mRNA expression": {
+            "bertscore": 0.9438815712928772,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "In what group of children did IL-2 mRNA expression increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neonates",
+        "answerability": 0.9748021364212036,
+        "ground_truth": {
+          "neonates": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

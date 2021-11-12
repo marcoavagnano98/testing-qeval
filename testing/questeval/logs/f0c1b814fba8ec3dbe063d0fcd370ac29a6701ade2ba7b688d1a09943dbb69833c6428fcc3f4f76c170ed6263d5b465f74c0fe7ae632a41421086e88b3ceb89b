@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Platelet-activating factor stimulated transcription of the heparin-binding epidermal growth factor-like growth factor in monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Platelet-activating factor",
+        "transcription",
+        "the heparin-binding epidermal growth factor-like growth factor",
+        "monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulated transcription of heparin-binding epidermal growth factor?",
+          "What did platelet-activating factor stimulate in monocytes?",
+          "What did platelet-activating factor stimulate in monocytes?",
+          "What type of cell was stimulated by platelet-activating factor?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stimulates transcription of heparin-binding epidermal growth factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Platelet-activating factor",
+        "answerability": 0.9324679374694824,
+        "ground_truth": {
+          "Platelet-activating factor": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does platelet-activating factor stimulate in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription",
+        "answerability": 0.9946506023406982,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the heparin-binding epidermal growth factor-like growth factor": {
+            "bertscore": 0.6937502026557922,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cell does platelet-activating factor stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocytes",
+        "answerability": 0.9546410441398621,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

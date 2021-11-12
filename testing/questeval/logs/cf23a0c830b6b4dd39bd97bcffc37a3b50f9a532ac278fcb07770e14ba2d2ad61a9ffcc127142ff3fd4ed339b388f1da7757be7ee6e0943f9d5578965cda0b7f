@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Phosphorylation of p53 at Ser468 prevented ubiquitination and deubiquitination of p53 suggesting that p53 plays an important role in the regulation of apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ser468"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the site where p53 is phosphorylated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Phosphorylation",
+        "p53",
+        "prevented ubiquitination",
+        "deubiquitination",
+        "p53",
+        "p53",
+        "an important role",
+        "the regulation",
+        "apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevented ubiquitination and deubiquitination of p53 at Ser",
+          "What protein is involved in the regulation of apoptosis?",
+          "What did phosphorylation of p53 at Ser468 do?",
+          "What did phosphorylation of p53 prevent?",
+          "What protein is involved in the regulation of apoptosis?",
+          "What protein is involved in the regulation of apoptosis?",
+          "What does p53 play in the regulation of apoptosis?",
+          "What does p53 play an important role in?",
+          "What does p53 play an important role in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What prevented the emergence of ubiquitinated species of p53?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Phosphorylation",
+        "answerability": 0.6607874631881714,
+        "ground_truth": {
+          "IE2-86": {
+            "bertscore": 0.6461881995201111,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IE2-86 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004225790500640869,
+        "ground_truth": {
+          "the emergence": {
+            "bertscore": 0.7083133459091187,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IE2-86 prevent the emergence of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0021245479583740234,
+        "ground_truth": {
+          "presumably ubiquitinated species": {
+            "bertscore": 0.6845312714576721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What ubiquitinated species did IE2-86 prevent the emergence of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003019571304321289,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 0.6259340047836304,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

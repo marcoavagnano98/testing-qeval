@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Tax co-transfected with reporter constructs into Jurkat cells maximally activated HTLV-I-LTR-CAT and kappa B-fos-CAT and also activated LT-293 to a lesser degree.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tax co-transfected with reporter constructs",
+        "Jurkat cells",
+        "maximally activated HTLV-I-LTR-CAT",
+        "kappa B-fos-CAT",
+        "a lesser degree"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the HTLV-I-LTR-CAT and kappa B",
+          "What cells did tax co-transfected with reporter constructs activate?",
+          "What did co-transfected tax cells do?",
+          "What did the co-transfected tax activate?",
+          "How much did the tax co-transfected with reporter constructs activate HTLV-"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What activated HTLV-I-LTR-CAT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tax",
+        "answerability": 0.8402588367462158,
+        "ground_truth": {
+          "Tax co-transfected with reporter constructs": {
+            "bertscore": 0.6688319444656372,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What cells did tax co-transfected with reporter constructs activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat cells",
+        "answerability": 0.9698314070701599,
+        "ground_truth": {
+          "Jurkat cells": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did co-transfected tax with reporter constructs do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activated HTLV-I-LTR-CAT and kappa B-",
+        "answerability": 0.8102891445159912,
+        "ground_truth": {
+          "maximally activated HTLV-I-LTR-CAT": {
+            "bertscore": 0.8929668068885803,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did the co-transfected tax activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HTLV-I-LTR-CAT and kappa B-fo",
+        "answerability": 0.779647946357727,
+        "ground_truth": {
+          "kappa B-fos-CAT": {
+            "bertscore": 0.7636656761169434,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "How much did tax co-transfected with reporter constructs activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "maximally",
+        "answerability": 0.8624775409698486,
+        "ground_truth": {
+          "a lesser extent": {
+            "bertscore": 0.6881626844406128,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

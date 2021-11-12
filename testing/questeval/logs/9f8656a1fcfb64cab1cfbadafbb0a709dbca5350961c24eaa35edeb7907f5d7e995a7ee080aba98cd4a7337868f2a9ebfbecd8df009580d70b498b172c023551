@@ -1,0 +1,56 @@
+{
+  "type": "hyp",
+  "text": "IFN-gamma secretion was assessed using an Rnase protection assay.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IFN",
+        "Rnase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the gamma secretion measured by?",
+          "What was used to assess IFN-gamma secretion?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IFN-gamma secretion",
+        "an Rnase protection assay"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was assessed using an Rnase protection assay?",
+          "What was used to assess IFN-gamma secretion?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was assessed using fluorescent bead-based technology?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004917502403259277,
+        "ground_truth": {
+          "IL-4 IL-5 IL-6 IL-10 IL-13 IL-17 and IFN-gamma secretion": {
+            "bertscore": 0.5764200687408447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to assess the levels of IL-4, IL-5, IL-6": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07051855325698853,
+        "ground_truth": {
+          "fluorescent bead-based technology": {
+            "bertscore": 0.6753576397895813,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

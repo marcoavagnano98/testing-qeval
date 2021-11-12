@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Inducible nitric oxide: an autoregulatory feedback inhibitor of vascular inflammation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inducible nitric oxide",
+        "an autoregulatory feedback inhibitor",
+        "vascular inflammation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is an autoregulatory feedback inhibitor of vascular inflammation?",
+          "What is nitric oxide?",
+          "What is nitric oxide an inhibitor of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is an autoregulatory feedback inhibitor of vascular inflammation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Inducible nitric oxide",
+        "answerability": 0.964087963104248,
+        "ground_truth": {
+          "Inducible nitric oxide": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is nitric oxide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3593924045562744,
+        "ground_truth": {
+          "an autoregulatory feedback inhibitor": {
+            "bertscore": 0.6269561648368835,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is nitric oxide an inhibitor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vascular inflammation",
+        "answerability": 0.9236534833908081,
+        "ground_truth": {
+          "vascular inflammation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

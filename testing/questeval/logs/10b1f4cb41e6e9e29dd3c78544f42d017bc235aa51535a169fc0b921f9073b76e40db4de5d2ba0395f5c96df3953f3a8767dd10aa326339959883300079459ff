@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Thus removal of the repressive H3K27me3 mark within the coding region then requires RNA Polymerase II (Pol II) elongation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RNA Polymerase II"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that removes the repressive H3K27me3 mark?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "removal",
+        "the repressive H3K27me3 mark",
+        "the coding region",
+        "RNA Polymerase II",
+        "(Pol II) elongation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that requires RNA Polymerase II elongation?",
+          "What is removed from the coding region?",
+          "Where is the repressive H3K27me3 mark located?",
+          "What is the process that removes the repressive H3K27me3 mark?",
+          "What is required to remove the repressive H3K27me3 mark?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process of removing repressive H3K27me3 marks?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RNA Polymerase II (Pol II) elongation",
+        "answerability": 0.8711614012718201,
+        "ground_truth": {
+          "UTX": {
+            "bertscore": 0.6260259747505188,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens to repressive H3K27me3 marks?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "removal",
+        "answerability": 0.8105859756469727,
+        "ground_truth": {
+          "removal": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is removed by UTX?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006014645099639893,
+        "ground_truth": {
+          "repressive H3K27me3 marks": {
+            "bertscore": 0.6404891014099121,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How does UTX remove H3K27me3 marks?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15322184562683105,
+        "ground_truth": {
+          "targeted recruitment": {
+            "bertscore": 0.7042319178581238,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does UTX target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006047487258911133,
+        "ground_truth": {
+          "the gene": {
+            "bertscore": 0.667614758014679,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

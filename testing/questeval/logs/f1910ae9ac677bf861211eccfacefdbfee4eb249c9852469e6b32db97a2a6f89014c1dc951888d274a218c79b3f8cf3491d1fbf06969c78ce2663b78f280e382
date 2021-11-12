@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "In this study we demonstrate that over-expression of STAT2 by transfection of the cDNA prevented apoptosis of the T cell clones.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this study",
+        "we",
+        "that over-expression",
+        "STAT2",
+        "transfection",
+        "the cDNA prevented apoptosis",
+        "the T cell clones"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study demonstrated that over-expression of STAT2 by transfection of the cDNA",
+          "What did the study show about STAT2?",
+          "What did the study demonstrate?",
+          "What protein was shown to prevent apoptosis?",
+          "How was STAT2 over-expressed?",
+          "What did the study show about STAT2?",
+          "What did over-expression of STAT2 by transfection of the cDNA prevent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What prevented apoptosis of the T cell clones?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cDNA",
+        "answerability": 0.8277570605278015,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.7110182642936707,
+            "f1": 0
+          },
+          "expression": {
+            "bertscore": 0.7861142754554749,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was over-expressed by transfection of the cDNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "STAT2",
+        "answerability": 0.9928612112998962,
+        "ground_truth": {
+          "STAT2": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How did over-expression of STAT2 prevent apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transfection of the cDNA",
+        "answerability": 0.9797025322914124,
+        "ground_truth": {
+          "transfection": {
+            "bertscore": 0.7583022117614746,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did over-expression of STAT2 by transfection do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "prevented apoptosis",
+        "answerability": 0.9844731092453003,
+        "ground_truth": {
+          "the cDNA prevented apoptosis": {
+            "bertscore": 0.8679454922676086,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did over-expression of STAT2 by transfection of the cDNA prevent": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9774853587150574,
+        "ground_truth": {
+          "the T cell clones": {
+            "bertscore": 0.6874428987503052,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

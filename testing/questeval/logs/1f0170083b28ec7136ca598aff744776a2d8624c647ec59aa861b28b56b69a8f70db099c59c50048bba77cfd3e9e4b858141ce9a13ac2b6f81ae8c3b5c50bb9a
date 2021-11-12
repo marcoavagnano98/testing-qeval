@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Besides TGFbeta and RTK/Ras signaling autocrine factors and Wnt- Notch- Hedgehog- and NF-kappaB-dependent pathways were found to play a key role in EMT.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TGFbeta",
+        "RTK/Ras",
+        "EMT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one of the key factors in EMT?",
+          "What signaling autocrine factors play a key role in EMT?",
+          "What is the main role of TGFbeta and RTK/Ras?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TGFbeta and RTK/Ras",
+        "autocrine factors",
+        "Wnt- Notch- Hedgehog- and NF-kappaB-dependent pathways",
+        "a key role",
+        "EMT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling autocrine factors play a key role in EMT?",
+          "What signaling factors play a role in EMT?",
+          "What other factors play a key role in EMT?",
+          "What role did TGFbeta and RTK/Ras play in EMT",
+          "What is the main role of TGFbeta and RTK/Ras?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one of the other autocrine factors that contributes to EMT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGFbeta",
+        "answerability": 0.864456057548523,
+        "ground_truth": {
+          "TGFbeta": {
+            "bertscore": 0.9999997019767761,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What signaling autocrine factors contribute to EMT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGFbeta and RTK/Ras",
+        "answerability": 0.9805490374565125,
+        "ground_truth": {
+          "RTK/Ras": {
+            "bertscore": 0.8549124598503113,
+            "f1": 0.5
+          },
+          "TGFbeta and RTK/Ras": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the NF-kappaB-dependent pathways contribute to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.40363091230392456,
+        "ground_truth": {
+          "EMT": {
+            "bertscore": 0.6886775493621826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling pathways are involved in EMT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGFbeta and RTK/Ras",
+        "answerability": 0.9219767451286316,
+        "ground_truth": {
+          "autocrine factors": {
+            "bertscore": 0.6527306437492371,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What other factors contribute to EMT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGFbeta and RTK/Ras signaling autocrine factors",
+        "answerability": 0.9436642527580261,
+        "ground_truth": {
+          "Wnt- Notch- Hedgehog- and NF-kappaB-dependent pathways": {
+            "bertscore": 0.7176511287689209,
+            "f1": 0.16666666666666666
+          }
+        }
+      }
+    }
+  }
+}

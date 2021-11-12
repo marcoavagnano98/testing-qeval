@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "In vivo anergized CD4+ T cells express perturbed AP-1 and NF-kappa B transcription factors.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "vivo anergized CD4",
+        "T cells",
+        "NF-kappa B transcription factors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of T cells express AP-1 and NF-kappa B?",
+          "What type of cells express AP-1 and NF-kappa B?",
+          "What do anergized CD4+ T cells express?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells lack NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010367631912231445,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.6607831716537476,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do T cells lack?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001159369945526123,
+        "ground_truth": {
+          "active NF-kappa B": {
+            "bertscore": 0.6161075234413147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does T cells express as expected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04564875364303589,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 0.6904803514480591,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

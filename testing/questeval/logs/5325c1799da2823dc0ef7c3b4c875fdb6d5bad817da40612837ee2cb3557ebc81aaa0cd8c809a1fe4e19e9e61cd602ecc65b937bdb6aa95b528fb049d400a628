@@ -1,0 +1,154 @@
+{
+  "type": "hyp",
+  "text": "In addition sodium salicylate and additional NSAIDs used at concentrations that activate HSF1 also inhibited the expression of other monocytic genes (TNFR1 IL-1beta IL-6 IL-8 IL-10 ICAM-1) activated by exposure to a pro-inflammatory stimulus (lipopolysaccharide LPS).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HSF1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was inhibited by sodium salicylate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition sodium salicylate",
+        "additional NSAIDs",
+        "concentrations",
+        "HSF1",
+        "the expression",
+        "other monocytic genes",
+        "(TNFR1 IL-1beta IL-6 IL-8 IL-10 ICAM-1",
+        "exposure",
+        "a pro-inflammatory stimulus",
+        "lipopolysaccharide LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to inhibit the expression of other monocytic genes?",
+          "What was used to inhibit the expression of other monocytic genes?",
+          "What was used to inhibit the expression of other monocytic genes?",
+          "What gene was inhibited by sodium salicylate?",
+          "What did sodium salicylate inhibit?",
+          "What did sodium salicylate inhibit?",
+          "What other monocytic genes were inhibited by sodium salicylate?",
+          "What was the pro-inflammatory stimulus?",
+          "What is the lipopolysaccharide LPS?",
+          "What is a pro-inflammatory stimulus?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene was inhibited by sodium salicylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HSF1",
+        "answerability": 0.6841452717781067,
+        "ground_truth": {
+          "HSF1": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the cytokine that inhibits the expression of IL-6": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08334898948669434,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789318919181824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to inhibit the expression of other monocytic genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sodium salicylate",
+        "answerability": 0.8976728320121765,
+        "ground_truth": {
+          "addition sodium salicylate": {
+            "bertscore": 0.9377056956291199,
+            "f1": 0.8
+          },
+          "additional NSAIDs": {
+            "bertscore": 0.7053669691085815,
+            "f1": 0
+          },
+          "concentrations": {
+            "bertscore": 0.674028754234314,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did sodium salicylate inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of other monocytic genes",
+        "answerability": 0.7348556518554688,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.668376624584198,
+            "f1": 0.33333333333333337
+          },
+          "other monocytic genes": {
+            "bertscore": 0.9219122529029846,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What other monocytic genes were inhibited by sodium salicylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNFR1 IL-1beta IL-6 IL-8 IL-10",
+        "answerability": 0.6646864414215088,
+        "ground_truth": {
+          "(TNF-alpha IL-1beta IL-6 IL-8 IL-10 ICAM-1": {
+            "bertscore": 0.8757525086402893,
+            "f1": 0.7272727272727272
+          }
+        }
+      }
+    },
+    "What was the pro-inflammatory stimulus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipopolysaccharide LPS",
+        "answerability": 0.8522498607635498,
+        "ground_truth": {
+          "exposure": {
+            "bertscore": 0.6410009860992432,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the lipopolysaccharide LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5265891551971436,
+        "ground_truth": {
+          "a pro-inflammatory stimulus": {
+            "bertscore": 0.6203509569168091,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a pro-inflammatory stimulus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipopolysaccharide LPS",
+        "answerability": 0.8892791271209717,
+        "ground_truth": {
+          "lipopolysaccharide LPS": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

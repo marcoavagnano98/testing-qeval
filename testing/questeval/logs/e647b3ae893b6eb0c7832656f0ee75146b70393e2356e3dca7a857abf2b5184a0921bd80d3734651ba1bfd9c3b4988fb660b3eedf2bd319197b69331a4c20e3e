@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Most erythroleukemic cell lines established in vitro coexpress erythrocytic and megakaryocytic markers that often are associated with expression of Spi-1 and/or Spi-2 transcription factors known as transactivators of megakaryocyte-specific promoters.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Most erythroleukemic cell lines",
+        "vitro coexpress erythrocytic and megakaryocytic markers",
+        "expression",
+        "Spi-1 and/or Spi-2 transcription factors",
+        "transactivators",
+        "megakaryocyte-specific promoters"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells coexpress erythrocytic and megakaryocytic",
+          "What are the two main ways that erythroleukemic cell lines establish?",
+          "What are the markers associated with?",
+          "What are transactivators of megakaryocyte-specific promoters?",
+          "What are the markers that are associated with expression of Spi-1 and Spi-2 called?",
+          "What are the transcription factors that are associated with Spi-1 and Spi-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cells coexpress erythrocytic and megakaryocytic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroleukemic cell lines",
+        "answerability": 0.9543440341949463,
+        "ground_truth": {
+          "Most erythroleukemic cell lines": {
+            "bertscore": 0.9382781386375427,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What are the two main ways that erythroleukemic cell lines establish?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "coexpress erythrocytic and megakaryocytic markers",
+        "answerability": 0.5832821726799011,
+        "ground_truth": {
+          "vitro coexpress erythrocytic and megakaryocytic markers": {
+            "bertscore": 0.969195544719696,
+            "f1": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "What are the two transcription factors associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Spi-1 and/or Spi-2",
+        "answerability": 0.9098026156425476,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.6479507088661194,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are transactivators of megakaryocyte-specific promoters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Spi-1 and/or Spi-2 transcription factors",
+        "answerability": 0.9719423651695251,
+        "ground_truth": {
+          "Spi-1 and/or Fli-1 transcription factors": {
+            "bertscore": 0.9464746117591858,
+            "f1": 0.8000000000000002
+          }
+        }
+      }
+    },
+    "What are the transcription factors that are associated with Spi-1 and Fli-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.018037259578704834,
+        "ground_truth": {
+          "transactivators": {
+            "bertscore": 0.6938608288764954,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factors are associated with expression of Spi-1 and Fli-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01455676555633545,
+        "ground_truth": {
+          "megakaryocyte-specific promoters": {
+            "bertscore": 0.6085506081581116,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

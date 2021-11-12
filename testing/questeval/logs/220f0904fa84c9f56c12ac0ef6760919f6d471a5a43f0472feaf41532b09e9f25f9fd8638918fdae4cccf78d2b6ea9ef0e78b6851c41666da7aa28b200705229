@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "An antibody directed against PDGF receptor beta enhances the antitumor and theAnti-angiogenic activities of an anti-VEGF receptor 2 antibody.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PDGF",
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What receptor does an antibody directed against enhance the antitumor and anti-angiogenic",
+          "What antibody does PDGF receptor beta enhance?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An antibody",
+        "PDGF receptor beta",
+        "the antitumor and theAnti-angiogenic activities",
+        "an anti-VEGF receptor",
+        "2 antibody"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhances the antitumor and anti-angiogenic activities of an anti-",
+          "What antibody enhances the antitumor and anti-angiogenic activities of an anti",
+          "What does an antibody directed against PDGF receptor beta enhance?",
+          "What does an antibody directed against PDGF receptor beta enhance the antitumor and anti",
+          "What antibody enhances the antitumor and antiangiogenic activities of PDGF"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What receptor does an antibody directed against enhance the antitumor and anti-angiogenic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PDGF receptor beta",
+        "answerability": 0.7269383668899536,
+        "ground_truth": {
+          "PDGF": {
+            "bertscore": 0.7765354514122009,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What receptor does an antibody directed against PDGF receptor beta enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5222672820091248,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.6837682723999023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enhances the antitumor and anti-angiogenic activities of an anti-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5585007667541504,
+        "ground_truth": {
+          "An antibody": {
+            "bertscore": 0.652302622795105,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antibody enhances antitumor and antiangiogenic activities?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4279921054840088,
+        "ground_truth": {
+          "PDGF receptor beta": {
+            "bertscore": 0.591781735420227,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does an antibody directed against PDGF receptor beta enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antitumor",
+        "answerability": 0.9734626412391663,
+        "ground_truth": {
+          "the antitumor": {
+            "bertscore": 0.8777607679367065,
+            "f1": 1.0
+          },
+          "the anti-angiogenic activities": {
+            "bertscore": 0.6620801687240601,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does an antibody directed against PDGF receptor beta enhance the antitumor and anti": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5335602164268494,
+        "ground_truth": {
+          "an anti-VEGF receptor": {
+            "bertscore": 0.6157511472702026,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antibody does PDGF receptor beta enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antitumor",
+        "answerability": 0.7614991664886475,
+        "ground_truth": {
+          "2 antibody": {
+            "bertscore": 0.73221355676651,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

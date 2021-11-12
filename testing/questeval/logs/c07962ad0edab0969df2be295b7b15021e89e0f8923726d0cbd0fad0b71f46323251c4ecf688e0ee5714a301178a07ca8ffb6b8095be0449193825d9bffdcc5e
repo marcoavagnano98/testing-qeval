@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Like TRIF TRAM activates interferon regulatory factor (IRF)-3 IRF-7 and NF-kappaB-dependent signaling pathways.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB-dependent"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling pathways does TRIF TRAM activate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TRIF",
+        "TRAM",
+        "interferon regulatory factor",
+        "IRF)-3 IRF-7 and NF-kappaB-dependent signaling pathways"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the TRAM that activates IRF-3?",
+          "What activates IRF-3 IRF-7?",
+          "What does IRF-3 stand for?",
+          "What does TRIF TRAM activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathways does TRIF TRAM activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IRF)-3 IRF-7 and NF-kappaB",
+        "answerability": 0.9002382755279541,
+        "ground_truth": {
+          "NF-kappaB-dependent": {
+            "bertscore": 0.7805440425872803,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the TRAM that activates IRF-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TRIF",
+        "answerability": 0.8835084438323975,
+        "ground_truth": {
+          "TRIF": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What activates IRF-3 IRF-7?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TRIF TRAM",
+        "answerability": 0.9678321480751038,
+        "ground_truth": {
+          "TRAM": {
+            "bertscore": 0.9383655190467834,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does IRF-3 stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45682036876678467,
+        "ground_truth": {
+          "interferon regulatory factor": {
+            "bertscore": 0.613833487033844,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TRIF TRAM activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interferon regulatory factor",
+        "answerability": 0.8337364196777344,
+        "ground_truth": {
+          "IRF)-3 IRF-7 and NF-kappaB-dependent signaling pathways": {
+            "bertscore": 0.7189153432846069,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

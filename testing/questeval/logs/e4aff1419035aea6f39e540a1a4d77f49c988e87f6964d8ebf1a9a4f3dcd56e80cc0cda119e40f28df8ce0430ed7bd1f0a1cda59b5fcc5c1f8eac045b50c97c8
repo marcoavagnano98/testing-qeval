@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Loss of imprinting and elevated p73 expression in human gastric adenocarcinoma.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Loss",
+        "imprinting",
+        "p73 expression",
+        "human gastric adenocarcinoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the result of a p73 expression increase in human gastric aden",
+          "What is lost in adenocarcinoma?",
+          "What is elevated in human gastric adenocarcinoma?",
+          "What is the most common type of cancer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the result of the p73 mutation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.034327030181884766,
+        "ground_truth": {
+          "Loss": {
+            "bertscore": 0.743022084236145,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is lost in p73 in human gastric adenocarcinoma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.321250319480896,
+        "ground_truth": {
+          "imprinting": {
+            "bertscore": 0.7267684936523438,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is elevated in wild-type p73?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0017511844635009766,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272056341171265,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is elevated expression of in human gastric adenocarcinoma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p73",
+        "answerability": 0.8848631978034973,
+        "ground_truth": {
+          "wild-type p73": {
+            "bertscore": 0.7715693712234497,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0022891759872436523,
+        "ground_truth": {
+          "human gastric adenocarcinoma": {
+            "bertscore": 0.6180374622344971,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

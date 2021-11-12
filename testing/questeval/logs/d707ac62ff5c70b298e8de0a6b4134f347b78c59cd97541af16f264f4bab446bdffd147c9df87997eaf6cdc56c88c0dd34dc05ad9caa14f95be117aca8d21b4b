@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "Two opposite phenotypes were found which depended on the intracellular localization of Nef.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Two",
+        "Nef"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many opposite phenotypes were found in the rat?",
+          "What was the intracellular localization of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Two opposite phenotypes",
+        "the intracellular localization",
+        "Nef"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many different phenotypes were found in the rat?",
+          "What did the two opposite phenotypes depend on?",
+          "What was the intracellular localization of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What virus inhibits or activates T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1609787940979004,
+        "ground_truth": {
+          "HIV-1 Nef": {
+            "bertscore": 0.6266202330589294,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HIV-1 Nef lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008628010749816895,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.7203418016433716,
+            "f1": 0
+          },
+          "activation": {
+            "bertscore": 0.6694929003715515,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HIV-1 Nef inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004323124885559082,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.6607831716537476,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What determines whether HIV-1 Nef inhibits or activates T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2601853609085083,
+        "ground_truth": {
+          "its intracellular localization": {
+            "bertscore": 0.6384637355804443,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

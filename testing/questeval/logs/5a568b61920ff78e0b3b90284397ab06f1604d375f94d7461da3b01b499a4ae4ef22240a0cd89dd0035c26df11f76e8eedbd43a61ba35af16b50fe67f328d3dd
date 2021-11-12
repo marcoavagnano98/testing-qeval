@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "ISGF3 gamma interacted with ISGF3 alpha purified from HeLa cells and purified from HeLa cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HeLa",
+        "HeLa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells did ISGF3 gamma interact with?",
+          "What type of cells did ISGF3 gamma interact with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "ISGF3 gamma",
+        "ISGF3 alpha",
+        "HeLa cells",
+        "HeLa cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What interacted with ISGF3 alpha?",
+          "What protein was purified from HeLa cells?",
+          "Where did ISGF3 alpha interact with?",
+          "Where did ISGF3 alpha interact with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of protein interacted with HeLa cell ISGF3 alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ISGF3 gamma",
+        "answerability": 0.9903084635734558,
+        "ground_truth": {
+          "Recombinant ISGF3 gamma": {
+            "bertscore": 0.8700609803199768,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is ISGF3 gamma like?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017528057098388672,
+        "ground_truth": {
+          "the natural protein": {
+            "bertscore": 0.6757233738899231,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cell did ISGF3 alpha interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.056925833225250244,
+        "ground_truth": {
+          "HeLa cell": {
+            "bertscore": 0.6293787956237793,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the recombinant ISGF3 gamma interacted with to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ISGF3 alpha",
+        "answerability": 0.8309500813484192,
+        "ground_truth": {
+          "ISGF3 alpha": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did recombinant ISGF3 gamma form?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007558107376098633,
+        "ground_truth": {
+          "the mature ISGF3 DNA-binding complex": {
+            "bertscore": 0.5988842844963074,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

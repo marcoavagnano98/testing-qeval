@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of c-Ski inhibited growth of diffuse-type gastric carcinoma through inhibition of transforming growth factor-beta signaling.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "c-Ski inhibited growth",
+        "diffuse-type gastric carcinoma",
+        "inhibition",
+        "growth factor-beta signaling"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the growth of diffuse-type gastric carcinoma?",
+          "What did overexpression of c-Ski do to diffuse-type gastric carcinoma?",
+          "What did c-Ski inhibit growth of?",
+          "What did c-Ski do to the growth of diffuse-type gastric carcinoma?",
+          "What did c-Ski inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited TGF-beta signaling in OCUM-2MLN": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13606858253479004,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191469669342041,
+            "f1": 0
+          },
+          "c-Ski": {
+            "bertscore": 0.642745316028595,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling was inhibited in OCUM-2MLN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11672073602676392,
+        "ground_truth": {
+          "TGF-beta": {
+            "bertscore": 0.6283079385757446,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were affected by overexpression of c-Ski?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "diffuse-type gastric carcinoma",
+        "answerability": 0.9707183837890625,
+        "ground_truth": {
+          "OCUM-2MLN cells": {
+            "bertscore": 0.6750645637512207,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

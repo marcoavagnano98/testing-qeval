@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "In vitro studies the effects of thalidomide on morphology and motility were studied in a panel of five head and neck squamous cell carcinoma cell lines in the 0.5 to 10 micromol/L range. In vitro studies the results indicated that DATS induced morphological changes and induction of apoptosis in CT26 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "five",
+        "0.5",
+        "10",
+        "DATS",
+        "CT26"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many head and neck squamous cell carcinoma cell lines were studied?",
+          "What was the micromol/L range of squamous cell carcinoma cells?",
+          "What was the micromol/L range of squamous cell carcinoma cells?",
+          "What drug induced apoptosis in CT26 cells?",
+          "What type of cells were affected by DATS?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the effects",
+        "thalidomide",
+        "morphology",
+        "motility",
+        "a panel",
+        "five head and neck squamous cell carcinoma cell lines",
+        "the 0.5 to 10 micromol/L range",
+        "the results",
+        "DATS",
+        "morphological changes",
+        "induction",
+        "apoptosis",
+        "CT26 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was studied in vitro?",
+          "What drug was used to study the morphology of the cells?",
+          "What did thalidomide affect in a panel of five head and neck s",
+          "What did the study show about thalidomide?",
+          "How many cells were studied in vitro?",
+          "What was the panel of cells studied in?",
+          "What range of squamous cell carcinoma cell lines were studied?",
+          "What indicated that DATS induced morphological changes and induction of apopto",
+          "What drug induced apoptosis in CT26 cells?",
+          "What did the study show DATS induced?",
+          "What did the study show about apoptosis?",
+          "What did the results of the study show about the cells?",
+          "What type of cells were affected by DATS?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induced morphological changes and induction of apoptosis in CT": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DATS",
+        "answerability": 0.9619030952453613,
+        "ground_truth": {
+          "DATS": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were induced by DATS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4884492754936218,
+        "ground_truth": {
+          "CT26": {
+            "bertscore": 0.6671178936958313,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What indicated that DATS induced morphological changes and induction of apopto": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "In vitro studies",
+        "answerability": 0.6600779891014099,
+        "ground_truth": {
+          "the results": {
+            "bertscore": 0.6923944354057312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did DATS induce in CT26 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "morphological changes and induction of apoptosis",
+        "answerability": 0.9769219160079956,
+        "ground_truth": {
+          "morphological changes": {
+            "bertscore": 0.8415924906730652,
+            "f1": 0.5
+          },
+          "induction": {
+            "bertscore": 0.692165195941925,
+            "f1": 0.2857142857142857
+          },
+          "apoptosis": {
+            "bertscore": 0.8146007657051086,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What did DATS induce morphological changes and induction of apoptosis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26605695486068726,
+        "ground_truth": {
+          "CT26 cells": {
+            "bertscore": 0.6209798455238342,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "In B lymphoid cells deltaspi-B and spi-B mRNAs were present simultaneously in a ratio of around 10%. DeltaSpi-B product was not able to bind DNA and was recovered in cytoplasmic cytoplasmic extracts.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "around 10%",
+        "DeltaSpi"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the ratio of deltaspi-B and spi-B mRNAs in",
+          "What product was not able to bind DNA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "B lymphoid cells",
+        "-B",
+        "a ratio",
+        "around 10%",
+        "DeltaSpi-B product",
+        "DNA",
+        "cytoplasmic cytoplasmic extracts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of cells were deltaspi-B and spi-B mRNAs",
+          "What mRNA was present in B lymphoid cells in a ratio of around",
+          "How much were deltaspi-B and spi-B mRNAs present simultaneously in",
+          "What was the ratio of deltaspi-B and spi-B mRNAs in",
+          "What was not able to bind DNA in B lymphoid cells?",
+          "What did the deltaspi-B product not bind?",
+          "Where was the deltaspi-B product recovered?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What product was not able to bind DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DeltaSpi-B",
+        "answerability": 0.8952775001525879,
+        "ground_truth": {
+          "DeltaSpi": {
+            "bertscore": 0.8799561262130737,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not able to bind DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DeltaSpi-B product",
+        "answerability": 0.7947198748588562,
+        "ground_truth": {
+          "DeltaSpi-B product": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the DeltaSpi-B product not bind?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA",
+        "answerability": 0.989692211151123,
+        "ground_truth": {
+          "DNA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where was the DeltaSpi-B product recovered?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasmic cytoplasmic extracts",
+        "answerability": 0.8832054138183594,
+        "ground_truth": {
+          "cytoplasmic cellular extracts": {
+            "bertscore": 0.8974493145942688,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

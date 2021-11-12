@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "This inhibition was not mediated through Nef phosphorylation on Thr-15 or GTPase activity because mutations in critical sites did not alter this inhibition.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Nef",
+        "Thr-15"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylation on Thr-15 or GTPase activity did not alter",
+          "What protein was not able to inhibit phosphorylation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This inhibition",
+        "Nef phosphorylation",
+        "Thr-15",
+        "GTPase activity",
+        "mutations",
+        "critical sites",
+        "this inhibition"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was not mediated through Nef phosphorylation on Thr-15 or GTP",
+          "What was not mediated by Thr-15 or GTPase activity?",
+          "What protein was not able to inhibit phosphorylation?",
+          "What did mutations in critical sites not alter?",
+          "What did not alter the inhibition of Thr-15?",
+          "What did mutations in?",
+          "What did mutations in critical sites not alter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylation on Thr-15 did not alter the inhibition of phosphorylation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Nef",
+        "answerability": 0.9776411056518555,
+        "ground_truth": {
+          "Nef": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was not able to inhibit phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.256986141204834,
+        "ground_truth": {
+          "Thr-15": {
+            "bertscore": 0.7065603137016296,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein binds to Thr-15?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41901808977127075,
+        "ground_truth": {
+          "GTP": {
+            "bertscore": 0.6902484893798828,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not mediated through Nef phosphorylation on Thr-15 or GTP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5199767351150513,
+        "ground_truth": {
+          "This inhibition": {
+            "bertscore": 0.6832729578018188,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not mediated by Thr-15 or GTP-binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12907177209854126,
+        "ground_truth": {
+          "Nef phosphorylation": {
+            "bertscore": 0.6204699277877808,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did mutations in critical sites not alter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.9743179082870483,
+        "ground_truth": {
+          "GTP-binding activity": {
+            "bertscore": 0.7255577445030212,
+            "f1": 0
+          },
+          "this inhibition": {
+            "bertscore": 0.8989650011062622,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did not alter the inhibition of Thr-15?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutations in critical sites",
+        "answerability": 0.9988528490066528,
+        "ground_truth": {
+          "mutations": {
+            "bertscore": 0.8286073803901672,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did mutations in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "critical sites",
+        "answerability": 0.8814615607261658,
+        "ground_truth": {
+          "critical sites": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "p27 phosphorylation by PKB increased p27-cyclin D1-Cdk4 assembly in vitro but yielded inactive Cdk4.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PKB",
+        "Cdk4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein phosphorylated p27?",
+          "What did p27 phosphorylation by PKB produce?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p27 phosphorylation",
+        "PKB",
+        "p27-cyclin D1-Cdk4 assembly",
+        "inactive Cdk4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increased p27-cyclin D1-Cdk4 assembly in vitro",
+          "What protein phosphorylated p27?",
+          "What did p27 phosphorylation by PKB increase in vitro?",
+          "What did p27 phosphorylation by PKB produce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein phosphorylated p27?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKB",
+        "answerability": 0.9973174333572388,
+        "ground_truth": {
+          "PKB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did p27 phosphorylation by PKB produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4153367280960083,
+        "ground_truth": {
+          "Cdk4": {
+            "bertscore": 0.6375665068626404,
+            "f1": 0
+          },
+          "inactive Cdk4": {
+            "bertscore": 0.6787842512130737,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What increased p27-cyclin D1-Cdk4 assembly in vitro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p27 phosphorylation by PKB",
+        "answerability": 0.8868756890296936,
+        "ground_truth": {
+          "p27 phosphorylation": {
+            "bertscore": 0.8926750421524048,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did p27 phosphorylation by PKB increase in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p27-cyclin D1-Cdk4 assembly",
+        "answerability": 0.9957667589187622,
+        "ground_truth": {
+          "p27-cyclin D1-Cdk4 assembly": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

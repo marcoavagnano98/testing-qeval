@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "The ability of B-Myb to interact with the cdc2 promoter is mainly dependent on an intact E2F binding site.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "B-Myb",
+        "E2F"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is dependent on an intact E2F binding site?",
+          "What binding site is required for B-Myb to interact with the cdc2"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The ability",
+        "B-Myb",
+        "the cdc2 promoter",
+        "an intact E2F binding site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main dependent on an intact E2F binding site?",
+          "What protein is dependent on an intact E2F binding site?",
+          "What does B-Myb interact with?",
+          "What is the ability of B-Myb to interact with the cdc2 promote"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is dependent on an intact E2F binding site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B-Myb",
+        "answerability": 0.9854653477668762,
+        "ground_truth": {
+          "B-Myb": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What binding site is required for B-Myb to interact with the cdc2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F binding site",
+        "answerability": 0.843112587928772,
+        "ground_truth": {
+          "E2F": {
+            "bertscore": 0.7771583199501038,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is dependent on an intact E2F binding site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ability of B-Myb to interact with the cdc2 promoter",
+        "answerability": 0.9940612316131592,
+        "ground_truth": {
+          "The ability": {
+            "bertscore": 0.658383309841156,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What does B-Myb need to interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the cdc2 promoter",
+        "answerability": 0.8951816558837891,
+        "ground_truth": {
+          "the cdc2 promoter": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the ability of B-Myb to interact with the cdc2 promote": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.33958005905151367,
+        "ground_truth": {
+          "an intact E2F binding site": {
+            "bertscore": 0.6138778924942017,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "We demonstrate that the staphylococcal superantigens toxic shock syndrome toxin-1 (TSST-1) and staphylococcal enterotoxin A (SEA) activate HIV-1-LTR-driven transcription of chloramphenicol acetyl transferase in the human monocytic cell line THP-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TSST-1",
+        "SEA",
+        "THP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the staphylococcal superantigen that activates the transcription",
+          "What is the name of the staphylococcal superantigen that activates the transcription",
+          "What is the human monocytic cell line?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "TSST-1",
+        "A",
+        "(SEA",
+        "HIV-1-LTR-driven transcription",
+        "chloramphenicol acetyl transferase",
+        "the human monocytic cell line THP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors demonstrate?",
+          "What is the name of the staphylococcal superantigen that activates the transcription",
+          "What is SEA?",
+          "What is the name of the staphylococcal superantigen that activates the transcription",
+          "What does TSST-1 and SEA activate?",
+          "What transcriptional process is activated by TSST-1 and SEA?",
+          "What cell line does TSST-1 and SEA activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the staphylococcal superantigen that activates the transcription": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2326071858406067,
+        "ground_truth": {
+          "TSST-1": {
+            "bertscore": 0.670452892780304,
+            "f1": 0
+          },
+          "SEA": {
+            "bertscore": 0.6961413025856018,
+            "f1": 0
+          },
+          "(SEA": {
+            "bertscore": 0.6743802428245544,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the human monocytic cell line?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "THP-1",
+        "answerability": 0.774794340133667,
+        "ground_truth": {
+          "THP-1": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the authors demonstrate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.024866342544555664,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.605411171913147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is SEA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "staphylococcal enterotoxin A",
+        "answerability": 0.9828546643257141,
+        "ground_truth": {
+          "A": {
+            "bertscore": 0.5660994648933411,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TSST-1 and SEA activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1-LTR-driven transcription of chloramphenicol acetyl",
+        "answerability": 0.9333466291427612,
+        "ground_truth": {
+          "HIV-1-LTR-driven transcription": {
+            "bertscore": 0.8659489154815674,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What transcriptional process is activated by TSST-1 and SEA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chloramphenicol acetyl transferase",
+        "answerability": 0.8810046911239624,
+        "ground_truth": {
+          "chloramphenicol acetyl transferase": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cell line does TSST-1 and SEA activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "THP-1",
+        "answerability": 0.8569101691246033,
+        "ground_truth": {
+          "the human monocytic cell line THP-1": {
+            "bertscore": 0.7833930253982544,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

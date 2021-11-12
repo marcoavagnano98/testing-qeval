@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "Finally in JAK-1-deficient HeLa cells STAT6 activation by IL-4 is completely abolished.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "JAK-1-deficient HeLa cells",
+        "activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of cells is STAT6 activation completely abolished?",
+          "What is completely abolished in STAT6 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what type of cells is STAT6 activation completely abolished?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HeLa cells",
+        "answerability": 0.952631413936615,
+        "ground_truth": {
+          "JAK-1-deficient HeLa cells": {
+            "bertscore": 0.8579646348953247,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is completely abolished in STAT6 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "STAT6 activation by IL-4",
+        "answerability": 0.9846473336219788,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.7103826999664307,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

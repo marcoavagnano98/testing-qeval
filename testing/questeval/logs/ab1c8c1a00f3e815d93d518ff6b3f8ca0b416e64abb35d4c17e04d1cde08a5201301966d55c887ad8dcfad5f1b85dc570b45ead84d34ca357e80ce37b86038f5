@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "In contrast VEGF121 an upstream kinase of the Rho-GAP homologous protein NRP1 does not bind to VEGF121.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "VEGF121",
+        "an upstream kinase",
+        "the Rho-GAP homologous protein NRP1",
+        "VEGF121"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the difference between VEGF121 and NRP1?",
+          "What does NRP1 not bind to?",
+          "What does VEGF121 bind to?",
+          "What is VEGF121 an upstream kinase of?",
+          "What does NRP1 not bind to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein did not support complex formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03608691692352295,
+        "ground_truth": {
+          "contrast VEGF121": {
+            "bertscore": 0.6430943012237549,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein does VEGF121 not bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NRP1",
+        "answerability": 0.9003005027770996,
+        "ground_truth": {
+          "NRP1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did VEGF121 not support?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1829203963279724,
+        "ground_truth": {
+          "complex formation": {
+            "bertscore": 0.7037703394889832,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

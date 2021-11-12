@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The presence of both p65 and p50 NF-kappa B components in LPS-activated THP-1 cells was confirmed by specific antibody induction of supershifts in mobility assays.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The presence",
+        "both p65 and p50 NF-kappa B components",
+        "LPS-activated THP-1 cells",
+        "specific antibody induction",
+        "supershifts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was confirmed by specific antibody induction of supershifts in mobility assays?",
+          "What was found in LPS-activated THP-1 cells?",
+          "What was the presence of p65 and p50 NF-kappa B",
+          "How was the presence of p65 and p50 NF-kappa B",
+          "What was the antibody induction of in THP-1 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was confirmed by specific antibody induction of supershifts in mobility assays?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The presence of both p65 and p50 NF-kappa B components",
+        "answerability": 0.990170419216156,
+        "ground_truth": {
+          "The presence": {
+            "bertscore": 0.6846808195114136,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What was found in LPS-activated THP-1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65 and p50 NF-kappa B components",
+        "answerability": 0.8373966217041016,
+        "ground_truth": {
+          "both p65 and p50 NF-kappa B components": {
+            "bertscore": 0.9545285105705261,
+            "f1": 0.923076923076923
+          }
+        }
+      }
+    },
+    "What was the presence of p65 and p50 NF-kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19125688076019287,
+        "ground_truth": {
+          "LPS-activated THP-1 cells": {
+            "bertscore": 0.6110833287239075,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How was the presence of p65 and p50 NF-kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3262706398963928,
+        "ground_truth": {
+          "specific antibody induction": {
+            "bertscore": 0.6624425649642944,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the antibody induction of in THP-1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "supershifts",
+        "answerability": 0.8643729090690613,
+        "ground_truth": {
+          "supershifts": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

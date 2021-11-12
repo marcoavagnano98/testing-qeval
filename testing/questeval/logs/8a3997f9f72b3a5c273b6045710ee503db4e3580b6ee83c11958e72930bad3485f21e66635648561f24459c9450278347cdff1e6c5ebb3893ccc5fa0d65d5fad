@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Fas/FasL interaction initiates cell death in many other systems and its dysregulation is a mechanism by which several pathologic conditions arise.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Fas/FasL interaction",
+        "cell death",
+        "many other systems",
+        "its dysregulation",
+        "a mechanism",
+        "several pathologic conditions"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mechanism by which several pathologic conditions arise?",
+          "What does the Fas/FasL interaction initiate in many other systems?",
+          "Where does the Fas/FasL interaction initiate cell death?",
+          "What is the mechanism by which several pathologic conditions arise?",
+          "What is dysregulation?",
+          "What is dysregulation a mechanism by which?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mechanism by which several pathologic conditions arise?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dysregulation",
+        "answerability": 0.9979757070541382,
+        "ground_truth": {
+          "Fas/FasL interaction": {
+            "bertscore": 0.6463451981544495,
+            "f1": 0
+          },
+          "its dysregulation": {
+            "bertscore": 0.8898769617080688,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the Fas/FasL interaction initiate in many other systems?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell death",
+        "answerability": 0.999391496181488,
+        "ground_truth": {
+          "cell death": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where does the Fas/FasL interaction initiate cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in many other systems",
+        "answerability": 0.8290520906448364,
+        "ground_truth": {
+          "many other systems": {
+            "bertscore": 0.9059454798698425,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What is dysregulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a mechanism by which several pathologic conditions arise",
+        "answerability": 0.8443681001663208,
+        "ground_truth": {
+          "a mechanism": {
+            "bertscore": 0.7210232019424438,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is dysregulation a mechanism by which?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "several pathologic conditions arise",
+        "answerability": 0.9366426467895508,
+        "ground_truth": {
+          "several pathologic conditions": {
+            "bertscore": 0.9123796820640564,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "kappa B alpha prevented I kappa B alpha from binding to I kappa B alpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappa B alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevented I kappa B alpha from binding to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "kappa B alpha",
+        "I",
+        "kappa B alpha",
+        "I",
+        "kappa B alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevented I kappa B alpha from binding to?",
+          "What protein did kappa B prevent from binding to?",
+          "What prevented I kappa B alpha from binding to?",
+          "What protein did kappa B prevent from binding to?",
+          "What prevented I kappa B alpha from binding to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What prevented degradation of I kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014051556587219238,
+        "ground_truth": {
+          "kappa B alpha": {
+            "bertscore": 0.6581538915634155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enzyme was prevented from deteriorating?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012185215950012207,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.6798964142799377,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did kappa B prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binding",
+        "answerability": 0.9543755650520325,
+        "ground_truth": {
+          "kappa B alpha degradation": {
+            "bertscore": 0.7249983549118042,
+            "f1": 0
+          },
+          "NF-kappa B binding": {
+            "bertscore": 0.7465187311172485,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

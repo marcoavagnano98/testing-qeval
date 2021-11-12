@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "We have analyzed the expression of IL-2 IL-10 IL-12 and IL-15 genes in anti-CD3-activated human T lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2 IL-10 IL-12",
+        "IL-15"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What genes were analyzed in anti-CD3-activated human T lymphocytes?",
+          "What gene was found in anti-CD3-activated human T lymphocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the expression",
+        "IL-2 IL-10 IL-12 and IL-15 genes",
+        "anti-CD3-activated human T lymphocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been studied in human T lymphocytes?",
+          "What has been studied in human T lymphocytes?",
+          "What genes were analyzed in anti-CD3-activated human T lymphocytes?",
+          "Where did we analyze the expression of IL-2 IL-10 IL-12 and IL"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been studied in human T lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 IL-10 IL-12 and IL-15 genes",
+        "answerability": 0.9564768075942993,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5237146615982056,
+            "f1": 0
+          },
+          "the expression": {
+            "bertscore": 0.6158524751663208,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that is expressed in anti-CD3-activated human": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.5847886800765991,
+        "ground_truth": {
+          "IL-2Ralpha c-myc": {
+            "bertscore": 0.7129629254341125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was found to be expressed in anti-CD3-activated human T lymphocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 IL-10 IL-12 and IL-15 genes",
+        "answerability": 0.9338473081588745,
+        "ground_truth": {
+          "pim-1 genes": {
+            "bertscore": 0.7625955939292908,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "Where did we analyze the expression of IL-2Ralpha c-myc and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09414303302764893,
+        "ground_truth": {
+          "anti-CD3-activated human T lymphocytes": {
+            "bertscore": 0.570033609867096,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

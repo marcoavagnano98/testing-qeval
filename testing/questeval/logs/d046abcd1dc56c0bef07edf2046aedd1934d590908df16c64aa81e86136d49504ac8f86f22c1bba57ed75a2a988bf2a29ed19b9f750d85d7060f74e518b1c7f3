@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Together these data suggest that ligand-activated GR may compete with phospho-GATA-3 for nuclear import.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may compete with phospho-GATA-3 for nuclear import?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these data",
+        "ligand-activated GR",
+        "phospho-GATA-3",
+        "nuclear import"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that ligand-activated GR may compete with phospho-GATA",
+          "What may compete with phospho-GATA-3 for nuclear import?",
+          "What does ligand-activated GR compete with for nuclear import?",
+          "What does ligand-activated GR compete with phospho-GATA-3 for"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What may compete with phospho-GATA-3 for importin-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15074729919433594,
+        "ground_truth": {
+          "GR": {
+            "bertscore": 0.6718540787696838,
+            "f1": 0
+          },
+          "ligand-activated GR": {
+            "bertscore": 0.6413163542747498,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the ligand-activated GR compete with for importin-alpha": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36502158641815186,
+        "ground_truth": {
+          "phospho-GATA-3": {
+            "bertscore": 0.5709910988807678,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does ligand-activated GR compete with phospho-GATA-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear import",
+        "answerability": 0.9796260595321655,
+        "ground_truth": {
+          "importin-alpha": {
+            "bertscore": 0.7278690934181213,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What could ligand-activated GR limit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.461869478225708,
+        "ground_truth": {
+          "GATA-3 nuclear import": {
+            "bertscore": 0.6687374711036682,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

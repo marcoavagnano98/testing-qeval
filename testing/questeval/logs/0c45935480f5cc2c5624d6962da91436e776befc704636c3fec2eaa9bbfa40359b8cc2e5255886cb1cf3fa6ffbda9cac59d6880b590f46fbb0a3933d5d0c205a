@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Induction of IL-5 mRNA upon TCR and IL-2R stimulation was totally inhibited by dexamethasone.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA was inhibited by dexamethasone?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Induction",
+        "TCR",
+        "IL-2R stimulation",
+        "dexamethasone"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was completely inhibited by dexamethasone?",
+          "What is the main factor that inhibits the induction of IL-5 mRNA?",
+          "What was completely inhibited by dexamethasone?",
+          "What drug inhibited the induction of IL-5 mRNA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA was inhibited by dexamethasone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-5",
+        "answerability": 0.8882582783699036,
+        "ground_truth": {
+          "IL-5": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was completely inhibited by dexamethasone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Induction of IL-5 mRNA",
+        "answerability": 0.9902164936065674,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.7296195030212402,
+            "f1": 0.4
+          },
+          "IL-2R stimulation": {
+            "bertscore": 0.8176136612892151,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that inhibits the induction of IL-5 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dexamethasone",
+        "answerability": 0.9940093159675598,
+        "ground_truth": {
+          "TCR": {
+            "bertscore": 0.6564744710922241,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug inhibited the induction of IL-5 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dexamethasone",
+        "answerability": 0.9974815845489502,
+        "ground_truth": {
+          "dexamethasone": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

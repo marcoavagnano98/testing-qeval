@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "Epstein-Barr virus (EBV) the causative agent of infectious mononucleosis is a human herpesvirus associated with epithelial cell malignancies (nasopharyngeal carcinoma) as well as B-lymphocyte malignancies.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Epstein-Barr"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the causative agent of infectious mononucleosis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Epstein-Barr virus",
+        "(EBV",
+        "the causative agent",
+        "infectious mononucleosis",
+        "a human herpesvirus",
+        "epithelial cell malignancies",
+        "nasopharyngeal carcinoma",
+        "B-lymphocyte malignancies"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the causative agent of infectious mononucleosis?",
+          "What is the causative agent of infectious mononucleosis?",
+          "What is Epstein-Barr?",
+          "What is Epstein-Barr the causative agent of?",
+          "What is the causative agent of infectious mononucleosis?",
+          "What is the nasopharyngeal carcinoma?",
+          "What is the name of the epithelial cell malignancies that EBV is associated",
+          "What is the causative agent of infectious mononucleosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the causative agent of infectious mononucleosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Epstein-Barr virus",
+        "answerability": 0.9970380663871765,
+        "ground_truth": {
+          "Epstein-Barr": {
+            "bertscore": 0.8667200803756714,
+            "f1": 0.6666666666666666
+          },
+          "Epstein-Barr virus": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          },
+          "(EBV": {
+            "bertscore": 0.6184933185577393,
+            "f1": 0
+          },
+          "a human herpesvirus": {
+            "bertscore": 0.7471721768379211,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Epstein-Barr?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6818541884422302,
+        "ground_truth": {
+          "the causative agent": {
+            "bertscore": 0.6843401193618774,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Epstein-Barr the causative agent of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "infectious mononucleosis",
+        "answerability": 0.7912116050720215,
+        "ground_truth": {
+          "infectious mononucleosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the nasopharyngeal carcinoma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "epithelial cell malignancies",
+        "answerability": 0.8431585431098938,
+        "ground_truth": {
+          "epithelial cell malignancies": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the epithelial cell malignancies?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nasal carcinoma",
+        "answerability": 0.9109885096549988,
+        "ground_truth": {
+          "nasopharyngeal carcinoma": {
+            "bertscore": 0.8673257827758789,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the EBV associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "epithelial cell malignancies",
+        "answerability": 0.5988230109214783,
+        "ground_truth": {
+          "B-cell malignancies": {
+            "bertscore": 0.8564717769622803,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

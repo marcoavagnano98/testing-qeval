@@ -1,0 +1,62 @@
+{
+  "type": "ref",
+  "text": "Activation of NF-kappa B in vivo is regulated by multiple phosphorylations.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way is NF-kappa B activated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "NF-kappa B",
+        "vivo",
+        "multiple phosphorylations"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is NF-kappa B regulated by multiple phosphorylations?",
+          "What is activated in vivo?",
+          "In what way is NF-kappa B activated?",
+          "What is the activation of NF-kappa B regulated by?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is regulated by multiple phosphorylations?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9956287145614624,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.6712566614151001,
+            "f1": 0
+          },
+          "NF-kappa B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the activation of NF-kappa B regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "multiple phosphorylations",
+        "answerability": 0.9831956624984741,
+        "ground_truth": {
+          "multiple phosphorylations": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Tumor necrosis factor-alpha (TNF-alpha) is a pleiotropic cytokine that has been used to mediators of inflammatory diseases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the pleiotropic cytokine that has been used to mediators"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tumor necrosis factor-alpha",
+        "(TNF-alpha",
+        "a pleiotropic cytokine",
+        "mediators",
+        "inflammatory diseases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the pleiotropic cytokine that has been used to mediators",
+          "What is the pleiotropic cytokine that has been used to mediators",
+          "What is tumor necrosis factor-alpha?",
+          "What is TNF-alpha used for?",
+          "What is tumor necrosis factor-alpha used for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the key mediator of septic shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0034386515617370605,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is an important mediator of septic shock?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006703436374664307,
+        "ground_truth": {
+          "TNF-alpha": {
+            "bertscore": 0.6100006699562073,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tumor necrosis factor-alpha",
+        "answerability": 0.995601236820221,
+        "ground_truth": {
+          "an important mediator": {
+            "bertscore": 0.6355488300323486,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of death in a septic system?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002390742301940918,
+        "ground_truth": {
+          "septic shock": {
+            "bertscore": 0.6786140203475952,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Other lung cell types such as endothelial cells bronchial cells and fibroblasts failed to produce significant amounts of IL-8 in response to a prolonged cyclic pressure-stretching load.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Other lung cell types",
+        "endothelial cells bronchial cells",
+        "fibroblasts",
+        "significant amounts",
+        "response",
+        "a prolonged cyclic pressure-stretching load"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did endothelial cells, bronchial cells, and fibroblast",
+          "What are some lung cell types that failed to produce significant amounts of IL-8?",
+          "What other type of lung cell did not produce significant amounts of IL-8?",
+          "What did other lung cell types fail to produce?",
+          "What did lung cells fail to produce significant amounts of IL-8 in?",
+          "What caused IL-8 to fail?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did endothelial cells, bronchial cells, and fibroblast": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07277721166610718,
+        "ground_truth": {
+          "Other lung cell types": {
+            "bertscore": 0.646655261516571,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are some lung cell types that failed to produce IL-8?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cells bronchial cells and fibroblasts",
+        "answerability": 0.9961273074150085,
+        "ground_truth": {
+          "endothelial cells bronchial cells": {
+            "bertscore": 0.9239078164100647,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What other type of lung cell failed to produce IL-8?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fibroblasts",
+        "answerability": 0.984703004360199,
+        "ground_truth": {
+          "fibroblasts": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did bronchial cells fail to produce IL-8 in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a prolonged cyclic pressure-stretching load",
+        "answerability": 0.8046779632568359,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.6616287231445312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What caused IL-8 to fail?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "prolonged cyclic pressure-stretching load",
+        "answerability": 0.8820611238479614,
+        "ground_truth": {
+          "a prolonged cyclic pressure-stretching load": {
+            "bertscore": 0.9629632830619812,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

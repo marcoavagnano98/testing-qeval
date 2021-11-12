@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "After T cell activation the phosphorylation of Rb results in the release of Elf-1 which is correlated temporally with the activation state of the IL-2 receptor. Elf-1-mediated transcription is defective in HOIP-deficient cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rb",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylation results in the release of Elf-1?",
+          "What receptor is correlated with Elf-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the phosphorylation",
+        "Rb",
+        "the release",
+        "the activation state",
+        "the IL-2 receptor",
+        "Elf-1-mediated transcription",
+        "HOIP-deficient cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What results in the release of Elf-1?",
+          "What phosphorylation results in the release of Elf-1?",
+          "What does the phosphorylation of Rb result in?",
+          "What is the release of Elf-1 correlated with?",
+          "What is the activation state of Elf-1?",
+          "What is defective in HOIP-deficient cells?",
+          "What type of cells are defective in Elf-1-mediated transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylation results in the release of Elf-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rb",
+        "answerability": 0.8203390836715698,
+        "ground_truth": {
+          "Rb": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What results in the release of Elf-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of Rb",
+        "answerability": 0.9374436736106873,
+        "ground_truth": {
+          "the phosphorylation": {
+            "bertscore": 0.8528456687927246,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the phosphorylation of Rb result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the release of Elf-1",
+        "answerability": 0.8036530017852783,
+        "ground_truth": {
+          "the release": {
+            "bertscore": 0.7477617263793945,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the release of Elf-1 correlated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activation state of the IL-2 receptor",
+        "answerability": 0.9633591175079346,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.7565306425094604,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is correlated with the release of Rb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010473132133483887,
+        "ground_truth": {
+          "Elf-1-mediated transcription": {
+            "bertscore": 0.6320635676383972,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

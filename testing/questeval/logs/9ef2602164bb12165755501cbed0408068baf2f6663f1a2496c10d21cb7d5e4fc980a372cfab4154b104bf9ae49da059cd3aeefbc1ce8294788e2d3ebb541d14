@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Ocb3/Dem-Sharpincpdm-Dem/Sharpincpdm-Dem resulting in termination of mRNA synthesis and absence of a functional protein product 2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mRNA product that is missing?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ocb3/Dem-Sharpincpdm-Dem/Sharpincpdm-Dem",
+        "termination",
+        "mRNA synthesis",
+        "absence",
+        "a functional protein product"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the mRNA synthesis that is terminated?",
+          "What happens to mRNA synthesis?",
+          "What is terminated in the synthesis of a protein?",
+          "What is the result of termination of mRNA synthesis?",
+          "What does the absence of mRNA synthesis result in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mRNA product that is missing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5662155151367188,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.6837683916091919,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the mRNA synthesis that is prematurely terminated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2501412034034729,
+        "ground_truth": {
+          "Ocb3/Dem-Sharpincpdm-Dem/Sharpincpdm-Dem": {
+            "bertscore": 0.5969218015670776,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens to mRNA synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "termination",
+        "answerability": 0.9527897238731384,
+        "ground_truth": {
+          "premature termination": {
+            "bertscore": 0.8532830476760864,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is a function of a protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0036539435386657715,
+        "ground_truth": {
+          "mRNA synthesis": {
+            "bertscore": 0.663055956363678,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of premature termination of mRNA synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "absence of a functional protein product",
+        "answerability": 0.8757913112640381,
+        "ground_truth": {
+          "absence": {
+            "bertscore": 0.7034176588058472,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What does the absence of mRNA synthesis result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0731816291809082,
+        "ground_truth": {
+          "a functional protein product": {
+            "bertscore": 0.6527451276779175,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

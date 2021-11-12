@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "In contrast rolling of monocytes was increased by IkappaB-alpha transfer and was partly mediated by P-selectin; however it appeared to be unaffected by the inhibition of E-selectin induction.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast rolling",
+        "monocytes",
+        "IkappaB-alpha transfer",
+        "P-selectin",
+        "it",
+        "the inhibition",
+        "E-selectin induction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was increased by IkappaB-alpha transfer?",
+          "What was increased by IkappaB-alpha transfer?",
+          "What increased rolling of monocytes?",
+          "What was partly mediated by IkappaB-alpha transfer?",
+          "What was not affected by inhibition of E-selectin?",
+          "What did E-selectin do that did not affect rolling of monocytes?",
+          "What inhibited rolling of monocytes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was increased by IkappaB-alpha transfer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rolling of monocytes",
+        "answerability": 0.9960599541664124,
+        "ground_truth": {
+          "contrast rolling": {
+            "bertscore": 0.7549834251403809,
+            "f1": 0.4
+          },
+          "monocytes": {
+            "bertscore": 0.8585132956504822,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What increased rolling of monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB-alpha transfer",
+        "answerability": 0.9727503657341003,
+        "ground_truth": {
+          "IkappaB-alpha transfer": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was partly mediated by IkappaB-alpha transfer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.018726587295532227,
+        "ground_truth": {
+          "P-selectin": {
+            "bertscore": 0.6088314652442932,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by inhibition of E-selectin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43192654848098755,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6361183524131775,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did E-selectin do that did not affect rolling of monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004230976104736328,
+        "ground_truth": {
+          "the inhibition": {
+            "bertscore": 0.707779586315155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited rolling of monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1935071349143982,
+        "ground_truth": {
+          "E-selectin induction": {
+            "bertscore": 0.631292998790741,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

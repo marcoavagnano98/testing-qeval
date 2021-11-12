@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of ST3 correlated with the progression of human colorectal cancers toward local invasion and liver metastasis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "ST3",
+        "the progression",
+        "human colorectal cancers",
+        "local invasion",
+        "liver metastasis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the cause of human colorectal cancer?",
+          "What gene was associated with the progression of human colorectal cancer?",
+          "What did overexpression of ST3 correlate with?",
+          "What did ST3 correlate with?",
+          "What is the progression of human colorectal cancer?",
+          "What is the most common type of cancer that can be caused by ST3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the cause of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48416393995285034,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191470265388489,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was associated with the progression of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ST3",
+        "answerability": 0.9946807622909546,
+        "ground_truth": {
+          "ST3": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did overexpression of ST3 correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the progression of human colorectal cancers toward local invasion and liver metastasis",
+        "answerability": 0.9801342487335205,
+        "ground_truth": {
+          "the progression": {
+            "bertscore": 0.6805893182754517,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What did ST3 correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the progression of human colorectal cancers toward local invasion and liver metastasis",
+        "answerability": 0.6834312677383423,
+        "ground_truth": {
+          "human colorectal tumors": {
+            "bertscore": 0.8442437052726746,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What is the progression of human colorectal tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "local invasion and liver metastasis",
+        "answerability": 0.8870457410812378,
+        "ground_truth": {
+          "local invasion": {
+            "bertscore": 0.8014307618141174,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer that can be caused by ST3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.060054242610931396,
+        "ground_truth": {
+          "liver metastasis": {
+            "bertscore": 0.654184103012085,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

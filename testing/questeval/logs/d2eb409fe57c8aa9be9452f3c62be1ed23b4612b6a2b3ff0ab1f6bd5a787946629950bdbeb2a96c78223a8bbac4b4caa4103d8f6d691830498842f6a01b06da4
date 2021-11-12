@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "The other studied regulatory element is the minimal CD4 silencer which inhibits CD4 gene expression in peripheral CD8 T lymphocytes. This silencer is inactive in the most immature thymocytes which probably use a distinct silencer mechanism to down-regulate CD4 gene expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD4",
+        "CD8",
+        "CD4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene does the minimal CD4 silencer inhibit?",
+          "What type of T lymphocytes are inhibited by the minimal CD4 silencer?",
+          "What gene does the minimal CD4 silencer inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "regulatory element",
+        "the minimal CD4 silencer",
+        "CD4 gene expression",
+        "peripheral CD8 T lymphocytes",
+        "This silencer",
+        "the most immature thymocytes",
+        "a distinct silencer mechanism",
+        "down-regulate CD4 gene expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the minimal CD4 silencer?",
+          "What inhibits CD4 gene expression in peripheral CD8 T lymphocytes?",
+          "What does the minimal CD4 silencer inhibit in peripheral CD8 T lymphocytes?",
+          "What does the minimal CD4 silencer inhibit?",
+          "What inhibits CD4 gene expression in peripheral CD8 T lymphocytes?",
+          "Where is the minimal CD4 silencer inactive?",
+          "What mechanism does the minimal CD4 silencer use to down-regulate CD4 gene",
+          "What does the minimal CD4 silencer do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is inactive in the most immature DN thymocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002811610698699951,
+        "ground_truth": {
+          "This silencer": {
+            "bertscore": 0.6593670845031738,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what type of DN thymocytes is the silencer inactive?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2395431399345398,
+        "ground_truth": {
+          "the most immature DN thymocytes": {
+            "bertscore": 0.6322189569473267,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mechanism does DN thymocytes use to down-regulate CD": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13713985681533813,
+        "ground_truth": {
+          "a distinct silencer mechanism": {
+            "bertscore": 0.6832013726234436,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the silencer do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibits CD4 gene expression",
+        "answerability": 0.9956496357917786,
+        "ground_truth": {
+          "down-regulate CD4 gene expression": {
+            "bertscore": 0.869016706943512,
+            "f1": 0.75
+          }
+        }
+      }
+    }
+  }
+}

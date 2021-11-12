@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Nuclear factor p65 interacts with Keap1 to repress the Nrf2-ARE pathway. Detection of myeloid differentiating factor 88 (MyD88)-TLR2 complex confirmed interaction between p65 and Keap1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Keap1",
+        "88",
+        "p65",
+        "Keap1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein represses the Nrf2-ARE pathway?",
+          "What is the name of the myeloid differentiating factor?",
+          "What nuclear factor interacts with Keap1 to repress the Nrf2-ARE",
+          "What protein represses the Nrf2-ARE pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Nuclear factor p65",
+        "the Nrf2-ARE pathway",
+        "Detection",
+        "myeloid differentiating factor",
+        "MyD88)-TLR2 complex",
+        "interaction",
+        "p65",
+        "Keap1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in the Nrf2-ARE pathway?",
+          "What does nuclear factor p65 repress?",
+          "What confirmed interaction between p65 and Keap1?",
+          "What is MyD88?",
+          "What confirmed interaction between p65 and Keap1?",
+          "What did p65 and Keap1 confirm?",
+          "What nuclear factor interacts with Keap1 to repress the Nrf2-ARE",
+          "What protein represses the Nrf2-ARE pathway?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What part of p65 is necessary for interaction with Keap1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Nuclear factor",
+        "answerability": 0.991375744342804,
+        "ground_truth": {
+          "The N-terminal region": {
+            "bertscore": 0.7437766194343567,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the N-terminal region of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014917373657226562,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.62364661693573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the N-terminal region of p65 necessary for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13371551036834717,
+        "ground_truth": {
+          "both the interaction": {
+            "bertscore": 0.6549520492553711,
+            "f1": 0
+          },
+          "Keap1": {
+            "bertscore": 0.6635164618492126,
+            "f1": 0
+          },
+          "its transcriptional suppression activity": {
+            "bertscore": 0.6204380393028259,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

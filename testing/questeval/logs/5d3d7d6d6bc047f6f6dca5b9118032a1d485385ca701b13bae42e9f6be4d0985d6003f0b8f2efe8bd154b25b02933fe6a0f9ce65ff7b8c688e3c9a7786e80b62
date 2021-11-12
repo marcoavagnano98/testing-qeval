@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "WIT003 as well as pure 20-HETE stimulated EC proliferation by approximately 40%.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "20-HETE",
+        "EC",
+        "approximately 40%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What substance stimulated EC proliferation by approximately 40%?",
+          "What type of proliferation was stimulated by WIT003?",
+          "How much did WIT003 stimulate EC proliferation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "pure 20-HETE",
+        "EC proliferation",
+        "approximately 40%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulated EC proliferation by approximately 40%?",
+          "What did WIT003 and 20-HETE stimulate?",
+          "How much did WIT003 stimulate EC proliferation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What substance stimulated EC proliferation by approximately 40%?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3633579611778259,
+        "ground_truth": {
+          "20-HETE": {
+            "bertscore": 0.6420683860778809,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of proliferation was stimulated by WIT003?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EC",
+        "answerability": 0.7149181365966797,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How much did WIT003 stimulate EC proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "40%",
+        "answerability": 0.7323035001754761,
+        "ground_truth": {
+          "approximately 40%": {
+            "bertscore": 0.8704236745834351,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What stimulated EC proliferation by approximately 40%?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "WIT003 as well as pure 20-HETE",
+        "answerability": 0.7200835347175598,
+        "ground_truth": {
+          "pure 20-HETE": {
+            "bertscore": 0.8352468609809875,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did WIT003 and 20-HETE stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EC proliferation",
+        "answerability": 0.8563799858093262,
+        "ground_truth": {
+          "EC proliferation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

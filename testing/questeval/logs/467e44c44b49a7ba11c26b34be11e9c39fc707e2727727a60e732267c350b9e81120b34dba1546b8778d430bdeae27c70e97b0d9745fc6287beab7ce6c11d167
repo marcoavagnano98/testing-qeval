@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "Treatment with cyclopamine significantly attenuated vascular formation by a factor of 2.5\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2.5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of cyclopamine on vascular formation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Treatment",
+        "cyclopamine",
+        "vascular formation",
+        "a factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What significantly reduced vascular formation?",
+          "What treatment significantly reduced vascular formation?",
+          "What did treatment with cyclopamine significantly attenuate?",
+          "How much did cyclopamine reduce vascular formation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the dose of cyclopamine used to reduce BrdU incorporation in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4491358995437622,
+        "ground_truth": {
+          "25 mg/kg": {
+            "bertscore": 0.6427614688873291,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What significantly reduced BrdU incorporation in tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08023589849472046,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.7012162804603577,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment significantly reduced BrdU incorporation in tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2179950475692749,
+        "ground_truth": {
+          "25 mg/kg cyclopamine": {
+            "bertscore": 0.5695748329162598,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did treatment with cyclopamine significantly attenuate in tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.427448034286499,
+        "ground_truth": {
+          "BrdU incorporation": {
+            "bertscore": 0.6768269538879395,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did treatment with cyclopamine reduce BrdU incorporation in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3172866106033325,
+        "ground_truth": {
+          "tumor cells": {
+            "bertscore": 0.6456214785575867,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

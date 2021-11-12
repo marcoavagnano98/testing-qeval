@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "In acute myeloid leukemia (AML) with t(10;14) translocation the HOX A9 gene is rearranged.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AML",
+        "the HOX A9 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the leukemia with t(10;14) translocation",
+          "What is rearranged in AML?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(AML",
+        "t(10;14",
+        "the HOX A9 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the type of leukemia that has a t(10",
+          "What translocation of HOX A9 causes the HOX A9 gene to be",
+          "What is rearranged in AML?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is deregulated in T-cell ALL?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001698911190032959,
+        "ground_truth": {
+          "HOX 11": {
+            "bertscore": 0.6625982522964478,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What translocation of HOX 11 causes the HOX 11 gene to be deregulated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20104330778121948,
+        "ground_truth": {
+          "t(10;14": {
+            "bertscore": 0.6305176019668579,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is deregulated in T-cell ALL with t(10;14) translocation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01988905668258667,
+        "ground_truth": {
+          "the HOX 11 gene": {
+            "bertscore": 0.6113854646682739,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

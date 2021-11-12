@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "In vitro and in vivo analyses showed that CNC factors bind to the MARE in the chicken beta-globin enhancer and can activate transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo",
+        "CNC",
+        "MARE"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In vitro and what type of analysis showed that CNC factors bind to the MARE in",
+          "What factor binds to the MARE in the chicken beta-globin enhancer?",
+          "What protein does CNC factors bind to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "vivo analyses",
+        "CNC factors",
+        "the MARE",
+        "the chicken beta-globin enhancer",
+        "transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that CNC factors bind to the MARE in the chicken beta-globin enhance",
+          "What binds to the MARE in the chicken beta-globin enhancer?",
+          "What do CNC factors bind to?",
+          "What protein does CNC factors bind to?",
+          "What does CNC factor activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What do CNC factors bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MARE",
+        "answerability": 0.9408742189407349,
+        "ground_truth": {
+          "MARE": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of proteins bind to MARE?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23580771684646606,
+        "ground_truth": {
+          "Maf": {
+            "bertscore": 0.6594555974006653,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What binds to MARE through heterodimer formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.40998852252960205,
+        "ground_truth": {
+          "CNC factors": {
+            "bertscore": 0.6253390908241272,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How do CNC factors bind to MARE?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3966708183288574,
+        "ground_truth": {
+          "heterodimer formation": {
+            "bertscore": 0.678034782409668,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do CNC factors bind to to form heterodimer formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19983059167861938,
+        "ground_truth": {
+          "small Maf proteins": {
+            "bertscore": 0.6415677666664124,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

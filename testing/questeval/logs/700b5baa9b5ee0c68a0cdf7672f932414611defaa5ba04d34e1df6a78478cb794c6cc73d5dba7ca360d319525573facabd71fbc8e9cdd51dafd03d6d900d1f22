@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "; modulate arachidonate metabolism by inhibiting 5-lipoxygenase 12-lipoxygenase or COX-2; antagonize the activation of AP-1 transcription factors; promote the activation of PPAR-gamma transcription factors; and that suppress angiogenesis by additional mechanisms.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "COX-2",
+        "PPAR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the enzyme that inhibits 5-lipoxygenase 12-lip",
+          "What is the name of the transcription factor that promotes the activation of AP-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "; modulate arachidonate metabolism",
+        "the activation",
+        "AP-1 transcription factors",
+        "the activation",
+        "PPAR-gamma transcription factors",
+        "that suppress angiogenesis",
+        "additional mechanisms"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are some of the actions that can be taken to inhibit the 5-lipoxygenas",
+          "What does PPAR-gamma promote?",
+          "What does the PPAR-gamma gene antagonize?",
+          "What does PPAR-gamma promote?",
+          "What transcription factors are promoted by AP-1?",
+          "What are some of the effects of accutane on the liver?",
+          "What does the phosphorylation of arachidonate inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the enzyme that inhibits 5-lipoxygenase 12-lip": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "COX-2",
+        "answerability": 0.8991730809211731,
+        "ground_truth": {
+          "COX-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the transcription factor that promotes the activation of AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3542745113372803,
+        "ground_truth": {
+          "PPAR": {
+            "bertscore": 0.7084649205207825,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are some of the actions that can be taken to inhibit the 5-lipoxygenas": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20782619714736938,
+        "ground_truth": {
+          "; modulate arachidonate metabolism": {
+            "bertscore": 0.6068261861801147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does PPAR-gamma promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25778621435165405,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6892382502555847,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the PPAR-gamma gene antagonize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26966679096221924,
+        "ground_truth": {
+          "AP-1 transcription factors": {
+            "bertscore": 0.6170714497566223,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factors are promoted by AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PPAR-gamma",
+        "answerability": 0.6572065353393555,
+        "ground_truth": {
+          "PPAR-gamma transcription factors": {
+            "bertscore": 0.8611089587211609,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What are some of the effects of accutane on the liver?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09282630681991577,
+        "ground_truth": {
+          "that suppress angiogenesis": {
+            "bertscore": 0.6216239333152771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the phosphorylation of arachidonate inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.016393065452575684,
+        "ground_truth": {
+          "additional mechanisms": {
+            "bertscore": 0.6971895098686218,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

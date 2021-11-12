@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "The VEGF system represents a key mediator of tumor-initiated angiogenesis and the first target of antiangiogenesis agents introduced in clinical practice.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "first"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the VEGF system the first target of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The VEGF system",
+        "a key mediator",
+        "tumor-initiated angiogenesis",
+        "the first target",
+        "antiangiogenesis agents",
+        "clinical practice"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the first target of antiangiogenesis agents?",
+          "What does the VEGF system represent?",
+          "What is the VEGF system a key mediator of?",
+          "What is the VEGF system used for in clinical practice?",
+          "What is the VEGF system the first target of?",
+          "What is the first target of antiangiogenesis agents?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the VEGF system the first target of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antiangiogenesis agents",
+        "answerability": 0.974757730960846,
+        "ground_truth": {
+          "first": {
+            "bertscore": 0.6459164619445801,
+            "f1": 0
+          },
+          "antiangiogenesis agents": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the first target of antiangiogenesis agents?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF",
+        "answerability": 0.9803915023803711,
+        "ground_truth": {
+          "The VEGF system": {
+            "bertscore": 0.8679749965667725,
+            "f1": 0.6666666666666666
+          },
+          "clinical practice": {
+            "bertscore": 0.6852289438247681,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the VEGF system represent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mediator",
+        "answerability": 0.9874919056892395,
+        "ground_truth": {
+          "a key mediator": {
+            "bertscore": 0.8431602716445923,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the VEGF system a key mediator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor-initiated angiogenesis",
+        "answerability": 0.9970254302024841,
+        "ground_truth": {
+          "tumor-initiated angiogenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the VEGF system used for in clinical practice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mediator",
+        "answerability": 0.9984678030014038,
+        "ground_truth": {
+          "the first target": {
+            "bertscore": 0.7276380658149719,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

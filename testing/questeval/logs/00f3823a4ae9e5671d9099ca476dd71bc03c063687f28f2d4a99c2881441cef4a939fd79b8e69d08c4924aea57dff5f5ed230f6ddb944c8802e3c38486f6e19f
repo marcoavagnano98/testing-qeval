@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Nuclear Rel-A and c -Rel protein complexes are differentially distributed within human thymocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Nuclear Rel-A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein complex that is distributed in human thymocytes"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Nuclear Rel-A and c -Rel protein complexes",
+        "human thymocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are differentially distributed within human thymocytes?",
+          "Nuclear Rel-A and c-Rel protein complexes are differentially distributed"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein complex that is distributed in human thymocytes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Nuclear Rel-A and c -Rel",
+        "answerability": 0.8194117546081543,
+        "ground_truth": {
+          "Nuclear Rel-A": {
+            "bertscore": 0.8611511588096619,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What are differentially distributed within human thymocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Nuclear Rel-A and c -Rel protein complexes",
+        "answerability": 0.9769307971000671,
+        "ground_truth": {
+          "Nuclear Rel-A and c -Rel protein complexes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Nuclear Rel-A and c-Rel protein complexes are differentially distributed": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07604295015335083,
+        "ground_truth": {
+          "human thymocytes": {
+            "bertscore": 0.6257879734039307,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

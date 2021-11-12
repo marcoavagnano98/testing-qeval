@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "expression is low in the early stages but gradually and continuously increases with developmental progression and differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "expression",
+        "the early stages",
+        "developmental progression",
+        "differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is low in the early stages of a bacterium?",
+          "When is expression low?",
+          "What is the process that causes the expression of chromosomes to increase?",
+          "What is the main factor that causes the expression of chromosomes to increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is low in the early stages of development?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression",
+        "answerability": 0.9991016387939453,
+        "ground_truth": {
+          "mammalian development krm1 mRNA expression": {
+            "bertscore": 0.7345741987228394,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "When is krm1 mRNA expression low?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "early stages",
+        "answerability": 0.9278445243835449,
+        "ground_truth": {
+          "the early stages": {
+            "bertscore": 0.9138420820236206,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that causes krm1 mRNA expression to increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21681582927703857,
+        "ground_truth": {
+          "developmental progression": {
+            "bertscore": 0.7205294966697693,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main process of krm1 mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.026514768600463867,
+        "ground_truth": {
+          "differentiation": {
+            "bertscore": 0.7085908651351929,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

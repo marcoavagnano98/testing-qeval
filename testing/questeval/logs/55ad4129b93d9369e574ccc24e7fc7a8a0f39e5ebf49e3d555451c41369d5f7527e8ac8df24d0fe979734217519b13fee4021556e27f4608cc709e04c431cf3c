@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "Our purpose was to investigate human colon cancers for inactivation of two candidate metastasis suppressor genes nm23-H1 and nm23-H2 either by mutation or by loss of gene transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many candidate metastasis suppressor genes were investigated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our purpose",
+        "human colon cancers",
+        "inactivation",
+        "two candidate metastasis suppressor genes",
+        "nm23-H1",
+        "nm23-H2",
+        "loss",
+        "gene transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the purpose of the study?",
+          "What was the purpose of the study?",
+          "What was the purpose of the study?",
+          "What did the study investigate?",
+          "What is the name of the two metastasis suppressor genes?",
+          "What is the name of the two metastasis suppressor genes?",
+          "What was the other way to investigate human colon cancers?",
+          "What did the study aim to study?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many candidate metastasis suppressor genes were examined?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.9268298745155334,
+        "ground_truth": {
+          "two": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the purpose of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "to investigate human colon cancers for inactivation of two candidate metastasis suppressor",
+        "answerability": 0.8569387197494507,
+        "ground_truth": {
+          "Our purpose": {
+            "bertscore": 0.6015424728393555,
+            "f1": 0
+          },
+          "human colon cancers": {
+            "bertscore": 0.7792690396308899,
+            "f1": 0.4
+          },
+          "inactivation": {
+            "bertscore": 0.6972519159317017,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    },
+    "What did the study examine for inactivation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two candidate metastasis suppressor genes nm23-H1 and n",
+        "answerability": 0.9585607051849365,
+        "ground_truth": {
+          "two candidate metastasis suppressor genes": {
+            "bertscore": 0.8800663948059082,
+            "f1": 0.7692307692307693
+          }
+        }
+      }
+    },
+    "What is the name of the two metastasis suppressor genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nm23-H1 and nm23-H2",
+        "answerability": 0.9912049174308777,
+        "ground_truth": {
+          "nm23-H1": {
+            "bertscore": 0.8711501359939575,
+            "f1": 0.5
+          },
+          "nm23-H2": {
+            "bertscore": 0.8665922284126282,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the other way to inactivate two metastasis suppressor genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutation or by loss of gene transcription",
+        "answerability": 0.9908551573753357,
+        "ground_truth": {
+          "loss": {
+            "bertscore": 0.7252500057220459,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What did the study examine for mutation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05696207284927368,
+        "ground_truth": {
+          "gene transcription": {
+            "bertscore": 0.663903534412384,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "In contrast to hematopoietic cells I kappa B alpha-/- embryonic fibroblasts show minimal constitutive NF-kappa B as well as normal signal-dependent NF-kappa B activation that is concomitant with I kappa B beta degradation. The absence of slow migrating forms of I kappa B beta following stimulation suggests that the phosphorylation does not necessarily constitute the signal-induced event which targets the NF-kappa B signal.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappa B alpha-/-"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of embryonic fibroblasts show minimal constitutive NF-kappa"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "hematopoietic cells",
+        "I",
+        "kappa B alpha-/- embryonic fibroblasts",
+        "minimal constitutive NF-kappa B",
+        "normal signal-dependent NF-kappa B activation",
+        "I",
+        "The absence",
+        "slow migrating forms",
+        "I",
+        "kappa B beta following stimulation",
+        "the phosphorylation",
+        "the signal-induced event",
+        "the NF-kappa B signal"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the phosphorylation of I kappa B beta?",
+          "What type of cells do I kappa B alpha-/- embryonic",
+          "What type of kappa B beta is present in embryonic cells?",
+          "What type of cells show minimal constitutive NF-kappa B activation?",
+          "What do fibroblasts show?",
+          "What does I kappa B alpha-/- embryonic fibroblasts",
+          "What type of kappa B beta is present in embryonic cells?",
+          "What suggests that the phosphorylation does not constitute the signal-induced event?",
+          "What type of I kappa B beta is absent after stimulation?",
+          "What type of kappa B beta is present in embryonic cells?",
+          "What does the absence of slow migrating forms of I do suggest?",
+          "What does the absence of slow migrating forms of I kappa B beta suggest",
+          "What does the absence of slow migrating forms of I kappa B beta suggest",
+          "What do fibroblasts lack in phosphorylation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggests that the phosphorylation does not constitute the signal-induced event?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "absence of slow migrating forms of I kappa B beta",
+        "answerability": 0.9963597059249878,
+        "ground_truth": {
+          "The absence": {
+            "bertscore": 0.6448943018913269,
+            "f1": 0.18181818181818182
+          }
+        }
+      }
+    },
+    "What is absent from I kappa B beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "slow migrating forms",
+        "answerability": 0.8946061730384827,
+        "ground_truth": {
+          "slow migrating forms": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What kappa B beta is absent after stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "slow migrating forms",
+        "answerability": 0.9922146201133728,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.6931353211402893,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the absence of slow migrating forms of I do suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35260486602783203,
+        "ground_truth": {
+          "kappa B beta following stimulation": {
+            "bertscore": 0.610235333442688,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the absence of slow migrating forms of I kappa B beta suggest": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5300729274749756,
+        "ground_truth": {
+          "the phosphorylation": {
+            "bertscore": 0.6286066174507141,
+            "f1": 0
+          },
+          "the signal-induced event": {
+            "bertscore": 0.6860308647155762,
+            "f1": 0
+          },
+          "the molecule": {
+            "bertscore": 0.6384769082069397,
+            "f1": 0
+          },
+          "proteolysis": {
+            "bertscore": 0.6515888571739197,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

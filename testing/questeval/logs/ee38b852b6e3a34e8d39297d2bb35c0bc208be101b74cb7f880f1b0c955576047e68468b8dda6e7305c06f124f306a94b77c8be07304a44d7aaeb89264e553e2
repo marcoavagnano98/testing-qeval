@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "In this study we investigated the effects of spironolactone on the corneal allograft survival in the rat.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this study",
+        "we",
+        "the effects",
+        "spironolactone",
+        "the corneal allograft survival",
+        "the rat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study investigated the effects of spironolactone on the corneal allo",
+          "What was the purpose of the study?",
+          "What did the study investigate?",
+          "What drug was used to treat corneal allografts in rats?",
+          "What did the study investigate?",
+          "What animal was studied for the effects of spironolactone on corneal all"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of spironolactone on corneal allograft": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5135678648948669,
+        "ground_truth": {
+          "Effects": {
+            "bertscore": 0.6883600354194641,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug has been shown to improve corneal allograft survival in rats?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spironolactone",
+        "answerability": 0.9846342206001282,
+        "ground_truth": {
+          "spironolactone": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of spironolactone on the cornea of a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5386896133422852,
+        "ground_truth": {
+          "corneal allograft survival": {
+            "bertscore": 0.6841395497322083,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What animal was the study of spironolactone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rat",
+        "answerability": 0.9732140898704529,
+        "ground_truth": {
+          "the rat": {
+            "bertscore": 0.8444464206695557,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

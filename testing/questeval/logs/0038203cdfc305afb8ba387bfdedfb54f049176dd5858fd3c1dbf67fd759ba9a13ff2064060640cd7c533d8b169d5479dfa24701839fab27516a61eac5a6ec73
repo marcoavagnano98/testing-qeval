@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "In contrast intact beta2GPI does not inhibit antiangiogenic activity of AS4.5.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "intact beta2GPI",
+        "antiangiogenic activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of intact beta2GPI on AS4.5?",
+          "What does not inhibit antiangiogenic activity of AS4.5?",
+          "What does intact beta2GPI not inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of intact beta2GPI on AS4.5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "does not inhibit antiangiogenic activity",
+        "answerability": 0.5853465795516968,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6226289868354797,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not bind to AS4.5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21449339389801025,
+        "ground_truth": {
+          "intact beta2GPI": {
+            "bertscore": 0.6626409888267517,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does intact beta2GPI not bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.052778780460357666,
+        "ground_truth": {
+          "AS4.5": {
+            "bertscore": 0.6575648188591003,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does intact beta2GPI not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antiangiogenic activity",
+        "answerability": 0.7751072645187378,
+        "ground_truth": {
+          "its antiangiogenic activity": {
+            "bertscore": 0.9351049065589905,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

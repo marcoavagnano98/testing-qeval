@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The IL-10 pretreatment markedly attenuated the NF-kappaB DNA binding activity in both memory and naive T cells from the elderly indicating that memory T cells are not significantly altered in their responsiveness to TNF-alpha-mediated induction of NF-kappaB.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What DNA binding activity was attenuated by IL-10?",
+          "What protein did IL-10 inhibit in the elderly?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The IL-10 pretreatment",
+        "the NF-kappaB DNA binding activity",
+        "both memory",
+        "naive T cells",
+        "memory T cells",
+        "their responsiveness",
+        "TNF-alpha-mediated induction",
+        "NF-kappaB."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What attenuated the NF-kappaB DNA binding activity in memory cells",
+          "What did IL-10 significantly attenuate in memory and naive T cells",
+          "What type of T cells were not significantly altered in response to IL-10?",
+          "What type of T cells were not significantly altered in response to IL-10?",
+          "What type of cells were not significantly altered in response to IL-10?",
+          "What did the IL-10 treatment not significantly alter in memory T cells?",
+          "What did IL-10 do to memory T cells?",
+          "What DNA binding activity was attenuated by IL-10?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug did IL-10 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.042937278747558594,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027958035469055,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What DNA binding was reduced by IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9797815680503845,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IL-10 do for IkappaB-alpha protein levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41930633783340454,
+        "ground_truth": {
+          "IL-10 pretreatment prevented LPS-induced decreases": {
+            "bertscore": 0.6304997801780701,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-10 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12967926263809204,
+        "ground_truth": {
+          "IkappaB-alpha protein levels": {
+            "bertscore": 0.5950702428817749,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

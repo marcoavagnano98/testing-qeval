@@ -1,0 +1,150 @@
+{
+  "type": "hyp",
+  "text": "Ascorbic acid (ascorbate or vitamin C) has been shown to suppress NF-kappa B activation in human promonocytic cells following stimulation with a pro-inflammatory cytokine tumor necrosis factor-alpha (TNF-alpha). AZT and its acetate and succinate esters also had no effect on NF-kappa B activation following TNF-alpha- or PMA-induced stimulation of U1 promonocytic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ascorbic",
+        "TNF",
+        "TNF-alpha-",
+        "PMA",
+        "U1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another name for vitamin C?",
+          "What cytokine does AZT have no effect on?",
+          "What is the pro-inflammatory cytokine?",
+          "What is the name of the pro-inflammatory cytokine?",
+          "What type of human pro-inflammatory cytokine does AZT have no effect on"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ascorbic acid",
+        "NF-kappa B activation",
+        "human promonocytic cells",
+        "stimulation",
+        "a pro-inflammatory cytokine tumor necrosis factor-alpha",
+        "(TNF-alpha",
+        "AZT",
+        "succinate esters",
+        "no effect",
+        "NF-kappa B activation",
+        "TNF-alpha- or PMA-induced stimulation",
+        "U1 promonocytic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another name for vitamin C?",
+          "What does ascorbic acid suppress?",
+          "What does ascorbic acid suppress?",
+          "What does ascorbic acid suppress?",
+          "What does AZT suppress?",
+          "What is the pro-inflammatory cytokine?",
+          "What is the name of the acetate and succinate esters that have not been shown",
+          "What is another name for acetate?",
+          "What did AZT have on NF-kappa B activation?",
+          "What does ascorbic acid suppress?",
+          "What does AZT have no effect on?",
+          "What does AZT have no effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the stimulator that did not have an effect on NF-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AZT",
+        "answerability": 0.8468395471572876,
+        "ground_truth": {
+          "TNF-alpha-": {
+            "bertscore": 0.6568737030029297,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulator did AZT have no effect on NF-kappa B activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5774993896484375,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.7000216245651245,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were stimulated with AZT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07842308282852173,
+        "ground_truth": {
+          "U1": {
+            "bertscore": 0.6922973990440369,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What compound did not have an effect on NF-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AZT",
+        "answerability": 0.9834643006324768,
+        "ground_truth": {
+          "Ascorbate": {
+            "bertscore": 0.7597089409828186,
+            "f1": 0
+          },
+          "AZT": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What effect did AZT and ascorbate have on NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15515005588531494,
+        "ground_truth": {
+          "no effect": {
+            "bertscore": 0.7436091899871826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did AZT and ascorbate not have an effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B activation",
+        "answerability": 0.8592512607574463,
+        "ground_truth": {
+          "NF-kappa B activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "U1 promonocytic cells": {
+            "bertscore": 0.6745694279670715,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did AZT and ascorbate not have an effect on NF-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AZT and its acetate and succinate esters",
+        "answerability": 0.647476315498352,
+        "ground_truth": {
+          "TNF-alpha- or PMA-induced stimulation": {
+            "bertscore": 0.7109804153442383,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

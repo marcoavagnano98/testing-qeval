@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "Background GATA-3 plays a critical role in regulating the expression of the cytokines interleukin (IL)-2 IL-4 IL-5 and IL-13 from T helper-2 (Th2) cells and therefore is a key mediator of allergic diseases.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Background GATA-3",
+        "a critical role",
+        "the expression",
+        "the cytokines interleukin",
+        "Th2",
+        "a key mediator",
+        "allergic diseases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What plays a key role in regulating the expression of cytokines?",
+          "What role does GATA-3 play in regulating the expression of cytokines?",
+          "What does GATA-3 regulate?",
+          "What does GATA-3 regulate?",
+          "What is another name for T helper-2 cells?",
+          "What is GATA-3 a key mediator of allergic diseases?",
+          "What is GATA-3 a key mediator of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What plays a key role in regulating the expression of cytokines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-3",
+        "answerability": 0.9740549921989441,
+        "ground_truth": {
+          "Background GATA-3": {
+            "bertscore": 0.8965461850166321,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What role does GATA-3 play in regulating the expression of cytokines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin (IL)-2 IL-4 IL-5 and IL-13",
+        "answerability": 0.9885117411613464,
+        "ground_truth": {
+          "a critical role": {
+            "bertscore": 0.5502356290817261,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does GATA-3 regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the expression of the cytokines interleukin (IL)-2 IL-4",
+        "answerability": 0.9969277381896973,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6359298825263977,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does IL-4 play a role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008513212203979492,
+        "ground_truth": {
+          "the cytokines interleukin": {
+            "bertscore": 0.5911405086517334,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cytokines do Th2 cells produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.33559924364089966,
+        "ground_truth": {
+          "IL-5 and IL-13": {
+            "bertscore": 0.6454795002937317,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another name for T helper-2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2 cells",
+        "answerability": 0.9741619229316711,
+        "ground_truth": {
+          "Th2": {
+            "bertscore": 0.8312941789627075,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is GATA-3 a key mediator of allergic diseases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokines interleukin (IL)-2 IL-4 IL-5 and",
+        "answerability": 0.984445333480835,
+        "ground_truth": {
+          "a key mediator": {
+            "bertscore": 0.601190984249115,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is GATA-3 a key mediator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "allergic diseases",
+        "answerability": 0.9995641708374023,
+        "ground_truth": {
+          "allergic diseases": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

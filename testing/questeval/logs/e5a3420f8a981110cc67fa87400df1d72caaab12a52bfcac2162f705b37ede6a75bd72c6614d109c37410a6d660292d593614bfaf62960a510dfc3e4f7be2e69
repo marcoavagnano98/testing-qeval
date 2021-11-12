@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "(LMB)-treated cells indicating that p38 is actively exported out of the cytoplasm.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(LMB)-treated cells",
+        "p38",
+        "the cytoplasm"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the type of cells that show that p38 is actively exported out",
+          "What is exported out of the cytoplasm?",
+          "Where is p38 exported from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was exported to the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011440694332122803,
+        "ground_truth": {
+          "MAPKAP": {
+            "bertscore": 0.6293090581893921,
+            "f1": 0
+          },
+          "MAPKAP kinase-2 nuclear p38": {
+            "bertscore": 0.6045949459075928,
+            "f1": 0
+          },
+          "MAPKAP kinase-2": {
+            "bertscore": 0.6033994555473328,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the process that caused nuclear p38 to be exported to the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008768022060394287,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.6180735230445862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was nuclear p38 exported?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01126009225845337,
+        "ground_truth": {
+          "the cytoplasm": {
+            "bertscore": 0.6099188923835754,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was p38 exported to the cytoplasm in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0033150315284729004,
+        "ground_truth": {
+          "a complex": {
+            "bertscore": 0.6878237724304199,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

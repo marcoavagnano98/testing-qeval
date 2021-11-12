@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "Exposure to VitD3 rapidly induced the de novo expression of CD14 mRNA and protein. The addition of cycloheximide completely blocked the VitD3-dependent induction of CD14 mRNA expression indicating that the induction was dependent on ongoing protein synthesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VitD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the main factor that induced the de novo expression of CD14?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Exposure",
+        "VitD3",
+        "the de novo expression",
+        "CD14 mRNA",
+        "protein",
+        "The addition",
+        "cycloheximide",
+        "the VitD3-dependent induction",
+        "CD14 mRNA expression",
+        "the induction",
+        "ongoing protein synthesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused the de novo expression of CD14?",
+          "What was the main factor that induced the de novo expression of CD14?",
+          "What did VitD3 cause?",
+          "What did VitD3 cause to be induced?",
+          "What did the addition of cycloheximide block?",
+          "What did the addition of cycloheximide block?",
+          "What blockade the VitD3-dependent induction of CD14 mRNA expression",
+          "What did the addition of cycloheximide block?",
+          "What did VitD3 cause?",
+          "What was dependent on ongoing protein synthesis?",
+          "What did the addition of cycloheximide indicate was dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induction of CD14 mRNA was blocked by cycloheximide": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3-dependent",
+        "answerability": 0.9359637498855591,
+        "ground_truth": {
+          "VitD3": {
+            "bertscore": 0.8506224751472473,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blocked the VitD3 induction of CD14 mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cycloheximide",
+        "answerability": 0.9402891397476196,
+        "ground_truth": {
+          "The addition": {
+            "bertscore": 0.5869435667991638,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockade the VitD3 induction of CD14 mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cycloheximide",
+        "answerability": 0.9537843465805054,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide completely block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3-dependent induction of CD14 mRNA",
+        "answerability": 0.7605164647102356,
+        "ground_truth": {
+          "the VitD3 induction": {
+            "bertscore": 0.8257654905319214,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6103696823120117,
+        "ground_truth": {
+          "CD14 mRNA expression": {
+            "bertscore": 0.608360230922699,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was dependent on ongoing protein synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46523886919021606,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.697335422039032,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the addition of cycloheximide indicate was dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ongoing protein synthesis",
+        "answerability": 0.9771286249160767,
+        "ground_truth": {
+          "ongoing protein synthesis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

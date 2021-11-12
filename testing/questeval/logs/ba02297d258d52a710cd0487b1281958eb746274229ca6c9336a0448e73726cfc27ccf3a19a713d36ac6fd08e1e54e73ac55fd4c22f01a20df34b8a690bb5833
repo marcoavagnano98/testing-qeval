@@ -1,0 +1,90 @@
+{
+  "type": "ref",
+  "text": "Histological examination of ovarian corrosion casts indicated that NS-398 inhibited the establishment of luteal capillary vessels following the injection of hCG.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Histological examination",
+        "ovarian corrosion casts",
+        "the establishment",
+        "luteal capillary vessels",
+        "the injection",
+        "hCG"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicated that NS-398 inhibited the establishment of luteal capillary",
+          "What did histological examination show inhibited the establishment of luteal capillary",
+          "What did NS-398 inhibit?",
+          "What did NS-398 inhibit?",
+          "What did NS-398 inhibit the establishment of luteal capillary vessels following?",
+          "What drug was used to inhibit the formation of luteal capillary vessels?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What indicated that ovarian corrosion casts were formed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015761256217956543,
+        "ground_truth": {
+          "Histological examination": {
+            "bertscore": 0.6720795035362244,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did histological examination of ovarian arteries reveal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09882849454879761,
+        "ground_truth": {
+          "ovarian corrosion casts": {
+            "bertscore": 0.6560904383659363,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did histological examination of ovarian corrosion casts indicate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NS-398 inhibited the establishment of luteal capillary vessels following the",
+        "answerability": 0.742982029914856,
+        "ground_truth": {
+          "that luteal capillary vessels": {
+            "bertscore": 0.7955867052078247,
+            "f1": 0.5
+          },
+          "the establishment ofluteal capillary vessels": {
+            "bertscore": 0.7965250015258789,
+            "f1": 0.5
+          },
+          "the injection": {
+            "bertscore": 0.6565738916397095,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What substance was used to treat ovarian corrosion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18894541263580322,
+        "ground_truth": {
+          "hCG": {
+            "bertscore": 0.6761652231216431,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

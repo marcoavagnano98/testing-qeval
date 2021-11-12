@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "In contrast mild oxidation with glucose oxidase selectively inhibits p75 and p85 binding while not inhibiting p50 and p55 interactions.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast mild oxidation",
+        "glucose oxidase",
+        "p75",
+        "p50 and p55 interactions"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits p75 and p85 binding?",
+          "What inhibits p75 and p85 binding?",
+          "What binding does glucose oxidase inhibit?",
+          "What does mild oxidation with glucose oxidase not inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits p75 and p85 binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mild oxidation with glucose oxidase",
+        "answerability": 0.9732984304428101,
+        "ground_truth": {
+          "contrast mild oxidation": {
+            "bertscore": 0.8243536353111267,
+            "f1": 0.5
+          },
+          "glucose oxidase": {
+            "bertscore": 0.877885103225708,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What binding does glucose oxidase inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75 and p85",
+        "answerability": 0.9466161131858826,
+        "ground_truth": {
+          "p75": {
+            "bertscore": 0.8451502919197083,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does mild oxidation with glucose oxidase not block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p50 and p55 interactions",
+        "answerability": 0.7999895811080933,
+        "ground_truth": {
+          "p50 and p55 interactions": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

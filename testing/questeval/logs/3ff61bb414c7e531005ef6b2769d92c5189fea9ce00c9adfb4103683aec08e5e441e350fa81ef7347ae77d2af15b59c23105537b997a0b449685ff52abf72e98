@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Impaired CK1 delta activity attenuates SV40-induced cellular transformation in vitro and mouse mammary carcinogenesis in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way does CK1 delta activity reduce SV40-induced cellular transformation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Impaired CK1 delta activity",
+        "cellular transformation",
+        "mouse",
+        "mammary carcinogenesis",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What attenuates SV40-induced cellular transformation in vitro and mouse ma",
+          "What does CK1 delta activity attenuate in vitro?",
+          "In what animal is CK1 delta activity reduced?",
+          "What is the main cause of SV40-induced cell transformation in mice?",
+          "In what way does CK1 delta activity reduce SV40-induced cellular transformation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what way does CK1 delta activity reduce SV40-induced cellular transformation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12048542499542236,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.7332584857940674,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What attenuates SV40-induced cellular transformation in vitro and mouse ma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Impaired CK1 delta activity",
+        "answerability": 0.9041030406951904,
+        "ground_truth": {
+          "Impaired CK1 delta activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does CK1 delta activity attenuate in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SV40-induced cellular transformation",
+        "answerability": 0.6488622426986694,
+        "ground_truth": {
+          "cellular transformation": {
+            "bertscore": 0.8129357695579529,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "In what animal is CK1 delta activity reduced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mouse",
+        "answerability": 0.9241601228713989,
+        "ground_truth": {
+          "mouse": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main cause of SV40-induced cell transformation in mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24245113134384155,
+        "ground_truth": {
+          "mammary carcinogenesis": {
+            "bertscore": 0.6517929434776306,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

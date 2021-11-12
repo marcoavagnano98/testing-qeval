@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of the mammalian target of rapamycin (mTOR) by rapamycin increases sensitivity of CaSki cells to paclitaxel.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CaSki"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cell type is rapamycin inhibited by?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "the mammalian target",
+        "rapamycin",
+        "mTOR",
+        "rapamycin",
+        "sensitivity",
+        "CaSki cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of rapamycin on mTOR?",
+          "What does mTOR stand for?",
+          "What is the name of the drug that inhibits mTOR?",
+          "What is the mammalian target of rapamycin called?",
+          "What is the name of the drug that inhibits mTOR?",
+          "What does rapamycin increase in CaSki cells?",
+          "What cells are more sensitive to rapamycin than other cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cell showed the highest sensitivity to paclitaxel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CaSki cells",
+        "answerability": 0.9945262670516968,
+        "ground_truth": {
+          "HeLa": {
+            "bertscore": 0.7349544763565063,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells showed the lowest sensitivity to paclitaxel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010855615139007568,
+        "ground_truth": {
+          "CaSki": {
+            "bertscore": 0.6454663872718811,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What showed that HeLa cells showed the highest sensitivity to paclitaxel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003136277198791504,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 0.6937651634216309,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells showed the highest sensitivity to paclitaxel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CaSki cells",
+        "answerability": 0.9945673942565918,
+        "ground_truth": {
+          "HeLa cells": {
+            "bertscore": 0.8307542204856873,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did HeLa cells show in relation to paclitaxel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0016713738441467285,
+        "ground_truth": {
+          "the highest sensitivity": {
+            "bertscore": 0.6676174998283386,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells showed the lowest sensitivity to paclitaxel?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005095243453979492,
+        "ground_truth": {
+          "CaSki cells": {
+            "bertscore": 0.6209766268730164,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

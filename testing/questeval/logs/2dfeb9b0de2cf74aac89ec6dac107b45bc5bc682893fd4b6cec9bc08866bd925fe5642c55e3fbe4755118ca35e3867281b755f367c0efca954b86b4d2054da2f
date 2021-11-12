@@ -1,0 +1,88 @@
+{
+  "type": "ref",
+  "text": "In particular Western supershift and promoter deletion analyses suggested a role for CCAAT/enhancer-binding protein-beta (C/EBP-beta) binding site between -2010 and -1954 in regulating transcription of collagenase-1 in monocytic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Western"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of supershift and promoter deletion analyses suggested a role for CCAAT/"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "particular Western supershift and promoter deletion analyses",
+        "a role",
+        "CCAAT/enhancer-binding protein-beta",
+        ") binding site",
+        "transcription",
+        "collagenase-1",
+        "monocytic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests a role for CCAAT/enhancer-binding protein-be",
+          "What did Western supershift and promoter deletion analyses suggest?",
+          "What does C/EBP-beta stand for?",
+          "What did Western supershift and promoter deletion analyses suggest a role for?",
+          "What did Western supershift and promoter deletion analyses suggest a role for CCAAT/",
+          "What protein is involved in the transcription of monocytic cells?",
+          "What type of cells did Western supershift and promoter deletion analyses suggest a role for C"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggested a role for the CCAAT/enhancer-binding protein-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Western supershift and promoter deletion analyses",
+        "answerability": 0.982339084148407,
+        "ground_truth": {
+          "Promoter deletion constructs": {
+            "bertscore": 0.7717199921607971,
+            "f1": 0.4444444444444444
+          }
+        }
+      }
+    },
+    "What did promoter deletion constructs suggest about the binding site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a role for CCAAT/enhancer-binding protein-beta",
+        "answerability": 0.5915761590003967,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6173725724220276,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What binding site did promoter deletion constructs suggest a role for in regulating collagena": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36032170057296753,
+        "ground_truth": {
+          "CCAAT": {
+            "bertscore": 0.6681885719299316,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did promoter deletion constructs suggest a role for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2190321683883667,
+        "ground_truth": {
+          "collagenase-1 transcription": {
+            "bertscore": 0.6064943671226501,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

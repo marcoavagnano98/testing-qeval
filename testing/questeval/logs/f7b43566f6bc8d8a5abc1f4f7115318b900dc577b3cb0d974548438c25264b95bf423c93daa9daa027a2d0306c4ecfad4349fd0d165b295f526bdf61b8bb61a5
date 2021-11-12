@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of ethanol metabolism by 4-methylpyrazole partially abrogated the inhibitory effect of ethanol on endothelial cell cord formation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "4-methylpyrazole"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the endothelial cell cord formation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "ethanol",
+        "the inhibitory effect",
+        "ethanol",
+        "endothelial cell cord formation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of 4-methylpyrazole on endothelial cell cord formation",
+          "What substance was inhibited by 4-methylpyrazole?",
+          "What effect did 4-methylpyrazole have on endothelial cell cord formation?",
+          "What substance was inhibited by 4-methylpyrazole?",
+          "What did 4-methylpyrazole inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited the metabolism of ethanol?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4-methylpyrazole",
+        "answerability": 0.9995275735855103,
+        "ground_truth": {
+          "4-methylpyrazole": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of 4-methylpyrazole on endothelial cell cord formation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of ethanol metabolism",
+        "answerability": 0.7595804333686829,
+        "ground_truth": {
+          "Inhibition": {
+            "bertscore": 0.7601615190505981,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What substance was inhibited by 4-methylpyrazole?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ethanol",
+        "answerability": 0.9792327284812927,
+        "ground_truth": {
+          "ethanol": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did 4-methylpyrazole partially abrogate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the inhibitory effect of ethanol on endothelial cell formation",
+        "answerability": 0.9442383646965027,
+        "ground_truth": {
+          "the effect": {
+            "bertscore": 0.6661615371704102,
+            "f1": 0.2222222222222222
+          },
+          "endothelial cell cord formation": {
+            "bertscore": 0.7756619453430176,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

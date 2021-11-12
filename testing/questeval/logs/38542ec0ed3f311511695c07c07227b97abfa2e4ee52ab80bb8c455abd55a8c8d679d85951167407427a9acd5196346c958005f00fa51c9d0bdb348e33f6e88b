@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "2ME2 resulted in decreased nuclear HIF-1alpha-binding activity and affected the expression of downstream genes such as bid a proapoptotic BH3-only protein and vascular endothelial growth factor a proangiogenic cytokine.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "2ME2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What decreased nuclear HIF-1alpha binding activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "decreased nuclear HIF-1alpha-binding activity",
+        "the expression",
+        "downstream genes",
+        "a proapoptotic BH3-only protein",
+        "vascular endothelial growth factor",
+        "a proangiogenic cytokine"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did 2ME2 result in?",
+          "What downstream gene did 2ME2 affect?",
+          "What did 2ME2 affect?",
+          "What is bid?",
+          "What is a proangiogenic cytokine?",
+          "What is the name of the downstream gene that is affected by 2ME2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What decreased nuclear HIF-1alpha binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "2ME2",
+        "answerability": 0.9901902079582214,
+        "ground_truth": {
+          "2ME2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did 2ME2 result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased nuclear HIF-1alpha-binding activity",
+        "answerability": 0.9998437166213989,
+        "ground_truth": {
+          "decreased nuclear HIF-1alpha-binding activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What downstream gene did 2ME2 affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vascular endothelial growth factor",
+        "answerability": 0.9147719144821167,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6577870845794678,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did 2ME2 affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of downstream genes",
+        "answerability": 0.9834749102592468,
+        "ground_truth": {
+          "downstream genes": {
+            "bertscore": 0.8964252471923828,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is bid?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BH3-only protein",
+        "answerability": 0.9157969355583191,
+        "ground_truth": {
+          "a proapoptotic bcl-2 family member": {
+            "bertscore": 0.7084143161773682,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a proangiogenic cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vascular endothelial growth factor",
+        "answerability": 0.6127859950065613,
+        "ground_truth": {
+          "vascular endothelial growth factor": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the downstream gene that is affected by 2ME2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vascular endothelial growth factor",
+        "answerability": 0.7106069326400757,
+        "ground_truth": {
+          "a proangiogenic cytokine": {
+            "bertscore": 0.7183724641799927,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

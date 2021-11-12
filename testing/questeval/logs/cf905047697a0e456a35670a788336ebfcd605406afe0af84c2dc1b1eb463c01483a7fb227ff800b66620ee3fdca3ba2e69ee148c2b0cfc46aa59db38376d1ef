@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "TNF mRNA expression induced by LPS was decreased when the pretreatment of PBMC with IL-10 was performed on plastic whereas this was not the case when cells were preincubated with IL-10 on Teflon.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "LPS",
+        "Teflon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA expression was decreased when PBMC was preincubated with IL",
+          "What was the only factor that decreased TNF expression?",
+          "What was used to incubate cells with IL-10?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF mRNA expression",
+        "LPS",
+        "the pretreatment",
+        "PBMC",
+        "plastic",
+        "the case",
+        "cells",
+        "Teflon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was decreased when PBMC was preincubated with IL-10 on Tef",
+          "What was the only factor that decreased TNF expression?",
+          "What was the only way to decrease TNF expression?",
+          "What was the first material to be used to test for IL-10?",
+          "What type of PBMC was not affected by the IL-10 reaction?",
+          "What was not the case when cells were preincubated with IL-10 on Tef",
+          "What was preincubated with IL-10 on Teflon?",
+          "What was used to incubate cells with IL-10?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did IL-10 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17712247371673584,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027958035469055,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was increased after LPS stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001723170280456543,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.6519213318824768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What caused the decrease in IkappaB-alpha protein levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007827043533325195,
+        "ground_truth": {
+          "LPS stimulation": {
+            "bertscore": 0.6426410675048828,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did LPS stimulation decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF mRNA expression",
+        "answerability": 0.8479969501495361,
+        "ground_truth": {
+          "human monocytes IkappaB-alpha protein levels": {
+            "bertscore": 0.7488225698471069,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-10 do to IkappaB-alpha protein levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002834200859069824,
+        "ground_truth": {
+          "IL-10 pretreatment prevented LPS-induced decreases": {
+            "bertscore": 0.6304997801780701,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What decreased after LPS stimulation in human monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF mRNA expression",
+        "answerability": 0.7481347322463989,
+        "ground_truth": {
+          "IkappaB-alpha protein levels": {
+            "bertscore": 0.7582781314849854,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

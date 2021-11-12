@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Moreover NICD overexpression in U87MG cells led to the upregulated expression of several metastasis-associated molecules which could be abrogated by the knockdown of either beta1 or alpha2beta1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NICD",
+        "beta1",
+        "alpha2beta1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene overexpression in U87MG cells led to the upregulation of several metastas",
+          "What is the name of the NICD-associated protein that can be abrogated by",
+          "What is the name of the NICD-associated protein that can be abrogated by"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NICD overexpression",
+        "U87MG cells",
+        "the upregulated expression",
+        "several metastasis-associated molecules",
+        "the knockdown",
+        "either beta1",
+        "alpha2beta1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What led to the upregulation of several metastasis-associated molecules?",
+          "What cells were able to overexpress NICD?",
+          "What did NICD overexpression in U87MG cells lead to?",
+          "What did NICD overexpression in U87MG cells lead to?",
+          "What could be done to NICD overexpression?",
+          "What could be knocked down to abrogate NICD?",
+          "What is the name of the NICD-associated protein that can be abrogated by"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What subunit of integrin was knocked down?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31371670961380005,
+        "ground_truth": {
+          "alpha2": {
+            "bertscore": 0.6782809495925903,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was induced by morpholino-mediated knockdown of the integrin al": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0493319034576416,
+        "ground_truth": {
+          "a similar vascular phenotype": {
+            "bertscore": 0.6493648290634155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was knocked down to induce a similar vascular phenotype?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43120425939559937,
+        "ground_truth": {
+          "the integrin alpha2 subunit": {
+            "bertscore": 0.6044947504997253,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

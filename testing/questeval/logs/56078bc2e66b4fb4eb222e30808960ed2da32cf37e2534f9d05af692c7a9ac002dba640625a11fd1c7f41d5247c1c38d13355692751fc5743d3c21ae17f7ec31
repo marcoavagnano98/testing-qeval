@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "It was shown that NFAT and Smad3 cooperate to induce Foxp3 expression through its enhancer (Tone et al. 2008) but no TGF-beta response element was identified in the Foxp3 gene or in the surrounding regions.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TGF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only response element to Foxp3?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "It",
+        "NFAT",
+        "Foxp3 expression",
+        "its enhancer",
+        "no TGF-beta response element",
+        "the Foxp3 gene",
+        "the surrounding regions"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene does NFAT and Smad3 cooperate to induce Foxp3 expression?",
+          "What gene is involved in the Foxp3 gene?",
+          "What gene does NFAT and Smad3 cooperate to induce?",
+          "What is NFAT and Smad3 used to induce Foxp3 expression?",
+          "What was not found in the Foxp3 gene?",
+          "What gene was not identified as a TGF-beta response element?",
+          "Where was no TGF-beta response element found?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What are required to induce Foxp3 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT and Smad3",
+        "answerability": 0.8595911264419556,
+        "ground_truth": {
+          "The RUNX transcription factors": {
+            "bertscore": 0.7246518135070801,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor is required to induce Foxp3 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT",
+        "answerability": 0.9482343196868896,
+        "ground_truth": {
+          "RUNX3": {
+            "bertscore": 0.7771651744842529,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor is required to induce in iT reg cell differentiation and function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29749244451522827,
+        "ground_truth": {
+          "Foxp3 expression": {
+            "bertscore": 0.6350741982460022,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Foxp3 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014748811721801758,
+        "ground_truth": {
+          "iT reg cell differentiation": {
+            "bertscore": 0.6487506628036499,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the function of the RUNX transcription factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00017887353897094727,
+        "ground_truth": {
+          "function": {
+            "bertscore": 0.6597951054573059,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

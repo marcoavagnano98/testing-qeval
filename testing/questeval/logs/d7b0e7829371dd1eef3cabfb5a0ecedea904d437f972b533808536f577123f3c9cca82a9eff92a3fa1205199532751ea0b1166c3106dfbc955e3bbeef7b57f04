@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "SseK2 is also regulated by the SsrA-SsrB two-component system but compared to SseK1 it is translocated in much less abundance into host cells 33.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SseK2",
+        "two",
+        "SseK1",
+        "33"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is translocated in much less abundance into host cells?",
+          "How many components are present in SseK2?",
+          "What is the SsrA-SsrB two-component system?",
+          "How many host cells does SseK2 translocate in compared to Ss"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "SseK2",
+        "the SsrA-SsrB two-component system",
+        "SseK1",
+        "it",
+        "much less abundance",
+        "host cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is translocated in much less abundance into host cells?",
+          "What is SseK2 regulated by?",
+          "What is the SsrA-SsrB two-component system?",
+          "What is SseK2 translocated in much less abundance into host cells?",
+          "How is SseK2 translocated into host cells compared to Sse",
+          "What does SseK2 translocate in less abundance into?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is regulated by the SsrA-SsrB two-component": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SseK2",
+        "answerability": 0.5979889035224915,
+        "ground_truth": {
+          "SseK2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How many components are in the SsrA-SsrB regulatory system?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.9797981381416321,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the SsrA-SsrB two-component regulatory system encode": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08965229988098145,
+        "ground_truth": {
+          "SPI-2": {
+            "bertscore": 0.6714105606079102,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is SseK2 regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SsrA-SsrB",
+        "answerability": 0.8078356981277466,
+        "ground_truth": {
+          "a positive control": {
+            "bertscore": 0.6538491249084473,
+            "f1": 0
+          },
+          "the SsrA-SsrB two-component regulatory system": {
+            "bertscore": 0.8224032521247864,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

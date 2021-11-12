@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "EMSA showed that both constitutively active and inducible complexes bound to CLE0 P P2 and P4 whereas only a constitutively active complex bound to P3.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EMSA",
+        "P P2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that both constitutively active and inducible complexes bound to CLE",
+          "What is the only cleavage that is inducible?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "EMSA",
+        "both constitutively active and inducible complexes",
+        "CLE0 P P2",
+        "P4",
+        "only a constitutively active complex",
+        "P3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that both constitutively active and inducible complexes bound to CLE",
+          "What did EMSA show about the binding of CLE0 P?",
+          "What do inducible complexes bound to?",
+          "What is the only complex that is inducible?",
+          "What did EMSA show was bound to CLE0 P?",
+          "What is the only complex that is inducible?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed that both constitutive and inducible complexes bound to CLE0 P": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EMSA",
+        "answerability": 0.9172778129577637,
+        "ground_truth": {
+          "EMSA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only CLE0 that is bound to P4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13580673933029175,
+        "ground_truth": {
+          "P P2": {
+            "bertscore": 0.6628730893135071,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did EMSA show about CLE0 P?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both constitutively active and inducible complexes bound to CLE0 P2",
+        "answerability": 0.8076132535934448,
+        "ground_truth": {
+          "that both constitutive and inducible complexes": {
+            "bertscore": 0.8118332028388977,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did EMSA show that both constitutive and inducible complexes bound to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CLE0 P",
+        "answerability": 0.9474604725837708,
+        "ground_truth": {
+          "CLE0 P P2": {
+            "bertscore": 0.9231653809547424,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the only complex that bound to CLE0 P?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12248426675796509,
+        "ground_truth": {
+          "P4": {
+            "bertscore": 0.6690883040428162,
+            "f1": 0
+          },
+          "P3": {
+            "bertscore": 0.6763814687728882,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did EMSA show bound to CLE0 P?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "constitutively active and inducible complexes",
+        "answerability": 0.8634998202323914,
+        "ground_truth": {
+          "only a constitutive complex": {
+            "bertscore": 0.7802394032478333,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

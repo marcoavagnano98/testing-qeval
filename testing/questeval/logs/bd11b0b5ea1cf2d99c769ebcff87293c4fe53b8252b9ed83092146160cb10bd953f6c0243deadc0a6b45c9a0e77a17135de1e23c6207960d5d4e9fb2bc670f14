@@ -1,0 +1,150 @@
+{
+  "type": "hyp",
+  "text": "When unstimulated HeLa cells is ruptured in hypotonic buffer without salt or detergent immunoadsorption of either STAT1 or STAT2 from the resulting cytosol yields coimmunoadsorption of the other STAT protein.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HeLa",
+        "STAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells is ruptured in a hypotonic buffer?",
+          "What protein is absorbed by the cytosol when the HeLa cells are ruptured?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "unstimulated HeLa cells",
+        "hypotonic buffer",
+        "salt or detergent immunoadsorption",
+        "either STAT1",
+        "STAT2",
+        "the resulting cytosol yields coimmunoadsorption",
+        "the other STAT protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is ruptured in hypotonic buffer?",
+          "What is used to isolate HeLa cells?",
+          "What does the rupture of HeLa cells in a hypotonic buffer not yield?",
+          "What protein is immunoadsorbed when HeLa cells are ruptured in a",
+          "What protein is absorbed by the cytosol when the HeLa cells are ruptured?",
+          "What happens when a HeLa cell is ruptured in a hypotonic buffer?",
+          "What does immunoadsorption of STAT1 and STAT2 yield?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells are ruptured in hypotonic buffer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HeLa cells",
+        "answerability": 0.7716015577316284,
+        "ground_truth": {
+          "HeLa": {
+            "bertscore": 0.8576240539550781,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What protein is absorbed by the cytosol when the cells are ruptured in a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17166054248809814,
+        "ground_truth": {
+          "STAT": {
+            "bertscore": 0.6738265752792358,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is ruptured in hypotonic buffer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unstimulated HeLa cells",
+        "answerability": 0.732776403427124,
+        "ground_truth": {
+          "unstimulated HeLa cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is used to isolate HeLa cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07151216268539429,
+        "ground_truth": {
+          "hypotonic buffer": {
+            "bertscore": 0.6613696813583374,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required to cause coimmunoadsorption of STAT1 and ST": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26483017206192017,
+        "ground_truth": {
+          "salt or detergent immunoadsorption": {
+            "bertscore": 0.6541256308555603,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is immunoadsorbed when HeLa cells are ruptured in hypot": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39100420475006104,
+        "ground_truth": {
+          "either STAT1": {
+            "bertscore": 0.6763125061988831,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is absorbed by the cytosol when the HeLa cells are ruptured in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11335009336471558,
+        "ground_truth": {
+          "STAT2": {
+            "bertscore": 0.6659889221191406,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens when the HeLa cells are ruptured in hypotonic buffer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2746797204017639,
+        "ground_truth": {
+          "the resulting cytosol yields coimmunoadsorption": {
+            "bertscore": 0.599061906337738,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does immunoadsorption of STAT1 and STAT2 yield?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "coimmunoadsorption of the other STAT protein",
+        "answerability": 0.884595513343811,
+        "ground_truth": {
+          "the other STAT protein": {
+            "bertscore": 0.8310729265213013,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

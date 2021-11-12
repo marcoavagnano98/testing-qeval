@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Both PMA and the combination of NECA and forskolin acted together either to increase (c-Fos) or decrease (Jun) protein levels as well as increasing AP-1 binding as judged by gel-shift assay and AP-1 transcriptional activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What compound was used to increase or decrease c-Fos?",
+          "What month did the combination of NECA and forskolin cause?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Both PMA",
+        "the combination",
+        "NECA",
+        "forskolin",
+        "(c-Fos",
+        "(Jun) protein levels",
+        "gel-shift assay",
+        "AP-1 transcriptional activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two compounds acted together to increase or decrease c-Fos?",
+          "What did NECA and forskolin do?",
+          "What is the name of the compound that is used to increase or decrease c-Fo",
+          "What was the combination of PMA and NECA?",
+          "What did the combination of PMA and forskolin increase or decrease?",
+          "What did the combination of PMA and forskolin do?",
+          "What test showed that PMA and NECA acted together to increase or decrease c",
+          "What did the gel-shift assay show?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was suppressed by the same treatments?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0019237995147705078,
+        "ground_truth": {
+          "cxcl8": {
+            "bertscore": 0.6646462678909302,
+            "f1": 0
+          },
+          "the cxcl8 levels": {
+            "bertscore": 0.6279810667037964,
+            "f1": 0
+          },
+          "the levels": {
+            "bertscore": 0.6841251850128174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of the treatment on cxcl8 levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.052344441413879395,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628810882568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to suppress cxcl8 levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0320470929145813,
+        "ground_truth": {
+          "the same treatments": {
+            "bertscore": 0.6802513599395752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What level of cxcl8 was suppressed by the same treatments?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004627883434295654,
+        "ground_truth": {
+          "basal level": {
+            "bertscore": 0.7211911678314209,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

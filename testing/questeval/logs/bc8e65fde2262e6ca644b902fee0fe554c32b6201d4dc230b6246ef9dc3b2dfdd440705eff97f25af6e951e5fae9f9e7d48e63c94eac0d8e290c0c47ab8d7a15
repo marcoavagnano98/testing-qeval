@@ -1,0 +1,100 @@
+{
+  "type": "ref",
+  "text": "Control experiments revealed no NleH1-mediated phosphorylation or autophosphorylation of RPS3 or GST-IkappaBalpha\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Control experiments",
+        "no NleH1-mediated phosphorylation",
+        "autophosphorylation",
+        "RPS3",
+        "GST-IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed no phosphorylation of GST-IkappaBalpha?",
+          "What did the control experiments show?",
+          "What did the control experiments show about GST-IkappaBalpha?",
+          "What protein was not phosphorylated in the control experiment?",
+          "What protein was not phosphorylated in the control experiment?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did NleH1 reduce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013088464736938477,
+        "ground_truth": {
+          "IKKbeta": {
+            "bertscore": 0.6724424362182617,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What reduced IKKbeta-mediated RPS3 phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.029591143131256104,
+        "ground_truth": {
+          "NleH1": {
+            "bertscore": 0.5984285473823547,
+            "f1": 0
+          },
+          "Preincubation": {
+            "bertscore": 0.7030540108680725,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did preincubation of IKKbeta with NleH1 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013519048690795898,
+        "ground_truth": {
+          "NleH1 reduced IKKbeta-mediated RPS3 phosphorylation": {
+            "bertscore": 0.5664815306663513,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the preincubation of IKKbeta with NleH1 reduce": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04467201232910156,
+        "ground_truth": {
+          "i.e. the CK2 kinase specificity": {
+            "bertscore": 0.5984794497489929,
+            "f1": 0
+          },
+          "i.e. the IKK kinase specificity": {
+            "bertscore": 0.5974743962287903,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did preincubation of IKKbeta with NleH1 reduce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.030172109603881836,
+        "ground_truth": {
+          "not IKKbeta-mediated GST-IkappaBalpha phosphorylation": {
+            "bertscore": 0.585309624671936,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

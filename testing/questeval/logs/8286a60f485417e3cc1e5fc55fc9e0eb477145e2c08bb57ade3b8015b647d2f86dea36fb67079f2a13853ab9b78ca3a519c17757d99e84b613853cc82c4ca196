@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "At low doses of antigen IL-12 abrogated the development of Th2 cells and induced IFN-gamma expression but only low levels of IL-10 expression suggesting that IL-12 per se was not sufficient to induce significant IL-10 production in Th1 cells (Figure 1A).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the figure that shows that IL-12 was not sufficient to induce significant IL-10"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "low doses",
+        "antigen",
+        "the development",
+        "Th2 cells",
+        "IFN-gamma expression",
+        "only low levels",
+        "IL-10 expression",
+        "significant IL-10 production",
+        "Th1 cells",
+        "Figure 1A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What dose of IL-12 abrogated the development of Th2 cells?",
+          "What did IL-12 abrogate the development of Th2 cells?",
+          "What did low doses of IL-12 abrogate in Th2 cells?",
+          "What did low doses of IL-12 abrogate the development of?",
+          "What did low doses of IL-12 induce?",
+          "How much of IL-10 was induced in Th1 cells?",
+          "What did low doses of IL-12 induce?",
+          "What did low doses of IL-12 not induce in Th1 cells?",
+          "What did low doses of IL-12 abrogate the development of?",
+          "What is the result of the study?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL-12 essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0020218491554260254,
+        "ground_truth": {
+          "both primary and secondary antigenic stimulation": {
+            "bertscore": 0.640622615814209,
+            "f1": 0
+          },
+          "production": {
+            "bertscore": 0.554776668548584,
+            "f1": 0
+          },
+          "Th1 cells": {
+            "bertscore": 0.6154470443725586,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

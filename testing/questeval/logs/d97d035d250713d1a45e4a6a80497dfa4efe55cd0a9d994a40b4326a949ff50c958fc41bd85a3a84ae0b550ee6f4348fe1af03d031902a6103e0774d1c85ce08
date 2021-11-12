@@ -1,0 +1,78 @@
+{
+  "type": "ref",
+  "text": "However co-culture of these cancer cells with stromal or osteoblastic cells induced RANKL mRNA expression and decreased OPG mRNA expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "co-culture",
+        "stromal or osteoblastic cells",
+        "RANKL mRNA expression",
+        "OPG mRNA expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the stromal and osteoblastic cells do to induce RANKL",
+          "What did co-culture of cancer cells with?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells cause?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells decrease?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the apoptosis of cancer cells do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003909468650817871,
+        "ground_truth": {
+          "However co-culture": {
+            "bertscore": 0.6767695546150208,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stromal or osteoblastic cells",
+        "answerability": 0.9719967246055603,
+        "ground_truth": {
+          "stromal or osteoblastic cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RANKL mRNA expression",
+        "answerability": 0.9721091389656067,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.7080129384994507,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18953043222427368,
+        "ground_truth": {
+          "their growth": {
+            "bertscore": 0.6475586295127869,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

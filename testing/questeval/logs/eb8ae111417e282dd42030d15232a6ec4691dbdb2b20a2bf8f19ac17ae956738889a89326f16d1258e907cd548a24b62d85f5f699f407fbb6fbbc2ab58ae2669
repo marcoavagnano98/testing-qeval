@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "We found that ectopically expressing either wild-type or SSEE IKKbeta proteins induced stronger NF-kappaB-dependent luciferase reporter activity than the kinase-dead IKKbeta (SSAA) protein (Fig.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IKKbeta",
+        "SSAA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the SSAA?",
+          "What is the kinase-dead IKKbeta protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "either wild-type or SSEE IKKbeta proteins",
+        "stronger NF-kappaB-dependent luciferase reporter activity",
+        "the kinase-dead IKKbeta",
+        "SSAA) protein",
+        "Fig"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find about ectopically expressing wild-type or SSEE",
+          "What did we find to be more effective than NF-kappaB?",
+          "What did ectopically expressing either wild-type or SSEE IKK",
+          "What is SSAA?",
+          "What is the kinase-dead IKKbeta?",
+          "What is the corresponding figure of the NF-kappaB-dependent luci"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mutant of IKKbeta induced NF-kappaB-dependent": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42213183641433716,
+        "ground_truth": {
+          "SSEE": {
+            "bertscore": 0.6903250217437744,
+            "f1": 0
+          },
+          "the SSEE": {
+            "bertscore": 0.6808450222015381,
+            "f1": 0
+          },
+          "not SSAA": {
+            "bertscore": 0.6759105920791626,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mutant induced NF-kappaB-dependent luciferase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5247799158096313,
+        "ground_truth": {
+          "IKKbeta": {
+            "bertscore": 0.6724424362182617,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the SSAA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kinase-dead IKKbeta",
+        "answerability": 0.8576269149780273,
+        "ground_truth": {
+          "mutant": {
+            "bertscore": 0.7005532383918762,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the SSEE but not SSAA mutant of IKKbeta do": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5129119157791138,
+        "ground_truth": {
+          "IKKbeta induced NF-kappaB-dependent luciferase reporter activity": {
+            "bertscore": 0.5710351467132568,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

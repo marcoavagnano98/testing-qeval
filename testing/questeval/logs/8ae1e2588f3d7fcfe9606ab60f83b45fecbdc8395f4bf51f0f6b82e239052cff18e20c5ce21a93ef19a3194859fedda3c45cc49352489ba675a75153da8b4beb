@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "SNF-associated PRMT5 methylates histone H3 arginine 8 and negatively regulates expression of ST7 and NM23 tumor suppressor genes in metastatic prostate cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SNF",
+        "H3",
+        "ST7",
+        "NM23"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PRMT5 associated with?",
+          "What histone does PRMT5 methylate?",
+          "What tumor suppressor gene is negatively regulated by PRMT5?",
+          "What tumor suppressor gene is negatively regulated by PRMT5?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "SNF-associated PRMT5 methylates",
+        "histone H3 arginine",
+        "expression",
+        "ST7",
+        "NM23 tumor suppressor genes",
+        "metastatic prostate cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does histone H3 arginine 8 do?",
+          "What does SNF-associated PRMT5 methylate?",
+          "What does PRMT5 negatively regulate in metastatic prostate cancer cells?",
+          "What tumor suppressor gene is negatively regulated by PRMT5?",
+          "What does SNF-associated PRMT5 negatively regulate expression of in metastatic prostate cancer cells",
+          "What type of cancer does SNF-associated PRMT5 negatively regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is PRMT5 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SNF",
+        "answerability": 0.9124743938446045,
+        "ground_truth": {
+          "SNF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What histone does PRMT5 methylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H3 arginine 8",
+        "answerability": 0.9780709147453308,
+        "ground_truth": {
+          "H3": {
+            "bertscore": 0.7566918134689331,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What tumor suppressor gene is negatively regulated by PRMT5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ST7 and NM23",
+        "answerability": 0.9599648118019104,
+        "ground_truth": {
+          "ST7": {
+            "bertscore": 0.8470627069473267,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What negatively regulates expression of ST7 and NM23 tumor suppressor genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SNF-associated PRMT5",
+        "answerability": 0.9228477478027344,
+        "ground_truth": {
+          "SNF-associated PRMT5 methylates": {
+            "bertscore": 0.9262709617614746,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does PRMT5 methylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H3 arginine 8",
+        "answerability": 0.9831021428108215,
+        "ground_truth": {
+          "histone H3 arginine": {
+            "bertscore": 0.9587036371231079,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does PRMT5 negatively regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of ST7 and NM23 tumor suppressor genes",
+        "answerability": 0.9677788615226746,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.6643140912055969,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What does PRMT5 negatively regulate expression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ST7 and NM23 tumor suppressor genes",
+        "answerability": 0.9741554260253906,
+        "ground_truth": {
+          "NM23 tumor suppressor genes": {
+            "bertscore": 0.9339523315429688,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

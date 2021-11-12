@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "RNA interference-induced depletion of PRAS40 enhanced the amino acid-stimulated phosphorylation of both S6K1 and 4E-BP1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "S6K1",
+        "4E"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was depleted by RNA interference?",
+          "What amino acid-stimulated phosphorylation of S6K1 was enhanced by"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RNA interference-induced depletion",
+        "the amino acid-stimulated phosphorylation",
+        "both S6K1",
+        "4E-BP1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhanced the amino acid-stimulated phosphorylation of both S6K1",
+          "What did RNA interference-induced depletion of PRAS40 increase?",
+          "What two proteins were phosphorylated by RNA interference?",
+          "What amino acid-stimulated phosphorylation of S6K1 was enhanced by"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was depleted by RNA interference?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PRAS40",
+        "answerability": 0.992426335811615,
+        "ground_truth": {
+          "S6K1": {
+            "bertscore": 0.7718640565872192,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What amino acid-stimulated phosphorylation of S6K1 was enhanced by": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35642826557159424,
+        "ground_truth": {
+          "4E": {
+            "bertscore": 0.7047509551048279,
+            "f1": 0
+          },
+          "4E-BP1": {
+            "bertscore": 0.6327711343765259,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enhanced the amino acid-stimulated phosphorylation of both S6K1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RNA interference-induced depletion of PRAS40",
+        "answerability": 0.7202402949333191,
+        "ground_truth": {
+          "RNA interference-induced depletion": {
+            "bertscore": 0.8762512803077698,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What did RNA interference-induced depletion of PRAS40 increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "amino acid-stimulated phosphorylation",
+        "answerability": 0.9947430491447449,
+        "ground_truth": {
+          "the amino acid-stimulated phosphorylation": {
+            "bertscore": 0.9577045440673828,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two proteins were phosphorylated by RNA interference?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "S6K1 and 4E-BP1",
+        "answerability": 0.6474651098251343,
+        "ground_truth": {
+          "both S6K1": {
+            "bertscore": 0.8043839931488037,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

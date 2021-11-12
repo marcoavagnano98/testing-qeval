@@ -1,0 +1,150 @@
+{
+  "type": "hyp",
+  "text": "Both phosphorylation of PECAM-1 and transendothelial migration of monocytes in response to CoCl2 were inhibited by protein kinase inhibitor (GF109203X) and augmented by protein phosphatase inhibitor (Calyculin A).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CoCl2",
+        "Calyculin A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the main cause of the decrease in monocyte migration?",
+          "What is the name of the protein kinase inhibitor that inhibits PECAM-1"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Both phosphorylation",
+        "PECAM-1",
+        "transendothelial migration",
+        "monocytes",
+        "response",
+        "protein kinase inhibitor",
+        "GF109203X",
+        "protein phosphatase inhibitor",
+        "Calyculin A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inhibited by GF109203X?",
+          "What protein was phosphorylated in response to CoCl2?",
+          "What was inhibited by kinase inhibitor?",
+          "What cells were phosphorylated by CoCl2?",
+          "What inhibited phosphorylation of PECAM-1?",
+          "What inhibited phosphorylation of PECAM-1?",
+          "What is the name of the protein kinase inhibitor?",
+          "What inhibited phosphorylation of PECAM-1?",
+          "What is the name of the protein kinase inhibitor that inhibits PECAM-1"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the main cause of the decrease in monocyte migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4981488585472107,
+        "ground_truth": {
+          "CoCl2": {
+            "bertscore": 0.5644053220748901,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein kinase inhibitor that inhibits PECAM-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GF109203X",
+        "answerability": 0.9022029638290405,
+        "ground_truth": {
+          "Calyculin A": {
+            "bertscore": 0.6163055300712585,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was inhibited by GF109203X?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of PECAM-1 and transendothelial migration",
+        "answerability": 0.9572752118110657,
+        "ground_truth": {
+          "Both phosphorylation": {
+            "bertscore": 0.7508424520492554,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What protein was phosphorylated in response to CoCl2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PECAM-1",
+        "answerability": 0.9891605973243713,
+        "ground_truth": {
+          "PECAM-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was inhibited by kinase inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of PECAM-1 and transendothelial migration",
+        "answerability": 0.564049482345581,
+        "ground_truth": {
+          "transendothelial migration": {
+            "bertscore": 0.7905721664428711,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What cells were phosphorylated by CoCl2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44622278213500977,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6662789583206177,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited phosphorylation of PECAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein kinase inhibitor",
+        "answerability": 0.7889463901519775,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.6543169617652893,
+            "f1": 0
+          },
+          "protein kinase inhibitor": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "protein phosphatase inhibitor": {
+            "bertscore": 0.8959915637969971,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the name of the protein kinase inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GF109203X",
+        "answerability": 0.9762402772903442,
+        "ground_truth": {
+          "GF109203X": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

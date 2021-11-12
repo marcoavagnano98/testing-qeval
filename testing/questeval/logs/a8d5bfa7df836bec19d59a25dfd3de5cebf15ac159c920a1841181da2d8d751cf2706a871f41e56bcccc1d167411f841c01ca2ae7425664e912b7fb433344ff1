@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "Vascular endothelial growth factor (VEGF) is one of the most potent and a specific regulator of angiogenesis which principally targets endothelial cells and regulates several of their functions including mitogenesis permeability and migration.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Vascular endothelial growth factor",
+        "VEGF",
+        "a specific regulator",
+        "angiogenesis",
+        "endothelial cells",
+        "their functions",
+        "mitogenesis permeability",
+        "migration"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is VEGF?",
+          "What is the name of the gene that targets endothelial cells?",
+          "What is VEGF?",
+          "What is VEGF a specific regulator of?",
+          "What does VEGF target?",
+          "What does VEGF regulate?",
+          "What is one of the functions of VEGF?",
+          "What is one of the most important functions of VEGF?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does VEGF regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitogenesis permeability and migration",
+        "answerability": 0.9771738648414612,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.6722520589828491,
+            "f1": 0
+          },
+          "endothelial cells (EC) functions": {
+            "bertscore": 0.6682142019271851,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Vascular endothelial growth factor",
+        "answerability": 0.9514040350914001,
+        "ground_truth": {
+          "Vascular endothelial growth factor": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "a recently identified growth factor": {
+            "bertscore": 0.7860755324363708,
+            "f1": 0.5
+          },
+          "significant angiogenic properties": {
+            "bertscore": 0.7155205011367798,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the growth factor that regulates endothelial cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF",
+        "answerability": 0.726477861404419,
+        "ground_truth": {
+          "VEGF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

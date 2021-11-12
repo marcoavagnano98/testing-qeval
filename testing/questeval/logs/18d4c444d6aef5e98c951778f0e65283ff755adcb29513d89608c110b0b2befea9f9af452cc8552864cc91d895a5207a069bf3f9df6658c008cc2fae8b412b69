@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "As expected these transgenic mice developed simian virus 40 large T antigen (SV40 Tag) and showed amassive amplification of Ter 119 positive erythroid nucleated cells (Figure 1A).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "40",
+        "119",
+        "1A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many large T antigens did the transgenic mice develop?",
+          "How many erythroid nucleated cells were present in the SV40 Tag?",
+          "What is the amplification of Ter 119 positive cells in the SV40 Tag?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these transgenic mice",
+        "simian virus",
+        "40 large T antigen",
+        "SV40 Tag",
+        "amassive amplification",
+        "cells",
+        "Figure 1A"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the SV40 Tag show?",
+          "What did the transgenic mice develop?",
+          "What did the transgenic mice develop?",
+          "What is the name of the antigen that is found in simian virus 40?",
+          "What did the transgenic mice show?",
+          "What did the transgenic mice develop?",
+          "What is the amplification of Ter 119 positive cells in the SV40 Tag?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What Ter 119 cells were amplification of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid nucleated cells",
+        "answerability": 0.9255327582359314,
+        "ground_truth": {
+          "119": {
+            "bertscore": 0.5440939664840698,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mice developed splenomegaly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014930307865142822,
+        "ground_truth": {
+          "these transgenic mice": {
+            "bertscore": 0.6496905088424683,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the transgenic mice develop?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "simian virus 40 large T antigen",
+        "answerability": 0.8851034641265869,
+        "ground_truth": {
+          "splenomegaly": {
+            "bertscore": 0.6470819711685181,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Why did the mice develop splenomegaly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08513367176055908,
+        "ground_truth": {
+          "the massive amplification": {
+            "bertscore": 0.6641756892204285,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the mice express that caused them to develop splenomegaly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06197202205657959,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147941589355,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the transgenic mice express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10269284248352051,
+        "ground_truth": {
+          "T antigen": {
+            "bertscore": 0.6695792078971863,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

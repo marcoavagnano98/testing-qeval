@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "(A) Relative expression of Sharpin mRNA in WT BMDC generated from WT mice\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Sharpin",
+        "WT BMDC",
+        "WT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA was found in WT mice?",
+          "What type of mice were the mRNAs used in the study?",
+          "What type of mice were the Sharpin mRNA generated from?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Relative expression",
+        "Sharpin mRNA",
+        "WT BMDC",
+        "WT mice"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mRNA of Sharpin in WT mice?",
+          "What is the relative expression of in BMDC generated from WT mice?",
+          "What type of mice were the mRNAs used in the study?",
+          "What type of mice were the BMDCs generated from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is involved in the synthesis of a protein called": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sharpin mRNA",
+        "answerability": 0.6574667096138,
+        "ground_truth": {
+          "Gmcsf": {
+            "bertscore": 0.680521547794342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What method was used to determine the expression of Il6 Il12p40 Gmcs": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45616453886032104,
+        "ground_truth": {
+          "qRT-PCR": {
+            "bertscore": 0.6549575924873352,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was determined by qRT-PCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "relative expression of Sharpin mRNA",
+        "answerability": 0.9079368114471436,
+        "ground_truth": {
+          "The expression": {
+            "bertscore": 0.7104998826980591,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is involved in the development of a cytokin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sharpin",
+        "answerability": 0.9665201306343079,
+        "ground_truth": {
+          "Il6 Il12p40 Gmcsf": {
+            "bertscore": 0.6434645056724548,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the expression of Il6 Il12p40 Gmcsf determined by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.015881776809692383,
+        "ground_truth": {
+          "Sharpin mRNA": {
+            "bertscore": 0.6724709272384644,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

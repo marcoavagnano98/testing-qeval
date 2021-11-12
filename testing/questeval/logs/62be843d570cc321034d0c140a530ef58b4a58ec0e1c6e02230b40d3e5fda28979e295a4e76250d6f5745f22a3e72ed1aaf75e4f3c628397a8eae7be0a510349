@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "T cells lack active NF-kappa B but express Sp1 as expected.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "T cells",
+        "active NF-kappa B",
+        "Sp1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells lack NF-kappa B?",
+          "What do T cells lack?",
+          "What does T cells express as expected?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells lack NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.6138182878494263,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do T cells lack?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9196344614028931,
+        "ground_truth": {
+          "active NF-kappa B": {
+            "bertscore": 0.8479849696159363,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does T cells express as expected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1",
+        "answerability": 0.9788309931755066,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

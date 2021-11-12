@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Overexpression conferred an oncogenic potential upon the eph gene.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "an oncogenic potential",
+        "the eph gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused oncogenic potential to the eph gene?",
+          "What did overexpression confer upon the eph gene?",
+          "What gene was overexpressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of the oncogenic potential of the eph gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression",
+        "answerability": 0.9994859099388123,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does overexpression confer upon the eph gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oncogenic potential",
+        "answerability": 0.9331852197647095,
+        "ground_truth": {
+          "an oncogenic potential": {
+            "bertscore": 0.9284843802452087,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene has an oncogenic potential?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eph",
+        "answerability": 0.8904648423194885,
+        "ground_truth": {
+          "the eph gene": {
+            "bertscore": 0.7850849628448486,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

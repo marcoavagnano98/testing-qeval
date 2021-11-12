@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "This occurs with fast kinetics after stimulation via a CsA-sensitive and Ca(2+)-dependent mechanism that does not require de novo protein synthesis. As shown by electrophoretic mobility shift assays the p65 subunit of NF-kappa B is COOH-terminally truncated in cells treated with anti-CD3 and anti-CD28.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "fast kinetics",
+        "stimulation",
+        "a CsA-sensitive and Ca(2+)-dependent mechanism",
+        "de novo protein synthesis",
+        "electrophoretic mobility shift",
+        "the p65 subunit",
+        "NF-kappa B",
+        "cells",
+        "anti-CD3 and anti-CD28"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What happens when a cell is stimulated via a Ca(2+)-dependent",
+          "What is the mechanism that causes the kinetics of a truncated",
+          "What is the mechanism that causes the kinetics of a truncated",
+          "What does the CsA-sensitive and Ca(2+)-dependent mechanism not require",
+          "What is the method used to show that the p65 subunit of NF-k",
+          "What is COOH-terminally truncated in cells treated with anti-CD",
+          "What is the p65 subunit of?",
+          "What type of cells are treated with anti-CD3 and anti-CD28?",
+          "What are the two types of treatment used?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was COOH-terminally truncated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65 subunit of NF-kappa B",
+        "answerability": 0.8425545692443848,
+        "ground_truth": {
+          "the p65 subunit": {
+            "bertscore": 0.8093644380569458,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What showed that the p65 subunit was COOH-terminally trunc": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "electrophoretic mobility shift assays",
+        "answerability": 0.8694960474967957,
+        "ground_truth": {
+          "immunoprecipitation": {
+            "bertscore": 0.7515413165092468,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

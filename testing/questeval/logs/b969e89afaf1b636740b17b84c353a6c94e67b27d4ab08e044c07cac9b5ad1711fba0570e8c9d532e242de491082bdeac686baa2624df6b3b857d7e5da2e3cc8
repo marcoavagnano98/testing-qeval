@@ -1,0 +1,144 @@
+{
+  "type": "hyp",
+  "text": "GF109203X abrogates the PMA-induced IkB alpha phosphorylation/degradation irrespective of activation of Ca(2+)-dependent pathways but not the phosphorylation and degradation of IkB alpha induced by TNF-alpha a PKC-independent stimulatory stimulus.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "IkB",
+        "IkB",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced IkB alpha phosphorylation and degradation?",
+          "What does GF109203X abrogate?",
+          "What does GF109203X abrogate?",
+          "What is the only stimulator that can inhibit the degradation of IkB alpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GF109203X",
+        "the PMA-induced IkB alpha phosphorylation/degradation",
+        "activation",
+        "Ca(2+)-dependent pathways",
+        "not the phosphorylation",
+        "degradation",
+        "IkB alpha",
+        "TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What abrogates the phosphorylation and degradation of IkB alpha induced",
+          "What does GF109203X abrogate?",
+          "What is the only pathway that GF109203X abrogates?",
+          "What does GF109203X abrogate?",
+          "What does GF109203X abrogate?",
+          "What does GF109203X abrogate?",
+          "What does GF109203X abrogate?",
+          "What is the only stimulator that GF109203X can inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induced IkB alpha phosphorylation and degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMA",
+        "answerability": 0.8577647805213928,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does GF109203X abrogate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMA-induced IkB alpha phosphorylation/degradation",
+        "answerability": 0.9572529196739197,
+        "ground_truth": {
+          "IkB": {
+            "bertscore": 0.6627442240715027,
+            "f1": 0.4
+          },
+          "the PMA-induced IkB alpha phosphorylation/degradation": {
+            "bertscore": 0.9630985260009766,
+            "f1": 1.0
+          },
+          "Ca(2+)-dependent pathways": {
+            "bertscore": 0.711810290813446,
+            "f1": 0
+          },
+          "not the phosphorylation": {
+            "bertscore": 0.7694933414459229,
+            "f1": 0
+          },
+          "degradation": {
+            "bertscore": 0.738929271697998,
+            "f1": 0
+          },
+          "IkB alpha": {
+            "bertscore": 0.7429186701774597,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the only factor that can abrogate the phosphorylation and degradation of I": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5304726362228394,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789318323135376,
+            "f1": 0
+          },
+          "TNF-alpha": {
+            "bertscore": 0.6100005507469177,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What abrogates the phosphorylation and degradation of IkB alpha induced": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GF109203X",
+        "answerability": 0.6751898527145386,
+        "ground_truth": {
+          "GF109203X": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only factor that GF109203X can abrogate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37881481647491455,
+        "ground_truth": {
+          "activation": {
+            "bertscore": 0.6694925427436829,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only way that GF109203X abrogates the phosphorylation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.417219877243042,
+        "ground_truth": {
+          "a PKC-independent stimulus": {
+            "bertscore": 0.6406086683273315,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

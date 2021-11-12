@@ -1,0 +1,162 @@
+{
+  "type": "hyp",
+  "text": "We showed that the recombinant UMP-CMP kinase phosphorylated CMP dCMP and UMP with highest efficiency and dUMP AMP and dAMP efficiently.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "UMP-CMP",
+        "CMP",
+        "UMP",
+        "AMP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What kinase phosphorylated CMP dCMP and UMP",
+          "What kinase phosphorylated with the highest efficiency?",
+          "What kinase phosphorylated CMP dCMP and d",
+          "What does UMP-CMP kinase phosphorylate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the recombinant UMP-CMP kinase",
+        "CMP dCMP",
+        "UMP",
+        "highest efficiency",
+        "dUMP AMP",
+        "dAMP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the recombinant UMP-CMP kinase do",
+          "What phosphorylated CMP dCMP and UMP efficiently?",
+          "What phosphorylated CMP with the highest efficiency?",
+          "What kinase phosphorylated CMP dCMP and d",
+          "What did the recombinant UMP-CMP kinase",
+          "What did the recombinant UMP-CMP kinase",
+          "What does the recombinant UMP-CMP kinase"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What kinase phosphorylated CMP dCMP and UMP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "UMP-CMP",
+        "answerability": 0.963762640953064,
+        "ground_truth": {
+          "UMP-CMP": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What kinase phosphorylated with the highest efficiency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "UMP-CMP",
+        "answerability": 0.9370214343070984,
+        "ground_truth": {
+          "CMP": {
+            "bertscore": 0.834978461265564,
+            "f1": 0
+          },
+          "CMP dCMP": {
+            "bertscore": 0.7684352397918701,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What kinase phosphorylated CMP with lower efficiency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012394309043884277,
+        "ground_truth": {
+          "UMP": {
+            "bertscore": 0.6346504092216492,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does UMP-CMP kinase phosphorylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CMP dCMP and UMP",
+        "answerability": 0.8201385736465454,
+        "ground_truth": {
+          "AMP": {
+            "bertscore": 0.7733109593391418,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the recombinant UMP-CMP kinase show": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylated CMP dCMP and UMP with highest efficiency",
+        "answerability": 0.9717196226119995,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5607439875602722,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What phosphorylated CMP dCMP and UMP with lower efficiency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007650613784790039,
+        "ground_truth": {
+          "the recombinant UMP-CMP kinase": {
+            "bertscore": 0.6116486191749573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the recombinant UMP-CMP kinase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylated CMP dCMP and UMP",
+        "answerability": 0.9814127087593079,
+        "ground_truth": {
+          "highest efficiency": {
+            "bertscore": 0.648808479309082,
+            "f1": 0
+          },
+          "lower efficiency": {
+            "bertscore": 0.6711065173149109,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What kinase did the recombinant UMP-CMP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylated CMP dCMP and UMP",
+        "answerability": 0.9731345176696777,
+        "ground_truth": {
+          "dUMP AMP": {
+            "bertscore": 0.6906023025512695,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What phosphorylated CMP with lower efficiency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007607817649841309,
+        "ground_truth": {
+          "dAMP": {
+            "bertscore": 0.6876200437545776,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

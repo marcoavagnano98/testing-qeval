@@ -1,0 +1,106 @@
+{
+  "type": "ref",
+  "text": "Fibroblast growth factor-1 (FGF-1) enhances IL-2 production and nuclear translocation of NF-kappaB in FGF receptor-bearing Jurkat T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "NF-kappaB",
+        "FGF",
+        "Jurkat T"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does FGF-1 increase production of?",
+          "What protein is induced by IL-2 production?",
+          "What is the name of the factor that increases IL-2 production and nuclear translocation of",
+          "What type of cells are affected by IL-2 production?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Fibroblast growth factor-1",
+        "(FGF-1",
+        "production and nuclear translocation",
+        "NF-kappaB",
+        "FGF receptor-bearing Jurkat T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhances IL-2 production and nuclear translocation of NF-kappaB",
+          "What is the name of the factor that increases IL-2 production and nuclear translocation of",
+          "What does IL-2 do?",
+          "What protein is induced by IL-2 production?",
+          "What type of cells does IL-2 production and nuclear translocation occur in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enhances NF-kappaB nuclear translocation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.7883697152137756,
+        "ground_truth": {
+          "Fibroblast growth factor-1": {
+            "bertscore": 0.7333194613456726,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the factor that enhances NF-kappaB nuclear trans": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4997064471244812,
+        "ground_truth": {
+          "(FGF-1": {
+            "bertscore": 0.6468672752380371,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does FGF-1 enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 production and nuclear translocation of NF-kappaB",
+        "answerability": 0.953375518321991,
+        "ground_truth": {
+          "NF-kappaB nuclear translocation": {
+            "bertscore": 0.8644242882728577,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What does FGF-1 enhance in human monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20158535242080688,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823081374168396,
+            "f1": 0
+          },
+          "proinflammatory cytokines": {
+            "bertscore": 0.5946856141090393,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does FGF-1 enhance the expression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 production and nuclear translocation of NF-kappaB",
+        "answerability": 0.6428000926971436,
+        "ground_truth": {
+          "human monocytes": {
+            "bertscore": 0.6695020794868469,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

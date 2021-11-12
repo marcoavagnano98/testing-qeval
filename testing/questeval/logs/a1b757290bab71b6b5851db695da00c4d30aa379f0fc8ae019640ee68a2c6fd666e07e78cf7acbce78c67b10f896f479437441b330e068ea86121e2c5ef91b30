@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Co-infection of T cells by HIV-1 and HHV-6 can lead to both activation of the HIV-1 promoter and acceleration of the cytopathic effects.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1",
+        "HHV-6",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter can be activated by HHV-6?",
+          "What virus can cause cytopathic effects?",
+          "What promoter can be activated by HHV-6?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Co-infection",
+        "T cells",
+        "HIV-1",
+        "HHV-6",
+        "both activation",
+        "the HIV-1 promoter",
+        "acceleration",
+        "the cytopathic effects"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can lead to both activation of the HIV-1 promoter and acceleration of the c",
+          "What type of cells are infected by HIV-1 and HHV-6?",
+          "What promoter can be activated by HHV-6?",
+          "What virus can cause cytopathic effects?",
+          "What can HIV-1 and HHV-6 cause?",
+          "What can HIV-1 and HHV-6 cause to activate?",
+          "What is the cytopathic effect of HIV-1 and HHV-6?",
+          "What can HIV-1 and HHV-6 cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter can be activated by HHV-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.9286451935768127,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What virus can cause cytopathic effects?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.8903870582580566,
+        "ground_truth": {
+          "HHV-6": {
+            "bertscore": 0.7995473146438599,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can lead to both activation of the HIV-1 promoter and acceleration of the c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Co-infection of T cells by HIV-1 and HHV-6",
+        "answerability": 0.9595854878425598,
+        "ground_truth": {
+          "Co-infection": {
+            "bertscore": 0.7567752599716187,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What type of cells are infected by HIV-1 and HHV-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.9957981705665588,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can HIV-1 and HHV-6 cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Co-infection of T cells",
+        "answerability": 0.7322840690612793,
+        "ground_truth": {
+          "both activation": {
+            "bertscore": 0.6999984979629517,
+            "f1": 0
+          },
+          "the cytopathic effects": {
+            "bertscore": 0.6954555511474609,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can HIV-1 and HHV-6 cause to activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1 promoter",
+        "answerability": 0.9921050667762756,
+        "ground_truth": {
+          "the HIV-1 promoter": {
+            "bertscore": 0.942359209060669,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the cytopathic effect of HIV-1 and HHV-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25071263313293457,
+        "ground_truth": {
+          "acceleration": {
+            "bertscore": 0.7336304187774658,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

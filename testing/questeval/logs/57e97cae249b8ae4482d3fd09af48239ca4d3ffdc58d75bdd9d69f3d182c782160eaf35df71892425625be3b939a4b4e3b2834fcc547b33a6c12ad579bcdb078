@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "A high expression of WT1 has been detected in a range of acute leukemias and WT1 is downregulated during induced differentiation of some leukemic cell lines. Overexpression of WT1 in some myeloid cell lines confers resistance to differentiation induction.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A high expression",
+        "WT1",
+        "a range",
+        "acute leukemias",
+        "WT1",
+        "induced differentiation",
+        "some leukemic cell lines",
+        "Overexpression",
+        "WT1",
+        "some myeloid cell lines",
+        "resistance",
+        "differentiation induction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the result of WT1 downregulation?",
+          "What gene is downregulated during differentiation of some leukemia cell lines?",
+          "In what range of acute leukemias has a high expression of WT1 been",
+          "What type of leukemia is WT1 upregulated during?",
+          "What gene is downregulated during differentiation of some leukemia cell lines?",
+          "What is WT1 downregulated during?",
+          "What type of cell lines have WT1 downregulated during induced differentiation?",
+          "What is the cause of resistance to differentiation induction?",
+          "What gene is downregulated during differentiation of some leukemia cell lines?",
+          "What type of cell lines have resistance to differentiation induction?",
+          "What does overexpression of WT1 confer?",
+          "What does overexpression of WT1 confer resistance to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of resistance to differentiation induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of WT1",
+        "answerability": 0.9914721846580505,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.8145846724510193,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What gene is overexpressed in some myeloid cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "WT1",
+        "answerability": 0.8950941562652588,
+        "ground_truth": {
+          "WT1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cell lines have resistance to differentiation induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid",
+        "answerability": 0.6402289867401123,
+        "ground_truth": {
+          "some myeloid cell lines": {
+            "bertscore": 0.8439478278160095,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does overexpression of WT1 confer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "resistance",
+        "answerability": 0.9706326127052307,
+        "ground_truth": {
+          "resistance": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does overexpression of WT1 confer resistance to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiation induction",
+        "answerability": 0.9954812526702881,
+        "ground_truth": {
+          "differentiation induction": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

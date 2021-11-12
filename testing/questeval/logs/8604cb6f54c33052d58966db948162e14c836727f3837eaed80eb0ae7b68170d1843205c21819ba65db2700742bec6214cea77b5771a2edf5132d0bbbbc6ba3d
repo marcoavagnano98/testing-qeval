@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "Significantly CsA completely suppressed the induction of NFAT in endothelial cells and inhibited the activity of granulocyte-macrophage colony-stimulating factor (GM-CSF) gene regulatory elements that use NFAT by 60%. Transcription mediated by NFAT is highly inducible in effector CD4+ T helper 2 (Th2) cells but not in Th1 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CsA",
+        "NFAT",
+        "GM-CSF",
+        "NFAT",
+        "60%",
+        "NFAT",
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed the induction of NFAT in endothelial cells?",
+          "What does CsA suppress in endothelial cells?",
+          "What gene regulatory element was inhibited by CsA?",
+          "What does CsA suppress in endothelial cells?",
+          "How much did CsA inhibit the activity of GM-CSF?",
+          "What does CsA suppress in endothelial cells?",
+          "What is the number of Th2 cells that are effector CD4+ T helper?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CsA",
+        "the induction",
+        "NFAT",
+        "endothelial cells",
+        "the activity",
+        "granulocyte-macrophage colony-stimulating factor",
+        "GM-CSF",
+        "gene regulatory elements",
+        "NFAT",
+        "60%",
+        "Transcription",
+        "NFAT",
+        "effector CD4",
+        "T helper 2 (Th2) cells",
+        "Th1 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed the induction of NFAT in endothelial cells?",
+          "What did CsA completely suppress in endothelial cells?",
+          "What does CsA suppress in endothelial cells?",
+          "Where did CsA completely suppress the induction of NFAT?",
+          "What did CsA inhibit in endothelial cells?",
+          "What does GM-CSF stand for?",
+          "What gene regulatory element was inhibited by CsA?",
+          "What does GM-CSF stand for?",
+          "What does CsA suppress in endothelial cells?",
+          "How much did CsA inhibit the activity of GM-CSF?",
+          "What is highly inducible in effector CD4+ T helper 2 cells?",
+          "What does CsA suppress in endothelial cells?",
+          "What type of cells are highly inducible?",
+          "What type of cells are highly inducible?",
+          "What type of cells are not affected by CsA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is highly inducible in effector CD4+ T helper 2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT",
+        "answerability": 0.8913506269454956,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "Transcription": {
+            "bertscore": 0.7746970653533936,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the effector CD4+ T helper cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3557206988334656,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.6837682723999023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are T helper 2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2568575143814087,
+        "ground_truth": {
+          "effector CD4": {
+            "bertscore": 0.6713601350784302,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is transcription mediated by NFAT highly inducible in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effector CD4+ T helper 2 (Th2) cells",
+        "answerability": 0.8410557508468628,
+        "ground_truth": {
+          "T helper 2 (Th2) cells": {
+            "bertscore": 0.8955264091491699,
+            "f1": 0.8333333333333333
+          }
+        }
+      }
+    },
+    "What is transcription mediated by NFAT not inducible in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06852692365646362,
+        "ground_truth": {
+          "Th1 cells": {
+            "bertscore": 0.6154470443725586,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

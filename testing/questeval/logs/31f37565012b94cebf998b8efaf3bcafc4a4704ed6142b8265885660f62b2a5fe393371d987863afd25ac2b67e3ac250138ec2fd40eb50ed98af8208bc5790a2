@@ -1,0 +1,104 @@
+{
+  "type": "ref",
+  "text": "This study demonstrates that human immunodeficiency virus type 1 (HIV-1) Tat protein amplifies the activity of tumor necrosis factor (TNF) a cytokine that stimulates HIV-1 replication through activation of NF-kappa B.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1",
+        "HIV-1",
+        "TNF",
+        "HIV-1",
+        "NF-kappa B."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the type of HIV-II Tat protein?",
+          "What is the cytokine that activates NF-kappa B?",
+          "What does Tat protein amplify?",
+          "What is the cytokine that activates NF-kappa B?",
+          "What cytokine stimulates HIV-1 replication?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This study",
+        "human immunodeficiency virus",
+        "(HIV-1",
+        "Tat protein",
+        "the activity",
+        "tumor necrosis factor",
+        "TNF",
+        "a cytokine",
+        "HIV-1 replication",
+        "activation",
+        "NF-kappa B."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What demonstrates that Tat protein amplifies the activity of tumor necrosis factor?",
+          "What does Tat protein do?",
+          "What is the name of the cytokine that stimulates HIV replication?",
+          "What amplifies the activity of tumor necrosis factor?",
+          "What does Tat protein amplify?",
+          "What does Tat protein amplify?",
+          "What does Tat protein amplify?",
+          "What is TNF?",
+          "What does Tat protein stimulate?",
+          "What is the main mechanism of HIV-1 replication?",
+          "What cytokine stimulates HIV-1 replication?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of protein amplifies the human immunodeficiency virus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tat protein",
+        "answerability": 0.9502440690994263,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.6773130893707275,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What demonstrates that the human immunodeficiency virus type 1 Tat protein amplifies": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "This study",
+        "answerability": 0.76448655128479,
+        "ground_truth": {
+          "This study": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of virus amplifies?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3035549521446228,
+        "ground_truth": {
+          "the human immunodeficiency virus": {
+            "bertscore": 0.6071332693099976,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the human immunodeficiency virus type do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2001204490661621,
+        "ground_truth": {
+          "1 Tat protein amplifies": {
+            "bertscore": 0.6299554705619812,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

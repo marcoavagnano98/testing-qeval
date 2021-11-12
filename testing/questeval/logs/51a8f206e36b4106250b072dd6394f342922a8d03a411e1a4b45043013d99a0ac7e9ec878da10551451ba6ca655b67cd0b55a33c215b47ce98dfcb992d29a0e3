@@ -1,0 +1,140 @@
+{
+  "type": "ref",
+  "text": "We observed that Fc gamma RI transcript levels in monoblast-like U937 cells were elevated within 3 hr and peaked 12 hr after exposure to IFN-gamma.\\nTreatment of U937 with IFN-gamma for 9 hr in the presence of cycloheximide led to super-induction of Fc gamma RI expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3 hr",
+        "12",
+        "9 hr"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did it take for the levels to be elevated?",
+          "How many hours after treatment did the levels of Fc gamma RI peak?",
+          "How long did treatment of U937 cells with IFN-gamma last?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "Fc gamma RI transcript levels",
+        "monoblast-like U937 cells",
+        "3 hr",
+        "12 hr",
+        "exposure",
+        "IFN-gamma.\\nTreatment",
+        "U937",
+        "IFN-gamma",
+        "9 hr",
+        "the presence",
+        "cycloheximide",
+        "super-induction of Fc gamma RI expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study find about the phenotype of U937 cells?",
+          "What was elevated within 3 hr after treatment with IFN-gamma?",
+          "What type of cells were elevated within 3 hr?",
+          "How long did it take for the levels to be elevated?",
+          "How long after treatment did the levels of Fc gamma RI peak?",
+          "What was the effect of IFN-gamma on the transcription of gamma",
+          "What did the treatment of U937 cells with IFN-gamma lead to?",
+          "What type of cells were elevated within 3 hr?",
+          "What was the first drug to induce the repression of apoptosis?",
+          "How long did treatment of U937 cells with IFN-gamma last?",
+          "What was the effect of treating U937 with IFN-gamma?",
+          "What was used to induce the super-induction of Fc gamma RI",
+          "What did treatment of U937 with IFN-gamma lead to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did U937 receive IFN-gamma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "9 hr",
+        "answerability": 0.9792689085006714,
+        "ground_truth": {
+          "9 hr": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What led to super-induction of Fc gamma RI expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "treatment of U937 with IFN-gamma for 9 hr in the",
+        "answerability": 0.8558813333511353,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.6442744731903076,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What was treated with IFN-gamma for 9 hr?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "U937",
+        "answerability": 0.8153594732284546,
+        "ground_truth": {
+          "U937": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What treatment did U937 receive?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-gamma",
+        "answerability": 0.8692631125450134,
+        "ground_truth": {
+          "IFN-gamma": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of U937 on gamma RI expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "elevated within 3 hr",
+        "answerability": 0.9393851161003113,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.6801431775093079,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to induce the expression of Fc gamma RI?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4837372303009033,
+        "ground_truth": {
+          "cycloheximide": {
+            "bertscore": 0.5792068243026733,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did treatment of U937 with IFN-gamma lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3181740641593933,
+        "ground_truth": {
+          "super-induction of Fc gamma RI expression": {
+            "bertscore": 0.639671266078949,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

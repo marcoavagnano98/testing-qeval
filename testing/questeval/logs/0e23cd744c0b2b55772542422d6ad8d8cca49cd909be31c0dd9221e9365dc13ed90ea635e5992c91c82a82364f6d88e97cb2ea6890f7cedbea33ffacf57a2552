@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "LPS-stimulated TF mRNA accumulation thereby suggesting a posttranscriptional mechanism for the effect.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA accumulation is stimulated by LPS?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "LPS-stimulated TF mRNA accumulation",
+        "a posttranscriptional mechanism",
+        "the effect"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests a posttranscriptional mechanism for the effect of apoptosis",
+          "What does the LPS-stimulated TF mRNA accumulation suggest?",
+          "What is the posttranscriptional mechanism for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA accumulation is stimulated by LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF",
+        "answerability": 0.9961162805557251,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What suggests a posttranscriptional mechanism for the effect of apoptosis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5450350642204285,
+        "ground_truth": {
+          "LPS-stimulated TF mRNA accumulation": {
+            "bertscore": 0.6082166433334351,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the LPS-stimulated TF mRNA accumulation suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "posttranscriptional mechanism",
+        "answerability": 0.9901068806648254,
+        "ground_truth": {
+          "a posttranscriptional mechanism": {
+            "bertscore": 0.94232177734375,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the posttranscriptional mechanism for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF mRNA accumulation",
+        "answerability": 0.6764436960220337,
+        "ground_truth": {
+          "the effect": {
+            "bertscore": 0.6990486979484558,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "type": "ref",
+  "text": "We demonstrate that cross-linking CD30 with an anti-CD30-specific monoclonal antibody which mimics the described biological activities of the CD30 ligand (CD30L) results in HIV expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD30"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the ligand that causes HIV expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "that cross-linking CD30",
+        "an anti-CD30-specific monoclonal antibody",
+        "the described biological activities",
+        "CD30L",
+        "HIV expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors demonstrate about cross-linking CD30 with an anti-CD30-",
+          "What does the study demonstrate?",
+          "What does the study demonstrate can result in HIV expression?",
+          "What does the anti-CD30-specific antibody mimic?",
+          "What is the ligand that mimics the biological activities of CD30?",
+          "What does cross-linking CD30 with an anti-CD30-specific monoclon"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is involved in HIV expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13560080528259277,
+        "ground_truth": {
+          "CD30": {
+            "bertscore": 0.6549309492111206,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the authors demonstrate that cross-linking CD30 with CD30L induces HIV": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4474250078201294,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study demonstrate induces HIV expression in chronically infected T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD30",
+        "answerability": 0.5611077547073364,
+        "ground_truth": {
+          "cross-linking CD30": {
+            "bertscore": 0.7955350279808044,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does cross-linking CD30 with induce HIV expression in chronically infected T": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3653947710990906,
+        "ground_truth": {
+          "CD30L": {
+            "bertscore": 0.6516712307929993,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does cross-linking CD30 with CD30L induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV",
+        "answerability": 0.9655084013938904,
+        "ground_truth": {
+          "HIV expression": {
+            "bertscore": 0.8875901103019714,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does cross-linking CD30 with CD30L induce HIV expression in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.035624027252197266,
+        "ground_truth": {
+          "chronically infected T cells": {
+            "bertscore": 0.6680734157562256,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

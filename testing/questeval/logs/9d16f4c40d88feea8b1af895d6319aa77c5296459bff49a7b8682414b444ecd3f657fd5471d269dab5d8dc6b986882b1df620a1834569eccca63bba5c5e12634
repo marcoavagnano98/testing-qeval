@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Here we examine the biochemical basis for the transcriptional regulation of HIV by NFKB2.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "the biochemical basis",
+        "the transcriptional regulation",
+        "HIV",
+        "NFKB2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the purpose of this study?",
+          "What is the basis for the transcriptional regulation of HIV?",
+          "What is the biochemical basis for?",
+          "What is the NFKB2 gene involved in?",
+          "What is the transcriptional regulation of HIV?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "examine the biochemical basis for the transcriptional regulation of HIV by NFKB2",
+        "answerability": 0.797492504119873,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.5655051469802856,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the basis for the transcriptional regulation of HIV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "biochemical",
+        "answerability": 0.9980638027191162,
+        "ground_truth": {
+          "the biochemical basis": {
+            "bertscore": 0.7794230580329895,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the biochemical basis for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional regulation of HIV by NFKB2",
+        "answerability": 0.9958913326263428,
+        "ground_truth": {
+          "the transcriptional regulation": {
+            "bertscore": 0.8052494525909424,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the NFKB2 gene involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional regulation of HIV",
+        "answerability": 0.9495075941085815,
+        "ground_truth": {
+          "HIV": {
+            "bertscore": 0.8160881996154785,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the transcriptional regulation of HIV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFKB2",
+        "answerability": 0.9013409614562988,
+        "ground_truth": {
+          "NFKB2": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

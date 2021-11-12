@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Our laboratory has provided evidence that thrombin activates angiogenesis a process essential in tumor growth and metastasis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our laboratory",
+        "evidence",
+        "thrombin",
+        "a process",
+        "tumor growth",
+        "metastasis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Who has provided evidence that thrombin activates angiogenesis?",
+          "What has our laboratory provided?",
+          "What is the key to angiogenesis?",
+          "What is angiogenesis?",
+          "What is angiogenesis essential for?",
+          "What is angiogenesis essential for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Who has provided evidence that thrombin activates angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Our laboratory",
+        "answerability": 0.9884113669395447,
+        "ground_truth": {
+          "Our laboratory": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What has our laboratory provided?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "evidence that thrombin activates angiogenesis",
+        "answerability": 0.9543172717094421,
+        "ground_truth": {
+          "evidence": {
+            "bertscore": 0.7250188589096069,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the key to angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "thrombin",
+        "answerability": 0.8988446593284607,
+        "ground_truth": {
+          "thrombin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a process essential in tumor growth and metastasis",
+        "answerability": 0.7686212658882141,
+        "ground_truth": {
+          "a process": {
+            "bertscore": 0.7154749631881714,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is angiogenesis essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor growth and metastasis",
+        "answerability": 0.9978355169296265,
+        "ground_truth": {
+          "tumor growth": {
+            "bertscore": 0.8725418448448181,
+            "f1": 0.6666666666666666
+          },
+          "metastasis": {
+            "bertscore": 0.8399758338928223,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "Together this evidence strongly implicates BSAP in the regulation of the CD19 gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD19"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is BSAP implicated in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this evidence",
+        "BSAP",
+        "the regulation",
+        "the CD19 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What strongly implicates BSAP in the regulation of the CD19 gene?",
+          "What is implicated in the regulation of the CD19 gene?",
+          "What does the evidence suggest about BSAP?",
+          "What does the evidence suggest BSAP is involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is regulated by B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3506830334663391,
+        "ground_truth": {
+          "CD19": {
+            "bertscore": 0.6224410533905029,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What provides direct evidence for B-cell-specific regulation of the CD19 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BSAP",
+        "answerability": 0.6898165941238403,
+        "ground_truth": {
+          "Our data": {
+            "bertscore": 0.7317608594894409,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do our data provide for B-cell-specific regulation of the CD19 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BSAP",
+        "answerability": 0.5403943061828613,
+        "ground_truth": {
+          "direct evidence": {
+            "bertscore": 0.7701521515846252,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study provide direct evidence for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1454276442527771,
+        "ground_truth": {
+          "B-cell-specific regulation": {
+            "bertscore": 0.6284810900688171,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene does the study provide direct evidence for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BSAP",
+        "answerability": 0.7779966592788696,
+        "ground_truth": {
+          "the CD19 gene": {
+            "bertscore": 0.6746039986610413,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

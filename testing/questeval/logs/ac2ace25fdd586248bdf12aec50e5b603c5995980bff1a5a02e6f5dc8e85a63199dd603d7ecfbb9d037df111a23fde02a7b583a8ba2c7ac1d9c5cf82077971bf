@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "-Rel RelB p50 and p52 that share a highly conserved 300-amino acid Rel homology domain (RUNX) for homo- or hetero-dimerization and DNA-binding.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rel"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the 300-amino acid domain that is used for homo-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "-Rel RelB p50",
+        "p52",
+        "a highly conserved 300-amino acid Rel homology domain",
+        "RUNX",
+        "homo- or hetero-dimerization"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two genes share a highly conserved 300-amino acid Rel homology",
+          "What is the name of the -Rel RelB p50?",
+          "What does RUNX stand for?",
+          "What is the name of the 300-amino acid Rel homology domain?",
+          "What is the purpose of the RelB p50 and p52?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the 300-amino acid domain used for homo- or hetero": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2823675274848938,
+        "ground_truth": {
+          "Rel": {
+            "bertscore": 0.6653216481208801,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two genes share a highly conserved 300-amino acid Rel homology": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5553074479103088,
+        "ground_truth": {
+          "-Rel RelB p50": {
+            "bertscore": 0.6201332807540894,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the two -Rel RelB p50 and what": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p52",
+        "answerability": 0.8244378566741943,
+        "ground_truth": {
+          "p52": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does RHD stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009875476360321045,
+        "ground_truth": {
+          "a highly conserved 300-amino acid Rel homology domain": {
+            "bertscore": 0.624785304069519,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the highly conserved 300-amino acid Rel homology": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4921894073486328,
+        "ground_truth": {
+          "RHD": {
+            "bertscore": 0.6874253749847412,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main function of the Rel homology domain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4908938407897949,
+        "ground_truth": {
+          "homo- or hetero-dimerization": {
+            "bertscore": 0.6396120190620422,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

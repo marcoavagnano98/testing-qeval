@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "However CsA and other CsA inhibitors inhibit the appearance of DNA binding activity of factors that bind to the NF-AT and AP-1 sites in the IL-2 enhancer.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enhancer does CsA inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CsA",
+        "other CsA inhibitors",
+        "the appearance",
+        "DNA binding activity",
+        "factors",
+        "the NF-AT",
+        "AP-1 sites",
+        "the IL-2 enhancer"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is an inhibitor of DNA binding?",
+          "What inhibits the appearance of DNA binding activity of factors that bind to the NF-",
+          "What does CsA inhibit?",
+          "What does CsA inhibit?",
+          "What does CsA inhibit the appearance of DNA binding activity of?",
+          "What is the name of the binder that CsA inhibits?",
+          "What two sites in the IL-2 enhancer do CsA inhibit?",
+          "What site does CsA inhibit the appearance of DNA binding activity of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits the appearance of DNA binding activity of factors that bind to the NF-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CsA and other CsA inhibitors",
+        "answerability": 0.834290623664856,
+        "ground_truth": {
+          "FK506": {
+            "bertscore": 0.6523043513298035,
+            "f1": 0
+          },
+          "CsA": {
+            "bertscore": 0.7525781393051147,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What enhancer does CsA and FK506 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04703021049499512,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does CsA and FK506 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10579782724380493,
+        "ground_truth": {
+          "the appearance": {
+            "bertscore": 0.6999257802963257,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do CsA and FK506 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10326296091079712,
+        "ground_truth": {
+          "DNA binding activity": {
+            "bertscore": 0.6785699129104614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does CsA and FK506 inhibit the appearance of DNA binding activity of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24852609634399414,
+        "ground_truth": {
+          "factors": {
+            "bertscore": 0.6932956576347351,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the molecule that binds to IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02237570285797119,
+        "ground_truth": {
+          "the NF-AT": {
+            "bertscore": 0.6778975129127502,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two sites in the IL-2 enhancer do CsA and FK506": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21694153547286987,
+        "ground_truth": {
+          "AP-1 sites": {
+            "bertscore": 0.664882481098175,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-AT and AP-1 sites in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 enhancer",
+        "answerability": 0.9432355761528015,
+        "ground_truth": {
+          "the IL-2 enhancer": {
+            "bertscore": 0.9470422863960266,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

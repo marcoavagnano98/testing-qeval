@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "A novel Ets-related transcription factor Elf-1 binds to mCD14 with lower apparent affinity than does PtdIns.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PtdIns"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the Ets-related transcription factor that binds to m"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A novel Ets-related transcription factor Elf-1 binds",
+        "lower apparent affinity",
+        "PtdIns"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the apparent affinity of mCD14?",
+          "What is the affinity of Elf-1 to mCD14?",
+          "What is the name of the Ets-related transcription factor that binds to m"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What binds to mCD14 with lower apparent affinity than PtdIns": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Elf-1",
+        "answerability": 0.870885968208313,
+        "ground_truth": {
+          "Phosphatidylserine (PS": {
+            "bertscore": 0.5746665596961975,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What binds to mCD14 with lower apparent affinity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Elf-1",
+        "answerability": 0.6317963600158691,
+        "ground_truth": {
+          "PtdIns": {
+            "bertscore": 0.6498434543609619,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another anionic glycerophospholipid that binds to m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0900418758392334,
+        "ground_truth": {
+          "Phosphatidylserine": {
+            "bertscore": 0.5524687170982361,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the anionic glycerophospholipid that binds": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03573179244995117,
+        "ground_truth": {
+          "(PS": {
+            "bertscore": 0.6600233912467957,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does PS bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009528994560241699,
+        "ground_truth": {
+          "mCD14": {
+            "bertscore": 0.6644638776779175,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the affinity of PtdIns to mCD14?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004086673259735107,
+        "ground_truth": {
+          "lower apparent affinity": {
+            "bertscore": 0.7087398171424866,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

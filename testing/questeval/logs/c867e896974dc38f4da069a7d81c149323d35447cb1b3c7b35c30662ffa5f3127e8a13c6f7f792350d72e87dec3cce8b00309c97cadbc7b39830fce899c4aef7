@@ -1,0 +1,52 @@
+{
+  "type": "ref",
+  "text": "A T cell-specific protein Neg-1 and a ubiquitous protein Neg-2 binding to NRE-\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A T cell-specific protein",
+        "a ubiquitous protein",
+        "NRE-"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is Neg-1?",
+          "What is Neg-2?",
+          "What is the binding site of Neg-1 and Neg-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is Neg-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17046260833740234,
+        "ground_truth": {
+          "A T cell-specific protein": {
+            "bertscore": 0.6060323715209961,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the binding site of Neg-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NRE-C",
+        "answerability": 0.7742623090744019,
+        "ground_truth": {
+          "NRE-": {
+            "bertscore": 0.8890848755836487,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

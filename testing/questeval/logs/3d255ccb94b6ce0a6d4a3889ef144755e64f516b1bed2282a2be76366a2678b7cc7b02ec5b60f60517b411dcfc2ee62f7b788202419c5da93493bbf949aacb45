@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "PKB is activated in response to triggering of the T cell antigen receptor; PtdIns 3-kinase activity is both required and sufficient for this TCR response. The expression of an active PKB is sufficient to induce E2F activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PKB",
+        "PtdIns",
+        "PKB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required and sufficient for the TCR response?",
+          "What is required and sufficient for the TCR response?",
+          "What is required and sufficient for the TCR response?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PKB",
+        "response",
+        "the T cell antigen receptor",
+        "PtdIns 3-kinase activity",
+        "this TCR response",
+        "The expression",
+        "an active PKB",
+        "E2F activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required and sufficient for the TCR response?",
+          "What is required for the activation of PKB?",
+          "What triggers the PKB?",
+          "What is required and sufficient for the TCR response?",
+          "What is PtdIns 3-kinase activity required for?",
+          "What is required to induce E2F activity?",
+          "What is required to induce E2F activity?",
+          "What is required for the TCR response?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is sufficient to induce E2F activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The expression of an active PKB",
+        "answerability": 0.9264959096908569,
+        "ground_truth": {
+          "PKB": {
+            "bertscore": 0.7257915139198303,
+            "f1": 0.4
+          },
+          "The expression": {
+            "bertscore": 0.7576185464859009,
+            "f1": 0.4
+          },
+          "an active PKB": {
+            "bertscore": 0.8598700165748596,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the expression of an active PKB induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F",
+        "answerability": 0.6598707437515259,
+        "ground_truth": {
+          "E2F activity": {
+            "bertscore": 0.8183753490447998,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

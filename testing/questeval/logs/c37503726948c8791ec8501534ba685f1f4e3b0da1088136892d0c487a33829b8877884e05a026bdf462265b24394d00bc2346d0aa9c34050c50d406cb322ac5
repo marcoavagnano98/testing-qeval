@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Study demonstrates that PRP and PRP might have favorable effects on bone healing.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Study",
+        "PRP",
+        "PRP",
+        "favorable effects",
+        "bone healing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What demonstrates that PRP and PRP have favorable effects on bone healing?",
+          "What substance has been shown to have a positive effect on bone healing?",
+          "What substance has been shown to have a positive effect on bone healing?",
+          "What effect does PRP have on bone healing?",
+          "What is the effect of PRP and PRP on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What demonstrates that PRP and PPP have favorable effects on bone healing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17401766777038574,
+        "ground_truth": {
+          "Study": {
+            "bertscore": 0.692557156085968,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What substance has been shown to have a positive effect on bone healing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PRP",
+        "answerability": 0.974566638469696,
+        "ground_truth": {
+          "PRP": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the other name for PRP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05058997869491577,
+        "ground_truth": {
+          "PPP": {
+            "bertscore": 0.6870671510696411,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect does PRP and PPP have on bone healing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30306190252304077,
+        "ground_truth": {
+          "favorable effects": {
+            "bertscore": 0.7317116856575012,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of PRP and PPP on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bone healing",
+        "answerability": 0.9769033193588257,
+        "ground_truth": {
+          "bone healing": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "Local expression of the NM23.H1 gene in cell lines that derive from primary or metastatic human malignant melanomas.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Local expression",
+        "the NM23.H1 gene",
+        "cell lines",
+        "primary or metastatic human malignant melanomas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the NM23.H1 gene able to do?",
+          "What gene is expressed in cell lines that derive from primary or metastatic human malignant me",
+          "Where does the NM23.H1 gene originate?",
+          "What type of cell lines are NM23.H1 gene found in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that identifies high malignancy human melano": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NM23.H1",
+        "answerability": 0.9106823205947876,
+        "ground_truth": {
+          "A low NM23.H1 gene expression": {
+            "bertscore": 0.7778578400611877,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does NM23.H1 gene expression identify?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5589232444763184,
+        "ground_truth": {
+          "high malignancy human melanomas": {
+            "bertscore": 0.6429732441902161,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

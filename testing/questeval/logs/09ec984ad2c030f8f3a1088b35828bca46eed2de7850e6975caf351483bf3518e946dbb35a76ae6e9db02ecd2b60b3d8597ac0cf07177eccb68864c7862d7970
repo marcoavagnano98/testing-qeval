@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Pretreatment of cultured human ECs with the PPARgamma activators fenofibrate or WY14643 inhibited TNF-alpha-induced VCAM-1 in a time- and concentration-dependent manner an effect not seen with PPARgamma activators.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of VCAM-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Pretreatment",
+        "cultured human ECs",
+        "WY14643 inhibited TNF-alpha-induced VCAM-1",
+        "a time- and concentration-dependent manner",
+        "PPARgamma activators"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited TNF-alpha-induced VCAM-1?",
+          "What inhibited TNF-alpha-induced VCAM-1?",
+          "What did the treatment of ECs with fenofibrate do?",
+          "How did the treatment of human ECs with fenofibrate and W",
+          "What inhibited TNF-alpha-induced VCAM-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was induced by a pretreatment of human ECs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VCAM-1",
+        "answerability": 0.6061544418334961,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7617927193641663,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited VCAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pretreatment of human ECs with the PPARgamma activators f",
+        "answerability": 0.8530541658401489,
+        "ground_truth": {
+          "Pretreatment": {
+            "bertscore": 0.7138352394104004,
+            "f1": 0.2222222222222222
+          },
+          "PPARgamma activators": {
+            "bertscore": 0.802801787853241,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What inhibited TNF-alpha-induced VCAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pretreatment of cultured human ECs with the PPARgamma activators",
+        "answerability": 0.9357864856719971,
+        "ground_truth": {
+          "cultured human ECs": {
+            "bertscore": 0.7995628714561462,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What did the treatment of cultured human ECs with fenofibrate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17671024799346924,
+        "ground_truth": {
+          "WY14643 inhibited TNF-alpha-induced VCAM-1": {
+            "bertscore": 0.5896514654159546,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How did the treatment of human ECs with PPARalpha activated VCAM": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18666797876358032,
+        "ground_truth": {
+          "a time- and concentration-dependent manner": {
+            "bertscore": 0.6224399209022522,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

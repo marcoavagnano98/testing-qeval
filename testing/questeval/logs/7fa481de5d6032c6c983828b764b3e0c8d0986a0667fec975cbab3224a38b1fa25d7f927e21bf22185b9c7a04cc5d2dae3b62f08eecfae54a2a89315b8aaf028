@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Excess beta-catenin can squelch reporter gene activation by LEF-1-beta-catenin complexes but not activation by the transcription factor VP16.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Excess beta-catenin",
+        "reporter gene activation",
+        "LEF-1-beta-catenin complexes",
+        "not activation",
+        "the transcription factor",
+        "VP16"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can squelch reporter gene activation?",
+          "What does excess beta-catenin inhibit?",
+          "What can excess beta-catenin squelch reporter gene activation by?",
+          "What does excess beta-catenin do to the transcription factor VP16?",
+          "What does excess beta-catenin inhibit?",
+          "What transcription factor is not affected by excess beta-catenin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can squelch reporter gene activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Excess beta-catenin",
+        "answerability": 0.7626625299453735,
+        "ground_truth": {
+          "Excess beta-catenin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does excess beta-catenin inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation by the transcription factor VP16",
+        "answerability": 0.7395638227462769,
+        "ground_truth": {
+          "reporter gene activation": {
+            "bertscore": 0.7522522807121277,
+            "f1": 0.25
+          },
+          "the transcription factor": {
+            "bertscore": 0.8000513315200806,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What can excess beta-catenin squelch reporter gene activation by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LEF-1-beta-catenin complexes",
+        "answerability": 0.9552178382873535,
+        "ground_truth": {
+          "LEF-1-beta-catenin complexes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does excess beta-catenin do to the transcription factor VP16?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2607550621032715,
+        "ground_truth": {
+          "not activation": {
+            "bertscore": 0.7317047715187073,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor is not affected by excess beta-catenin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VP16",
+        "answerability": 0.8274015188217163,
+        "ground_truth": {
+          "VP16": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

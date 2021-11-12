@@ -1,0 +1,78 @@
+{
+  "type": "ref",
+  "text": "Overall these results confirm that NF-kappaB is an important modulator of IL-1beta production and that increased activation of NF-kappaB augments inflammasome-mediated production of IL-1beta.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these results",
+        "NF-kappaB",
+        "an important modulator",
+        "IL-1beta production",
+        "NF-kappaB augments inflammasome-mediated production",
+        "IL-1beta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What confirms that NF-kappaB is an important modulator of IL",
+          "What is an important modulator of IL-1beta production?",
+          "What does the results of the cytokine test confirm about NF-kappa",
+          "What is NF-kappaB an important modulator of?",
+          "What does increased activation of NF-kappaB do?",
+          "What is the main factor in inflammation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that HCMV binding to monocytes results in the production and release of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07912933826446533,
+        "ground_truth": {
+          "These experiments": {
+            "bertscore": 0.6665629744529724,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did HCMV binding to cause the production and release of IL-1beta": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.027071714401245117,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6662787795066833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did HCMV binding to monocytes result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0001590251922607422,
+        "ground_truth": {
+          "the production": {
+            "bertscore": 0.6583800911903381,
+            "f1": 0
+          },
+          "release": {
+            "bertscore": 0.6126595139503479,
+            "f1": 0
+          },
+          "IL-1beta protein": {
+            "bertscore": 0.5927801132202148,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

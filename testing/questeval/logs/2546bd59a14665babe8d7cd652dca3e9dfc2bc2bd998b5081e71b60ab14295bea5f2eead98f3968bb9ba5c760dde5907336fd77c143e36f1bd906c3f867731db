@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Positive and negative regulation of IL-2 gene expression: involvement of multiple regulatory sites.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is involved in both positive and negative regulation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Positive and negative regulation",
+        "IL-2 gene expression",
+        "involvement",
+        "multiple regulatory sites"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of multiple regulatory sites in IL-2 gene expression?",
+          "What is involved in the regulation of IL-2?",
+          "What is the role of multiple regulatory sites in the regulation of IL-2 gene expression?",
+          "What is involved in the regulation of IL-2 gene expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is involved in the regulation of IL-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011983692646026611,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of multiple regulatory sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "positive and negative regulation of IL-2 gene expression",
+        "answerability": 0.8855951428413391,
+        "ground_truth": {
+          "Positive and negative regulation": {
+            "bertscore": 0.7808346748352051,
+            "f1": 0.6666666666666666
+          },
+          "IL-2 gene expression": {
+            "bertscore": 0.8904989957809448,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What is the role of multiple regulatory sites in IL-2 gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "positive and negative regulation",
+        "answerability": 0.9586400985717773,
+        "ground_truth": {
+          "role": {
+            "bertscore": 0.6864780783653259,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What role does IL-2 play in gene regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "positive and negative regulation",
+        "answerability": 0.8780457377433777,
+        "ground_truth": {
+          "multiple regulatory sites": {
+            "bertscore": 0.77739417552948,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

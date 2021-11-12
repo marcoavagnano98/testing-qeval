@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "CHIP inhibited iNOS ubiquitination degradation and export from the nucleus and promoted the degradation of iNOS.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CHIP",
+        "iNOS ubiquitination degradation",
+        "export",
+        "the nucleus",
+        "the degradation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited iNOS ubiquitination degradation and export from the nu",
+          "What did CHIP inhibit?",
+          "What did CHIP inhibit from the nucleus?",
+          "Where did CHIP inhibit iNOS ubiquitination?",
+          "What did CHIP inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein promoted ubiquitination and proteasomal degradation of iNOS": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20456463098526,
+        "ground_truth": {
+          "CHIP": {
+            "bertscore": 0.6945229172706604,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did CHIP promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "degradation of iNOS",
+        "answerability": 0.9367824196815491,
+        "ground_truth": {
+          "ubiquitination": {
+            "bertscore": 0.666998565196991,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did CHIP promote in iNOS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "degradation",
+        "answerability": 0.9236847758293152,
+        "ground_truth": {
+          "proteasomal degradation": {
+            "bertscore": 0.8197457194328308,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did CHIP associate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.027298688888549805,
+        "ground_truth": {
+          "iNOS": {
+            "bertscore": 0.6793322563171387,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

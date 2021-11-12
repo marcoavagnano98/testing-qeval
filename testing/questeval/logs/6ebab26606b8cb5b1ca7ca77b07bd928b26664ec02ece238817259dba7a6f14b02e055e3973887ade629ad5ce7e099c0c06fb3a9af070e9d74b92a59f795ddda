@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "We show that SMN interacts with the snRNP proteins and that this interaction correlates with their ability to localize to nucleoli after DNA damage.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SMN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that interacts with snRNP proteins?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the snRNP proteins",
+        "this interaction",
+        "their ability",
+        "nucleoli",
+        "DNA damage"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors show about SMN and snRNP proteins?",
+          "What does SMN interact with?",
+          "What is the relationship between SMN and snRNP proteins?",
+          "What does the interaction of SMN and snRNP proteins correlate with?",
+          "What do SMN and snRNP proteins localize to after DNA damage?",
+          "What is the cause of SMN's ability to localize to nucleoli?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is critical for snRNP assembly in the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08983385562896729,
+        "ground_truth": {
+          "SMN": {
+            "bertscore": 0.6625568866729736,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SMN interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "snRNP proteins",
+        "answerability": 0.9984278678894043,
+        "ground_truth": {
+          "spliceosomal snRNP proteins": {
+            "bertscore": 0.9145276546478271,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is SMN critical for in the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017246723175048828,
+        "ground_truth": {
+          "assembly": {
+            "bertscore": 0.6754724979400635,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does SMN interact with spliceosomal snRNP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SMN interacts with the spliceosomal snRNP",
+        "answerability": 0.7417141199111938,
+        "ground_truth": {
+          "the cytoplasm": {
+            "bertscore": 0.7017025351524353,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

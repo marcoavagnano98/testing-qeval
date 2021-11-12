@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Circulating endothelial cells in malignant disease. Circulating endothelial cells (ECs) are important factors in the development of disease. Cancer is a disease largely dependent on neoangiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "endothelial cells",
+        "malignant disease",
+        "endothelial cells",
+        "ECs",
+        "important factors",
+        "the development",
+        "disease",
+        "Cancer",
+        "a disease",
+        "neoangiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are important factors in the development of disease?",
+          "What is the term for ECs?",
+          "What are important factors in the development of disease?",
+          "What is an important factor in the development of cancer?",
+          "What are ECs?",
+          "What are ECs important factors in?",
+          "What is cancer dependent on?",
+          "What is a disease largely dependent on neoangiogenesis?",
+          "What is cancer largely dependent on?",
+          "What is cancer largely dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells are involved in cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Circulating endothelial cells",
+        "answerability": 0.9333838820457458,
+        "ground_truth": {
+          "endothelial cells": {
+            "bertscore": 0.8984059691429138,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of cancer is largely dependent on neoangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cancer",
+        "answerability": 0.9657224416732788,
+        "ground_truth": {
+          "malignant disease": {
+            "bertscore": 0.7271952629089355,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a disease dependent on neoangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cancer",
+        "answerability": 0.999362051486969,
+        "ground_truth": {
+          "Cancer": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is cancer largely dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neoangiogenesis",
+        "answerability": 0.6346136331558228,
+        "ground_truth": {
+          "a disease": {
+            "bertscore": 0.6608402132987976,
+            "f1": 0
+          },
+          "neoangiogenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

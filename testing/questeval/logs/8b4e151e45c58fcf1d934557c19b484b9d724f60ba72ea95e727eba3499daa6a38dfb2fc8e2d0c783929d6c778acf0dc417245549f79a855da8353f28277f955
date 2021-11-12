@@ -1,0 +1,80 @@
+{
+  "type": "ref",
+  "text": "PDK1 homologs activate the Pkc1-mitogen-activated protein kinase pathway in yeast.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PDK1 homologs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that activates the Pkc1-mitogen-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PDK1 homologs",
+        "the Pkc1-mitogen-activated protein kinase pathway",
+        "yeast"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that activates the Pkc1-mitogen-",
+          "What do PDK1 homologs activate in yeast?",
+          "What organism has PDK1 homologs?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does the yeast PDK1 homologs do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activate the Pkc1-mitogen-activated protein kinase pathway",
+        "answerability": 0.9254782795906067,
+        "ground_truth": {
+          "PDK1 homologs activate": {
+            "bertscore": 0.7407531142234802,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What protein is activated by the yeast PDK1 homologs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pkc1-mitogen-activated protein kinase",
+        "answerability": 0.8491107225418091,
+        "ground_truth": {
+          "Pkc1": {
+            "bertscore": 0.7554234862327576,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What activates Pkc1 and the mitogen-activated protein kinas": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6529803276062012,
+        "ground_truth": {
+          "the yeast PDK1 homologs": {
+            "bertscore": 0.6235163807868958,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the yeast PDK1 homologs activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pkc1-mitogen-activated protein kinase pathway",
+        "answerability": 0.8526121377944946,
+        "ground_truth": {
+          "the mitogen-activated protein kinase pathway": {
+            "bertscore": 0.8651888370513916,
+            "f1": 0.75
+          }
+        }
+      }
+    }
+  }
+}

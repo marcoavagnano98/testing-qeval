@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "RCC-S did not alter the cytoplasmic levels of RelA and NF-kappaB1 but did suppress their nuclear localization and inhibited the activation of RelA/NF-kappaB1 heterodimers.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RCC-S",
+        "the cytoplasmic levels",
+        "RelA",
+        "NF-kappaB1",
+        "their nuclear localization",
+        "the activation",
+        "/NF-kappaB1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not alter the cytoplasmic levels of RelA and NF-k",
+          "What did RCC-S not alter?",
+          "What protein did RCC-S suppress?",
+          "What protein did RCC-S suppress?",
+          "What did RCC-S suppress?",
+          "What did RCC-S inhibit?",
+          "What two proteins did RCC-S suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did not alter the levels of RelA and NF-kappaB1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4953571557998657,
+        "ground_truth": {
+          "RCC-S": {
+            "bertscore": 0.6586155891418457,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did RCC-S not alter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasmic levels of RelA and NF-kappaB1",
+        "answerability": 0.9824352264404297,
+        "ground_truth": {
+          "the cytoplasmic levels": {
+            "bertscore": 0.8051774501800537,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What binding complexes did RCC-S suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RelA/NF-kappaB1",
+        "answerability": 0.7756634950637817,
+        "ground_truth": {
+          "RelA": {
+            "bertscore": 0.7424439191818237,
+            "f1": 0
+          },
+          "NF-kappaB1": {
+            "bertscore": 0.9146255254745483,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did RCC-S suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear localization",
+        "answerability": 0.9919084310531616,
+        "ground_truth": {
+          "their nuclear localization": {
+            "bertscore": 0.8988522887229919,
+            "f1": 0.8
+          },
+          "RelA/NF-kappaB1 binding complexes": {
+            "bertscore": 0.6715829968452454,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did RCC-S inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activation of RelA/NF-kappaB1 heterodimers",
+        "answerability": 0.8189221024513245,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6734411716461182,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "ref",
+  "text": "GBX2 activation by c-Myb requires signal transduction emanating from the cell surface while the leukemogenic AMV v-Myb constitutively induces the GBX2 gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GBX2",
+        "AMV",
+        "v-Myb",
+        "GBX2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is activated by c-Myb?",
+          "What is the name of the leukemogenic protein that induces GBX2",
+          "What is the name of the AMV that induces GBX2?",
+          "What gene is activated by c-Myb?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GBX2 activation",
+        "c-Myb",
+        "signal transduction",
+        "the cell surface",
+        "AMV v-Myb",
+        "the GBX2 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What requires signal transduction emanating from the cell surface?",
+          "What is the name of the protein that induces GBX2 activation?",
+          "What does c-Myb require to activate GBX2?",
+          "Where does c-Myb induce the GBX2 gene?",
+          "What induces the GBX2 gene?",
+          "What does c-Myb induce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is directly induced by v-Myb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5042931437492371,
+        "ground_truth": {
+          "GBX2": {
+            "bertscore": 0.6482811570167542,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What directly induces the GBX2 gene in GBX2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27432018518447876,
+        "ground_truth": {
+          "The v-Myb transcription factor": {
+            "bertscore": 0.585570752620697,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is directly induced by the v-Myb transcription factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GBX2",
+        "answerability": 0.676773190498352,
+        "ground_truth": {
+          "the GBX2 gene": {
+            "bertscore": 0.7538014054298401,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where does the v-Myb transcription factor induce the GBX2 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24700111150741577,
+        "ground_truth": {
+          "inGBX2 cells": {
+            "bertscore": 0.61640864610672,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

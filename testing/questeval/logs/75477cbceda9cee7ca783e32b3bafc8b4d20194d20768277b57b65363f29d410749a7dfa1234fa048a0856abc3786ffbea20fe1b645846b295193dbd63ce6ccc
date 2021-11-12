@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "interleukin-3 expression by activated T cells involves an inducible T-cell-specific factor and an octamer binding protein.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "interleukin-3 expression",
+        "activated T cells",
+        "an inducible T-cell-specific factor",
+        "an octamer binding protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What involves an inducible T-cell-specific factor and an octa",
+          "What is involved in the expression of interleukin-3?",
+          "What does interleukin-3 expression involve?",
+          "What is involved in the expression of interleukin-3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What involves an inducible T-cell-specific factor and an octa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-3 expression",
+        "answerability": 0.5411163568496704,
+        "ground_truth": {
+          "Interleukin-3 expression": {
+            "bertscore": 0.976006031036377,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is involved in the expression of interleukin-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an inducible T-cell-specific factor and an octamer binding",
+        "answerability": 0.9225550293922424,
+        "ground_truth": {
+          "activated T cells": {
+            "bertscore": 0.718059778213501,
+            "f1": 0
+          },
+          "an octamer binding protein": {
+            "bertscore": 0.8233262300491333,
+            "f1": 0.4444444444444444
+          }
+        }
+      }
+    },
+    "What does interleukin-3 involve?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an inducible T-cell-specific factor and an octamer binding",
+        "answerability": 0.8695411682128906,
+        "ground_truth": {
+          "an inducible T-cell-specific factor": {
+            "bertscore": 0.9060416221618652,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

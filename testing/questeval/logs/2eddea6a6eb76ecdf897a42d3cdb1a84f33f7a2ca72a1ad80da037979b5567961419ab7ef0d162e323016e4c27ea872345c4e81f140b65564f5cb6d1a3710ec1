@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "Furthermore Bcl-2 antagonizes drug-induced apoptosis by inhibiting calcineurin activation blocking NFAT nuclear translocation and preventing FasL expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "drug-induced apoptosis",
+        "calcineurin activation",
+        "NFAT nuclear translocation",
+        "FasL expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Bcl-2 block?",
+          "What blockades NFAT nuclear translocation?",
+          "What does Bcl-2 block?",
+          "What does Bcl-2 block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Bcl-2 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFAT nuclear translocation",
+        "answerability": 0.8896120190620422,
+        "ground_truth": {
+          "drug-induced apoptosis": {
+            "bertscore": 0.7589973211288452,
+            "f1": 0
+          },
+          "NFAT nuclear translocation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "FasL expression": {
+            "bertscore": 0.7223884463310242,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockades NFAT nuclear translocation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "calcineurin activation",
+        "answerability": 0.9236498475074768,
+        "ground_truth": {
+          "calcineurin activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Regulation of c-jun mRNA expression by hydroxyurea in human K562 cells during erythroid differentiation published erratum appears in Biochim Biophys Acta 1995 Dec 27;1264(3):409\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "hydroxyurea",
+        "human K562",
+        "Biochim Biophys Acta 1995"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the c-jun mRNA expression controlled by?",
+          "What type of cells are involved in c-jun mRNA expression?",
+          "What journal published the study?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Regulation",
+        "c-jun mRNA expression",
+        "hydroxyurea",
+        "human K562 cells",
+        "erythroid differentiation",
+        "published erratum",
+        "Biochim Biophys Acta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of hydroxyurea in c-jun mRNA expression?",
+          "What is hydroxyurea responsible for?",
+          "What is the c-jun mRNA expression controlled by?",
+          "What is the hydroxyurea in?",
+          "What is the process that regulates c-jun mRNA expression?",
+          "What is the name of the study that describes the regulation of c-jun mRNA",
+          "What publication published a study on hydroxyurea in human K562 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What regulates c-jun mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hydroxyurea",
+        "answerability": 0.9854405522346497,
+        "ground_truth": {
+          "HU": {
+            "bertscore": 0.6713200807571411,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two experiments strongly indicate that HU regulates c-jun mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.051263272762298584,
+        "ground_truth": {
+          "Both nuclear run-on and actinomycin D pulse experiments": {
+            "bertscore": 0.6113936901092529,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HU regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-jun mRNA expression",
+        "answerability": 0.6924480199813843,
+        "ground_truth": {
+          "c-jun mRNA expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does HU increase in c-jun mRNA synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017371177673339844,
+        "ground_truth": {
+          "the rate": {
+            "bertscore": 0.6778078675270081,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HU increase the rate of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014482259750366211,
+        "ground_truth": {
+          "synthesis": {
+            "bertscore": 0.6831985116004944,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

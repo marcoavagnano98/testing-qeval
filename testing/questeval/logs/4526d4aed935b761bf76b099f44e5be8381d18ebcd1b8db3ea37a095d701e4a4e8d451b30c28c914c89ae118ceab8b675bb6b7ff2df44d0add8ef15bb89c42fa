@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "In marked contrast expression of the dominant interfering deltaDNA-binding domain RXR containing a deletion of the entire DNA-binding domain was incompatible with erythroid cell growth in vitro suggesting a pivotal role of RXR for erythroid cell development.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "marked contrast expression",
+        "deltaDNA-binding domain RXR",
+        "a deletion",
+        "the entire DNA-binding domain",
+        "erythroid cell growth",
+        "a pivotal role",
+        "RXR",
+        "erythroid cell development"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was incompatible with erythroid cell growth in vitro?",
+          "What is the dominant interfering domain for erythroid cell development?",
+          "What did the RXR contain?",
+          "What did RXR contain a deletion of?",
+          "What was the dominant interfering deltaDNA-binding domain incompatible with?",
+          "What did the study suggest about RXR?",
+          "What is the dominant interfering deltaDNA-binding domain?",
+          "What is the role of RXR in erythroid cell growth?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main regulator of erythroid gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RXR",
+        "answerability": 0.70412278175354,
+        "ground_truth": {
+          "ACLA": {
+            "bertscore": 0.7974666953086853,
+            "f1": 0
+          },
+          "DOX": {
+            "bertscore": 0.852817177772522,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was shown to be regulated transcriptionally by ACLA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0001214742660522461,
+        "ground_truth": {
+          "erythroid gene expression": {
+            "bertscore": 0.6421717405319214,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

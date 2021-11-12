@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "This differentiation marker was induced significantly after incubation with ML-9 and VD3 for 4 hours and 1 day respectively. ANAE was induced significantly by VD3 and VD3.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ML-9",
+        "4 hours and",
+        "1 day"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the differentiation marker ANAE incubated with?",
+          "How long did ANAE incubate with ML-9?",
+          "How long did the ANAE differentiation marker stay incubated with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This differentiation marker",
+        "incubation",
+        "ML-9 and VD3",
+        "4 hours",
+        "1 day",
+        "ANAE",
+        "VD3",
+        "VD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was induced significantly after incubation with ML-9?",
+          "What was the differentiation marker ANAE induced by?",
+          "What two markers were used to induce ANAE?",
+          "How long did ANAE incubate with ML-9?",
+          "How long did the ANAE differentiation marker stay incubated with?",
+          "What differentiation marker was induced significantly after incubation with ML-9?",
+          "What was the differentiation marker ANAE induced by?",
+          "What was the differentiation marker ANAE induced by?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induced ANAE activity more rapidly than VD3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ML-9",
+        "answerability": 0.963618814945221,
+        "ground_truth": {
+          "ML-9": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that ML-9 induces?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ANAE",
+        "answerability": 0.7205557823181152,
+        "ground_truth": {
+          "ANAE": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is ANAE?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiation marker",
+        "answerability": 0.9810482263565063,
+        "ground_truth": {
+          "another monocytic differentiation marker": {
+            "bertscore": 0.8415202498435974,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the name of the monocytic differentiation marker?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2974317669868469,
+        "ground_truth": {
+          "VD3": {
+            "bertscore": 0.6775147914886475,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

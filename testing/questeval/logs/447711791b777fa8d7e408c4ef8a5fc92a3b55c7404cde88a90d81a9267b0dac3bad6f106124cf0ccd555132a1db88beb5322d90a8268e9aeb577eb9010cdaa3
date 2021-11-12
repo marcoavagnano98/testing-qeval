@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "However the signaling events responsible for these effects remain unclear.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the signaling events",
+        "these effects"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is still unclear about the effects of a swine flu?",
+          "What are the signaling events responsible for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is still unclear about the effects of a swine flu?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signaling events",
+        "answerability": 0.9161313772201538,
+        "ground_truth": {
+          "the signaling events": {
+            "bertscore": 0.9215618371963501,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are the signaling events responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05294489860534668,
+        "ground_truth": {
+          "these effects": {
+            "bertscore": 0.6884962320327759,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

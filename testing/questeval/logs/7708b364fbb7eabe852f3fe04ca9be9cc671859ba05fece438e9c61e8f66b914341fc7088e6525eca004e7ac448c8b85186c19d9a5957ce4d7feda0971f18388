@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "We have recently characterised a new factor called IK which is an efficient inhibitor of constitutive expression of MHC class II antigens.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MHC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What class of antigen is IK an efficient inhibitor of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a new factor",
+        "an efficient inhibitor",
+        "constitutive expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has IK recently been characterised as?",
+          "What has been recently characterised?",
+          "What is IK?",
+          "What does IK inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What class of antigen is IK an efficient inhibitor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MHC class II",
+        "answerability": 0.968504786491394,
+        "ground_truth": {
+          "MHC": {
+            "bertscore": 0.8124061226844788,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What has recently been characterised?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.534082293510437,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.605411171913147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has been recently characterised?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5350106954574585,
+        "ground_truth": {
+          "a new factor": {
+            "bertscore": 0.6829229593276978,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an efficient inhibitor of constitutive expression of MHC class II antigens",
+        "answerability": 0.9503238201141357,
+        "ground_truth": {
+          "an efficient inhibitor": {
+            "bertscore": 0.7881478667259216,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is IK an efficient inhibitor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "constitutive expression",
+        "answerability": 0.9956520199775696,
+        "ground_truth": {
+          "IFN-gamma induction": {
+            "bertscore": 0.6901522278785706,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IK inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "constitutive expression",
+        "answerability": 0.9869493842124939,
+        "ground_truth": {
+          "MHC class II antigens expression": {
+            "bertscore": 0.7038766741752625,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    }
+  }
+}

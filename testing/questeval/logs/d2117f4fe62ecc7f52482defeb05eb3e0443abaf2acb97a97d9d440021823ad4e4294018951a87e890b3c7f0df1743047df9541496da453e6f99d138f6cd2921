@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "that induce the production of cytokines and chemokines in these cells NF-kappa B/Rel complexes are sequestered in the cytoplasm of immune/inflammatory effector cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the production",
+        "cytokines",
+        "chemokines",
+        "these cells",
+        "NF-kappa B/Rel complexes",
+        "the cytoplasm",
+        "immune/inflammatory effector cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What do NF-kappa B/Rel complexes induce?",
+          "What do NF-kappa B/Rel complexes produce?",
+          "What do NF-kappa B/Rel complexes contain?",
+          "What cells are NF-kappa B/Rel complexes?",
+          "What is sequestered in the cytoplasm of immune/inflammatory effector cells?",
+          "Where are NF-kappa B/Rel complexes sequestered?",
+          "What are NF-kappa B/Rel complexes sequestered in"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What do the cytoplasm contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B/Rel complexes",
+        "answerability": 0.5578727722167969,
+        "ground_truth": {
+          "the NF-kappa B": {
+            "bertscore": 0.7885966897010803,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What do NF-kappa B/Rel complexes contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokines and chemokines",
+        "answerability": 0.6599873900413513,
+        "ground_truth": {
+          "complexes": {
+            "bertscore": 0.6791326999664307,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where do NF-kappa B/Rel complexes reside?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the cytoplasm",
+        "answerability": 0.9772768616676331,
+        "ground_truth": {
+          "the cytoplasm": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

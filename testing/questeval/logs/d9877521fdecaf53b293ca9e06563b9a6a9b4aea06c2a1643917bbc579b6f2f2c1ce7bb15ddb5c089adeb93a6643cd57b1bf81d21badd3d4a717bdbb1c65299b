@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "In vivo ethanol exposure caused both decreased angiogenesis and increased hypoxia in wounds.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "vivo ethanol exposure",
+        "both decreased angiogenesis",
+        "increased hypoxia",
+        "wounds"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused decreased angiogenesis and increased hypoxia in wounds?",
+          "What did ethanol exposure cause in vivo?",
+          "What did ethanol exposure cause in wounds?",
+          "What did ethanol exposure cause hypoxia and decreased angiogenesis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused decreased angiogenesis and increased hypoxia in wounds?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ethanol exposure",
+        "answerability": 0.995602548122406,
+        "ground_truth": {
+          "vivo ethanol exposure": {
+            "bertscore": 0.9439571499824524,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased angiogenesis and increased hypoxia",
+        "answerability": 0.9992940425872803,
+        "ground_truth": {
+          "both decreased angiogenesis": {
+            "bertscore": 0.874911904335022,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause in wounds?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased angiogenesis and increased hypoxia",
+        "answerability": 0.9991662502288818,
+        "ground_truth": {
+          "increased hypoxia": {
+            "bertscore": 0.895747184753418,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause hypoxia and decreased angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased hypoxia",
+        "answerability": 0.7688851952552795,
+        "ground_truth": {
+          "wounds": {
+            "bertscore": 0.7550205588340759,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

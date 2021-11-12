@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Induction of TF mRNA expression by LPS tended to be partially reduced by the lysophospholipid.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Induction of TF",
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA expression is partially reduced by LPS?",
+          "What lysophospholipid reduced TF mRNA expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TF",
+        "LPS",
+        "the lysophospholipid"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA expression is reduced by LPS?",
+          "What lysophospholipid reduced TF mRNA expression?",
+          "What reduced the expression of TF mRNA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA expression is partially reduced by LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF",
+        "answerability": 0.9773885607719421,
+        "ground_truth": {
+          "Induction of TF": {
+            "bertscore": 0.8025205135345459,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What lysophospholipid reduced TF mRNA expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3760703206062317,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.702795684337616,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mRNA expression is reduced by LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF",
+        "answerability": 0.9643545746803284,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What reduced the expression of TF mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lysophospholipid",
+        "answerability": 0.8704017400741577,
+        "ground_truth": {
+          "the lysophospholipid": {
+            "bertscore": 0.9359403252601624,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

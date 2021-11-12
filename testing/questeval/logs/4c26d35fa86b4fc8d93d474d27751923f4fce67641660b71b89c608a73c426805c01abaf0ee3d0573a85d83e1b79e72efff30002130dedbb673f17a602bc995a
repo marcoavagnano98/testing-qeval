@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "AtPRMT5 methylated histone H4 H2A and myelin basic protein in vitro and attenuated their interaction in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H4 H2A",
+        "myelin",
+        "vitro",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What histone did AtPRMT5 methylate?",
+          "What basic protein was methylated by AtPRMT5?",
+          "In what way did AtPRMT5 methylate histone H4 H2A and",
+          "In what way did AtPRMT5 reduce the interaction between myelin basic protein and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "histone H4 H2A",
+        "myelin basic protein",
+        "their interaction",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did AtPRMT5 methylate?",
+          "What protein did AtPRMT5 methylate in vitro?",
+          "What did AtPRMT5 attenuate in vivo?",
+          "In what way did AtPRMT5 reduce the interaction between myelin basic protein and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What methylated histone did AtPRMT5 methylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H4 H2A",
+        "answerability": 0.9983835220336914,
+        "ground_truth": {
+          "H4 H2A": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What basic protein was induced by AtPRMT5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myelin",
+        "answerability": 0.9441057443618774,
+        "ground_truth": {
+          "myelin": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what way was the AtPRMT5 methylated histone H4 H2A": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4259641766548157,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.7021183967590332,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did AtPRMT5 methylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H4 H2A and myelin basic protein",
+        "answerability": 0.9984219074249268,
+        "ground_truth": {
+          "histone H4 H2A": {
+            "bertscore": 0.889048159122467,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What protein was analyzed in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AtPRMT5",
+        "answerability": 0.702612578868866,
+        "ground_truth": {
+          "myelin basic protein": {
+            "bertscore": 0.6779192090034485,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

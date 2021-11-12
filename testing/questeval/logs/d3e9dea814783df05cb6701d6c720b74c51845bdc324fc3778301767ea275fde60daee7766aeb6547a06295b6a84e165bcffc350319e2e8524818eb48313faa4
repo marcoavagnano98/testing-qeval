@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "Since the regulation of SWI4 is required for normal cell cycle progression we have characterized cis- and trans-acting regulators of SWI4 transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the regulation",
+        "SWI4",
+        "normal cell cycle progression",
+        "we",
+        "and trans-acting regulators",
+        "SWI4 transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for normal cell cycle progression?",
+          "What is required for normal cell cycle progression?",
+          "What is SWI4 required for?",
+          "What has been characterized as a regulator of SWI4?",
+          "What two types of regulators of SWI4 transcription have been characterized?",
+          "What is required for normal cell cycle progression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for normal cell cycle progression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulation of SWI4",
+        "answerability": 0.9968919157981873,
+        "ground_truth": {
+          "the regulation": {
+            "bertscore": 0.6954424381256104,
+            "f1": 0.5
+          },
+          "SWI4": {
+            "bertscore": 0.7809242010116577,
+            "f1": 0.5
+          },
+          "SWI4 transcription": {
+            "bertscore": 0.8509272933006287,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is SWI4 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "normal cell cycle progression",
+        "answerability": 0.9967136383056641,
+        "ground_truth": {
+          "normal cell cycle progression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What has been characterized as a regulator of SWI4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cis- and trans-acting regulators",
+        "answerability": 0.839349627494812,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6420283913612366,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two types of regulators of SWI4 transcription have been characterized?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cis- and trans-acting regulators",
+        "answerability": 0.9889334440231323,
+        "ground_truth": {
+          "and trans-acting regulators": {
+            "bertscore": 0.9096970558166504,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

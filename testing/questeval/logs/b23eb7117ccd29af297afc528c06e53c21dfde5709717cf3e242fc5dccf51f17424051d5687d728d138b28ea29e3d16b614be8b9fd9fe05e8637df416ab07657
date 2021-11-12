@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "A conserved MST-FOXO motif is required for all oxidative-stress responses and is implicated in the biological responses of MST.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MST",
+        "MST"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in the biological responses of MST?",
+          "What is involved in the biological responses of MST?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A conserved MST-FOXO motif",
+        "all oxidative-stress responses",
+        "the biological responses",
+        "MST"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for all oxidative stress responses?",
+          "What is a conserved MST-FOXO motif required for?",
+          "What is a conserved MST-FOXO motif implicated in?",
+          "What is involved in the biological responses of MST?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathway mediates oxidative stress responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42395830154418945,
+        "ground_truth": {
+          "MST-FOXO": {
+            "bertscore": 0.6589815020561218,
+            "f1": 0
+          },
+          "A conserved MST-FOXO": {
+            "bertscore": 0.6520169973373413,
+            "f1": 0
+          },
+          "pathway": {
+            "bertscore": 0.6902822256088257,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MST-FOXO mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "biological responses",
+        "answerability": 0.6677879095077515,
+        "ground_truth": {
+          "oxidative-stress responses": {
+            "bertscore": 0.8042082786560059,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does MST-FOXO prolong?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018889904022216797,
+        "ground_truth": {
+          "life span": {
+            "bertscore": 0.7260247468948364,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

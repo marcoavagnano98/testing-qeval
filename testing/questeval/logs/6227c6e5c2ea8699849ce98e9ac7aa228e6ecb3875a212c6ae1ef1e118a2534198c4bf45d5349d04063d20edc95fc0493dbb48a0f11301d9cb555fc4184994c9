@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Involvement of cyclic AMP-dependent protein kinases in the signal transduction pathway for interleukin-1. \u2047 nExpression of a highly specific protein inhibitor for cyclic AMP-dependent protein kinases in interleukin-1\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AMP",
+        "interleukin-1",
+        "AMP",
+        "interleukin-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the signal transduction pathway governed by?",
+          "What is the signal transduction pathway for?",
+          "What is the signal transduction pathway governed by?",
+          "What is the signal transduction pathway for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Involvement",
+        "cyclic AMP-dependent protein kinases",
+        "the signal transduction pathway",
+        "interleukin-1",
+        "\u2047 nExpression",
+        "a highly specific protein inhibitor",
+        "cyclic AMP-dependent protein kinases",
+        "interleukin-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of a highly specific protein inhibitor in the signal transduction pathway?",
+          "What is involved in the signal transduction pathway?",
+          "What is involved in the regulation of iodine?",
+          "What is the signal transduction pathway for?",
+          "What is the name of the protein that is involved in the signal transduction pathway?",
+          "What is involved in the signal transduction pathway?",
+          "What is involved in the signal transduction pathway?",
+          "What is the signal transduction pathway for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is involved in the signal transduction pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclic AMP-dependent protein kinases",
+        "answerability": 0.9837175607681274,
+        "ground_truth": {
+          "AMP": {
+            "bertscore": 0.6888433694839478,
+            "f1": 0
+          },
+          "cyclic AMP-dependent protein kinases": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "a highly specific protein inhibitor": {
+            "bertscore": 0.7595041990280151,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the signal transduction pathway for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-1",
+        "answerability": 0.9779052138328552,
+        "ground_truth": {
+          "interleukin-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of a highly specific protein inhibitor in the signal transduction pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Expression",
+        "answerability": 0.9968146681785583,
+        "ground_truth": {
+          "Involvement": {
+            "bertscore": 0.8658240437507629,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway does the cyclic AMP-dependent protein kinases play a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transduction",
+        "answerability": 0.9893459677696228,
+        "ground_truth": {
+          "the signal transduction pathway": {
+            "bertscore": 0.8536288738250732,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Binding ofactivated platelets induces IL-1 beta IL-8 and MCP-1 in leukocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the binding of activated platelets to leukocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Binding ofactivated platelets",
+        "beta",
+        "MCP-1",
+        "leukocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induces IL-1 beta IL-8 and MCP-1 in leukocytes",
+          "What is the IL-1 that is produced by binding of activated platelets?",
+          "What is the name of the protein that is binded to IL-8?",
+          "What type of cells are activated platelets bound to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the binding of activated platelets to leukocytes called?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00769275426864624,
+        "ground_truth": {
+          "IL-1": {
+            "bertscore": 0.67782062292099,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the binding of to leukocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.599873423576355,
+        "ground_truth": {
+          "activated platelets": {
+            "bertscore": 0.6570233702659607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the IL-1 that is produced by binding of platelets?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-1 beta IL-8 and MCP-1",
+        "answerability": 0.717797040939331,
+        "ground_truth": {
+          "beta": {
+            "bertscore": 0.7035136818885803,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is binded to IL-8?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11961883306503296,
+        "ground_truth": {
+          "MCP-1": {
+            "bertscore": 0.660986602306366,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are IL-8 and MCP-1 in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukocytes",
+        "answerability": 0.9336174726486206,
+        "ground_truth": {
+          "leukocytes": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

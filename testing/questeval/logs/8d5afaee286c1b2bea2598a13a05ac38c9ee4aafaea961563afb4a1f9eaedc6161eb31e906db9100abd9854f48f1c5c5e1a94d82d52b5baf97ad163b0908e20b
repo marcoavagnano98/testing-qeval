@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "However it is completely absent from cells transformed by the oncogene v-Src and from cells derived from a methylcholanthrene-induced fibrosarcoma.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "v-Src"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What oncogene is present in cells that are derived from a methylchol"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "it",
+        "cells",
+        "the oncogene v-Src",
+        "cells",
+        "a methylcholanthrene-induced fibrosarcoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is absent from cells transformed by v-Src?",
+          "What is a fibrosarcoma derived from?",
+          "What is the only cell that has the gene c-cell?",
+          "What is a fibrosarcoma derived from?",
+          "What is v-Src absent from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is absent from cells transformed by v-myc or v-src": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05119156837463379,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6361185312271118,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a fibrosarcoma derived from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17951339483261108,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147345542908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only gene that can induce fibrosarcoma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2111150026321411,
+        "ground_truth": {
+          "the oncogene v-myc": {
+            "bertscore": 0.6261041760444641,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only oncogene that is present in cells derived from a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23342829942703247,
+        "ground_truth": {
+          "v-src": {
+            "bertscore": 0.658748984336853,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a cell derived from that is able to produce a cytokin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1938682198524475,
+        "ground_truth": {
+          "a methylcholanthrene-induced fibrosarcoma": {
+            "bertscore": 0.5449360609054565,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

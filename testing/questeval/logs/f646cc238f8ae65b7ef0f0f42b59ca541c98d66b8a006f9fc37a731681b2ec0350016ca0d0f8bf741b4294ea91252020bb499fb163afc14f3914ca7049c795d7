@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "> TPP conversion can take place in rat liver mitochondria.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TPP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the enzyme that converts rat liver to glucose?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TPP conversion",
+        "place",
+        "rat liver mitochondria"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can take place in rat liver mitochondria?",
+          "Where can TPP conversion take place in rat liver mitochondria?",
+          "Where can TPP conversion take place?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the enzyme that converts rat liver to glucose?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14577007293701172,
+        "ground_truth": {
+          "TPP": {
+            "bertscore": 0.6843211054801941,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the conversion of rat liver mitochondria to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4131077527999878,
+        "ground_truth": {
+          "TMP": {
+            "bertscore": 0.6874271631240845,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study show about TPP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04387950897216797,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054113507270813,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What can take place in rat liver mitochondria?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TPP conversion",
+        "answerability": 0.9857706427574158,
+        "ground_truth": {
+          "> TMP conversion": {
+            "bertscore": 0.8759534358978271,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What can TPP -- > TMP conversion take place in rat liver mitochondria?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TPP conversion",
+        "answerability": 0.8998565673828125,
+        "ground_truth": {
+          "place": {
+            "bertscore": 0.711577832698822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where can TPP -- > TMP conversion take place?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitochondria",
+        "answerability": 0.9064328670501709,
+        "ground_truth": {
+          "rat liver mitochondria": {
+            "bertscore": 0.9019151329994202,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

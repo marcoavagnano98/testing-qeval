@@ -1,0 +1,148 @@
+{
+  "type": "hyp",
+  "text": "Another limitation is that antioxidant concentrations high enough to block NK-kappa B activation were shown to have a suppressive effect on immune functions in vitro because NAC and BHA blocked IL-2-induced PBGD release.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NK-kappa",
+        "NAC",
+        "BHA",
+        "PBGD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of B activation was blocked by antioxidants?",
+          "What antioxidant block NK-kappa B activation?",
+          "What antioxidant block NK-kappa B activation?",
+          "What is the main component of NK-kappa B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Another limitation",
+        "antioxidant concentrations",
+        "NK-kappa B activation",
+        "a suppressive effect",
+        "immune functions",
+        "NAC",
+        "BHA",
+        "IL-2-induced PBGD release"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the main limitation of antioxidants?",
+          "What was shown to have a suppressive effect on immune functions in vitro?",
+          "What did antioxidant concentrations high enough to block have a suppressive effect on immune functions?",
+          "What effect did antioxidants have on immune functions in vitro?",
+          "What did antioxidants that block NK-kappa B have a suppressive effect",
+          "What antioxidant block NK-kappa B activation?",
+          "What antioxidant block NK-kappa B activation?",
+          "What did NAC and BHA block?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of B activation was blocked by antioxidants?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NK-kappa",
+        "answerability": 0.9396125078201294,
+        "ground_truth": {
+          "NK-kappa": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What antioxidant block NK-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NAC and BHA",
+        "answerability": 0.5382673740386963,
+        "ground_truth": {
+          "NAC": {
+            "bertscore": 0.862815797328949,
+            "f1": 0.5
+          },
+          "BHA": {
+            "bertscore": 0.8685430288314819,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the limitation of antioxidant concentrations?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "high enough to block NK-kappa B activation",
+        "answerability": 0.6922709345817566,
+        "ground_truth": {
+          "Another limitation": {
+            "bertscore": 0.6402389407157898,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was shown to have a suppressive effect on immune functions in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antioxidant concentrations high enough to block NK-kappa B activation",
+        "answerability": 0.9434718489646912,
+        "ground_truth": {
+          "antioxidant concentrations": {
+            "bertscore": 0.8206785917282104,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What did antioxidants block in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3823798894882202,
+        "ground_truth": {
+          "NK-kappa B activation": {
+            "bertscore": 0.61968994140625,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect did antioxidants have on immune functions in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppressive",
+        "answerability": 0.984512209892273,
+        "ground_truth": {
+          "a suppressive effect": {
+            "bertscore": 0.8556616902351379,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did antioxidants inhibit in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30071353912353516,
+        "ground_truth": {
+          "immune functions": {
+            "bertscore": 0.6639524698257446,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did NAC and BHA block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2-induced PBGD release",
+        "answerability": 0.784754753112793,
+        "ground_truth": {
+          "IL-2-induced PBMC proliferation": {
+            "bertscore": 0.9084164500236511,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    }
+  }
+}

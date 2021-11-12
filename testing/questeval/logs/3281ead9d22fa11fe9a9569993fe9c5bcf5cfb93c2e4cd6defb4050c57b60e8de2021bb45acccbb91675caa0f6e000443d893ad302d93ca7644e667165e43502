@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the activating function of p95vav is blocked by FK506 which suppresses IL-2 production induced by TCRzeta.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p95vav",
+        "FK506",
+        "IL-2",
+        "TCRzeta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is blocked by FK506?",
+          "What block the activating function of p95vav?",
+          "What is the main factor that causes p95vav to activate?",
+          "What is the IL-2 production induced by?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the activating function",
+        "p95vav",
+        "FK506",
+        "IL-2 production",
+        "TCRzeta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is blocked by FK506?",
+          "What protein is blocked by FK506?",
+          "What block the activating function of p95vav?",
+          "What is suppressed by FK506?",
+          "What is the IL-2 production induced by?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is blocked by FK506?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activating function of p95vav",
+        "answerability": 0.871931791305542,
+        "ground_truth": {
+          "p95vav": {
+            "bertscore": 0.811024010181427,
+            "f1": 0.4
+          },
+          "the activating function": {
+            "bertscore": 0.8285751342773438,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What blockades the activating function of p95vav?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FK506",
+        "answerability": 0.9841789603233337,
+        "ground_truth": {
+          "FK506": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does FK506 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 production",
+        "answerability": 0.7031199932098389,
+        "ground_truth": {
+          "its activity": {
+            "bertscore": 0.5782723426818848,
+            "f1": 0
+          },
+          "calcineurin": {
+            "bertscore": 0.6249232292175293,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

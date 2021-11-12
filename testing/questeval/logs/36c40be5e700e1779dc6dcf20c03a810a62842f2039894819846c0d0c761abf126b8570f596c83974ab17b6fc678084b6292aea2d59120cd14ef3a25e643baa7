@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Aggregation was likely caused by the up-regulated surface expression of adhesion molecules including vascular cell adhesion molecule-1 (VCAM-1) and E-selectin which was followed by the increased expression of adhesion molecules including integrin alpha L-selectin ICAM-3 and H-CAM.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H-CAM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the adhesion molecule that is up-regulated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Aggregation",
+        "the up-regulated surface expression",
+        "adhesion molecules",
+        "vascular cell adhesion",
+        "molecule-1",
+        "(VCAM-1",
+        "E-selectin",
+        "the increased expression",
+        "adhesion molecules",
+        "integrin alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was likely caused by the up-regulated surface expression of adhesion molecules?",
+          "What was the cause of the aggregation?",
+          "What was the surface expression of vascular cell adhesion molecule-1?",
+          "What is the name of the molecule that causes aggregation?",
+          "What is VCAM-1?",
+          "What is the vascular cell adhesion molecule-1?",
+          "What is the name of the vascular cell adhesion molecule-1?",
+          "What was the cause of the aggregation?",
+          "What was the surface expression of vascular cell adhesion molecule-1?",
+          "What is the name of the molecule that is responsible for the accumulation of a vascular"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one of the adhesion molecules that is likely to cause aggregation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E-selectin",
+        "answerability": 0.9068400859832764,
+        "ground_truth": {
+          "H-CAM": {
+            "bertscore": 0.79794842004776,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was likely caused by the up-regulated surface expression of adhesion molecules?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Aggregation",
+        "answerability": 0.9996912479400635,
+        "ground_truth": {
+          "Aggregation": {
+            "bertscore": 0.9999995231628418,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the cause of the aggregation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "up-regulated surface expression",
+        "answerability": 0.8942033052444458,
+        "ground_truth": {
+          "the up-regulated surface expression": {
+            "bertscore": 0.9428920745849609,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is integrin alpha L-selectin ICAM-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3970171809196472,
+        "ground_truth": {
+          "adhesion molecules": {
+            "bertscore": 0.666981041431427,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the adhesion molecules that are up-regulated on the surface?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vascular cell adhesion molecule-1 (VCAM-1) and E-se",
+        "answerability": 0.8755972385406494,
+        "ground_truth": {
+          "integrin alpha": {
+            "bertscore": 0.6406707763671875,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

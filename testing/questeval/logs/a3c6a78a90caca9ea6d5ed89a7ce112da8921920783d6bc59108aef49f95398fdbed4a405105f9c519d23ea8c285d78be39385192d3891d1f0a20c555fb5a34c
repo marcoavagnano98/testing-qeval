@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Taken together our results suggest that IFN-alpha IL-2 IL-12 and transforming growth factor beta have overlapping activities on human T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "our results",
+        "IFN-alpha",
+        "growth factor beta",
+        "overlapping activities",
+        "human T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that IFN-alpha IL-2 IL-12 and transforming growth factor",
+          "What is the IL-2 IL-12 and transforming growth factor beta overlapping activities on",
+          "What is the name of the transforming growth factor that IL-12 combines with IFN",
+          "What do the results suggest about IFN-alpha IL-2 IL-12 and",
+          "What do the results suggest IFN-alpha IL-2 IL-12 and transforming"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What two molecules have overlapping activities on human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-alpha IL-2 IL-12 and transforming growth factor beta",
+        "answerability": 0.9472938776016235,
+        "ground_truth": {
+          "IL-2 IL-12": {
+            "bertscore": 0.7388643026351929,
+            "f1": 0.4
+          },
+          "IL-15": {
+            "bertscore": 0.7059747576713562,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that IFN-alpha IL-2 IL-12 and IL-15 have": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6260056495666504,
+        "ground_truth": {
+          "our results": {
+            "bertscore": 0.6766424179077148,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that binds to human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14477413892745972,
+        "ground_truth": {
+          "IFN-alpha": {
+            "bertscore": 0.6578435897827148,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do the results suggest about IFN-alpha IL-2 IL-12 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transforming growth factor beta",
+        "answerability": 0.775092601776123,
+        "ground_truth": {
+          "overlapping activities": {
+            "bertscore": 0.6867088675498962,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do the results suggest IFN-alpha IL-2 IL-12 and IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transforming growth factor beta",
+        "answerability": 0.6838421821594238,
+        "ground_truth": {
+          "human T cells": {
+            "bertscore": 0.7408323884010315,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "In transfection assays TRADD and TES2 synergistically mediated high-level NF-kappaB activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TRADD",
+        "TES2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytokine that mediated high-level NF-",
+          "What is the name of the enzyme that mediated high-level NF-kappa"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "transfection",
+        "TRADD",
+        "TES2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that TRADD and TES2 are used for?",
+          "What is the name of the cytokine that mediated high-level NF-",
+          "What is the name of the enzyme that mediated high-level NF-kappa"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the cytokine that mediated high-level NF-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17470216751098633,
+        "ground_truth": {
+          "TRADD": {
+            "bertscore": 0.664978563785553,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that mediated high-level NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13827145099639893,
+        "ground_truth": {
+          "TES2": {
+            "bertscore": 0.6782340407371521,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process that TRADD and TES2 are used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transfection",
+        "answerability": 0.6441217660903931,
+        "ground_truth": {
+          "transfection": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

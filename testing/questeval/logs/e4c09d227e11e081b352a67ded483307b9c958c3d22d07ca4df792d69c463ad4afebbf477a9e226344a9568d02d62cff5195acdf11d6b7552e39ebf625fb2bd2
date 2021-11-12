@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "Mechanistically E2F6-mediated repression involves CpG hypermethylation locking target promoters in an inactive state.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CpG"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in repression of a protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mechanistically E2F6-mediated repression",
+        "CpG hypermethylation",
+        "target promoters",
+        "an inactive state"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What involves CpG hypermethylation locking target promoters in an inactive state?",
+          "What lockes target promoters in an inactive state?",
+          "What does E2F6-mediated repression lock in an inactive state?",
+          "What state does E2F6-mediated repression involve?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the key to preventing repression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03699541091918945,
+        "ground_truth": {
+          "CpG": {
+            "bertscore": 0.6878071427345276,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What correlated with CpG hypermethylation locking target promoters in an inactive": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F6",
+        "answerability": 0.8496782183647156,
+        "ground_truth": {
+          "Mechanistically E2F6-mediated repression": {
+            "bertscore": 0.7187663316726685,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mechanism locked target promoters in an inactive state?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CpG hypermethylation",
+        "answerability": 0.9421662092208862,
+        "ground_truth": {
+          "CpG hypermethylation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did E2F6-mediated repression correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CpG hypermethylation",
+        "answerability": 0.5685552358627319,
+        "ground_truth": {
+          "target promoters": {
+            "bertscore": 0.6979958415031433,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what state did E2F6-mediated repression correlate with CpG hyper": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inactive",
+        "answerability": 0.6961581110954285,
+        "ground_truth": {
+          "an inactive state": {
+            "bertscore": 0.8241047859191895,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

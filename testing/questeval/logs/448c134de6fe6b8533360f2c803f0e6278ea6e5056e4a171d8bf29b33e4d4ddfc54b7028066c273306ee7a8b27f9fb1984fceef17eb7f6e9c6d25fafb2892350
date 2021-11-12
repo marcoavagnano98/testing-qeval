@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"These results indicate that lymphocyte-specific factors binding to the TCEd are involved in the control of T cell specific-transcription of the Il-2 gene.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "lymphocyte-specific factors",
+        "the TCEd",
+        "the control",
+        "T cell specific-transcription",
+        "the Il-2 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that lymphocyte-specific factors binding to the TCEd are involved in the control",
+          "What is involved in the control of T cell specific-transcription of the Il-2 gene?",
+          "What do the results indicate is involved in the control of T cell specific transcription of the Il-2",
+          "What is the T cell specific transcription of the Il-2 gene involved in?",
+          "What is the Il-2 gene controlled by?",
+          "What is the T cell specific transcription of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What indicates that lymphocyte-specific factors binding to the TCEd are involved in the control": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These results",
+        "answerability": 0.9740170836448669,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is involved in the control of T cell specific-transcription of the Il-2 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphocyte-specific factors binding to the TCEd",
+        "answerability": 0.997668981552124,
+        "ground_truth": {
+          "lymphocyte-specific factors": {
+            "bertscore": 0.8934195041656494,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What do the results indicate is involved in the control of T cell specific-transcription of the": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphocyte-specific factors binding to the TCEd",
+        "answerability": 0.9713508486747742,
+        "ground_truth": {
+          "the TCEd": {
+            "bertscore": 0.7162999510765076,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the T cell specific transcription of the Il-2 gene involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.047302067279815674,
+        "ground_truth": {
+          "the control": {
+            "bertscore": 0.6757352948188782,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the Il-2 gene controlled by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.569516658782959,
+        "ground_truth": {
+          "T cell specific-transcription": {
+            "bertscore": 0.6438122987747192,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the T cell specific transcription of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Il-2 gene",
+        "answerability": 0.98993319272995,
+        "ground_truth": {
+          "the Il-2 gene": {
+            "bertscore": 0.9236096143722534,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

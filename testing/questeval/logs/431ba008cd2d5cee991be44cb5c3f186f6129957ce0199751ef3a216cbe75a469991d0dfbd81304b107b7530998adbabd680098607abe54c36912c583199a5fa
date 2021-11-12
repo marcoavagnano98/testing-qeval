@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "Phosphorylation of the IkappaB cytoplasmic inhibitors IkappaBalpha IkappaBepsilon and IkappaBepsilon by these kinases triggers proteolytic degradation and the release of NF-kappaB/Rel proteins into the nucleus.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha IkappaBepsilon",
+        "IkappaBepsilon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytoplasmic inhibitors that triggers proteolytic degradation",
+          "What is the name of the cytoplasmic inhibitor that triggers proteolytic degradation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Phosphorylation",
+        "the IkappaB cytoplasmic inhibitors",
+        "IkappaBalpha IkappaBepsilon",
+        "IkappaBepsilon",
+        "these kinases",
+        "proteolytic degradation",
+        "the release",
+        "the nucleus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What triggers proteolytic degradation?",
+          "What triggers proteolytic degradation?",
+          "What is the name of the cytoplasmic inhibitors that triggers proteolytic degradation",
+          "What is the name of the cytoplasmic inhibitor that triggers proteolytic degradation?",
+          "What triggers proteolytic degradation?",
+          "What is the result of phosphorylation of IkappaB cytoplasmic",
+          "What happens to NF-kappaB/Rel proteins?",
+          "Where do NF-kappaB/Rel proteins go?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the cytoplasmic inhibitor that triggers proteolytic degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB",
+        "answerability": 0.8696202039718628,
+        "ground_truth": {
+          "IkappaBalpha IkappaBbeta": {
+            "bertscore": 0.7887001633644104,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the kinase that releases NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11753183603286743,
+        "ground_truth": {
+          "IkappaBepsilon": {
+            "bertscore": 0.6074889302253723,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What triggers proteolytic degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Phosphorylation of the IkappaB cytoplasmic inhibitors I",
+        "answerability": 0.9451832175254822,
+        "ground_truth": {
+          "Phosphorylation": {
+            "bertscore": 0.7719579935073853,
+            "f1": 0.2857142857142857
+          },
+          "the IkappaB cytoplasmic inhibitors": {
+            "bertscore": 0.893435001373291,
+            "f1": 0.6666666666666666
+          },
+          "these kinases": {
+            "bertscore": 0.6595121026039124,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of phosphorylation of IkappaB cytoplasmic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.37556660175323486,
+        "ground_truth": {
+          "proteolytic degradation": {
+            "bertscore": 0.6362004280090332,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens to NF-kappaB/Rel proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3773658275604248,
+        "ground_truth": {
+          "the release": {
+            "bertscore": 0.6969391703605652,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where do NF-kappaB/Rel proteins go?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "into the nucleus",
+        "answerability": 0.9248349666595459,
+        "ground_truth": {
+          "the nucleus": {
+            "bertscore": 0.8775951266288757,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

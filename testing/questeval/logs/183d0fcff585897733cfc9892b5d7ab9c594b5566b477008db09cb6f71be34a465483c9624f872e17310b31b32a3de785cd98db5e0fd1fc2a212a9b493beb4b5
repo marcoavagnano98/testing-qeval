@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "The expression of an active PKB is sufficient to induce E2F activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PKB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is sufficient to induce E2F activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression",
+        "an active PKB",
+        "E2F activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is sufficient to induce E2F activity?",
+          "What is sufficient to induce E2F activity?",
+          "What does the expression of an active PKB induce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is sufficient to induce E2F activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of an active PKB",
+        "answerability": 0.9652041792869568,
+        "ground_truth": {
+          "PKB": {
+            "bertscore": 0.7119908332824707,
+            "f1": 0.4
+          },
+          "The expression": {
+            "bertscore": 0.7034874558448792,
+            "f1": 0.4
+          },
+          "an active PKB": {
+            "bertscore": 0.8799725770950317,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the expression of an active PKB induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F activity",
+        "answerability": 0.9419542551040649,
+        "ground_truth": {
+          "E2F activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

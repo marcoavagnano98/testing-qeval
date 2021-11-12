@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "the adenylate cyclase inhibitor SQ 22536 suppressed gp41-induced IL-10 production in monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SQ 22536"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited gp41-induced IL-10 production?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the adenylate cyclase inhibitor SQ",
+        "suppressed gp41-induced",
+        "IL-10 production",
+        "monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed gp41-induced IL-10 production in monocytes?",
+          "What did the adenylate cyclase inhibitor SQ 22536",
+          "What did the adenylate cyclase inhibitor SQ 22536",
+          "What did the adenylate cyclase inhibitor SQ 22536"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited gp41-induced IL-10 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SQ 22536",
+        "answerability": 0.954621434211731,
+        "ground_truth": {
+          "SQ 22536": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What suppressed gp41-induced IL-10 production in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the adenylate cyclase inhibitor SQ 22536",
+        "answerability": 0.9805468320846558,
+        "ground_truth": {
+          "the adenylate cyclase inhibitor SQ": {
+            "bertscore": 0.955234169960022,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What did the adenylate cyclase inhibitor SQ 22536": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3803742527961731,
+        "ground_truth": {
+          "suppressed gp41-induced": {
+            "bertscore": 0.6608156561851501,
+            "f1": 0
+          },
+          "IL-10 production": {
+            "bertscore": 0.6185283064842224,
+            "f1": 0
+          },
+          "monocytes": {
+            "bertscore": 0.6662789583206177,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

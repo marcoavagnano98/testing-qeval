@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "These events are accompanied by marked increases in the expression of RAG-1 and RAG-2 RNAs.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RAG-1",
+        "RAG-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What RNA is increased in the rat?",
+          "What RNAs are increased in the rat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These events",
+        "marked increases",
+        "the expression",
+        "RAG-1",
+        "RAG-2 RNAs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are accompanied by marked increases in the expression of RAG-1 and RAG-2",
+          "What is the effect of the RNAs in the RNAs of RAG-1 and",
+          "What increases are accompanied by the repression of a synapse?",
+          "What RNA is increased in the rat?",
+          "What is the major protein that is involved in the synthesis of a new protein?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What RNA is increased in the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RAG-1 and RAG-2",
+        "answerability": 0.8591403961181641,
+        "ground_truth": {
+          "RAG-1": {
+            "bertscore": 0.872116208076477,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What RNAs are increased in the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RAG-1 and RAG-2",
+        "answerability": 0.9416865706443787,
+        "ground_truth": {
+          "RAG-2": {
+            "bertscore": 0.8770700693130493,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What are accompanied by marked increases in the expression of RAG-1 and RAG-2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These events",
+        "answerability": 0.9224801659584045,
+        "ground_truth": {
+          "These events": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of the RNAs in the RNAs of RAG-1 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34074753522872925,
+        "ground_truth": {
+          "marked increases": {
+            "bertscore": 0.7307636141777039,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What increases are accompanied by the repression of a synapse?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010327696800231934,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the major protein that is involved in the synthesis of a new protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005921006202697754,
+        "ground_truth": {
+          "RAG-2 RNAs": {
+            "bertscore": 0.6410491466522217,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

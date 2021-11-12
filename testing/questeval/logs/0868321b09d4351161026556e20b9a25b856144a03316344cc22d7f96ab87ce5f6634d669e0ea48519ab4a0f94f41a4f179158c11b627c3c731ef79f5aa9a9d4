@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "We also observed that cytoplasmic p62c-fos and p39c-jun were present in HL60 cells and PHA-stimulated PBL.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PHA",
+        "PBL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulates PBL?",
+          "What type of cells were HL60 cells and PHA stimulated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "p39c-jun",
+        "HL60 cells",
+        "PHA-stimulated PBL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was found in HL60 cells?",
+          "What is present in HL60 cells?",
+          "What type of cells were present in the cytoplasm?",
+          "What type of cells were present in HL60 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stimulates PBL?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PHA",
+        "answerability": 0.9691919088363647,
+        "ground_truth": {
+          "PHA": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were HL60 cells and PHA stimulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5626842975616455,
+        "ground_truth": {
+          "PBL": {
+            "bertscore": 0.6691134572029114,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found in HL60 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasmic p62c-fos and p39c-jun",
+        "answerability": 0.9403684139251709,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5138043761253357,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is present in HL60 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasmic p62c-fos and p39c-jun",
+        "answerability": 0.9389079809188843,
+        "ground_truth": {
+          "p39c-jun": {
+            "bertscore": 0.7764427661895752,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What type of cells were present in the cytoplasm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HL60 cells",
+        "answerability": 0.6964507102966309,
+        "ground_truth": {
+          "HL60 cells": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were present in HL60 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytoplasmic",
+        "answerability": 0.9100485444068909,
+        "ground_truth": {
+          "PHA-stimulated PBL": {
+            "bertscore": 0.6350955963134766,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

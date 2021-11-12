@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "A variety of other cells including transformed erythroblasts do not have IBR but a factor referred to as IBF (68 to 70 kDa) that recognizes the same IBR sites.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IBR",
+        "IBF",
+        "IBR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does IBF recognize?",
+          "What is the factor that recognizes the same IBR sites?",
+          "What does IBF recognize?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A variety",
+        "other cells",
+        "transformed erythroblasts",
+        "IBR",
+        "a factor",
+        "IBF",
+        "(68 to 70 kDa",
+        "the same IBR sites"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells do not have IBR?",
+          "What does IBF recognize?",
+          "What type of cells do not have IBR?",
+          "What does IBF recognize?",
+          "What is IBF?",
+          "What is the factor that recognizes the same IBR sites?",
+          "What is the range of IBF?",
+          "What does IBF recognize?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does IBF recognize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IBR sites",
+        "answerability": 0.8794079422950745,
+        "ground_truth": {
+          "IBR": {
+            "bertscore": 0.8483718037605286,
+            "f1": 0.6666666666666666
+          },
+          "other cells": {
+            "bertscore": 0.7383517622947693,
+            "f1": 0
+          },
+          "the same IBR sites": {
+            "bertscore": 0.862250030040741,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the factor that recognizes the same IBR sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IBF",
+        "answerability": 0.9814349412918091,
+        "ground_truth": {
+          "IBF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells do not have IBR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transformed erythroblasts",
+        "answerability": 0.9970762729644775,
+        "ground_truth": {
+          "A variety": {
+            "bertscore": 0.6987029314041138,
+            "f1": 0
+          },
+          "transformed erythroid precursors": {
+            "bertscore": 0.8921157121658325,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is IBF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a factor",
+        "answerability": 0.6650804281234741,
+        "ground_truth": {
+          "a factor": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the range of IBF sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "68 to 70 kDa",
+        "answerability": 0.8806183934211731,
+        "ground_truth": {
+          "(68 to 70 kDa": {
+            "bertscore": 0.9150771498680115,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

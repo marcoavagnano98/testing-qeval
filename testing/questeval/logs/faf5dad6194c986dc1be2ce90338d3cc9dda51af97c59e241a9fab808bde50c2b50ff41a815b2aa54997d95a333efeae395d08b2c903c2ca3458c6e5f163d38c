@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Similar to its effect on the induction of AP1 by okadaic acid PMA inhibits the induction of c-jun mRNA by okadaic acid. However the activation of other mitogen-inducible transcription factors such as Fos and Jun was unaffected.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "Fos",
+        "Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the induction of c-jun mRNA?",
+          "What mitogen-inducible transcription factor was not affected by PMA?",
+          "What is the name of the mitogen-inducible transcription factor that does not affect"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "its effect",
+        "the induction",
+        "AP1",
+        "okadaic acid PMA",
+        "the induction",
+        "c-jun mRNA by okadaic acid",
+        "the activation",
+        "other mitogen-inducible transcription factors",
+        "Fos",
+        "Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does PMA inhibit?",
+          "What does PMA inhibit?",
+          "What is PMA similar to?",
+          "What inhibits the induction of c-jun mRNA?",
+          "What does PMA inhibit?",
+          "What does PMA inhibit?",
+          "What does PMA inhibit?",
+          "What did PMA not inhibit?",
+          "What mitogen-inducible transcription factor was not affected by PMA?",
+          "What is the name of the mitogen-inducible transcription factor that does not affect"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one mitogen-inducible transcription factor that was not affected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fos",
+        "answerability": 0.9855496883392334,
+        "ground_truth": {
+          "Fos": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What transcription factor was not affected by the apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0871780514717102,
+        "ground_truth": {
+          "Jun": {
+            "bertscore": 0.6295307278633118,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by the amplification of a cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation of other mitogen-inducible transcription factors such as Fos and Jun",
+        "answerability": 0.731687068939209,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6645466089248657,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What was not affected by the apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03513365983963013,
+        "ground_truth": {
+          "other mitogen-inducible transcription factors": {
+            "bertscore": 0.6092807054519653,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "However it is completely absent from cells transformed by the oncogene v-myc or v-src and from cells derived from a methylcholanthrene-induced fibrosarcoma.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "it",
+        "cells",
+        "the oncogene v-myc",
+        "v-src",
+        "cells",
+        "a methylcholanthrene-induced fibrosarcoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is absent from cells transformed by v-myc or v-src",
+          "What is a fibrosarcoma derived from?",
+          "What is the only gene that can induce fibrosarcoma?",
+          "What is the only oncogene that is present in cells derived from a",
+          "What is a fibrosarcoma derived from?",
+          "What is a cell derived from that is able to produce a cytokin"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is absent from cells transformed by v-src?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03186732530593872,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6361185908317566,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a fibrosarcoma derived from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2993655800819397,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847143173217773,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only cell that has the gene c-tyrosine absent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.056579411029815674,
+        "ground_truth": {
+          "the oncogene v-src": {
+            "bertscore": 0.6225773692131042,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is v-src absent from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cells derived from a methylcholanthrene-induced fibrosarcom",
+        "answerability": 0.7799556851387024,
+        "ground_truth": {
+          "a methylcholanthrene-induced fibrosarcoma": {
+            "bertscore": 0.9061605334281921,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    }
+  }
+}

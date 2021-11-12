@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Furthermore expression of physiological levels of Bcl-x protected B cells from Fas-mediated apoptosis in the absence of NF-kappa B signaling.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bcl-x"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protected B cells from Fas-mediated apoptosis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Furthermore expression",
+        "physiological levels",
+        "Bcl-x protected B cells",
+        "Fas-mediated apoptosis",
+        "the absence",
+        "NF-kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protected B cells from Fas-mediated apoptosis?",
+          "What did Bcl-x protect B cells from?",
+          "What does the absence of NF-kappa B signaling result in?",
+          "What did Bcl-x protect B cells from?",
+          "In what condition did Bcl-x protect B cells from apoptosis",
+          "What signaling was not present in B cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protected B cells from Fas-mediated apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Bcl-x",
+        "answerability": 0.9693589806556702,
+        "ground_truth": {
+          "Bcl-x": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "Furthermore expression": {
+            "bertscore": 0.6766285300254822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Bcl-x protect B cells from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fas-mediated apoptosis",
+        "answerability": 0.9807994365692139,
+        "ground_truth": {
+          "physiological levels": {
+            "bertscore": 0.674911618232727,
+            "f1": 0
+          },
+          "Fas-mediated apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the absence of NF-kappaB signaling result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fas-mediated apoptosis",
+        "answerability": 0.8539368510246277,
+        "ground_truth": {
+          "Bcl-x protected B cells": {
+            "bertscore": 0.6813921928405762,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what condition did Bcl-x protect B cells from apoptosis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "absence of NF-kappa B signaling",
+        "answerability": 0.7613314390182495,
+        "ground_truth": {
+          "the absence": {
+            "bertscore": 0.6432726979255676,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

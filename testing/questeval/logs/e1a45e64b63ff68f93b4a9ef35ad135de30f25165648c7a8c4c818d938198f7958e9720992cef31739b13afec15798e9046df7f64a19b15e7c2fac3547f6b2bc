@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "The hBVR-based peptide KKRILHCLGLA inhibited PKC activation and PKCdelta/ERK2 interaction.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "KKRILHCLGLA",
+        "PKCdelta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited PKC activation and PKCdelta/ERK2 interaction?",
+          "What protein was inhibited by KKRILHCLGLA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The hBVR-based peptide",
+        "KKRILHCLGLA",
+        "PKC activation",
+        "PKCdelta/ERK2 interaction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited PKC activation?",
+          "What inhibited PKC activation and PKCdelta/ERK2 interaction?",
+          "What did the hBVR-based peptide KKRILHCLGLA",
+          "What did the hBVR-based peptide KKRILHCLGLA"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited PKC activation and PKCdelta/ERK2 interaction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KKRILHCLGLA",
+        "answerability": 0.978829562664032,
+        "ground_truth": {
+          "KKRILHCLGLA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was inhibited by KKRILHCLGLA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKC",
+        "answerability": 0.9854684472084045,
+        "ground_truth": {
+          "PKCdelta": {
+            "bertscore": 0.8246045112609863,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited PKC activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "KKRILHCLGLA",
+        "answerability": 0.9733689427375793,
+        "ground_truth": {
+          "The hBVR-based peptide": {
+            "bertscore": 0.6623193621635437,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the hBVR-based peptide KKRILHCLGLA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited PKC activation and PKCdelta/ERK2 interaction",
+        "answerability": 0.7273334860801697,
+        "ground_truth": {
+          "PKC activation": {
+            "bertscore": 0.7867922782897949,
+            "f1": 0.5
+          },
+          "PKCdelta/ERK2 interaction": {
+            "bertscore": 0.8854163289070129,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

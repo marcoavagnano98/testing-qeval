@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Enhanced IL-2 transcription correlates with enhanced c-fos synthesis and increased Fos content of AP-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is associated with increased c-fos synthesis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "enhanced c-fos synthesis",
+        "increased Fos content"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does IL-2 transcription correlate with?",
+          "What is a possible result of IL-2 transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is associated with increased c-fos synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9606321454048157,
+        "ground_truth": {
+          "AP-1": {
+            "bertscore": 0.9050096273422241,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-2 transcription correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos synthesis",
+        "answerability": 0.8300375938415527,
+        "ground_truth": {
+          "increased c-fos synthesis": {
+            "bertscore": 0.9083374738693237,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is a possible result of c-fos synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Enhanced IL-2 transcription",
+        "answerability": 0.9505566358566284,
+        "ground_truth": {
+          "increased Fos content": {
+            "bertscore": 0.7056102752685547,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

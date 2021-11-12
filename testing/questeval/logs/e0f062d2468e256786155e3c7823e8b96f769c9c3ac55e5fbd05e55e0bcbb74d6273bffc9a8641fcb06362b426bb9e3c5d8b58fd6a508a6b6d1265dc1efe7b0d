@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "the adenylate cyclase inhibitor SQ 22536 suppressed p70S6K activation and gp41-induced IL-10 production in monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SQ 22536"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited p70S6K activation and gp41-induced"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the adenylate cyclase inhibitor",
+        "SQ",
+        "p70S6K activation",
+        "gp41-induced",
+        "IL-10 production",
+        "monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did SQ 22536 suppress?",
+          "What was the name of the adenylate cyclase inhibitor that suppress",
+          "What did the inhibitor SQ 22536 suppress?",
+          "What was the effect of SQ 22536 on IL-10 production?",
+          "What did the adenylate cyclase inhibitor SQ 22536",
+          "What did the adenylate cyclase inhibitor SQ 22536"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited gp41-induced IL-10 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the adenylate cyclase inhibitor SQ 22536",
+        "answerability": 0.861140787601471,
+        "ground_truth": {
+          "SQ 22536": {
+            "bertscore": 0.7322843074798584,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What suppressed gp41-induced IL-10 production in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the adenylate cyclase inhibitor SQ 22536",
+        "answerability": 0.9243435263633728,
+        "ground_truth": {
+          "the adenylate cyclase inhibitor SQ": {
+            "bertscore": 0.955234169960022,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What did the adenylate cyclase inhibitor SQ 22536": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42863714694976807,
+        "ground_truth": {
+          "suppressed gp41-induced": {
+            "bertscore": 0.6608156561851501,
+            "f1": 0
+          },
+          "IL-10 production": {
+            "bertscore": 0.6185283064842224,
+            "f1": 0
+          },
+          "monocytes": {
+            "bertscore": 0.6662789583206177,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

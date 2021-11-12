@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Furthermore Jak3 is associated with CD40 and is critical for CD40 induction of gene expression in B cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Jak3",
+        "CD40",
+        "CD40 induction",
+        "gene expression",
+        "B cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is critical for CD40 induction in B cells?",
+          "What is Jak3 associated with?",
+          "What is Jak3 critical for?",
+          "What is Jak3 critical for induction of?",
+          "What type of cells are involved in the induction of gene expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is critical for CD40 induction in B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jak3",
+        "answerability": 0.9969150424003601,
+        "ground_truth": {
+          "Jak3": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Jak3 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD40",
+        "answerability": 0.997651219367981,
+        "ground_truth": {
+          "CD40": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Jak3 critical for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD40 induction of gene expression in B cells",
+        "answerability": 0.8865693211555481,
+        "ground_truth": {
+          "CD40 induction": {
+            "bertscore": 0.8227516412734985,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is Jak3 critical for inducing in B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD40 induction of gene expression",
+        "answerability": 0.7751328349113464,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.823782205581665,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What type of cells are involved in the induction of gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cells",
+        "answerability": 0.9133670330047607,
+        "ground_truth": {
+          "B cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

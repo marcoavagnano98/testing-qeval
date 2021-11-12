@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "PCR primers and conditions for expression analysis of DNMT or MBD1 (DNMT1 DNMT3A DNMT3B MeCP MBD1 MBD2 and MBD4) were published elsewhere (28).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "DNMT",
+        "DNMT3A DNMT3B MeCP MBD1 MBD2",
+        "MBD4",
+        "28"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the PCR primer used in the analysis of DNMT?",
+          "What are the two PCR primers and conditions for expression analysis of DNMT and M",
+          "What is another name for DNMT?",
+          "How many publications were published on DNMT and MBD1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PCR primers",
+        "conditions",
+        "expression analysis",
+        "DNMT",
+        "MBD1",
+        "DNMT1 DNMT3A DNMT3B MeCP MBD1 MBD2",
+        "MBD4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was published elsewhere?",
+          "What were the primers and what were published elsewhere?",
+          "What is the purpose of PCR?",
+          "What is the name of the PCR primer used in the analysis of DNMT?",
+          "What is another name for DNMT?",
+          "What are the two PCR primers and conditions for expression analysis of DNMT and M",
+          "What is another name for DNMT?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is used in PCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNMT",
+        "answerability": 0.5771111249923706,
+        "ground_truth": {
+          "DNMT": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is another name for DNMT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MBD1",
+        "answerability": 0.9314189553260803,
+        "ground_truth": {
+          "MBP": {
+            "bertscore": 0.8422400951385498,
+            "f1": 0
+          },
+          "MBD4": {
+            "bertscore": 0.9384618401527405,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many publications were published on DNMT and MBP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003624141216278076,
+        "ground_truth": {
+          "28": {
+            "bertscore": 0.6195699572563171,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was published elsewhere?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PCR primers and conditions for expression analysis",
+        "answerability": 0.8846192359924316,
+        "ground_truth": {
+          "PCR primers": {
+            "bertscore": 0.8356130123138428,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What were the primers and what were published elsewhere?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "conditions for expression analysis",
+        "answerability": 0.9705234169960022,
+        "ground_truth": {
+          "conditions": {
+            "bertscore": 0.7765907645225525,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the purpose of PCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression analysis",
+        "answerability": 0.9369909763336182,
+        "ground_truth": {
+          "expression analysis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are the two PCR primers and conditions for expression analysis of DNMT and M": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6046657562255859,
+        "ground_truth": {
+          "(DNMT1 DNMT3A DNMT3B MeCP MBD1 MBD2": {
+            "bertscore": 0.5883607864379883,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

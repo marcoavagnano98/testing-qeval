@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "This regulation of collagenase-1 expression is linked to our previous observations that the rapid PMA-mediated induction of collagenase-1 transcription is controlled by a mechanism distinct from that regulating the sustained expression of this proteinase in activated macrophages.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "collagenase-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mechanism that controls collagenase-1 transcription?",
+          "What protein is controlled by a mechanism distinct from that of regulating the expression of activated"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This regulation",
+        "collagenase-1 expression",
+        "our previous observations",
+        "the rapid PMA-mediated induction",
+        "collagenase-1 transcription",
+        "a mechanism",
+        "the sustained expression",
+        "this proteinase",
+        "activated macrophages"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is linked to our previous observations that the rapid PMA-mediated induction of collagena",
+          "What is controlled by a mechanism distinct from that of regulating the sustained expression of collagena",
+          "What is the regulation of collagenase-1 linked to?",
+          "What is the mechanism that controls collagenase-1 transcription?",
+          "What is controlled by a mechanism distinct from that of regulating the sustained expression of collagena",
+          "What is the rapid PMA-mediated induction of collagenase-1 controlled by?",
+          "What is the mechanism that controls collagenase-1?",
+          "What protein is controlled by a mechanism different from that of activated macrophages?",
+          "What is the mechanism that controls collagenase-1 transcription different from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mechanism that controls collagenase-1 transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMA",
+        "answerability": 0.8221559524536133,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 1.0000003576278687,
+            "f1": 1.0
+          },
+          "addition": {
+            "bertscore": 0.739260196685791,
+            "f1": 0
+          },
+          "the sustained expression": {
+            "bertscore": 0.7038823962211609,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is controlled by a mechanism distinct from that that regulates the sustained expression of this": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6265926361083984,
+        "ground_truth": {
+          "collagenase-1": {
+            "bertscore": 0.62129807472229,
+            "f1": 0
+          },
+          "collagenase-1 transcription": {
+            "bertscore": 0.6064943671226501,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that the rapid PMA-mediated induction of collagenase-1 transcription is": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23610848188400269,
+        "ground_truth": {
+          "our data": {
+            "bertscore": 0.6835698485374451,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the data suggest is controlled by a mechanism distinct from that regulating the sustained expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7235825657844543,
+        "ground_truth": {
+          "the rapid PMA-mediated induction": {
+            "bertscore": 0.6356009840965271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the rapid PMA-mediated induction of collagenase-1 control?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression",
+        "answerability": 0.8445945978164673,
+        "ground_truth": {
+          "a mechanism": {
+            "bertscore": 0.8187754154205322,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is regulated by a mechanism different from that of activated macrophages": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "collagenase-1",
+        "answerability": 0.8908705711364746,
+        "ground_truth": {
+          "this proteinase": {
+            "bertscore": 0.7137562036514282,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism that controls collagenase-1 transcription different from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "that regulating the sustained expression of this proteinase in activated macrophages",
+        "answerability": 0.8352322578430176,
+        "ground_truth": {
+          "activated macrophages": {
+            "bertscore": 0.7804810404777527,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

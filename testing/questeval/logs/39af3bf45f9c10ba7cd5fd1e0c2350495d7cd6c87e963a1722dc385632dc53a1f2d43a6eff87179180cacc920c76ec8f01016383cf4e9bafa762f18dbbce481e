@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "In the human monocytic cell line THP-1 either integrin-dependent cell adhesion to fibronectin or ligation of beta 1 integrins with antibodies causes a rapid and intense tyrosine phosphorylation of two sets of proteins of about 65-75 and 120-125 kDa. The proliferative response to erythropoietin is biphasic.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "THP-1",
+        "1",
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the human monocytic cell line?",
+          "What is the beta number of the integrins that cause rapid and intense ty",
+          "How many sets of proteins are involved in the rapid and intense tyrosine phospho"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the human monocytic cell line",
+        "THP-1",
+        "either integrin-dependent cell adhesion",
+        "fibronectin",
+        "ligation",
+        "beta",
+        "antibodies",
+        "a rapid and intense tyrosine phosphorylation",
+        "two sets",
+        "proteins",
+        "120-125 kDa",
+        "The proliferative response"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the THP-1 cell line?",
+          "What is the name of the human monocytic cell line?",
+          "What causes rapid and intense tyrosine phosphorylation?",
+          "What is the main component of the THP-1 cell line?",
+          "What is the other way to cause a rapid and intense tyrosine phospho",
+          "What integrin is ligated with antibodies?",
+          "What is used to ligate beta 1 integrins?",
+          "What does ligation of beta 1 integrins with antibodies cause?",
+          "How many sets of proteins are involved in the rapid and intense tyrosine phospho",
+          "What does tyrosine phosphorylation cause?",
+          "What is the range of the two sets of proteins that are phosphorylated by ery",
+          "What is biphasic?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the proliferative response to erythropoietin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "biphasic",
+        "answerability": 0.9497096538543701,
+        "ground_truth": {
+          "Dependence": {
+            "bertscore": 0.7338696718215942,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is dependent on an established erythroid differentiation program?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002753138542175293,
+        "ground_truth": {
+          "the proliferative response": {
+            "bertscore": 0.6674203276634216,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the proliferative response to erythropoietin dependent": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.048483312129974365,
+        "ground_truth": {
+          "an established erythroid differentiation program": {
+            "bertscore": 0.6480720639228821,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the erythroid differentiation program in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003957271575927734,
+        "ground_truth": {
+          "a human hematopoietic cell line": {
+            "bertscore": 0.6121037602424622,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

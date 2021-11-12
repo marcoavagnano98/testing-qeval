@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "Furthermore GATA-1 protein level was shown to be increased in ACLA-treated but not in DOX-treated cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ACLA",
+        "DOX"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What treatment did the GATA-1 protein level increase in?",
+          "What type of cells did not show an increase in GATA-1 protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GATA-1 protein level",
+        "DOX-treated cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was increased in ACLA-treated cells?",
+          "What type of cells did not show an increase in GATA-1 protein?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What treatment did the GATA-1 protein level increase in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ACLA",
+        "answerability": 0.9897714853286743,
+        "ground_truth": {
+          "ACLA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells did not show an increase in GATA-1 protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DOX",
+        "answerability": 0.9704503417015076,
+        "ground_truth": {
+          "DOX": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "DOX-treated cells": {
+            "bertscore": 0.8048659563064575,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was increased in ACLA-treated cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-1 protein level",
+        "answerability": 0.8059792518615723,
+        "ground_truth": {
+          "GATA-1 protein level": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

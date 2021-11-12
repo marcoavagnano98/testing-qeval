@@ -1,0 +1,176 @@
+{
+  "type": "hyp",
+  "text": "However reagents such as nerve growth factor (NGF) and the phorbol ester ionomycin (PMA) which induce phenotypical differentiation of the SH-SY5Y neuroblastoma cell line activated NF-kappa B but only in that particular cell line.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NGF",
+        "PMA",
+        "SH"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another name for nerve growth factor?",
+          "What is the phorbol ester ionomycin?",
+          "What is the name of the neuroblastoma cell line?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "However reagents",
+        "nerve growth factor",
+        "NGF",
+        "the phorbol ester",
+        "PMA",
+        "phenotypical differentiation",
+        "the SH-SY5Y neuroblastoma cell line",
+        "activated NF-kappa B",
+        "that particular cell line"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only thing that activates NF-kappa B?",
+          "What is NGF?",
+          "What is another name for nerve growth factor?",
+          "What is PMA?",
+          "What is the phorbol ester ionomycin?",
+          "What does NGF and PMA induce?",
+          "What does NGF and PMA induce differentiation of?",
+          "What does NGF and PMA do?",
+          "What does NGF and PMA only activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is another name for nerve growth factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NGF",
+        "answerability": 0.9681752324104309,
+        "ground_truth": {
+          "NGF": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol ester ionomycin",
+        "answerability": 0.9813292026519775,
+        "ground_truth": {
+          "13-acetate": {
+            "bertscore": 0.6687579154968262,
+            "f1": 0
+          },
+          "the phorbol ester phorbol": {
+            "bertscore": 0.789413332939148,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the phorbol ester phorbol 12-myristate 13-a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.054530203342437744,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.7000216245651245,
+            "f1": 0
+          },
+          "(PMA": {
+            "bertscore": 0.6736325025558472,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the neuroblastoma cell line?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SH-SY5Y",
+        "answerability": 0.930245041847229,
+        "ground_truth": {
+          "SH": {
+            "bertscore": 0.7473165988922119,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in the activation of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.648400604724884,
+        "ground_truth": {
+          "However reagents": {
+            "bertscore": 0.674858570098877,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nerve growth factor",
+        "answerability": 0.9594166278839111,
+        "ground_truth": {
+          "nerve growth factor": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does PMA induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phenotypical differentiation",
+        "answerability": 0.9283483624458313,
+        "ground_truth": {
+          "phenotypical differentiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does PMA induce differentiation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SH-SY5Y neuroblastoma cell line",
+        "answerability": 0.9086244702339172,
+        "ground_truth": {
+          "the SH-SY5Y neuroblastoma cell line": {
+            "bertscore": 0.9497480392456055,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does NGF and PMA do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7028218507766724,
+        "ground_truth": {
+          "activated NF-kappa B": {
+            "bertscore": 0.6061493158340454,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does NGF and PMA only activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.6992944478988647,
+        "ground_truth": {
+          "that particular cell line": {
+            "bertscore": 0.6367402672767639,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

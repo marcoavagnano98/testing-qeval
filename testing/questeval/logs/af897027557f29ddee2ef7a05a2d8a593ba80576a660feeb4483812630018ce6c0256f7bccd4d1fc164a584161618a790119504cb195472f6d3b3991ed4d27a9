@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "(HIV-1) long terminal repeat (LTR) is essential to dissecting the mechanisms involved in viral transcription that might be pertinent to the oncogenic and neuropathogenic processes associated with HTLV-I infection in both the immune and nervous systems. Various extracellular factor(s) released by T cells might also activate HIV-1 replication.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the LTR for?",
+          "What is the LTR for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV-1) long terminal repeat",
+        "(LTR",
+        "the mechanisms",
+        "viral transcription",
+        "the oncogenic and neuropathogenic processes",
+        "HTLV-I infection",
+        "both the immune and nervous systems",
+        "T cells",
+        "HIV-1 replication"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is essential to dissecting the mechanisms involved in viral transcription?",
+          "What is the term for the long terminal repeat?",
+          "What is the LTR essential to dissecting?",
+          "What is the LTR essential to dissecting?",
+          "What are the mechanisms involved in viral transcription pertinent to?",
+          "What is the LTR essential to dissecting?",
+          "What systems are affected by HTLV-I infection?",
+          "What type of cells release extracellular factors?",
+          "What is the LTR essential to dissecting?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the LTR of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "(HIV-1) long terminal repeat",
+        "answerability": 0.8494996428489685,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.792929470539093,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What might activate the LTR of HIV-1 in non-irradiated HT29": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34056276082992554,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.7378893494606018,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is HT29?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001113593578338623,
+        "ground_truth": {
+          "X-ray-treated human colonic carcinoma cell line": {
+            "bertscore": 0.6313075423240662,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the human colonic carcinoma cell line?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00041109323501586914,
+        "ground_truth": {
+          "(HT29": {
+            "bertscore": 0.660076916217804,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does LTR stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "long terminal repeat",
+        "answerability": 0.9947873950004578,
+        "ground_truth": {
+          "the long terminal repeat": {
+            "bertscore": 0.9391259551048279,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the long terminal repeat of HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LTR",
+        "answerability": 0.8767634034156799,
+        "ground_truth": {
+          "LTR": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells might activate the LTR of HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.8803404569625854,
+        "ground_truth": {
+          "non-irradiated HT29 cells": {
+            "bertscore": 0.7292740345001221,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Gene silencing and over-expression techniques were utilized to modulate RASSF1C expression in human breast cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "expression",
+        "RASSF1C expression",
+        "human breast cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the RNAi modulate in breast cancer cells?",
+          "What was modulated in human breast cancer cells?",
+          "What did the study study use to modulate RASSF1C expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the RNA silencing and over-expression techniques modulate in human breast cancer": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23979192972183228,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272055745124817,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was modulated in human breast cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RASSF1C expression",
+        "answerability": 0.9534785151481628,
+        "ground_truth": {
+          "RASSF1C expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the RASSF1C gene used to modulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression",
+        "answerability": 0.6485780477523804,
+        "ground_truth": {
+          "human breast cancer cells": {
+            "bertscore": 0.7307095527648926,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

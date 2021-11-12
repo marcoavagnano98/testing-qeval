@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "protein-1 cognate DNA sequences significantly attenuated phase-2 response suggesting a role for de novo macromolecule phosphatase in this process.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "protein-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cognate DNA sequences significantly attenuated phase-2 response?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DNA sequences",
+        "phase-2 response",
+        "a role",
+        "de novo macromolecule phosphatase",
+        "this process"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did protein-1 cognate significantly attenuate phase-2 response?",
+          "What did cognate DNA sequences significantly attenuate?",
+          "What did the evidence suggest about the role of de novo macromolecule phosphatase",
+          "What is the role of protein-1 cognate DNA sequences in the phase-2 response?",
+          "What did the de novo macromolecule phosphatase play in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cognate DNA sequences significantly attenuated phase-2 response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein-1",
+        "answerability": 0.997361958026886,
+        "ground_truth": {
+          "protein-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What attenuated phase-2 response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein-1",
+        "answerability": 0.9215878248214722,
+        "ground_truth": {
+          "DNA sequences": {
+            "bertscore": 0.7777969837188721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did cognate DNA sequences significantly attenuate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phase-2 response",
+        "answerability": 0.9965575933456421,
+        "ground_truth": {
+          "phase-2 response": {
+            "bertscore": 0.9999996423721313,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the evidence suggest about the role of de novo macromolecule synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01632535457611084,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6715850234031677,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the amplification of phase-2 suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a role for de novo macromolecule phosphatase in this process",
+        "answerability": 0.7591170072555542,
+        "ground_truth": {
+          "de novo macromolecule synthesis": {
+            "bertscore": 0.7850121855735779,
+            "f1": 0.46153846153846156
+          }
+        }
+      }
+    }
+  }
+}

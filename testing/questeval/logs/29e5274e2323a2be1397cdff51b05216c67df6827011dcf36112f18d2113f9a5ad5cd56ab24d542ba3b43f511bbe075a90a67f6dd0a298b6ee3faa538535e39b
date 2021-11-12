@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Here we show that the carboxyl terminus of HSP70-interacting protein (CHIP) ubiquitinates and promotes the ubiquitin proteasomal degradation of LRRK2.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "the carboxyl terminus",
+        "CHIP",
+        "the ubiquitin proteasomal degradation",
+        "LRRK2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the purpose of this study?",
+          "What is the ubiquitination of HSP70-interacting protein?",
+          "What is the carboxyl terminus of HSP70-interacting protein?",
+          "What does the carboxyl terminus of HSP70-interacting protein (CHIP)",
+          "What is the carboxyl terminus of HSP70-interacting protein?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0426902174949646,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What binds ubiquitinates?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12357646226882935,
+        "ground_truth": {
+          "the carboxyl terminus": {
+            "bertscore": 0.6308266520500183,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the carboxyl terminus of HSP70-interacting protein promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ubiquitin proteasomal degradation",
+        "answerability": 0.8883619904518127,
+        "ground_truth": {
+          "the ubiquitin proteasomal degradation": {
+            "bertscore": 0.9264063835144043,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the carboxyl terminus of HSP70-interacting protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34698301553726196,
+        "ground_truth": {
+          "LRRK2": {
+            "bertscore": 0.6517669558525085,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

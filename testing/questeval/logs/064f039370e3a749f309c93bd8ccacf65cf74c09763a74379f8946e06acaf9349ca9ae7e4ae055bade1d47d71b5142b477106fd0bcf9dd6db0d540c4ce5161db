@@ -1,0 +1,60 @@
+{
+  "type": "hyp",
+  "text": "Ran GTPase regulates Mad2 localization to the nuclear pore complex.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ran GTPase",
+        "Mad2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulates Mad2 localization to the nuclear pore complex?",
+          "What does Ran GTPase regulate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ran GTPase",
+        "Mad2 localization"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulates Mad2 localization to the nuclear pore complex?",
+          "What does Ran GTPase regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What regulates Mad2 localization to the nuclear pore complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ran GTPase",
+        "answerability": 0.9987099170684814,
+        "ground_truth": {
+          "Ran GTPase": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Ran GTPase regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5055840015411377,
+        "ground_truth": {
+          "Mad2": {
+            "bertscore": 0.6740168333053589,
+            "f1": 0
+          },
+          "Mad2 localization": {
+            "bertscore": 0.6889538764953613,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

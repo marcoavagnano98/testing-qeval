@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "Next we demonstrated that these viral ligands directly up-regulated monocyte gene expression upon their translocation into the nucleus.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "directly up-regulated monocyte gene expression",
+        "their translocation",
+        "the nucleus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we do to demonstrate that ligands upregulated monocyte gene expression upon their",
+          "What did the ligands do?",
+          "What did the ligands do to the monocytes?",
+          "Where did the ligands that were found to up-regulate monocyte gene"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not sufficient to activate gene transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003418922424316406,
+        "ground_truth": {
+          "gene transcription NF-kappaB p50/p65 heterodimers": {
+            "bertscore": 0.5828683972358704,
+            "f1": 0
+          },
+          "their translocation": {
+            "bertscore": 0.6855766773223877,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where do NF-kappaB p50/p65 heterodimers": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.020706117153167725,
+        "ground_truth": {
+          "the nucleus": {
+            "bertscore": 0.6686459183692932,
+            "f1": 0
+          },
+          "the cytoplasm": {
+            "bertscore": 0.6099188923835754,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does NF-kappaB not do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00038504600524902344,
+        "ground_truth": {
+          "gene transcription": {
+            "bertscore": 0.6639035940170288,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

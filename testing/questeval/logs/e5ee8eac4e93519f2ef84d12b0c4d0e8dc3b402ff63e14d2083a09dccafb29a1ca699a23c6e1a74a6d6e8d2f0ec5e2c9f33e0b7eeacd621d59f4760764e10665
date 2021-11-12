@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "EL-4 cells produce cytokines such as interleukin (IL)-2 IL-3 IL-4 IL-10 and granulocyte-macrophage colony-stimulating factor in response to phorbol 12-myristate 13-acetate (PMA).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "13-acetate",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PMA?",
+          "What is the name of the phorbol 12-myristate 13-acetate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "EL-4 cells",
+        "cytokines",
+        "interleukin",
+        "IL-4 IL-10 and granulocyte-macrophage colony-stimulating factor",
+        "response",
+        "12-myristate 13-acetate (PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells produce cytokines in response to phorbol 12-myristate 13",
+          "What do EL-4 cells produce in response to phorbol 12-myristate 13",
+          "What is IL-2 IL-3 IL-10?",
+          "What do EL-4 cells produce in response to phorbol 12-myristate 13",
+          "What do EL-4 cells produce cytokines in response to?",
+          "What is the name of the drug that EL-4 cells respond to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "12-myristate 13-acetate",
+        "answerability": 0.9443753361701965,
+        "ground_truth": {
+          "13-acetate": {
+            "bertscore": 0.8954514265060425,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the name of the phorbol 12-myristate 13-acetate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMA",
+        "answerability": 0.9709420800209045,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells produce cytokines in response to phorbol 12-myristate 13": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "EL-4 cells",
+        "answerability": 0.7063314914703369,
+        "ground_truth": {
+          "EL-4 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do EL-4 cells produce in response to phorbol 12-myristate 13": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokines",
+        "answerability": 0.5570991039276123,
+        "ground_truth": {
+          "cytokines": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "IL-4 IL-10 and granulocyte-macrophage colony-stimulating factor": {
+            "bertscore": 0.6518361568450928,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IL-2 IL-3 IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21685492992401123,
+        "ground_truth": {
+          "interleukin": {
+            "bertscore": 0.6550241708755493,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do EL-4 cells produce cytokines in response to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol 12-myristate 13-acetate",
+        "answerability": 0.8490964770317078,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.5840006470680237,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the drug that EL-4 cells respond to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29439234733581543,
+        "ground_truth": {
+          "12-myristate 13-acetate (PMA": {
+            "bertscore": 0.5859476923942566,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "suggesting that the interaction of SLP-76 and Vav is not required for their cooperation in augmenting IL-2 promoter activity as the two molecules appear to function in different signaling pathways upstream of IL-2 gene expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Vav",
+        "IL-2",
+        "two",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only molecule that is not required for the interaction of SLP-76 and",
+          "What gene does Vav interact with?",
+          "How many molecules appear to function in different signaling pathways upstream of IL-2 gene expression",
+          "What gene does Vav interact with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the interaction",
+        "Vav",
+        "their cooperation",
+        "promoter activity",
+        "the two molecules",
+        "IL-2 gene expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the study suggest is not required for the interaction of SLP-76 and Vav",
+          "What is the only molecule that is not required for the interaction of SLP-76 and",
+          "What does the interaction of SLP-76 and Vav not require?",
+          "What does Vav and SLP-76 appear to function in different signaling pathways upstream",
+          "What two molecules appear to function in different signaling pathways upstream of IL-2 gene expression",
+          "What does Vav interact with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not required for their cooperation in augmenting IL-2 promoter activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the interaction of SLP-76 and Vav",
+        "answerability": 0.995664119720459,
+        "ground_truth": {
+          "Vav": {
+            "bertscore": 0.7091976404190063,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What gene does Vav interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SLP-76",
+        "answerability": 0.8677291870117188,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.8283558487892151,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many molecules are involved in the activation of IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.5435693860054016,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is not required for the two molecules to augment IL-2 promoter activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the interaction of SLP-76 and Vav",
+        "answerability": 0.9898995161056519,
+        "ground_truth": {
+          "their cooperation": {
+            "bertscore": 0.6396471858024597,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Vav enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4803317189216614,
+        "ground_truth": {
+          "promoter activity": {
+            "bertscore": 0.7076612114906311,
+            "f1": 0
+          },
+          "IL-2 gene expression": {
+            "bertscore": 0.6176033616065979,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two molecules appear to function in different signaling pathways upstream of IL-2 gene expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SLP-76 and Vav",
+        "answerability": 0.9426108598709106,
+        "ground_truth": {
+          "the two molecules": {
+            "bertscore": 0.6448968648910522,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "The effect of both cytokines on the monocyte maturation/differentiation (CD11b CD13 and CD26) and other macrophage markers (CD14 and CD68) was examined. IL-4 enhanced CD11b but inhibited CD26 expression and delayed CD13 loss.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD14",
+        "CD68",
+        "CD13"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one of the two macrophage markers that is affected by IL-4?",
+          "What is one of the two macrophage markers that was studied?",
+          "What is the most important cytokine for monocyte maturation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The effect",
+        "both cytokines",
+        "the monocyte maturation/differentiation",
+        "(CD11b CD13",
+        "CD26",
+        "other macrophage markers",
+        "CD14",
+        "CD68",
+        "IL-4",
+        "enhanced CD11b",
+        "CD26 expression",
+        "CD13 loss"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of IL-4 on monocyte maturation/differentiation?",
+          "What was the effect of IL-4 on monocyte maturation/differentiation?",
+          "What did IL-4 inhibit?",
+          "What is the monocyte maturation/differentiation marker?",
+          "What is the most important cytokine for monocyte maturation?",
+          "What did IL-4 inhibit?",
+          "What is one of the two macrophage markers that is affected by IL-4?",
+          "What is one of the two macrophage markers that was studied?",
+          "What cytokines enhanced CD11b but inhibited CD68?",
+          "What did IL-4 do to monocytes?",
+          "What did IL-4 inhibit?",
+          "What did IL-4 delay?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did IL-4 do to CD11b?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced",
+        "answerability": 0.9966961145401001,
+        "ground_truth": {
+          "IL-4 enhanced CD11b": {
+            "bertscore": 0.7306882739067078,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did IL-4 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD26 expression",
+        "answerability": 0.8677483797073364,
+        "ground_truth": {
+          "CD26 expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "CD13 loss": {
+            "bertscore": 0.9052448868751526,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

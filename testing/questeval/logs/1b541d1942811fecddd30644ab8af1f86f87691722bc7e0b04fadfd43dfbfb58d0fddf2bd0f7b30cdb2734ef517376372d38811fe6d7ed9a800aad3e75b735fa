@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "We argue that in vivo RelA homodimers are likely to play a dominant role in TNF-alpha-induced ICAM-1 transcription in monocytic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way do we argue that RelA homodimers play a dominant role",
+          "What is the main factor that causes ICAM-1 transcription?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "vivo RelA homodimers",
+        "a dominant role",
+        "TNF-alpha-induced ICAM-1 transcription",
+        "monocytic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main role of RelA homodimers in TNF-alpha",
+          "What is likely to play a dominant role in TNF-alpha-induced ICAM",
+          "What role do RelA homodimers play in TNF-alpha-induced",
+          "What do we argue that RelA homodimers play a dominant role in?",
+          "Where are RelA homodimers likely to play a dominant role in TNF"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main factor that is involved in ICAM-1 transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.8130319118499756,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is likely to play a major role in TNF-alpha-induced ICAM": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RelA homodimers",
+        "answerability": 0.9385495185852051,
+        "ground_truth": {
+          "The RelA homodimer": {
+            "bertscore": 0.9273951649665833,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What role does the RelA homodimer play in TNF-alpha-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23538058996200562,
+        "ground_truth": {
+          "a major role": {
+            "bertscore": 0.6637800931930542,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the RelA homodimer likely to play a major role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha-induced ICAM-1 transcription",
+        "answerability": 0.9692765474319458,
+        "ground_truth": {
+          "TNF-alpha-induced ICAM-1 transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where is the RelA homodimer likely to play a major role in T": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in vivo",
+        "answerability": 0.717349648475647,
+        "ground_truth": {
+          "monocytic cells": {
+            "bertscore": 0.6282708048820496,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

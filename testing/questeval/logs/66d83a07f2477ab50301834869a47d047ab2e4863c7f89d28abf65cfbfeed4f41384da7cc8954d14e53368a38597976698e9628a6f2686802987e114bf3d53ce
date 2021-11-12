@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"Recently a multivalent guanylhydrazone (CNI-1493) developed as an inhibitor of macrophage activation was shown to suppress Kaposis sarcoma-associated herpesvirus infection from latency.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a multivalent guanylhydrazone",
+        "CNI-1493",
+        "an inhibitor",
+        "macrophage activation",
+        "Kaposis sarcoma-associated herpesvirus infection",
+        "latency"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was recently shown to suppress Kaposis sarcoma-associated herpes",
+          "What is the name of the multivalent guanylhydrazone?",
+          "What was guanylhydrazone developed as?",
+          "What did the multivalent guanylhydrazone inhibit?",
+          "What did CNI-1493 suppress?",
+          "What is the main cause of the sarcoma-associated herpesvirus infection"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the sarcoma-associated herpesvirus infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Kaposis",
+        "answerability": 0.8130562901496887,
+        "ground_truth": {
+          "Reactivation of Kaposis": {
+            "bertscore": 0.7557237148284912,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What sarcoma-associated herpesvirus is activated by the ORF": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03889930248260498,
+        "ground_truth": {
+          "Kaposis": {
+            "bertscore": 0.6604479551315308,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of Kaposis sarcoma-associated herpes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008015334606170654,
+        "ground_truth": {
+          "latency": {
+            "bertscore": 0.7161101698875427,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the ORF 50 transactivator?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00022965669631958008,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272055745124817,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that causes the Kaposis sarcoma-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0058997273445129395,
+        "ground_truth": {
+          "the ORF 50 transactivator": {
+            "bertscore": 0.6374754905700684,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the ORF 50 transactivator a homolog of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00017827749252319336,
+        "ground_truth": {
+          "the EBV R protein": {
+            "bertscore": 0.6003089547157288,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

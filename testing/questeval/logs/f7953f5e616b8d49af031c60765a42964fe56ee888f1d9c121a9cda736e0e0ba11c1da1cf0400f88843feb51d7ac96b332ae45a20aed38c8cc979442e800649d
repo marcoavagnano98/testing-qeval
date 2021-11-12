@@ -1,0 +1,162 @@
+{
+  "type": "hyp",
+  "text": "Phosphoinositide 3-kinase (PI 3-kinase) is activated by a diverse set of receptors that determine T-cell function including the T-cell antigen receptor (TcR) the costimulatory receptor CD28 and negative regulators of T-cell activation such as CTLA-4.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TcR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the T-cell antigen receptor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "3-kinase (PI",
+        "a diverse set",
+        "receptors",
+        "T-cell function",
+        "the T-cell antigen receptor",
+        "(TcR",
+        "the costimulatory receptor CD28",
+        "negative regulators",
+        "T-cell activation",
+        "CTLA-4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the phosphoinositide that is activated by a",
+          "What is the number of receptors that determine T-cell function?",
+          "What determines T-cell function?",
+          "What does the TcR determine?",
+          "What is the TcR?",
+          "What is the T-cell antigen receptor?",
+          "What is the T-cell antigen receptor?",
+          "What is CTLA-4?",
+          "What does CTLA-4 regulate?",
+          "What is one of the negative regulators of T-cell activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the T-cell antigen receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TcR",
+        "answerability": 0.9785458445549011,
+        "ground_truth": {
+          "TCR": {
+            "bertscore": 0.8510996699333191,
+            "f1": 1.0
+          },
+          "(TCR": {
+            "bertscore": 0.7571767568588257,
+            "f1": 1.0
+          },
+          "the costimulatory receptor CD28": {
+            "bertscore": 0.6164703965187073,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the phosphoinositide that is activated by a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI 3-kinase",
+        "answerability": 0.8475039005279541,
+        "ground_truth": {
+          "3-kinase (PI": {
+            "bertscore": 0.8732416033744812,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the number of receptors that determine T-cell function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012942969799041748,
+        "ground_truth": {
+          "a diverse set": {
+            "bertscore": 0.6743173599243164,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What determines T-cell function?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell antigen receptor",
+        "answerability": 0.60117107629776,
+        "ground_truth": {
+          "receptors": {
+            "bertscore": 0.7690429091453552,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the T-cell antigen receptor determine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell function",
+        "answerability": 0.9188399314880371,
+        "ground_truth": {
+          "T-cell function": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the TCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell antigen receptor",
+        "answerability": 0.9841115474700928,
+        "ground_truth": {
+          "the T-cell antigen receptor": {
+            "bertscore": 0.9472513794898987,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is CTLA-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "negative regulators",
+        "answerability": 0.9939536452293396,
+        "ground_truth": {
+          "negative regulators": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does CTLA-4 regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4555954933166504,
+        "ground_truth": {
+          "T-cell activation": {
+            "bertscore": 0.6565662026405334,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is one of the negative regulators of T-cell activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CTLA-4",
+        "answerability": 0.8534289598464966,
+        "ground_truth": {
+          "CTLA-4": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

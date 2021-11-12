@@ -1,0 +1,144 @@
+{
+  "type": "hyp",
+  "text": "Furthermore Th1 cell clones coproducing IFN-gamma and IL-10 have been isolated from bronchoalveolar lavage (BAL) of active pulmonary tuberculosis (TB) patients (Gerosa et al. 1999).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BAL",
+        "TB",
+        "Gerosa et al",
+        "1999"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the bronchoalveolar lavage?",
+          "What is the name of the disease that is a TB patient?",
+          "Who reported that TB patients had clones coproducing IFN-gamma and",
+          "When did Gresa and colleagues isolate Th1 cell clones coproducing IFN-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Th1 cell clones",
+        "IFN-gamma",
+        "bronchoalveolar lavage",
+        "BAL",
+        "active pulmonary tuberculosis (TB) patients",
+        "(Gerosa et al"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What co-producing IFN-gamma and IL-10 have been isolated from",
+          "What is the main component of TB cell production?",
+          "Where have Th1 cell clones coproducing IFN-gamma and IL",
+          "What is the name of the bronchoalveolar lavage?",
+          "What type of patients have IFN-gamma and IL-10 been isolated from?",
+          "Who reported that TB patients had clones coproducing IFN-gamma and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the bronchoalveolar lavage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BAL",
+        "answerability": 0.9805383086204529,
+        "ground_truth": {
+          "BAL": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the disease that is a TB patient?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6064319610595703,
+        "ground_truth": {
+          "TB": {
+            "bertscore": 0.7073777318000793,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Who reported that TB patients had clones coproducing IFN-gamma and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.8609996438026428,
+        "ground_truth": {
+          "Gerosa et al": {
+            "bertscore": 0.6465506553649902,
+            "f1": 0
+          },
+          "(Gerosa et al": {
+            "bertscore": 0.5991441607475281,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "When did Gresa and colleagues isolate Th1 cell clones coproducing IFN-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "1999",
+        "answerability": 0.768631100654602,
+        "ground_truth": {
+          "1999": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What co-producing IFN-gamma and IL-10 have been isolated from": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th1 cell clones",
+        "answerability": 0.8490257859230042,
+        "ground_truth": {
+          "Th1 cell clones": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main component of TB cell production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15977263450622559,
+        "ground_truth": {
+          "IFN-gamma": {
+            "bertscore": 0.653343677520752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where have Th1 cell clones coproducing IFN-gamma and IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03551161289215088,
+        "ground_truth": {
+          "bronchoalveolar lavage": {
+            "bertscore": 0.6498050689697266,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of patients have IFN-gamma and IL-10 been isolated from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "active pulmonary tuberculosis (TB) patients",
+        "answerability": 0.8487992882728577,
+        "ground_truth": {
+          "active pulmonary tuberculosis (TB) patients": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

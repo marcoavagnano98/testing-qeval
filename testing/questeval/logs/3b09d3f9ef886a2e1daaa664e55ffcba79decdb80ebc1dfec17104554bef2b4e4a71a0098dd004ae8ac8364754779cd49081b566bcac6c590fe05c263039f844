@@ -1,0 +1,148 @@
+{
+  "type": "hyp",
+  "text": "Inhibition studies indicate that specific tyrosine phosphorylation following PTK activation is involved in the mobilization of the transcription factor nuclear factor kappa B and VCAM-1 mRNA expression. As a functional consequence adhesion of U937 monocytes to TNF-stimulated HUVECs was markedly reduced by aspirin due to suppression of VCAM-1 and E-selectin upregulation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTK",
+        "mRNA",
+        "U937 monocytes",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in mobilization of the transcription factor nuclear factor kappa B and V",
+          "What type of expression is VCAM-1 involved in?",
+          "What is involved in mobilization of the transcription factor nuclear factor kappa B and V",
+          "What transcription factor stimulates the adhesion of U937 monocytes to HUV"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition studies",
+        "specific tyrosine phosphorylation",
+        "PTK activation",
+        "the mobilization",
+        "the transcription factor nuclear factor",
+        "kappa B",
+        "VCAM-1 mRNA expression",
+        "a functional consequence adhesion",
+        "U937 monocytes",
+        "TNF-stimulated HUVECs",
+        "aspirin",
+        "suppression",
+        "VCAM-1",
+        "E-selectin upregulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that specific tyrosine phosphorylation is involved in mobilization of",
+          "What is involved in the mobilization of the transcription factor nuclear factor kappa B and",
+          "What is involved in mobilization of the transcription factor nuclear factor kappa B and V",
+          "What is specific tyrosine phosphorylation involved in?",
+          "What is kappa B?",
+          "What transcription factor is involved in mobilization?",
+          "What is involved in mobilization of the transcription factor nuclear factor kappa B?",
+          "What was reduced by aspirin?",
+          "What is involved in mobilization of the transcription factor nuclear factor kappa B and V",
+          "What is the tyrosine phosphorylation involved in mobilization of?",
+          "What drug reduced adhesion of U937 monocytes to TNF-stimul",
+          "What is the cause of the reduction in adhesion of U937 monocytes to",
+          "What transcription factor is involved in mobilization?",
+          "What is involved in mobilization of the transcription factor nuclear factor kappa B and V"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stimulates adhesion of U937 monocytes to HUVECs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03125154972076416,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789318323135376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was reduced by aspirin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adhesion of U937 monocytes to TNF-stimulated HUV",
+        "answerability": 0.9895645380020142,
+        "ground_truth": {
+          "a functional consequence adhesion": {
+            "bertscore": 0.6365554332733154,
+            "f1": 0.2
+          },
+          "U937 monocytes": {
+            "bertscore": 0.7393313050270081,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What did aspirin reduce adhesion of U937 monocytes to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-stimulated HUVECs",
+        "answerability": 0.9092209339141846,
+        "ground_truth": {
+          "TNF-stimulated HUVECs": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What reduced adhesion of U937 monocytes to TNF-stimulated": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "aspirin",
+        "answerability": 0.6503921747207642,
+        "ground_truth": {
+          "aspirin": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of aspirin on the adhesion of U937 monocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5751920938491821,
+        "ground_truth": {
+          "suppression": {
+            "bertscore": 0.6839434504508972,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was suppressed by aspirin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VCAM-1",
+        "answerability": 0.5460138320922852,
+        "ground_truth": {
+          "VCAM-1": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the cause of the reduction in adhesion of U937 monocytes to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5748295783996582,
+        "ground_truth": {
+          "E-selectin upregulation": {
+            "bertscore": 0.6524448990821838,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

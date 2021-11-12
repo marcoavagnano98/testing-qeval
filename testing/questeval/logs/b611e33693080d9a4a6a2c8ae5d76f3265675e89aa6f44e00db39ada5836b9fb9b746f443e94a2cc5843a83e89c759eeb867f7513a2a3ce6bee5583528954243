@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Association of alterations in NF-kappa B moieties with HIV type 1 proviral latency in certain chronically infected T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of HIV is associated with latency?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Association",
+        "alterations",
+        "NF-kappa B moieties",
+        "HIV type 1 proviral latency",
+        "certain chronically infected T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the association of NF-kappa B alterations with HIV type 1 pro",
+          "What is associated with HIV type 1 proviral latency?",
+          "What is associated with HIV type 1 proviral latency?",
+          "What is the association of alterations in NF-kappa B moieties with",
+          "What is the association of alterations in NF-kappa B moieties with"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of HIV is associated with latency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "type 1",
+        "answerability": 0.7312666177749634,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.8136608600616455,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the association of NF-kappa B alterations with HIV type 1 pro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31717681884765625,
+        "ground_truth": {
+          "Association": {
+            "bertscore": 0.6999701261520386,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is associated with HIV type 1 proviral latency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9818605780601501,
+        "ground_truth": {
+          "alterations": {
+            "bertscore": 0.6425884962081909,
+            "f1": 0
+          },
+          "NF-kappa B moieties": {
+            "bertscore": 0.8476253151893616,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the association of alterations in NF-kappa B moieties with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV type 1 proviral latency",
+        "answerability": 0.968174159526825,
+        "ground_truth": {
+          "HIV type 1 proviral latency": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are associated with HIV type 1 proviral latency?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.7775136232376099,
+        "ground_truth": {
+          "certain monocytic cells": {
+            "bertscore": 0.631455659866333,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

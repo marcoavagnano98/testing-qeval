@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The GM-CSF promoter modified in this way to be ETS1 specific is fully responsive to PMA/ionomycin induction in addition to ETS1 transactivation in the presence of PMA and ionomycin. Furthermore the NF kappa B activity induced by T-cell activators is similar in mobility to that induced by phorbol ester.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GM",
+        "PMA",
+        "PMA",
+        "NF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the promoter that is ETS1 specific?",
+          "What is the ETS1 specific promoter responsive to?",
+          "What is the ETS1 specific promoter responsive to?",
+          "What type of kappa B activity is induced by T-cell activators?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The GM-CSF promoter",
+        "this way",
+        "PMA/ionomycin induction",
+        "addition",
+        "ETS1 transactivation",
+        "the presence",
+        "PMA",
+        "ionomycin",
+        "the NF kappa B activity",
+        "T-cell activators",
+        "mobility",
+        "phorbol ester"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is ETS1 specific?",
+          "How is the GM-CSF promoter modified?",
+          "What is the GM-CSF promoter fully responsive to?",
+          "What is the ETS1 specific promoter responsive to?",
+          "What is the GM-CSF promoter responsive to in addition to PMA and",
+          "What is the ETS1 specific promoter responsive to?",
+          "What is the ETS1 specific promoter responsive to?",
+          "What is the ETS1 specific promoter responsive to?",
+          "What is similar in mobility to that induced by phorbol ester?",
+          "What is the NF kappa B activity induced by?",
+          "What is the NF kappa B activity induced by T-cell activators",
+          "What is the NF kappa B activity induced by T-cell activators"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is induced by phorbol esters and other T-cell activators?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26510196924209595,
+        "ground_truth": {
+          "NF kappa B TCF-1 activity": {
+            "bertscore": 0.5936288833618164,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that induces TCF-1 activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014298796653747559,
+        "ground_truth": {
+          "phorbol esters": {
+            "bertscore": 0.6186597347259521,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF kappa B TCF-1 activity induced by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10197180509567261,
+        "ground_truth": {
+          "other T-cell activators": {
+            "bertscore": 0.6214282512664795,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

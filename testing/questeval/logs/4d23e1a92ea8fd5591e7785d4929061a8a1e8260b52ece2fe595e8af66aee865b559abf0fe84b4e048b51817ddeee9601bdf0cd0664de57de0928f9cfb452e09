@@ -1,0 +1,152 @@
+{
+  "type": "hyp",
+  "text": "Additionally bolus (3h) doxorubicin incubation led to phosphorylation of p21(WAF1) and inhibition of p21(WAF1) induction.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3h"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did doxorubicin incubate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Additionally bolus",
+        "3h",
+        "incubation",
+        "phosphorylation",
+        "p21(WAF1",
+        "inhibition",
+        "p21(WAF1) induction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the duration of the 3h incubation of doxorubicin?",
+          "How long did doxorubicin incubate?",
+          "What led to phosphorylation of p21(WAF1)?",
+          "What did doxorubicin incubation lead to?",
+          "What protein was inhibited by doxorubicin incubation?",
+          "What effect did doxorubicin incubation have on p21(W",
+          "What did doxorubicin incubation inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did doxorubicin incubate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3h",
+        "answerability": 0.6592773199081421,
+        "ground_truth": {
+          "3h": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What serine did doxorubicin incubate to induce p21": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09984582662582397,
+        "ground_truth": {
+          "392": {
+            "bertscore": 0.6420332193374634,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the duration of the doxorubicin incubation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3h",
+        "answerability": 0.8207959532737732,
+        "ground_truth": {
+          "Additionally bolus": {
+            "bertscore": 0.7195326089859009,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What process led to phosphorylation of p53 at serine 392?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0774385929107666,
+        "ground_truth": {
+          "incubation": {
+            "bertscore": 0.72697913646698,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did doxorubicin incubation lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of p21(WAF1) and inhibition of p21(",
+        "answerability": 0.9240261912345886,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.7704704999923706,
+            "f1": 0.25
+          },
+          "increase": {
+            "bertscore": 0.5477814674377441,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was phosphorylated at serine 392?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2647477388381958,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 0.6259341239929199,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the location of p21 G2 arrest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000693202018737793,
+        "ground_truth": {
+          "serine 392 induction": {
+            "bertscore": 0.6715060472488403,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of doxorubicin incubation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of p21(WAF1) and inhibition of p21(",
+        "answerability": 0.9574832916259766,
+        "ground_truth": {
+          "p21 G2 arrest": {
+            "bertscore": 0.6822474598884583,
+            "f1": 0.2
+          }
+        }
+      }
+    },
+    "What protein was increased by doxorubicin incubation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of p21(WAF1)",
+        "answerability": 0.6364713907241821,
+        "ground_truth": {
+          "proapoptotic protein": {
+            "bertscore": 0.6697403192520142,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

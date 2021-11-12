@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "The NF-kappaB family includes RelA/p65 c -Rel RelB p50 and p52 that share a highly conserved 300-amino acid Rel homology domain (RHD) for homo- or hetero-dimerizing and DNA-binding.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "Rel"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family includes RelA/p65 c -Rel RelB",
+          "What is the name of the 300-amino acid RHD?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The NF-kappaB family",
+        "p65 c",
+        "p52",
+        "a highly conserved 300-amino acid Rel homology domain",
+        "RHD",
+        "homo- or hetero-dimerizing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What family includes RelA/p65 c -Rel RelB",
+          "What is the name of the RelA/?",
+          "What is the name of the NF-kappaB family?",
+          "What does RHD stand for?",
+          "What is the name of the 300-amino acid Rel homology domain?",
+          "What is the Rel homology domain used for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What family includes RelA/p65 c -Rel RelB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9052082300186157,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "The NF-kappaB family": {
+            "bertscore": 0.8640840649604797,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the name of the 300-amino acid RHD?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rel homology domain",
+        "answerability": 0.7471088171005249,
+        "ground_truth": {
+          "Rel": {
+            "bertscore": 0.7822824120521545,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the RelA/?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41399431228637695,
+        "ground_truth": {
+          "p65 c": {
+            "bertscore": 0.6485810279846191,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the NF-kappaB family?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19891142845153809,
+        "ground_truth": {
+          "p52": {
+            "bertscore": 0.6329059600830078,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does RHD stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rel homology domain",
+        "answerability": 0.9563345313072205,
+        "ground_truth": {
+          "a highly conserved 300-amino acid Rel homology domain": {
+            "bertscore": 0.8397043347358704,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What is the name of the highly conserved 300-amino acid Rel homology": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RelA/p65 c -Rel RelB p50 and",
+        "answerability": 0.7531159520149231,
+        "ground_truth": {
+          "RHD": {
+            "bertscore": 0.6482424736022949,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the Rel homology domain used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "homo- or hetero-dimerizing and DNA-binding",
+        "answerability": 0.7342668771743774,
+        "ground_truth": {
+          "homo- or hetero-dimerization": {
+            "bertscore": 0.911442220211029,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "IL-2-induced growth of CD8+ T cell prolymphocytic leukemia cells mediated by NF-kappaB induction and IL-2 receptor alpha expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced growth of CD8+ T cell prolymphocytic leukemia"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-2-induced growth",
+        "CD8+ T cell prolymphocytic leukemia cells",
+        "NF-kappaB induction",
+        "IL-2 receptor alpha expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of the growth of CD8+ T cell prolymphocy",
+          "What is IL-2 induced growth of?",
+          "What is the IL-2 receptor alpha expression mediated by?",
+          "What is the NF-kappaB induction?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induced growth of CD8+ T cell prolymphocytic leukemia": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.8946182727813721,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main cause of the growth of CD8+ T cell prolymphocy": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.7337802648544312,
+        "ground_truth": {
+          "IL-2-induced growth": {
+            "bertscore": 0.7735872864723206,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IL-2 induced growth of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD8+ T cell prolymphocytic leukemia cells",
+        "answerability": 0.9621967673301697,
+        "ground_truth": {
+          "CD8+ T cell prolymphocytic leukemia cells": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the IL-2 receptor alpha expression mediated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.6195857524871826,
+        "ground_truth": {
+          "NF-kappaB induction": {
+            "bertscore": 0.852603018283844,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.061766088008880615,
+        "ground_truth": {
+          "IL-2 receptor alpha expression": {
+            "bertscore": 0.5995506644248962,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

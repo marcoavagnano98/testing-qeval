@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Polyubiquitination of proliferating cell nuclear antigen by a Rad5-Ubc13-Uev1A-Uev1A-ubiquitin ligase prevents genomic instability from stalled replication forks.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Polyubiquitination",
+        "cell nuclear antigen",
+        "a Rad5-Ubc13-Uev1A-Uev1A-ubiquitin ligase",
+        "genomic instability",
+        "stalled replication forks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What prevents genomic instability from stalled replication forks?",
+          "What does polyubiquitination of?",
+          "What prevents genomic instability from stalled replication forks?",
+          "What does polyubiquitination prevent from stalled replication forks?",
+          "What does polyubiquitination of proliferating cell nuclear antigen prevent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein prevents genomic instability?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35976678133010864,
+        "ground_truth": {
+          "HLTF": {
+            "bertscore": 0.6960004568099976,
+            "f1": 0
+          },
+          "SHPRH": {
+            "bertscore": 0.6608891487121582,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What prevents genomic instability from stalled replication forks?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Polyubiquitination of proliferating cell nuclear antigen",
+        "answerability": 0.8559988737106323,
+        "ground_truth": {
+          "Polyubiquitination": {
+            "bertscore": 0.8121773600578308,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does HLTF and SHPRH prevent from stalled replication forks?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15779107809066772,
+        "ground_truth": {
+          "cell nuclear antigen": {
+            "bertscore": 0.6681997179985046,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HLTF and SHPRH prevent from stalling replication forks?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16673260927200317,
+        "ground_truth": {
+          "genomic instability": {
+            "bertscore": 0.6827710270881653,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does polyubiquitination of proliferating cell nuclear antigen prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "genomic instability",
+        "answerability": 0.9880547523498535,
+        "ground_truth": {
+          "stalled replication forks": {
+            "bertscore": 0.7170642614364624,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

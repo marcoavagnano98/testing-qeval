@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "These results strongly suggest that HU induces both transcriptional and post-transcription inhibition of c-jun during erythroid differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HU"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induces both transcriptional and post-transcription inhibition of c-jun during"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "HU",
+        "both transcriptional and post-transcription inhibition",
+        "c-jun",
+        "erythroid differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that HU induces both transcriptional and post-transcription inhibition of c",
+          "What induces both transcriptional and post-transcription inhibition of c-jun during",
+          "What does HU induce during erythroid differentiation?",
+          "What is inhibited by HU during erythroid differentiation?",
+          "What is the main process that HU inhibits?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induces both transcriptional and post-transcription regulation of c-jun during": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11785989999771118,
+        "ground_truth": {
+          "HU": {
+            "bertscore": 0.7084292769432068,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that HU induces both transcriptional and post-transcription regulation of c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2576580047607422,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.6313728094100952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HU induce during erythroid differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional and post-transcription inhibition",
+        "answerability": 0.9511216878890991,
+        "ground_truth": {
+          "both transcriptional and post-transcription regulation": {
+            "bertscore": 0.9080972075462341,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    },
+    "What is the transcriptional and post-transcription regulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-jun",
+        "answerability": 0.6696274280548096,
+        "ground_truth": {
+          "c-jun": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main process that HU induces?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional and post-transcription inhibition",
+        "answerability": 0.9308532476425171,
+        "ground_truth": {
+          "erythroid differentiation": {
+            "bertscore": 0.7231133580207825,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

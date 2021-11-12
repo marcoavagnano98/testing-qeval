@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "In contrast to hematopoietic cells I kappa B alpha-/- embryonic fibroblasts show minimal constitutive NF-kappa B as well as normal signal-dependent tyrosine phosphorylation of Syk but not of FAK or paxillin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappa B alpha-/-",
+        "Syk",
+        "FAK",
+        "paxillin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of fibroblasts show minimal constitutive NF-kappa B?",
+          "What protein does kappa B alpha-/- embryonic fibroblasts",
+          "What does paxillin lack?",
+          "What is the only cell that has a signal-dependent tyrosine phospho"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "hematopoietic cells",
+        "I",
+        "kappa B alpha-/- embryonic fibroblasts",
+        "minimal constitutive NF-kappa B",
+        "normal signal-dependent tyrosine phosphorylation",
+        "Syk",
+        "FAK",
+        "paxillin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cytokine response of kappa B cells?",
+          "What type of cells do I kappa B alpha-/- embryonic",
+          "What type of kappa B cells show minimal constitutive NF-kappa",
+          "What type of cells show minimal constitutive NF-kappa B?",
+          "What do kappa B alpha-/- embryonic fibroblasts show",
+          "What does kappa B alpha-/- embryonic fibroblasts show",
+          "What protein does kappa B alpha-/- embryonic fibroblasts",
+          "What does paxillin lack?",
+          "What is the only cell that has a signal-dependent tyrosine phospho"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is not phosphorylated by integrin ligation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13331252336502075,
+        "ground_truth": {
+          "FAK": {
+            "bertscore": 0.670915961265564,
+            "f1": 0
+          },
+          "paxillin": {
+            "bertscore": 0.6357837915420532,
+            "f1": 0
+          },
+          "Syk": {
+            "bertscore": 0.676753044128418,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induces tyrosine phosphorylation of Syk?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.036530494689941406,
+        "ground_truth": {
+          "contrast integrin ligation": {
+            "bertscore": 0.6843358874320984,
+            "f1": 0
+          },
+          "antibodies": {
+            "bertscore": 0.6786100268363953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does integrin ligation with antibodies induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00047767162322998047,
+        "ground_truth": {
+          "tyrosine phosphorylation": {
+            "bertscore": 0.5928218364715576,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

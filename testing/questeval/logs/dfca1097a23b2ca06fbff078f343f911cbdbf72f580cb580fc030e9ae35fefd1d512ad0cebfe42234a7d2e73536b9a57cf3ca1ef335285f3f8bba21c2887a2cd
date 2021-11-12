@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "We detected nuclear interaction of these proteins and demonstrated the requirement of all three for FN1 activation. FN1 bound to the p65 subunit of NF-kappaB and induced activation of the proapoptotic protein p65.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "all three",
+        "p65",
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What three proteins were required for FN1 activation?",
+          "What subunit of NF-kappaB did FN1 bound to?",
+          "What protein did FN1 bound to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "nuclear interaction",
+        "these proteins",
+        "the requirement",
+        "FN1 activation",
+        "FN1",
+        "the p65 subunit",
+        "NF-kappaB",
+        "activation",
+        "the proapoptotic protein p65"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the FN1-NF-kappaB interaction do?",
+          "What did the FN1 and NF-kappaB detect?",
+          "What did the FN1-NF-kappaB interaction show?",
+          "What did the nuclear interaction of the three proteins demonstrate?",
+          "What did the FN1-NF-kappaB interaction induce?",
+          "What protein bound to the p65 subunit of NF-kappaB?",
+          "What did FN1 bound to?",
+          "What protein did FN1 bound to?",
+          "What did FN1 do?",
+          "What did FN1 induce to activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the p65 subunit of NF-kappaB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FN1",
+        "answerability": 0.579237163066864,
+        "ground_truth": {
+          "Snail1": {
+            "bertscore": 0.7652491331100464,
+            "f1": 0
+          },
+          "PARP1": {
+            "bertscore": 0.774381160736084,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is bound to the FN1 promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06262975931167603,
+        "ground_truth": {
+          "the p65 subunit": {
+            "bertscore": 0.608193576335907,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the p65 subunit of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9514627456665039,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the p65 subunit of NF-kappaB bound to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47758573293685913,
+        "ground_truth": {
+          "the FN1 promoter": {
+            "bertscore": 0.63618403673172,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

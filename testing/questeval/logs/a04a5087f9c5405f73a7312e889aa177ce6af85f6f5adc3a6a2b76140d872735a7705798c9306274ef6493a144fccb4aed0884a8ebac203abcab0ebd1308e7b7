@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Although Sp1 and Sp3 are ubiquitously expressed in mammalian cells their binding to the Sp binding site is not restricted to the erythroid lineage. However DCs lack Sp1 which may explain the failure of HIV-1 to replicate in purified DCs.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Sp",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What binding site is not restricted to the erythroid lineage?",
+          "What virus does not replicate in purified DCs?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Sp1",
+        "Sp3",
+        "mammalian cells",
+        "their binding",
+        "the Sp binding site",
+        "the erythroid lineage",
+        "DCs",
+        "Sp1",
+        "the failure",
+        "HIV-1",
+        "purified DCs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the binding site of HIV-1?",
+          "What is the only erythroid lineage that has Sp1 and Sp3 binding?",
+          "Where are Sp1 and Sp3 ubiquitously expressed?",
+          "What is not restricted to the erythroid lineage?",
+          "What is not restricted to the erythroid lineage?",
+          "What is the binding site of Sp1 and Sp3 not restricted to?",
+          "What type of cells lack Sp1 and Sp3?",
+          "What is the binding site of HIV-1?",
+          "What may be the reason for the lack of Sp1 and Sp3?",
+          "What virus does not replicate in purified DCs?",
+          "What type of cells do DCs lack Sp1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What virus does DCs lack Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.9970858097076416,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells do not have Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DCs",
+        "answerability": 0.8855561017990112,
+        "ground_truth": {
+          "DCs": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene is missing from DCs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1",
+        "answerability": 0.9959837198257446,
+        "ground_truth": {
+          "Sp1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may be the reason for HIV-1 not reproducing in purified DCs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DCs lack Sp1",
+        "answerability": 0.9899494647979736,
+        "ground_truth": {
+          "the failure": {
+            "bertscore": 0.6785082817077637,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells do DCs lack Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22222745418548584,
+        "ground_truth": {
+          "purified DCs": {
+            "bertscore": 0.7009013891220093,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

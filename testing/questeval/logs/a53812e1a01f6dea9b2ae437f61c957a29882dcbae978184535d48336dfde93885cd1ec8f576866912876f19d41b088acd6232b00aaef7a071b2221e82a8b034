@@ -1,0 +1,70 @@
+{
+  "type": "ref",
+  "text": "Northern blot analysis showed that C3a as well as C3a(desArg) enhanced LPS-induced mRNA levels for IL-6.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "C3a(desArg",
+        "mRNA",
+        "IL-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein increased LPS-induced mRNA levels?",
+          "What did Northern blot analysis show increased LPS-induced?",
+          "What protein did Northern blot analysis show increased LPS levels?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Northern blot analysis",
+        "C3a(desArg) enhanced LPS-induced mRNA levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that C3a and C3a(desArg) enhanced LPS-induced",
+          "What did Northern blot analysis show?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed that IL-10 reduced the accumulation of ICAM-1 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004601538181304932,
+        "ground_truth": {
+          "Northern blot analysis": {
+            "bertscore": 0.6709389090538025,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Northern blot analysis show about ICAM-1 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005712687969207764,
+        "ground_truth": {
+          "the accumulation": {
+            "bertscore": 0.6922505497932434,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Northern blot analysis show reduced the accumulation of ICAM-1 mRNA in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03256863355636597,
+        "ground_truth": {
+          "IFN-gamma-stimulated monocytes": {
+            "bertscore": 0.6080623269081116,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

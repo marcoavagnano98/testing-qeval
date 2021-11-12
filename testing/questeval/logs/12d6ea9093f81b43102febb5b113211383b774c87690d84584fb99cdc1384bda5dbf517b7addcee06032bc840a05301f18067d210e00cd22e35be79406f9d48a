@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "In contrast IFN-alpha/beta rescued T cell clones from apoptosis without active proliferation and expression of apoptosis-associated molecules tested so far was unaffected.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "IFN-alpha/beta",
+        "T cell clones",
+        "apoptosis",
+        "active proliferation",
+        "expression",
+        "apoptosis-associated molecules"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of IFN-alpha/beta on T cell clo",
+          "What rescued T cell clones from apoptosis?",
+          "What did IFN-alpha/beta rescue from apoptosis",
+          "What did IFN-alpha/beta rescue T cell clones from?",
+          "What did IFN-alpha/beta not rescue T cell clones from",
+          "What was unaffected by IFN-alpha/beta?",
+          "What did IFN-alpha/beta not rescue T cell clones from"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the effect of IFN-alpha/beta on T cell clo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3247268795967102,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094627618789673,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What rescued T cell clones from apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IFN-alpha/beta",
+        "answerability": 0.9709327816963196,
+        "ground_truth": {
+          "IFN-alpha/beta": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IFN-alpha/beta rescue from apoptosis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell clones",
+        "answerability": 0.7472474575042725,
+        "ground_truth": {
+          "T cell clones": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IFN-alpha/beta rescue T cell clones from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9916895627975464,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IFN-alpha/beta not rescue T cell clones from": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06673091650009155,
+        "ground_truth": {
+          "active proliferation": {
+            "bertscore": 0.6694558262825012,
+            "f1": 0
+          },
+          "apoptosis-associated proteins": {
+            "bertscore": 0.6124979257583618,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was unaffected by IFN-alpha/beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of apoptosis-associated molecules tested so far",
+        "answerability": 0.9939298629760742,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.6865962147712708,
+            "f1": 0.25
+          }
+        }
+      }
+    }
+  }
+}

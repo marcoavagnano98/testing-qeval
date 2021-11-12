@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "The present study shows that a mutant with an LMP1 site-specific mutation at TES2 LMP1(TRADD) initially stimulates cell growth and significantly extends the life span of MEF.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TES2 LMP1(TRADD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What site-specific mutation stimulates cell growth?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The present study",
+        "a mutant",
+        "an LMP1 site-specific mutation",
+        "TES2 LMP1(TRADD",
+        "cell growth",
+        "the life span"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that a mutant with an LMP1 site-specific mutation at TES2",
+          "What is shown to stimulate cell growth and significantly extend the life span of MEF?",
+          "What mutation at TES2 LMP1(TRADD) stimulates cell growth?",
+          "What site-specific mutation stimulates cell growth?",
+          "What does a mutation at TES2 LMP1(TRADD) initially stimulate?",
+          "What does a mutation at TES2 LMP1(TRADD) significantly extend?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What site-specific mutation stimulates cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1",
+        "answerability": 0.9866319894790649,
+        "ground_truth": {
+          "TES2 LMP1(TRADD": {
+            "bertscore": 0.8409188985824585,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What shows that a mutant with an LMP1 site-specific mutation at TES2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The present study",
+        "answerability": 0.9172228574752808,
+        "ground_truth": {
+          "The present study": {
+            "bertscore": 0.9999995231628418,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is shown to stimulate cell growth and significantly extend the life span of MEF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutant with an LMP1 site-specific mutation at TES2 LMP1(TRA",
+        "answerability": 0.9831981062889099,
+        "ground_truth": {
+          "a mutant": {
+            "bertscore": 0.6553670167922974,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What mutation at TES2 LMP1(TRADD) stimulates cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1 site-specific mutation",
+        "answerability": 0.9901670217514038,
+        "ground_truth": {
+          "an LMP1 site-specific mutation": {
+            "bertscore": 0.9467280507087708,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does a mutation at TES2 LMP1(TRADD) initially stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell growth",
+        "answerability": 0.9993193745613098,
+        "ground_truth": {
+          "cell growth": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does a mutation at TES2 LMP1(TRADD) significantly extend?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "life span of MEF",
+        "answerability": 0.9975430965423584,
+        "ground_truth": {
+          "the life span": {
+            "bertscore": 0.8009485006332397,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

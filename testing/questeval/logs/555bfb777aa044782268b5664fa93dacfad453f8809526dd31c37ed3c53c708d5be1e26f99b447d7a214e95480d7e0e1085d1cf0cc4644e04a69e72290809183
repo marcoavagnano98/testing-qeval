@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "and surface protein expression and the upregulation of transcripts for the chemokines monocyte chemoattractant protein 1 (MCP-1) and growth-related activity-alpha (GRO-alpha) by TNF-alpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the chemokines monocyte chemoattractant protein",
+          "What is responsible for the upregulation of transcripts for the chemokines monocyte"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "surface protein expression",
+        "the upregulation",
+        "transcripts",
+        "the chemokines",
+        "chemoattractant protein",
+        "(MCP-1",
+        "growth-related activity-alpha",
+        "(GRO-alpha",
+        "TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main effect of TNF-alpha on the chemokines?",
+          "What is the effect of TNF-alpha on surface protein expression?",
+          "What is upregulated by TNF-alpha?",
+          "What is the upregulation of transcripts for?",
+          "What does MCP-1 stand for?",
+          "What is the name of the chemokines monocyte chemoattractant protein",
+          "What does GRO-alpha stand for?",
+          "What is the name of the transcription factor that controls growth-related activity?",
+          "What is responsible for the upregulation of transcripts for the chemokines monocyte"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main factor that causes the upregulation of transcripts for chemokines mon": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.660586953163147,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883232235908508,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main effect of TNF-alpha on the chemokines monocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "upregulation of transcripts for the chemokines monocyte chemoattractant",
+        "answerability": 0.6150025129318237,
+        "ground_truth": {
+          "and surface protein expression": {
+            "bertscore": 0.6771433353424072,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of TNF-alpha on surface protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the upregulation of transcripts for the chemokines monocyte chemoattrac",
+        "answerability": 0.9506686925888062,
+        "ground_truth": {
+          "the upregulation": {
+            "bertscore": 0.735887885093689,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is upregulated by TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcripts for the chemokines monocyte chemoattractant protein 1 (",
+        "answerability": 0.9408246874809265,
+        "ground_truth": {
+          "transcripts": {
+            "bertscore": 0.7029849886894226,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is GRO-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "growth-related activity-alpha",
+        "answerability": 0.9952253699302673,
+        "ground_truth": {
+          "the chemokines monocyte": {
+            "bertscore": 0.6740859746932983,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the chemokines monocyte?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44148892164230347,
+        "ground_truth": {
+          "GRO-alpha": {
+            "bertscore": 0.670844554901123,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that causes the upregulation of surface protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.7989702224731445,
+        "ground_truth": {
+          "TNF-alpha": {
+            "bertscore": 0.9999997019767761,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

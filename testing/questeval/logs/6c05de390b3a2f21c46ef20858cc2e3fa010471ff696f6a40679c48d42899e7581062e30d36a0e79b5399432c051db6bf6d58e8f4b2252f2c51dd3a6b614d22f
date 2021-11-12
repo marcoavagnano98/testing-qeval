@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Nuclear factor p65 interacts with Keap1 to repress the Nrf2-ARE pathway. This interaction prevents p65 from binding to Keap1 and impairs Nrf2-dependent transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Keap1",
+        "Keap1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein does p65 interact with to repress the Nrf2-ARE pathway?",
+          "What protein does p65 interact with to repress the Nrf2-ARE pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Nuclear factor p65",
+        "the Nrf2-ARE pathway",
+        "This interaction",
+        "Keap1",
+        "impairs",
+        "Nrf2-dependent transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in the Nrf2-ARE pathway?",
+          "What does p65 repress?",
+          "What prevents p65 from binding to Keap1?",
+          "What protein does p65 interact with to repress the Nrf2-ARE pathway?",
+          "What does the interaction with Keap1 do to Nrf2-dependent transcription?",
+          "What does p65 impair?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What part of p65 is necessary for interaction with Keap1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Nuclear factor",
+        "answerability": 0.7939666509628296,
+        "ground_truth": {
+          "The N-terminal region": {
+            "bertscore": 0.7437766194343567,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the N-terminal region of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0043068528175354,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.62364661693573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the N-terminal region of p65 necessary for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004546642303466797,
+        "ground_truth": {
+          "both the interaction": {
+            "bertscore": 0.6549520492553711,
+            "f1": 0
+          },
+          "Keap1": {
+            "bertscore": 0.6635164618492126,
+            "f1": 0
+          },
+          "its transcriptional suppression activity": {
+            "bertscore": 0.6204380393028259,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

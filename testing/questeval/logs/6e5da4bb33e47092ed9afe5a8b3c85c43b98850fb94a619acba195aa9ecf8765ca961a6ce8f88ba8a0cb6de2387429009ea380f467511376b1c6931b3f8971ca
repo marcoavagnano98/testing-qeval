@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "Interestingly it was shown that NF-kappa B-mediated gene transcription both in the context of the IL-6 promoter as well as on its own was dependent on both serine kinase activity and interaction with c-Rel.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-6",
+        "c-Rel"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter was NF-kappa B dependent on?",
+          "What is the main component of NF-kappa B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "it",
+        "NF-kappa B-mediated gene transcription",
+        "the context",
+        "the IL-6 promoter",
+        "both serine kinase activity",
+        "interaction",
+        "c-Rel"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was shown that NF-kappa B-mediated gene transcription was dependent on both",
+          "What was shown to be dependent on both serine kinase activity and interaction with",
+          "What was NF-kappa B dependent on?",
+          "What is NF-kappa B dependent on?",
+          "What was NF-kappa B dependent on?",
+          "What was NF-kappa B dependent on?",
+          "What is the main component of NF-kappa B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter was NF-kappa B dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.9626253843307495,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was shown that NF-kappa B-mediated gene transcription was dependent on both": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interestingly",
+        "answerability": 0.9028386473655701,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.7230018377304077,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was shown to be dependent on both serine kinase activity and interaction with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B-mediated gene transcription",
+        "answerability": 0.8956150412559509,
+        "ground_truth": {
+          "NF-kappa B-mediated gene transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was NF-kappa B dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "serine kinase activity and interaction with c-Rel",
+        "answerability": 0.9693432450294495,
+        "ground_truth": {
+          "the context": {
+            "bertscore": 0.6261401176452637,
+            "f1": 0
+          },
+          "both serine kinase activity": {
+            "bertscore": 0.8061768412590027,
+            "f1": 0.5454545454545454
+          },
+          "interaction": {
+            "bertscore": 0.6412094235420227,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is NF-kappa B dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "serine kinase activity and interaction with c-Rel",
+        "answerability": 0.9548303484916687,
+        "ground_truth": {
+          "the IL-6 promoter": {
+            "bertscore": 0.701602578163147,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was NF-kappa B dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Rel",
+        "answerability": 0.8615713715553284,
+        "ground_truth": {
+          "c-Jun protein": {
+            "bertscore": 0.7987117767333984,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "A microphthalmia-associated transcription factor is enriched in the murine brain and placenta.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A microphthalmia-associated transcription factor",
+        "the murine brain",
+        "placenta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is enriched in the murine brain and placenta?",
+          "Where is a microphthalmia-associated transcription factor enriched?",
+          "What part of the brain is enriched with a microphthalmia-associated transcription"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the purpose of the study of the isoform of microphthalmia-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011761784553527832,
+        "ground_truth": {
+          "Identification": {
+            "bertscore": 0.6873464584350586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is enriched in retinal pigment epithelium?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003383338451385498,
+        "ground_truth": {
+          "a novel isoform": {
+            "bertscore": 0.6576171517372131,
+            "f1": 0
+          },
+          "microphthalmia-associated transcription factor": {
+            "bertscore": 0.603406548500061,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is the microphthalmia-associated transcription factor enriched?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "murine brain and placenta",
+        "answerability": 0.9876145124435425,
+        "ground_truth": {
+          "retinal pigment epithelium": {
+            "bertscore": 0.7428877949714661,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

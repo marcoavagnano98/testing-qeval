@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "A number of signaling cascades have been shown to play important roles in prostate disease progression including the androgen receptor (AR) and phosphatidylinositol 3-kinase/Akt signalling pathways.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AR",
+        "3-kinase/Akt"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the androgen receptor?",
+          "What signalling pathways play an important role in prostate disease?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A number",
+        "cascades",
+        "important roles",
+        "prostate disease progression",
+        "the androgen receptor",
+        "AR",
+        "phosphatidylinositol",
+        "3-kinase/Akt",
+        "pathways"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many signaling cascades have been shown to play important roles in prostate disease progression?",
+          "What is involved in prostate disease progression?",
+          "What have a number of signaling cascades been shown to play in prostate disease progression",
+          "What is one of the signaling cascades that plays an important role in?",
+          "What is the acronym for the receptor that plays an important role in prostate disease?",
+          "What is the name of the androgen receptor?",
+          "What is the name of the 3-kinase/Akt signalling pathway?",
+          "What signalling pathways play an important role in prostate disease?",
+          "What signaling cascades play an important role in prostate disease progression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many pathways are involved in the progression of hormone-refractory prostate disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07866626977920532,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.7294577360153198,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is thought to contribute to prostate disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signaling cascades",
+        "answerability": 0.782687783241272,
+        "ground_truth": {
+          "Crosstalk": {
+            "bertscore": 0.7459399700164795,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two pathways that cause prostate cancer to develop?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "androgen receptor (AR) and phosphatidylinositol",
+        "answerability": 0.731101393699646,
+        "ground_truth": {
+          "these two pathways": {
+            "bertscore": 0.5952750444412231,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the crosstalk between the two pathways thought to contribute to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16878139972686768,
+        "ground_truth": {
+          "progression and hormone-refractory prostate disease": {
+            "bertscore": 0.6091662049293518,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

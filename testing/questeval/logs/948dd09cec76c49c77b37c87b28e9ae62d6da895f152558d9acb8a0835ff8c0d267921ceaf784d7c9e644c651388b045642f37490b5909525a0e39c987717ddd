@@ -1,0 +1,158 @@
+{
+  "type": "hyp",
+  "text": "Treatment of cultured human endothelial cells with DAPT a gamma secretase inhibitor increased cell migration and sprout formation in response to VEGF stimulation with a biphasic dependence on DAPT concentration.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "DAPT",
+        "DAPT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to stimulate VEGF?",
+          "What was used to stimulate VEGF?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Treatment",
+        "cultured human endothelial cells",
+        "DAPT a gamma secretase inhibitor",
+        "cell migration",
+        "sprout formation",
+        "response",
+        "VEGF stimulation",
+        "a biphasic dependence",
+        "DAPT concentration"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increased cell migration and sprout formation?",
+          "What did DAPT increase cell migration and sprout formation?",
+          "What treatment increased cell migration and sprout formation?",
+          "What did treatment with DAPT increase?",
+          "What did treatment with DAPT increase in response to VEGF stimulation?",
+          "What did VEGF stimulate?",
+          "What increased cell migration and sprout formation?",
+          "What was the effect of DAPT on cell migration?",
+          "What did treatment of human endothelial cells increase cell migration and sprout formation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was used to stimulate VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DAPT",
+        "answerability": 0.7917592525482178,
+        "ground_truth": {
+          "DAPT": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What increased cell migration and sprout formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DAPT",
+        "answerability": 0.9724795818328857,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.7213977575302124,
+            "f1": 0
+          },
+          "VEGF stimulation": {
+            "bertscore": 0.7235486507415771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did DAPT increase cell migration and sprout formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF stimulation",
+        "answerability": 0.989727258682251,
+        "ground_truth": {
+          "cultured human endothelial cells": {
+            "bertscore": 0.7345093488693237,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment increased cell migration and sprout formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DAPT",
+        "answerability": 0.9790115356445312,
+        "ground_truth": {
+          "DAPT a gamma secretase inhibitor": {
+            "bertscore": 0.7645694017410278,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did treatment with DAPT increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell migration",
+        "answerability": 0.9995696544647217,
+        "ground_truth": {
+          "cell migration": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did treatment with DAPT increase in response to VEGF stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell migration and sprout formation",
+        "answerability": 0.9995200634002686,
+        "ground_truth": {
+          "sprout formation": {
+            "bertscore": 0.8644866943359375,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did VEGF stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2891603112220764,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7024294137954712,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of DAPT on cell migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased",
+        "answerability": 0.998798668384552,
+        "ground_truth": {
+          "a biphasic dependence": {
+            "bertscore": 0.6490424275398254,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did treatment of human endothelial cells increase cell migration and sprout formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF stimulation",
+        "answerability": 0.9913350939750671,
+        "ground_truth": {
+          "DAPT concentration": {
+            "bertscore": 0.765016496181488,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

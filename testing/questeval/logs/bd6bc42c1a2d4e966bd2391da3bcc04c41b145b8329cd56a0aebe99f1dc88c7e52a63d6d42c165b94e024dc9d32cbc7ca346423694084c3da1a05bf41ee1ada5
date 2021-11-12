@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Activation of normal lymph node cells resulted in increased expression of Egr-1 -2 and -3.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "normal lymph node cells",
+        "increased expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that results in the expression of Egr-1 -2 and Eg",
+          "What cells were activated to increase expression of Egr-1 -2 and -3?",
+          "What did activation of normal lymph node cells result in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process that results in the expression of Egr-1 -2 and Eg": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation of normal lymph node cells",
+        "answerability": 0.9835487604141235,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.7491272687911987,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What cells were activated to increase expression of Egr-1 -2 and -3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "normal lymph node cells",
+        "answerability": 0.9910382628440857,
+        "ground_truth": {
+          "normal lymph node cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did activation of normal lymph node cells result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased expression of Egr-1 -2 and -3",
+        "answerability": 0.9989387392997742,
+        "ground_truth": {
+          "increased expression": {
+            "bertscore": 0.7419021129608154,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    }
+  }
+}

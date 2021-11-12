@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "IL-4 The effect of both cytokines on the monocyte maturation/differentiation (CD11bCD13 and CD26) and other macrophage markers (CD14 and CD68) was examined.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD14",
+        "CD68"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the two macrophage markers that are examined?",
+          "What is the name of the other macrophage marker?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The effect",
+        "both cytokines",
+        "the monocyte maturation/differentiation",
+        "CD11bCD13",
+        "CD26",
+        "other macrophage markers",
+        "CD14",
+        "CD68"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of IL-4 on monocyte maturation/differentiation?",
+          "What is the effect of IL-4 on monocyte maturation/differentiation?",
+          "What did IL-4 have an effect on?",
+          "What is the monocyte maturation/differentiation marker?",
+          "What is the name of the cytokines that affect monocyte maturation?",
+          "What other markers were examined?",
+          "What is the name of the two macrophage markers that are examined?",
+          "What is the name of the other macrophage marker?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the two macrophage markers that are examined?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD14 and CD68",
+        "answerability": 0.7912184596061707,
+        "ground_truth": {
+          "CD14": {
+            "bertscore": 0.8109827041625977,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the other macrophage marker?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD14",
+        "answerability": 0.788759708404541,
+        "ground_truth": {
+          "CD68": {
+            "bertscore": 0.8468673825263977,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of IL-4 on monocyte maturation/differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10183447599411011,
+        "ground_truth": {
+          "The effect": {
+            "bertscore": 0.6850010752677917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of IL-4 on monocyte maturation/differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09614330530166626,
+        "ground_truth": {
+          "both cytokines": {
+            "bertscore": 0.6339187622070312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-4 have an effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5123794078826904,
+        "ground_truth": {
+          "the monocyte maturation/differentiation": {
+            "bertscore": 0.6405037045478821,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the monocyte maturation/differentiation marker?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD11bCD13 and CD26",
+        "answerability": 0.8695113658905029,
+        "ground_truth": {
+          "(CD11b CD13": {
+            "bertscore": 0.8369075655937195,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the cytokines that affect monocyte maturation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD11bCD13 and CD26",
+        "answerability": 0.8551019430160522,
+        "ground_truth": {
+          "CD26": {
+            "bertscore": 0.7781134247779846,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did the cytokines affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocyte maturation/differentiation",
+        "answerability": 0.8950790166854858,
+        "ground_truth": {
+          "other macrophage markers": {
+            "bertscore": 0.7262820601463318,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

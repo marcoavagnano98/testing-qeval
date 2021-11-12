@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Significantly p95vav synergizes with TCR stimulation in inducing NFAT- and interleukin-2-dependent transcription. Transcription mediated by NFAT is highly inducible in effector CD4+ T helper 2 (Th2) cells but not in Th1 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NFAT",
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is transcription mediated by?",
+          "What is the name of the cell that is highly inducible in NFAT-mediated"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Significantly p95vav synergizes",
+        "TCR stimulation",
+        "NFAT-",
+        "interleukin-2-dependent transcription",
+        "Transcription",
+        "NFAT",
+        "effector CD4",
+        "T helper 2 (Th2) cells",
+        "Th1 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of TCR on transcription?",
+          "What does p95vav synergize with?",
+          "What transcriptional factor is highly inducible in Th2 cells?",
+          "What does p95vav stimulate?",
+          "What is highly inducible in effector CD4+ T helper 2 cells?",
+          "What is transcription mediated by?",
+          "What type of cells are highly inducible in?",
+          "What is transcription mediated by NFAT highly inducible in?",
+          "What type of cells are highly inducible?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is highly inducible in effector CD4+ T helper 2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Transcription mediated by NFAT",
+        "answerability": 0.9043341279029846,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 0.8113439679145813,
+            "f1": 0.4
+          },
+          "Transcription": {
+            "bertscore": 0.8097919225692749,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the name of the effector CD4+ T helper cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2",
+        "answerability": 0.9048291444778442,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.7733945250511169,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are T helper 2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3872706890106201,
+        "ground_truth": {
+          "effector CD4": {
+            "bertscore": 0.6713601350784302,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is transcription mediated by NFAT highly inducible in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD4+ T helper 2",
+        "answerability": 0.8421311378479004,
+        "ground_truth": {
+          "T helper 2 (Th2) cells": {
+            "bertscore": 0.7461511492729187,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    },
+    "What is transcription mediated by NFAT not inducible in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25665032863616943,
+        "ground_truth": {
+          "Th1 cells": {
+            "bertscore": 0.6154470443725586,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

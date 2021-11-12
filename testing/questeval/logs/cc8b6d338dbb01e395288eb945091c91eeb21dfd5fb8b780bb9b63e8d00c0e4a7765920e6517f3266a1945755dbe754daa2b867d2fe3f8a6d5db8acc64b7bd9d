@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "The active compounds did not inhibit IL-1-induced production of IL-2 IL-10 and IFN-gamma but inhibited the production of IL-2 in a dose-dependent manner.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the active compounds not inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The active compounds",
+        "IL-1-induced production",
+        "IL-2 IL-10 and IFN-gamma",
+        "the production",
+        "a dose-dependent manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the IL-10 and IFN-gamma inhibit?",
+          "What did the active compounds not inhibit?",
+          "What did the active compounds not inhibit?",
+          "What did the active compounds inhibit?",
+          "How did the active compounds inhibit IL-1-induced production of IL-10?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was induced by IL-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 IL-10 and IFN-gamma",
+        "answerability": 0.7706422805786133,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.8245288133621216,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did the dose-response curve of IL-1-induced IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.035009682178497314,
+        "ground_truth": {
+          "the parental cell line": {
+            "bertscore": 0.6756084561347961,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was shifted in both potency and efficacy?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00934302806854248,
+        "ground_truth": {
+          "the dose-response curve": {
+            "bertscore": 0.6343135833740234,
+            "f1": 0
+          },
+          "efficacy": {
+            "bertscore": 0.7147750854492188,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was shifted in both potency and efficacy compared to the parental cell line": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06786090135574341,
+        "ground_truth": {
+          "IL-1-induced IL-2 production": {
+            "bertscore": 0.6083069443702698,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the dose-response curve of IL-1-induced IL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15606963634490967,
+        "ground_truth": {
+          "both potency": {
+            "bertscore": 0.7208251953125,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

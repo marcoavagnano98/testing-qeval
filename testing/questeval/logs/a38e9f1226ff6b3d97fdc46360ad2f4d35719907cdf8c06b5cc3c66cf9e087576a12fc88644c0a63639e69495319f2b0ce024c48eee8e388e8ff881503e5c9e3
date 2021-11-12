@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "In the human T lymphoblastic tumor cell line Molt4 c-myc mRNA expression and protein expression are down-regulated after exposure to dimethyl sulfoxide to phorbol myristate acetate or to the calcium ionophore A23187 which raises the intracellular calcium concentration. IL-3 is controlled by the nuclear factor of activated T cells (NFAT) family of transcription factors and is expressed at all stages of T cell development.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "phorbol myristate",
+        "A23187",
+        "IL-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is acetate used to make IL-3?",
+          "What calcium ionophore raises intracellular calcium concentration?",
+          "What is controlled by the nuclear factor of activated T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the human T lymphoblastic tumor cell line",
+        "Molt4 c-myc mRNA expression and protein expression",
+        "exposure",
+        "myristate acetate",
+        "the calcium ionophore A23187",
+        "the intracellular calcium concentration",
+        "IL-3",
+        "the nuclear factor",
+        "activated T cells (NFAT) family",
+        "transcription factors",
+        "all stages",
+        "T cell development"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is Molt4 c-myc in?",
+          "What is down-regulated after exposure to dimethyl sulfoxide?",
+          "What is the cause of the down-regulation of mRNA expression and protein expression?",
+          "What is the phorbol substance in the human T lymphoblastic tumor cell line?",
+          "What raises the intracellular calcium concentration?",
+          "What does phorbol myristate acetate raise?",
+          "What is controlled by the nuclear factor of activated T cells?",
+          "What is IL-3 controlled by?",
+          "What transcription factors control IL-3?",
+          "What is IL-3 controlled by?",
+          "At what stages of T cell development is IL-3 expressed?",
+          "What is IL-3 expressed at all stages of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells express IL-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25694340467453003,
+        "ground_truth": {
+          "activated T": {
+            "bertscore": 0.6825122833251953,
+            "f1": 0
+          },
+          "natural killer": {
+            "bertscore": 0.7221460938453674,
+            "f1": 0
+          },
+          "cells": {
+            "bertscore": 0.6847147941589355,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is tightly controlled in a lineage-specific manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01221233606338501,
+        "ground_truth": {
+          "a function": {
+            "bertscore": 0.6348447799682617,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of manner is IL-3 controlled?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor of activated T cells",
+        "answerability": 0.978361964225769,
+        "ground_truth": {
+          "a lineage-specific": {
+            "bertscore": 0.6629444360733032,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How is IL-3 expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "at all stages of T cell development",
+        "answerability": 0.9420011639595032,
+        "ground_truth": {
+          "a stimulation-dependent manner": {
+            "bertscore": 0.6734515428543091,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

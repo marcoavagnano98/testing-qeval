@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "Nuclear factor of activated T cells and AP-1 are insufficient for IL-2 promoter activation: requirement of CD28 up-regulation of RE/AP.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD28",
+        "RE",
+        "AP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for IL-2 promoter activation?",
+          "What is required for IL-2 promoter activation?",
+          "What is required for IL-2 promoter activation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Nuclear factor",
+        "activated T cells",
+        "IL-2 promoter activation",
+        "requirement",
+        "CD28 up-regulation",
+        "RE/AP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is not sufficient for IL-2 promoter activation?",
+          "What is the only factor that is required for IL-2 promoter activation?",
+          "What is required of CD28 up-regulation of RE/AP?",
+          "What is the reason for the lack of CD28 up-regulation?",
+          "What is required for IL-2 promoter activation?",
+          "What is required for IL-2 promoter activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for CD28 up-regulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.503035843372345,
+        "ground_truth": {
+          "RE": {
+            "bertscore": 0.6601908802986145,
+            "f1": 0
+          },
+          "RE/AP": {
+            "bertscore": 0.6811254620552063,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What promoter is required for IL-2 activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28 up-regulation of RE/AP",
+        "answerability": 0.5609688758850098,
+        "ground_truth": {
+          "AP": {
+            "bertscore": 0.6800546050071716,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not sufficient for IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Nuclear factor of activated T cells and AP-1",
+        "answerability": 0.9668709635734558,
+        "ground_truth": {
+          "Nuclear factor": {
+            "bertscore": 0.7875264883041382,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the only factor that is required for IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2759719491004944,
+        "ground_truth": {
+          "activated T cells": {
+            "bertscore": 0.6327275633811951,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for CD28 up-regulation of RE/AP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Nuclear factor of activated T cells and AP-1 are insufficient for IL-2 promote",
+        "answerability": 0.9515985250473022,
+        "ground_truth": {
+          "IL-2 promoter activation": {
+            "bertscore": 0.7825770974159241,
+            "f1": 0.125
+          }
+        }
+      }
+    },
+    "What is required for IL-2 promoter activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28 up-regulation of RE/AP",
+        "answerability": 0.9321621060371399,
+        "ground_truth": {
+          "CD28 up-regulation": {
+            "bertscore": 0.8973535299301147,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

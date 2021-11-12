@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Mutations in the CRE site that result in loss of CREB binding also lead to loss of functional activity of the bcl-2 promoter in transient-transfection assays.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Mutations",
+        "the CRE site",
+        "loss",
+        "loss",
+        "functional activity",
+        "the bcl-2 promoter",
+        "transient-transfection assays"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can lead to loss of CREB binding?",
+          "What site is mutated that results in loss of CREB binding?",
+          "What can mutations in the CRE site lead to?",
+          "What can mutations in the CRE site lead to?",
+          "What does mutations in the CRE site lead to?",
+          "What does loss of CREB binding lead to?",
+          "What is the most common method of testing for CREB binding?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can lead to loss of CREB binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Mutations in the CRE site",
+        "answerability": 0.999148964881897,
+        "ground_truth": {
+          "Mutations": {
+            "bertscore": 0.8049262762069702,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What site is mutated that results in loss of CREB binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CRE site",
+        "answerability": 0.9898625612258911,
+        "ground_truth": {
+          "the CRE site": {
+            "bertscore": 0.9239179491996765,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can mutations of the CRE site lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "loss of CREB binding",
+        "answerability": 0.9623874425888062,
+        "ground_truth": {
+          "loss": {
+            "bertscore": 0.7015990614891052,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does mutations of the CRE site lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "loss of CREB binding",
+        "answerability": 0.9547724723815918,
+        "ground_truth": {
+          "functional activity": {
+            "bertscore": 0.7317059636116028,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does loss of CREB binding lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48538708686828613,
+        "ground_truth": {
+          "the bcl-2 promoter": {
+            "bertscore": 0.6411375403404236,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common method of testing for CREB binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0015807151794433594,
+        "ground_truth": {
+          "transient-transfection assays": {
+            "bertscore": 0.6609029173851013,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

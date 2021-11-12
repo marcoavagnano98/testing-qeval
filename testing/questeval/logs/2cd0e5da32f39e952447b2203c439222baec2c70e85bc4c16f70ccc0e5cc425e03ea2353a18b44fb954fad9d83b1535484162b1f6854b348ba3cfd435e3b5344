@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "subcutaneous MX-1 tumors or SKOV-3 tumors resulted in a decreased number of blood vessels as determined by CD31 and CD105 staining with decreases of 35% and 43% in MX-1 tumors and 60% and 75% in SKOV-3 tumors respectively.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD31",
+        "CD105",
+        "35%",
+        "43%",
+        "MX-1",
+        "60% and 75%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What staining showed a decrease in blood vessels in MX-1 tumors?",
+          "What staining showed a decrease in the number of blood vessels in MX-1 tumor",
+          "What percentage decrease was seen in MX-1 tumors?",
+          "What percentage decrease was seen in MX-1 tumors?",
+          "What type of tumors resulted in a decrease in blood vessels?",
+          "What percentage decreases were seen in SKOV-3 tumors?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "subcutaneous MX-1 tumors",
+        "SKOV-3 tumors",
+        "a decreased number",
+        "blood vessels",
+        "CD31",
+        "CD105",
+        "decreases",
+        "35%",
+        "43%",
+        "MX-1 tumors",
+        "60%",
+        "75%",
+        "SKOV-3 tumors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of tumors resulted in a decrease in blood vessels?",
+          "What is another name for subcutaneous MX-1 tumors?",
+          "What did the staining of blood vessels show?",
+          "What did CD31 and CD105 staining show decreased in?",
+          "What staining showed a decrease in blood vessels in MX-1 tumors?",
+          "What staining showed a decrease in the number of blood vessels in MX-1 tumor",
+          "What was the effect of the staining on the number of blood vessels in MX-1",
+          "What percentage decrease was seen in MX-1 tumors?",
+          "What percentage decrease was seen in MX-1 tumors?",
+          "What type of tumors resulted in a decrease in blood vessels?",
+          "What percentage of blood vessels decreased in SKOV-3 tumors?",
+          "What percentage of blood vessels decreased in SKOV-3 tumors?",
+          "What is another name for subcutaneous MX-1 tumors?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed a decreased number of blood vessels in the treatment group versus the controls?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD31 and CD105 staining",
+        "answerability": 0.5958603620529175,
+        "ground_truth": {
+          "Immunohistochemical staining": {
+            "bertscore": 0.7065296769142151,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What was immunohistochemically stained?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02878391742706299,
+        "ground_truth": {
+          "the tumors": {
+            "bertscore": 0.673764169216156,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did immunohistochemical staining of the tumors show?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.045813798904418945,
+        "ground_truth": {
+          "a decreased number": {
+            "bertscore": 0.7029127478599548,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did immunohistochemical staining of the tumors show decreased in the treatment group": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30871570110321045,
+        "ground_truth": {
+          "blood vessels": {
+            "bertscore": 0.6605880260467529,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What group had a decreased number of blood vessels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "subcutaneous MX-1 tumors or SKOV-3 tumors",
+        "answerability": 0.8922792673110962,
+        "ground_truth": {
+          "the treatment group": {
+            "bertscore": 0.6353526711463928,
+            "f1": 0
+          },
+          "the controls": {
+            "bertscore": 0.6069051027297974,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Administration of the antisense oligonucleotide blocked the production of human interleukin 1beta and interleukin 8 by intestinal epithelial cells and inhibited neutrophil influx into the E. histolytica-infected intestinal xenografts. Consistent with reduced levels of Oct-1 DNA binding activity in the Rb-transformed cell lines interleukin 8 expression is higher in these cell lines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1beta",
+        "8",
+        "neutrophil",
+        "E.",
+        "Rb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was blocked by antisense oligonucleotide?",
+          "What is the highest expression of interleukin in Rb-transformed cells?",
+          "What influx was inhibited in E. histolytica-infected intestinal",
+          "What type of infection is a result of the antisense oligonucleo",
+          "What type of cells are more likely to express interleukin 8?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Administration",
+        "the production",
+        "human interleukin",
+        "intestinal epithelial cells",
+        "inhibited neutrophil",
+        "the E. histolytica-infected intestinal xenografts",
+        "reduced levels",
+        "DNA binding activity",
+        "the Rb-transformed cell lines",
+        "8 expression",
+        "these cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blockade the production of human interleukin 1beta and interle",
+          "What did the antisense oligonucleotide block?",
+          "What did the antisense oligonucleotide block the production of?",
+          "What cells produced interleukin 1beta?",
+          "What effect did the antisense oligonucleotide have on neutrophil",
+          "What did the antisense oligonucleotide block neutrophil influx",
+          "What is the effect of the antisense oligonucleotide on the",
+          "What is the effect of the antisense oligonucleotide on intestinal",
+          "What cells have lower levels of Oct-1 DNA binding activity?",
+          "What is higher in the Rb-transformed cell lines?",
+          "What cells are more likely to express interleukin 8 than the Rb-transformed"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transformed cell line has higher levels of interleukin 8?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rb",
+        "answerability": 0.7352478504180908,
+        "ground_truth": {
+          "Rb": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of the Oct-1 binding activity on interleukin 8 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reduced levels",
+        "answerability": 0.9186648726463318,
+        "ground_truth": {
+          "reduced levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is higher in the Rb-transformed cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin 8 expression",
+        "answerability": 0.7397105693817139,
+        "ground_truth": {
+          "DNA binding activity": {
+            "bertscore": 0.7437446713447571,
+            "f1": 0
+          },
+          "8 expression": {
+            "bertscore": 0.7463057637214661,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the highest level of interleukin 8 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1141478419303894,
+        "ground_truth": {
+          "the Rb-transformed cell lines": {
+            "bertscore": 0.6143385171890259,
+            "f1": 0
+          },
+          "these cell lines": {
+            "bertscore": 0.6779361367225647,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Induction of HIV by C. neoformans was enhanced by anti-capsular antibody while induction by both organisms was inhibited by anti-TNF-alpha antibody.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Induction",
+        "HIV",
+        "C. neoformans",
+        "anti-capsular antibody",
+        "induction",
+        "both organisms",
+        "anti-TNF-alpha antibody"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inhibited by anti-TNF-alpha antibody?",
+          "What was inhibited by anti-TNF-alpha antibody?",
+          "What organism inhibited the induction of HIV?",
+          "What enhanced the induction of HIV by C. neoformans?",
+          "What was inhibited by anti-TNF-alpha antibody?",
+          "What inhibited the induction of HIV?",
+          "What inhibited the induction of HIV by C. neoformans?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was inhibited by anti-TNF-alpha antibody?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.229780375957489,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.7021175026893616,
+            "f1": 0
+          },
+          "HIV": {
+            "bertscore": 0.6726183891296387,
+            "f1": 0
+          },
+          "induction": {
+            "bertscore": 0.722252368927002,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What organism inhibited the induction of HIV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1101800799369812,
+        "ground_truth": {
+          "C. neoformans": {
+            "bertscore": 0.6195579767227173,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enhanced the induction of HIV by C. neoformans?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-capsular antibody",
+        "answerability": 0.9923105239868164,
+        "ground_truth": {
+          "anti-capsular antibody": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the induction of HIV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45938658714294434,
+        "ground_truth": {
+          "both organisms": {
+            "bertscore": 0.6782581210136414,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the induction of HIV by C. neoformans?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5061846971511841,
+        "ground_truth": {
+          "anti-TNF-alpha antibody": {
+            "bertscore": 0.6136420369148254,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

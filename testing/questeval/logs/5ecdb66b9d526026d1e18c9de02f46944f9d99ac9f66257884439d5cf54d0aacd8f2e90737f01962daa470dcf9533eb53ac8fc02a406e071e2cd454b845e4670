@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "The role of tumor cell/host TGF-beta interactions in the progression of prostate disease.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TGF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of tumor cell/host interactions in the progression of prostate disease?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The role",
+        "tumor cell/host TGF-beta interactions",
+        "the progression",
+        "prostate disease"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of TGF-beta interactions in the progression of prostate disease?",
+          "What is the role of TGF-beta in the progression of prostate disease?",
+          "What is the role of TGF-beta interactions in prostate disease?",
+          "What is the role of TGF-beta interactions in the progression of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many pathways are involved in the progression of hormone-refractory prostate disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008780360221862793,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.7294577360153198,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is thought to contribute to prostate disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor cell/host TGF-beta interactions",
+        "answerability": 0.9253836870193481,
+        "ground_truth": {
+          "Crosstalk": {
+            "bertscore": 0.638999879360199,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two pathways that cause prostate cancer to develop?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34796226024627686,
+        "ground_truth": {
+          "these two pathways": {
+            "bertscore": 0.6430949568748474,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the crosstalk between the two pathways thought to contribute to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.036481618881225586,
+        "ground_truth": {
+          "progression and hormone-refractory prostate disease": {
+            "bertscore": 0.6091662049293518,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

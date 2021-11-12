@@ -1,0 +1,158 @@
+{
+  "type": "hyp",
+  "text": "In HeLa cells stably transfected with the HIV-1 tat gene (HeLa-tat cells) expression of the Tat protein enhanced both TNF-induced activation of NF-kappa B and TNF-mediated cytotoxicity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HeLa",
+        "HIV-1",
+        "Tat",
+        "TNF",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were stably transfected with the HIV-1 tat gene",
+          "What is the tat gene?",
+          "What protein was found to enhance TNF-induced activation of NF-kappa",
+          "What protein induced cytotoxicity in HeLa cells?",
+          "What protein induced cytotoxicity in HeLa cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HeLa cells",
+        "(HeLa-tat cells",
+        "the Tat protein",
+        "both TNF-induced activation",
+        "NF-kappa B",
+        "TNF-mediated cytotoxicity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another name for stably transfected cells?",
+          "What is the name of the cells that were stably transfected with the HIV-1",
+          "What protein enhanced TNF-induced activation of NF-kappa B?",
+          "What did the Tat protein enhance in HeLa cells?",
+          "What protein was activated by TNF-induced activation?",
+          "What did the Tat protein enhance in HeLa cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells were stably transfected with the HIV-1 tat gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HeLa cells",
+        "answerability": 0.9858769178390503,
+        "ground_truth": {
+          "HeLa": {
+            "bertscore": 0.8576240539550781,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the tat gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV-1",
+        "answerability": 0.919330358505249,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was found to enhance TNF-induced activation of NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tat",
+        "answerability": 0.9863625168800354,
+        "ground_truth": {
+          "Tat": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein induced cytotoxicity in HeLa cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tat",
+        "answerability": 0.7464965581893921,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7573857307434082,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another name for stably transfected cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HeLa-tat cells",
+        "answerability": 0.9343534708023071,
+        "ground_truth": {
+          "HeLa cells": {
+            "bertscore": 0.9214594960212708,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the cells that were stably transfected with the HIV-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HeLa cells",
+        "answerability": 0.9813904166221619,
+        "ground_truth": {
+          "(HeLa-tat cells": {
+            "bertscore": 0.8587947487831116,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein enhanced TNF-induced activation of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tat",
+        "answerability": 0.9964419007301331,
+        "ground_truth": {
+          "the Tat protein": {
+            "bertscore": 0.6822255253791809,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the Tat protein enhance in HeLa cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-induced activation of NF-kappa B",
+        "answerability": 0.9424127340316772,
+        "ground_truth": {
+          "both TNF-induced activation": {
+            "bertscore": 0.8307041525840759,
+            "f1": 0.5
+          },
+          "TNF-mediated cytotoxicity": {
+            "bertscore": 0.7965584397315979,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was activated by TNF-induced activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.9068239331245422,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

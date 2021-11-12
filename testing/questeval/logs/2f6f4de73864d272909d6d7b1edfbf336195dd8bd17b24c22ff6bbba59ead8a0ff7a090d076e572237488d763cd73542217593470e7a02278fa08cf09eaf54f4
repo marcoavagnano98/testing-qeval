@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "MAZ a zinc finger protein binds to c-MYC and C2 gene sequences regulating transcriptional initiation and termination.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a zinc finger protein binds",
+        "c-MYC and C2 gene sequences",
+        "transcriptional initiation",
+        "termination"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is MAZ?",
+          "What does MAZ bind to?",
+          "What does MAZ regulate?",
+          "What is the main function of MAZ?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a zinc finger protein",
+        "answerability": 0.9831762909889221,
+        "ground_truth": {
+          "a zinc finger protein binds": {
+            "bertscore": 0.8909491896629333,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does MAZ bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-MYC and C2 gene sequences",
+        "answerability": 0.9922248125076294,
+        "ground_truth": {
+          "c-MYC and C2 gene sequences": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MAZ regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional initiation and termination",
+        "answerability": 0.9988940954208374,
+        "ground_truth": {
+          "transcriptional initiation": {
+            "bertscore": 0.9206980466842651,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the main function of MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating transcriptional initiation and termination",
+        "answerability": 0.9836008548736572,
+        "ground_truth": {
+          "termination": {
+            "bertscore": 0.763026773929596,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

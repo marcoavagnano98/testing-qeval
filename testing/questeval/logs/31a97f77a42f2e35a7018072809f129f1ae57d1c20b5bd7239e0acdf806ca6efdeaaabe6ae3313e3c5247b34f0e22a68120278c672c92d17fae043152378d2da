@@ -1,0 +1,112 @@
+{
+  "type": "ref",
+  "text": "In Northern blot analysis a single transcript of approximately 5 kb was highly expressed in spleen and peripheral blood lymphocyte.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Northern blot",
+        "5 kb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What method was used to analyze the spleen and peripheral blood lymphocytes?",
+          "How much of a single transcript was found in the spleen and peripheral blood lymph"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Northern blot",
+        "a single transcript",
+        "approximately 5 kb",
+        "spleen and peripheral blood lymphocyte"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What method was used to analyze the spleen and peripheral blood lymphocytes?",
+          "What was highly expressed in spleen and peripheral blood lymphocytes in Northern blo",
+          "How much of the spleen and peripheral blood lymphocytes were expressed in Northern",
+          "Where was the single transcript of approximately 5 kb highly expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the largest amount of the transcript in the pancreas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05290275812149048,
+        "ground_truth": {
+          "2.5-kb": {
+            "bertscore": 0.6513990759849548,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What method revealed that a 2.5-kb transcript is predominantly expressed in the pancrea": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Northern blot analysis",
+        "answerability": 0.7039014101028442,
+        "ground_truth": {
+          "Northern blot analysis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "reverse transcription-polymerase chain reaction analysis": {
+            "bertscore": 0.7435840964317322,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the most expressed transcript in the pancreas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.058180928230285645,
+        "ground_truth": {
+          "a 2.5-kb transcript": {
+            "bertscore": 0.631859302520752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most expressed part of the human body?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spleen",
+        "answerability": 0.8923138380050659,
+        "ground_truth": {
+          "pancreas": {
+            "bertscore": 0.7763015627861023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is present in other tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01299893856048584,
+        "ground_truth": {
+          "low levels": {
+            "bertscore": 0.7166110277175903,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is the 2.5-kb transcript found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008905529975891113,
+        "ground_truth": {
+          "other tissues": {
+            "bertscore": 0.6711686253547668,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

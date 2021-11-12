@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Overexpression confers an oncogenic potential on the eph gene in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way does overexpression confer an oncogenic potential on the eph gene"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "an oncogenic potential",
+        "the eph gene",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of the oncogenic potential of the eph gene?",
+          "What does overexpression confer on the eph gene in vivo?",
+          "What gene does overexpression confer an oncogenic potential on?",
+          "In what way does overexpression confer an oncogenic potential on the eph gene"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of the oncogenic potential of the eph gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression",
+        "answerability": 0.9957562685012817,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does overexpression confer upon the eph gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oncogenic potential",
+        "answerability": 0.9463930130004883,
+        "ground_truth": {
+          "an oncogenic potential": {
+            "bertscore": 0.9284843802452087,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene has an oncogenic potential?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eph",
+        "answerability": 0.8450228571891785,
+        "ground_truth": {
+          "the eph gene": {
+            "bertscore": 0.7850849628448486,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

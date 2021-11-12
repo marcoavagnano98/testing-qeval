@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "An E2F-binding site mediates the activation of the proliferative isoform of 6-phosphofructo-2-kinase by phosphatidylinositol 3-kinase.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6-phosphofructo-2-kinase",
+        "phosphatidylinositol 3-kinase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What isoform is activated by phosphatidylinositol",
+          "What is the name of the enzyme that activates the proliferative isoform of"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An E2F-binding site",
+        "the activation",
+        "the proliferative isoform",
+        "phosphatidylinositol"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mediates the activation of the proliferative isoform of 6-phosphof",
+          "What does an E2F-binding site mediate?",
+          "What does the E2F-binding site mediate?",
+          "What is the name of the enzyme that activates the proliferative isoform of"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What isoform is activated by phosphatidylinositol": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3330960273742676,
+        "ground_truth": {
+          "6-phosphofructo-2-kinase/fructose-26-bisphosphatase": {
+            "bertscore": 0.5394378304481506,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mediates the activation of the proliferative isoform of 6-phosphof": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4693000912666321,
+        "ground_truth": {
+          "An E2F-binding site": {
+            "bertscore": 0.6225718259811401,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does an E2F-binding site mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activation of the proliferative isoform of 6-phosphofructo-2",
+        "answerability": 0.9713655710220337,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6610870361328125,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What does an E2F-binding site mediate the activation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proliferative isoform of 6-phosphofructo-2-kinase",
+        "answerability": 0.8657029867172241,
+        "ground_truth": {
+          "the proliferative isoform": {
+            "bertscore": 0.7552279829978943,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

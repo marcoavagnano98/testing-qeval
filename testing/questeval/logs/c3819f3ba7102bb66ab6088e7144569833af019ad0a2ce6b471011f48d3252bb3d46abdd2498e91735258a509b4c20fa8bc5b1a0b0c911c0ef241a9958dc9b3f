@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "The B3 factor is detectable in a region of the cytosol only when cells are HIV1-infected.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The B3 factor",
+        "a region",
+        "the cytosol",
+        "cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is detectable in a region of the cytosol when cells are HIV1-",
+          "In what part of the cytosol is the B3 factor detectable?",
+          "Where is the B3 factor detectable?",
+          "What is the B3 factor detectable in a region of the cytosol when HIV"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was easily detectable in infected monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01431572437286377,
+        "ground_truth": {
+          "The B3 factor": {
+            "bertscore": 0.6560930013656616,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the B3 factor detected in uninfected cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.017577648162841797,
+        "ground_truth": {
+          "nuclei": {
+            "bertscore": 0.6970388293266296,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the B3 factor detected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in a region of the cytosol",
+        "answerability": 0.9061210751533508,
+        "ground_truth": {
+          "uninfected cells": {
+            "bertscore": 0.6524638533592224,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the B3 factor easily detectable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4482056498527527,
+        "ground_truth": {
+          "infected monocytes": {
+            "bertscore": 0.6790115833282471,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "These data may have implications for the stringent control of IL-4 expression in T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These data",
+        "implications",
+        "the stringent control",
+        "IL-4 expression",
+        "T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may have implications for the stringent control of IL-4 expression in T cells?",
+          "What may the data from the study have for the strict control of IL-4 expression in T",
+          "What may these data have implications for?",
+          "What may these data have implications for the stringent control of?",
+          "What type of cells may be affected by the IL-4 gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What may have implications for the stringent control of IL-4 expression in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These data",
+        "answerability": 0.999164879322052,
+        "ground_truth": {
+          "These findings": {
+            "bertscore": 0.8757209777832031,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What may the findings have for the strict control of IL-4 expression in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "implications",
+        "answerability": 0.9999063611030579,
+        "ground_truth": {
+          "implications": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What may the findings have implications for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stringent control of IL-4 expression in T cells",
+        "answerability": 0.9795924425125122,
+        "ground_truth": {
+          "the stringent control": {
+            "bertscore": 0.7483397126197815,
+            "f1": 0.4
+          },
+          "IL-4 expression": {
+            "bertscore": 0.85105299949646,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What type of cells are IL-4 expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.8957228660583496,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

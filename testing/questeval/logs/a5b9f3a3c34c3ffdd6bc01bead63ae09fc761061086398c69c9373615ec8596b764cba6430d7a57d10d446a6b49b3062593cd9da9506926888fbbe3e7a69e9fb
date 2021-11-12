@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "Collectively these results indicate that Notch activation could stimulate beta-catenin and NF-kappaB signaling through AKT activation in glioma cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Notch",
+        "NF-kappaB",
+        "AKT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What could stimulate beta-catenin and NF-kappaB signaling?",
+          "What signaling pathway could Notch activation stimulate?",
+          "What is the name of the activation mechanism that could stimulate beta-catenin and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these results",
+        "Notch activation",
+        "beta-catenin",
+        "NF-kappaB",
+        "AKT activation",
+        "glioma cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that Notch activation could stimulate beta-catenin and NF-k",
+          "What could stimulate beta-catenin and NF-kappaB signaling?",
+          "What protein could Notch activation stimulate?",
+          "What signaling pathway could Notch activation stimulate?",
+          "What could stimulate beta-catenin and NF-kappaB signaling?",
+          "What type of cells could Notch activation stimulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What could stimulate beta-catenin and NF-kappaB signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Notch activation",
+        "answerability": 0.9967968463897705,
+        "ground_truth": {
+          "Notch": {
+            "bertscore": 0.8171108961105347,
+            "f1": 0.6666666666666666
+          },
+          "Notch activation": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "AKT activation": {
+            "bertscore": 0.8638307452201843,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What signaling pathway could Notch activation stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta-catenin and NF-kappaB",
+        "answerability": 0.9869067072868347,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.7346169948577881,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the activation mechanism that could stimulate beta-catenin and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Notch",
+        "answerability": 0.9936297535896301,
+        "ground_truth": {
+          "AKT": {
+            "bertscore": 0.7833713293075562,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that Notch activation could stimulate beta-catenin and NF-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Collectively these results",
+        "answerability": 0.9164508581161499,
+        "ground_truth": {
+          "these results": {
+            "bertscore": 0.8713411688804626,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What protein could Notch activation stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta-catenin",
+        "answerability": 0.93912273645401,
+        "ground_truth": {
+          "beta-catenin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells could Notch activation stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glioma cells",
+        "answerability": 0.971298336982727,
+        "ground_truth": {
+          "glioma cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

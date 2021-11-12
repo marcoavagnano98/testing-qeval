@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Translocation of NF-kappa B p50/RelA was also observed following stimulation of CR1 or CR3 of uninfected peripheral blood monocytes from HIV-seronegative donors.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Translocation",
+        "NF-kappa B p50/RelA",
+        "stimulation",
+        "CR1",
+        "CR3",
+        "uninfected peripheral blood monocytes",
+        "HIV-seronegative donors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was observed after stimulation of CR1 or CR3?",
+          "What protein was transferred after stimulation of CR1 or CR3?",
+          "What was the first step in the translocation of NF-kappa B?",
+          "What is the name of the NF-kappa B p50/Rel",
+          "What is the name of the NF-kappa B p50/Rel",
+          "What was translocated after stimulation of CR1 or CR3?",
+          "What type of donors were CR1 or CR3 stimulated from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was observed after stimulation of CR1 or CR3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Translocation of NF-kappa B p50/RelA",
+        "answerability": 0.9698565602302551,
+        "ground_truth": {
+          "Translocation": {
+            "bertscore": 0.7210392355918884,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What protein was transferred after stimulation of CR1 or CR3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B p50/RelA",
+        "answerability": 0.9643734097480774,
+        "ground_truth": {
+          "NF-kappa B p50/p65": {
+            "bertscore": 0.9173106551170349,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the first step in the translocation of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulation of CR1 or CR3",
+        "answerability": 0.8148980736732483,
+        "ground_truth": {
+          "stimulation": {
+            "bertscore": 0.7541185021400452,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the name of the NF-kappa B protein that is activated by": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p50/RelA",
+        "answerability": 0.6157841682434082,
+        "ground_truth": {
+          "CR1": {
+            "bertscore": 0.7507186532020569,
+            "f1": 0
+          },
+          "CR3": {
+            "bertscore": 0.7587389349937439,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were stimulated with NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29280591011047363,
+        "ground_truth": {
+          "uninfected peripheral blood monocytes": {
+            "bertscore": 0.6357821822166443,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of donors were the NF-kappa B p50/p65": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15583497285842896,
+        "ground_truth": {
+          "HIV-seronegative donors": {
+            "bertscore": 0.6672908663749695,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

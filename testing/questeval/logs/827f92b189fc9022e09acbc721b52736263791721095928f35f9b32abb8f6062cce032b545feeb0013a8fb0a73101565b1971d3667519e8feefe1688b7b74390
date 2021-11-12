@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Rofecoxib was used for eight acute haemorrhage four target joints seven cases of synovitis and 12 episodes of pain.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rofecoxib",
+        "eight",
+        "four",
+        "seven",
+        "12"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used for eight acute haemorrhage?",
+          "How many acute haemorrhages were treated with rofecoxib",
+          "How many cases of synovitis were treated with rofecoxib?",
+          "How many cases of synovitis were treated with rofecoxib?",
+          "How many episodes of pain were treated with rofecoxib?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Rofecoxib",
+        "eight acute haemorrhage four target joints",
+        "seven cases",
+        "synovitis",
+        "12 episodes",
+        "pain"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used for eight acute haemorrhage?",
+          "How many cases of synovitis were treated with rofecoxib?",
+          "How many cases of synovitis were treated with rofecoxib?",
+          "What was the main cause of death for the patients?",
+          "How many episodes of pain were there?",
+          "What was the main side effect of rofecoxib?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was used for eight cases of acute haemarthrosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38138002157211304,
+        "ground_truth": {
+          "Rofecoxib": {
+            "bertscore": 0.6178188920021057,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many cases of acute haemarthrosis were treated with rofec": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eight",
+        "answerability": 0.9038311243057251,
+        "ground_truth": {
+          "eight": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How many cases of synovitis were treated with rofecoxib?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "seven",
+        "answerability": 0.9983818531036377,
+        "ground_truth": {
+          "four": {
+            "bertscore": 0.9431324005126953,
+            "f1": 0
+          },
+          "seven": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "eight acute haemarthrosis four target joints": {
+            "bertscore": 0.6506723761558533,
+            "f1": 0
+          },
+          "seven cases": {
+            "bertscore": 0.8368555307388306,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "How many episodes of pain were treated with rofecoxib?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "12",
+        "answerability": 0.9928341507911682,
+        "ground_truth": {
+          "12": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the main side effect of rofecoxib?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12774616479873657,
+        "ground_truth": {
+          "synovitis": {
+            "bertscore": 0.6597280502319336,
+            "f1": 0
+          },
+          "pain": {
+            "bertscore": 0.6961453557014465,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many episodes of pain did Rofecoxib cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "12",
+        "answerability": 0.9899517297744751,
+        "ground_truth": {
+          "12 episodes": {
+            "bertscore": 0.6972236633300781,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

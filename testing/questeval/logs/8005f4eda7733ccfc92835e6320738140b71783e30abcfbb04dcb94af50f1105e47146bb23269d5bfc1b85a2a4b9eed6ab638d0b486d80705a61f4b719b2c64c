@@ -1,0 +1,82 @@
+{
+  "type": "ref",
+  "text": "We also speculate that this synchronizes them into a temporal highly chemosensitive state and is the underlying reason why adjuvant chemotherapy works particularly well for that patient category.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "them",
+        "a temporal highly chemosensitive state",
+        "the underlying reason",
+        "adjuvant chemotherapy",
+        "that patient category"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the reason why adjuvant chemotherapy works well for this patient category?",
+          "What is the chemosensitive state of the swine flu?",
+          "What does the synchronization of the chemosensitive cells in the rat brain cause",
+          "What is the reason why adjuvant chemotherapy works well for this patient category?",
+          "What is the most effective treatment for a patient with a high chemosensitivity?",
+          "What is adjuvant chemotherapy particularly well for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main reason adjuvant chemotherapy works well for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "temporal highly chemosensitive",
+        "answerability": 0.8955473303794861,
+        "ground_truth": {
+          "node-positive breast cancer patients": {
+            "bertscore": 0.6847160458564758,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the reason adjuvant chemotherapy works well for breast cancer patients?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "synchronizes them into a temporal highly chemosensitive state",
+        "answerability": 0.7917715907096863,
+        "ground_truth": {
+          "a major underlying reason": {
+            "bertscore": 0.631817638874054,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is particularly effective for node-positive breast cancer patients?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adjuvant chemotherapy",
+        "answerability": 0.9303461909294128,
+        "ground_truth": {
+          "adjuvant chemotherapy": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Who does adjuvant chemotherapy work best for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.717526912689209,
+        "ground_truth": {
+          "those patients": {
+            "bertscore": 0.6513345241546631,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

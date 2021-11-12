@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "When both mutants were used in combination delta CaM-AI inhibited the induction of the IL-2 promoter by delta CaM-AI.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CaM-AI",
+        "IL-2",
+        "CaM-AI"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the induction of the IL-2 promoter?",
+          "What promoter did delta CaM-AI inhibit?",
+          "What inhibited the induction of the IL-2 promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "both mutants",
+        "combination delta CaM-AI",
+        "the induction",
+        "the IL-2 promoter",
+        "delta CaM-AI"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mutants were used in combination?",
+          "What inhibited the induction of the IL-2 promoter?",
+          "What did the combination of delta CaM-AI inhibit?",
+          "What did delta CaM-AI inhibit?",
+          "What inhibited the induction of the IL-2 promoter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter did delta CaM-AI inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9869173765182495,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the induction of the IL-2 promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "delta CaM-AI",
+        "answerability": 0.9141180515289307,
+        "ground_truth": {
+          "CaM-AI": {
+            "bertscore": 0.9347370266914368,
+            "f1": 0.6666666666666666
+          },
+          "delta CaM-AI": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What mutants were used in combination?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both mutants",
+        "answerability": 0.5268844962120056,
+        "ground_truth": {
+          "both mutants": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the induction of the IL-2 promoter by delta CaM-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "both mutants",
+        "answerability": 0.8983291983604431,
+        "ground_truth": {
+          "combination gamma": {
+            "bertscore": 0.7176996469497681,
+            "f1": 0
+          },
+          "B*CaM-K": {
+            "bertscore": 0.6383119225502014,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did gamma B*CaM-K inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010065019130706787,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.697335422039032,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did delta CaM-AI inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induction of the IL-2 promoter",
+        "answerability": 0.9649867415428162,
+        "ground_truth": {
+          "the IL-2 promoter": {
+            "bertscore": 0.9166330695152283,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "TLR2 activates the transcription factor NF-kappaB in response to pro-inflammatory mediators such as IL-1beta TNF-alpha and IL-6.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "TNF",
+        "IL-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor does TLR2 activate?",
+          "What transcription factor is activated by TLR2?",
+          "What is the pro-inflammatory mediator that TLR2 activates?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TLR2",
+        "the transcription factor",
+        "NF-kappaB",
+        "response",
+        "pro-inflammatory mediators",
+        "IL-1beta TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activates the transcription factor NF-kappaB?",
+          "What does TLR2 activate?",
+          "What transcription factor does TLR2 activate?",
+          "What does TLR2 activate the transcription factor NF-kappaB in response to",
+          "What does TLR2 activate in response to?",
+          "What is the pro-inflammatory mediator that TLR2 activates?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does TLR2 respond to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pro-inflammatory mediators",
+        "answerability": 0.8465971946716309,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.6486852765083313,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the signaling receptor that responds to LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022805750370025635,
+        "ground_truth": {
+          "TLR2": {
+            "bertscore": 0.6572215557098389,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TLR2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36204421520233154,
+        "ground_truth": {
+          "a signaling receptor": {
+            "bertscore": 0.6617146134376526,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "The Two-Component Regulatory System VicRK is Important to Virulence of Streptococcus equi Subspecies\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "The Two-Component Regulatory System"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is important to Virulence of Streptococcus equi Subspec"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The Two-Component Regulatory System",
+        "VicRK",
+        "Virulence",
+        "Streptococcus equi Subspecies"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is important to Virulence of Streptococcus equi Subspec",
+          "What is important to the virulence of Streptococcus equi Sub",
+          "What is the two-component Regulatory System VicRK important to?",
+          "What is the two component regulatory system important to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is important to Virulence of Streptococcus equi Subspec": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The Two-Component Regulatory System VicRK is Important",
+        "answerability": 0.9146509766578674,
+        "ground_truth": {
+          "The Two-Component Regulatory System": {
+            "bertscore": 0.8546527624130249,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is important to the virulence of Streptococcus equi Sub": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The Two-Component Regulatory System VicRK is Important to the Virulence of",
+        "answerability": 0.908260703086853,
+        "ground_truth": {
+          "VicRK": {
+            "bertscore": 0.667877197265625,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What is the two-component Regulatory System VicRK important to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Virulence of Streptococcus equi Subspecies",
+        "answerability": 0.9969231486320496,
+        "ground_truth": {
+          "Virulence": {
+            "bertscore": 0.7181903123855591,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the two component regulatory system important to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Virulence of Streptococcus equi Subspecies",
+        "answerability": 0.952873706817627,
+        "ground_truth": {
+          "Streptococcus equi Subspecies": {
+            "bertscore": 0.9129467010498047,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

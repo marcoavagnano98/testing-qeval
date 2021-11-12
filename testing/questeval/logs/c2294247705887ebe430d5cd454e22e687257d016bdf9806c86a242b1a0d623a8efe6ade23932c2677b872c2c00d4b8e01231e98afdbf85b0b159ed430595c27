@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Hamsters were followed up at 1 week by treatment with fluconazole of 125125/Cum-OOH or immunhistochemically infected rats.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1 week",
+        "125125"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did it take for hamsters to be treated with fluconazole?",
+          "What was the dose of fluconazole given to hamsters?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Hamsters",
+        "1 week",
+        "treatment",
+        "fluconazole",
+        "125125/Cum-OOH",
+        "immunhistochemically infected rats"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What animals were treated with fluconazole?",
+          "How long did it take for hamsters to be treated with fluconazole?",
+          "What was the first step in the treatment of hamsters?",
+          "What was used to treat hamsters?",
+          "What was the dose of fluconazole given to hamsters?",
+          "What was the other treatment used?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What animals were treated with radiation DMBA + DMBA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022139787673950195,
+        "ground_truth": {
+          "Hamsters": {
+            "bertscore": 0.6471366286277771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fluconazole",
+        "answerability": 0.9255908727645874,
+        "ground_truth": {
+          "either radiation DMBA radiation": {
+            "bertscore": 0.6361944675445557,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters treated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fluconazole",
+        "answerability": 0.985553503036499,
+        "ground_truth": {
+          "DMBA": {
+            "bertscore": 0.7206735014915466,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the other option for hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1596190333366394,
+        "ground_truth": {
+          "no treatment": {
+            "bertscore": 0.7193210124969482,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

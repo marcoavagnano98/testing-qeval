@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Transient transfection assays demonstrated that ARA160 might function as a coactivator for AR-mediated transactivation in human prostate cancer PC-3 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is ARA160 mediated by?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "ARA160",
+        "a coactivator",
+        "AR-mediated transactivation",
+        "human prostate cancer PC-3 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is a coactivator for AR-mediated transactivation in human prostate cancer cells",
+          "What did transient transfection assays demonstrate about ARA160?",
+          "What does ARA160 function as a coactivator for?",
+          "What did ARA160 function as a coactivator for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is ARA160 mediated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03458106517791748,
+        "ground_truth": {
+          "AR": {
+            "bertscore": 0.6996966600418091,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a coactivator for AR-mediated transactivation in human prostate cancer cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ARA160",
+        "answerability": 0.9708712697029114,
+        "ground_truth": {
+          "ARA160": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did transient transfection assays demonstrate about ARA160?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "might function as a coactivator for AR-mediated transactivation in human prostate cancer",
+        "answerability": 0.980474591255188,
+        "ground_truth": {
+          "a coactivator": {
+            "bertscore": 0.6898022294044495,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What does ARA160 function as a coactivator for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR-mediated transactivation",
+        "answerability": 0.7547938227653503,
+        "ground_truth": {
+          "AR-mediated transactivation": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did ARA160 function as a coactivator for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "AR-mediated transactivation",
+        "answerability": 0.7634987831115723,
+        "ground_truth": {
+          "human prostate cancer PC-3 cells": {
+            "bertscore": 0.7237633466720581,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

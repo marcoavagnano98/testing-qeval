@@ -1,0 +1,62 @@
+{
+  "type": "hyp",
+  "text": "We found a decrease in corneal neovascularization in spironolactone-treated rats compared with the PBS-treated group although the difference was not statistically significant.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PBS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What treatment did spironolactone-treated rats receive?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a decrease",
+        "corneal neovascularization",
+        "spironolactone-treated rats",
+        "the PBS-treated group",
+        "the difference"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the difference in neovascularization in spironolactone",
+          "What was found in spironolactone-treated rats?",
+          "What did the spironolactone-treated rats have a decrease in?",
+          "What group of rats had a decrease in corneal neovascularization?",
+          "What group of rats had a decrease in corneal neovascularization?",
+          "What was not statistically significant?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Who was treated with spironolactone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "rats",
+        "answerability": 0.9880404472351074,
+        "ground_truth": {
+          "Additional grafted rats": {
+            "bertscore": 0.8197829723358154,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was used to treat a rat that was grafted on to a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spironolactone",
+        "answerability": 0.6635962724685669,
+        "ground_truth": {
+          "spironolactone": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "contained serum response factor and Elk-1 pointing toward age-related defects in the activation of transcriptional regulatory proteins distinct from c-abl.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contained",
+        "serum response factor",
+        "age-related defects",
+        "the activation",
+        "transcriptional regulatory proteins",
+        "c-abl"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the serum response factor?",
+          "What protein was found in the rat's c-abl?",
+          "What did the presence of Elk-1 and serum response factor indicate?",
+          "What did the c-abl protein do?",
+          "What did the c-abl protein show to be distinct from?",
+          "What is the name of the protein that is a distinct feature of c-abl?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the serum response factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46181434392929077,
+        "ground_truth": {
+          "contained": {
+            "bertscore": 0.7067580819129944,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was found in the c-jun/elk-1 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1555737853050232,
+        "ground_truth": {
+          "serum response factor": {
+            "bertscore": 0.6642259955406189,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the presence of Elk-1 and serum response factor indicate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "age-related defects in the activation of transcriptional regulatory proteins",
+        "answerability": 0.9816778302192688,
+        "ground_truth": {
+          "age-related defects": {
+            "bertscore": 0.8448508381843567,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did the c-jun/c-jun/c-jun/c-jun": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12219613790512085,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6892382502555847,
+            "f1": 0
+          },
+          "transcriptional regulatory proteins": {
+            "bertscore": 0.6496026515960693,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is a marker of age?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3550841808319092,
+        "ground_truth": {
+          "c-jun/": {
+            "bertscore": 0.6387700438499451,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

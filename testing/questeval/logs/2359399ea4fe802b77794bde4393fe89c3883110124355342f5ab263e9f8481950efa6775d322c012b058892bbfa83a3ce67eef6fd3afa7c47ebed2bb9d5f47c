@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Trad mRNA was expressed in a variety of tissues and cell types and was detected preferentially in human fetal and adult brain tissues.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Trad",
+        "mRNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of mRNA was detected in the brain?",
+          "What was detected in the brain?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Trad mRNA",
+        "a variety",
+        "tissues",
+        "cell types",
+        "human fetal and adult brain tissues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was detected in the brain?",
+          "How many tissues and cell types were tran mRNA expressed in?",
+          "Where was trad mRNA found?",
+          "What was tran mRNA expressed in?",
+          "Where was trad mRNA detected?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA is specifically expressed in skeletal muscle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.035108327865600586,
+        "ground_truth": {
+          "Trad": {
+            "bertscore": 0.7040088772773743,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is specifically expressed in skeletal muscle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004703223705291748,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.6875343322753906,
+            "f1": 0
+          },
+          "Trad mRNA": {
+            "bertscore": 0.6803855895996094,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is trad mRNA specifically expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3887367248535156,
+        "ground_truth": {
+          "skeletal muscle": {
+            "bertscore": 0.6949082612991333,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "More than 50% of the tumor cells coexpressed vimentin and keratin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "More than 50%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many tumor cells coexpressed vimentin and keratin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "More than 50%",
+        "the tumor cells",
+        "vimentin",
+        "keratin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many tumor cells coexpressed vimentin and keratin?",
+          "What does the tumor contain that coexpress vimentin and keratin?",
+          "What protein did more than 50% of tumor cells coexpress?",
+          "What is the other major component of the tumor cell?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was significantly coexpressed in 26 of the swine flu vaccines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002734541893005371,
+        "ground_truth": {
+          "vimentin": {
+            "bertscore": 0.6944348216056824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What growth factor was significantly coexpressed in 26 patients?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014505743980407715,
+        "ground_truth": {
+          "keratinocyte": {
+            "bertscore": 0.6555730700492859,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What percentage of swine fluorescence was correlated with vimentin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.148980975151062,
+        "ground_truth": {
+          "26": {
+            "bertscore": 0.6235447525978088,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What percentage of swine fluorescence was caused by keratinocyte growth": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.059581756591796875,
+        "ground_truth": {
+          "43.4%": {
+            "bertscore": 0.6059679985046387,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two factors were significantly coexpressed in 26 patients?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0704643726348877,
+        "ground_truth": {
+          " vimentin and keratinocyte growth factor": {
+            "bertscore": 0.5997941493988037,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

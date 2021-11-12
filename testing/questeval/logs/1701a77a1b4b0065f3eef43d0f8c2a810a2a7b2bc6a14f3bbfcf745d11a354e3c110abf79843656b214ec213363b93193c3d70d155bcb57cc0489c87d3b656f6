@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "the adenylate cyclase inhibitor SQ 22536 suppressed p70I kappaB-mediated IL-10 production in monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SQ 22536",
+        "kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited p70I kappaB production?",
+          "What mediated IL-10 production did SQ 22536 suppress?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the adenylate cyclase inhibitor SQ",
+        "p70I kappaB-mediated IL-10 production",
+        "monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppressed p70I kappaB-mediated IL-10 production",
+          "What did SQ 22536 suppress?",
+          "Where did SQ 22536 suppress IL-10 production?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited gp41-induced IL-10 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0225069522857666,
+        "ground_truth": {
+          "SQ 22536": {
+            "bertscore": 0.6529496312141418,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suppressed gp41-induced IL-10 production in monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.027973294258117676,
+        "ground_truth": {
+          "the adenylate cyclase inhibitor SQ": {
+            "bertscore": 0.5885748863220215,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the adenylate cyclase inhibitor SQ 22536": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3547627329826355,
+        "ground_truth": {
+          "suppressed gp41-induced": {
+            "bertscore": 0.6608158946037292,
+            "f1": 0
+          },
+          "IL-10 production": {
+            "bertscore": 0.6185281872749329,
+            "f1": 0
+          },
+          "monocytes": {
+            "bertscore": 0.6662786602973938,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

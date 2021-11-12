@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Therefore the PIP5Ks can synthesize phosphatidylinositol 45-bisphosphate and two 3-phosphate-containing polyphosphoinositides.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many 3-phosphate-containing polyphosphoinositides can PIP5Ks"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the PIP5Ks",
+        "phosphatidylinositol 45-bisphosphate and two 3-phosphate-containing polyphosphoinositides"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein can synthesize phosphatidylinositol 45-",
+          "What can the PIP5Ks synthesize?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many 3-phosphate-containing polyphosphoinositides can PIP5Ks": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.7406126260757446,
+        "ground_truth": {
+          "two": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein can synthesize phosphatidylinositol 45-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PIP5Ks",
+        "answerability": 0.8708221316337585,
+        "ground_truth": {
+          "the PIP5Ks": {
+            "bertscore": 0.9038456678390503,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What can the PIP5Ks synthesize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphatidylinositol 45-bisphosphate and two 3-",
+        "answerability": 0.8684514760971069,
+        "ground_truth": {
+          "phosphatidylinositol 45-bisphosphate and two 3-phosphate-containing polyphosphoinositides": {
+            "bertscore": 0.8938453197479248,
+            "f1": 0.7272727272727272
+          }
+        }
+      }
+    }
+  }
+}

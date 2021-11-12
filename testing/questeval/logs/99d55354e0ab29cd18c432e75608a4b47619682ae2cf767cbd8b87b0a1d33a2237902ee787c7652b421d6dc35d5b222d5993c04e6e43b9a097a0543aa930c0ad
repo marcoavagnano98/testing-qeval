@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Targeted degradation of c-Fos but not v-Fos by a phosphorylation-dependent signal on c-Jun.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Targeted degradation",
+        "c-Fos",
+        "not v-Fos",
+        "a phosphorylation-dependent signal",
+        "c-Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of phosphorylation on c-Jun?",
+          "What is a target for degradation?",
+          "What is the only molecule that is not a target for phosphorylation?",
+          "What is the mechanism of degradation of c-Jun?",
+          "What is the phosphorylation-dependent signal?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of phosphorylation on c-Jun?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Targeted degradation",
+        "answerability": 0.962571918964386,
+        "ground_truth": {
+          "Targeted degradation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is a target for degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-Fos",
+        "answerability": 0.6554480791091919,
+        "ground_truth": {
+          "c-Fos": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only molecule that is not a target for phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2008124589920044,
+        "ground_truth": {
+          "not v-Fos": {
+            "bertscore": 0.6585817933082581,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism of degradation of c-Jun?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation-dependent",
+        "answerability": 0.8771324753761292,
+        "ground_truth": {
+          "a phosphorylation-dependent signal": {
+            "bertscore": 0.9074042439460754,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the phosphorylation-dependent signal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11170560121536255,
+        "ground_truth": {
+          "c-Jun": {
+            "bertscore": 0.6690903902053833,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

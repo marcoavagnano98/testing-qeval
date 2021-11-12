@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "In addition dCGN increased ICAM-1 expression in both PBM and THP-1 cells with a major effect seen after 40 kDa dCGN exposure.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PBM",
+        "THP-1",
+        "40",
+        "kDa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells did dCGN increase ICAM-1 expression in?",
+          "What type of cell was affected by dCGN?",
+          "How many kDa of dCGN was used to increase ICAM-1 expression",
+          "What was the concentration of dCGN in PBM and THP-1 cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "dCGN",
+        "both PBM and THP-1 cells",
+        "a major effect",
+        "40 kDa dCGN exposure"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did dCGN do to increase ICAM-1 expression?",
+          "What increased ICAM-1 expression in both PBM and THP-1 cells?",
+          "What cells did dCGN increase ICAM-1 expression?",
+          "What was seen after 40 kDa dCGN exposure?",
+          "What was the most significant effect of dCGN on ICAM-1 expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what type of cell does inhibition of Erg result in increased ICAM-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PBM",
+        "answerability": 0.6784803867340088,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.8109031319618225,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What represses basal NF-kappaB activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008990764617919922,
+        "ground_truth": {
+          "Erg": {
+            "bertscore": 0.6825449466705322,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What results in increased NF-kappaB-dependent ICAM-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19498032331466675,
+        "ground_truth": {
+          "Interestingly inhibition": {
+            "bertscore": 0.7342405915260315,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a key factor in the regulation of ICAM-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10220861434936523,
+        "ground_truth": {
+          "Erg expression": {
+            "bertscore": 0.6869382858276367,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is an interesting result of Erg inhibition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0019251108169555664,
+        "ground_truth": {
+          "quiescent EC results": {
+            "bertscore": 0.6922021508216858,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does inhibition of Erg expression in quiescent EC result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005955696105957031,
+        "ground_truth": {
+          "increased NF-kappaB-dependent ICAM-1 expression": {
+            "bertscore": 0.5678312182426453,
+            "f1": 0
+          },
+          "NF-kappaB activity": {
+            "bertscore": 0.6196107864379883,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

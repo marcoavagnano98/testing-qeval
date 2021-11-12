@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "The role of the protooncogene c-fos in c-jun and c-fos-mediated differentiation of a human B cell line into IgM-secreting plasma cells was assessed.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IgM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of plasma cells are secreted by c-fos?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The role",
+        "the protooncogene c-fos",
+        "c-jun and c-fos-mediated differentiation",
+        "a human B cell line",
+        "IgM-secreting plasma cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the role of the protooncogene c-fos in",
+          "What is involved in the differentiation of human B cells?",
+          "What is the role of the protooncogene c-fos in?",
+          "What is the role of the protooncogene c-fos in differentiation",
+          "What is the role of the protooncogene c-fos in differentiation"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the protooncogene c-fos assessed for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiation",
+        "answerability": 0.8670227527618408,
+        "ground_truth": {
+          "The role": {
+            "bertscore": 0.7550977468490601,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in interleukin B cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30777955055236816,
+        "ground_truth": {
+          "the protooncogene c-fos": {
+            "bertscore": 0.5970918536186218,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IL B cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14925962686538696,
+        "ground_truth": {
+          "interleukin": {
+            "bertscore": 0.6550241112709045,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of the protooncogene c-fos in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-jun and c-fos-mediated differentiation",
+        "answerability": 0.9572058320045471,
+        "ground_truth": {
+          "IL) B cell differentiation": {
+            "bertscore": 0.7323148250579834,
+            "f1": 0.25
+          }
+        }
+      }
+    }
+  }
+}

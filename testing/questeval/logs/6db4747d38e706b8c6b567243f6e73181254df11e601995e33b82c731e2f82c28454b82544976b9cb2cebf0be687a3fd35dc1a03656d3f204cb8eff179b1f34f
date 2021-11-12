@@ -1,0 +1,112 @@
+{
+  "type": "ref",
+  "text": "We found that the CD40-induced upregulation of CD80 (a costimulatory molecule for T cells) was defective in HOIP-deficient cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD80",
+        "HOIP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the costimulatory molecule for T cells?",
+          "What is the name of the molecule that controls T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the CD40-induced upregulation",
+        "CD80",
+        "a costimulatory molecule",
+        "T cells",
+        "HOIP-deficient cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the result of the upregulation of CD80 in HOIP-deficient cells",
+          "What was found to be defective in HOIP-deficient cells?",
+          "What is the costimulatory molecule for T cells?",
+          "What is CD80?",
+          "What is CD80 a costimulatory molecule for?",
+          "What type of cells were the CD40-induced upregulation defective in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What upregulation did HOIP-deficient clones reverse?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD80",
+        "answerability": 0.7729495763778687,
+        "ground_truth": {
+          "CD80": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What reversed CD40-induced upregulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1865352988243103,
+        "ground_truth": {
+          "Transduction": {
+            "bertscore": 0.704816460609436,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What reversed CD40-induced CD80 upregulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4653191566467285,
+        "ground_truth": {
+          "both HOIP-deficient (HOIP-/-) clones": {
+            "bertscore": 0.6083586812019348,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What reversed CD40 upregulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15755021572113037,
+        "ground_truth": {
+          "a retrovirus": {
+            "bertscore": 0.6703494787216187,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did transduction of HOIP-deficient clones reverse?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008613348007202148,
+        "ground_truth": {
+          "CD40-induced CD80 upregulation": {
+            "bertscore": 0.607767641544342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not reverse CD40 upregulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0017002224922180176,
+        "ground_truth": {
+          "an empty vector": {
+            "bertscore": 0.6669533848762512,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

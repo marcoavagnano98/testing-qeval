@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "(IL-3) is exclusively expressed by activated T and natural killer cells a function that is tightly controlled both in a lineage-specific and in a stimulation-dependent manner.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "activated T",
+        "natural killer",
+        "cells",
+        "a function",
+        "a lineage-specific",
+        "a stimulation-dependent manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells express IL-3?",
+          "What type of cells express IL-3?",
+          "What type of cells express IL-3?",
+          "What is tightly controlled in a lineage-specific manner?",
+          "What type of manner is IL-3 controlled?",
+          "How is IL-3 expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells express IL-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activated T and natural killer cells",
+        "answerability": 0.9776252508163452,
+        "ground_truth": {
+          "activated T": {
+            "bertscore": 0.8202213644981384,
+            "f1": 0.5
+          },
+          "natural killer": {
+            "bertscore": 0.7339800000190735,
+            "f1": 0.5
+          },
+          "cells": {
+            "bertscore": 0.727449357509613,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is tightly controlled in a lineage-specific manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-3",
+        "answerability": 0.5355107188224792,
+        "ground_truth": {
+          "a function": {
+            "bertscore": 0.6254763603210449,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of manner is IL-3 controlled?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lineage-specific and in a stimulation-dependent manner",
+        "answerability": 0.913981556892395,
+        "ground_truth": {
+          "a lineage-specific": {
+            "bertscore": 0.7630324959754944,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "How is IL-3 expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "by activated T and natural killer cells",
+        "answerability": 0.9845192432403564,
+        "ground_truth": {
+          "a stimulation-dependent manner": {
+            "bertscore": 0.6493223905563354,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

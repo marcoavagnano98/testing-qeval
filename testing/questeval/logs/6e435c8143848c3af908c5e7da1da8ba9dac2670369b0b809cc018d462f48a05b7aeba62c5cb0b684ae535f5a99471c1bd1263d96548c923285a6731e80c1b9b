@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "In this work we investigated the effect of IL-10 on the DNA-binding activities of Jun-Fos heterodimers in cultured human lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Jun-Fos"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the heterodimer that is able to bind DNA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this work",
+        "we",
+        "the effect",
+        "the DNA-binding activities",
+        "Jun-Fos heterodimers",
+        "cultured human lymphocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the purpose of the study?",
+          "What did we find about IL-10?",
+          "What did we investigate in this work?",
+          "What did we study in human lymphocytes?",
+          "What is IL-10 used to bind to?",
+          "Where did we study the effect of IL-10 on DNA binding?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the heterodimer that is able to bind DNA during": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jun-Fos",
+        "answerability": 0.9813410043716431,
+        "ground_truth": {
+          "Jun-Fos": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of the Jun-Fos heterodimers on DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-10",
+        "answerability": 0.6475865840911865,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.7182372808456421,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was observed by electrophoretic mobility shift assays during the course of natural cyto": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007877051830291748,
+        "ground_truth": {
+          "DNA-binding activities": {
+            "bertscore": 0.6606965065002441,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What molecules were observed by electrophoretic mobility shift assays during the course of natural": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01937001943588257,
+        "ground_truth": {
+          "Jun-Fos heterodimers": {
+            "bertscore": 0.6354585886001587,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the course of natural cytotoxicity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005194544792175293,
+        "ground_truth": {
+          "the course": {
+            "bertscore": 0.7014780044555664,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the course of the cytotoxic process?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004649162292480469,
+        "ground_truth": {
+          "natural cytotoxicity": {
+            "bertscore": 0.6570195555686951,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

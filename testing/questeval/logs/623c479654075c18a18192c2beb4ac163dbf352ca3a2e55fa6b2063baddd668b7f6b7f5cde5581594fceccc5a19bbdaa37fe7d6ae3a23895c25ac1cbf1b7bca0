@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Triplexing with GM3 blocked recombinant and nuclear NF-kappaB proteins binding to the GM-CSF element.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blockade recombinant and nuclear NF-kappaB proteins"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GM3",
+        "recombinant and nuclear NF-kappaB proteins",
+        "the GM-CSF element"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What block recombinant and nuclear NF-kappaB proteins from binding",
+          "What did triplexing with GM3 block?",
+          "What did triplexing with GM3 block binding to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What blockade recombinant and nuclear NF-kappaB proteins": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Triplexing with GM3",
+        "answerability": 0.993168294429779,
+        "ground_truth": {
+          "GM": {
+            "bertscore": 0.7136139869689941,
+            "f1": 0
+          },
+          "Triplex formation": {
+            "bertscore": 0.7843175530433655,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What block recombinant and nuclear NF-kappaB proteins binding to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Triplexing with GM3",
+        "answerability": 0.9964112639427185,
+        "ground_truth": {
+          "GM3": {
+            "bertscore": 0.8174673318862915,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did triplex formation by GM3 block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "recombinant and nuclear NF-kappaB proteins",
+        "answerability": 0.9413973093032837,
+        "ground_truth": {
+          "recombinant and nuclear NF-kappaB proteins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the GM-CSF element": {
+            "bertscore": 0.6989453434944153,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

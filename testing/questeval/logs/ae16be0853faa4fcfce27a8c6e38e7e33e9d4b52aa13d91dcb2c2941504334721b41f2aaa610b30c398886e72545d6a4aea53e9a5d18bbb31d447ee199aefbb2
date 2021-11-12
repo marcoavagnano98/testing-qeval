@@ -1,0 +1,72 @@
+{
+  "type": "ref",
+  "text": "The angiogenic switch occurred in early stages of pre-malignant tumor formation and tumor angiogenesis was significantly enhanced in TSP-2-deficient mice.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The angiogenic switch",
+        "early stages",
+        "pre-malignant tumor formation",
+        "tumor angiogenesis",
+        "TSP-2-deficient mice"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was significantly enhanced in TSP-2-deficient mice?",
+          "When did the angiogenic switch occur?",
+          "When did the angiogenic switch occur?",
+          "What was significantly enhanced in TSP-2-deficient mice?",
+          "What mice showed a significant increase in tumor angiogenesis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene did not affect tumor differentiation or proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006055831909179688,
+        "ground_truth": {
+          "TSP-2": {
+            "bertscore": 0.6552754044532776,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not affect tumor differentiation or proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00018137693405151367,
+        "ground_truth": {
+          "TSP-2 deficiency": {
+            "bertscore": 0.602453351020813,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TSP-2 deficiency not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00048351287841796875,
+        "ground_truth": {
+          "tumor differentiation": {
+            "bertscore": 0.683922290802002,
+            "f1": 0
+          },
+          "proliferation tumor cell apoptosis": {
+            "bertscore": 0.6257933974266052,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

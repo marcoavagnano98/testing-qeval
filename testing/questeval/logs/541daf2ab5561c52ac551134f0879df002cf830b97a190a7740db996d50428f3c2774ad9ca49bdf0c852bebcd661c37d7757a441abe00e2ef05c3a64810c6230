@@ -1,0 +1,150 @@
+{
+  "type": "hyp",
+  "text": "Moreover supplementing the cultures with high doses of IL-2 reverted anti-TNF-alpha inhibition of cell proliferation but did not affect the inhibition of HIV p24 antigen release or NF-kappa B activation in the same cultures.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the supplementation of cultures with high doses of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the cultures",
+        "high doses",
+        "IL-2 reverted anti-TNF-alpha inhibition",
+        "cell proliferation",
+        "the inhibition",
+        "HIV p24 antigen release",
+        "NF-kappa B activation",
+        "the same cultures"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did IL-2 supplementation reduce?",
+          "What did supplementing the cultures with IL-2 do?",
+          "What did supplementing cultures with high doses of IL-2 do for cell proliferation?",
+          "What did supplementation with high doses of IL-2 reverse?",
+          "What did supplementing cultures with high doses of IL-2 not affect?",
+          "What did IL-2 supplementation not inhibit?",
+          "What did IL-2 not inhibit in the same cultures?",
+          "What cultures were not affected by IL-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the supplementation of cultures with high doses of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9618162512779236,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IL-2 supplementation reduce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV p24 antigen release or NF-kappa B activation",
+        "answerability": 0.8947311043739319,
+        "ground_truth": {
+          "the cultures": {
+            "bertscore": 0.6461972594261169,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did supplementing the cultures with IL-2 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reverted anti-TNF-alpha inhibition of cell proliferation",
+        "answerability": 0.928604245185852,
+        "ground_truth": {
+          "high doses": {
+            "bertscore": 0.6727492809295654,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did supplementing cultures with high doses of IL-2 do for cell proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reverted anti-TNF-alpha inhibition",
+        "answerability": 0.8801586627960205,
+        "ground_truth": {
+          "IL-2 reverted anti-TNF-alpha inhibition": {
+            "bertscore": 0.9429988265037537,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What did supplementation with high doses of IL-2 reverse?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-TNF-alpha inhibition of cell proliferation",
+        "answerability": 0.9890849590301514,
+        "ground_truth": {
+          "cell proliferation": {
+            "bertscore": 0.7873501181602478,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did supplementing cultures with high doses of IL-2 not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV p24 antigen release or NF-kappa B activation",
+        "answerability": 0.9918116927146912,
+        "ground_truth": {
+          "the inhibition": {
+            "bertscore": 0.6665583252906799,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-2 supplementation not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV p24 antigen release or NF-kappa B activation",
+        "answerability": 0.9962354302406311,
+        "ground_truth": {
+          "HIV p24 antigen release": {
+            "bertscore": 0.8879150152206421,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did IL-2 not inhibit in the same cultures?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV p24 antigen release or NF-kappa B activation",
+        "answerability": 0.9963805675506592,
+        "ground_truth": {
+          "NF-kappa B activation": {
+            "bertscore": 0.870577871799469,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What cultures were not affected by IL-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV p24 antigen release or NF-kappa B activation",
+        "answerability": 0.9935805201530457,
+        "ground_truth": {
+          "the same cultures": {
+            "bertscore": 0.6009884476661682,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

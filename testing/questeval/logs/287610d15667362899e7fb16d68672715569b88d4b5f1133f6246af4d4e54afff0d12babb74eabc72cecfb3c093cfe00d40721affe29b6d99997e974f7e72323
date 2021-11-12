@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Maximal induction of the c-fos gene required the two AP-1 sites and the AP-1 site within the c-fos promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two",
+        "AP-1",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many AP-1 sites did it take to induct the c-fos",
+          "What site was required to induction the c-fos gene?",
+          "What site was required to induction the c-fos gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Maximal induction",
+        "the c-fos gene",
+        "the two AP-1 sites",
+        "the AP-1 site",
+        "the c-fos promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What required the two AP-1 sites and the AP-1 site within the c-",
+          "What gene required the two AP-1 sites and the AP-1 site within the c",
+          "What did the c-fos gene require to be induction optimally?",
+          "What is the c-fos promoter?",
+          "What is the AP-1 site within?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the first step in the c-fos gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23063945770263672,
+        "ground_truth": {
+          "Maximal induction": {
+            "bertscore": 0.6901797652244568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was inducted at maximum?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos",
+        "answerability": 0.9244729280471802,
+        "ground_truth": {
+          "the c-fos gene": {
+            "bertscore": 0.8409395217895508,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What gene was inducted at maximum induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos",
+        "answerability": 0.8999063372612,
+        "ground_truth": {
+          "the fos-B gene": {
+            "bertscore": 0.7433016300201416,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

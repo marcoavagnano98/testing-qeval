@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "This Two-Component Signal Transduction System Is Important to Virulence of Streptococcus equi Subspecies equi\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This Two-Component Signal Transduction System",
+        "Virulence",
+        "Streptococcus",
+        "equi Subspecies equi"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is important to Virulence of Streptococcus equi Subspec",
+          "What is the two-component signal transduction system important for?",
+          "What is the name of the two-component signal transduction system?",
+          "What is the name of the two-component signal transduction system?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is important to Virulence of Streptococcus equi Subspec": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "This Two-Component Signal Transduction System Is Important",
+        "answerability": 0.9910303354263306,
+        "ground_truth": {
+          "The Two-Component Regulatory System": {
+            "bertscore": 0.7938793897628784,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is important to the virulence of Streptococcus equi Sub": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Two-Component Signal Transduction System",
+        "answerability": 0.9888026118278503,
+        "ground_truth": {
+          "VicRK": {
+            "bertscore": 0.6640990376472473,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the two-component Regulatory System VicRK important to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2838818430900574,
+        "ground_truth": {
+          "Virulence": {
+            "bertscore": 0.7204374074935913,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the two component regulatory system important to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Virulence",
+        "answerability": 0.9319230914115906,
+        "ground_truth": {
+          "Streptococcus equi Subspecies": {
+            "bertscore": 0.6629273295402527,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

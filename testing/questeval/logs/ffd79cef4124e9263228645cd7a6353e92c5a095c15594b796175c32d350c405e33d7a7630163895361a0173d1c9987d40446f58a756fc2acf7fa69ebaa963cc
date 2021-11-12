@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "Our studies reveal that inactivation of the v-abl protein tyrosine kinase triggers high-level rearrangement of kappa and lambda light-chain genes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our studies",
+        "inactivation",
+        "the v-abl protein tyrosine kinase",
+        "high-level rearrangement",
+        "kappa and lambda light-chain genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that inactivation of v-abl protein tyrosine kin",
+          "What triggers high-level rearrangement of kappa and lambda light",
+          "What triggers high-level rearrangement of kappa and lambda light",
+          "What does inactivation of v-abl protein tyrosine kina",
+          "What genes are rearranged by inactivation of v-abl protein ty"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that inactivation of v-abl protein tyrosine kin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Our studies",
+        "answerability": 0.7128572463989258,
+        "ground_truth": {
+          "Our studies": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What triggers high-frequency rearrangement of kappa and lambda light": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.33393537998199463,
+        "ground_truth": {
+          "inactivation": {
+            "bertscore": 0.7201539278030396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does inactivation of v-abl protein tyrosine kina": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17430317401885986,
+        "ground_truth": {
+          "high-frequency rearrangement": {
+            "bertscore": 0.6958146095275879,
+            "f1": 0
+          },
+          "kappa and lambda light-chain genes": {
+            "bertscore": 0.6130619049072266,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

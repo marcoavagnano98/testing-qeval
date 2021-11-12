@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "In contrast the binding activities of NF1 and STAT6 were not affected by ER.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "the binding activities",
+        "NF1",
+        "STAT6",
+        "ER"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of ER on binding activities of NF1 and STAT6?",
+          "What was not affected by ER?",
+          "What binding activity was not affected by ER?",
+          "What binding activity was not affected by ER?",
+          "What was not affected by NF1 and STAT6 binding?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of ER on binding activities of NF1 and Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07894086837768555,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628810882568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF1 and STAT6",
+        "answerability": 0.9671573042869568,
+        "ground_truth": {
+          "the binding activities": {
+            "bertscore": 0.6872888803482056,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What binding activity was not affected by ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF1 and STAT6",
+        "answerability": 0.9833142161369324,
+        "ground_truth": {
+          "NF1": {
+            "bertscore": 0.8568764328956604,
+            "f1": 0.5
+          },
+          "Sp1": {
+            "bertscore": 0.727555513381958,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not affected by NF1 binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1304653286933899,
+        "ground_truth": {
+          "ER": {
+            "bertscore": 0.6925891637802124,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

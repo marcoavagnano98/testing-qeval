@@ -1,0 +1,102 @@
+{
+  "type": "ref",
+  "text": "A kinetics analysis showed that the depolarization of mitochondrial membrane potential and the release of mitochondrial cytochrome c occurred as early as 30 min after treatment with betulin.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "as early as",
+        "30 min",
+        "betulin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How early did the depolarization of mitochondrial membrane potential occur?",
+          "How early did mitochondrial cytochrome c release after treatment with betulin?",
+          "What drug was used to induce mitochondrial depolarization?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A kinetics analysis",
+        "the depolarization",
+        "mitochondrial membrane potential",
+        "the release",
+        "mitochondrial cytochrome c",
+        "30 min",
+        "treatment",
+        "betulin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that the depolarization of mitochondrial membrane potential and the release of mitochondrial",
+          "What did kinetics analysis show occurred as early as 30 min after treatment with betulin",
+          "What did a kinetics analysis show was depolarized 30 min after treatment with be",
+          "What is the first step in the depolarization of mitochondrial membrane potential?",
+          "What was released as early as 30 min after treatment with betulin?",
+          "How early did mitochondrial cytochrome c release after treatment with betulin?",
+          "What was the first step in the depolarization of mitochondrial membrane potential?",
+          "What drug was used to induce mitochondrial depolarization?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What treatment reduced the magnitude and duration of IC(50)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2725169062614441,
+        "ground_truth": {
+          "betulin": {
+            "bertscore": 0.6804425120353699,
+            "f1": 0
+          },
+          "betulin treatment": {
+            "bertscore": 0.6780642867088318,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the treatment of betulin reduce the duration of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0036593079566955566,
+        "ground_truth": {
+          "IC(50": {
+            "bertscore": 0.5924829840660095,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What showed that betulin treatment reduced the magnitude and duration of IC(50)?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16104692220687866,
+        "ground_truth": {
+          "The results": {
+            "bertscore": 0.651224672794342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the treatment of betulin reduce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022653043270111084,
+        "ground_truth": {
+          "the magnitude": {
+            "bertscore": 0.6440241932868958,
+            "f1": 0
+          },
+          "duration": {
+            "bertscore": 0.6826417446136475,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

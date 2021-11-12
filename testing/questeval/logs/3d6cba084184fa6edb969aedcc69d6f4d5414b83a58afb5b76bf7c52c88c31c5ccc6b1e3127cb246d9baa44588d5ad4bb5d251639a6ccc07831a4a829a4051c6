@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "We conclude that VDR polymorphism does not affect the abundance of the VDR mRNA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VDR",
+        "VDR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does VDR polymorphism not affect the abundance of?",
+          "What does VDR polymorphism not affect the abundance of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "VDR polymorphism",
+        "the abundance"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors conclude about VDR polymorphism?",
+          "What does not affect the abundance of the VDR mRNA?",
+          "What does VDR polymorphism not affect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does VDR polymorphism not affect the abundance of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the VDR mRNA",
+        "answerability": 0.9275698661804199,
+        "ground_truth": {
+          "VDR": {
+            "bertscore": 0.7265740036964417,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the authors conclude about VDR polymorphism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "does not affect the abundance of the VDR mRNA",
+        "answerability": 0.6995962262153625,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5503181219100952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not affect the abundance of the VDR mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VDR polymorphism",
+        "answerability": 0.9955116510391235,
+        "ground_truth": {
+          "VDR polymorphism": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does VDR polymorphism not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the abundance of the VDR mRNA",
+        "answerability": 0.8858700394630432,
+        "ground_truth": {
+          "the abundance": {
+            "bertscore": 0.7307825088500977,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

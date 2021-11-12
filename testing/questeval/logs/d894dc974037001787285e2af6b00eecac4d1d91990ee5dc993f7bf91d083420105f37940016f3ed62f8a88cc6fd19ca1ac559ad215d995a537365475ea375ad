@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Adhesion of human umbilical vein endothelial cells to oleate was reduced by >40% compared with control.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "40%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How much was the adhesion of human umbilical vein endothelial cells"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Adhesion",
+        "human umbilical vein endothelial cells",
+        ">40%",
+        "control"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was reduced by >40% compared to control?",
+          "What was the oleate reduced to?",
+          "How much was the adhesion of human umbilical vein endothelial cells",
+          "What was the oleate concentration of human umbilical vein endothelial"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was reduced concomitantly with the treatment of endothelial cells with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Adhesion",
+        "answerability": 0.9401435256004333,
+        "ground_truth": {
+          "Adhesion": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was reduced concomitantly with LPS treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.43463462591171265,
+        "ground_truth": {
+          "monocytoid U937 cells": {
+            "bertscore": 0.6024857759475708,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What reduced adhesion of monocytoid U937 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04094278812408447,
+        "ground_truth": {
+          "LPS-treated endothelial cells": {
+            "bertscore": 0.6149731874465942,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

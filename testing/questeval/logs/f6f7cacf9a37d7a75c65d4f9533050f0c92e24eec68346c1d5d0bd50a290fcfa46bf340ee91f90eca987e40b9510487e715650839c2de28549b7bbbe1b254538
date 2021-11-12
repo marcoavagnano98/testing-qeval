@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Immune hyperactivation of HIV-1-infected T cells mediated by Tat and the CD28 pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Tat"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the CD28 pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Immune hyperactivation",
+        "HIV-1-infected T cells",
+        "Tat",
+        "the CD28 pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of the Tat and CD28 pathway on HIV-1 cells?",
+          "What is the CD28 pathway responsible for?",
+          "What is the CD28 pathway?",
+          "What pathway is involved in the immune hyperactivation of HIV-1-infected T cells"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the CD28 pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2135276198387146,
+        "ground_truth": {
+          "Tat": {
+            "bertscore": 0.6546972990036011,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of the Tat and CD28 pathway on HIV-1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Immune hyperactivation",
+        "answerability": 0.9466061592102051,
+        "ground_truth": {
+          "Immune hyperactivation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the CD28 pathway responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5824193954467773,
+        "ground_truth": {
+          "HIV-1-infected T cells": {
+            "bertscore": 0.6415901780128479,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What pathway is involved in the immune hyperactivation of HIV-1-infected T cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tat and the CD28 pathway",
+        "answerability": 0.9055806994438171,
+        "ground_truth": {
+          "the CD28 pathway": {
+            "bertscore": 0.9027566909790039,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

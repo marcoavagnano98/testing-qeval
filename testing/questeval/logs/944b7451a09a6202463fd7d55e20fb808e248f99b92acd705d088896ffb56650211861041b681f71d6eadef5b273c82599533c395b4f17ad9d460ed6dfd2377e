@@ -1,0 +1,58 @@
+{
+  "type": "hyp",
+  "text": "We conclude that recombinant human NAAA has a glycosylated form that acts as a glycoprotein.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NAAA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that acts as a glycoprotein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "recombinant human NAAA",
+        "a glycosylated form",
+        "a glycoprotein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the glycoprotein of NAAA?",
+          "What is a glycoprotein?",
+          "What does NAAA have that acts as a glycoprotein?",
+          "What does the recombinant human NAAA act as?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is glycosylated and proteolytically cleaved?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01107776165008545,
+        "ground_truth": {
+          "NAAA": {
+            "bertscore": 0.6943791508674622,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we previously suggest about NAAA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15688163042068481,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748355031013489,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

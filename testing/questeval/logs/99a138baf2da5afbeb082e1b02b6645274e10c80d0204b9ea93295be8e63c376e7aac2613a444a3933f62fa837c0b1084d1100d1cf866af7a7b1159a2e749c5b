@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "(fatty acids metabolism) and BAB1_1620 (LPS glycosyl transferase) were induced intracellularly. The expression of genes vjbR malF malE and an iclR regulator which encodes a helix-loop-helix protein was up-regulated in the bvrR mutant.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "vjbR malF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the glycosyl transferase that is induced intra",
+          "What genes were up-regulated in the bvrR mutant?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(fatty acids metabolism",
+        "BAB1_1620",
+        "LPS glycosyl transferase",
+        "The expression",
+        "genes",
+        "vjbR malF malE and an iclR regulator",
+        "a helix-loop-helix protein",
+        "the bvrR mutant"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main function of the bvrR mutant?",
+          "What is the name of the LPS glycosyl transferase?",
+          "What is the name of the BAB1_1620 gene?",
+          "What genes were up-regulated in the bvrR mutant?",
+          "What was up-regulated in the bvrR mutant?",
+          "What genes were up-regulated in the bvrR mutant?",
+          "What does iclR encode?",
+          "What mutant was up-regulated in the rat?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is regulated by pckA fumB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0020020604133605957,
+        "ground_truth": {
+          "vjbR malF": {
+            "bertscore": 0.627787172794342,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that is vjbR malF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "malE",
+        "answerability": 0.6663537621498108,
+        "ground_truth": {
+          "The expression": {
+            "bertscore": 0.709343433380127,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the expression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vjbR malF malE",
+        "answerability": 0.7034435272216797,
+        "ground_truth": {
+          "genes": {
+            "bertscore": 0.6311720013618469,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

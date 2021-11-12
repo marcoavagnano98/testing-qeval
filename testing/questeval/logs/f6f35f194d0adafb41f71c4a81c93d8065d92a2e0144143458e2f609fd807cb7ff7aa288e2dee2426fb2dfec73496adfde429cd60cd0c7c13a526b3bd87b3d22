@@ -1,0 +1,78 @@
+{
+  "type": "ref",
+  "text": "In addition we demonstrated that the EBNA-1 gene in infected thymocytes was transcribed from the Fp promoter rather than from the Cp/Wp promoter which is used in latently infected B cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fp",
+        "the Cp/Wp"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Where was the EBNA-1 gene transcribed from?",
+          "Where is the EBNA-1 gene transcribed from?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "we",
+        "the EBNA-1 gene",
+        "infected thymocytes",
+        "the Fp promoter",
+        "the Cp/Wp promoter",
+        "latently infected B cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study show about the EBNA-1 gene?",
+          "What did we demonstrate about the EBNA-1 gene?",
+          "What gene was transcribed from the Fp promoter?",
+          "Where was the EBNA-1 gene transcribed from?",
+          "Where was the EBNA-1 gene transcribed from?",
+          "Where was the EBNA-1 gene transcribed from?",
+          "Where is the EBNA-1 gene transcribed from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter is used exclusively by EBV-transformed B cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1478588581085205,
+        "ground_truth": {
+          "Cp": {
+            "bertscore": 0.6838362812995911,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is used exclusively by EBV-transformed B cell lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.053459763526916504,
+        "ground_truth": {
+          "/Wp promoter": {
+            "bertscore": 0.6542142629623413,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Who uses the Cp/Wp promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.018613159656524658,
+        "ground_truth": {
+          "EBV-transformed B cell lines": {
+            "bertscore": 0.5906550884246826,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "In contrast neither the RA-stimulated RARE-mediated transcription nor the induced RAR-beta expression was suppressed by VitD3 suggesting that VitD3 selectively inhibited the retinoid-induced differentiation program but not the RARE-mediated signal.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RA",
+        "VitD3",
+        "VitD3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulated RARE-mediated transcription?",
+          "What inhibited the RAR-beta expression?",
+          "What inhibited the RAR-beta expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "neither the RA-stimulated RARE-mediated transcription",
+        "the induced RAR-beta expression",
+        "VitD3",
+        "VitD3",
+        "the retinoid-induced differentiation program"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did VitD3 inhibit?",
+          "What was suppressed by VitD3?",
+          "What was not suppressed by VitD3?",
+          "What inhibited the RAR-beta expression?",
+          "What inhibited the RAR-beta expression?",
+          "What did VitD3 inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stimulated RARE-mediated transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3971506357192993,
+        "ground_truth": {
+          "RA": {
+            "bertscore": 0.6910656094551086,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the RAR-beta expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3",
+        "answerability": 0.9794361591339111,
+        "ground_truth": {
+          "VitD3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did VitD3 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "retinoid-induced differentiation",
+        "answerability": 0.9030162692070007,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7146506905555725,
+            "f1": 0
+          },
+          "the retinoid-induced differentiation program": {
+            "bertscore": 0.925538182258606,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What was suppressed by VitD3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RA-stimulated RARE-mediated transcription",
+        "answerability": 0.7789527177810669,
+        "ground_truth": {
+          "neither the RA-stimulated RARE-mediated transcription": {
+            "bertscore": 0.9027838110923767,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What was not suppressed by VitD3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induced RAR-beta expression",
+        "answerability": 0.6431666612625122,
+        "ground_truth": {
+          "the induced RAR-beta expression": {
+            "bertscore": 0.9643550515174866,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

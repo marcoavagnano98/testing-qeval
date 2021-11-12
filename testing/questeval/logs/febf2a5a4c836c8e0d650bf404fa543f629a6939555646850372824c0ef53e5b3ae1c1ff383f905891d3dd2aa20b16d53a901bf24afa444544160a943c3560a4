@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "This 40-kDa polypeptide is able to interact with the tumor suppressor p16(INK4A). Consequently Tax can activate the signaling pathway that lead to the release of E2F that in turn induces expression of factors required for cell cycle progression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "p16(INK4A",
+        "E2F"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Tax can activate the signaling pathway that leads to the release of E2F?",
+          "Tax can activate the signaling pathway that leads to the release of what?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This 40-kDa polypeptide",
+        "the tumor suppressor",
+        "p16(INK4A",
+        "Tax",
+        "the signaling pathway",
+        "the release",
+        "E2F",
+        "turn",
+        "expression",
+        "factors",
+        "cell cycle progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is able to interact with the tumor suppressor p16(INK4A",
+          "Tax can interact with what?",
+          "Tax can activate the signaling pathway that leads to the release of E2F?",
+          "What is the name of the polypeptide that can activate the signaling pathway that leads to",
+          "Tax can activate what?",
+          "Tax can activate the signaling pathway that leads to what?",
+          "Tax can activate the signaling pathway that leads to the release of what?",
+          "What does tax do to the signaling pathway?",
+          "Tax can activate the signaling pathway that leads to the release of E2F that in turn",
+          "Tax can activate the signaling pathway that leads to the release of E2F that in turn",
+          "Tax can activate the signaling pathway that leads to the release of E2F that in turn"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can activate the signaling pathway that leads to the release of E2F?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tax",
+        "answerability": 0.9992169737815857,
+        "ground_truth": {
+          "Tax": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does tax activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the signaling pathway",
+        "answerability": 0.9680643677711487,
+        "ground_truth": {
+          "the signaling pathway": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does tax activate the signaling pathway that leads to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the release of E2F",
+        "answerability": 0.9800159931182861,
+        "ground_truth": {
+          "the release": {
+            "bertscore": 0.7427724599838257,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "Tax can activate the signaling pathway that leads to the release of what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F",
+        "answerability": 0.9978274703025818,
+        "ground_truth": {
+          "E2F": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does tax do to the signaling pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activate",
+        "answerability": 0.9596109390258789,
+        "ground_truth": {
+          "turn": {
+            "bertscore": 0.7632803916931152,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does tax induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of factors required for cell cycle progression",
+        "answerability": 0.7420253753662109,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7137181758880615,
+            "f1": 0.2222222222222222
+          },
+          "cell cycle progression": {
+            "bertscore": 0.7841726541519165,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What does tax induce expression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "factors required for cell cycle progression",
+        "answerability": 0.7483477592468262,
+        "ground_truth": {
+          "factors": {
+            "bertscore": 0.7928406000137329,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "type": "ref",
+  "text": "Tap: a novel cellular protein that interacts with tip of herpesvirus saimiri and induces lymphocyte aggregation. Tip of herpesvirus saimiri associates with Lck and down-regulates Lck-mediated activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Lck",
+        "Lck"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is involved in the aggregation of lymphocytes?",
+          "What protein is involved in the aggregation of lymphocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tap",
+        "a novel cellular protein",
+        "tip",
+        "herpesvirus saimiri",
+        "induces",
+        "lymphocyte aggregation",
+        "Tip",
+        "herpesvirus",
+        "associates",
+        "Lck",
+        "Lck-mediated activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that interacts with the tip of herpesvirus",
+          "What is Tap?",
+          "What part of the herpes virus is a target for Tap?",
+          "What virus is Tap associated with?",
+          "What does Tap do to lymphocyte aggregation?",
+          "What does Tap induce?",
+          "What is the name of the protein that interacts with the tip of herpesvirus",
+          "What is the name of the virus that causes lymphocyte aggregation?",
+          "What does Tap do with Lck?",
+          "What protein is involved in the aggregation of lymphocytes?",
+          "What does Tap down-regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the tip of herpesvirus saimiri with Lck?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tap",
+        "answerability": 0.6599410176277161,
+        "ground_truth": {
+          "herpesvirus saimiri associates": {
+            "bertscore": 0.6405280828475952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the tip of herpesvirus saimiri associate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Lck",
+        "answerability": 0.9906909465789795,
+        "ground_truth": {
+          "Lck": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the virus that down-regulates Lck-mediated activation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4746171832084656,
+        "ground_truth": {
+          "Tip": {
+            "bertscore": 0.6846711039543152,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What virus down-regulates Lck-mediated activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "herpesvirus saimiri",
+        "answerability": 0.9058822393417358,
+        "ground_truth": {
+          "herpesvirus": {
+            "bertscore": 0.8869724273681641,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does Tip of herpesvirus saimiri do with Lck": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2901066541671753,
+        "ground_truth": {
+          "associates": {
+            "bertscore": 0.7404485940933228,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the tip of herpesvirus saimiri down-regul": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48435378074645996,
+        "ground_truth": {
+          "Lck-mediated activation": {
+            "bertscore": 0.6397362351417542,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

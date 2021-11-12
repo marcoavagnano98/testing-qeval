@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "The IL-12 effect on IRF-1 was not blocked by polymyxin B.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IRF-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was not blocked by polymyxin B?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The IL-12 effect",
+        "IRF-1",
+        "polymyxin B."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What effect was not blocked by polymyxin B?",
+          "What protein was not blocked by polymyxin B?",
+          "What protein did not block the IL-12 effect on IRF-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What chemical has a direct effect on IRF-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.305885374546051,
+        "ground_truth": {
+          "IL-12": {
+            "bertscore": 0.6712610721588135,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-12 have a direct effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IRF-1",
+        "answerability": 0.6310291290283203,
+        "ground_truth": {
+          "IRF-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the study show about IL-12?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.020512044429779053,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054113507270813,
+            "f1": 0
+          },
+          "a direct effect": {
+            "bertscore": 0.7005327343940735,
+            "f1": 0
+          },
+          "an effect": {
+            "bertscore": 0.7017390727996826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we show was not mediated indirectly by IFN-gamma production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07135039567947388,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.6973354816436768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-12 not directly affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IRF-1",
+        "answerability": 0.5390991568565369,
+        "ground_truth": {
+          "IFN-gamma production": {
+            "bertscore": 0.8107749223709106,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

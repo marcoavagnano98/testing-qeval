@@ -1,0 +1,80 @@
+{
+  "type": "ref",
+  "text": "Recent reports suggest that elevated levels of plasminogen activator inhibitor-1 (PAI-1) may contribute to tumour progression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Recent reports",
+        "elevated levels",
+        "plasminogen activator inhibitor-1",
+        "PAI-1",
+        "tumour progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that elevated levels of plasminogen activator inhibitor-1 may contribute to tumour progression",
+          "What may contribute to the progression of a tumour?",
+          "What is PAI-1?",
+          "What is the name of the plasminogen activator inhibitor that may contribute to tumour progression",
+          "What do recent reports suggest elevated levels of plasminogen activator inhibitor-1 may contribute to"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggests that a plasminogen activator inhibitor-1 may contribute to tumour progression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "recent reports",
+        "answerability": 0.9883211255073547,
+        "ground_truth": {
+          "Recent reports": {
+            "bertscore": 0.9248355627059937,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is PAI-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "plasminogen activator inhibitor-1",
+        "answerability": 0.9920183420181274,
+        "ground_truth": {
+          "plasminogen activator inhibitor-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the plasminogen activator inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PAI-1",
+        "answerability": 0.9275442361831665,
+        "ground_truth": {
+          "(PAI-1": {
+            "bertscore": 0.9067195653915405,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do recent reports suggest may be a contributing factor to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumour progression",
+        "answerability": 0.9700087308883667,
+        "ground_truth": {
+          "tumour progression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

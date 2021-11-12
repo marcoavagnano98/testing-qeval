@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "In contrast cAMP almost completely inhibited the PMA/ionomycin-induced activation of the endogenous IL-2 gene as well as the transfected IL-2 promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "IL-2",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was induced by ionomycin?",
+          "What gene was inhibited by cAMP?",
+          "What gene was inhibited by cAMP?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "the PMA/ionomycin-induced activation",
+        "the endogenous IL-2 gene",
+        "the transfected IL-2 promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of cAMP on the IL-2 gene?",
+          "What did cAMP almost completely inhibit?",
+          "What did cAMP inhibit?",
+          "What did cAMP inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene did cAMP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.8802874684333801,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.7714247107505798,
+            "f1": 0
+          },
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of cAMP on the IL-2 gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "almost completely inhibited",
+        "answerability": 0.99444979429245,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6755368709564209,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did cAMP almost completely inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the PMA/ionomycin-induced activation of the endogenous IL",
+        "answerability": 0.9121480584144592,
+        "ground_truth": {
+          "the PMA-dependent activation": {
+            "bertscore": 0.8372512459754944,
+            "f1": 0.28571428571428575
+          },
+          "the endogenous IL-2 gene": {
+            "bertscore": 0.809594452381134,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What did cAMP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the PMA/ionomycin-induced activation of the endogenous IL",
+        "answerability": 0.8953126668930054,
+        "ground_truth": {
+          "the transfected IL-2 promoter": {
+            "bertscore": 0.7546131014823914,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "NPM-ALK inhibits the p53 tumor suppressor pathway in an MDM2 and JNK-p53 double knockout mouse model.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NPM",
+        "MDM2",
+        "JNK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the p53 tumor suppressor pathway in an MDM2 and JNK",
+          "What is the mouse model that NPM-ALK inhibits?",
+          "What is the only mouse model that inhibits the p53 tumor suppressor pathway?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NPM-ALK",
+        "the p53 tumor suppressor pathway",
+        "an MDM2 and JNK-p53 double knockout mouse model"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits the p53 tumor suppressor pathway in an MDM2 and JNK",
+          "What does NPM-ALK inhibit in a mouse model?",
+          "In what mouse models does NPM-ALK inhibit the p53 tumor suppressor pathway"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits the p53 tumor suppressor pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NPM-ALK",
+        "answerability": 0.9660744071006775,
+        "ground_truth": {
+          "NPM": {
+            "bertscore": 0.854494571685791,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the p53 tumor suppressor pathway dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014632463455200195,
+        "ground_truth": {
+          "MDM2": {
+            "bertscore": 0.6533923745155334,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other way NPM-ALK inhibits the p53 tumor suppressor": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19173842668533325,
+        "ground_truth": {
+          "JNK-dependent": {
+            "bertscore": 0.6767833232879639,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits the p53 tumor suppressor pathway in an MDM2 and JNK": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NPM-ALK",
+        "answerability": 0.9215024709701538,
+        "ground_truth": {
+          "NPM-ALK": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does NPM-ALK inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the p53 tumor suppressor pathway",
+        "answerability": 0.9834067225456238,
+        "ground_truth": {
+          "the p53 tumor suppressor pathway": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what way does NPM-ALK inhibit the p53 tumor suppressor pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1582147479057312,
+        "ground_truth": {
+          "an MDM2": {
+            "bertscore": 0.6540473699569702,
+            "f1": 0
+          },
+          "JNK-dependent manner": {
+            "bertscore": 0.6519756317138672,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

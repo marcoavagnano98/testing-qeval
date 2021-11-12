@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "An increased rate of lysosomal degradation is one of the mechanisms responsible for the loss of this zeta-chain.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An increased rate",
+        "lysosomal degradation",
+        "the mechanisms",
+        "the loss",
+        "this zeta-chain"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is one of the mechanisms responsible for the loss of zeta-chain?",
+          "What is one of the mechanisms responsible for the loss of zeta-chain?",
+          "What is the increase in lysosomal degradation one of?",
+          "What is the increase in lysosomal degradation responsible for?",
+          "What is lost by increased lysosomal degradation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is one of the mechanisms responsible for the loss of zeta-chain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased rate of lysosomal degradation",
+        "answerability": 0.9032392501831055,
+        "ground_truth": {
+          "An increased rate": {
+            "bertscore": 0.7144031524658203,
+            "f1": 0.5714285714285715
+          },
+          "lysosomal degradation": {
+            "bertscore": 0.8936091065406799,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is an increased rate of lysosomal degradation one of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mechanisms responsible for the loss of this zeta-chain",
+        "answerability": 0.8259503245353699,
+        "ground_truth": {
+          "the mechanisms": {
+            "bertscore": 0.7373595833778381,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the increase in lysosomal degradation responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the loss of this zeta-chain",
+        "answerability": 0.7039114236831665,
+        "ground_truth": {
+          "the loss": {
+            "bertscore": 0.7651364207267761,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is lost by lysosomal degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "zeta-chain",
+        "answerability": 0.6799289584159851,
+        "ground_truth": {
+          "zeta-chain": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

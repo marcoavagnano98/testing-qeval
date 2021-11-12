@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "MAZ a zinc finger protein binds to c-MYC and C2 gene sequences regulating transcription and protein expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a zinc finger protein binds",
+        "c-MYC and C2 gene sequences",
+        "transcription",
+        "protein expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is MAZ?",
+          "What does MAZ bind to?",
+          "What does MAZ regulate?",
+          "What does MAZ regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "zinc finger protein",
+        "answerability": 0.9850687980651855,
+        "ground_truth": {
+          "a zinc finger protein binds": {
+            "bertscore": 0.824812650680542,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What does MAZ bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-MYC and C2 gene sequences",
+        "answerability": 0.9914101362228394,
+        "ground_truth": {
+          "c-MYC and C2 gene sequences": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MAZ regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription and protein expression",
+        "answerability": 0.9971300363540649,
+        "ground_truth": {
+          "transcriptional initiation": {
+            "bertscore": 0.827741265296936,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main function of MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating transcription and protein expression",
+        "answerability": 0.9830829501152039,
+        "ground_truth": {
+          "termination": {
+            "bertscore": 0.7027588486671448,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

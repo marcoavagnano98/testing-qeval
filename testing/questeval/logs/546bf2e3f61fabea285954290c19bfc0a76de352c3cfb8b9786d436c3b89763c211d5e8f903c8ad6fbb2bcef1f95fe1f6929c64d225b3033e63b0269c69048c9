@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of NF-kappaB-mediated up-regulation of Bcl-x and Bfl-1/A1 is required for CD40 survival signaling in B lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bcl-x",
+        "Bfl-1/A1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for CD40 survival signaling?",
+          "What is required for CD40 survival signaling in B lymphocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "NF-kappaB-mediated up-regulation",
+        "Bcl-x and Bfl-1/A1",
+        "CD40 survival",
+        "B lymphocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for CD40 survival signaling in B lymphocytes?",
+          "What is required for CD40 survival signaling in B lymphocytes?",
+          "What is required for CD40 survival signaling in B lymphocytes?",
+          "What signaling is required for B lymphocytes?",
+          "What is required for CD40 survival signaling?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for CD40 survival signaling in B lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Inhibition of NF-kappaB-mediated up-regulation of Bc",
+        "answerability": 0.9823893904685974,
+        "ground_truth": {
+          "Bcl-x": {
+            "bertscore": 0.6269261837005615,
+            "f1": 0
+          },
+          "Bfl-1/A1": {
+            "bertscore": 0.599521815776825,
+            "f1": 0
+          },
+          "kappaB": {
+            "bertscore": 0.5768128633499146,
+            "f1": 0
+          },
+          "Bcl-x and Bfl-1/A1": {
+            "bertscore": 0.6199607253074646,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling is required for B lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5494698286056519,
+        "ground_truth": {
+          "CD40 survival": {
+            "bertscore": 0.6629742980003357,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is required for CD40 survival signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Inhibition of NF-kappaB-mediated up-regulation of Bc",
+        "answerability": 0.9548611640930176,
+        "ground_truth": {
+          "B lymphocytes": {
+            "bertscore": 0.6345885396003723,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

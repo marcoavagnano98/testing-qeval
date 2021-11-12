@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "E3330 may suppress the generation of active oxygen species serving as common messengers to activate NF-kappa B.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E3330"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may suppress the generation of active oxygen species serving as common messengers to activate NF-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "E3330",
+        "the generation",
+        "active oxygen species",
+        "common messengers",
+        "NF-kappa B."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may suppress the generation of active oxygen species serving as common messengers to activate NF-",
+          "What does E3330 suppress?",
+          "What does E3330 suppress?",
+          "What does E3330 serve as to activate NF-kappa B?",
+          "What does E3330 suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What chemical may suppress the production of oxygen species?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E3330",
+        "answerability": 0.9747176766395569,
+        "ground_truth": {
+          "E3330": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does E3330 suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the generation of active oxygen species",
+        "answerability": 0.9349069595336914,
+        "ground_truth": {
+          "the production": {
+            "bertscore": 0.6535003185272217,
+            "f1": 0
+          },
+          "active oxygen species": {
+            "bertscore": 0.8506935238838196,
+            "f1": 0.7499999999999999
+          },
+          "NF-kappa B.": {
+            "bertscore": 0.6497557163238525,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does E3330 serve as to activate NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "common messengers",
+        "answerability": 0.950652539730072,
+        "ground_truth": {
+          "common messengers": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

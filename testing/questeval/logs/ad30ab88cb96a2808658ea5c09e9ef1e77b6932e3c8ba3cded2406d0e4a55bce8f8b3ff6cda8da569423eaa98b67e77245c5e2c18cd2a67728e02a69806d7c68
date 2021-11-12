@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Olomucine concurrently delayed histone H2B phosphorylation nuclear translocation and cell survival.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H2B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylation did olomucine delay?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Olomucine",
+        "histone H2B phosphorylation nuclear translocation",
+        "cell survival"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the name of the molecule that delayed nuclear translocation and cell survival?",
+          "What did olomucine delay?",
+          "What did olomucine delay?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What histone phosphorylation did olomucine delay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H2B",
+        "answerability": 0.9947062730789185,
+        "ground_truth": {
+          "H2B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does olomucine delay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H2B phosphorylation nuclear translocation",
+        "answerability": 0.9810783267021179,
+        "ground_truth": {
+          "phosphorylation caspase-3": {
+            "bertscore": 0.8096351027488708,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What was the name of the molecule that delayed histone H2B phosphorylation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Olomucine",
+        "answerability": 0.9031167030334473,
+        "ground_truth": {
+          "Olomucine": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did olomucine delay?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "histone H2B phosphorylation nuclear translocation",
+        "answerability": 0.9880377650260925,
+        "ground_truth": {
+          "histone H2B phosphorylation caspase-3 activation": {
+            "bertscore": 0.9046878218650818,
+            "f1": 0.6
+          },
+          "cell death": {
+            "bertscore": 0.6818896532058716,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

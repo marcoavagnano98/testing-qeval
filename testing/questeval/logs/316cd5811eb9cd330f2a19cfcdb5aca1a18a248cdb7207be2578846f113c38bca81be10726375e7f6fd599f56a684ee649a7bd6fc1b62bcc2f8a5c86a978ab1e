@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "pathways is essential for the growth and vascularization of soft-tissue sarcomas which are malignant tumors derived from mesenchymal tissues.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "pathways"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is essential for the growth and vascularization of soft-tissue sarcom"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "pathways",
+        "the growth",
+        "vascularization",
+        "soft-tissue sarcomas",
+        "malignant tumors",
+        "mesenchymal tissues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is essential for the growth and vascularization of soft-tissue sarcom",
+          "What is the main function of sarcomas?",
+          "What is the main function of soft tissue sarcomas?",
+          "What type of tumors are malignant?",
+          "What are soft tissue sarcomas?",
+          "What are soft tissue sarcomas derived from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is essential for the growth and vascularization of soft-tissue sarcom": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pathways",
+        "answerability": 0.9708125591278076,
+        "ground_truth": {
+          "pathways": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main function of sarcomas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5622047781944275,
+        "ground_truth": {
+          "the growth": {
+            "bertscore": 0.6682292222976685,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main function of soft tissue sarcomas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "growth and vascularization",
+        "answerability": 0.9155254364013672,
+        "ground_truth": {
+          "vascularization": {
+            "bertscore": 0.9086394906044006,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What type of tumors are malignant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "soft-tissue sarcomas",
+        "answerability": 0.9713160395622253,
+        "ground_truth": {
+          "soft-tissue sarcomas": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are soft tissue sarcomas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "malignant tumors derived from mesenchymal tissues",
+        "answerability": 0.9982643723487854,
+        "ground_truth": {
+          "malignant tumors": {
+            "bertscore": 0.8577196002006531,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What are soft tissue sarcomas derived from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mesenchymal tissues",
+        "answerability": 0.9682883024215698,
+        "ground_truth": {
+          "mesenchymal tissues": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

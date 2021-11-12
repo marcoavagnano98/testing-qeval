@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Induction of cytokine expression in leukocytes by binding of thrombin-stimulated platelets.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Induction",
+        "cytokine expression",
+        "leukocytes",
+        "thrombin-stimulated platelets"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that causes cytokine expression in leukocytes?",
+          "What is induction of in leukocytes?",
+          "What cells are stimulated by thrombin-stimulated platelets?",
+          "What is the main mechanism of cytokine expression in leukocytes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process called that causes cytokine expression in leukocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16773325204849243,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.7021174430847168,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main effect of thrombin-stimulated platelets on leuk": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Induction of cytokine expression",
+        "answerability": 0.8199158310890198,
+        "ground_truth": {
+          "cytokine expression": {
+            "bertscore": 0.9033539295196533,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the target of cytokine expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukocytes",
+        "answerability": 0.5133678913116455,
+        "ground_truth": {
+          "leukocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism of action of cytokine in leukocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5251619815826416,
+        "ground_truth": {
+          "thrombin-stimulated platelets.\\nBACKGROUND": {
+            "bertscore": 0.5690173506736755,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

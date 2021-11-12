@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "The GATA-3 transcription factor is required for development of the T-cell lineage and Th2 cytokine gene expression in CD-3-positive T-cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The GATA-3 transcription factor",
+        "development",
+        "the T-cell lineage",
+        "Th2 cytokine gene expression",
+        "CD-3-positive T-cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for development of the T-cell lineage and Th2 cytokine",
+          "What is the GATA-3 transcription factor required for?",
+          "What is the GATA-3 transcription factor required for?",
+          "What is the GATA-3 transcription factor required for in CD-3-positive T-cells",
+          "What type of T cells are required for the development of the Th2 cytokine gene"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for development of the T-cell lineage and Th2 cytokine": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-3 transcription factor",
+        "answerability": 0.9702697396278381,
+        "ground_truth": {
+          "The GATA-3 transcription factor": {
+            "bertscore": 0.9396346807479858,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the GATA-3 transcription factor required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "development of the T-cell lineage and Th2 cytokine gene expression in CD",
+        "answerability": 0.9978047609329224,
+        "ground_truth": {
+          "development": {
+            "bertscore": 0.6431741714477539,
+            "f1": 0.16666666666666669
+          },
+          "the T-cell lineage": {
+            "bertscore": 0.7675292491912842,
+            "f1": 0.3076923076923077
+          }
+        }
+      }
+    },
+    "What is the GATA-3 transcription factor required for in CD4 T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09246671199798584,
+        "ground_truth": {
+          "Th2 cytokine gene expression": {
+            "bertscore": 0.5660658478736877,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are required for the development of the T-cell lineage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD-3-positive T-cells",
+        "answerability": 0.954485297203064,
+        "ground_truth": {
+          "CD4 T-cells": {
+            "bertscore": 0.880838930606842,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

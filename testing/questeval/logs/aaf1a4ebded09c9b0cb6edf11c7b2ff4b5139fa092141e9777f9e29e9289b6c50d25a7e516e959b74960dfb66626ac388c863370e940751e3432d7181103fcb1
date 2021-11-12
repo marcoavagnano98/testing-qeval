@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "T cells is mostly mediated by the inducible expression of Fas ligand (FasL) as a consequence of ligand interaction.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What ligand is involved in the inducibility of T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "T cells",
+        "the inducible expression",
+        "Fas ligand",
+        "(FasL",
+        "a consequence",
+        "ligand interaction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells is mediated by the inducible expression of FasL?",
+          "What is the main mechanism of T cells?",
+          "What is the inducible expression of?",
+          "What is the name of the ligand that binds to T cells?",
+          "What is the inducible expression of FasL?",
+          "What is the main cause of T cells being able to express FasL?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What ligand is involved in the commitment to death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002059757709503174,
+        "ground_truth": {
+          "Fas": {
+            "bertscore": 0.6837171316146851,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the primary event that leads to the commitment to death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004089474678039551,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.6607831716537476,
+            "f1": 0
+          },
+          "the inducible expression": {
+            "bertscore": 0.6646653413772583,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is FasL?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inducible expression of Fas ligand",
+        "answerability": 0.9077845811843872,
+        "ground_truth": {
+          "Fas ligand": {
+            "bertscore": 0.7747610807418823,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is the main event that leads to the commitment to death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009544491767883301,
+        "ground_truth": {
+          "(FasL": {
+            "bertscore": 0.6653192043304443,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the inducible expression of FasL?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ligand interaction",
+        "answerability": 0.8044431805610657,
+        "ground_truth": {
+          "a primary event": {
+            "bertscore": 0.7118984460830688,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does FasL lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45527416467666626,
+        "ground_truth": {
+          "the commitment": {
+            "bertscore": 0.6771546602249146,
+            "f1": 0
+          },
+          "death": {
+            "bertscore": 0.7211862802505493,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "Low concentrations of RA inhibiting IgE synthesis (10(-10) mol/L) affected neither B-cell proliferation nor the production of IgA IgG and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RA",
+        "IgE"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What substance inhibited IgE synthesis?",
+          "What synthesis did low concentrations of RA inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Low concentrations",
+        "RA",
+        "IgE synthesis",
+        "(10(-10",
+        "mol/L",
+        "neither B-cell proliferation",
+        "the production",
+        "IgA IgG"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited IgE synthesis?",
+          "What substance inhibited IgE synthesis?",
+          "What did low concentrations of RA inhibit?",
+          "What concentration of RA inhibited IgE synthesis?",
+          "What was the concentration of RA that inhibited IgE synthesis?",
+          "What did low concentrations of RA inhibit?",
+          "What did low concentrations of RA inhibit?",
+          "What did low concentrations of RA inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What substance inhibited IgE synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RA",
+        "answerability": 0.9403856992721558,
+        "ground_truth": {
+          "RA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What synthesis did low concentrations of RA inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IgE",
+        "answerability": 0.979375958442688,
+        "ground_truth": {
+          "IgE": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited IgE synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RA",
+        "answerability": 0.9451610445976257,
+        "ground_truth": {
+          "Low concentrations": {
+            "bertscore": 0.7173334956169128,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did low concentrations of RA inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IgE synthesis",
+        "answerability": 0.9694567322731018,
+        "ground_truth": {
+          "IgE synthesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "neither B-cell proliferation": {
+            "bertscore": 0.7346951365470886,
+            "f1": 0
+          },
+          "the production": {
+            "bertscore": 0.6278660893440247,
+            "f1": 0
+          },
+          "IgA IgG": {
+            "bertscore": 0.7558310627937317,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What concentration of RA inhibited IgE synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "10(-10) mol/L",
+        "answerability": 0.9803794622421265,
+        "ground_truth": {
+          "(10(-10": {
+            "bertscore": 0.7332233786582947,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the concentration of RA that inhibited IgE synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "10(-10) mol/L",
+        "answerability": 0.9962496161460876,
+        "ground_truth": {
+          "mol/L": {
+            "bertscore": 0.810398519039154,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

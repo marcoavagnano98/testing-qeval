@@ -1,0 +1,164 @@
+{
+  "type": "hyp",
+  "text": "Indomethacin blocked PGE2 release but had no influence on the observed effects of C3a suggesting that the effects ofC3a on IL-6 production are independent of PGE2 formation by monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PGE2",
+        "ofC3a",
+        "IL-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Indomethacin block?",
+          "What did Indomethacin not block?",
+          "What is the effect of Indomethacin on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Indomethacin",
+        "PGE2 release",
+        "no influence",
+        "the observed effects",
+        "C3a",
+        "the effects",
+        "IL-6 production",
+        "PGE2 formation",
+        "monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What blockade PGE2 release?",
+          "What did Indomethacin block?",
+          "What did Indomethacin have on IL-6 production?",
+          "What did Indomethacin not have an effect on?",
+          "What did Indomethacin not block?",
+          "What is independent of PGE2 formation by monocytes?",
+          "What does Indomethacin block?",
+          "What did Indomethacin block?",
+          "What did Indomethacin block PGE2 release from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does Indomethacin block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PGE2 release",
+        "answerability": 0.9928256273269653,
+        "ground_truth": {
+          "PGE2": {
+            "bertscore": 0.8809945583343506,
+            "f1": 0.6666666666666666
+          },
+          "IL-6 production": {
+            "bertscore": 0.7273167967796326,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of Indomethacin on monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2180696725845337,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 0.6727325320243835,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blockade PGE2 release?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Indomethacin",
+        "answerability": 0.9976342916488647,
+        "ground_truth": {
+          "Indomethacin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did Indomethacin block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PGE2 release",
+        "answerability": 0.9944584369659424,
+        "ground_truth": {
+          "PGE2 release": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "PGE2 formation": {
+            "bertscore": 0.8943260312080383,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did Indomethacin have on IL-6 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.293898344039917,
+        "ground_truth": {
+          "no influence": {
+            "bertscore": 0.7323979735374451,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Indomethacin not have an effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C3a",
+        "answerability": 0.9687861204147339,
+        "ground_truth": {
+          "the observed effects": {
+            "bertscore": 0.6414653062820435,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Indomethacin not block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.28909581899642944,
+        "ground_truth": {
+          "C3a": {
+            "bertscore": 0.6812695264816284,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Indomethacin not influence on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C3a",
+        "answerability": 0.9168089628219604,
+        "ground_truth": {
+          "the effects": {
+            "bertscore": 0.6475571990013123,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Indomethacin block PGE2 release from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.052938222885131836,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6662787199020386,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

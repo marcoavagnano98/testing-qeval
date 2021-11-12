@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "TF is involved in cell migration embryogenesis and angiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in cell migration embryogenesis and angiogenesis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TF",
+        "cell migration embryogenesis",
+        "angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in cell migration embryogenesis and angiogenesis?",
+          "What is TF involved in?",
+          "What is the other major process that TF is involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is involved in cell migration embryogenesis and angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF",
+        "answerability": 0.997188150882721,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is TF involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell migration embryogenesis and angiogenesis",
+        "answerability": 0.9976208209991455,
+        "ground_truth": {
+          "cell migration embryogenesis": {
+            "bertscore": 0.924114465713501,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the other major process that TF is involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "angiogenesis",
+        "answerability": 0.9919376373291016,
+        "ground_truth": {
+          "angiogenesis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

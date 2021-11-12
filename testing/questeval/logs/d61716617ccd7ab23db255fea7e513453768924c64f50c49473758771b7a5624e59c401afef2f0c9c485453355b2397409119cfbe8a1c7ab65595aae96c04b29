@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Circulating endothelial cells in malignant disease. Cancer is a disease largely dependent on neoangiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "endothelial cells",
+        "malignant disease",
+        "Cancer",
+        "a disease",
+        "neoangiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells are involved in cancer?",
+          "What type of cancer is largely dependent on neoangiogenesis?",
+          "What is a disease dependent on neoangiogenesis?",
+          "What is cancer largely dependent on?",
+          "What is cancer largely dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells are involved in cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cells",
+        "answerability": 0.653840184211731,
+        "ground_truth": {
+          "endothelial cells": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cancer is largely dependent on neoangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "malignant disease",
+        "answerability": 0.950270414352417,
+        "ground_truth": {
+          "malignant disease": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is a disease dependent on neoangiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cancer",
+        "answerability": 0.9977121949195862,
+        "ground_truth": {
+          "Cancer": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is cancer largely dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4595063328742981,
+        "ground_truth": {
+          "a disease": {
+            "bertscore": 0.689765453338623,
+            "f1": 0
+          },
+          "neoangiogenesis": {
+            "bertscore": 0.6483666896820068,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

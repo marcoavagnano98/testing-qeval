@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "I (HTLV-I)-infected T-cell lines constitutively produce high levels of interleukin-1alpha (IL-1alpha).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "interleukin-1alpha",
+        "IL-1alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does HTLV-I produce?",
+          "What is the name of the protein that is produced by HTLV-I cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "I",
+        "HTLV-I)-infected T-cell lines",
+        "high levels",
+        "interleukin-1alpha",
+        "(IL-1alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of T cells are infected with HTLV-I?",
+          "What type of cells produce high levels of IL-1alpha?",
+          "What do HTLV-I-infected T-cell lines produce?",
+          "What does HTLV-I produce?",
+          "What does HTLV-I produce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does HTLV-I produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.507148027420044,
+        "ground_truth": {
+          "interleukin-1alpha": {
+            "bertscore": 0.6045324802398682,
+            "f1": 0
+          },
+          "(IL-1alpha": {
+            "bertscore": 0.6347271203994751,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is produced by HTLV-I cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-1alpha",
+        "answerability": 0.7484307289123535,
+        "ground_truth": {
+          "IL-1alpha": {
+            "bertscore": 0.843770444393158,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of T cells are infected with HTLV-I?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell lines",
+        "answerability": 0.8234835267066956,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.7029024362564087,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells produce high levels of IL-1alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell lines",
+        "answerability": 0.8648751378059387,
+        "ground_truth": {
+          "HTLV-I)-infected T-cell lines": {
+            "bertscore": 0.7666549682617188,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What do HTLV-I-infected T-cell lines produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-1alpha",
+        "answerability": 0.8751100301742554,
+        "ground_truth": {
+          "high levels": {
+            "bertscore": 0.6592146754264832,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

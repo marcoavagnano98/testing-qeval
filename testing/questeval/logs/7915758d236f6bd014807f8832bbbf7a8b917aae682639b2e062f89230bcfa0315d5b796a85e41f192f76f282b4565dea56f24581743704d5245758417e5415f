@@ -1,0 +1,84 @@
+{
+  "type": "ref",
+  "text": "On the contrary FOXP3 mRNA was significantly decreased in RUNX1- and RUNX3-deficient T reg cells compared with control cells (Fig.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the contrary FOXP3 mRNA",
+        "RUNX1-",
+        "RUNX3-deficient T reg cells",
+        "control cells",
+        "Fig"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was significantly decreased in RUNX1- and RUNX3-deficient T",
+          "What type of T reg cells had a significantly decreased FOXP3 mRNA?",
+          "What type of cells had a significantly lower FOXP3 mRNA?",
+          "What type of cells had FOXP3 mRNA significantly decreased?",
+          "What is the mRNA of FOXP3 in RUNX1- and R"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was significantly decreased in RUNX3- and RUNX3-deficient T": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FOXP3 mRNA",
+        "answerability": 0.8409852385520935,
+        "ground_truth": {
+          "the contrary FOXP3 mRNA": {
+            "bertscore": 0.8795985579490662,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of T reg cells had a significantly decreased FOXP3 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RUNX1- and RUNX3-deficient",
+        "answerability": 0.921902060508728,
+        "ground_truth": {
+          "RUNX3-": {
+            "bertscore": 0.7759976387023926,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells had a significantly lower FOXP3 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RUNX1- and RUNX3-deficient T reg cells",
+        "answerability": 0.9070936441421509,
+        "ground_truth": {
+          "RUNX3-deficient T reg cells": {
+            "bertscore": 0.9141266942024231,
+            "f1": 0.8
+          },
+          "control cells": {
+            "bertscore": 0.6870285868644714,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the mRNA of FOXP3 in RUNX3- and R": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38769030570983887,
+        "ground_truth": {
+          "Fig": {
+            "bertscore": 0.6844372749328613,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

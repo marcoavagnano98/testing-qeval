@@ -1,0 +1,90 @@
+{
+  "type": "hyp",
+  "text": "The severe phenotype of females with tiny ring X chromosomes is associated with inability of these chromosomes to form metastatic tumors.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The severe phenotype",
+        "females",
+        "tiny ring X chromosomes",
+        "inability",
+        "these chromosomes",
+        "metastatic tumors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the phenotype of females with tiny ring X chromos",
+          "What type of chromosomes are associated with the inability to form metastatic tumor",
+          "What is the phenotype of females with?",
+          "What is the phenotype of females with tiny ring X chromos",
+          "What is the phenotype of severe phenotype of females with tiny",
+          "What is the phenotype of females with tiny ring X chromos"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the phenotype of females with tiny ring X chromos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "severe",
+        "answerability": 0.950591504573822,
+        "ground_truth": {
+          "The severe phenotype": {
+            "bertscore": 0.7293310761451721,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of chromosomes have tiny ring X chromosomes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "females",
+        "answerability": 0.6142366528511047,
+        "ground_truth": {
+          "females": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the severe phenotype of females with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tiny ring X chromosomes",
+        "answerability": 0.9873974323272705,
+        "ground_truth": {
+          "tiny ring X chromosomes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the severe phenotype of females with tiny ring X chro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inability of these chromosomes to form metastatic tumors",
+        "answerability": 0.8052014112472534,
+        "ground_truth": {
+          "inability": {
+            "bertscore": 0.7151750922203064,
+            "f1": 0.2222222222222222
+          },
+          "these chromosomes": {
+            "bertscore": 0.7861928343772888,
+            "f1": 0.4
+          },
+          "X inactivation": {
+            "bertscore": 0.6730350255966187,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

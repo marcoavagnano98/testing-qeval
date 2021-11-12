@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "These results strongly suggest that HU induces both transcriptional and post-transcription regulation of jun during erythroid differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HU",
+        "jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What hormone induces transcriptional regulation of jun during erythroid differentiation?",
+          "What part of the erythroid differentiation process does HU induce?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "HU",
+        "both transcriptional and post-transcription regulation",
+        "jun",
+        "erythroid differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that HU induces both transcriptional and post-transcription regulation of jun",
+          "What hormone induces transcriptional regulation of jun during erythroid differentiation?",
+          "What does HU induce during erythroid differentiation?",
+          "What part of the erythroid differentiation process does HU induce?",
+          "What is the main process that HU induces?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induces both transcriptional and post-transcription regulation of c-jun during": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1802966594696045,
+        "ground_truth": {
+          "HU": {
+            "bertscore": 0.7084292769432068,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that HU induces both transcriptional and post-transcription regulation of c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5130166411399841,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.6313728094100952,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HU induce during erythroid differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional and post-transcription regulation",
+        "answerability": 0.8682558536529541,
+        "ground_truth": {
+          "both transcriptional and post-transcription regulation": {
+            "bertscore": 0.9335039854049683,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What is the transcriptional and post-transcription regulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "jun",
+        "answerability": 0.9642632007598877,
+        "ground_truth": {
+          "c-jun": {
+            "bertscore": 0.8662607669830322,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main process that HU induces?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional and post-transcription regulation",
+        "answerability": 0.9323611855506897,
+        "ground_truth": {
+          "erythroid differentiation": {
+            "bertscore": 0.7141815423965454,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

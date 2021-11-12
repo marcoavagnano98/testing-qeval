@@ -1,0 +1,116 @@
+{
+  "type": "ref",
+  "text": "In human peripheral blood mononuclear cells (PBMC) stimulated with OKT3/PMA tepoxalin inhibited lymphocyte proliferation with an IC50 of 6 microM.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "mononuclear",
+        "OKT3/PMA",
+        "IC50",
+        "6 microM."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were stimulated with OKT3/PMA?",
+          "What is tepoxalin?",
+          "What was the IC50 of the inhibitor?",
+          "What was the IC50 of tepoxalin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "human peripheral blood mononuclear cells",
+        "PBMC",
+        "OKT3/PMA tepoxalin",
+        "lymphocyte proliferation",
+        "an IC50",
+        "6 microM."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PBMC?",
+          "What is the name of the cell that is stimulated with OKT3/PMA?",
+          "What inhibited lymphocyte proliferation?",
+          "What did tepoxalin inhibit?",
+          "What was the IC50 of the inhibitor?",
+          "What was the IC50 of tepoxalin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the active ingredient in IL-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009274482727050781,
+        "ground_truth": {
+          "C3a(desArg": {
+            "bertscore": 0.624273955821991,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found to increase IL-6 release when stimulated with OKT3/PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08220618963241577,
+        "ground_truth": {
+          "PBMC": {
+            "bertscore": 0.684867799282074,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was found to stimulate IL-6 release by PBMC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39959263801574707,
+        "ground_truth": {
+          "OKT3/PMA": {
+            "bertscore": 0.676055908203125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two molecules were found to increase IL-6 release by PBMC when stimulated with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "OKT3/PMA tepoxalin",
+        "answerability": 0.5339391827583313,
+        "ground_truth": {
+          "both C3a": {
+            "bertscore": 0.6642924547195435,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did C3a and C3a(desArg) enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007297396659851074,
+        "ground_truth": {
+          "IL-6 release": {
+            "bertscore": 0.6518436670303345,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How did C3a and C3a(desArg) increase IL-6 release?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008937716484069824,
+        "ground_truth": {
+          "a dose-dependent manner": {
+            "bertscore": 0.6532402038574219,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

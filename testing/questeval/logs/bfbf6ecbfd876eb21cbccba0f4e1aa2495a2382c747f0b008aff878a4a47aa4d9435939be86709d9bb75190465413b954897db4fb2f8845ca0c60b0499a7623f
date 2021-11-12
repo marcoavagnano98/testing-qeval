@@ -1,0 +1,70 @@
+{
+  "type": "ref",
+  "text": "Promoter hypermethylation profile of RASSF1A FHIT and sFRP1 in intracranial primitive neuroectodermal tumors.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "FHIT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter hypermethylation profile is present in sFRP1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Promoter hypermethylation profile",
+        "RASSF1A FHIT",
+        "sFRP1",
+        "intracranial primitive neuroectodermal tumors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the difference between RASSF1A FHIT and sFRP1",
+          "What promoter is methylated in sFRP1?",
+          "What is the promoter hypermethylation profile of RASSF1A FHIT?",
+          "Where is RASSF1A FHIT and sFRP1 found?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter hypermethylation profile is found in intracranial primitive neuroectoderma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3315644860267639,
+        "ground_truth": {
+          "sFRP1": {
+            "bertscore": 0.6094753742218018,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the sFRP1 gene known for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.039712369441986084,
+        "ground_truth": {
+          "Promoter hypermethylation profile": {
+            "bertscore": 0.6086319088935852,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is sFRP1 found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "intracranial primitive neuroectodermal tumors",
+        "answerability": 0.8238046765327454,
+        "ground_truth": {
+          "intracranial primitive neuroectodermal tumors": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "Our results indicate that ATRA as well as VD efficiently increases the nuclear import of VD receptor (VDR) and promotes monocytic differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ATRA",
+        "VD",
+        "VD",
+        "VDR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases the nuclear import of VD receptor?",
+          "What receptor increases the nuclear import of VDR?",
+          "What receptor increases the nuclear import of VDR?",
+          "What is the name of the receptor that increases the nuclear import of VD?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our results",
+        "ATRA",
+        "VD",
+        "the nuclear import",
+        "VD receptor",
+        "VDR",
+        "monocytic differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that ATRA and VD increase the nuclear import of VDR?",
+          "What increases the nuclear import of VD receptor?",
+          "What receptor increases the nuclear import of VDR?",
+          "What does ATRA and VD increase?",
+          "What does VDR stand for?",
+          "What is the name of the receptor that increases the nuclear import of VD?",
+          "What does ATRA and VD promote?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases the nuclear abundance of VDR receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ATRA as well as VD",
+        "answerability": 0.834416389465332,
+        "ground_truth": {
+          "ATRA": {
+            "bertscore": 0.838474452495575,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What receptor increases the nuclear abundance of ATRA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VD receptor",
+        "answerability": 0.8827794194221497,
+        "ground_truth": {
+          "VD": {
+            "bertscore": 0.8207436203956604,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the name of the receptor that increases the nuclear abundance of a rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VDR",
+        "answerability": 0.9375371336936951,
+        "ground_truth": {
+          "VDR": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What indicates that ATRA and VD increase the nuclear abundance of VDR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25057077407836914,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 0.6937651634216309,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does ATRA and VD increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear import",
+        "answerability": 0.9946153163909912,
+        "ground_truth": {
+          "the nuclear abundance": {
+            "bertscore": 0.7372914552688599,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does VDR stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VD receptor",
+        "answerability": 0.7248961329460144,
+        "ground_truth": {
+          "VD receptor": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does ATRA and VD promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocytic differentiation",
+        "answerability": 0.9376822710037231,
+        "ground_truth": {
+          "monocytic differentiation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

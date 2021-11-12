@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Thus IkappaBalpha degradation and RPS3 nuclear translocation were required for the NF-kappaB activity of E. coli O157:H7.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha",
+        "NF-kappaB",
+        "E."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What enzyme was required for the NF-kappaB activity of E.coli O",
+          "What enzyme is required for the activity of E. coli O157:H7?",
+          "What coli species is required for NF-kappaB activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IkappaBalpha degradation and RPS3 nuclear translocation",
+        "the NF-kappaB activity",
+        "E. coli O157"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two processes were required for the NF-kappaB activity of E.",
+          "What is the function of IkappaBalpha degradation and RPS3?",
+          "What organism was required for the NF-kappaB activity?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required to cause RPS3 association with importin-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15710771083831787,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 0.6275320053100586,
+            "f1": 0
+          },
+          "IkappaBalpha phosphorylation": {
+            "bertscore": 0.5785697102546692,
+            "f1": 0
+          },
+          "degradation": {
+            "bertscore": 0.7194916009902954,
+            "f1": 0
+          },
+          "itself": {
+            "bertscore": 0.7354585528373718,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is not enough to cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00029534101486206055,
+        "ground_truth": {
+          "RPS3 association": {
+            "bertscore": 0.6468274593353271,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of RPS3 association?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09024649858474731,
+        "ground_truth": {
+          "importin-alpha": {
+            "bertscore": 0.645880401134491,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the second step in the phosphorylation and degradation of IkappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RPS3 nuclear translocation",
+        "answerability": 0.5417813062667847,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 0.878358006477356,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

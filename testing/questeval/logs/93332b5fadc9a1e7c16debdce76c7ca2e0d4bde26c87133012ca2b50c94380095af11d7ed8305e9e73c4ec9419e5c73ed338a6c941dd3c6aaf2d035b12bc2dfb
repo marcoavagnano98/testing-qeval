@@ -1,0 +1,62 @@
+{
+  "type": "ref",
+  "text": "However NFATc.beta neither bound to the kappa3 element ( an NFAT-binding site ) in the tumor necrosis factor-alpha promoter nor activated the tumor necrosis factor-alpha promoter in cotransfection assays.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappa3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What element did NFATc.beta not bound to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NFATc.beta",
+        "the kappa3 element",
+        "an NFAT-binding site",
+        "the tumor necrosis factor-alpha promoter",
+        "the tumor necrosis factor-alpha promoter",
+        "cotransfection"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein did not activate the tumor necrosis factor-alpha promoter?",
+          "What does NFATc.beta not bound to?",
+          "What is kappa3?",
+          "What did NFATc.beta not activate in cotransfection assays",
+          "What did NFATc.beta not activate in cotransfection assays",
+          "What type of assays did NFATc.beta not activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did NFATc.beta not activate in cotransfection assays": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2912939190864563,
+        "ground_truth": {
+          "the tumor necrosis factor-alpha promoter": {
+            "bertscore": 0.5949602127075195,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of assay did NFATc.beta not activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cotransfection",
+        "answerability": 0.9481824040412903,
+        "ground_truth": {
+          "cotransfection": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

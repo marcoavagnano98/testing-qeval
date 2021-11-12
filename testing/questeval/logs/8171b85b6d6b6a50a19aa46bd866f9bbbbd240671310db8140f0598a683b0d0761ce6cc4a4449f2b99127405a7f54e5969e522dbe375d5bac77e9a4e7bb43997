@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Binding of HIV-TF1 to the HIV long terminal repeat (LTR) activated transcription from the HIV promoter in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV-TF1",
+        "the HIV long terminal repeat",
+        "(LTR",
+        "transcription",
+        "the HIV promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein activated transcription from the HIV promoter in vitro?",
+          "What does the acronym LTR stand for?",
+          "What is the long terminal repeat?",
+          "What did the binding of HIV-TF1 to the HIV long terminal repeat activate?",
+          "What did the binding of HIV-TF1 to the HIV long terminal repeat activate transcription from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what way did LTR activate transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Binding",
+        "answerability": 0.9290896058082581,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.8054741621017456,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What activated transcription from the HIV promoter in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Binding of HIV-TF1 to the HIV long terminal repeat",
+        "answerability": 0.9971975088119507,
+        "ground_truth": {
+          "(LTR": {
+            "bertscore": 0.6118943095207214,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did LTR activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription",
+        "answerability": 0.9908801913261414,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did LTR activate in vitro?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription",
+        "answerability": 0.9842618703842163,
+        "ground_truth": {
+          "the HIV promoter": {
+            "bertscore": 0.7442671060562134,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

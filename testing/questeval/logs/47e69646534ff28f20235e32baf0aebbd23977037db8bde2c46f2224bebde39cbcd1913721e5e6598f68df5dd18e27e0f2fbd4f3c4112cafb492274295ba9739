@@ -1,0 +1,60 @@
+{
+  "type": "hyp",
+  "text": "RALDH2 expression in a T-ALL cell line HPB-ALL not expressing endogeneous TAL1 or LMO.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HPB",
+        "LMO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the T-ALL cell line that does not express endogenous",
+          "What is the only gene that does not express RALDH2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "RALDH2 expression",
+        "a T-ALL cell line",
+        "endogeneous TAL1",
+        "LMO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main function of RALDH2 in a T-ALL cell line?",
+          "In what cell line is RALDH2 expressed?",
+          "What does HPB-ALL not express?",
+          "What is the only gene that does not express RALDH2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the only gene that was induced by TAL1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008613049983978271,
+        "ground_truth": {
+          "LMO": {
+            "bertscore": 0.6950322985649109,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the only way to induce a TB infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0016198158264160156,
+        "ground_truth": {
+          "Exogenously transfected TAL1": {
+            "bertscore": 0.6567147970199585,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

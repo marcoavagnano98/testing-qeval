@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "Three weeks after injection blood perfusion and capillary density were significantly higher in the FM-MSC and BM-MSC groups than in the phosphate-buffered saline group and allogeneic FM-MSC and BM-MSC obtained from the Lewis rats were injected into a MHC-mismatched August-Copenhagen-Irish rat model of hind limb ischemia.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Three weeks",
+        "FM-MSC",
+        "BM-MSC",
+        "BM-MSC",
+        "Lewis",
+        "MHC",
+        "August",
+        "Irish"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long after injection did blood perfusion and capillary density increase?",
+          "What was the name of the allogeneic group of saline injected into",
+          "What was the name of the allogeneic FM-MSC that was injected into",
+          "What was the name of the allogeneic FM-MSC that was injected into",
+          "What rats were used to test for ischemia?",
+          "What was the rat model of ischemia that was mismatched?",
+          "What month was the rat model of hind limb ischemia?",
+          "What was the rat model of hind limb ischemia?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "injection blood perfusion",
+        "capillary density",
+        "the FM-MSC",
+        "BM-MSC groups",
+        "the phosphate-buffered saline group",
+        "allogeneic FM-MSC",
+        "BM-MSC",
+        "the Lewis rats",
+        "a MHC-mismatched August-Copenhagen-Irish rat model",
+        "hind limb ischemia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was significantly higher in the FM-MSC and BM-MSC groups three weeks",
+          "What was significantly higher in the FM-MSC and BM-MSC groups after injection",
+          "Blood perfusion and capillary density were significantly higher in which group?",
+          "Blood perfusion and capillary density were significantly higher in which two groups?",
+          "What group had a higher blood perfusion and capillary density three weeks after injection?",
+          "What was the name of the injected group?",
+          "What was the name of the allogeneic FM-MSC that was injected into",
+          "What animals were the allogeneic FM-MSC and BM-MSC obtained",
+          "What was used to test the efficacy of the allogeneic FM-MSC",
+          "What was the result of the injection of allogeneic FM-MSC and BM"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What rat was the source of FM-MSC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Lewis rats",
+        "answerability": 0.9833279848098755,
+        "ground_truth": {
+          "Lewis": {
+            "bertscore": 0.8236029744148254,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was the surface antigen of the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0032401680946350098,
+        "ground_truth": {
+          "BM-MSC": {
+            "bertscore": 0.682463526725769,
+            "f1": 0
+          },
+          "FM-MSC": {
+            "bertscore": 0.6567209959030151,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where were FM-MSC obtained from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Lewis rats",
+        "answerability": 0.9850366115570068,
+        "ground_truth": {
+          "Lewis rats": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the main difference between FM-MSC and BM-MSC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "blood perfusion and capillary density",
+        "answerability": 0.9961981177330017,
+        "ground_truth": {
+          "surface antigen expression": {
+            "bertscore": 0.7938796281814575,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the surface antigen expression of FM-MSC similar to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0032347440719604492,
+        "ground_truth": {
+          "multipotent potential": {
+            "bertscore": 0.7087030410766602,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

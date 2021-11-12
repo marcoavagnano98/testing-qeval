@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "Our results demonstrate that TPA-dependent activation of the HTLV-\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our results",
+        "the HTLV-"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that TPA-dependent activation of the HTLV-B is a",
+          "What is the main component of the HTLV-cell?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that TPA-dependent activation of the HTLV-B is a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Our results",
+        "answerability": 0.8559727668762207,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein is involved in the cytokine response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09830981492996216,
+        "ground_truth": {
+          "the HTLV-": {
+            "bertscore": 0.6541440486907959,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "These results strongly suggest that HU induces both transcriptional and post-transcription regulation of c-fos mRNA in K562 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HU"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induces both transcriptional and post-transcription regulation of c-fos"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "HU",
+        "both transcriptional and post-transcription regulation",
+        "c-fos mRNA in K562 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that HU induces both transcriptional and post-transcription regulation of c",
+          "What induces both transcriptional and post-transcription regulation of c-fos",
+          "What does HU induce in c-fos mRNA?",
+          "What does HU induce transcriptional and post-transcription regulation of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induces both transcriptional and post-transcription regulation of c-jun during": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4589782953262329,
+        "ground_truth": {
+          "HU": {
+            "bertscore": 0.708429217338562,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that HU induces both transcriptional and post-transcription regulation of c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These results strongly suggest that HU induces both transcriptional and post-transcription regulation of",
+        "answerability": 0.9784212112426758,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.6315516829490662,
+            "f1": 0.2666666666666667
+          }
+        }
+      }
+    },
+    "What does HU induce during erythroid differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4153411388397217,
+        "ground_truth": {
+          "both transcriptional and post-transcription regulation": {
+            "bertscore": 0.6278479099273682,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the transcriptional and post-transcription regulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos mRNA",
+        "answerability": 0.961089551448822,
+        "ground_truth": {
+          "c-jun": {
+            "bertscore": 0.7694131135940552,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main process that HU induces?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional and post-transcription regulation",
+        "answerability": 0.9693582653999329,
+        "ground_truth": {
+          "erythroid differentiation": {
+            "bertscore": 0.7141813635826111,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

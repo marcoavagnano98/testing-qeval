@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "(ERK1/2) and c-Jun N-terminal kinase (JNK) in mediating IL-6 gene expression in human monocytes inhibitors of MAP kinase (PD98059) or platelet-activating factor (PAF)- receptor antagonist (CV3988).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "JNK",
+        "IL-6",
+        "MAP",
+        "PAF)-"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the c-Jun N-terminal kinase?",
+          "What gene does JNK mediate in human monocytes?",
+          "What kinase is PD98059?",
+          "What is the name of the receptor antagonist that controls IL-6?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "and c-Jun N-terminal kinase",
+        "JNK",
+        "IL-6 gene expression",
+        "human monocytes inhibitors",
+        "MAP kinase",
+        "(PD98059",
+        "platelet-activating factor",
+        "PAF)- receptor antagonist",
+        "CV3988"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are JNK and ERK1/2?",
+          "What is the c-Jun N-terminal kinase?",
+          "What does JNK mediate in human monocytes inhibitors of MAP kin",
+          "What is PD98059?",
+          "What is PD98059?",
+          "What is MAP kinase?",
+          "What is PAF?",
+          "What is the other name for platelet-activating factor?",
+          "What is the name of the protein that mediates IL-6 gene expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the c-Jun N-terminal kinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JNK",
+        "answerability": 0.8523522019386292,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene does JNK play a role in regulating?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.9865946173667908,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are the two major kinases that mediate IL-6 gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MAP kinase (PD98059) or platelet-activating factor",
+        "answerability": 0.8221151828765869,
+        "ground_truth": {
+          "and c-Jun N-terminal kinase": {
+            "bertscore": 0.7031634449958801,
+            "f1": 0.2
+          }
+        }
+      }
+    },
+    "What do human monocytes mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6 gene expression",
+        "answerability": 0.5843309164047241,
+        "ground_truth": {
+          "IL-6 gene expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of c-Jun N-terminal kinase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2582276463508606,
+        "ground_truth": {
+          "human monocytes": {
+            "bertscore": 0.6539058089256287,
+            "f1": 0
+          },
+          "their role": {
+            "bertscore": 0.6453273892402649,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-6 play a role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5807164311408997,
+        "ground_truth": {
+          "NF-kappa B activity": {
+            "bertscore": 0.6241194605827332,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

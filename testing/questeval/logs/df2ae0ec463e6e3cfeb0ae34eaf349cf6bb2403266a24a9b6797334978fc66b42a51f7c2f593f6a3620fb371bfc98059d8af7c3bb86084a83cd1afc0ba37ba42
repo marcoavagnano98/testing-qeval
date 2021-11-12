@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "These results establish a crucial PI 3-kinase/PKB-mediated link between the IL-2 teceptor and the cell cycle machinery.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What teceptor is involved in the cell cycle?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "a crucial PI 3-kinase/PKB-mediated link",
+        "the IL-2 teceptor",
+        "the cell cycle machinery"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What establishes a crucial PI 3-kinase/PKB-mediated",
+          "What do these results establish?",
+          "What is the link between the cell cycle machinery and PI 3-kinase?",
+          "What does the PI 3-kinase/PKB-mediated link between the"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What teceptor is involved in the cell cycle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9662638306617737,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What establishes a crucial PI3K/PKB-mediated link between the": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "These results",
+        "answerability": 0.6888096928596497,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do these results establish?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI 3-kinase/PKB-mediated link between the IL-2",
+        "answerability": 0.9508631229400635,
+        "ground_truth": {
+          "a crucial PI3K/PKB-mediated link": {
+            "bertscore": 0.8074856400489807,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the key link between the cell cycle machinery and PI3K/PKB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9301258325576782,
+        "ground_truth": {
+          "the IL-2 teceptor": {
+            "bertscore": 0.749828040599823,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the PI3K/PKB-mediated link between the IL-2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "teceptor and the cell cycle machinery",
+        "answerability": 0.8168257474899292,
+        "ground_truth": {
+          "the cell cycle machinery": {
+            "bertscore": 0.8610588908195496,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

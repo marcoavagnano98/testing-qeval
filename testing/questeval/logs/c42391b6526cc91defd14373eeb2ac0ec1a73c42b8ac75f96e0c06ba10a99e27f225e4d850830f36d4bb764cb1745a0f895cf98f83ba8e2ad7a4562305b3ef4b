@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "Fas (CD95) and Fas ligand (CD95L) are an interacting receptor-ligand pair required for immune homeostasis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD95",
+        "Fas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the ligand for Fas?",
+          "What is the ligand for the immune system?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Fas",
+        "CD95",
+        "Fas ligand",
+        "CD95L",
+        "an interacting receptor-ligand pair",
+        "immune homeostasis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the ligand for the immune system?",
+          "What is the ligand for Fas?",
+          "What is the interacting receptor-ligand pair?",
+          "What is the ligand for the Fas molecule?",
+          "What are Fas and CD95L?",
+          "What is the interacting receptor-ligand pair required for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the ligand for Fas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD95L",
+        "answerability": 0.9913660287857056,
+        "ground_truth": {
+          "CD95": {
+            "bertscore": 0.8966282606124878,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the ligand for the immune system?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fas",
+        "answerability": 0.6395583152770996,
+        "ground_truth": {
+          "Fas": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the interacting receptor-ligand pair?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fas (CD95) and Fas ligand (CD95L)",
+        "answerability": 0.9722625613212585,
+        "ground_truth": {
+          "Fas ligand": {
+            "bertscore": 0.7170414924621582,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the ligand for the Fas molecule?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD95L",
+        "answerability": 0.9851333498954773,
+        "ground_truth": {
+          "CD95L": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are Fas and CD95L?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an interacting receptor-ligand pair",
+        "answerability": 0.9524685144424438,
+        "ground_truth": {
+          "an interacting receptor-ligand pair": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the interacting receptor-ligand pair required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "immune homeostasis",
+        "answerability": 0.9992125034332275,
+        "ground_truth": {
+          "immune homeostasis": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

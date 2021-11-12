@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "rapamycin fails to bind TORC1 and TORC1 disruption causes an actin defect suggesting that TORC1 mediates the rapamycin-insensitive TOR-shared pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TOR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What pathway does rapamycin fail to bind?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "rapamycin",
+        "TORC1",
+        "TORC1 disruption",
+        "an actin defect",
+        "TORC1",
+        "the rapamycin-insensitive TOR-shared pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug fails to bind TORC1?",
+          "What is the TOR-shared pathway that rapamycin fails to bind?",
+          "What causes an actin defect?",
+          "What does TORC1 disruption cause?",
+          "What is the TOR-shared pathway that rapamycin fails to bind?",
+          "What does the actin defect suggest is the cause of actin defect?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the key component of the rapamycin-sensitive pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010882198810577393,
+        "ground_truth": {
+          "TOR": {
+            "bertscore": 0.6846914887428284,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study show about the TOR-shared pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.039371371269226074,
+        "ground_truth": {
+          "FKBP-rapamycin binds TORC1 and TORC1 disruption mimics rapamycin treatment": {
+            "bertscore": 0.5709978342056274,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that binds to rapamycin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4204278588294983,
+        "ground_truth": {
+          "TORC1": {
+            "bertscore": 0.6564481258392334,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the disruption of TORC1 mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4333093762397766,
+        "ground_truth": {
+          "the rapamycin-sensitive TOR-shared pathway": {
+            "bertscore": 0.5870257019996643,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

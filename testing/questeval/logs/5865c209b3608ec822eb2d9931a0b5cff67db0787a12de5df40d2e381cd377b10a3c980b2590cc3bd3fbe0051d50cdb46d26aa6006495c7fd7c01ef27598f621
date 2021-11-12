@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "In THP-1 cells CD28 engagement activated the transcription factor AP-1 which is known to bind to the promoter of the IL-2 gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "THP-1",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cell was activated by CD28?",
+          "What gene is known to bind to the promoter of THP-1 cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "THP-1 cells",
+        "CD28 engagement",
+        "the transcription factor",
+        "the promoter",
+        "the IL-2 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells activated the transcription factor AP-1?",
+          "What activated the transcription factor AP-1?",
+          "What does CD28 activate?",
+          "What does AP-1 bind to?",
+          "What is the promoter of the transcription factor AP-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor has opposite effects on AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005945026874542236,
+        "ground_truth": {
+          "CD28": {
+            "bertscore": 0.6379246115684509,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of CD28 on AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activated the transcription factor AP-1",
+        "answerability": 0.9760432839393616,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.601674497127533,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What exerts opposite effects on the transcription factor AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01640230417251587,
+        "ground_truth": {
+          "CD28 engagement": {
+            "bertscore": 0.6600611209869385,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does CD28 engagement exert opposite effects on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010433197021484375,
+        "ground_truth": {
+          "the transcription factor": {
+            "bertscore": 0.6422821283340454,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor does CD28 have a negative effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.021970272064208984,
+        "ground_truth": {
+          "AP-1": {
+            "bertscore": 0.6599938273429871,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

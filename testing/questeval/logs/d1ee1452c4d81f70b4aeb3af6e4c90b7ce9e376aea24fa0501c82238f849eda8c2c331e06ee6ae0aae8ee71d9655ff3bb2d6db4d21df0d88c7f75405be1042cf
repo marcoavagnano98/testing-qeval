@@ -1,0 +1,124 @@
+{
+  "type": "ref",
+  "text": "Additionally YM268 and pioglitazone showed activity of the PPARgamma ligand a member of the nuclear receptor superfamily responsible for adipogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "YM268"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What peptide was found to be active in adipogenesis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Additionally YM268",
+        "pioglitazone",
+        "activity",
+        "the PPARgamma ligand",
+        "a member",
+        "the nuclear receptor",
+        "adipogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What peptide was found to be active in adipogenesis?",
+          "What is the name of the PPARgamma ligand?",
+          "What did YM268 and pioglitazone show?",
+          "What did YM268 and pioglitazone show activity of?",
+          "What is the PPARgamma ligand?",
+          "What superfamily is PPARgamma a member of?",
+          "What is the PPARgamma ligand responsible for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed activity of the PPARgamma ligand?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "YM268 and pioglitazone",
+        "answerability": 0.9295397996902466,
+        "ground_truth": {
+          "Additionally a gel retardation experiment": {
+            "bertscore": 0.6796867847442627,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used in a gel retardation experiment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000869452953338623,
+        "ground_truth": {
+          "synthetic double-stranded oligonucleotides": {
+            "bertscore": 0.6233640909194946,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did a gel retardation experiment with synthetic double-stranded oligonu": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008712947368621826,
+        "ground_truth": {
+          "activity": {
+            "bertscore": 0.6991472840309143,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the member of the nuclear receptor superfamily responsible for adipogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PPARgamma",
+        "answerability": 0.97743159532547,
+        "ground_truth": {
+          "the PPARgamma ligand": {
+            "bertscore": 0.8072104454040527,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the PPARgamma ligand?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a member of the nuclear receptor superfamily responsible for adipogenesis",
+        "answerability": 0.962056577205658,
+        "ground_truth": {
+          "a member": {
+            "bertscore": 0.6395177245140076,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What superfamily is PPARgamma a member of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear receptor",
+        "answerability": 0.7503811120986938,
+        "ground_truth": {
+          "the nuclear receptor": {
+            "bertscore": 0.9273210167884827,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the PPARgamma ligand responsible for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "adipogenesis",
+        "answerability": 0.8485922813415527,
+        "ground_truth": {
+          "adipogenesis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

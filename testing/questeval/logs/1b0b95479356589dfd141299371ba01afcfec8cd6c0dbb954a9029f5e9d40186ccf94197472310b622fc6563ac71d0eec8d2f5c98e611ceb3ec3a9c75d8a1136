@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Similarly Jurkat T cell lines deficient in CD3 or CD45 expression also gave impaired UV responses.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Similarly Jurkat T cell lines",
+        "CD3 or CD45 expression",
+        "impaired UV responses"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells deficient in CD3 or CD45 expression gave impaired UV responses?",
+          "What did Jurkat T cell lines lack?",
+          "What did deficient Jurkat T cells cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cells deficient in CD3 or CD45 expression gave impaired UV responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat T cell lines",
+        "answerability": 0.997079074382782,
+        "ground_truth": {
+          "Similarly Jurkat T cell lines": {
+            "bertscore": 0.9195360541343689,
+            "f1": 0.888888888888889
+          }
+        }
+      }
+    },
+    "What did Jurkat T cell lines lack?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD3 or CD45 expression",
+        "answerability": 0.9690383672714233,
+        "ground_truth": {
+          "CD3 or CD45 expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did deficient Jurkat T cells cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "impaired UV responses",
+        "answerability": 0.8386023044586182,
+        "ground_truth": {
+          "impaired UV responses": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

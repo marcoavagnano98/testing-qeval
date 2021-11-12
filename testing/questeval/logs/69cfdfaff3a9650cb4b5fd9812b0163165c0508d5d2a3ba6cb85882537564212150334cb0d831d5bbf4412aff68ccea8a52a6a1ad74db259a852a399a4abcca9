@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "55-kDa E1A protein (E1A protein) cooperates with E1A gene products to induce cell transformation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "55-kDa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the size of the E1A protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "55-kDa E1A protein",
+        "E1A protein",
+        "E1A gene products",
+        "cell transformation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that cooperates with E1A gene products to induce cell",
+          "What is the name of the protein that cooperates with E1A gene products?",
+          "What does E1A protein cooperate with?",
+          "What does the 55-kDa E1A protein induce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that cooperates with E1A gene products?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E1A protein",
+        "answerability": 0.9912174344062805,
+        "ground_truth": {
+          "55-kDa E1B protein": {
+            "bertscore": 0.839465320110321,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the name of the E1B protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013773441314697266,
+        "ground_truth": {
+          "E1B-55kDa": {
+            "bertscore": 0.6397367715835571,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the 55-kDa E1B protein cooperate with to induce cell transformation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018192529678344727,
+        "ground_truth": {
+          "E1A gene products": {
+            "bertscore": 0.6289669275283813,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the 55-kDa E1B protein induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006365180015563965,
+        "ground_truth": {
+          "cell transformation": {
+            "bertscore": 0.6928433775901794,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

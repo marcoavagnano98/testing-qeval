@@ -1,0 +1,120 @@
+{
+  "type": "ref",
+  "text": "The presence of bFGF in the extracellular compartment of a diverse variety of organs may play a role in angiogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The presence",
+        "bFGF",
+        "the extracellular compartment",
+        "a diverse variety",
+        "organs",
+        "a role",
+        "angiogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What may play a role in angiogenesis?",
+          "What protein is present in the extracellular compartment of a variety of organs?",
+          "Where does bFGF occur in a variety of organs?",
+          "What type of organs may have a role in angiogenesis?",
+          "What is bFGF found in?",
+          "What may the presence of bFGF play in angiogenesis?",
+          "What may the presence of bFGF play a role in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has shown the presence of bFGF in the extracellular compartment of a variety": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.031140446662902832,
+        "ground_truth": {
+          "Previous studies": {
+            "bertscore": 0.7068299651145935,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has been shown in previous studies?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0035958290100097656,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.7024357914924622,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is present in the extracellular compartment of organs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bFGF",
+        "answerability": 0.9918665885925293,
+        "ground_truth": {
+          "bFGF": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where has bFGF been found in a variety of organs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the extracellular compartment",
+        "answerability": 0.9901683330535889,
+        "ground_truth": {
+          "the extracellular compartment": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of organs have been shown to have bFGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6311453580856323,
+        "ground_truth": {
+          "a variety": {
+            "bertscore": 0.7131536602973938,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the extracellular compartment of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a diverse variety of organs",
+        "answerability": 0.8832135200500488,
+        "ground_truth": {
+          "organs tissues": {
+            "bertscore": 0.7579285502433777,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is the extracellular compartment of a variety of organs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bFGF",
+        "answerability": 0.6627033352851868,
+        "ground_truth": {
+          "extracellular matrix": {
+            "bertscore": 0.6542938351631165,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Here we provide evidence that lactate and pyruvate regulate hypoxia-inducible gene expression independently of hypoxia by increasing the accumulation of hypoxia-inducible Factor 1alpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "hypoxia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does lactate and pyruvate regulate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "evidence",
+        "hypoxia-inducible gene expression",
+        "hypoxia",
+        "the accumulation",
+        "hypoxia-inducible Factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the study show about lactate and pyruvate?",
+          "What does the study provide?",
+          "What do lactate and pyruvate regulate independently of hypoxia?",
+          "What does lactate and pyruvate regulate?",
+          "What do lactate and pyruvate increase?",
+          "What does lactate and pyruvate regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does lactate and pyruvate regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hypoxia-inducible gene expression",
+        "answerability": 0.9848358631134033,
+        "ground_truth": {
+          "hypoxia": {
+            "bertscore": 0.7661423683166504,
+            "f1": 0
+          },
+          "hypoxia-inducible Factor": {
+            "bertscore": 0.8939322233200073,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What does the study show about lactate and pyruvate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulate hypoxia-inducible gene expression independently of hypoxia",
+        "answerability": 0.8871068358421326,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.5960285663604736,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do we provide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "evidence that lactate and pyruvate regulate hypoxia-inducible gene expression",
+        "answerability": 0.5453707575798035,
+        "ground_truth": {
+          "evidence": {
+            "bertscore": 0.6919633150100708,
+            "f1": 0.19999999999999998
+          }
+        }
+      }
+    },
+    "What do lactate and pyruvate regulate independently of hypoxia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hypoxia-inducible gene expression",
+        "answerability": 0.9633218050003052,
+        "ground_truth": {
+          "hypoxia-inducible gene expression": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do lactate and pyruvate stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hypoxia-inducible gene expression",
+        "answerability": 0.6963417530059814,
+        "ground_truth": {
+          "the accumulation": {
+            "bertscore": 0.6504560708999634,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "The allele-specific expression profiles of other imprinted genes IGF2 and H19 on human chromosome 11 were constant and consistent with those in other tissues.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "11"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "On what chromosome did the allele-specific expression profiles of IGF2 and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The allele-specific expression profiles",
+        "other imprinted genes",
+        "IGF2",
+        "H19",
+        "human chromosome",
+        "other tissues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was consistent with other tissues?",
+          "What genes were consistent with the allele-specific expression profiles of IGF2 and H19",
+          "What gene was found to be consistent with other tissues?",
+          "What gene was found to be the same on human chromosome 11?",
+          "Where were the imprinted genes IGF2 and H19 found?",
+          "What other genes were similar to IGF2 and H19?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "On what chromosome did the allele-specific expression profiles of IGF2 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "11",
+        "answerability": 0.9566119313240051,
+        "ground_truth": {
+          "11": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was consistent with other tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "allele-specific expression profiles",
+        "answerability": 0.9615298509597778,
+        "ground_truth": {
+          "The allele-specific expression profiles": {
+            "bertscore": 0.9454498887062073,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What genes were consistent with the allele-specific expression profiles of IGF2 and H19": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IGF2 and H19",
+        "answerability": 0.8132104873657227,
+        "ground_truth": {
+          "other imprinted genes": {
+            "bertscore": 0.6723602414131165,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was found to be consistent with other tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IGF2",
+        "answerability": 0.994414210319519,
+        "ground_truth": {
+          "IGF2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene was found to be the same on human chromosome 11?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IGF2",
+        "answerability": 0.985811173915863,
+        "ground_truth": {
+          "H19": {
+            "bertscore": 0.7449352741241455,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where were the imprinted genes IGF2 and H19 found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human chromosome 11",
+        "answerability": 0.9802826046943665,
+        "ground_truth": {
+          "human chromosome": {
+            "bertscore": 0.8811827898025513,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What other genes were similar to IGF2 and H19?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36666810512542725,
+        "ground_truth": {
+          "other tissues": {
+            "bertscore": 0.6711685657501221,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

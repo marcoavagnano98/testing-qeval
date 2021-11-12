@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Inactivation or loss of ATF4 greatly diminished the VEGF response to arsenite stimulation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inactivation",
+        "loss",
+        "ATF4",
+        "the VEGF response",
+        "arsenite stimulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of the decrease in VEGF response?",
+          "What did inactivation or loss of ATF4 do to VEGF?",
+          "What protein was lost during arsenite stimulation?",
+          "What did inactivation or loss of ATF4 greatly diminish?",
+          "What did inactivation or loss of ATF4 greatly decrease the VEGF response to"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the most likely cause of the decrease in VEGF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3377211093902588,
+        "ground_truth": {
+          "Inactivation": {
+            "bertscore": 0.7404956817626953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did inactivation or loss of ATF4 do to the VEGF response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "greatly diminished",
+        "answerability": 0.9999563694000244,
+        "ground_truth": {
+          "loss": {
+            "bertscore": 0.7557135820388794,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was lost during arsenite treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ATF4",
+        "answerability": 0.9350621700286865,
+        "ground_truth": {
+          "ATF4": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did inactivation or loss of ATF4 greatly diminish?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF response",
+        "answerability": 0.9984279870986938,
+        "ground_truth": {
+          "the VEGF response": {
+            "bertscore": 0.9334018230438232,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did inactivation or loss of ATF4 greatly decrease the VEGF response to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "arsenite stimulation",
+        "answerability": 0.9890400767326355,
+        "ground_truth": {
+          "arsenite treatment": {
+            "bertscore": 0.8983607292175293,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

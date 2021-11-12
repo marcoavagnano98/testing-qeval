@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "The results revealed that the metastatic tumors in mouse lung were markedly decreased in a dose-dependent manner and acute lung injury induced by B16F10 melanoma metastasis was diminished diminished by systemic rk-2 treatment.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The results",
+        "the metastatic tumors",
+        "mouse lung",
+        "a dose-dependent manner and acute lung injury",
+        "B16F10 melanoma metastasis",
+        "systemic rk-2 treatment"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed that metastatic tumors in mouse lung were decreased in dose-dependent manner?",
+          "What was decreased in dose-dependent manner?",
+          "What type of tumor was reduced in dose-dependent manner?",
+          "How were metastatic tumors decreased?",
+          "What was the cause of the decrease in metastatic tumors in mouse lung?",
+          "What treatment reduced the acute lung injury?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What revealed that metastatic tumors in mouse lung were decreased in dose-dependent manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5836220979690552,
+        "ground_truth": {
+          "The results": {
+            "bertscore": 0.6512247323989868,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was decreased in dose-dependent manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metastatic tumors",
+        "answerability": 0.9993366003036499,
+        "ground_truth": {
+          "the metastatic tumors": {
+            "bertscore": 0.9425989985466003,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of tumor was reduced in dose-dependent manner?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metastatic",
+        "answerability": 0.9995306730270386,
+        "ground_truth": {
+          "mouse lung": {
+            "bertscore": 0.7581005692481995,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How were metastatic tumors decreased by B16F10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dose-dependent",
+        "answerability": 0.9984285235404968,
+        "ground_truth": {
+          "a dose-dependent manner and acute lung injury": {
+            "bertscore": 0.7717517614364624,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What was the cause of the decrease in metastatic tumors in mouse lung?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dose-dependent",
+        "answerability": 0.9908297061920166,
+        "ground_truth": {
+          "B16F10 melanoma metastasis": {
+            "bertscore": 0.664565920829773,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment reduced the risk of acute lung injury?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "systemic rk-2",
+        "answerability": 0.909646213054657,
+        "ground_truth": {
+          "systemic rk-2 treatment": {
+            "bertscore": 0.9087368249893188,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

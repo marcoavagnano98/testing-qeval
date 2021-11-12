@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Given the deleterious effects to the host of TNF-alpha it has been postulated that TNF-alpha gene expression must be tightly regulated.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene has been postulated to be tightly regulated?",
+          "What gene has been postulated to be tightly regulated?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the deleterious effects",
+        "the host",
+        "TNF-alpha",
+        "it",
+        "TNF-alpha gene expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the reason for the tight regulation of TNF-alpha gene expression?",
+          "What is the cause of the deleterious effects of TNF-alpha?",
+          "What gene has been postulated to be tightly regulated?",
+          "What is the role of TNF-alpha in the development of cancer?",
+          "What must be tightly regulated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene has been postulated to be tightly regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.9823242425918579,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          },
+          "TNF-alpha": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the reason for the tight regulation of TNF-alpha gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the deleterious effects to the host",
+        "answerability": 0.9919184446334839,
+        "ground_truth": {
+          "the deleterious effects": {
+            "bertscore": 0.911175549030304,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the cause of the deleterious effects of TNF-alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.045205891132354736,
+        "ground_truth": {
+          "the host": {
+            "bertscore": 0.7056040167808533,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of TNF-alpha in the development of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000885307788848877,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6361183524131775,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What must be tightly regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha gene expression",
+        "answerability": 0.9808153510093689,
+        "ground_truth": {
+          "TNF-alpha gene expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

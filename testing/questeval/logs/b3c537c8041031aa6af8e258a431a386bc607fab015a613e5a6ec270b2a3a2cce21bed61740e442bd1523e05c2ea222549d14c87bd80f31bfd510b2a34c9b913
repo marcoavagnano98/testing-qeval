@@ -1,0 +1,88 @@
+{
+  "type": "ref",
+  "text": "In contrast differentiating naive T cells in the absence of polarization factors (Th0) such as IL-4 IL-12 or TGF-beta showed only a transient FOXP3 expression and failed to generate a population of FOXP3-expressing cells but GATA3 and T-bet were up-regulated (unpublished data).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TGF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the polarization factor that is not present in naive"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "naive T cells",
+        "the absence",
+        "polarization factors",
+        "IL-4 IL-12 or TGF-beta",
+        "only a transient FOXP3 expression",
+        "a population",
+        "FOXP3-expressing cells",
+        "GATA3",
+        "T-bet",
+        "up-regulated (unpublished data"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of naive T cells in the absence of Th0?",
+          "What type of T cells showed only a transient FOXP3 expression?",
+          "What is the polarization factor that causes naive T cells to express FOX",
+          "What is Th0?",
+          "What are two polarization factors that are not present in naive T cells?",
+          "What did naive T cells show in the absence of Th0?",
+          "What did naive T cells fail to generate?",
+          "What did naive T cells fail to generate?",
+          "What is the name of the naive T cell that did not produce a population",
+          "What is the name of the naive T cell that did not produce a population",
+          "What was the effect of GATA3 and T-bet on FOXP3 expression"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is up-regulated during the course of the inflammatory": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA3",
+        "answerability": 0.6748656034469604,
+        "ground_truth": {
+          "GATA3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "FOXP3": {
+            "bertscore": 0.8639439344406128,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the time course of the inflammatory response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11316138505935669,
+        "ground_truth": {
+          "the time course": {
+            "bertscore": 0.6608705520629883,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the inflammatory response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0027146339416503906,
+        "ground_truth": {
+          "this inflammatory response": {
+            "bertscore": 0.6539934873580933,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "NFkappaB1-binding activity was detectable while in others kappaB-binding activity was modestly induced but the duration was reduced.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was induced in some mice but not in others?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NFkappaB1-binding activity",
+        "others",
+        "kappaB-binding activity",
+        "the duration"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was detectable in some mice?",
+          "What was induced but not detectable in some cases?",
+          "What was detectable in some cases?",
+          "What was reduced in some cases?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was induced in some mice but not in others?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappaB-binding activity",
+        "answerability": 0.8175569176673889,
+        "ground_truth": {
+          "kappaB": {
+            "bertscore": 0.7347320914268494,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was detectable in some mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFkappaB1-binding activity",
+        "answerability": 0.8761245012283325,
+        "ground_truth": {
+          "NFkappaB1-binding activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was induced but not detectable in some cases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappaB-binding activity",
+        "answerability": 0.7380309104919434,
+        "ground_truth": {
+          "others": {
+            "bertscore": 0.6389788389205933,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was detectable in some cases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NFkappaB1-binding activity",
+        "answerability": 0.8779999017715454,
+        "ground_truth": {
+          "kappaB-binding activity": {
+            "bertscore": 0.9109486937522888,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was reduced in some cases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "duration",
+        "answerability": 0.9322898387908936,
+        "ground_truth": {
+          "the duration": {
+            "bertscore": 0.8768837451934814,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

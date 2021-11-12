@@ -1,0 +1,118 @@
+{
+  "type": "ref",
+  "text": "We previously identified a Fas ligand regulatory element (FLRE) in the Fas ligand (fasL) promoter that binds Egr family proteins and demonstrated that Egr-3 (PILOT) but not Egr-1 (NGFI-A Krox-24 Tis-8 and Zif-268) induces transcription of fasL.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Fas",
+        "Fas",
+        "Egr"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the ligand that binds Egr family proteins?",
+          "What is the name of the ligand that binds Egr family proteins?",
+          "What family protein does FLRE bind to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "a Fas ligand regulatory element",
+        "FLRE",
+        "Egr family proteins",
+        "that Egr-3 (PILOT",
+        "NGFI-A Krox-24 Tis-8 and Zif-268) induces",
+        "transcription",
+        "fasL."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find in the promoter of the Fas ligand?",
+          "What did we previously identify in the fasL promoter?",
+          "What is the name of the Fas ligand regulatory element?",
+          "What does the FLRE bind to?",
+          "What does the FLRE show?",
+          "What is the name of the Egr-1 promoter that binds Egr",
+          "What does the FLRE induce?",
+          "What is the name of the promoter that binds Egr family proteins?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter binds Egr family proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fas ligand",
+        "answerability": 0.7641834020614624,
+        "ground_truth": {
+          "Fas": {
+            "bertscore": 0.8342585563659668,
+            "f1": 0.6666666666666666
+          },
+          "We": {
+            "bertscore": 0.6257064342498779,
+            "f1": 0
+          },
+          "that Egr-3 (PILOT": {
+            "bertscore": 0.6817699670791626,
+            "f1": 0
+          },
+          "fasL.": {
+            "bertscore": 0.6626734137535095,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What family protein does PILOT bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Egr",
+        "answerability": 0.8944317102432251,
+        "ground_truth": {
+          "Egr": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does fasL bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Egr family proteins",
+        "answerability": 0.8120466470718384,
+        "ground_truth": {
+          "Egr family proteins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What promoters bind Egr family proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fas ligand (fasL)",
+        "answerability": 0.5998196601867676,
+        "ground_truth": {
+          "NGFI-A Krox-24 Tis-8 and Zif-268) induces": {
+            "bertscore": 0.6266379356384277,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does fasL induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.037167370319366455,
+        "ground_truth": {
+          "transcription": {
+            "bertscore": 0.6925773620605469,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "An 11-amino acid sequence motif on the human XPB gene encodes a subcortical band heterotopia (XLA).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "11-amino",
+        "XPB",
+        "XLA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the XLA?",
+          "What gene encodes a subcortical band heterotopia?",
+          "What is the 11-amino acid sequence motif on the human XPB gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An 11-amino acid sequence motif",
+        "the human XPB gene",
+        "a subcortical band heterotopia",
+        "XLA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What encodes a subcortical band heterotopia?",
+          "What encodes a subcortical band heterotopia?",
+          "What does the 11-amino acid sequence motif on the human XPB gene encode",
+          "What is the 11-amino acid sequence motif on the human XPB gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that causes X-linked lissencephaly": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04209303855895996,
+        "ground_truth": {
+          "DCX": {
+            "bertscore": 0.6807709336280823,
+            "f1": 0
+          },
+          "(DCX": {
+            "bertscore": 0.6725114583969116,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is DCX?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007156312465667725,
+        "ground_truth": {
+          "a brain-specific putative signaling protein": {
+            "bertscore": 0.619256317615509,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does DCX cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00048673152923583984,
+        "ground_truth": {
+          "X-linked lissencephaly and subcortical band heterotopia": {
+            "bertscore": 0.592207670211792,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

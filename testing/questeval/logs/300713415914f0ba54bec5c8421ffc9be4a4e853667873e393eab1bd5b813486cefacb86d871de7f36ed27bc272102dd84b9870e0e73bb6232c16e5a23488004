@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "indicated that cyclin T1 and T2 were associated with CDK9 in a mutually exclusive manner and that almost all CDK9 was associated with either cyclin T1 or T2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "T1",
+        "T2",
+        "T1",
+        "T2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two cyclins were associated with CDK9?",
+          "What two cyclins were associated with CDK9 in a mutually exclusive manner",
+          "What two cyclins were associated with CDK9?",
+          "What two cyclins were associated with CDK9 in a mutually exclusive manner"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "cyclin T1",
+        "T2",
+        "CDK9",
+        "a mutually exclusive manner",
+        "almost all CDK9",
+        "either cyclin T1",
+        "T2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two genes were associated with CDK9 in a mutually exclusive manner?",
+          "What two cyclins were associated with CDK9 in a mutually exclusive manner",
+          "What did the study show was associated with almost all of the cyclins?",
+          "How did the cyclins T1 and T2 interact?",
+          "What did the cytokine tyrosine kinase test show",
+          "What two genes were associated with CDK9?",
+          "What two cyclins were associated with CDK9 in a mutually exclusive manner"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cyclins were associated with CDK9?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T1 and T2",
+        "answerability": 0.9882370233535767,
+        "ground_truth": {
+          "T1": {
+            "bertscore": 0.8599700331687927,
+            "f1": 0.5
+          },
+          "T2": {
+            "bertscore": 0.8308326601982117,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was associated with cyclin T1 and T2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CDK9",
+        "answerability": 0.9967552423477173,
+        "ground_truth": {
+          "CDK9": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two genes were associated with CDK9?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclin T1 and T2",
+        "answerability": 0.9624638557434082,
+        "ground_truth": {
+          "cyclin T1": {
+            "bertscore": 0.8935731649398804,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

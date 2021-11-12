@@ -1,0 +1,154 @@
+{
+  "type": "hyp",
+  "text": "BAG-1 regulates cellular growth differentiation and survival through interaction with diverse proteins including the vitamin D receptor (VDR) a key regulator of keratinocyte growth and differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "VDR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the vitamin D receptor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "BAG-1",
+        "cellular growth differentiation",
+        "survival",
+        "interaction",
+        "diverse proteins",
+        "the vitamin D receptor",
+        "(VDR",
+        "a key regulator",
+        "keratinocyte growth",
+        "differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulates cellular growth differentiation and survival?",
+          "What does BAG-1 regulate?",
+          "What does BAG-1 regulate?",
+          "What does BAG-1 regulate with diverse proteins?",
+          "What does BAG-1 interact with?",
+          "What is the key regulator of keratinocyte growth and differentiation?",
+          "What is the vitamin D receptor?",
+          "What is the role of the vitamin D receptor in keratinocyte growth?",
+          "What is the vitamin D receptor a key regulator of?",
+          "What does BAG-1 regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the vitamin D receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VDR",
+        "answerability": 0.9467458724975586,
+        "ground_truth": {
+          "VDR": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What regulates cellular growth differentiation and survival?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BAG-1",
+        "answerability": 0.9800963401794434,
+        "ground_truth": {
+          "BAG-1": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does BAG-1 regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cellular growth differentiation and survival",
+        "answerability": 0.9995033740997314,
+        "ground_truth": {
+          "cellular growth differentiation": {
+            "bertscore": 0.9495692849159241,
+            "f1": 0.7499999999999999
+          },
+          "survival": {
+            "bertscore": 0.76534503698349,
+            "f1": 0.33333333333333337
+          },
+          "interactions": {
+            "bertscore": 0.7605311274528503,
+            "f1": 0
+          },
+          "differentiation": {
+            "bertscore": 0.8315367102622986,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What does BAG-1 interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "diverse proteins",
+        "answerability": 0.9956842660903931,
+        "ground_truth": {
+          "diverse proteins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the key regulator of keratinocyte growth and differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vitamin D receptor",
+        "answerability": 0.9987360835075378,
+        "ground_truth": {
+          "the vitamin D receptor": {
+            "bertscore": 0.94046950340271,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the vitamin D receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a key regulator of keratinocyte growth and differentiation",
+        "answerability": 0.9873400330543518,
+        "ground_truth": {
+          "(VDR": {
+            "bertscore": 0.5598986148834229,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of the vitamin D receptor in keratinocyte growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulator",
+        "answerability": 0.9965453147888184,
+        "ground_truth": {
+          "a key regulator": {
+            "bertscore": 0.8635962605476379,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the vitamin D receptor a key regulator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "keratinocyte growth and differentiation",
+        "answerability": 0.9963498115539551,
+        "ground_truth": {
+          "keratinocyte growth": {
+            "bertscore": 0.9343529939651489,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

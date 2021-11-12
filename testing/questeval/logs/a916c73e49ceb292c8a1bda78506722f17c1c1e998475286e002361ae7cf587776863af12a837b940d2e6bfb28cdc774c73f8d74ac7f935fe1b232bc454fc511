@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Merlin protein might contribute to the ERK-mediated metastasis of NSCLC.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "ERK",
+        "NSCLC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein may contribute to the metastasis of NSCLC?",
+          "What is the ERK-mediated metastasis of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Merlin protein",
+        "the ERK-mediated metastasis",
+        "NSCLC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein might contribute to the metastasis of NSCLC?",
+          "What might Merlin protein contribute to?",
+          "What is the ERK-mediated metastasis of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cancer is Merlin protein associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1719275712966919,
+        "ground_truth": {
+          "NSCLC": {
+            "bertscore": 0.6961129307746887,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein might contribute to the initiation of metastasis of NSCLC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Merlin",
+        "answerability": 0.9979496598243713,
+        "ground_truth": {
+          "Merlin protein": {
+            "bertscore": 0.8349426984786987,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What might Merlin protein contribute to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ERK-mediated metastasis",
+        "answerability": 0.9579128623008728,
+        "ground_truth": {
+          "the initiation": {
+            "bertscore": 0.6694760322570801,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What might Merlin protein contribute to the initiation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03739994764328003,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.7011741995811462,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

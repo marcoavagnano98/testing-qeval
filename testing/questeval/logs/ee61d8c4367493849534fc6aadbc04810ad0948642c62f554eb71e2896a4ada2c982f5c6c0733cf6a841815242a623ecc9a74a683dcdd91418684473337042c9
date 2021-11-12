@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "The GR DNA-binding domain of the receptor is required for TPA-GR synergism.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the DNA-binding domain of the receptor required for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The GR DNA-binding domain",
+        "the receptor",
+        "TPA-GR synergism"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for TPA-GR synergism?",
+          "What is required for TPA-GR synergism?",
+          "What is the GR DNA-binding domain of the receptor required for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What required an intact GR DNA-binding domain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TPA-GR synergism",
+        "answerability": 0.7874392867088318,
+        "ground_truth": {
+          "Synergism": {
+            "bertscore": 0.7584353089332581,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did synergism require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6619279384613037,
+        "ground_truth": {
+          "an intact GR DNA-binding domain": {
+            "bertscore": 0.6261423826217651,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was dispensable in synergism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000339508056640625,
+        "ground_truth": {
+          "whereas amino- or carboxyl-terminal domains": {
+            "bertscore": 0.5748364329338074,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Antibodies against the TF site demonstrated the presence of c-Rel and p65 and the absence of p50 in the TF complex and further showed that c-Rel/p65 heterodimers selectively bound to the TF kappa B-like site.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TF",
+        "c-Rel",
+        "p65",
+        "TF",
+        "TF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What site did antibodies show the presence of?",
+          "What is the name of the heterodimer that is selectively bound to the TF",
+          "What is the name of the heterodimer that is selectively bound to the TF",
+          "What site did antibodies show the presence of?",
+          "What site did antibodies show the presence of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Antibodies",
+        "the TF site",
+        "the presence",
+        "c-Rel",
+        "p65",
+        "the absence",
+        "p50",
+        "the TF complex",
+        "that c-Rel/p65 heterodimers",
+        "the TF kappa B-like site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed the presence of c-Rel and p65 in the TF complex",
+          "What site did antibodies show the presence of?",
+          "What did antibodies against the TF site demonstrate?",
+          "What is the name of the heterodimer that is selectively bound to the TF",
+          "What is the name of the heterodimer that is selectively bound to the TF",
+          "What was the absence of p50 in the TF complex?",
+          "What protein was absent from the TF complex?",
+          "Antibodies against what site showed the presence of c-Rel and p65",
+          "What did antibodies against the TF site show?",
+          "What did antibodies show the presence of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What binding site bound c-Rel and p65 homodimers?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TF site",
+        "answerability": 0.767353892326355,
+        "ground_truth": {
+          "TF": {
+            "bertscore": 0.8472201824188232,
+            "f1": 0.6666666666666666
+          },
+          "the TF site": {
+            "bertscore": 0.9246441721916199,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What demonstrated that the TF site bound c-Rel and p65 homod": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5638245344161987,
+        "ground_truth": {
+          "vitro binding studies": {
+            "bertscore": 0.664393961429596,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the TF site bound?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14553695917129517,
+        "ground_truth": {
+          "c-Rel and p65 homodimers": {
+            "bertscore": 0.6066027879714966,
+            "f1": 0
+          },
+          "not p50/p65 heterodimers": {
+            "bertscore": 0.6136675477027893,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the TF site not bound?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18164992332458496,
+        "ground_truth": {
+          "p50 homodimers": {
+            "bertscore": 0.6444764137268066,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

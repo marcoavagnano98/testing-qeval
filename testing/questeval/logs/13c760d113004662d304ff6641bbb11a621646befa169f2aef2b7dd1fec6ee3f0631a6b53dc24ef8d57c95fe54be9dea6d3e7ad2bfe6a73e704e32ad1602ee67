@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "Co-culture of NK cells with transfused EC enhanced E-selectin IL-8 and NF-kappaB-dependent promoter activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transfused substance enhanced IL-8 and NF-kappaB-dependent"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Co-culture",
+        "NK cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the transfused EC do to NK cells?",
+          "What type of cells were co-cultured with transfused EC?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells were NK cells co-cultured with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NK cells",
+        "answerability": 0.5434491038322449,
+        "ground_truth": {
+          "EC": {
+            "bertscore": 0.7215108871459961,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were co-cultured with EC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NK cells",
+        "answerability": 0.9795962572097778,
+        "ground_truth": {
+          "NK cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "All of the B16F10 melanomas grew slower in Ang-2-deficient mice.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "melanomas",
+        "Ang-2-deficient"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What grew slower in Ang-2-deficient mice?",
+          "What type of mice had a slower growth rate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the B16F10 melanomas",
+        "Ang-2-deficient mice"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What grew slower in Ang-2-deficient mice?",
+          "What type of mice had a slower growth rate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cancers grew slower in Ang-2-deficient mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32079142332077026,
+        "ground_truth": {
+          "Lewis lung": {
+            "bertscore": 0.6895812153816223,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two tumors grew slower in Ang-2-deficient mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.14350587129592896,
+        "ground_truth": {
+          "Lewis lung carcinomas MT-ret melanomas and B16F10 melanomas": {
+            "bertscore": 0.5838585495948792,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of mice had a slower growth rate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ang-2-deficient mice",
+        "answerability": 0.7726691961288452,
+        "ground_truth": {
+          "Ang-2-deficient mice": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

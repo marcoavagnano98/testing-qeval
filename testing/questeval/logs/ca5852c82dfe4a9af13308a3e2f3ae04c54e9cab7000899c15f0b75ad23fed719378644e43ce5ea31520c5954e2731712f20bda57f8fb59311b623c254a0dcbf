@@ -1,0 +1,62 @@
+{
+  "type": "ref",
+  "text": "mRNA is associated with increases in c-fos c-jun and EGR2 mRNA. Adherence is an important initial step in the transition of a circulating monocyte to a tissue macrophage.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "mRNA",
+        "increases",
+        "c-fos c-jun",
+        "Adherence",
+        "an important initial step",
+        "the transition",
+        "a circulating monocyte",
+        "a tissue macrophage"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with increases in c-fos c-jun and EGR",
+          "What is mRNA associated with?",
+          "What is associated with increases in mRNA?",
+          "What is an important initial step in the transition of a circulating monocyte to a",
+          "What is adhesion in the transition of a circulating monocyte to a tissue",
+          "What is adhesion an important initial step in?",
+          "Adherence is an important initial step in the transition of what to a tissue macrophag",
+          "Adherence is an important initial step in the transition of a circulating monocyte to"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of PDGF(B) on the cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003031492233276367,
+        "ground_truth": {
+          "Adherence-dependent increase": {
+            "bertscore": 0.6868757605552673,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the adherence-dependent increase in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos c-jun and EGR2 mRNA",
+        "answerability": 0.7496761679649353,
+        "ground_truth": {
+          "human monocyte PDGF(B": {
+            "bertscore": 0.6880815029144287,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

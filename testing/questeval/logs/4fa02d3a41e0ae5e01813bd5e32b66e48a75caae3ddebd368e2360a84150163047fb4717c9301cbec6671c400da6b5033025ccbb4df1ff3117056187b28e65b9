@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "CsA was found not to inhibit lck gene expression nor the activity of the lck gene product.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CsA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was found to not inhibit lck gene expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CsA",
+        "lck gene expression",
+        "the activity",
+        "the lck gene product"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was found to not inhibit lck gene expression?",
+          "What did CsA not inhibit?",
+          "What did CsA not inhibit?",
+          "What did CsA not inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was found to not inhibit lck gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CsA",
+        "answerability": 0.9937521815299988,
+        "ground_truth": {
+          "CsA": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did CsA not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lck gene expression",
+        "answerability": 0.9915339350700378,
+        "ground_truth": {
+          "lck gene expression": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "the activity": {
+            "bertscore": 0.6830291748046875,
+            "f1": 0
+          },
+          "the lck gene product": {
+            "bertscore": 0.8886591792106628,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

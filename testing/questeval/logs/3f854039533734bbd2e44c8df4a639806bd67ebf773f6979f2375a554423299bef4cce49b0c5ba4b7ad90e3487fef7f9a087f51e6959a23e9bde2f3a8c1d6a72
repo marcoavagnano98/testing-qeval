@@ -1,0 +1,66 @@
+{
+  "type": "ref",
+  "text": "Likewise in diabetics without proliferation angiogenic activity was also blocked by antibodies to PEDF.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "diabetics",
+        "proliferation angiogenic activity",
+        "antibodies",
+        "PEDF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of person had a higher chance of survival if they had antibodies to PEDF",
+          "What was blocked by antibodies to PEDF in diabetics?",
+          "What blockade the proliferation of PEDF in diabetics?",
+          "What antibody blocked proliferation in diabetics?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was blocked by antibodies to PEDF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "angiogenic activity",
+        "answerability": 0.731593132019043,
+        "ground_truth": {
+          "the angiogenic activity": {
+            "bertscore": 0.9348511695861816,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What blocked the angiogenic activity of PEDF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antibodies",
+        "answerability": 0.9951536655426025,
+        "ground_truth": {
+          "antibodies": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What antibody blocked the angiogenic activity of the swine flu vaccine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24169450998306274,
+        "ground_truth": {
+          "PEDF": {
+            "bertscore": 0.6689484715461731,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "However many human carcinomas overexpress TGFbeta1 and this is associated with poor patient prognosis and increased frequency of apoptosis in tumors.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "many human carcinomas overexpress TGFbeta1",
+        "poor patient prognosis",
+        "increased frequency",
+        "apoptosis",
+        "tumors"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with poor patient prognosis and increased frequency of apoptos",
+          "What is the result of overexpressing TGFbeta1?",
+          "What is the effect of overexpressing TGFbeta1 on apop",
+          "What is the most common side effect of overexpressing TGFbeta1?",
+          "What type of cancer is more likely to have apoptosis than normal?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is associated with poor patient prognosis and increased frequency of metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0865512490272522,
+        "ground_truth": {
+          "many human carcinomas overexpress TGFbeta1": {
+            "bertscore": 0.6260256171226501,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of overexpressing TGFbeta1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "poor patient prognosis and increased frequency of apoptosis",
+        "answerability": 0.9819889068603516,
+        "ground_truth": {
+          "poor patient prognosis": {
+            "bertscore": 0.8438804745674133,
+            "f1": 0.5454545454545454
+          },
+          "increased frequency": {
+            "bertscore": 0.7066397070884705,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is an increased frequency of in human carcinomas?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.8694926500320435,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.8263852596282959,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

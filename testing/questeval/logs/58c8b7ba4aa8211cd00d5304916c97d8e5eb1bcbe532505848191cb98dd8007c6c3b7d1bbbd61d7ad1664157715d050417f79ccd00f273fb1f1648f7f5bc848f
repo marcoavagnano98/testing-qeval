@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Indeed we have found that Cdc6 is ubiquitinated in vivo and degraded by the catalytic pathway in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cdc6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is ubiquitinated in vivo?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "Cdc6",
+        "vivo",
+        "the catalytic pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been found that Cdc6 is ubiquitinated in vivo",
+          "What is ubiquitinated in vivo?",
+          "In what way is Cdc6 ubiquitinated?",
+          "What pathway degrades Cdc6 in vitro?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is ubiquitinated in vivo for proteolysis in Sacchar": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cdc6",
+        "answerability": 0.6241607666015625,
+        "ground_truth": {
+          "Cdc6": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is ubiquitinated in vivo for proteolysis in Saccharo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4766048192977905,
+        "ground_truth": {
+          "The Cdc6 protein": {
+            "bertscore": 0.602463960647583,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what way is the Cdc6 protein ubiquitinated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in vivo",
+        "answerability": 0.9136645197868347,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.8416681289672852,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the Cdc6 protein ubiquitinated for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06935620307922363,
+        "ground_truth": {
+          "proteolysis": {
+            "bertscore": 0.6515888571739197,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What organism requires the Cdc6 protein to be ubiquitinated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01012563705444336,
+        "ground_truth": {
+          "Saccharomyces cerevisiae": {
+            "bertscore": 0.5809905529022217,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

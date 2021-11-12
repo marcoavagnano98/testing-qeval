@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "In addition BSAP was found to be the only abundant DNA-binding activity of B-cell nuclear extracts that interacts with the CD19 promoter. Moreover this binding site is occupied by BSAP in vivo in a CD19-expressing B-cell line but not in plasma or HeLa cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD19",
+        "BSAP",
+        "vivo",
+        "HeLa"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter does BSAP interact with?",
+          "What is the only abundant DNA-binding activity of B-cell nuclear extracts that interact",
+          "In what way is BSAP found to interact with the CD19 promoter?",
+          "What type of cell does BSAP not interact with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "addition",
+        "BSAP",
+        "the only abundant DNA-binding activity",
+        "B-cell nuclear extracts",
+        "the CD19 promoter",
+        "this binding site",
+        "BSAP",
+        "vivo",
+        "a CD19-expressing B-cell line",
+        "plasma",
+        "HeLa",
+        "cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only DNA binding activity of B-cell nuclear extracts?",
+          "What is the only abundant DNA-binding activity of B-cell nuclear extracts that interact",
+          "What is BSAP?",
+          "What is the only DNA-binding activity of?",
+          "What does BSAP interact with?",
+          "What is occupied by BSAP in vivo?",
+          "What is the only abundant DNA-binding activity of B-cell nuclear extracts that interact",
+          "In what way is BSAP found to interact with the CD19 promoter?",
+          "In what cell line is BSAP found to be the only abundant DNA-binding activity",
+          "In what type of cell does BSAP interact with the CD19 promoter?",
+          "What type of cell does BSAP not interact with?",
+          "What type of cells have a BSAP binding site?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is present in a CD19-expressing B-cell line?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BSAP",
+        "answerability": 0.846085786819458,
+        "ground_truth": {
+          "BSAP": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what way is BSAP present in a CD19-expressing B-cell line": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in vivo",
+        "answerability": 0.8528064489364624,
+        "ground_truth": {
+          "vivo": {
+            "bertscore": 0.8416681289672852,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "In what cell line is BSAP present in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD19-expressing B-cell line",
+        "answerability": 0.9341536164283752,
+        "ground_truth": {
+          "HeLa": {
+            "bertscore": 0.6492429971694946,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is BSAP occupied in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD19-expressing B-cell line",
+        "answerability": 0.925438642501831,
+        "ground_truth": {
+          "this site": {
+            "bertscore": 0.6582597494125366,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what cell line is BSAP present?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD19-expressing B-cell line",
+        "answerability": 0.8011951446533203,
+        "ground_truth": {
+          "a CD19-expressing B-cell line": {
+            "bertscore": 0.9318049550056458,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what type of cell is BSAP present in a CD19-expressing B-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22536581754684448,
+        "ground_truth": {
+          "plasma": {
+            "bertscore": 0.6907010674476624,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are BSAP occupied by in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4878859519958496,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147345542908,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

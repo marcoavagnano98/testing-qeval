@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Maximal induction of the c-fos gene was followed by that for the fos-B gene.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Maximal induction",
+        "the c-fos gene",
+        "the fos-B gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the first step in the c-fos gene?",
+          "What gene was inducted at maximum?",
+          "What gene was inducted at maximum induction?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the first step in the c-fos gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17792457342147827,
+        "ground_truth": {
+          "Maximal induction": {
+            "bertscore": 0.6901797652244568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was inducted at maximum?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos",
+        "answerability": 0.9850894212722778,
+        "ground_truth": {
+          "the c-fos gene": {
+            "bertscore": 0.8409395217895508,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What gene was inducted at maximum induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "fos-B",
+        "answerability": 0.9897369742393494,
+        "ground_truth": {
+          "the fos-B gene": {
+            "bertscore": 0.8523180484771729,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

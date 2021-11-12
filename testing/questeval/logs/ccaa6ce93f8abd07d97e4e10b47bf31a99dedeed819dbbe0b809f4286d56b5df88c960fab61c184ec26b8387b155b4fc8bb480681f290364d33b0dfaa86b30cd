@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "The kappaB-binding activity in T cells was detectable while in others kappaB-binding activity was modestly induced but the duration was reduced.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappaB",
+        "kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that binds to T cells?",
+          "What is the name of the protein that binds to T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The kappaB-binding activity",
+        "T cells",
+        "others",
+        "kappaB-binding activity",
+        "the duration"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was detectable in T cells?",
+          "What type of cells were induced by kappaB?",
+          "What was induced in T cells but not in others?",
+          "What was detectable in T cells?",
+          "What was reduced in some T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was induced in some mice but not in others?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappaB-binding activity",
+        "answerability": 0.7185533046722412,
+        "ground_truth": {
+          "kappaB": {
+            "bertscore": 0.7347322106361389,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was detectable in some mice?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5027921199798584,
+        "ground_truth": {
+          "NFkappaB1-binding activity": {
+            "bertscore": 0.5769118070602417,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was induced but not detectable in some cases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappaB-binding activity",
+        "answerability": 0.8519410490989685,
+        "ground_truth": {
+          "others": {
+            "bertscore": 0.6389787793159485,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was detectable in some cases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappaB-binding activity",
+        "answerability": 0.9835603833198547,
+        "ground_truth": {
+          "kappaB-binding activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was reduced in some cases?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "duration",
+        "answerability": 0.9503579139709473,
+        "ground_truth": {
+          "the duration": {
+            "bertscore": 0.8768839240074158,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

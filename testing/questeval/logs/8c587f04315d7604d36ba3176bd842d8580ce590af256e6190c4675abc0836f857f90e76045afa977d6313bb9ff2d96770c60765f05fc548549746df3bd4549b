@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "This enhancement was eliminated if a conserved 20-bp sequence was removed from the intron or if a dominant-negative ets-binding factor was co-transfected with the reporter gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "20-bp"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What sequence was removed from the intron?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This enhancement",
+        "a conserved 20-bp sequence",
+        "the intron",
+        "a dominant-negative ets-binding factor",
+        "the reporter gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was eliminated if a conserved 20-bp sequence was removed from the in",
+          "What was removed from the intron?",
+          "Where was a conserved 20-bp sequence removed from?",
+          "What was co-transfected with the reporter gene?",
+          "What was co-transfected with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What sequence was removed from the intron?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a conserved 20-bp sequence",
+        "answerability": 0.8921530842781067,
+        "ground_truth": {
+          "20-bp": {
+            "bertscore": 0.7509262561798096,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was eliminated if a conserved 20-bp sequence was removed from the in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "This enhancement",
+        "answerability": 0.9625388383865356,
+        "ground_truth": {
+          "This enhancement": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was removed from the intron?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a conserved 20-bp sequence",
+        "answerability": 0.9384436011314392,
+        "ground_truth": {
+          "a conserved 20-bp sequence": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where was a conserved 20-bp sequence removed from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the intron",
+        "answerability": 0.9988309144973755,
+        "ground_truth": {
+          "the intron": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was co-transfected with the reporter gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ets-binding factor",
+        "answerability": 0.9273865222930908,
+        "ground_truth": {
+          "a dominant-negative ets-binding factor": {
+            "bertscore": 0.9016180038452148,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What was co-transfected with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5181868076324463,
+        "ground_truth": {
+          "the reporter gene": {
+            "bertscore": 0.6618843078613281,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

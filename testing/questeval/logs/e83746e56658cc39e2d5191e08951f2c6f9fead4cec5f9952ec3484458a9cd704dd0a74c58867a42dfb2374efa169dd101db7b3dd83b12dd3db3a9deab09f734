@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Activation of the transcription factor NF-kappaB is thought to be required for cytokine release from LPS-responsive cells a critical step for endotoxic effects.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "endotoxic"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What transcription factor is required for endotoxic effects?",
+          "What type of effects are cytokine release from LPS-responsive cells critical for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "the transcription factor NF-kappaB",
+        "cytokine release",
+        "LPS-responsive cells",
+        "a critical step",
+        "endotoxic effects"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for cytokine release from LPS-responsive cells?",
+          "What is required for cytokine release from LPS-responsive cells?",
+          "What is the key step for endotoxic effects?",
+          "What is cytokine release from?",
+          "What is the cytokine release from LPS-responsive cells considered to be?",
+          "What is the cytokine release from LPS-responsive cells critical for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for cytokine release from LPS-responsive cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.9970036149024963,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.6865966320037842,
+            "f1": 0
+          },
+          "NF-kappaB": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the key step for endotoxic effects?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation of the transcription factor NF-kappaB",
+        "answerability": 0.996519148349762,
+        "ground_truth": {
+          "cytokine release": {
+            "bertscore": 0.699194610118866,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is cytokine release from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS-responsive cells",
+        "answerability": 0.9177153706550598,
+        "ground_truth": {
+          "LPS-responsive cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is cytokine release from LPS-responsive cells considered to be?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "critical",
+        "answerability": 0.9927436113357544,
+        "ground_truth": {
+          "a critical step": {
+            "bertscore": 0.780036449432373,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is cytokine release from LPS-responsive cells critical for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endotoxic effects",
+        "answerability": 0.9992875456809998,
+        "ground_truth": {
+          "endotoxic effects": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

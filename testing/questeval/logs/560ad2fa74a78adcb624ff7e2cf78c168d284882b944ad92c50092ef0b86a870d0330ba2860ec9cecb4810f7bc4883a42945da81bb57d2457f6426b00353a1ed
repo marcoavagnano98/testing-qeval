@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "Furthermore the VitD3- and the PMA-induced CD14 expression was inhibited as a temporal consequence of the RA-differentiated differentiation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "CD14",
+        "RA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein inhibited the expression of CD14?",
+          "What was inhibited as a result of the RA-differentiated differentiation?",
+          "What is the name of the protein that causes the inhibition of CD14 expression?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the VitD3-",
+        "the PMA-induced CD14 expression",
+        "a temporal consequence",
+        "the RA-differentiated differentiation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that inhibits CD14 expression?",
+          "What was inhibited as a temporal consequence of the RA-differentiated",
+          "Why was the CD14 expression inhibited?",
+          "What caused the inhibition of CD14 expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the other factor that inhibits CD14 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMA",
+        "answerability": 0.8259822726249695,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene was inhibited in the RA-induced differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3- and the PMA-induced CD14 expression",
+        "answerability": 0.8496929407119751,
+        "ground_truth": {
+          "CD14": {
+            "bertscore": 0.6318427920341492,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What induced the differentiation of CD14?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15978020429611206,
+        "ground_truth": {
+          "RA": {
+            "bertscore": 0.6910656094551086,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that inhibits CD14 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004720211029052734,
+        "ground_truth": {
+          "the VitD3-": {
+            "bertscore": 0.6564494371414185,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was inhibited as a temporal consequence of the RA-induced differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VitD3- and the PMA-induced CD14 expression",
+        "answerability": 0.89900141954422,
+        "ground_truth": {
+          "the PMA-induced CD14 expression": {
+            "bertscore": 0.9096664786338806,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "Why was the CD14 expression inhibited?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "temporal consequence",
+        "answerability": 0.769802451133728,
+        "ground_truth": {
+          "a temporal consequence": {
+            "bertscore": 0.9059757590293884,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What caused the inhibition of CD14 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6623181104660034,
+        "ground_truth": {
+          "the RA-induced differentiation": {
+            "bertscore": 0.651836633682251,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

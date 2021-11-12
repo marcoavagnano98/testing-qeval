@@ -1,0 +1,110 @@
+{
+  "type": "ref",
+  "text": "Electrophoretic mobility shift assay analysis showed that Tax increased the DNA binding activity of both Sp1 and /Egr-1 using a TRE1 probe.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "/Egr-1",
+        "TRE1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was shown to have a higher binding activity than Tax?",
+          "What probe was used to show that Tax increased the DNA binding activity of both Sp1 and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Electrophoretic mobility shift assay analysis",
+        "Tax",
+        "the DNA binding activity",
+        "both Sp1",
+        "a TRE1 probe"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that Tax increased the DNA binding activity of both Sp1 and /Egr",
+          "What protein increased the DNA binding activity of Sp1 and /Egr-1?",
+          "What did Tax increase in Sp1 and /Egr-1?",
+          "What two genes were shown to have increased DNA binding activity?",
+          "What did the Electrophoretic mobility shift assay show increased the DNA binding activity of both Sp"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed that Tax increased the DNA binding activity of both Sp1 and NGFI-A": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46567296981811523,
+        "ground_truth": {
+          "Electrophoretic mobility shift assay analysis": {
+            "bertscore": 0.6254534125328064,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein increased the DNA binding activity of Sp1 and NGFI-A?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2523213028907776,
+        "ground_truth": {
+          "Tax": {
+            "bertscore": 0.6794692873954773,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Tax increase in Sp1 and NGFI-A?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA binding activity",
+        "answerability": 0.6181954145431519,
+        "ground_truth": {
+          "the DNA binding activity": {
+            "bertscore": 0.9235457181930542,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two proteins were shown to have increased DNA binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1 and /Egr-1",
+        "answerability": 0.9794049859046936,
+        "ground_truth": {
+          "both Sp1": {
+            "bertscore": 0.7742278575897217,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What protein was shown to have a higher binding activity than Sp1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tax",
+        "answerability": 0.950480043888092,
+        "ground_truth": {
+          "NGFI-A": {
+            "bertscore": 0.6854259967803955,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the Electrophoretic mobility shift assay show increased the DNA binding activity of both Sp": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tax",
+        "answerability": 0.9059317111968994,
+        "ground_truth": {
+          "a TRE1 probe": {
+            "bertscore": 0.6760313510894775,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

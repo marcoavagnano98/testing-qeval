@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "c-Jun protein isolated from phorbol ester-induced cells did not target c-Fos for degradation which suggests that c-Fos is transiently stabilized after stimulation of cell growth. v-Fos the retroviral counterpart of c-Fos was not susceptible to degradation targeted by c-Jun.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "phorbol",
+        "c-Fos",
+        "v-Fos",
+        "c-Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What ester-induced cell type was not susceptible to degradation?",
+          "What protein was not targeted for degradation?",
+          "What is the retroviral counterpart of c-Fos?",
+          "What protein did not target c-Fos for degradation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "c-Jun protein",
+        "phorbol ester-induced cells",
+        "c-Fos",
+        "degradation",
+        "c-Fos",
+        "stimulation",
+        "cell growth",
+        "v-Fos",
+        "the retroviral counterpart",
+        "c-Fos",
+        "degradation",
+        "c-Jun"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not target c-Fos for degradation?",
+          "What was c-Jun isolated from?",
+          "What protein was not targeted for degradation?",
+          "What did v-Fos not target?",
+          "What protein was not targeted for degradation?",
+          "What did phorbol ester-induced cells not target?",
+          "What did phorbol ester-induced cells not target?",
+          "What is the retroviral counterpart of c-Fos?",
+          "What is v-Fos?",
+          "What protein was not targeted for degradation?",
+          "What did v-Fos not target?",
+          "What protein did not target c-Fos for degradation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of phosphorylation on c-Jun?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3017651438713074,
+        "ground_truth": {
+          "Targeted degradation": {
+            "bertscore": 0.6928198337554932,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is a target for degradation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "v-Fos",
+        "answerability": 0.5765711069107056,
+        "ground_truth": {
+          "c-Fos": {
+            "bertscore": 0.9082635045051575,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only molecule that is not a target for phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16549348831176758,
+        "ground_truth": {
+          "not v-Fos": {
+            "bertscore": 0.6585817933082581,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism of degradation of c-Jun?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.46362799406051636,
+        "ground_truth": {
+          "a phosphorylation-dependent signal": {
+            "bertscore": 0.6134618520736694,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the phosphorylation-dependent signal?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03916734457015991,
+        "ground_truth": {
+          "c-Jun": {
+            "bertscore": 0.6690903902053833,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

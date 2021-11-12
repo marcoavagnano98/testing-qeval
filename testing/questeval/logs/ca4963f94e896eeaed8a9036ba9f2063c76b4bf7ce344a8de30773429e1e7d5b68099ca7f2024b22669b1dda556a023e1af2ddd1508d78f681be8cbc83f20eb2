@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "YM268 increases the insulin sensitivity of 3T3-L1 adipocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "YM268"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases insulin sensitivity of 3T3-L1 adipocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "YM268",
+        "the insulin sensitivity",
+        "3T3-L1 adipocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases insulin sensitivity of 3T3-L1 adipocytes?",
+          "What does YM268 increase in 3T3-L1 adipocyte",
+          "What does YM268 increase insulin sensitivity of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases the glucose uptake cell differentiation and mRNA expression of glucose transporter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.45142829418182373,
+        "ground_truth": {
+          "YM268": {
+            "bertscore": 0.646845817565918,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does YM268 increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin sensitivity",
+        "answerability": 0.9980514049530029,
+        "ground_truth": {
+          "the glucose uptake cell differentiation": {
+            "bertscore": 0.7585689425468445,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does YM268 increase in 3T3-L1 adipocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "insulin sensitivity",
+        "answerability": 0.9973610639572144,
+        "ground_truth": {
+          "mRNA expression": {
+            "bertscore": 0.7676629424095154,
+            "f1": 0
+          },
+          "glucose transporter": {
+            "bertscore": 0.8103079795837402,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does YM268 increase glucose uptake cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011820673942565918,
+        "ground_truth": {
+          "3T3-L1 adipocytes": {
+            "bertscore": 0.604992687702179,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

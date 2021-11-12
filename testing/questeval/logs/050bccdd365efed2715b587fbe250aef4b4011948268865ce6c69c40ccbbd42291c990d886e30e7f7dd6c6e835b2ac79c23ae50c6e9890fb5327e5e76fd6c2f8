@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "(ERK1/2) and c-Jun N-terminal kinase (JNK) in mediating IL-6 gene expression in human monocytes in particular their role in enhancing NF-kappa B activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "JNK",
+        "IL-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the c-Jun N-terminal kinase?",
+          "What gene does JNK play a role in regulating?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "and c-Jun N-terminal kinase",
+        "JNK",
+        "IL-6 gene expression",
+        "human monocytes",
+        "their role",
+        "NF-kappa B activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are the two major kinases that mediate IL-6 gene expression?",
+          "What is the c-Jun N-terminal kinase?",
+          "What do human monocytes mediate?",
+          "What is the role of c-Jun N-terminal kinase",
+          "What is the role of c-Jun N-terminal kinase",
+          "What does IL-6 play a role in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the c-Jun N-terminal kinase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JNK",
+        "answerability": 0.8520210385322571,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene does JNK play a role in regulating?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6",
+        "answerability": 0.9524973630905151,
+        "ground_truth": {
+          "IL-6": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What are the two major kinases that mediate IL-6 gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "(ERK1/2) and c-Jun N-terminal kinas",
+        "answerability": 0.7780632972717285,
+        "ground_truth": {
+          "and c-Jun N-terminal kinase": {
+            "bertscore": 0.8531319499015808,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    },
+    "What do human monocytes mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6 gene expression",
+        "answerability": 0.6794559955596924,
+        "ground_truth": {
+          "IL-6 gene expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of c-Jun N-terminal kinase": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3020150065422058,
+        "ground_truth": {
+          "human monocytes": {
+            "bertscore": 0.6539058089256287,
+            "f1": 0
+          },
+          "their role": {
+            "bertscore": 0.6453273892402649,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-6 play a role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B activity",
+        "answerability": 0.6554065942764282,
+        "ground_truth": {
+          "NF-kappa B activity": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

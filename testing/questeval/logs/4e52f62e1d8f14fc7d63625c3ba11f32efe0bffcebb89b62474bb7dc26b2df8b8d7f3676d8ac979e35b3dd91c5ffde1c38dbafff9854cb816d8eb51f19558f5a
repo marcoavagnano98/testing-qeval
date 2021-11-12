@@ -1,0 +1,148 @@
+{
+  "type": "hyp",
+  "text": "When single- point mutation was introduced to each GC box EBS and GT box in PFP9a20 at least 3-fold less CAT activity was observed in CTLL-R8 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GC",
+        "CAT"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What box was CAT activity reduced in CTLL-R8 cells?",
+          "What activity was reduced when single-point mutation was introduced to each GC box EBS and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "single- point mutation",
+        "each GC",
+        "box",
+        "EBS",
+        "GT box",
+        "PFP9a20",
+        "CAT activity",
+        "CTLL-R8 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was introduced to each GC box EBS and GT box in PFP9a20",
+          "What box was single- point mutation introduced to?",
+          "What is the GC box?",
+          "What is the GC box?",
+          "What is the other box that has a higher CAT activity?",
+          "In what gene was CAT activity reduced?",
+          "What was reduced by single-point mutation?",
+          "What cells had a 3-fold decrease in CAT activity?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What box was a single-point mutation introduced to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GC box EBS and GT box",
+        "answerability": 0.8886641263961792,
+        "ground_truth": {
+          "GC": {
+            "bertscore": 0.753297746181488,
+            "f1": 0.2857142857142857
+          },
+          "each GC": {
+            "bertscore": 0.7334572672843933,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What activity was reduced when single-point mutation was introduced to each GC box EBS and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CAT",
+        "answerability": 0.6922035813331604,
+        "ground_truth": {
+          "CAT": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was introduced to each GC box EBS and GT box in PFP9a20": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "single- point mutation",
+        "answerability": 0.8640186786651611,
+        "ground_truth": {
+          "single-point mutation": {
+            "bertscore": 1.0,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the GC box?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2608681321144104,
+        "ground_truth": {
+          "box": {
+            "bertscore": 0.7061470746994019,
+            "f1": 0
+          },
+          "EBS": {
+            "bertscore": 0.6714884042739868,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other box with a single-point mutation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GT box",
+        "answerability": 0.8870550394058228,
+        "ground_truth": {
+          "GT box": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what gene was CAT activity reduced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CTLL-R8",
+        "answerability": 0.7989035844802856,
+        "ground_truth": {
+          "PFP9a20": {
+            "bertscore": 0.751488208770752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was reduced by single-point mutation in CTLL-R8 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CAT activity",
+        "answerability": 0.8875502347946167,
+        "ground_truth": {
+          "CAT activity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells had a 3-fold decrease in CAT activity when a single-point mutation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CTLL-R8 cells",
+        "answerability": 0.8046823740005493,
+        "ground_truth": {
+          "CTLL-R8 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

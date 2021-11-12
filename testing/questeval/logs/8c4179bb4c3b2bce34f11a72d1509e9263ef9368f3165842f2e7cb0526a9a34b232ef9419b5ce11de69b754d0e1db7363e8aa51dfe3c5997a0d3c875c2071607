@@ -1,0 +1,66 @@
+{
+  "type": "ref",
+  "text": "Induction of this DNA-binding activity was accompanied by tyrosine phosphorylation of Stat3 and correlated with Src transformation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Induction",
+        "this DNA-binding activity",
+        "tyrosine phosphorylation",
+        "Src transformation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was accompanied by tyrosine phosphorylation of Stat3?",
+          "What is accompanied by tyrosine phosphorylation of Stat3?",
+          "What was the corresponding step in the induction of DNA binding?",
+          "What is the tyrosine phosphorylation of Stat3 correlated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the process that causes DNA binding?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03581267595291138,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.7021175026893616,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does p53 induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.052890658378601074,
+        "ground_truth": {
+          "DNA-binding activity": {
+            "bertscore": 0.678027331829071,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How is DNA binding induced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation of Stat3",
+        "answerability": 0.8507886528968811,
+        "ground_truth": {
+          "a p53-dependent manner": {
+            "bertscore": 0.7046242356300354,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

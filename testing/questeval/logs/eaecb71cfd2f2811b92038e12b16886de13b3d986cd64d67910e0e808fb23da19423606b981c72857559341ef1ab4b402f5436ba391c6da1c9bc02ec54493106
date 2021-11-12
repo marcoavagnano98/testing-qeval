@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "This step is mediated principally by the dephosphorylation of residues threonine 14\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "14"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What residue is threonine?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This step",
+        "the dephosphorylation",
+        "residues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is mediated by the dephosphorylation of residues threonine 14",
+          "What is the main mechanism of thiocyanide depletion?",
+          "What is threonine 14?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What residue is threonine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04080402851104736,
+        "ground_truth": {
+          "14": {
+            "bertscore": 0.6286804676055908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is mediated by the dephosphorylation of residues threonine 14": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "This step is mediated principally by the dephosphorylation of residues thre",
+        "answerability": 0.8895004987716675,
+        "ground_truth": {
+          "This step": {
+            "bertscore": 0.6816673874855042,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the main mechanism of thiocyanide depletion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dephosphorylation",
+        "answerability": 0.6747094392776489,
+        "ground_truth": {
+          "the dephosphorylation": {
+            "bertscore": 0.9410326480865479,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is threonine 14?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01108640432357788,
+        "ground_truth": {
+          "residues": {
+            "bertscore": 0.7142971158027649,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

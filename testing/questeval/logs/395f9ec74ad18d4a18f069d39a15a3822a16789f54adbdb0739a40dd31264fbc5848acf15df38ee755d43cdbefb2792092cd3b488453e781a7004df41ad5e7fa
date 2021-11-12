@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "The transcriptional regulator gene phoP of the PhoPQ two-component regulatory system and the PhoP-regulated mgtC gene were expressed at levels >2-fold higher in fleas than in any other condition (Tables 1 S1 S3). The PhoP-regulated mgtC gene was also upregulated in the flea but its expression was downregulated in the rat bubo (Tables S3 and S4).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PhoPQ",
+        "two",
+        "PhoP",
+        "1 S1 S3",
+        "PhoP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two-component regulatory system is expressed at levels >2-fold higher in fleas",
+          "How many components are in the PhoPQ system?",
+          "What is the name of the gene that controls the expression of the mgtC gene in fle",
+          "What are the results of the analysis of the expression of the two components of the PhoP",
+          "What is the name of the gene that controls the expression of the mgtC gene in fle"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The transcriptional regulator gene phoP",
+        "the PhoPQ two-component regulatory system",
+        "the PhoP-regulated mgtC gene",
+        "levels",
+        "fleas",
+        "any other condition",
+        "Tables 1 S1 S3",
+        "The PhoP-regulated mgtC gene",
+        "the flea",
+        "its expression",
+        "the rat bubo",
+        "Tables S3",
+        "S4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the PhoPQ two-component regulatory system?",
+          "What is the phoP of?",
+          "What gene was upregulated in fleas?",
+          "What was the expression of the two genes in fleas higher than in any other condition?",
+          "What animal had levels of the two-component regulatory system?",
+          "What was the highest level of expression in fleas?",
+          "What are the results of the study?",
+          "What gene was upregulated in the flea?",
+          "What animal was upregulated in the rat bubo?",
+          "What was downregulated in the rat bubo?",
+          "What animal had a higher expression of the phoP-regulated mgtC gene?",
+          "What are the results of the analysis of the expression of the two components of the PhoP",
+          "What are the results of the analysis of the expression of the phoP gene in flea"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene was higher in H37Ra than in H37Rv?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04466038942337036,
+        "ground_truth": {
+          "phoP": {
+            "bertscore": 0.6450831890106201,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was higher in H37Ra than in H37Rv?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0021506547927856445,
+        "ground_truth": {
+          "Interestingly expression": {
+            "bertscore": 0.7432465553283691,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the highest expression of phoP?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": ">2-fold higher",
+        "answerability": 0.9928786158561707,
+        "ground_truth": {
+          "H37Ra": {
+            "bertscore": 0.6001420617103577,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

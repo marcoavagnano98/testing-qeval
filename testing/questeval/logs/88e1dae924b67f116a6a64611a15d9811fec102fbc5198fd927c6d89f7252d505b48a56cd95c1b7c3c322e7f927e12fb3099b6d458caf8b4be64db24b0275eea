@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "The arginine- and cysteine-rich domains of Tat were required for IkappaB-alpha and p65 association respectively and for sustaining the NF-kappaB activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activity is required for Tat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The arginine- and cysteine-rich domains",
+        "Tat",
+        "IkappaB-alpha and p65 association",
+        "the NF-kappaB activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are required for IkappaB-alpha and p65 association?",
+          "What is required for IkappaB-alpha and p65 association?",
+          "What are the two domains of Tat required for?",
+          "What did Tat support?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases the p65 affinity binding to DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0820457935333252,
+        "ground_truth": {
+          "Tat": {
+            "bertscore": 0.6546972990036011,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Tat increases the affinity binding to what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.001842200756072998,
+        "ground_truth": {
+          "DNA": {
+            "bertscore": 0.6719537973403931,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Tat increases the p65 affinity binding to DNA through what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.016632437705993652,
+        "ground_truth": {
+          "association": {
+            "bertscore": 0.6460089683532715,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is associated with DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004366099834442139,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.6236465573310852,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

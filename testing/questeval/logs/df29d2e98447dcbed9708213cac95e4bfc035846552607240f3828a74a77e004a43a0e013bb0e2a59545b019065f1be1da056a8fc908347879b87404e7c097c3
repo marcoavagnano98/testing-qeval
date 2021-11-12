@@ -1,0 +1,52 @@
+{
+  "type": "hyp",
+  "text": "PU.1 (Spi-1) autoregulates its expression in myoblasts and myotubes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "its expression",
+        "myoblasts",
+        "myotubes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does PU.1 (Spi-1) autoregulate in myo",
+          "Where does PU.1 (Spi-1) express itself?",
+          "Where does PU.1 (Spi-1) express itself?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does PU.1 (Spi-1) autoregulate in mye": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39325881004333496,
+        "ground_truth": {
+          "its expression": {
+            "bertscore": 0.6619740724563599,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does PU.1 (Spi-1) autoregulate its expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myoblasts and myotubes",
+        "answerability": 0.9712690114974976,
+        "ground_truth": {
+          "myeloid cells": {
+            "bertscore": 0.7450860738754272,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

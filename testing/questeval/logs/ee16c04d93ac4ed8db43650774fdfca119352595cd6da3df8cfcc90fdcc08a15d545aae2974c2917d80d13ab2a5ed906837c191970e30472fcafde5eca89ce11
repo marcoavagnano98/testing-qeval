@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Enhanced IGF-1 expression improves smooth muscle cell engraftment after cell transplantation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Enhanced IGF-1 expression",
+        "smooth muscle cell engraftment",
+        "cell transplantation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the gene that improves smooth muscle cell engraftment after",
+          "What does IGF-1 expression improve after cell transplantation?",
+          "What is the process that increases IGF-1 expression?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that improves smooth muscle cell engraftment after": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IGF-1",
+        "answerability": 0.9799895882606506,
+        "ground_truth": {
+          "Enhanced IGF-1 expression": {
+            "bertscore": 0.7521616220474243,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does IGF-1 expression improve after cell transplantation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "smooth muscle cell engraftment",
+        "answerability": 0.9989048838615417,
+        "ground_truth": {
+          "smooth muscle cell engraftment": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that increases IGF-1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5772226452827454,
+        "ground_truth": {
+          "cell transplantation": {
+            "bertscore": 0.6687731742858887,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

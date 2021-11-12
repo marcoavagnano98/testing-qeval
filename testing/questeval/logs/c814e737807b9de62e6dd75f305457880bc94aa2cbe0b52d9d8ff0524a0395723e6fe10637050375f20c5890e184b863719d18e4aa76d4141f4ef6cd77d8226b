@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "These studies demonstrate that p21ras is essential for NO-induced downstream signaling such as NF-kappa B activation and that endogenous NO can activate p21ras in the same cell.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These studies",
+        "p21ras",
+        "NO-induced downstream",
+        "NF-kappa B activation",
+        "p21ras",
+        "the same cell"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that p21ras is essential for downstream signaling?",
+          "What is essential for downstream signaling?",
+          "What type of signaling is p21ras essential for?",
+          "What downstream signaling is p21ras essential for?",
+          "What is essential for downstream signaling?",
+          "Where can endogenous NO activate p21ras?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the authors demonstrate that p21ras is essential for downstream signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5329902768135071,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748355627059937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is essential for NO-induced downstream signaling?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p21ras",
+        "answerability": 0.989494800567627,
+        "ground_truth": {
+          "p21ras": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of signaling is p21ras essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "downstream",
+        "answerability": 0.9915803670883179,
+        "ground_truth": {
+          "NO-induced downstream": {
+            "bertscore": 0.7963799238204956,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What downstream signaling is p21ras essential for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NO-induced downstream signaling",
+        "answerability": 0.9727739691734314,
+        "ground_truth": {
+          "NF-kappa B activation": {
+            "bertscore": 0.7385627031326294,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where can endogenous NO activate p21ras?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the same cell",
+        "answerability": 0.9890334010124207,
+        "ground_truth": {
+          "the same cell": {
+            "bertscore": 0.8969324231147766,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

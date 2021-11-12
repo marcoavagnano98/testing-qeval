@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Modulating metastasis by adeno-associated virus-mediated gene transfer of MyD88.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "metastasis",
+        "adeno-associated virus-mediated gene transfer",
+        "MyD88"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of myD88 mutation?",
+          "What is the mechanism of myD88 modification?",
+          "What gene is involved in metastasis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main cause of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0009920001029968262,
+        "ground_truth": {
+          "metastasis": {
+            "bertscore": 0.7011743187904358,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the mechanism that modifies metastasis in prostate cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.532592236995697,
+        "ground_truth": {
+          "a lymphangiogenic switch": {
+            "bertscore": 0.6234676837921143,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the most common type of cancer that can be treated with a lymphangiogenic": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004021048545837402,
+        "ground_truth": {
+          "prostate cancer": {
+            "bertscore": 0.6679660677909851,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of c-Ski inhibited growth of diffuse-type gastric carcinoma through inhibition of transforming growth factor-beta signaling in diffuse-type gastric carcinoma.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "c-Ski inhibited growth",
+        "diffuse-type gastric carcinoma",
+        "inhibition",
+        "growth factor-beta",
+        "diffuse-type gastric carcinoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited growth of c-Ski?",
+          "What did overexpression of c-Ski do to diffuse-type gastric carcinoma?",
+          "What type of cancer is c-Ski associated with?",
+          "What did c-Ski do to the growth of gastric carcinoma?",
+          "What signaling was inhibited in a difcult type of gastric",
+          "What type of cancer is c-Ski associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited TGF-beta signaling in OCUM-2MLN": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1169654130935669,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191469669342041,
+            "f1": 0
+          },
+          "c-Ski": {
+            "bertscore": 0.642745316028595,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling was inhibited in OCUM-2MLN cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12930738925933838,
+        "ground_truth": {
+          "TGF-beta": {
+            "bertscore": 0.6283079385757446,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were affected by overexpression of c-Ski?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "diffuse-type gastric carcinoma",
+        "answerability": 0.7885608077049255,
+        "ground_truth": {
+          "OCUM-2MLN cells": {
+            "bertscore": 0.6750645637512207,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

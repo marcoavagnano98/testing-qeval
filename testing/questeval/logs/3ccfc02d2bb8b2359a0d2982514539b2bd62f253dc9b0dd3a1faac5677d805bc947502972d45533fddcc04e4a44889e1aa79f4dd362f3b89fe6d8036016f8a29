@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Targeting TNF for Treatment of Cancer and Autoimmune diseases.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "Autoimmune"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the target of the CDC's study?",
+          "What type of disease is TNF targeted for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF",
+        "Treatment",
+        "Cancer and Autoimmune diseases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the target of the CDC's study?",
+          "What is TNF used for?",
+          "What is TNF targeted for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the target of the CDC's study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17060625553131104,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TNF used for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Treatment of Cancer and Autoimmune diseases",
+        "answerability": 0.7578178644180298,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.7309098243713379,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What is the main target of TNF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cancer and Autoimmune diseases",
+        "answerability": 0.9521753191947937,
+        "ground_truth": {
+          "Cancer": {
+            "bertscore": 0.7637487649917603,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the other cancer treatment that is targeted by TNF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Autoimmune diseases",
+        "answerability": 0.9230302572250366,
+        "ground_truth": {
+          "Autoimmunity": {
+            "bertscore": 0.8219349384307861,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

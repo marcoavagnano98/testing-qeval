@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "Inhibitory effect of GH appears to occur in an autocrine fashion since the inhibitory effect on TNF-alpha secretion by constitutive GH production could be abolished in the presence of anti-hGH mAb.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GH",
+        "TNF",
+        "GH",
+        "mAb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the inhibitory effect of?",
+          "What protein is able to be inhibited by anti-hGH mAb?",
+          "What is the inhibitory effect of?",
+          "What is used to inhibit TNF-alpha secretion?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibitory effect",
+        "GH",
+        "an autocrine fashion",
+        "the inhibitory effect",
+        "TNF-alpha secretion",
+        "constitutive GH production",
+        "the presence"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of GH on TNF-alpha secretion called?",
+          "What is the inhibitory effect of?",
+          "In what fashion does the inhibitory effect of GH appear to occur?",
+          "What is the effect of GH on TNF-alpha secretion?",
+          "What is inhibited by GH production?",
+          "What is the inhibitory effect of GH?",
+          "In what way could the inhibitory effect of GH be abolished?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main factor that inhibits growth hormone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.049790918827056885,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What translocation is inhibited by growth hormone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09900391101837158,
+        "ground_truth": {
+          "kappaB": {
+            "bertscore": 0.6656471490859985,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of growth hormone on TNF-alpha secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibity",
+        "answerability": 0.9259247183799744,
+        "ground_truth": {
+          "Inhibitory effect": {
+            "bertscore": 0.8400955200195312,
+            "f1": 0
+          },
+          "nuclear factor-kappaB translocation": {
+            "bertscore": 0.7073257565498352,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What hormone inhibits TNF-alpha secretion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4265075922012329,
+        "ground_truth": {
+          "growth hormone": {
+            "bertscore": 0.6644764542579651,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What secretion is inhibited by growth hormone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.8674933314323425,
+        "ground_truth": {
+          "TNF-alpha secretion": {
+            "bertscore": 0.9099593162536621,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of cells are affected by growth hormone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006930828094482422,
+        "ground_truth": {
+          "lipopolysaccharide-stimulated human monocytes": {
+            "bertscore": 0.5823174118995667,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

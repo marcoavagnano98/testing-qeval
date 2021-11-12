@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "The kappa B-binding activity with the HIV enhancer is inhibited only if it is activated via the mitogen phytohemagglutinin whereas phorbol myristate acetate-mediated activation is completely insensitive to the drug.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "phorbol myristate"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only drug that inhibits kappa B-binding?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The kappa B-binding activity",
+        "the HIV enhancer",
+        "it",
+        "the mitogen phytohemagglutinin",
+        "phorbol myristate acetate-mediated activation",
+        "the drug"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is inhibited when HIV enhancer is activated?",
+          "What is the only drug that inhibits kappa B-binding?",
+          "What is the only way that HIV enhancer is activated?",
+          "What is the only way that kappa B-binding activity is inhibited",
+          "What is completely insensitive to the drug?",
+          "What is phorbol myristate acetate completely insensitive to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of kappa B binding on HIV enhancers?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited",
+        "answerability": 0.9991096258163452,
+        "ground_truth": {
+          "Correlation": {
+            "bertscore": 0.7428249716758728,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the correlation between the HIV enhancer and the kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited",
+        "answerability": 0.9966154098510742,
+        "ground_truth": {
+          "an increased kappa B binding activity": {
+            "bertscore": 0.6392881274223328,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What drug has a higher kappa B binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV enhancer",
+        "answerability": 0.7925409078598022,
+        "ground_truth": {
+          "the HIV enhancer": {
+            "bertscore": 0.9247298836708069,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

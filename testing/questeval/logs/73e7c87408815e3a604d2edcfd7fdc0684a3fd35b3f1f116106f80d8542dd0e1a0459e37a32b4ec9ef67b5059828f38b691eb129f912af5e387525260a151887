@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "These data suggest that inhibition of B16F10 melanoma metastasis by rk-2 was caused by inhibition of neovascularization and reduction of matrix metalloproteinase expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These data",
+        "inhibition",
+        "B16F10 melanoma metastasis",
+        "rk-2",
+        "inhibition",
+        "neovascularization",
+        "reduction",
+        "matrix metalloproteinase expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that inhibition of neovascularization and reduction of matrix metalloprotein",
+          "What is the cause of B16F10 melanoma metastasis?",
+          "What is the effect of rk-2 on melanoma?",
+          "What is the cause of B16F10 melanoma metastasis?",
+          "What is the cause of B16F10 melanoma metastasis?",
+          "What is the main cause of B16F10 melanoma metastasis",
+          "What is the cause of B16F10 melanoma metastasis?",
+          "What is the cause of B16F10 melanoma metastasis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What suggests that inhibition of neovascularization and reduction of matrix metalloprotein": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6756864786148071,
+        "ground_truth": {
+          "These data": {
+            "bertscore": 0.644633948802948,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cause of B16F10 melanoma metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of neovascularization and reduction of matrix metalloproteinase",
+        "answerability": 0.9924854040145874,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.7149000763893127,
+            "f1": 0.2222222222222222
+          },
+          "rk-2": {
+            "bertscore": 0.6152827143669128,
+            "f1": 0
+          },
+          "reduction": {
+            "bertscore": 0.669249951839447,
+            "f1": 0.2222222222222222
+          },
+          "matrix metalloproteinase expression": {
+            "bertscore": 0.8415828943252563,
+            "f1": 0.36363636363636365
+          }
+        }
+      }
+    },
+    "What is the effect of rk-2 on melanoma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of neovascularization and reduction of matrix metalloproteinase",
+        "answerability": 0.9880358576774597,
+        "ground_truth": {
+          "B16F10 melanoma metastasis": {
+            "bertscore": 0.6717814803123474,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main cause of B16F10 melanoma metastasis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of neovascularization and reduction of matrix metalloproteinase",
+        "answerability": 0.8981093764305115,
+        "ground_truth": {
+          "neovascularization": {
+            "bertscore": 0.7839105129241943,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    }
+  }
+}

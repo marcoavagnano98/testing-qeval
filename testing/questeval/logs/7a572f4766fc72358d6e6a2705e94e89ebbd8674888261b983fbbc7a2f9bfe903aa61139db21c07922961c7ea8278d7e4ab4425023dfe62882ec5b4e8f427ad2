@@ -1,0 +1,162 @@
+{
+  "type": "hyp",
+  "text": "LPS stimulation triggered a complex formation between PI 3-kinase and myeloid differentiation factor 88 (MyD88) which was followed by an induction of IL-1beta tumor necrosis factor-alpha (TNF-alpha) and macrophage inflammatory protein (MIP)-2.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MyD88",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the myeloid differentiation factor 88?",
+          "What is the name of the inflammatory protein that is produced by IL-1beta"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "LPS stimulation",
+        "a complex formation",
+        "PI 3-kinase and myeloid differentiation factor",
+        "(MyD88",
+        "an induction",
+        "IL-1beta tumor necrosis factor-alpha",
+        "(TNF-alpha",
+        "macrophage inflammatory protein",
+        "MIP)-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What triggered a complex formation between PI 3-kinase and MyD88",
+          "What did LPS stimulate?",
+          "What two proteins were involved in the formation of LPS?",
+          "What is the name of the myeloid differentiation factor 88?",
+          "What was the result of LPS?",
+          "What is the name of the protein that is produced by LPS?",
+          "What is the name of the IL-1beta tumor necrosis factor?",
+          "What does MIP-2 stand for?",
+          "What is the name of the macrophage inflammatory protein?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the myeloid differentiation factor 88?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MyD88",
+        "answerability": 0.996858537197113,
+        "ground_truth": {
+          "MyD88": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "(MyD88": {
+            "bertscore": 0.8930587768554688,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the inflammatory protein that is produced by IL-1beta": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03295093774795532,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789318323135376,
+            "f1": 0
+          },
+          "(TNF-alpha": {
+            "bertscore": 0.6426272988319397,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induced a complex formation between PI 3-kinase and MyD88": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LPS stimulation",
+        "answerability": 0.9228788614273071,
+        "ground_truth": {
+          "LPS stimulation": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did LPS induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3797781467437744,
+        "ground_truth": {
+          "a complex formation": {
+            "bertscore": 0.6853158473968506,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two proteins were involved in the complex formation of LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PI 3-kinase and myeloid differentiation factor 88",
+        "answerability": 0.7697970867156982,
+        "ground_truth": {
+          "PI 3-kinase and myeloid differentiation factor": {
+            "bertscore": 0.9663078188896179,
+            "f1": 0.923076923076923
+          }
+        }
+      }
+    },
+    "What was the result of LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "complex formation between PI 3-kinase and myeloid differentiation factor 88",
+        "answerability": 0.7862812280654907,
+        "ground_truth": {
+          "an induction": {
+            "bertscore": 0.5752739310264587,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is produced by LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04908782243728638,
+        "ground_truth": {
+          "IL-1beta tumor necrosis factor-alpha": {
+            "bertscore": 0.5819077491760254,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MIP stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "macrophage inflammatory protein",
+        "answerability": 0.8112108111381531,
+        "ground_truth": {
+          "macrophage inflammatory protein": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the macrophage inflammatory protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.31506937742233276,
+        "ground_truth": {
+          "MIP)-2": {
+            "bertscore": 0.6654741764068604,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

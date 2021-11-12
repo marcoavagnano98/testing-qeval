@@ -1,0 +1,140 @@
+{
+  "type": "ref",
+  "text": "The granulocyte-macrophage colony-stimulating factor requires sequences in the promoter as well as a powerful enhancer located 3kb upstream to respond to TCR-like signals.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3",
+        "kb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many kb upstream is the enhancer located in?",
+          "How large is the enhancer located in the promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The granulocyte-macrophage colony-stimulating factor",
+        "sequences",
+        "the promoter",
+        "a powerful enhancer",
+        "3kb upstream",
+        "TCR-like signals"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What requires sequences in the promoter and a powerful enhancer located 3kb up",
+          "What does the granulocyte-macrophage colony-stimulating",
+          "What part of the cell does the granulocyte-macrophage colony",
+          "What is located 3kb upstream of the granulocyte-macrophag",
+          "Where is the enhancer located?",
+          "What does the granulocyte-macrophage colony-stimulating"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many kb upstream is the enhancer located in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3",
+        "answerability": 0.9656091928482056,
+        "ground_truth": {
+          "3": {
+            "bertscore": 0.9999994039535522,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How large is the enhancer located in the promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3kb",
+        "answerability": 0.8661421537399292,
+        "ground_truth": {
+          "kb": {
+            "bertscore": 0.7471348643302917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signals does the granulocyte-macrophage colony-stimul": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCR-like signals",
+        "answerability": 0.5350115299224854,
+        "ground_truth": {
+          "TCR": {
+            "bertscore": 0.7732043862342834,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What requires sequences in the promoter and a powerful enhancer located 3kb up": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "granulocyte-macrophage colony-stimulating factor",
+        "answerability": 0.7837162613868713,
+        "ground_truth": {
+          "The granulocyte-macrophage colony-stimulating factor": {
+            "bertscore": 0.9466423392295837,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the granulocyte-macrophage colony-stimulating": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20822179317474365,
+        "ground_truth": {
+          "sequences": {
+            "bertscore": 0.7263264060020447,
+            "f1": 0
+          },
+          "TCR signals": {
+            "bertscore": 0.6680106520652771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What part of the cell is required to respond to TCR signals?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the promoter",
+        "answerability": 0.6035140156745911,
+        "ground_truth": {
+          "the promoter": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is located 3kb upstream of the granulocyte-macrophag": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6271522045135498,
+        "ground_truth": {
+          "a powerful enhancer": {
+            "bertscore": 0.658707857131958,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is the enhancer located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3kb upstream",
+        "answerability": 0.9762246608734131,
+        "ground_truth": {
+          "3kb upstream": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

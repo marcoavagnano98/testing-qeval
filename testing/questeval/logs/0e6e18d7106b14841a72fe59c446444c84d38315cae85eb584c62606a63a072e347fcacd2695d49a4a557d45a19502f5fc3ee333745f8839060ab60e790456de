@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Here we show that increased expression of zinc-finger protein regulator of apoptosis and cell-cycle arrest (Zac1) is implicated in HDAC inhibitor-induced apoptosis in F9 and P19 EC cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Zac1",
+        "HDAC",
+        "F9",
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that regulates apoptosis and cell cycle",
+          "What is the zinc-finger protein regulator of apoptosis and cell-",
+          "What is the name of the cell line that is involved in HDAC inhibitor-induced a",
+          "What type of cells are affected by the HDAC inhibitor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "increased expression",
+        "zinc-finger protein regulator",
+        "apoptosis",
+        "cell-cycle arrest",
+        "(Zac1",
+        "HDAC inhibitor-induced apoptosis",
+        "F9 and P19 EC cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the authors find about the HDAC inhibitor?",
+          "What is implicated in HDAC inhibitor-induced apoptosis?",
+          "What is involved in apoptosis and cell cycle arrest?",
+          "What is zinc-finger protein regulator of?",
+          "What is the zinc-finger protein regulator of apoptosis called?",
+          "What is the zinc-finger protein regulator of apoptosis and cell-",
+          "What is increased expression of zinc-finger protein regulator of apoptosis and",
+          "What cells are implicated in HDAC inhibitor-induced apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited HDAC inhibitor-induced cell apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2304421067237854,
+        "ground_truth": {
+          "Knockdown of Zac1": {
+            "bertscore": 0.6677663922309875,
+            "f1": 0
+          },
+          "Knockdown": {
+            "bertscore": 0.7343775629997253,
+            "f1": 0
+          },
+          "Zac1": {
+            "bertscore": 0.6650162935256958,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited cell apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HDAC inhibitor",
+        "answerability": 0.6783115267753601,
+        "ground_truth": {
+          "HDAC": {
+            "bertscore": 0.810011625289917,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did Zac1 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1391962766647339,
+        "ground_truth": {
+          "HDAC inhibitor-induced cell apoptosis": {
+            "bertscore": 0.60626620054245,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Diminished expression of TCRzeta and p56(lck) that are associated with the TCR and reduced nuclear localization of RelA containing nuclear factor kappaB (NFkappaB) complexes have been noted.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TCRzeta",
+        "TCR",
+        "RelA",
+        "NFkappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with p56(lck) and reduced nuclear localization of Rel",
+          "What is associated with reduced expression of TCRzeta and p56(lck",
+          "What contains nuclear factor kappaB?",
+          "What is the name of the nuclear factor that contains RelA?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Diminished expression",
+        "TCRzeta",
+        "p56(lck",
+        "the TCR",
+        "reduced nuclear localization",
+        "RelA",
+        "nuclear factor kappaB (NFkappaB) complexes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been noted about TCRzeta and p56(lck)?",
+          "What is associated with p56(lck) and reduced nuclear localization of Rel",
+          "What is associated with reduced nuclear localization of RelA containing nuclear factor kapp",
+          "What is the TCRzeta and p56(lck) associated with?",
+          "What is the effect of NFkappaB on the TCR?",
+          "What contains nuclear factor kappaB?",
+          "What is the molecule that is associated with the TCR?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is associated with reduced nuclear localization of RelA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCRzeta and p56(lck)",
+        "answerability": 0.8266707062721252,
+        "ground_truth": {
+          "TCRzeta": {
+            "bertscore": 0.8056055903434753,
+            "f1": 0.5
+          },
+          "TCR": {
+            "bertscore": 0.7432988286018372,
+            "f1": 0
+          },
+          "p56(lck": {
+            "bertscore": 0.8198567032814026,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is associated with reduced nuclear localization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6396862864494324,
+        "ground_truth": {
+          "RelA": {
+            "bertscore": 0.6762431263923645,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of TCRzeta and p56(lck) on": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Diminished expression",
+        "answerability": 0.9908213019371033,
+        "ground_truth": {
+          "Diminished expression": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the TCRzeta and p56(lck) associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCR",
+        "answerability": 0.9565449953079224,
+        "ground_truth": {
+          "the TCR": {
+            "bertscore": 0.8809019327163696,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "However in P. aeruginosa the production of RgpA a response regulator of the PhoPQ two-component system is inhibited.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PhoPQ",
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the two component system of P. aeruginosa?",
+          "How many components does the PhoPQ system have?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "P. aeruginosa",
+        "the production",
+        "RgpA",
+        "a response regulator",
+        "the PhoPQ two-component system"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only organism that has a response regulator of the PhoPQ?",
+          "What is inhibited in P. aeruginosa?",
+          "What is the response regulator of the PhoPQ?",
+          "What is RgpA?",
+          "What is the response regulator of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was not altered in the fimR- mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00020569562911987305,
+        "ground_truth": {
+          "RgpA": {
+            "bertscore": 0.6827287673950195,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to detect the RgpA production in the fimR- mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005511641502380371,
+        "ground_truth": {
+          "anti-RgpA": {
+            "bertscore": 0.6153428554534912,
+            "f1": 0
+          },
+          "anti-RgpA serum": {
+            "bertscore": 0.6181022524833679,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of the fimR- mutant on RgpA production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012352228164672852,
+        "ground_truth": {
+          "no apparent change": {
+            "bertscore": 0.729619562625885,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the fimR- mutant not show any change in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0001786351203918457,
+        "ground_truth": {
+          "RgpA production": {
+            "bertscore": 0.6219833493232727,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mutant did not show any change in production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006676852703094482,
+        "ground_truth": {
+          "the fimR- mutant": {
+            "bertscore": 0.6558800935745239,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

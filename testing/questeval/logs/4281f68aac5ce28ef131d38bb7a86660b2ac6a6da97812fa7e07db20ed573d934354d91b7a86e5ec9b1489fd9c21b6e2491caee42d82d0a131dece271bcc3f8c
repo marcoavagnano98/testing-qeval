@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Focusing on intercellular adhesion molecule 1(ICAM)-1 as a model we identify two ETS binding sites (EBS -118 and -181) within the ICAM-1 promoter required for Erg-mediated repression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two",
+        "ETS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many ETS binding sites are found in the ICAM-1 promoter?",
+          "What binding site is found in the ICAM-1 promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a model",
+        "we",
+        "two ETS binding sites",
+        "EBS -118",
+        "-181",
+        "the ICAM-1 promoter",
+        "Erg-mediated repression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we use the ICAM-1 promoter as?",
+          "What is the purpose of this study?",
+          "What is required for Erg-mediated repression?",
+          "What is the binding site of the ICAM-1 promoter?",
+          "What is the ETS binding site in the ICAM-1 promoter?",
+          "Where are EBS -118 and -181 located?",
+          "What is the role of ETS binding sites in the ICAM-1 promoter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "Where is the Erg-mediated repression required?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ICAM-1 promoter",
+        "answerability": 0.8701773285865784,
+        "ground_truth": {
+          "the ICAM-1 promoter": {
+            "bertscore": 0.9412739276885986,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is required for the ICAM-1 promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ETS binding sites",
+        "answerability": 0.8806036114692688,
+        "ground_truth": {
+          "Erg-mediated repression": {
+            "bertscore": 0.7298562526702881,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

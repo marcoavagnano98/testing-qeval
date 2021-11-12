@@ -1,0 +1,72 @@
+{
+  "type": "hyp",
+  "text": "However V3-BH10 enhanced IL-2-induced mRNA junB. Thus the binding of V3 loop of gp120 to the cell surface molecule(s) appears to affect intracellular IL-2 signaling which leads to the suppression of IL-2-induced T cell growth.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "gp120",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What molecule is binded to the cell surface?",
+          "What does V3-BH10 suppress?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "junB.",
+        "the binding",
+        "V3 loop",
+        "gp120",
+        "the suppression",
+        "IL-2-induced T cell growth"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA did V3-BH10 enhance?",
+          "What affects intracellular IL-2 signaling?",
+          "What is the binding of gp120 to the cell surface molecule?",
+          "What molecule is binded to the cell surface?",
+          "What does the binding of V3-BH10 to gp120 lead to?",
+          "What does the binding of V3-BH10 to gp120 cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did V3-BH10 enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2-induced mRNA junB",
+        "answerability": 0.9877634644508362,
+        "ground_truth": {
+          "mRNA expression": {
+            "bertscore": 0.7875842452049255,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What gene did V3-BH10 not enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014053881168365479,
+        "ground_truth": {
+          "c-fos": {
+            "bertscore": 0.6282364726066589,
+            "f1": 0
+          },
+          "c-myc": {
+            "bertscore": 0.6611862778663635,
+            "f1": 0
+          },
+          "junB.": {
+            "bertscore": 0.6117245554924011,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "type": "ref",
+  "text": "HIV-1-infected individuals have on average abnormally high levels of tumour necrosis factor alpha (TNF alpha) and abnormally low plasma cysteine levels.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that causes HIV-1 infection?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HIV-1-infected individuals",
+        "average abnormally high levels",
+        "tumour necrosis factor alpha",
+        "(TNF alpha",
+        "abnormally low plasma cysteine levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of person has abnormally high levels of TNF alpha?",
+          "What is the normal level of TNF alpha in HIV-1-infected individuals?",
+          "What does TNF alpha stand for?",
+          "What is the name of the tumour necrosis factor that HIV-1-infected individuals",
+          "What is the normal level of TNF alpha in HIV-1-infected individuals?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of person has abnormally low intracellular glutathione levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010550439357757568,
+        "ground_truth": {
+          "HIV-1-infected individuals": {
+            "bertscore": 0.6754760146141052,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the symptoms of HIV-1 infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "abnormally high levels of tumour necrosis factor alpha (TNF alpha) and",
+        "answerability": 0.9495360255241394,
+        "ground_truth": {
+          "average abnormally low plasma cysteine levels": {
+            "bertscore": 0.7592968940734863,
+            "f1": 0.23529411764705885
+          }
+        }
+      }
+    },
+    "What is the average level of protein in HIV-1-infected individuals?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0024399757385253906,
+        "ground_truth": {
+          "abnormally low intracellular glutathione levels": {
+            "bertscore": 0.6261410713195801,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

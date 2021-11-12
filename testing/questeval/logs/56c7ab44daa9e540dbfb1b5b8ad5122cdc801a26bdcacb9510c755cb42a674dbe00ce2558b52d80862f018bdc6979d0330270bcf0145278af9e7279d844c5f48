@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "Analysis of mRNA levels using RT-qPCR (table 2) showed that PMA induced both il-6 and cxcl8\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RT-qPCR",
+        "2",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What method was used to analyze mRNA levels?",
+          "What is the table that shows that PMA induced both il-6 and cx",
+          "What induced il-6 and cxcl8?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Analysis",
+        "mRNA levels",
+        "RT-qPCR",
+        "(table",
+        "PMA",
+        "both il-6",
+        "cxcl8"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did RT-qPCR show about PMA?",
+          "What was the main cause of PMA?",
+          "What method was used to analyze mRNA levels?",
+          "What was the result of RT-qPCR?",
+          "What induced il-6 and cxcl8?",
+          "What two mRNAs were induced by PMA?",
+          "What mRNA was induced by PMA?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What method was used to analyze mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RT-qPCR",
+        "answerability": 0.9986424446105957,
+        "ground_truth": {
+          "RT-qPCR": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the table that shows that PMA induced both il-6 and cx": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6409997344017029,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.6837682723999023,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induced il-6 and cxcl8 mRNA levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMA",
+        "answerability": 0.9914199113845825,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did RT-qPCR show about PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5332578420639038,
+        "ground_truth": {
+          "Analysis": {
+            "bertscore": 0.694236159324646,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was analysed using RT-qPCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mRNA levels",
+        "answerability": 0.97739577293396,
+        "ground_truth": {
+          "mRNA levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the result of RT-qPCR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4493330121040344,
+        "ground_truth": {
+          "(table": {
+            "bertscore": 0.6678904294967651,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mRNA levels did PMA induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "il-6 and cxcl8",
+        "answerability": 0.8808088302612305,
+        "ground_truth": {
+          "both il-6": {
+            "bertscore": 0.7703973054885864,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did RT-qPCR show was induced by PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "il-6 and cxcl8",
+        "answerability": 0.6883602738380432,
+        "ground_truth": {
+          "cxcl8 mRNA": {
+            "bertscore": 0.789489209651947,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

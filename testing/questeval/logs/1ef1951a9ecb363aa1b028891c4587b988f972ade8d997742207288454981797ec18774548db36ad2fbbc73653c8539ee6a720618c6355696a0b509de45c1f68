@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "PTTG induced S100A4 and galectin-1 mRNA and protein expression as assessed by Western blot and reverse transcription-PCR.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "galectin-1 mRNA",
+        "Western"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was induced by PTTG?",
+          "What method was used to determine the mRNA and protein expression of S100A4 and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTTG",
+        "S100A4",
+        "galectin-1 mRNA and protein expression",
+        "Western blot",
+        "transcription-PCR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced S100A4 and galectin-1 mRNA and protein expression?",
+          "What is the mRNA and protein expression of PTTG?",
+          "What did PTTG induce?",
+          "What method was used to determine the mRNA and protein expression of S100A4 and",
+          "What method was used to assess the expression of S100A4 and galectin-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was induced by PTTG?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "S100A4",
+        "answerability": 0.9320032000541687,
+        "ground_truth": {
+          "galectin-1 mRNA": {
+            "bertscore": 0.6519221663475037,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What method was used to determine the mRNA and protein expression of S100A4 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Western blot and reverse transcription-PCR",
+        "answerability": 0.9939271807670593,
+        "ground_truth": {
+          "Western": {
+            "bertscore": 0.6817590594291687,
+            "f1": 0.33333333333333337
+          },
+          "Western blot": {
+            "bertscore": 0.7825816869735718,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What induced S100A4 and galectin-1 mRNA and protein expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTTG",
+        "answerability": 0.9855203032493591,
+        "ground_truth": {
+          "PTTG": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mRNA and protein expression of PTTG?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.059683263301849365,
+        "ground_truth": {
+          "S100A4": {
+            "bertscore": 0.6530296802520752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did PTTG induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "S100A4 and galectin-1 mRNA",
+        "answerability": 0.9299921989440918,
+        "ground_truth": {
+          "galectin-1 mRNA and protein expression": {
+            "bertscore": 0.8570180535316467,
+            "f1": 0.6666666666666665
+          }
+        }
+      }
+    },
+    "What method was used to assess the expression of S100A4 and galectin-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Western blot and reverse transcription-PCR",
+        "answerability": 0.9968103170394897,
+        "ground_truth": {
+          "transcription-PCR": {
+            "bertscore": 0.8374974131584167,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

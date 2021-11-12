@@ -1,0 +1,140 @@
+{
+  "type": "ref",
+  "text": "Both inhibition of proliferation (p < 0.05) and induction of apoptosis (p < 0.05) were observed in SKOV3 cells transfected with hPNAS-4-p in vitro.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "0.05",
+        "0.05",
+        "vitro"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the p value of the inhibition of proliferation and induction of apopto",
+          "What was the p value of the inhibition of proliferation and induction of apopto",
+          "In what way were SKOV3 cells transfected with hPNAS-4-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Both inhibition",
+        "proliferation",
+        "induction",
+        "apoptosis",
+        "SKOV3 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of hPNAS-4-p on proliferation?",
+          "What did SKOV3 cells transfected with hPNAS-4-p inhibit",
+          "What was the effect of apoptosis on SKOV3 cells?",
+          "What was induction of in SKOV3 cells?",
+          "What cells were transfected with hPNAS-4-p?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the p value of inhibition of proliferation and induction of apoptos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p  0.05",
+        "answerability": 0.9243828654289246,
+        "ground_truth": {
+          "0.05": {
+            "bertscore": 0.8552694320678711,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "In what way were SKOV3 cells transfected with hPNAS-4-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17291271686553955,
+        "ground_truth": {
+          "vitro": {
+            "bertscore": 0.7021183371543884,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of hPNAS-4-p on proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.9978423118591309,
+        "ground_truth": {
+          "Both inhibition": {
+            "bertscore": 0.8650608062744141,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did SKOV3 cells transfected with hPNAS-4-p inhibit": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "proliferation",
+        "answerability": 0.9373257160186768,
+        "ground_truth": {
+          "proliferation": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the sensitivity of SKOV3 cells to hPNAS-4-p": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42194992303848267,
+        "ground_truth": {
+          "p": {
+            "bertscore": 0.6448220014572144,
+            "f1": 0
+          },
+          "(p": {
+            "bertscore": 0.6496820449829102,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of apoptosis on SKOV3 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3721429109573364,
+        "ground_truth": {
+          "induction": {
+            "bertscore": 0.7222523093223572,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was induction of in SKOV3 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9121708869934082,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells were transfected with hPNAS-4-p?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SKOV3 cells",
+        "answerability": 0.993837833404541,
+        "ground_truth": {
+          "SKOV3 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

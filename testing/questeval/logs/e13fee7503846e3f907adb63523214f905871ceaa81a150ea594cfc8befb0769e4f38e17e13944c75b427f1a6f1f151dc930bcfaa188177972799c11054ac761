@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "Gel shift experiments further showed that the STAT1 alpha protein bound to the Fc gamma RIC GIRE in response to IFN-gamma treatment of U937 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RIC GIRE"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the STAT1 alpha protein bound to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Gel shift experiments",
+        "the STAT1 alpha protein",
+        "the Fc gamma",
+        "RIC GIRE",
+        "response",
+        "IFN-gamma treatment",
+        "U937 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that STAT1 alpha protein bound to the Fc gamma",
+          "What protein was bound to the RIC GIRE?",
+          "What did the STAT1 alpha protein bound to?",
+          "What did the STAT1 alpha protein bound to?",
+          "What did the gel shift experiments show about the STAT1 alpha protein?",
+          "What did the gel shift experiments show was responsible for binding to the RIC GIRE?",
+          "What did the STAT1 alpha protein react to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the STAT1 alpha protein bound to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the Fc gamma RIC GIRE",
+        "answerability": 0.7183500528335571,
+        "ground_truth": {
+          "RIC GIRE": {
+            "bertscore": 0.8258240818977356,
+            "f1": 0.6666666666666666
+          },
+          "the Fc gamma": {
+            "bertscore": 0.8692238330841064,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What showed that STAT1 alpha protein bound to the Fc gamma": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Gel shift experiments",
+        "answerability": 0.974134624004364,
+        "ground_truth": {
+          "Gel shift experiments": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was bound to the RIC GIRE?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "STAT1 alpha",
+        "answerability": 0.7940696477890015,
+        "ground_truth": {
+          "the STAT1 alpha protein": {
+            "bertscore": 0.8716735243797302,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did the gel shift experiments show about the STAT1 alpha protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3863597512245178,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7024294137954712,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the gel shift experiments show was responsible for binding to the RIC GIRE?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the STAT1 alpha protein",
+        "answerability": 0.943807065486908,
+        "ground_truth": {
+          "IFN-gamma treatment": {
+            "bertscore": 0.7286021113395691,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the STAT1 alpha protein react to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6454660296440125,
+        "ground_truth": {
+          "U937 cells": {
+            "bertscore": 0.6226975321769714,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

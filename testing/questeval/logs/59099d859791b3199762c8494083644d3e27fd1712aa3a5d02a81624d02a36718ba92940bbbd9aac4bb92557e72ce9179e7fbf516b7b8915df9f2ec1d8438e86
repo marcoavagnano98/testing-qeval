@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Leukocyte adhesion to the corneal endothelium was shown to be mediated by CD18 expressed on activated leukocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Leukocyte",
+        "CD18"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of adhesion to the cornea was shown to be mediated by CD18?",
+          "What is expressed on activated leukocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Leukocyte adhesion",
+        "the corneal endothelium",
+        "CD18",
+        "activated leukocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is mediated by CD18?",
+          "Where does CD18 bind?",
+          "What is expressed on activated leukocytes?",
+          "What is the CD18 expressed on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of adhesion to the cornea was shown to be mediated by CD18?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Leukocyte adhesion",
+        "answerability": 0.9266427159309387,
+        "ground_truth": {
+          "Leukocyte": {
+            "bertscore": 0.890665590763092,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is expressed on activated leukocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD18",
+        "answerability": 0.980466902256012,
+        "ground_truth": {
+          "CD18": {
+            "bertscore": 0.9999995231628418,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is mediated by CD18?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Leukocyte adhesion to the corneal endothelium",
+        "answerability": 0.9692240953445435,
+        "ground_truth": {
+          "Leukocyte adhesion": {
+            "bertscore": 0.857262909412384,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "Where does CD18 bind?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5271254777908325,
+        "ground_truth": {
+          "the corneal endothelium": {
+            "bertscore": 0.618933916091919,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the CD18 expressed on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activated leukocytes",
+        "answerability": 0.8385416865348816,
+        "ground_truth": {
+          "activated leukocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

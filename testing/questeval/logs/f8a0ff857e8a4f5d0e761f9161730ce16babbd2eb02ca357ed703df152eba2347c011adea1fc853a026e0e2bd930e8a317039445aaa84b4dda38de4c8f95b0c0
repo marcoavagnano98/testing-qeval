@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "Thapsigargin (TG) an inhibitor of Ca(2+)-ATPases depletes intracellular Ca2+ stores and induces a sustained Ca2+ influx without altering phosphatidyl inositol levels.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TG",
+        "Ca(2+)-ATPases"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the inhibitor of Ca(2+)-ATPases?",
+          "What is TG an inhibitor of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Thapsigargin",
+        "(TG",
+        "an inhibitor",
+        "intracellular Ca2",
+        "stores",
+        "a sustained Ca2",
+        "influx",
+        "phosphatidyl inositol levels"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the inhibitor of Ca(2+)-ATPases?",
+          "What is the name of the inhibitor of Ca(2+)-ATPases?",
+          "What is TG?",
+          "What does TG deplete?",
+          "What does TG deplete?",
+          "What does TG induce?",
+          "What does TG induce without altering phosphatidyl inosito",
+          "What does TG not alter?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the inhibitor of Ca(2+)-ATPase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Thapsigargin",
+        "answerability": 0.9970881342887878,
+        "ground_truth": {
+          "TG": {
+            "bertscore": 0.7450437545776367,
+            "f1": 0
+          },
+          "Thapsigargin": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "(TG": {
+            "bertscore": 0.695809006690979,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TG?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an inhibitor of Ca(2+)-ATPases",
+        "answerability": 0.9717671871185303,
+        "ground_truth": {
+          "an inhibitor": {
+            "bertscore": 0.7442092895507812,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is TG an inhibitor of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ca(2+)-ATPases",
+        "answerability": 0.9982556700706482,
+        "ground_truth": {
+          "Ca(2+)-ATPase depletes intracellular Ca2": {
+            "bertscore": 0.8621033430099487,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TG deplete?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "intracellular Ca2+ stores",
+        "answerability": 0.9925153851509094,
+        "ground_truth": {
+          "stores": {
+            "bertscore": 0.6478241086006165,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does TG induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sustained Ca2+ influx",
+        "answerability": 0.9685273170471191,
+        "ground_truth": {
+          "a sustained Ca2": {
+            "bertscore": 0.7890847325325012,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does TG induce without altering phosphatidyl inosito": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sustained Ca2+ influx",
+        "answerability": 0.9716811776161194,
+        "ground_truth": {
+          "influx": {
+            "bertscore": 0.8006414175033569,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does TG not alter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphatidyl inositol levels",
+        "answerability": 0.9544742107391357,
+        "ground_truth": {
+          "phosphatidyl inositol levels": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

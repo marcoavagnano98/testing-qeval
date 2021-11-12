@@ -1,0 +1,54 @@
+{
+  "type": "hyp",
+  "text": "I (IL-3) is a cytokine that is expressed primarily in activated T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "I",
+        "IL-3",
+        "a cytokine",
+        "activated T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cytokine that is expressed primarily in activated T cells?",
+          "What is the cytokine that is expressed in activated T cells?",
+          "What is IL-3?",
+          "What type of cells is IL-3 expressed in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL-3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokine",
+        "answerability": 0.9227005243301392,
+        "ground_truth": {
+          "a cytokine": {
+            "bertscore": 0.9332369565963745,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells is IL-3 expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activated T cells",
+        "answerability": 0.8654619455337524,
+        "ground_truth": {
+          "activated T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

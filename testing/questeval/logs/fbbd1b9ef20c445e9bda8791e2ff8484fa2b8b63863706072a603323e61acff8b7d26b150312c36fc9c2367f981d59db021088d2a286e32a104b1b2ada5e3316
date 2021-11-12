@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "The effects of IFN-gamma on the transcription factors were specific since no change was observed in the expression of NF-IL-6 or I kappa B alpha the inhibitor of\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The effects",
+        "IFN-gamma",
+        "the transcription factors",
+        "no change",
+        "the expression",
+        "NF-IL-6",
+        "I",
+        "the inhibitor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was specific about IFN-gamma?",
+          "What was not a specific effect of NF-IL-6?",
+          "What did IFN-gamma not affect?",
+          "What was observed in the expression of NF-IL-6?",
+          "What did IFN-gamma not change?",
+          "What transcription factor was not affected by IFN-gamma?",
+          "What is the name of the kappa B alpha inhibitor?",
+          "What is I kappa B alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was specific about IFN-gamma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factors",
+        "answerability": 0.784151554107666,
+        "ground_truth": {
+          "The effects": {
+            "bertscore": 0.732268214225769,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not a specific effect of NF-IL-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06568074226379395,
+        "ground_truth": {
+          "IFN-gamma": {
+            "bertscore": 0.653343677520752,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IFN-gamma not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-IL-6",
+        "answerability": 0.5861016511917114,
+        "ground_truth": {
+          "the transcription factors": {
+            "bertscore": 0.6904715895652771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was observed in the expression of NF-IL-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42345690727233887,
+        "ground_truth": {
+          "no change": {
+            "bertscore": 0.717848002910614,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IFN-gamma not change?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-IL-6",
+        "answerability": 0.795476496219635,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6473709344863892,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor was not affected by IFN-gamma?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-IL-6",
+        "answerability": 0.8840070366859436,
+        "ground_truth": {
+          "NF-IL-6": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the kappa B alpha inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13944494724273682,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.6798964142799377,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is I kappa B alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibitor of NF-IL-6",
+        "answerability": 0.777344286441803,
+        "ground_truth": {
+          "the inhibitor": {
+            "bertscore": 0.7497913241386414,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

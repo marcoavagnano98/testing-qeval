@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Hamsters greater than 35 mm3 treated with DMBA did not have a significant difference of sinusoidal diameters at 7 weeks P = 0.002).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "35",
+        "DMBA",
+        "7 weeks",
+        "0.002"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the maximum size of a hamster treated with DMBA?",
+          "What treatment did hamsters that were larger than 35 mm3 not have a",
+          "At what time did hamsters treated with DMBA have a significant difference in",
+          "What was the P value of the difference in sinusoidal diameter between hamsters treated with"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Hamsters",
+        "greater than 35 mm3",
+        "DMBA",
+        "a significant difference",
+        "sinusoidal diameters",
+        "7 weeks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What animals were treated with DMBA at 7 weeks?",
+          "What size hamsters were treated with DMBA?",
+          "What treatment did hamsters that were larger than 35 mm3 not have a",
+          "What did hamsters treated with DMBA not have at 7 weeks?",
+          "What did hamsters treated with DMBA not have a significant difference in at",
+          "At what time did hamsters treated with DMBA have a significant difference in"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What animals were treated with radiation DMBA + DMBA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24787211418151855,
+        "ground_truth": {
+          "Hamsters": {
+            "bertscore": 0.6471366286277771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DMBA",
+        "answerability": 0.688309907913208,
+        "ground_truth": {
+          "either radiation DMBA radiation": {
+            "bertscore": 0.814949631690979,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was the treatment of hamsters treated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DMBA",
+        "answerability": 0.87945157289505,
+        "ground_truth": {
+          "DMBA": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the other option for hamsters?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.17758309841156006,
+        "ground_truth": {
+          "no treatment": {
+            "bertscore": 0.7193210124969482,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

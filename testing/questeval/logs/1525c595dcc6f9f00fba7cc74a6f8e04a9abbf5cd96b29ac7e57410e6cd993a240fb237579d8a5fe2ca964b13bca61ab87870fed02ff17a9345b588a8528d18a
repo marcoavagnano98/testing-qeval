@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "Activation of PYk2 by agents that elevate intracellular calcium or by phorbol ester induce tyrosine phosphorylation of Nirs.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Nirs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is phosphorylated by phorbol ester?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "PYk2",
+        "agents",
+        "intracellular calcium",
+        "phorbol ester",
+        "tyrosine phosphorylation",
+        "Nirs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that causes tyrosine phosphorylation of Nir",
+          "What protein is activated by agents that elevate intracellular calcium?",
+          "What causes tyrosine phosphorylation of Nirs?",
+          "What does phorbol ester elevate?",
+          "What is another way to activate PYk2?",
+          "What does phosphorylation of Nirs induce?",
+          "What is phosphorylated by phorbol ester?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is phosphorylated by phorbol ester?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.293229341506958,
+        "ground_truth": {
+          "Nirs": {
+            "bertscore": 0.7037650942802429,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process called that causes tyrosine phosphorylation of Nir": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation of PYk2 by agents that elevate intracellular calcium or by phor",
+        "answerability": 0.8767971396446228,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 0.6876509785652161,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    },
+    "What protein is activated by agents that elevate intracellular calcium?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PYk2",
+        "answerability": 0.9887922406196594,
+        "ground_truth": {
+          "PYK2": {
+            "bertscore": 0.9638972878456116,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What causes tyrosine phosphorylation of Nirs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation of PYk2 by agents that elevate intracellular calcium or by phor",
+        "answerability": 0.9857086539268494,
+        "ground_truth": {
+          "agents": {
+            "bertscore": 0.6484361290931702,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    },
+    "What does phorbol ester elevate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09954869747161865,
+        "ground_truth": {
+          "intracellular calcium": {
+            "bertscore": 0.6791982650756836,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another way to activate PYK2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol ester",
+        "answerability": 0.713626503944397,
+        "ground_truth": {
+          "phorbol ester": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does phosphorylation of Nirs induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4882615804672241,
+        "ground_truth": {
+          "tyrosine phosphorylation": {
+            "bertscore": 0.5928217172622681,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

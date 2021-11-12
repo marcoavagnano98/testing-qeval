@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Furthermore suppression of NF-kappaB activation decreased the transcript levels and BMP-2-induced phosphorylation of Smad1/5/8 critical downstream targets ofBMP-2 signaling in PC cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Smad1/5/8"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What downstream targets of BMP-2 signaling were decreased?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "suppression",
+        "NF-kappaB activation",
+        "the transcript levels",
+        "BMP-2-induced phosphorylation",
+        "Smad1/5/8 critical downstream targets",
+        "PC cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did NF-kappaB do?",
+          "What suppressed the levels of BMP-2-induced phosphorylation?",
+          "What did suppression of NF-kappaB decrease?",
+          "What did the suppression of NF-kappaB decrease the transcript levels and what else",
+          "What did suppression of NF-kappaB decrease the transcript levels and BMP-2",
+          "Where did suppression of NF-kappaB activation decrease the transcript levels?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What downstream targets of BMP-2 signaling were decreased?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Smad1/5/8",
+        "answerability": 0.8385133743286133,
+        "ground_truth": {
+          "Smad1/5/8": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What signaling pathway is phosphorylated in PC cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Smad1/5/8",
+        "answerability": 0.7880516648292542,
+        "ground_truth": {
+          "BMP-2": {
+            "bertscore": 0.7185366749763489,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did NF-kappaB do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48007792234420776,
+        "ground_truth": {
+          "suppression": {
+            "bertscore": 0.683943510055542,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suppressed the levels of Smad1/5/8 critical downstream targets of BMP-2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activation",
+        "answerability": 0.8355438113212585,
+        "ground_truth": {
+          "NF-kappaB activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did suppression of NF-kappaB decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcript levels",
+        "answerability": 0.9886648654937744,
+        "ground_truth": {
+          "the transcript levels": {
+            "bertscore": 0.9231216907501221,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the suppression of NF-kappaB decrease the transcript levels and what else": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "BMP-2-induced phosphorylation of Smad1/5/8 critical downstream targets of",
+        "answerability": 0.8619929552078247,
+        "ground_truth": {
+          "BMP-2-induced phosphorylation": {
+            "bertscore": 0.8575305342674255,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did suppression of NF-kappaB decrease the transcript levels and BMP-2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of Smad1/5/8 critical downstream targets ofBMP-2 signaling",
+        "answerability": 0.7103643417358398,
+        "ground_truth": {
+          "Smad1/5/8 critical downstream targets": {
+            "bertscore": 0.8057575225830078,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where did suppression of NF-kappaB activation decrease the transcript levels?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PC cells",
+        "answerability": 0.8904014825820923,
+        "ground_truth": {
+          "PC cells": {
+            "bertscore": 0.9999994039535522,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

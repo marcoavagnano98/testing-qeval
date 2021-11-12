@@ -1,0 +1,114 @@
+{
+  "type": "ref",
+  "text": "GATA3 binds to theFOXP3promoter and can repress the FOXP3 trans-activation process directly in Th2 cells (Mantel et al. 2007).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Mantel",
+        "2007"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Who et al. 2007 found that GATA3 binds to theFOX",
+          "When did Mantel and his colleagues publish their work on GATA3?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "GATA3 binds",
+        "the FOXP3 trans-activation process",
+        "Th2 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the mechanism by which GATA3 can be used to repress the FOX",
+          "What does GATA3 bind to?",
+          "What type of cells can GATA3 bind to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene does Th2 differentiation overrule?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013679862022399902,
+        "ground_truth": {
+          "iTreg": {
+            "bertscore": 0.6724210381507874,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does GATA3 do to prevent the induction of Th2 differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binds to theFOXP3promoter",
+        "answerability": 0.6964559555053711,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5354794263839722,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What binds to the FOXP3 promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA3",
+        "answerability": 0.9913977980613708,
+        "ground_truth": {
+          "GATA3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does GATA3 directly bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "theFOXP3promoter",
+        "answerability": 0.9655930399894714,
+        "ground_truth": {
+          "the FOXP3 promoter": {
+            "bertscore": 0.7753282189369202,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does GATA3 prevent?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014011383056640625,
+        "ground_truth": {
+          "the induction": {
+            "bertscore": 0.697335422039032,
+            "f1": 0
+          },
+          "this gene": {
+            "bertscore": 0.6866745352745056,
+            "f1": 0
+          },
+          "Th2 differentiation": {
+            "bertscore": 0.6655102968215942,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Th2 differentiation overrule?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00046050548553466797,
+        "ground_truth": {
+          "iTreg induction": {
+            "bertscore": 0.6502423882484436,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

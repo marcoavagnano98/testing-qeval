@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "However it was only the IL-2 promoter whose activation by Tpl-2 was fully blocked by the dominant negative mutant MEK2S218/222A and the MEK1/MEK2 inhibitor PD098059.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter was blocked by the dominant negative mutant MEK2S218/222A"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "it",
+        "only the IL-2 promoter",
+        "whose activation",
+        "Tpl-2",
+        "the dominant negative mutant",
+        "MEK2S218/222A",
+        "the MEK1/MEK2 inhibitor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the only IL-2 promoter that was blocked by Tpl-2?",
+          "What was blocked by the dominant negative mutant MEK2S218/222A?",
+          "What was blocked by the dominant negative mutant MEK2S218/222A?",
+          "What promoter was blocked by the dominant negative mutant MEK2S218/222A",
+          "What blocker blocked the IL-2 promoter?",
+          "What was the only mutant that blocked IL-2 activation?",
+          "What was PD098059?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter was blocked by the dominant negative mutant MEK1S218/222A": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.5869258642196655,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the only IL-2 promoter that was blocked by Tpl-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5098533630371094,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.6361185312271118,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was blocked by the dominant negative mutant MEK1S218/222A?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.046635448932647705,
+        "ground_truth": {
+          "only the IL-2 promoter": {
+            "bertscore": 0.6619220972061157,
+            "f1": 0
+          },
+          "whose activation": {
+            "bertscore": 0.7010037302970886,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein blocked the IL-2 promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MEK2S218/222A",
+        "answerability": 0.6663732528686523,
+        "ground_truth": {
+          "Tpl-2": {
+            "bertscore": 0.7041101455688477,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What blocker blocked the IL-2 promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MEK2S218/222A",
+        "answerability": 0.8230139017105103,
+        "ground_truth": {
+          "the dominant negative mutant": {
+            "bertscore": 0.618066668510437,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was PD098059?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MEK1/MEK2 inhibitor",
+        "answerability": 0.9281535744667053,
+        "ground_truth": {
+          "the MEK1/MEK2 inhibitor": {
+            "bertscore": 0.9560560584068298,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

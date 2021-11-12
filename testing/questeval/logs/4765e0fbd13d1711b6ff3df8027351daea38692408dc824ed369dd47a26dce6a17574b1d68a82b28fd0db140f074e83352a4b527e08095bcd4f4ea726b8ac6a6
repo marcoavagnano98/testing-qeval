@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "These results indicate that LMP1 appropriates TRADD to enable efficient long-term lymphoblastoid cell outgrowth.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TRADD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does LMP1 use to enable efficient long-term lymphoblastoid cell"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "LMP1",
+        "efficient long-term lymphoblastoid cell outgrowth"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that LMP1 appropriates TRADD to enable efficient long-term lymphoblast",
+          "What gene is responsible for enabling efficient long-term lymphoblastoid cell out",
+          "What does LMP1 enable?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does LMP1 use to enable efficient long-term lymphoblastoid cell": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TRADD",
+        "answerability": 0.8363187313079834,
+        "ground_truth": {
+          "TRADD": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What indicates that LMP1 appropriates TRADD to enable efficient long-term lymphoblast": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4654957056045532,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.63137286901474,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is responsible for enabling efficient long-term lymphoblastoid cell out": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1",
+        "answerability": 0.9011644721031189,
+        "ground_truth": {
+          "LMP1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does LMP1 enable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.34274667501449585,
+        "ground_truth": {
+          "efficient long-term lymphoblastoid cell outgrowth": {
+            "bertscore": 0.622276246547699,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

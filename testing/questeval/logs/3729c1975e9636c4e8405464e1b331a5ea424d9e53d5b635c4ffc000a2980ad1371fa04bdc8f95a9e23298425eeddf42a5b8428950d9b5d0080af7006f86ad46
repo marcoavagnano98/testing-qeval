@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "7% of the human neutrophils were shown to express immunoreactive GH whereas eosinophils were negative. Restriction analysis demonstrated that neutrophils express the GH-N gene but not the GH-V gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "7%",
+        "GH",
+        "neutrophils express",
+        "GH-N",
+        "GH"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What percentage of human neutrophils were shown to express immunoreactive GH?",
+          "What gene did 7% of human neutrophils express?",
+          "What gene does eosinophils not express?",
+          "What gene does eosinophils not express?",
+          "What gene did 7% of human neutrophils express?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "7%",
+        "the human neutrophils",
+        "immunoreactive GH",
+        "eosinophils",
+        "Restriction analysis",
+        "neutrophils",
+        "the GH-N gene",
+        "not the GH-V gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What percentage of human neutrophils were shown to express immunoreactive GH?",
+          "What group of cells expressed immunoreactive GH?",
+          "What gene did 7% of human neutrophils express?",
+          "What type of cell was negative?",
+          "What showed that neutrophils express the GH-N gene but not the GH-",
+          "What type of cells expressed immunoreactive GH?",
+          "What gene does the eosinophils not express?",
+          "What gene does the eosinophils express?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene does the GH-N gene not express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GH-V",
+        "answerability": 0.5758752822875977,
+        "ground_truth": {
+          "neutrophils express": {
+            "bertscore": 0.6698181629180908,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene do neutrophils express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GH-N",
+        "answerability": 0.7625924348831177,
+        "ground_truth": {
+          "GH-N": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "the GH-N gene": {
+            "bertscore": 0.824033260345459,
+            "f1": 0.6666666666666666
+          },
+          "not the GH-V gene": {
+            "bertscore": 0.7748801708221436,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene do neutrophils not express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GH-V",
+        "answerability": 0.7637132406234741,
+        "ground_truth": {
+          "GH": {
+            "bertscore": 0.8508785963058472,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What revealed that neutrophils express the GH-N gene but not the GH-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Restriction analysis",
+        "answerability": 0.9775335788726807,
+        "ground_truth": {
+          "Restriction analysis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells express the GH-N gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2066221833229065,
+        "ground_truth": {
+          "neutrophils": {
+            "bertscore": 0.6736630797386169,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

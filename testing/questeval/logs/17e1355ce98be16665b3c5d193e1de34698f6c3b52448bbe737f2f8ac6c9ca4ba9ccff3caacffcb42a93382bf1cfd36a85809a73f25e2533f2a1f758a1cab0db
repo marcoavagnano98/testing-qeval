@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Indeed it has been shown that NF-kappaB activation suppressed cdk4 expression which is necessary for the transition to S phase.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "it",
+        "NF-kappaB activation",
+        "cdk4 expression",
+        "the transition",
+        "S phase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of NF-kappaB activation on cdk",
+          "What suppressed cdk4 expression?",
+          "What is necessary for the transition to the S phase?",
+          "What is cdk4 necessary for?",
+          "What phase is cdk4 necessary for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of NF-kappaB activation on cdk": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppressed cdk4 expression",
+        "answerability": 0.9655168056488037,
+        "ground_truth": {
+          "it": {
+            "bertscore": 0.5936115980148315,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suppressed cdk4 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activation",
+        "answerability": 0.9884621500968933,
+        "ground_truth": {
+          "NF-kappaB activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is necessary for the transition to the S phase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cdk4 expression",
+        "answerability": 0.666069746017456,
+        "ground_truth": {
+          "cdk4 expression": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is cdk4 necessary for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.384713351726532,
+        "ground_truth": {
+          "the transition": {
+            "bertscore": 0.7023739218711853,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What phase is cdk4 necessary for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.27785199880599976,
+        "ground_truth": {
+          "S phase": {
+            "bertscore": 0.6837385296821594,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

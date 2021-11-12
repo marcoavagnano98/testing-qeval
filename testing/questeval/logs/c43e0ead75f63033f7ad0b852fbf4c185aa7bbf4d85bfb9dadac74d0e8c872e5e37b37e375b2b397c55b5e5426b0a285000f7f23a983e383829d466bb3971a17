@@ -1,0 +1,62 @@
+{
+  "type": "ref",
+  "text": "Our results indicated that HTPB was a pan-HDAC inhibitor in suppressing cell viability specifically of lung cancer cells but not of the normal lung cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "pan-HDAC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of inhibitor did HTPB inhibit?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our results",
+        "HTPB",
+        "a pan-HDAC inhibitor",
+        "suppressing cell viability",
+        "lung cancer cells",
+        "the normal lung cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicated that HTPB was a pan-HDAC inhibitor?",
+          "What was found to suppress cell viability of lung cancer cells?",
+          "What was HTPB shown to be?",
+          "What was HTPB able to do?",
+          "What type of cells did HTPB suppress cell viability of?",
+          "What type of cancer cells did HTPB suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was a potent HDAC inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HTPB",
+        "answerability": 0.7964595556259155,
+        "ground_truth": {
+          "HTPB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was HTPB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pan-HDAC inhibitor",
+        "answerability": 0.9833405613899231,
+        "ground_truth": {
+          "a potent HDAC inhibitor": {
+            "bertscore": 0.8759074211120605,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

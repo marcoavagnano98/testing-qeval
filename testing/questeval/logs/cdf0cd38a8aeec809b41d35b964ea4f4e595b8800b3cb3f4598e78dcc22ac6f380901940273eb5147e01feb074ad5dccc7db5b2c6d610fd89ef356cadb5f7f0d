@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "Moreover since inhibition of protein synthesis leads to accumulation of I kappa B beta/MAD-3 mRNA without stimulating I kappa B alpha/MAD-3 gene transcription we suggest that low cytoplasmic levels of I kappa B\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MAD-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene does inhibition of protein synthesis lead to accumulation of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "inhibition",
+        "protein synthesis",
+        "accumulation",
+        "I",
+        "I",
+        "kappa B alpha/MAD-3 gene transcription",
+        "we",
+        "that low cytoplasmic levels",
+        "I",
+        "kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of protein synthesis?",
+          "What is inhibited by I kappa B beta/MAD-3 m",
+          "What does inhibition of protein synthesis lead to?",
+          "What is the cytoplasmic level of kappa B?",
+          "What is the cytoplasmic level of kappa B?",
+          "What does inhibition of protein synthesis lead to?",
+          "What suggests that low cytoplasmic levels of I kappa B alpha/",
+          "What does the study suggest about I kappa B?",
+          "What is the cytoplasmic level of kappa B?",
+          "What gene is not stimulated by the synthesis of I kappa B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene does inhibition of protein synthesis lead to accumulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I kappa B beta/MAD-3 mRNA",
+        "answerability": 0.9920269846916199,
+        "ground_truth": {
+          "MAD-3": {
+            "bertscore": 0.7450413703918457,
+            "f1": 0
+          },
+          "I": {
+            "bertscore": 0.654737651348114,
+            "f1": 0.33333333333333337
+          },
+          "kappa B": {
+            "bertscore": 0.7130690813064575,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is the main cause of protein synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.932988703250885,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is inhibited by I kappa B alpha/MAD-3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20402473211288452,
+        "ground_truth": {
+          "protein synthesis": {
+            "bertscore": 0.680105984210968,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does inhibition of protein synthesis lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "accumulation of I kappa B beta/MAD-3 mRNA",
+        "answerability": 0.9982328414916992,
+        "ground_truth": {
+          "accumulation": {
+            "bertscore": 0.695367157459259,
+            "f1": 0.25
+          },
+          "kappa B alpha/MAD-3 gene transcription": {
+            "bertscore": 0.8684094548225403,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What does the study suggest about the cytoplasmic levels of I kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low",
+        "answerability": 0.9310967326164246,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7807521820068359,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study suggest about I kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low cytoplasmic levels",
+        "answerability": 0.8763015270233154,
+        "ground_truth": {
+          "that low cytoplasmic levels": {
+            "bertscore": 0.943877637386322,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

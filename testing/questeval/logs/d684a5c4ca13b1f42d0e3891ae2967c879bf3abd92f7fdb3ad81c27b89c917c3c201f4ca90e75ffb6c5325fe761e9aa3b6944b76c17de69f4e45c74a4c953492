@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "In this study we analyzed T cell receptor(TcR) delta transcripts expressed by CD3-CD16+ cells\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this study",
+        "we",
+        "T cell",
+        "delta transcripts",
+        "CD3-CD16",
+        "cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What study analyzed T cell receptor(TcR) delta transcripts?",
+          "What did the authors do to analyze the transcripts of TCR?",
+          "What receptor(TcR) delta transcripts were analyzed by this study?",
+          "What did we analyze in this study?",
+          "What type of cells expressed TcR delta transcripts?",
+          "What type of cells were the TCR delta transcripts analyzed in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What study analyzed the T cell receptor(TcR) delta transcripts expressed by CD": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "In this study we analyzed T cell receptor(TcR) delta transcripts expressed by",
+        "answerability": 0.9796870350837708,
+        "ground_truth": {
+          "this study": {
+            "bertscore": 0.671222448348999,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What did the authors do to analyze the T cell receptor delta transcripts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1278744339942932,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.674835205078125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor did we analyze?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell receptor",
+        "answerability": 0.9875320196151733,
+        "ground_truth": {
+          "the T cell": {
+            "bertscore": 0.8233212232589722,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did we analyze in this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cell receptor(TcR) delta transcripts",
+        "answerability": 0.9467793703079224,
+        "ground_truth": {
+          "delta transcripts": {
+            "bertscore": 0.8015853762626648,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What type of cells expressed TcR delta transcripts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD3-CD16+ cells",
+        "answerability": 0.9919596910476685,
+        "ground_truth": {
+          "CD3-CD16": {
+            "bertscore": 0.851624608039856,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of cells were the TCR delta transcripts analyzed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD3-CD16+ cells",
+        "answerability": 0.9665784239768982,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.7320271730422974,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

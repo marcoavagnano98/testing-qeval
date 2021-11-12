@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "In particular chlorambucil upregulated the steady-state mRNA expression of SFN/14-3-3sigma a gene involved in G2/M cell cycle arrest.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "G2/M"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cell cycle is chlorambucil involved in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "particular chlorambucil",
+        "the steady-state mRNA expression",
+        "a gene",
+        "G2/M cell cycle arrest"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What upregulated the steady-state mRNA expression of SFN/14-3-3s",
+          "What did chlorambucil upregulate?",
+          "What is involved in G2/M cell cycle arrest?",
+          "What is the gene involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cell cycle is chlorambucil involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "G2/M",
+        "answerability": 0.6090316772460938,
+        "ground_truth": {
+          "G2/M": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What upregulated the steady-state mRNA expression of SFN/14-3-3s": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chlorambucil",
+        "answerability": 0.929922878742218,
+        "ground_truth": {
+          "particular chlorambucil": {
+            "bertscore": 0.9188221096992493,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did chlorambucil upregulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the steady-state mRNA expression of SFN/14-3-3sigma",
+        "answerability": 0.9157936573028564,
+        "ground_truth": {
+          "the steady-state mRNA expression": {
+            "bertscore": 0.8413677215576172,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is involved in G2/M cell cycle arrest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6359857320785522,
+        "ground_truth": {
+          "a gene": {
+            "bertscore": 0.6737379431724548,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the gene involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.38733160495758057,
+        "ground_truth": {
+          "G2/M cell cycle arrest": {
+            "bertscore": 0.588809609413147,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

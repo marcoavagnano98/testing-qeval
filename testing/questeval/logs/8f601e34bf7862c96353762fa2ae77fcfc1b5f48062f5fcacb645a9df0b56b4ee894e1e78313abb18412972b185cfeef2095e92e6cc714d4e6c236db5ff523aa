@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Constitutive expression c-fos c-jun and NF kappa B mRNA is in nuclei of human peripheral blood monocytes and up-regulation of c-fos and c-jun with anti-CD3 stimulation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Constitutive expression c-fos c-jun",
+        "NF kappa B mRNA",
+        "nuclei",
+        "human peripheral blood monocytes",
+        "up-regulation",
+        "c-fos and c-jun",
+        "anti-CD3 stimulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is in human peripheral blood monocytes?",
+          "What is up-regulated with anti-CD3 stimulation?",
+          "Where are c-fos and c-jun found?",
+          "What is the nucleus of c-fos and c-jun?",
+          "What is the effect of anti-CD3 on c-fos and c",
+          "What two genes are up-regulated with anti-CD3 stimulation?",
+          "What is the mechanism of up-regulation of c-fos and c-"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is up-regulated with anti-CD3 stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos and c-jun",
+        "answerability": 0.9678218960762024,
+        "ground_truth": {
+          "Constitutive expression c-fos c-jun": {
+            "bertscore": 0.8144400119781494,
+            "f1": 0.5714285714285715
+          },
+          "NF kappa B mRNA": {
+            "bertscore": 0.595642626285553,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is the NF kappa B mRNA expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human peripheral blood monocytes",
+        "answerability": 0.9326321482658386,
+        "ground_truth": {
+          "nucleated fetal blood cells": {
+            "bertscore": 0.7796037197113037,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the effect of anti-CD3 stimulation on c-fos and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "up-regulation",
+        "answerability": 0.9880781173706055,
+        "ground_truth": {
+          "up-regulation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two genes are up-regulated with anti-CD3 stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos c-jun and NF kappa B",
+        "answerability": 0.9438008666038513,
+        "ground_truth": {
+          "c-fos and c-jun": {
+            "bertscore": 0.8271124958992004,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the mechanism of up-regulation of c-fos and c-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42962443828582764,
+        "ground_truth": {
+          "anti-CD3 stimulation": {
+            "bertscore": 0.6015287041664124,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "type": "ref",
+  "text": "We have previously shown that JAK2 becomes tyrosine-phosphorylated in response to GM-CSF in PMN.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GM-CSF",
+        "PMN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of JAK2 becoming tyrosine-phosphorylated",
+          "What is the GM-CSF in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "JAK2",
+        "response",
+        "GM-CSF",
+        "PMN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has previously shown that JAK2 becomes tyrosine-phosphorylated in",
+          "What protein becomes tyrosine-phosphorylated in response to GM-C",
+          "When does JAK2 become tyrosine-phosphorylated?",
+          "What is the main cause of JAK2 becoming tyrosine-phosphorylated",
+          "What is the GM-CSF in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is tyrosine phosphorylated in PMN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JAK2",
+        "answerability": 0.675588846206665,
+        "ground_truth": {
+          "GM": {
+            "bertscore": 0.7358009815216064,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is phosphorylated in PMN?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine",
+        "answerability": 0.9283494353294373,
+        "ground_truth": {
+          "GM-CSF": {
+            "bertscore": 0.7160971760749817,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is GM-CSF phosphorylated in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMN",
+        "answerability": 0.6700379848480225,
+        "ground_truth": {
+          "PMN": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What has previously shown that GM-CSF becomes tyrosine-phosphoryl": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05474042892456055,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112911224365,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process by which GM-CSF becomes tyrosine-phospho": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012793540954589844,
+        "ground_truth": {
+          "response": {
+            "bertscore": 0.7024291753768921,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

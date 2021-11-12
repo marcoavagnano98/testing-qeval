@@ -1,0 +1,68 @@
+{
+  "type": "hyp",
+  "text": "Neoplastic transformation by Notch requires nuclear localization.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Notch"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the process that requires nuclear localization?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Neoplastic transformation",
+        "Notch",
+        "nuclear localization"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that requires nuclear localization?",
+          "What is the name of the process that requires nuclear localization?",
+          "What does neoplastic transformation by Notch require?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the process that requires nuclear localization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Neoplastic transformation",
+        "answerability": 0.8083143830299377,
+        "ground_truth": {
+          "Notch": {
+            "bertscore": 0.715551495552063,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process called that requires nuclear localization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Neoplastic transformation",
+        "answerability": 0.9641286730766296,
+        "ground_truth": {
+          "Neoplastic transformation": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does neoplastic transformation by Notch require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear localization",
+        "answerability": 0.8864352107048035,
+        "ground_truth": {
+          "nuclear localization": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

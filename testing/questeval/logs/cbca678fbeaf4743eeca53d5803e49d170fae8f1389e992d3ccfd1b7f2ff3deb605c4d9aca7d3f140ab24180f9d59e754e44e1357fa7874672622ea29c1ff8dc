@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "p75 mediated apoptosis in neuroblastoma cells is inhibited by expression of TrkA.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p75 mediated apoptosis",
+        "neuroblastoma cells",
+        "expression",
+        "TrkA."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is inhibited by expression of TrkA?",
+          "What type of cells is p75 mediated apoptosis inhibited",
+          "What inhibits apoptosis in neuroblastoma cells?",
+          "What inhibits apoptosis in neuroblastoma cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is inhibited by expression of TrkA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75 mediated apoptosis",
+        "answerability": 0.9557336568832397,
+        "ground_truth": {
+          "p75 mediated apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells is p75 mediated apoptosis inhibited": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neuroblastoma cells",
+        "answerability": 0.9744095206260681,
+        "ground_truth": {
+          "neuroblastoma cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibits apoptosis in neuroblastoma cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TrkA",
+        "answerability": 0.9497790932655334,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7480748295783997,
+            "f1": 0
+          },
+          "TrkA.": {
+            "bertscore": 0.8866860270500183,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "NF-kappa B activation involves signaled phosphorylation ubiquitination and proteolysis of I kappa B.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NF-kappa B activation",
+        "phosphorylation ubiquitination",
+        "proteolysis",
+        "I",
+        "kappa B."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What involves signaled phosphorylation ubiquitination and proteolysis of",
+          "What is the process that involves signaling NF-kappa B activation?",
+          "What is the process that involves signaled phosphorylation ubiquitination?",
+          "What kappa is activated by signaled phosphorylation?",
+          "What is involved in signaling phosphorylation ubiquitination and proteolysis"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What involves signaled phosphorylation ubiquitination and proteolysis of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B activation",
+        "answerability": 0.5684492588043213,
+        "ground_truth": {
+          "NF-kappa B activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that involves signaling NF-kappa B activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation ubiquitination",
+        "answerability": 0.7984398007392883,
+        "ground_truth": {
+          "phosphorylation ubiquitination": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that involves signaled phosphorylation ubiquitination?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.30826568603515625,
+        "ground_truth": {
+          "proteolysis": {
+            "bertscore": 0.6515888571739197,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What kappa is activated by signaled phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.49406373500823975,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.6798964142799377,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in signaling phosphorylation ubiquitination and proteolysis": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.5367107391357422,
+        "ground_truth": {
+          "kappa B.": {
+            "bertscore": 0.7802108526229858,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

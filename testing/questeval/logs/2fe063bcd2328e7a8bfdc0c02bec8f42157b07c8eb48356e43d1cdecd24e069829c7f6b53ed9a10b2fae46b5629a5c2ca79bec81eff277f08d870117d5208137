@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "At least 1 major gene modulates the oxidation of LDL lipids and/or the biologic response to these lipids.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "At least 1",
+        "LDL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many major genes modulate the oxidation of LDL lipids?",
+          "What lipid is oxidized by at least 1 major gene?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "At least 1 major gene",
+        "the oxidation",
+        "LDL lipids",
+        "the biologic response",
+        "these lipids"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What modulates the oxidation of LDL lipids?",
+          "What does at least 1 major gene modulate?",
+          "What does at least 1 major gene modulate?",
+          "What does the oxidation of LDL lipids affect?",
+          "What does at least 1 major gene modulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many major genes modulate the oxidation of LDL lipids?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "1",
+        "answerability": 0.9973655939102173,
+        "ground_truth": {
+          "At least 1": {
+            "bertscore": 0.7825708985328674,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What lipid is oxidized by at least 1 major gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LDL",
+        "answerability": 0.9765723943710327,
+        "ground_truth": {
+          "LDL": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What modulates the oxidation of LDL lipids?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "At least 1 major gene",
+        "answerability": 0.9912275671958923,
+        "ground_truth": {
+          "At least 1 major gene": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does at least 1 major gene modulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the oxidation of LDL lipids",
+        "answerability": 0.99862140417099,
+        "ground_truth": {
+          "the oxidation": {
+            "bertscore": 0.8180065751075745,
+            "f1": 0.4
+          },
+          "LDL lipids": {
+            "bertscore": 0.826090395450592,
+            "f1": 0.6666666666666666
+          },
+          "these lipids": {
+            "bertscore": 0.8059542179107666,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What does the oxidation of LDL lipids affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the biologic response",
+        "answerability": 0.7452843189239502,
+        "ground_truth": {
+          "the biologic response": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

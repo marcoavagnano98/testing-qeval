@@ -1,0 +1,78 @@
+{
+  "type": "ref",
+  "text": "Taken together the lines of evidence demonstrate that betulin triggers apoptosis of human cancer cells through the intrinsic apoptotic pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the lines",
+        "evidence",
+        "human cancer cells",
+        "the intrinsic apoptotic pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What evidence shows that betulin triggers apoptosis of human cancer cells",
+          "What does the study show about the mechanism by which betulin is used to trigger a",
+          "What does the intrinsic apoptotic pathway of betulin trigger?",
+          "What does betulin trigger in human cancer cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed that betulin triggers apoptosis in human cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the lines of evidence",
+        "answerability": 0.908976137638092,
+        "ground_truth": {
+          "The results": {
+            "bertscore": 0.6927597522735596,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the compound that triggers apoptosis in human cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "betulin",
+        "answerability": 0.9922993779182434,
+        "ground_truth": {
+          "that betulin": {
+            "bertscore": 0.8630247116088867,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the study show about betulin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06726515293121338,
+        "ground_truth": {
+          "a naturally abundant compound triggers apoptosis": {
+            "bertscore": 0.6308594346046448,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does betulin trigger apoptosis in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human cancer cells",
+        "answerability": 0.9864920377731323,
+        "ground_truth": {
+          "human cancer cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

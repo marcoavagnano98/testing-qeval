@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Tie1 is an orphan tyrosine kinase receptor expressed almost exclusively in endothelial cells and is required for normal vascular development and maintenance.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tie1",
+        "an orphan tyrosine kinase receptor",
+        "endothelial cells",
+        "normal vascular development",
+        "maintenance"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the tyrosine kinase receptor?",
+          "What is Tie1?",
+          "Where is Tie1 expressed?",
+          "What is Tie1 required for?",
+          "What is Tie1 required for?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the tyrosine kinase receptor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tie1",
+        "answerability": 0.980492353439331,
+        "ground_truth": {
+          "Tie1": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Tie1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an orphan tyrosine kinase receptor",
+        "answerability": 0.9804244041442871,
+        "ground_truth": {
+          "an orphan tyrosine kinase receptor": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where is Tie1 expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cells",
+        "answerability": 0.9926575422286987,
+        "ground_truth": {
+          "endothelial cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is Tie1 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "normal vascular development and maintenance",
+        "answerability": 0.9989759922027588,
+        "ground_truth": {
+          "normal vascular development": {
+            "bertscore": 0.9273080229759216,
+            "f1": 0.7499999999999999
+          },
+          "maintenance": {
+            "bertscore": 0.786829948425293,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

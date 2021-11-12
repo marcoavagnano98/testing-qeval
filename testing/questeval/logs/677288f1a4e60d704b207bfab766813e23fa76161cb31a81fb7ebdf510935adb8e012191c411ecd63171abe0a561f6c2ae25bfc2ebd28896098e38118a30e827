@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "Moreover since inhibition of protein synthesis leads to accumulation of I kappa B alpha/MAD-3 mRNA without stimulating I kappa B alpha/MAD-3 gene transcription we suggest that low cytoplasmic levels of I kappa B\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MAD-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene does inhibition of protein synthesis lead to accumulation of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "inhibition",
+        "protein synthesis",
+        "accumulation",
+        "I",
+        "I",
+        "kappa B alpha/MAD-3 gene transcription",
+        "we",
+        "that low cytoplasmic levels",
+        "I",
+        "kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main cause of protein synthesis?",
+          "What is inhibited by I kappa B alpha/MAD-3",
+          "What does inhibition of protein synthesis lead to?",
+          "What gene does inhibition of protein synthesis lead to accumulation of?",
+          "What gene does inhibition of protein synthesis lead to accumulation of?",
+          "What does inhibition of protein synthesis lead to?",
+          "What does the study suggest about the cytoplasmic levels of I kappa B",
+          "What does the study suggest about I kappa B?",
+          "What gene does inhibition of protein synthesis lead to accumulation of?",
+          "What gene does inhibition of protein synthesis lead to accumulation of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene does inhibition of protein synthesis lead to accumulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "I kappa B alpha/MAD-3 mRNA",
+        "answerability": 0.9934495687484741,
+        "ground_truth": {
+          "MAD-3": {
+            "bertscore": 0.7399694919586182,
+            "f1": 0
+          },
+          "I": {
+            "bertscore": 0.6499895453453064,
+            "f1": 0.33333333333333337
+          },
+          "kappa B": {
+            "bertscore": 0.7159317135810852,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What is the main cause of protein synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.921134352684021,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is inhibited by I kappa B alpha/MAD-3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4682771563529968,
+        "ground_truth": {
+          "protein synthesis": {
+            "bertscore": 0.680105984210968,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does inhibition of protein synthesis lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "accumulation of I kappa B alpha/MAD-3 mRNA",
+        "answerability": 0.9980450868606567,
+        "ground_truth": {
+          "accumulation": {
+            "bertscore": 0.6939182281494141,
+            "f1": 0.25
+          },
+          "kappa B alpha/MAD-3 gene transcription": {
+            "bertscore": 0.875089168548584,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the study suggest about the cytoplasmic levels of I kappa B": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low",
+        "answerability": 0.9288118481636047,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.7807521820068359,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the study suggest about I kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "low cytoplasmic levels",
+        "answerability": 0.857296884059906,
+        "ground_truth": {
+          "that low cytoplasmic levels": {
+            "bertscore": 0.943877637386322,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Inhibitory effect of citral on NO production by suppression of iNOS expression and NF-kappa B activation in RAW264.7 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibitory effect",
+        "citral",
+        "NO production",
+        "suppression",
+        "iNOS expression",
+        "NF-kappa B activation",
+        "RAW264.7 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of citral on NO production?",
+          "What inhibits NO production?",
+          "What does citral inhibit?",
+          "What is the effect of citral on NO production?",
+          "What is the main effect of citral on NO production?",
+          "What is the main effect of citral on NO production?",
+          "What cells were affected by the effect of citral on NO production?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of citral on NO production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibiting effect",
+        "answerability": 0.9985328316688538,
+        "ground_truth": {
+          "Inhibitory effect": {
+            "bertscore": 0.878326416015625,
+            "f1": 0.5
+          },
+          "suppression": {
+            "bertscore": 0.6829940676689148,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibits NO production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "citral",
+        "answerability": 0.9646914005279541,
+        "ground_truth": {
+          "citral": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does citral inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NO production",
+        "answerability": 0.9979557394981384,
+        "ground_truth": {
+          "NO production": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the main effect of citral on NO production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibiting effect",
+        "answerability": 0.987294614315033,
+        "ground_truth": {
+          "iNOS expression": {
+            "bertscore": 0.720046877861023,
+            "f1": 0
+          },
+          "NF-kappa B activation": {
+            "bertscore": 0.6742846369743347,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were affected by the effect of citral on NO production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RAW264.7 cells",
+        "answerability": 0.8878918886184692,
+        "ground_truth": {
+          "RAW264.7 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

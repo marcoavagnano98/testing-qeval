@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Apoptosis-resistant T cells have a deficiency in NF-kappaB-mediated induction of Fas/APO-1/CD95-mediated transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "Fas/APO-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the key factor in apoptosis resistant T cells?",
+          "What transcription factor is lacking in apoptosis resistant T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Apoptosis-resistant T cells",
+        "a deficiency",
+        "NF-kappaB-mediated induction",
+        "APO-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells have a deficiency in NF-kappaB",
+          "What is the reason for the apoptosis resistant T cells?",
+          "What do apoptosis resistant T cells lack?",
+          "What transcription factor is involved in the apoptosis of resistant T cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for apoptosis resistant T cells to be able to respond": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09727227687835693,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.6519213318824768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What ligand transcription is deficient in apoptosis resistant T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.8932325839996338,
+        "ground_truth": {
+          "Fas": {
+            "bertscore": 0.68585604429245,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells have a deficiency in NF-kappaB": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Apoptosis-resistant T cells",
+        "answerability": 0.6137537956237793,
+        "ground_truth": {
+          "Apoptosis-resistant T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the reason for the apoptosis resistant T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "deficiency in NF-kappaB",
+        "answerability": 0.9067227840423584,
+        "ground_truth": {
+          "a deficiency": {
+            "bertscore": 0.6947609186172485,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What do apoptosis resistant T cells lack?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.8342581987380981,
+        "ground_truth": {
+          "NF-kappaB-mediated induction": {
+            "bertscore": 0.795589804649353,
+            "f1": 0
+          },
+          "Fas ligand transcription": {
+            "bertscore": 0.6794652342796326,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

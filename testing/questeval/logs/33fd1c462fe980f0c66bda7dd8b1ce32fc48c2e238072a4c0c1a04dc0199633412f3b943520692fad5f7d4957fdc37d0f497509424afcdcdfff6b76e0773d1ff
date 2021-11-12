@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Angiostatin was first discovered as a plasminogen fragment with antitumor/antiangiogenic property.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Angiostatin",
+        "first"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was discovered as a plasminogen fragment with antitumor/antiang",
+          "When was angiostatin discovered?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Angiostatin",
+        "a plasminogen fragment",
+        "antitumor/antiangiogenic property"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was discovered as a plasminogen fragment with antitumor/antiang",
+          "What was angiostatin first discovered as?",
+          "What was the main characteristic of angiostatin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was discovered as a plasminogen fragment with antitumor/antiang": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Angiostatin",
+        "answerability": 0.94829922914505,
+        "ground_truth": {
+          "Angiostatin": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "When was angiostatin discovered?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.055357158184051514,
+        "ground_truth": {
+          "first": {
+            "bertscore": 0.7270119190216064,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was angiostatin first discovered as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "plasminogen fragment",
+        "answerability": 0.9887698888778687,
+        "ground_truth": {
+          "a plasminogen fragment": {
+            "bertscore": 0.9263012409210205,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the main characteristic of angiostatin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antitumor/antiangiogenic",
+        "answerability": 0.6310087442398071,
+        "ground_truth": {
+          "antitumor/antiangiogenic property": {
+            "bertscore": 0.9417503476142883,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

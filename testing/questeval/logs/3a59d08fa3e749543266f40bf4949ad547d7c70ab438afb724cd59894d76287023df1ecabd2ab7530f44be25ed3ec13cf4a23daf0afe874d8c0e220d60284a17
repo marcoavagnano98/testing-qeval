@@ -1,0 +1,112 @@
+{
+  "type": "hyp",
+  "text": "We further observed that stimulation of CR1 or CR3 induces the nuclear translocation of NF-kappa B p50/c-Rel in infected cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "stimulation",
+        "CR1",
+        "CR3",
+        "the nuclear translocation",
+        "NF-kappa B p50/c-Rel",
+        "infected cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find about CR1 and CR3?",
+          "What induces the nuclear translocation of NF-kappa B?",
+          "What receptor is stimulated to induce the nuclear translocation of NF-kappa B",
+          "What is the only cytokine that induces the nuclear translocation of NF-",
+          "What does stimulation of CR1 or CR3 induce?",
+          "What does stimulation of CR1 or CR3 induce?",
+          "In what type of cells does stimulation of CR1 or CR3 induce the nuclear trans"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we find in infected cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15475088357925415,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induces the nuclear translocation of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulation of CR1 or CR3",
+        "answerability": 0.900437593460083,
+        "ground_truth": {
+          "stimulation": {
+            "bertscore": 0.7541184425354004,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What receptor induces the nuclear translocation of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CR1 or CR3",
+        "answerability": 0.8404306769371033,
+        "ground_truth": {
+          "CR1": {
+            "bertscore": 0.8379974365234375,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the cytokine that induces the nuclear translocation of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2571403384208679,
+        "ground_truth": {
+          "CR3": {
+            "bertscore": 0.6730232834815979,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does stimulation of CR1 or CR3 induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear translocation",
+        "answerability": 0.9470317363739014,
+        "ground_truth": {
+          "the nuclear translocation": {
+            "bertscore": 0.9248635172843933,
+            "f1": 1.0
+          },
+          "NF-kappa B p50/p65": {
+            "bertscore": 0.6503892540931702,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what cells does stimulation of CR1 or CR3 induce the nuclear translocation of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5619767308235168,
+        "ground_truth": {
+          "infected cells": {
+            "bertscore": 0.7038543820381165,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

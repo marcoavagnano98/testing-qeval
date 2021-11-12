@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Increased mRNA and surface expression of E-selectin IFN-gamma and IL-8 were noted within hours.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "hours"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did it take for the IL-8 to increase?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Increased mRNA and surface expression",
+        "E-selectin IFN-gamma",
+        "hours"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was observed within hours of the cytokine release?",
+          "What protein was increased within hours of a rat's initiation?",
+          "How long did it take for the IL-8 to increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How long did it take for the mRNA to increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hours",
+        "answerability": 0.6679900884628296,
+        "ground_truth": {
+          "hours": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was observed within hours of the cloning?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Increased mRNA and surface expression",
+        "answerability": 0.9201660752296448,
+        "ground_truth": {
+          "Increased mRNA and surface expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is a part of the cytokine?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0025696158409118652,
+        "ground_truth": {
+          "E-selectin ICAM-1": {
+            "bertscore": 0.6199488639831543,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the E-selectin that is expressed on the surface of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5944122672080994,
+        "ground_truth": {
+          "VCAM-1": {
+            "bertscore": 0.6656227111816406,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

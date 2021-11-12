@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "PTK inhibition with Gen attenuated both LPS-induced NF-kappaB DNA binding and TNF-alpha production in human monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTK",
+        "Gen",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibited the NF-kappaB DNA binding?",
+          "What inhibited both LPS-induced NF-kappaB DNA binding and",
+          "What protein was inhibited by Gen?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTK inhibition",
+        "Gen",
+        "both LPS-induced NF-kappaB DNA binding and TNF-alpha production",
+        "human monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did Gen do to the NF-kappaB DNA binding?",
+          "What inhibited both LPS-induced NF-kappaB DNA binding and",
+          "What did PTK inhibition with Gen attenuate in human monocytes?",
+          "What did Gen inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did PTX attenuate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03515803813934326,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320707321167,
+            "f1": 0
+          },
+          "LPS-induced TNF-alpha production": {
+            "bertscore": 0.6017765402793884,
+            "f1": 0
+          },
+          "LPS": {
+            "bertscore": 0.7027957439422607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the p?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0013401508331298828,
+        "ground_truth": {
+          "297+/-54": {
+            "bertscore": 0.6555764079093933,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What attenuated LPS-induced TNF-alpha production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PTK inhibition with Gen",
+        "answerability": 0.7828613519668579,
+        "ground_truth": {
+          "PTX": {
+            "bertscore": 0.7093657851219177,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the p value of the effect of PTX on TNF-alpha": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01141047477722168,
+        "ground_truth": {
+          "p": {
+            "bertscore": 0.6448220014572144,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

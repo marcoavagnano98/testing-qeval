@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "PU.1 (Spi-1) is a hematopoietic-specific Ets transcription factor that is expressed in myeloid cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PU.1",
+        "a hematopoietic-specific Ets transcription factor",
+        "myeloid cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the Ets transcription factor?",
+          "What is PU.1?",
+          "Where is PU.1 expressed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor family is PU.1 a member of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ets",
+        "answerability": 0.9997586607933044,
+        "ground_truth": {
+          "Ets": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the Ets transcription factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PU.1",
+        "answerability": 0.9297100901603699,
+        "ground_truth": {
+          "PU.1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is PU.1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a hematopoietic-specific Ets transcription factor",
+        "answerability": 0.980978786945343,
+        "ground_truth": {
+          "a member": {
+            "bertscore": 0.6122839450836182,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is PU.1 a member of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ets",
+        "answerability": 0.9938817024230957,
+        "ground_truth": {
+          "the Ets transcription factor family": {
+            "bertscore": 0.6937040090560913,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What type of cells are PU.1 most expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid",
+        "answerability": 0.9489889144897461,
+        "ground_truth": {
+          "myeloid": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

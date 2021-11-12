@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Activation of NFAT transcription factors requires their dephosphorylation by the phosphatase calcineurin (CN).\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Activation",
+        "NFAT transcription factors",
+        "their dephosphorylation",
+        "the phosphatase calcineurin",
+        "CN"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process called that requires the dephosphorylation of NFAT transcription factors?",
+          "What requires their dephosphorylation by the phosphatase calcineurin",
+          "What is required to activate NFAT transcription factors?",
+          "What enzyme dephosphorylates NFAT transcription factors?",
+          "What is the phosphatase that phosphorylates NFAT transcription factors?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process called that requires the dephosphorylation of NFAT transcription factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation",
+        "answerability": 0.9783279299736023,
+        "ground_truth": {
+          "Activation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What requires their dephosphorylation by the phosphatase calcineurin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Activation of NFAT transcription factors",
+        "answerability": 0.9461506009101868,
+        "ground_truth": {
+          "NFAT transcription factors": {
+            "bertscore": 0.8864372968673706,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is required to activate NFAT transcription factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dephosphorylation",
+        "answerability": 0.9620359539985657,
+        "ground_truth": {
+          "their dephosphorylation": {
+            "bertscore": 0.9293258786201477,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What enzyme dephosphorylates NFAT transcription factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphatase CN",
+        "answerability": 0.8962057828903198,
+        "ground_truth": {
+          "the phosphatase calcineurin": {
+            "bertscore": 0.8318588733673096,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the phosphatase that phosphorylates NFAT transcription factors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39812594652175903,
+        "ground_truth": {
+          "CN": {
+            "bertscore": 0.6859583854675293,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

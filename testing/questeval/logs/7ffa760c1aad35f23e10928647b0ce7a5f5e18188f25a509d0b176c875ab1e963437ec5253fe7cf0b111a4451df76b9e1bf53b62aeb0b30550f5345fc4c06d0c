@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Finally we demonstrated that direct inhibition of key enzymes to glycogen metabolism and pentose phosphate pathways reduced HUVEC viability and migration.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "direct inhibition",
+        "key enzymes",
+        "glycogen metabolism",
+        "pentose phosphate pathways",
+        "HUVEC viability",
+        "migration"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the study show about HUVEC?",
+          "What did the study show reduced HUVEC viability and migration?",
+          "What did the study show was inhibited?",
+          "What enzymes were inhibited in the study?",
+          "What enzymes were inhibited in the study that reduced HUVEC viability?",
+          "What did the study show was reduced by direct inhibition of key enzymes to glycogen metabolism and",
+          "What did the inhibition of key enzymes to glycogen metabolism and pentose phosphat"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the study show about HUVEC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4520989656448364,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.674835205078125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the study show reduced HUVEC viability and migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of key enzymes to glycogen metabolism and pentose phosphate pathways",
+        "answerability": 0.995814323425293,
+        "ground_truth": {
+          "direct inhibition": {
+            "bertscore": 0.6976344585418701,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    },
+    "What did the study show was inhibited?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "key enzymes to glycogen metabolism and pentose phosphate pathways",
+        "answerability": 0.9624163508415222,
+        "ground_truth": {
+          "key enzymes": {
+            "bertscore": 0.7745816111564636,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What enzymes were inhibited in the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glycogen metabolism and pentose phosphate pathways",
+        "answerability": 0.964323103427887,
+        "ground_truth": {
+          "glycogen metabolism": {
+            "bertscore": 0.8804265260696411,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What enzymes were inhibited in the study that reduced HUVEC viability?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glycogen metabolism and pentose phosphate pathways",
+        "answerability": 0.994395911693573,
+        "ground_truth": {
+          "pentose phosphate pathways": {
+            "bertscore": 0.9082462191581726,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the study show was reduced by direct inhibition of key enzymes to glycogen metabolism and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HUVEC viability and migration",
+        "answerability": 0.8819681406021118,
+        "ground_truth": {
+          "HUVEC viability": {
+            "bertscore": 0.9381739497184753,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the inhibition of key enzymes to glycogen metabolism and pentose phosphat": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reduced HUVEC viability and migration",
+        "answerability": 0.678572416305542,
+        "ground_truth": {
+          "migration": {
+            "bertscore": 0.6991837620735168,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Rb targets histone H3 methylation and HP1 to promoters.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H3",
+        "HP1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What histone does Rb target?",
+          "What is the target of Rb?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Rb",
+        "histone H3 methylation",
+        "HP1",
+        "promoters"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What targets histone H3 methylation?",
+          "What does Rb target?",
+          "What is the target of Rb?",
+          "What does Rb target?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What histone does Rb target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H3 methylation",
+        "answerability": 0.8955949544906616,
+        "ground_truth": {
+          "H3": {
+            "bertscore": 0.7755217552185059,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the target of Rb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6739029288291931,
+        "ground_truth": {
+          "HP1": {
+            "bertscore": 0.6744916439056396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What targets histone H3 methylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rb",
+        "answerability": 0.6381202936172485,
+        "ground_truth": {
+          "Rb": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Rb target?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5225730538368225,
+        "ground_truth": {
+          "histone H3 methylation": {
+            "bertscore": 0.619353175163269,
+            "f1": 0
+          },
+          "promoters": {
+            "bertscore": 0.704927921295166,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

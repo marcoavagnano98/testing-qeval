@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "In HeLa cells as well as in B cells TNF-alpha rapidly induced nuclear recruitment of NF-kappaB p50-p65 a transcription factor involved in both TNF-alpha gene transcription and TNF-alpha signalling (P \u2047 0.005).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HeLa",
+        "TNF",
+        "NF-kappaB",
+        "TNF",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were induced by TNF-alpha?",
+          "What transcription factor induced nuclear recruitment in HeLa cells?",
+          "What transcription factor is involved in both transcription and signalling?",
+          "What transcription factor induced nuclear recruitment in HeLa cells?",
+          "What transcription factor induced nuclear recruitment in HeLa cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "HeLa cells",
+        "B cells TNF-alpha",
+        "nuclear recruitment",
+        "NF-kappaB p50-p65 a transcription factor",
+        "both TNF-alpha gene transcription",
+        "TNF-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of cell did TNF-alpha induce nuclear recruitment?",
+          "What gene induced nuclear recruitment in HeLa cells?",
+          "What did TNF-alpha induce in HeLa cells?",
+          "What is involved in both transcription and signalling?",
+          "What is NF-kappaB involved in?",
+          "What transcription factor induced nuclear recruitment in HeLa cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What requires NF-kappaB recruitment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11449587345123291,
+        "ground_truth": {
+          "Activation-dependent transcriptional regulation": {
+            "bertscore": 0.6421085000038147,
+            "f1": 0
+          },
+          "the human Fas promoter": {
+            "bertscore": 0.6404593586921692,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does activation-dependent transcriptional regulation of the human Fas promoter require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0012114644050598145,
+        "ground_truth": {
+          "NF-kappaB p50-p65 recruitment": {
+            "bertscore": 0.6379407048225403,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

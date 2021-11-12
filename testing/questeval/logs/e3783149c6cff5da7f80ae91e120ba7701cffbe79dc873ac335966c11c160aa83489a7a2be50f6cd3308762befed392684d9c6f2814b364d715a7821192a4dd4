@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "but not TG-induced IL-2R alpha is inhibited by the PKC inhibitor H7 whereas TG- but not PMA-induced\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TG",
+        "H7"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the only inhibitor of IL-2R alpha?",
+          "What is the PKC inhibitor?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "not TG-induced IL-2R alpha",
+        "the PKC inhibitor H7"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is inhibited by the PKC inhibitor H7?",
+          "What inhibits IL-2R alpha?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was inhibited by the cholera toxin forskolin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25489377975463867,
+        "ground_truth": {
+          "IL-2R alpha": {
+            "bertscore": 0.5845615267753601,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited IL-2R alpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKC inhibitor H7",
+        "answerability": 0.7774150371551514,
+        "ground_truth": {
+          "cholera toxin": {
+            "bertscore": 0.7464479207992554,
+            "f1": 0
+          },
+          "cholera toxin forskolin": {
+            "bertscore": 0.7081263065338135,
+            "f1": 0
+          },
+          "19-dideoxy forskolin": {
+            "bertscore": 0.6222069263458252,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

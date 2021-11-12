@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "After stimulation by PMA RXR alpha expression increased in H9 and U937 cells but not in CEM cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "H9",
+        "CEM"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulates RXR alpha expression?",
+          "What type of cells did PMA RXR alpha expression increase in?",
+          "What type of cells did PMA RXR alpha expression decrease in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "stimulation",
+        "PMA RXR alpha expression",
+        "H9",
+        "U937 cells",
+        "CEM cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did PMA RXR alpha expression do?",
+          "What was the only factor that increased in H9 cells?",
+          "What type of cells did PMA RXR alpha expression increase in?",
+          "What cells did PMA RXR alpha expression increase in?",
+          "What cells did PMA RXR alpha expression decrease in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the most common cell type that has a high level of RXR?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.28206807374954224,
+        "ground_truth": {
+          "U937": {
+            "bertscore": 0.6595883369445801,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells was RXR alpha weakly expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2789328694343567,
+        "ground_truth": {
+          "THP-1": {
+            "bertscore": 0.6841844320297241,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells were RXR alpha not detectable in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CEM cells",
+        "answerability": 0.7086580991744995,
+        "ground_truth": {
+          "CEM": {
+            "bertscore": 0.8689470887184143,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What gene was significantly expressed in U937 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PMA RXR alpha",
+        "answerability": 0.6751071214675903,
+        "ground_truth": {
+          "Human RXR alpha": {
+            "bertscore": 0.8661406636238098,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where was RXR alpha significantly expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "H9 and U937 cells",
+        "answerability": 0.8075098991394043,
+        "ground_truth": {
+          "U937 and THP-1 cells": {
+            "bertscore": 0.8691566586494446,
+            "f1": 0.75
+          }
+        }
+      }
+    },
+    "Where was RXR alpha weakly expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19967424869537354,
+        "ground_truth": {
+          "H9 cells": {
+            "bertscore": 0.6205416321754456,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was RXR alpha not detectable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48802101612091064,
+        "ground_truth": {
+          "CEM cells": {
+            "bertscore": 0.6471874713897705,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

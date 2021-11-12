@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Furthermore a hyperactive allele of STE11 causes increased phosphorylation of FK506 in the absence of pheromone stimulation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "FK506"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is phosphorylated in the absence of pheromone stimulation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a hyperactive allele",
+        "STE11 causes",
+        "phosphorylation",
+        "FK506",
+        "the absence",
+        "pheromone stimulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What causes increased phosphorylation of FK506 in the absence of phe",
+          "What causes increased phosphorylation of FK506?",
+          "What does a hyperactive allele of STE11 cause in the absence of p",
+          "What protein is phosphorylated in the absence of pheromone stimulation?",
+          "In what condition does a hyperactive allele of STE11 cause increased phosphoryl",
+          "What is required to cause phosphorylation of FK506?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What causes increased phosphorylation of FUS3 in the absence of pherom": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35983991622924805,
+        "ground_truth": {
+          "a hyperactive allele": {
+            "bertscore": 0.6832636594772339,
+            "f1": 0
+          },
+          "STE11 causes": {
+            "bertscore": 0.6524721384048462,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does a hyperactive allele of STE11 cause in the absence of p": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased phosphorylation of FK506",
+        "answerability": 0.778666615486145,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.8039366006851196,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What protein is phosphorylated in the absence of pheromone stimulation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FK506",
+        "answerability": 0.7296925783157349,
+        "ground_truth": {
+          "FUS3": {
+            "bertscore": 0.8242722153663635,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what condition does a hyperactive allele of STE11 cause increased phosphoryl": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "absence of pheromone stimulation",
+        "answerability": 0.9007294774055481,
+        "ground_truth": {
+          "the absence": {
+            "bertscore": 0.6794734001159668,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is required to cause phosphorylation of FUS3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002657473087310791,
+        "ground_truth": {
+          "pheromone stimulation": {
+            "bertscore": 0.6273517608642578,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Oligomerization of the TRAF2 effector domain results in specific binding to MEKK1 a protein kinase capable of JNK p38 MAPK and IKK activation and induction of TNF-alpha and IL-1 responsive genes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "IL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the IL-1 responsive gene?",
+          "What is the name of the kinase that is capable of activating JNK"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Oligomerization",
+        "the TRAF2 effector domain results",
+        "JNK p38 MAPK and IKK activation",
+        "induction",
+        "TNF-alpha",
+        "IL-1 responsive genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that results in specific binding to MEKK1?",
+          "What is oligomerization?",
+          "What is MEKK1 capable of?",
+          "What is the effect of oligomerization of the TRAF2 effector domain?",
+          "What is IL-1 responsive?",
+          "What does MEKK1 induction of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enhances the binding of native TRAF2 to MEKK1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Oligomerization",
+        "answerability": 0.6582500338554382,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7374169230461121,
+            "f1": 0
+          },
+          "TNF-alpha": {
+            "bertscore": 0.6626635193824768,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TNF-alpha enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0018770098686218262,
+        "ground_truth": {
+          "the binding": {
+            "bertscore": 0.7001460790634155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein does TNF-alpha stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008949518203735352,
+        "ground_truth": {
+          "MEKK1": {
+            "bertscore": 0.6376367807388306,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does TNF-alpha stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005888640880584717,
+        "ground_truth": {
+          "the kinase activity": {
+            "bertscore": 0.646438717842102,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

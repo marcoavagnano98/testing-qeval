@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "During the course of serious bacterial infections lipopolysaccharide (LPS) interacts with monocyte-specific receptors resulting in the generation of inflammatory cytokines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the molecule that interacts with monocyte-specific receptors?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the course",
+        "serious bacterial infections",
+        "monocyte-specific receptors",
+        "the generation",
+        "inflammatory cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process of bacterial infection?",
+          "What is the most common type of infection that can be caused by lipopolysacc",
+          "What does lipopolysaccharide interact with during serious bacterial infections?",
+          "What does LPS cause in bacteria?",
+          "What does LPS produce?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the molecule that interacts with monocyte/macrophag": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipopolysaccharide",
+        "answerability": 0.713181734085083,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.6216586232185364,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process of bacterial infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.044963955879211426,
+        "ground_truth": {
+          "the course": {
+            "bertscore": 0.7014779448509216,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process of lipopolysaccharide interaction with monocyte/m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "During the course of serious bacterial infections lipopolysaccharide (LP",
+        "answerability": 0.6374374628067017,
+        "ground_truth": {
+          "serious bacterial infections": {
+            "bertscore": 0.7765881419181824,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What does lipopolysaccharide interact with during serious bacterial infections?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monocyte-specific receptors",
+        "answerability": 0.9942893385887146,
+        "ground_truth": {
+          "monocyte/macrophage receptors": {
+            "bertscore": 0.8551576137542725,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does LPS cause in bacteria?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inflammatory cytokines",
+        "answerability": 0.648099422454834,
+        "ground_truth": {
+          "the generation": {
+            "bertscore": 0.6376904845237732,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does LPS produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inflammatory cytokines",
+        "answerability": 0.681570291519165,
+        "ground_truth": {
+          "inflammatory cytokines": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

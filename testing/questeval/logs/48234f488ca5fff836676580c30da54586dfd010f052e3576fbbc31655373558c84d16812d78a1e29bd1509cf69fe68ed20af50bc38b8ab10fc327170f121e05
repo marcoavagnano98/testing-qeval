@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "We find that human Myt1 phosphorylates and inactivates Cdc2-containing cyclin complexes but not complexes containing Cdk2 or Cdk3.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Myt1",
+        "Cdk3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylates and inactivates cyclin complexes?",
+          "What cyclin complex does Myt1 not activate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "Cdk2",
+        "Cdk3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of Myt1 on cyclins?",
+          "What cyclin complex does Myt1 not phosphorylate?",
+          "What cyclin complex does Myt1 not activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylates and inactivates cyclin complexes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Myt1",
+        "answerability": 0.9468247294425964,
+        "ground_truth": {
+          "Myt1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cyclin complex does Myt1 not activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cdk2 or Cdk3",
+        "answerability": 0.9380736947059631,
+        "ground_truth": {
+          "Cdk4": {
+            "bertscore": 0.8606827855110168,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of Myt1 on cyclins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylates and inactivates",
+        "answerability": 0.9924542903900146,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5704149007797241,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cyclin complex does Myt1 not phosphorylate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cdk2 or Cdk3",
+        "answerability": 0.8750974535942078,
+        "ground_truth": {
+          "Cdk2": {
+            "bertscore": 0.8746299743652344,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

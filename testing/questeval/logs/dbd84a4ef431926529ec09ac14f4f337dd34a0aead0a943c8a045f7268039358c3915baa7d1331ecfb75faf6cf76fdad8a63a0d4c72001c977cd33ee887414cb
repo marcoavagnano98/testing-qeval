@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "(P less than 0.001) and attenuated the effects of cyclopamine.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "less than 0.001"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the P value of cyclopamine?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(P",
+        "the effects",
+        "cyclopamine"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the value of the cyclopamine inhibitor?",
+          "What did cyclopamine reduce?",
+          "What did the sulfate agonist reduce the effects of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the effect of cyclopamine on vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.038812220096588135,
+        "ground_truth": {
+          "2.5": {
+            "bertscore": 0.6649395227432251,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What significantly reduced vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.041760385036468506,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.7012161612510681,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment significantly reduced vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.050599873065948486,
+        "ground_truth": {
+          "cyclopamine": {
+            "bertscore": 0.6110585331916809,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did treatment with cyclopamine significantly attenuate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0196152925491333,
+        "ground_truth": {
+          "vascular formation": {
+            "bertscore": 0.707527220249176,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How much did cyclopamine reduce vascular formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005924224853515625,
+        "ground_truth": {
+          "a factor": {
+            "bertscore": 0.7014164924621582,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

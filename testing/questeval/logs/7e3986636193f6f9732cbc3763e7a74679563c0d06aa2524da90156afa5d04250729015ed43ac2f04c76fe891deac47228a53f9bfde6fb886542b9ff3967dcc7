@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "However recent works demonstrate that Brn-3a expression is not restricted to neuroblastoma cells as its activity was detected also in cancer cells of non-neuronal nature.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "recent works",
+        "Brn-3a expression",
+        "cells",
+        "its activity",
+        "cancer cells",
+        "non-neuronal nature"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What shows that Brn-3a expression is not restricted to neuroblastoma cells?",
+          "Recent studies have shown that what is not restricted to neuroblastoma cells?",
+          "What type of cancer cells are able to express Brn-3a?",
+          "What is Brn-3a's activity found in cancer cells?",
+          "What other type of cells can be detected by Brn-3a?",
+          "Recent studies have shown that Brn-3a expression is also detected in cancer cells of what type"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that Brn-3a expression is not restricted to neuronal cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "recent works",
+        "answerability": 0.9387609362602234,
+        "ground_truth": {
+          "recent works": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Recent studies have shown that what is not restricted to neuronal cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Brn-3a expression",
+        "answerability": 0.9983835220336914,
+        "ground_truth": {
+          "Brn-3a expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Recent studies have shown that Brn-3a expression is not restricted to what?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neuroblastoma cells",
+        "answerability": 0.9993679523468018,
+        "ground_truth": {
+          "neuronal cells": {
+            "bertscore": 0.85296231508255,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was detected in cancer cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Brn-3a expression",
+        "answerability": 0.9837859869003296,
+        "ground_truth": {
+          "its activity": {
+            "bertscore": 0.5850314497947693,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Recent studies have shown that Brn-3a activity is also detected in what other type of cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cancer cells",
+        "answerability": 0.922397792339325,
+        "ground_truth": {
+          "cancer cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Recent studies have shown that Brn-3a expression is not restricted to neuronal cells but": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32754212617874146,
+        "ground_truth": {
+          "non-neuronal nature": {
+            "bertscore": 0.6867293119430542,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

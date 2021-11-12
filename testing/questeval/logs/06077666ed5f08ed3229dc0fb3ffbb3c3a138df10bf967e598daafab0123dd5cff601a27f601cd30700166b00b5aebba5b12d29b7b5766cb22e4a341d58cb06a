@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "A 280 bp upstream of the major transcriptional start site seems to be sufficient.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "280"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many bp upstream of the major transcriptional start site is sufficient?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A 280 bp upstream",
+        "the major transcriptional start site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How far upstream of the major transcriptional start site is sufficient?",
+          "What is the 280 bp upstream of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the 280 bp upstream of the major transcriptional start site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sufficient",
+        "answerability": 0.8373628854751587,
+        "ground_truth": {
+          "first": {
+            "bertscore": 0.7633002996444702,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many bp upstream of the major transcriptional start site is sufficient?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "280",
+        "answerability": 0.985408365726471,
+        "ground_truth": {
+          "280": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the first 280 bp upstream of the major transcriptional start site?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.018572986125946045,
+        "ground_truth": {
+          "this expression pattern": {
+            "bertscore": 0.6970785856246948,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the first 280 bp upstream of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the major transcriptional start site",
+        "answerability": 0.8109118342399597,
+        "ground_truth": {
+          "the major transcriptional start site": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

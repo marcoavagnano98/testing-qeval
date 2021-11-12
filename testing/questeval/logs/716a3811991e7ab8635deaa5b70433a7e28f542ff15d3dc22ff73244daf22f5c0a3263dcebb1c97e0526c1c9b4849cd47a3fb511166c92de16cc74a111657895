@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "It has been established that nm23 suppresses metastatic behavior of cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "nm23"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suppresses metastatic behavior of cancer cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "It",
+        "nm23",
+        "metastatic behavior",
+        "cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of nm23 on cancer cells?",
+          "What suppresses metastatic behavior of cancer cells?",
+          "What does nm23 suppress?",
+          "What does nm23 suppress metastatic behavior of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of nm23 on the metastatic behavior of malignant rodent": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "suppresses metastatic behavior",
+        "answerability": 0.6882272958755493,
+        "ground_truth": {
+          "nm23 gene suppresses": {
+            "bertscore": 0.7739717960357666,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What gene suppresses the metastatic behavior of malignant rodent tumor lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nm23",
+        "answerability": 0.9206047058105469,
+        "ground_truth": {
+          "nm23": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What suppresses the metastatic behavior of malignant rodent tumor lines?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nm23",
+        "answerability": 0.7376942038536072,
+        "ground_truth": {
+          "nm23 gene": {
+            "bertscore": 0.8492867350578308,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the nm23 gene suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metastatic behavior",
+        "answerability": 0.9082959890365601,
+        "ground_truth": {
+          "the metastatic behavior": {
+            "bertscore": 0.9365144371986389,
+            "f1": 1.0
+          },
+          "malignant rodent tumor lines": {
+            "bertscore": 0.7657071352005005,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is associated with increased likelihood of lymph node metastases in breast cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06689256429672241,
+        "ground_truth": {
+          "reduced nm23 expression": {
+            "bertscore": 0.6241330504417419,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of reduced nm23 expression on lymph node metastases in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20687246322631836,
+        "ground_truth": {
+          "increased likelihood": {
+            "bertscore": 0.7012193202972412,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cancer is nm23 associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3624630570411682,
+        "ground_truth": {
+          "human breast cancers": {
+            "bertscore": 0.674339234828949,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "angiogenic activity was blocked by antibodies to PEDF.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "angiogenic activity",
+        "antibodies",
+        "PEDF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was blocked by antibodies to PEDF?",
+          "What blocked the angiogenic activity of the swine flu?",
+          "What antibody blocked the angiogenic activity of the swine flu?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of person had a higher chance of survival if they had antibodies to PEDF": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0037863850593566895,
+        "ground_truth": {
+          "diabetics": {
+            "bertscore": 0.6777938008308411,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was blocked by antibodies to PEDF in diabetics?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "angiogenic activity",
+        "answerability": 0.7709420919418335,
+        "ground_truth": {
+          "proliferation angiogenic activity": {
+            "bertscore": 0.9206075072288513,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What blockade the proliferation of PEDF in diabetics?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.376017689704895,
+        "ground_truth": {
+          "antibodies": {
+            "bertscore": 0.6786100268363953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What antibody blocked proliferation in diabetics?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.014173805713653564,
+        "ground_truth": {
+          "PEDF": {
+            "bertscore": 0.6689484715461731,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

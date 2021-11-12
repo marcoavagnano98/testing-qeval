@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The expression of MMP-2/9 of AGS cells were inhibited by 2.0 microM of GA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MMP-2/9",
+        "2.0 microM",
+        "GA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was inhibited by 2.0 microM of GA?",
+          "What was the amount of GA that inhibited the expression of MMP-2/9?",
+          "What inhibited the expression of MMP-2/9 in AGS cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression",
+        "MMP-2/9",
+        "AGS cells",
+        "2.0 microM",
+        "GA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was inhibited by 2.0 microM of GA?",
+          "What gene was inhibited by 2.0 microM of GA?",
+          "What was inhibited by 2.0 microM of GA?",
+          "What was the amount of GA that inhibited the expression of MMP-2/9?",
+          "What inhibited the expression of MMP-2/9 in AGS cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein was inhibited by 2.0 microM of GA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MMP-2/9",
+        "answerability": 0.981290876865387,
+        "ground_truth": {
+          "MMP-2/9": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the amount of GA that inhibited the expression of MMP-2/9?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "2.0 microM",
+        "answerability": 0.998904287815094,
+        "ground_truth": {
+          "2.0 microM": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the expression of MMP-2/9 in AGS cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "2.0 microM of GA",
+        "answerability": 0.9957888722419739,
+        "ground_truth": {
+          "GA": {
+            "bertscore": 0.7250971794128418,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What was inhibited by 2.0 microM of GA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of MMP-2/9 of AGS cells",
+        "answerability": 0.9952597618103027,
+        "ground_truth": {
+          "The expression": {
+            "bertscore": 0.6578032374382019,
+            "f1": 0.2857142857142857
+          },
+          "AGS cells": {
+            "bertscore": 0.774300217628479,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

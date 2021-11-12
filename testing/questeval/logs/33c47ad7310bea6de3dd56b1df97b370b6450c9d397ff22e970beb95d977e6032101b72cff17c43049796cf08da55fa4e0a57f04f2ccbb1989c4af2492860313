@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "Apoptosis induced by HIV protease is preceded by cleavage of Bcl-2. Expression of the human immunodeficiency virus type 1 (HIV) protease in cultured cells leads to apoptosis preceded by cleavage of bcl-2 a key negative regulator of cell death.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the key negative regulator of cell death?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Apoptosis",
+        "HIV protease",
+        "cleavage",
+        "Expression",
+        "the human immunodeficiency virus",
+        "cultured cells",
+        "apoptosis",
+        "cleavage",
+        "a key negative regulator",
+        "cell death"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the first step in the initiation of HIV protease?",
+          "What is the key negative regulator of cell death?",
+          "What is the process that leads to apoptosis?",
+          "What is the key negative regulator of cell death?",
+          "What is the key negative regulator of cell death?",
+          "Where does the expression of HIV protease lead to?",
+          "What is the first step in the initiation of HIV protease?",
+          "What is the process that leads to apoptosis?",
+          "What is bcl-2?",
+          "What is the key negative regulator of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the key negative regulator of cell death?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "bcl-2",
+        "answerability": 0.6218206286430359,
+        "ground_truth": {
+          "1": {
+            "bertscore": 0.7166479825973511,
+            "f1": 0
+          },
+          "HIV protease": {
+            "bertscore": 0.6949640512466431,
+            "f1": 0
+          },
+          "Expression": {
+            "bertscore": 0.6908609867095947,
+            "f1": 0
+          },
+          "the human immunodeficiency virus": {
+            "bertscore": 0.6234113574028015,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process called that is mediated by HIV protease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Apoptosis",
+        "answerability": 0.6929419040679932,
+        "ground_truth": {
+          "Apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the process that leads to apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cleavage of Bcl-2",
+        "answerability": 0.7893145084381104,
+        "ground_truth": {
+          "cleavage": {
+            "bertscore": 0.7654489278793335,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "Where does the expression of HIV protease lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.8507553339004517,
+        "ground_truth": {
+          "cultured cells": {
+            "bertscore": 0.7259693145751953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process called that occurs when HIV protease is expressed in cultured cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.7493977546691895,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is bcl-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11310994625091553,
+        "ground_truth": {
+          "a key negative regulator": {
+            "bertscore": 0.6635196208953857,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the key negative regulator of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cell death",
+        "answerability": 0.7421443462371826,
+        "ground_truth": {
+          "cell death": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

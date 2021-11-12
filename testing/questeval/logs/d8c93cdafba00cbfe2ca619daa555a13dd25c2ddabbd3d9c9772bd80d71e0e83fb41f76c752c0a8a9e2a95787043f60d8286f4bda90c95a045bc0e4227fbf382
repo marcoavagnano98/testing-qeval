@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "NK cell membrane extracts retained the capacity to activate EC and induced nuclear localization of NFAT4.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did NK cell membrane extracts retain the capacity to activate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "NK cell membrane extracts",
+        "the capacity",
+        "EC",
+        "nuclear localization",
+        "NFAT4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What retained the capacity to activate EC and induced nuclear localization of NFAT4",
+          "What did NK cell membrane extracts retain to activate EC?",
+          "What did NK cell membrane extracts retain the capacity to activate?",
+          "What did NK cell extracts induce?",
+          "What protein was induced by NK cell extracts?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylation sites were removed from NFAT4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0033345818519592285,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.676149845123291,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What caused constitutive nuclear localization of NFAT4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4800971746444702,
+        "ground_truth": {
+          "Mutational removal": {
+            "bertscore": 0.7115566730499268,
+            "f1": 0
+          },
+          "the JNK phosphorylation sites": {
+            "bertscore": 0.5960856676101685,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of mutational removal of the JNK phosphorylation sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.007933497428894043,
+        "ground_truth": {
+          "constitutive nuclear localization": {
+            "bertscore": 0.6981292366981506,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was mutated to cause localization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012956798076629639,
+        "ground_truth": {
+          "NFAT4": {
+            "bertscore": 0.5713503360748291,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

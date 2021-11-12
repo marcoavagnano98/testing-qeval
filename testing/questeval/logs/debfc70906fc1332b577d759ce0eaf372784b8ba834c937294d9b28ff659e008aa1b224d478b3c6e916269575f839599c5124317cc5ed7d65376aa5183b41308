@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Specifically wortmannin (an inhibitor of PI3-K) interferes with CpG-dependent cell activation and DNA-PK knockout (KO) mice fail to respond to CpG stimulation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CpG-dependent",
+        "KO",
+        "CpG"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cell activation does wortmannin interfere with?",
+          "What is the name of the type of mice that fail to respond to CpG stimulation?",
+          "What does wortmannin interfere with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "an inhibitor",
+        "PI3-K",
+        "CpG-dependent cell activation",
+        "DNA-PK knockout",
+        "(KO) mice",
+        "CpG stimulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is wortmannin?",
+          "What is wortmannin an inhibitor of?",
+          "What does wortmannin interfere with?",
+          "What is another name for KO mice?",
+          "What type of mice fail to respond to CpG stimulation?",
+          "What does wortmannin interfere with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the ERK inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13729888200759888,
+        "ground_truth": {
+          "PD 98059": {
+            "bertscore": 0.64727383852005,
+            "f1": 0
+          },
+          "PD": {
+            "bertscore": 0.6814029812812805,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the PI3-K inhibitor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "wortmannin",
+        "answerability": 0.8876917362213135,
+        "ground_truth": {
+          " wortmannin": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is wortmannin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an inhibitor of PI3-K",
+        "answerability": 0.9981933832168579,
+        "ground_truth": {
+          "a PI3-K inhibitor": {
+            "bertscore": 0.9084904789924622,
+            "f1": 0.8
+          },
+          "an ERK inhibitor": {
+            "bertscore": 0.835472822189331,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

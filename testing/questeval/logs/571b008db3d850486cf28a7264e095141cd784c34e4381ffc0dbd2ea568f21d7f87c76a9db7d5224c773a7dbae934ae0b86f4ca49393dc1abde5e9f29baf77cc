@@ -1,0 +1,70 @@
+{
+  "type": "hyp",
+  "text": "Thus the yeast PDK1 homologs activate Pkc1 and the mitogen-activated protein kinase pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PDK1 homologs activate",
+        "Pkc1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the yeast PDK1 homologs do?",
+          "What protein is activated by the yeast PDK1 homologs?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the yeast PDK1 homologs",
+        "Pkc1",
+        "the mitogen-activated protein kinase pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activates Pkc1 and the mitogen-activated protein kinas",
+          "What protein is activated by the yeast PDK1 homologs?",
+          "What does the yeast PDK1 homologs activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the gene that activates the Pkc1-mitogen-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PDK1",
+        "answerability": 0.6683706045150757,
+        "ground_truth": {
+          "PDK1 homologs": {
+            "bertscore": 0.8833959102630615,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What do PDK1 homologs activate in yeast?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Pkc1 and the mitogen-activated protein kinase pathway",
+        "answerability": 0.9456119537353516,
+        "ground_truth": {
+          "the Pkc1-mitogen-activated protein kinase pathway": {
+            "bertscore": 0.9275901913642883,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What organism has PDK1 homologs?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "yeast",
+        "answerability": 0.9995533227920532,
+        "ground_truth": {
+          "yeast": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

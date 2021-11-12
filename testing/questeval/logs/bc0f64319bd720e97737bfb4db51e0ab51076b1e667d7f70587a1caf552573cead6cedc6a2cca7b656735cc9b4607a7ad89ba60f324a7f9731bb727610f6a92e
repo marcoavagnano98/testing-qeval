@@ -1,0 +1,72 @@
+{
+  "type": "ref",
+  "text": "In vivo the Rtt109-Asf1 interaction is also dependent on the ability of Asf1 to bind H3/H4.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "H3/H4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does Asf1 bind?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "vivo",
+        "the Rtt109-Asf1 interaction",
+        "the ability",
+        "Asf1",
+        "H3/H4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way is the interaction between Rtt109 and Asf1 dependent?",
+          "What is dependent on Asf1 to bind H3/H4?",
+          "What is the interaction between Asf1 and Rtt109 dependent on?",
+          "What is the interaction between Rtt109 and Asf1 dependent on?",
+          "What does Asf1 bind?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the interaction between Rtt109 and Asf1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "dependent on the ability of Asf1 to bind H3/H4",
+        "answerability": 0.7770348191261292,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6081411242485046,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not dependent on Asf1 phosphorylation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000691533088684082,
+        "ground_truth": {
+          "the Rtt109-Asf1 interaction": {
+            "bertscore": 0.5569048523902893,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the interaction between Rtt109 and Asf1 not dependent on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008632540702819824,
+        "ground_truth": {
+          "Asf1 phosphorylation": {
+            "bertscore": 0.5642712712287903,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

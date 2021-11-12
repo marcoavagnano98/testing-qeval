@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "IL-4 down-regulates IL-2- IL-3- and GM-CSF-induced cytokine gene expression in peripheral blood monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GM",
+        "cytokine"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytokine gene that IL-4 down-regul",
+          "What gene expression is downregulated by IL-4?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-4 down-regulates IL-2-",
+        "IL-3-",
+        "and GM-CSF-induced cytokine gene expression",
+        "peripheral blood monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of IL-4 in cytokine gene expression?",
+          "What is the name of the cytokine gene that IL-4 down-regul",
+          "What does IL-4 down-regulate in peripheral blood monocytes?",
+          "Where does IL-4 down-regulate IL-2-IL-3- and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the cytokine gene that IL-4 down-regul": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4001729488372803,
+        "ground_truth": {
+          "GM": {
+            "bertscore": 0.6745764017105103,
+            "f1": 0
+          },
+          "IL-3-": {
+            "bertscore": 0.6609944701194763,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene expression is downregulated by IL-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2- IL-3- and GM-CSF-induced cytokin",
+        "answerability": 0.9271148443222046,
+        "ground_truth": {
+          "cytokine": {
+            "bertscore": 0.755362331867218,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of IL-4 in cytokine gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "down-regulates IL-2- IL-3- and GM-CSF",
+        "answerability": 0.9925789833068848,
+        "ground_truth": {
+          "IL-4 down-regulates IL-2-": {
+            "bertscore": 0.8794029951095581,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does IL-4 down-regulate in peripheral blood monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2- IL-3- and GM-CSF-induced cytokin",
+        "answerability": 0.9607953429222107,
+        "ground_truth": {
+          "and GM-CSF-induced cytokine gene expression": {
+            "bertscore": 0.8613898754119873,
+            "f1": 0.4000000000000001
+          }
+        }
+      }
+    },
+    "Where does IL-4 down-regulate IL-2-IL-3- and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "peripheral blood monocytes",
+        "answerability": 0.8373183608055115,
+        "ground_truth": {
+          "peripheral blood monocytes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

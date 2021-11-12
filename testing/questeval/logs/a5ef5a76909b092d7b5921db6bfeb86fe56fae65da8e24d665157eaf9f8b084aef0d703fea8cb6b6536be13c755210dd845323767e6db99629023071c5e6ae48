@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "I kappa B gamma-1 is present in both the cytoplasm and nucleus whereas I kappa B gamma-2 is predominantly nuclear. I kappa B gamma-1 is found in both the cytoplasm and nucleus whereas I kappa B gamma-3 is predominantly nuclear.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "kappa B gamma-1",
+        "kappa B gamma-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is found in both the cytoplasm and nucleus?",
+          "What is found in both the cytoplasm and nucleus?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "I kappa B gamma-1",
+        "both the cytoplasm",
+        "nucleus",
+        "I",
+        "kappa B gamma-2",
+        "I",
+        "kappa B gamma-1",
+        "both the cytoplasm",
+        "nucleus",
+        "I",
+        "kappa B gamma-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is found in both the cytoplasm and nucleus?",
+          "Where is I kappa B gamma-1 found?",
+          "Where is I kappa B gamma-3 found?",
+          "What is the predominant type of kappa B gamma-2?",
+          "What is the predominant type of gamma in the cytoplasm?",
+          "What is the predominant type of kappa B gamma-2?",
+          "What is found in both the cytoplasm and nucleus?",
+          "Where is I kappa B gamma-1 found?",
+          "Where is I kappa B gamma-3 found?",
+          "What is the predominant type of kappa B gamma-2?",
+          "What is the predominant type of gamma in the cytoplasm?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is found in both the cytoplasm and nucleus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3486604690551758,
+        "ground_truth": {
+          "kappa B gamma-1": {
+            "bertscore": 0.6153563261032104,
+            "f1": 0
+          },
+          "kappa B gamma-2": {
+            "bertscore": 0.6178790330886841,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of kappa is found in both the cytoplasm and nucleus": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.29324859380722046,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.679896354675293,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where is I kappa B gamma-1 found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6495651006698608,
+        "ground_truth": {
+          "both the cytoplasm": {
+            "bertscore": 0.6032339334487915,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What part of the body is I kappa B gamma-2 located in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08468872308731079,
+        "ground_truth": {
+          "nucleus": {
+            "bertscore": 0.6965103149414062,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

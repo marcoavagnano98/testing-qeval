@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "Knockdown of each one of these trans factors by siRNA confirmed the trans-activating effect of Sp1/Sp3/c-Krox and the p65 subunit of NF-kappaB trans-inhibiting effect on COL1A1 expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What trans-inhibiting effect did siRNA confirm?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these trans factors",
+        "the trans-activating effect",
+        "Sp1/Sp3/c-Krox",
+        "the p65 subunit",
+        "NF-kappaB trans-inhibiting effect",
+        "COL1A1 expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "Knockdown of each one of what confirmed the trans-activating effect of Sp1/S",
+          "What did knockdown of each of these trans factors confirm?",
+          "Knockdown of which trans factor confirmed the trans-activating effect?",
+          "What is the NF-kappaB's trans-inhibiting effect?",
+          "What effect did siRNA confirm on COL1A1 expression?",
+          "What did siRNA knockdown confirm?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What trans-inhibiting effect did siRNA confirm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1/Sp3/c-Krox",
+        "answerability": 0.786491334438324,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.6550254821777344,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Knockdown of each one of what confirmed the trans-activating effect of Sp1/S": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4877225160598755,
+        "ground_truth": {
+          "these trans factors": {
+            "bertscore": 0.6364577412605286,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did knockdown of each of these trans factors confirm?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the trans-activating effect of Sp1/Sp3/c-Krox and the",
+        "answerability": 0.8223744630813599,
+        "ground_truth": {
+          "the trans-activating effect": {
+            "bertscore": 0.8014030456542969,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "Knockdown of which trans factor confirmed the trans-activating effect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sp1/Sp3/c-Krox",
+        "answerability": 0.9807125926017761,
+        "ground_truth": {
+          "Sp1/Sp3": {
+            "bertscore": 0.8666452765464783,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappaB's trans-inhibiting effect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44686824083328247,
+        "ground_truth": {
+          "the p65 subunit": {
+            "bertscore": 0.608193576335907,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What effect did siRNA confirm on COL1A1 expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Knockdown",
+        "answerability": 0.71514892578125,
+        "ground_truth": {
+          "NF-kappaB trans-inhibiting effect": {
+            "bertscore": 0.6572921276092529,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Knockdown of each of these trans factors by siRNA confirmed the trans-activating effect": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.36886972188949585,
+        "ground_truth": {
+          "COL1A1 expression": {
+            "bertscore": 0.5668516159057617,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

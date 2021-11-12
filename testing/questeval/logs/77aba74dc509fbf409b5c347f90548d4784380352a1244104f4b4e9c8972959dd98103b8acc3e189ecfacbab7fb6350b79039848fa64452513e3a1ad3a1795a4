@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "In contrast IL-4 induces C epsilon GAS DNA-protein binding complexes in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what way does IL-4 induce DNA-protein binding complexes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of IL-4 on DNA-protein binding complexes?",
+          "In what way does IL-4 induce DNA-protein binding complexes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of IL-4 on NK and T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.019767165184020996,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094628214836121,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 induce in both T and NK cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.036679863929748535,
+        "ground_truth": {
+          "different C epsilon GAS DNA-protein binding complexes": {
+            "bertscore": 0.625840961933136,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does IL-4 induce different C epsilon GAS DNA-protein": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.437186598777771,
+        "ground_truth": {
+          "both T and NK cells": {
+            "bertscore": 0.6251574754714966,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

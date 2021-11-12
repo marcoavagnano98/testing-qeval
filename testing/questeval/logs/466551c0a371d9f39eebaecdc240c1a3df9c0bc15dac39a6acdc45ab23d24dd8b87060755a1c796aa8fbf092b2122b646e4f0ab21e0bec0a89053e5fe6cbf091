@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Two distinct signalling pathways are involved in the control of the biphasic junB transcription induced by interferon-gamma in the B cell hybridoma 7TD1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many distinct signalling pathways are involved in the control of junB transcription?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Two distinct signalling pathways",
+        "the control",
+        "the biphasic junB transcription",
+        "interferon-gamma",
+        "the B cell hybridoma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many signalling pathways are involved in the control of junB transcription?",
+          "What is the biphasic junB transcription induced by interferon-gam",
+          "What is induced by interferon-gamma?",
+          "What is the name of the signalling pathway that controls junB transcription?",
+          "What is the 7TD1 cell type?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many distinct signalling pathways are involved in the control of junB transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Two",
+        "answerability": 0.997916042804718,
+        "ground_truth": {
+          "Two": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How many signalling pathways are involved in the control of junB transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Two distinct signalling pathways",
+        "answerability": 0.9979816675186157,
+        "ground_truth": {
+          "Two distinct signalling pathways": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of two signalling pathways in the junB transcription?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "control",
+        "answerability": 0.6686026453971863,
+        "ground_truth": {
+          "the control": {
+            "bertscore": 0.9091317653656006,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is induced by interleukin-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0021094679832458496,
+        "ground_truth": {
+          "the biphasic junB transcription": {
+            "bertscore": 0.6113874912261963,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main signalling pathway in the B cell hybridoma 7TD1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0217018723487854,
+        "ground_truth": {
+          "interleukin-6": {
+            "bertscore": 0.6107966899871826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the 7TD1 cell type?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cell hybridoma 7TD1",
+        "answerability": 0.6035251617431641,
+        "ground_truth": {
+          "the B cell hybridoma": {
+            "bertscore": 0.8545791506767273,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Human cyclins A and B are differentially located in the cell and undergo cell cycle-dependent nuclear transport.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human cyclins",
+        "A",
+        "B",
+        "the cell",
+        "cell cycle-dependent nuclear transport"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the two cyclins that are located in the cell?",
+          "What are the two cyclins in a human cell?",
+          "What is the name of the human cyclin that is located in the cell?",
+          "Where are human cyclins A and B located?",
+          "What type of transport are cyclins A and B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the human cyclin that is located in the cell?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4828895926475525,
+        "ground_truth": {
+          "B1": {
+            "bertscore": 0.6938652992248535,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the two cyclins that are located in the cell?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A and B",
+        "answerability": 0.824451208114624,
+        "ground_truth": {
+          "Human cyclins": {
+            "bertscore": 0.6608796119689941,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two cyclins in a human cell called?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "A and B",
+        "answerability": 0.8511362075805664,
+        "ground_truth": {
+          "A": {
+            "bertscore": 0.8215066194534302,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where are human cyclins A and B1 located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0300900936126709,
+        "ground_truth": {
+          "the cell": {
+            "bertscore": 0.6916270852088928,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of transport are cyclins A and B1 involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1487436294555664,
+        "ground_truth": {
+          "cell cycle-dependent nuclear transport": {
+            "bertscore": 0.6538868546485901,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

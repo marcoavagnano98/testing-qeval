@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "The PAF-induced up-regulation of HB-EGF mRNA was accompanied by an increase in kappa B binding activity. The antagonists however had no effect on phorbol ester-induced up-regulation of HB-EGF mRNA and kappa B binding activity.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The PAF-induced up-regulation",
+        "HB-EGF mRNA",
+        "an increase",
+        "kappa B binding activity",
+        "The antagonists",
+        "no effect",
+        "phorbol ester-induced up-regulation",
+        "HB-EGF mRNA and kappa B binding activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was accompanied by an increase in kappa B binding activity?",
+          "What did the antagonists have no effect on?",
+          "What was the result of the PAF-induced up-regulation of kappa B",
+          "What did the antagonists have no effect on?",
+          "What did the PAF have no effect on?",
+          "What did the antagonists have on phorbol ester?",
+          "What did the antagonists have no effect on?",
+          "What did the antagonists have no effect on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the phorbol esters have no effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.012007713317871094,
+        "ground_truth": {
+          "The antagonists": {
+            "bertscore": 0.6680142879486084,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the antagonists have on phorbol ester-induced up-regulation of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2857487201690674,
+        "ground_truth": {
+          "no effect": {
+            "bertscore": 0.7436091899871826,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the antagonists have no effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol ester",
+        "answerability": 0.9484561085700989,
+        "ground_truth": {
+          "phorbol ester-induced up-regulation": {
+            "bertscore": 0.8424362540245056,
+            "f1": 0.4
+          },
+          "HB-EGF mRNA and kappa B binding activity": {
+            "bertscore": 0.6397709846496582,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

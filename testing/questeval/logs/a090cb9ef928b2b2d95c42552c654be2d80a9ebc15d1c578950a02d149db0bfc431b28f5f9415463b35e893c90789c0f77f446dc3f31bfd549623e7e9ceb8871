@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "protein-1 cognate sequences significantly attenuated phase-2 response suggesting a role for de novo macromolecule synthesis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "protein-1 cognate"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What sequences significantly attenuated phase-2 response?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "sequences",
+        "phase-2 response",
+        "a role",
+        "de novo macromolecule synthesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What attenuated phase-2 response?",
+          "What did protein-1 cognate sequences significantly attenuate?",
+          "What did the evidence suggest about the role of de novo macromolecule synthesis?",
+          "What mechanism did the protein-1 cognate sequences suggest was involved in the phase-2 response?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cognate DNA sequences significantly attenuated phase-2 response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.021142959594726562,
+        "ground_truth": {
+          "protein-1": {
+            "bertscore": 0.6568499803543091,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What attenuated phase-2 response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein-1 cognate sequences",
+        "answerability": 0.878515362739563,
+        "ground_truth": {
+          "DNA sequences": {
+            "bertscore": 0.7860449552536011,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did cognate DNA sequences significantly attenuate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010900437831878662,
+        "ground_truth": {
+          "phase-2 response": {
+            "bertscore": 0.6871147155761719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the evidence suggest about the role of de novo macromolecule synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.22401994466781616,
+        "ground_truth": {
+          "a role": {
+            "bertscore": 0.6715851426124573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the amplification of phase-2 suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.44143664836883545,
+        "ground_truth": {
+          "de novo macromolecule synthesis": {
+            "bertscore": 0.5984702706336975,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

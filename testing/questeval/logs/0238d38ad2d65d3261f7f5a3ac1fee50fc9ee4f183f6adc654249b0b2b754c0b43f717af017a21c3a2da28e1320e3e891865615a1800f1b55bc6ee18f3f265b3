@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Expression of BHRF1 in MCF-Fas cells conferred nearly complete resistance against both anti-Fas antibody and TNF-mediated apoptosis. BHRF1 protected these cells from monocyte-mediated killing but failed to protect them from killing mediated by lymphokine-activated killer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MCF-Fas",
+        "anti-Fas",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells had resistance to TNF-mediated apoptosis?",
+          "What antibody did BHRF1 confer complete resistance to?",
+          "What mediated apoptosis did BHRF1 not protect?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "BHRF1",
+        "MCF-Fas cells",
+        "nearly complete resistance",
+        "both anti-Fas antibody",
+        "TNF-mediated apoptosis",
+        "BHRF1",
+        "these cells",
+        "monocyte-mediated killing",
+        "them",
+        "lymphokine-activated killer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did BHRF1 do in MCF-Fas cells?",
+          "What protein protected MCF-Fas cells from monocyte-mediated killing?",
+          "What type of cells were able to express BHRF1?",
+          "What did expression of BHRF1 in MCF-Fas cells confer?",
+          "What did BHRF1 confer complete resistance against?",
+          "What did BHRF1 not protect against?",
+          "What protein protected MCF-Fas cells from monocyte-mediated killing?",
+          "What did BHRF1 protect from monocyte-mediated killing?",
+          "What did BHRF1 protect MCF-Fas cells from?",
+          "What did BHRF1 not protect against?",
+          "What did BHRF1 fail to protect against?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did BHRF1 fail to do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protect them from killing mediated by lymphokine-activated killer cells",
+        "answerability": 0.5926234126091003,
+        "ground_truth": {
+          "addition": {
+            "bertscore": 0.6044566035270691,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did BHRF1 fail to protect against?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphokine-activated killer cells",
+        "answerability": 0.9217846393585205,
+        "ground_truth": {
+          "BHRF1": {
+            "bertscore": 0.6422645449638367,
+            "f1": 0
+          },
+          "monocyte-mediated killing": {
+            "bertscore": 0.7297542095184326,
+            "f1": 0
+          },
+          "lymphokine-activated killer cells": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did BHRF1 not protect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphokine-activated killer cells",
+        "answerability": 0.8617897033691406,
+        "ground_truth": {
+          "these cells": {
+            "bertscore": 0.6809316277503967,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did BHRF1 fail to protect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lymphokine-activated killer cells",
+        "answerability": 0.9066711068153381,
+        "ground_truth": {
+          "them": {
+            "bertscore": 0.6179109811782837,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

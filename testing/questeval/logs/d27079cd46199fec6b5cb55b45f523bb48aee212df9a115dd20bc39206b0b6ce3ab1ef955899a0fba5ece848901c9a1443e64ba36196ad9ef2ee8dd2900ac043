@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "We have analysed the effect of mitogenic lectins on c-Fos and c-Jun protein levels as well as on the possible involvement of these intracellular messengers in c-Fos and c-Jun induction was tested.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the effect",
+        "mitogenic lectins",
+        "c-Fos and c-Jun protein levels",
+        "the possible involvement",
+        "these intracellular messengers",
+        "c-Fos and c-Jun induction"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been tested on the effect of mitogenic lectins?",
+          "What have we analysed on mitogenic lectins?",
+          "What has been studied to determine the effect of c-Fos and c-",
+          "What did we analyse the effect of mitogenic lectins on?",
+          "What did we test on the effect of mitogenic lectins on c-F",
+          "What is the possible involvement of in c-Fos and c-Jun",
+          "What protein levels were studied?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been studied on c-Fos and c-Jun protein levels": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effect of mitogenic lectins",
+        "answerability": 0.9721445441246033,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5662949681282043,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What have we studied on c-Fos and c-Jun protein levels": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effect of mitogenic lectins",
+        "answerability": 0.9726502895355225,
+        "ground_truth": {
+          "the effect": {
+            "bertscore": 0.715416669845581,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What has been studied to determine the effect of c-Fos and c-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitogenic lectins",
+        "answerability": 0.9131523370742798,
+        "ground_truth": {
+          "mitogenic lectins": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What have we studied the effect of mitogenic lectins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "on c-Fos and c-Jun protein levels",
+        "answerability": 0.99172443151474,
+        "ground_truth": {
+          "c-Fos and c-Jun protein levels": {
+            "bertscore": 0.9569933414459229,
+            "f1": 0.9090909090909091
+          }
+        }
+      }
+    }
+  }
+}

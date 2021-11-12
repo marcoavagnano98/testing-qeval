@@ -1,0 +1,132 @@
+{
+  "type": "hyp",
+  "text": "While the DNA-binding activity of CREB is in most cases constitutive the transactivation potential of CREB is regulated by the phosphorylation of CREB and recruitment of p65 48.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CREB",
+        "CREB",
+        "48"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the transactivation potential of?",
+          "What is the transactivation potential of?",
+          "What is the phosphorylation of CREB and recruitment of p65?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the DNA-binding activity",
+        "CREB",
+        "most cases",
+        "the transactivation potential",
+        "CREB",
+        "the phosphorylation",
+        "CREB",
+        "recruitment",
+        "p65"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is most often constitutive of CREB?",
+          "What is the transactivation potential of?",
+          "In what cases is the DNA-binding activity of CREB constitutive?",
+          "What is regulated by the phosphorylation of CREB and recruitment of p",
+          "What is the transactivation potential of?",
+          "What is the transactivation potential of CREB regulated by?",
+          "What is the transactivation potential of?",
+          "What is the transactivation potential of CREB regulated by?",
+          "What is the phosphorylation of CREB and recruitment of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the transactivation potential of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CREB",
+        "answerability": 0.7238638997077942,
+        "ground_truth": {
+          "CREB": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the transactivation potential of CREB regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation",
+        "answerability": 0.9884380102157593,
+        "ground_truth": {
+          "CBP": {
+            "bertscore": 0.6539108157157898,
+            "f1": 0
+          },
+          "the phosphorylation": {
+            "bertscore": 0.9380731582641602,
+            "f1": 1.0
+          },
+          "recruitment": {
+            "bertscore": 0.7214167714118958,
+            "f1": 0
+          },
+          "CBP/p300": {
+            "bertscore": 0.6361281275749207,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the phosphorylation of CREB and recruitment of CBP/p300": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07209253311157227,
+        "ground_truth": {
+          "48": {
+            "bertscore": 0.5965855717658997,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is most often constitutive of CREB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA-binding activity",
+        "answerability": 0.9925491213798523,
+        "ground_truth": {
+          "the DNA-binding activity": {
+            "bertscore": 0.9311441779136658,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "In what cases is the DNA-binding activity of CREB constitutive?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in most cases",
+        "answerability": 0.9231628179550171,
+        "ground_truth": {
+          "most cases": {
+            "bertscore": 0.8792340755462646,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is regulated by the phosphorylation of CREB and recruitment of CBP": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11637622117996216,
+        "ground_truth": {
+          "the transactivation potential": {
+            "bertscore": 0.6452012062072754,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "Maximal induction of the c-fos gene required the two AP-1 sites and the kappa B site within the fos-B promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "two",
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many AP-1 sites did it take to induct the c-fos",
+          "What is the name of the two sites required to induction the c-fos"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Maximal induction",
+        "the c-fos gene",
+        "the two AP-1 sites",
+        "the kappa B site",
+        "the fos-B promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the c-fos gene required for?",
+          "What gene required the two AP-1 sites and the kappa B site within the",
+          "What did the c-fos gene require to be induction optimally?",
+          "What is required to induction the c-fos gene?",
+          "What is the kappa B site located in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the first step in the c-fos gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.23243170976638794,
+        "ground_truth": {
+          "Maximal induction": {
+            "bertscore": 0.6901797652244568,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was inducted at maximum?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos",
+        "answerability": 0.9553157687187195,
+        "ground_truth": {
+          "the c-fos gene": {
+            "bertscore": 0.8409395217895508,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What gene was inducted at maximum induction?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos",
+        "answerability": 0.9478403329849243,
+        "ground_truth": {
+          "the fos-B gene": {
+            "bertscore": 0.7433016300201416,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "(IL-4) plays a major role in this process by forming IL-4-secreting Th2 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a major role",
+        "this process",
+        "Th2 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What role does IL-4 play in the formation of Th2 cells?",
+          "What is the role of IL-4 in Th2 cells?",
+          "What type of cells are IL-4-secreting?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What role does IL-4 play in the differentiation of Th2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4-secreting",
+        "answerability": 0.669662594795227,
+        "ground_truth": {
+          "a major role": {
+            "bertscore": 0.5992919206619263,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of IL-4 in the differentiation of Th2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4-secreting",
+        "answerability": 0.7694995999336243,
+        "ground_truth": {
+          "this process": {
+            "bertscore": 0.6951289176940918,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09296786785125732,
+        "ground_truth": {
+          "the differentiation": {
+            "bertscore": 0.6921310424804688,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are IL-4-secreting?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2 cells",
+        "answerability": 0.9987978339195251,
+        "ground_truth": {
+          "Th2 cells": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

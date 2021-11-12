@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "The human T-cell leukemia viruses HTLV- (T-cell leukemia viruses HTLV-I and HTLV-I) have been identified and shown to be involved in disease progression and leukemia.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The human T-cell leukemia viruses",
+        "HTLV-",
+        "T-cell leukemia",
+        "HTLV-I",
+        "HTLV-I",
+        "disease progression",
+        "leukemia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What are the two types of leukemia that are involved in the disease?",
+          "What is the name of the two T-cell leukemia viruses?",
+          "What is the name of the disease that is caused by the HTLV-?",
+          "What is the other name for the two T-cell leukemia viruses?",
+          "What is the other name for the two T-cell leukemia viruses?",
+          "What is the HTLV-I involved in?",
+          "What is the most common type of cancer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is HTLV-?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell leukemia viruses",
+        "answerability": 0.898034930229187,
+        "ground_truth": {
+          "The human T-cell leukemia viruses": {
+            "bertscore": 0.9103642106056213,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What is the name of the virus that causes T-cell lymphomas and leukemia": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HTLV-",
+        "answerability": 0.8808486461639404,
+        "ground_truth": {
+          "HTLV-": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the acronym for HTLV-?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HTLV-I",
+        "answerability": 0.7728199362754822,
+        "ground_truth": {
+          "(T-cell lymphomas": {
+            "bertscore": 0.6518838405609131,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the disease that is caused by HTLV-?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukemia",
+        "answerability": 0.9538964033126831,
+        "ground_truth": {
+          "leukemia": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

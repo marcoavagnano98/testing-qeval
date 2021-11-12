@@ -1,0 +1,122 @@
+{
+  "type": "ref",
+  "text": "(cold shock serum deprivation and gamma-radiation) pathways in TIMP-1-negative BL lines. TIMP-1 suppression of PCD is not due to metalloproteinase inhibition as reduction and alkylation of the TIMP-1 did not abolish this activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "BL",
+        "PCD"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of line has TIMP-1 negative cells?",
+          "What does TIMP-1 suppress?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(cold shock serum deprivation and gamma-radiation) pathways",
+        "TIMP-1-negative BL lines",
+        "TIMP-1 suppression",
+        "PCD",
+        "inhibition",
+        "reduction",
+        "alkylation",
+        "the TIMP-1",
+        "this activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does TIMP-1 suppress?",
+          "What type of cells have a higher risk of PCD?",
+          "What is not due to metalloproteinase inhibition?",
+          "What does TIMP-1 suppress?",
+          "What is not the cause of TIMP-1 suppression of PCD?",
+          "What did not abolish the TIMP-1 activity?",
+          "What did not abolish the TIMP-1 activity?",
+          "What pathway was not inhibited by metalloproteinase inhibition?",
+          "What did TIMP-1 suppression not abolish?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is not due to metalloproteinase inhibition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TIMP-1 suppression of PCD",
+        "answerability": 0.9829913973808289,
+        "ground_truth": {
+          "PCD": {
+            "bertscore": 0.7689565420150757,
+            "f1": 0.4
+          },
+          "TIMP-1 suppression": {
+            "bertscore": 0.923489511013031,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is not the cause of the suppression of PCD?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metalloproteinase inhibition",
+        "answerability": 0.9798367023468018,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 0.768086850643158,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did not abolish the activity of TIMP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reduction and alkylation",
+        "answerability": 0.9024665355682373,
+        "ground_truth": {
+          "reduction": {
+            "bertscore": 0.7852970361709595,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did not abolish the TIMP-1 activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reduction and alkylation",
+        "answerability": 0.948335587978363,
+        "ground_truth": {
+          "alkylation": {
+            "bertscore": 0.8968149423599243,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein was not able to suppress PCD?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TIMP-1",
+        "answerability": 0.6475859880447388,
+        "ground_truth": {
+          "the TIMP-1": {
+            "bertscore": 0.9353065490722656,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did TIMP-1 not abolish?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5054117441177368,
+        "ground_truth": {
+          "this activity": {
+            "bertscore": 0.6845887899398804,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

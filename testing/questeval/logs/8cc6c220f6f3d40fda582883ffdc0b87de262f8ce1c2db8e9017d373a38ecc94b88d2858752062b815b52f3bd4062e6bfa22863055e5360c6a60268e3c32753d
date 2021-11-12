@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "PTHrP drives breast tumor initiation progression and metastasis in mice and is a potential therapy target. The CXCR4 PI3K/Akt ERK and NF-kappaB pathway is one of the major signaling cascades involved in the development of metastasis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTHrP",
+        "Akt ERK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drives breast tumor initiation and metastasis in mice?",
+          "What is the CXCR4 PI3K/NF-kappaB pathway"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTHrP",
+        "breast tumor initiation progression",
+        "metastasis",
+        "mice",
+        "a potential therapy target",
+        "The CXCR4 PI3K/Akt ERK and NF-kappaB pathway",
+        "the development",
+        "metastasis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drives breast tumor initiation and metastasis in mice?",
+          "What does PTHrP drive in mice?",
+          "What is the main signaling cascade in breast tumor development?",
+          "What type of animal is PTHrP a potential therapy target for?",
+          "What is PTHrP?",
+          "What is involved in the development of breast tumors?",
+          "What is the CXCR4 PI3K/Akt ERK and NF",
+          "What is the main signaling cascade in breast tumor development?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the CXCR4 PI3K/?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt ERK and NF-kappaB",
+        "answerability": 0.8806405663490295,
+        "ground_truth": {
+          "Akt ERK": {
+            "bertscore": 0.7758631110191345,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where does SDF-1alpha up-regulate interleukin-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 7.95125961303711e-05,
+        "ground_truth": {
+          "microglia": {
+            "bertscore": 0.7005928754806519,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SDF-1alpha do through CXCR4 PI3K/Akt": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004503846168518066,
+        "ground_truth": {
+          "SDF-1alpha up-regulates interleukin-6": {
+            "bertscore": 0.5857288241386414,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SDF-1alpha up-regulate in microglia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 3.123283386230469e-05,
+        "ground_truth": {
+          "CXCR4 PI3K/Akt ERK and NF-kappaB-dependent pathway": {
+            "bertscore": 0.5490759611129761,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

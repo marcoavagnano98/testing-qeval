@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Tal-1 transcription was shown to be monoallelic in Jurkat a T-cell line that expresses tal-1 from the promoters 1a and 1b.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1a",
+        "1b"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoters are present in Jurkat?",
+          "What promoters are present in Jurkat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Tal-1 transcription",
+        "Jurkat",
+        "a T-cell line",
+        "the promoters"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is monoallelic in Jurkat?",
+          "What is the name of the T-cell line that expresses tal-1 from the",
+          "What is Jurkat?",
+          "What two parts of the T-cell line express tal-1?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is monoallelic in Jurkat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Tal-1 transcription",
+        "answerability": 0.8702084422111511,
+        "ground_truth": {
+          "Tal-1 transcription": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the T-cell line that expresses tal-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat",
+        "answerability": 0.990497350692749,
+        "ground_truth": {
+          "Jurkat": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cell expresses tal-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T-cell",
+        "answerability": 0.7962505221366882,
+        "ground_truth": {
+          "a T-cell line": {
+            "bertscore": 0.8742042183876038,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "In what condition is tal-1 expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "monoallelic",
+        "answerability": 0.958114504814148,
+        "ground_truth": {
+          "the absence": {
+            "bertscore": 0.6925856471061707,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the absence of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00028461217880249023,
+        "ground_truth": {
+          "apparent genomic alteration": {
+            "bertscore": 0.6956438422203064,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is tal-1 monoallelic?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription",
+        "answerability": 0.7942266464233398,
+        "ground_truth": {
+          "the locus": {
+            "bertscore": 0.7473912239074707,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

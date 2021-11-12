@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "This process is shown to evolve independently of the presence of TNF lymphotoxin alpha or the p55TNF-R although coexpression of a human TNF transgene accelerated pathological progression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the main factor that causes the development of TB?",
+          "What is the main factor that causes the development of TB?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This process",
+        "the presence",
+        "TNF lymphotoxin alpha",
+        "the p55TNF-R",
+        "coexpression",
+        "a human TNF transgene accelerated pathological progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that is shown to evolve independently of the presence of TNF lymphot",
+          "What does the development of a cytokine-like immune system independently evolve from?",
+          "What is the only other factor that can cause the development of TB?",
+          "What is the name of the TNF transgene that accelerated pathological progression?",
+          "What is the process of accelerating pathological progression?",
+          "What is the coexpression of TNF-R?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the main factor that causes the development of TB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1370672583580017,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789318323135376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process that is shown to evolve independently of the presence of TNF lymphot": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08765548467636108,
+        "ground_truth": {
+          "This process": {
+            "bertscore": 0.6877826452255249,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the development of a cytokine-like immune system independently evolve from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the presence of TNF lymphotoxin alpha or the p55TNF",
+        "answerability": 0.7230660915374756,
+        "ground_truth": {
+          "the presence": {
+            "bertscore": 0.6570244431495667,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the only other factor that can cause a tumor to develop?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4254075288772583,
+        "ground_truth": {
+          "TNF lymphotoxin alpha": {
+            "bertscore": 0.555361270904541,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the TNF transgene that accelerated the development of cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12711119651794434,
+        "ground_truth": {
+          "the p55TNF-R": {
+            "bertscore": 0.6295929551124573,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process of accelerating the development of TB?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "coexpression of a human TNF transgene",
+        "answerability": 0.8678364753723145,
+        "ground_truth": {
+          "coexpression": {
+            "bertscore": 0.7545790076255798,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the coexpression of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a human TNF transgene",
+        "answerability": 0.8611345291137695,
+        "ground_truth": {
+          "a human TNF transgene accelerated pathology": {
+            "bertscore": 0.900843620300293,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    }
+  }
+}

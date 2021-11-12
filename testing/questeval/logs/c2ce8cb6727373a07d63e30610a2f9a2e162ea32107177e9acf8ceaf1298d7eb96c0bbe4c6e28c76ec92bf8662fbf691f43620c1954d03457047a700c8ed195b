@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "PRAS40 binding to raptor was severely impaired in cells lacking SWI/SNF complexes and this was abrogated by mutation of the major mTORC1 phosphorylation site Ser(183) to Asp.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "SWI",
+        "SNF",
+        "Asp"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was mutated to mTORC1?",
+          "What protein was mutated to mTORC1?",
+          "What was the mTORC1 phosphorylation site?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "raptor",
+        "cells",
+        "SWI/SNF complexes",
+        "mutation",
+        "the major mTORC1 phosphorylation site",
+        "Asp"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did PRAS40 binding to severely impaired in cells lacking SWI/SNF complexe",
+          "In what type of cells was PRAS40 binding severely impaired?",
+          "What did cells lacking?",
+          "What caused the raptor binding to be severely impaired?",
+          "What mutation robbed PRAS40 from binding to raptors?",
+          "What was the mTORC1 phosphorylation site?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did mutation of PRAS40 inhibit binding to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "raptor",
+        "answerability": 0.7530409097671509,
+        "ground_truth": {
+          "raptor": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the binding of raptors to the protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mutation of the major mTORC1 phosphorylation site Ser(183) to",
+        "answerability": 0.8091193437576294,
+        "ground_truth": {
+          "mutation": {
+            "bertscore": 0.6250104904174805,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What protein was mutated to inhibit binding to raptors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4347042441368103,
+        "ground_truth": {
+          "PRAS40": {
+            "bertscore": 0.6720724701881409,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

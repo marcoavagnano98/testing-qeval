@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "By deleted and mutated analysis of the IL-8 promoters the AP-1 and kappa B-like sites were identified as the responsive elements for PMA and ionomycin. Transcription mediated by NFAT is highly inducible in effector CD4+ T helper 2 (Th2) cells but not in Th1 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-8",
+        "AP-1",
+        "PMA",
+        "NFAT",
+        "2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter was deleted and mutated?",
+          "What promoter was identified as responsive for PMA?",
+          "What is the responsive element for ionomycin?",
+          "What is highly inducible in effector CD4+ T helper 2 cells?",
+          "What is the name of the effector CD4+ T helper?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "analysis",
+        "the IL-8 promoters",
+        "the AP-1 and kappa B-like sites",
+        "the responsive elements",
+        "PMA",
+        "Transcription",
+        "NFAT",
+        "effector CD4",
+        "T helper 2 (Th2) cells",
+        "Th1 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to identify the AP-1 and kappa B-like sites?",
+          "What was deleted and mutated?",
+          "What are the responsive elements for PMA and ionomycin?",
+          "What are AP-1 and kappa B-like sites identified as?",
+          "What is the responsive element for ionomycin?",
+          "What is highly inducible in effector CD4+ T helper 2 cells?",
+          "What is highly inducible in effector CD4+ T helper 2 cells?",
+          "What type of cell is highly inducible?",
+          "What type of cells are highly inducible?",
+          "What type of cells are not sensitive to NFAT?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is highly inducible in effector CD4+ T helper 2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Transcription mediated by NFAT",
+        "answerability": 0.9014838337898254,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 0.8113439679145813,
+            "f1": 0.4
+          },
+          "Transcription": {
+            "bertscore": 0.8097919225692749,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the name of the effector CD4+ T helper cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2",
+        "answerability": 0.6347391605377197,
+        "ground_truth": {
+          "2": {
+            "bertscore": 0.7733945250511169,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells are T helper 2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effector CD4+",
+        "answerability": 0.6504195928573608,
+        "ground_truth": {
+          "effector CD4": {
+            "bertscore": 0.9360758662223816,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is transcription mediated by NFAT highly inducible in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "effector CD4+ T helper 2",
+        "answerability": 0.7630854845046997,
+        "ground_truth": {
+          "T helper 2 (Th2) cells": {
+            "bertscore": 0.7392579317092896,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What is transcription mediated by NFAT not inducible in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11328637599945068,
+        "ground_truth": {
+          "Th1 cells": {
+            "bertscore": 0.6154470443725586,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

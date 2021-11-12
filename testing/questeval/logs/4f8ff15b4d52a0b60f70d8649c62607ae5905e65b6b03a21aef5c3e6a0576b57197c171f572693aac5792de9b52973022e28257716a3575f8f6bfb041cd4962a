@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"The increase in IL-2 gene expression triggered by CD28 involves a kappa B-like sequence in the 5-regulatory region of the IL-2 promoter called CD28-responsive element.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is triggered by CD28?",
+          "What gene is triggered by CD28?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The increase",
+        "IL-2 gene expression",
+        "CD28",
+        "a kappa B-like sequence",
+        "the 5-regulatory region",
+        "the IL-2 promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the kappa B-like sequence that triggers IL-2 gene expression",
+          "What is triggered by CD28?",
+          "What is the kappa B-like sequence in the 5-regulatory region of",
+          "What is involved in the increase in IL-2 gene expression?",
+          "Where is the kappa B-like sequence located?",
+          "What is the CD28-responsive element?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is triggered by CD28?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9939482808113098,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the kappa B-like sequence that triggers IL-2 gene expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28-responsive element",
+        "answerability": 0.9808721542358398,
+        "ground_truth": {
+          "The increase": {
+            "bertscore": 0.6489183306694031,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is triggered by CD28?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increase in IL-2 gene expression",
+        "answerability": 0.9935181140899658,
+        "ground_truth": {
+          "IL-2 gene expression": {
+            "bertscore": 0.922626793384552,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the kappa B-like sequence in the 5-regulatory region of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28-responsive element",
+        "answerability": 0.956405520439148,
+        "ground_truth": {
+          "CD28": {
+            "bertscore": 0.7351944446563721,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in the increase in IL-2 gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappa B-like sequence",
+        "answerability": 0.9937285780906677,
+        "ground_truth": {
+          "a kappa B-like sequence": {
+            "bertscore": 0.9378839731216431,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where is the kappa B-like sequence located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in the 5-regulatory region of the IL-2 promoter",
+        "answerability": 0.9829211831092834,
+        "ground_truth": {
+          "the 5-regulatory region": {
+            "bertscore": 0.8102156519889832,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the CD28-responsive element?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappa B-like sequence in the 5-regulatory region of the IL",
+        "answerability": 0.9915213584899902,
+        "ground_truth": {
+          "the IL-2 promoter": {
+            "bertscore": 0.7780840992927551,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

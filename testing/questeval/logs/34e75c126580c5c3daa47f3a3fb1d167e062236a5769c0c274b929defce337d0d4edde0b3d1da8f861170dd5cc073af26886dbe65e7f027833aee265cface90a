@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "Increased nuclear localization of beta-catenin and p50 as well as enhanced IKKalpha/Akt interaction were also observed in glioma tissues.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IKKalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is involved in the interaction between Akt and beta-catenin?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Increased nuclear localization",
+        "beta-catenin",
+        "p50",
+        "enhanced IKKalpha/Akt interaction",
+        "glioma tissues"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was observed in beta-catenin and p50?",
+          "What protein was found to have a greater nuclear localization than p50?",
+          "What protein is involved in the nuclear localization of beta-catenin?",
+          "What is another effect of glioma?",
+          "Where was increased nuclear localization of beta-catenin and p50 observed?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What interaction was observed in glioma tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IKKalpha/Akt",
+        "answerability": 0.9672980904579163,
+        "ground_truth": {
+          "IKKalpha/AKT": {
+            "bertscore": 0.8989630341529846,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was observed in beta-catenin and p50?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Increased nuclear localization",
+        "answerability": 0.7684226632118225,
+        "ground_truth": {
+          "Increased nuclear localization": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was found to have a greater nuclear localization than p50?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta-catenin",
+        "answerability": 0.9852262139320374,
+        "ground_truth": {
+          "beta-catenin": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein is involved in the nuclear localization of beta-catenin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5276058912277222,
+        "ground_truth": {
+          "p50": {
+            "bertscore": 0.6552296280860901,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was observed in glioma tissues?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Increased nuclear localization of beta-catenin and p50",
+        "answerability": 0.7301602363586426,
+        "ground_truth": {
+          "enhanced IKKalpha/AKT interaction": {
+            "bertscore": 0.695042073726654,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was increased nuclear localization of beta-catenin and p50 observed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glioma tissues",
+        "answerability": 0.9607074856758118,
+        "ground_truth": {
+          "glioma tissues": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

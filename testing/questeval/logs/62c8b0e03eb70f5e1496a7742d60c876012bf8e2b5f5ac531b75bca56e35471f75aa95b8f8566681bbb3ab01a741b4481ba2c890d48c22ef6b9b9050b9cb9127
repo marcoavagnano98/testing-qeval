@@ -1,0 +1,164 @@
+{
+  "type": "hyp",
+  "text": "The expression vector was cotransfected with the chloramphenicol acetyl transferase (CAT) reporter gene regulated by the thymidine kinase promoter containing GAL4 DNA binding sites into NIH 3T3 293 K562 cells and Jurkat cell lines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CAT",
+        "NIH",
+        "3T3 293"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the reporter gene?",
+          "What organization was the vector cotransfected with?",
+          "What NIH cell line was the expression vector cotransfected with?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression vector",
+        "the chloramphenicol acetyl transferase",
+        "(CAT) reporter gene",
+        "the thymidine kinase promoter",
+        "GAL4 DNA binding sites",
+        "NIH 3T3 293 K562 cells",
+        "Jurkat cell lines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was cotransfected with the chloramphenicol acetyl transfer",
+          "What is CAT?",
+          "What is the chloramphenicol acetyl transferase?",
+          "What is the CAT reporter gene regulated by?",
+          "What did the CAT reporter gene contain?",
+          "Where was the expression vector cotransfected with the chloramphenicol acet",
+          "What was the vector cotransfected with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the reporter gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chloramphenicol acetyl transferase",
+        "answerability": 0.9258976578712463,
+        "ground_truth": {
+          "CAT": {
+            "bertscore": 0.6116986870765686,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What organization was responsible for the synthesis of the CAT reporter gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05918455123901367,
+        "ground_truth": {
+          "NIH": {
+            "bertscore": 0.6401558518409729,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What NIH cell line was the CAT reporter gene cotransfected with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Jurkat",
+        "answerability": 0.7453550100326538,
+        "ground_truth": {
+          "3T3 293 K562": {
+            "bertscore": 0.6560143828392029,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cell line was the vector cotransfected with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.578431248664856,
+        "ground_truth": {
+          "Jurkat": {
+            "bertscore": 0.6695128679275513,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was cotransfected with the chloramphenicol acetyl transfer": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "The expression vector",
+        "answerability": 0.8813425302505493,
+        "ground_truth": {
+          "The expression vector": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is CAT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chloramphenicol acetyl transferase",
+        "answerability": 0.9890704154968262,
+        "ground_truth": {
+          "the chloramphenicol acetyl transferase": {
+            "bertscore": 0.9524704813957214,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the chloramphenicol acetyl transferase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CAT",
+        "answerability": 0.9912424087524414,
+        "ground_truth": {
+          "(CAT) reporter gene": {
+            "bertscore": 0.7620944976806641,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the CAT reporter gene regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "thymidine kinase promoter",
+        "answerability": 0.9952555298805237,
+        "ground_truth": {
+          "the thymidine kinase promoter": {
+            "bertscore": 0.9499363899230957,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the CAT reporter gene contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GAL4 DNA binding sites",
+        "answerability": 0.9397399425506592,
+        "ground_truth": {
+          "GAL4 DNA binding sites": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells were the vectors cotransfected with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NIH 3T3 293 K562 cells and Jurkat cell lines",
+        "answerability": 0.7089016437530518,
+        "ground_truth": {
+          "NIH 3T3 293 K562 and Jurkat cell lines": {
+            "bertscore": 0.9644323587417603,
+            "f1": 0.9411764705882353
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "type": "hyp",
+  "text": "Cytomegalovirus (CMV) infection induced interleukin-8 (IL-8) gene expression in a human monocytic cell line THP-1 cells leading to IL-8 secretion.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "THP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cell line was induced by cytomegalovirus infection?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cytomegalovirus (CMV) infection",
+        "interleukin-8 (IL-8) gene expression",
+        "a human monocytic cell line THP-1 cells",
+        "secretion"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced IL-8 gene expression in a human monocytic cell line T",
+          "What did CMV infection cause?",
+          "What did CMV infection cause to produce IL-8?",
+          "What did CMV infection cause?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does a drug called IL-1A completely inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00022226572036743164,
+        "ground_truth": {
+          "IL-8": {
+            "bertscore": 0.6703285574913025,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-8 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005335211753845215,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7272055745124817,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Both C1 and C2 proteins also bind to a similar sequence found in the interleukin-2-receptor alpha-subunit enhancer.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Both C1",
+        "C2 proteins",
+        "a similar sequence",
+        "the interleukin-2-receptor alpha-subunit enhancer"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two proteins bind to a similar sequence found in the interleukin-2-",
+          "What other protein binds to a sequence found in the interleukin-2-",
+          "What do both C1 and C2 proteins bind to?",
+          "What is the same sequence as C1 and C2 proteins?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What two proteins bind to a similar sequence found in the interleukin-2-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C1 and C2 proteins",
+        "answerability": 0.9079276323318481,
+        "ground_truth": {
+          "Both C1": {
+            "bertscore": 0.7016103863716125,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What other protein binds to a sequence found in the interleukin-2-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C1",
+        "answerability": 0.8625870943069458,
+        "ground_truth": {
+          "C2 proteins": {
+            "bertscore": 0.7128426432609558,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do both C1 and C2 proteins bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a similar sequence",
+        "answerability": 0.8884103894233704,
+        "ground_truth": {
+          "a similar sequence": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the same sequence as C1 and C2 proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6653822660446167,
+        "ground_truth": {
+          "the interleukin-2-receptor alpha-subunit enhancer": {
+            "bertscore": 0.5725463628768921,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

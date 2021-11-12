@@ -1,0 +1,134 @@
+{
+  "type": "hyp",
+  "text": "Through an expression cloning approach we identified E2F-1 as a activator of the hTERT gene in human tumor cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "E2F-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene was identified as a hTERT activator?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "an expression cloning approach",
+        "we",
+        "E2F-1",
+        "a activator",
+        "the hTERT gene",
+        "human tumor cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How did we identify E2F-1 as a activator of the hTERT",
+          "How did we identify E2F-1?",
+          "What gene was identified as a hTERT activator?",
+          "What is E2F-1?",
+          "What gene did we identify as E2F-1?",
+          "Where did we identify E2F-1 as a activator of the hTERT"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is an activator of the hTERT gene in normal human somatic cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "E2F-1",
+        "answerability": 0.9403263330459595,
+        "ground_truth": {
+          "E2F-1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the repressor function of E2F-1 in human tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07021075487136841,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.7094627618789673,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is E2F-1 a part of in human tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hTERT gene",
+        "answerability": 0.9915049076080322,
+        "ground_truth": {
+          "the repressor function": {
+            "bertscore": 0.6946693062782288,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what cell type is E2F-1 a repressor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003104567527770996,
+        "ground_truth": {
+          "human tumor cells": {
+            "bertscore": 0.6510415077209473,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we demonstrate that E2F-1 is an activator of the hTERT": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.530769407749176,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is E2F-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a activator of the hTERT gene",
+        "answerability": 0.978630781173706,
+        "ground_truth": {
+          "an activator": {
+            "bertscore": 0.7376710772514343,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What gene is E2F-1 an activator of in normal human somatic cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "hTERT",
+        "answerability": 0.9676001071929932,
+        "ground_truth": {
+          "the hTERT gene": {
+            "bertscore": 0.7946919202804565,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "Where is E2F-1 an activator of the hTERT gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human tumor cells",
+        "answerability": 0.996873676776886,
+        "ground_truth": {
+          "normal human somatic cells": {
+            "bertscore": 0.852472722530365,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

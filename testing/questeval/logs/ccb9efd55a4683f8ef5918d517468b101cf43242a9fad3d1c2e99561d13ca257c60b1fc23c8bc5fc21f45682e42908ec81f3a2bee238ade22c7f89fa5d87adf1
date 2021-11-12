@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "These are essential for IL-2 inducibility of PRRIII/CAT reporter constructs. signaling inhibited Stat b proteins from binding to the human GASd element.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-2 inducibility",
+        "PRRIII/CAT reporter constructs",
+        "inhibited Stat b proteins",
+        "the human GASd element"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the function of Stat b proteins?",
+          "What is IL-2 inducibility important for?",
+          "What did signaling do to the human GASd element?",
+          "What did signaling inhibit Stat b proteins from binding to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What induced the binding of Stat5a and b proteins to the human GASd": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signaling",
+        "answerability": 0.6567823886871338,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.7262818813323975,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-2 induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1343262791633606,
+        "ground_truth": {
+          "the binding": {
+            "bertscore": 0.7001460790634155,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IL-2 induce binding of to the human GASd element?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stat b proteins",
+        "answerability": 0.7872713208198547,
+        "ground_truth": {
+          "Stat5a and b proteins": {
+            "bertscore": 0.815197765827179,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What did IL-2 induce binding of Stat5a and b proteins to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.036514222621917725,
+        "ground_truth": {
+          "the human GASd element": {
+            "bertscore": 0.6359823346138,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

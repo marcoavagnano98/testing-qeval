@@ -1,0 +1,88 @@
+{
+  "type": "ref",
+  "text": "Actin signaling controls serum response factor (SRF) activity via SRF interaction with the myocardin-related transcriptional activator (MRTF)-A and tethering to a single CArG box sequence within the CCN1 promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Actin",
+        "controls serum response factor (SRF) activity",
+        "SRF interaction",
+        "the myocardin-related transcriptional activator",
+        "MRTF)-A",
+        "a single CArG box sequence",
+        "the CCN1 promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling controls serum response factor activity?",
+          "What does actin signaling do?",
+          "What is the mechanism by which Actin signaling controls serum response factor activity?",
+          "What does MRTF-A stand for?",
+          "What is the name of the myocardin-related transcriptional activator?",
+          "What does actin signaling tether to?",
+          "Where does actin signaling bind to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is involved in apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007879734039306641,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 0.6996481418609619,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling block apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010761737823486328,
+        "ground_truth": {
+          "Actin": {
+            "bertscore": 0.6764724850654602,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does actin signaling do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "controls serum response factor (SRF) activity",
+        "answerability": 0.9496114253997803,
+        "ground_truth": {
+          "blocks ligand-induced apoptosis": {
+            "bertscore": 0.7011871933937073,
+            "f1": 0
+          },
+          "up-regulating p53-dependent DR5 expression": {
+            "bertscore": 0.6931610703468323,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does actin signaling inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005646824836730957,
+        "ground_truth": {
+          "Akt/Hdm2-mediated p53 degradation": {
+            "bertscore": 0.5771719813346863,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Enhanced IL-2 transcription correlates with increased c-fos mRNA expression and increased Fos content of AP-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "AP-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA is associated with increased IL-2 transcription?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "increased c-fos mRNA expression",
+        "increased Fos content"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does IL-2 transcription correlate with?",
+          "What is the mRNA that correlates with IL-2 transcription?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is associated with increased c-fos synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.7168145179748535,
+        "ground_truth": {
+          "AP-1": {
+            "bertscore": 0.9050096273422241,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-2 transcription correlate with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-fos mRNA expression",
+        "answerability": 0.7745152115821838,
+        "ground_truth": {
+          "increased c-fos synthesis": {
+            "bertscore": 0.8642273545265198,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is a possible result of c-fos synthesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.15051990747451782,
+        "ground_truth": {
+          "increased Fos content": {
+            "bertscore": 0.6338474154472351,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

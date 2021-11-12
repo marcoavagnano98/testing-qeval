@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "12-(13)C(2)-glucose a mitochondrial enzyme involved in the reductive metabolism of 12-(13)C(2)-glucose.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a mitochondrial enzyme",
+        "the reductive metabolism"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in the reductive metabolism of 12-(13)C(2)-gluco",
+          "What is the mitochondrial enzyme involved in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enzyme is responsible for the metabolism of 12-(13)C(2)-glucose": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitochondrial",
+        "answerability": 0.8988889455795288,
+        "ground_truth": {
+          "HUVEC": {
+            "bertscore": 0.6517981886863708,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main process of glucose?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reductive metabolism",
+        "answerability": 0.8653373122215271,
+        "ground_truth": {
+          "The metabolism": {
+            "bertscore": 0.8209225535392761,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does the metabolism of 12-(13)C(2)-glucose allow?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reductive",
+        "answerability": 0.799301266670227,
+        "ground_truth": {
+          "us": {
+            "bertscore": 0.70940762758255,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the metabolism of HUVEC allow us to trace?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0008793473243713379,
+        "ground_truth": {
+          "the main glucose metabolic pathways": {
+            "bertscore": 0.608364462852478,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the pentose cycle?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000953376293182373,
+        "ground_truth": {
+          "glycogen synthesis": {
+            "bertscore": 0.6346513628959656,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main glucose metabolic pathway?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "reductive metabolism",
+        "answerability": 0.5334650278091431,
+        "ground_truth": {
+          "the pentose cycle": {
+            "bertscore": 0.719655454158783,
+            "f1": 0
+          },
+          "the glycolytic pathways": {
+            "bertscore": 0.7063453197479248,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

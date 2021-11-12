@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Here we show that kinase-dependent phosphorylation of Mad3p is required for the spindle checkpoint response to lack of tension at kinetochores.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "kinase-dependent phosphorylation",
+        "Mad3p",
+        "the spindle checkpoint response",
+        "lack",
+        "tension",
+        "kinetochores"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the reason for the kinase-dependent phosphorylation of Mad",
+          "What is required for the spindle checkpoint response to lack of tension at kinet",
+          "What is required for the spindle checkpoint response to lack of tension at kinet",
+          "What is kinase-dependent phosphorylation of Mad3p required for",
+          "What is the reason for the spindle checkpoint response?",
+          "What is the spindle checkpoint response to?",
+          "What is the spindle checkpoint response to lack of tension?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for the spindle checkpoint response to lack of tension at kinet": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kinase-dependent phosphorylation of Mad3p",
+        "answerability": 0.9697378277778625,
+        "ground_truth": {
+          "Ipl1p-dependent phosphorylation": {
+            "bertscore": 0.8778851628303528,
+            "f1": 0.3333333333333333
+          },
+          "Mad3p": {
+            "bertscore": 0.6782718896865845,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is phosphorylation of Mad3p required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "spindle checkpoint response",
+        "answerability": 0.9858419299125671,
+        "ground_truth": {
+          "the spindle checkpoint response": {
+            "bertscore": 0.9277604818344116,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the reason for the spindle checkpoint response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lack of tension at kinetochores",
+        "answerability": 0.989527702331543,
+        "ground_truth": {
+          "lack": {
+            "bertscore": 0.7006662487983704,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is required for the spindle checkpoint response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kinase-dependent phosphorylation of Mad3p",
+        "answerability": 0.9134527444839478,
+        "ground_truth": {
+          "tension": {
+            "bertscore": 0.5641955733299255,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the spindle checkpoint response to lack of tension?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kinase-dependent phosphorylation of Mad3p",
+        "answerability": 0.6548541188240051,
+        "ground_truth": {
+          "kinetochores": {
+            "bertscore": 0.5904675126075745,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

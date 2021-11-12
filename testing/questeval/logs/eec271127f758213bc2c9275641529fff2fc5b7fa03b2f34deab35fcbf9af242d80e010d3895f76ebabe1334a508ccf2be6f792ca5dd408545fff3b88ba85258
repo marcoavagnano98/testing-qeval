@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Transcriptional activation of the HIV enhancer was also subject to regulation by recently cloned I kappa B-alpha(MAD3).\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Transcriptional activation",
+        "the HIV enhancer",
+        "regulation",
+        "I"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the HIV enhancer subject to regulation by?",
+          "What is the transcriptional activation of?",
+          "What was transcriptional activation of the HIV enhancer subject to?",
+          "What kappa B-alpha(MAD3) was recently clone"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the HIV enhancer subject to regulation by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07895469665527344,
+        "ground_truth": {
+          "Transcriptional activation": {
+            "bertscore": 0.6912813186645508,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the transcriptional activation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HIV enhancer",
+        "answerability": 0.9262892007827759,
+        "ground_truth": {
+          "the HIV enhancer": {
+            "bertscore": 0.9247298836708069,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was transcriptional activation of the HIV enhancer subject to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulation",
+        "answerability": 0.9034480452537537,
+        "ground_truth": {
+          "regulation": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What kappa B-alpha(MAD-3) was recently clon": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4784407615661621,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.6798964142799377,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

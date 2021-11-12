@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "These results indicate that LMP1 appropriates TRAMP to enable efficient long-term lymphoblastoid cell outgrowth.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TRAMP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does LMP1 use to enable efficient long-term lymphoblastoid cell"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "LMP1",
+        "TRAMP",
+        "efficient long-term lymphoblastoid cell outgrowth"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that LMP1 appropriates TRAMP to enable efficient long-term lymphoblast",
+          "What receptor is responsible for enabling efficient long-term lymphoblastoid cell out",
+          "What does LMP1 use to enable efficient long-term lymphoblastoid cell",
+          "What does LMP1 enable?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does LMP1 use to enable efficient long-term lymphoblastoid cell": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TRAMP",
+        "answerability": 0.7861721515655518,
+        "ground_truth": {
+          "TRADD": {
+            "bertscore": 0.8966505527496338,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What indicates that LMP1 appropriates TRADD to enable efficient long-term lymphoblast": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09381413459777832,
+        "ground_truth": {
+          "These results": {
+            "bertscore": 0.63137286901474,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene is responsible for enabling efficient long-term lymphoblastoid cell out": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LMP1",
+        "answerability": 0.8921910524368286,
+        "ground_truth": {
+          "LMP1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does LMP1 enable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3175523281097412,
+        "ground_truth": {
+          "efficient long-term lymphoblastoid cell outgrowth": {
+            "bertscore": 0.622276246547699,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

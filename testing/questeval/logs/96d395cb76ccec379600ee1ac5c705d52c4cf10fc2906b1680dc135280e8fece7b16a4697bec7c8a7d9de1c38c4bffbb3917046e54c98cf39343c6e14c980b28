@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "A conserved MST-FOXO signaling pathway mediates oxidative-stress responses and extends life span.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MST-FOXO"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling pathway mediates oxidative stress responses?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A conserved MST-FOXO",
+        "pathway",
+        "oxidative-stress responses",
+        "life span"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling pathway mediates oxidative stress responses?",
+          "What signaling pathway mediates oxidative stress responses?",
+          "What does MST-FOXO mediate?",
+          "What does MST-FOXO prolong?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the signaling domain that mediates oxidative stress responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MST-FOXO",
+        "answerability": 0.9619148969650269,
+        "ground_truth": {
+          "MST": {
+            "bertscore": 0.8447381258010864,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling domain mediates oxidative stress responses?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MST-FOXO",
+        "answerability": 0.9378693103790283,
+        "ground_truth": {
+          "A conserved MST-FOXO": {
+            "bertscore": 0.8560320138931274,
+            "f1": 0.6666666666666666
+          },
+          "domain": {
+            "bertscore": 0.6637142896652222,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the conserved MST-FOXO signaling domain mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oxidative-stress responses",
+        "answerability": 0.9460772275924683,
+        "ground_truth": {
+          "oxidative-stress responses": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does a conserved MST-FOXO signaling domain extend?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "life span",
+        "answerability": 0.9183695912361145,
+        "ground_truth": {
+          "life span": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Decreased transcriptional activation by N-terminal deletions of CIITA is correlated directly with their reduced binding to TAFII32.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CIITA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is correlated with reduced binding to TAFII32?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Decreased transcriptional activation",
+        "N-terminal deletions",
+        "CIITA",
+        "TAFII32"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is correlated with reduced binding to TAFII32?",
+          "What is correlated with reduced binding to TAFII32?",
+          "What is correlated with reduced binding to TAFII32?",
+          "What protein is correlated with reduced transcriptional activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is correlated with reduced binding to TAFII32?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activation by N-terminal deletions",
+        "answerability": 0.9768394827842712,
+        "ground_truth": {
+          "CIITA": {
+            "bertscore": 0.6181898713111877,
+            "f1": 0
+          },
+          "Decreased transcriptional activation": {
+            "bertscore": 0.8166409134864807,
+            "f1": 0.5
+          },
+          "N-terminal deletions": {
+            "bertscore": 0.8695529699325562,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What protein is correlated with reduced transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CIITA",
+        "answerability": 0.7013946771621704,
+        "ground_truth": {
+          "TAFII32": {
+            "bertscore": 0.7934765219688416,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

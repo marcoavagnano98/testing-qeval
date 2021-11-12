@@ -1,0 +1,68 @@
+{
+  "type": "ref",
+  "text": "Nicked {beta}2-glycoprotein (plasminogen kringle 1-5) and attenuates its antiangiogenic property.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "beta}2-glycoprotein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the plasminogen kringle 1-5)?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "beta}2-glycoprotein",
+        "plasminogen",
+        "its antiangiogenic property"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the plasminogen kringle 1-5)?",
+          "What is the name of the protein that kringle 1-5)?",
+          "What does the plasminogen kringle 1-5) do to the be"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that has antiangiogenic properties?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta2-glycoprotein",
+        "answerability": 0.8531234860420227,
+        "ground_truth": {
+          "2-glycoprotein": {
+            "bertscore": 0.9341524243354797,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the name of the protein that was able to prevent angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta2-glycoprotein",
+        "answerability": 0.6766030788421631,
+        "ground_truth": {
+          "I": {
+            "bertscore": 0.5811800360679626,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the main benefit of the peptide?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12053656578063965,
+        "ground_truth": {
+          "antiangiogenic property": {
+            "bertscore": 0.6659246683120728,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

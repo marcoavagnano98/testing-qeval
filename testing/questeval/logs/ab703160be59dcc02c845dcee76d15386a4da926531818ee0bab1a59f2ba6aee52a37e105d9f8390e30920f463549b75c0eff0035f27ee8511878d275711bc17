@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "In late stages of erythroid maturation GPA was upregulated whereas CD34 c-kit PU.3 and GATA-2 were barely or not detected.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GPA",
+        "CD34"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was upregulated in late stages of erythroid maturation?",
+          "What is the only cytokine that is upregulated in late stages of eryth"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "late stages",
+        "erythroid maturation GPA",
+        "CD34 c-kit PU.3",
+        "GATA-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what stage of erythroid maturation was GPA upregulated?",
+          "What was upregulated in late stages of erythroid maturation?",
+          "What was barely detected in late stages of erythroid maturation?",
+          "What is the only erythroid that was detected in late stages of erythroid"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was upregulated in late stages of erythroid maturation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GPA",
+        "answerability": 0.9953255653381348,
+        "ground_truth": {
+          "GPA": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "erythroid maturation GPA": {
+            "bertscore": 0.7881081700325012,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the only erythroid that is upregulated in late stages of eryth": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.42500823736190796,
+        "ground_truth": {
+          "CD34": {
+            "bertscore": 0.6476292610168457,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what stage of erythroid maturation was GPA upregulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "late stages",
+        "answerability": 0.9981594085693359,
+        "ground_truth": {
+          "late stages": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was barely detected in late stages of erythroid maturation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD34 c-kit PU.3 and GATA-2",
+        "answerability": 0.9137651920318604,
+        "ground_truth": {
+          "CD34 c-kit PU.1": {
+            "bertscore": 0.9205619096755981,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the only erythroid that was detected in late stages of erythroid": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2066822052001953,
+        "ground_truth": {
+          "GATA-2": {
+            "bertscore": 0.6838648319244385,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

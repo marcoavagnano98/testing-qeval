@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "As a result GSE could inhibit VEGF-induced endothelial cell proliferation and migration as well as sprout formation from aorta ring.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GSE",
+        "aorta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What could inhibit VEGF-induced endothelial cell proliferation and migration?",
+          "What ring of the aorta could be blocked by GSE?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a result",
+        "GSE",
+        "VEGF-induced endothelial cell proliferation",
+        "migration",
+        "sprout formation",
+        "aorta ring"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What could GSE inhibit?",
+          "What could inhibit VEGF-induced endothelial cell proliferation and migration?",
+          "What could GSE inhibit?",
+          "What could GSE inhibit?",
+          "What could GSE inhibit from the aorta ring?",
+          "Where does GSE cause endothelial cell proliferation and migration?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What could inhibit VEGF-induced endothelial cell proliferation and migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GSE",
+        "answerability": 0.9954453110694885,
+        "ground_truth": {
+          "GSE": {
+            "bertscore": 0.9999995827674866,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What ring of the aorta could be blocked by GSE?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF",
+        "answerability": 0.8680551052093506,
+        "ground_truth": {
+          "aorta": {
+            "bertscore": 0.7027220129966736,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What could GSE inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-induced endothelial cell proliferation",
+        "answerability": 0.976555347442627,
+        "ground_truth": {
+          "a result": {
+            "bertscore": 0.568098247051239,
+            "f1": 0
+          },
+          "VEGF-induced endothelial cell proliferation": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          },
+          "migration": {
+            "bertscore": 0.6360920071601868,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What could GSE inhibit from the aorta ring?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF-induced endothelial cell proliferation and migration",
+        "answerability": 0.7199957370758057,
+        "ground_truth": {
+          "sprout formation": {
+            "bertscore": 0.703728199005127,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does GSE cause endothelial cell proliferation and migration?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.050578951835632324,
+        "ground_truth": {
+          "aorta ring": {
+            "bertscore": 0.6999062895774841,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

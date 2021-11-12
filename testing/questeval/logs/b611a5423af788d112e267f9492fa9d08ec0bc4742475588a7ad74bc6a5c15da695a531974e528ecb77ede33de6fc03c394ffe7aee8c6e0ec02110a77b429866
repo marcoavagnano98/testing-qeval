@@ -1,0 +1,106 @@
+{
+  "type": "ref",
+  "text": "TNF-alpha release peaked at 24 h and decreased thereafter and it was dose dependent and preceded by an increase of TNF-alpha mRNA detectable after 3 h of stimulation with mAb L243.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "24",
+        "TNF",
+        "3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was released at 24 h?",
+          "At what time did TNF-alpha release peak?",
+          "What was released at 24 h?",
+          "How many h of stimulation with mAb L243 did TNF-alpha"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF-alpha release",
+        "24 h",
+        "it",
+        "an increase",
+        "3 h",
+        "stimulation",
+        "mAb L243"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What peak did the mAb L243 induce?",
+          "When did TNF-alpha release peak?",
+          "What was dose dependent?",
+          "What was the first effect of mAb L243 on TNF-alpha?",
+          "How long after stimulation did TNF-alpha mRNA increase?",
+          "What was the first step in the development of TNF-alpha?",
+          "What was the first drug to induce TNF-alpha release?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein is involved in the mRNA of macrophages?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.009932518005371094,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.6789320111274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is seen in macrophages?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007144808769226074,
+        "ground_truth": {
+          "IL-1": {
+            "bertscore": 0.67782062292099,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what cell type was TNF-alpha mRNA increased?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0010339021682739258,
+        "ground_truth": {
+          "macrophages": {
+            "bertscore": 0.6406634449958801,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was seen in TNF-alpha mRNA in macrophages?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0026783347129821777,
+        "ground_truth": {
+          "a slight increase": {
+            "bertscore": 0.6911754608154297,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was seen in macrophages?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00019103288650512695,
+        "ground_truth": {
+          "TNF-alpha mRNA": {
+            "bertscore": 0.6070394515991211,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

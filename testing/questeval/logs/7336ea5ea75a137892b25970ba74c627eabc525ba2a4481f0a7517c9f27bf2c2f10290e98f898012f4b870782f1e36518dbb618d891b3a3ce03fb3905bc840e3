@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "\"An in vitro binding site selection procedure was used to determine DNA sequences preferentially bound by wild-type HLF and chimeric E2A basic helix-loop-helix proteins isolated from various t(17;19)-bearing leukemias. \"\"All were found to selectively bind the consensus sequence 5-GTTACGTAAT-3 with high affinity.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HLF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the protein that was used to determine DNA sequences that were preferential"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An in vitro binding site selection procedure",
+        "DNA sequences",
+        "wild-type HLF",
+        "basic helix-loop-helix proteins",
+        "various t(17;19)-bearing leukemias",
+        "the consensus sequence",
+        "high affinity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to determine DNA sequences that were preferentially bound by HLF and",
+          "What was determined to be preferentially bound by HLF and chimeric E2A",
+          "What was used to determine DNA sequences that were preferentially bound by?",
+          "What did the in vitro binding site selection procedure determine?",
+          "What was the source of the helix-loop-helix proteins?",
+          "What did the chimeric E2A protein selectively bind?",
+          "What type of affinity did the HLF and E2A proteins have?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that binds the consensus sequence 5-GTTACGTA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1318455934524536,
+        "ground_truth": {
+          "HLF": {
+            "bertscore": 0.6840362548828125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to determine DNA sequences that were preferentially bound by HLF and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in vitro binding site selection procedure",
+        "answerability": 0.7736762762069702,
+        "ground_truth": {
+          "An in vitro binding site selection procedure": {
+            "bertscore": 0.9353721141815186,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was determined to be preferentially bound by HLF and chimeric E2A": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA sequences",
+        "answerability": 0.8027956485748291,
+        "ground_truth": {
+          "DNA sequences": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the most likely binding site for HLF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "consensus sequence 5-GTTACGTAAT-3",
+        "answerability": 0.6319172978401184,
+        "ground_truth": {
+          "wild-type HLF": {
+            "bertscore": 0.6725947856903076,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to determine DNA sequences that were preferentially bound by HLF?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "in vitro binding site selection procedure",
+        "answerability": 0.968048095703125,
+        "ground_truth": {
+          "chimeric E2A-HLF proteins": {
+            "bertscore": 0.6913139224052429,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the source of the HLF and E2A-HLF proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5073574781417847,
+        "ground_truth": {
+          "various t(17;19)-bearing leukemias": {
+            "bertscore": 0.6093109250068665,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the HLF and E2A-HLF proteins selectively bind?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the consensus sequence 5-GTTACGTAAT-3",
+        "answerability": 0.9004498720169067,
+        "ground_truth": {
+          "the consensus sequence": {
+            "bertscore": 0.7383209466934204,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What type of affinity did the HLF and E2A-HLF proteins have?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "high affinity",
+        "answerability": 0.8268932104110718,
+        "ground_truth": {
+          "high affinity": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

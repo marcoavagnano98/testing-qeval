@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Our results showed that HCMV binding to monocytes resulted in the production and release of IL-1beta protein.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our results",
+        "monocytes",
+        "the production",
+        "release",
+        "IL-1beta protein"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that HCMV binding to monocytes resulted in the production and release",
+          "What did HCMV binding to cause the production and release of IL-1beta",
+          "What did HCMV binding to monocytes result in?",
+          "What did HCMV binding to monocytes result in?",
+          "What protein was released by HCMV binding to monocytes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What showed that HCMV binding to monocytes resulted in the production and release": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Our results",
+        "answerability": 0.8702218532562256,
+        "ground_truth": {
+          "Our results": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did HCMV binding to cause the production and release of IL-1beta": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5317972898483276,
+        "ground_truth": {
+          "monocytes": {
+            "bertscore": 0.6662786602973938,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did HCMV binding to monocytes result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "production and release of IL-1beta protein",
+        "answerability": 0.9847900867462158,
+        "ground_truth": {
+          "the production": {
+            "bertscore": 0.5692956447601318,
+            "f1": 0.2857142857142857
+          },
+          "release": {
+            "bertscore": 0.5619842410087585,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What protein was released by HCMV binding to monocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-1beta",
+        "answerability": 0.9882170557975769,
+        "ground_truth": {
+          "IL-1beta protein": {
+            "bertscore": 0.9076564908027649,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

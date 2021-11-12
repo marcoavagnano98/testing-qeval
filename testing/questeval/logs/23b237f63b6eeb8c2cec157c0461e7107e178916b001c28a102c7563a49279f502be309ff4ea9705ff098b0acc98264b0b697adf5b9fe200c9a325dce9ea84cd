@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "The levels of GATA-1 Epo-R and globin mRNA expressed were not affected by a 24-hour incubation of either cell line with Epo GM-CSF or interleukin-3\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "24-hour",
+        "Epo GM-CSF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did the incubation of GATA-1 Epo-R and globin",
+          "What was used to incubate GATA-1 Epo-R?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The levels",
+        "GATA-1 Epo-R",
+        "globin",
+        "mRNA",
+        "a 24-hour incubation",
+        "either cell line",
+        "Epo GM-CSF",
+        "interleukin-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was not affected by the 24 hour incubation of either cell line with Epo",
+          "What is the name of the protein that is not affected by the incubation of a",
+          "What mRNA was not affected by the 24 hour incubation of either cell line with",
+          "What is the globin part of the protein?",
+          "What did not affect the levels of GATA-1 Epo-R and globin",
+          "What was incubated for 24 hours with Epo GM-CSF?",
+          "What was used to incubate GATA-1 Epo-R?",
+          "What protein was not affected by the 24 hour incubation of GATA-1 Epo-"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was not affected by the 24 hour incubation of either cell line with Epo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "levels of GATA-1 Epo-R and globin mRNA expressed",
+        "answerability": 0.897071123123169,
+        "ground_truth": {
+          "mRNA": {
+            "bertscore": 0.6954630017280579,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "How long did the mRNA expressed in the cell line with Epo GM-C": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "24-hour incubation",
+        "answerability": 0.7149306535720825,
+        "ground_truth": {
+          "24-hour": {
+            "bertscore": 0.8414596319198608,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was used to incubate mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.050096094608306885,
+        "ground_truth": {
+          "Epo GM-CSF": {
+            "bertscore": 0.6530838012695312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How long did it take for mRNA to be affected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.047564804553985596,
+        "ground_truth": {
+          "a 24-hour incubation": {
+            "bertscore": 0.6606634855270386,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the incubation of mRNA not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "levels of GATA-1 Epo-R and globin mRNA expressed",
+        "answerability": 0.6465878486633301,
+        "ground_truth": {
+          "either cell line": {
+            "bertscore": 0.6067329049110413,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not affected by the 24 hour incubation of a cell line with Ep": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GATA-1 Epo-R and globin mRNA expressed were not affected by",
+        "answerability": 0.7212612628936768,
+        "ground_truth": {
+          "interleukin-3": {
+            "bertscore": 0.7299565076828003,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

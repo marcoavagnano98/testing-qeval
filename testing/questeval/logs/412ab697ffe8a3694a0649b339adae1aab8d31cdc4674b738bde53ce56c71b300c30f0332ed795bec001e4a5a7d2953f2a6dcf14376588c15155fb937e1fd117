@@ -1,0 +1,164 @@
+{
+  "type": "hyp",
+  "text": "Here we document that overexpression of Id3 in progenitors that have initiated TCR gene rearrangement (pre-T cells) inhibits development into TCRalpha beta but not into TCRgamma delta T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TCR",
+        "TCRalpha",
+        "TCRgamma"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene rearrangement does Id3 inhibit development into?",
+          "What type of T cells does Id3 inhibit development into?",
+          "What type of T cells do we find that overexpression of Id3 inhibits?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "that overexpression",
+        "Id3",
+        "progenitors",
+        "TCR gene rearrangement",
+        "(pre-T cells",
+        "development",
+        "TCRalpha beta",
+        "TCRgamma delta T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of Id3 on TCRalpha beta cells?",
+          "What does Id3 inhibit development into?",
+          "What gene is overexpressed in pre-T cells?",
+          "What does overexpression of Id3 inhibit development into?",
+          "What is the term for pre-T cells?",
+          "What is the term for TCR gene rearrangement?",
+          "What does overexpression of Id3 inhibit?",
+          "What does overexpression of Id3 inhibit development into?",
+          "What does Id3 inhibit development into?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of T cells does Id3 inhibit development into?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCRalpha beta",
+        "answerability": 0.7953269481658936,
+        "ground_truth": {
+          "TCRalpha": {
+            "bertscore": 0.8954617381095886,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What type of T cells do we find that overexpression of Id3 inhibits?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCRalpha beta",
+        "answerability": 0.8760783076286316,
+        "ground_truth": {
+          "TCRgamma": {
+            "bertscore": 0.7858473062515259,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of Id3 on TCRalpha beta cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibits development",
+        "answerability": 0.9802531003952026,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6524569988250732,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Id3 inhibit development into?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCRalpha beta",
+        "answerability": 0.9526744484901428,
+        "ground_truth": {
+          "that overexpression": {
+            "bertscore": 0.6493384838104248,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is overexpressed in pre-T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Id3",
+        "answerability": 0.9888066053390503,
+        "ground_truth": {
+          "Id3": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does overexpression of Id3 inhibit development into?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCRalpha beta",
+        "answerability": 0.985386073589325,
+        "ground_truth": {
+          "progenitors": {
+            "bertscore": 0.6133684515953064,
+            "f1": 0
+          },
+          "TCRalpha beta": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "TCRgamma delta T cells": {
+            "bertscore": 0.8116905689239502,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the term for pre-T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCR gene rearrangement",
+        "answerability": 0.9638378024101257,
+        "ground_truth": {
+          "TCR gene rearrangements": {
+            "bertscore": 0.9819714426994324,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the term for TCR gene rearrangements?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pre-T cells",
+        "answerability": 0.9938952326774597,
+        "ground_truth": {
+          "(pre-T cells": {
+            "bertscore": 0.8996962308883667,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does overexpression of Id3 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "development",
+        "answerability": 0.9103609323501587,
+        "ground_truth": {
+          "development": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

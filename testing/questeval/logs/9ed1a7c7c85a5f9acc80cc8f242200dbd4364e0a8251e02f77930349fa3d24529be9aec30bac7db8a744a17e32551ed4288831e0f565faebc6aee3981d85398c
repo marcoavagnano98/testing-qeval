@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "These results indicate that Zac1 is a histone acetylation-regulated suppressor of NF-kappaB which is induced and implicated in HDAC inhibitor-induced EC cell apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Zac1",
+        "HDAC",
+        "EC"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the suppressor of NF-kappaB?",
+          "What is Zac1 involved in?",
+          "What cell apoptosis is Zac1 implicated in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These results",
+        "Zac1",
+        "a histone acetylation-regulated suppressor",
+        "NF-kappaB",
+        "HDAC inhibitor-induced EC cell apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What indicates that Zac1 is a histone acetylation-regulated suppress",
+          "What is the suppressor of NF-kappaB?",
+          "What is Zac1?",
+          "Zac1 is a histone acetylation-regulated suppressor of what",
+          "What is Zac1 implicated in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited HDAC inhibitor-induced cell apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Zac1",
+        "answerability": 0.5698881149291992,
+        "ground_truth": {
+          "Knockdown of Zac1": {
+            "bertscore": 0.8130574822425842,
+            "f1": 0.5
+          },
+          "Knockdown": {
+            "bertscore": 0.7222495079040527,
+            "f1": 0
+          },
+          "Zac1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited cell apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2374691367149353,
+        "ground_truth": {
+          "HDAC": {
+            "bertscore": 0.7025190591812134,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Zac1 inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.7010327577590942,
+        "ground_truth": {
+          "HDAC inhibitor-induced cell apoptosis": {
+            "bertscore": 0.6408806443214417,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

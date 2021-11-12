@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "Treatment with cisplatin had differential effects on WTp53 and the small molecular weight form of WTp53 that were cell line dependent.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Treatment",
+        "cisplatin",
+        "differential effects",
+        "WTp53",
+        "the small molecular weight form",
+        "WTp53"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did cisplatin have a difference effect on?",
+          "What treatment had a difference in the molecular weight of WTp53?",
+          "What was the effect of cisplatin on WTp53?",
+          "What protein was affected by cisplatin?",
+          "What type of WTp53 was affected by cisplatin?",
+          "What protein was affected by cisplatin?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did cisplatin have a difference effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "WTp53",
+        "answerability": 0.9963160753250122,
+        "ground_truth": {
+          "Treatment": {
+            "bertscore": 0.6903173923492432,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What treatment had a difference in the molecular weight of p53?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cisplatin",
+        "answerability": 0.8474909067153931,
+        "ground_truth": {
+          "cisplatin": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of cisplatin on WTp53?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differential effects",
+        "answerability": 0.9863468408584595,
+        "ground_truth": {
+          "differential effects": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What protein was affected by cisplatin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "WTp53",
+        "answerability": 0.9917793869972229,
+        "ground_truth": {
+          "WTp53": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "p53": {
+            "bertscore": 0.7102932929992676,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of p53 was affected by cisplatin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "WTp53",
+        "answerability": 0.9713501334190369,
+        "ground_truth": {
+          "the small molecular weight form": {
+            "bertscore": 0.6113913059234619,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

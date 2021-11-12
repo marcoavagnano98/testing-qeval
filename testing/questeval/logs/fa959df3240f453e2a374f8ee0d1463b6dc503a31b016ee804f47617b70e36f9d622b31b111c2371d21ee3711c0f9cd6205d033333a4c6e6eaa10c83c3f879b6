@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "Axin2 is induced by E2F1 and therefore acts as a point of cross-talk between the pRb/E2F and Wnt/beta-catenin pathways: two of the most frequently deregulated pathways in human cancers.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Wnt",
+        "two"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the most frequently deregulated pathway in human cancer?",
+          "How many of the most frequently deregulated pathways in human cancers are there?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "E2F1",
+        "a point",
+        "cross-talk between the pRb/E2F and Wnt/beta-catenin pathways",
+        "the most frequently deregulated pathways",
+        "human cancers"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is induced by axin2?",
+          "What does axin2 act as?",
+          "What does axin2 act as?",
+          "What is the role of axin2 in human cancer?",
+          "What is one of the most frequently deregulated pathways in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the most frequently deregulated pathway in human cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "pRb/E2F",
+        "answerability": 0.5649682879447937,
+        "ground_truth": {
+          "Wnt": {
+            "bertscore": 0.6804797053337097,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many of the most frequently deregulated pathways in human cancers are there?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "two",
+        "answerability": 0.8232258558273315,
+        "ground_truth": {
+          "two": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is induced by axin2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010552048683166504,
+        "ground_truth": {
+          "E2F1": {
+            "bertscore": 0.654482364654541,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does axin2 act as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "point of cross-talk",
+        "answerability": 0.7953499555587769,
+        "ground_truth": {
+          "a point": {
+            "bertscore": 0.6992064118385315,
+            "f1": 0.5
+          },
+          "cross-talk between the pRb/E2F and Wnt/beta-catenin pathways": {
+            "bertscore": 0.6859807372093201,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What is the role of axin2 in human cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3536432385444641,
+        "ground_truth": {
+          "the most frequently deregulated pathways": {
+            "bertscore": 0.6530699133872986,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is one of the most frequently deregulated pathways in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human cancers",
+        "answerability": 0.592263400554657,
+        "ground_truth": {
+          "human cancers": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

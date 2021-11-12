@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "A novel lipopolysaccharide-induced transcription factor regulating tumor necrosis factor alpha gene expression: molecular cloning sequencing  sequencing and chromosomal assignment.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A novel lipopolysaccharide-induced transcription factor",
+        "tumor necrosis factor alpha gene expression",
+        "sequencing and chromosomal assignment"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What regulates tumor necrosis factor alpha gene expression?",
+          "What is the role of lipopolysaccharide in cancer?",
+          "What is the process used to identify the gene that regulates tumor necrosis factor alpha"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What regulates tumor necrosis factor alpha gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "lipopolysaccharide-induced transcription factor",
+        "answerability": 0.973049521446228,
+        "ground_truth": {
+          "A novel lipopolysaccharide-induced transcription factor": {
+            "bertscore": 0.9156518578529358,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What is the role of lipopolysaccharide in cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "induced transcription factor regulating tumor necrosis factor alpha gene expression",
+        "answerability": 0.7199310660362244,
+        "ground_truth": {
+          "tumor necrosis factor alpha gene expression": {
+            "bertscore": 0.8961544036865234,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the purpose of cloning the gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08485162258148193,
+        "ground_truth": {
+          "sequencing characterization": {
+            "bertscore": 0.646416962146759,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main feature of the cloning process?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sequencing sequencing",
+        "answerability": 0.5455875396728516,
+        "ground_truth": {
+          "chromosomal assignment": {
+            "bertscore": 0.688822329044342,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

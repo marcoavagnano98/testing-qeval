@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Furthermore cyclosporin A which blocked TNF alpha production induced by PKC strongly inhibited IL-2R alpha and NF.kappa B activation. PKC stimulator and cAMP elevating agents synergistically induce IL-2 expression in T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein is cyclosporin A used to block?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF alpha production",
+        "PKC",
+        "IL-2R alpha and NF.kappa B activation",
+        "PKC stimulator",
+        "cAMP elevating agents",
+        "IL-2 expression",
+        "T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did cyclosporin A block?",
+          "What stimulator inhibited NF.kappa B activation?",
+          "What did cyclosporin A inhibit?",
+          "What is the name of the stimulator that inhibits IL-2R alpha production?",
+          "What is the other thing that inhibits IL-2 expression?",
+          "What does cyclosporin A inhibit?",
+          "What type of cells are stimulated by PKC?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the synergy between the PKC stimulator and the cAMP elev": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16509795188903809,
+        "ground_truth": {
+          "a clear-cut synergy": {
+            "bertscore": 0.6920610666275024,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulator did the study find a synergy between?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKC",
+        "answerability": 0.7952197194099426,
+        "ground_truth": {
+          "the PKC stimulator": {
+            "bertscore": 0.7190397381782532,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the PKC stimulator have a clear synergy with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cAMP elevating agents",
+        "answerability": 0.6579757928848267,
+        "ground_truth": {
+          "the cAMP elevating agents": {
+            "bertscore": 0.9424154162406921,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

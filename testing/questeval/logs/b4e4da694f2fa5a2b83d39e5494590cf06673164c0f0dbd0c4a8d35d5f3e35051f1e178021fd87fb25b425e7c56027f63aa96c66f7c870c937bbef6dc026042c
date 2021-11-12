@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "Role of cellular tumor necrosis factor receptor-associated factor 6 (TRAF6) in NF-kappaB activation and lymphocyte transformation by herpesvirus Saimiri STP.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6",
+        "herpesvirus Saimiri STP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cellular tumor necrosis factor receptor-associated factor?",
+          "What is involved in NF-kappaB activation and lymphocyte transformation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Role",
+        "cellular tumor necrosis factor receptor-associated factor",
+        "(TRAF6",
+        "NF-kappaB activation and lymphocyte transformation",
+        "herpesvirus Saimiri STP"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of TRAF6 in NF-kappaB activation",
+          "What does TRAF6 stand for?",
+          "What is the cellular tumor necrosis factor receptor-associated factor 6?",
+          "What is the role of TRAF6 in?",
+          "What is involved in NF-kappaB activation and lymphocyte transformation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is involved in NF-kappaB activation and lymphocyte transformation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cellular tumor necrosis factor receptor-associated factor 6 (TRAF6)",
+        "answerability": 0.7135721445083618,
+        "ground_truth": {
+          "herpesvirus Saimiri STP": {
+            "bertscore": 0.6304081082344055,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What receptor-associated factors are involved in NF-kappaB activation and lymph": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4079751968383789,
+        "ground_truth": {
+          "cellular tumor necrosis factor": {
+            "bertscore": 0.6186491847038269,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of cellular tumor necrosis factor receptor-associated factors in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activation and lymphocyte transformation",
+        "answerability": 0.8899797797203064,
+        "ground_truth": {
+          "NF-kappaB activation and lymphocyte transformation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "type": "hyp",
+  "text": "Transfection with TSP-1 and purified TSP-2 added to NIH3T3 cells did not alter the protein levels of alpha-SMA and desmin but significantly inhibited matrix metalloprotease-2 activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TSP-1",
+        "TSP-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was not altered by transfection?",
+          "What was purified and added to NIH3T3 cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Transfection",
+        "TSP-1",
+        "TSP-2",
+        "NIH3T3 cells",
+        "the protein levels",
+        "alpha-SMA",
+        "desmin"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not alter the protein levels of alpha-SMA and desmin?",
+          "What protein was not altered by transfection?",
+          "What was purified and added to NIH3T3 cells?",
+          "What did TSP-1 and TSP-2 add to?",
+          "What did TSP-1 and TSP-2 not alter?",
+          "What protein was not altered by TSP-1 and desmin?",
+          "What protein was not altered by TSP-1 and TSP-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was purified and added to NIH3T3 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TSP-2",
+        "answerability": 0.9445992112159729,
+        "ground_truth": {
+          "TSP-1": {
+            "bertscore": 0.9844093322753906,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not altered by TSP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "alpha-SMA and desmin",
+        "answerability": 0.9523308277130127,
+        "ground_truth": {
+          "alpha-SMA": {
+            "bertscore": 0.8603836297988892,
+            "f1": 0.5
+          },
+          "desmin": {
+            "bertscore": 0.7752436995506287,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What activity was significantly inhibited by TSP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.47270840406417847,
+        "ground_truth": {
+          "matrix metalloprotease-2": {
+            "bertscore": 0.6339461207389832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not alter the protein levels of alpha-SMA and desmin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TSP-1 and purified TSP-2",
+        "answerability": 0.9652448296546936,
+        "ground_truth": {
+          "Transfection": {
+            "bertscore": 0.6515312194824219,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TSP-1 and purified TSP-1 add to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2215803861618042,
+        "ground_truth": {
+          "NIH3T3 cells": {
+            "bertscore": 0.5917519927024841,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TSP-1 not alter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "alpha-SMA and desmin",
+        "answerability": 0.7865985631942749,
+        "ground_truth": {
+          "the protein levels": {
+            "bertscore": 0.7105449438095093,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

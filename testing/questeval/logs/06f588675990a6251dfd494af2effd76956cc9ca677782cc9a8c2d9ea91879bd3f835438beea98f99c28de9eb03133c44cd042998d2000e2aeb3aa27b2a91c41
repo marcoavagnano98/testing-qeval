@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "DNA-protein crosslinking studies have revealed that the more rapidly migrating B2 complex contains both p50 and p55 while the more slowly migrating B1 complex is composed predominantly of p50 p55 p75 and p85.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "B1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the most slowly migrating complex?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "DNA-protein crosslinking studies",
+        "B2 complex",
+        "both p50",
+        "p55",
+        "the more slowly migrating B1 complex",
+        "p50 p55 p75",
+        "p85"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has revealed that the B2 complex contains both p50 and p55?",
+          "What is the most rapidly migrating complex?",
+          "What does the B2 complex contain?",
+          "What is the most rapidly migrating B2 complex composed of?",
+          "What is the most rapidly migrating B2 complex composed of?",
+          "What does the B1 complex consist of?",
+          "What is the most slowly migrating B1 complex composed of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the slower migrating B1 complex composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75 p85",
+        "answerability": 0.6715767979621887,
+        "ground_truth": {
+          "B1": {
+            "bertscore": 0.6758598685264587,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What has revealed that the more rapidly migrating B2 complex contains both p50 and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA-protein crosslinking studies",
+        "answerability": 0.9773430824279785,
+        "ground_truth": {
+          "DNA-protein crosslinking studies": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the most rapidly migrating complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B2 complex",
+        "answerability": 0.8513438701629639,
+        "ground_truth": {
+          "B2 complex": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the B2 complex contain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p50 and p55",
+        "answerability": 0.9604086875915527,
+        "ground_truth": {
+          "both p50": {
+            "bertscore": 0.8123642206192017,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the most rapidly migrating B2 complex composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p50 and p55",
+        "answerability": 0.9095485210418701,
+        "ground_truth": {
+          "p55": {
+            "bertscore": 0.8232325315475464,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the B2 complex composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p50 and p55",
+        "answerability": 0.946582019329071,
+        "ground_truth": {
+          "the more slowly migrating B1 complex": {
+            "bertscore": 0.6185514330863953,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the B1 complex composed of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p50 p55 p75 and p85",
+        "answerability": 0.8113715648651123,
+        "ground_truth": {
+          "p50 p55 p75": {
+            "bertscore": 0.9266113042831421,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What is the slowest migrating B1 complex?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p75 and p85",
+        "answerability": 0.5523643493652344,
+        "ground_truth": {
+          "p85": {
+            "bertscore": 0.8143380880355835,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

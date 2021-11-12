@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "Interleukin-6 protein and mRNA production were significantly enhanced in cells transfected with the CMV IE genes and stimulated with LPS compared to LPS-stimulated control cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was used to stimulate the production of mRNA and interleukin-6 protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Interleukin-6 protein",
+        "mRNA production",
+        "cells",
+        "the CMV IE genes",
+        "LPS",
+        "LPS-stimulated control cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was significantly enhanced in cells transfected with CMV IE genes?",
+          "What was significantly enhanced in cells transfected with CMV IE genes and stimulated with",
+          "What type of cells were stimulated with LPS?",
+          "What was transfected with?",
+          "What was used to stimulate the production of mRNA and interleukin-6 protein?",
+          "What type of cells were stimulated with LPS?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was used to stimulate the mRNA production of cells transfected with CMV": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5181745290756226,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027957439422607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was significantly increased in cells transfected with CMV IE genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interleukin-6",
+        "answerability": 0.9894057512283325,
+        "ground_truth": {
+          "Interleukin-6 protein": {
+            "bertscore": 0.8926510810852051,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was significantly increased in cells transfected with CMV IE genes and stimulated with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interleukin-6 protein and mRNA production",
+        "answerability": 0.9533141851425171,
+        "ground_truth": {
+          "mRNA production": {
+            "bertscore": 0.8087060451507568,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What type of cells were stimulated with LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CMV IE genes",
+        "answerability": 0.777808427810669,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.7402549386024475,
+            "f1": 0
+          },
+          "LPS-stimulated control cells": {
+            "bertscore": 0.7215842604637146,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was transfected with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CMV IE genes",
+        "answerability": 0.9376285076141357,
+        "ground_truth": {
+          "the CMV IE genes": {
+            "bertscore": 0.9050081968307495,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

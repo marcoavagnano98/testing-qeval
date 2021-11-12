@@ -1,0 +1,148 @@
+{
+  "type": "hyp",
+  "text": "On the other hand stimulation of T cells with mAb 9.3 increased the levels of intracellular Ca2+ and triggered the activation of p56(lck) and c-Raf-1 but was unable to induce the binding of transcription factors to the IL-2 promoter.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter did mAb 9.3 not induce binding of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the other hand stimulation",
+        "T cells",
+        "the levels",
+        "intracellular Ca2",
+        "the activation",
+        "p56(lck",
+        "the binding",
+        "transcription factors",
+        "the IL-2 promoter"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did mAb 9.3 do to T cells?",
+          "What cells were stimulated with mAb 9.3?",
+          "What did stimulation of T cells with mAb 9.3 increase?",
+          "What did stimulation of T cells with mAb 9.3 increase?",
+          "What did mAb 9.3 do to p56(lck) and c",
+          "What transcription factor was activated by mAb 9.3?",
+          "What did mAb 9.3 not induce?",
+          "What did mAb 9.3 not induce binding of?",
+          "What did mAb 9.3 not induce binding of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter did mAb 9.3 not induce binding of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.9740046262741089,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did mAb 9.3 do to T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased the levels of intracellular Ca2+",
+        "answerability": 0.9986135959625244,
+        "ground_truth": {
+          "the other hand stimulation": {
+            "bertscore": 0.6243354082107544,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were stimulated with mAb 9.3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.981346607208252,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did stimulation of T cells with mAb 9.3 increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "levels of intracellular Ca2+",
+        "answerability": 0.9962320923805237,
+        "ground_truth": {
+          "the level": {
+            "bertscore": 0.6156675219535828,
+            "f1": 0
+          },
+          "intracellular Ca2": {
+            "bertscore": 0.8762690424919128,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did mAb 9.3 do to p56(lck) and c": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased the levels of intracellular Ca2+",
+        "answerability": 0.8946480751037598,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6522534489631653,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What transcription factor was activated by mAb 9.3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p56(lck)",
+        "answerability": 0.8174254298210144,
+        "ground_truth": {
+          "p56(lck": {
+            "bertscore": 0.9175406694412231,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did mAb 9.3 not induce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the binding of transcription factors to the IL-2 promoter",
+        "answerability": 0.9356527924537659,
+        "ground_truth": {
+          "the binding": {
+            "bertscore": 0.7081730365753174,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What did mAb 9.3 not induce binding of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factors",
+        "answerability": 0.9868932962417603,
+        "ground_truth": {
+          "transcription factors": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "the IL-2 promoter": {
+            "bertscore": 0.7724342942237854,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

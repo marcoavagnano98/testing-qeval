@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of these proteins is independent of the transcriptional uppression of their genes and occurs only in highly malignant breast cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "these proteins",
+        "the transcriptional uppression",
+        "their genes",
+        "highly malignant breast cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is independent of the transcriptional uppression of their genes?",
+          "What is independent of the transcriptional uppression of their genes?",
+          "What is overexpression of these proteins independent of?",
+          "What is the transcriptional uppression of these proteins independent of?",
+          "What type of cancer is the only one to have overexpression of these proteins?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is independent of the transcriptional upregulation of their genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of these proteins",
+        "answerability": 0.5771478414535522,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7949943542480469,
+            "f1": 0.4
+          },
+          "these proteins": {
+            "bertscore": 0.8135221004486084,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is overexpression of these proteins independent of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional uppression of their genes",
+        "answerability": 0.988176167011261,
+        "ground_truth": {
+          "the transcriptional upregulation": {
+            "bertscore": 0.814908504486084,
+            "f1": 0.28571428571428575
+          }
+        }
+      }
+    },
+    "What is the transcriptional upregulation of these proteins independent of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16318529844284058,
+        "ground_truth": {
+          "their genes": {
+            "bertscore": 0.6528948545455933,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cancer is the only one to have overexpression of these proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "breast cancer",
+        "answerability": 0.9879385828971863,
+        "ground_truth": {
+          "highly malignant breast cancer cells": {
+            "bertscore": 0.7894234657287598,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    }
+  }
+}

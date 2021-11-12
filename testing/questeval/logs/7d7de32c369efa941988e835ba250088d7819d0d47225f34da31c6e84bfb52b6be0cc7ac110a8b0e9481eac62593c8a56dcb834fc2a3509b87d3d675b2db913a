@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Northern blot analysis showed that the cDNA probe hybridized with the 4.5 kb transcript.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "4.5"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the cDNA probe's kb transcript?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Northern blot analysis",
+        "the cDNA probe",
+        "the 4.5 kb transcript"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that the cDNA probe hybridized with the 4.5 kb transcript?",
+          "What hybridized with the 4.5 kb transcript?",
+          "What did the Northern Blot analysis show hybridized with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the cDNA probe's kb transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4.5",
+        "answerability": 0.6776297092437744,
+        "ground_truth": {
+          "4.5": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What showed that the cDNA probe hybridized with a 4.5 kb transcript": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Northern blot analysis",
+        "answerability": 0.9727697372436523,
+        "ground_truth": {
+          "Northern blot analysis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What hybridized with a 4.5 kb transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cDNA probe",
+        "answerability": 0.9271847009658813,
+        "ground_truth": {
+          "the cDNA probe": {
+            "bertscore": 0.9298117160797119,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the cDNA probe hybridize with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4.5 kb transcript",
+        "answerability": 0.8095607161521912,
+        "ground_truth": {
+          "a 4.5 kb transcript": {
+            "bertscore": 0.944707453250885,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells is the 4.5 kb transcript highly inducible in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000354766845703125,
+        "ground_truth": {
+          "murine T cells": {
+            "bertscore": 0.6326331496238708,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

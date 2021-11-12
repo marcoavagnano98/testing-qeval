@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "The highly specific granulomonocyte-associated lysosomal proteins myeloperoxidase (M-CSF) and lysozyme (LZ) as well as the transcription factor PU.1 were already detectable in the most immature CD34+Thy-1+ subset.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LZ"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another name for lysozyme?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The highly specific granulomonocyte-associated lysosomal proteins myeloperoxidase",
+        "M-CSF",
+        "lysozyme",
+        "LZ",
+        "the transcription factor",
+        "subset"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is M-CSF?",
+          "What is the name of the highly specific granulomonocyte-associated lys",
+          "What is LZ?",
+          "What is another name for lysozyme?",
+          "What is PU.1?",
+          "What was the most immature CD34+Thy-1+?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What receptor was first detectable in the myeloid-committed CD34+Thy": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10399407148361206,
+        "ground_truth": {
+          "M-CSF": {
+            "bertscore": 0.6617133021354675,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was first detectable in the myeloid-committed CD34+Thy-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19446450471878052,
+        "ground_truth": {
+          "The M-CSF receptor": {
+            "bertscore": 0.6107430458068848,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where was the M-CSF receptor first detectable?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10664498805999756,
+        "ground_truth": {
+          "the myeloid-committed CD34+Thy-l-CD45RA+ subset": {
+            "bertscore": 0.5779900550842285,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

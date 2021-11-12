@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "The TLR2 signaling pathway activates NF-kappaB which is dependent on the phosphorylation and degradation of IkappaBalpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the NF-kappaB dependent on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The TLR2",
+        "pathway",
+        "NF-kappaB",
+        "the phosphorylation",
+        "degradation",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling pathway activates NF-kappaB?",
+          "What is the TLR2 signaling pathway?",
+          "What is dependent on phosphorylation and degradation of IkappaBalpha?",
+          "What is the NF-kappaB dependent on?",
+          "What is the phosphorylation and what is the degradation of IkappaBal",
+          "What is the NF-kappaB dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does TLR2 respond to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.034542739391326904,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027957439422607,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the signaling receptor that responds to LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0014441609382629395,
+        "ground_truth": {
+          "TLR2": {
+            "bertscore": 0.6572216153144836,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is TLR2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4131975769996643,
+        "ground_truth": {
+          "a signaling receptor": {
+            "bertscore": 0.6617146134376526,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

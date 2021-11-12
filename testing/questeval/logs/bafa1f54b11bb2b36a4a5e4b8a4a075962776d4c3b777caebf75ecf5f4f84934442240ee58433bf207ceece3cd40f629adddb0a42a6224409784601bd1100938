@@ -1,0 +1,98 @@
+{
+  "type": "hyp",
+  "text": "However TGF-beta1 could inhibit p65 and p50 binding to the kappaB site in human RANTES promoter as revealed by chromatin immunoprecipitation assay and protein-DNA laddering.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TGF-beta1",
+        "p50",
+        "the kappaB site",
+        "human RANTES promoter",
+        "chromatin immunoprecipitation assay",
+        "protein-DNA laddering"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What could inhibit p65 and p50 binding to the kappaB site",
+          "What binding to the kappaB site did TGF-beta1 inhibit",
+          "What does TGF-beta1 inhibit p65 and p50 binding to",
+          "What does TGF-beta1 inhibit binding to?",
+          "What revealed that TGF-beta1 could inhibit p65 and p50",
+          "What is the method used to determine if TGF-beta1 inhibits"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What could inhibit p65 and p50 binding to the kappaB site": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TGF-beta1",
+        "answerability": 0.925714910030365,
+        "ground_truth": {
+          "TGF-beta1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What binding to the kappaB site did TGF-beta1 inhibit": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p65 and p50",
+        "answerability": 0.833837628364563,
+        "ground_truth": {
+          "p50": {
+            "bertscore": 0.8503282070159912,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does TGF-beta1 inhibit p65 and p50 binding to": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kappaB site",
+        "answerability": 0.8813989758491516,
+        "ground_truth": {
+          "the kappaB site": {
+            "bertscore": 0.932342529296875,
+            "f1": 1.0
+          },
+          "human RANTES promoter": {
+            "bertscore": 0.7010128498077393,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What revealed that TGF-beta1 could inhibit p65 and p50": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "chromatin immunoprecipitation assay",
+        "answerability": 0.8337465524673462,
+        "ground_truth": {
+          "chromatin immunoprecipitation assay": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only method to determine if TGF-beta1 inhibits": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10540562868118286,
+        "ground_truth": {
+          "protein-DNA binding assay": {
+            "bertscore": 0.6467751860618591,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

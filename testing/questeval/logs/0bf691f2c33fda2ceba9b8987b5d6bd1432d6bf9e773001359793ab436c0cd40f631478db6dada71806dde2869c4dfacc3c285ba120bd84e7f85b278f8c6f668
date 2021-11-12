@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "Estrone potentiates myeloid cell differentiation: a role for 17 beta-hydroxysteroid dehydrogenase in modulating arachidonate release and 5-hydroxyeicosatetraenoic acid-induced apoptosis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "17"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the number of beta-hydroxysteroid dehydrogenase involved in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Estrone potentiates myeloid cell differentiation",
+        "a role",
+        "17 beta-hydroxysteroid dehydrogenase",
+        "arachidonate release",
+        "5-hydroxyeicosatetraenoic acid-induced apoptosis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of 17 beta-hydroxysteroid dehydrogenase in modul",
+          "What is the role of 17 beta-hydroxysteroid dehydrogenase in modul",
+          "What is involved in the modulation of arachidonate release?",
+          "What is etrone responsible for?",
+          "What is the role of 17 beta-hydroxysteroid dehydrogenase in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the number of beta-hydroxysteroid dehydrogenase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "17",
+        "answerability": 0.9758106470108032,
+        "ground_truth": {
+          "17": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the role of 17 beta-hydroxysteroid dehydrogenase in modul": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "arachidonate release",
+        "answerability": 0.7817543148994446,
+        "ground_truth": {
+          "Estrone potentiates myeloid cell differentiation": {
+            "bertscore": 0.7215678691864014,
+            "f1": 0
+          },
+          "a role": {
+            "bertscore": 0.6616164445877075,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in the modulation of hemopoiesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.044400811195373535,
+        "ground_truth": {
+          "17 beta-hydroxysteroid dehydrogenase": {
+            "bertscore": 0.5781522989273071,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is etrone involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myeloid cell differentiation",
+        "answerability": 0.8564190864562988,
+        "ground_truth": {
+          "hemopoiesis": {
+            "bertscore": 0.7335434556007385,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

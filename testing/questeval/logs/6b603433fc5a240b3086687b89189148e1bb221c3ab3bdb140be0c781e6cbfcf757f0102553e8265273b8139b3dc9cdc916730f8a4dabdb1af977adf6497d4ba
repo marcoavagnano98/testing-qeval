@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "We have analyzed the expression of IL-2Ralpha c-myc and pim-1 genes in anti-CD3-activated human T lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the expression",
+        "IL-2Ralpha c-myc",
+        "pim-1 genes",
+        "anti-CD3-activated human T lymphocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What has been studied in human T lymphocytes?",
+          "What has been studied in human T lymphocytes?",
+          "What is the name of the gene that is expressed in anti-CD3-activated human",
+          "What gene was found to be expressed in anti-CD3-activated human T lymphocyte",
+          "Where did we analyze the expression of IL-2Ralpha c-myc and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been studied in human T lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2Ralpha c-myc and pim-1 genes",
+        "answerability": 0.9485325813293457,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5359889268875122,
+            "f1": 0
+          },
+          "the expression": {
+            "bertscore": 0.6007794141769409,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that is expressed in anti-CD3-activated human": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4692724347114563,
+        "ground_truth": {
+          "IL-2Ralpha c-myc": {
+            "bertscore": 0.5815648436546326,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was found to be expressed in anti-CD3-activated human T lymphocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2Ralpha c-myc and pim-1 genes",
+        "answerability": 0.8881251811981201,
+        "ground_truth": {
+          "pim-1 genes": {
+            "bertscore": 0.8366799354553223,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "Where did we analyze the expression of IL-2Ralpha c-myc and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5347084999084473,
+        "ground_truth": {
+          "anti-CD3-activated human T lymphocytes": {
+            "bertscore": 0.5700337290763855,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

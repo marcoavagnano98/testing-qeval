@@ -1,0 +1,96 @@
+{
+  "type": "ref",
+  "text": "Our findings offer important insights into parasite survival strategies and demonstrate that parasite-induced constitutive NF-kappaB activation is an essential step in maintaining the transformed phenotype of the infected cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Our findings",
+        "important insights",
+        "parasite survival strategies",
+        "parasite-induced constitutive NF-kappaB activation",
+        "an essential step",
+        "the transformed phenotype",
+        "the infected cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What offer important insights into parasite survival strategies?",
+          "What do the findings offer?",
+          "What do the findings offer important insights into?",
+          "What is an essential step in maintaining the transformed phenotype of the infected cells",
+          "What is NF-kappaB activation?",
+          "What does NF-kappaB maintain?",
+          "What is the main goal of NF-kappaB activation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What shows that NF-kappaB activation is essential to maintaining the transformed": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6721549034118652,
+        "ground_truth": {
+          "Our findings": {
+            "bertscore": 0.6648373007774353,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is an essential step in maintaining the transformed phenotype of infected cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activation",
+        "answerability": 0.9879277348518372,
+        "ground_truth": {
+          "parasite-induced NF-kappaB activation": {
+            "bertscore": 0.9086362719535828,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is NF-kappaB activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an essential step in maintaining the transformed phenotype of the infected cells",
+        "answerability": 0.6380746960639954,
+        "ground_truth": {
+          "an essential step": {
+            "bertscore": 0.7323411703109741,
+            "f1": 0.3636363636363636
+          }
+        }
+      }
+    },
+    "What does NF-kappaB maintain?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5207980275154114,
+        "ground_truth": {
+          "the transformed phenotype": {
+            "bertscore": 0.6556785106658936,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the key to maintaining the transformed phenotype of parasites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activation",
+        "answerability": 0.9589979648590088,
+        "ground_truth": {
+          "the infected cells": {
+            "bertscore": 0.6621835827827454,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

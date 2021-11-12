@@ -1,0 +1,172 @@
+{
+  "type": "hyp",
+  "text": "We have observed that four DNA-damaging agents (cisplatin actinomycin D MMS and etoposide) but not the cisplatin isomer transplatin which does not readily damage DNA strongly activate JNK p38 and extracellular signal-regulated kinase (ERK) and strongly increase phosphorylation and ATF2-dependent transcriptional activities.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "four",
+        "MMS",
+        "JNK",
+        "ERK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many agents do we have to use to damage DNA?",
+          "What is the name of the agent that can damage DNA?",
+          "What protein does transplatin activate?",
+          "What protein does transplatin activate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "four DNA-damaging agents",
+        "cisplatin actinomycin D MMS",
+        "etoposide",
+        "DNA",
+        "JNK p38 and extracellular signal-regulated kinase",
+        "ERK",
+        "phosphorylation and ATF2-dependent transcriptional activities"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of transplatin on DNA damage?",
+          "How many agents do we find that do not damage DNA?",
+          "What is the name of the four DNA-damaging agents?",
+          "What is the name of the agent that does not damage DNA?",
+          "What does cisplatin do not damage?",
+          "What does transplatin activate?",
+          "What protein does transplatin activate?",
+          "What do the agents that do not damage DNA do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many agents do we have to use to damage DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "four",
+        "answerability": 0.9689210057258606,
+        "ground_truth": {
+          "four": {
+            "bertscore": 0.9999997019767761,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the agent that can damage DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.208635151386261,
+        "ground_truth": {
+          "MMS": {
+            "bertscore": 0.6899803280830383,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein does transplatin activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JNK p38",
+        "answerability": 0.9645451903343201,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.8279107213020325,
+            "f1": 0.6666666666666666
+          },
+          "ERK": {
+            "bertscore": 0.760050892829895,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of transplatin on DNA damage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "does not readily damage DNA",
+        "answerability": 0.990332841873169,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.5722213983535767,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How many agents do we find that do not damage DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "four",
+        "answerability": 0.836391806602478,
+        "ground_truth": {
+          "four DNA-damaging agents": {
+            "bertscore": 0.7155830264091492,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the name of the four DNA-damaging agents?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cisplatin actinomycin D MMS and etoposide",
+        "answerability": 0.9606894254684448,
+        "ground_truth": {
+          "cisplatin actinomycin D MMS": {
+            "bertscore": 0.9214341044425964,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the name of the agent that does not damage DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cisplatin isomer transplatin",
+        "answerability": 0.9747119545936584,
+        "ground_truth": {
+          "etoposide": {
+            "bertscore": 0.7141651511192322,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does cisplatin do not damage?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "DNA",
+        "answerability": 0.9907377362251282,
+        "ground_truth": {
+          "DNA": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does transplatin activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "JNK p38 and extracellular signal-regulated kinase (ERK",
+        "answerability": 0.9464385509490967,
+        "ground_truth": {
+          "JNK p38 and extracellular signal-regulated kinase": {
+            "bertscore": 0.9407302141189575,
+            "f1": 0.923076923076923
+          }
+        }
+      }
+    },
+    "What do the agents that do not damage DNA do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activate JNK p38 and extracellular signal-regulated kinase (ER",
+        "answerability": 0.9828163981437683,
+        "ground_truth": {
+          "phosphorylation and ATF2-dependent transcriptional activity": {
+            "bertscore": 0.723677933216095,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    }
+  }
+}

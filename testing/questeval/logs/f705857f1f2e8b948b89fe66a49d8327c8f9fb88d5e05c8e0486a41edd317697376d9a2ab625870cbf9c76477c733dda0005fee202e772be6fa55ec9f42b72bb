@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Degradation also required import of Kip1p into the nucleus but was independent of spindle association.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Degradation",
+        "import",
+        "Kip1p",
+        "the nucleus",
+        "spindle association"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What process required import of Kip1p into the nucleus?",
+          "What did degradation require?",
+          "What protein was absorbed into the nucleus by the cytoplasm?",
+          "Where did degradation of the chromosome require import of Kip1p?",
+          "What was the cause of the degradation of the chromosome?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused the import of Kip1p into the nucleus?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Degradation",
+        "answerability": 0.9870170950889587,
+        "ground_truth": {
+          "Degradation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did degradation require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "import of Kip1p",
+        "answerability": 0.9620225429534912,
+        "ground_truth": {
+          "import": {
+            "bertscore": 0.6853197813034058,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What protein was absorbed into the nucleus of the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Kip1p",
+        "answerability": 0.8236885070800781,
+        "ground_truth": {
+          "Kip1p": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where did degradation of the chromosome occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06681644916534424,
+        "ground_truth": {
+          "the nucleus": {
+            "bertscore": 0.6686460971832275,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did degradation of the chromosome require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "import of Kip1p",
+        "answerability": 0.9701235890388489,
+        "ground_truth": {
+          "spindle association": {
+            "bertscore": 0.6856442093849182,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

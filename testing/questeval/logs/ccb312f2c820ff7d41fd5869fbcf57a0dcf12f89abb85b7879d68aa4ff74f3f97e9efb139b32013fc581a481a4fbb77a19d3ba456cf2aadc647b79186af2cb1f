@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "Inhibition of glucose metabolism sensitized tumor cells to death receptor-triggered apoptosis through enhancement of death-inducing signaling complex formation and apical procaspase-8 processing.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Inhibition",
+        "glucose",
+        "tumor cells",
+        "death receptor-triggered apoptosis",
+        "enhancement",
+        "complex formation",
+        "apical procaspase-8 processing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of glucose metabolism on tumor cells?",
+          "What metabolic process was inhibited in the tumor cells?",
+          "What did glucose metabolism sensitize to death receptor-triggered apoptosis?",
+          "What did the inhibition of glucose metabolism sensitize tumor cells to?",
+          "What is the effect of glucose metabolism on tumor cells?",
+          "What is the main mechanism of death-inducing signaling?",
+          "What is the key to apoptosis?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mechanism that causes apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "death receptor",
+        "answerability": 0.8197696208953857,
+        "ground_truth": {
+          "Inhibition": {
+            "bertscore": 0.7621888518333435,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What metabolic process is inhibited in tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "glucose",
+        "answerability": 0.9991090297698975,
+        "ground_truth": {
+          "glucose": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does glucose metabolism sensitize to death receptor-triggered apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.621910572052002,
+        "ground_truth": {
+          "tumor cells": {
+            "bertscore": 0.6456214785575867,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do tumor cells respond to by inhibiting glucose metabolism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "death receptor-triggered apoptosis",
+        "answerability": 0.9623322486877441,
+        "ground_truth": {
+          "death receptor-triggered apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of glucose metabolism on tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Inhibition",
+        "answerability": 0.9821330308914185,
+        "ground_truth": {
+          "enhancement": {
+            "bertscore": 0.8021776080131531,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does glucose metabolism enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4904824495315552,
+        "ground_truth": {
+          "complex formation": {
+            "bertscore": 0.7037702798843384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the key to apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of glucose metabolism",
+        "answerability": 0.6973391771316528,
+        "ground_truth": {
+          "apical procaspase-8 processing": {
+            "bertscore": 0.6664667725563049,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

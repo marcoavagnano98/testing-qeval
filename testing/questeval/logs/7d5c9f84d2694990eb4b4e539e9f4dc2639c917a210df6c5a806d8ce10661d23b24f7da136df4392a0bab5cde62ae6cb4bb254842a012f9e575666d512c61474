@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Chromosomal translocations involving the genes encoding the alpha and beta subunits of the Pebp2/Cbf transcription factor have been associated with human acute myeloid leukemia and the preleukemic condition myelodysplasia.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Chromosomal translocations",
+        "the genes",
+        "the alpha and beta subunits",
+        "the Pebp2/Cbf transcription factor",
+        "human acute myeloid leukemia",
+        "the preleukemic condition myelodysplasia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with human acute myeloid leukemia?",
+          "What is involved in the chromosomal translocations?",
+          "What genes are involved in the Pebp2/Cbf transcription factor?",
+          "What genes are involved in human acute myeloid leukemia?",
+          "What is the preleukemic condition?",
+          "What is the name of the condition that is associated with human acute myeloid leukemia"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is associated with human acute myeloid leukemia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Chromosomal translocations",
+        "answerability": 0.77499920129776,
+        "ground_truth": {
+          "Chromosomal translocations": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is involved in the chromosomal translocations?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "genes encoding the alpha and beta subunits of the Pebp2/C",
+        "answerability": 0.9573472142219543,
+        "ground_truth": {
+          "the genes": {
+            "bertscore": 0.6882197260856628,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What genes are involved in the Pebp2/Cbf transcription factor?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "alpha and beta",
+        "answerability": 0.7442751526832581,
+        "ground_truth": {
+          "the alpha and beta subunits": {
+            "bertscore": 0.811066746711731,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What genes are involved in human acute myeloid leukemia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "alpha and beta subunits of the Pebp2/Cbf transcription factor",
+        "answerability": 0.9544795751571655,
+        "ground_truth": {
+          "the Pebp2/Cbf transcription factor": {
+            "bertscore": 0.914283275604248,
+            "f1": 0.5454545454545454
+          }
+        }
+      }
+    },
+    "What is the preleukemic condition?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "myelodysplasia",
+        "answerability": 0.9802899360656738,
+        "ground_truth": {
+          "human acute myeloid leukemia": {
+            "bertscore": 0.7247241139411926,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the condition that is associated with human acute myeloid leukemia": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4745447635650635,
+        "ground_truth": {
+          "the preleukemic condition myelodysplasia": {
+            "bertscore": 0.6053286790847778,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

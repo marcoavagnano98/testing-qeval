@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "However when PBMC were stimulated with LPS or IL-1beta both C3a and C3a(desArg) were found to enhance IL-6 release by PBMC in vivo.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "C3a(desArg",
+        "PBMC",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the other stimulant that increased IL-6 release?",
+          "What is the name of the enzyme that increases IL-6 release by PBMC?",
+          "What was stimulated with LPS or IL-1beta?",
+          "In what way were C3a and C3a(desArg) found to enhance"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PBMC",
+        "LPS",
+        "IL-1beta",
+        "both C3a",
+        "IL-6 release",
+        "PBMC",
+        "vivo"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was stimulated with LPS or IL-1beta?",
+          "What was the other stimulant that increased IL-6 release?",
+          "What is the other drug that can stimulate IL-6 release?",
+          "What two molecules were found to enhance IL-6 release by PBMC?",
+          "What did C3a and C3a(desArg) enhance in vivo?",
+          "What was stimulated with LPS or IL-1beta?",
+          "In what way were C3a and C3a(desArg) found to enhance"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the other stimulant that increased IL-6 release?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-1beta",
+        "answerability": 0.9587582349777222,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.6972965598106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the enzyme that increases IL-6 release by PBMC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C3a(desArg)",
+        "answerability": 0.8230332136154175,
+        "ground_truth": {
+          "C3a(desArg": {
+            "bertscore": 0.9243149757385254,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was found to increase IL-6 release when stimulated with LPS or IL-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C3a and C3a(desArg)",
+        "answerability": 0.9294760227203369,
+        "ground_truth": {
+          "PBMC": {
+            "bertscore": 0.6934121251106262,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the other drug that can stimulate IL-6 release?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-1beta",
+        "answerability": 0.9173108339309692,
+        "ground_truth": {
+          "IL-1beta": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What two molecules were found to increase IL-6 release by PBMC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C3a and C3a(desArg)",
+        "answerability": 0.9756693840026855,
+        "ground_truth": {
+          "both C3a": {
+            "bertscore": 0.7797297835350037,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did C3a and C3a(desArg) enhance?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-6 release",
+        "answerability": 0.9901285767555237,
+        "ground_truth": {
+          "IL-6 release": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How was IL-6 released by PBMC?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stimulated with LPS or IL-1beta",
+        "answerability": 0.8456689715385437,
+        "ground_truth": {
+          "a dose-dependent manner": {
+            "bertscore": 0.6706210970878601,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

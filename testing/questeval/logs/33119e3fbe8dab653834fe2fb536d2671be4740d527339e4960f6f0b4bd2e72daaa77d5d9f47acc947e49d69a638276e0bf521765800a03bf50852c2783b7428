@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "Ligand activation of c-ErbB induced the tyrosine phosphorylation DNA-binding and reporter gene transcription of Stat 5b in erythroleukemia cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Ligand",
+        "gene transcription",
+        "5b"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What activation of c-ErbB induced the tyrosine",
+          "What did c-ErbB induce in erythroleukemia cells?",
+          "What is the name of Stat?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ligand activation",
+        "c-ErbB",
+        "the tyrosine phosphorylation DNA-binding and reporter gene transcription",
+        "Stat 5b",
+        "erythroleukemia cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What induced the tyrosine phosphorylation DNA-binding and reporter",
+          "What ligand activated Stat 5b?",
+          "What did ligand activation of c-ErbB induce?",
+          "What gene was induced by ligand activation?",
+          "Where did ligand activation of c-ErbB cause the reporter gene transcription"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What activation of c-ErbB induced the tyrosine": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ligand",
+        "answerability": 0.9139962196350098,
+        "ground_truth": {
+          "Ligand": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did c-ErbB induce in erythroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11118817329406738,
+        "ground_truth": {
+          "gene transcription": {
+            "bertscore": 0.6639036536216736,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of Stat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stat 5b",
+        "answerability": 0.6203480362892151,
+        "ground_truth": {
+          "5b": {
+            "bertscore": 0.8783760070800781,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What induced the tyrosine phosphorylation DNA-binding and reporter": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Ligand activation of c-ErbB",
+        "answerability": 0.8334444165229797,
+        "ground_truth": {
+          "Ligand activation": {
+            "bertscore": 0.8310214281082153,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What ligand activation induced the tyrosine phosphorylation DNA": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-ErbB",
+        "answerability": 0.8470115661621094,
+        "ground_truth": {
+          "c-ErbB": {
+            "bertscore": 0.9999998211860657,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did ligand activation of c-ErbB induce in erythro": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation DNA-binding and reporter gene transcription",
+        "answerability": 0.8901113271713257,
+        "ground_truth": {
+          "the tyrosine phosphorylation DNA-binding and reporter gene transcription": {
+            "bertscore": 0.9625154733657837,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What gene was induced by ligand activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Stat 5b",
+        "answerability": 0.8640627264976501,
+        "ground_truth": {
+          "Stat 5b": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where is Stat 5b found?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroleukemia cells",
+        "answerability": 0.8013110756874084,
+        "ground_truth": {
+          "erythroblasts": {
+            "bertscore": 0.8110504150390625,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

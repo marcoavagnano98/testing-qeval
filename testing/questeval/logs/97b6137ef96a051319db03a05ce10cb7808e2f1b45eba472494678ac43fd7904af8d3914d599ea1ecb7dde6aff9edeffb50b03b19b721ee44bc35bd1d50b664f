@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "Expression of CD30 by these cells is induced by CD40L but is inhibited by B cell receptor coengagement and/or exposure to IL-6 and IL-12.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "CD30",
+        "these cells",
+        "CD40L",
+        "B cell receptor coengagement",
+        "exposure"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is inhibited by B cell receptor coengagement?",
+          "What is the main component of the cytokine response?",
+          "What is the expression of CD30 by?",
+          "What is the main factor that induces the expression of CD30?",
+          "What inhibits the expression of CD30 by these cells?",
+          "What inhibits the expression of CD30 by B cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is inhibited by B cell receptor coengagement?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Expression of CD30",
+        "answerability": 0.9398650527000427,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7969483137130737,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the main component of the cytokine response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0053359270095825195,
+        "ground_truth": {
+          "CD30": {
+            "bertscore": 0.6549308896064758,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the expression of CD30 by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD40L",
+        "answerability": 0.9603778123855591,
+        "ground_truth": {
+          "these cells": {
+            "bertscore": 0.6822223663330078,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that induces the expression of CD30?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD40L",
+        "answerability": 0.998156726360321,
+        "ground_truth": {
+          "CD40L": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibits the expression of CD30 by these cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cell receptor coengagement and/or exposure to IL-6 and IL-12",
+        "answerability": 0.9918738603591919,
+        "ground_truth": {
+          "B cell receptor coengagement": {
+            "bertscore": 0.8279879093170166,
+            "f1": 0.5714285714285715
+          }
+        }
+      }
+    },
+    "What inhibits the expression of CD30 by B cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cell receptor coengagement and/or exposure to IL-6 and IL-12",
+        "answerability": 0.6904721856117249,
+        "ground_truth": {
+          "exposure": {
+            "bertscore": 0.6614868640899658,
+            "f1": 0.18181818181818182
+          }
+        }
+      }
+    }
+  }
+}

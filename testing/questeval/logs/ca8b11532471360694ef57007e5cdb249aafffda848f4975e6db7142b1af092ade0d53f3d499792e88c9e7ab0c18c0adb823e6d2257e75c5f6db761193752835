@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "Complexes containing VEGF165 NRP1 and KDR were also formed in an intercellular fashion by co-culture of stromal and osteoblast cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "KDR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is another protein that is formed by co-culture?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Complexes",
+        "VEGF165 NRP1",
+        "KDR",
+        "an intercellular fashion",
+        "co-culture",
+        "stromal and osteoblast cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was formed by co-culture of stromal and osteoblast cells?",
+          "What protein was found in the stromal and osteoblast cells?",
+          "What is another protein that is formed by co-culture?",
+          "How were complexes containing VEGF165 NRP1 and KDR formed?",
+          "How were VEGF165 NRP1 and KDR formed?",
+          "What two types of cells were used to form complexes?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the stromal and osteoblastic cells do to induce RANKL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2611587643623352,
+        "ground_truth": {
+          "co-culture": {
+            "bertscore": 0.6970745325088501,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01386958360671997,
+        "ground_truth": {
+          "stromal or osteoblastic cells": {
+            "bertscore": 0.6166945695877075,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004292905330657959,
+        "ground_truth": {
+          "RANKL mRNA expression": {
+            "bertscore": 0.6138904094696045,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 9.822845458984375e-05,
+        "ground_truth": {
+          "OPG mRNA expression": {
+            "bertscore": 0.6336473226547241,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "The NF-kappaB activity is enhanced by phosphorylation of NF-kappaB p65 at Ser276 by PKA and MSK1 (78) Ser311 by PKCzeta (9) and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PKA",
+        "PKCzeta",
+        "9"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylates NF-kappaB p65 at Ser276",
+          "What enzyme phosphorylates NF-kappaB p65 at Ser2",
+          "What is the number of phosphorylations of NF-kappaB p"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The NF-kappaB activity",
+        "phosphorylation",
+        "NF-kappaB p65",
+        "PKA",
+        "MSK1",
+        "PKCzeta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is enhanced by phosphorylation of p65 at Ser276?",
+          "What enhances NF-kappaB activity?",
+          "What is phosphorylated at Ser276?",
+          "What phosphorylates NF-kappaB p65 at Ser276",
+          "What protein phosphorylates NF-kappaB p65 at Ser3",
+          "What enzyme phosphorylates NF-kappaB p65 at Ser2"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylates p65 at Ser276?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKA and MSK1",
+        "answerability": 0.92172771692276,
+        "ground_truth": {
+          "PKA": {
+            "bertscore": 0.850034773349762,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What enzyme phosphorylates p65 at Ser276?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKA",
+        "answerability": 0.9477314352989197,
+        "ground_truth": {
+          "PKCzeta": {
+            "bertscore": 0.8380773663520813,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the number of phosphorylated Ser311 by PKCzeta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "9",
+        "answerability": 0.7197996377944946,
+        "ground_truth": {
+          "9": {
+            "bertscore": 0.9999990463256836,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is enhanced by phosphorylation of p65 at Ser276?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB activity",
+        "answerability": 0.9982704520225525,
+        "ground_truth": {
+          "The NF-kappaB activity": {
+            "bertscore": 0.9485997557640076,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What enhances NF-kappaB activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of NF-kappaB p65 at Ser276",
+        "answerability": 0.9748309850692749,
+        "ground_truth": {
+          "phosphorylation": {
+            "bertscore": 0.7809066772460938,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What protein enhances NF-kappaB activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of NF-kappaB p65 at Ser276",
+        "answerability": 0.9538297653198242,
+        "ground_truth": {
+          "p65": {
+            "bertscore": 0.6064653396606445,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "What protein phosphorylates p65 at Ser276?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PKA",
+        "answerability": 0.9731667637825012,
+        "ground_truth": {
+          "MSK1": {
+            "bertscore": 0.8220973610877991,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

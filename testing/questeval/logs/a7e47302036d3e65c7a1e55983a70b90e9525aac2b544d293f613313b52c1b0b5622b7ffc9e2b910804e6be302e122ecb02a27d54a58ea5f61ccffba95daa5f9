@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Although the CD4 gene is regulated by several positive and negative regulatory mechanisms little is known about the regulation of its expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD4"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is regulated by several positive and negative regulatory mechanisms?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the CD4 gene",
+        "several positive and negative regulatory mechanisms",
+        "the regulation",
+        "its expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is regulated by several positive and negative regulatory mechanisms?",
+          "What is the CD4 gene regulated by?",
+          "What is little known about the expression of the CD4 gene?",
+          "What is little known about the regulation of the CD4 gene?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is regulated by several positive and negative regulatory mechanisms?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the CD4 gene",
+        "answerability": 0.96583092212677,
+        "ground_truth": {
+          "CD4": {
+            "bertscore": 0.7122670412063599,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is regulated by several positive and negative regulatory mechanisms?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the CD4 gene",
+        "answerability": 0.9477425217628479,
+        "ground_truth": {
+          "the CD4 gene": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the CD4 gene regulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "positive and negative regulatory mechanisms",
+        "answerability": 0.9973098039627075,
+        "ground_truth": {
+          "several positive and negative regulatory mechanisms": {
+            "bertscore": 0.9396867156028748,
+            "f1": 0.9090909090909091
+          }
+        }
+      }
+    },
+    "What do the regulatory mechanisms of the CD4 gene come into?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3674544095993042,
+        "ground_truth": {
+          "play": {
+            "bertscore": 0.7320002913475037,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "How are the regulatory mechanisms of the CD4 gene regulated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "positive and negative regulatory mechanisms",
+        "answerability": 0.9903207421302795,
+        "ground_truth": {
+          "a developmentally coordinated manner": {
+            "bertscore": 0.6825110912322998,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

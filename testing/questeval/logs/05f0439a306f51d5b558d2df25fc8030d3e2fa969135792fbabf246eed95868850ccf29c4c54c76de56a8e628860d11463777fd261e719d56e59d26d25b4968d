@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Experiments conducted with different HIV-1 LTR-based vectors suggested that PGE2-mediated activation effect on HIV-1 transcription was transduced via both NF-kappaB-dependent and -independent signaling pathways.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1",
+        "HIV-1",
+        "NF-kappaB-dependent"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of virus is mediated by PGE2?",
+          "What type of virus is mediated by PGE2?",
+          "What signaling pathways did experiments with different HIV-1 LTR-based vectors suggest?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Experiments",
+        "different HIV-1 LTR-based vectors",
+        "PGE2-mediated activation effect",
+        "HIV-1 transcription",
+        "both NF-kappaB-dependent and -independent signaling pathways"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggested that PGE2-mediated activation effect on HIV-1 transcription was transduced via",
+          "What did experiments with HIV-1 suggest?",
+          "What did experiments with different HIV-1 LTR-based vectors suggest?",
+          "What did experiments with different HIV-1 LTR-based vectors suggest was transduced via",
+          "How was the activation effect of the PGE2 mediated effect on HIV-1 transduce"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of virus is up-regulated in T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006345152854919434,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.6515464186668396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of signaling pathways up-regulates HIV-1 long terminal repeat-driven gene": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB-dependent",
+        "answerability": 0.6744558215141296,
+        "ground_truth": {
+          "NF-kappaB-dependent": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the NF-kappaB-dependent signaling pathways up-regul": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20862728357315063,
+        "ground_truth": {
+          "HIV-1 long terminal repeat-driven gene activity": {
+            "bertscore": 0.6272538304328918,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells is up-regulated by HIV-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008176863193511963,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.6607831716537476,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is involved in up-regulating HIV-1 long terminal repeat-driven gene activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB",
+        "answerability": 0.6435670256614685,
+        "ground_truth": {
+          "NF-kappaB-dependent and -independent signaling pathways": {
+            "bertscore": 0.736219048500061,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

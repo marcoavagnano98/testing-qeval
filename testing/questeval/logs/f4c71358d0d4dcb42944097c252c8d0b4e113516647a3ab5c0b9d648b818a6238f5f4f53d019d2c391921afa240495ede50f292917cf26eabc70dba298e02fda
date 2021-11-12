@@ -1,0 +1,108 @@
+{
+  "type": "hyp",
+  "text": "As expected these transgenic mice developed splenomegaly due to the massive amplification of Ter 119 positive erythroid nucleated cells expressing T antigen.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "119"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What Ter 119 cells were amplification of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "these transgenic mice",
+        "splenomegaly",
+        "the massive amplification",
+        "cells",
+        "T antigen"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mice developed splenomegaly?",
+          "What did the transgenic mice develop?",
+          "Why did the mice develop splenomegaly?",
+          "What did the mice express that caused them to develop splenomegaly?",
+          "What did the transgenic mice express?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What Ter 119 cells were amplification of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid nucleated cells",
+        "answerability": 0.9513150453567505,
+        "ground_truth": {
+          "119": {
+            "bertscore": 0.544093906879425,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mice developed splenomegaly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transgenic mice",
+        "answerability": 0.5292280912399292,
+        "ground_truth": {
+          "these transgenic mice": {
+            "bertscore": 0.8985894918441772,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did the transgenic mice develop?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "splenomegaly",
+        "answerability": 0.9822195768356323,
+        "ground_truth": {
+          "splenomegaly": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Why did the mice develop splenomegaly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "amplification of Ter 119 positive erythroid nucleated cells expressing T",
+        "answerability": 0.8546938896179199,
+        "ground_truth": {
+          "the massive amplification": {
+            "bertscore": 0.6723411679267883,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What did the mice express that caused them to develop splenomegaly?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T antigen",
+        "answerability": 0.7175146341323853,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.7384170889854431,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the transgenic mice express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.451265811920166,
+        "ground_truth": {
+          "T antigen": {
+            "bertscore": 0.669579267501831,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

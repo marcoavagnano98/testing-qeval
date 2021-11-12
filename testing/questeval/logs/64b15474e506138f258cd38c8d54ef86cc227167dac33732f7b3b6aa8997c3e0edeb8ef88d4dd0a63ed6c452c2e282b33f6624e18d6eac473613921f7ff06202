@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Three DNA binding sites for the serum response factor were found to interact with the intronic sequence at +265 and +448 respectively.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Three"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many DNA binding sites were found to interact with the intronic sequence?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Three DNA binding sites",
+        "the serum response factor",
+        "the intronic sequence",
+        "+265",
+        "+448"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many DNA binding sites were found to interact with the intronic sequence?",
+          "What DNA binding site was found to interact with the intronic sequence?",
+          "What did the three DNA binding sites for the serum response factor interact with?",
+          "What is the highest binding site for the serum response factor?",
+          "What is the number of DNA binding sites for the serum response factor?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What two factors were found to interact with the intronic sequence at +265 and +4": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.268846333026886,
+        "ground_truth": {
+          "the serum response factor": {
+            "bertscore": 0.6412121057510376,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the serum response factor interact with at +265 and +448?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the intronic sequence",
+        "answerability": 0.9859008193016052,
+        "ground_truth": {
+          "the intronic sequence": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the intronic sequence of the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04089999198913574,
+        "ground_truth": {
+          "+265": {
+            "bertscore": 0.682407557964325,
+            "f1": 0
+          },
+          "+448": {
+            "bertscore": 0.7033081650733948,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

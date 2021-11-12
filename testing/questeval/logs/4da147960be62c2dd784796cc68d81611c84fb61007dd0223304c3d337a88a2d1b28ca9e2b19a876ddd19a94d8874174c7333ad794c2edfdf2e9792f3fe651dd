@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Here we report that nitric oxide (NO) activates p21ras in human T cells as evidenced by an increase in GTP-bound p21ras.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GTP-bound p21ras"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does nitric oxide activate in human T cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "human T cells",
+        "an increase"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of nitric oxide on human T cells?",
+          "What does nitric oxide activate?",
+          "What is evidenced by the activation of p21ras in human T cells"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does nitric oxide activate in human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p21ras",
+        "answerability": 0.9785398244857788,
+        "ground_truth": {
+          "GTP-bound p21ras": {
+            "bertscore": 0.7868372797966003,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the effect of nitric oxide on human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activates p21ras",
+        "answerability": 0.987153947353363,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6588889956474304,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does nitric oxide activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p21ras",
+        "answerability": 0.9874798655509949,
+        "ground_truth": {
+          "human T cells": {
+            "bertscore": 0.6770943403244019,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is evidenced by the activation of p21ras in human T cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nitric oxide (NO) activates p21ras in human T",
+        "answerability": 0.6118230819702148,
+        "ground_truth": {
+          "an increase": {
+            "bertscore": 0.5611297488212585,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

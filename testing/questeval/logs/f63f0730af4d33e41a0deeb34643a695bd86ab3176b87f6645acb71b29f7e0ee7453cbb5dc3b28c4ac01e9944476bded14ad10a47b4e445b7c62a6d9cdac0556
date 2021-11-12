@@ -1,0 +1,110 @@
+{
+  "type": "hyp",
+  "text": "Ligation of CD3 also induces the tyrosine phosphorylation of HS1\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Ligation",
+        "CD3",
+        "the tyrosine phosphorylation",
+        "HS1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the process that causes CD3 to phosphorylate HS1?",
+          "What protein induces tyrosine phosphorylation?",
+          "What does ligation of CD3 induce?",
+          "What protein is phosphorylated by CD3?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What transcription factor is involved in the phosphorylation of HS1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD3",
+        "answerability": 0.8638454675674438,
+        "ground_truth": {
+          "NFAT": {
+            "bertscore": 0.7129232883453369,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was induced by mitogenic pairs of anti-CD2 mAbs capable of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08135426044464111,
+        "ground_truth": {
+          "no tyrosine phosphorylation": {
+            "bertscore": 0.6066555976867676,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein was not phosphorylated by mitogenic pairs of anti-CD2 m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.033884406089782715,
+        "ground_truth": {
+          "HS1": {
+            "bertscore": 0.6704620718955994,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What induced no tyrosine phosphorylation of HS1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007588863372802734,
+        "ground_truth": {
+          "mitogenic pairs": {
+            "bertscore": 0.6990343928337097,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was not induced by HS1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0015397071838378906,
+        "ground_truth": {
+          "anti-CD2 mAbs": {
+            "bertscore": 0.6295089721679688,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NFAT?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004531741142272949,
+        "ground_truth": {
+          "the transcription factor": {
+            "bertscore": 0.6422821879386902,
+            "f1": 0
+          },
+          "nuclear factor": {
+            "bertscore": 0.7095383405685425,
+            "f1": 0
+          },
+          "activated T cells": {
+            "bertscore": 0.6327276229858398,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

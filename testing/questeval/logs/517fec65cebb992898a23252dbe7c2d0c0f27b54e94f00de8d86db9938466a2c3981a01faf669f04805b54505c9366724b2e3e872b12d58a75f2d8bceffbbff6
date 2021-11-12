@@ -1,0 +1,60 @@
+{
+  "type": "hyp",
+  "text": "After 5 days supernatant was collected and the secretion of IFN-gamma IL4 IL2 and IL17A measured by ELISA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "5 days"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did it take for the supernatant to be collected?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "5 days",
+        "the secretion",
+        "IFN-gamma IL4 IL2",
+        "IL17A",
+        "ELISA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How long did it take for the supernatant to be collected?",
+          "What was measured by ELISA?",
+          "What was the secretion of IL17A and IFN-gamma",
+          "What was the secretion of IFN-gamma measured by ELISA?",
+          "What method was used to measure the secretion of IFN-gamma?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was assessed using fluorescent bead-based technology?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00776141881942749,
+        "ground_truth": {
+          "IL-4 IL-5 IL-6 IL-10 IL-13 IL-17 and IFN-gamma secretion": {
+            "bertscore": 0.5764200687408447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to assess the levels of IL-4, IL-5, IL-6": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26740044355392456,
+        "ground_truth": {
+          "fluorescent bead-based technology": {
+            "bertscore": 0.6753576397895813,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

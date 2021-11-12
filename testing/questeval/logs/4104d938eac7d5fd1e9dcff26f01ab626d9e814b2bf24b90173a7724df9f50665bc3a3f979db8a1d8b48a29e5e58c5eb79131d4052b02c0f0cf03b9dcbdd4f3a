@@ -1,0 +1,128 @@
+{
+  "type": "hyp",
+  "text": "Exposure to LPS or TNF led to differential patterns of IkappaB-alpha and IKK-beta disappearance from and reassembly with the signalsome whereas IKK-alpha IKK-beta and NIK remained complex-associated.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "LPS",
+        "TNF",
+        "NIK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the molecule that causes IkappaB-alpha and",
+          "What is another name for LPS?",
+          "What is the only complex-associated protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Exposure",
+        "LPS",
+        "TNF",
+        "differential patterns",
+        "IkappaB-alpha and IKK-beta disappearance",
+        "IKK-alpha IKK-beta",
+        "NIK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What led to the disappearance of IkappaB-alpha and IKK-",
+          "What is the name of the molecule that causes IkappaB-alpha and",
+          "What is another name for LPS?",
+          "What did exposure to LPS or TNF lead to?",
+          "What patterns did exposure to LPS or TNF lead to?",
+          "What two genes disappeared from the signalsome?",
+          "What is the only complex-associated protein?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the TNF or LPS that causes IkappaB-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10977160930633545,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.7027959227561951,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is another name for LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF",
+        "answerability": 0.601433515548706,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.9999992847442627,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the name of the complex-associated protein that remains complex-associated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4620736837387085,
+        "ground_truth": {
+          "NIK": {
+            "bertscore": 0.695873498916626,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What led to the disappearance of IkappaB-alpha and Ikapp": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Exposure to LPS or TNF",
+        "answerability": 0.9671173691749573,
+        "ground_truth": {
+          "Exposure": {
+            "bertscore": 0.7721710205078125,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What did exposure to LPS or TNF lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differential patterns of IkappaB-alpha and IKK-beta disappear",
+        "answerability": 0.7927838563919067,
+        "ground_truth": {
+          "differential patterns": {
+            "bertscore": 0.724867582321167,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What patterns did exposure to LPS or TNF lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaB-alpha and IKK-beta disappearance from and",
+        "answerability": 0.9172037243843079,
+        "ground_truth": {
+          "IkappaB-alpha and IkappaB-epsilon disappearance": {
+            "bertscore": 0.8597784638404846,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What two genes remain complex-associated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IKK-alpha IKK-beta and NIK",
+        "answerability": 0.9010818004608154,
+        "ground_truth": {
+          "IKK-alpha IKK-beta": {
+            "bertscore": 0.8993468880653381,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

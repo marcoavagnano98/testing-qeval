@@ -1,0 +1,104 @@
+{
+  "type": "ref",
+  "text": "Interleukin-10 (IL-10) and transforming growth factor beta (TGF-beta) are inhibitory for B and T cells IgE production and mast cell proliferation and they induce apoptosis in eosinophils.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Interleukin-10",
+        "IgE"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IL-10?",
+          "What type of B cells are the IL-10 and TGF-beta inhibitors"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Interleukin-10",
+        "growth factor beta",
+        "TGF-beta",
+        "B and T cells",
+        "production and mast cell proliferation",
+        "they",
+        "apoptosis",
+        "eosinophils"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IL-10?",
+          "What is another name for TGF-beta?",
+          "What is another name for transforming growth factor beta?",
+          "What are the two inhibitors of IgE production and mast cell proliferation?",
+          "What are the two inhibitors of B and T cells?",
+          "What is the name of the two proteins that are responsible for mast cell proliferation?",
+          "What do eosinophils experience when they are deprived of IL-10",
+          "What cells do IL-10 and TGF-beta induce apoptos"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interleukin-10",
+        "answerability": 0.9880823493003845,
+        "ground_truth": {
+          "Interleukin-10": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is another name for TGF-beta?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transforming growth factor beta",
+        "answerability": 0.9859182238578796,
+        "ground_truth": {
+          "growth factor beta": {
+            "bertscore": 0.9035831689834595,
+            "f1": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "What is another name for IL-10?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interleukin-10",
+        "answerability": 0.9635676741600037,
+        "ground_truth": {
+          "TGF-beta": {
+            "bertscore": 0.7447633147239685,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-10 and TGF-beta induce in eosin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.8635150790214539,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What cells are apoptose-inducing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eosinophils",
+        "answerability": 0.8402147889137268,
+        "ground_truth": {
+          "eosinophils": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

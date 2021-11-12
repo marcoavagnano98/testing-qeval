@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "IL-2 secretion was paralleled by increased expression of IL-2 mRNA resulting from enhanced IL-2 mRNA stability.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein was secreted by IL-2?",
+          "What protein was secreted by IL-2?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-2 secretion",
+        "increased expression",
+        "enhanced IL-2 mRNA stability"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was paralleled by increased expression of IL-2 mRNA?",
+          "What was the result of IL-2 secretion?",
+          "What was the result of increased expression of IL-2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA expression was similar to that of adulthood?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.244309663772583,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.6760645508766174,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the effect of IL-2 mRNA expression in neonates?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19512826204299927,
+        "ground_truth": {
+          "contrast enhancement": {
+            "bertscore": 0.7158600091934204,
+            "f1": 0
+          },
+          "adult levels": {
+            "bertscore": 0.6772525906562805,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did neonates have a similar effect on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06226348876953125,
+        "ground_truth": {
+          "IL-2 mRNA expression": {
+            "bertscore": 0.6075533628463745,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what group of children did IL-2 mRNA expression increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02584052085876465,
+        "ground_truth": {
+          "neonates": {
+            "bertscore": 0.7173750996589661,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

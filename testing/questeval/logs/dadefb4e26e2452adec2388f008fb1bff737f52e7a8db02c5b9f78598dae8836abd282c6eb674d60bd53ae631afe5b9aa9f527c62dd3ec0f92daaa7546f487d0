@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "However no cytoplasmic p62c-fos was detected in unstimulated PBL although in some cases cytoplasmic p39c-jun was detected suggesting that subcellular compartmentalization of this factormay occur under certain circumstances.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "unstimulated PBL",
+        "some cases",
+        "p39c-jun",
+        "subcellular compartmentalization",
+        "certain circumstances"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "In what type of PBL was cytoplasmic p62c-fos",
+          "In what cases was cytoplasmic p39c-jun detected?",
+          "What was detected in some cases in unstimulated PBL?",
+          "What is the term for the process that occurs when a protein is unable to bind",
+          "Under what circumstances was cytoplasmic p62c-fos detected?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "In what type of PBL was cytoplasmic p62c-fos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unstimulated",
+        "answerability": 0.7857924699783325,
+        "ground_truth": {
+          "unstimulated PBL": {
+            "bertscore": 0.876858115196228,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "In what cases was cytoplasmic p39c-jun detected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "some",
+        "answerability": 0.7149427533149719,
+        "ground_truth": {
+          "some cases": {
+            "bertscore": 0.8697611093521118,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What was detected in some cases in unstimulated PBL?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35114288330078125,
+        "ground_truth": {
+          "p39c-jun": {
+            "bertscore": 0.645603358745575,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the term for the formation of a cytoplasmic p62c-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03154045343399048,
+        "ground_truth": {
+          "subcellular compartmentalization": {
+            "bertscore": 0.6462926268577576,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the possibility of subcellular compartmentalization of these proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "under certain circumstances",
+        "answerability": 0.9714937210083008,
+        "ground_truth": {
+          "these proteinsmay": {
+            "bertscore": 0.6776540875434875,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Under what circumstances was cytoplasmic p62c-fos detected?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16742974519729614,
+        "ground_truth": {
+          "certain circumstances": {
+            "bertscore": 0.6649773120880127,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

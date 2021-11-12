@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "SWAP-70 is required for oncogenic transformation by v-Src in mouse embryo fibroblasts.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "v-Src",
+        "mouse"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for oncogenic transformation in mouse embryo fibroblasts?",
+          "What type of embryo fibroblasts is SWAP-70 required for?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "SWAP-70",
+        "oncogenic transformation",
+        "v-Src",
+        "mouse embryo fibroblasts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is required for oncogenic transformation by v-Src in mouse embryo",
+          "What is SWAP-70 required for?",
+          "What is required for oncogenic transformation in mouse embryo fibroblasts?",
+          "What is SWAP-70 required for oncogenic transformation by v-Src"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for oncogenic transformation in mouse embryo fibroblasts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SWAP-70",
+        "answerability": 0.9244048595428467,
+        "ground_truth": {
+          "v-Src": {
+            "bertscore": 0.6513799428939819,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of embryo fibroblasts is SWAP-70 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mouse",
+        "answerability": 0.8251271843910217,
+        "ground_truth": {
+          "mouse": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is required for oncogenic transformation by v-Src in mouse embryo": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "SWAP-70",
+        "answerability": 0.8633151650428772,
+        "ground_truth": {
+          "SWAP-70": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is SWAP-70 required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "oncogenic transformation",
+        "answerability": 0.9864876866340637,
+        "ground_truth": {
+          "oncogenic transformation": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is SWAP-70 required for oncogenic transformation by v-Src": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20478230714797974,
+        "ground_truth": {
+          "mouse embryo fibroblasts": {
+            "bertscore": 0.6510852575302124,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

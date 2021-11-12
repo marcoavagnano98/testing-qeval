@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Genes most significantly represented in this program are those with roles in cell growth>protein synthesis\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Genes",
+        "this program",
+        "roles",
+        "cell growth",
+        "protein synthesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is most significantly represented in the RNA-MS program?",
+          "What is the most significant gene representation in the RNA-MS program?",
+          "What are the genes most significantly represented in the program?",
+          "What is the most significant role of genes in the RNA-MS program?",
+          "What is the most significant role of genes in cell growth?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is most significantly represented in the RNA-MS program?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Genes",
+        "answerability": 0.9429387450218201,
+        "ground_truth": {
+          "Genes": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the most significant role of genes in cell growth and proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "those with roles in cell growth>protein synthesis",
+        "answerability": 0.9911885261535645,
+        "ground_truth": {
+          "this program": {
+            "bertscore": 0.6847435832023621,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the genes most significantly represented in the program?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "those with roles in cell growth>protein synthesis",
+        "answerability": 0.9998567700386047,
+        "ground_truth": {
+          "roles": {
+            "bertscore": 0.6171677708625793,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the most significant role of genes in the RNA-MS program?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "those with roles in cell growth>protein synthesis",
+        "answerability": 0.9929136037826538,
+        "ground_truth": {
+          "cell growth": {
+            "bertscore": 0.7737345099449158,
+            "f1": 0.22222222222222224
+          }
+        }
+      }
+    },
+    "What is the most significant role of genes in cell growth?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein synthesis",
+        "answerability": 0.9860398769378662,
+        "ground_truth": {
+          "proliferation": {
+            "bertscore": 0.7936978340148926,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the most significant roles in cell growth and proliferation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "those with roles in cell growth>protein synthesis",
+        "answerability": 0.9348050355911255,
+        "ground_truth": {
+          ">protein synthesis": {
+            "bertscore": 0.7782016396522522,
+            "f1": 0.22222222222222224
+          }
+        }
+      }
+    }
+  }
+}

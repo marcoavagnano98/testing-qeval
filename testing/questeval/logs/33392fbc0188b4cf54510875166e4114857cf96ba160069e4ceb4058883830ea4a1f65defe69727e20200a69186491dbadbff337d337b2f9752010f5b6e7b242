@@ -1,0 +1,76 @@
+{
+  "type": "ref",
+  "text": "Several small molecules an antisense oligonucleotide and gene therapeutic agents that inhibit NF-kappa b activation have been described.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Several small molecules",
+        "therapeutic agents",
+        "NF-kappa b activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is an antisense oligonucleotide?",
+          "What is a gene that inhibits NF-kappa b activation?",
+          "What do the small molecules inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been described that inhibit NF-kappa b activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "small molecules",
+        "answerability": 0.9966822862625122,
+        "ground_truth": {
+          "Several gene therapeutic agents": {
+            "bertscore": 0.7248654961585999,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do several gene therapeutic agents inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa b",
+        "answerability": 0.9493169784545898,
+        "ground_truth": {
+          "NF-kappa b activation": {
+            "bertscore": 0.8326836824417114,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "How many cell types are affected by NF-kappa b?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0005172491073608398,
+        "ground_truth": {
+          "a variety": {
+            "bertscore": 0.7131535410881042,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do a variety of therapeutic agents inhibit NF-kappa b activation": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3642893433570862,
+        "ground_truth": {
+          "cell types": {
+            "bertscore": 0.6943024396896362,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

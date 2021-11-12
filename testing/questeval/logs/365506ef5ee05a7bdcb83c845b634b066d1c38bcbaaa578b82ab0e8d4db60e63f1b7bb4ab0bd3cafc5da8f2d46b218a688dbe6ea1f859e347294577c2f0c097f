@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "(NF)-kappa B a transcription factor controlling the inducible expression of this gene.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(NF)-kappa B a transcription factor",
+        "the inducible expression",
+        "this gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What controls the inducible expression of the kappa gene?",
+          "What does NF-kappa B control?",
+          "What is the NF-kappa B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the NF-kappa gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16942155361175537,
+        "ground_truth": {
+          "B Egr-1 AP-1": {
+            "bertscore": 0.650519847869873,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that may mediate the inducible expression of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "(NF)-kappa B",
+        "answerability": 0.7081774473190308,
+        "ground_truth": {
+          "(NF-kappa B Egr-1 AP-1": {
+            "bertscore": 0.7670400142669678,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What might NF-kappa B Egr-1 mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005143523216247559,
+        "ground_truth": {
+          "the inducible expression": {
+            "bertscore": 0.6646653413772583,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the NF-kappa B Egr-1 AP-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010449826717376709,
+        "ground_truth": {
+          "this gene": {
+            "bertscore": 0.6866745352745056,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

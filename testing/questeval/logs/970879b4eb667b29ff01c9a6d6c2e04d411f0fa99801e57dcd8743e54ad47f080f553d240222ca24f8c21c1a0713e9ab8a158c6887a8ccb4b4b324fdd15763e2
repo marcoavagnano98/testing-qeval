@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Several mammalian responses to UV irradiation including the activation of NF-kappa B are believed to involve tyrosine phosphorylation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Several mammalian responses",
+        "to UV irradiation",
+        "the activation",
+        "NF-kappa B",
+        "tyrosine phosphorylation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the activation of NF-kappa B believed to involve?",
+          "What are some responses of mammals to UV radiation?",
+          "What is the tyrosine phosphorylation of NF-kappa",
+          "What is the name of the cell that is activated by UV irradiation?",
+          "What is the activation of NF-kappa B thought to involve?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the activation of NF-kappa B believed to involve?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation",
+        "answerability": 0.983493447303772,
+        "ground_truth": {
+          "Several mammalian responses": {
+            "bertscore": 0.671941876411438,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are some responses of mammals to UV radiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation",
+        "answerability": 0.9308936595916748,
+        "ground_truth": {
+          "to UV irradiation": {
+            "bertscore": 0.6998118162155151,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the tyrosine phosphorylation of NF-kappa": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10240459442138672,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.6892382502555847,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the cell that is activated by UV irradiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappa B",
+        "answerability": 0.6329054832458496,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the activation of NF-kappa B thought to involve?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tyrosine phosphorylation",
+        "answerability": 0.9892118573188782,
+        "ground_truth": {
+          "tyrosine phosphorylation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

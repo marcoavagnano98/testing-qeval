@@ -1,0 +1,114 @@
+{
+  "type": "hyp",
+  "text": "Of even more interest IkappaBalpha overexpression inhibited the production of matrix metalloproteinases 1 and 3 while not preventing their tissue inhibitor.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What overexpression inhibited the production of matrix metalloproteinases 1 and 3"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "even more interest",
+        "IkappaBalpha overexpression",
+        "the production",
+        "matrix",
+        "metalloproteinases",
+        "their tissue inhibitor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of IkappaBalpha overexpression on the production of matrix",
+          "What inhibited the production of matrix metalloproteinases 1 and 3?",
+          "What did IkappaBalpha overexpression inhibit?",
+          "What type of metalloproteinases did IkappaBalpha inhibit?",
+          "What did IkappaBalpha overexpression inhibit?",
+          "What did IkappaBalpha overexpression not prevent?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What overexpression inhibited the production of matrix metalloproteinases 1 and 3": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaBalpha",
+        "answerability": 0.93595290184021,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the effect of IkappaBalpha overexpression on the production of matrix": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibited the production of matrix metalloproteinases 1 and 3",
+        "answerability": 0.9497606754302979,
+        "ground_truth": {
+          "even more interest": {
+            "bertscore": 0.5930836200714111,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the production of matrix metalloproteinases 1 and 3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaBalpha overexpression",
+        "answerability": 0.9396078586578369,
+        "ground_truth": {
+          "IkappaBalpha overexpression": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did IkappaBalpha overexpression inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the production of matrix metalloproteinases 1 and 3",
+        "answerability": 0.8748846054077148,
+        "ground_truth": {
+          "the production": {
+            "bertscore": 0.592370867729187,
+            "f1": 0.25
+          },
+          "metalloproteinases": {
+            "bertscore": 0.8021941184997559,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What type of metalloproteinases did IkappaBalpha overexpression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35233932733535767,
+        "ground_truth": {
+          "matrix": {
+            "bertscore": 0.709927499294281,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did IkappaBalpha overexpression not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16619324684143066,
+        "ground_truth": {
+          "their tissue inhibitor": {
+            "bertscore": 0.6161578893661499,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

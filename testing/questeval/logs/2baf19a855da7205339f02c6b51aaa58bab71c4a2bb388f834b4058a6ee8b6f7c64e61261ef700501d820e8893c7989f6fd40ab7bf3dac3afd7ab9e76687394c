@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Overexpressed TRAF2 or TRAF2 activate JNK p38 or IKK\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "JNK p38",
+        "IKK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does overexpressed TRAF2 activate?",
+          "What does overexpressed TRAF2 activate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does overexpressed TRAF2 or TRAF6 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01519840955734253,
+        "ground_truth": {
+          "JNK": {
+            "bertscore": 0.6761499643325806,
+            "f1": 0
+          },
+          "JNK p38": {
+            "bertscore": 0.6450099349021912,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What two genes activate JNK p38 or IKK?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TRAF2 or TRAF2",
+        "answerability": 0.9922134876251221,
+        "ground_truth": {
+          "TRAF6": {
+            "bertscore": 0.8432326316833496,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is activated when TRAF2 or TRAF6": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.25069427490234375,
+        "ground_truth": {
+          "IKK": {
+            "bertscore": 0.6602891683578491,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Significant correlation between the metastatic potential of cancer cells and co-culture of osteoblastic cells with stromal or osteoblastic cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Significant correlation",
+        "the metastatic potential",
+        "cancer cells",
+        "co-culture",
+        "osteoblastic cells",
+        "stromal or osteoblastic cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the correlation between the metastatic potential of cancer cells and co-culture of osteoblast",
+          "What is the correlation between cancer cells and co-culture of osteoblastic cells?",
+          "What is the metastatic potential of?",
+          "What is a significant correlation between the metastatic potential of cancer cells and stromal or",
+          "What type of cancer cells are associated with metastatic potential?",
+          "What type of cells are involved in the metastatic potential of cancer cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the stromal and osteoblastic cells do to induce RANKL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19068390130996704,
+        "ground_truth": {
+          "co-culture": {
+            "bertscore": 0.6970744729042053,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "osteoblastic cells",
+        "answerability": 0.7819291353225708,
+        "ground_truth": {
+          "stromal or osteoblastic cells": {
+            "bertscore": 0.9001757502555847,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "metastatic potential",
+        "answerability": 0.8279079794883728,
+        "ground_truth": {
+          "RANKL mRNA expression": {
+            "bertscore": 0.7399484515190125,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002763509750366211,
+        "ground_truth": {
+          "OPG mRNA expression": {
+            "bertscore": 0.6336473226547241,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

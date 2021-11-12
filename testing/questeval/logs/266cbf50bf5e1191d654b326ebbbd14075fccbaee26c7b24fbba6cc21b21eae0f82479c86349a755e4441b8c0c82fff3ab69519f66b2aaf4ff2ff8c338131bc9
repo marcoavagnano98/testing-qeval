@@ -1,0 +1,88 @@
+{
+  "type": "hyp",
+  "text": "We have analyzed the expression of IL-2 IL-10 IL-12 and IL-15 by Northern blot analysis.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2 IL-10 IL-12",
+        "IL-15"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the expression of IL-15?",
+          "What is the name of the protein that is expressed by Northern Blot analysis?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the expression",
+        "IL-2 IL-10 IL-12 and IL-15",
+        "Northern blot analysis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the method used to analyze the expression of IL-12 and IL-15?",
+          "What has been analyzed by Northern blot analysis?",
+          "What two proteins were analyzed by Northern blot analysis?",
+          "What method has been used to analyze the expression of IL-2 IL-10 IL-12"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What has been studied in human T lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0213051438331604,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6054112315177917,
+            "f1": 0
+          },
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the gene that is expressed in anti-CD3-activated human": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12855690717697144,
+        "ground_truth": {
+          "IL-2Ralpha c-myc": {
+            "bertscore": 0.5815647840499878,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene was found to be expressed in anti-CD3-activated human T lymphocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18234366178512573,
+        "ground_truth": {
+          "pim-1 genes": {
+            "bertscore": 0.5942692756652832,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where did we analyze the expression of IL-2Ralpha c-myc and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Northern blot analysis",
+        "answerability": 0.6241992115974426,
+        "ground_truth": {
+          "anti-CD3-activated human T lymphocytes": {
+            "bertscore": 0.6641290783882141,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

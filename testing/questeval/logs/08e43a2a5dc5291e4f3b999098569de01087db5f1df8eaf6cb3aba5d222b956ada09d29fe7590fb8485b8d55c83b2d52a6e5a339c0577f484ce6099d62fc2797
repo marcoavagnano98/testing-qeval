@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "FurthermoreB cells transfected with a chimeric CD8alpha/IL-4Ralpha receptor which is expressed on the cell surface as a homodimer constitutively expressed Cepsilon germline transcripts.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Cepsilon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What germline transcripts are expressed on the cell surface?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "FurthermoreB cells",
+        "a chimeric CD8alpha/IL-4Ralpha receptor",
+        "the cell surface",
+        "a homodimer",
+        "constitutively expressed Cepsilon germline transcripts"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells are transfected with a chimeric CD8alpha/",
+          "What are FurthermoreB cells transfected with?",
+          "Where is the CD8alpha/IL-4Ralpha receptor expressed?",
+          "What is the chimeric CD8alpha/IL-4Ralpha receptor expressed as",
+          "What is the chimeric CD8alpha/IL-4Ralpha receptor expressed as"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What germline transcripts are expressed on the cell surface?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cepsilon",
+        "answerability": 0.9729931950569153,
+        "ground_truth": {
+          "Cepsilon": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were transfected with a chimeric CD8alpha/": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FurthermoreB cells",
+        "answerability": 0.9590514898300171,
+        "ground_truth": {
+          "Furthermore B cells": {
+            "bertscore": 0.8631002902984619,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What are B cells transfected with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD8alpha/IL-4Ralpha receptor",
+        "answerability": 0.9357510805130005,
+        "ground_truth": {
+          "a chimeric CD8alpha/IL-4Ralpha receptor": {
+            "bertscore": 0.9281455278396606,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "Where is the CD8alpha/IL-4Ralpha receptor expressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "on the cell surface",
+        "answerability": 0.977894127368927,
+        "ground_truth": {
+          "the cell surface": {
+            "bertscore": 0.9135110974311829,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the chimeric CD8alpha/IL-4Ralpha receptor expressed as": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6707291007041931,
+        "ground_truth": {
+          "a homodimer": {
+            "bertscore": 0.6882123947143555,
+            "f1": 0
+          },
+          "constitutively expressed Cepsilon germline transcripts": {
+            "bertscore": 0.6445876955986023,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

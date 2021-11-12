@@ -1,0 +1,60 @@
+{
+  "type": "hyp",
+  "text": "The reduced effect of RUNX1 silencing on the expression level of intracellular FOXP3 during naive CD4+ T cell differentiation to iT reg was evaluated by flow cytometry.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The reduced effect",
+        "the expression level",
+        "intracellular FOXP3",
+        "naive CD4",
+        "T cell differentiation",
+        "iT reg",
+        "flow cytometry"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of RUNX1 silencing on the expression level of intracellular",
+          "What did the reduced effect of RUNX1 silencing on?",
+          "What did RUNX1 silencing reduce the expression level of?",
+          "What type of T cell differentiation is reduced by RUNX1?",
+          "What is the effect of RUNX1 silencing on?",
+          "What is the name of the cell type that is naive?",
+          "What method evaluated the effect of RUNX1 silencing on intracellular FOXP"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was reduced slightly after RUNX1 silencing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "FOXP3",
+        "answerability": 0.9810930490493774,
+        "ground_truth": {
+          "FOXP3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What was the only factor that reduced FOXP3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "RUNX1 silencing",
+        "answerability": 0.8138364553451538,
+        "ground_truth": {
+          "RUNX1 silencing": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

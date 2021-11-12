@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "At least 1 major gene modulates the oxidative burst response to LDL lipids and/or LPS.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "At least 1",
+        "oxidative",
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many major genes modulate the oxidative burst response to LDL lipid",
+          "What type of burst response does LPS and LDL have?",
+          "What is the oxidative burst response to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "At least 1 major gene",
+        "the oxidative burst response",
+        "LDL lipids",
+        "LPS"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What modulates the oxidative burst response to LDL lipids and/",
+          "What does at least 1 major gene modulate?",
+          "What is the oxidative burst response to?",
+          "What is the oxidative burst response to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many major genes modulate the oxidation of LDL lipids?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "1",
+        "answerability": 0.9782993197441101,
+        "ground_truth": {
+          "At least 1": {
+            "bertscore": 0.782570481300354,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What lipid is oxidized by at least 1 major gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "LDL",
+        "answerability": 0.582565426826477,
+        "ground_truth": {
+          "LDL": {
+            "bertscore": 1.0000005960464478,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What modulates the oxidation of LDL lipids?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "At least 1 major gene",
+        "answerability": 0.7902100086212158,
+        "ground_truth": {
+          "At least 1 major gene": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does at least 1 major gene modulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the oxidative burst response to LDL lipids and/or LPS",
+        "answerability": 0.997624933719635,
+        "ground_truth": {
+          "the oxidation": {
+            "bertscore": 0.7452529668807983,
+            "f1": 0
+          },
+          "LDL lipids": {
+            "bertscore": 0.7575564980506897,
+            "f1": 0.4
+          },
+          "these lipids": {
+            "bertscore": 0.7483667135238647,
+            "f1": 0.2
+          }
+        }
+      }
+    },
+    "What does the oxidation of LDL lipids affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2752176523208618,
+        "ground_truth": {
+          "the biologic response": {
+            "bertscore": 0.6693586111068726,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

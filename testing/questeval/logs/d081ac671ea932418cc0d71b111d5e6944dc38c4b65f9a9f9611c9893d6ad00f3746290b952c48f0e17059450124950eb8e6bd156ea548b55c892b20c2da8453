@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "In vivo ethanol exposure caused decreased angiogenesis and resulted in increased hypoxia in wounds.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "vivo ethanol exposure",
+        "angiogenesis",
+        "increased hypoxia",
+        "wounds"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caused decreased angiogenesis and increased hypoxia in wounds?",
+          "What did ethanol exposure cause decreased in vivo?",
+          "What did ethanol exposure in vivo cause in wounds?",
+          "What did ethanol cause hypoxia in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caused decreased angiogenesis and increased hypoxia in wounds?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ethanol exposure",
+        "answerability": 0.9935026168823242,
+        "ground_truth": {
+          "vivo ethanol exposure": {
+            "bertscore": 0.9439570903778076,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause in vivo?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased angiogenesis",
+        "answerability": 0.9999250173568726,
+        "ground_truth": {
+          "both decreased angiogenesis": {
+            "bertscore": 0.9442685842514038,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause in wounds?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased hypoxia",
+        "answerability": 0.9953196048736572,
+        "ground_truth": {
+          "increased hypoxia": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did ethanol exposure cause hypoxia and decreased angiogenesis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased hypoxia",
+        "answerability": 0.8092973232269287,
+        "ground_truth": {
+          "wounds": {
+            "bertscore": 0.7550205588340759,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

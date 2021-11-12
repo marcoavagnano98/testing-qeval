@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Expression of Bcl-xL and p53 in the xenografts of gallbladder carcinomas.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bcl-xL"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene is expressed in xenografts of gallbladder carcinoma?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "Bcl-xL",
+        "p53",
+        "the xenografts",
+        "gallbladder carcinomas"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the difference between Bcl-xL and p53?",
+          "What gene is expressed in xenografts of gallbladder carcinoma?",
+          "What protein is expressed in xenografts of gallbladder carcinoma?",
+          "Where are Bcl-xL and p53 found?",
+          "What type of cancer is p53 expressed in?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene is expressed in primary tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.26931923627853394,
+        "ground_truth": {
+          "Bcl-xL": {
+            "bertscore": 0.6495962142944336,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Bcl-xL Bax and p53?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008870482444763184,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.710929811000824,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the protein that is expressed in primary tumors?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.032348453998565674,
+        "ground_truth": {
+          "Bcl-xL Bax": {
+            "bertscore": 0.6401403546333313,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main factor that controls the expression of Bcl-xL Bax?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004366576671600342,
+        "ground_truth": {
+          "p53": {
+            "bertscore": 0.6259340643882751,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cancer is Bcl-xL Bax expressed in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2686033248901367,
+        "ground_truth": {
+          "primary tumors": {
+            "bertscore": 0.6889125108718872,
+            "f1": 0
+          },
+          "oral squamous cell carcinoma": {
+            "bertscore": 0.6439468860626221,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

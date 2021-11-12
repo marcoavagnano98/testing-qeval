@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "However when we attempted to determine whether Foxp3 could physically interact with the coactivator protein p300 we found that p300 immunoprecipitated Foxp3 when both proteins were overexpressed in HEK 293T cells (Fig. 7D).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HEK",
+        "293",
+        "7D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells were able to overexpress Foxp3?",
+          "What type of cells were HEK cells?",
+          "What is the Fig. 7D?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "we",
+        "p300",
+        "both proteins",
+        "HEK 293T cells",
+        "Fig",
+        "7D"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we find when we tried to determine if Foxp3 could interact with p",
+          "What did we find when we tried to determine if Foxp3 could interact with p",
+          "What coactivator protein did Foxp3 interact with when both proteins were overexpressed?",
+          "What proteins were overexpressed in HEK 293T cells?",
+          "What cells were able to interact with Foxp3 when both proteins were overexpressed?",
+          "What is the corresponding figure of the p300-Foxp3 interaction?",
+          "What is the Fig. 7D?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What type of cells were able to overexpress Foxp3?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HEK 293T cells",
+        "answerability": 0.7353291511535645,
+        "ground_truth": {
+          "HEK": {
+            "bertscore": 0.7987695336341858,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What type of cells were HEK cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.10495299100875854,
+        "ground_truth": {
+          "293": {
+            "bertscore": 0.6121217608451843,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the corresponding figure of the study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "7D",
+        "answerability": 0.8747079372406006,
+        "ground_truth": {
+          "7D": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did we find when we tried to determine if Foxp3 could physically interact with": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5000642538070679,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6748356223106384,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What coactivator protein did Foxp3 interact with when both proteins were overexpressed?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p300",
+        "answerability": 0.9893372058868408,
+        "ground_truth": {
+          "p300": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What proteins were overexpressed in HEK 293T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3360815644264221,
+        "ground_truth": {
+          "both proteins": {
+            "bertscore": 0.7014090418815613,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells were tested for Foxp3's interaction with p300?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "HEK 293T cells",
+        "answerability": 0.9615136384963989,
+        "ground_truth": {
+          "HEK 293T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the p300-Foxp3 interaction shown in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Fig. 7D",
+        "answerability": 0.9463036060333252,
+        "ground_truth": {
+          "Figure 7D": {
+            "bertscore": 0.8404590487480164,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

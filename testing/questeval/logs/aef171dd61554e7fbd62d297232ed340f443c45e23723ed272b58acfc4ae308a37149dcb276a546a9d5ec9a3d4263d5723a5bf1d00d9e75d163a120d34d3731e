@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "(IL-4) plays a major role in this process by regulating the differentiation of IL-4-secreting Th2 cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a major role",
+        "this process",
+        "the differentiation",
+        "Th2 cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What role does IL-4 play in the differentiation of Th2 cells?",
+          "What is the role of IL-4 in the differentiation of Th2 cells?",
+          "What does IL-4 regulate?",
+          "What type of cells are involved in the differentiation of IL-4?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What role does IL-4 play in the differentiation of Th2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating",
+        "answerability": 0.9657691717147827,
+        "ground_truth": {
+          "a major role": {
+            "bertscore": 0.6475309133529663,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of IL-4 in the differentiation of Th2 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulating",
+        "answerability": 0.9868503212928772,
+        "ground_truth": {
+          "this process": {
+            "bertscore": 0.7628160119056702,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 promote?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiation",
+        "answerability": 0.9691635966300964,
+        "ground_truth": {
+          "the differentiation": {
+            "bertscore": 0.9121066927909851,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells are IL-4-secreting?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2 cells",
+        "answerability": 0.9979326725006104,
+        "ground_truth": {
+          "Th2 cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

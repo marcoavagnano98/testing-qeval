@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "Interleukin-1 stimulated U-937 cell adhesion to and VCAM-1 surface expression in both HUVECs and HUAECs.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Interleukin-1",
+        "U-937"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulated U-937 cell adhesion to and VCAM-1 surface expression in both",
+          "What cell adhesion to and VCAM-1 surface expression was stimulated by interleuk"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Interleukin-1",
+        "U-937 cell adhesion",
+        "VCAM-1 surface expression",
+        "both HUVECs",
+        "HUAECs"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stimulated U-937 cell adhesion to and VCAM-1 surface expression in both",
+          "What did interleukin-1 stimulate?",
+          "What did interleukin-1 stimulate?",
+          "In what cells did interleukin-1 stimulate U-937 cell adhesion to and",
+          "What is the other cell type that has a higher number of U-937 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the molecule that stimulates surface expression of vascular cell adhe": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interleukin-1",
+        "answerability": 0.7549269199371338,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7046141624450684,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What other drug stimulated VCAM-1 surface expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interleukin-1",
+        "answerability": 0.5983290076255798,
+        "ground_truth": {
+          "LPS": {
+            "bertscore": 0.674826979637146,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What monocyte-like cells were stimulated by TNF and LPS?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0026386380195617676,
+        "ground_truth": {
+          "U-937": {
+            "bertscore": 0.6604563593864441,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does VCAM stand for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09820955991744995,
+        "ground_truth": {
+          "vascular cell adhesion molecule": {
+            "bertscore": 0.6411955952644348,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TNF and LPS stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00022786855697631836,
+        "ground_truth": {
+          "VCAM)-1 surface expression": {
+            "bertscore": 0.6443077325820923,
+            "f1": 0
+          },
+          "adhesion": {
+            "bertscore": 0.6847332715988159,
+            "f1": 0
+          },
+          "U-937 monocyte-like cells": {
+            "bertscore": 0.6068829894065857,
+            "f1": 0
+          },
+          "HUVECs": {
+            "bertscore": 0.6754003763198853,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did TNF and LPS not stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 9.85860824584961e-05,
+        "ground_truth": {
+          "HUAECs": {
+            "bertscore": 0.6724496483802795,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

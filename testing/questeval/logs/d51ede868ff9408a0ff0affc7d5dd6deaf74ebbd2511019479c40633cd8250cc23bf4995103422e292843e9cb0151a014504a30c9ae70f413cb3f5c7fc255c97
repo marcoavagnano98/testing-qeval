@@ -1,0 +1,92 @@
+{
+  "type": "ref",
+  "text": "We now report the characterization of a second essential positive regulatory element located between nucleotides -137 and -64 that binds Elf-1 and HMG-I(Y).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "second",
+        "-64"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the essential positive regulatory element?",
+          "What is the second essential positive regulatory element located between?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the characterization",
+        "a second essential positive regulatory element",
+        "Elf-1 and HMG-I(Y"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the second essential positive regulatory element?",
+          "What is the purpose of this study?",
+          "What is found between nucleotides -137 and -64?",
+          "What two elements are binded together?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the second essential positive regulatory element?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Elf-1 and HMG-I(Y)",
+        "answerability": 0.8425790667533875,
+        "ground_truth": {
+          "second": {
+            "bertscore": 0.6279361844062805,
+            "f1": 0
+          },
+          "We": {
+            "bertscore": 0.5918724536895752,
+            "f1": 0
+          },
+          "that binds Elf-1 and HMG-I(Y) proteins": {
+            "bertscore": 0.7830002903938293,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the second essential positive regulatory element located between?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nucleotides -137 and -64",
+        "answerability": 0.9873596429824829,
+        "ground_truth": {
+          "-64": {
+            "bertscore": 0.6835018992424011,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the purpose of this study?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0874374508857727,
+        "ground_truth": {
+          "the characterization": {
+            "bertscore": 0.6891117691993713,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is found between nucleotides -137 and -64?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Elf-1 and HMG-I(Y)",
+        "answerability": 0.8100699186325073,
+        "ground_truth": {
+          "a second essential positive regulatory element": {
+            "bertscore": 0.6291399598121643,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

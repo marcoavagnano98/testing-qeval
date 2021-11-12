@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "We evaluated the binding activity of the CD28RE/AP-1 sequence to the IL-2 promoter in peripheral blood T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter did the CD28RE/AP-1 sequence bind to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "the binding activity",
+        "the CD28RE/AP-1 sequence",
+        "the IL-2 promoter",
+        "peripheral blood T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the effect of the CD28RE/AP-1 sequence on IL-2?",
+          "What did we evaluate in peripheral blood T cells?",
+          "What was tested to determine binding activity?",
+          "What did the CD28RE/AP-1 sequence binding activity in peripheral blood T cells?",
+          "Where was the binding activity of the CD28RE/AP-1 sequence evaluated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter is being studied for binding activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD28RE/AP-1",
+        "answerability": 0.9574365019798279,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.8152092695236206,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is evaluated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "binding activity of the CD28RE/AP-1 sequence to the IL-2 promoter",
+        "answerability": 0.8113189935684204,
+        "ground_truth": {
+          "the current study binding activity": {
+            "bertscore": 0.686470627784729,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is binding activity evaluated to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2 promoter",
+        "answerability": 0.9368879199028015,
+        "ground_truth": {
+          "the CD28RE/AP-1 sequence": {
+            "bertscore": 0.7519040703773499,
+            "f1": 0
+          },
+          "the IL-2 promoter": {
+            "bertscore": 0.9437438249588013,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Expression of Bcl-xL and 19K did not interfere with virus replication.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Bcl-xL",
+        "19"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What gene did not interfere with virus replication?",
+          "What genes did not interfere with virus replication?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Expression",
+        "Bcl-xL",
+        "19K",
+        "virus replication"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did Bcl-xL and 19K not interfere with?",
+          "What gene did not interfere with virus replication?",
+          "What gene did not interfere with virus replication?",
+          "What did Bcl-xL and 19K not interfere with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein did not interfere with anti-Fas killing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1932491660118103,
+        "ground_truth": {
+          "Bcl-xL": {
+            "bertscore": 0.6495963335037231,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene did not interfere with anti-Fas killing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.35990744829177856,
+        "ground_truth": {
+          "19": {
+            "bertscore": 0.6030882596969604,
+            "f1": 0
+          },
+          "19K": {
+            "bertscore": 0.6686908006668091,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What kind of killing did Bcl-xL and 19K not interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.024886369705200195,
+        "ground_truth": {
+          "anti-Fas": {
+            "bertscore": 0.688766598701477,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Bcl-xL and 19K not interfere with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "virus replication",
+        "answerability": 0.8686606287956238,
+        "ground_truth": {
+          "Expression": {
+            "bertscore": 0.7677923440933228,
+            "f1": 0
+          },
+          "anti-Fas killing": {
+            "bertscore": 0.7286804914474487,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

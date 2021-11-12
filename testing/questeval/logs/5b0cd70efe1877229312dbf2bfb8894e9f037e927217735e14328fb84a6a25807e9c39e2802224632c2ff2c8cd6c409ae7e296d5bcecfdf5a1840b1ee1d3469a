@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "p53 hot-spot mutants increase tumor vascularization via ROS-mediated pathway.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "p53 hot-spot mutants",
+        "tumor vascularization",
+        "ROS-mediated pathway"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What increases tumor vascularization via ROS-mediated pathway?",
+          "What do p53 hot-spot mutants increase?",
+          "What does p53 hot-spot mutants increase tumor vascularization via?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What increases tumor vascularization via ROS-mediated activation of the HIF1/VE": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p53 hot-spot mutants",
+        "answerability": 0.6550179719924927,
+        "ground_truth": {
+          "p53 hot-spot mutants": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What do p53 hot-spot mutants increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor vascularization",
+        "answerability": 0.9994191527366638,
+        "ground_truth": {
+          "tumor vascularization": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the mechanism by which p53 hot-spot mutants increase tumor vascular": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "ROS",
+        "answerability": 0.9756642580032349,
+        "ground_truth": {
+          "ROS-mediated activation": {
+            "bertscore": 0.7440579533576965,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What do p53 hot-spot mutants activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "tumor vascularization",
+        "answerability": 0.7676059007644653,
+        "ground_truth": {
+          "the HIF1/VEGF-A pathway": {
+            "bertscore": 0.6791529655456543,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

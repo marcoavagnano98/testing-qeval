@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Coimmunoprecipitation experiments revealed that p21(Waf1) is mainly associated with the cyclin D/CDK4 complex whereas cyclin E/CDK2 is not.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Coimmunoprecipitation experiments",
+        "the cyclin D/CDK4 complex",
+        "cyclin E/CDK2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What revealed that p21(Waf1) is mainly associated with the cycl",
+          "What is p21(Waf1) mainly associated with?",
+          "What complex is p21(Waf1) mainly associated with?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What revealed that p21(Waf1) is mainly associated with the cycl": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5233733057975769,
+        "ground_truth": {
+          "Coimmunoprecipitation experiments": {
+            "bertscore": 0.6272902488708496,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What complex is p21(Waf1) mainly associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclin D/CDK4",
+        "answerability": 0.9946492314338684,
+        "ground_truth": {
+          "the cyclin D/CDK4": {
+            "bertscore": 0.9386041760444641,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is p21(Waf1) mainly associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cyclin D/CDK4 complex",
+        "answerability": 0.9886673092842102,
+        "ground_truth": {
+          "the cyclin E/CDK2 complex": {
+            "bertscore": 0.932359516620636,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

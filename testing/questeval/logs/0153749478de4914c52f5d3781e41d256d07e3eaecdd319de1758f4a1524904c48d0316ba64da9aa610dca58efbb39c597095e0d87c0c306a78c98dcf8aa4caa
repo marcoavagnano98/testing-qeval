@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "Human herpesvirus 6 (HHV-6) can activate the human immunodeficiency virus (HIV) promoter and accelerate cytopathic effects in HIV-infected human T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the virus that can activate the HIV promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human herpesvirus",
+        "the human immunodeficiency virus",
+        "cytopathic effects",
+        "HIV-infected human T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is HHV-6?",
+          "What does HHV-6 activate?",
+          "What does HHV-6 accelerate in HIV-infected human T cells?",
+          "What type of cells can be affected by HHV-6?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the virus that can activate the HIV promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Human herpesvirus 6",
+        "answerability": 0.8906338214874268,
+        "ground_truth": {
+          "6": {
+            "bertscore": 0.6154009103775024,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is HHV-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5764514803886414,
+        "ground_truth": {
+          "Human herpesvirus": {
+            "bertscore": 0.6344103813171387,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HHV-6 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6789851188659668,
+        "ground_truth": {
+          "the human immunodeficiency virus": {
+            "bertscore": 0.6071332693099976,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does HHV-6 accelerate in HIV-infected human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytopathic effects",
+        "answerability": 0.6104211211204529,
+        "ground_truth": {
+          "cytopathic effects": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells can be affected by HHV-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "T cells",
+        "answerability": 0.7806529402732849,
+        "ground_truth": {
+          "HIV-infected human T cells": {
+            "bertscore": 0.832034170627594,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

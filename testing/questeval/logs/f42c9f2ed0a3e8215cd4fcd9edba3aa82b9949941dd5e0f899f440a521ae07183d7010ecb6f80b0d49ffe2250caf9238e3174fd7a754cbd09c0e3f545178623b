@@ -1,0 +1,86 @@
+{
+  "type": "ref",
+  "text": "Although extremely low levels of p73 expression were observed in all noncancerous gastric tissues and four of five cell lines a significant elevation of p73 was detected in 37 of 39 (94.9%) carcinoma tissues.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "four",
+        "five",
+        "37",
+        "94.9%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many of the five cell lines showed a significant elevation of p73 expression?",
+          "How many cell lines of noncancerous gastric tissues showed a significant elevation of",
+          "How many carcinoma tissues had p73 expression?",
+          "What percentage of carcinoma tissues had elevated levels of p73?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "extremely low levels",
+        "p73 expression",
+        "all noncancerous gastric tissues",
+        "four of five cell lines",
+        "a significant elevation",
+        "p73",
+        "94.9%"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the level of p73 expression in all noncancerous gastric tissues?",
+          "What was found in 37 of 39 carcinoma tissues?",
+          "Where were low levels of p73 detected?",
+          "How many noncancerous gastric tissues had a significant elevation of p73 expression",
+          "What was detected in 37 of 39 carcinoma tissues?",
+          "What was found in 37 of 39 carcinoma tissues?",
+          "What percentage of carcinoma tissues had elevated levels of p73?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What can be induced in proliferating cells of normal keratinocytes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.013637781143188477,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.68230801820755,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein can be induced in proliferating cells of normal keratinocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0565645694732666,
+        "ground_truth": {
+          "p73": {
+            "bertscore": 0.6104142069816589,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells can p73 be induced in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02879124879837036,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6847147941589355,
+            "f1": 0
+          },
+          "normal keratinocytes": {
+            "bertscore": 0.6509546637535095,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

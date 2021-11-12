@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Human neutrophils express GH-N gene transcripts and the pituitary transcription factor Pit-1b.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Human neutrophils",
+        "GH-N gene transcripts",
+        "the pituitary transcription factor"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of cells express GH-N gene transcripts?",
+          "What do human neutrophils express?",
+          "What do human neutrophils express?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What gene does the GH-N gene not express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.002743542194366455,
+        "ground_truth": {
+          "neutrophils express": {
+            "bertscore": 0.651239275932312,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene do neutrophils express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GH-N",
+        "answerability": 0.9726231098175049,
+        "ground_truth": {
+          "GH-N": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          },
+          "the GH-N gene": {
+            "bertscore": 0.824033260345459,
+            "f1": 0.6666666666666666
+          },
+          "not the GH-V gene": {
+            "bertscore": 0.7748801708221436,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What gene do neutrophils not express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0036038756370544434,
+        "ground_truth": {
+          "GH": {
+            "bertscore": 0.6969292759895325,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What revealed that neutrophils express the GH-N gene but not the GH-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06899464130401611,
+        "ground_truth": {
+          "Restriction analysis": {
+            "bertscore": 0.6969054341316223,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells express the GH-N gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Human neutrophils",
+        "answerability": 0.8095526695251465,
+        "ground_truth": {
+          "neutrophils": {
+            "bertscore": 0.9026722311973572,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

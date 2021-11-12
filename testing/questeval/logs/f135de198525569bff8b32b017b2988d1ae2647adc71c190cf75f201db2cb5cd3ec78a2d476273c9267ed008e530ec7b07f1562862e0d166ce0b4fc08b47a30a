@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "We previously demonstrated increased HTLV-1 transcription following CD3 but not CD2 receptor cross-linking.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "increased HTLV-1 transcription",
+        "CD3",
+        "not CD2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did we previously demonstrate increased HTLV-1 transcription following?",
+          "What did we previously demonstrate?",
+          "What receptor did we previously show increased transcription following?",
+          "What receptor cross-linking has previously been demonstrated?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did we previously demonstrate increased HTLV-1 transcription following?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD3",
+        "answerability": 0.9981238842010498,
+        "ground_truth": {
+          "We": {
+            "bertscore": 0.6537632346153259,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did we previously demonstrate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increased HTLV-1 transcription",
+        "answerability": 0.9316451549530029,
+        "ground_truth": {
+          "increased HTLV-1 transcription": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What receptor did we previously show increased transcription following?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD3",
+        "answerability": 0.9907915592193604,
+        "ground_truth": {
+          "CD2": {
+            "bertscore": 0.9696970582008362,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

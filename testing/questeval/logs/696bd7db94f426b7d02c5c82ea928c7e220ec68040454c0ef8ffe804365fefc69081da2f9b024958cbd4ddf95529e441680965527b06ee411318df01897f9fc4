@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "A number of signaling cascades have been shown to play important roles in prostate disease progression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "A number",
+        "cascades",
+        "important roles",
+        "prostate disease progression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many signaling cascades have been shown to play important roles in prostate disease progression?",
+          "What is a signaling mechanism?",
+          "What have signaling cascades been shown to play in prostate disease progression?",
+          "What is a signaling cascade of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many pathways are involved in the progression of hormone-refractory prostate disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.051126956939697266,
+        "ground_truth": {
+          "two": {
+            "bertscore": 0.7294576168060303,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is thought to contribute to prostate disease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signaling cascades",
+        "answerability": 0.941818356513977,
+        "ground_truth": {
+          "Crosstalk": {
+            "bertscore": 0.7459399700164795,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are the two pathways that cause prostate cancer to develop?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03345614671707153,
+        "ground_truth": {
+          "these two pathways": {
+            "bertscore": 0.6430949568748474,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the crosstalk between the two pathways thought to contribute to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.005644440650939941,
+        "ground_truth": {
+          "progression and hormone-refractory prostate disease": {
+            "bertscore": 0.6091662049293518,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "type": "hyp",
+  "text": "In contrast protein kinase C stimulation or RelA overexpression does not affect the activity of a human IL4 promoter containing a mouse P sequence which is a higher-affinity site for NF-ATp and a low-affinity site for RelA.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "RelA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What protein kinase C stimulation does not affect the activity of a human"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast protein kinase C stimulation",
+        "RelA overexpression",
+        "the activity",
+        "a human IL4 promoter",
+        "a mouse P sequence",
+        "a higher-affinity site",
+        "NF-ATp",
+        "a low-affinity site",
+        "RelA."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not affect the activity of a human IL4 promoter?",
+          "What does protein kinase C stimulation or do not affect the activity of a",
+          "What does protein kinase C stimulation or RelA overexpression not affect?",
+          "What does protein kinase C stimulation or RelA overexpression not affect?",
+          "What is a higher-affinity site for NF-ATp?",
+          "What is the P sequence of the mouse IL4 promoter?",
+          "What protein is a higher affinity site for?",
+          "What is the difference between the kinase C and RelA sites?",
+          "What protein kinase C stimulation does not affect the activity of a human"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein kinase C stimulation does not affect the activity of a human": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.32290947437286377,
+        "ground_truth": {
+          "RelA": {
+            "bertscore": 0.6762431263923645,
+            "f1": 0
+          },
+          "RelA.": {
+            "bertscore": 0.6292925477027893,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not affect the activity of a human IL4 promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein kinase C stimulation or RelA overexpression",
+        "answerability": 0.8974006175994873,
+        "ground_truth": {
+          "contrast protein kinase C stimulation": {
+            "bertscore": 0.8545969724655151,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does protein kinase C stimulation or do not affect the activity of a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6050354242324829,
+        "ground_truth": {
+          "RelA overexpression": {
+            "bertscore": 0.6677220463752747,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does protein kinase C stimulation or RelA overexpression not affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activity of a human IL4 promoter containing a mouse P sequence",
+        "answerability": 0.9711627960205078,
+        "ground_truth": {
+          "the activity": {
+            "bertscore": 0.644260823726654,
+            "f1": 0.19999999999999998
+          },
+          "a human IL4 promoter": {
+            "bertscore": 0.8801513314247131,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is a higher-affinity site for NF-ATp?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL4 promoter containing a mouse P sequence",
+        "answerability": 0.9593847990036011,
+        "ground_truth": {
+          "a mouse P sequence": {
+            "bertscore": 0.8178746700286865,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the difference between the NF-ATp and RelA sites?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "higher-affinity",
+        "answerability": 0.9202307462692261,
+        "ground_truth": {
+          "a higher-affinity site": {
+            "bertscore": 0.8768138289451599,
+            "f1": 0.6666666666666666
+          },
+          "a lower-affinity site": {
+            "bertscore": 0.8695382475852966,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What protein is a higher-affinity site for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-ATp",
+        "answerability": 0.952223539352417,
+        "ground_truth": {
+          "NF-ATp": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

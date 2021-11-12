@@ -1,0 +1,94 @@
+{
+  "type": "ref",
+  "text": "SDF-1alpha up-regulates interleukin-6 through CXCR4 PI3K/Akt ERK and NF-kappaB-dependent pathway in microglia.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Akt ERK",
+        "microglia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the CXCR4 PI3K/?",
+          "Where does SDF-1alpha up-regulate interleukin-6?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "SDF-1alpha up-regulates interleukin-6",
+        "CXCR4 PI3K/Akt ERK and NF-kappaB-dependent pathway",
+        "microglia"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does SDF-1alpha do through CXCR4 PI3K/Akt",
+          "What does SDF-1alpha up-regulate in microglia?",
+          "Where does SDF-1alpha up-regulate interleukin-6?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits the CXCR4 PI3K/Akt ERK and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06948661804199219,
+        "ground_truth": {
+          "PTHrP": {
+            "bertscore": 0.6459091901779175,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the CXCR4 PI3K/NF-kappaB-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.07218331098556519,
+        "ground_truth": {
+          "Akt ERK": {
+            "bertscore": 0.7060182690620422,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "Where does PTHrP inhibit the CXCR4 PI3K/Akt": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.037335753440856934,
+        "ground_truth": {
+          "microglia": {
+            "bertscore": 0.7005929946899414,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What PI3K/Akt ERK pathway does PTHrP inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0037450790405273438,
+        "ground_truth": {
+          "the CXCR4": {
+            "bertscore": 0.6355146765708923,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does PTHrP inhibit in microglia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00011026859283447266,
+        "ground_truth": {
+          "/Akt ERK and NF-kappaB-dependent pathway": {
+            "bertscore": 0.587066113948822,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

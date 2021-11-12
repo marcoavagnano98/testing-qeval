@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"The 5-UTR contains a sequence GGGGACGTCCCC named CD11b which is similar to the kappa 3 enhancer the binding site of the transcription factor nuclear factor (NF)-kappa B.\"\" This 5-UTR interacts with the nucleosome and the cytoplasmic component of the nuclear factor-kappa B (NF-kappa B).\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "The 5-UTR contains a sequence GGGGACGTCCCC named CD11b which is similar to the kappa 3 enhancer the binding site of the transcription factor nuclear factor (NF)-kappa B.",
+        "This 5-UTR interacts with the nucleosome and the cytoplasmic component of the nuclear factor-kappa B (NF-kappa B)"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the 5-UTR similar to?",
+          "What does the 5-UTR do?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The 5-UTR",
+        "a sequence GGGGACGTCCCC",
+        "the kappa 3 enhancer",
+        "the binding site",
+        "the transcription factor nuclear factor",
+        "NF)-kappa B.",
+        "the nucleosome",
+        "the cytoplasmic component",
+        "the nuclear factor-kappa B",
+        "(NF-kappa B"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What contains a sequence GGGGACGTCCCC named CD11b?",
+          "What does the 5-UTR contain?",
+          "What is the sequence GGGGACGTCCCC similar to?",
+          "What is the kappa 3 enhancer?",
+          "What is the binding site of the 5-UTR?",
+          "What transcription factor is the 5-UTR similar to?",
+          "What does the 5-UTR interact with?",
+          "What does the 5-UTR interact with?",
+          "What is the kappa 3 enhancer?",
+          "What transcription factor is the 5-UTR similar to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does the 5-UTR interact with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the nucleosome and the cytoplasmic component of the nuclear factor-kapp",
+        "answerability": 0.9766014814376831,
+        "ground_truth": {
+          "\"The 5-UTR also interacts with a specific nucleosome that is rapidly displaced during transcriptional activation of the latent provirus": {
+            "bertscore": 0.717150866985321,
+            "f1": 0.17391304347826086
+          },
+          "a specific nucleosome": {
+            "bertscore": 0.7506468892097473,
+            "f1": 0.22222222222222224
+          }
+        }
+      }
+    },
+    "What interacts with a specific nucleosome that is rapidly displaced during transcriptional": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.40453141927719116,
+        "ground_truth": {
+          "The 5-UTR": {
+            "bertscore": 0.656708836555481,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the process that causes the nucleosome to be displaced?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0029066801071166992,
+        "ground_truth": {
+          "transcriptional activation": {
+            "bertscore": 0.6785928606987,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is displaced during transcriptional activation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0014879107475280762,
+        "ground_truth": {
+          "the latent provirus": {
+            "bertscore": 0.6617912650108337,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

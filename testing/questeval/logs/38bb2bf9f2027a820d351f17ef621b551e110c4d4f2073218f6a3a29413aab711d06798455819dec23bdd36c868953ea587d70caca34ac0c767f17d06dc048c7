@@ -1,0 +1,150 @@
+{
+  "type": "hyp",
+  "text": "CD4+ T cells costimulated with the A6H mAb upregulated CD80 CD86 CD71 interleukin-2 (IL-2)R alpha IL-2R beta and IL-2R gamma while no corresponding up-regulation of these cell surface proteins was seen in CD8+ T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CD86 CD71"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What interleukin-2 (IL-2)R alpha IL-2R beta and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "CD4",
+        "T cells",
+        "the A6H mAb upregulated CD80 CD86 CD71 interleukin-2",
+        "alpha IL-2R beta",
+        "IL-2R gamma",
+        "no corresponding up-regulation",
+        "these cell surface proteins",
+        "CD8+ T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of T cells were upregulated by the A6H mAb?",
+          "What type of cells were upregulated by the A6H mAb?",
+          "What did the A6H mAb do to CD4+ T cells?",
+          "What is the name of the interleukin-2 protein that is upregulated in CD4",
+          "What was the only protein that was upregulated in CD8+ T cells?",
+          "What was seen in CD8+ T cells?",
+          "What did the A6H mAb not up-regulate in CD8+",
+          "What cells did the A6H mAb not up-regulate?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What interleukin-2 (IL-2)R alpha IL-2R beta and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4608774185180664,
+        "ground_truth": {
+          "CD86 CD71": {
+            "bertscore": 0.6272591948509216,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of T cells were upregulated by the A6H mAb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD4+",
+        "answerability": 0.970436692237854,
+        "ground_truth": {
+          "CD4": {
+            "bertscore": 0.9034008979797363,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells were upregulated by the A6H mAb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD4+ T cells",
+        "answerability": 0.9684189558029175,
+        "ground_truth": {
+          "T cells": {
+            "bertscore": 0.8431100249290466,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What did the A6H mAb do to CD4+ T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "upregulated",
+        "answerability": 0.9597887396812439,
+        "ground_truth": {
+          "the A6H mAb upregulated CD80 CD86 CD71 interleukin-2": {
+            "bertscore": 0.6828397512435913,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What did the A6H mAb upregulate in CD4+ T cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD80 CD86 CD71 interleukin-2 (IL-2R alpha IL",
+        "answerability": 0.6548008322715759,
+        "ground_truth": {
+          "alpha IL-2R beta": {
+            "bertscore": 0.7819206714630127,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What did the A6H mAb upregulate in CD8+ T cells": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.11723625659942627,
+        "ground_truth": {
+          "IL-2R gamma": {
+            "bertscore": 0.6096231937408447,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was seen in CD8+ T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.16277778148651123,
+        "ground_truth": {
+          "no corresponding up-regulation": {
+            "bertscore": 0.6972007751464844,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the A6H mAb not up-regulate in CD8+": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.18943411111831665,
+        "ground_truth": {
+          "these cell surface molecules": {
+            "bertscore": 0.6374678015708923,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells did the A6H mAb not upregulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CD8+ T cells",
+        "answerability": 0.5795687437057495,
+        "ground_truth": {
+          "CD8+ T cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Phosphorylation of the I-kappaB cytoplasmic inhibitors IkappaBalpha IkappaBbeta and IkappaBepsilon by these kinases triggers proteolytic degradation and the release of NF-kappaB/Rel proteins into the nucleus.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha IkappaBbeta",
+        "IkappaBepsilon"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the cytoplasmic inhibitor that causes the release of NF-",
+          "What is the name of the kinase that releases NF-kappa"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Phosphorylation",
+        "the I-kappaB cytoplasmic inhibitors",
+        "IkappaBalpha IkappaBbeta",
+        "IkappaBepsilon",
+        "these kinases",
+        "proteolytic degradation",
+        "the release",
+        "the nucleus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What triggers proteolytic degradation?",
+          "What triggers proteolytic degradation?",
+          "What is the name of the cytoplasmic inhibitor that causes the release of NF-",
+          "What is the name of the kinase that releases NF-kappa",
+          "What triggers proteolytic degradation?",
+          "What is the result of phosphorylation of I-kappaB cytoplasm",
+          "What happens to NF-kappaB/Rel proteins?",
+          "Where do NF-kappaB/Rel proteins go?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the process that results in NF-kappaB nuclear translocation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09158128499984741,
+        "ground_truth": {
+          "Phosphorylation ubiquitination": {
+            "bertscore": 0.6215218901634216,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens to I-kappaBalpha?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Phosphorylation",
+        "answerability": 0.664547324180603,
+        "ground_truth": {
+          "subsequent degradation": {
+            "bertscore": 0.7327144742012024,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the result of NF-kappaB nuclear translocation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.008599996566772461,
+        "ground_truth": {
+          "I-kappaBalpha results": {
+            "bertscore": 0.6196328401565552,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What happens when phosphorylation ubiquitination and subsequent degradation of I-k": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.08993124961853027,
+        "ground_truth": {
+          "NF-kappaB nuclear translocation": {
+            "bertscore": 0.6446559429168701,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "The MAD-3 cDNA encodes an I kappa B-like protein that is likely to be involved in regulation of transcriptional responses to NF-kappa B including adhesion-specific pathways of monocyte activation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "MAD-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cDNA encodes an I kappa B-like protein?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "an I kappa B-like protein",
+        "regulation",
+        "transcriptional responses",
+        "NF-kappa B",
+        "adhesion-specific pathways",
+        "monocyte activation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does the MAD-3 cDNA encode?",
+          "What is the MAD-3 cDNA likely to be involved in?",
+          "What is the MAD-3 cDNA likely to be involved in regulation of?",
+          "What is the MAD-3 cDNA likely to be involved in regulation of?",
+          "What is the MAD-3 cDNA likely to be involved in regulation of transcriptional responses",
+          "What is the MAD-3 cDNA likely to be involved in regulation of?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cDNA encodes an I kappa B-like protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MAD-3",
+        "answerability": 0.9922868013381958,
+        "ground_truth": {
+          "MAD-3": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the MAD-3 cDNA encode?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an I kappa B-like protein",
+        "answerability": 0.9748905301094055,
+        "ground_truth": {
+          "an I kappa B-like protein": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the MAD-3 cDNA likely to be involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "regulation of transcriptional responses to NF-kappa B",
+        "answerability": 0.7352696657180786,
+        "ground_truth": {
+          "regulation": {
+            "bertscore": 0.6975146532058716,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is the MAD-3 cDNA likely to be involved in regulation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional responses to NF-kappa B",
+        "answerability": 0.9272705316543579,
+        "ground_truth": {
+          "transcriptional responses": {
+            "bertscore": 0.8202679753303528,
+            "f1": 0.5714285714285715
+          },
+          "monocyte activation": {
+            "bertscore": 0.722998857498169,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the MAD-3 cDNA likely to be involved in regulation of transcriptional responses": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an I kappa B-like protein",
+        "answerability": 0.7025185823440552,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.7620938420295715,
+            "f1": 0
+          },
+          "adhesion-dependent pathways": {
+            "bertscore": 0.7415077090263367,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

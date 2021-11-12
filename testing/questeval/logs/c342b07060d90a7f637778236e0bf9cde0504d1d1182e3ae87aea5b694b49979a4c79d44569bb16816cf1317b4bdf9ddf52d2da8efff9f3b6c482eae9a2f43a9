@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Wnt stabilizes beta-catenin a PAK-like kinase thereby increasing GSK3beta/Axin2 complexes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GSK3beta"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What complexes does Wnt stabilize?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Wnt",
+        "a PAK-like kinase",
+        "GSK3beta/Axin2 complexes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What stabilizes beta-catenin?",
+          "What does Wnt stabilize?",
+          "What does Wnt increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What stabilizes cytosolic beta-catenin?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.010803461074829102,
+        "ground_truth": {
+          "Wnt": {
+            "bertscore": 0.674863874912262,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Wnt stabilize?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "beta-catenin",
+        "answerability": 0.8368207216262817,
+        "ground_truth": {
+          "cytosolic beta-catenin": {
+            "bertscore": 0.8688708543777466,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does Wnt bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05934405326843262,
+        "ground_truth": {
+          "TCF": {
+            "bertscore": 0.6845880150794983,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does Wnt activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022426366806030273,
+        "ground_truth": {
+          "gene transcription": {
+            "bertscore": 0.6639035940170288,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

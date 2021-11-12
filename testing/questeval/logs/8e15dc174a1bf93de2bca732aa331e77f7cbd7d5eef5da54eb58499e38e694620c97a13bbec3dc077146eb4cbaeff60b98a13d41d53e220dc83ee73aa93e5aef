@@ -1,0 +1,138 @@
+{
+  "type": "hyp",
+  "text": "The eukaryotic transcription factor NF-kappa B is involved in the inducible expression of various inflammatory genes as well as in HIV-1 replication. NF-kappa B is a potent transcriptional activator of HIV expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the key factor in the replication of HIV?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The eukaryotic transcription factor",
+        "NF-kappa B",
+        "the inducible expression",
+        "various inflammatory genes",
+        "HIV-1 replication",
+        "NF-kappa B",
+        "a potent transcriptional activator",
+        "HIV expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is involved in the inducible expression of various inflammatory genes?",
+          "What is the transcriptional activator of HIV?",
+          "What is the NF-kappa B involved in?",
+          "What is the NF-kappa B involved in the inducible expression of?",
+          "What is the eukaryotic transcription factor NF-kappa B involved in",
+          "What is the transcriptional activator of HIV?",
+          "What is the role of NF-kappa B in HIV expression?",
+          "What is the NF-kappa B a potent transcriptional activator of"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "eukaryotic transcription factor",
+        "answerability": 0.9493069052696228,
+        "ground_truth": {
+          "a potent transcriptional activator": {
+            "bertscore": 0.7811833620071411,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is NF-kappa B involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inducible expression of various inflammatory genes",
+        "answerability": 0.9830280542373657,
+        "ground_truth": {
+          "HIV expression": {
+            "bertscore": 0.7454919815063477,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What is RANTES involved in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0007128119468688965,
+        "ground_truth": {
+          "the expression": {
+            "bertscore": 0.6823080778121948,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What chemokine blocks infection by macrophage-tropic strains of HIV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0024110078811645508,
+        "ground_truth": {
+          "RANTES": {
+            "bertscore": 0.6590369343757629,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is RANTES?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0014587640762329102,
+        "ground_truth": {
+          "a chemokine": {
+            "bertscore": 0.6447317600250244,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does RANTES block?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 7.784366607666016e-05,
+        "ground_truth": {
+          "infection": {
+            "bertscore": 0.6894521117210388,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does RANTES block infection by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 4.553794860839844e-05,
+        "ground_truth": {
+          "macrophage-tropic strains": {
+            "bertscore": 0.6528334617614746,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is RANTES a chemokine that blocks infection by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00010466575622558594,
+        "ground_truth": {
+          "HIV": {
+            "bertscore": 0.6726185083389282,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

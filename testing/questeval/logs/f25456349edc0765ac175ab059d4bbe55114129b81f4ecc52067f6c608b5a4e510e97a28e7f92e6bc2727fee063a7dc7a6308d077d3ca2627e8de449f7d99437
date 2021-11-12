@@ -1,0 +1,126 @@
+{
+  "type": "hyp",
+  "text": "IL-4 is secreted by activated Th2 but not Th1 cells and plays a major role in the immune response by modulating the differentiation of naive Th cells toward the Th2 phenotype.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "IL-4",
+        "activated Th2",
+        "not Th1 cells",
+        "a major role",
+        "the immune response",
+        "the differentiation",
+        "naive Th cells",
+        "the Th2 phenotype"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is secreted by activated Th2 cells but not Th1 cells?",
+          "What type of cells secrete IL-4?",
+          "What type of cells secrete IL-4?",
+          "What role does IL-4 play in the immune response?",
+          "What does IL-4 play a major role in?",
+          "What does IL-4 modulate?",
+          "What type of Th cells are activated by IL-4?",
+          "What does IL-4 help differentiate from?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is secreted by activated Th2 cells but not Th1 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4",
+        "answerability": 0.9950110912322998,
+        "ground_truth": {
+          "IL-4": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells secrete IL-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2",
+        "answerability": 0.9913188219070435,
+        "ground_truth": {
+          "activated Th2": {
+            "bertscore": 0.8087593913078308,
+            "f1": 0.6666666666666666
+          },
+          "not Th1 cells": {
+            "bertscore": 0.7135717868804932,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What role does IL-4 play in the immune response?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "modulating the differentiation of naive Th cells toward the Th2 phenotype",
+        "answerability": 0.9744116067886353,
+        "ground_truth": {
+          "a major role": {
+            "bertscore": 0.5586323142051697,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 play a major role in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "immune response",
+        "answerability": 0.9977424144744873,
+        "ground_truth": {
+          "the immune response": {
+            "bertscore": 0.8881478309631348,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does IL-4 modulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "differentiation of naive Th cells toward the Th2 phenotype",
+        "answerability": 0.994372546672821,
+        "ground_truth": {
+          "the differentiation": {
+            "bertscore": 0.7112306356430054,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What type of Th cells are activated by IL-4?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2",
+        "answerability": 0.9078659415245056,
+        "ground_truth": {
+          "naive Th cells": {
+            "bertscore": 0.7236008644104004,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 help differentiate from?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Th2",
+        "answerability": 0.8884211182594299,
+        "ground_truth": {
+          "the Th2 phenotype": {
+            "bertscore": 0.7501267790794373,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

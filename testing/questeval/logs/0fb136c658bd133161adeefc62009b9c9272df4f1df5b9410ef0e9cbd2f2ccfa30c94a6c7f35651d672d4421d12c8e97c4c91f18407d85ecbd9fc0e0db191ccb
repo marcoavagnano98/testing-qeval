@@ -1,0 +1,104 @@
+{
+  "type": "hyp",
+  "text": "Following stimulation TNF-alpha was measured in cell supernatants by ELISA NF-kappaB activity by electrophoretic mobility shift assay and IkappaBalpha mRNA levels by Western blot.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was measured in cell supernatants by electrophoretic mobility shift assay?",
+          "What was measured in cell supernatants by Western blot?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "stimulation TNF-alpha",
+        "cell supernatants",
+        "ELISA NF-kappaB activity",
+        "electrophoretic mobility shift assay",
+        "IkappaBalpha mRNA levels",
+        "Western blot"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was measured in cell supernatants by ELISA NF-kappa",
+          "Where was TNF-alpha measured?",
+          "What was used to measure TNF-alpha in cell supernatants?",
+          "What was used to measure TNF-alpha activity?",
+          "What was measured by Western blot?",
+          "What method was used to measure IkappaBalpha mRNA levels?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the mRNA and protein of the chromosome that is analyzed by": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03729832172393799,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 0.6275320053100586,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "In what types of cells was DEX treatment used?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00020259618759155273,
+        "ground_truth": {
+          "both cell types": {
+            "bertscore": 0.6924739480018616,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was evaluated by DEX treatment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003287672996520996,
+        "ground_truth": {
+          "the cellular levels": {
+            "bertscore": 0.6459662318229675,
+            "f1": 0
+          },
+          "IkappaBalpha mRNA": {
+            "bertscore": 0.6125349402427673,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IkappaBalpha mRNA and what else evaluated by DEX": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.12155628204345703,
+        "ground_truth": {
+          "protein": {
+            "bertscore": 0.6816306710243225,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was used to evaluate the levels of IkappaBalpha mRNA and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Western blot",
+        "answerability": 0.9153305888175964,
+        "ground_truth": {
+          "DEX treatment": {
+            "bertscore": 0.7667127847671509,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

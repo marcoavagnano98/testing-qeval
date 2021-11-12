@@ -1,0 +1,50 @@
+{
+  "type": "hyp",
+  "text": "This suggests that expression of activated DR antigens also can be modulated post-transcriptionally.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "expression",
+        "activated DR"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What can be modulated post-transcriptionally?",
+          "What antigen can be modulated post-transcriptionally?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What antigen can be modulated post-transcriptionally?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activated DR antigens",
+        "answerability": 0.9121183156967163,
+        "ground_truth": {
+          "DR": {
+            "bertscore": 0.6863372921943665,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What can be modulated post-transcriptionally?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "expression of activated DR antigens",
+        "answerability": 0.9895497560501099,
+        "ground_truth": {
+          "expression": {
+            "bertscore": 0.7407270073890686,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "type": "hyp",
+  "text": "The granulocyte-macrophage colony-stimulating factor requires sequences in the promoter as well as a powerful enhancer located 3kb upstream to respond to multiple activating signals in monocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "3",
+        "kb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "How many kb upstream is the enhancer located in?",
+          "How large is the enhancer located in the promoter?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The granulocyte-macrophage colony-stimulating factor",
+        "sequences",
+        "the promoter",
+        "a powerful enhancer",
+        "3kb upstream",
+        "multiple activating signals",
+        "monocytes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What requires sequences in the promoter and a powerful enhancer located 3kb up",
+          "What does the granulocyte-macrophage colony-stimulating",
+          "What part of the cell does the granulocyte-macrophage colony",
+          "What is located 3kb upstream of the granulocyte-macrophag",
+          "Where is the enhancer located?",
+          "What does the granulocyte-macrophage colony-stimulating",
+          "What does the granulocyte-macrophage colony-stimulating"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "How many kb upstream is the enhancer located in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3",
+        "answerability": 0.9652748107910156,
+        "ground_truth": {
+          "3": {
+            "bertscore": 0.9999994039535522,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How large is the enhancer located in the promoter?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3kb",
+        "answerability": 0.8639639616012573,
+        "ground_truth": {
+          "kb": {
+            "bertscore": 0.7471348643302917,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What requires sequences in the promoter and a powerful enhancer located 3kb up": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "granulocyte-macrophage colony-stimulating factor",
+        "answerability": 0.7909544706344604,
+        "ground_truth": {
+          "The granulocyte-macrophage colony-stimulating factor": {
+            "bertscore": 0.9466423392295837,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does the granulocyte-macrophage colony-stimulating": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.2775619626045227,
+        "ground_truth": {
+          "sequences": {
+            "bertscore": 0.7263264060020447,
+            "f1": 0
+          },
+          "TCR-like signals": {
+            "bertscore": 0.6451606154441833,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What part of the cell does the granulocyte-macrophage colony": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01929008960723877,
+        "ground_truth": {
+          "the promoter": {
+            "bertscore": 0.6688698530197144,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is located 3kb upstream of the granulocyte-macrophag": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a powerful enhancer",
+        "answerability": 0.6750783920288086,
+        "ground_truth": {
+          "a powerful enhancer": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where is the enhancer located?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "3kb upstream",
+        "answerability": 0.9809907674789429,
+        "ground_truth": {
+          "3kb upstream": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

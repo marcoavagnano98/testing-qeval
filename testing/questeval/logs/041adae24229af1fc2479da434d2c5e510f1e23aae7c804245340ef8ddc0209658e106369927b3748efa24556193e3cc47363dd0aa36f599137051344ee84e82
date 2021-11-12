@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Diminished expression of TCRzeta and p56(lck) that are associated with the TCR and reduced nuclear localization of RelA containing\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TCRzeta",
+        "TCR",
+        "RelA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is associated with reduced nuclear localization of RelA?",
+          "What is associated with reduced nuclear localization of RelA?",
+          "What is associated with reduced nuclear localization?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Diminished expression",
+        "TCRzeta",
+        "p56(lck",
+        "the TCR",
+        "RelA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of TCRzeta and p56(lck) on",
+          "What is associated with reduced nuclear localization of RelA?",
+          "What is associated with reduced nuclear localization of RelA?",
+          "What is the TCRzeta and p56(lck) associated with?",
+          "What is associated with reduced nuclear localization?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is associated with reduced nuclear localization of RelA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5764992237091064,
+        "ground_truth": {
+          "TCRzeta": {
+            "bertscore": 0.6754035353660583,
+            "f1": 0
+          },
+          "TCR": {
+            "bertscore": 0.6891101598739624,
+            "f1": 0
+          },
+          "p56(lck": {
+            "bertscore": 0.6245650053024292,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is associated with reduced nuclear localization?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.24258065223693848,
+        "ground_truth": {
+          "RelA": {
+            "bertscore": 0.6762431859970093,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of TCRzeta and p56(lck) on": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Diminished expression",
+        "answerability": 0.9772830009460449,
+        "ground_truth": {
+          "Diminished expression": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the TCRzeta and p56(lck) associated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TCR",
+        "answerability": 0.8374783992767334,
+        "ground_truth": {
+          "the TCR": {
+            "bertscore": 0.8809019923210144,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

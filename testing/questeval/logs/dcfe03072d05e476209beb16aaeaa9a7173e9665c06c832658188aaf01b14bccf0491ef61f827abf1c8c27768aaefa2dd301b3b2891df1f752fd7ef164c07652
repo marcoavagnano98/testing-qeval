@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "was dose-dependently reduced by aspirin over the same range while induction of intercellular adhesion molecule-1 (ICAM-1) was hardly affected. Induction of HIV by C. neoformans was enhanced by anti-capsular antibody while induction by both organisms was inhibited by anti-TNF-alpha antibody.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "aspirin",
+        "anti-TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug reduced the induction of HIV?",
+          "What antibody inhibited the induction of HIV by C. neoformans"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "aspirin",
+        "the same range",
+        "induction",
+        "intercellular adhesion",
+        "(ICAM-1",
+        "Induction",
+        "HIV",
+        "C. neoformans",
+        "anti-capsular antibody",
+        "induction",
+        "both organisms",
+        "anti-TNF-alpha antibody"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug reduced the induction of HIV?",
+          "How much dose-dependent was aspirin reduced over?",
+          "What was inhibited by anti-TNF-alpha antibody?",
+          "What does ICAM-1 stand for?",
+          "What is the name of the intercellular adhesion molecule-1?",
+          "What was inhibited by anti-TNF-alpha antibody?",
+          "What was inhibited by anti-TNF-alpha antibody?",
+          "What organism inhibited the induction of HIV?",
+          "What enhanced the induction of HIV by C. neoformans?",
+          "What was inhibited by anti-TNF-alpha antibody?",
+          "What inhibited the induction of HIV?",
+          "What inhibited the induction of HIV by C. neoformans?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was inhibited by anti-TNF-alpha antibody?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.09667116403579712,
+        "ground_truth": {
+          "Induction": {
+            "bertscore": 0.7021175026893616,
+            "f1": 0
+          },
+          "HIV": {
+            "bertscore": 0.6726183891296387,
+            "f1": 0
+          },
+          "induction": {
+            "bertscore": 0.722252368927002,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What organism inhibited the induction of HIV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0861501693725586,
+        "ground_truth": {
+          "C. neoformans": {
+            "bertscore": 0.6195579767227173,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What enhanced the induction of HIV by C. neoformans?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "anti-capsular antibody",
+        "answerability": 0.9714348912239075,
+        "ground_truth": {
+          "anti-capsular antibody": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What inhibited the induction of HIV?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1525447964668274,
+        "ground_truth": {
+          "both organisms": {
+            "bertscore": 0.6782581210136414,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What inhibited the induction of HIV by C. neoformans?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1817840337753296,
+        "ground_truth": {
+          "anti-TNF-alpha antibody": {
+            "bertscore": 0.6136420369148254,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

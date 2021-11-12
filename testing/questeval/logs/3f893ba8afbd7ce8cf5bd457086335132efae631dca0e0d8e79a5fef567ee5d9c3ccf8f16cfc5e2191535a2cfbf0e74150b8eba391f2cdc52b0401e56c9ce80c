@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "This protein-protein interaction does not require the simultaneous binding of Oct factors to DNA and\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Oct"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What factor does the protein-protein interaction not require?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This protein-protein interaction",
+        "the simultaneous binding",
+        "Oct factors",
+        "DNA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What does not require the simultaneous binding of Oct factors to DNA?",
+          "What does the interaction between Oct factors and DNA not require?",
+          "What does the interaction between DNA and Oct factors not require?",
+          "What does the interaction between Oct factors and a protein not require?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What protein does the interaction between Oct and DNA not require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Oct",
+        "answerability": 0.692764163017273,
+        "ground_truth": {
+          "Oct": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does not require the simultaneous binding of Oct proteins to DNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "protein-protein interaction",
+        "answerability": 0.8719125986099243,
+        "ground_truth": {
+          "This protein-protein interaction": {
+            "bertscore": 0.8760292530059814,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does the interaction between Oct proteins and DNA not require?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the simultaneous binding of Oct factors to DNA",
+        "answerability": 0.936163067817688,
+        "ground_truth": {
+          "the simultaneous binding": {
+            "bertscore": 0.8298096656799316,
+            "f1": 0.4444444444444445
+          },
+          "DNA": {
+            "bertscore": 0.6709949970245361,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    "What does the protein-protein interaction not require the simultaneous binding of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Oct factors to DNA",
+        "answerability": 0.9368976354598999,
+        "ground_truth": {
+          "Oct proteins": {
+            "bertscore": 0.8434128165245056,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    }
+  }
+}

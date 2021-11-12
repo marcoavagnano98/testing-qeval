@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of Bcl-2 in tumor cells blocks apoptosis induced by many stimuli but inhibition of Fas-mediated killing has not be consistently observed.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "tumor cells blocks apoptosis",
+        "many stimuli",
+        "inhibition",
+        "Fas-mediated killing"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of the blockage of apoptosis?",
+          "What is the effect of Bcl-2 overexpression in tumor cells?",
+          "What causes apoptosis?",
+          "What is the effect of Bcl-2 on Fas-mediated killing?",
+          "What is not consistently observed in tumor cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of the apoptosis that is induced by stimuli": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20055729150772095,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191470861434937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of Bcl-2 overexpression in tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "blocks apoptosis",
+        "answerability": 0.999962329864502,
+        "ground_truth": {
+          "tumor cells blocks apoptosis": {
+            "bertscore": 0.8839015364646912,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What causes apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.1900539994239807,
+        "ground_truth": {
+          "many stimuli": {
+            "bertscore": 0.6736941933631897,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of Bcl-2 on Fas-mediated killing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition",
+        "answerability": 0.987155556678772,
+        "ground_truth": {
+          "inhibition": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is not consistently observed in tumor cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inhibition of Fas-mediated killing",
+        "answerability": 0.9848007559776306,
+        "ground_truth": {
+          "Fas-mediated killing": {
+            "bertscore": 0.8727390766143799,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

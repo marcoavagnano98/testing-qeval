@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "Sunitinib markedly induced apoptosis of PC12 cells in a time- and concentration-dependent manner.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Sunitinib",
+        "PC12"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug induced apoptosis of PC12 cells?",
+          "What type of cells did sunitinib induce apoptosis of?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Sunitinib",
+        "apoptosis",
+        "PC12 cells",
+        "a time- and concentration-dependent manner"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What drug induced apoptosis of PC12 cells?",
+          "What did sunitinib induce in PC12 cells?",
+          "What did sunitinib induce apoptosis of?",
+          "How did sunitinib affect PC12 cells?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What drug induced apoptosis of PC12 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Sunitinib",
+        "answerability": 0.9971180558204651,
+        "ground_truth": {
+          "Sunitinib": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells did sunitinib induce apoptosis of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PC12 cells",
+        "answerability": 0.9964406490325928,
+        "ground_truth": {
+          "PC12": {
+            "bertscore": 0.8623932600021362,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did sunitinib induce in PC12 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9910762310028076,
+        "ground_truth": {
+          "apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did sunitinib induce apoptosis of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PC12 cells",
+        "answerability": 0.9963064193725586,
+        "ground_truth": {
+          "PC12 cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "How did sunitinib affect PC12 cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "apoptosis",
+        "answerability": 0.9530395269393921,
+        "ground_truth": {
+          "a dose-dependent and time-dependent manner": {
+            "bertscore": 0.6369401216506958,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

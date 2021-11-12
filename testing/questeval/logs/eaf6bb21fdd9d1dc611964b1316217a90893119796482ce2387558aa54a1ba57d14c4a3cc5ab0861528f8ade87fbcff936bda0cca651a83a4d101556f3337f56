@@ -1,0 +1,76 @@
+{
+  "type": "hyp",
+  "text": "Role of AP-1- and octamer-binding sites in control of IL3 gene expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Role",
+        "AP-1-",
+        "octamer-binding sites",
+        "control",
+        "IL3 gene expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the role of AP-1- and octamer-binding",
+          "What is the name of the octamer-binding site?",
+          "What is the role of AP-1 and IL3 in regulation of gene expression?",
+          "What is the role of AP-1- and octamer-binding",
+          "What is the role of AP-1- and octamer-binding"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the role of AP-1 and octamer-binding proteins": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.48685580492019653,
+        "ground_truth": {
+          "Role": {
+            "bertscore": 0.671998143196106,
+            "f1": 0
+          },
+          "control": {
+            "bertscore": 0.6847507953643799,
+            "f1": 0
+          },
+          "IL3 gene expression": {
+            "bertscore": 0.6196026802062988,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the octamer-binding protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02104806900024414,
+        "ground_truth": {
+          "AP-1-": {
+            "bertscore": 0.65302574634552,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of AP-1 and IL3 in regulation of gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "octamer-binding sites",
+        "answerability": 0.9000185132026672,
+        "ground_truth": {
+          "octamer-binding proteins": {
+            "bertscore": 0.9592291712760925,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

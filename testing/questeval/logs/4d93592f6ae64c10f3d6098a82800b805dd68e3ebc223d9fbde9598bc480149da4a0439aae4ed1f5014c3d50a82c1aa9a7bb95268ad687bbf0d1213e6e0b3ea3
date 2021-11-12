@@ -1,0 +1,136 @@
+{
+  "type": "hyp",
+  "text": "Upon stimulation by cytokines or UV radiation IkappaBalpha is phosphorylated ubiquitinated and degraded releasing NF-kappaB p50/p65 recruitment to the NF-kappaB1 site.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IkappaBalpha",
+        "NF-kappaB",
+        "NF-kappaB1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is phosphorylated ubiquitinated and released?",
+          "What is released to the NF-kappaB1 site?",
+          "What is released to the site of IkappaBalpha?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "stimulation",
+        "cytokines",
+        "UV radiation IkappaBalpha",
+        "NF-kappaB p50/p65 recruitment",
+        "the NF-kappaB1 site"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IkappaBalpha phosphorylated by?",
+          "What is IkappaBalpha stimulated by?",
+          "What is phosphorylated ubiquitinated and released?",
+          "What does IkappaBalpha release?",
+          "Where does IkappaBalpha release p50/p65 recruitment?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is phosphorylated ubiquitinated and released?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IkappaBalpha",
+        "answerability": 0.7948827743530273,
+        "ground_truth": {
+          "IkappaBalpha": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is released when IkappaBalpha is phosphorylated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB p50/p65",
+        "answerability": 0.7007447481155396,
+        "ground_truth": {
+          "NF-kappaB": {
+            "bertscore": 0.8473323583602905,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is IkappaBalpha phosphorylated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokines or UV radiation",
+        "answerability": 0.7014497518539429,
+        "ground_truth": {
+          "stimulation": {
+            "bertscore": 0.7134045362472534,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is IkappaBalpha stimulated by?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cytokines or UV radiation",
+        "answerability": 0.8981902599334717,
+        "ground_truth": {
+          "cytokines": {
+            "bertscore": 0.8730467557907104,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the other way that phosphorylates ubiquitinated?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "UV radiation",
+        "answerability": 0.8806939125061035,
+        "ground_truth": {
+          "UV radiation IkappaBalpha": {
+            "bertscore": 0.7680283188819885,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What does IkappaBalpha release?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NF-kappaB p50/p65 recruitment",
+        "answerability": 0.526172935962677,
+        "ground_truth": {
+          "NF-kappaB p50/p65": {
+            "bertscore": 0.9198390245437622,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "Where does IkappaBalpha translocate to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.4262999892234802,
+        "ground_truth": {
+          "the nucleus": {
+            "bertscore": 0.6686459183692932,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IkappaBalpha do when stimulated by cytokines or": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylated ubiquitinated and degraded",
+        "answerability": 0.9054222106933594,
+        "ground_truth": {
+          "transactivate target genes": {
+            "bertscore": 0.68048095703125,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

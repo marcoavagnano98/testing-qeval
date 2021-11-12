@@ -1,0 +1,74 @@
+{
+  "type": "ref",
+  "text": "The decline in circulating endothelial cells and their precursors suggests that this combination may be working by inhibiting angiogenesis but should be validated in a larger patient sample.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The decline",
+        "endothelial cells",
+        "their precursors",
+        "this combination",
+        "angiogenesis",
+        "a larger patient sample"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that the combination of cytokine and cytokine may be working by",
+          "What is the precursor of the vascular system?",
+          "What is the main component of endothelial cells that may be involved in the decline",
+          "What may be working by inhibiting angiogenesis?",
+          "What may the combination of cytokine and cytokine inhibit?",
+          "What is the best place to validate the effect of a combination of cytokine and"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What cells declined in response to a swine flu?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "endothelial cells",
+        "answerability": 0.5704742670059204,
+        "ground_truth": {
+          "endothelial cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "plasma vascular endothelial cells": {
+            "bertscore": 0.9229007959365845,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did circulating endothelial cells and responders lose?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.018855631351470947,
+        "ground_truth": {
+          "their precursors": {
+            "bertscore": 0.6678290367126465,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells remained low in the rat?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.41941070556640625,
+        "ground_truth": {
+          "responders": {
+            "bertscore": 0.7329564094543457,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

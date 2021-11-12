@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "However co-culture of these cancer cells with stromal or osteoblastic cells induced a significant increase in VEGF secretion and VEGF enhancement of functional capillary microvessel formation.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "co-culture",
+        "stromal or osteoblastic cells",
+        "a significant increase",
+        "VEGF secretion",
+        "VEGF enhancement",
+        "functional capillary microvessel formation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the VEGF cells do with stromal or osteoblastic cells?",
+          "What did co-culture of cancer cells with?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells cause?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells increase?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells induce?",
+          "What did co-culture of cancer cells with stromal or osteoblastic cells increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did the stromal and osteoblastic cells do to induce RANKL": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0735730528831482,
+        "ground_truth": {
+          "co-culture": {
+            "bertscore": 0.6970740556716919,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "stromal or osteoblastic cells",
+        "answerability": 0.990829586982727,
+        "ground_truth": {
+          "stromal or osteoblastic cells": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells cause?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "VEGF secretion and VEGF enhancement of functional capillary microvessel",
+        "answerability": 0.8951390385627747,
+        "ground_truth": {
+          "RANKL mRNA expression": {
+            "bertscore": 0.7480713129043579,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did co-culture of cancer cells with stromal or osteoblastic cells decrease?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000725090503692627,
+        "ground_truth": {
+          "OPG mRNA expression": {
+            "bertscore": 0.6336473226547241,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

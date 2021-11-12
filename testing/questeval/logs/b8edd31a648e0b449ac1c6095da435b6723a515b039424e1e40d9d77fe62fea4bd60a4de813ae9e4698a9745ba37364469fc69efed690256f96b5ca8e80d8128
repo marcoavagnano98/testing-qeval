@@ -1,0 +1,146 @@
+{
+  "type": "hyp",
+  "text": "Interleukin-2 (IL-2) promoter activity stimulated by cross-linking of CD2 TCR/CD2 and CD28 with antibodies was significantly reduced by transient expression of an Itk mutant lacking the kinase activity.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "CD2 TCR/CD2 and CD28",
+        "Itk"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter activity was reduced by transient expression of an Itk mutant?",
+          "What two genes were involved in the IL-2 promoter activity?",
+          "What mutant was found to have no kinase activity?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(IL-2) promoter activity",
+        "cross-linking",
+        "CD2 TCR/CD2",
+        "CD28",
+        "antibodies",
+        "transient expression",
+        "an Itk mutant",
+        "the kinase activity"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is interleukin-2?",
+          "What was the mechanism that reduced IL-2 promoter activity?",
+          "What promoters were stimulated by cross-linking?",
+          "What is the only kinase that is involved in the IL-2 promoter",
+          "What reduced IL-2 promoter activity?",
+          "What reduced IL-2 promoter activity?",
+          "What mutant was found to have reduced IL-2 promoter activity?",
+          "What did the Itk mutant lack?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What promoter activity was reduced by transient expression of an Itk mutant?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interleukin-2 (IL-2)",
+        "answerability": 0.6929805278778076,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 0.751395046710968,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is interleukin-2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "promoter",
+        "answerability": 0.9100525975227356,
+        "ground_truth": {
+          "(IL-2) promoter activity": {
+            "bertscore": 0.7005699276924133,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What was the mechanism that reduced IL-2 promoter activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5521278381347656,
+        "ground_truth": {
+          "cross-linking": {
+            "bertscore": 0.7118788957595825,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What promoters were stimulated by cross-linking?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Interleukin-2 (IL-2)",
+        "answerability": 0.9695839881896973,
+        "ground_truth": {
+          "CD2 TCR/CD3": {
+            "bertscore": 0.6844095587730408,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the kinase-deficient protein that is involved in": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3055958151817322,
+        "ground_truth": {
+          "CD28": {
+            "bertscore": 0.6379247307777405,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What reduced IL-2 promoter activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7359539270401001,
+        "ground_truth": {
+          "antibodies": {
+            "bertscore": 0.67861008644104,
+            "f1": 0
+          },
+          "transient expression": {
+            "bertscore": 0.7016173601150513,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What mutant was found to have reduced IL-2 promoter activity?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Itk",
+        "answerability": 0.9489061236381531,
+        "ground_truth": {
+          "an Itk mutant": {
+            "bertscore": 0.7780008912086487,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What did the Itk mutant lack?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "kinase activity",
+        "answerability": 0.9864295721054077,
+        "ground_truth": {
+          "the kinase activity": {
+            "bertscore": 0.9248338937759399,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

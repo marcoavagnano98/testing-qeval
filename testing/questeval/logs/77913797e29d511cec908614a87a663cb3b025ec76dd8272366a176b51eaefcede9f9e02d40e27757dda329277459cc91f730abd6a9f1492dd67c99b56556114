@@ -1,0 +1,92 @@
+{
+  "type": "hyp",
+  "text": "The increase in c-jun and EGR2 but not c-fos mRNA was also abrogated by cytochalasin D.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The increase",
+        "c-jun",
+        "EGR2",
+        "not c-fos mRNA",
+        "cytochalasin D."
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was abrogated by cytochalasin D?",
+          "What mRNA was abrogated by cytochalasin D?",
+          "What is the only mRNA that is not affected by cytochalasin D",
+          "What was the increase in c-jun and EGR2?",
+          "What was the main cause of the increase in c-jun and EGR2?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was abrogated by cytochalasin D?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "increase in c-jun and EGR2 but not c-fos",
+        "answerability": 0.7610293626785278,
+        "ground_truth": {
+          "The increase": {
+            "bertscore": 0.6391884684562683,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What mRNA was abrogated by cytochalasin D?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "c-jun",
+        "answerability": 0.7940881848335266,
+        "ground_truth": {
+          "c-jun": {
+            "bertscore": 0.9999998807907104,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the only mRNA that is not affected by cytochalasin D": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5125661492347717,
+        "ground_truth": {
+          "EGR2": {
+            "bertscore": 0.6479015946388245,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the increase in c-jun and EGR2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.39337313175201416,
+        "ground_truth": {
+          "not c-fos mRNA": {
+            "bertscore": 0.6514570116996765,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was the main cause of the increase in c-jun and EGR2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.473690927028656,
+        "ground_truth": {
+          "cytochalasin D.": {
+            "bertscore": 0.6055408120155334,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

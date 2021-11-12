@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "The transcription factor nuclear factor-kappa B (NF-kappa B) is critical for the inducible expression of multiple cellular and viral genes involved in inflammation and infection including interleukin-1 (IL-1) IL-6 and adhesion genes.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "interleukin-1",
+        "IL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is IL-6 a part of?",
+          "What is the transcription factor that is critical for the inducible expression of multiple cellular and"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "transcription factor nuclear factor-kappa B",
+        "NF-kappa B",
+        "the inducible expression",
+        "multiple cellular and viral genes",
+        "inflammation",
+        "infection",
+        "interleukin-1 (IL-1) IL-6 and adhesion genes"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is critical for the inducible expression of multiple cellular and viral genes?",
+          "What transcription factor is critical for the inducible expression of multiple cellular and viral genes?",
+          "What is the transcription factor NF-kappa B critical for?",
+          "What is the transcription factor NF-kappa B critical for the inducible expression",
+          "What is the transcription factor NF-kappa B critical for?",
+          "What is the major cause of inflammation?",
+          "What are two genes that are involved in inflammation and infection?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is IL-6 a part of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-1",
+        "answerability": 0.6395022869110107,
+        "ground_truth": {
+          "interleukin-1": {
+            "bertscore": 1.000000238418579,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the transcription factor that is critical for the inducible expression of multiple cellular and": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor-kappa B",
+        "answerability": 0.9766996502876282,
+        "ground_truth": {
+          "IL-1": {
+            "bertscore": 0.6951897740364075,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is critical for the inducible expression of multiple cellular and viral genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factor nuclear factor-kappa B",
+        "answerability": 0.9953355193138123,
+        "ground_truth": {
+          "transcription factor nuclear factor-kappa B": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What transcription factor is critical for the inducible expression of multiple cellular and viral genes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor-kappa B",
+        "answerability": 0.9972324967384338,
+        "ground_truth": {
+          "NF-kappa B": {
+            "bertscore": 0.8429114818572998,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is the transcription factor NF-kappa B critical for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the inducible expression of multiple cellular and viral genes",
+        "answerability": 0.9898485541343689,
+        "ground_truth": {
+          "the inducible expression": {
+            "bertscore": 0.7655237317085266,
+            "f1": 0.4
+          },
+          "inflammation": {
+            "bertscore": 0.6543245315551758,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the transcription factor NF-kappa B critical for the inducible expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcription factor nuclear factor-kappa B",
+        "answerability": 0.9208691716194153,
+        "ground_truth": {
+          "multiple cellular and viral genes": {
+            "bertscore": 0.7306898236274719,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the major cause of inflammation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.03778129816055298,
+        "ground_truth": {
+          "infection": {
+            "bertscore": 0.6894522309303284,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What are two of the genes involved in inflammation and infection?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "interleukin-1 (IL-1) IL-6 and adhesion genes",
+        "answerability": 0.9133629202842712,
+        "ground_truth": {
+          "IL-1) IL-6 and adhesion molecules": {
+            "bertscore": 0.8708126544952393,
+            "f1": 0.7272727272727272
+          }
+        }
+      }
+    }
+  }
+}

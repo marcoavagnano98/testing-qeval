@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "Both C1 and C2 proteins also bind to a critical element in a new enhancer of the interleukin-2-receptor alpha-subunit.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Both C1",
+        "C2 proteins",
+        "a critical element",
+        "a new enhancer",
+        "the interleukin-2-receptor alpha-subunit"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What two proteins bind to a critical element in a new enhancer of the inter",
+          "What other protein binds to a critical element in a new enhancer of the",
+          "What do both C1 and C2 proteins bind to?",
+          "What do C1 and C2 proteins bind to?",
+          "What enhancer do both C1 and C2 proteins bind to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What two proteins bind to a similar sequence found in the interleukin-2-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C1 and C2 proteins",
+        "answerability": 0.6276676058769226,
+        "ground_truth": {
+          "Both C1": {
+            "bertscore": 0.7016104459762573,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What other protein binds to a sequence found in the interleukin-2-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "C2",
+        "answerability": 0.76238614320755,
+        "ground_truth": {
+          "C2 proteins": {
+            "bertscore": 0.7787442207336426,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What do both C1 and C2 proteins bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a critical element in a new enhancer of the interleukin-2-re",
+        "answerability": 0.9686357975006104,
+        "ground_truth": {
+          "a similar sequence": {
+            "bertscore": 0.6663870215415955,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the same sequence as C1 and C2 proteins?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.01770806312561035,
+        "ground_truth": {
+          "the interleukin-2-receptor alpha-subunit enhancer": {
+            "bertscore": 0.5725463628768921,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

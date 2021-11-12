@@ -1,0 +1,102 @@
+{
+  "type": "hyp",
+  "text": "\"\"\"When expressed as a fusion protein in a pMAL-c vector MAZ binds with specificity to a GA box sequence (GGGAGGG) found in the c-MYC P2 promoter to the P2 attenuator region within the genes first exon and to a related sequence involved in the transcriptional termination of the C2 gene.\"\"\"\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "GA",
+        "GGGAGGG",
+        "first",
+        "C2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the box sequence of MAZ?",
+          "What is the GA box sequence?",
+          "Where is the P2 attenuator region located?",
+          "What gene is MAZ a fusion protein in?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "a fusion protein",
+        "a pMAL-c vector MAZ binds",
+        "specificity",
+        "a GA box sequence",
+        "GGGAGGG",
+        "the c-MYC P2 promoter",
+        "the P2 attenuator region",
+        "the genes",
+        "a related sequence",
+        "the transcriptional termination",
+        "the C2 gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is MAZ expressed as?",
+          "What is the specificity of MAZ when expressed as a fusion protein?",
+          "What does MAZ bind with when expressed as a fusion protein in a",
+          "What does MAZ bind with specificity to?",
+          "What is the GA box sequence?",
+          "Where is the GA box sequence found?",
+          "Where does MAZ bind to when expressed as a fusion protein?",
+          "What is the first exon of the MAZ protein?",
+          "What is involved in the transcriptional termination of the C2 gene?",
+          "What is the GA box sequence involved in?",
+          "What gene is MAZ a fusion protein binds to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a fusion protein",
+        "answerability": 0.9287077188491821,
+        "ground_truth": {
+          "a zinc finger protein binds": {
+            "bertscore": 0.8217539191246033,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What does MAZ bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "GGGAGGG",
+        "answerability": 0.969887375831604,
+        "ground_truth": {
+          "c-MYC and C2 gene sequences": {
+            "bertscore": 0.5751779675483704,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does MAZ regulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.011541545391082764,
+        "ground_truth": {
+          "transcriptional initiation": {
+            "bertscore": 0.6854235529899597,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the main function of MAZ?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0456504225730896,
+        "ground_truth": {
+          "termination": {
+            "bertscore": 0.7252410650253296,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

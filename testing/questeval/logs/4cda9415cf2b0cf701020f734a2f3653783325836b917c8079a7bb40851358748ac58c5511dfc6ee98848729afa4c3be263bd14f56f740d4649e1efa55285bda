@@ -1,0 +1,106 @@
+{
+  "type": "hyp",
+  "text": "In this paper we report that cross-linking of CD28 (but not CD2 CD5 LFA-1 or CD6) leads to an elevation of c-jun mRNA with only minimal activation of c-fos expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "this paper",
+        "we",
+        "CD28",
+        "CD6",
+        "an elevation",
+        "c-jun mRNA",
+        "only minimal activation",
+        "c-fos expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What paper reports that cross-linking of CD28 leads to an elevation of c-",
+          "What is the effect of cross-linking of CD28?",
+          "What is the only mRNA that is cross-linked?",
+          "What is the only other mRNA that is not cross-linked?",
+          "What does cross-linking of CD28 lead to?",
+          "What does cross-linking of CD28 lead to?",
+          "What is the effect of cross-linking of CD28 on c-jun m",
+          "What does cross-linking of CD28 lead to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What paper reports that cross-linking of CD28 leads to an elevation of c-": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5386018753051758,
+        "ground_truth": {
+          "this paper": {
+            "bertscore": 0.6751763820648193,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of cross-linking of CD28?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an elevation of c-jun mRNA",
+        "answerability": 0.9819135665893555,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.6112479567527771,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the only mRNA that is cross-linked?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.21876198053359985,
+        "ground_truth": {
+          "CD28": {
+            "bertscore": 0.6379246711730957,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does cross-linking of CD28 lead to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an elevation of c-jun mRNA",
+        "answerability": 0.9732025861740112,
+        "ground_truth": {
+          "an elevation": {
+            "bertscore": 0.5983672142028809,
+            "f1": 0.4
+          },
+          "c-jun mRNA": {
+            "bertscore": 0.8460841774940491,
+            "f1": 0.6666666666666666
+          },
+          "c-fos expression": {
+            "bertscore": 0.7798005938529968,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the effect of cross-linking of CD28 on c-jun m": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "an elevation of c-jun mRNA",
+        "answerability": 0.9378200769424438,
+        "ground_truth": {
+          "only minimal activation": {
+            "bertscore": 0.6815443634986877,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

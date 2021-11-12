@@ -1,0 +1,122 @@
+{
+  "type": "hyp",
+  "text": "These B cells expressed p40 and p35 mRNA and phorbol myristate acetate (PMA) stimulation strongly enhanced p40 and p70 production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "phorbol myristate",
+        "PMA"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PMA?",
+          "What is the name of the substance that stimulates p70 and p40 production?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These B cells",
+        "p40",
+        "p35 mRNA and phorbol myristate acetate (PMA) stimulation",
+        "strongly enhanced p40",
+        "p70 production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What cells expressed p40 and p35 mRNA?",
+          "What mRNA did B cells express?",
+          "What did the B cells express that enhanced p40 and p70 production?",
+          "What did the stimulation of B cells do?",
+          "What did the stimulation of B cells increase?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol myristate acetate",
+        "answerability": 0.9449953436851501,
+        "ground_truth": {
+          "phorbol myristate": {
+            "bertscore": 0.8905053734779358,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What is the name of the substance that stimulates p70 and p40 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol myristate acetate",
+        "answerability": 0.719626784324646,
+        "ground_truth": {
+          "PMA": {
+            "bertscore": 0.6323857307434082,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What cells expressed p40 and p35 mRNA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "B cells",
+        "answerability": 0.9202301502227783,
+        "ground_truth": {
+          "These B cells": {
+            "bertscore": 0.8602434396743774,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    "What mRNA did B cells express?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p40 and p35",
+        "answerability": 0.9647480249404907,
+        "ground_truth": {
+          "p40": {
+            "bertscore": 0.84595787525177,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did the B cells express that enhanced p40 and p70 production?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p40 and p35 mRNA",
+        "answerability": 0.9884133338928223,
+        "ground_truth": {
+          "p35 mRNA and phorbol myristate acetate (PMA) stimulation": {
+            "bertscore": 0.736243724822998,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did the stimulation of B cells do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced p40 and p70 production",
+        "answerability": 0.9711471199989319,
+        "ground_truth": {
+          "strongly enhanced p40": {
+            "bertscore": 0.837060809135437,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did the stimulation of B cells increase?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "p40 and p70",
+        "answerability": 0.9422317743301392,
+        "ground_truth": {
+          "p70 production": {
+            "bertscore": 0.7222872972488403,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

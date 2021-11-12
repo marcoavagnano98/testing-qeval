@@ -1,0 +1,84 @@
+{
+  "type": "hyp",
+  "text": "PTHrP is also able to inhibit the CXCR4 PI3K/Akt ERK and NF-kappaB-dependent pathway in breast cancer cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PTHrP",
+        "Akt ERK"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is able to inhibit the CXCR4 PI3K/Akt ER",
+          "What is the CXCR4 PI3K/NF-kappaB-"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "PTHrP",
+        "the CXCR4",
+        "/Akt ERK and NF-kappaB-dependent pathway",
+        "breast cancer cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is able to inhibit the CXCR4 PI3K/Akt ER",
+          "What PI3K/Akt ERK pathway does PTHrP inhibit?",
+          "What does PTHrP inhibit?",
+          "What type of cancer cells can PTHrP inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the CXCR4 PI3K/?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt ERK",
+        "answerability": 0.6526623964309692,
+        "ground_truth": {
+          "Akt ERK": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where does SDF-1alpha up-regulate interleukin-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 9.906291961669922e-05,
+        "ground_truth": {
+          "microglia": {
+            "bertscore": 0.7005928754806519,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SDF-1alpha do through CXCR4 PI3K/Akt": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.003824591636657715,
+        "ground_truth": {
+          "SDF-1alpha up-regulates interleukin-6": {
+            "bertscore": 0.5857287645339966,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does SDF-1alpha up-regulate in microglia?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 3.4689903259277344e-05,
+        "ground_truth": {
+          "CXCR4 PI3K/Akt ERK and NF-kappaB-dependent pathway": {
+            "bertscore": 0.5490759611129761,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

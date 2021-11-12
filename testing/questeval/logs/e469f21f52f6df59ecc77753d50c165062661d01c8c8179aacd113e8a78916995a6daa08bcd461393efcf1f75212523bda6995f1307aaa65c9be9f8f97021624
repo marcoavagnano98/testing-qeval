@@ -1,0 +1,88 @@
+{
+  "type": "ref",
+  "text": "This cell line is not invasive by nature and secretes moderate amounts of VEGF-C; intrauterine injection of HEC1A cells into Balb/c nude mice resulted in uterine cancer with lymph node metastasis after 8 weeks.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Balb",
+        "8 weeks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What type of mice were injected with HEC1A cells?",
+          "How long did the HEC1A cells in the mice cause uterine cancer?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "This cell line",
+        "nature",
+        "moderate amounts",
+        "VEGF-C",
+        "intrauterine injection",
+        "HEC1A cells",
+        "Balb/c nude mice",
+        "uterine cancer",
+        "lymph node metastasis",
+        "8 weeks"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is not invasive by nature?",
+          "What makes HEC1A cells not invasive?",
+          "How much VEGF-C does the HEC1A cell line secrete?",
+          "What does the HEC1A cell line secrete?",
+          "How did HEC1A cells in mice cause uterine cancer?",
+          "What type of cells were infected with Balb/c mice?",
+          "What type of mice were infected with HEC1A cells?",
+          "What did intrauterine injection of HEC1A cells result in?",
+          "What is the result of HEC1A cells in uterine cancer?",
+          "How long did the HEC1A cells in the mice cause uterine cancer?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the risk of uterine cancer with lymph node metastasis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.02061372995376587,
+        "ground_truth": {
+          "G/A polymorphism": {
+            "bertscore": 0.6628159284591675,
+            "f1": 0
+          },
+          "the risk": {
+            "bertscore": 0.684635579586029,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the risk of G/A polymorphism?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00014531612396240234,
+        "ground_truth": {
+          "uterine cancer": {
+            "bertscore": 0.6652781963348389,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the risk of uterine cancer?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.20048290491104126,
+        "ground_truth": {
+          "lymph node metastasis": {
+            "bertscore": 0.6517137289047241,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

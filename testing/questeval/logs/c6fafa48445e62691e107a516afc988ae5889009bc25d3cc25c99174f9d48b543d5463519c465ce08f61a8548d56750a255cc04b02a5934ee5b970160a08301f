@@ -1,0 +1,86 @@
+{
+  "type": "hyp",
+  "text": "We searched for novel EPC1 interacting proteins using a yeast two-hybrid screen and identified the PcG protein EPC1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "EPC1",
+        "two",
+        "PcG"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the PcG protein?",
+          "How many hybrids did we use to find the EPC1 interacting protein?",
+          "What is the name of the protein that binds to EPC1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "We",
+        "novel EPC1 interacting proteins",
+        "a yeast two-hybrid screen",
+        "the PcG protein EPC1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the name of the PcG protein?",
+          "What did we find using a yeast two-hybrid screen?",
+          "What did we use to find the EPC1 interacting proteins?",
+          "What was identified by a yeast two-hybrid screen?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the name of the protein that is EPC1-interacting?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PcG",
+        "answerability": 0.9179663062095642,
+        "ground_truth": {
+          "PcG": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did we identify as an EPC1-interacting protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PcG protein",
+        "answerability": 0.8711079955101013,
+        "ground_truth": {
+          "we": {
+            "bertscore": 0.641258716583252,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is an EPC1-interacting protein?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PcG",
+        "answerability": 0.7285298705101013,
+        "ground_truth": {
+          "the proliferation-specific PcG EZH2": {
+            "bertscore": 0.6679089069366455,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did we identify the proliferation-specific PcG EZH2 as?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.004216909408569336,
+        "ground_truth": {
+          "an EPC1-interacting protein": {
+            "bertscore": 0.613851010799408,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

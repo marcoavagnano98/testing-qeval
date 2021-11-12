@@ -1,0 +1,64 @@
+{
+  "type": "hyp",
+  "text": "Overexpression of protein kinase C-zeta stimulates leukemogenesis.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Overexpression",
+        "protein kinase C-zeta",
+        "stimulates leukemogenesis"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the cause of leukemogenesis?",
+          "What protein stimulates leukemogenesis?",
+          "What does overexpression of protein kinase C-zeta do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the cause of leukemic cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3407668471336365,
+        "ground_truth": {
+          "Overexpression": {
+            "bertscore": 0.7191470861434937,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What stimulates leukemic cell differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Overexpression of protein kinase C-zeta",
+        "answerability": 0.7731004953384399,
+        "ground_truth": {
+          "protein kinase C-zeta": {
+            "bertscore": 0.8911135196685791,
+            "f1": 0.7499999999999999
+          }
+        }
+      }
+    },
+    "What does overexpression of protein kinase C-zeta stimulate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "leukemogenesis",
+        "answerability": 0.9835363030433655,
+        "ground_truth": {
+          "leukemic cell differentiation": {
+            "bertscore": 0.8271170258522034,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

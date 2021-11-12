@@ -1,0 +1,142 @@
+{
+  "type": "hyp",
+  "text": "Apoptosis in mitotic cells produced these events but the accompanying activation of caspases 1-10 and mitochondrial depolarization were inhibited during NGF differentiation and could be reversed in p53-silenced cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "1-10"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What caspases were activated during NGF differentiation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Apoptosis",
+        "mitotic cells",
+        "these events",
+        "the accompanying activation",
+        "caspases",
+        "mitochondrial depolarization",
+        "NGF differentiation",
+        "p53-silenced cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What process in mitotic cells produced the events described above?",
+          "In what type of cells did apoptosis occur?",
+          "What did apoptosis produce in mitotic cells?",
+          "What was inhibited during NGF differentiation?",
+          "What enzymes were inhibited during NGF differentiation?",
+          "What was inhibited during NGF differentiation?",
+          "What process caused the apoptosis of mitotic cells to occur?",
+          "What type of cells could be reversed during NGF differentiation?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What caspases were activated during NGF differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.3903217911720276,
+        "ground_truth": {
+          "1-10": {
+            "bertscore": 0.6860936284065247,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What process in mitotic cells produced the events mentioned above?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Apoptosis",
+        "answerability": 0.9993972778320312,
+        "ground_truth": {
+          "Apoptosis": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells produced apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitotic cells",
+        "answerability": 0.9943404793739319,
+        "ground_truth": {
+          "mitotic cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did apoptosis in mitotic cells produce?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.13331234455108643,
+        "ground_truth": {
+          "these events": {
+            "bertscore": 0.6769464612007141,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What was inhibited during NGF differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "activation of caspases 1-10 and mitochondrial depolarization",
+        "answerability": 0.966754138469696,
+        "ground_truth": {
+          "the accompanying activation": {
+            "bertscore": 0.6986898183822632,
+            "f1": 0.22222222222222224
+          },
+          "mitochondrial depolarization": {
+            "bertscore": 0.8470962047576904,
+            "f1": 0.4444444444444445
+          }
+        }
+      }
+    },
+    "What enzymes were inhibited during NGF differentiation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "caspases 1-10 and mitochondrial depolarization",
+        "answerability": 0.8814639449119568,
+        "ground_truth": {
+          "caspases": {
+            "bertscore": 0.7085351943969727,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What process caused the apoptosis of mitotic cells to occur?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "NGF differentiation",
+        "answerability": 0.93268221616745,
+        "ground_truth": {
+          "NGF differentiation": {
+            "bertscore": 0.9999997019767761,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What type of cells could produce the apoptosis?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mitotic cells",
+        "answerability": 0.9909456968307495,
+        "ground_truth": {
+          "p53-silenced cells": {
+            "bertscore": 0.7845978140830994,
+            "f1": 0.5
+          }
+        }
+      }
+    }
+  }
+}

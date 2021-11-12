@@ -1,0 +1,96 @@
+{
+  "type": "hyp",
+  "text": "After T cell activation the phosphorylation of Rb results in the release of Elf-1 which is correlated temporallywith the activation of Elf-1-mediated transcription.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Rb"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What phosphorylation results in the release of Elf-1?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the phosphorylation",
+        "Rb",
+        "the release",
+        "the activation",
+        "Elf-1-mediated transcription"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What results in the release of Elf-1?",
+          "What phosphorylation results in the release of Elf-1?",
+          "What is correlated with the activation of Elf-1-mediated transcription?",
+          "What is correlated with the release of Elf-1-mediated transcription?",
+          "What is correlated with the release of Rb?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What phosphorylation results in the release of Elf-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Rb",
+        "answerability": 0.5661027431488037,
+        "ground_truth": {
+          "Rb": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What results in the release of Elf-1?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phosphorylation of Rb",
+        "answerability": 0.8791030645370483,
+        "ground_truth": {
+          "the phosphorylation": {
+            "bertscore": 0.8528456687927246,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What does the phosphorylation of Rb result in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the release of Elf-1",
+        "answerability": 0.9295812845230103,
+        "ground_truth": {
+          "the release": {
+            "bertscore": 0.7477617263793945,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What is the release of Elf-1 correlated with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the activation of Elf-1-mediated transcription",
+        "answerability": 0.8234361410140991,
+        "ground_truth": {
+          "the activation": {
+            "bertscore": 0.7386654019355774,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What is correlated with the release of Rb?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.06066393852233887,
+        "ground_truth": {
+          "Elf-1-mediated transcription": {
+            "bertscore": 0.6320635676383972,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

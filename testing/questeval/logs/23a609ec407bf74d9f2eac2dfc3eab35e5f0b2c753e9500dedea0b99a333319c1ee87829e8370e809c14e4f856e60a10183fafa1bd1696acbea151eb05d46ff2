@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "An R-PK DNA fragment containing the human IL-3 promoter confers erythroid specificity to a reporter gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What promoter is present in an R-PK DNA fragment?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "An R-PK DNA fragment",
+        "the human IL-3 promoter confers",
+        "specificity",
+        "a reporter gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What confers erythroid specificity to a reporter gene?",
+          "What does an R-PK DNA fragment contain?",
+          "What does an R-PK DNA fragment contain?",
+          "What does an R-PK DNA fragment containing the human IL-3 promoter confer"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What confers erythroid specificity to a reporter gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "An R-PK DNA fragment containing the human IL-3 promoter",
+        "answerability": 0.841160237789154,
+        "ground_truth": {
+          "A R-PK DNA fragment": {
+            "bertscore": 0.8488932251930237,
+            "f1": 0.6
+          }
+        }
+      }
+    },
+    "What is the range of the R-PK DNA fragment that confers erythroid specific": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.022100448608398438,
+        "ground_truth": {
+          "-870": {
+            "bertscore": 0.6539778709411621,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the erythroid specificity of a R-PK DNA fragment?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid specificity",
+        "answerability": 0.77992844581604,
+        "ground_truth": {
+          "the cap site confers": {
+            "bertscore": 0.7111744284629822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does a R-PK DNA fragment confer to a reporter gene?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid specificity",
+        "answerability": 0.9914272427558899,
+        "ground_truth": {
+          "specificity": {
+            "bertscore": 0.7891495227813721,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What does a R-PK DNA fragment confer erythroid specificity to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "a reporter gene",
+        "answerability": 0.9820645451545715,
+        "ground_truth": {
+          "a reporter gene": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

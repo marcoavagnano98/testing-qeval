@@ -1,0 +1,168 @@
+{
+  "type": "hyp",
+  "text": "In contrast in cells stimulated with phorbol myristate acetate (PMA)/A23187 PGE2 enhanced the production of IL-4 and IL-5 and only partially inhibited the production of other cytokines. Therefore the effects of PGE2 vary depending on the mode of T cell activation and the IL-4 and IL-5 are regulated differently from other cytokines.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "phorbol myristate acetate",
+        "PGE2",
+        "PGE2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is PMA?",
+          "What enhances the production of IL-4 and IL-5?",
+          "What enhances the production of IL-4 and IL-5?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "cells",
+        "phorbol myristate acetate",
+        "PGE2",
+        "the production",
+        "the production",
+        "other cytokines",
+        "the effects",
+        "PGE2",
+        "the mode",
+        "T cell activation",
+        "IL-5",
+        "other cytokines"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of PGE2 on T cells?",
+          "What does PGE2 enhance the production of?",
+          "What is PMA?",
+          "What enhances the production of IL-4 and IL-5?",
+          "What did PGE2 enhance in cells stimulated with phorbol myristate",
+          "What did PGE2 enhance in cells stimulated with phorbol myristate",
+          "What did PGE2 only partially inhibit?",
+          "What is different in cells stimulated with phorbol myristate acetate?",
+          "What enhances the production of IL-4 and IL-5?",
+          "What does the effect of PGE2 vary depending on?",
+          "What is the mode of action of PGE2?",
+          "What does PGE2 enhance the production of?",
+          "What did PGE2 only partially inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is PMA?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "phorbol myristate acetate",
+        "answerability": 0.9664022922515869,
+        "ground_truth": {
+          "phorbol myristate acetate": {
+            "bertscore": 0.9999999403953552,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What enhances the production of IL-4 and IL-5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "PGE2",
+        "answerability": 0.9751474857330322,
+        "ground_truth": {
+          "PGE2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the effect of PGE2 on T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "vary depending on the mode of T cell activation",
+        "answerability": 0.9936128258705139,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6524183750152588,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does PGE2 enhance the production of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4 and IL-5",
+        "answerability": 0.9951082468032837,
+        "ground_truth": {
+          "cells": {
+            "bertscore": 0.6757186651229858,
+            "f1": 0
+          },
+          "IL-5": {
+            "bertscore": 0.8800822496414185,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "What did PGE2 enhance in cells stimulated with phorbol myristate": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-4 and IL-5",
+        "answerability": 0.8802278637886047,
+        "ground_truth": {
+          "the production": {
+            "bertscore": 0.6158155202865601,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did PGE2 only partially inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "production of other cytokines",
+        "answerability": 0.9593790769577026,
+        "ground_truth": {
+          "other cytokines": {
+            "bertscore": 0.9047223329544067,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is different in cells stimulated with phorbol myristate acetate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "enhanced the production of IL-4 and IL-5",
+        "answerability": 0.8219688534736633,
+        "ground_truth": {
+          "the effects": {
+            "bertscore": 0.6499656438827515,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the effect of PGE2 vary depending on?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the mode of T cell activation",
+        "answerability": 0.9916326403617859,
+        "ground_truth": {
+          "the mode": {
+            "bertscore": 0.7637280821800232,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What is the mode of action of PGE2?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "depending on the mode of T cell activation",
+        "answerability": 0.866767942905426,
+        "ground_truth": {
+          "T cell activation": {
+            "bertscore": 0.7895458340644836,
+            "f1": 0.6
+          }
+        }
+      }
+    }
+  }
+}

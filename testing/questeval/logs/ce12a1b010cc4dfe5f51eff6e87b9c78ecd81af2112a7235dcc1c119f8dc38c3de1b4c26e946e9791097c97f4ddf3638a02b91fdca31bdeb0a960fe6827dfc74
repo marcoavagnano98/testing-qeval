@@ -1,0 +1,124 @@
+{
+  "type": "hyp",
+  "text": "These data suggest that transcriptional activation of human embryonic zeta 2 globin gene and the fetaL/adult alpha globin genes is mediated by erythroid cell-specific and developmental stage-specific nuclear factor-DNA complexes which form at the enhancer (HS-40) and the globin promoters.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "fetaL",
+        "HS-40"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the globin gene that is regulated by erythroid cell-specific",
+          "What enhancer is involved in the transcription of the fetal/adult alpha glob"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "These data",
+        "transcriptional activation",
+        "human embryonic zeta 2 globin gene",
+        "the fetaL/adult alpha globin genes",
+        "erythroid cell-specific and developmental stage-specific nuclear factor-DNA complexes",
+        "the enhancer"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What suggests that transcriptional activation of human embryonic zeta 2 globin",
+          "What is mediated by erythroid cell-specific and developmental stage-specific nuclear factor",
+          "What gene is activated by erythroid cell-specific and developmental stage-specific nuclear",
+          "What is the transcriptional activation of?",
+          "What is the transcriptional activation of the human embryonic zeta 2 glob",
+          "Where do HS-40 complexes form?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What enhancer is involved in the transcription of the human embryonic zeta 2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor-DNA complexes",
+        "answerability": 0.795074462890625,
+        "ground_truth": {
+          "HS-40": {
+            "bertscore": 0.6640496850013733,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What suggests that transcriptional activation of human embryonic zeta 2 globin": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.6057412624359131,
+        "ground_truth": {
+          "These data": {
+            "bertscore": 0.6446338295936584,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is mediated by erythroid cell-specific and developmental stage-specific nuclear factor": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "transcriptional activation of human embryonic zeta 2 globin gene and the",
+        "answerability": 0.9935339689254761,
+        "ground_truth": {
+          "transcriptional activation": {
+            "bertscore": 0.7421170473098755,
+            "f1": 0.33333333333333337
+          }
+        }
+      }
+    },
+    "What gene is activated by erythroid cell-specific and developmental stage-specific nuclear": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.7138110399246216,
+        "ground_truth": {
+          "human embryonic zeta 2 globin gene": {
+            "bertscore": 0.61454838514328,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the transcriptional activation of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human embryonic zeta 2 globin gene and the fetaL/adult",
+        "answerability": 0.9462491273880005,
+        "ground_truth": {
+          "the fetal/adult alpha globin genes": {
+            "bertscore": 0.8265079259872437,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "What is the transcriptional activation of the human embryonic zeta 2 glob": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "mediated by erythroid cell-specific and developmental stage-specific nuclear factor-DNA",
+        "answerability": 0.7633222937583923,
+        "ground_truth": {
+          "erythroid cell-specific and developmental stage-specific nuclear factor-DNA complexes": {
+            "bertscore": 0.9184510111808777,
+            "f1": 0.823529411764706
+          }
+        }
+      }
+    },
+    "Where do HS-40 forms?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "at the enhancer",
+        "answerability": 0.8082358241081238,
+        "ground_truth": {
+          "the enhancer": {
+            "bertscore": 0.9040220379829407,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    }
+  }
+}

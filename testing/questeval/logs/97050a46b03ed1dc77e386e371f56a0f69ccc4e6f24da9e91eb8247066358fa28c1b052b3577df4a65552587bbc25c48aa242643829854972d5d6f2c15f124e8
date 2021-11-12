@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "The estrogen receptor (ER) repressed erythroid cell growth and erythroid-specific gene expression.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The estrogen receptor",
+        "ER",
+        "erythroid cell growth",
+        "erythroid-specific gene expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the ER?",
+          "What receptor repressed erythroid cell growth and gene expression?",
+          "What did the estrogen receptor repress?",
+          "What did the estrogen receptor suppress?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the ER?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "estrogen receptor",
+        "answerability": 0.9952033162117004,
+        "ground_truth": {
+          "The estrogen receptor": {
+            "bertscore": 0.9089241027832031,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What receptor repressed erythroid differentiation and erythroid-specific gene expression": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "estrogen receptor",
+        "answerability": 0.8784692883491516,
+        "ground_truth": {
+          "ER": {
+            "bertscore": 0.7000823616981506,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did the estrogen receptor repress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid cell growth and erythroid-specific gene expression",
+        "answerability": 0.9970051050186157,
+        "ground_truth": {
+          "erythroid differentiation": {
+            "bertscore": 0.8224244713783264,
+            "f1": 0.22222222222222224
+          }
+        }
+      }
+    },
+    "What did the estrogen receptor suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "erythroid cell growth and erythroid-specific gene expression",
+        "answerability": 0.9967950582504272,
+        "ground_truth": {
+          "erythroid-specific gene expression": {
+            "bertscore": 0.9267724752426147,
+            "f1": 0.6
+          }
+        }
+      }
+    }
+  }
+}

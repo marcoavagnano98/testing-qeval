@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Notch1 signaling sensitizes tumor necrosis factor-related apoptosis-inducing ligand-induced apoptosis in human hepatocellular carcinoma cells by inhibiting Akt/Hdm2-mediated p53 degradation and up-enhancing p53-dependent DR5 expression.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Akt"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling pathway is involved in p53 degradation?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Notch1",
+        "sensitizes tumor necrosis factor-related apoptosis-inducing ligand-induced apoptosis",
+        "human hepatocellular carcinoma cells",
+        "Akt/Hdm2-mediated p53 degradation",
+        "up-enhancing p53-dependent DR5 expression"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What signaling sensitizes tumor necrosis factor-related apoptos",
+          "What does Notch1 signaling do?",
+          "What type of cells does Notch1 signaling affect?",
+          "What does Notch1 signaling inhibit?",
+          "What does Notch1 signaling do?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What signaling pathway is involved in the apoptosis-inducing": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Notch1 signaling",
+        "answerability": 0.9698391556739807,
+        "ground_truth": {
+          "Akt": {
+            "bertscore": 0.6617808938026428,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What signaling sensitizes tumor necrosis factor-related apoptos": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Notch1",
+        "answerability": 0.9739145636558533,
+        "ground_truth": {
+          "Notch1": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Notch1 signaling do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "sensitizes tumor necrosis factor-related apoptosis",
+        "answerability": 0.607430100440979,
+        "ground_truth": {
+          "sensitizes tumor necrosis factor-related apoptosis-inducing ligand-induced apoptosis": {
+            "bertscore": 0.9156727194786072,
+            "f1": 0.8333333333333333
+          },
+          "up-regulating p53-dependent DR5 expression": {
+            "bertscore": 0.7307018041610718,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells does Notch1 signaling affect?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "human hepatocellular carcinoma cells",
+        "answerability": 0.9413138031959534,
+        "ground_truth": {
+          "human hepatocellular carcinoma cells": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does Notch1 signaling inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Akt/Hdm2-mediated p53 degradation",
+        "answerability": 0.9637268781661987,
+        "ground_truth": {
+          "Akt/Hdm2-mediated p53 degradation": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    }
+  }
+}

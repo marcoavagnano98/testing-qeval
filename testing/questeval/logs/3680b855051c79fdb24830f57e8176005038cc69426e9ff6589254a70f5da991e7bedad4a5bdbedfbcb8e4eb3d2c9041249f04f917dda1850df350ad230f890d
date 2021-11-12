@@ -1,0 +1,74 @@
+{
+  "type": "hyp",
+  "text": "Furthermore inhibition of NF-kappaB activation decreased the transcript levels and BMP-2-induced phosphorylation of Smad1/5/8 critical downstream targets of BMP-2 signaling in PC cells.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "Smad1/5/8",
+        "BMP-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What downstream targets of BMP-2 signaling were decreased?",
+          "What signaling pathway is inhibited in PC cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "inhibition",
+        "NF-kappaB activation",
+        "the transcript levels",
+        "BMP-2-induced phosphorylation",
+        "Smad1/5/8 critical downstream targets",
+        "BMP-2",
+        "PC cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did NF-kappaB do to decrease the levels of Smad1/5",
+          "What decreased the transcript levels and BMP-2-induced phosphorylation of Smad1",
+          "What did inhibition of NF-kappaB decrease?",
+          "What did the inhibition of NF-kappaB decrease the transcript levels and what else",
+          "What did inhibition of NF-kappaB decrease the transcript levels and BMP-2",
+          "What signaling pathway is inhibited in PC cells?",
+          "Where did NF-kappaB activation decrease the transcript levels?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is required for CYLD-dependent inhibition of NF-kappaB activ": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0339166522026062,
+        "ground_truth": {
+          "Optineurin": {
+            "bertscore": 0.6495147943496704,
+            "f1": 0
+          },
+          "TNFalpha": {
+            "bertscore": 0.6184501647949219,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is Optineurin required for?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0003046989440917969,
+        "ground_truth": {
+          "CYLD-dependent inhibition": {
+            "bertscore": 0.6487435102462769,
+            "f1": 0
+          },
+          "TNFalpha-induced NF-kappaB activation": {
+            "bertscore": 0.5612693428993225,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

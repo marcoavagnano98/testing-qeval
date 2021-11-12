@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "In contrast intact beta2GPI does not inhibit antiangiogenic activity of AS4.5 in the presence of intact beta2GPI.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "contrast",
+        "intact beta2GPI",
+        "antiangiogenic activity",
+        "AS4.5",
+        "the presence",
+        "intact beta2GPI"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of intact beta2GPI on antiangiogenic activity of AS4.5",
+          "What does not inhibit antiangiogenic activity of AS4.5?",
+          "What does intact beta2GPI not inhibit?",
+          "What does intact beta2GPI not inhibit?",
+          "What does not inhibit antiangiogenic activity of AS4.5?",
+          "What does not inhibit antiangiogenic activity of AS4.5?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of intact beta2GPI on AS4.5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "does not inhibit antiangiogenic activity",
+        "answerability": 0.9154253005981445,
+        "ground_truth": {
+          "contrast": {
+            "bertscore": 0.6226289868354797,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does not bind to AS4.5?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.19568711519241333,
+        "ground_truth": {
+          "intact beta2GPI": {
+            "bertscore": 0.6626409888267517,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does intact beta2GPI not bind to?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.030019938945770264,
+        "ground_truth": {
+          "AS4.5": {
+            "bertscore": 0.6575648188591003,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does intact beta2GPI not inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "antiangiogenic activity",
+        "answerability": 0.9228702187538147,
+        "ground_truth": {
+          "its antiangiogenic activity": {
+            "bertscore": 0.9351049065589905,
+            "f1": 0.8
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "Northern blot analysis showed that the cDNA probe hybridized to a 4.5 kb transcript which contained the cDNA fragment fused to the chloramphenicol acetyltransferase gene.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "4.5",
+        "cDNA",
+        "chloramphenicol"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was the cDNA probe size?",
+          "What was the probe that hybridized to the 4.5 kb transcript?",
+          "What acetyltransferase gene was found in the 4.5"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Northern blot analysis",
+        "the cDNA probe",
+        "a 4.5 kb transcript",
+        "the cDNA fragment",
+        "the chloramphenicol acetyltransferase gene"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What showed that the cDNA probe hybridized to a 4.5 kb transcript",
+          "What hybridized to a 4.5 kb transcript?",
+          "What did the Northern Blot analysis show the cDNA probe hybridized to?",
+          "What did the Northern Blot analysis show was present in the 4.5 kb transcript?",
+          "What did the cDNA fragment fuse to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What was the cDNA probe's kb transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "4.5",
+        "answerability": 0.9584383964538574,
+        "ground_truth": {
+          "4.5": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What showed that the cDNA probe hybridized with a 4.5 kb transcript": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Northern blot analysis",
+        "answerability": 0.9872623085975647,
+        "ground_truth": {
+          "Northern blot analysis": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What hybridized with a 4.5 kb transcript?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "cDNA probe",
+        "answerability": 0.9666492938995361,
+        "ground_truth": {
+          "the cDNA probe": {
+            "bertscore": 0.9298118352890015,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did the cDNA probe hybridize with?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.5329117774963379,
+        "ground_truth": {
+          "a 4.5 kb transcript": {
+            "bertscore": 0.636188805103302,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells is the 4.5 kb transcript highly inducible in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00039714574813842773,
+        "ground_truth": {
+          "murine T cells": {
+            "bertscore": 0.6326331496238708,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

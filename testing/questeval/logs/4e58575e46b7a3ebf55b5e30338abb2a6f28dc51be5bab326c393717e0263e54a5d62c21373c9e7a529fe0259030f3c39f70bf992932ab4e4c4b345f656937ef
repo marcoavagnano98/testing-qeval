@@ -1,0 +1,116 @@
+{
+  "type": "hyp",
+  "text": "The cellular mechanism governing the diminished proliferative response of neonatal T lymphocytes to anti-CD2 may therefore be due to decreased NF kappa B induction reduced IL-2 mRNA expression and deficient IL-2 production.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IL-2",
+        "IL-2"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What mRNA is deficient in neonatal T lymphocytes?",
+          "What mRNA is deficient in neonatal T lymphocytes?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The cellular mechanism",
+        "the diminished proliferative response",
+        "neonatal T lymphocytes",
+        "NF kappa B induction",
+        "IL-2 mRNA expression",
+        "IL-2 production"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the reason for the decreased proliferative response of neonatal T lymphocyte",
+          "What is the cellular mechanism governing?",
+          "What is the cellular mechanism governing the diminished proliferative response of?",
+          "What is the cellular mechanism that may be responsible for the decreased proliferative response of",
+          "What is the cause of decreased proliferative response of neonatal T lymphocytes",
+          "What is the cellular mechanism that may be responsible for the decreased proliferative response of"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What mRNA is deficient in neonatal T lymphocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "IL-2",
+        "answerability": 0.8257680535316467,
+        "ground_truth": {
+          "IL-2": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the reason for the decreased proliferative response of neonatal T lymphocyte": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased NF kappa B induction reduced IL-2 mRNA expression and",
+        "answerability": 0.9094907641410828,
+        "ground_truth": {
+          "The cellular mechanism": {
+            "bertscore": 0.6519719362258911,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the cellular mechanism governing?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "diminished proliferative response",
+        "answerability": 0.9945653080940247,
+        "ground_truth": {
+          "the diminished proliferative response": {
+            "bertscore": 0.9521074891090393,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the cellular mechanism governing the diminished proliferative response of?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "neonatal T lymphocytes",
+        "answerability": 0.9372469186782837,
+        "ground_truth": {
+          "neonatal T lymphocytes": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What is the cellular mechanism that may be responsible for the decreased proliferative response of": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased NF kappa B induction reduced IL-2 mRNA expression and",
+        "answerability": 0.7153221368789673,
+        "ground_truth": {
+          "NF kappa B induction": {
+            "bertscore": 0.7426016330718994,
+            "f1": 0.5714285714285715
+          },
+          "IL-2 production": {
+            "bertscore": 0.6305882930755615,
+            "f1": 0.16666666666666669
+          }
+        }
+      }
+    },
+    "What is the cause of decreased proliferative response of neonatal T lymphocytes": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "decreased NF kappa B induction reduced IL-2 mRNA expression and",
+        "answerability": 0.9223195910453796,
+        "ground_truth": {
+          "IL-2 mRNA expression": {
+            "bertscore": 0.8522394895553589,
+            "f1": 0.4615384615384615
+          }
+        }
+      }
+    }
+  }
+}

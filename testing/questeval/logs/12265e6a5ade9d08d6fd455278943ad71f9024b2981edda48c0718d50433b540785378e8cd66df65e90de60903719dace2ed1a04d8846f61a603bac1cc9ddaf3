@@ -1,0 +1,130 @@
+{
+  "type": "ref",
+  "text": "The expression vector was cotransfected with the chloramphenicol acetyl transferase (CAT) reporter gene regulated by the thymidine kinase promoter containing GAL4 DNA binding sites into NIH 3T3 293 K562 and Jurkat cell lines. MZF-1 represses CAT reporter gene expression via GAL4 binding sites in the nonhematopoietic cell lines NIH 3T3 and 293.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "CAT",
+        "NIH",
+        "3T3 293 K562",
+        "Jurkat",
+        "CAT",
+        "NIH",
+        "3T3",
+        "293"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the name of the reporter gene that is regulated by the thymidine",
+          "What organization was the MZF-1 cotransfected with?",
+          "What is the NIH cell line that MZF-1 represses?",
+          "What cell line was the MZF-1 cotransfected with?",
+          "What is the name of the reporter gene that is regulated by the thymidine",
+          "What organization was the MZF-1 cotransfected with?",
+          "What is the name of the cell line that MZF-1 represses?",
+          "What is the number of NIH 3T3 cells?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The expression vector",
+        "the chloramphenicol acetyl transferase",
+        "(CAT) reporter gene",
+        "the thymidine kinase promoter",
+        "GAL4 DNA binding sites",
+        "NIH 3T3 293 K562 and Jurkat cell lines",
+        "MZF-1",
+        "CAT reporter gene expression",
+        "GAL4 binding sites",
+        "the nonhematopoietic cell lines",
+        "NIH 3T3"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was cotransfected with the chloramphenicol acetyl transfer",
+          "What is the CAT reporter gene?",
+          "What is the chloramphenicol acetyl transferase?",
+          "What regulates the CAT reporter gene?",
+          "What does MZF-1 repress?",
+          "Where was the MZF-1 vector cotransfected with the CAT reporter gene?",
+          "What represses CAT reporter gene expression?",
+          "What does MZF-1 repress?",
+          "What does MZF-1 repress?",
+          "Where does MZF-1 repress CAT reporter gene expression?",
+          "What nonhematopoietic cell lines were used?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What reporter gene does MZF-1 repress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CAT",
+        "answerability": 0.9853211045265198,
+        "ground_truth": {
+          "CAT": {
+            "bertscore": 0.9999995231628418,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What does MZF-1 repress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "CAT reporter gene expression",
+        "answerability": 0.988224983215332,
+        "ground_truth": {
+          "the heterologous DNA binding domain": {
+            "bertscore": 0.7465348839759827,
+            "f1": 0
+          },
+          "CAT reporter gene expression": {
+            "bertscore": 1.0,
+            "f1": 1.0
+          },
+          "expression": {
+            "bertscore": 0.7896475195884705,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    "What represses CAT reporter gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "MZF-1",
+        "answerability": 0.98491370677948,
+        "ground_truth": {
+          "MZF-1": {
+            "bertscore": 1.0000001192092896,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "Where does MZF-1 repress CAT reporter gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "via GAL4 binding sites in the nonhematopoietic cell lines NI",
+        "answerability": 0.9283053874969482,
+        "ground_truth": {
+          "nonhematopoietic cell lines": {
+            "bertscore": 0.8255243301391602,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "Where does MZF-1 activate expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.05597341060638428,
+        "ground_truth": {
+          "hematopoietic cell lines": {
+            "bertscore": 0.6414072513580322,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

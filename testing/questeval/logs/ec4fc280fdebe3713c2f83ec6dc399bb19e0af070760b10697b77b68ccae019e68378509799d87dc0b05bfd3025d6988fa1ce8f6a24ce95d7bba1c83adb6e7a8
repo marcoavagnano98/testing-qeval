@@ -1,0 +1,120 @@
+{
+  "type": "hyp",
+  "text": "In the case of IgE class switching IL-4 activates the IgE germline promoter by inducing tyrosine phosphorylation homodimerization and nuclear translocation of the latent transcription factor STAT6 (signal transducer and activator of transcription-6).\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "IgE",
+        "IgE"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What class of cells does IL-4 activate?",
+          "What class of cells does IL-4 activate?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "the case",
+        "the IgE germline promoter",
+        "tyrosine phosphorylation homodimerization",
+        "nuclear translocation",
+        "the latent transcription factor",
+        "(signal transducer",
+        "activator",
+        "transcription-6"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the IgE germline promoter?",
+          "What does IL-4 activate in the case of IgE class switching?",
+          "What does IL-4 do to activate the IgE germline promoter?",
+          "What is the name of the transcription factor STAT6?",
+          "What does STAT6 do?",
+          "What is STAT6?",
+          "What is the function of transcription-6?",
+          "What is STAT6?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What does IL-4 activate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "the IgE germline promoter",
+        "answerability": 0.9688494205474854,
+        "ground_truth": {
+          "gene expression": {
+            "bertscore": 0.7256454825401306,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does IL-4 do to activate gene expression?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "inducing tyrosine phosphorylation homodimerization and nuclear",
+        "answerability": 0.8709151744842529,
+        "ground_truth": {
+          "tyrosine phosphorylation homodimerization": {
+            "bertscore": 0.9206560850143433,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What is the name of the latent transcription factor STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.33423030376434326,
+        "ground_truth": {
+          "nuclear translocation": {
+            "bertscore": 0.7173126935958862,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does STAT6 do?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transducer and activator of transcription",
+        "answerability": 0.9348365068435669,
+        "ground_truth": {
+          "the latent transcription factor": {
+            "bertscore": 0.7390068769454956,
+            "f1": 0.2222222222222222
+          }
+        }
+      }
+    },
+    "What is STAT6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transducer and activator of transcription",
+        "answerability": 0.9704247713088989,
+        "ground_truth": {
+          "(signal transducer": {
+            "bertscore": 0.7671518325805664,
+            "f1": 0.5
+          },
+          "transcription-6": {
+            "bertscore": 0.7100949883460999,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the role of transcription-6?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "signal transducer and activator",
+        "answerability": 0.9627092480659485,
+        "ground_truth": {
+          "activator": {
+            "bertscore": 0.8224523663520813,
+            "f1": 0.4
+          }
+        }
+      }
+    }
+  }
+}

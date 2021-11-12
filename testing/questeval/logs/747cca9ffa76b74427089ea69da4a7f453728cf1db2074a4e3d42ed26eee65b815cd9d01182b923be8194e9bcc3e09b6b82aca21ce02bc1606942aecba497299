@@ -1,0 +1,82 @@
+{
+  "type": "hyp",
+  "text": "Here we report that CD40 engagement leads to the activation of NF-kappaB which is dependent on the phosphorylation and degradation of IkappaBalpha.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "NF-kappaB",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is dependent on phosphorylation and degradation of IkappaBalpha?",
+          "What is the activation of NF-kappaB dependent on?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "we",
+        "CD40 engagement",
+        "the activation",
+        "NF-kappaB",
+        "the phosphorylation",
+        "degradation",
+        "IkappaBalpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of CD40 on NF-kappaB?",
+          "What leads to the activation of NF-kappaB?",
+          "What does CD40 engagement lead to?",
+          "What is dependent on phosphorylation and degradation of IkappaBalpha?",
+          "What is the activation of NF-kappaB dependent on?",
+          "What is IkappaBalpha dependent on?",
+          "What is the activation of NF-kappaB dependent on?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibited DC responses induced by CD40?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0011137127876281738,
+        "ground_truth": {
+          "NAC": {
+            "bertscore": 0.695461630821228,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What response did NAC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00017213821411132812,
+        "ground_truth": {
+          "DC": {
+            "bertscore": 0.6463727951049805,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did NAC inhibit?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 8.726119995117188e-05,
+        "ground_truth": {
+          "DC responses": {
+            "bertscore": 0.6910973191261292,
+            "f1": 0
+          },
+          "CD40 engagement": {
+            "bertscore": 0.6634262800216675,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

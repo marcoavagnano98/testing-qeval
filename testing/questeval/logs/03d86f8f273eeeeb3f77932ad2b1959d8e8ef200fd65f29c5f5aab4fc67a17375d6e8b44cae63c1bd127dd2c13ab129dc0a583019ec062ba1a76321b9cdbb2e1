@@ -1,0 +1,100 @@
+{
+  "type": "hyp",
+  "text": "(HIV-1) were detected in the nuclear extract of a T cell line acutely infected with HIV-1.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "HIV-1",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was detected in the nuclear extract of a T cell line acutely infected with",
+          "What was detected in the nuclear extract of a T cell line acutely infected with"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "(HIV-1",
+        "the nuclear extract",
+        "a T cell line",
+        "HIV-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What was detected in the nuclear extract of a T cell line acutely infected with",
+          "What was the T cell line that was infected with HIV-1?",
+          "What was detected in the nuclear extract of a patient with HIV-1?",
+          "What was detected in the nuclear extract of a T cell line acutely infected with"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is up-regulated on a T cell line acutely infected with HIV-1": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.020988285541534424,
+        "ground_truth": {
+          "LT-alpha1beta2": {
+            "bertscore": 0.5956568717956543,
+            "f1": 0
+          },
+          "expression": {
+            "bertscore": 0.7272055745124817,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the LT-alpha1beta2 up-regulated on a": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.006852924823760986,
+        "ground_truth": {
+          "HIV-1": {
+            "bertscore": 0.6515464186668396,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is up-regulated on surface expression of LT-alpha1beta2": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0027848482131958008,
+        "ground_truth": {
+          "a T cell line": {
+            "bertscore": 0.6776972413063049,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does the up-regulation of LT-alpha1beta2 suggest?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 8.738040924072266e-05,
+        "ground_truth": {
+          "a positive feedback loop": {
+            "bertscore": 0.6746452450752258,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the positive feedback loop between?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0002675652503967285,
+        "ground_truth": {
+          "HIV-1 infection LT-alpha1beta2 expression and HIV-1 replication": {
+            "bertscore": 0.5831587314605713,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

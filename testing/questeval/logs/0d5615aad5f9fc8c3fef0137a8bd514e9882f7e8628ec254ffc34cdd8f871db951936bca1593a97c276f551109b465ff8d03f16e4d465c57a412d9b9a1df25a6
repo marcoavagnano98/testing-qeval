@@ -1,0 +1,66 @@
+{
+  "type": "hyp",
+  "text": "Cyclosporin A inhibits expression of the granulocyte-macrophage colony-stimulating factor gene in human T cells.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Cyclosporin A",
+        "expression",
+        "the granulocyte-macrophage colony-stimulating factor gene",
+        "human T cells"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What inhibits expression of the granulocyte-macrophage colony-",
+          "What does cyclosporin A inhibit in human T cells?",
+          "What does cyclosporin A inhibit in human T cells?",
+          "What type of cells does cyclosporin A inhibit?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What inhibits granulocyte-macrophage colony-stimulating": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "Cyclosporin A",
+        "answerability": 0.971703290939331,
+        "ground_truth": {
+          "DNA triplex formation": {
+            "bertscore": 0.6721236705780029,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What does DNA triplex formation selectively inhibit in human T cells?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.000417172908782959,
+        "ground_truth": {
+          "granulocyte-macrophage colony-stimulating factor gene expression": {
+            "bertscore": 0.5677244067192078,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What type of cells is targeted by DNA triplex formation?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0006505846977233887,
+        "ground_truth": {
+          "human T cells": {
+            "bertscore": 0.6446219086647034,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

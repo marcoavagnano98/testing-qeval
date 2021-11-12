@@ -1,0 +1,94 @@
+{
+  "type": "hyp",
+  "text": "The AP-1 site mediated the response to PMA stimulation while the kappa B site responded to IL-1 stimulation.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "PMA",
+        "IL-1"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did the kappa B site respond to?",
+          "What did the kappa B site respond to?"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "The AP-1 site",
+        "the response",
+        "PMA stimulation",
+        "the kappa B site",
+        "IL-1 stimulation"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What site mediated the response to PMA stimulation?",
+          "What did the kappa B site mediate?",
+          "What did the kappa B site respond to?",
+          "What site responded to IL-1 stimulation?",
+          "What did the kappa B site respond to?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did Western blotting analysis not detect in nuclear extracts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 6.449222564697266e-05,
+        "ground_truth": {
+          "RelA": {
+            "bertscore": 0.6762431263923645,
+            "f1": 0
+          },
+          "any RelA": {
+            "bertscore": 0.6953463554382324,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not detect any RelA in nuclear extracts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 9.47713851928711e-05,
+        "ground_truth": {
+          "Western blotting analysis": {
+            "bertscore": 0.6581353545188904,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Western blotting analysis not detect any RelA in?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.0004506707191467285,
+        "ground_truth": {
+          "nuclear extracts": {
+            "bertscore": 0.6898641586303711,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did Western blotting analysis not detect RelA in nuclear extracts?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.00016808509826660156,
+        "ground_truth": {
+          "stimulation": {
+            "bertscore": 0.6708372235298157,
+            "f1": 0
+          },
+          "T cells": {
+            "bertscore": 0.6607831716537476,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

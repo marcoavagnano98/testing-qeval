@@ -1,0 +1,78 @@
+{
+  "type": "hyp",
+  "text": "Suppression of nuclear factor kappa B by dexamethasone and tumor necrosis factor-alpha in human peripheral blood T lymphocytes.\n",
+  "self": {
+    "NER": {
+      "answers": [],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": []
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "Suppression",
+        "nuclear factor kappa B",
+        "dexamethasone",
+        "tumor necrosis factor-alpha"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What is the effect of dexamethasone on nuclear factor kappa B",
+          "What is dexamethasone and tumor necrosis factor-alpha used to",
+          "What is the name of the drug that blocks nuclear factor kappa B?",
+          "What is the name of the protein that suppresses nuclear factor kappa B?"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What is the effect of dexamethasone on the leukocytes?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.04692572355270386,
+        "ground_truth": {
+          "Suppression": {
+            "bertscore": 0.7170631885528564,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is dexamethasone used to suppress?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "nuclear factor kappa B",
+        "answerability": 0.9391056895256042,
+        "ground_truth": {
+          "nuclear factor kappa B and CD18-mediated leukocyte adhesion": {
+            "bertscore": 0.800785481929779,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "What part of the cornea is affected by dexamethasone?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.023518025875091553,
+        "ground_truth": {
+          "the corneal endothelium": {
+            "bertscore": 0.6189338564872742,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What is the name of the drug that inhibits leukocyte adhesion?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "unanswerable",
+        "answerability": 0.024926364421844482,
+        "ground_truth": {
+          "dexamethasone.\\nPURPOSE": {
+            "bertscore": 0.6166868209838867,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "type": "hyp",
+  "text": "TNF-alpha did not mediate the translocation of NF-kappa B p65 from the cytosol to the nucleus.\n",
+  "self": {
+    "NER": {
+      "answers": [
+        "TNF"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not mediate the translocation of NF-kappa B p"
+        ]
+      }
+    },
+    "NOUN": {
+      "answers": [
+        "TNF-alpha",
+        "the translocation",
+        "NF-kappa B p65",
+        "the cytosol",
+        "the nucleus"
+      ],
+      "QG_hash=ThomasNLG/t5-qg_squad1-en": {
+        "questions": [
+          "What did not mediate the translocation of NF-kappa B p",
+          "What did TNF-alpha not mediate?",
+          "What protein was not translocated from the cytosol to the nucleus?",
+          "Where did TNF-alpha not mediate the translocation of NF-k",
+          "Where did TNF-alpha not mediate the translocation of NF-k"
+        ]
+      }
+    }
+  },
+  "asked": {
+    "What did not mediate the translocation of NF-kappa B?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.9389522075653076,
+        "ground_truth": {
+          "TNF": {
+            "bertscore": 0.7883228659629822,
+            "f1": 0
+          }
+        }
+      }
+    },
+    "What did not mediate the translocation of NF-kappa B p": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "TNF-alpha",
+        "answerability": 0.7771622538566589,
+        "ground_truth": {
+          "TNF-alpha": {
+            "bertscore": 0.9999997615814209,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "What did TNF-alpha not mediate?": {
+      "QA_hash=ThomasNLG/t5-qa_squad2neg-en": {
+        "answer": "translocation of NF-kappa B p65 from the cytosol to",
+        "answerability": 0.9884009957313538,
+        "ground_truth": {
+          "the translocation": {
+            "bertscore": 0.6906124949455261,
+            "f1": 0.2222222222222222
+          },
+          "NF-kappa B p50/p65": {
+            "bertscore": 0.7011640071868896,
+            "f1": 0.36363636363636365
+          },
+          "complement receptors": {
+            "bertscore": 0.6441318392753601,
+            "f1": 0
+          }
+        }
+      }
+    }
+  }
+}
