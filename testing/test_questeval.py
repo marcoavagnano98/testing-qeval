@@ -11,23 +11,24 @@ def run_questeval(references=[],candidates=[]):
 
     """
     check_dependencies("questeval/requirements.txt")
-    PATH_F="questeval/results.txt"
+    PATH_F="questeval/bart.txt"
     if(os.path.exists(PATH_F)):
         print("Writing scores on: " + PATH_F)
     else:
         exit()
     if not candidates and not references:
-        candidates=utils.load_preds("preds_egv_paper.txt")
-        references=utils.load_preds("targets_egv_paper.txt")
+        candidates=utils.load_preds("bart_preds.txt")
+        references=utils.load_preds("bart_labels.txt")
     from questeval.questeval_metric import QuestEval
     questeval = QuestEval()
     l=[]
     for i in range(0, len(references)):
         score = questeval.corpus_questeval(hypothesis=[candidates[i]],list_references=[[references[i]]])
         l.append(score["corpus_score"])
-        with open("questeval/results.txt","a") as f:
-            f.write(str(score["corpus_score"]))
-            f.write("\n")
+        f=open(PATH_F,"a")
+        f.write(str(score["corpus_score"]))
+        f.write("\n")
+        f.close()
         print(i)
     
     print(np.mean(l))
